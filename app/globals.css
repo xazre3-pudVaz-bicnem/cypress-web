@@ -86,3 +86,85 @@ p, li, td, th, span, a {
 .section-rule-dark {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
+
+/* WordPress content styles */
+.wp-content h2 {
+  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: clamp(18px, 2.2vw, 24px);
+  color: #0d1b2a;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ece8e0;
+}
+
+.wp-content h3 {
+  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: #0d1b2a;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.wp-content p {
+  margin-bottom: 20px;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.wp-content ul, .wp-content ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+  color: #374151;
+}
+
+.wp-content li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.wp-content a {
+  color: #0d1b2a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.wp-content strong {
+  color: #0d1b2a;
+  font-weight: 600;
+}
+
+.wp-content blockquote {
+  border-left: 3px solid #0d1b2a;
+  margin: 32px 0;
+  padding: 16px 24px;
+  background: #f8f6f2;
+  font-style: normal;
+}
+
+.wp-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 24px 0;
+}
+
+.wp-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.wp-content th, .wp-content td {
+  padding: 10px 14px;
+  border: 1px solid #ece8e0;
+  text-align: left;
+}
+
+.wp-content th {
+  background: #f8f6f2;
+  color: #0d1b2a;
+  font-weight: 600;
+}

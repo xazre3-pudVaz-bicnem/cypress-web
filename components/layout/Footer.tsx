@@ -169,7 +169,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-5">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="株式会社サイプレス"
                 width={120}
                 height={30}

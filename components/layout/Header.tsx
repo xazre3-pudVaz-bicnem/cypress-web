@@ -112,7 +112,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="shrink-0 flex items-center">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="株式会社サイプレス"
                 width={140}
                 height={36}
@@ -345,7 +345,7 @@ export default function Header() {
           >
             <Link href="/" onClick={closeMobile}>
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="株式会社サイプレス"
                 width={120}
                 height={30}
