@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -76,6 +77,18 @@ export default function SnsServicePage() {
           </div>
         </section>
 
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+            alt="スマートフォンを一緒に見る2人の女性 — SNS運用・Instagram集客のイメージ"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* SNS運用の役割 */}
         <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -127,8 +140,35 @@ export default function SnsServicePage() {
           </div>
         </section>
 
-        {/* 対応業種 */}
+        {/* SNSとデジタル集客の連動 — 2-col image+text */}
         <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "360px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+                  alt="スマートフォンとデジタルアイコン — SNSとデジタルマーケティングの連動"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Integration</p>
+                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>SNSとMEO・SEOを連動させた集客設計</h2>
+                <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  SNS単独で集客を狙うのではなく、MEO・SEOと連動させることで相乗効果が生まれます。Instagramでの認知がブランド検索を増やし、Googleマップでの評価向上につながります。各チャネルが互いを補完し合う統合マーケティングを設計します。
+                </p>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  サイプレスはSNS運用だけでなく、MEO・SEO・AI活用支援・ホームページ制作まで一貫して提供できる強みを活かし、デジタルマーケティング全体を最適化します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 対応業種 */}
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
             <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>

@@ -82,7 +82,16 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <div className="space-y-8 pt-12 md:pt-16">
+                <div className="relative w-full mb-8" style={{ paddingBottom: "75%" }}>
+                  <Image
+                    src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                    alt="落ち着いたオフィス環境でのWeb制作・マーケティング業務"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="space-y-8">
                   {[
                     {
                       num: "01",
@@ -185,37 +194,50 @@ export default function Home() {
                   relatedLabels: ["AI活用支援とは", "業務自動化", "AIチャットボット"],
                 },
               ].map((svc, i) => (
-                <div
-                  key={svc.num}
-                  className="grid md:grid-cols-[80px_1fr_auto] gap-6 md:gap-10 py-10"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <div>
-                    <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{svc.num}</span>
-                  </div>
-                  <div>
-                    <h3 className="font-black text-[18px] mb-3" style={{ color: "#0F172A" }}>{svc.label}</h3>
-                    <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>{svc.body}</p>
-                    <div className="flex flex-wrap gap-3">
-                      {svc.related.map((href, j) => (
-                        <Link key={href} href={href} className="text-[12px] hover:underline" style={{ color: "#6B7280" }}>
-                          → {svc.relatedLabels[j]}
-                        </Link>
-                      ))}
+                <div key={svc.num}>
+                  <div
+                    className="grid md:grid-cols-[80px_1fr_auto] gap-6 md:gap-10 py-10"
+                    style={{ borderTop: "1px solid #E8E4DC" }}
+                  >
+                    <div>
+                      <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{svc.num}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-black text-[18px] mb-3" style={{ color: "#0F172A" }}>{svc.label}</h3>
+                      <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>{svc.body}</p>
+                      <div className="flex flex-wrap gap-3">
+                        {svc.related.map((href, j) => (
+                          <Link key={href} href={href} className="text-[12px] hover:underline" style={{ color: "#6B7280" }}>
+                            → {svc.relatedLabels[j]}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="md:text-right">
+                      <Link
+                        href={svc.href}
+                        className="inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors"
+                        style={{ color: "#374151" }}
+                      >
+                        詳しく見る
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
-                  <div className="md:text-right">
-                    <Link
-                      href={svc.href}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors"
-                      style={{ color: "#374151" }}
-                    >
-                      詳しく見る
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
-                  </div>
+                  {i === 2 && (
+                    <div className="relative w-full my-4" style={{ height: "280px" }}>
+                      <Image
+                        src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+                        alt="Webマーケティング戦略の会議"
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                      />
+                      <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+                    </div>
+                  )}
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
@@ -268,7 +290,17 @@ export default function Home() {
               </h2>
             </div>
 
-            <div>
+            <div className="grid md:grid-cols-[1fr_1.2fr] gap-16">
+              <div className="relative" style={{ height: "480px", overflow: "hidden" }}>
+                <Image
+                  src="/1.png"
+                  alt="グラフを確認しながら戦略を議論するチームミーティング"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
               {[
                 {
                   num: "01",
@@ -311,6 +343,7 @@ export default function Home() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #F0EDE6" }} />
+              </div>
             </div>
           </div>
         </section>
@@ -337,6 +370,15 @@ export default function Home() {
                 </p>
               </div>
               <div>
+                <div className="relative w-full mb-8" style={{ height: "200px" }}>
+                  <Image
+                    src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+                    alt="デジタルマーケティングの連動"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <div className="space-y-0">
                   {[
                     { from: "MEO対策", to: "→ 地域名検索からの来店・問い合わせ" },
@@ -408,6 +450,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="space-y-6">
+                <div className="relative w-full mb-6" style={{ height: "220px" }}>
+                  <Image
+                    src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+                    alt="パートナーシップ・信頼関係"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 <div className="p-8" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
                   <p className="text-[12px] font-semibold tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>Company Profile</p>
                   <div className="space-y-3">
@@ -468,6 +519,15 @@ export default function Home() {
                 </Link>
               </div>
               <div className="space-y-4">
+                <div className="relative w-full mb-6" style={{ height: "200px" }}>
+                  <Image
+                    src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+                    alt="チームで働く環境"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
                 {[
                   { label: "月給", value: "40万円以上" },
                   { label: "年間休日", value: "130日（完全週休2日制）" },

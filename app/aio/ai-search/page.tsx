@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SubCategoryTemplate from "@/components/templates/SubCategoryTemplate";
@@ -35,6 +36,13 @@ export default function AiSearchPage() {
           relatedPages: raw.relatedPages,
         }}
       />
+
+      {/* Full-width image */}
+      <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+        <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="AI検索最適化・次世代検索エンジン対策" fill className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.45)" }} />
+      </section>
+
       <Footer />
     </>
   );

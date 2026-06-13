@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -86,8 +87,39 @@ export default function HistoryPage() {
           </div>
         </section>
 
-        {/* Timeline */}
+        {/* Company overview — 2-column visual section */}
         <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative overflow-hidden" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="落ち着いたオフィス環境でノートパソコンを使うスタッフ"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Our Foundation
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0F172A" }}
+                >
+                  創業のビジョンと歩み
+                </h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  株式会社サイプレスは2022年4月、「地域企業が、正しく選ばれる仕組みをつくる」という理念のもと東京都葛飾区で設立されました。良い仕事をしているのにデジタルで可視化されていない中小企業のために、MEO・SEO・AIOを組み合わせた集客支援を開始。創業以来、一社一社と誠実に向き合いながらサービスの幅を着実に広げてきました。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Timeline */}
+        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl space-y-0">
               {HISTORY.map((item, i) => (

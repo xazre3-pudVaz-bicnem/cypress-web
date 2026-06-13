@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -96,6 +97,12 @@ export default function LocalKeywordPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/1.png" alt="地域キーワード設計・チャートを確認するグループ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.15)" }} />
+        </section>
+
         {/* 地域キーワードとは */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -189,6 +196,36 @@ export default function LocalKeywordPage() {
                   </div>
                 ))}
                 <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: キーワード設計手順 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Keyword Design Process
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  キーワード設計手順
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    地域キーワード設計は①対象エリアのリストアップ→②業種・サービスとの組み合わせ生成→③検索ボリューム分析→④優先度設定の4ステップで進めます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    市区町村名だけでなく、駅名・エリア名（青山・銀座・恵比寿など）での検索ボリュームを必ず確認します。都市部では行政区よりエリア名のほうが検索数が多い場合があります。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    設計したキーワードはGBPの説明文・投稿・Q&A欄、ウェブサイトのコンテンツ・メタ情報の両方に自然な形で組み込み、MEOとローカルSEOを連動させます。
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_12_19.png" alt="キーワード設計・タブレットを使ったミーティング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
             </div>
           </div>

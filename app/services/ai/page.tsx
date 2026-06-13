@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -78,6 +79,18 @@ export default function AiServicePage() {
           </div>
         </section>
 
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            alt="ブルーのデジタルオーバーレイでタイピングするシーン — AI活用支援・業務自動化"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* AI活用支援とは */}
         <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -148,6 +161,24 @@ export default function AiServicePage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* AI×デジタル会議 — full-width cinematic with quote */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            alt="デジタルオーバーレイのあるカンファレンスシーン — AI活用支援・業務変革"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 flex items-center" style={{ background: "rgba(15,23,42,0.65)" }}>
+            <div className="max-w-6xl mx-auto px-6">
+              <p className="text-white font-black text-[22px] md:text-[30px] max-w-2xl leading-snug">
+                AIで動く組織が、<br />次の10年をリードする。
+              </p>
             </div>
           </div>
         </section>

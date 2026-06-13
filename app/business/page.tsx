@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -132,11 +133,29 @@ export default function BusinessPage() {
           </div>
         </section>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "420px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            alt="サイプレスのWebマーケティング支援・デジタル会議"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
+        </div>
+
         {/* Services */}
         <section className="pb-24 max-w-6xl mx-auto px-6">
           <div>
             {SERVICES.map((s, i) => (
               <ScrollReveal key={s.num} delay={i * 0.05}>
+                {i === 3 && (
+                  <div className="relative w-full my-6 overflow-hidden" style={{ height: "240px" }}>
+                    <Image src="/1.png" alt="サイプレスのWebマーケティング支援" fill className="object-cover" sizes="100vw" />
+                    <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
+                  </div>
+                )}
                 <div
                   className="py-12"
                   style={{

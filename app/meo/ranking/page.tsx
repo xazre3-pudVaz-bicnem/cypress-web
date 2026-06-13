@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -99,6 +100,12 @@ export default function MeoRankingPage() {
               具体的な施策を解説します。
             </p>
           </div>
+        </section>
+
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="MEO順位改善・アナリティクスダッシュボード" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.15)" }} />
         </section>
 
         {/* MEOの順位を決める3要素 */}
@@ -206,6 +213,36 @@ export default function MeoRankingPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: 順位を決める3要素 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  3 Ranking Factors
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  順位を決める3要素
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    Googleは公式に「距離（Distance）」「関連性（Relevance）」「知名度（Prominence）」の3要素でローカル検索の順位を決定すると発表しています。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    距離は物理的な立地ですが、サービスエリアの設定や複数エリアへの対応で影響を最小化できます。関連性はGBPのカテゴリ・キーワード設定で高められます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    知名度は口コミ・外部サイト掲載・SEO評価で向上します。この3要素を同時に最適化することが、ローカルパック上位3位への最短経路です。
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_14_54.png" alt="MEO順位改善の分析・グラフとミーティング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
             </div>
           </div>

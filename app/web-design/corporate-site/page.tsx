@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -107,6 +108,17 @@ export default function CorporateSitePage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+            alt="コーポレートサイト制作の打ち合わせ風景"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+
         {/* ===== Role ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -162,6 +174,40 @@ export default function CorporateSitePage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 2-col image + text ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Design Process
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  課題解決から始まる設計
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  コーポレートサイト制作では、まず事業課題・集客目標・ターゲット像を整理します。その上で、どのページが何の役割を担うかを設計し、情報設計・デザイン・開発へと進みます。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  見た目の完成度だけでなく、問い合わせ導線・採用導線・検索からの流入が機能するサイトを制作します。
+                </p>
+              </div>
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+                  alt="コーポレートサイト制作の提案資料と打ち合わせ"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </section>

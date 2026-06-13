@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -143,6 +144,18 @@ export default function WebDesignIndexPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+            alt="サイプレスのWeb制作プロジェクト提案風景"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.15)" }} />
+        </div>
+
         {/* ===== Philosophy ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -233,6 +246,40 @@ export default function WebDesignIndexPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #F0EDE6" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 制作の考え方 2-col ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative overflow-hidden" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="サイプレスの制作環境・ラップトップとデスク"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Our Philosophy
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  制作の考え方
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  サイプレスのWeb制作は、デザインから始まりません。「何のためのサイトか」「誰に届けるか」「どんな行動を促すか」を明確にしてから、設計・デザイン・開発へと進みます。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  SEO設計・CV導線・更新のしやすさは、制作が始まってから付け足すものではなく、最初の段階から組み込みます。ヒアリングの質が、サイトの成果を決めます。
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -100,6 +101,18 @@ export default function ExternalSeoPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/1.png"
+            alt="複数人がグラフや資料を確認しているミーティングの様子"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* 外部SEOとは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -156,6 +169,29 @@ export default function ExternalSeoPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 サイプレスでは、高品質なコンテンツ制作を起点とした自然なリンク獲得・メディア露出・サイテーション整備という持続可能なアプローチのみを推奨します。短期的な施策より長期的な資産価値を重視した外部SEO戦略をご提案します。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: image + text — 被リンク戦略 */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+                  alt="2名が資料を並べてレビューしている打ち合わせの様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>被リンク戦略：質の高い外部評価を積み上げる</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  被リンク獲得の基本は「リンクされる価値のあるコンテンツを作ること」です。業界の調査データ・詳細なガイド・専門家のインサイトを含む記事は、他サイトから自然にリンクされます。加えて、業界メディアへの寄稿・プレスリリース配信・パートナーシップも効果的です。リンク購入などのブラックハット手法はGoogleペナルティのリスクがあるため、持続可能なホワイトハット戦略を一貫して推奨します。
+                </p>
+              </div>
             </div>
           </div>
         </section>

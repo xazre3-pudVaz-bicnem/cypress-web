@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -109,6 +110,18 @@ export default function ContentSeoPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+            alt="2名が資料を並べてレビューしている打ち合わせの様子"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* コンテンツSEOとは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -190,6 +203,29 @@ export default function ContentSeoPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 従来の検索（SEO）とAI検索（AIO）の両方で評価されるコンテンツを制作することが、今後のWeb集客における最重要戦略です。コンテンツSEOへの投資は、将来のAIO対応にもそのまま活用できる資産となります。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: image + text */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="ノートパソコン・デスク・観葉植物のある作業環境"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>コンテンツSEOの施策：継続が資産になる</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  コンテンツSEOは「一度書いて終わり」ではありません。キーワード調査→記事設計→執筆→公開→データ分析→リライトという継続的なサイクルを回すことで、コンテンツが積み上がり、複数のキーワードから安定した流入が得られる状態になります。専門性の高い一次情報を含めることで、E-E-A-T評価が高まり、AI検索からの引用にもつながります。
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -102,6 +103,17 @@ export default function ContentPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+            alt="AIコンテンツ制作支援のクリーンな作業環境"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+
         {/* ===== What is Content AI ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -157,6 +169,40 @@ export default function ContentPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 2-col text + MEETING_DOCS ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Content Strategy
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  コンテンツ戦略との連動
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  AIによるコンテンツ生成は、戦略なしには効果が出ません。SEOキーワード計画・ターゲット設定・発信チャネルの優先順位を整理した上で、AIをどう活用するかを設計します。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  サイプレスはWebマーケティング支援とAIコンテンツ制作支援を組み合わせ、「発信し続ける体制」を構築します。
+                </p>
+              </div>
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+                  alt="AIコンテンツ制作の戦略立案・資料確認"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </section>

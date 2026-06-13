@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -146,6 +147,16 @@ export default function MessagePage() {
 
               {/* Profile sidebar */}
               <div className="md:sticky md:top-24">
+                {/* Handshake image */}
+                <div className="relative overflow-hidden mb-6" style={{ height: "260px" }}>
+                  <Image
+                    src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+                    alt="ビジネスパートナーとの握手・信頼関係"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                </div>
                 <div className="p-8" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
                   <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-6" style={{ color: "#9CA3AF" }}>
                     Profile
@@ -203,6 +214,18 @@ export default function MessagePage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Cinematic break */}
+        <section className="relative overflow-hidden" style={{ height: "280px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+            alt="ミーティングでドキュメントを確認するビジネスパーソン"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.2)" }} />
         </section>
 
         <PageContactCTA />

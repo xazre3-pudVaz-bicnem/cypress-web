@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -101,6 +102,17 @@ export default function EnvironmentPage() {
               フルリモート・年間休日130日・AI活用環境が揃っています。
             </p>
           </div>
+        </section>
+
+        {/* Desk visual — work environment */}
+        <section className="relative overflow-hidden w-full" style={{ height: "380px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+            alt="リモートワーク環境 - ノートパソコンと観葉植物のある落ち着いたデスク"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
         </section>
 
         {/* Stats */}

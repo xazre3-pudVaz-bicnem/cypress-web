@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -81,6 +82,18 @@ export default function AioServicePage() {
               ChatGPT・Gemini・Perplexityに「あなたの会社の名前」が答えとして引用される時代が来ています。AI検索が普及する今、自社情報がAIに正しく認識・引用されるためのAIO（AI検索最適化）対策に取り組む必要があります。
             </p>
           </div>
+        </section>
+
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            alt="ブルーのデジタルオーバーレイとともにタイピングするラップトップ — AIO対策・AI検索最適化"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
         </section>
 
         {/* AIO対策とは */}
@@ -182,6 +195,22 @@ export default function AioServicePage() {
                   <div className="py-4 px-4 text-[13px] text-center" style={{ borderBottom: "1px solid #E8E4DC", color: "#374151" }}>{row.aio}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* AI時代の検索に先手を打つ — full-width cinematic */}
+        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            alt="AI検索最適化・AIO対策 — 抽象的なブルーデジタル背景"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 flex items-center" style={{ background: "rgba(15,23,42,0.65)" }}>
+            <div className="max-w-6xl mx-auto px-6">
+              <p className="text-white font-black text-[22px] md:text-[30px] max-w-xl">AI時代の検索に、先手を打つ。</p>
             </div>
           </div>
         </section>

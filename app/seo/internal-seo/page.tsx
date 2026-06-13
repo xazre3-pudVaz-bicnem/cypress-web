@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -125,6 +126,18 @@ export default function InternalSeoPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            alt="アクセス解析ダッシュボードを確認している様子"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* 内部SEOとは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -200,6 +213,29 @@ export default function InternalSeoPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 月次のSearch Console・Analytics分析レポートにより、施策効果の可視化と継続的な改善サイクルを実現します。内部SEOの整備から始め、コンテンツSEO・テクニカルSEOへと段階的に強化するロードマップをご提案します。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: text + image */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>サイプレスが提案する内部SEO改善の進め方</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  まず既存サイトの全ページを診断し、タイトル・メタ・見出し・内部リンク・URL・速度など優先度の高い改善項目をリストアップします。次に、実装コストと効果のバランスを見ながら段階的に改善を進めます。Search ConsoleとAnalyticsのデータで効果を可視化しながら、継続的なPDCAサイクルで内部SEOの品質を高め続けます。
+                </p>
+              </div>
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+                  alt="2名がノートパソコンと資料で打ち合わせをしている様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </section>

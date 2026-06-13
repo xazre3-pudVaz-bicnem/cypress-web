@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -120,6 +121,12 @@ export default function StructuredDataPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="構造化データ実装・AI検索最適化" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+        </section>
+
         {/* What is structured data */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -226,6 +233,36 @@ export default function StructuredDataPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: 構造化データの実装手順 */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="構造化データの実装手順・ラップトップアナリティクス" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Implementation Steps
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  構造化データの実装手順
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    構造化データの実装は①現状診断→②Schema設計→③JSON-LD実装→④Search Consoleでの検証→⑤効果測定の5ステップで進めます。まず既存のSchema実装状況を診断し、優先度を設定します。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    すべての企業サイトに共通して優先度が高いのはOrganization・BreadcrumbList・WebSiteの3種類です。地域ビジネスはLocalBusiness、FAQページはFAQPageを追加することでリッチリザルト表示とAI引用率が同時に向上します。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    実装後はGoogle Search Consoleのリッチリザルトテストで正常認識を確認します。エラーのある構造化データはGoogleに無視されるため、品質検証が不可欠です。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

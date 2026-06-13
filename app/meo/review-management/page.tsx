@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -97,6 +98,11 @@ export default function ReviewManagementPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="口コミ対策・スマートフォンを活用する女性たち" fill className="object-cover" sizes="100vw" />
+        </section>
+
         {/* 口コミがMEOに与える影響 */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -182,6 +188,36 @@ export default function ReviewManagementPage() {
                 いただいたご意見を参考に改善してまいります。詳しくお話をお聞きするため、○○までご連絡ください」
                 のように誠実で建設的な返信を心がけます。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: 口コミ返信の重要性 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_13_37.png" alt="口コミ返信の重要性・ドキュメントを確認するビジネスパーソン" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Review Response
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  口コミ返信の重要性
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    すべての口コミに返信することは、MEOアルゴリズム評価と潜在顧客への信頼構築の両面で不可欠です。Googleは口コミへのオーナー返信率をビジネスのアクティビティ評価に組み込んでいます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    高評価口コミへの返信はリピート来店を促し、低評価口コミへの誠実な対応は第三者閲覧者に好印象を与えます。返信を通じてブランドのトーン＆マナーを表現できる機会でもあります。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    24〜48時間以内の返信を目標に、ビジネス名やサービス名を自然に含めた返信文を継続することで、SEO効果も同時に得られます。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

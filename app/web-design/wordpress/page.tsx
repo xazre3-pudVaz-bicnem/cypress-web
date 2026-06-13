@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -107,6 +108,18 @@ export default function WordPressPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+            alt="WordPressサイト制作の作業環境・ラップトップとデスク"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.05)" }} />
+        </div>
+
         {/* ===== What is WordPress ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -162,6 +175,40 @@ export default function WordPressPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 2-col text + image ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Collaboration
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  継続更新できる体制を整える
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  WordPressの最大の強みは、専門知識なしにコンテンツを継続更新できる点です。ブログ記事・お知らせ・採用情報・商品情報をスムーズに更新できる管理画面を整備します。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  操作研修・マニュアル提供はもちろん、担当者が変わっても安定運用できる体制を構築します。ヘッドレスCMS構成によるNext.js連携にも対応します。
+                </p>
+              </div>
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+                  alt="WordPress制作の打ち合わせ・タブレットを使った確認"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -105,6 +106,18 @@ export default function LocalSeoPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_14_54.png"
+            alt="グラフとノートパソコンを囲んだミーティングで分析を実施している様子"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
+        </section>
+
         {/* 地域SEOとは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -161,6 +174,29 @@ export default function LocalSeoPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 MEOとローカルSEOを両立させることで、同じ検索クエリに対してローカルパックと有機検索結果の両方に表示され、ページ上でのプレゼンスを最大化できます。Webサイトの地域コンテンツ充実はGBPの評価にも好影響を与えることが知られており、二つの施策は相乗効果があります。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: text + image */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>ローカルSEOの戦略：地域密着で競合に勝つ</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  地域SEOで成果を出すには、地域名キーワードの網羅的な整備・対応エリアページの充実・Googleビジネスプロフィールとの情報統一が基本です。「○○市 + サービス名」で上位表示されることで、購買意欲の高い地域ユーザーを継続的に獲得できます。MEOと連携することで、ローカルパックと有機検索の両方に露出し、検索結果での存在感を最大化します。
+                </p>
+              </div>
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+                  alt="2名がドキュメントとタブレットを使って打ち合わせをしている様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </section>

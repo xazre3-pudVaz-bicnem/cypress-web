@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -96,6 +97,11 @@ export default function StoreMarketingPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="店舗集客・来店導線設計" fill className="object-cover" sizes="100vw" />
+        </section>
+
         {/* 来店につながるMEO設計 */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -151,6 +157,36 @@ export default function StoreMarketingPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: 来店導線設計 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="来店導線設計・デジタルマーケティング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Visit Funnel Design
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  来店導線設計
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    MEOで上位表示を達成しても、来店につながる導線が設計されていなければ集客効果は半減します。電話ボタン・経路案内・予約システムの最適化が来店転換率を決定します。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    地域検索の80%以上がスマートフォンからであるため、モバイルファーストの視点で「ワンタップで来店行動できる」設計が不可欠です。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    写真・口コミ・Q&Aを充実させて来店前の不安を解消し、予約・電話・経路案内のすべての導線を最適化することで来店数を継続的に増やします。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

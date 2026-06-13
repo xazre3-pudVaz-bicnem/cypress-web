@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -120,6 +121,17 @@ export default function RecruitPage() {
           </div>
         </nav>
 
+        {/* ===== Full-width visual break ===== */}
+        <section className="relative overflow-hidden w-full" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+            alt="スマートフォンを使う2人の女性スタッフ"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </section>
+
         {/* ===== What it Means to Work at Cypress ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -197,17 +209,28 @@ export default function RecruitPage() {
                 働く環境
               </h2>
             </div>
-            <div className="max-w-2xl">
-              {CONDITIONS.map((item) => (
-                <div
-                  key={item.label}
-                  className="flex items-baseline justify-between py-5"
-                  style={{ borderBottom: "1px solid #F0EDE6" }}
-                >
-                  <span className="text-[14px]" style={{ color: "#9CA3AF" }}>{item.label}</span>
-                  <span className="font-semibold text-[15px]" style={{ color: "#0F172A" }}>{item.value}</span>
-                </div>
-              ))}
+            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
+              <div className="relative overflow-hidden" style={{ height: "280px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="フルリモートで快適に働くオフィス環境"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                {CONDITIONS.map((item) => (
+                  <div
+                    key={item.label}
+                    className="flex items-baseline justify-between py-5"
+                    style={{ borderBottom: "1px solid #F0EDE6" }}
+                  >
+                    <span className="text-[14px]" style={{ color: "#9CA3AF" }}>{item.label}</span>
+                    <span className="font-semibold text-[15px]" style={{ color: "#0F172A" }}>{item.value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="mt-8">
               <Link href="/recruit/environment" className="text-[13px] hover:underline" style={{ color: "#6B7280" }}>

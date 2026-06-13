@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -121,6 +122,18 @@ export default function SeoIndexPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "380px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            alt="SEO対策・アクセス解析の実施"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
+        </section>
+
         {/* SEO対策とは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -205,6 +218,29 @@ export default function SeoIndexPage() {
                   </svg>
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: image + text — SEOの3つの柱 */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/1.png"
+                  alt="複数人でグラフ・資料を確認しているミーティングの様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>SEOの3つの柱：技術・コンテンツ・信頼</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  現代のSEOは「テクニカル基盤」「コンテンツ品質」「外部評価」という3つの軸で評価されます。技術的に正しく整備されたサイトに、ユーザーの検索意図を満たす高品質なコンテンツを積み上げ、外部からの信頼シグナルを獲得することで、中長期的に安定した検索順位を実現できます。どれか一つが欠けても最大の効果は得られません。
+                </p>
+              </div>
             </div>
           </div>
         </section>

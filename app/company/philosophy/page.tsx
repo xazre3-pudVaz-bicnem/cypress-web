@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -77,8 +78,17 @@ export default function PhilosophyPage() {
         </section>
 
         {/* Main philosophy — dark section */}
-        <section className="py-24 md:py-32" style={{ background: "#0F172A" }}>
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#0F172A" }}>
+          <div className="absolute inset-0">
+            <Image
+              src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+              alt="サイプレスの理念"
+              fill
+              className="object-cover opacity-30"
+              sizes="100vw"
+            />
+          </div>
+          <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-8" style={{ color: "#475569" }}>
                 Mission

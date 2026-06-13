@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -102,6 +103,18 @@ export default function ChatbotPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            alt="AIチャットボットのデジタルインターフェース・タイピング"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+        </div>
+
         {/* ===== What is AI Chatbot ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -157,6 +170,40 @@ export default function ChatbotPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 2-col DIGITAL_PHONE + text ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+                  alt="AIチャットボット・スマートフォンとデジタルアイコン"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Deployment
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  複数チャネルへの展開
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  WebサイトへのJavaScript埋め込みだけでなく、LINE公式アカウント・Slack・NotionなどへのBot連携も可能です。顧客・社員がすでに使っているプラットフォームに直接組み込むことで、利用率が高まります。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  RAGによる自社データとの連携で、一般的なAIでは答えられない社内固有の質問にも正確に回答できます。
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -61,6 +62,17 @@ export default function ProfilePage() {
               株式会社サイプレスの基本情報一覧です。MEO・SEO・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、地域中小企業のWeb集客を支援しています。
             </p>
           </div>
+        </section>
+
+        {/* Visual break — handshake */}
+        <section className="relative overflow-hidden w-full" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+            alt="ビジネスパートナーとの信頼関係を象徴する握手"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
         </section>
 
         {/* Profile table */}

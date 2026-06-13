@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -102,6 +103,18 @@ export default function WorkflowPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            alt="AIワークフロー改善のデジタル会議・プロセス設計"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
+        </div>
+
         {/* ===== What is Workflow ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -157,6 +170,40 @@ export default function WorkflowPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== ワークフロー改善の効果 2-col ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_14_54.png"
+                  alt="ワークフロー改善の効果測定・グラフ分析ミーティング"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Impact
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  ワークフロー改善の効果
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  単発の自動化ではなく、業務フロー全体を見直すことで、より大きな生産性向上が実現します。情報の流れを整理し、ボトルネックを解消することで、チーム全体のスピードが上がります。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  導入後のデータ分析・継続的な改善もサポートします。小さな自動化から始めて、段階的にスコープを広げるアプローチで無理なく進めます。
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -197,6 +198,39 @@ export default function SalesRecruitPage() {
                   <dd className="text-[14px] leading-relaxed" style={{ color: "#374151" }}>{row.value}</dd>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== Consulting visual — 2 column ===== */}
+        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative overflow-hidden" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+                  alt="タブレットを使ったコンサルティング提案の様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Key Points
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0F172A" }}
+                >
+                  仕事内容のポイント
+                </h2>
+                <div className="space-y-4 text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  <p>単なる商品販売ではなく、クライアントの経営課題を深く理解してから最適な施策を提案するコンサルティング型の営業スタイルです。</p>
+                  <p>MEO・SEO・AIO・ホームページ制作・SNS運用・AI活用という6つの領域を組み合わせ、集客の根本的な改善を実現します。</p>
+                  <p>データと成果を軸に話すため、クライアントからの信頼を得やすく、長期的な関係構築につながります。</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

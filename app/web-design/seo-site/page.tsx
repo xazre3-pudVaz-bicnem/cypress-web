@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -117,6 +118,17 @@ export default function SeoSitePage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            alt="SEO対応サイトのアナリティクス確認"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+
         {/* ===== Concept ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -172,6 +184,40 @@ export default function SeoSitePage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ===== SEOサイト設計のポイント 2-col ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+                  alt="SEOサイト設計の提案・資料確認"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Design Points
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  SEOサイト設計のポイント
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  SEOに強いサイトを作るには、URL構造・サイト階層・内部リンク・コンテンツ計画を制作開始前に設計することが不可欠です。後から変更しようとすると検索評価に影響が出るリスクがあります。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  サイプレスはヒアリング段階からキーワード戦略・競合分析を行い、公開時点から検索に強い状態のサイトを納品します。
+                </p>
+              </div>
             </div>
           </div>
         </section>

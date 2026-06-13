@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -96,6 +97,12 @@ export default function ChatgptAioPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="ChatGPT対策・生成AI時代の情報設計" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+        </section>
+
         {/* ChatGPTに引用されるための情報設計 */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -177,6 +184,36 @@ export default function ChatgptAioPage() {
                 両方の評価への影響を考慮して設定します。SEO対策の予算でAIO効果も同時に得られる
                 効率的なアプローチを提案します。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: ChatGPT引用のポイント */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="ChatGPT引用のポイント・ラップトップアナリティクス" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Citation Points
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  ChatGPT引用のポイント
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    ChatGPTに引用されやすいコンテンツには共通点があります。「○○とは△△です」という明確な定義文、箇条書きによる構造化、具体的な数字・事例の掲載が引用しやすさを高めます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    業界の専門的な疑問への詳細な回答は特に引用価値が高く、FAQPage Schemaの実装と組み合わせることでGoogleとAIの両方に情報を明確に伝えられます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    著者情報・会社情報の構造化・E-E-A-T要素の整備・メディア掲載実績の明示が、ChatGPTに「信頼できる情報源」として認識されるための核心的な施策です。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

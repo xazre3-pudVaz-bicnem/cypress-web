@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -96,6 +97,19 @@ export default function AioIndexPage() {
               質問に回答する際に、自社の情報を引用・推薦するよう最適化する新しい施策です。
               AI検索が急速に普及する今、SEOと並ぶ重要な集客戦略として注目されています。
             </p>
+          </div>
+        </section>
+
+        {/* Full-width image after hero with text overlay */}
+        <section className="relative" style={{ height: "400px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="AI検索最適化・AIO対策" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.6)" }} />
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-6xl mx-auto px-6">
+              <p className="text-white font-black leading-tight" style={{ fontSize: "clamp(20px, 3vw, 36px)" }}>
+                ChatGPT・Gemini・Perplexityに<br />引用される企業になる。
+              </p>
+            </div>
           </div>
         </section>
 
@@ -240,6 +254,36 @@ export default function AioIndexPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: AIOとSEOの違い */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="AIOとSEOの違い・デジタル環境でのタイピング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  AIO vs SEO
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  AIOとSEOの違い
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    SEOがGoogle検索での順位改善を目的とするのに対し、AIOはChatGPT・Gemini・Perplexityなど生成AIが回答を生成する際に自社情報を引用・推薦させることを目的とします。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    AIOとSEOは競合ではなく補完関係にあります。コンテンツ品質・権威性構築・構造化データ実装はどちらにも有効であり、SEO対策の延長線上でAIO対策を実施することで相乗効果が生まれます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    AIO特有の施策として、引用しやすい文章構造・FAQ形式コンテンツ・E-E-A-T要素の明示・著者情報の構造化などがあります。これらをSEO施策と組み合わせることが最も効率的です。
+                  </p>
+                </div>
               </div>
             </div>
           </div>

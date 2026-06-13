@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -82,6 +83,17 @@ export default function ContactPage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
+              {/* Handshake image — trust visual */}
+              <div className="relative overflow-hidden" style={{ height: "240px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+                  alt="信頼のパートナーシップを象徴するビジネス握手"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 320px"
+                />
+              </div>
+
               {/* Contact Info */}
               <ScrollReveal delay={0.1}>
                 <div

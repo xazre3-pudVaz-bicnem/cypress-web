@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -98,6 +99,12 @@ export default function MeoIndexPage() {
               購買意欲の高いユーザーに直接リーチできます。
             </p>
           </div>
+        </section>
+
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "400px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="MEO対策・Googleマップ集客のデジタル戦略" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.1)" }} />
         </section>
 
         {/* MEO対策とは */}
@@ -224,6 +231,36 @@ export default function MeoIndexPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: MEOと口コミの関係 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="MEOと口コミの関係・スマートフォンを使う女性たち" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Reviews &amp; MEO
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  MEOと口コミの関係
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    Googleマップでの順位を決めるアルゴリズムにおいて、口コミは「知名度（Prominence）」評価の中核を担います。口コミ件数・平均評価スコア・返信率・最新性がすべて順位に影響します。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    消費者の87%がオンライン口コミを読んでから地域ビジネスを利用するかを決定します。つまり口コミはMEO順位だけでなく、来店転換率にも直接影響する集客の要です。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    自然に高評価口コミを増やすQRコード導線の設計や、ネガティブ口コミへの誠実な返信戦略が、長期的なMEO成果の土台になります。
+                  </p>
+                </div>
               </div>
             </div>
           </div>

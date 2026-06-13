@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -96,6 +97,12 @@ export default function GenerativeSearchPage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="生成AI検索・AI Overview対策" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.4)" }} />
+        </section>
+
         {/* 生成AI検索とは */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -150,6 +157,36 @@ export default function GenerativeSearchPage() {
                 </div>
               ))}
               <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: 生成AI検索の特徴 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  Generative Search
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  生成AI検索で引用されるために
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    Google AI OverviewやPerplexityは複数のソースをスキャンして回答を生成します。引用されるためには、明確な見出し構造・具体的な数字・FAQ形式のコンテンツが不可欠です。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    「ゼロクリック問題」にも対応が必要です。AIが回答を生成することでクリックなしに情報提供される一方、引用されることでブランド認知が高まるため、より深いサービスへの誘導設計が重要です。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    構造化データの実装・業界メディア掲載・Googleナレッジパネルへの登録が、生成AI検索での引用確率を高める主要な施策です。
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_18_57.png" alt="生成AI検索・デジタルオーバーレイのカンファレンス" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
             </div>
           </div>
         </section>

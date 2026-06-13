@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -112,6 +113,12 @@ export default function GoogleBusinessProfilePage() {
           </div>
         </section>
 
+        {/* Full-width image after hero */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="Googleビジネスプロフィール最適化・デジタルマーケティング" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.1)" }} />
+        </section>
+
         {/* GBPとは */}
         <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -193,6 +200,36 @@ export default function GoogleBusinessProfilePage() {
                 重要なのは定期性で、月2〜4枚のペースで新しい写真を追加し続けることが、
                 アルゴリズム評価の維持・向上につながります。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: GBP最適化のポイント */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+                  GBP Optimization
+                </p>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                  GBP最適化のポイント
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    Googleビジネスプロフィールを効果的に最適化するためには、単に情報を埋めるだけでなく、戦略的なアプローチが必要です。競合分析を行い、上位表示されている企業の設定を参考にすることが重要です。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    カテゴリ設定・NAP情報の一貫性・写真の定期更新・週1回以上の投稿という4つの柱を継続的に実施することで、Googleに「アクティブで信頼できるビジネス」として評価されます。
+                  </p>
+                  <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                    日本の中小企業の約70%がGBPを最低限しか設定していないため、徹底的に最適化するだけで競合の多くを追い抜くことが可能です。
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
+                <Image src="/ChatGPT Image 2026年6月13日 19_14_54.png" alt="GBP最適化の分析・戦略会議" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
             </div>
           </div>
         </section>

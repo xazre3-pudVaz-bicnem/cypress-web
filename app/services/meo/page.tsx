@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -81,6 +82,18 @@ export default function MeoServicePage() {
               「近くの〇〇」でGoogleマップに表示されるかどうかが、地域ビジネスの集客を左右する時代です。Googleビジネスプロフィールの最適化から口コミ管理・競合調査まで、地域密着型の集客を継続的に支援します。
             </p>
           </div>
+        </section>
+
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+            alt="スマートフォンとデジタルアイコンによるMEO対策のイメージ"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
         </section>
 
         {/* MEO対策とは */}
@@ -177,6 +190,29 @@ export default function MeoServicePage() {
                   {industry}
                 </span>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Googleマップからの集客を仕組み化する */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "360px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+                  alt="スマートフォンでMEO対策の効果を確認する女性たち"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>Googleマップからの集客を、仕組み化する</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  MEO対策の本質は、Googleマップで上位表示されることだけではありません。表示された後に来店・問い合わせにつながる導線設計まで含めた、集客の仕組みを整えることが重要です。写真・口コミ・投稿・サービス情報を継続的に更新することで、Googleからの評価が高まり、安定した上位表示を維持できます。
+                </p>
+              </div>
             </div>
           </div>
         </section>

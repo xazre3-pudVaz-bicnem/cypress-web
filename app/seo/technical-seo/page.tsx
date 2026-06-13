@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -113,6 +114,18 @@ export default function TechnicalSeoPage() {
           </div>
         </section>
 
+        {/* Full-width image */}
+        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            alt="デジタルオーバーレイとキーボード入力によるWeb技術のイメージ"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.35)" }} />
+        </section>
+
         {/* テクニカルSEOとは */}
         <section className="py-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -169,6 +182,29 @@ export default function TechnicalSeoPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 具体的な改善目標としては、PageSpeed InsightsでモバイルのPerformanceスコア70以上・LCP 2.5秒以内・CLS 0.1以下を目指します。Next.jsや最新の画像最適化技術を活用することで、高いデザイン品質を維持しながらこれらの基準を達成できます。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2-col: image + text — Core Web Vitals */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "320px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+                  alt="ノートパソコンでアクセス解析ダッシュボードを確認している様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>Core Web Vitalsの3指標を理解する</h2>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  Googleのランキングシグナルとして機能するCore Web Vitalsは、LCP（最大コンテンツの描画）・CLS（視覚的安定性）・INP（入力応答性）の3指標で構成されます。LCPは2.5秒以内・CLSは0.1以下が目標値です。Next.jsの画像最適化・コード分割・CDN活用を組み合わせることで、高いデザイン品質を保ちながらこれらの基準を達成できます。
+                </p>
+              </div>
             </div>
           </div>
         </section>

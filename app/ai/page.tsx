@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -100,6 +101,18 @@ export default function AiIndexPage() {
           </div>
         </nav>
 
+        {/* ===== Hero Image ===== */}
+        <div className="relative w-full overflow-hidden" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            alt="AI活用支援のデジタルオーバーレイ・タイピング作業"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+        </div>
+
         {/* ===== What is AI Support ===== */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
@@ -188,6 +201,40 @@ export default function AiIndexPage() {
               <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                 サイプレスでは、AI活用支援とWebマーケティング支援を組み合わせたトータルの集客改善も承っています。現在のマーケティング状況とリソースをお聞きし、AIをどこにどう組み込むかをご提案します。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== AI活用で変わること 2-col ===== */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+                  alt="AI活用支援のデジタル会議・データ活用"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
+                  Transformation
+                </p>
+                <h2
+                  className="font-black leading-tight tracking-tight mb-6"
+                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
+                >
+                  AI活用で変わること
+                </h2>
+                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  AIを業務に組み込むことで、繰り返し作業の時間が削減され、担当者はより創造的・判断的な業務に集中できるようになります。中小企業でも、大企業と同等の情報処理・コンテンツ発信が可能になります。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  自動化・チャットボット・コンテンツ生成・ワークフロー改善—どこから始めればよいか分からない段階からご相談ください。
+                </p>
+              </div>
             </div>
           </div>
         </section>

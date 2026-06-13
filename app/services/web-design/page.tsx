@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -80,6 +81,18 @@ export default function WebDesignServicePage() {
               「見た目がきれい」だけのサイトでは集客できません。サイプレスはSEO・AIO・CV設計を最初から組み込んだ、成果にこだわったホームページ制作を行います。公開して終わりではなく、改善し続けるサイトを作ります。
             </p>
           </div>
+        </section>
+
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+            alt="ラップトップと資料を前に打ち合わせする2人 — Web制作の提案・ヒアリングシーン"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
         </section>
 
         {/* ホームページ制作の考え方 */}
@@ -188,7 +201,34 @@ export default function WebDesignServicePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ホームページ制作についてよくある質問" bgColor="#F9F8F5" />
+        {/* 制作の進め方・ビジュアル 2-col */}
+        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative" style={{ height: "360px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="ラップトップ・デスク・観葉植物のある落ち着いた作業環境 — Web制作の現場"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Approach</p>
+                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>成果から逆算して、サイトを設計する</h2>
+                <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  サイプレスのWeb制作は、「どんなサイトを作るか」より「どんな成果を出すか」から考えます。問い合わせ数・採用応募数・ECの売上など、クライアントが本当に必要としている数値を定義し、そこから逆算してデザイン・コンテンツ・技術構成を決定します。
+                </p>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  デザインの美しさと、集客・CV設計は両立できます。見た目の洗練と、Googleに評価される内部構造と、ユーザーが自然に問い合わせたくなる導線を、ひとつのサイトに統合して納品します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={faqItems} heading="ホームページ制作についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ホームページ制作のご相談"

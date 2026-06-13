@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
@@ -81,6 +82,18 @@ export default function SeoServicePage() {
               検索エンジンで上位表示されることは、広告費に頼らない持続的な集客の基盤です。キーワード調査から内部SEO・コンテンツ制作・テクニカル改善まで、一貫した戦略で自然検索からのアクセスを継続的に増やします。
             </p>
           </div>
+        </section>
+
+        {/* Visual section */}
+        <section className="relative" style={{ height: "400px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            alt="アナリティクスダッシュボードを表示するラップトップ — SEO対策の効果測定"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
         </section>
 
         {/* SEO対策とは */}
@@ -179,8 +192,35 @@ export default function SeoServicePage() {
           </div>
         </section>
 
-        {/* 対応業種 */}
+        {/* 継続的な改善サイクル — 2-col image+text */}
         <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Continuous Improvement</p>
+                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>継続的な改善サイクルが、成果を積み上げる</h2>
+                <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
+                  SEOは一度設定すれば終わりではありません。Googleのアルゴリズムは常に進化し、競合も施策を更新し続けています。データを読み、仮説を立て、改善を実行するPDCAサイクルを継続することで、検索順位は着実に積み上がります。
+                </p>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                  月次レポートによる数値の可視化、改善提案の実施、効果検証というサイクルを繰り返すことで、単発の施策では届かない安定した集客基盤を構築できます。サイプレスはその伴走パートナーです。
+                </p>
+              </div>
+              <div className="relative" style={{ height: "360px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_14_54.png"
+                  alt="グラフとラップトップを使ってSEO分析を行うミーティングの様子"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 対応業種 */}
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
             <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>
