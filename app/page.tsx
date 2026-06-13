@@ -27,9 +27,9 @@ export default function Home() {
       <Header />
       <main>
         {/* ============================================================
-            1. HERO — hero.png full background, no CTA
+            1. HERO — hero.png full background
         ============================================================ */}
-        <section className="relative overflow-hidden" style={{ minHeight: "88vh" }}>
+        <section className="relative overflow-hidden" style={{ minHeight: "92vh" }}>
           <Image
             src="/hero.png"
             alt="株式会社サイプレス"
@@ -37,19 +37,36 @@ export default function Home() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0" style={{ background: "rgba(8,14,30,0.62)" }} />
-          <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center" style={{ minHeight: "88vh" }}>
+          <div className="absolute inset-0" style={{ background: "rgba(10,18,36,0.65)" }} />
+          <div
+            className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 flex flex-col justify-center"
+            style={{ minHeight: "92vh" }}
+          >
             <div className="max-w-2xl">
-              <p className="text-[11px] font-medium tracking-[0.22em] uppercase mb-8" style={{ color: "rgba(255,255,255,0.5)" }}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.3em",
+                  color: "rgba(255,255,255,0.45)",
+                  fontSize: "11px",
+                }}
+              >
                 AI × Web Marketing
               </p>
               <h1
-                className="font-black text-white leading-[1.1] tracking-tight mb-8"
-                style={{ fontSize: "clamp(38px, 5.5vw, 78px)" }}
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "clamp(40px,6vw,82px)",
+                  color: "#ffffff",
+                  lineHeight: 1.1,
+                  fontWeight: 700,
+                  marginTop: "24px",
+                  marginBottom: "28px",
+                }}
               >
                 AIで、地域企業の<br />集客を変える。
               </h1>
-              <p className="text-[16px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.72)", maxWidth: "520px" }}>
+              <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "16px", lineHeight: "1.9", maxWidth: "520px" }}>
                 株式会社サイプレスは、MEO・SEO・AIO・ホームページ制作を通じて、<br className="hidden md:block" />
                 中小企業のWeb集客を支援するマーケティングカンパニーです。
               </p>
@@ -58,45 +75,50 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            2. ABOUT
+            2. ABOUT — 2-column, DESK image right
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-start">
+        <section className="py-28 md:py-36" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+              {/* LEFT: text */}
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>About</p>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                  }}
+                >
+                  About
+                </p>
                 <h2
-                  className="font-black leading-tight tracking-tight mb-8"
-                  style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#0F172A" }}
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "clamp(26px,3.5vw,40px)",
+                    color: "#0d1b2a",
+                    lineHeight: 1.3,
+                    marginTop: "20px",
+                    marginBottom: "28px",
+                  }}
                 >
                   地域企業のWeb集客を、<br />設計から運用まで支援する。
                 </h2>
-                <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
                   多くの中小企業・地域ビジネスは、優れたサービスや商品を持ちながら、Webやデジタルマーケティングの壁に阻まれ、本来届くべき顧客に届いていません。Webサイトはあるが集客できない。Googleマップに表示されない。SNSを運用しているが成果が見えない。そういった課題は、設計と運用の両方が揃って初めて解決します。
                 </p>
-                <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
                   サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援という6つの領域を横断しながら、集客の仕組みを根本から整えます。単発の制作だけでなく、公開後の改善・分析・更新まで継続的に関わることで、検索されやすい状態を維持します。
                 </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  AI活用により、コンテンツ制作・投稿作成・データ分析の速度を上げ、これまで大企業のみが持てた情報発信の体制を、中小企業でも実現できるよう支援しています。
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
+                  AI活用により、コンテンツ制作・投稿作成・データ分析の速度を上げ、これまで大企業のみが持てた情報発信の体制を、中小企業でも実現できるよう支援しています。創業以来、全国の中小企業・地域ビジネスの集客を支援してきた経験をもとに、現場に即した実践的な提案を行います。
                 </p>
-              </div>
-              <div>
-                <div className="relative w-full mb-8" style={{ paddingBottom: "75%" }}>
-                  <Image
-                    src="/ChatGPT Image 2026年6月13日 19_10_29.png"
-                    alt="落ち着いたオフィス環境でのWeb制作・マーケティング業務"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="space-y-8">
+                <div style={{ marginTop: "40px" }}>
                   {[
                     {
                       num: "01",
                       title: "MEO・SEO・AIOを横断した設計",
-                      body: "Googleマップ・自然検索・AI検索、それぞれの集客経路を設計段階から考慮した提案を行います。",
+                      body: "Googleマップ・自然検索・AI検索の3つを分断せず、一体で設計することで複数の集客経路を構築します。",
                     },
                     {
                       num: "02",
@@ -110,40 +132,94 @@ export default function Home() {
                     },
                     {
                       num: "04",
-                      title: "地域ビジネスへの理解",
+                      title: "地域ビジネスへの深い理解",
                       body: "店舗・施設・士業・医療・建設業など、地域密着型のビジネス特性を理解した支援を行います。",
                     },
                   ].map((item) => (
-                    <div key={item.num} className="flex gap-6" style={{ borderTop: "1px solid #F0EDE6", paddingTop: "24px" }}>
-                      <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                    <div
+                      key={item.num}
+                      style={{
+                        display: "flex",
+                        gap: "20px",
+                        padding: "20px 0",
+                        borderTop: "1px solid #ece8e0",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          color: "#9ca3af",
+                          fontSize: "12px",
+                          minWidth: "28px",
+                          paddingTop: "2px",
+                        }}
+                      >
+                        {item.num}
+                      </span>
                       <div>
-                        <p className="font-bold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
-                        <p className="text-[14px] leading-relaxed" style={{ color: "#6B7280" }}>{item.body}</p>
+                        <p
+                          style={{
+                            fontFamily: "var(--font-serif)",
+                            fontWeight: 600,
+                            fontSize: "15px",
+                            color: "#0d1b2a",
+                            marginBottom: "6px",
+                          }}
+                        >
+                          {item.title}
+                        </p>
+                        <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.body}</p>
                       </div>
                     </div>
                   ))}
                 </div>
+              </div>
+              {/* RIGHT: DESK image — full column height, no border-radius */}
+              <div style={{ position: "relative", height: "580px" }}>
+                <Image
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  alt="サイプレスの働く環境"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.06)" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            3. BUSINESS — 6事業を縦に読ませる
+            3. BUSINESS — 6 services, vertical rows
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-14">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Services</p>
+        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div style={{ marginBottom: "56px" }}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.25em",
+                  color: "#9ca3af",
+                  fontSize: "11px",
+                  marginBottom: "16px",
+                }}
+              >
+                Services
+              </p>
               <h2
-                className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#0F172A" }}
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "clamp(26px,3.5vw,42px)",
+                  color: "#0d1b2a",
+                  lineHeight: 1.3,
+                  fontWeight: 700,
+                }}
               >
                 6つの領域で、<br />集客を設計する。
               </h2>
             </div>
 
-            <div className="space-y-0">
+            <div>
               {[
                 {
                   num: "01",
@@ -197,17 +273,37 @@ export default function Home() {
                 <div key={svc.num}>
                   <div
                     className="grid md:grid-cols-[80px_1fr_auto] gap-6 md:gap-10 py-10"
-                    style={{ borderTop: "1px solid #E8E4DC" }}
+                    style={{ borderTop: "1px solid #e8e4dc" }}
                   >
                     <div>
-                      <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{svc.num}</span>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          color: "#9ca3af",
+                          fontSize: "12px",
+                        }}
+                      >
+                        {svc.num}
+                      </span>
                     </div>
                     <div>
-                      <h3 className="font-black text-[18px] mb-3" style={{ color: "#0F172A" }}>{svc.label}</h3>
-                      <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>{svc.body}</p>
+                      <h3
+                        style={{
+                          fontFamily: "var(--font-serif)",
+                          fontSize: "18px",
+                          fontWeight: 700,
+                          color: "#0d1b2a",
+                          marginBottom: "12px",
+                        }}
+                      >
+                        {svc.label}
+                      </h3>
+                      <p style={{ fontSize: "14px", lineHeight: "1.9", color: "#374151", marginBottom: "16px" }}>
+                        {svc.body}
+                      </p>
                       <div className="flex flex-wrap gap-3">
                         {svc.related.map((href, j) => (
-                          <Link key={href} href={href} className="text-[12px] hover:underline" style={{ color: "#6B7280" }}>
+                          <Link key={href} href={href} className="text-[12px] hover:underline" style={{ color: "#6b7280" }}>
                             → {svc.relatedLabels[j]}
                           </Link>
                         ))}
@@ -216,7 +312,7 @@ export default function Home() {
                     <div className="md:text-right">
                       <Link
                         href={svc.href}
-                        className="inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors"
+                        className="inline-flex items-center gap-1.5 text-[13px] transition-colors"
                         style={{ color: "#374151" }}
                       >
                         詳しく見る
@@ -227,150 +323,269 @@ export default function Home() {
                     </div>
                   </div>
                   {i === 2 && (
-                    <div className="relative w-full my-4" style={{ height: "280px" }}>
+                    <div style={{ position: "relative", height: "260px", overflow: "hidden", marginBottom: "0" }}>
                       <Image
                         src="/ChatGPT Image 2026年6月13日 19_18_57.png"
-                        alt="Webマーケティング戦略の会議"
+                        alt="Webマーケティング支援の実績"
                         fill
                         className="object-cover"
                         sizes="100vw"
                       />
-                      <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
+                      <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.35)" }} />
+                      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
+                        <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+                          <p
+                            style={{
+                              fontFamily: "var(--font-serif)",
+                              color: "rgba(255,255,255,0.9)",
+                              fontSize: "20px",
+                              fontWeight: 500,
+                            }}
+                          >
+                            MEO・SEO・AIOを組み合わせた、包括的な集客設計
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            4. PHILOSOPHY — dark section, large copy
+            4. PHILOSOPHY — dark section, DIGITAL_BG background
         ============================================================ */}
-        <section className="py-28 md:py-40 relative" style={{ background: "#0F172A" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-10" style={{ color: "#475569" }}>Philosophy</p>
+        <section
+          style={{
+            background: "#0d1b2a",
+            position: "relative",
+            padding: "120px 0",
+            overflow: "hidden",
+          }}
+        >
+          <div style={{ position: "absolute", inset: 0 }}>
+            <Image
+              src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="100vw"
+              style={{ opacity: 0.12 }}
+            />
+          </div>
+          <div
+            style={{
+              position: "relative",
+              zIndex: 10,
+              maxWidth: "72rem",
+              margin: "0 auto",
+              padding: "0 40px",
+            }}
+          >
+            <div style={{ maxWidth: "760px" }}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.25em",
+                  color: "rgba(255,255,255,0.3)",
+                  fontSize: "11px",
+                }}
+              >
+                Philosophy
+              </p>
               <h2
-                className="font-black text-white leading-[1.1] tracking-tight mb-10"
-                style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "clamp(28px,4vw,52px)",
+                  color: "#ffffff",
+                  lineHeight: 1.2,
+                  marginTop: "24px",
+                  marginBottom: "36px",
+                  fontWeight: 700,
+                }}
               >
                 地域企業が、<br />正しく選ばれる仕組みをつくる。
               </h2>
-              <p className="text-[16px] leading-[1.9] mb-8" style={{ color: "#94A3B8" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.9", color: "rgba(255,255,255,0.65)", marginBottom: "20px" }}>
                 素晴らしいサービス・技術・想いを持ちながら、Webやデジタルマーケティングの壁に阻まれ、本来届くべき顧客に届いていない中小企業・地域ビジネスが多く存在します。
               </p>
-              <p className="text-[16px] leading-[1.9] mb-12" style={{ color: "#94A3B8" }}>
-                私たちは、AIとWebマーケティングを活用して集客の仕組みを根本から変え、正しい会社が正しく選ばれる世界の実現を目指しています。中小企業が大企業と対等なデジタル競争力を持てるよう、継続的に支援します。
+              <p style={{ fontSize: "16px", lineHeight: "1.9", color: "rgba(255,255,255,0.65)", marginBottom: "40px" }}>
+                私たちは、AIとWebマーケティングを活用して集客の仕組みを根本から変え、正しい会社が正しく選ばれる世界の実現を目指しています。
               </p>
-              <Link
+              <a
                 href="/company/philosophy"
-                className="inline-flex items-center gap-2 text-[14px] font-medium transition-colors"
-                style={{ color: "#94A3B8", borderBottom: "1px solid #334155", paddingBottom: "2px" }}
+                style={{
+                  fontSize: "13px",
+                  color: "rgba(255,255,255,0.5)",
+                  borderBottom: "1px solid rgba(255,255,255,0.2)",
+                  paddingBottom: "2px",
+                }}
               >
                 企業理念を読む →
-              </Link>
+              </a>
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            5. STRENGTH — numbered, horizontal rules
+            5. STRENGTH — image left, list right
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-14">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Strength</p>
-              <h2
-                className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#0F172A" }}
+        <section style={{ background: "#FFFFFF", padding: "120px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p
+              style={{
+                fontFamily: "var(--font-display)",
+                letterSpacing: "0.25em",
+                color: "#9ca3af",
+                fontSize: "11px",
+                marginBottom: "16px",
+              }}
+            >
+              Our Strength
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(24px,3vw,38px)",
+                color: "#0d1b2a",
+                marginBottom: "60px",
+                fontWeight: 700,
+              }}
+            >
+              サイプレスが選ばれる理由。
+            </h2>
+            <div
+              className="grid md:grid-cols-[1fr_1.3fr] gap-16"
+              style={{ alignItems: "start" }}
+            >
+              {/* Image — left column, tall */}
+              <div
+                className="order-2 md:order-1"
+                style={{ position: "relative", height: "500px" }}
               >
-                サイプレスが選ばれる理由。
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-[1fr_1.2fr] gap-16">
-              <div className="relative" style={{ height: "480px", overflow: "hidden" }}>
                 <Image
                   src="/1.png"
-                  alt="グラフを確認しながら戦略を議論するチームミーティング"
+                  alt="Webマーケティング戦略会議"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 42vw"
                 />
+                <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.1)" }} />
               </div>
-              <div>
-              {[
-                {
-                  num: "01",
-                  title: "集客設計から逆算したWeb制作",
-                  body: "「見た目のいいサイトを作る」のではなく、「どんな人に、どのキーワードで検索されて、どんな行動をとってほしいか」を起点にサイト設計を行います。デザインより、集客動線と検索設計を先に考えます。",
-                },
-                {
-                  num: "02",
-                  title: "MEO・SEO・AIOを横断した支援",
-                  body: "Googleマップ・自然検索・AI検索はそれぞれ異なる集客経路です。3つを分断して考えず、一体で設計することで、複数の集客経路から継続的に流入を生み出す体制を構築します。",
-                },
-                {
-                  num: "03",
-                  title: "AIを活用した継続運用",
-                  body: "ブログ記事・SNS投稿・Googleビジネスプロフィールへの投稿をAIで効率化し、コンテンツの継続的な更新体制を実現します。更新が止まると検索評価も下がる、という問題を解決します。",
-                },
-                {
-                  num: "04",
-                  title: "地域ビジネスへの深い理解",
-                  body: "店舗集客・地域名キーワード・来店導線・口コミなど、地域密着型ビジネスに特有の課題と打ち手を熟知しています。全国の幅広い業種に対応しています。",
-                },
-                {
-                  num: "05",
-                  title: "制作後の改善まで対応",
-                  body: "サイト公開・MEO設定後も、アクセス解析・順位計測・改善提案を継続します。制作して終わりではなく、成果が出るまで関わり続けることを大切にしています。",
-                },
-              ].map((item, i) => (
-                <div
-                  key={item.num}
-                  className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-10 py-10"
-                  style={{ borderTop: "1px solid #F0EDE6" }}
-                >
-                  <div>
-                    <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{item.num}</span>
+              {/* List — right column */}
+              <div className="order-1 md:order-2">
+                {[
+                  {
+                    num: "01",
+                    title: "集客設計から逆算したWeb制作",
+                    body: "「見た目のいいサイトを作る」のではなく、「どんな人に、どのキーワードで検索されて、どんな行動をとってほしいか」を起点にサイト設計を行います。デザインより、集客動線と検索設計を先に考えます。",
+                  },
+                  {
+                    num: "02",
+                    title: "MEO・SEO・AIOを横断した支援",
+                    body: "Googleマップ・自然検索・AI検索はそれぞれ異なる集客経路です。3つを分断して考えず、一体で設計することで、複数の集客経路から継続的に流入を生み出す体制を構築します。",
+                  },
+                  {
+                    num: "03",
+                    title: "AIを活用した継続運用",
+                    body: "ブログ記事・SNS投稿・Googleビジネスプロフィールへの投稿をAIで効率化し、コンテンツの継続的な更新体制を実現します。更新が止まると検索評価も下がる、という問題を解決します。",
+                  },
+                  {
+                    num: "04",
+                    title: "地域ビジネスへの深い理解",
+                    body: "店舗集客・地域名キーワード・来店導線・口コミなど、地域密着型ビジネスに特有の課題と打ち手を熟知しています。全国の幅広い業種に対応しています。",
+                  },
+                  {
+                    num: "05",
+                    title: "制作後の改善まで対応",
+                    body: "サイト公開・MEO設定後も、アクセス解析・順位計測・改善提案を継続します。制作して終わりではなく、成果が出るまで関わり続けることを大切にしています。",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.num}
+                    style={{
+                      paddingTop: "24px",
+                      paddingBottom: "24px",
+                      borderTop: "1px solid #ece8e0",
+                    }}
+                  >
+                    <div style={{ display: "flex", gap: "20px" }}>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          color: "#c4b89a",
+                          fontSize: "12px",
+                          minWidth: "28px",
+                        }}
+                      >
+                        {item.num}
+                      </span>
+                      <div>
+                        <h3
+                          style={{
+                            fontFamily: "var(--font-serif)",
+                            fontSize: "16px",
+                            color: "#0d1b2a",
+                            fontWeight: 600,
+                            marginBottom: "8px",
+                          }}
+                        >
+                          {item.title}
+                        </h3>
+                        <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.body}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-[17px] mb-3" style={{ color: "#0F172A" }}>{item.title}</h3>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
-                  </div>
-                </div>
-              ))}
-              <div style={{ borderTop: "1px solid #F0EDE6" }} />
+                ))}
+                <div style={{ borderTop: "1px solid #ece8e0" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            6. SERVICE STRUCTURE — how services work together
+            6. SERVICE STRUCTURE — #f8f6f2 background
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
             <div className="grid md:grid-cols-2 gap-16 items-start">
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Structure</p>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  Structure
+                </p>
                 <h2
-                  className="font-black leading-tight tracking-tight mb-8"
-                  style={{ fontSize: "clamp(24px, 3vw, 38px)", color: "#0F172A" }}
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "clamp(24px,3vw,38px)",
+                    color: "#0d1b2a",
+                    lineHeight: 1.3,
+                    fontWeight: 700,
+                    marginBottom: "32px",
+                  }}
                 >
                   6つの事業は、<br />連動して機能する。
                 </h2>
-                <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
                   MEO・SEO・AIO・Web制作・SNS・AI活用は、それぞれ独立したサービスではなく、互いに連動することで最大の効果を発揮します。
                 </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
                   たとえば、Googleビジネスプロフィール（MEO）を整えながら、Webサイト（SEO）のコンテンツを充実させ、AIを使ってSNSと記事の更新を継続する。この体制が揃うことで、複数の集客経路から継続的にユーザーを獲得できます。
                 </p>
               </div>
               <div>
-                <div className="relative w-full mb-8" style={{ height: "200px" }}>
+                {/* DIGITAL_PHONE image — 200px, above table */}
+                <div style={{ position: "relative", height: "200px", marginBottom: "0", overflow: "hidden" }}>
                   <Image
                     src="/ChatGPT Image 2026年6月13日 19_18_03.png"
                     alt="デジタルマーケティングの連動"
@@ -378,8 +593,9 @@ export default function Home() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
+                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.12)" }} />
                 </div>
-                <div className="space-y-0">
+                <div>
                   {[
                     { from: "MEO対策", to: "→ 地域名検索からの来店・問い合わせ" },
                     { from: "SEO対策", to: "→ キーワード検索からのサイト流入" },
@@ -387,22 +603,24 @@ export default function Home() {
                     { from: "ホームページ制作", to: "→ 問い合わせ・採用の受け皿" },
                     { from: "SNS運用", to: "→ 認知拡大・MEOとの相乗効果" },
                     { from: "AI活用支援", to: "→ 継続的な情報発信の効率化" },
-                  ].map((row, i) => (
+                  ].map((row) => (
                     <div
                       key={row.from}
                       className="flex items-center gap-4 py-4"
-                      style={{ borderBottom: "1px solid #E8E4DC" }}
+                      style={{ borderBottom: "1px solid #e8e4dc" }}
                     >
-                      <span className="text-[14px] font-semibold w-32 shrink-0" style={{ color: "#0F172A" }}>{row.from}</span>
-                      <span className="text-[13px]" style={{ color: "#6B7280" }}>{row.to}</span>
+                      <span className="text-[14px] font-semibold w-36 shrink-0" style={{ color: "#0d1b2a" }}>
+                        {row.from}
+                      </span>
+                      <span className="text-[13px]" style={{ color: "#6b7280" }}>{row.to}</span>
                     </div>
                   ))}
                 </div>
-                <div className="mt-8">
+                <div style={{ marginTop: "28px" }}>
                   <Link
                     href="/business"
-                    className="text-[13px] font-medium transition-colors hover:text-[#0F172A]"
-                    style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                    className="text-[13px] transition-colors hover:text-[#0d1b2a]"
+                    style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
                   >
                     事業内容の詳細を見る →
                   </Link>
@@ -416,41 +634,70 @@ export default function Home() {
             7. REPRESENTATIVE MESSAGE
         ============================================================ */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
             <div className="grid md:grid-cols-2 gap-16 items-start">
+              {/* LEFT: message text */}
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Message</p>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  Message
+                </p>
                 <h2
-                  className="font-black leading-tight tracking-tight mb-8"
-                  style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0F172A" }}
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "clamp(22px,2.8vw,34px)",
+                    color: "#0d1b2a",
+                    lineHeight: 1.3,
+                    fontWeight: 700,
+                    marginBottom: "32px",
+                  }}
                 >
                   正しい会社が、<br />正しく選ばれる世界をつくりたい。
                 </h2>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
                   私がサイプレスを立ち上げた理由は、「良い会社が検索されない」という現実への問題意識からです。素晴らしい技術・サービス・想いを持ちながら、Web上での露出が少ないだけで機会を逃している企業を数多く見てきました。
                 </p>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
                   AIとWebマーケティングの掛け合わせにより、これまで大企業にしかできなかったような継続的な情報発信と集客設計が、中小企業にも実現できる時代になっています。私たちはその橋渡しをする会社でありたいと考えています。
                 </p>
-                <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "32px" }}>
                   クライアントの事業に深く関わり、数字で成果を確認しながら改善を続ける。その姿勢を大切にしています。
                 </p>
                 <div>
-                  <p className="font-bold text-[15px] mb-0.5" style={{ color: "#0F172A" }}>織田 春樹</p>
-                  <p className="text-[13px]" style={{ color: "#6B7280" }}>代表取締役　株式会社サイプレス</p>
-                  <div className="mt-4">
+                  <p
+                    style={{
+                      fontFamily: "var(--font-serif)",
+                      fontWeight: 700,
+                      fontSize: "15px",
+                      color: "#0d1b2a",
+                      marginBottom: "4px",
+                    }}
+                  >
+                    織田 春樹
+                  </p>
+                  <p style={{ fontSize: "13px", color: "#6b7280" }}>代表取締役　株式会社サイプレス</p>
+                  <div style={{ marginTop: "16px" }}>
                     <Link
                       href="/company/message"
-                      className="text-[13px] font-medium transition-colors hover:text-[#0F172A]"
-                      style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                      className="text-[13px] transition-colors hover:text-[#0d1b2a]"
+                      style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
                     >
                       代表挨拶を読む →
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="space-y-6">
-                <div className="relative w-full mb-6" style={{ height: "220px" }}>
+              {/* RIGHT: HANDSHAKE image + company profile */}
+              <div>
+                {/* HANDSHAKE image — 240px, full column width, no border-radius */}
+                <div style={{ position: "relative", height: "240px", marginBottom: "0", overflow: "hidden" }}>
                   <Image
                     src="/ChatGPT Image 2026年6月13日 19_11_20.png"
                     alt="パートナーシップ・信頼関係"
@@ -458,10 +705,22 @@ export default function Home() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
+                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.08)" }} />
                 </div>
-                <div className="p-8" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
-                  <p className="text-[12px] font-semibold tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>Company Profile</p>
-                  <div className="space-y-3">
+                {/* Company profile — no shadow, no blue */}
+                <div style={{ padding: "32px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                  <p
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      letterSpacing: "0.2em",
+                      fontSize: "11px",
+                      color: "#9ca3af",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    Company Profile
+                  </p>
+                  <div>
                     {[
                       { label: "会社名", value: "株式会社サイプレス" },
                       { label: "代表取締役", value: "織田 春樹" },
@@ -469,14 +728,18 @@ export default function Home() {
                       { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
                       { label: "事業内容", value: "Webマーケティング支援全般" },
                     ].map((row) => (
-                      <div key={row.label} className="flex gap-4 text-[13px]">
-                        <span className="w-24 shrink-0" style={{ color: "#9CA3AF" }}>{row.label}</span>
+                      <div
+                        key={row.label}
+                        className="flex gap-4 text-[13px] py-3"
+                        style={{ borderBottom: "1px solid #ece8e0" }}
+                      >
+                        <span className="w-24 shrink-0" style={{ color: "#9ca3af" }}>{row.label}</span>
                         <span style={{ color: "#374151" }}>{row.value}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-5">
-                    <Link href="/company/profile" className="text-[12px]" style={{ color: "#6B7280" }}>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link href="/company/profile" className="text-[12px]" style={{ color: "#6b7280" }}>
                       会社概要 →
                     </Link>
                   </div>
@@ -487,39 +750,60 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            8. RECRUIT
+            8. RECRUIT — #f8f6f2 background
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
             <div className="grid md:grid-cols-2 gap-16 items-end">
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Recruit</p>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  Recruit
+                </p>
                 <h2
-                  className="font-black leading-tight tracking-tight mb-8"
-                  style={{ fontSize: "clamp(24px, 3vw, 38px)", color: "#0F172A" }}
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "clamp(24px,3vw,38px)",
+                    color: "#0d1b2a",
+                    lineHeight: 1.3,
+                    fontWeight: 700,
+                    marginBottom: "28px",
+                  }}
                 >
                   AI×Webマーケティングの<br />最前線で、一緒に働く仲間を募集しています。
                 </h2>
-                <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "28px" }}>
                   MEO・SEO・AIO・AI活用という成長領域で、経営者への提案から施策の実行・改善まで携わることができます。業界未経験でも、意欲があれば入社後に学べる環境を整えています。
                 </p>
-                <div className="flex flex-wrap gap-4 mb-8">
+                <div className="flex flex-wrap gap-3 mb-8">
                   {["Webマーケティング営業", "マーケター職"].map((role) => (
-                    <span key={role} className="text-[13px] px-4 py-1.5" style={{ border: "1px solid #E8E4DC", color: "#374151" }}>
+                    <span
+                      key={role}
+                      className="text-[13px] px-4 py-1.5"
+                      style={{ border: "1px solid #e8e4dc", color: "#374151", background: "#ffffff" }}
+                    >
                       {role}
                     </span>
                   ))}
                 </div>
                 <Link
                   href="/recruit"
-                  className="inline-flex items-center gap-2 text-[14px] font-medium transition-colors hover:text-[#0F172A]"
-                  style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                  className="text-[13px] transition-colors hover:text-[#0d1b2a]"
+                  style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
                 >
                   採用情報を見る →
                 </Link>
               </div>
-              <div className="space-y-4">
-                <div className="relative w-full mb-6" style={{ height: "200px" }}>
+              <div>
+                {/* WOMEN_PHONE image — 220px, right column, above stats */}
+                <div style={{ position: "relative", height: "220px", marginBottom: "0", overflow: "hidden" }}>
                   <Image
                     src="/ChatGPT Image 2026年6月13日 19_21_48.png"
                     alt="チームで働く環境"
@@ -527,6 +811,7 @@ export default function Home() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
+                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.08)" }} />
                 </div>
                 {[
                   { label: "月給", value: "40万円以上" },
@@ -537,10 +822,10 @@ export default function Home() {
                   <div
                     key={item.label}
                     className="flex items-center justify-between py-4"
-                    style={{ borderBottom: "1px solid #E8E4DC" }}
+                    style={{ borderBottom: "1px solid #e8e4dc" }}
                   >
-                    <span className="text-[13px]" style={{ color: "#9CA3AF" }}>{item.label}</span>
-                    <span className="font-semibold text-[14px]" style={{ color: "#0F172A" }}>{item.value}</span>
+                    <span className="text-[13px]" style={{ color: "#9ca3af" }}>{item.label}</span>
+                    <span className="text-[14px] font-semibold" style={{ color: "#0d1b2a" }}>{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -549,32 +834,62 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            9. COLUMN
+            9. COLUMN — white background
         ============================================================ */}
         <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-end justify-between mb-12" style={{ borderBottom: "1px solid #F0EDE6", paddingBottom: "24px" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div
+              className="flex items-end justify-between mb-12"
+              style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "24px" }}
+            >
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#6B7280" }}>Column</p>
-                <h2 className="font-black text-[22px]" style={{ color: "#0F172A" }}>最新コラム</h2>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  Column
+                </p>
+                <h2
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "22px",
+                    color: "#0d1b2a",
+                    fontWeight: 700,
+                  }}
+                >
+                  最新コラム
+                </h2>
               </div>
-              <Link href="/column" className="text-[13px]" style={{ color: "#6B7280" }}>すべて見る →</Link>
+              <Link href="/column" className="text-[13px]" style={{ color: "#6b7280" }}>
+                すべて見る →
+              </Link>
             </div>
-            <div className="space-y-0">
+            <div>
               {columns.map((col) => (
                 <Link
                   key={col.slug}
                   href={`/column/${col.slug}`}
-                  className="group flex items-start gap-8 py-6 transition-colors hover:bg-[#F9F8F5] -mx-3 px-3"
-                  style={{ borderBottom: "1px solid #F0EDE6" }}
+                  className="group flex items-start gap-8 py-6 transition-colors hover:bg-[#f8f6f2] -mx-3 px-3"
+                  style={{ borderBottom: "1px solid #ece8e0" }}
                 >
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
+                  <span className="text-[12px] shrink-0 mt-1" style={{ fontFamily: "var(--font-display)", color: "#9ca3af" }}>
                     {col.publishedAt.replace(/-/g, ".")}
                   </span>
-                  <span className="text-[12px] px-2.5 py-1 shrink-0" style={{ background: "#F0EDE6", color: "#6B7280" }}>
+                  <span
+                    className="text-[12px] px-2.5 py-1 shrink-0"
+                    style={{ background: "#ece8e0", color: "#6b7280" }}
+                  >
                     {col.category}
                   </span>
-                  <span className="text-[14px] leading-relaxed group-hover:text-[#0F172A] transition-colors" style={{ color: "#374151" }}>
+                  <span
+                    className="text-[14px] leading-relaxed group-hover:text-[#0d1b2a] transition-colors"
+                    style={{ color: "#374151" }}
+                  >
                     {col.title}
                   </span>
                 </Link>
@@ -584,32 +899,65 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            10. NEWS
+            10. NEWS — #f8f6f2 background
         ============================================================ */}
-        <section className="py-16" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-end justify-between mb-8" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "16px" }}>
+        <section className="py-16" style={{ background: "#f8f6f2" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div
+              className="flex items-end justify-between mb-8"
+              style={{ borderBottom: "1px solid #e8e4dc", paddingBottom: "16px" }}
+            >
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-2" style={{ color: "#6B7280" }}>News</p>
-                <h2 className="font-bold text-[18px]" style={{ color: "#0F172A" }}>お知らせ</h2>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    letterSpacing: "0.25em",
+                    color: "#9ca3af",
+                    fontSize: "11px",
+                    marginBottom: "8px",
+                  }}
+                >
+                  News
+                </p>
+                <h2
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: "18px",
+                    color: "#0d1b2a",
+                    fontWeight: 700,
+                  }}
+                >
+                  お知らせ
+                </h2>
               </div>
-              <Link href="/news" className="text-[13px]" style={{ color: "#6B7280" }}>すべて見る →</Link>
+              <Link href="/news" className="text-[13px]" style={{ color: "#6b7280" }}>
+                すべて見る →
+              </Link>
             </div>
-            <div className="space-y-0">
+            <div>
               {news.map((item) => (
                 <Link
                   key={item.slug}
                   href={`/news/${item.slug}`}
                   className="group flex items-center gap-6 py-4 hover:bg-white transition-colors -mx-3 px-3"
-                  style={{ borderBottom: "1px solid #E8E4DC" }}
+                  style={{ borderBottom: "1px solid #e8e4dc" }}
                 >
-                  <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>
+                  <span
+                    className="text-[12px] shrink-0"
+                    style={{ fontFamily: "var(--font-display)", color: "#9ca3af" }}
+                  >
                     {item.publishedAt.replace(/-/g, ".")}
                   </span>
-                  <span className="text-[12px] px-2.5 py-0.5 shrink-0" style={{ background: "#E8E4DC", color: "#6B7280" }}>
+                  <span
+                    className="text-[12px] px-2.5 py-0.5 shrink-0"
+                    style={{ background: "#e8e4dc", color: "#6b7280" }}
+                  >
                     {item.category}
                   </span>
-                  <span className="text-[13px] group-hover:text-[#0F172A] transition-colors" style={{ color: "#374151" }}>
+                  <span
+                    className="text-[13px] group-hover:text-[#0d1b2a] transition-colors"
+                    style={{ color: "#374151" }}
+                  >
                     {item.title}
                   </span>
                 </Link>
@@ -619,30 +967,51 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            11. CONTACT — minimal corporate CTA
+            11. CONTACT — minimal, no blue CTA
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF", borderTop: "1px solid #F0EDE6" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-2xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Contact</p>
+        <section style={{ background: "#FFFFFF", padding: "96px 0", borderTop: "1px solid #ece8e0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <div style={{ maxWidth: "600px" }}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.25em",
+                  color: "#9ca3af",
+                  fontSize: "11px",
+                  marginBottom: "16px",
+                }}
+              >
+                Contact
+              </p>
               <h2
-                className="font-black leading-tight tracking-tight mb-6"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "clamp(22px,2.8vw,34px)",
+                  color: "#0d1b2a",
+                  fontWeight: 700,
+                  marginBottom: "20px",
+                }}
               >
                 Web集客に関するご相談
               </h2>
-              <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
+              <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "32px" }}>
                 MEO、SEO、AIO、ホームページ制作、SNS運用など、Web集客に関するご相談を承っています。現在の状況を確認したうえで、必要な施策をご提案します。
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  padding: "12px 28px",
+                  border: "1px solid #1a2332",
+                  color: "#1a2332",
+                  fontSize: "14px",
+                  transition: "all 0.2s",
+                }}
+                className="hover:bg-[#1a2332] hover:text-white"
               >
-                お問い合わせ
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
+                お問い合わせ →
               </Link>
             </div>
           </div>

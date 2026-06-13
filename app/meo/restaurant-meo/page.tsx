@@ -1,0 +1,111 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
+import RelatedPages from "@/components/shared/RelatedPages";
+
+export const metadata: Metadata = {
+  title: "飲食店のMEO対策｜Googleマップで集客を増やす方法",
+  description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿など飲食店特有のMEO対策を解説します。",
+};
+
+const faqItems = [
+  { q: "飲食店でMEO対策をすると何が変わりますか？", a: "「渋谷 ランチ」「新宿 居酒屋 個室」などの地域+業種キーワードで上位に表示されるようになります。Googleマップを見て来店するユーザーが増え、電話予約・Web予約の件数が増加します。" },
+  { q: "食べログやホットペッパーとMEO対策はどう違いますか？", a: "食べログ・ホットペッパーは広告費が必要ですが、MEO対策はGBPを適切に管理することで無料で効果を出せます。また、GoogleマップはNavigation用途でも使われるため、初めての来店者に見つけてもらいやすい特性があります。" },
+  { q: "メニューの価格を書かないとGBPの評価が下がりますか？", a: "価格を書かないことで機会損失になる可能性はありますが、Googleの評価に直接影響するとは限りません。ただし、価格帯情報はユーザーが来店を判断する重要な情報のため、目安でも記載することを推奨します。" },
+  { q: "口コミへの返信文に決まった形はありますか？", a: "良い口コミには感謝と再来店の誘い、悪い口コミには謝罪・原因・改善策を記載します。テンプレートを使いつつ個別の内容に触れることで誠意が伝わります。全件返信することが重要です。" },
+  { q: "飲食店のGBP写真はどのくらい必要ですか？", a: "最低でも外観2枚・内装3枚・料理5枚以上が目安です。競合が多いエリアでは20〜50枚以上の高品質な写真を揃えることで差別化できます。スマートフォンで撮影した自然光の写真でも十分です。" },
+];
+
+const relatedLinks = [
+  { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎" },
+  { href: "/meo/google-business-profile", label: "GBP最適化", desc: "GBP設定の最適化" },
+  { href: "/meo/review-management", label: "口コミ対策", desc: "口コミ獲得・返信" },
+  { href: "/industries/restaurant", label: "飲食店のWeb集客", desc: "飲食店向け総合支援" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細" },
+];
+
+export default function Page() {
+  return (
+    <>
+      <Header />
+      <main>
+        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
+              <Link href="/">ホーム</Link>
+              <span style={{ margin: "0 8px" }}>/</span>
+              <Link href="/meo">MEO対策</Link>
+              <span style={{ margin: "0 8px" }}>/</span>
+              飲食店のMEO対策
+            </nav>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Restaurant MEO</p>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+              飲食店のMEO対策｜Googleマップ集客
+            </h1>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
+              「渋谷 ランチ」「池袋 居酒屋 個室」——飲食店を探す人の多くはGoogleマップで検索しています。MEO対策でGoogleマップの上位に表示されることが、飲食店の来客数向上への最短経路です。
+            </p>
+          </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="飲食店のMEO対策" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+        </section>
+
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Why MEO Matters</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
+              飲食店にMEO対策が特に重要な理由
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12">
+              <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
+                飲食店を探すユーザーの検索行動は「今・近く・今日」という即時性が高い特徴があります。「渋谷 ランチ 1000円以内」「新宿 居酒屋 今日 予約」など、具体的な場所と時間軸を含む検索が多く、Googleマップで上位に表示されることが集客に直結します。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
+                食べログやホットペッパーと異なり、GBP（Googleビジネスプロフィール）の管理は基本無料です。適切な設定と継続的な運用で、広告費をかけずに集客を増やせる可能性があります。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Key Actions</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              飲食店特有のGBP最適化ポイント
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "メニュー情報の充実（料理名・価格・写真）", b: "GBPのメニュー機能を使って料理名・価格・説明・写真を登録します。メニューが充実していると「1000円以内 ランチ」などの条件付き検索でヒットしやすくなります。" },
+                { n: "02", t: "座席数・個室・禁煙情報の設定", b: "属性設定で「個室あり」「禁煙席あり」「子供連れ歓迎」などを設定します。絞り込み検索でのヒット数が増え、ニーズに合った来客を呼び込めます。" },
+                { n: "03", t: "予約システムとの連携", b: "食べログ・ホットペッパー・自社Web予約との連携URLをGBPに設定します。GBPから直接予約できる状態にすることで予約転換率が上がります。" },
+                { n: "04", t: "料理・内装・外観写真の定期投稿", b: "季節限定メニュー・新商品・店内装飾など、新鮮な写真を月2〜4枚ペースで追加します。写真が多いほどGoogleの評価と来訪者の期待感が上がります。" },
+                { n: "05", t: "口コミへの丁寧な返信", b: "良い口コミには感謝・再来店の誘い、悪い口コミには謝罪と改善策を記載します。返信率が高いほどGoogleの評価も上がり、未来の来客への安心感を与えます。" },
+                { n: "06", t: "営業時間・定休日の正確な設定", b: "祝日・季節営業・臨時休業を都度更新します。誤った営業時間情報は来店機会の損失だけでなく、クレームや低評価口コミにつながります。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #ece8e0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={faqItems} bgColor="#ffffff" />
+        <RelatedPages links={relatedLinks} />
+        <PageContactCTA heading="飲食店のMEO対策ご相談" body="飲食店のGoogleマップ集客・口コミ対策・GBP最適化を支援します。現在の状況と競合を確認したうえで、具体的な改善プランをご提案します。" />
+      </main>
+      <Footer />
+    </>
+  );
+}

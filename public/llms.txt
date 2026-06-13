@@ -1,0 +1,42 @@
+# Cypress Inc. (株式会社サイプレス)
+
+## About
+
+株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するWebマーケティングカンパニーです。
+
+- 所在地: 東京都葛飾区白鳥4-6-1-623
+- 代表取締役: 織田 春樹
+- 設立: 2022年4月
+- 対応エリア: 全国（オンライン対応）
+- メール: consulting.meo@gmail.com
+
+## Services
+
+- MEO対策: Googleビジネスプロフィール最適化・口コミ管理・順位改善
+- SEO対策: 内部SEO・コンテンツSEO・テクニカルSEO・外部SEO
+- AIO対策: AI検索最適化・ChatGPT対策・構造化データ実装・LLMO
+- ホームページ制作: Next.js/WordPress/Vercel構成・SEO対応Web制作
+- SNS運用: Instagram・X・LINE公式アカウント運用代行
+- AI活用支援: 業務自動化・チャットボット構築・コンテンツ自動化
+
+## Expertise
+
+MEO対策、SEO対策、AIO対策（AI Overview対策・LLM最適化）、Googleビジネスプロフィール運用、
+口コミ管理、ローカルSEO、コンテンツマーケティング、テクニカルSEO、構造化データ（Schema.org）、
+ホームページ制作、AI活用支援、中小企業Webマーケティング
+
+## Site Structure
+
+- /services — サービス一覧
+- /meo — MEO対策
+- /seo — SEO対策
+- /aio — AIO対策
+- /ai — AI活用支援
+- /web-design — ホームページ制作
+- /sns — SNS運用
+- /company — 会社情報
+- /industries — 業種別対応
+- /area — 対応エリア
+- /recruit — 採用情報
+- /column — コラム
+- /contact — お問い合わせ
