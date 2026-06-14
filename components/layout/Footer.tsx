@@ -113,6 +113,56 @@ const COL_INDUSTRIES: FooterSection[] = [
   },
 ];
 
+const COL_COLUMN_GUIDE: FooterSection[] = [
+  {
+    heading: "専門コラム",
+    links: [
+      { href: "/column/meo", label: "MEO対策とは" },
+      { href: "/column/seo", label: "SEO対策とは" },
+      { href: "/column/aio", label: "AIO対策とは" },
+      { href: "/column/web-design", label: "Web制作の考え方" },
+      { href: "/column/chatgpt", label: "ChatGPT活用" },
+      { href: "/column/local-seo", label: "ローカルSEO" },
+    ],
+  },
+  {
+    heading: "お悩み・目的別",
+    links: [
+      { href: "/problems/no-inquiries", label: "問い合わせが来ない" },
+      { href: "/problems/map-ranking-low", label: "マップに表示されない" },
+      { href: "/problems/losing-to-competitors", label: "競合に負けている" },
+      { href: "/goals/increase-inquiries", label: "問い合わせを増やしたい" },
+      { href: "/goals/meo-top", label: "マップ順位を上げたい" },
+      { href: "/solutions/meo-seo", label: "MEO×SEO統合対策" },
+    ],
+  },
+];
+
+const COL_KNOWLEDGE: FooterSection[] = [
+  {
+    heading: "ナレッジ",
+    links: [
+      { href: "/knowledge/meo-vs-seo", label: "MEOとSEOの違い" },
+      { href: "/knowledge/meo-ranking-factors", label: "MEO順位決定要因" },
+      { href: "/knowledge/review-strategy", label: "口コミ増やし方" },
+      { href: "/knowledge/seo-basics", label: "SEO基礎知識" },
+      { href: "/knowledge/aio-basics", label: "AIO基礎知識" },
+      { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド" },
+    ],
+  },
+  {
+    heading: "新業種対応",
+    links: [
+      { href: "/industries/hair-salon", label: "ヘアサロン集客" },
+      { href: "/industries/nail-salon", label: "ネイルサロン集客" },
+      { href: "/industries/osteopathic", label: "整体院・接骨院" },
+      { href: "/industries/renovation", label: "リフォーム会社" },
+      { href: "/industries/school", label: "学習塾・スクール" },
+      { href: "/industries/pet-shop", label: "ペットショップ" },
+    ],
+  },
+];
+
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -163,19 +213,37 @@ export default function Footer() {
   return (
     <footer style={{ background: "#0d1b2a", color: "#8b97a8" }}>
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-0">
-        {/* 5-column grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-14">
+        {/* 7-column grid */}
+        <div className="grid grid-cols-2 md:grid-cols-7 gap-8 mb-14">
           {/* Column 1 — Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="inline-block mb-5">
+          <div className="col-span-2 md:col-span-1" style={{ minWidth: 0 }}>
+            <Link href="/" className="flex items-center gap-2.5 mb-5" style={{ width: "fit-content" }}>
               <Image
                 src="/logo.png"
                 alt="株式会社サイプレス"
-                width={120}
-                height={30}
-                style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
+                width={28}
+                height={28}
+                style={{ objectFit: "contain", width: "28px", height: "28px", filter: "brightness(0) invert(1)" }}
               />
+              <span
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "18px",
+                  fontWeight: 600,
+                  color: "#e8e4dc",
+                  letterSpacing: "0.04em",
+                  lineHeight: 1,
+                }}
+              >
+                Cypress
+              </span>
             </Link>
+            <p
+              className="text-[12px] leading-relaxed mb-1"
+              style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+            >
+              株式会社サイプレス
+            </p>
             <p
               className="text-[12px] leading-relaxed mb-5"
               style={{ color: "#8b97a8", fontFamily: "var(--font-sans)" }}
@@ -189,6 +257,12 @@ export default function Footer() {
                 style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
               >
                 東京都葛飾区白鳥4-6-1-623
+              </li>
+              <li
+                className="text-[12px]"
+                style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+              >
+                設立：2026年5月13日
               </li>
               <li>
                 <a
@@ -219,6 +293,12 @@ export default function Footer() {
 
           {/* Column 5 — 業種別 & 対応エリア */}
           <FooterColumn sections={COL_INDUSTRIES} />
+
+          {/* Column 6 — コラム & お悩み別 */}
+          <FooterColumn sections={COL_COLUMN_GUIDE} />
+
+          {/* Column 7 — ナレッジ & 新業種 */}
+          <FooterColumn sections={COL_KNOWLEDGE} />
         </div>
       </div>
 

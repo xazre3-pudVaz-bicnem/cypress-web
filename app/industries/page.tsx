@@ -18,15 +18,22 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-marketing.jp/industries" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries" },
 }
 
 const INDUSTRIES = [
   { href: "/industries/restaurant", label: "飲食店", desc: "MEO対策・Instagram・口コミ獲得で来店数を増やす" },
   { href: "/industries/beauty", label: "美容室・サロン", desc: "ホットペッパーとの連携・SNS・予約導線設計" },
+  { href: "/industries/hair-salon", label: "ヘアサロン・美容院", desc: "Googleマップ上位・Instagram・指名予約を増やす" },
+  { href: "/industries/nail-salon", label: "ネイルサロン", desc: "デザイン写真SNS・MEOで新規予約と定期来店" },
+  { href: "/industries/osteopathic", label: "整体院・接骨院", desc: "腰痛・肩こり症状検索でのGoogleマップ上位表示" },
   { href: "/industries/clinic", label: "医療・歯科クリニック", desc: "地域検索対応・患者向けコンテンツ・Web予約連携" },
   { href: "/industries/construction", label: "建設業・工務店", desc: "施工事例コンテンツ・地域SEO・問い合わせ導線" },
+  { href: "/industries/renovation", label: "リフォーム・リノベーション", desc: "施工事例・MEO・SEOで見積もり依頼を増やす" },
+  { href: "/industries/plumbing", label: "水道・設備工事業", desc: "緊急依頼をGoogleマップから獲得するMEO対策" },
   { href: "/industries/real-estate", label: "不動産", desc: "物件ページSEO・地域ページ最適化・MEO対応" },
+  { href: "/industries/school", label: "学習塾・スクール", desc: "体験授業申込み特化サイト・MEOで入塾相談増加" },
+  { href: "/industries/pet-shop", label: "ペットショップ・トリミング", desc: "「近くのトリミング」検索でGoogleマップ上位表示" },
   { href: "/industries/professional-service", label: "士業・コンサル", desc: "専門キーワード・地域検索対応・E-E-A-T構築" },
   { href: "/industries/cleaning", label: "清掃業", desc: "地域密着MEO・ハウスクリーニング検索対策" },
   { href: "/industries/local-store", label: "地域店舗", desc: "小売・サービス業の地域集客・MEO・SNS運用" },

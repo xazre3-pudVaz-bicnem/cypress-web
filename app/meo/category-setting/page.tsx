@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-marketing.jp/meo/category-setting" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/meo/category-setting" },
 };
 
 const categoryPoints = [

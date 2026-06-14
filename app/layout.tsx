@@ -42,7 +42,7 @@ const organizationSchema = {
     streetAddress: "白鳥4-6-1-623",
     addressLocality: "葛飾区",
     addressRegion: "東京都",
-    postalCode: "125-0001",
+    postalCode: "124-0816",
     addressCountry: "JP",
   },
   areaServed: {
@@ -54,7 +54,7 @@ const organizationSchema = {
     name: "織田 春樹",
     jobTitle: "代表取締役",
   },
-  foundingDate: "2022-04",
+  foundingDate: "2026-05-13",
   sameAs: [],
   knowsAbout: [
     "MEO対策",

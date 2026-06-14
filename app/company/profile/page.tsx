@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const PROFILE_ROWS = [
   { label: "会社名", value: "株式会社サイプレス" },
   { label: "代表取締役", value: "織田 春樹" },
-  { label: "設立", value: "2022年4月" },
+  { label: "設立", value: "2026年5月13日" },
   { label: "所在地", value: "〒124-0816 東京都葛飾区白鳥4-6-1-623" },
   { label: "対応エリア", value: "全国（オンライン対応）" },
   { label: "資本金", value: "記載なし（非公開）" },

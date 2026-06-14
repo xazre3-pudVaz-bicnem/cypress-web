@@ -6,7 +6,7 @@
 
 - 所在地: 東京都葛飾区白鳥4-6-1-623
 - 代表取締役: 織田 春樹
-- 設立: 2022年4月
+- 設立: 2026年5月13日
 - 対応エリア: 全国（オンライン対応）
 - メール: consulting.meo@gmail.com
 
@@ -28,15 +28,22 @@ MEO対策、SEO対策、AIO対策（AI Overview対策・LLM最適化）、Google
 ## Site Structure
 
 - /services — サービス一覧
-- /meo — MEO対策
-- /seo — SEO対策
-- /aio — AIO対策
+- /meo — MEO対策（Googleマップ最適化）
+- /seo — SEO対策（検索エンジン最適化）
+- /aio — AIO対策（AI検索最適化）
 - /ai — AI活用支援
 - /web-design — ホームページ制作
 - /sns — SNS運用
 - /company — 会社情報
-- /industries — 業種別対応
-- /area — 対応エリア
+- /industries — 業種別対応（飲食・美容・クリニック・整体・塾・リフォームなど）
+- /area — 対応エリア（東京・葛飾区・千葉・埼玉・神奈川・全国）
 - /recruit — 採用情報
-- /column — コラム
+- /column — 専門コラム（MEO・SEO・AIO・Web制作・SNS）
+- /knowledge — ナレッジ（MEO・SEO・AIO・SNS・AI活用の専門知識）
+- /problems — お悩み別ページ
+- /goals — 目的別ページ
+- /solutions — ソリューション
+- /guide — ガイド
+- /cost — 費用・料金
+- /faq — よくある質問
 - /contact — お問い合わせ

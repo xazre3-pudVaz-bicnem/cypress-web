@@ -110,15 +110,27 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="shrink-0 flex items-center">
+            <Link href="/" className="shrink-0 flex items-center gap-3">
               <Image
                 src="/logo.png"
                 alt="株式会社サイプレス"
-                width={140}
-                height={36}
-                style={{ objectFit: "contain" }}
+                width={32}
+                height={32}
+                style={{ objectFit: "contain", width: "32px", height: "32px" }}
                 priority
               />
+              <span
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "20px",
+                  fontWeight: 600,
+                  color: "#0d1b2a",
+                  letterSpacing: "0.04em",
+                  lineHeight: 1,
+                }}
+              >
+                Cypress
+              </span>
             </Link>
 
             {/* Desktop nav */}
@@ -343,14 +355,25 @@ export default function Header() {
             className="flex items-center justify-between px-6 h-16"
             style={{ borderBottom: "1px solid #ece8e0" }}
           >
-            <Link href="/" onClick={closeMobile}>
+            <Link href="/" onClick={closeMobile} className="flex items-center gap-2">
               <Image
                 src="/logo.png"
                 alt="株式会社サイプレス"
-                width={120}
-                height={30}
-                style={{ objectFit: "contain" }}
+                width={28}
+                height={28}
+                style={{ objectFit: "contain", width: "28px", height: "28px" }}
               />
+              <span
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "18px",
+                  fontWeight: 600,
+                  color: "#0d1b2a",
+                  letterSpacing: "0.04em",
+                }}
+              >
+                Cypress
+              </span>
             </Link>
             <button onClick={closeMobile} aria-label="メニューを閉じる" className="p-2">
               <svg
