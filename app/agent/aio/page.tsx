@@ -77,6 +77,18 @@ const faqItems = [
     q: "申し込みから代理店活動開始まで、どのくらいかかりますか？",
     a: "お問い合わせから面談・契約・サポートツール提供まで、通常2〜4週間程度で活動開始いただけます。",
   },
+  {
+    q: "AIO対策の最新情報はどこから入手できますか？",
+    a: "サイプレスから定期的に最新のAI検索動向・施策のアップデートをご共有します。ChatGPT・Gemini・Perplexityなどの検索変化に対応した最新情報を提供しますので、代理店様は情報収集の手間なく最新知識で提案活動を続けられます。",
+  },
+  {
+    q: "AIO対策は小規模な企業にも提案できますか？",
+    a: "はい。ホームページを持つ企業であれば規模を問わず提案できます。むしろ中小企業・個人事業主が先行してAIO対策に取り組むことで、大手との差別化につながるケースもあります。",
+  },
+  {
+    q: "AIO対策の効果確認・レポートはどのように行いますか？",
+    a: "ChatGPTやGeminiで特定のキーワードを検索した際に顧客の情報が引用されるかを定期確認します。構造化データの実装状況・Googleリッチリザルトへの反映なども確認します。ただし生成AI検索の引用は仕様変更により変動するため、断定的な保証はしていません。",
+  },
 ];
 
 const serviceSchema = {
@@ -223,6 +235,58 @@ export default function AgentAioPage() {
                 ))}
                 <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }} />
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 提案しやすい顧客の特徴 */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Target Customers</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+              AIO対策を提案しやすい顧客の特徴
+            </h2>
+            <p style={{ fontSize: "14px", color: "#374151", marginBottom: "36px" }}>以下のような状況にある中小企業経営者がAIO対策の価値を理解しやすいです。</p>
+            <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "820px" }}>
+              {[
+                { title: "「ChatGPTで競合が引用されている」と感じている", body: "実際にChatGPTで業界キーワードを検索して競合が引用されるが自社は出てこないという経営者は、AIO対策の価値をすぐに実感できます。" },
+                { title: "SEO・MEO対策を既に取り組んでいる", body: "すでにSEO・MEOを意識している進取の気性がある経営者は「次の一手」としてAIO対策を受け入れやすく、追加提案がスムーズです。" },
+                { title: "専門性・信頼性を重視している", body: "士業・医療・コンサルなど専門性が重要な業種の経営者は、「AIに信頼できる専門家として引用される」というAIO対策の価値を理解しやすいです。" },
+                { title: "ブログ・コラムを発信している", body: "すでに情報発信をしている企業は、そのコンテンツをAI検索に最適化するという方向性でAIO対策を提案しやすいです。" },
+                { title: "広告費用を削減したい", body: "オーガニック流入を増やしたい経営者に対して、SEO×AIO×MEOの複合提案で「広告に頼らない集客」を提案できます。" },
+                { title: "新技術・デジタルに関心が高い", body: "最新のデジタルマーケティングに関心のある経営者は、AIO対策という最新トレンドへの感度が高く提案を受け入れやすいです。" },
+              ].map((item) => (
+                <div key={item.title} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 相性の良い代理店 */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Ideal Partners</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+              AIO対策代理店に向いている会社・個人
+            </h2>
+            <p style={{ fontSize: "14px", color: "#374151", marginBottom: "36px" }}>AI・デジタル技術・マーケティングへの関心が高い方に特に向いています。</p>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                { label: "IT系セールス・コンサルタント", desc: "デジタルマーケティング分野を扱っている方はAI検索対策という最新領域への拡張提案がしやすいです。" },
+                { label: "SEO対策の代理店・制作会社", desc: "すでにSEO対策を提供している代理店がAIO対策を追加することで、顧客への提供価値を大幅に高められます。" },
+                { label: "AI・ChatGPT活用の講師・研修講師", desc: "AI活用への感度が高い顧客層を持っており、AIO対策という自然な提案テーマとして展開できます。" },
+                { label: "広告代理店・マーケティング会社", desc: "Web広告・SEO・SNSに加えてAIO対策を提供することで、包括的なデジタルマーケティング支援が可能になります。" },
+                { label: "中小企業支援・コンサルタント", desc: "経営課題として「デジタル集客」を扱っている支援者が、AIO対策という具体的な施策を提案できます。" },
+                { label: "フリーランス・副業マーケター", desc: "新しい分野への挑戦に意欲的な個人の方が最新商材としてAIO対策を扱いたい場合も相談可能です。" },
+              ].map((item) => (
+                <div key={item.label} style={{ padding: "24px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

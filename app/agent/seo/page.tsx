@@ -77,6 +77,18 @@ const faqItems = [
     q: "申し込みから代理店活動開始まで、どのくらいかかりますか？",
     a: "お問い合わせから面談・契約・サポートツール提供まで、通常2〜4週間程度で活動開始いただけます。",
   },
+  {
+    q: "代理店向けの提案資料は提供されますか？",
+    a: "はい。SEO対策の必要性・サービス内容・費用感などを説明するための提案サポート資料をご提供します。顧客への説明や商談時にそのままご使用いただける形式で用意しています。",
+  },
+  {
+    q: "SEO対策を既にやっている顧客への提案はどうすればいいですか？",
+    a: "現状の施策内容・効果・品質を確認した上で、改善・強化の余地をご提案ください。「現在の施策に加えてAIO対策・MEO対策も」という追加提案も有効です。サイプレスへの切り替え提案についても相談いただけます。",
+  },
+  {
+    q: "一人（個人）で代理店として活動できますか？",
+    a: "はい。法人・個人事業主・副業での参加も相談可能です。既存の顧客接点や人脈を活かして販売活動ができれば、規模を問わず参加いただけます。まずはお問い合わせください。",
+  },
 ];
 
 const serviceSchema = {
@@ -229,6 +241,62 @@ export default function AgentSeoPage() {
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 相性の良い代理店 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Ideal Partners</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              SEO対策代理店に向いている会社・個人
+            </h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                { label: "Web制作・Webデザイン会社", desc: "制作実績・ホームページ制作後のSEO提案としてスムーズに展開できます。制作とSEOのセット販売が可能です。" },
+                { label: "広告代理店・マーケティング会社", desc: "Web広告に加えてSEO対策を提供できることで、顧客への提供価値が広がります。オーガニック×広告の統合提案が可能になります。" },
+                { label: "コンサルティング会社・経営支援", desc: "顧問先・支援先の経営者に集客課題からSEO提案への導線が作りやすい環境です。" },
+                { label: "IT系・SaaS系セールス", desc: "IT商材に親しみのある法人営業担当が、SEO対策という「デジタルマーケティング分野」へ自然に展開できます。" },
+                { label: "士業（税理士・社労士等）", desc: "顧問先の中小企業の集客課題を日常的に把握しており、SEO提案への接点が多い業種です。" },
+                { label: "フリーランス・副業営業", desc: "自分のペースでSEO代理店として活動したい個人にも参加可能な環境をご用意しています。" },
+              ].map((item) => (
+                <div key={item.label} style={{ padding: "24px", border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>{item.label}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.8" }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 販売フロー */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Sales Flow</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              SEO対策代理店の販売フロー
+            </h2>
+            <div style={{ maxWidth: "680px" }}>
+              {[
+                { step: "Step 1", title: "見込み顧客のWeb状況を確認する", body: "顧客のホームページを事前に確認し、「検索で上位に出ているか」「コンテンツが少ないか」「ブログが止まっているか」を把握します。具体的な課題を持って商談に臨むと成約率が上がります。" },
+                { step: "Step 2", title: "検索集客の課題をヒアリングで引き出す", body: "「問い合わせはどこから来ていますか？」「Googleでご自身のサービスを検索するとどこに表示されますか？」といった問いかけで、課題を経営者自身に認識してもらいます。" },
+                { step: "Step 3", title: "SEO対策のサービス内容・費用感を提案", body: "提案サポート資料を使ってサービス内容・施策範囲・費用感をご説明します。サイプレスの担当者とオンライン三者面談を設定することもできます。" },
+                { step: "Step 4", title: "受注・契約手続き", body: "顧客の合意後、契約書面を取り交わします。以降のSEO施策・コンテンツ制作・月次レポートはサイプレスが担当します。" },
+                { step: "Step 5", title: "継続・追加提案", body: "月次レポートを顧客に共有しながら継続的な関係を維持します。効果が出た段階でAIO対策・MEO対策・ホームページリニューアルの追加提案を行うチャンスになります。" },
+              ].map((item, i) => (
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
+                    <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
+                  </div>
+                  <div>
+                    <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "4px", fontFamily: "var(--font-display)" }}>{item.step}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>

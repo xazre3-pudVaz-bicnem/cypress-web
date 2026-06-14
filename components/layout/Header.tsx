@@ -37,9 +37,27 @@ const KNOWLEDGE_RIGHT: { href: string; label: string }[] = [
   { href: "/area", label: "対応エリア" },
 ];
 
+const RECRUIT_MENU: { href: string; label: string }[] = [
+  { href: "/recruit", label: "採用情報トップ" },
+  { href: "/recruit/sales", label: "Webマーケティング営業" },
+];
+
+const PARTNER_LEFT: { href: string; label: string }[] = [
+  { href: "/agent", label: "代理店募集トップ" },
+  { href: "/agent/web-design", label: "ホームページ制作代理店" },
+  { href: "/agent/meo", label: "MEO対策代理店" },
+  { href: "/agent/seo", label: "SEO対策代理店" },
+  { href: "/agent/aio", label: "AIO対策代理店" },
+  { href: "/agent/faq", label: "代理店FAQ" },
+];
+
+const PARTNER_RIGHT: { href: string; label: string }[] = [
+  { href: "/partner/referral", label: "取次店・紹介パートナー" },
+];
+
 // ─── Types ──────────────────────────────────────────────────────────────────
 
-type DropdownKey = "company" | "services" | "knowledge";
+type DropdownKey = "company" | "services" | "knowledge" | "recruit" | "partner";
 
 // ─── Chevron icon ────────────────────────────────────────────────────────────
 
@@ -244,7 +262,6 @@ export default function Header() {
                       }}
                     >
                       <div className="grid grid-cols-2">
-                        {/* Left column */}
                         <div style={{ borderRight: "1px solid #f0ede8" }}>
                           {KNOWLEDGE_LEFT.map((l, i) => (
                             <DropLink
@@ -255,7 +272,6 @@ export default function Header() {
                             />
                           ))}
                         </div>
-                        {/* Right column */}
                         <div>
                           {KNOWLEDGE_RIGHT.map((l, i) => (
                             <DropLink
@@ -272,13 +288,127 @@ export default function Header() {
                 )}
               </div>
 
-              <Link
-                href="/recruit"
-                className="px-4 py-2 text-[13px] transition-colors hover:opacity-70"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+              {/* 採用情報 — dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleEnter("recruit")}
+                onMouseLeave={handleLeave}
               >
-                採用情報
-              </Link>
+                <button
+                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
+                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+                >
+                  採用情報
+                  <ChevronDown />
+                </button>
+                {openMenu === "recruit" && (
+                  <div
+                    className="absolute top-full left-0 pt-2"
+                    onMouseEnter={() => handleEnter("recruit")}
+                    onMouseLeave={handleLeave}
+                  >
+                    <div
+                      style={{
+                        background: "#ffffff",
+                        border: "1px solid #ece8e0",
+                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
+                        minWidth: "210px",
+                      }}
+                    >
+                      {RECRUIT_MENU.map((l, i) => (
+                        <DropLink
+                          key={l.href}
+                          href={l.href}
+                          label={l.label}
+                          last={i === RECRUIT_MENU.length - 1}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* パートナー募集 — 2-column dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleEnter("partner")}
+                onMouseLeave={handleLeave}
+              >
+                <button
+                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
+                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+                >
+                  パートナー募集
+                  <ChevronDown />
+                </button>
+                {openMenu === "partner" && (
+                  <div
+                    className="absolute top-full left-0 pt-2"
+                    style={{ transform: "translateX(-60px)" }}
+                    onMouseEnter={() => handleEnter("partner")}
+                    onMouseLeave={handleLeave}
+                  >
+                    <div
+                      style={{
+                        background: "#ffffff",
+                        border: "1px solid #ece8e0",
+                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
+                        minWidth: "380px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          padding: "8px 16px 6px",
+                          fontSize: "10px",
+                          letterSpacing: "0.12em",
+                          color: "#9ca3af",
+                          fontFamily: "var(--font-sans)",
+                          textTransform: "uppercase",
+                          borderBottom: "1px solid #f0ede8",
+                        }}
+                      >
+                        販売代理店募集
+                      </div>
+                      <div className="grid grid-cols-2">
+                        <div style={{ borderRight: "1px solid #f0ede8" }}>
+                          {PARTNER_LEFT.map((l, i) => (
+                            <DropLink
+                              key={l.href}
+                              href={l.href}
+                              label={l.label}
+                              last={i === PARTNER_LEFT.length - 1}
+                            />
+                          ))}
+                        </div>
+                        <div>
+                          <div
+                            style={{
+                              padding: "6px 20px 4px",
+                              fontSize: "10px",
+                              letterSpacing: "0.12em",
+                              color: "#9ca3af",
+                              fontFamily: "var(--font-sans)",
+                              textTransform: "uppercase",
+                              borderBottom: "1px solid #f0ede8",
+                            }}
+                          >
+                            取次・紹介パートナー
+                          </div>
+                          {PARTNER_RIGHT.map((l, i) => (
+                            <DropLink
+                              key={l.href}
+                              href={l.href}
+                              label={l.label}
+                              last={i === PARTNER_RIGHT.length - 1}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               <Link
                 href="/column"
                 className="px-4 py-2 text-[13px] transition-colors hover:opacity-70"
@@ -508,9 +638,99 @@ export default function Header() {
               )}
             </div>
 
+            {/* 採用情報 accordion */}
+            <div style={{ borderBottom: "1px solid #f0ede8" }}>
+              <button
+                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
+                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+                onClick={() => toggleDropdown("recruit")}
+              >
+                採用情報
+                <svg
+                  className="w-4 h-4 transition-transform"
+                  style={{
+                    color: "#9ca3af",
+                    transform: openDropdown === "recruit" ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {openDropdown === "recruit" && (
+                <div className="pb-3 pl-4">
+                  {RECRUIT_MENU.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      onClick={closeMobile}
+                      className="block py-2.5 text-[13px]"
+                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* パートナー募集 accordion */}
+            <div style={{ borderBottom: "1px solid #f0ede8" }}>
+              <button
+                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
+                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+                onClick={() => toggleDropdown("partner")}
+              >
+                パートナー募集
+                <svg
+                  className="w-4 h-4 transition-transform"
+                  style={{
+                    color: "#9ca3af",
+                    transform: openDropdown === "partner" ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {openDropdown === "partner" && (
+                <div className="pb-3 pl-4">
+                  <p style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#9ca3af", marginBottom: "4px", marginTop: "4px", textTransform: "uppercase" }}>販売代理店募集</p>
+                  {PARTNER_LEFT.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      onClick={closeMobile}
+                      className="block py-2.5 text-[13px]"
+                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                  <p style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#9ca3af", marginBottom: "4px", marginTop: "12px", textTransform: "uppercase" }}>取次・紹介</p>
+                  {PARTNER_RIGHT.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      onClick={closeMobile}
+                      className="block py-2.5 text-[13px]"
+                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Direct links */}
             {[
-              { href: "/recruit", label: "採用情報" },
               { href: "/column", label: "コラム" },
               { href: "/news", label: "お知らせ" },
             ].map((l) => (

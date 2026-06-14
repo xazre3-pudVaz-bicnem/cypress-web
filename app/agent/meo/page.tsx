@@ -77,6 +77,18 @@ const faqItems = [
     q: "申し込みから代理店活動開始まで、どのくらいかかりますか？",
     a: "お問い合わせから面談・契約・サポートツール提供まで、通常2〜4週間程度で活動開始いただけます。",
   },
+  {
+    q: "代理店向けの提案資料やサポートツールは提供されますか？",
+    a: "はい。MEO対策の必要性・効果・サイプレスのサービス内容を説明するための提案サポート資料をご提供します。顧客への説明や商談時にそのままご活用いただける形式で用意しています。",
+  },
+  {
+    q: "既存の取引先に紹介するだけでもいいですか？",
+    a: "はい。既存の顧客・取引先にサイプレスを紹介する形での参加も可能です。紹介中心の活動形式については取次店・紹介パートナープログラムもご案内できます。",
+  },
+  {
+    q: "MEO対策で成果が出なかった場合の対応はどうなりますか？",
+    a: "MEO対策の効果は競合状況・地域・業種によって異なります。成果保証は行っておりませんが、施策内容・改善ポイントについて継続的に分析・対応します。顧客への説明時も断定的な保証表現はされないようお願いしています。",
+  },
 ];
 
 const serviceSchema = {
@@ -244,6 +256,63 @@ export default function AgentMeoPage() {
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 提案しやすい顧客の特徴 */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Target Customers</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+              MEO対策を提案しやすい顧客の特徴
+            </h2>
+            <p style={{ fontSize: "14px", color: "#374151", marginBottom: "36px" }}>以下のような状況にある地域ビジネス経営者へのアプローチが成約につながりやすいです。</p>
+            <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "820px" }}>
+              {[
+                { title: "Googleマップで競合に負けていると感じている", body: "「同業他社がマップの上位に表示されているのに自社は出てこない」という経営者は、課題を既に認識しているため提案が受け入れられやすいです。" },
+                { title: "口コミが少ない・管理できていない", body: "「口コミが少なくて来店につながらない」「悪い口コミへの返し方がわからない」という店舗経営者にとって、口コミ管理支援は非常に価値ある提案です。" },
+                { title: "「近くの○○」での表示がない", body: "スマートフォンで「近くの飲食店・美容室・歯科」と検索した際に自店が表示されないという経営者は、MEO対策の必要性を直感的に理解しやすいです。" },
+                { title: "Googleビジネスプロフィールを放置している", body: "GBPを登録したきり更新していない、写真が少ない、営業時間が古いままという店舗は多く、改善余地が明確なため提案しやすいです。" },
+                { title: "ホームページへのアクセスが少ない", body: "「ホームページを作ったが来店に繋がらない」という店舗には、MEO対策でGoogleマップ経由の流入を増やすことをセット提案できます。" },
+                { title: "新規客の獲得に苦しんでいる", body: "常連客に頼りきりで新規集客の手段が乏しい地域店舗は、Googleマップ経由の新規来店増加への期待値が高く、提案が刺さりやすいです。" },
+              ].map((item) => (
+                <div key={item.title} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 販売フロー */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Sales Flow</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              MEO対策代理店の販売フロー
+            </h2>
+            <div style={{ maxWidth: "680px" }}>
+              {[
+                { step: "Step 1", title: "見込み顧客の発掘・アプローチ", body: "飲食店・美容室・整体院など地域ビジネスを対象に、Googleマップで検索して「上位に出ていない店舗」を発掘します。顧客自身に検索して見てもらうと課題認識につながります。" },
+                { step: "Step 2", title: "MEO対策の必要性をヒアリングで引き出す", body: "「マップで上位に出てきたらどう思いますか？」「現在の来店経路はどこからですか？」などのヒアリングで、経営者に課題を認識してもらいます。" },
+                { step: "Step 3", title: "サイプレスのサービス内容・費用感を説明", body: "提案サポート資料を使ってサービス内容・対応内容・費用感をご説明します。サイプレスの担当者との三者面談を設定することも可能です。" },
+                { step: "Step 4", title: "受注・契約手続き", body: "顧客の合意後、契約書面を取り交わします。以降の実務対応（GBP設定・写真投稿・レポート）はサイプレスが行います。" },
+                { step: "Step 5", title: "継続フォロー・追加提案", body: "月次レポートを顧客に共有しながら継続的な関係を維持します。効果が出た段階でホームページ制作・SEO対策の追加提案を行うチャンスにもなります。" },
+              ].map((item, i) => (
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
+                    <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
+                  </div>
+                  <div>
+                    <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "4px", fontFamily: "var(--font-display)" }}>{item.step}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
