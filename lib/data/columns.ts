@@ -22,8 +22,8 @@ export interface ColumnArticle {
 export const COLUMNS: ColumnArticle[] = [
   {
     slug: "meo-ranking-2024",
-    title: "2024年最新版｜MEO対策でGoogleマップ上位表示を実現する完全ガイド",
-    excerpt: "Googleマップの順位決定アルゴリズムの変化と、2024年に効果的なMEO対策の手法を徹底解説。口コミ戦略・ビジネスプロフィール最適化の最新アプローチ。",
+    title: "MEO対策でGoogleマップ上位表示を実現する完全ガイド",
+    excerpt: "Googleマップの順位決定アルゴリズムと、効果的なMEO対策の手法を徹底解説。口コミ戦略・ビジネスプロフィール最適化の実践的アプローチ。",
     category: "MEO",
     publishedAt: "2026-06-01",
     readTime: 12,
@@ -32,7 +32,7 @@ export const COLUMNS: ColumnArticle[] = [
   },
   {
     slug: "aio-chatgpt-strategy",
-    title: "ChatGPTに自社を推薦させる｜AIO対策の実践戦略2024",
+    title: "ChatGPTに自社を推薦させる｜AIO対策の実践戦略",
     excerpt: "生成AI検索が急速に普及する中、ChatGPT・Gemini・Perplexityで引用される企業になるための具体的な実装方法を解説します。",
     category: "AIO",
     publishedAt: "2026-05-28",
@@ -134,8 +134,8 @@ export const COLUMNS: ColumnArticle[] = [
   // ---- NEW ARTICLES ----
   {
     slug: "local-seo-complete-guide",
-    title: "地域SEO完全ガイド｜地域名検索でNo.1を取る方法2024",
-    excerpt: "「地域名＋業種」キーワードで検索上位を獲得するための戦略を網羅。競合分析から内部対策・被リンク獲得まで、地域密着型ビジネスのSEO完全解説。",
+    title: "地域SEO完全ガイド｜「地域名＋業種」検索で上位を獲得する方法",
+    excerpt: "「地域名＋業種」キーワードで検索上位を獲得するための戦略を網羅。競合分析から内部対策・被リンク獲得まで、地域密着型ビジネスのSEO解説。",
     category: "SEO",
     publishedAt: "2026-06-10",
     readTime: 14,
@@ -169,7 +169,7 @@ export const COLUMNS: ColumnArticle[] = [
     tags: ["モバイルファースト", "スマホ最適化", "UX改善"],
   },
   {
-    slug: "chatgpt-business-use",
+    slug: "chatgpt-prompt-guide",
     title: "ChatGPT活用ビジネス術｜中小企業が今すぐ使える実践15選",
     excerpt: "コスト削減・業務効率化・集客強化に直結するChatGPT活用術を15の実践事例とともに紹介。プロンプト例も掲載しすぐに試せる内容です。",
     category: "AI",
@@ -197,8 +197,8 @@ export const COLUMNS: ColumnArticle[] = [
   },
   {
     slug: "core-web-vitals-2024",
-    title: "Core Web Vitals改善ガイド｜LCP・CLS・FIDを最適化してランク上げ",
-    excerpt: "GoogleランキングにおけるCore Web Vitalsの影響度と、LCP・CLS・FIDそれぞれの具体的な改善手順を数値事例とともに詳しく解説します。",
+    title: "Core Web Vitals改善ガイド｜LCP・CLS・INPを最適化してランクを上げる",
+    excerpt: "GoogleランキングにおけるCore Web Vitalsの影響度と、LCP・CLS・INPそれぞれの具体的な改善手順を数値事例とともに詳しく解説します。",
     category: "SEO",
     publishedAt: "2026-05-23",
     readTime: 11,
@@ -250,7 +250,7 @@ export const COLUMNS: ColumnArticle[] = [
     tags: ["飲食店集客", "Instagram運用", "MEO連携"],
   },
   {
-    slug: "web-design-cv-improvement",
+    slug: "cta-design-guide",
     title: "コンバージョン率を上げるWeb制作｜CTAデザインと導線設計の実践",
     excerpt: "問い合わせ・購入・予約を増やすCTAデザインのベストプラクティスと、ユーザーを迷わせない導線設計の原則を実際の改善事例と数値で解説します。",
     category: "ホームページ制作",

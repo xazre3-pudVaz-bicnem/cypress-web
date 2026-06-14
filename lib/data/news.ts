@@ -1,7 +1,7 @@
 export interface NewsArticle {
   slug: string;
   title: string;
-  category: "お知らせ" | "プレスリリース" | "メディア掲載" | "実績";
+  category: "お知らせ";
   publishedAt: string;
   excerpt?: string;
   body?: string;
@@ -9,48 +9,52 @@ export interface NewsArticle {
 
 export const NEWS: NewsArticle[] = [
   {
-    slug: "service-aio-launch-2024",
-    title: "AIO対策サービスの提供を開始しました",
+    slug: "column-page-launched",
+    title: "コラムページを公開しました",
+    category: "お知らせ",
+    publishedAt: "2026-06-10",
+    excerpt: "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用に関する専門コラムページを公開しました。Webマーケティングに役立つ情報を継続的に発信していきます。",
+    body: "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用に関する専門コラムページを公開しました。Webマーケティングに役立つ専門知識を継続的に発信していきます。ぜひご活用ください。",
+  },
+  {
+    slug: "aio-page-launched",
+    title: "AIO対策サービスページを公開しました",
+    category: "お知らせ",
+    publishedAt: "2026-06-05",
+    excerpt: "ChatGPT・Gemini・PerplexityなどAI検索エンジンでの引用率を高めるAIO（AI最適化）対策サービスの詳細ページを公開しました。",
+    body: "ChatGPT・Gemini・PerplexityなどのAI検索エンジンで引用・推薦されることを目指すAIO（AI Search Optimization）対策サービスの詳細ページを公開しました。構造化データ・FAQ設計・E-E-A-T強化を軸にした支援内容をご確認ください。",
+  },
+  {
+    slug: "meo-page-launched",
+    title: "MEO対策サービスページを公開しました",
     category: "お知らせ",
     publishedAt: "2026-06-01",
-    excerpt: "生成AI検索の急速な普及に対応するため、ChatGPT・Gemini・Perplexity等でのAI引用率を高める「AIO対策サービス」の提供を開始しました。",
-    body: "生成AI検索の急速な普及に対応するため、ChatGPT・Gemini・Perplexity等でのAI引用率を高める「AIO対策サービス」の提供を開始しました。従来のSEO対策に加えて、AI検索時代に必要な新しい集客戦略を一気通貫でご支援します。詳細はサービスページをご覧ください。",
+    excerpt: "Googleマップ・Googleビジネスプロフィールを活用したMEO対策サービスの詳細ページを公開しました。地域ビジネスの集客強化にご活用ください。",
+    body: "Googleマップ・Googleビジネスプロフィールを活用したMEO対策サービスの詳細ページを公開しました。口コミ対策・写真投稿・投稿機能の活用・カテゴリ設定最適化など、Googleマップ順位改善に向けた支援内容をご確認ください。",
   },
   {
-    slug: "office-relocation-2024",
-    title: "本社移転のお知らせ",
+    slug: "recruit-page-launched",
+    title: "採用情報ページを公開しました",
+    category: "お知らせ",
+    publishedAt: "2026-05-25",
+    excerpt: "株式会社サイプレスの採用情報ページを公開しました。Webマーケティング・MEO・SEO・AIOに興味のある方のご応募をお待ちしています。",
+    body: "株式会社サイプレスの採用情報ページを公開しました。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援に携わるメンバーを募集しています。リモートワーク対応・未経験歓迎のポジションもございます。ぜひご確認ください。",
+  },
+  {
+    slug: "web-marketing-page-launched",
+    title: "Webマーケティング支援ページを公開しました",
     category: "お知らせ",
     publishedAt: "2026-05-15",
-    excerpt: "事業拡大に伴い、2026年6月1日付で本社を移転いたしました。新住所は東京都葛飾区白鳥4-6-1-623となります。",
-    body: "事業拡大に伴い、2026年6月1日付で本社を移転いたしました。新住所は東京都葛飾区白鳥4-6-1-623となります。お電話番号・メールアドレスに変更はございません。ご来社の際は新住所をご確認の上お越しください。",
+    excerpt: "MEO・SEO・AIO・ホームページ制作・SNS運用・AI活用支援の各サービスページを公開しました。中小企業のWeb集客支援をワンストップで提供します。",
+    body: "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用代行・AI活用支援の各サービス詳細ページを公開しました。サービスの組み合わせによる相乗効果を活かした集客設計が株式会社サイプレスの強みです。お気軽にお問い合わせください。",
   },
   {
-    slug: "media-coverage-webmarketing",
-    title: "Web担当者Forum様に当社事例が掲載されました",
-    category: "メディア掲載",
+    slug: "official-site-launched",
+    title: "株式会社サイプレス公式サイトを公開しました",
+    category: "お知らせ",
     publishedAt: "2026-05-01",
-    excerpt: "Webマーケティング専門メディア「Web担当者Forum」様に、当社のAIO対策支援事例が掲載されました。",
-  },
-  {
-    slug: "meo-100-clients",
-    title: "MEO対策サービスの支援実績が100社を突破しました",
-    category: "実績",
-    publishedAt: "2026-04-10",
-    excerpt: "MEO対策サービスの累計支援企業数が100社を突破しました。飲食・美容・医療・建設など多業種にわたりご支援しています。",
-  },
-  {
-    slug: "new-member-2026",
-    title: "新メンバーを迎えサービス体制を強化しました",
-    category: "お知らせ",
-    publishedAt: "2026-04-01",
-    excerpt: "2026年4月より新たに3名のメンバーが加わり、SEO・MEO・AIOの各専門チームを強化しました。",
-  },
-  {
-    slug: "sns-management-launch",
-    title: "SNS運用代行サービスをリニューアルしました",
-    category: "お知らせ",
-    publishedAt: "2026-03-15",
-    excerpt: "SNS運用代行サービスをリニューアル。Instagram・X・TikTok・YouTube・LinkedInに対応した総合SNSマーケティングプランを提供開始しました。",
+    excerpt: "株式会社サイプレスの公式ウェブサイトを公開しました。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援してまいります。",
+    body: "株式会社サイプレスの公式ウェブサイトを公開しました。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用代行・AI活用支援という6つの領域で、地域中小企業のWeb集客を総合的に支援いたします。オンラインにて全国対応しておりますので、お気軽にご相談ください。",
   },
 ];
 

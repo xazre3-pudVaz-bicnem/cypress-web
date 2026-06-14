@@ -13,7 +13,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "wp.cypress-web.com",
+        hostname: "wp.cypress-all.co.jp",
+      },
+      {
+        protocol: "https",
+        hostname: "secure.gravatar.com",
       },
     ],
   },

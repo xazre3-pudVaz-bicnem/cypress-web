@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://cypress-marketing.co.jp/sitemap.xml",
-    host: "https://cypress-marketing.co.jp",
+    sitemap: "https://www.cypress-all.co.jp/sitemap.xml",
+    host: "https://www.cypress-all.co.jp",
   };
 }

@@ -1,4 +1,5 @@
-export const WP_API = "https://wp.cypress-web.com/wp-json/wp/v2";
+export const WP_API =
+  process.env.NEXT_PUBLIC_WORDPRESS_API_URL ?? "https://wp.cypress-all.co.jp/wp-json/wp/v2";
 
 export interface WPPost {
   id: number;

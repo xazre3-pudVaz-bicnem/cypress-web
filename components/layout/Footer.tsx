@@ -229,7 +229,7 @@ export default function Footer() {
             className="text-[12px]"
             style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
           >
-            © 2024 株式会社サイプレス. All rights reserved.
+            © 2026 株式会社サイプレス. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             <Link

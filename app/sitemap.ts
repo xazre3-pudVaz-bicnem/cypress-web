@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://cypress-web.com";
+const BASE = "https://www.cypress-all.co.jp";
 
 function urls(paths: string[], opts: Partial<MetadataRoute.Sitemap[0]> = {}): MetadataRoute.Sitemap {
   return paths.map((p) => ({ url: `${BASE}${p}`, lastModified: new Date(), ...opts }));
@@ -276,7 +276,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/faq/beginner", "/faq/compare",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
-    // コラム
+    // コラム専門ガイド（トピックページ）
+    ...urls([
+      "/column/meo", "/column/seo", "/column/aio", "/column/google-business-profile",
+      "/column/local-seo", "/column/web-design", "/column/chatgpt", "/column/sns",
+      "/column/ai", "/column/review-management", "/column/content-marketing",
+      "/column/structured-data",
+    ], { changeFrequency: "monthly", priority: 0.8 }),
+
+    // コラム記事
     ...urls([
       "/column",
       "/column/meo-ranking-2024", "/column/aio-chatgpt-strategy",

@@ -23,7 +23,7 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const SITE_URL = "https://cypress-marketing.co.jp";
+const SITE_URL = "https://www.cypress-all.co.jp";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -31,7 +31,7 @@ const organizationSchema = {
   name: "株式会社サイプレス",
   alternateName: "Cypress Inc.",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.jpg`,
+  logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/hero.png`,
   description:
     "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。東京都葛飾区。",

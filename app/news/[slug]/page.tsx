@@ -21,16 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const CATEGORY_COLORS: Record<NewsArticle["category"], string> = {
   お知らせ: "#1D4ED8",
-  プレスリリース: "#6D28D9",
-  メディア掲載: "#92400E",
-  実績: "#047857",
 };
 
 const CATEGORY_BG: Record<NewsArticle["category"], string> = {
   お知らせ: "#EFF6FF",
-  プレスリリース: "#F5F3FF",
-  メディア掲載: "#FFFBEB",
-  実績: "#ECFDF5",
 };
 
 function formatDate(dateStr: string) {

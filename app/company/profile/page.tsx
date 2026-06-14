@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-marketing.jp/company/profile" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/company/profile" },
 };
 
 const PROFILE_ROWS = [
