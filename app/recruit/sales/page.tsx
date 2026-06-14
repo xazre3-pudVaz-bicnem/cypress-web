@@ -97,6 +97,18 @@ const faqItems = [
     q: "Webマーケティング業界の将来性はありますか？",
     a: "はい。中小企業のデジタル化・AI対応の需要は今後さらに拡大する見込みです。MEO対策・SEO対策・AIを活用した業務効率化のニーズは急増しており、この領域の営業スキルは中長期的に市場価値の高いキャリアになります。",
   },
+  {
+    q: "成果次第で収入は上がりますか？",
+    a: "はい。成果次第で高収入を狙える環境を整えています。ただし「必ず○万円になる」という断定はできません。実績・評価に応じた給与改定の仕組みについては面談時にご説明します。",
+  },
+  {
+    q: "入社前に疑問を解消したい場合、気軽に相談できますか？",
+    a: "はい。選考に関係なく事前にオンラインで話を聞くことも可能です。「本当に向いているか」「環境が自分に合うか」を確認してから応募したい方はお気軽にお問い合わせください。",
+  },
+  {
+    q: "副業・ダブルワークはできますか？",
+    a: "詳細は面談時にご確認ください。雇用契約の内容によって異なります。",
+  },
 ];
 
 const jobPostingSchema = {
@@ -105,6 +117,11 @@ const jobPostingSchema = {
   title: "Webマーケティング営業（正社員）",
   description:
     "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業経営者へ提案する提案型法人営業職。未経験歓迎。月給35万円以上・年間休日130日。",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "株式会社サイプレス",
+    value: "cypress-sales-2026",
+  },
   hiringOrganization: {
     "@type": "Organization",
     name: "株式会社サイプレス",
@@ -118,11 +135,13 @@ const jobPostingSchema = {
       streetAddress: "白鳥4-6-1-623",
       addressLocality: "葛飾区",
       addressRegion: "東京都",
+      postalCode: "125-0061",
       addressCountry: "JP",
     },
   },
   employmentType: "FULL_TIME",
   datePosted: "2026-06-14",
+  validThrough: "2026-12-31",
   baseSalary: {
     "@type": "MonetaryAmount",
     currency: "JPY",
@@ -132,12 +151,13 @@ const jobPostingSchema = {
       unitText: "MONTH",
     },
   },
-  jobBenefits: "年間休日130日、正社員雇用、未経験歓迎",
+  jobBenefits: "年間休日130日、正社員雇用、未経験歓迎、入社研修あり",
   qualifications: "学歴・職歴・資格不問。成長意欲のある方歓迎。",
   applicantLocationRequirements: {
     "@type": "Country",
     name: "Japan",
   },
+  directApply: true,
 };
 
 const breadcrumbSchema = {
@@ -174,7 +194,7 @@ export default function RecruitSalesPage() {
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_13_52.png"
-              alt="株式会社サイプレス 営業チームミーティング"
+              alt="株式会社サイプレス 営業チームミーティング風景"
               fill
               className="object-cover"
               sizes="100vw"
@@ -211,6 +231,55 @@ export default function RecruitSalesPage() {
               MEO対策・SEO対策・ホームページ制作・AIO対策を、中小ビジネスの経営者へ提案する法人営業職。
               制作・保守・運用はサイプレスが担当するため、あなたは<strong style={{ color: "#ffffff" }}>提案と受注に集中</strong>できます。
             </p>
+          </div>
+        </section>
+
+        {/* ── Webマーケティング営業とは ──────────────────────────── */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>What Is This Job</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.4, marginBottom: "28px" }}>
+                Webマーケティング営業とは
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                Webマーケティング営業とは、中小企業の経営者に対して「Webを使った集客・販促・採用の課題を解決する」提案を行う法人営業職です。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                従来の「ものを売る」営業とは異なり、「お客様のビジネス課題を聞いて、最適な解決策を提案する」コンサルティング型の営業スタイルです。一度受注した顧客とは長期的な関係が続くため、信頼関係を積み上げることがこの仕事の本質になります。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151" }}>
+                扱う商材はMEO対策・SEO対策・ホームページ制作・AIO対策（AI検索最適化）・AI活用支援です。いずれも「Googleで見つけてもらいやすくする」「AIにも引用されるWebサイトにする」という目的の商材で、経営者が直感的に価値を理解しやすい特徴があります。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── サイプレスで営業をする意味 ─────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Why Cypress</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.4, marginBottom: "28px" }}>
+                サイプレスで営業をする意味
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                Web集客支援の会社は多くありますが、サイプレスで働くことには明確な違いがあります。
+              </p>
+              <div style={{ marginBottom: "24px" }}>
+                {[
+                  { t: "制作・保守がすべて社内完結", b: "外注への丸投げではなく、制作・施策・運用・レポートを社内チームが担当します。「売ったはいいが対応できない」という問題が起きにくく、お客様への提案に自信を持てます。" },
+                  { t: "MEO・SEO・AIO・AI活用を横断提案できる", b: "単一商材ではなく、Googleマップ・検索・AI検索・ホームページを組み合わせた複合提案が可能です。顧客の課題に最も適した提案ができるため、成約率が高まります。" },
+                  { t: "ChatGPT・AI時代の最前線で働ける", b: "AIO対策・AI活用支援という最新商材を扱える環境です。「AI時代に価値が上がる営業スキル」を身につけながら、顧客に実際の価値を届けられます。" },
+                ].map((item) => (
+                  <div key={item.t} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                ))}
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -276,6 +345,61 @@ export default function RecruitSalesPage() {
           </div>
         </section>
 
+        {/* ── 月給35万円以上について ──────────────────────────────── */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Salary</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+                月給35万円以上について
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                「Webマーケティング営業」と聞くと、インセンティブ頼みで基本給が低いイメージを持つ方もいるかもしれません。サイプレスでは月給35万円以上を提示しています。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                具体的な給与は、あなたの経験・スキル・面談時の評価をもとに個別に決定します。「必ず○万円になる」という断定はしませんが、成果次第で高収入を狙える環境を整えています。
+              </p>
+              <div style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px", marginBottom: "18px" }}>
+                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>給与に関するよくある疑問</p>
+                {[
+                  "未経験でも35万円以上ですか？ → 経験・スキルにより個別決定。面談でご確認ください。",
+                  "インセンティブ・歩合はありますか？ → 詳細は面談時にご説明します。",
+                  "昇給タイミングはいつですか？ → 評価サイクルについては面談でご確認ください。",
+                ].map((item) => (
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc", fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
+                    <span style={{ flexShrink: 0, color: "#c4b89a" }}>Q</span>
+                    <span>{item}</span>
+                  </div>
+                ))}
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 年間休日130日について ────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Holiday</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+                年間休日130日の考え方
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                週休2日（土日）＋祝日ベースで年間休日を130日設けています。「働く日数を減らして生産性を上げる」という考え方のもと、オン・オフを明確にした働き方を推進しています。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                営業職は「働けば働くほど成果が出る」という面もありますが、疲弊した状態では質の高い提案ができません。十分な休暇を取ることで、顧客との商談でベストなパフォーマンスを発揮してほしいという考えから、年間130日の休日を設けています。
+              </p>
+              <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "20px" }}>
+                <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>
+                  休日の詳細（有給休暇・特別休暇等）は面談時にご確認ください。年間休日130日を超える休暇取得についても個別にご相談いただけます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── 仕事内容 ───────────────────────────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
@@ -303,7 +427,82 @@ export default function RecruitSalesPage() {
           </div>
         </section>
 
-        {/* ── 売る商材 ───────────────────────────────────────────── */}
+        {/* ── 1日の流れ ─────────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Daily Schedule</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              ある1日の流れ（例）
+            </h2>
+            <div style={{ maxWidth: "680px" }}>
+              {[
+                { time: "9:00", title: "出社・メール確認・予定整理", body: "当日の商談・連絡事項を確認。提案書の最終チェックを行います。" },
+                { time: "10:00", title: "新規顧客へのアプローチ・商談準備", body: "新規商談の準備（企業リサーチ・提案内容の整理）や既存顧客へのフォロー連絡を行います。" },
+                { time: "11:00", title: "商談①（午前）", body: "地域の飲食店オーナーとMEO対策について商談。現在の課題をヒアリングし、提案内容を説明します。" },
+                { time: "13:00", title: "昼休憩", body: "自由に過ごせます。" },
+                { time: "14:00", title: "商談②（午後）", body: "美容院オーナーへSEO対策＋ホームページ制作のセット提案。過去事例を示しながら価値を説明します。" },
+                { time: "16:00", title: "提案書作成・社内共有", body: "翌日以降の商談に向けた提案書作成。社内チームとの情報共有・受注後の引き継ぎ対応。" },
+                { time: "18:00", title: "退社", body: "業務終了。プライベートの時間を大切にしてください。" },
+              ].map((item) => (
+                <div key={item.time} style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #e8e4dc", alignItems: "flex-start" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "52px", paddingTop: "2px" }}>{item.time}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.title}</p>
+                    <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>※上記はあくまでも一例です。実際の業務はプロジェクトや状況によって異なります。</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── よくある提案パターン ─────────────────────────────────── */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Proposal Patterns</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              よくある提案パターン
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  situation: "飲食店・美容院・整体院などの地域店舗",
+                  proposal: "MEO対策（Googleマップ上位表示）を軸に提案。「お客様がGoogleマップで検索した際にお店が上位に出るようにしましょう」という分かりやすい提案。",
+                },
+                {
+                  situation: "ホームページはあるが集客できていない企業",
+                  proposal: "SEO対策＋コンテンツ制作の提案。「今のサイトを改善してGoogle検索で見つけてもらいやすくしましょう」という改善提案。",
+                },
+                {
+                  situation: "ホームページが古い・ない企業",
+                  proposal: "ホームページ制作＋SEO対策のセット提案。「集客できるサイトを作り、同時に検索対策も進めましょう」という新規構築提案。",
+                },
+                {
+                  situation: "採用に困っている企業",
+                  proposal: "採用特化ページ制作＋採用SEO対策の提案。「求人票だけでなく、御社の魅力を伝える採用ページで応募者を増やしましょう」という提案。",
+                },
+                {
+                  situation: "ChatGPT・AI検索に関心がある経営者",
+                  proposal: "AIO対策（AI検索最適化）の提案。「ChatGPTで業界情報を調べた際に御社が引用されるようにしましょう」という最新商材提案。",
+                },
+                {
+                  situation: "業務効率化に関心がある企業",
+                  proposal: "AI活用支援の提案。「ChatGPTを使った業務自動化・メール文書作成効率化を支援します」という提案。",
+                },
+              ].map((item, i) => (
+                <div key={i} style={{ border: "1px solid rgba(255,255,255,0.1)", padding: "24px" }}>
+                  <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)", marginBottom: "8px", fontFamily: "var(--font-display)" }}>PATTERN {String(i + 1).padStart(2, "0")}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", fontWeight: 700, color: "rgba(255,255,255,0.9)", marginBottom: "10px" }}>{item.situation}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.9" }}>{item.proposal}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 提案する商材 ───────────────────────────────────────── */}
         <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Products</p>
@@ -330,22 +529,22 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 販売しやすい理由 ────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Why It Sells</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Why It Sells</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               この商材が売りやすい理由
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "経営者が「集客の悩み」を抱えていることを知っている", body: "「Googleマップに表示されない」「問い合わせが来ない」という悩みは、中小ビジネスの多くが共通して抱えています。課題が明確なため、提案のスタート地点が分かりやすい商材です。" },
-                { title: "費用対効果が説明しやすい", body: "「月3万円でGoogleマップ上位表示 → 月5件の問い合わせ増加 → 単価5万円なら月25万円の売上増」という試算を示せます。費用の根拠を数字で示しやすく、経営者が納得しやすい商材です。" },
+                { title: "費用対効果が説明しやすい", body: "「月額でGoogleマップ上位表示 → 問い合わせ増加 → 売上増」という流れを示せます。費用の根拠を経営者の視点で説明しやすく、納得感が生まれやすい商材です。" },
                 { title: "競合との比較で勝てるケースが多い", body: "中小企業のWeb集客はまだ整備されていないケースが多く、MEO・SEOを丁寧に行うだけで差が生まれます。「今は何もしていない」という経営者ほど、提案のインパクトが大きくなります。" },
                 { title: "AI時代の追い風がある", body: "ChatGPT・Geminiなど生成AIの普及で「AIにも引用されるWebサイト・Googleマップ」の重要性が急速に認識されています。AIO対策・AI活用支援という新商材が加わることで、提案の切り口がさらに広がっています。" },
               ].map((item) => (
-                <div key={item.title} style={{ border: "1px solid rgba(255,255,255,0.1)", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "12px" }}>{item.title}</p>
-                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.9" }}>{item.body}</p>
+                <div key={item.title} style={{ border: "1px solid #e8e4dc", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
               ))}
             </div>
@@ -353,15 +552,15 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 求める人物像 ────────────────────────────────────────── */}
-        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Ideal Candidate</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
-              求める人物像
+              向いている人・向いていない人
             </h2>
-            <div style={{ maxWidth: "640px" }}>
-              <div style={{ marginBottom: "32px" }}>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "16px" }}>こんな方に来てほしい</p>
+            <div className="grid md:grid-cols-2 gap-10" style={{ maxWidth: "880px" }}>
+              <div>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #0d1b2a" }}>こんな方に来てほしい</p>
                 {[
                   "経営者・ビジネスオーナーと対話することが好き、または目指している",
                   "成長意欲が高く、自ら学んで成果を出したい",
@@ -378,26 +577,96 @@ export default function RecruitSalesPage() {
                 <div style={{ borderTop: "1px solid #e8e4dc" }} />
               </div>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "16px" }}>歓迎する経験（必須ではありません）</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#9ca3af", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #e8e4dc" }}>こんな方は向いていないかも</p>
                 {[
-                  "法人営業・個人営業の経験（業種不問）",
-                  "Webマーケティング・SEO・MEO関連の知識",
-                  "飲食・美容・建設・医療・士業などのビジネス経験",
-                  "スタートアップ・ベンチャー経験",
+                  "安定収入だけを求め、成長・挑戦への意欲がない方",
+                  "顧客と向き合うのが苦手で、完全に内向きの業務だけをしたい方",
+                  "日々変化するAI・Webのトレンドを追うことに抵抗がある方",
+                  "数字や目標に向き合うことを避けたい方",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
-                    <span style={{ color: "#9ca3af", flexShrink: 0 }}>◇</span>
-                    <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
+                    <span style={{ color: "#9ca3af", flexShrink: 0 }}>×</span>
+                    <p style={{ fontSize: "14px", color: "#9ca3af" }}>{item}</p>
                   </div>
                 ))}
                 <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "16px", marginTop: "16px" }}>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
+                    「自分がどちらか分からない」という方も歓迎します。面談でお話を聞かせてください。
+                  </p>
+                </div>
               </div>
+            </div>
+            <div style={{ maxWidth: "640px", marginTop: "48px" }}>
+              <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "16px" }}>歓迎する経験（必須ではありません）</p>
+              {[
+                "法人営業・個人営業の経験（業種不問）",
+                "Webマーケティング・SEO・MEO関連の知識",
+                "飲食・美容・建設・医療・士業などのビジネス経験",
+                "スタートアップ・ベンチャー経験",
+              ].map((item) => (
+                <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ color: "#9ca3af", flexShrink: 0 }}>◇</span>
+                  <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ── 選考で見るポイント ───────────────────────────────────── */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Selection Criteria</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
+                選考で見るポイント
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "24px" }}>
+                学歴・職歴・資格は問いません。面談では以下の点を中心にお話しします。
+              </p>
+              {[
+                { point: "誠実さ・人柄", desc: "顧客に誠実に向き合えるか。誇大説明・虚偽説明をしないか。長期的な信頼関係を大切にできるか。" },
+                { point: "成長意欲", desc: "学ぶことへの抵抗がないか。新しい知識（AI・Webマーケティング）を吸収しようとする姿勢があるか。" },
+                { point: "仕事への動機", desc: "なぜこの仕事に興味を持ったか。収入・成長・社会貢献など、自分の動機が明確か。" },
+                { point: "コミュニケーション力", desc: "経営者と対話できるか。相手の話を聞いて整理し、分かりやすく説明できるか。" },
+              ].map((item) => (
+                <div key={item.point} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a", fontSize: "13px", fontWeight: 700, minWidth: "120px", paddingTop: "2px" }}>{item.point}</span>
+                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ── 入社後のサポート ──────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Onboarding Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              入社後のサポート
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6" style={{ maxWidth: "900px" }}>
+              {[
+                { phase: "入社〜1ヶ月", title: "商材知識研修", body: "MEO・SEO・AIO・ホームページ制作・AI活用支援の仕組みと価値を学ぶ研修。「なぜ顧客の役に立つのか」を理解することが目的です。" },
+                { phase: "1〜3ヶ月", title: "提案トーク習得", body: "提案資料の使い方・商談の進め方・よくある質問への回答方法を習得。先輩の同行から始め、一人立ちを目指します。" },
+                { phase: "3ヶ月以降", title: "独立営業＋フォロー", body: "一人で商談・受注できるようになったあとも、チームで情報共有しながら課題を解決する体制を継続します。" },
+              ].map((item) => (
+                <div key={item.phase} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "28px" }}>
+                  <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "6px", fontFamily: "var(--font-display)" }}>{item.phase}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* ── 募集要項 ───────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Requirements</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -425,7 +694,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── キャリアパス ────────────────────────────────────────── */}
-        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Career Path</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -437,7 +706,7 @@ export default function RecruitSalesPage() {
                 { phase: "6ヶ月〜2年", title: "個人目標達成・専門性強化", body: "独立した営業担当として受注を積み上げます。特定業種（飲食・医療・建設など）のスペシャリストとして専門性を高める道もあります。" },
                 { phase: "2年以降", title: "リーダー・マネジメント", body: "チームリーダー・マネージャーとしてメンバーの育成・組織目標の達成を担うキャリアが開きます。成長の方向性を一緒に設計します。" },
               ].map((item) => (
-                <div key={item.phase} style={{ border: "1px solid #e8e4dc", padding: "28px" }}>
+                <div key={item.phase} style={{ border: "1px solid #e8e4dc", padding: "28px", background: "#ffffff" }}>
                   <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "6px", fontFamily: "var(--font-display)" }}>{item.phase}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
@@ -448,7 +717,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 会社情報 ───────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Company Info</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>会社概要</h2>
@@ -472,7 +741,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 選考フロー ──────────────────────────────────────────── */}
-        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Selection Process</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -503,7 +772,7 @@ export default function RecruitSalesPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="正社員営業職の採用についてよくある質問" bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} heading="正社員営業職の採用についてよくある質問" bgColor="#ffffff" />
 
         {/* ── エントリーCTA ────────────────────────────────────────── */}
         <PageContactCTA

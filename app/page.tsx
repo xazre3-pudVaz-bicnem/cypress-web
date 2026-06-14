@@ -785,59 +785,41 @@ export default function Home() {
         ============================================================ */}
         <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
           <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="grid md:grid-cols-2 gap-16 items-end">
+            <div className="grid md:grid-cols-2 gap-16 items-start">
               <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                    marginBottom: "16px",
-                  }}
-                >
+                <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>
                   Recruit
                 </p>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "clamp(24px,3vw,38px)",
-                    color: "#0d1b2a",
-                    lineHeight: 1.3,
-                    fontWeight: 700,
-                    marginBottom: "28px",
-                  }}
-                >
-                  AI×Webマーケティングの<br />最前線で、一緒に働く仲間を募集しています。
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3vw,38px)", color: "#0d1b2a", lineHeight: 1.3, fontWeight: 700, marginBottom: "20px" }}>
+                  Webマーケティング営業を<br />募集しています。
                 </h2>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "28px" }}>
-                  MEO・SEO・AIO・AI活用という成長領域で、経営者への提案から施策の実行・改善まで携わることができます。業界未経験でも、意欲があれば入社後に学べる環境を整えています。
+                <p style={{ fontSize: "13px", color: "#9ca3af", marginBottom: "16px", display: "inline-block", padding: "4px 12px", border: "1px solid #e8e4dc", background: "#ffffff" }}>
+                  現在募集中：Webマーケティング営業のみ
                 </p>
-                <div className="flex flex-wrap gap-3 mb-8">
-                  {["Webマーケティング営業", "マーケター職"].map((role) => (
-                    <span
-                      key={role}
-                      className="text-[13px] px-4 py-1.5"
-                      style={{ border: "1px solid #e8e4dc", color: "#374151", background: "#ffffff" }}
-                    >
-                      {role}
+                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "28px" }}>
+                  株式会社サイプレスでは、MEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業を募集しています。月給35万円以上、年間休日130日。AI時代に必要とされる提案力を身につけながら、仕事もプライベートも充実させられる環境を目指しています。
+                </p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {["月給35万円以上", "年間休日130日", "未経験歓迎", "正社員募集", "AI×Webマーケティング"].map((tag) => (
+                    <span key={tag} className="text-[12px] px-3 py-1" style={{ border: "1px solid #e8e4dc", color: "#374151", background: "#ffffff" }}>
+                      {tag}
                     </span>
                   ))}
                 </div>
-                <Link
-                  href="/recruit"
-                  className="text-[13px] transition-colors hover:text-[#0d1b2a]"
-                  style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
-                >
-                  採用情報を見る →
-                </Link>
+                <div className="flex flex-wrap gap-5">
+                  <Link href="/recruit/sales" className="text-[13px] transition-colors hover:text-[#0d1b2a]" style={{ color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px", fontWeight: 600 }}>
+                    営業職詳細・応募 →
+                  </Link>
+                  <Link href="/recruit" className="text-[13px] transition-colors hover:text-[#0d1b2a]" style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}>
+                    採用情報を見る →
+                  </Link>
+                </div>
               </div>
               <div>
-                {/* WOMEN_PHONE image — 220px, right column, above stats */}
                 <div style={{ position: "relative", height: "220px", marginBottom: "0", overflow: "hidden" }}>
                   <Image
-                    src="/ChatGPT Image 2026年6月13日 19_21_48.png"
-                    alt="チームで働く環境"
+                    src="/ChatGPT Image 2026年6月14日 21_13_52.png"
+                    alt="株式会社サイプレスのWebマーケティング営業 チームミーティング風景"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -845,20 +827,65 @@ export default function Home() {
                   <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.08)" }} />
                 </div>
                 {[
-                  { label: "月給", value: "40万円以上" },
-                  { label: "年間休日", value: "130日（完全週休2日制）" },
-                  { label: "勤務形態", value: "フルリモート可" },
+                  { label: "月給", value: "35万円以上" },
+                  { label: "年間休日", value: "130日" },
+                  { label: "雇用形態", value: "正社員" },
                   { label: "応募資格", value: "未経験歓迎" },
                 ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex items-center justify-between py-4"
-                    style={{ borderBottom: "1px solid #e8e4dc" }}
-                  >
+                  <div key={item.label} className="flex items-center justify-between py-4" style={{ borderBottom: "1px solid #e8e4dc" }}>
                     <span className="text-[13px]" style={{ color: "#9ca3af" }}>{item.label}</span>
                     <span className="text-[14px] font-semibold" style={{ color: "#0d1b2a" }}>{item.value}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================================
+            8b. PARTNER — #ffffff background
+        ============================================================ */}
+        <section className="py-24 md:py-32" style={{ background: "#ffffff" }}>
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>
+              Partner
+            </p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,36px)", color: "#0d1b2a", lineHeight: 1.3, fontWeight: 700, marginBottom: "20px" }}>
+              販売パートナー・取次パートナーを<br />募集しています。
+            </h2>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "640px" }}>
+              ホームページ制作・MEO対策・SEO対策・AIO対策を提案できる販売代理店・取次店を募集しています。制作・保守管理・運用は株式会社サイプレスが対応するため、パートナー様は販売・紹介活動に集中できます。
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div style={{ border: "1px solid #e8e4dc", padding: "32px", background: "#f8f6f2" }}>
+                <p style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", marginBottom: "10px" }}>Sales Agency</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "14px" }}>販売代理店募集</p>
+                <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "20px" }}>
+                  ホームページ制作・MEO対策・SEO対策を販売したい法人・営業会社向けのパートナー制度です。制作や保守はサイプレスが対応するため、制作リソース不要で販売に集中できます。
+                </p>
+                <div className="flex flex-col gap-1 mb-6">
+                  {["制作・保守はサイプレスが対応", "専門スタッフ・リソース不要", "既存顧客への提案から始められる"].map((p) => (
+                    <p key={p} style={{ fontSize: "13px", color: "#374151" }}>✓ {p}</p>
+                  ))}
+                </div>
+                <Link href="/agent" style={{ fontSize: "13px", color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px" }}>
+                  販売代理店募集を見る →
+                </Link>
+              </div>
+              <div style={{ border: "1px solid #e8e4dc", padding: "32px", background: "#f8f6f2" }}>
+                <p style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", marginBottom: "10px" }}>Referral Partner</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "14px" }}>取次店・紹介パートナー募集</p>
+                <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "20px" }}>
+                  顧客紹介から始められる紹介パートナー制度です。専門知識が少なくても始めやすく、提案・制作・運用はサイプレスが対応します。士業・保険代理店・地域企業と相性が良い仕組みです。
+                </p>
+                <div className="flex flex-col gap-1 mb-6">
+                  {["紹介するだけでOK", "専門知識不要", "提案・制作・運用はサイプレスが対応"].map((p) => (
+                    <p key={p} style={{ fontSize: "13px", color: "#374151" }}>✓ {p}</p>
+                  ))}
+                </div>
+                <Link href="/partner/referral" style={{ fontSize: "13px", color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px" }}>
+                  取次店・紹介パートナーを見る →
+                </Link>
               </div>
             </div>
           </div>

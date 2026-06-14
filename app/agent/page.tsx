@@ -9,7 +9,7 @@ import FaqSection from "@/components/shared/FaqSection";
 export const metadata: Metadata = {
   title: "販売代理店募集｜ホームページ制作・MEO対策・SEO対策の代理店募集｜株式会社サイプレス",
   description:
-    "株式会社サイプレスの販売代理店（業務委託）募集。MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業へ販売。制作・保守・運用はサイプレスが全対応。代理店は販売に専念。",
+    "株式会社サイプレスの販売代理店募集。MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業へ販売。制作・保守・運用はサイプレスが全対応。代理店は販売に専念。",
   keywords: [
     "販売代理店 募集 Webマーケティング",
     "MEO対策 代理店",
@@ -113,6 +113,22 @@ const faqItems = [
     q: "申し込み方法を教えてください。",
     a: "お問い合わせフォームより「販売代理店募集への応募」の旨をお知らせください。担当者より2〜3営業日以内にご連絡します。",
   },
+  {
+    q: "成果保証・効果保証はできますか？顧客から聞かれたら？",
+    a: "「検索で必ず1位になる」「売上が必ず増える」という成果保証・断定的な効果保証はしておりません。顧客から聞かれた際は「上位表示を目指して施策を実施する」という表現に留めてください。誇大説明は代理店様・サイプレス双方のリスクになります。",
+  },
+  {
+    q: "顧客から「本当に効果がありますか？」と聞かれたら？",
+    a: "「施策を通じて集客改善を目指します。具体的な効果は顧客のWebサイト状況・業種・地域・競合状況によって異なります」とお伝えください。断定的な効果保証は禁止しています。",
+  },
+  {
+    q: "誇大説明・虚偽説明が禁止されているのはなぜですか？",
+    a: "景品表示法・消費者保護の観点から誤解を招く表現は禁止しています。顧客への虚偽・誇大説明は代理店様の責任となる場合があり、サイプレスとの契約解除の原因にもなります。誠実な説明活動をお願いしています。",
+  },
+  {
+    q: "他のWeb系代理店と競合することはありますか？",
+    a: "同じエリアや顧客に対して複数の代理店が提案するケースは起こりえます。独占エリア設定については個別にご相談ください。顧客の立場からは複数社の提案を比較検討することは一般的であり、誠実な提案で差別化していただくことが重要です。",
+  },
 ];
 
 const serviceSchema = {
@@ -162,7 +178,7 @@ export default function AgentPage() {
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png"
-              alt="販売代理店 ビジネスパートナーとの商談"
+              alt="販売代理店 ビジネスパートナーとの商談風景"
               fill
               className="object-cover"
               sizes="100vw"
@@ -190,8 +206,36 @@ export default function AgentPage() {
           </div>
         </section>
 
-        {/* ── 3つのポイント ────────────────────────────────────────── */}
+        {/* ── なぜ今Web集客商材の代理店なのか ──────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Market Background</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.4, marginBottom: "28px" }}>
+                なぜ今、Web集客商材の代理店が有望なのか
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                中小企業のデジタル化は急速に進んでいますが、「何から始めればいいかわからない」という経営者が大多数です。MEO対策・SEO対策・ホームページ制作などのWeb集客支援は、今まさに需要が急増している分野です。
+              </p>
+              <div style={{ marginBottom: "16px" }}>
+                {[
+                  { t: "中小企業のデジタル化ニーズが急拡大", b: "「Googleマップで検索して店を探す」行動はもはや標準です。MEO対策・Googleビジネスプロフィールの最適化は、すべての地域ビジネスに必要なものになっています。" },
+                  { t: "AI検索時代で新商材の需要が生まれている", b: "ChatGPT・Geminiなど生成AIの普及で、AIO対策（AI検索対策）という新しい集客商材への需要が急増しています。従来のSEO代理店と明確に差別化できます。" },
+                  { t: "Web集客代理店の供給はまだ不足", b: "中小企業への説明・提案を丁寧に行える代理店はまだ少なく、誠実に対応できる代理店には継続的な受注機会があります。" },
+                ].map((item) => (
+                  <div key={item.t} style={{ padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                ))}
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 3つのポイント ────────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Key Points</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -207,7 +251,7 @@ export default function AgentPage() {
                 {
                   n: "02",
                   title: "需要が高く・説明しやすい商材",
-                  body: "「Googleマップで上位に出たい」「ホームページから問い合わせを増やしたい」という中小経営者の悩みに直結する商材です。費用対効果を数字で示せるため、提案が通りやすい特長があります。",
+                  body: "「Googleマップで上位に出たい」「ホームページから問い合わせを増やしたい」という中小経営者の悩みに直結する商材です。費用対効果を分かりやすく伝えられるため、提案が通りやすい特長があります。",
                 },
                 {
                   n: "03",
@@ -215,7 +259,7 @@ export default function AgentPage() {
                   body: "経営者・自営業者・士業・コンサルタントなど、すでに中小企業との接点をお持ちの方は特に活動しやすいプログラムです。副業・副収入として始めることも可能です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                <div key={item.n} style={{ padding: "32px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "17px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
@@ -226,7 +270,7 @@ export default function AgentPage() {
         </section>
 
         {/* ── 役割分担 ───────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Role Division</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -270,7 +314,47 @@ export default function AgentPage() {
           </div>
         </section>
 
-        {/* ── 販売できる商材 ──────────────────────────────────────── */}
+        {/* ── 商材別の売り方 ──────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>How to Sell</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              商材別の売り方・提案のポイント
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  label: "MEO対策",
+                  target: "地域店舗（飲食・美容・医療・整体など）",
+                  point: "「今、Googleマップで調べてみましょう」と一緒にスマートフォンで検索を見せる。競合が上位に表示されていれば、改善の必要性を視覚的に示せます。",
+                },
+                {
+                  label: "SEO対策",
+                  target: "ホームページを持つ企業全般",
+                  point: "「御社のホームページはGoogle検索で何位ですか？」という問いかけから入る。現状を把握していない経営者が多く、現状把握から改善提案につながりやすいです。",
+                },
+                {
+                  label: "ホームページ制作",
+                  target: "サイトが古い・ない企業",
+                  point: "「今のサイトではスマートフォンで見にくくないですか？」「問い合わせボタンが分かりにくいですよね」という具体的な指摘から入ると、課題意識が高まります。",
+                },
+                {
+                  label: "AIO対策",
+                  target: "SEO対策済みの企業・IT感度が高い経営者",
+                  point: "「ChatGPTで業界の質問をしたとき、御社は引用されていますか？」という問いかけで関心を引く。新しい商材なので先行提案できることをアピールできます。",
+                },
+              ].map((item) => (
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", marginBottom: "6px" }}>{item.label}</p>
+                  <p style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "14px" }}>対象: {item.target}</p>
+                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.point}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 提案できる商材 ──────────────────────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Products</p>
@@ -293,28 +377,99 @@ export default function AgentPage() {
                 </div>
               ))}
             </div>
+            <div style={{ marginTop: "28px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              {[
+                { href: "/agent/web-design", label: "ホームページ制作代理店 詳細 →" },
+                { href: "/agent/meo", label: "MEO対策代理店 詳細 →" },
+                { href: "/agent/seo", label: "SEO対策代理店 詳細 →" },
+                { href: "/agent/aio", label: "AIO対策代理店 詳細 →" },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} style={{ fontSize: "13px", color: "#0d1b2a", border: "1px solid #e8e4dc", padding: "8px 16px", textDecoration: "none", fontWeight: 600 }}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* ── こんな方に向いている ──────────────────────────────── */}
+        {/* ── 提案トーク例 ────────────────────────────────────────── */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Who It&apos;s For</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Sample Talk</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
-              こんな方に向いています
+              提案トーク例
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div style={{ maxWidth: "760px" }}>
               {[
-                { title: "中小企業・経営者との接点がある方", body: "商工会・異業種交流会・士業・コンサルタント・営業職など、中小企業オーナーとのつながりがある方は特に活動しやすい環境です。" },
-                { title: "既存事業の付加価値として提案したい方", body: "会計・法務・人事・ITサポートなど、別サービスを提供しながら「Web集客も一緒に提案できる」というポジションを確立したい方に最適です。" },
-                { title: "副業・副収入として始めたい方", body: "本業と並行して活動できます。販売量に応じた報酬体系のため、自分のペースで収入を増やせます。" },
-                { title: "Webマーケティングの商材を扱いたい元・現営業職", body: "法人営業・個人営業の経験をお持ちで、AI・Web集客という成長市場の商材を扱いたい方に向いています。" },
-              ].map((item) => (
-                <div key={item.title} style={{ border: "1px solid rgba(255,255,255,0.1)", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>{item.title}</p>
-                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.9" }}>{item.body}</p>
+                {
+                  situation: "飲食店オーナーへのMEO提案",
+                  talk: "「最近、お客様はGoogleマップで飲食店を探すことが多いですよね。試しに今スマホで『○○市 ランチ』と検索してみると、競合店が上位に出ていますね。MEO対策をすることで、御社がこの検索で上位に表示されやすくなります。」",
+                },
+                {
+                  situation: "ホームページが古い建設会社へ",
+                  talk: "「御社のホームページをスマートフォンで開いてみましたが、文字が小さくて見にくいですね。今はスマホからの問い合わせが多いので、スマートフォン対応のサイトにリニューアルすると問い合わせ数が変わるケースが多いです。」",
+                },
+                {
+                  situation: "SEOに関心がある事業者へ",
+                  talk: "「今、広告費をかけていても顧客が増えないという会社さんが多いんです。SEO対策でGoogle検索から自然に見つけてもらえるようになると、広告費を抑えながら問い合わせが増えるケースがあります。」",
+                },
+              ].map((item, i) => (
+                <div key={i} style={{ borderTop: "1px solid rgba(255,255,255,0.1)", padding: "24px 0" }}>
+                  <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)", marginBottom: "10px", fontFamily: "var(--font-display)" }}>EXAMPLE {String(i + 1).padStart(2, "0")}: {item.situation}</p>
+                  <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.8)", lineHeight: "2.0", borderLeft: "2px solid rgba(255,255,255,0.2)", paddingLeft: "16px" }}>{item.talk}</p>
                 </div>
               ))}
+              <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }} />
+              <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", padding: "16px", marginTop: "20px" }}>
+                <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: "1.9" }}>
+                  ※ 「必ず集客できる」「必ずGoogleマップ1位になれる」などの断定的な効果保証は使用しないでください。提案資料はサイプレスが提供します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── こんな方に向いている/向いていない ──────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Who It&apos;s For</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              代理店に向いている会社・向いていない会社
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8" style={{ maxWidth: "880px" }}>
+              <div>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #0d1b2a" }}>こんな会社・個人に向いています</p>
+                {[
+                  { t: "中小企業・経営者との接点がある方", b: "商工会・異業種交流会・士業・コンサルタント・営業職など、中小企業オーナーとのつながりがある方は活動しやすい環境です。" },
+                  { t: "既存事業の付加価値として提案したい方", b: "会計・法務・人事・ITサポートなど、別サービスを提供しながら「Web集客も一緒に提案できる」ポジションを確立したい方に最適です。" },
+                  { t: "副業・副収入として始めたい方", b: "本業と並行して活動できます。既存の人脈から販売していただけます。" },
+                  { t: "Webマーケティング商材を扱いたい営業経験者", b: "法人営業・個人営業の経験をお持ちで、AI・Web集客という成長市場の商材を扱いたい方に向いています。" },
+                ].map((item) => (
+                  <div key={item.t} style={{ padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.b}</p>
+                  </div>
+                ))}
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              </div>
+              <div>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#9ca3af", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #e8e4dc" }}>こんな場合はご遠慮ください</p>
+                {[
+                  "顧客への成果保証・断定的効果保証を約束したい場合",
+                  "誇大説明・虚偽説明によって販売しようとする場合",
+                  "自社でも類似サービスを提供しており、明確な競合関係にある場合",
+                  "販売活動をせず「登録だけしておきたい」という場合",
+                ].map((item) => (
+                  <div key={item} style={{ display: "flex", gap: "12px", padding: "12px 0", borderTop: "1px solid #e8e4dc" }}>
+                    <span style={{ color: "#9ca3af", flexShrink: 0 }}>×</span>
+                    <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{item}</p>
+                  </div>
+                ))}
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "14px", marginTop: "14px" }}>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>代理店審査があります。誠実な販売活動ができる方を優先しています。</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -348,8 +503,108 @@ export default function AgentPage() {
           </div>
         </section>
 
-        {/* ── サポート体制 ───────────────────────────────────────── */}
+        {/* ── 商談フロー ──────────────────────────────────────────── */}
         <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Sales Flow</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              顧客への商談フロー（提案から受注まで）
+            </h2>
+            <div style={{ maxWidth: "680px" }}>
+              {[
+                { step: "STEP 1", t: "課題のヒアリング", b: "「現在のWeb集客でお困りのことはありますか？」「Googleマップやホームページからの問い合わせはありますか？」と課題を聞き出します。" },
+                { step: "STEP 2", t: "現状の把握・見える化", b: "一緒に検索してみる・現在のホームページをスマホで確認するなど、視覚的に現状の課題を確認します。" },
+                { step: "STEP 3", t: "商材の紹介・提案", b: "課題に最適な商材（MEO・SEO・ホームページ制作等）を説明します。サイプレスが提供する提案資料を使います。" },
+                { step: "STEP 4", t: "見積もり・詳細説明", b: "具体的な金額・サービス内容はサイプレスの担当者と連携して提示します。三者商談にも対応します。" },
+                { step: "STEP 5", t: "受注・契約手続き", b: "顧客が合意したら契約手続きを行います。その後の制作・運用はサイプレスが引き継ぎます。" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div style={{ minWidth: "40px" }}>
+                    <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
+                    </div>
+                  </div>
+                  <div style={{ paddingTop: "4px" }}>
+                    <p style={{ fontSize: "10px", color: "#9ca3af", fontFamily: "var(--font-display)", marginBottom: "4px" }}>{item.step}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ── 契約後の流れ ─────────────────────────────────────────── */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>After Contract</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
+              受注後・契約後の流れ
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "28px" }}>
+                受注後の制作・実装・運用・月次レポートはすべてサイプレスが担当します。代理店様の受注後の業務負担はほぼありません。
+              </p>
+              <div className="grid md:grid-cols-2 gap-5">
+                {[
+                  { who: "代理店様", tasks: ["受注・契約の確認", "顧客とサイプレスの橋渡し", "追加提案の機会創出"] },
+                  { who: "サイプレス", tasks: ["顧客ヒアリング・キックオフ", "制作・実装・施策の実行", "月次レポート作成・提供", "顧客からの問い合わせ対応"] },
+                ].map((item) => (
+                  <div key={item.who} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "22px" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", fontWeight: 700, color: "#0d1b2a", marginBottom: "14px" }}>{item.who}</p>
+                    {item.tasks.map((t) => (
+                      <div key={t} style={{ display: "flex", gap: "8px", padding: "7px 0", borderTop: "1px solid #e8e4dc" }}>
+                        <span style={{ fontSize: "12px", color: "#9ca3af", flexShrink: 0 }}>→</span>
+                        <p style={{ fontSize: "13px", color: "#374151" }}>{t}</p>
+                      </div>
+                    ))}
+                    <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── よくあるトラブルと防止策 ───────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Compliance</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
+              よくあるトラブルと防止策
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "24px" }}>
+                代理店活動で起きやすいトラブルとその防止策をお伝えします。誠実な活動のためにご確認ください。
+              </p>
+              {[
+                {
+                  trouble: "「必ず集客できます」「必ず1位になります」と言ってしまった",
+                  prevention: "成果保証・断定表現は禁止しています。「上位表示を目指して施策を行います」という表現に留めてください。",
+                },
+                {
+                  trouble: "顧客が期待した効果が出なかったと言い出した",
+                  prevention: "事前に「効果は保証できない」「施策には時間がかかる」を正確に伝えることが重要です。期待値のすり合わせを丁寧に行ってください。",
+                },
+                {
+                  trouble: "顧客から「解約したい」と言われた",
+                  prevention: "解約対応はサイプレスが窓口になります。代理店様が直接解約を受け付けないよう、連絡はサイプレス担当者に回してください。",
+                },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>トラブル: {item.trouble}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>防止策: {item.prevention}</p>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ── サポート体制 ───────────────────────────────────────── */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -361,7 +616,7 @@ export default function AgentPage() {
                 { n: "02", title: "専任担当者によるバックアップ", body: "代理店様の活動をサポートするサイプレスの担当者が個別につきます。不明点はいつでもご相談ください。" },
                 { n: "03", title: "三者商談への同席対応", body: "顧客への説明が難しい場合や、専門的な質問が出た場合は、サイプレスの担当者が商談に同席してサポートします（オンライン可）。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                <div key={item.n} style={{ padding: "28px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
@@ -372,7 +627,7 @@ export default function AgentPage() {
         </section>
 
         {/* ── お申し込みの流れ ────────────────────────────────────── */}
-        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>How to Apply</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -382,7 +637,7 @@ export default function AgentPage() {
               {[
                 { step: "Step 1", title: "お問い合わせ", body: "お問い合わせフォームより「販売代理店への応募」の旨をお知らせください。現在の状況・ご希望も記載いただけるとスムーズです。" },
                 { step: "Step 2", title: "担当者よりご連絡", body: "通常2〜3営業日以内に担当者よりメールにてご連絡します。日程を調整のうえ、オンラインまたは対面で面談を行います。" },
-                { step: "Step 3", title: "条件・契約内容のご確認", body: "報酬体系・契約内容・活動方法などについて詳しくご説明します。ご不明点はこの段階でご確認ください。" },
+                { step: "Step 3", title: "審査・条件・契約内容のご確認", body: "代理店審査の後、報酬体系・契約内容・活動方法などについて詳しくご説明します。ご不明点はこの段階でご確認ください。" },
                 { step: "Step 4", title: "契約・活動開始", body: "契約締結後、提案資料・サポートツールをご提供します。通常2〜4週間程度で活動を開始いただけます。" },
               ].map((item, i) => (
                 <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
@@ -404,7 +659,7 @@ export default function AgentPage() {
         </section>
 
         {/* ── 会社情報 ───────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Company Info</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>運営会社</h2>
@@ -427,7 +682,7 @@ export default function AgentPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="販売代理店募集についてよくある質問" bgColor="#ffffff" />
+        <FaqSection items={faqItems} heading="販売代理店募集についてよくある質問" bgColor="#f8f6f2" />
 
         <PageContactCTA
           heading="販売代理店のご相談・お申し込みはこちら"

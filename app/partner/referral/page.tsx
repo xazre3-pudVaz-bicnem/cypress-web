@@ -88,6 +88,30 @@ const faqItems = [
     q: "取次店の活動は継続的に行う必要がありますか？",
     a: "継続的な活動義務はありません。紹介できる案件がある時に都度ご紹介いただく形で構いません。気軽に始めていただける仕組みです。",
   },
+  {
+    q: "紹介するだけでいいですか？商品の説明も必要ですか？",
+    a: "基本的に紹介するだけで十分です。「こういうWeb集客の会社があるよ」と伝えていただければ、詳細な説明はサイプレスが行います。簡単な説明に使えるサービス概要資料をご提供しますが、使わなくても問題ありません。",
+  },
+  {
+    q: "紹介案件を複数同時に送ることはできますか？",
+    a: "はい、複数案件を同時にご紹介いただけます。案件ごとに担当者が個別に対応します。紹介案件が多い場合はその旨をお知らせください。",
+  },
+  {
+    q: "個人情報の取り扱いについて教えてください。",
+    a: "紹介いただく顧客の連絡先情報は、サイプレスへの提案・連絡目的にのみ使用します。詳細はプライバシーポリシーをご確認ください。",
+  },
+  {
+    q: "紹介した後に何も連絡が来ない場合はどうすればいいですか？",
+    a: "紹介後の進捗確認はサイプレスの担当者にお問い合わせください。通常2〜3営業日以内に顧客へのコンタクトを行います。",
+  },
+  {
+    q: "親族・友人への紹介も対象になりますか？",
+    a: "はい、対象になります。親族・友人・知人で経営者・ビジネスオーナーの方へのご紹介も歓迎しています。",
+  },
+  {
+    q: "取次店と販売代理店、どちらがいいですか？",
+    a: "活動のコミットメントが低く、紹介だけしたい方は取次店がおすすめです。継続的に提案・販売活動を行い、収益を大きくしたい方は販売代理店をご検討ください。どちらか迷う場合はお問い合わせにてご相談ください。",
+  },
 ];
 
 const breadcrumbSchema = {
@@ -122,7 +146,7 @@ export default function ReferralPartnerPage() {
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_13_52.png"
-              alt="取次店・紹介パートナー ビジネスミーティング"
+              alt="取次店・紹介パートナー ビジネスミーティング風景"
               fill
               className="object-cover"
               sizes="100vw"
@@ -150,8 +174,26 @@ export default function ReferralPartnerPage() {
           </div>
         </section>
 
-        {/* ── 取次店の仕組み ──────────────────────────────────────── */}
+        {/* ── 取次店がシンプルな理由 ──────────────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <div style={{ maxWidth: "720px" }}>
+              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Why Referral</p>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "28px" }}>
+                取次店は「紹介するだけ」の<br />最もシンプルな仕組み
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
+                販売代理店と違い、取次店はWeb集客の知識・提案スキル・継続的な活動義務が不要です。「この経営者、ホームページ困ってそうだな」「Googleマップ対策を知らなさそうだ」と感じたらサイプレスにつなぐだけ。
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151" }}>
+                提案・見積もり・制作・保守・運用報告はすべてサイプレスが担当します。取次店様のご負担はほぼゼロです。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 取次店の仕組み ──────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>How It Works</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -178,7 +220,7 @@ export default function ReferralPartnerPage() {
         </section>
 
         {/* ── 取次店 vs 代理店 ────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Comparison</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -198,8 +240,8 @@ export default function ReferralPartnerPage() {
               </div>
               <div style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "28px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "18px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>販売代理店</p>
-                <p style={{ fontSize: "13px", color: "#9ca3af", marginBottom: "20px" }}>提案・受注まで担当・高報酬</p>
-                {["提案・受注まで担当", "制作・保守はサイプレス", "提案スキル・商材知識必要", "本格的に稼ぎたい方向き", "活動量に応じた報酬"].map((item) => (
+                <p style={{ fontSize: "13px", color: "#9ca3af", marginBottom: "20px" }}>提案・受注まで担当・より積極的な活動</p>
+                {["提案・受注まで担当", "制作・保守はサイプレス", "提案スキル・商材知識必要", "継続的に活動したい方向き", "代理店審査あり"].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc" }}>
                     <span style={{ color: "#9ca3af", flexShrink: 0 }}>→</span>
                     <p style={{ fontSize: "13px", color: "#374151" }}>{item}</p>
@@ -210,6 +252,29 @@ export default function ReferralPartnerPage() {
                   販売代理店の詳細を見る →
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── どんな場面で紹介できるか ────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Referral Moments</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              こんな場面で紹介できます
+            </h2>
+            <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "820px" }}>
+              {[
+                { scene: "顧問先・顧客との会話中", body: "「先生、うちのホームページ古いんですよ」「Googleマップでライバル店が上に出ちゃって」という話が出たとき。「いい会社知ってるよ」と紹介できます。" },
+                { scene: "異業種交流会・勉強会の場で", body: "経営者同士の交流の場で「Web集客で困ってる」という話が出たときに、サイプレスのサービスを話題にすることができます。" },
+                { scene: "SNS・メッセージでの会話中", body: "LINEやInstagramなどで経営者の知り合いから「集客が難しい」という話を聞いたとき、サイプレスのURLを共有するだけでも紹介になります。" },
+                { scene: "名刺交換・初対面の場で", body: "「何かあれば紹介できる会社があります」という話のきっかけとして、サイプレスを伝えることができます。" },
+              ].map((item) => (
+                <div key={item.scene} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.scene}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -237,8 +302,34 @@ export default function ReferralPartnerPage() {
           </div>
         </section>
 
-        {/* ── サポート ───────────────────────────────────────────── */}
+        {/* ── 紹介できる商材 ──────────────────────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Services</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+              紹介できるサービス
+            </h2>
+            <p style={{ fontSize: "14px", color: "#374151", marginBottom: "32px" }}>「こういうサービスが必要そう」という経営者をご紹介ください。詳しい説明はサイプレスが行います。</p>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                { label: "MEO対策", desc: "Googleマップで上位表示されたい地域ビジネスへ。飲食・美容・クリニック・整体など多くの業種に需要があります。" },
+                { label: "SEO対策", desc: "Google検索からの問い合わせを増やしたい企業へ。「競合に検索で負けている」という経営者への紹介が効果的です。" },
+                { label: "ホームページ制作", desc: "ホームページが古い・ない・スマホ対応していない企業へ。問い合わせにつながるサイトを制作します。" },
+                { label: "AIO対策", desc: "ChatGPT・Geminiなど生成AIに自社情報を引用されたい企業へ。AI検索時代に先手を打ちたい経営者向け。" },
+                { label: "AI活用支援", desc: "業務効率化・チャットボット・AI活用に興味がある企業へ。「AIをどう使えばいいかわからない」方への紹介に最適。" },
+                { label: "SNS運用支援", desc: "InstagramやLINEで集客したい店舗・サービス業へ。SNSを始めたいが方法がわからない事業者に。" },
+              ].map((item) => (
+                <div key={item.label} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "22px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── サポート ───────────────────────────────────────────── */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -250,7 +341,7 @@ export default function ReferralPartnerPage() {
                 { n: "02", title: "担当者によるバックアップ", body: "紹介案件についての質問・状況確認はサイプレスの担当者に随時お問い合わせいただけます。" },
                 { n: "03", title: "三者商談への同席（必要に応じて）", body: "「同席して説明してほしい」という場合は、サイプレスの担当者が商談に参加します。オンライン対応可能です。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                <div key={item.n} style={{ padding: "28px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
@@ -261,7 +352,7 @@ export default function ReferralPartnerPage() {
         </section>
 
         {/* ── 会社情報 ───────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Company Info</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>運営会社</h2>
@@ -284,7 +375,7 @@ export default function ReferralPartnerPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="取次店・紹介パートナー募集についてよくある質問" bgColor="#ffffff" />
+        <FaqSection items={faqItems} heading="取次店・紹介パートナー募集についてよくある質問" bgColor="#f8f6f2" />
 
         <PageContactCTA
           heading="取次店・紹介パートナーのご相談はこちら"

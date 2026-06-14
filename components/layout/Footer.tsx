@@ -25,8 +25,6 @@ const COL_COMPANY: FooterSection[] = [
       { href: "/company/history", label: "沿革" },
       { href: "/recruit", label: "採用情報" },
       { href: "/recruit/sales", label: "正社員・営業職募集" },
-      { href: "/agent", label: "販売代理店募集" },
-      { href: "/partner/referral", label: "取次店・紹介パートナー" },
     ],
   },
   {
@@ -38,6 +36,26 @@ const COL_COMPANY: FooterSection[] = [
       { href: "/services/web-design", label: "Web制作" },
       { href: "/services/sns", label: "SNS運用" },
       { href: "/services/ai", label: "AI活用" },
+    ],
+  },
+];
+
+const COL_AGENT: FooterSection[] = [
+  {
+    heading: "販売代理店募集",
+    links: [
+      { href: "/agent", label: "代理店募集トップ" },
+      { href: "/agent/web-design", label: "ホームページ制作代理店" },
+      { href: "/agent/meo", label: "MEO対策代理店" },
+      { href: "/agent/seo", label: "SEO対策代理店" },
+      { href: "/agent/aio", label: "AIO対策代理店" },
+      { href: "/agent/faq", label: "代理店FAQ" },
+    ],
+  },
+  {
+    heading: "パートナー",
+    links: [
+      { href: "/partner/referral", label: "取次店・紹介パートナー" },
     ],
   },
 ];
@@ -216,8 +234,8 @@ export default function Footer() {
   return (
     <footer style={{ background: "#0d1b2a", color: "#8b97a8" }}>
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-0">
-        {/* 7-column grid */}
-        <div className="grid grid-cols-2 md:grid-cols-7 gap-8 mb-14">
+        {/* 8-column grid */}
+        <div className="grid grid-cols-2 md:grid-cols-8 gap-8 mb-14">
           {/* Column 1 — Brand */}
           <div className="col-span-2 md:col-span-1" style={{ minWidth: 0 }}>
             <Link href="/" className="flex items-center gap-3 mb-5" style={{ width: "fit-content", textDecoration: "none" }}>
@@ -294,7 +312,10 @@ export default function Footer() {
           {/* Column 2 — 会社情報 & 事業内容 */}
           <FooterColumn sections={COL_COMPANY} />
 
-          {/* Column 3 — SEO & MEO */}
+          {/* Column 3 — 代理店募集 & パートナー */}
+          <FooterColumn sections={COL_AGENT} />
+
+          {/* Column 4 — SEO & MEO */}
           <FooterColumn sections={COL_SEO_MEO} />
 
           {/* Column 4 — AIO & Web制作・AI */}

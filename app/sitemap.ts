@@ -362,7 +362,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // パートナー・代理店
     ...urls([
-      "/agent", "/partner/referral",
+      "/agent", "/agent/web-design", "/agent/meo", "/agent/seo", "/agent/aio", "/agent/faq",
+      "/partner/referral",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // その他
