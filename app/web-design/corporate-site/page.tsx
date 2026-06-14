@@ -3,73 +3,73 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
-import PageContactCTA from "@/components/shared/PageContactCTA";
 
 export const metadata: Metadata = {
-  title: "コーポレートサイト制作 | 会社の信頼性を伝える企業Webサイト",
-  description: "株式会社サイプレスのコーポレートサイト制作。SEO設計・問い合わせ導線・採用導線を組み込んだ企業サイトを制作します。見た目だけでなく、集客と信頼構築を目的とした設計を行います。",
-  keywords: ["コーポレートサイト制作", "企業サイト制作", "会社ホームページ", "SEO対応", "東京"],
+  title: "コーポレートサイト制作｜企業ブランドと信頼を伝えるWebサイト設計｜株式会社サイプレス",
+  description:
+    "コーポレートサイト（会社サイト）制作の専門ガイド。企業ブランドと信頼を伝えるデザイン設計・SEO・CV改善まで解説。Next.js・WordPress対応。東京都葛飾区を拠点に全国対応。",
+  keywords: ["コーポレートサイト制作", "会社サイト制作", "企業サイト", "Webサイト制作", "Next.js制作", "WordPress制作"],
   openGraph: {
-    title: "コーポレートサイト制作 | 株式会社サイプレス",
-    description: "会社の信頼性・事業内容・採用情報を伝える企業サイト制作。SEO設計と問い合わせ導線を最初から組み込みます。",
+    title: "コーポレートサイト制作｜企業ブランドと信頼を伝えるWebサイト設計｜株式会社サイプレス",
+    description: "コーポレートサイト制作のガイド。企業ブランドと信頼を伝えるデザイン設計・SEO・CV改善まで解説。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/web-design/corporate-site" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/web-design/corporate-site" },
 };
 
-const POINTS = [
+const faqItems = [
   {
-    num: "01",
-    title: "会社の信頼性を伝えるデザインと構成",
-    body: "訪問者が「この会社に依頼して大丈夫か」と感じるまでの情報設計を重視します。会社概要・代表挨拶・実績・スタッフ紹介など、信頼を形成するコンテンツを適切な順序で配置します。",
+    q: "コーポレートサイトとは何ですか？必ずSSLは必要ですか？",
+    a: "コーポレートサイトとは、企業の顔となる公式Webサイトです。会社概要・サービス・事業内容・採用情報・ニュースなどを掲載し、取引先・求職者・メディアなど様々なステークホルダーに企業情報を提供します。SSLは現在必須です。HTTPのサイトはChromeで警告が表示され、信頼性に影響します。",
   },
   {
-    num: "02",
-    title: "SEO設計（サイト構造・内部リンク）",
-    body: "事業内容に合わせたキーワード選定・URL設計・サイト階層・内部リンク構造を制作段階から設計します。制作後にSEO対応するよりも、最初から組み込んだ方が効果的で修正コストも下がります。",
+    q: "コーポレートサイトに掲載すべきコンテンツは？",
+    a: "最低限必要なのは、①会社概要（社名・代表者名・設立年月・所在地・事業内容）、②サービス・事業内容、③お問い合わせフォーム・連絡先、④プライバシーポリシーです。これに加えて採用情報・ニュース・実績・コラムを追加することで、SEO・採用・ブランディングに貢献します。",
   },
   {
-    num: "03",
-    title: "事業内容・強みのわかりやすい説明",
-    body: "専門性が高い事業でも、訪問者に短時間で理解してもらえるコピーとページ構成を設計します。競合との差別化ポイントを明確にした文章作成もサポートします。",
+    q: "コーポレートサイトのSEO対策はどうすればいいですか？",
+    a: "まず全ページの内部SEO（タイトル・メタディスクリプション・見出し・canonical・構造化データ）を整備します。次に、ターゲットとするキーワードに対応したコンテンツページ（サービスページ・コラム・事例）を充実させます。コーポレートサイトは企業の信頼性を伝えるページとしてE-E-A-T向上にも貢献します。",
   },
   {
-    num: "04",
-    title: "採用情報への導線",
-    body: "コーポレートサイトは採用活動の重要な接点でもあります。採用ページへの自然な誘導と、求職者が知りたい情報（働く環境・社員の声・求人内容）への導線を設計します。",
+    q: "制作費用の目安は？",
+    a: "コーポレートサイト（5〜15ページ）の制作費用は、デザインの複雑さ・機能・ページ数によって変わります。シンプルな構成から複雑なカスタム設計まで幅広く対応しています。まずは無料相談でご要件をお聞かせいただき、お見積もりをご提示します。",
   },
   {
-    num: "05",
-    title: "問い合わせ導線の最適化",
-    body: "問い合わせボタンの配置・フォームの入力項目・完了後のサンクスページまで、問い合わせ率を高めるためのCVR設計を行います。無駄な入力項目を減らし、入力しやすいフォームを提供します。",
+    q: "既存サイトのリニューアルも依頼できますか？",
+    a: "はい、既存サイトのリニューアルに多数対応しています。現在のサイトのSEO評価を引き継ぐためのURL設計・301リダイレクト・内部リンク更新まで一貫して対応します。デザインだけでなくSEO・パフォーマンス・CV改善も含めたリニューアルが得意です。",
+  },
+  {
+    q: "更新はどうすればいいですか？自分で管理できますか？",
+    a: "WordPressで制作する場合は、管理画面から担当者がテキストや画像を更新できます。Next.jsで制作する場合はエンジニアによる更新が必要ですが、Headless CMSを組み合わせることで管理画面からの更新も可能です。ご要件に合わせてご提案します。",
+  },
+  {
+    q: "スマートフォン対応は標準ですか？",
+    a: "はい、全ての制作物でモバイルファーストのレスポンシブデザインを標準実装しています。Googleのモバイルファーストインデックスに対応し、スマートフォン・タブレット・PCのすべてで最適な表示を実現します。",
+  },
+  {
+    q: "制作期間はどのくらいかかりますか？",
+    a: "コーポレートサイト（5〜15ページ）で2〜3ヶ月が目安です。ヒアリング・設計・デザイン・コーディング・テスト・公開という流れで進めます。お客様のレスポンス速度や要件の複雑さによって前後しますので、スケジュール感は最初の打ち合わせでお伝えします。",
   },
 ];
 
-const FAQ_ITEMS = [
-  {
-    q: "コーポレートサイトのリニューアルにも対応していますか？",
-    a: "はい。既存サイトのSEO評価を引き継ぐためのリダイレクト設計、コンテンツ移行、URL設計の見直しなど、リニューアルに必要な対応を行います。現状のサイト分析からご提案します。",
-  },
-  {
-    q: "制作に必要な素材（写真・テキスト）は用意する必要がありますか？",
-    a: "可能であればご用意いただくことを推奨しますが、素材がない場合もご対応できます。ストック写真の選定・キャッチコピー作成・文章の代筆も承っています。",
-  },
-  {
-    q: "ページ数はどのくらいが一般的ですか？",
-    a: "中小企業のコーポレートサイトは5〜15ページが一般的です。会社概要・事業内容・採用・お知らせ・お問い合わせが基本構成です。サービスや事業の数によって増減します。",
-  },
-  {
-    q: "更新は自分たちで行えますか？",
-    a: "WordPressやヘッドレスCMSを使用することで、専門知識なしに記事・お知らせ・採用情報を更新できます。操作研修・マニュアルも提供しています。",
-  },
-  {
-    q: "スマートフォン対応は含まれますか？",
-    a: "はい。すべての制作物はモバイルファーストで設計しています。スマートフォン・タブレット・PCすべての端末で最適な表示になるよう実装します。",
-  },
+const relatedLinks = [
+  { href: "/web-design", label: "Web制作とは", desc: "Webサイト制作の基礎" },
+  { href: "/web-design/recruit-site", label: "採用サイト制作", desc: "採用強化のためのサイト" },
+  { href: "/web-design/seo-site", label: "SEO特化サイト制作", desc: "検索流入を最大化するサイト" },
+  { href: "/web-design/service-site", label: "サービスサイト制作", desc: "CV重視のサービスLP" },
+  { href: "/web-design/wordpress", label: "WordPress制作", desc: "CMS型コーポレートサイト" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "サイプレスの制作サービス" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "制作後のSEO対策" },
+  { href: "/cost/web-design", label: "Web制作の費用", desc: "料金プランと相場" },
+  { href: "/guide/how-to-choose-web-design-company", label: "Web制作会社の選び方", desc: "失敗しない選定ガイド" },
+  { href: "/checklist/web-design", label: "Web制作チェックリスト", desc: "制作前の確認項目" },
+  { href: "/area/tokyo", label: "東京のWeb制作", desc: "東京エリアの制作対応" },
+  { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
 export default function CorporateSitePage() {
@@ -77,158 +77,63 @@ export default function CorporateSitePage() {
     <>
       <Header />
       <main>
-        {/* ===== Hero ===== */}
         <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Corporate Site
-            </p>
-            <h1
-              className="font-black leading-tight tracking-tight mb-6"
-              style={{ fontSize: "clamp(28px, 4vw, 54px)", color: "#0F172A" }}
-            >
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
+              <span>/</span>
+              <Link href="/web-design" style={{ color: "#6B7280" }} className="hover:underline">Web制作</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>コーポレートサイト制作</span>
+            </nav>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Corporate Site</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
               コーポレートサイト制作
             </h1>
-            <p className="text-[17px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              会社の信頼性・事業内容・強みを的確に伝え、問い合わせと採用につなげる企業Webサイトを制作します。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              コーポレートサイトは企業の顔となる最重要のWebサイトです。取引先・求職者・メディア・一般ユーザーなど、多様なステークホルダーに企業の信頼性・ブランド・実力を伝えるサイト設計が重要です。
+            </p>
+            <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
+              単なるデザインの美しさではなく、SEO・CV改善・E-E-A-T強化・パフォーマンス最適化まで含めた「ビジネスに貢献するコーポレートサイト」を設計・制作します。
             </p>
           </div>
         </section>
 
-        {/* ===== Breadcrumb ===== */}
-        <nav className="py-4" style={{ borderTop: "1px solid #F0EDE6", borderBottom: "1px solid #F0EDE6", background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <ol className="flex items-center gap-2 text-[12px]" style={{ color: "#9CA3AF" }}>
-              <li><Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link></li>
-              <li>/</li>
-              <li><Link href="/web-design" className="hover:underline" style={{ color: "#6B7280" }}>ホームページ制作</Link></li>
-              <li>/</li>
-              <li style={{ color: "#0F172A" }}>コーポレートサイト制作</li>
-            </ol>
-          </div>
-        </nav>
-
-        {/* ===== Hero Image ===== */}
-        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_12_19.png"
-            alt="コーポレートサイト制作の打ち合わせ風景"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
-
-        {/* ===== Role ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-                Role
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                コーポレートサイトの役割
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                コーポレートサイトは、会社の「顔」であると同時に、問い合わせ・採用・信頼形成のための重要なビジネスツールです。営業先に渡す名刺やパンフレットよりも多くの情報を届けられ、24時間365日機能し続ける唯一の存在です。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                しかし多くの中小企業のコーポレートサイトは、SEO設計が弱く検索から見つけてもらえない、問い合わせまでの導線が曖昧でCV率が低い、スマートフォンでの表示が崩れているなど、本来の役割を果たせていません。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                サイプレスは、「きれいなサイトを作る」のではなく、「目的に対して機能するサイトを作る」ことを重視します。会社の信頼性・事業内容・強みをSEOとCVRの観点から整理し、検索されて、読まれて、問い合わせにつながるサイトを制作します。
-              </p>
-            </div>
-          </div>
+        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
+          <Image src="/2.png" alt="コーポレートサイト制作・企業サイト設計のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
         </section>
 
-        {/* ===== Key Points ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
+        {/* コーポレートサイトの設計要素 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-14">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                Key Points
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                制作の重要ポイント
-              </h2>
-            </div>
-            <div>
-              {POINTS.map((point) => (
-                <div
-                  key={point.num}
-                  className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-10 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{point.num}</span>
-                  <div>
-                    <h3 className="font-bold text-[16px] mb-3" style={{ color: "#0F172A" }}>{point.title}</h3>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{point.body}</p>
-                  </div>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Design Elements</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              コーポレートサイト制作の重要要素
+            </h2>
+            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
+              {[
+                { title: "ブランドアイデンティティの表現", body: "企業の理念・ビジョン・世界観をビジュアルで伝えるデザインを設計します。カラー・フォント・トーン＆マナーを統一し、ブランドとして記憶に残るサイトを目指します。" },
+                { title: "信頼性・権威性の可視化", body: "代表者プロフィール・会社概要・設立年月・資格・受賞歴・取引先紹介・メディア掲載などの信頼要素を適切に配置します。E-E-A-TとAIO対策にも直結します。" },
+                { title: "SEOに強いページ構成", body: "全ページのメタデータ・見出し・URL・構造化データを最適化します。サービスページ・コラム・事例ページがSEOでの集客基盤となる設計を行います。" },
+                { title: "問い合わせ導線の設計（CV改善）", body: "電話・メール・フォーム・LINEへの自然な誘導動線を設計します。ファーストビュー・各セクション・フッターでのCTA配置でコンバージョン率を高めます。" },
+                { title: "Core Web Vitals・パフォーマンス最適化", body: "画像最適化・コード分割・フォント最適化・CDN活用でLighthouseスコア90点以上を目標とします。表示速度の改善はSEOとユーザー体験に直結します。" },
+                { title: "採用・IR情報との統合", body: "採用情報ページの設計・IR情報の掲載・ニュース・プレスリリースのCMS化まで一貫して設計します。企業の成長に合わせて拡張できるスケーラブルな設計を心がけます。" },
+              ].map((item, i) => (
+                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        {/* ===== 2-col image + text ===== */}
-        <section className="py-20" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                  Design Process
-                </p>
-                <h2
-                  className="font-black leading-tight tracking-tight mb-6"
-                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
-                >
-                  課題解決から始まる設計
-                </h2>
-                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
-                  コーポレートサイト制作では、まず事業課題・集客目標・ターゲット像を整理します。その上で、どのページが何の役割を担うかを設計し、情報設計・デザイン・開発へと進みます。
-                </p>
-                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
-                  見た目の完成度だけでなく、問い合わせ導線・採用導線・検索からの流入が機能するサイトを制作します。
-                </p>
-              </div>
-              <div className="relative overflow-hidden" style={{ height: "300px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 00_32_58.png"
-                  alt="コーポレートサイト制作の提案資料と打ち合わせ"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== FAQ ===== */}
-        <FaqSection items={FAQ_ITEMS} heading="コーポレートサイト制作 よくある質問" />
-
-        {/* ===== Related ===== */}
-        <RelatedPages
-          links={[
-            { href: "/web-design", label: "ホームページ制作", desc: "Web制作サービス一覧" },
-            { href: "/web-design/recruit-site", label: "採用サイト制作", desc: "求職者に届く採用専用サイト" },
-            { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "検索流入を意識した設計" },
-            { href: "/services/seo", label: "SEO対策", desc: "検索順位改善の総合支援" },
-          ]}
-        />
-
-        {/* ===== CTA ===== */}
+        <FaqSection items={faqItems} heading="コーポレートサイト制作についてよくある質問" bgColor="#FFFFFF" />
+        <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="コーポレートサイト制作のご相談"
-          body="新規制作・リニューアルどちらもご対応しています。現状の課題と目標をお聞きし、最適なサイト設計をご提案します。まずはお気軽にご相談ください。"
+          body="企業ブランドと信頼を伝えるコーポレートサイトの設計・制作をご支援します。まずはお気軽にご相談ください。"
         />
       </main>
       <Footer />

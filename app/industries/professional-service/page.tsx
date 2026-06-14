@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "士業・コンサルタントのWeb集客｜税理士・司法書士・社労士",
+  title: "士業・コンサルタントのWeb集客｜税理士・司法書士・社労士｜株式会社サイプレス",
   description: "税理士・司法書士・行政書士・社労士・弁護士などの士業・コンサルタントのWeb集客。SEO・MEO・ホームページ制作で顧問先・相談案件を継続的に獲得。",
+  keywords: ["税理士 MEO対策", "士業 集客", "弁護士 ホームページ", "社労士 SEO", "コンサルタント Web集客"],
+  openGraph: {
+    title: "士業・コンサルタントのWeb集客｜税理士・司法書士・社労士｜株式会社サイプレス",
+    description: "税理士・弁護士・社労士などの士業・コンサルタントのWeb集客。SEO・MEO・ホームページで顧問先獲得。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/professional-service" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "士業のSEO対策で狙うべきキーワードは？", a: "「○○市 確定申告 税理士」「相続 手続き ○○区」「会社設立 行政書士 ○○」など、顧客が抱える具体的な課題+地域名+士業名の組み合わせが効果的です。" },
   { q: "コンサルタントのホームページはどう差別化すべきですか？", a: "支援実績・クライアントの声・解決した課題の具体例・代表者の経歴・考え方・提供価値の独自性を明確に伝えることで差別化できます。「なぜこの先生/コンサルタントなのか」が伝わることが重要です。" },
   { q: "士業のブログ・コラムはSEOに効果がありますか？", a: "はい。専門知識を活かした解説記事・事例紹介・法改正情報などのコンテンツは、顧客の疑問を解決しながらSEO評価も高めます。E-E-A-T（専門性・権威性・信頼性）が評価されます。" },
+  { q: "AIに引用される士業のサイトはどう設計すればいいですか？", a: "ChatGPT・Geminiなどに引用されやすいサイトにするには、FAQ形式での専門知識の整理・著者情報の明示（資格・経歴・専門分野）・具体的な事例の記述が有効です。AIO（AI検索最適化）の観点で専門性の高いコンテンツを設計します。" },
+  { q: "士業のホームページでオンライン相談や無料相談の問い合わせを増やすには？", a: "「まずは30分無料相談から」という低ハードルのCTAを目立たせること・LINEでの相談受付・オンラインMTGの対応明記が効果的です。初回相談への心理的ハードルを下げることで、潜在顧客が問い合わせに至る転換率が向上します。" },
+  { q: "地域外（全国）からの相談を増やすためのWeb集客方法は？", a: "SEO（全国向けキーワード）・AIO（AI引用対策）・YouTubeやPodcastでの情報発信が有効です。「○○分野のスペシャリスト」として特定の専門分野で全国に認知されることで、地域を超えた顧問先・相談依頼を獲得できます。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/aio", label: "AIO対策とは", desc: "AI検索対策" },
-  { href: "/services/web-design", label: "Web制作サービス", desc: "サービス詳細" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "士業向け検索上位表示" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "地域密着の士業MEO対策" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "士業向けサイト制作" },
+  { href: "/aio", label: "AIO対策とは", desc: "AI検索（ChatGPT等）への最適化" },
+  { href: "/industries/real-estate", label: "不動産会社のWeb集客", desc: "不動産業の集客支援" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎知識" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "士業・コンサルタントのWeb集客相談" },
 ];
 
 export default function Page() {

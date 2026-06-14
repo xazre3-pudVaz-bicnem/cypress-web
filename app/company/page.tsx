@@ -37,14 +37,14 @@ const SUB_PAGES = [
   {
     href: "/company/history",
     label: "沿革",
-    desc: "2022年の設立から現在まで、サービス拡充の軌跡。",
+    desc: "2026年5月の設立以来、サービス拡充の軌跡。",
   },
 ];
 
 const PROFILE_ROWS = [
   { label: "会社名", value: "株式会社サイプレス" },
   { label: "代表取締役", value: "織田 春樹" },
-  { label: "設立", value: "2022年4月" },
+  { label: "設立", value: "2026年5月13日" },
   { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
   { label: "事業内容", value: "Webマーケティング支援、MEO対策、SEO対策、AIO対策、ホームページ制作、SNS運用、AI活用支援" },
 ];
@@ -72,7 +72,7 @@ export default function CompanyPage() {
               会社情報
             </h1>
             <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、地域中小企業のWeb集客を支援するマーケティング会社です。「地域企業が、正しく選ばれる仕組みをつくる」という理念のもと、2022年4月に設立しました。
+              株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、地域中小企業のWeb集客を支援するマーケティング会社です。「地域企業が、正しく選ばれる仕組みをつくる」という理念のもと、2026年5月13日に設立しました。
             </p>
           </div>
         </section>

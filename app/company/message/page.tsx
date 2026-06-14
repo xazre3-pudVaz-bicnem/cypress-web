@@ -98,7 +98,7 @@ export default function MessagePage() {
                       AI時代において、Webマーケティングが変わること
                     </p>
                     <p className="mb-4">
-                      2022年の創業以来、最も大きな変化として経験してきたのがAI検索の台頭です。ChatGPTのリリース、GoogleのAI Overview、Perplexityの普及により、情報を検索する手段は根本的に変わりつつあります。
+                      2026年5月の創業以来、最も大きな変化として経験してきたのがAI検索の台頭です。ChatGPTのリリース、GoogleのAI Overview、Perplexityの普及により、情報を検索する手段は根本的に変わりつつあります。
                     </p>
                     <p className="mb-4">
                       従来のSEO対策では、検索エンジンのクローラーに評価される技術的な最適化が中心でした。しかしAI検索の時代には、AIが信頼できる情報源として引用するに足る、一次情報・専門性・権威性のあるコンテンツが求められます。E-E-A-T（経験・専門性・権威性・信頼性）を明示した構造化データ、FAQ設計、明確な文章構造が、AI引用の鍵を握っています。
@@ -167,7 +167,7 @@ export default function MessagePage() {
                     <div className="space-y-4">
                       {[
                         { label: "会社名", value: "株式会社サイプレス" },
-                        { label: "設立", value: "2022年4月" },
+                        { label: "設立", value: "2026年5月13日" },
                         { label: "所在地", value: "東京都葛飾区" },
                       ].map((row) => (
                         <div key={row.label}>

@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "医療クリニック・歯科・整骨院のWeb集客｜MEO・SEO対策",
-  description: "クリニック・歯科・整骨院・整形外科のWeb集客。Googleマップ上位表示・患者向けホームページ・予約導線・医療SEO・口コミ管理で新患獲得を支援します。",
+  title: "医療クリニック・歯科・整骨院のWeb集客｜MEO・医療SEO対策｜株式会社サイプレス",
+  description: "クリニック・歯科・整骨院・整形外科のWeb集客。Googleマップ上位表示・患者向けホームページ・予約導線・医療SEO・口コミ管理で新患獲得を支援します。医療広告ガイドライン対応。",
+  keywords: ["クリニック MEO対策", "歯科 集客", "医療 Googleマップ", "クリニック ホームページ", "医療SEO"],
+  openGraph: {
+    title: "医療クリニック・歯科・整骨院のWeb集客｜MEO・医療SEO対策｜株式会社サイプレス",
+    description: "クリニック・歯科・整骨院のWeb集客。MEO・ホームページ・医療SEOで新患獲得を支援します。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/clinic" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "クリニックのホームページに予約システムは必要ですか？", a: "はい。24時間対応のオンライン予約は新患獲得に効果的です。電話予約の負荷軽減にもなります。LINEミニアプリ・EPARK・自社システムなど複数の選択肢があります。" },
   { q: "Googleクチコミ管理はどのようにすればいいですか？", a: "不当な口コミには「Googleビジネスプロフィール」から削除申請が可能です。患者満足度の高い診療後に口コミ投稿を促すフローを整備することで、良好な評判を維持できます。" },
   { q: "SEO対策でクリニックが狙うべきキーワードは？", a: "「○○市 歯科」「○○区 内科」などの地域名+診療科目が主要キーワードです。症状系（「腰痛 整骨院 ○○」）・施術名（「矯正歯科 ○○駅」）も重要です。" },
+  { q: "クリニックのSNS（Instagram・X）活用は効果がありますか？", a: "医療機関のSNSは健康情報の発信・院内の雰囲気紹介・スタッフ紹介に向いています。治療効果の誇大表現は避け、患者教育コンテンツ（正しい歯磨き方法、腰痛予防ストレッチ等）として発信することでエンゲージメントを高めつつ医療広告ガイドラインを遵守できます。" },
+  { q: "患者のオンライン予約率を上げるにはどうすればいいですか？", a: "ホームページのわかりやすい場所（ファーストビュー・固定ヘッダー）に予約ボタンを設置し、クリック数を最小化する設計が重要です。LINEからの予約・電話での予約の両方を提供することで予約の機会損失を防ぎます。" },
+  { q: "開業前のクリニックでもWeb集客の準備はできますか？", a: "開業の3〜6ヶ月前からGoogleビジネスプロフィールの設定・ホームページの制作・地域SEO対策を開始することを推奨します。開業時点でGoogleマップに表示された状態にしておくことで、開業初月から新患獲得を開始できます。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/meo/clinic-meo", label: "医療クリニックのMEO", desc: "医療MEO詳細" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/services/meo", label: "MEOサービス", desc: "MEO対策サービス" },
+  { href: "/meo/clinic-meo", label: "医療クリニックのMEO対策", desc: "Googleマップ上位表示で新患獲得" },
+  { href: "/industries/osteopathic", label: "整体院・接骨院のWeb集客", desc: "整体院・接骨院の集客支援" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "医療SEOで検索上位を実現" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "クリニック向けサイト制作" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/knowledge/gbp-optimization", label: "GBP最適化の方法", desc: "Googleビジネスプロフィール活用" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "クリニック・医療機関のWeb集客相談" },
 ];
 
 export default function Page() {

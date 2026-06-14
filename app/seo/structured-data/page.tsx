@@ -8,205 +8,191 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "構造化データ（SEO）｜リッチリザルト対応｜株式会社サイプレス",
+  title: "構造化データ（Schema.org）実装とは｜リッチリザルト・AI検索対策｜株式会社サイプレス",
   description:
-    "SEOにおける構造化データ（Schema.org）の役割とリッチリザルト対応を解説。FAQ・パンくず・組織情報・レビューなど主要Schemaの実装方法と、検索結果でのCTR向上効果を詳しく説明します。",
-  keywords: ["構造化データ", "Schema.org", "リッチリザルト", "JSON-LD", "FAQSchema", "SEO 構造化データ"],
+    "構造化データ（JSON-LD・Schema.org）の基礎から実装まで解説。FAQPage・BreadcrumbList・Article・Organization・LocalBusiness・WebSiteのマークアップ方法とリッチリザルト獲得の方法を網羅。",
+  keywords: ["構造化データ", "Schema.org", "JSON-LD", "リッチリザルト", "FAQPage", "BreadcrumbList", "AIO対策"],
   openGraph: {
-    title: "構造化データ（SEO）｜リッチリザルト対応｜株式会社サイプレス",
-    description:
-      "SEOにおける構造化データ（Schema.org）の役割とリッチリザルト対応を解説。主要Schemaの実装方法と検索結果でのCTR向上効果を詳しく説明します。",
+    title: "構造化データ（Schema.org）実装とは｜リッチリザルト・AI検索対策｜株式会社サイプレス",
+    description: "構造化データ実装の実践ガイド。JSON-LD・Schema.orgのマークアップからリッチリザルト獲得まで解説。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/seo/structured-data" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo/structured-data" },
 };
-
-const schemas = [
-  {
-    title: "Organization / LocalBusiness",
-    body: "企業・店舗の基本情報（名称・住所・電話番号・営業時間・ロゴ・SNSリンク）を構造化します。特にLocalBusinessはGoogleのローカル検索結果での表示を強化し、MEO対策とも連動します。",
-  },
-  {
-    title: "BreadcrumbList（パンくずリスト）",
-    body: "サイトの階層構造を検索結果に表示するためのSchemaです。「ホーム > SEO対策 > 構造化データ」のようにパンくずが検索結果に表示されることで、ユーザーがページの位置づけを即座に理解でき、CTR向上につながります。",
-  },
-  {
-    title: "FAQPage",
-    body: "FAQページやページ内のQ&Aセクションに実装します。検索結果で質問と回答が展開表示されるリッチリザルトが表示される可能性があり、検索結果の占有面積が大幅に増加します。CTR向上とゼロクリック検索での露出にも貢献します。",
-  },
-  {
-    title: "Article / BlogPosting",
-    body: "ブログ記事や解説記事に実装します。著者情報・公開日・更新日・サムネイル画像をGoogleに明示することで、Googleニュースへの掲載機会や記事カルーセルでの表示につながります。E-E-A-Tの観点からも著者情報の構造化は重要です。",
-  },
-  {
-    title: "Product / Offer",
-    body: "商品・サービスの価格・在庫・レビューを構造化します。検索結果に価格や評価星が表示されるリッチリザルトが適用され、ECサイトやサービス一覧ページのCTRを大幅に改善できます。",
-  },
-  {
-    title: "Review / AggregateRating",
-    body: "お客様の声・レビューの評価点と件数を構造化します。検索結果に星評価（☆☆☆☆☆）が表示されることで、信頼性の視覚化とクリック率向上を同時に実現します。レビューサービスとの連携も可能です。",
-  },
-  {
-    title: "HowTo / SpeakableSpecification",
-    body: "手順を伴うコンテンツにはHowToSchemaを実装することで、Googleが手順を構造化データとして認識し、音声検索やサジェストでの露出につながります。SpeakableはAI音声アシスタントが読み上げる箇所を指定するためのSchemaです。",
-  },
-];
 
 const faqItems = [
   {
-    q: "構造化データを実装すると必ずリッチリザルトが表示されますか？",
-    a: "構造化データの実装はリッチリザルト表示の「資格」を得ることであり、必ず表示されるわけではありません。Googleが実装を確認し、コンテンツの品質・ページの権威性などを総合的に評価したうえで表示が決定されます。ただし、正しく実装されていれば表示される可能性が大幅に高まります。",
+    q: "構造化データとは何ですか？なぜSEOに重要ですか？",
+    a: "構造化データとは、Schema.orgで定義された語彙を使って、ページのコンテンツの意味をGoogleなどの検索エンジンに明確に伝えるマークアップです。Googleが構造化データを正しく認識すると、検索結果にFAQ・パンくず・評価・商品情報などのリッチリザルトが表示され、クリック率の向上が期待できます。また、AI検索（AIO）でのコンテンツ引用にも貢献します。",
   },
   {
-    q: "構造化データはJSON-LDとMicrodataどちらを使うべきですか？",
-    a: "GoogleはJSON-LDを推奨しています。JSON-LDはHTMLのheadタグ内にscriptとして記述するため、既存のHTMLを変更せずに追加でき、管理も容易です。Next.jsではApp RouterのmetadataやPageのscriptタグとしてJSON-LDを実装するのが一般的です。",
+    q: "JSON-LDとMicrodataとRDFaの違いは何ですか？",
+    a: "いずれも構造化データのフォーマットですが、GoogleはJSON-LD（JavaScriptのscriptタグ内にJSON形式で記述）を推奨しています。JSON-LDはHTMLとは独立して記述でき、実装とメンテナンスが最も簡単です。Next.jsのApp RouterではJSON-LDをscriptタグとして`dangerouslySetInnerHTML`で埋め込む方法が一般的です。",
   },
   {
-    q: "構造化データのテストはどうすればできますか？",
-    a: "Googleの「リッチリザルト テスト（Rich Results Test）」を使用することで、実装した構造化データが正しく認識されているか確認できます。また、Google Search ConsoleのEnhancement（拡張機能）レポートでサイト全体の構造化データのエラーや警告を確認できます。",
+    q: "どのSchema.orgタイプを実装すればいいですか？",
+    a: "Webサイト全体にはWebSite（サイト検索へのサポート）・Organization（会社情報）を実装します。各ページタイプに応じて、FAQPage（FAQセクションがあるページ）・BreadcrumbList（全ページ）・Article（ブログ記事）・LocalBusiness（地域ビジネス）・Service（サービスページ）などを追加します。",
   },
   {
-    q: "AIOページの構造化データとSEOページは何が違いますか？",
-    a: "このページではSEOのリッチリザルト獲得を目的とした構造化データを中心に解説しています。AIO（AI検索最適化）における構造化データは、ChatGPT・Gemini・Perplexityなどのチャット型AI検索エンジンに情報を正確に伝えるための観点が加わります。AI検索対応の詳細は/aio/structured-dataをご覧ください。",
+    q: "FAQPageの構造化データを実装するとどうなりますか？",
+    a: "Googleの検索結果にFAQのアコーディオン形式のリッチリザルトが表示される場合があります。検索結果での占有面積が増え、クリック率の向上が期待できます。また、AI検索（ChatGPT・Gemini・Perplexity）でのFAQ形式の回答引用にも貢献します。",
   },
   {
-    q: "すべてのページに構造化データを実装すべきですか？",
-    a: "ページの性質に合ったSchemaを優先的に実装します。全ページ共通のOrganization/BreadcrumbListを基本とし、FAQページにはFAQPage、記事にはArticle、サービスページにはServiceやOfferを追加します。不適切なSchemaの実装はGoogleのペナルティ対象になるため、コンテンツと一致したSchemaのみ使用します。",
+    q: "構造化データのエラーはどこで確認できますか？",
+    a: "Google Search Console の「拡張機能」セクションで構造化データのエラー・警告を確認できます。また、単一ページの確認にはGoogle Rich Results Test（https://search.google.com/test/rich-results）が便利です。実装後は必ずこれらのツールで検証します。",
+  },
+  {
+    q: "AIO（AI検索最適化）に構造化データは有効ですか？",
+    a: "はい。ChatGPT・Gemini・Perplexityなどのレビューは、構造化されたコンテンツを引用しやすい傾向があります。FAQPage・Article・Organization・LocalBusinessなどの構造化データは、AIがコンテンツの意味を正確に理解するのを助け、引用可能性を高めます。",
+  },
+  {
+    q: "LocalBusiness構造化データで地域SEOは改善しますか？",
+    a: "LocalBusiness（またはRestaurant・Clinic・BeautySalon等）の構造化データは、Googleに地域ビジネスとして正確に認識させる効果があります。住所・電話番号・営業時間・対応エリアを構造化することで、ローカルパック（Googleマップ検索結果）への掲載と地域名キーワードでの評価向上に貢献します。",
+  },
+  {
+    q: "Next.jsで構造化データを実装する方法は？",
+    a: "Next.jsのApp RouterではPageコンポーネント内にJSON-LDをscriptタグで埋め込みます。`<script type=\"application/ld+json\" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />`の形式です。layoutファイルにOrganization・WebSiteを、各pageファイルにBreadcrumbList・FAQPage・Articleを実装するのが一般的な設計です。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎・全体像" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEO全体の概要" },
+  { href: "/seo/internal-seo", label: "内部SEO", desc: "メタデータ・ページ内最適化" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "クロール・インデックス最適化" },
-  { href: "/aio/structured-data", label: "AIO×構造化データ", desc: "AI検索対応の構造化データ" },
-  { href: "/seo/internal-seo", label: "内部SEO対策", desc: "タグ・構造最適化" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/aio", label: "AIO対策", desc: "AI検索での引用可能性を高める" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "LocalBusiness構造化データ" },
+  { href: "/seo/site-structure", label: "サイト構造設計", desc: "BreadcrumbListの設計" },
+  { href: "/web-design/nextjs", label: "Next.jsでのサイト制作", desc: "JSON-LDの実装方法" },
+  { href: "/knowledge/structured-data", label: "構造化データガイド", desc: "Schema.orgの使い方入門" },
+  { href: "/column/seo", label: "SEOコラム", desc: "リッチリザルトの最新情報" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "構造化データ実装込みのSEO支援" },
+  { href: "/checklist/technical-seo", label: "テクニカルSEOチェックリスト", desc: "構造化データの確認項目" },
+  { href: "/seo/seo-audit", label: "SEO診断", desc: "構造化データエラーの確認" },
 ];
 
-export default function StructuredDataSeoPage() {
+const schemaTypes = [
+  { type: "WebSite", desc: "サイト名・URL・検索機能（SearchAction）をGoogleに伝える。全サイト共通。", target: "サイト全体（layout.tsx）" },
+  { type: "Organization", desc: "会社名・住所・電話・URL・ロゴ・SNSリンク。ブランド認知とE-E-A-T強化。", target: "サイト全体（layout.tsx）" },
+  { type: "LocalBusiness", desc: "地域ビジネスの詳細情報。営業時間・対応エリア・座標。ローカルSEOに必須。", target: "トップページ・会社ページ" },
+  { type: "BreadcrumbList", desc: "ページの階層構造をGoogleに伝える。検索結果でのパンくず表示。", target: "全ページ" },
+  { type: "FAQPage", desc: "FAQ形式のコンテンツ。検索結果でのアコーディオンリッチリザルト。AI引用向上。", target: "FAQセクションがあるページ" },
+  { type: "Article", desc: "ブログ記事・コラム。著者・公開日・更新日・見出し構造。", target: "ブログ・コラム記事" },
+  { type: "Service", desc: "サービスの概要・価格帯・説明。サービスページに実装。", target: "サービス紹介ページ" },
+  { type: "Review / AggregateRating", desc: "口コミ・評価スコア。星評価のリッチリザルト表示。", target: "口コミ掲載ページ" },
+];
+
+export default function StructuredDataPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#f8f6f2" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 mb-6">
-              <Link href="/" className="text-[12px] hover:text-[#0d1b2a] transition-colors" style={{ color: "#9ca3af" }}>ホーム</Link>
-              <span className="text-[12px]" style={{ color: "#9ca3af" }}>/</span>
-              <Link href="/seo" className="text-[12px] hover:text-[#0d1b2a] transition-colors" style={{ color: "#9ca3af" }}>SEO対策</Link>
-              <span className="text-[12px]" style={{ color: "#9ca3af" }}>/</span>
-              <span className="text-[12px]" style={{ color: "#374151" }}>構造化データ</span>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
+              <span>/</span>
+              <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>構造化データ実装</span>
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>
-              SEO Knowledge
-            </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,46px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
-              構造化データ（SEO）
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Structured Data</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              構造化データ実装
             </h1>
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              構造化データ（Schema.org・JSON-LD）とは、ページのコンテンツの意味を検索エンジンとAIに明確に伝えるマークアップです。リッチリザルトの獲得・AI検索での引用可能性向上・ローカルSEOへの貢献という3つの効果があります。
+            </p>
             <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              構造化データとは、WebページのコンテンツをGoogleが機械的に理解できる形式で記述する技術です。Schema.orgで定義された語彙をJSON-LD形式で実装することで、検索結果にリッチリザルト（強調表示）が適用され、CTRの向上とサイトの権威性強化につながります。
+              ChatGPT・Gemini・PerplexityなどのAI検索が普及する中、構造化データはSEOだけでなくAIO（AI検索最適化）の観点からも重要度が高まっています。コンテンツの意味を構造化し、機械読み取り可能な形式で提供することが、AI時代のWebサイトの基礎です。
             </p>
           </div>
         </section>
 
-        {/* Full-width image */}
-        <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
-            alt="データ分析画面と資料を確認している様子"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/2.png" alt="構造化データ・JSON-LD・Schema.org実装のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
         </section>
 
-        {/* SEOにおける構造化データの役割 */}
-        <section className="py-16 md:py-20" style={{ background: "#ffffff" }}>
+        {/* Schema.orgタイプ一覧 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
-                SEOにおける構造化データの役割
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                構造化データとは、Webページのコンテンツをコンピュータが解釈できる形式で記述する技術です。HTML上ではテキストとして書かれていても、Googleはそれが「商品名」なのか「価格」なのか「住所」なのかを正確には判断できません。構造化データを実装することで、「このテキストは会社の電話番号」「このリストはFAQの質問と回答」とGoogleに明示的に伝えることができます。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                SEO観点での主な効果は「リッチリザルト」の獲得です。通常のテキストリンクとして表示される検索結果に対し、リッチリザルトは星評価・FAQ展開・パンくず・価格・営業時間など視覚的に目立つ情報が追加表示されます。検索結果上のスペースが増えることで存在感が増し、クリック率（CTR）の向上が期待できます。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                また、構造化データはGoogleのサイト理解精度を高めます。コンテンツの意味・著者・日付・関連エンティティを明示することで、E-E-A-Tの評価にも好影響を与えます。特にYMYL（医療・金融・法律）ジャンルでは著者情報の構造化が評価を左右します。
-              </p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Schema Types</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              主要なSchema.orgタイプと実装箇所
+            </h2>
+            <div className="max-w-5xl overflow-x-auto">
+              <table className="w-full text-[13px]">
+                <thead>
+                  <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
+                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>Schema Type</th>
+                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>効果・概要</th>
+                    <th className="text-left py-3 font-semibold" style={{ color: "#0d1b2a" }}>実装ページ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {schemaTypes.map((row, i) => (
+                    <tr key={i} style={{ borderBottom: "1px solid #E8E4DC" }}>
+                      <td className="py-4 pr-6 font-mono font-semibold" style={{ color: "#0d1b2a" }}>{row.type}</td>
+                      <td className="py-4 pr-6 leading-[1.7]" style={{ color: "#374151" }}>{row.desc}</td>
+                      <td className="py-4 leading-[1.7]" style={{ color: "#6B7280" }}>{row.target}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
 
-        {/* 実装すべき主要Schema */}
-        <section className="py-16 md:py-20" style={{ background: "#f8f6f2" }}>
+        {/* 実装方法 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-10">
-              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>
-                Schema Types
-              </p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
-                実装すべき主要Schema
-              </h2>
-            </div>
-            <div className="max-w-3xl">
-              {schemas.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</h3>
-                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
-                  </div>
-                </div>
-              ))}
-              <div style={{ borderTop: "1px solid #ece8e0" }} />
-            </div>
-          </div>
-        </section>
-
-        {/* 2-col: image + text / AIOとの関係 */}
-        <section className="py-16 md:py-20" style={{ background: "#ffffff" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative" style={{ height: "320px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_14_54.png"
-                  alt="データを確認しながら分析している様子"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation</p>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              Next.jsでの構造化データ実装例
+            </h2>
+            <div className="max-w-3xl rounded overflow-hidden" style={{ background: "#0d1b2a", border: "1px solid #1e2d3d" }}>
+              <div className="px-4 py-2" style={{ background: "#1a2a3a", borderBottom: "1px solid #1e2d3d" }}>
+                <span className="text-[11px] font-mono" style={{ color: "rgba(255,255,255,0.4)" }}>app/services/seo/page.tsx</span>
               </div>
-              <div>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2vw,24px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
-                  AIOとの関係
-                </h2>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  構造化データはSEOのリッチリザルト獲得だけでなく、AIO（AI検索最適化）においても重要な役割を担います。ChatGPT・Gemini・Perplexityなどのチャット型AI検索は、信頼できる情報源を選ぶ際にサイトの構造・著者情報・組織情報を参照します。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  Organization SchemaやPerson Schema（著者情報）を適切に実装しているサイトは、AIが「信頼できる情報源」と判断しやすくなります。AI検索対応の構造化データについては、
-                  <Link href="/aio/structured-data" className="underline hover:opacity-70 transition-opacity" style={{ color: "#1a2332" }}>AIO × 構造化データページ</Link>
-                  で詳しく解説しています。
-                </p>
-              </div>
+              <pre className="p-5 overflow-x-auto text-[12px] leading-[1.8] font-mono" style={{ color: "rgba(255,255,255,0.82)" }}>{`const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1,
+          "name": "ホーム", "item": "https://www.cypress-all.co.jp" },
+        { "@type": "ListItem", "position": 2,
+          "name": "SEO対策",
+          "item": "https://www.cypress-all.co.jp/seo" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SEO対策の費用はいくらですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "初期費用〇〇円〜、月額〇〇円〜です。"
+          }
+        }
+      ]
+    }
+  ]
+};`}</pre>
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="構造化データについてよくある質問" bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} heading="構造化データについてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="構造化データ実装のご相談"
-          body="構造化データの実装・リッチリザルト対応をサイプレスがサポートします。現在のサイト状態を確認し、どのSchemaを優先的に実装すべきかご提案します。"
+          body="JSON-LD・Schema.orgの実装からリッチリザルト獲得・AI検索対策まで対応します。"
         />
       </main>
       <Footer />

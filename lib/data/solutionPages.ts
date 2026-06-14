@@ -208,9 +208,9 @@ export const solutionPages: SolutionPage[] = [
     slug: "local-complete",
     title: "地域集客完全パッケージ",
     titleEn: "Local Marketing Complete Package",
-    tagline: "地域No.1の集客力を構築する",
+    tagline: "地域で選ばれる集客力を構築する",
     metaDescription: "MEO・SEO・SNS・ホームページを統合した地域集客完全パッケージ。葛飾区・東京・首都圏の中小企業が地域で圧倒的な集客力を獲得するためのトータル支援です。",
-    intro: "地域ビジネスが圧倒的な集客力を持つために必要なすべての施策を一括して提供します。MEOでGoogleマップ上位、SEOで検索上位、SNSで認知拡大、公式サイトで問い合わせ獲得——これらを統合管理することで、地域でNo.1の存在感を確立します。",
+    intro: "地域ビジネスが強い集客力を持つために必要なすべての施策を一括して提供します。MEOでGoogleマップ上位、SEOで検索上位、SNSで認知拡大、公式サイトで問い合わせ獲得——これらを統合管理することで、地域での存在感と信頼を確立します。",
     features: [
       { num: "01", title: "MEO・SEO・SNS・Webの4施策を統合管理", body: "各施策を個別に管理するより、統合して戦略設計することで相乗効果が生まれ、費用対効果が大幅に向上します。" },
       { num: "02", title: "月次統合レポートで全チャネルの成果を一元把握", body: "MEO順位・SEO流入・SNSエンゲージメント・CV数をひとつのレポートで確認でき、意思決定が速くなります。" },

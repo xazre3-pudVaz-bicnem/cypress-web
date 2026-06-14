@@ -10,17 +10,37 @@ import RelatedPages from "@/components/shared/RelatedPages";
 export const metadata: Metadata = {
   title: "SEO対策とは｜検索上位表示の基礎から実践まで｜株式会社サイプレス",
   description:
-    "SEO対策の基礎知識から最新トレンドまで徹底解説。内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの柱で体系的に理解できます。",
-  keywords: ["SEO対策", "SEOとは", "検索上位表示", "SEO基礎", "SEO種類", "SEO施策"],
+    "SEO対策の基礎から最新トレンドまで徹底解説。内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの柱で体系的に対策できます。東京葛飾区のSEO専門会社。",
+  keywords: ["SEO対策", "SEOとは", "検索上位表示", "SEO基礎", "SEO種類", "SEO方法"],
   openGraph: {
     title: "SEO対策とは｜検索上位表示の基礎から実践まで｜株式会社サイプレス",
     description:
-      "SEO対策の基礎知識から最新トレンドまで徹底解説。内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの柱で体系的に理解できます。",
+      "SEO対策の基礎から最新トレンドまで徹底解説。内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの柱で体系的に対策できます。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/seo" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "ホーム", item: "https://www.cypress-all.co.jp" },
+        { "@type": "ListItem", position: 2, name: "SEO対策", item: "https://www.cypress-all.co.jp/seo" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "SEO対策の効果が出るまでどれくらいかかりますか？", acceptedAnswer: { "@type": "Answer", text: "競合状況や対象キーワードによりますが、一般的に3〜6ヶ月で順位変動が始まり、12ヶ月以上で安定した成果が出るケースが多いです。ただし、テクニカルSEOの修正や既存コンテンツの改善は着手後すぐに反映されることもあります。" } },
+        { "@type": "Question", name: "SEO対策とリスティング広告の違いは何ですか？", acceptedAnswer: { "@type": "Answer", text: "リスティング広告は即効性がありますが、出稿を止めると流入も止まります。SEOは効果が出るまで時間がかかりますが、上位表示されれば継続的に無料で集客できる資産になります。中長期の集客にはSEOが有利です。" } },
+      ],
+    },
+  ],
 };
 
 const pillars = [
@@ -33,141 +53,325 @@ const pillars = [
   {
     num: "02",
     title: "コンテンツSEO",
-    body: "ユーザーの検索意図に合ったページを継続的に制作・改善していく施策です。キーワード調査・競合分析・記事構成設計・ライティングを通じて、検索エンジンとユーザー双方に評価されるコンテンツを積み上げます。E-E-A-Tの強化にも直結します。",
+    body: "ユーザーの検索意図に合ったページを継続的に制作・拡充していく施策です。キーワード調査・競合記事の研究・構成案の設計・ライティング・E-E-A-Tの強化を通じて、検索エンジンとユーザー双方に評価されるコンテンツを積み上げます。",
     href: "/seo/content-seo",
   },
   {
     num: "03",
     title: "テクニカルSEO",
-    body: "ページ表示速度・クロール最適化・インデックス管理・構造化データ実装など、技術的な側面からサイトのSEO基盤を整える施策です。Core Web Vitalsへの対応やモバイルファースト設計も含まれ、サイト全体のパフォーマンスを底上げします。",
+    body: "ページ表示速度・クロール最適化・インデックス管理・構造化データの実装・Core Web Vitalsへの対応など、技術的な側面からサイトのSEO基盤を整える施策です。サイトのパフォーマンスと検索エンジンの評価を根本から底上げします。",
     href: "/seo/technical-seo",
   },
   {
     num: "04",
     title: "ローカルSEO",
-    body: "地域名キーワードへの最適化・対応エリアページの設置・Googleビジネスプロフィールとの連携など、地域ビジネスの検索流入を強化する施策です。MEOと組み合わせることで、地域での認知度と集客力を大幅に高められます。",
+    body: "地域名キーワードへの最適化、対応エリアページの設置、Googleビジネスプロフィールとの連携など、地域ビジネスの検索集客を強化する施策です。MEOと組み合わせることで、地域での認知と来店・問い合わせを大幅に増やせます。",
     href: "/seo/local-seo",
   },
   {
     num: "05",
     title: "外部SEO",
-    body: "被リンク獲得・サイテーション整合・ブランドメンション増加など、外部からの評価シグナルを高める施策です。良質なコンテンツを起点とした自然なリンク構築が基本であり、不正なリンク操作はGoogleペナルティのリスクがあるため注意が必要です。",
+    body: "信頼性の高い外部サイトからの被リンク（バックリンク）獲得を目的とした施策です。専門性の高いコンテンツ制作・プレスリリース・業界メディアへの寄稿などを通じて、サイト全体の権威性を高めます。",
     href: "/seo/external-seo",
   },
 ];
 
 const subPages = [
-  { href: "/seo/internal-seo", label: "内部SEO対策", desc: "タグ・構造・内部リンク最適化" },
-  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったページ制作" },
-  { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "速度・クロール・構造化データ" },
-  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索・エリア対策" },
-  { href: "/seo/external-seo", label: "外部SEO・被リンク", desc: "被リンク獲得・サイテーション" },
+  { href: "/seo/internal-seo", label: "内部SEO", desc: "タイトル・見出し・URLを最適化する内部施策" },
+  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったコンテンツを継続的に制作" },
+  { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "表示速度・クロール・Core Web Vitalsの改善" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域名検索への最適化と地域集客強化" },
+  { href: "/seo/external-seo", label: "外部SEO・被リンク", desc: "権威性の高い被リンク獲得戦略" },
+  { href: "/seo/keyword-research", label: "キーワード調査", desc: "狙うべきキーワードの特定と優先順位設計" },
+  { href: "/seo/site-structure", label: "サイト構造設計", desc: "情報設計とURL設計でSEO評価を最大化" },
+  { href: "/seo/blog-strategy", label: "ブログ・コンテンツ戦略", desc: "長期的な流入増加につながる記事設計" },
+  { href: "/seo/structured-data", label: "構造化データ実装", desc: "Schema.orgでAIOにも対応した情報設計" },
+  { href: "/seo/page-speed", label: "ページ速度最適化", desc: "Core Web VitalsとLighthouseスコア改善" },
+  { href: "/seo/mobile-seo", label: "モバイルSEO", desc: "モバイルファーストインデックスへの対応" },
+  { href: "/seo/seo-audit", label: "SEO診断・監査", desc: "現状分析と改善優先度の特定" },
+  { href: "/seo/search-console", label: "サーチコンソール活用", desc: "データを使った継続改善の仕組み" },
+  { href: "/seo/seo-writing", label: "SEOライティング", desc: "検索意図に沿った文章の書き方" },
+];
+
+const challenges = [
+  {
+    num: "01",
+    title: "Googleで自社サイトが見つからない",
+    body: "「社名 + サービス名」で検索しても自社が出てこない、競合他社が上位を占めている——こうした状況では、潜在顧客が検索しても到達できません。内部SEOとコンテンツSEOの基盤整備が必要です。",
+  },
+  {
+    num: "02",
+    title: "SEO対策をしているが成果が出ない",
+    body: "ブログ記事を書いているのに順位が上がらない、被リンクを増やしたのに効果がない——これは検索意図の分析不足やテクニカル面の課題が原因であることが多いです。施策の方向性を見直す診断が必要です。",
+  },
+  {
+    num: "03",
+    title: "広告に頼り切りで集客コストが高い",
+    body: "リスティング広告やSNS広告による流入を止めると顧客が来なくなる状態は、長期的には経営リスクです。SEOで自然検索からの恒久的な集客資産を構築することで、広告依存を減らせます。",
+  },
+  {
+    num: "04",
+    title: "サイトはあるが問い合わせが来ない",
+    body: "サイトを持っているがアクセスが少ない、来ても問い合わせに至らない——この場合、SEO対策とCV改善を同時に行う必要があります。集客とコンバージョンの両面から課題を整理します。",
+  },
+  {
+    num: "05",
+    title: "競合他社がSEOを強化して差をつけられている",
+    body: "以前は上位にいたキーワードで競合に抜かれた、新しい競合が次々と上位に入ってくる——競合分析をもとに、コンテンツと技術面での追い上げ戦略が必要です。",
+  },
+  {
+    num: "06",
+    title: "業種・地域の検索で上位に出てきたい",
+    body: "「葛飾区 税理士」「東京 美容室」のような地域名+業種の検索で上位に出ることで、来店・問い合わせを増やしたい——ローカルSEOとMEOを組み合わせた地域特化施策が効果的です。",
+  },
+];
+
+const supportItems = [
+  {
+    title: "SEO現状診断・競合分析",
+    body: "まず現在のサイトのSEO評価・クロール状況・インデックス率・キーワードランキングを調査します。同時に競合上位サイトの構成・コンテンツ量・被リンクプロファイルを分析し、差を埋めるための優先施策を特定します。",
+  },
+  {
+    title: "キーワード戦略立案",
+    body: "ビジネス目標に合ったメインキーワード・ロングテールキーワードを選定し、月間検索ボリューム・競合難易度・転換率見込みを評価した上で優先順位を決定します。狙うべきキーワードとページ構成のロードマップを作成します。",
+  },
+  {
+    title: "内部SEO実施",
+    body: "タイトルタグ・メタディスクリプション・見出しタグ（H1〜H3）・画像のalt属性・URL構造・canonical設定・構造化データ（JSON-LD）・サイトマップの整備まで、内部最適化を一括で実施します。",
+  },
+  {
+    title: "テクニカルSEO改善",
+    body: "PageSpeed Insightsで低スコアのページを特定し、画像最適化・JavaScript遅延読み込み・CSSの圧縮などを実施します。Core Web Vitals（LCP・CLS・FID）を改善し、Lighthouseスコア90点以上を目指します。",
+  },
+  {
+    title: "コンテンツSEO制作・拡充",
+    body: "検索意図を分析した上で、月次で対策キーワードに合ったコンテンツを制作・公開します。既存ページのリライト・情報量の増強・内部リンクの充実なども並行して実施し、サイト全体の評価を底上げします。",
+  },
+  {
+    title: "AIO（AI検索）対応",
+    body: "ChatGPT・Gemini・Perplexityなど生成AI検索での引用確率を高めるため、FAQ設計・構造化データ・E-E-A-T強化・著者情報の明示などを実施します。SEOとAIOを両立した情報設計が競合との差別化になります。",
+  },
+  {
+    title: "順位計測・月次レポート",
+    body: "対策キーワードの順位変動をGoogle Search Console・順位計測ツールで毎週追跡します。月次レポートで自然検索流入数・CV数・コンテンツ別パフォーマンスを共有し、次月の施策優先度を決定します。",
+  },
+  {
+    title: "継続改善・PDCAサイクル",
+    body: "SEOは一度やって終わりではなく、Googleのアルゴリズム更新・競合の変化・ユーザーニーズの変化に合わせて継続的に改善が必要です。月次でPDCAを回し、長期的な検索流入の増加を実現します。",
+  },
+];
+
+const industries = [
+  { name: "EC・通販", point: "商品カテゴリSEO・ロングテールキーワード戦略" },
+  { name: "BtoB企業", point: "業界専門キーワード・コラムマーケティング強化" },
+  { name: "医療・クリニック", point: "症状名+地域名SEO・E-E-A-T強化・医療広告遵守" },
+  { name: "士業・専門家", point: "専門性コンテンツ・地域名+業種SEO" },
+  { name: "飲食チェーン", point: "メニュー・地域・シーンキーワード設計" },
+  { name: "不動産", point: "エリア×用途別物件ページSEO・ローカルSEO" },
+  { name: "建設・リフォーム", point: "施工事例コンテンツ・地域SEO" },
+  { name: "教育・スクール", point: "コース名・資格名・地域SEO" },
+  { name: "IT・SaaS", point: "機能別コンテンツ・比較記事・導入事例SEO" },
+  { name: "美容・サロン", point: "施術名+地域SEO・MEOとの連携" },
 ];
 
 const faqItems = [
   {
-    q: "SEO対策はいつ効果が出始めますか？",
-    a: "一般的には施策開始から3〜6ヶ月で変化が現れ始め、本格的な成果が出るまでに6〜12ヶ月を要するケースが多いです。ただし、競合状況・サイトの既存評価・施策の質によって大きく異なります。内部SEOやテクニカル改善は比較的早く反映される場合があります。",
+    q: "SEO対策の効果が出るまでどれくらいかかりますか？",
+    a: "競合状況や対象キーワードによりますが、一般的に着手から3〜6ヶ月で検索順位の変動が始まります。安定して上位表示されるまでには12ヶ月以上かかるケースが多いです。ただし、テクニカルSEOの修正（表示速度・クロールエラー修正など）は比較的早く反映されることがあります。継続的な取り組みが重要です。",
   },
   {
-    q: "SEO対策と広告（リスティング広告）の違いは何ですか？",
-    a: "リスティング広告は即効性がある一方、費用をかけ続けなければ流入がゼロになります。SEOは成果が出るまでに時間がかかりますが、一度検索上位を獲得すれば広告費をかけずに継続的な集客が可能になります。中長期での費用対効果はSEOが優れており、両者を組み合わせるのが理想です。",
+    q: "SEO対策とリスティング広告はどちらが優先ですか？",
+    a: "短期的な集客が必要であればリスティング広告、中長期での安定した集客基盤が目標であればSEOが適しています。広告は即効性がある一方、出稿を止めると流入も止まります。SEOは時間がかかりますが、一度上位表示されれば継続的に流入を獲得できる「資産」になります。両方を並行する企業も多いです。",
   },
   {
-    q: "自社でSEO対策をやることはできますか？",
-    a: "コンテンツ制作や内部SEOの一部は自社でも実施できます。ただしテクニカルSEO・キーワード戦略・競合分析などは専門知識が必要なため、誤った施策を続けると逆効果になるリスクもあります。初期の設計・方針策定をプロに依頼し、運用を内製化するハイブリッドモデルが効率的です。",
+    q: "コンテンツを書くだけでSEOの効果は出ますか？",
+    a: "コンテンツだけでは不十分です。記事を書いても、テクニカルSEO（表示速度・クロール最適化）や内部SEO（タイトル・見出し設計）が整っていないと評価されにくい状態になります。また、検索意図に合っていないコンテンツは上位表示されません。コンテンツ・技術・内部設計の三つを同時に整えることが重要です。",
   },
   {
-    q: "MEOやAIOとSEOはどう違いますか？",
-    a: "SEOはGoogleの通常検索結果（オーガニック）での上位表示を目的とします。MEOはGoogleマップ・ローカルパックへの表示最適化です。AIOはChatGPTやGeminiなどのAI検索エンジンから引用・紹介されることを目的とした最新の施策です。それぞれ異なるチャネルを強化するため、三つを組み合わせることで集客力が最大化されます。",
+    q: "AIでコンテンツを大量生成してもSEO効果はありますか？",
+    a: "AI生成コンテンツをそのまま大量公開するだけでは、Googleのスパムポリシーに抵触するリスクがあります。AIを活用するにしても、一次情報・専門的見解・実体験を加えた人間による編集が不可欠です。質の低いコンテンツを量産するより、一つひとつの記事の質を高める方が長期的なSEO効果は高いです。",
   },
   {
-    q: "ページ数が少ないサイトでもSEO効果はありますか？",
-    a: "ページ数が少なくても、1ページあたりの品質・構造・テーマの一貫性が高ければSEO効果は出ます。ただし検索流入の量を増やすためには、ターゲットキーワードに対応したページを継続的に増やすコンテンツSEOが有効です。まずは既存ページの内部SEO最適化から着手することをお勧めします。",
+    q: "Googleのアルゴリズム変更が怖いです。安全な対策方法はありますか？",
+    a: "Googleが一貫して重視しているのは「ユーザーにとって価値あるコンテンツと体験」です。小手先のテクニックより、検索意図に合った質の高いコンテンツ制作・E-E-A-Tの構築・技術的な最適化を地道に積み重ねることが、アルゴリズム変更に強いサイト作りにつながります。",
   },
   {
-    q: "SEO対策で避けるべき「ブラックハット」とは何ですか？",
-    a: "Googleのガイドラインに違反する手法の総称です。具体的には、人工的な被リンク購入・キーワードの過剰詰め込み（キーワードスタッフィング）・クローキング・コンテンツの無断複製などが該当します。短期的に効果が出ることもありますが、Googleペナルティを受けると検索順位が大幅に下落し、回復に長期間を要します。",
+    q: "現在のサイトでSEO対策を始められますか？",
+    a: "はい、既存サイトへのSEO施策が最初のステップになります。まず現状診断を行い、改善優先度の高い施策（タイトルタグ修正・ページ速度改善・コンテンツ拡充など）から着手します。WordPressサイト・Next.jsサイト・その他CMSに対応しています。",
+  },
+  {
+    q: "内部SEOと外部SEOはどちらを先にやるべきですか？",
+    a: "内部SEO（タイトル・構造・速度・コンテンツ）を先に整えることを推奨します。内部が最適化されていない状態で被リンクを集めても、評価が散漫になります。サイトの土台を固めてから、外部被リンク獲得に移行するのが効率的です。",
+  },
+  {
+    q: "SEO対策の費用はどのくらいかかりますか？",
+    a: "施策内容・対象キーワード数・競合状況によって大きく異なります。コンサルティング型では月5〜15万円程度、コンテンツ制作込みの包括支援では月10〜30万円程度が目安です。まずは現状診断・目標ヒアリングのうえで、費用対効果を踏まえたご提案をいたします。",
+  },
+  {
+    q: "SEO対策でサイトがペナルティを受けることはありますか？",
+    a: "ホワイトハットSEO（Googleのガイドラインに沿った対策）を実施する限りペナルティリスクはほぼありません。ただし、大量スパムリンク・隠しテキスト・コンテンツのコピー・誘導ページの作成などのブラックハット施策は重大なペナルティにつながります。当社はガイドラインを遵守した施策のみ実施します。",
+  },
+  {
+    q: "SEO対策の成果はどのように計測しますか？",
+    a: "Google Search Console・Google Analytics・順位計測ツールを使い、毎月の自然検索流入数・対策キーワード順位・セッション数・CV数・直帰率を計測します。月次レポートでデータを共有し、改善施策に反映させます。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
-  { href: "/meo", label: "MEO対策", desc: "Googleマップ上位表示" },
-  { href: "/aio", label: "AIO対策", desc: "AI検索エンジン最適化" },
-  { href: "/seo/internal-seo", label: "内部SEO対策", desc: "タグ・構造最適化" },
-  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったページ制作" },
+  { href: "/seo/internal-seo", label: "内部SEO", desc: "タイトル・見出し・URL最適化" },
+  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったコンテンツ制作" },
+  { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "表示速度・Core Web Vitals改善" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域名検索での集客強化" },
+  { href: "/seo/keyword-research", label: "キーワード調査", desc: "狙うべきキーワードの設計" },
+  { href: "/seo/seo-audit", label: "SEO診断", desc: "現状分析と改善優先度の特定" },
+  { href: "/seo/page-speed", label: "ページ速度最適化", desc: "Lighthouse 90+への改善" },
+  { href: "/seo/structured-data", label: "構造化データ", desc: "Schema.org・JSON-LD実装" },
+  { href: "/meo", label: "MEO対策", desc: "Googleマップでの地域集客" },
+  { href: "/aio", label: "AIO対策", desc: "ChatGPT・AI検索での引用" },
+  { href: "/column/seo", label: "SEOコラム", desc: "SEOの基礎知識・最新情報" },
+  { href: "/knowledge/seo-basics", label: "SEO基礎知識", desc: "初めてのSEO完全ガイド" },
+  { href: "/knowledge/keyword-research", label: "キーワード調査の方法", desc: "実践的なキーワード選定法" },
+  { href: "/guide/how-to-choose-seo-company", label: "SEO会社の選び方", desc: "外注先を選ぶポイント" },
+  { href: "/cost/seo", label: "SEO対策の費用", desc: "料金相場と費用対効果" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援内容" },
 ];
 
-export default function SeoIndexPage() {
+export default function SeoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 mb-6" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="text-[12px] hover:text-[#0F172A] transition-colors" style={{ color: "#9CA3AF" }}>ホーム</Link>
-              <span className="text-[12px]">/</span>
-              <span className="text-[12px]" style={{ color: "#374151" }}>SEO対策</span>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>SEO対策</span>
             </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>SEO Knowledge</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#0F172A" }}>
-              SEO対策
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>
+              Search Engine Optimization
+            </p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SEO対策とは
             </h1>
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              SEO対策（検索エンジン最適化）とは、GoogleやYahoo!などの検索エンジンで自社サイトを上位表示させ、継続的な自然検索流入を獲得するための施策です。広告費用なしに見込み顧客へリーチできる、最も費用対効果の高いWebマーケティング手法の一つです。
+            </p>
             <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              SEO（Search Engine Optimization）とは、GoogleやYahoo!などの検索エンジンで上位表示されるためのすべての施策を指します。適切なSEO対策を継続することで、広告費に頼らず自然検索から継続的な集客を実現し、ビジネスの成長を支える強固な集客基盤を構築できます。
+              SEO対策は内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの領域に分かれます。これらを体系的に実施することで、検索エンジンとユーザー双方に評価されるWebサイトを構築できます。
             </p>
           </div>
         </section>
 
-        {/* Full-width image */}
-        <section className="relative" style={{ height: "380px", overflow: "hidden" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
-            alt="SEO対策・アクセス解析の実施"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
+        {/* Visual */}
+        <section className="relative overflow-hidden" style={{ height: "380px" }}>
+          <Image src="/1.png" alt="SEO対策・検索上位表示の戦略設計" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
         </section>
 
-        {/* SEO対策とは */}
-        <section className="py-16" style={{ background: "#FFFFFF" }}>
+        {/* このページでわかること */}
+        <section className="py-16" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h2 className="font-black text-[22px] md:text-[26px] mb-6" style={{ color: "#0F172A" }}>SEO対策とは</h2>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                SEO対策とは、検索エンジンのアルゴリズムを理解し、ユーザーの検索意図に応えるサイトを構築することで、検索結果の上位に表示されるよう継続的に改善していく取り組みです。Googleは200以上の評価指標をもとにページをランキングしており、技術的な基盤・コンテンツの質・外部からの評価など、多角的な施策が求められます。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                かつてのSEOはキーワードの詰め込みや被リンクの量に依存していましたが、現在のGoogleはE-E-A-T（経験・専門性・権威性・信頼性）を重視し、ユーザーにとって本当に役立つコンテンツを評価します。そのため現代のSEOは「いかに検索エンジンをだますか」ではなく、「いかにユーザーに価値を提供できるか」という本質的なマーケティング活動そのものです。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                SEOの最大のメリットは、一度順位を獲得すれば広告費をかけずに継続的な流入が得られる点です。リスティング広告と異なり、停止しても流入が即ゼロになることはなく、積み上げた資産として長期間機能します。中長期的な事業成長を考えるうえで、SEOへの投資は欠かせない経営判断と言えます。
-              </p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Contents</p>
+            <h2 className="font-black text-[24px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              このページでわかること
+            </h2>
+            <div className="grid md:grid-cols-3 gap-4 max-w-4xl">
+              {[
+                "SEO対策の基礎と5つの施策領域",
+                "よくある課題とその原因・解決策",
+                "サイプレスのSEO支援内容と進め方",
+                "業種別のSEO活用ポイント",
+                "SEO対策に関するよくある質問（FAQ）",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 pt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-[14px]" style={{ color: "#374151" }}>{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* SEOの5つの柱 */}
-        <section className="py-16" style={{ background: "#F9F8F5" }}>
+        {/* SEO対策の5つの柱 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-10">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#9CA3AF" }}>Structure</p>
-              <h2 className="font-black text-[22px] md:text-[26px]" style={{ color: "#0F172A" }}>SEOの5つの柱</h2>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>The 5 Pillars</p>
+            <h2 className="font-black text-[28px] md:text-[34px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SEO対策の5つの領域
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
+              SEO対策は単一の施策ではなく、複数の領域を体系的に整備することで効果を発揮します。各領域が相互に作用し、サイト全体の検索評価を高めます。
+            </p>
+            <div className="max-w-4xl">
+              {pillars.map((p, i) => (
+                <Link key={p.num} href={p.href}>
+                  <div
+                    className="flex gap-6 py-7 hover:opacity-80 transition-opacity"
+                    style={{ borderTop: "1px solid #E8E4DC", borderBottom: i === pillars.length - 1 ? "1px solid #E8E4DC" : undefined }}
+                  >
+                    <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
+                    <div>
+                      <h3 className="font-bold text-[17px] mb-2 hover:underline" style={{ color: "#0d1b2a" }}>{p.title}</h3>
+                      <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{p.body}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
-            <div className="max-w-3xl">
-              {pillars.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+          </div>
+        </section>
+
+        {/* SEO専門ページ一覧 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Sub Pages</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SEO専門ページ一覧
+            </h2>
+            <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
+              {subPages.map((p, i) => (
+                <Link key={p.href} href={p.href}>
+                  <div
+                    className="py-5 pr-4 hover:opacity-80 transition-opacity flex items-start justify-between gap-4"
+                    style={{ borderTop: "1px solid #E8E4DC" }}
+                  >
+                    <div>
+                      <p className="font-semibold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{p.label}</p>
+                      <p className="text-[13px]" style={{ color: "#6B7280" }}>{p.desc}</p>
+                    </div>
+                    <svg className="w-4 h-4 shrink-0 mt-1" style={{ color: "#9CA3AF" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* よくある課題 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Challenges</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              こんな課題を抱えていませんか？
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
+              SEO対策に取り組みたいと思いつつ、どこから手をつければいいかわからない方が多いです。以下のような課題に一つでも当てはまる場合は、SEO対策が集客改善の鍵になります。
+            </p>
+            <div className="max-w-4xl">
+              {challenges.map((c) => (
+                <div key={c.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{c.num}</span>
                   <div>
-                    <Link href={item.href}>
-                      <h3 className="font-bold text-[16px] mb-2 hover:underline" style={{ color: "#0F172A" }}>{item.title}</h3>
-                    </Link>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{c.title}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{c.body}</p>
                   </div>
                 </div>
               ))}
@@ -176,80 +380,120 @@ export default function SeoIndexPage() {
           </div>
         </section>
 
-        {/* SEOと他の集客手法との違い */}
-        <section className="py-16" style={{ background: "#FFFFFF" }}>
+        {/* SEO対策の重要性 */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h2 className="font-black text-[22px] md:text-[26px] mb-6" style={{ color: "#0F172A" }}>SEOと他の集客手法との違い</h2>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                SEOは自然検索（オーガニック検索）からの流入を増やすことを目的としますが、Web集客にはMEO・AIO・リスティング広告・SNSなど多様な手法があります。それぞれの特性を理解し、自社の状況に合わせて組み合わせることが重要です。
-              </p>
-              <div className="mb-5" style={{ borderLeft: "2px solid #E8E4DC", paddingLeft: "1.25rem" }}>
-                <p className="font-bold text-[15px] mb-1" style={{ color: "#0F172A" }}>SEO vs MEO</p>
-                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>SEOはGoogleの通常検索結果での上位表示を目指します。MEOはGoogleマップやローカルパック（地図検索）への表示最適化です。地域ビジネスはSEOとMEOの両方を強化することで、検索結果の露出面積を最大化できます。</p>
-              </div>
-              <div style={{ borderLeft: "2px solid #E8E4DC", paddingLeft: "1.25rem" }}>
-                <p className="font-bold text-[15px] mb-1" style={{ color: "#0F172A" }}>SEO vs AIO</p>
-                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>AIO（AI検索最適化）はChatGPT・Gemini・Perplexityなどのチャット型AI検索エンジンから引用・紹介されることを目的とした新しい施策です。E-E-A-Tを重視したSEOコンテンツはAIOにも有効であり、SEOとAIOは対立するものではなく相互補完的な関係にあります。</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Sub-pages list */}
-        <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-8" style={{ color: "#9CA3AF" }}>SEO Knowledge</p>
-            <h2 className="font-black text-[22px] md:text-[26px] mb-10" style={{ color: "#0F172A" }}>SEO対策の各カテゴリ</h2>
-            <div className="max-w-3xl">
-              {subPages.map((page) => (
-                <Link
-                  key={page.href}
-                  href={page.href}
-                  className="flex items-center justify-between py-5 group"
-                  style={{ borderBottom: "1px solid #E8E4DC" }}
-                >
-                  <div>
-                    <p className="font-bold text-[15px] mb-0.5 group-hover:underline" style={{ color: "#0F172A" }}>{page.label}</p>
-                    <p className="text-[13px]" style={{ color: "#9CA3AF" }}>{page.desc}</p>
-                  </div>
-                  <svg className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-1" style={{ color: "#9CA3AF" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2-col: image + text — SEOの3つの柱 */}
-        <section className="py-16" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative" style={{ height: "320px" }}>
-                <Image
-                  src="/1.png"
-                  alt="複数人でグラフ・資料を確認しているミーティングの様子"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#475569" }}>Why SEO Matters</p>
+            <h2 className="font-black text-white text-[26px] md:text-[32px] mb-8" style={{ fontFamily: "var(--font-serif)" }}>
+              なぜSEO対策が重要なのか
+            </h2>
+            <div className="grid md:grid-cols-2 gap-10 max-w-4xl">
+              <div>
+                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#94A3B8" }}>
+                  Googleの検索結果で1位を獲得したページのクリック率は約28〜30%といわれています。一方、2ページ目以降はほとんどクリックされません。つまり、検索上位に表示されるかどうかが、Webからの集客量を決定づけます。
+                </p>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#94A3B8" }}>
+                  SEO対策は成果が出るまで時間がかかるため敬遠されがちですが、一度構築した検索流入は継続的に機能します。広告を出し続けるより長期的なコストが低く、ブランドの信頼性にもつながります。
+                </p>
               </div>
               <div>
-                <h2 className="font-black text-[22px] mb-5" style={{ color: "#0F172A" }}>SEOの3つの柱：技術・コンテンツ・信頼</h2>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  現代のSEOは「テクニカル基盤」「コンテンツ品質」「外部評価」という3つの軸で評価されます。技術的に正しく整備されたサイトに、ユーザーの検索意図を満たす高品質なコンテンツを積み上げ、外部からの信頼シグナルを獲得することで、中長期的に安定した検索順位を実現できます。どれか一つが欠けても最大の効果は得られません。
+                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#94A3B8" }}>
+                  2024年以降、GoogleがAI Overview（AI生成の回答）を検索結果に表示するようになり、SEOとAIOの境界が曖昧になっています。従来のSEO施策に加え、AI検索で引用される情報設計（AIO対策）も必要になっています。
+                </p>
+                <p className="text-[15px] leading-[1.9]" style={{ color: "#94A3B8" }}>
+                  サイプレスでは、SEO・AIO・MEOを連動させた統合的なWeb集客戦略を設計します。単なる順位改善ではなく、ビジネス目標につながる集客の仕組みを構築します。
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#FFFFFF" />
+        {/* サイプレスのSEO支援内容 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Services</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              サイプレスのSEO支援内容
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
+              SEO対策は施策が多岐にわたるため、どこから手をつけるかが重要です。サイプレスでは現状診断から施策実施・月次改善まで一気通貫で対応し、ビジネス成果につながる施策を優先して実施します。
+            </p>
+            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
+              {supportItems.map((item, i) => (
+                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 対応業種 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industries</p>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              業種別SEO対策のポイント
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
+              業種によってターゲットキーワードの特徴・競合状況・コンテンツの設計方針が異なります。業種特有の検索行動を理解した上で施策を設計することで、集客の精度が大幅に向上します。
+            </p>
+            <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
+              {industries.map((ind, i) => (
+                <div
+                  key={ind.name}
+                  className="flex gap-4 py-4"
+                  style={{ borderTop: "1px solid #E8E4DC" }}
+                >
+                  <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <p className="font-semibold text-[14px] mb-0.5" style={{ color: "#0d1b2a" }}>{ind.name}</p>
+                    <p className="text-[13px]" style={{ color: "#6B7280" }}>{ind.point}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO対策の実施フロー */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Flow</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SEO対策の進め方（サイプレスの実施フロー）
+            </h2>
+            <div className="max-w-3xl">
+              {[
+                { step: "STEP 01", title: "現状診断・競合分析", body: "現在のサイトのSEO状況・キーワード順位・テクニカル課題・競合サイトの分析を実施。改善優先度の高い施策を特定します。" },
+                { step: "STEP 02", title: "キーワード戦略立案", body: "ビジネス目標に基づいてメインキーワード・ロングテールキーワードを選定。月間検索ボリューム・競合難易度・転換率を加味した優先度マップを作成します。" },
+                { step: "STEP 03", title: "内部SEO・テクニカルSEO実施", body: "タイトルタグ・メタ・見出し・構造化データを最適化。表示速度・Core Web Vitalsを改善し、SEO評価の基盤を整えます。" },
+                { step: "STEP 04", title: "コンテンツ制作・拡充", body: "検索意図に合ったコンテンツを月次で制作・公開。既存ページのリライト・情報拡充も並行して実施します。" },
+                { step: "STEP 05", title: "計測・月次改善", body: "Google Search Console・順位計測ツールでKPIを追跡。毎月の成果レポートをもとにPDCAを回し、継続的に成果を改善します。" },
+              ].map((s, i) => (
+                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <div className="shrink-0">
+                    <p className="text-[11px] font-semibold" style={{ color: "#9CA3AF" }}>{s.step}</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{s.title}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{s.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#F9F8F5" />
+
         <RelatedPages links={relatedLinks} />
+
         <PageContactCTA
-          heading="SEO対策のご相談"
-          body="SEO対策の現状分析から施策設計・実行支援まで、株式会社サイプレスが一貫してサポートします。まずは現状のサイト状況をお聞かせください。"
+          heading="SEO対策のご相談・無料診断"
+          body="現在のサイトのSEO状況を診断し、改善ポイントとご提案をお伝えします。まずは現状のお悩みをお聞かせください。"
         />
       </main>
       <Footer />

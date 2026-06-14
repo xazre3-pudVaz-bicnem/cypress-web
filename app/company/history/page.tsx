@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ["沿革", "会社の歴史", "株式会社サイプレス", "設立", "Webマーケティング"],
   openGraph: {
     title: "沿革 | 株式会社サイプレス",
-    description: "株式会社サイプレスの設立から現在までの沿革。2022年設立のWebマーケティング会社の成長の歩み。",
+    description: "株式会社サイプレスの設立から現在までの沿革。2026年5月設立のWebマーケティング会社の歩み。",
     locale: "ja_JP",
     type: "website",
   },

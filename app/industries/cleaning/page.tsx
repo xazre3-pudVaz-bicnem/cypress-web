@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "ハウスクリーニング・清掃業のWeb集客｜MEO・SEO対策",
+  title: "ハウスクリーニング・清掃業のWeb集客｜MEO・SEO対策｜株式会社サイプレス",
   description: "ハウスクリーニング・エアコンクリーニング・清掃業のWeb集客。Googleマップ上位表示・地域SEO・ホームページ制作・口コミ獲得で定期受注を増やします。",
+  keywords: ["ハウスクリーニング MEO対策", "清掃業 集客", "エアコンクリーニング Googleマップ", "清掃業 ホームページ", "ハウスクリーニング SEO"],
+  openGraph: {
+    title: "ハウスクリーニング・清掃業のWeb集客｜MEO・SEO対策｜株式会社サイプレス",
+    description: "ハウスクリーニング・清掃業のWeb集客。MEO・SEO・ホームページで定期受注を増やします。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/cleaning" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "ハウスクリーニング業で口コミを増やすには？", a: "サービス完了後にQRコードで口コミURLへ誘導する・LINEでお礼メッセージと一緒に口コミ依頼を送る・リピート客にも定期的に依頼するなどの方法が効果的です。" },
   { q: "季節によって需要が変動する清掃業のWeb対策は？", a: "エアコンクリーニングは夏前（4〜5月）・大掃除は年末（11〜12月）など需要期の2〜3か月前からSEOコンテンツ・MEO強化・SNS告知を始めることが重要です。" },
   { q: "清掃業のリピート顧客を増やすデジタル施策は？", a: "LINE公式アカウントで定期クリーニングのリマインダー送信・季節ごとのキャンペーン告知・ポイント制度の案内などが効果的です。一度の利用から定期契約へ転換を目指します。" },
+  { q: "ハウスクリーニング業者の差別化はどうすればいいですか？", a: "「使用洗剤の安全性（子供・ペットに安心）」「女性スタッフ対応」「完全個別対応」「作業保証」など、大手チェーンが対応しきれない付加価値をホームページとGBPで明示します。料金の透明性と合わせて地域密着業者の信頼を築きます。" },
+  { q: "清掃業のホームページはどのように集客に活用できますか？", a: "「エアコンクリーニング 費用 〇〇区」「ハウスクリーニング 引越し 〇〇市」などの地域+サービス名で検索上位を狙うコンテンツ（サービスページ・ブログ）を整備します。料金表・作業前後写真・お客様の声を充実させることで問い合わせ率が向上します。" },
+  { q: "法人向け（オフィス・店舗清掃）の集客に違いはありますか？", a: "法人向けは「継続契約」が主な目的のため、実績・対応可能な施設規模・資格（建築物環境衛生管理技術者等）・セキュリティ対応をホームページで明示します。法人向けキーワード（「オフィス清掃 〇〇区 業者」「定期清掃 契約」）を含むSEOコンテンツが有効です。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/web-design/landing-page", label: "ランディングページ", desc: "LP制作" },
-  { href: "/services/meo", label: "MEOサービス", desc: "MEO対策サービス" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "清掃業向けサイト制作" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "高CV率LPの制作" },
+  { href: "/industries/plumbing", label: "水道・設備工事業のWeb集客", desc: "設備系業者の集客" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "清掃業のWeb集客相談" },
 ];
 
 export default function Page() {

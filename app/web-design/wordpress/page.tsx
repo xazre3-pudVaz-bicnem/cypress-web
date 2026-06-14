@@ -3,173 +3,127 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
-import PageContactCTA from "@/components/shared/PageContactCTA";
 
 export const metadata: Metadata = {
-  title: "WordPress制作・連携 | カスタムテーマとヘッドレスCMS対応",
-  description: "株式会社サイプレスのWordPress制作・連携サービス。ブログ・記事の継続更新に最適なCMS構成、カスタムテーマによる高品質デザイン、Next.js+WordPress（ヘッドレスCMS）構成まで対応します。",
-  keywords: ["WordPress制作", "WordPressカスタマイズ", "ヘッドレスCMS", "Next.js WordPress", "CMS導入"],
+  title: "WordPress制作｜CMS対応の高品質なWebサイト制作｜株式会社サイプレス",
+  description:
+    "WordPress制作の専門ガイド。担当者が更新できるCMS型Webサイト・SEO対応・高速化・セキュリティ対策まで解説。コーポレートサイト・SEOブログ・採用サイトに対応。東京都葛飾区を拠点に全国対応。",
+  keywords: ["WordPress制作", "ワードプレス制作", "CMS制作", "WordPress開発", "WordPress SEO", "ホームページ制作"],
   openGraph: {
-    title: "WordPress制作・連携 | 株式会社サイプレス",
-    description: "コンテンツを継続更新できるWordPress構成。カスタムテーマからヘッドレスCMSまで対応。",
+    title: "WordPress制作｜CMS対応の高品質なWebサイト制作｜株式会社サイプレス",
+    description: "WordPress制作のガイド。CMS対応・SEO・高速化・セキュリティ対策まで解説。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/web-design/wordpress" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/web-design/wordpress" },
 };
 
-const APPROACHES = [
+const faqItems = [
   {
-    num: "01",
-    title: "ブログ・記事の継続更新に最適",
-    body: "WordPressは世界で最も広く使われているCMSです。専門知識なしにブログ記事・お知らせ・採用情報などを追加・編集・削除できます。SEOの観点からもコンテンツの継続更新は重要で、WordPressはその環境を構築しやすい選択肢です。",
+    q: "WordPressとNext.jsのどちらが向いていますか？",
+    a: "自社スタッフが記事・ページを頻繁に更新したい・ブログ運用を重視したい・更新コストを下げたいという場合はWordPressが向いています。表示速度・セキュリティ・パフォーマンスを最優先する・エンジニアが対応できるという場合はNext.jsが向いています。ご要件に合わせてご提案します。",
   },
   {
-    num: "02",
-    title: "カスタムテーマによる高品質デザイン",
-    body: "既製テーマ（テンプレート）の流用ではなく、ブランドに合わせたカスタムテーマを設計します。デザインの自由度が高く、「よくあるWordPressサイト」とは一線を画した品質のサイトを制作できます。",
+    q: "WordPressのSEO対策はどこまでできますか？",
+    a: "Yoast SEO等のプラグインを活用したメタデータ最適化、XML Sitemap自動生成、構造化データ実装（JSON-LD）、パーマリンク設計、表示速度最適化（画像圧縮・キャッシュ・CDN設定）まで一貫して対応します。テーマ設計段階からSEOを考慮したコーディングを行います。",
   },
   {
-    num: "03",
-    title: "Next.js + WordPress（ヘッドレスCMS）構成",
-    body: "WordPressをバックエンドのCMS（コンテンツ管理システム）として使い、フロントエンドをNext.jsで構築するヘッドレスCMS構成に対応しています。表示速度・セキュリティ・SEO性能が高く、大規模サイトや高速表示を重視する場合に最適です。",
+    q: "WordPressのセキュリティ対策は必要ですか？",
+    a: "はい、WordPressはシェアが高いためサイバー攻撃のターゲットになりやすいです。定期的なコアアップデート・プラグインアップデート・定期バックアップ・ログイン制限・WAF設定が最低限必要です。サイプレスでは月次保守プランでこれらの対応を代行します。",
   },
   {
-    num: "04",
-    title: "SEOプラグイン活用",
-    body: "Yoast SEO等のSEOプラグインを導入し、記事・ページごとのメタ情報設定をシンプルな操作で行える環境を整えます。サイトマップの自動生成・構造化データ出力・OGP設定も合わせて対応します。",
+    q: "テーマはどうしますか？カスタムテーマを制作してもらえますか？",
+    a: "はい、デザイン要件に応じてカスタムテーマを制作します。既製テーマ（Cocoon・SWELL・GeneratePress等）のカスタマイズも対応します。SEO・パフォーマンス・保守性を考慮したテーマ設計を行います。テーマ選定のご相談からも対応します。",
   },
   {
-    num: "05",
-    title: "更新研修・マニュアル提供",
-    body: "WordPress納品後、実際の画面を見ながら基本操作（記事投稿・修正・画像アップロード）を研修します。操作マニュアルも提供するので、担当者が変わっても安定した運用が続けられます。",
-  },
-];
-
-const FAQ_ITEMS = [
-  {
-    q: "WordPressとNext.jsはどちらを選ぶべきですか？",
-    a: "更新頻度が高くブログや記事を社内で書き続けたい場合はWordPress、表示速度・セキュリティ・カスタマイズ性を優先する場合はNext.jsが適しています。両者を組み合わせたヘッドレスCMS構成もあります。要件に合わせてご提案します。",
+    q: "制作後の保守・更新対応はありますか？",
+    a: "月次保守プランを提供しています。コアアップデート・プラグインアップデート・定期バックアップ・セキュリティ監視・軽微なテキスト修正の対応を行います。また追加ページの制作・デザイン修正も別途承ります。",
   },
   {
-    q: "既存のWordPressサイトのリニューアルもできますか？",
-    a: "はい。現行サイトの内容を引き継ぎながら、デザイン・機能・SEO設計を刷新するリニューアルに対応しています。記事データの移行・URLリダイレクト設定も含めて対応します。",
+    q: "既存のWordPressサイトのリニューアルも依頼できますか？",
+    a: "はい、既存WordPressサイトのリニューアル（デザイン刷新・テーマ変更・SEO改善）に対応しています。現在のSEO評価を引き継ぎながら新デザインに移行するための設計を行います。リニューアル時のドメイン変更・URL変更の際の301リダイレクト設定も対応します。",
   },
   {
-    q: "WordPressのセキュリティ対策はしてもらえますか？",
-    a: "はい。ログインURL変更・ブルートフォース対策・不要なファイル削除・定期バックアップ設定など、基本的なセキュリティ対策を実施します。保守プランに加入することで継続的な管理も可能です。",
+    q: "WordPressの表示速度が遅い場合はどうすればいいですか？",
+    a: "WordPressの表示速度改善には、①画像の最適化（WebP変換・サイズ調整）、②キャッシュプラグインの設定（WP Super Cache・W3 Total Cache等）、③不要なプラグインの整理、④CDNの導入（Cloudflare等）、⑤ホスティングの見直し（VPS・専用サーバーへの移行）が主な施策です。現状診断からご対応します。",
   },
   {
-    q: "プラグインの追加・カスタマイズもお願いできますか？",
-    a: "はい。予約システム・会員機能・EC機能など、目的に合ったプラグインの選定・設定・カスタマイズに対応します。プラグイン同士の競合や表示崩れの確認も行います。",
-  },
-  {
-    q: "ヘッドレスCMS構成はどんな場合に向いていますか？",
-    a: "表示速度を最大化したい・複数チャネル（Web・アプリ・メール）に同じコンテンツを配信したい・セキュリティをより高めたい場合に向いています。通常のWordPress構成よりも開発コストは高くなります。",
+    q: "WordPressサイトのGoogleアナリティクス・Search Console設定も依頼できますか？",
+    a: "はい、Google Analytics 4・Google Search Consoleの設置・設定、Googleタグマネージャーの導入も対応します。制作後のデータ計測体制の整備まで一貫してサポートします。",
   },
 ];
 
-export default function WordPressPage() {
+const relatedLinks = [
+  { href: "/web-design", label: "Web制作とは", desc: "Webサイト制作の基礎" },
+  { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "WordPress型企業サイト" },
+  { href: "/web-design/seo-site", label: "SEO特化サイト制作", desc: "WordPressとSEOの組み合わせ" },
+  { href: "/web-design/service-site", label: "サービスサイト制作", desc: "WordPressでのLP制作" },
+  { href: "/support/wordpress", label: "WordPress保守サポート", desc: "アップデート・バックアップ管理" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "サイプレスの制作サービス" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "WordPress SEO対策" },
+  { href: "/cost/web-design", label: "Web制作の費用", desc: "WordPress制作の料金目安" },
+  { href: "/guide/how-to-choose-web-design-company", label: "Web制作会社の選び方", desc: "WordPress対応会社の選定" },
+  { href: "/checklist/web-design", label: "Web制作チェックリスト", desc: "WordPress制作の確認項目" },
+  { href: "/area/tokyo", label: "東京のWeb制作", desc: "東京エリアのWordPress制作" },
+  { href: "/contact", label: "無料相談", desc: "WordPress制作のご相談" },
+];
+
+export default function WordpressPage() {
   return (
     <>
       <Header />
       <main>
-        {/* ===== Hero ===== */}
         <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              WordPress
-            </p>
-            <h1
-              className="font-black leading-tight tracking-tight mb-6"
-              style={{ fontSize: "clamp(28px, 4vw, 54px)", color: "#0F172A" }}
-            >
-              WordPress連携・WordPress制作
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
+              <span>/</span>
+              <Link href="/web-design" style={{ color: "#6B7280" }} className="hover:underline">Web制作</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>WordPress制作</span>
+            </nav>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>WordPress</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              WordPress制作
             </h1>
-            <p className="text-[17px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              コンテンツの継続更新に最適なCMS構成を提供します。カスタムテーマによる高品質デザインから、Next.js連携のヘッドレスCMS構成まで対応します。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              WordPressは世界のWebサイトの40%以上で使用されているCMS（コンテンツ管理システム）です。担当者が管理画面から記事・ページを更新できる点が最大の強みで、ブログ運用・ニュース更新・コンテンツSEOに適しています。
+            </p>
+            <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
+              サイプレスでは、SEO・パフォーマンス・セキュリティを考慮したWordPressサイトを制作します。カスタムテーマ制作・既製テーマのカスタマイズ・既存サイトのリニューアルまで対応しています。
             </p>
           </div>
         </section>
 
-        {/* ===== Breadcrumb ===== */}
-        <nav className="py-4" style={{ borderTop: "1px solid #F0EDE6", borderBottom: "1px solid #F0EDE6", background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <ol className="flex items-center gap-2 text-[12px]" style={{ color: "#9CA3AF" }}>
-              <li><Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link></li>
-              <li>/</li>
-              <li><Link href="/web-design" className="hover:underline" style={{ color: "#6B7280" }}>ホームページ制作</Link></li>
-              <li>/</li>
-              <li style={{ color: "#0F172A" }}>WordPress連携・WordPress制作</li>
-            </ol>
-          </div>
-        </nav>
-
-        {/* ===== Hero Image ===== */}
-        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_10_29.png"
-            alt="WordPressサイト制作の作業環境・ラップトップとデスク"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.05)" }} />
-        </div>
-
-        {/* ===== What is WordPress ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-                About WordPress
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                WordPressとは
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                WordPressは世界中のWebサイトの約40%以上で使われているオープンソースのCMS（コンテンツ管理システム）です。記事の投稿・編集・削除をHTMLの知識なしに行えるため、社内でコンテンツを継続更新したい企業に広く採用されています。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                普及率が高いゆえに、既製テーマを流用しただけの「量産型サイト」も多く存在します。サイプレスではカスタムテーマ設計を基本とし、ブランドに合ったオリジナルデザインのWordPressサイトを制作します。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                また、WordPressをバックエンドのCMSとして使い、フロントエンドをNext.jsで構築する「ヘッドレスCMS構成」にも対応しています。この構成では表示速度・セキュリティ・SEO性能を大幅に向上させることができます。
-              </p>
-            </div>
-          </div>
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/5.png" alt="WordPress制作・CMS・コンテンツ管理システムのイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
         </section>
 
-        {/* ===== Approaches ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
+        {/* WordPress制作の特徴 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-14">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                Our Approach
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                WordPressを活用した制作
-              </h2>
-            </div>
-            <div>
-              {APPROACHES.map((item) => (
-                <div
-                  key={item.num}
-                  className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-10 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{item.num}</span>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Features</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              サイプレスのWordPress制作の特徴
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                { title: "SEOに強いWordPress構築", body: "パーマリンク設計・メタデータ最適化・XML Sitemap・構造化データ（JSON-LD）・表示速度最適化まで、SEOのベストプラクティスを組み込んだWordPressを構築します。Yoast SEO等の優秀なSEOプラグインも活用します。" },
+                { title: "カスタムテーマ制作・デザイン", body: "既製テーマに縛られない、ブランドに合ったカスタムテーマを制作します。デザインの自由度が高く、コーポレートサイト・採用サイト・サービスサイトなど様々な用途に対応します。" },
+                { title: "パフォーマンス最適化", body: "画像WebP変換・キャッシュ設定・不要プラグイン排除・CDN設定により、WordPressでも高いパフォーマンス（Lighthouse 80点以上）を実現します。" },
+                { title: "セキュリティ対策の標準実装", body: "ログイン制限・CAPTCHA・ファイル編集禁止・不要なユーザーロール削除・SSL設定など、WordPressのセキュリティ設定を標準で実施します。" },
+                { title: "担当者向けの操作マニュアル", body: "制作完了後、自社スタッフが更新できるよう操作マニュアルをご提供します。記事の追加・修正方法・画像のアップロード方法などを図解で説明します。" },
+                { title: "月次保守プランのご提供", body: "WordPressコア・テーマ・プラグインの月次アップデート、定期バックアップ、セキュリティ監視を行う月次保守プランを提供しています。更新漏れによるセキュリティリスクを防ぎます。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-3" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
@@ -179,56 +133,11 @@ export default function WordPressPage() {
           </div>
         </section>
 
-        {/* ===== 2-col text + image ===== */}
-        <section className="py-20" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                  Collaboration
-                </p>
-                <h2
-                  className="font-black leading-tight tracking-tight mb-6"
-                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
-                >
-                  継続更新できる体制を整える
-                </h2>
-                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
-                  WordPressの最大の強みは、専門知識なしにコンテンツを継続更新できる点です。ブログ記事・お知らせ・採用情報・商品情報をスムーズに更新できる管理画面を整備します。
-                </p>
-                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
-                  操作研修・マニュアル提供はもちろん、担当者が変わっても安定運用できる体制を構築します。ヘッドレスCMS構成によるNext.js連携にも対応します。
-                </p>
-              </div>
-              <div className="relative overflow-hidden" style={{ height: "300px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_12_19.png"
-                  alt="WordPress制作の打ち合わせ・タブレットを使った確認"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== FAQ ===== */}
-        <FaqSection items={FAQ_ITEMS} heading="WordPress制作 よくある質問" />
-
-        {/* ===== Related ===== */}
-        <RelatedPages
-          links={[
-            { href: "/web-design", label: "ホームページ制作", desc: "Web制作サービス一覧" },
-            { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "検索流入を意識した設計" },
-            { href: "/services/seo", label: "SEO対策", desc: "検索順位改善の総合支援" },
-          ]}
-        />
-
-        {/* ===== CTA ===== */}
+        <FaqSection items={faqItems} heading="WordPress制作についてよくある質問" bgColor="#FFFFFF" />
+        <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="WordPress制作のご相談"
-          body="WordPressによるサイト制作・リニューアル・ヘッドレスCMS構成のご相談を承っています。要件に合わせた最適な構成をご提案します。"
+          body="CMS対応のWebサイト制作から保守サポートまでトータルでご支援します。"
         />
       </main>
       <Footer />

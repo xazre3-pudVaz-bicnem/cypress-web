@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "地域の飲食店・小売店のWeb集客｜MEO・Instagram・SEO",
+  title: "地域の飲食店・小売店のWeb集客｜MEO・Instagram・SEO｜株式会社サイプレス",
   description: "地域の飲食店・カフェ・小売店のWeb集客。Googleマップ上位表示（MEO）・Instagram活用・ホームページ制作で来店客数を増やすデジタル集客支援。",
+  keywords: ["地域店舗 MEO対策", "飲食店 集客", "小売店 Googleマップ", "カフェ Instagram", "地域店舗 Web集客"],
+  openGraph: {
+    title: "地域の飲食店・小売店のWeb集客｜MEO・Instagram・SEO｜株式会社サイプレス",
+    description: "地域の飲食店・小売店のWeb集客。MEO・Instagram・ホームページで来店客を増やします。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/local-store" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "Instagramは飲食店の集客に有効ですか？", a: "はい。特に20〜40代の顧客層をターゲットにする場合、料理写真・店内雰囲気・新メニュー告知をInstagramで発信することは非常に効果的です。地域ハッシュタグを活用して近隣の顧客に届けます。" },
   { q: "地域の小規模店舗でも自社ホームページは必要ですか？", a: "はい。Googleマップ・Instagram・食べログに掲載しながら、詳細な情報（こだわり・ストーリー・スタッフ紹介）を伝えるための自社ホームページは信頼構築に重要です。" },
   { q: "口コミを増やすための具体的な方法は？", a: "レシートやメニューにGoogleマップのQRコードを印刷する・スタッフが声かけをする・Instagram投稿を促す・LINE公式アカウントで来店後に口コミ依頼を送るなどの方法があります。" },
+  { q: "地域の小規模店舗でもMEO対策を始められますか？", a: "はい。MEO対策は規模を問わず始められます。Googleビジネスプロフィールの無料登録から始め、写真充実・口コミ獲得・営業時間の正確な入力など基本施策を積み上げることで、大手チェーンに対しても地元密着の強みで差別化が可能です。" },
+  { q: "LINE公式アカウントは地域店舗の集客に効果がありますか？", a: "非常に効果的です。友達登録した顧客に新商品情報・限定クーポン・イベント告知を直接配信でき、来店のきっかけを継続的に作れます。Instagram集客とLINEでのリピーター育成を組み合わせることで来店サイクルが安定します。" },
+  { q: "地域店舗のWebマーケティングにはどの順番で取り組むべきですか？", a: "①Googleビジネスプロフィールの整備（MEO）→②口コミ獲得の仕組み化→③Instagram運用→④LINE公式アカウントのリピーター活用→⑤自社ホームページのSEO強化、の順序が費用対効果を考えると現実的です。まずはMEOから始めることを推奨します。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/meo/restaurant-meo", label: "飲食店MEO対策", desc: "飲食MEO詳細" },
-  { href: "/sns/instagram", label: "Instagram運用", desc: "インスタ集客" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/sns/local-sns", label: "地域SNS集客", desc: "地域SNS" },
+  { href: "/meo/restaurant-meo", label: "飲食店のMEO対策", desc: "飲食店向けGoogleマップ上位表示" },
+  { href: "/industries/restaurant", label: "飲食店のWebマーケティング", desc: "飲食店専門の集客支援" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "地域店舗向けサイト制作" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "地域店舗のWeb集客相談" },
 ];
 
 export default function Page() {

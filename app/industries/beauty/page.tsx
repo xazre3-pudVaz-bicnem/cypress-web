@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "美容室・ネイル・まつ毛サロンのWeb集客｜MEO・SEO対策",
+  title: "美容室・ネイル・まつ毛サロンのWeb集客｜MEO・SEO対策｜株式会社サイプレス",
   description: "美容室・ネイルサロン・まつ毛サロンのWeb集客。MEO（Googleマップ対策）・Instagram活用・ホームページ制作・予約導線設計で新規顧客を増やす集客支援。",
+  keywords: ["美容室 MEO対策", "ネイルサロン 集客", "まつ毛サロン Googleマップ", "美容室 Instagram", "美容室 ホームページ"],
+  openGraph: {
+    title: "美容室・ネイル・まつ毛サロンのWeb集客｜MEO・SEO対策｜株式会社サイプレス",
+    description: "美容室・ネイル・まつ毛サロンのWeb集客。MEO・Instagram・ホームページで新規顧客を増やします。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/beauty" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "ホットペッパービューティーとホームページどちらが必要ですか？", a: "両方必要です。ホットペッパーは集客プラットフォームとして有効ですが、自社ホームページは指名顧客・ブランド構築・SEO対策の観点で重要です。ホームページからの予約はプラットフォーム手数料がかからない利点もあります。" },
   { q: "美容室のWebサイトに予約機能は必要ですか？", a: "はい。オンライン予約機能はユーザビリティを大幅に向上させます。LINE予約・Googleビジネスプロフィールからの予約・自社サイトの予約フォームを組み合わせることで予約の取りこぼしを防ぎます。" },
   { q: "美容室の口コミを増やすにはどうすればいいですか？", a: "施術後にGoogleマップのQRコードを渡す・LINE公式アカウントから口コミ依頼を送る・サンキューカードに口コミへの案内を書くなどが効果的です。自然な流れで依頼することが大切です。" },
+  { q: "まつ毛サロン・ネイルサロンに特化したWeb集客の特徴は？", a: "ビジュアルに特化したビジネスのため、GBPの写真充実・Instagramの定期投稿が特に重要です。「〇〇駅 まつ毛エクステ」「〇〇区 ネイル サロン」などの地域+メニュー名で検索上位を目指すMEO対策が最も直接的に予約につながります。" },
+  { q: "ヘアサロン・美容室のホームページを自社で作った場合と専門会社に依頼した場合の違いは？", a: "自社制作（Wix・Squarespace等）は初期費用を抑えられますが、SEO最適化・表示速度・予約システム連携・モバイル対応などの点で専門制作に劣ります。集客を本格化させたい場合は、SEO設計が組み込まれた専門制作サイトへの切り替えが投資対効果を高めます。" },
+  { q: "脱毛サロン・エステサロンのWeb集客もサポートできますか？", a: "はい。脱毛サロン・エステサロン・アイブロウサロンなど美容業全般のWeb集客に対応しています。各サロンの強み・ターゲット顧客・競合状況に合わせてMEO・SEO・Instagram運用・ホームページ制作をご提案します。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/meo/beauty-salon-meo", label: "美容サロンのMEO対策", desc: "美容MEO詳細" },
-  { href: "/sns/instagram", label: "Instagram運用", desc: "インスタ集客" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/services/meo", label: "MEOサービス", desc: "MEO対策サービス" },
+  { href: "/meo/beauty-salon-meo", label: "美容サロンのMEO対策", desc: "Googleマップ上位表示で来店増加" },
+  { href: "/industries/hair-salon", label: "ヘアサロン・美容院の集客", desc: "ヘアサロン専門の集客支援" },
+  { href: "/industries/nail-salon", label: "ネイルサロンの集客", desc: "ネイルサロン専門の集客支援" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "美容サロン向けサイト制作" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "美容サロンのWeb集客相談" },
 ];
 
 export default function Page() {

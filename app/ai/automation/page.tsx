@@ -3,73 +3,73 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
-import PageContactCTA from "@/components/shared/PageContactCTA";
 
 export const metadata: Metadata = {
-  title: "業務自動化 | AIを活用した繰り返し業務の自動化",
-  description: "株式会社サイプレスの業務自動化支援。問い合わせ自動返信・データ集計・レポート生成・SNS配信・予約通知など、繰り返し発生する業務をAIで自動化します。",
-  keywords: ["業務自動化", "AI自動化", "n8n", "Zapier", "Make", "RPA", "ワークフロー自動化"],
+  title: "AI業務自動化とは｜マーケティング業務をAIとノーコードで効率化｜株式会社サイプレス",
+  description:
+    "AI業務自動化の基礎から実践まで解説。ChatGPT・Claude等のAIとZapier・Make・n8nなどのノーコードツールを組み合わせ、コンテンツ制作・レポート・問い合わせ対応を自動化する方法を解説。",
+  keywords: ["AI業務自動化", "Zapier AI", "n8n", "Make自動化", "マーケティング自動化", "ノーコード自動化"],
   openGraph: {
-    title: "業務自動化 | 株式会社サイプレス",
-    description: "繰り返し業務をAIで自動化。問い合わせ対応・データ集計・SNS配信など幅広く対応。",
+    title: "AI業務自動化とは｜マーケティング業務をAIとノーコードで効率化｜株式会社サイプレス",
+    description: "AI業務自動化の実践ガイド。ChatGPT・n8n・Zapierを使ったマーケティング業務の自動化方法を解説。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/ai/automation" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/ai/automation" },
 };
 
-const EXAMPLES = [
+const faqItems = [
   {
-    num: "01",
-    title: "問い合わせフォームの自動返信",
-    body: "フォームへの入力内容に応じて、適切な返信メールを自動で送信します。内容に応じた振り分け・担当者への通知・CRMへの自動登録も組み合わせることができます。対応漏れ防止と初回レスポンス速度の改善に効果的です。",
+    q: "業務自動化に使えるAIツールにはどんなものがありますか？",
+    a: "生成AI（ChatGPT API・Claude API・Gemini API）と、ノーコード自動化ツール（Zapier・Make/Integromat・n8n）の組み合わせが一般的です。データ処理・集計はNotionAI・Spreadsheets+GPT等も活用できます。最近はClaude等をオーケストレーターとして使うマルチエージェント構成も可能になっています。",
   },
   {
-    num: "02",
-    title: "データ集計・レポート自動生成",
-    body: "Googleアナリティクス・サーチコンソール・広告管理画面などから定期的にデータを取得し、レポートを自動生成します。毎週・毎月の数値まとめに使っていた時間を削減できます。",
+    q: "どんな業務がAIで自動化できますか？",
+    a: "コンテンツ制作（SEO記事のドラフト生成・SNS投稿文・メルマガ文章）、問い合わせ対応（FAQへの自動回答・担当者振り分け）、レポート作成（GA4・GSCデータの自動集計・月次レポート生成）、社内文書（議事録・提案書のドラフト）、データ入力・分類などが代表的な自動化対象です。",
   },
   {
-    num: "03",
-    title: "SNS投稿のスケジュール配信",
-    body: "事前に作成したコンテンツを指定の日時にInstagram・X・Facebookなどへ自動投稿します。AIを使ったコンテンツ生成と組み合わせることで、SNS運用の工数を大幅に削減できます。",
+    q: "Zapier・Make・n8nの違いは何ですか？",
+    a: "Zapier は使いやすさが最高・多数のアプリ連携に対応・月額費用が高め。Make（旧Integromat）はビジュアル設計がZapierより強力・複雑なフローに対応・コスト効率が良い。n8nはオープンソース・セルフホスト可能・APIとの連携が最も柔軟・無料で始められる（技術的知識が必要）。目的と技術レベルによって選択します。",
   },
   {
-    num: "04",
-    title: "予約確認・リマインド通知",
-    body: "予約受付後の確認メール送信・前日のリマインド通知・当日のキャンセル確認など、予約管理に伴うコミュニケーションを自動化します。美容・医療・飲食・学習塾など予約型ビジネスに特に効果的です。",
+    q: "プログラミングができなくても業務自動化はできますか？",
+    a: "はい。Zapier・MakeはGUI上でドラッグ&ドロップで自動化フローを設計でき、プログラミングなしで多くの業務を自動化できます。ただし、ChatGPT APIとの高度な連携・条件分岐が複雑なフロー・外部APIの利用などには若干の技術的理解が必要です。サイプレスでは設計から実装まで支援します。",
   },
   {
-    num: "05",
-    title: "在庫管理・発注プロセス",
-    body: "在庫数が一定量を下回った際に自動で発注メールを送信する・スプレッドシートの在庫データを定期チェックして発注候補をリストアップするなど、在庫管理業務の自動化を支援します。",
+    q: "業務自動化の費用はどのくらいかかりますか？",
+    a: "Zapier・Make・n8nなどのツール費用（月額数千円〜数万円）と、ChatGPT APIなどのAPI使用料（使用量に応じた従量課金）が必要です。サイプレスへの支援依頼費用は自動化の範囲・複雑さによって異なります。まずは無料相談でご要件をお聞かせください。",
+  },
+  {
+    q: "自動化したコンテンツのSEO品質は大丈夫ですか？",
+    a: "AI生成のコンテンツを自動で公開するだけでは、SEO品質に問題が生じる可能性があります。AI生成コンテンツには必ず人間によるレビュー・専門知識の追加・一次情報の付与を行う品質チェック工程を組み込むことが重要です。「自動生成して即公開」ではなく「AI支援で効率化＋人間が品質保証」のワークフローを設計します。",
+  },
+  {
+    q: "既に使っているCRM・MA・チャットツールと連携できますか？",
+    a: "Zapier・Make・n8nは数百〜数千のアプリ連携に対応しています。Salesforce・HubSpot・Notion・Slack・Google Workspace・LINE・kintone等との連携実績があります。まずは現在お使いのツールをお聞かせいただき、連携可能性をご確認します。",
+  },
+  {
+    q: "自動化のリスクや注意点はありますか？",
+    a: "①AI生成コンテンツのファクトチェックなしでの自動公開、②個人情報・機密情報のAPIへの送信（利用規約の確認が必要）、③自動化フローのエラー監視が不十分、④過度な自動化によるブランドトーンのブレなどがリスクです。設計段階でこれらを考慮したワークフローを構築します。",
   },
 ];
 
-const FAQ_ITEMS = [
-  {
-    q: "自動化にはどんなツールを使いますか？",
-    a: "n8n・Zapier・Make（旧Integromat）などのノーコード・ローコード自動化ツールを主に活用します。既存のシステム・ツールに合わせて最適な選択をします。複雑な処理が必要な場合はPythonスクリプトなどの開発も対応します。",
-  },
-  {
-    q: "既存のシステムと連携できますか？",
-    a: "APIを持つシステムであれば多くの場合連携可能です。Googleサービス・Slack・kintone・Salesforce・Shopify・LINE等の主要サービスへの接続実績があります。まずはご利用中のシステムをお聞かせください。",
-  },
-  {
-    q: "自動化フローが止まった場合はどうなりますか？",
-    a: "エラー発生時の通知設定・監視体制の構築も含めて対応します。自動化導入後の保守・不具合対応のサポートプランもご用意しています。",
-  },
-  {
-    q: "どのくらいの業務時間が削減できますか？",
-    a: "自動化する業務の内容によって異なりますが、毎週数時間かかっていたデータ集計・レポート作成・メール対応などが数分で完了するケースは多くあります。導入前に削減できる工数をシミュレーションしてご提案します。",
-  },
-  {
-    q: "まず何から相談すればいいですか？",
-    a: "「この業務が大変だ」「この作業を自動化したい」という具体的な課題をお聞かせください。技術的な知識は不要です。現状の業務フローをヒアリングし、自動化できる部分と費用対効果をご提案します。",
-  },
+const relatedLinks = [
+  { href: "/ai", label: "AI活用とは", desc: "AIマーケティングの基礎" },
+  { href: "/ai/chatbot", label: "チャットボット構築", desc: "問い合わせ対応の自動化" },
+  { href: "/ai/content", label: "AIコンテンツ制作", desc: "コンテンツ制作の効率化" },
+  { href: "/ai/workflow", label: "AIワークフロー設計", desc: "n8n・Zapierとの連携設計" },
+  { href: "/services/ai", label: "AI活用支援サービス", desc: "サイプレスのAI支援" },
+  { href: "/aio", label: "AIO対策", desc: "AI検索最適化" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索への引用獲得" },
+  { href: "/knowledge/chatgpt-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
+  { href: "/knowledge/ai-prompt", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
+  { href: "/column/seo", label: "SEOコラム", desc: "AI×マーケティングの最新情報" },
+  { href: "/contact", label: "無料相談", desc: "業務自動化のご相談" },
+  { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
 export default function AutomationPage() {
@@ -77,159 +77,63 @@ export default function AutomationPage() {
     <>
       <Header />
       <main>
-        {/* ===== Hero ===== */}
         <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Business Automation
-            </p>
-            <h1
-              className="font-black leading-tight tracking-tight mb-6"
-              style={{ fontSize: "clamp(28px, 4vw, 54px)", color: "#0F172A" }}
-            >
-              業務自動化
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
+              <span>/</span>
+              <Link href="/ai" style={{ color: "#6B7280" }} className="hover:underline">AI活用</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>業務自動化</span>
+            </nav>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>AI Automation</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AI業務自動化
             </h1>
-            <p className="text-[17px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              繰り返し発生する業務をAIとワークフローツールで自動化し、人が本来すべき仕事に集中できる環境を整えます。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              AI業務自動化とは、ChatGPT・Claude等の生成AIとZapier・Make・n8nなどのノーコード自動化ツールを組み合わせ、繰り返し業務を自動化する取り組みです。コンテンツ制作・レポート作成・問い合わせ対応・データ入力などを効率化できます。
+            </p>
+            <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
+              少ないリソースで最大の成果を出すために、AIを「仕事を奪うもの」ではなく「仕事を助けるツール」として活用することが重要です。どの業務を自動化し、どこに人間の判断を残すかの設計が成功の鍵です。
             </p>
           </div>
         </section>
 
-        {/* ===== Breadcrumb ===== */}
-        <nav className="py-4" style={{ borderTop: "1px solid #F0EDE6", borderBottom: "1px solid #F0EDE6", background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <ol className="flex items-center gap-2 text-[12px]" style={{ color: "#9CA3AF" }}>
-              <li><Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link></li>
-              <li>/</li>
-              <li><Link href="/ai" className="hover:underline" style={{ color: "#6B7280" }}>AI活用支援</Link></li>
-              <li>/</li>
-              <li style={{ color: "#0F172A" }}>業務自動化</li>
-            </ol>
-          </div>
-        </nav>
-
-        {/* ===== Hero Image ===== */}
-        <div className="relative w-full overflow-hidden" style={{ height: "360px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
-            alt="業務自動化のデジタル会議・システム連携"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.25)" }} />
-        </div>
-
-        {/* ===== What is Automation ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-                Overview
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                業務自動化とは
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                業務自動化とは、人間が手作業で行っていた繰り返し業務をシステム・AIが代替することで、処理速度を上げ・ミスを減らし・人的コストを削減する取り組みです。これまでは大企業のみが取り組めるものでしたが、n8nやZapier・Makeなどのノーコードツールの普及により、中小企業でも低コストで導入できる環境が整っています。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
-                自動化に向いているのは、「毎回同じ手順で行う」「データの転記・集計が多い」「定期的にメールを送る」「特定の条件で通知する」といった業務です。こうした業務を自動化することで、担当者はより創造的・判断的な仕事に集中できるようになります。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                サイプレスは業務のヒアリングから始め、自動化できる部分の特定・ツール選定・フロー構築・テスト・運用引き継ぎまで一貫して支援します。技術的な知識がなくても、業務課題をお持ちであればご相談ください。
-              </p>
-            </div>
-          </div>
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/3.png" alt="AI業務自動化・Zapier・n8n・ノーコード自動化のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
         </section>
 
-        {/* ===== Examples ===== */}
-        <section className="py-24 md:py-32" style={{ background: "#F9F8F5" }}>
+        {/* 自動化できる業務 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-14">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                Examples
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0F172A" }}
-              >
-                自動化できる業務の例
-              </h2>
-            </div>
-            <div>
-              {EXAMPLES.map((item) => (
-                <div
-                  key={item.num}
-                  className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-10 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{item.num}</span>
-                  <div>
-                    <h3 className="font-bold text-[16px] mb-3" style={{ color: "#0F172A" }}>{item.title}</h3>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
-                  </div>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Automation Areas</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AIで自動化できるマーケティング業務
+            </h2>
+            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
+              {[
+                { title: "コンテンツ制作の効率化", body: "SEO記事のキーワード調査・アウトライン生成・ドラフト作成をAIで半自動化。SNS投稿文・メルマガ・広告コピーのバリエーション生成も効率化できます。人間がレビュー・品質向上する工程を必ず設けます。" },
+                { title: "月次レポートの自動作成", body: "Google Analytics 4・Search ConsoleのデータをAPIで取得し、AI（GPT等）が分析コメントを生成、Notionやスプレッドシートに自動出力するワークフローを構築します。毎月の集計・コメント作業を大幅に削減できます。" },
+                { title: "問い合わせ・FAQ対応の自動化", body: "FAQ情報を知識ベースに登録し、問い合わせフォームやチャットからの質問に対してAIが自動回答するシステムを構築します。担当者への振り分け・エスカレーションのルールも設定します。" },
+                { title: "SNS投稿スケジューリング", body: "AI生成した投稿テキスト・画像をBuffer・Hootsuite等と連携し、自動スケジューリングするワークフローを構築します。人間がレビューした後に自動投稿する半自動フローが品質担保に有効です。" },
+                { title: "リードナーチャリングの自動化", body: "問い合わせ者へのステップメール・フォロー連絡をCRM（HubSpot・Salesforce等）と連携してAI支援で自動化します。担当者への通知・メモの自動生成も含みます。" },
+                { title: "社内文書・議事録の効率化", body: "会議録音→文字起こし→要約・アクションアイテム抽出→Notionへの自動保存というワークフローをAIで構築します。議事録作成の時間を大幅に削減できます。" },
+              ].map((item, i) => (
+                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        {/* ===== 2-col text + image ===== */}
-        <section className="py-20" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                  Efficiency
-                </p>
-                <h2
-                  className="font-black leading-tight tracking-tight mb-6"
-                  style={{ fontSize: "clamp(20px, 2.5vw, 32px)", color: "#0F172A" }}
-                >
-                  自動化で生まれる余裕
-                </h2>
-                <p className="text-[14px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
-                  繰り返し業務を自動化することで、担当者は創造的・判断的な仕事に集中できるようになります。毎週数時間かかっていたデータ集計・メール対応・レポート作成が数分で完了します。
-                </p>
-                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
-                  導入前に削減できる工数をシミュレーションし、費用対効果を明確にしてからプロジェクトを進めます。
-                </p>
-              </div>
-              <div className="relative overflow-hidden" style={{ height: "300px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_19_44.png"
-                  alt="業務自動化後のデータ分析・効率化の確認"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== FAQ ===== */}
-        <FaqSection items={FAQ_ITEMS} heading="業務自動化 よくある質問" />
-
-        {/* ===== Related ===== */}
-        <RelatedPages
-          links={[
-            { href: "/ai", label: "AI活用支援", desc: "AI支援サービス一覧" },
-            { href: "/ai/chatbot", label: "AIチャットボット構築", desc: "顧客対応・社内FAQ自動化" },
-            { href: "/ai/workflow", label: "AIワークフロー改善", desc: "業務フロー全体の最適化" },
-            { href: "/services/ai", label: "AI活用支援サービス概要", desc: "サービス詳細・料金" },
-          ]}
-        />
-
-        {/* ===== CTA ===== */}
+        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#FFFFFF" />
+        <RelatedPages links={relatedLinks} />
         <PageContactCTA
-          heading="業務自動化のご相談"
-          body="「この業務を自動化したい」「どこから手をつければいいかわからない」という段階からご相談を承っています。業務フローをヒアリングし、費用対効果の高い自動化プランをご提案します。"
+          heading="AI業務自動化のご相談"
+          body="どの業務を自動化するかの選定から、ワークフロー設計・実装まで一貫してご支援します。"
         />
       </main>
       <Footer />

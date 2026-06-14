@@ -3,142 +3,136 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FaqSection from "@/components/shared/FaqSection";
 import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "MEO対策｜Googleマップ上位表示で地域集客を強化｜株式会社サイプレス",
+  title: "MEO対策サービス｜Googleマップ上位表示・地域集客の強化｜株式会社サイプレス",
   description:
-    "Googleマップ・ローカル検索での上位表示を実現するMEO対策。Googleビジネスプロフィールの最適化から口コミ管理・競合調査まで、地域密着型の集客支援を提供します。",
-  keywords: ["MEO対策", "Googleマップ集客", "Googleビジネスプロフィール", "ローカルSEO", "地域集客"],
+    "株式会社サイプレスのMEO対策サービス。Googleビジネスプロフィールの最適化・口コミ管理・写真戦略・投稿活用で地域ビジネスの集客を強化。東京都葛飾区を拠点に全国対応。",
+  keywords: ["MEO対策サービス", "Googleマップ上位表示", "Googleビジネスプロフィール", "地域集客", "MEO会社", "東京 MEO"],
   openGraph: {
-    title: "MEO対策｜Googleマップ上位表示で地域集客を強化｜株式会社サイプレス",
-    description:
-      "Googleマップ・ローカル検索での上位表示を実現するMEO対策。Googleビジネスプロフィールの最適化から口コミ管理・競合調査まで一気通貫で支援します。",
+    title: "MEO対策サービス｜Googleマップ上位表示・地域集客の強化｜株式会社サイプレス",
+    description: "サイプレスのMEO対策サービス。Googleビジネスプロフィール最適化から口コミ管理まで一貫支援。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/services/meo" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/services/meo" },
 };
 
 const faqItems = [
   {
-    q: "MEO対策の効果が出るまでどれくらいかかりますか？",
-    a: "Googleビジネスプロフィールの最適化や情報の正確化は着手後すぐに反映されますが、検索順位が安定して上昇するまでには通常1〜3ヶ月程度かかります。口コミ数の増加や定期的な投稿継続など、継続的な取り組みが順位向上に直結します。",
+    q: "MEO対策の効果はどのくらいで出ますか？",
+    a: "Googleビジネスプロフィールの基本情報を整備し、写真・投稿の更新を継続することで、早ければ1〜2ヶ月でGoogleマップの表示順位が改善するケースがあります。ただし、競合が多いエリア・業種では3〜6ヶ月かかることもあります。口コミ件数の増加が重要な要因の一つです。",
   },
   {
-    q: "Googleビジネスプロフィールは自分で登録しているのですが、それでも改善できますか？",
-    a: "はい、登録済みのアカウントへのアクセス権を共有いただくことで支援可能です。すでに登録されているお店も、カテゴリ設定・説明文・写真・サービス情報などを最適化することで大幅に表示順位が改善するケースが多くあります。",
+    q: "Googleビジネスプロフィールの管理を代行してもらえますか？",
+    a: "はい、Googleビジネスプロフィールの設定代行・月次更新（写真・投稿）・口コミへの返信支援・インサイトデータの分析レポートを代行します。自社スタッフが対応する時間が取れない方に特に適したプランです。",
   },
   {
-    q: "口コミを増やす方法はありますか？",
-    a: "お客様に自然な形でGoogleレビューを依頼する導線設計（POPやQRコード、LINEメッセージなど）をご提案しています。口コミの強制・購入は規約違反となるため、適切な方法でリアルな口コミを増やすお手伝いをしています。",
+    q: "口コミを増やす方法を教えてもらえますか？",
+    a: "はい、口コミを自然に増やすための導線設計（Googleレビューへの誘導QRコード・SMS・LINEでの依頼文案）の作成支援を行います。なお、偽の口コミの投稿・報酬を渡しての口コミ依頼はGoogleポリシー違反のため対応しておりません。",
   },
   {
-    q: "MEO対策とSEO対策は何が違いますか？",
-    a: "MEO（Map Engine Optimization）はGoogleマップ・ローカル検索での上位表示を目的とした施策で、主にGoogleビジネスプロフィールの最適化が中心です。SEOはWebサイト全体のオーガニック検索順位を高める施策です。地域ビジネスではMEOとSEOを組み合わせることで相乗効果が得られます。",
+    q: "悪い口コミへの対応もサポートしてもらえますか？",
+    a: "はい。悪い口コミへの返信文案の作成支援を行います。また、Googleのポリシーに違反していると判断できる口コミについては、Googleへの報告・削除申請の支援も行います。根拠のある口コミへの誠実な返信がブランド信頼性の向上につながります。",
   },
   {
-    q: "複数店舗を持っていますが、対応できますか？",
-    a: "はい、複数店舗への対応も可能です。各店舗のGoogleビジネスプロフィールをそれぞれ最適化し、NAP情報（名前・住所・電話番号）の統一も含めて管理します。店舗数に応じた料金プランをご提案しています。",
+    q: "MEO対策とSEO対策は同時に依頼できますか？",
+    a: "はい、MEO対策とSEO対策を一括でご支援しています。地域ビジネスの場合、GoogleマップのMEOとWebサイトのローカルSEOを同時に最適化することで、地域名検索での露出を最大化できます。セットプランの方が費用対効果が高まります。",
   },
   {
-    q: "MEO対策の費用はどれくらいですか？",
-    a: "業種・エリアの競合状況・店舗数によって異なります。まずは現状分析を行ったうえで、費用対効果の見込める施策内容をご提案しています。お気軽にお問い合わせください。",
+    q: "飲食店・美容室でもMEO対策は有効ですか？",
+    a: "はい、特に飲食店・美容室・整体・クリニック・リフォーム会社など「地域の人が近くで探す業種」に最も効果的です。「近くの〇〇」「〇〇区 〇〇」という検索で来店数を増やしたい業種全般にMEO対策は有効です。",
+  },
+  {
+    q: "Googleビジネスプロフィールのオーナー権限がない場合は？",
+    a: "まずはGoogleビジネスプロフィールのオーナー確認（Googleへの申請）を行う必要があります。サイプレスではオーナー確認の手順サポートも行います。既にオーナー確認が完了している場合はすぐに施策を開始できます。",
+  },
+  {
+    q: "月次レポートはどのような内容ですか？",
+    a: "Googleビジネスプロフィールのインサイトデータ（検索表示回数・ルート検索数・電話タップ数・Webサイトクリック数）をもとに毎月のパフォーマンスをレポートします。競合との比較分析と翌月の施策方針もあわせてご報告します。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/meo", label: "MEO対策トップ", desc: "MEO対策の全体概要" },
-  { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化の詳細" },
-  { href: "/meo/review-management", label: "口コミ管理・返信", desc: "口コミ対策の方法" },
-  { href: "/meo/ranking", label: "MEO順位計測", desc: "順位確認・競合調査" },
-  { href: "/services/seo", label: "SEO対策", desc: "自然検索での上位表示" },
-  { href: "/services/sns", label: "SNS運用", desc: "SNSと連動した集客" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "Webサイトのローカルパック対策" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
+  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金プランと相場" },
+  { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール最適化", desc: "プロフィール設定の詳細" },
+  { href: "/meo/review-strategy", label: "口コミ獲得戦略", desc: "自然な口コミの増やし方" },
+  { href: "/meo/photo-strategy", label: "MEOに効く写真戦略", desc: "写真設定のポイント" },
+  { href: "/industries/restaurant", label: "飲食店のMEO対策", desc: "飲食店向け集客施策" },
+  { href: "/industries/beauty", label: "美容室のMEO対策", desc: "サロン向け集客施策" },
+  { href: "/area/katsushika", label: "葛飾区のMEO対策", desc: "葛飾区エリアの支援" },
+  { href: "/faq/meo", label: "MEO対策FAQ", desc: "よくある質問まとめ" },
+  { href: "/checklist/meo", label: "MEOチェックリスト", desc: "Googleビジネスプロフィール確認項目" },
 ];
 
-export default function MeoServicePage() {
+export default function ServicesMeoPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#FFFFFF" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A]">ホーム</Link>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <Link href="/business" className="hover:text-[#0F172A]">事業内容</Link>
+              <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#374151" }}>MEO対策</span>
+              <span style={{ color: "#0F172A" }}>MEO対策</span>
             </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px, 4.5vw, 52px)", color: "#0F172A" }}>
-              MEO対策
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>MEO Service</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              MEO対策サービス
             </h1>
-            <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              「近くの〇〇」でGoogleマップに表示されるかどうかが、地域ビジネスの集客を左右する時代です。Googleビジネスプロフィールの最適化から口コミ管理・競合調査まで、地域密着型の集客を継続的に支援します。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              株式会社サイプレスのMEO対策サービスは、Googleビジネスプロフィールの最適化・口コミ管理・写真戦略・投稿活用によって、Googleマップ上での上位表示と地域集客の強化を実現します。
             </p>
-          </div>
-        </section>
-
-        {/* Visual section */}
-        <section className="relative" style={{ height: "400px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.png"
-            alt="スマートフォンとデジタルアイコンによるMEO対策のイメージ"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
-        </section>
-
-        {/* MEO対策とは */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>About</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>MEO対策とは</h2>
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  MEO（Map Engine Optimization）とは、GoogleマップやGoogleのローカル検索結果で上位表示を獲得するための最適化施策です。「渋谷 美容室」「新宿 整体」のように地域名＋業種で検索したとき、地図の下に表示される「ローカルパック」と呼ばれる枠への掲載がMEOの主な目標です。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  Googleマップは現在、店舗への来店動機として非常に強力な集客チャネルになっています。スマートフォンの普及により「今いる場所の近くで〇〇を探す」という行動が日常化し、Googleマップを起点にした来店・予約・問い合わせが急増しています。
-                </p>
-              </div>
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  MEO対策の中心となるのが「Googleビジネスプロフィール（旧Googleマイビジネス）」の最適化です。Googleが無料で提供しているこのプラットフォームを適切に整備・運用することが、ローカル検索での上位表示に直結します。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  単に情報を登録するだけでなく、カテゴリの正確な設定・高品質な写真の定期投稿・口コミへの丁寧な返信・最新情報の発信といった継続的な運用が、競合との差別化と順位向上に不可欠です。サイプレスはこれらをトータルで支援します。
-                </p>
-              </div>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              「近くの〇〇」「〇〇区 〇〇」という検索で来店・予約・電話問い合わせを増やしたい地域ビジネスを、データに基づいた施策で継続的にサポートします。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #0F172A", color: "#0F172A" }}>
+                無料相談・お問い合わせ
+              </Link>
+              <Link href="/cost/meo" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                料金・プランを見る
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* こんな課題に対応します */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
+          <Image src="/5.png" alt="MEO対策・Googleマップ上位表示・地域集客のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        </section>
+
+        {/* サービス内容 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Challenges</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>こんな課題に対応します</h2>
-            <div className="max-w-3xl">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              MEO対策サービスの内容
+            </h2>
+            <div className="max-w-4xl space-y-0">
               {[
-                { num: "01", title: "Googleマップに表示されない・順位が低い", body: "競合店より下位に表示される、または検索結果に出てこない。ビジネスプロフィールの最適化が不十分なケースがほとんどです。" },
-                { num: "02", title: "口コミが少ない・悪い口コミに対応できていない", body: "口コミの件数と評価スコアは検索順位に直接影響します。口コミを増やす導線設計と、ネガティブな口コミへの適切な返信が必要です。" },
-                { num: "03", title: "写真が古い・魅力が伝わっていない", body: "Googleマップの写真は来店判断に大きく影響します。定期的に新鮮な写真を投稿し、店内・商品・スタッフの魅力を最新の状態に保つ必要があります。" },
-                { num: "04", title: "住所・電話番号・営業時間などの情報が不正確", body: "NAP情報（名前・住所・電話番号）の不一致はGoogleからの信頼度を下げます。Web上のあらゆる媒体で情報を統一することが重要です。" },
-                { num: "05", title: "競合他社のMEO対策が進んでいて差をつけられている", body: "競合が積極的にMEO対策を実施している場合、放置すると差は広がるばかりです。競合分析をもとに的確な差別化戦略を立てる必要があります。" },
-              ].map((item) => (
-                <div key={item.num} style={{ borderTop: "1px solid #E8E4DC" }} className="py-6 flex gap-6">
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                { title: "Googleビジネスプロフィールの最適化", body: "ビジネス名・カテゴリ・住所・電話番号・営業時間・ウェブサイトURL・サービス情報・属性設定を最適化します。Googleが正確にビジネス情報を理解できる状態を作ることが、ローカルパック表示の基礎です。" },
+                { title: "写真・動画コンテンツの充実", body: "外観・内観・スタッフ・商品・サービスなどの写真を適切なカテゴリで整理し、定期的に追加します。写真の量と質はMEOの順位要因であり、ユーザーのクリック率・来店動機にも直結します。" },
+                { title: "Googleビジネス投稿の定期更新", body: "お知らせ・イベント・特典・商品投稿を定期的に作成します。投稿の更新頻度はビジネスのアクティブ度のシグナルとなり、ローカルパックの順位に影響します。" },
+                { title: "口コミ管理・返信支援", body: "口コミへの返信文案の作成支援を行います。全口コミに対して誠実な返信を行うことで、他ユーザーへの安心感と来店動機の向上につながります。悪い口コミへの対応方針もご支援します。" },
+                { title: "口コミ獲得の導線設計", body: "Googleレビューへの誘導QRコード・SMS・LINE等での依頼文案の作成を支援します。お客様が口コミを投稿しやすい自然な導線を設計することで、口コミ件数の継続的な増加を目指します。" },
+                { title: "Q&A・サービス欄の整備", body: "Googleビジネスプロフィールの「Q&A」「サービス」「商品」セクションを充実させます。これらの情報はGoogleの検索で表示される場合があり、検索ユーザーの意思決定を助けます。" },
+                { title: "インサイト分析・月次レポート", body: "Googleビジネスプロフィールのインサイトデータ（表示回数・ルート検索数・電話タップ数・Webサイトクリック数）を毎月分析し、施策効果と翌月の方針をレポートします。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
@@ -148,80 +142,26 @@ export default function MeoServicePage() {
           </div>
         </section>
 
-        {/* サイプレスのMEO支援内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Services</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>サイプレスのMEO支援内容</h2>
-            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
-              {[
-                { title: "Googleビジネスプロフィール最適化", body: "カテゴリ選定・説明文の作成・サービス情報の整備・ビジネス属性の設定など、Googleが重要視する項目を徹底的に最適化します。適切なカテゴリ設定だけで表示回数が大幅に改善するケースも少なくありません。" },
-                { title: "写真の定期投稿・最新情報投稿", body: "Googleビジネスプロフィールへの写真投稿や「最新情報（投稿）」の定期更新を代行します。アクティブに更新されているアカウントはGoogleから高く評価され、順位向上に寄与します。" },
-                { title: "口コミ返信・口コミ獲得導線設計", body: "すべての口コミに対して丁寧かつ的確な返信を行います。また、お客様が自然に口コミを書きたくなる導線（QRコード・POP・LINE誘導など）を設計し、リアルな口コミ数の増加を支援します。" },
-                { title: "NAP情報統一（名前・住所・電話番号）", body: "ホームページ・SNS・各種ポータルサイトに掲載されているNAP情報を調査し、Googleビジネスプロフィールと完全に一致するよう整合性を確保します。情報の矛盾はローカル検索での信頼性低下につながります。" },
-                { title: "競合調査・順位計測", body: "定期的に競合のGoogleビジネスプロフィールを分析し、自店との差異を把握します。ターゲットキーワードでの順位計測も行い、施策の効果と改善方針を数値で管理します。" },
-                { title: "Webサイトとの連携設計", body: "GoogleビジネスプロフィールとWebサイトは相互に影響します。サイト内にLocalBusiness構造化データを実装し、Googleからの信頼性を高める連携設計を行います。" },
-                { title: "ローカルSEOとの組み合わせ", body: "地域名を含むキーワードでのオーガニック検索上位表示（ローカルSEO）と組み合わせることで、Googleマップと通常検索の両方から集客できる体制を構築します。" },
-              ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
-                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>
-            <p className="text-[15px] leading-[1.9] mb-8 max-w-2xl" style={{ color: "#374151" }}>
-              地域に根ざしたあらゆる業種に対応しています。業種ごとの検索傾向・競合状況に合わせた最適化を行います。
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {["飲食店・カフェ", "美容室・ヘアサロン", "医療・クリニック", "歯科医院", "士業（弁護士・税理士）", "整体・整骨院", "ネイルサロン・エステ", "建設業・リフォーム", "不動産", "小売店", "教育・学習塾", "フィットネス・ジム"].map((industry) => (
-                <span
-                  key={industry}
-                  className="px-4 py-2 text-[13px]"
-                  style={{ border: "1px solid #E8E4DC", color: "#374151" }}
-                >
-                  {industry}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Googleマップからの集客を仕組み化する */}
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative" style={{ height: "360px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_21_48.png"
-                  alt="スマートフォンでMEO対策の効果を確認する女性たち"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div>
-                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>Googleマップからの集客を、仕組み化する</h2>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  MEO対策の本質は、Googleマップで上位表示されることだけではありません。表示された後に来店・問い合わせにつながる導線設計まで含めた、集客の仕組みを整えることが重要です。写真・口コミ・投稿・サービス情報を継続的に更新することで、Googleからの評価が高まり、安定した上位表示を維持できます。
-                </p>
-              </div>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Target Industries</p>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              MEO対策が特に効果的な業種
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              {["飲食店・カフェ・居酒屋", "美容室・ヘアサロン", "ネイルサロン", "エステ・マッサージ", "整体院・接骨院", "クリニック・歯医者", "リフォーム・工務店", "不動産会社", "学習塾・スクール", "ペットショップ", "クリーニング店", "弁護士・税理士事務所"].map((ind) => (
+                <span key={ind} className="px-3 py-1.5 text-[13px] rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC", color: "#374151" }}>{ind}</span>
+              ))}
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="MEO対策についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
-          heading="MEO対策のご相談・無料診断"
-          body="現在のGoogleビジネスプロフィールの状況を確認し、改善ポイントをご提案します。Googleマップからの集客を強化したい方は、まずはお気軽にご相談ください。"
+          heading="MEO対策サービスの無料相談"
+          body="現在のGoogleビジネスプロフィールの状況を確認し、最適な施策をご提案します。"
         />
       </main>
       <Footer />

@@ -3,190 +3,149 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FaqSection from "@/components/shared/FaqSection";
 import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "SNS運用｜Instagram・X・LINE公式アカウント運用代行｜株式会社サイプレス",
+  title: "SNS運用・SNSマーケティングサービス｜Instagram・X・LINE活用で集客｜株式会社サイプレス",
   description:
-    "Instagram・X（旧Twitter）・LINE公式アカウントの運用代行。投稿企画から画像制作・ハッシュタグ設計・MEOとの連動まで、地域ビジネスのSNS集客を支援します。",
-  keywords: ["SNS運用", "Instagram運用代行", "LINE公式アカウント", "SNS集客", "Instagram代行"],
+    "株式会社サイプレスのSNS運用サービス。Instagram・X（Twitter）・LINE・TikTokの運用代行・コンテンツ制作・広告支援で集客とブランディングを強化。東京都葛飾区を拠点に全国対応。",
+  keywords: ["SNS運用", "SNSマーケティング", "Instagram運用", "SNS代行", "LINE公式アカウント", "TikTok運用"],
   openGraph: {
-    title: "SNS運用｜Instagram・X・LINE公式アカウント運用代行｜株式会社サイプレス",
-    description:
-      "Instagram・X・LINE公式アカウントの運用代行。投稿企画から画像制作・MEO連動まで地域ビジネスのSNS集客を支援します。",
+    title: "SNS運用・SNSマーケティングサービス｜Instagram・X・LINE活用で集客｜株式会社サイプレス",
+    description: "サイプレスのSNS運用サービス。Instagram・X・LINE・TikTokの運用代行と広告支援。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/services/sns" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/services/sns" },
 };
 
 const faqItems = [
   {
-    q: "SNS運用を外注するメリットは何ですか？",
-    a: "SNSは継続的な投稿と分析が必要で、日常業務と並行して行うのは多くの事業者にとって大きな負担です。外注することで、投稿の品質と継続性を確保しながら、本来の業務に集中できます。プロの視点でハッシュタグ設計・投稿タイミング・コンテンツ企画を行うことで、フォロワー増加やエンゲージメント向上の速度も高まります。",
+    q: "SNS運用代行ではどんなことをやってもらえますか？",
+    a: "投稿テキスト・画像・リール（動画）の制作、ハッシュタグ設定、投稿スケジュール管理、コメント・DM返信の管理支援、インサイト分析・月次レポートなどを代行します。プラットフォーム（Instagram・X・LINE・TikTok）と運用範囲はご要件に応じてプランを設計します。",
   },
   {
-    q: "どのSNSの運用を依頼できますか？",
-    a: "Instagram・X（旧Twitter）・LINE公式アカウントを中心に対応しています。業種・ターゲット層に応じて最も効果的なプラットフォームをご提案します。複数SNSの一括運用も可能です。",
+    q: "どのSNSに注力すればいいですか？",
+    a: "業種・ターゲット年齢層・目的によって異なります。飲食・美容・ライフスタイル系は写真・動画重視のInstagramやTikTok、BtoB・情報発信はX（Twitter）、既存顧客とのコミュニケーション・予約はLINE公式アカウントが向いています。まずはターゲット層が最も使っているプラットフォームに絞ることをお勧めします。",
   },
   {
-    q: "写真・画像の撮影も依頼できますか？",
-    a: "基本的には貴社にてご用意いただいた写真・動画素材を活用して投稿を制作します。写真素材がない場合は、スマートフォンで撮影するためのガイドラインをご提供するほか、撮影サポートについてもご相談ください。",
+    q: "投稿の写真・動画撮影は依頼できますか？",
+    a: "基本的なコンテンツ（文字入り画像・簡易動画）はサイプレスで制作可能です。店内・商品・スタッフが登場する本格的な写真・動画撮影は外部カメラマン・映像制作者との連携になります。素材をご提供いただければ編集・加工から対応します。",
   },
   {
-    q: "MEO対策とSNS運用を組み合わせる効果は？",
-    a: "InstagramやX（旧Twitter）での投稿がGoogleビジネスプロフィールの最新情報と連動することで、検索エンジンとSNSの両面から認知を高められます。また、SNSでのエンゲージメントがブランド検索の増加につながり、ローカルSEO・MEOの順位向上にも波及効果があります。",
+    q: "フォロワーはどのくらいで増えますか？",
+    a: "フォロワー数は業種・コンテンツ品質・投稿頻度・ハッシュタグ戦略・広告活用の有無によって大きく異なります。フォロワー数より「来店・問い合わせ・売上」といった実際のビジネス効果を重視した運用をご提案します。フォロワー数の急増を約束するサービスは行っておりません。",
   },
   {
-    q: "効果の確認はどうすれば良いですか？",
-    a: "月次でSNSの主要指標（フォロワー数・リーチ数・エンゲージメント率・プロフィールアクセス数・Webサイトクリック数など）をレポートとしてご報告します。数値の推移と改善施策を毎月共有します。",
+    q: "LINE公式アカウントの活用支援もできますか？",
+    a: "はい。LINE公式アカウントの開設・初期設定・リッチメニュー設計・定期配信メッセージの作成・友だち追加促進の導線設計まで対応します。予約や問い合わせ窓口としてのLINE活用、既存顧客へのリテンション施策としての活用もご支援します。",
+  },
+  {
+    q: "SNS広告（Meta広告・LINE広告）も依頼できますか？",
+    a: "はい、Instagram・Facebookを対象とするMeta広告、LINE広告の設定・運用代行に対応しています。ターゲット設定・クリエイティブ制作・予算配分・効果計測まで一貫してご支援します。",
+  },
+  {
+    q: "既にSNSを運用しているが伸び悩んでいる。改善してもらえますか？",
+    a: "はい。現在の運用状況（インサイトデータ・投稿内容・ハッシュタグ・フォロワー属性）を診断し、改善ポイントをご提案します。競合アカウントの分析・バズったコンテンツの傾向分析もあわせて実施します。",
+  },
+  {
+    q: "SEO対策やMEO対策と組み合わせてお願いできますか？",
+    a: "はい、SNS運用をSEO・MEO・Web制作と組み合わせた統合的なWebマーケティング支援が可能です。Webサイトへの流入増加・MEO対策との連携・ブランド認知向上をトータルで設計します。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/services/meo", label: "MEO対策", desc: "Googleマップ集客" },
-  { href: "/meo/store-marketing", label: "店舗マーケティング", desc: "店舗集客の総合戦略" },
-  { href: "/services/ai", label: "AI活用支援", desc: "SNS投稿のAI自動化" },
+  { href: "/sns", label: "SNSマーケティングとは", desc: "SNS活用の基礎知識" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "検索からの集客強化" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップからの集客" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "SNSからの流入先ページ設計" },
+  { href: "/cost/sns", label: "SNS運用の費用", desc: "料金プランと相場" },
+  { href: "/industries/restaurant", label: "飲食店のSNS活用", desc: "飲食店向けInstagram運用" },
+  { href: "/industries/beauty", label: "美容室のSNS活用", desc: "サロン向けSNS集客" },
+  { href: "/knowledge/instagram-strategy", label: "Instagram運用ガイド", desc: "フォロワー増加と集客の方法" },
+  { href: "/knowledge/line-official", label: "LINE公式アカウント活用", desc: "既存顧客へのリテンション施策" },
+  { href: "/column/sns", label: "SNSコラム", desc: "SNSマーケティングの最新情報" },
+  { href: "/area/tokyo", label: "東京のSNS運用支援", desc: "東京エリアの対応" },
+  { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
-export default function SnsServicePage() {
+export default function ServicesSnsPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#FFFFFF" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A]">ホーム</Link>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <Link href="/business" className="hover:text-[#0F172A]">事業内容</Link>
+              <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#374151" }}>SNS運用</span>
+              <span style={{ color: "#0F172A" }}>SNS運用</span>
             </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px, 4.5vw, 52px)", color: "#0F172A" }}>
-              SNS運用
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>SNS Marketing Service</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SNS運用サービス
             </h1>
-            <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              SNSは発信を続けることで初めて集客力になります。Instagram・X・LINE公式アカウントの投稿企画から画像制作・ハッシュタグ設計・月次分析まで、地域ビジネスのSNS集客を継続的に支援します。MEO対策との連動で相乗効果を最大化します。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              株式会社サイプレスのSNS運用サービスは、Instagram・X（Twitter）・LINE・TikTokの運用代行・コンテンツ制作・広告支援を通じて、集客とブランディングを強化します。
             </p>
-          </div>
-        </section>
-
-        {/* Visual section */}
-        <section className="relative" style={{ height: "400px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.png"
-            alt="スマートフォンを一緒に見る2人の女性 — SNS運用・Instagram集客のイメージ"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
-        </section>
-
-        {/* SNS運用の役割 */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>About</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>SNS運用の役割</h2>
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  SNSは単なる情報発信ツールではなく、地域ビジネスにとって重要な集客チャネルです。「Instagramで見つけた」「Xで話題になっていた」「LINEでクーポンが来た」という動機からの来店・問い合わせは年々増加しています。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  特にInstagramは視覚的なコンテンツが特性上、飲食・美容・インテリアなどのビジュアル訴求が重要な業種で強力な集客力を発揮します。継続的な投稿により、フォロワーが「ファン」になり、口コミ・紹介・リピート来店につながります。
-                </p>
-              </div>
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  SNS運用とMEO対策を組み合わせることで、オンライン上での存在感が大幅に強化されます。SNSでのアクティブな発信はブランド検索の増加を促し、Googleマップでの評価向上にも寄与します。また、Googleビジネスプロフィールの「最新情報」とInstagramの投稿を連動させることで、管理コストを抑えながら多面的な露出を確保できます。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  SNS運用は続けることが最大の課題です。業務が忙しくなると投稿が止まり、フォロワーが離れてしまいます。サイプレスが運用を代行することで、品質を維持した継続発信を実現します。
-                </p>
-              </div>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              フォロワー数を増やすことよりも、実際の来店・問い合わせ・売上につながるSNS活用を重視した運用設計を行います。SEO・MEOと組み合わせた統合的なWebマーケティング支援も可能です。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #0F172A", color: "#0F172A" }}>
+                無料相談・お問い合わせ
+              </Link>
+              <Link href="/cost/sns" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                料金・プランを見る
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* 支援内容 */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/8.png" alt="SNS運用・Instagram・LINE公式アカウント・TikTok活用のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        </section>
+
+        {/* サービス内容 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Services</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>SNS運用支援内容</h2>
-            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SNS運用サービスの内容
+            </h2>
+            <div className="max-w-4xl space-y-0">
               {[
-                { title: "Instagram運用代行", body: "投稿企画・キャプション作成・ハッシュタグ設計・投稿スケジュール管理を代行します。統一されたビジュアルトーンでブランド世界観を構築し、フォロワーの増加とエンゲージメント向上を目指します。フィードとストーリーズを組み合わせた運用を行います。" },
-                { title: "X（旧Twitter）運用", body: "業種・ターゲット層に合わせたXのコンテンツ戦略を策定します。告知・情報発信・トレンド活用・コミュニティとのエンゲージメントを通じてブランド認知と信頼を高めます。" },
-                { title: "LINE公式アカウント設計・運用", body: "顧客との継続的なコミュニケーションに最適なLINE公式アカウントを設計・運用します。クーポン配信・予約促進・イベント告知・顧客ロイヤリティ向上のためのメッセージ設計を行います。" },
-                { title: "投稿企画・文章（キャプション）作成", body: "業種・季節・トレンドを踏まえた投稿テーマを毎月企画し、ターゲットに響くキャプション文章を作成します。告知だけでなく、フォロワーが「保存したい・シェアしたい」と思えるコンテンツを設計します。" },
-                { title: "画像・写真の加工・テンプレート制作", body: "ご提供いただいた写真素材をSNS投稿に最適なサイズ・レイアウトで加工します。ブランドカラーを統一したデザインテンプレートを作成し、フィードの統一感を保ちます。" },
-                { title: "ハッシュタグ設計", body: "業種・地域・コンテンツカテゴリに応じた最適なハッシュタグセットを設計します。認知拡大に効くビッグタグと、ニッチなターゲットに届くスモールタグを組み合わせて、リーチを最大化します。" },
-                { title: "MEO・Googleビジネスプロフィールとの連動", body: "Instagram・XでのアクティブなSNS発信と、Googleビジネスプロフィールの最新情報投稿を連動させます。Webマーケティング全体で統一した世界観とメッセージを発信します。" },
-                { title: "月次分析レポート", body: "フォロワー数・リーチ・インプレッション・エンゲージメント率・Webサイトクリック数などの主要KPIを月次でレポートします。データをもとに翌月の改善方針をご提案します。" },
+                { title: "SNS戦略設計", body: "ビジネス目標・ターゲット・競合アカウント分析を踏まえ、どのプラットフォームに何のコンテンツを投稿するかの運用戦略を設計します。" },
+                { title: "コンテンツ制作・投稿代行", body: "投稿テキスト・画像・リール・ストーリーズの制作と、スケジュールに従った投稿を代行します。ブランドトーンを統一した品質のコンテンツを継続制作します。" },
+                { title: "ハッシュタグ戦略", body: "業種・地域・コンテンツに合わせた効果的なハッシュタグを選定します。リーチ拡大に向けて定期的に見直しを行います。" },
+                { title: "LINE公式アカウント支援", body: "LINE公式アカウントの初期設定・リッチメニュー設計・配信メッセージ作成・友だち追加促進の導線設計を行います。" },
+                { title: "SNS広告（Meta広告・LINE広告）", body: "ターゲット設定・クリエイティブ制作・予算管理・効果計測・改善を行うSNS広告の運用代行です。" },
+                { title: "インサイト分析・月次レポート", body: "フォロワー数・リーチ・インプレッション・エンゲージメント率・プロフィールアクセス数などのインサイトデータを毎月分析してレポートします。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
-                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                  </div>
                 </div>
               ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        {/* SNSとデジタル集客の連動 — 2-col image+text */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative" style={{ height: "360px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_18_03.png"
-                  alt="スマートフォンとデジタルアイコン — SNSとデジタルマーケティングの連動"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Integration</p>
-                <h2 className="font-black text-[22px] md:text-[26px] mb-5" style={{ color: "#0F172A" }}>SNSとMEO・SEOを連動させた集客設計</h2>
-                <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
-                  SNS単独で集客を狙うのではなく、MEO・SEOと連動させることで相乗効果が生まれます。Instagramでの認知がブランド検索を増やし、Googleマップでの評価向上につながります。各チャネルが互いを補完し合う統合マーケティングを設計します。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  サイプレスはSNS運用だけでなく、MEO・SEO・AI活用支援・ホームページ制作まで一貫して提供できる強みを活かし、デジタルマーケティング全体を最適化します。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>
-            <div className="flex flex-wrap gap-3">
-              {["飲食店・カフェ", "美容室・ヘアサロン", "ネイルサロン・エステ", "アパレル・ファッション", "整体・整骨院", "フィットネス・ヨガ", "インテリア・雑貨", "教育・スクール", "ブライダル", "宿泊・観光", "不動産", "医療・クリニック"].map((industry) => (
-                <span key={industry} className="px-4 py-2 text-[13px]" style={{ border: "1px solid #E8E4DC", color: "#374151" }}>
-                  {industry}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <FaqSection items={faqItems} heading="SNS運用についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
-          heading="SNS運用のご相談"
-          body="Instagram・X・LINE公式アカウントの運用でお困りのことをお聞かせください。現状の課題と目標に合わせたSNS運用プランをご提案します。"
+          heading="SNS運用サービスの無料相談"
+          body="現在のSNS活用状況をお聞きし、最適な運用戦略をご提案します。"
         />
       </main>
       <Footer />

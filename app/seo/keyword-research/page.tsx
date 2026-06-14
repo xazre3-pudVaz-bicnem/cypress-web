@@ -8,81 +8,68 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "キーワード調査｜SEO対策の第一歩｜株式会社サイプレス",
+  title: "キーワード調査とは｜SEO対策の基礎・対策キーワードの選び方｜株式会社サイプレス",
   description:
-    "キーワード調査の方法と重要性を解説。検索ボリューム・競合性・検索意図の3軸で最適なキーワードを選定し、成果が出るSEO戦略を構築します。Google Search Console・Ubersuggestの活用方法も紹介。",
-  keywords: ["キーワード調査", "SEOキーワード", "検索ボリューム", "ロングテールキーワード", "検索意図", "SEO対策"],
+    "SEOキーワード調査の基礎から実践まで解説。検索ボリューム・競合難易度・検索意図の分析方法、ロングテールキーワード戦略、ツールの使い方まで体系的に網羅。",
+  keywords: ["キーワード調査", "SEOキーワード", "検索ボリューム", "ロングテールキーワード", "キーワード選定", "SEO対策"],
   openGraph: {
-    title: "キーワード調査｜SEO対策の第一歩｜株式会社サイプレス",
-    description:
-      "キーワード調査の方法と重要性を解説。検索ボリューム・競合性・検索意図の3軸で最適なキーワードを選定し、成果が出るSEO戦略を構築します。",
+    title: "キーワード調査とは｜SEO対策の基礎・対策キーワードの選び方｜株式会社サイプレス",
+    description: "SEOキーワード調査の実践ガイド。検索意図の分析から対策キーワードの選定まで解説。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/seo/keyword-research" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo/keyword-research" },
 };
-
-const steps = [
-  {
-    title: "自社サービスに関するキーワードの洗い出し",
-    body: "まず自社のサービス・商品・地域名・課題解決ワードなど思いつく限りのキーワードを列挙します。顧客がどのような言葉で検索するかを想像しながら、ブレインストーミング形式で幅広く収集します。この段階では質より量を優先し、後のステップで絞り込みます。",
-  },
-  {
-    title: "Google Search Console での実績確認",
-    body: "既にサイトが稼働している場合、Google Search Consoleの「検索パフォーマンス」レポートで現在流入しているキーワードを確認します。すでに一定の順位がついているキーワードは改善余地があり、リライトや内部リンク強化で効率よく順位アップを狙えます。",
-  },
-  {
-    title: "Google Keyword Planner / Ubersuggest での検索ボリューム確認",
-    body: "洗い出したキーワードの月間検索ボリュームを確認します。検索ボリュームが多すぎると競合が激しく、少なすぎると流入が見込めません。月間100〜3,000程度のロングテールキーワードは競合が少なく成果を出しやすいため、特に新規サイトでは積極的に狙います。",
-  },
-  {
-    title: "競合サイトのキーワード調査",
-    body: "上位表示されている競合サイトがどのキーワードで流入を獲得しているかを分析します。Ahrefs・SEMrush・Ubersuggestなどのツールを使えば、競合の上位キーワードや記事構成を把握できます。競合が手薄なキーワードを見つけることが、効率的な差別化の第一歩です。",
-  },
-  {
-    title: "検索意図の分類（情報収集/商業/購買/ナビゲーション）",
-    body: "同じキーワードでも検索意図は異なります。「情報収集型」は解説記事、「商業調査型」は比較・事例記事、「購買型」はサービスページ・LP、「ナビゲーション型」は公式ページが上位に表示されます。意図と合わないコンテンツを作成しても上位表示は困難なため、意図の特定が最重要です。",
-  },
-  {
-    title: "ロングテールキーワードの特定",
-    body: "3語以上で構成される具体的なキーワードをロングテールキーワードと呼びます。「SEO対策」より「SEO対策 中小企業 費用」の方が競合が少なく、検索意図が明確で、CVにつながりやすい傾向があります。ロングテールを積み上げることで、安定した集客基盤が築けます。",
-  },
-  {
-    title: "優先順位付けと記事・ページ計画の策定",
-    body: "調査したキーワードを「検索ボリューム × 獲得難易度 × CVへの近さ」で評価し、優先度を決定します。高優先キーワードから順に記事・ページを設計し、公開スケジュールを立てます。キーワードマップとして整理することで、コンテンツ計画が体系的になります。",
-  },
-];
 
 const faqItems = [
   {
-    q: "キーワード調査はどのくらいの頻度で行うべきですか？",
-    a: "新規サイト立ち上げ時はまとまったキーワード調査を行い、その後は四半期に一度程度の見直しをお勧めします。業界トレンドや季節変動でキーワードの需要は変化するため、定期的なGoogle Search Consoleのデータ確認と組み合わせて運用するのが理想的です。",
+    q: "キーワード調査はどのツールを使えばいいですか？",
+    a: "無料ツールとしてはGoogleキーワードプランナー・Googleサジェスト・Google Search Consoleが基本です。有料ツールではAhrefs・SEMrush・Ubersuggestが機能が豊富です。まずは無料ツールで始めることをお勧めします。",
   },
   {
-    q: "検索ボリュームが少ないキーワードは狙う価値がありますか？",
-    a: "月間100未満のキーワードでも、購買意図が明確なものはCV（コンバージョン）につながりやすいため十分価値があります。特に「地域名＋サービス名」のようなローカルキーワードは検索ボリュームが少なくても実際の問い合わせに直結するケースが多く、積極的に狙う価値があります。",
+    q: "検索ボリュームが大きいキーワードを選べばいいですか？",
+    a: "必ずしもそうではありません。検索ボリュームが大きいキーワードほど競合が多く、新しいサイトや中小規模サイトが上位表示を狙うのは難しいです。まずはロングテールキーワードから始め、徐々にドメイン評価を高めてからメインキーワードに挑戦する戦略が現実的です。",
   },
   {
-    q: "無料ツールだけでキーワード調査はできますか？",
-    a: "Google Search Console・Google Keyword Planner・Googleサジェスト・関連検索など無料ツールだけでも基本的なキーワード調査は可能です。より精度を高めるにはUbersuggest（一部無料）やAhrefsなどの有料ツールが効果的ですが、まずは無料ツールで始めることをお勧めします。",
+    q: "ロングテールキーワードとは何ですか？",
+    a: "3語以上の複合キーワードで検索ボリュームは比較的小さいものの、ユーザーの検索意図が明確でコンバージョン率が高い傾向にあるキーワードです。例えば「SEO」よりも「葛飾区 飲食店 SEO対策 費用」の方がロングテールです。競合が少なく上位表示しやすいため、積み上げることで大きな検索流入になります。",
   },
   {
-    q: "1つのページで複数のキーワードを狙えますか？",
-    a: "メインキーワード1つに対し、関連するサブキーワードを自然に組み込む形が理想的です。意味的に近いキーワードであれば1ページで複数カバーできますが、まったく異なるキーワードを1ページで狙うと検索意図が分散し、どちらも上位表示しにくくなります。",
+    q: "一つのページで対策するキーワードはいくつにすればいいですか？",
+    a: "1ページにつきメインキーワード1〜2個、関連キーワード3〜5個程度が目安です。現在のGoogleはページのトピックと文脈を理解して評価するため、検索意図に合ったコンテンツを自然に書くことが最重要です。",
   },
   {
-    q: "競合が強いキーワードは最初から諦めるべきですか？",
-    a: "難易度の高い大型キーワードは最終目標として設定しつつ、まずはロングテールキーワードで成果を積み上げることをお勧めします。ロングテールで実績を作り、サイトの権威性（ドメインパワー）が高まった段階で競合の強いキーワードに挑戦する段階的戦略が効率的です。",
+    q: "競合サイトのキーワードを調べる方法はありますか？",
+    a: "Ahrefs・SEMrushなどの有料ツールを使うと、競合サイトが流入を得ているキーワード一覧を確認できます。無料でも、競合サイトのページタイトル・見出し・メタディスクリプションを確認することで、どのキーワードを狙っているかの概要がつかめます。",
+  },
+  {
+    q: "地域ビジネスのキーワード選定はどうすればいいですか？",
+    a: "地域ビジネスでは「地域名 + 業種/サービス」の組み合わせが基本です（例：「葛飾区 整体」「東京 Web制作」）。さらに「〜の口コミ」「〜のおすすめ」「〜の費用」などの修飾語をつけたロングテールも有効です。",
+  },
+  {
+    q: "季節性のあるキーワードはどう扱えばいいですか？",
+    a: "Googleトレンドを使って、対象キーワードの季節変動を確認します。シーズン前2〜3ヶ月からコンテンツを公開することで、ピーク時に上位表示を狙えます。",
+  },
+  {
+    q: "キーワード調査の結果をどうコンテンツ制作に活かしますか？",
+    a: "調査したキーワードをグループ分けして「クラスター（テーマ群）」を作り、それぞれのクラスターに対応するページを設計するトピッククラスター戦略がSEOの現代的なアプローチです。ピラーページと関連ページを内部リンクで結ぶサイロ構造を作ります。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎・全体像" },
-  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったページ設計" },
-  { href: "/seo/blog-strategy", label: "ブログ戦略", desc: "コンテンツ計画・ブログ運用" },
-  { href: "/seo/internal-seo", label: "内部SEO対策", desc: "タグ・構造最適化" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEO全体の概要" },
+  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったコンテンツ制作" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域名キーワードでの上位表示" },
+  { href: "/seo/blog-strategy", label: "ブログ戦略", desc: "キーワードを活かした記事設計" },
+  { href: "/seo/internal-seo", label: "内部SEO", desc: "キーワードの適切な配置" },
+  { href: "/meo", label: "MEO対策", desc: "Googleマップでのキーワード最適化" },
+  { href: "/knowledge/keyword-research", label: "キーワード調査入門", desc: "初心者向けキーワード選定ガイド" },
+  { href: "/knowledge/long-tail-keyword", label: "ロングテール戦略", desc: "競合の少ないキーワードを狙う" },
+  { href: "/column/seo", label: "SEOコラム", desc: "キーワード調査の最新情報" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
+  { href: "/cost/seo", label: "SEO対策の費用", desc: "キーワード調査込みの料金" },
+  { href: "/checklist/seo", label: "SEOチェックリスト", desc: "キーワード設計の確認項目" },
 ];
 
 export default function KeywordResearchPage() {
@@ -90,138 +77,93 @@ export default function KeywordResearchPage() {
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#f8f6f2" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 mb-6">
-              <Link href="/" className="text-[12px] hover:text-[#0d1b2a] transition-colors" style={{ color: "#9ca3af" }}>ホーム</Link>
-              <span className="text-[12px]" style={{ color: "#9ca3af" }}>/</span>
-              <Link href="/seo" className="text-[12px] hover:text-[#0d1b2a] transition-colors" style={{ color: "#9ca3af" }}>SEO対策</Link>
-              <span className="text-[12px]" style={{ color: "#9ca3af" }}>/</span>
-              <span className="text-[12px]" style={{ color: "#374151" }}>キーワード調査</span>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
+              <span>/</span>
+              <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
+              <span>/</span>
+              <span style={{ color: "#0F172A" }}>キーワード調査</span>
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>
-              SEO Knowledge
-            </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,46px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Keyword Research</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
               キーワード調査
             </h1>
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              キーワード調査とは、ターゲットユーザーがどのような言葉で検索しているかを調べ、SEO対策・コンテンツ制作の方針を決める作業です。どのキーワードを狙うかで、コンテンツSEOの成果は大きく変わります。
+            </p>
             <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              キーワード調査とは、ユーザーが検索エンジンで入力するワードを体系的に調査・分析し、自社サイトが狙うべき最適なキーワードを選定するプロセスです。検索ボリューム・競合性・検索意図の3軸から評価し、SEO施策全体の方向性を決定する最初の重要ステップです。
+              適切なキーワード調査なしにコンテンツを作っても、誰にも届かないページが増えるだけです。ビジネス目標から逆算してキーワードを選定し、戦略的なコンテンツ投資を行うことが重要です。
             </p>
           </div>
         </section>
 
-        {/* Full-width image */}
-        <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
-            alt="ノートパソコンでアナリティクスデータを確認している様子"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
+          <Image src="/5.png" alt="SEOキーワード調査・検索ボリューム分析のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
         </section>
 
-        {/* キーワード調査とは */}
-        <section className="py-16 md:py-20" style={{ background: "#ffffff" }}>
+        {/* キーワードの種類 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
-                キーワード調査とは
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                キーワード調査とは、ユーザーが検索エンジンで使用するキーワードを調査・分析し、自社サイトが上位表示を目指すべきキーワードを選定するプロセスです。SEO対策の出発点であり、どのキーワードを狙うかによってコンテンツ戦略・サイト構造・内部SEO施策のすべてが変わります。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                キーワード調査では主に3つの軸から評価を行います。まず「検索ボリューム」——そのキーワードが月に何回検索されているか。次に「競合性（KD: Keyword Difficulty）」——上位表示を獲得するために必要な難易度。そして「検索意図」——ユーザーがそのキーワードで何を求めているかです。この3軸を総合的に評価することで、現在の自社サイトの状態で実際に成果が出るキーワードを特定できます。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                キーワード調査を怠ると、需要のないキーワードで記事を書いたり、競合が圧倒的に強いキーワードを無策で狙ったりという非効率な状況が生まれます。正確なキーワード調査によって「勝てるキーワード」を特定することが、SEO投資の費用対効果を最大化する鍵です。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* なぜキーワード調査がSEOの基本なのか */}
-        <section className="py-16 md:py-20" style={{ background: "#f8f6f2" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
-                なぜキーワード調査がSEOの基本なのか
-              </h2>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                どれほど質の高い記事を書いても、誰も検索しないキーワードで書いていては流入は得られません。また、競合が強大なキーワードを小規模サイトが狙っても上位表示は困難です。キーワード調査は「書くべきテーマ」「勝てる場所」を明確にすることで、SEO施策全体の効率を何倍にも引き上げます。
-              </p>
-              <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                また、検索意図の把握がなければコンテンツの形式を誤ります。情報収集型のキーワードにLP（ランディングページ）を当てても上位表示されず、購買型のキーワードに解説記事を当てても問い合わせにつながりません。キーワード調査によって「どのページ形式で」「どの深さで」応えるべきかが明確になります。
-              </p>
-              <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                さらに、キーワード調査はサイト全体の設計にも影響します。関連キーワードをグループ化してトピッククラスターを設計したり、サイト階層に反映させることで内部リンク構造が整理され、Googleがサイトのテーマを正確に理解しやすくなります。キーワード調査はSEOの全施策を支える基盤です。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* キーワード調査の手順 */}
-        <section className="py-16 md:py-20" style={{ background: "#ffffff" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-10">
-              <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>
-                Process
-              </p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
-                キーワード調査の手順
-              </h2>
-            </div>
-            <div className="max-w-3xl">
-              {steps.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</h3>
-                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Keyword Types</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              キーワードの種類と選定基準
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                { type: "ビッグキーワード（単語1語）", volume: "月間数万〜数百万", desc: "「SEO」「Web制作」などの単語。競合が非常に強く、新規・中小サイトが上位表示するのは難しい。ドメイン評価が高まった段階で挑戦する。" },
+                { type: "ミドルキーワード（2語）", volume: "月間数百〜数万", desc: "「SEO対策 費用」「Web制作 東京」など。競合は強いが挑戦可能。ビジネスの核となるサービスページに対応させる。" },
+                { type: "ロングテールキーワード（3語以上）", volume: "月間数十〜数百", desc: "「葛飾区 整体 腰痛 おすすめ」など。競合が少なく上位表示しやすい。検索意図が明確でコンバージョン率が高い傾向。初期は積極的に狙う。" },
+                { type: "情報収集型（Know）", volume: "「〜とは」「〜の方法」", desc: "知識・情報を求めているキーワード。直接的なCVは少ないが、認知向上と信頼構築に貢献。コンテンツSEOの中心となる。" },
+                { type: "比較・検討型（Compare）", volume: "「〜おすすめ」「〜比較」", desc: "購入・契約前の比較検討段階のキーワード。CV率が高く重要。自社の強みと比較ポイントを明確にしたコンテンツが効果的。" },
+                { type: "購買・問い合わせ型（Buy/Go）", volume: "「〜依頼」「〜料金」「〜見積もり」", desc: "購入・問い合わせに直結するキーワード。検索ボリュームは小さいが最もCV率が高い。サービスページ・料金ページに対応させる。" },
+              ].map((item, i) => (
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <div className="flex items-start gap-4 mb-2">
+                    <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.type}</p>
+                    <span className="text-[11px] shrink-0 mt-0.5 px-2 py-0.5 rounded" style={{ background: "#F0EDE7", color: "#6B7280" }}>{item.volume}</span>
                   </div>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #ece8e0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        {/* 2-col: image + text */}
-        <section className="py-16 md:py-20" style={{ background: "#f8f6f2" }}>
+        {/* トピッククラスター戦略 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative" style={{ height: "320px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_14_54.png"
-                  alt="データを分析しながら打ち合わせをしている様子"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2vw,24px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
-                  サイプレスのキーワード調査支援
-                </h2>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  サイプレスでは、キーワード調査から始まる体系的なSEO戦略立案を提供しています。Google Search Console・Ubersuggest・Ahrefsなどのデータを組み合わせ、貴社の競合環境・現在のドメイン状況・ビジネス目標を踏まえた上で「今すぐ狙うべきキーワード」「中長期で育てるキーワード」を明確に整理します。調査結果はキーワードマップとして納品し、コンテンツ計画・サイト設計に直接活用できる形式でご提供します。
-                </p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Strategy</p>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              トピッククラスター戦略
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              キーワードを孤立させずに「テーマ群（クラスター）」として設計することで、サイト全体としての専門性をGoogleに示すことができます。ピラーページ（主要テーマ）とクラスターページ（関連テーマ）を内部リンクで結ぶサイロ構造がSEOの基本です。
+            </p>
+            <div className="max-w-3xl p-6 rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+              <p className="font-bold text-[14px] mb-4" style={{ color: "#0d1b2a" }}>例：MEO対策のトピッククラスター</p>
+              <div className="space-y-2 text-[13px]" style={{ color: "#374151" }}>
+                <p className="font-bold" style={{ color: "#0d1b2a" }}>ピラーページ：/meo（MEO対策とは）</p>
+                <div className="pl-4 space-y-1" style={{ borderLeft: "2px solid #E8E4DC" }}>
+                  <p>→ /meo/google-business-profile（Googleビジネスプロフィールの最適化）</p>
+                  <p>→ /meo/ranking（MEO上位表示の方法）</p>
+                  <p>→ /meo/review-strategy（口コミ獲得戦略）</p>
+                  <p>→ /meo/photo-strategy（MEOに効く写真設定）</p>
+                  <p>→ /meo/post-strategy（投稿機能の活用）</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#ffffff" />
+        <FaqSection items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="キーワード調査・SEO戦略のご相談"
-          body="「どのキーワードを狙えばいいかわからない」「競合に勝てるキーワードを見つけたい」そのようなお悩みはサイプレスにご相談ください。キーワード調査から戦略立案まで一貫してサポートします。"
+          body="ビジネスに合ったキーワード選定と、コンテンツ戦略のご提案を行います。"
         />
       </main>
       <Footer />

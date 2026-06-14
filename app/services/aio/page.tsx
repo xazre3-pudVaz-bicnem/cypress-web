@@ -3,141 +3,135 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FaqSection from "@/components/shared/FaqSection";
 import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "AIO対策｜ChatGPT・Gemini・AI検索に引用されるサイトへ｜株式会社サイプレス",
+  title: "AIO対策サービス｜AI検索（ChatGPT・Gemini・Perplexity）からの引用獲得｜株式会社サイプレス",
   description:
-    "AIO（AI検索最適化）対策。ChatGPT・Gemini・Perplexity・AI Overviewに自社情報が引用・紹介されるよう、E-E-A-T強化・構造化データ・コンテンツ最適化を総合的に支援します。",
-  keywords: ["AIO対策", "AI検索最適化", "ChatGPT引用対策", "AI Overview対策", "Gemini検索", "E-E-A-T"],
+    "株式会社サイプレスのAIO対策サービス。ChatGPT・Gemini・Perplexityなどのレビューに引用されるE-E-A-T強化・構造化データ実装・コンテンツ最適化を一貫してご支援。",
+  keywords: ["AIO対策", "AI検索最適化", "ChatGPT SEO", "Gemini対策", "Perplexity対策", "E-E-A-T強化"],
   openGraph: {
-    title: "AIO対策｜ChatGPT・Gemini・AI検索に引用されるサイトへ｜株式会社サイプレス",
-    description:
-      "AIO対策でChatGPT・Gemini・Perplexityから引用されるサイトを構築。E-E-A-T強化・構造化データ・FAQ最適化を一貫対応します。",
+    title: "AIO対策サービス｜AI検索（ChatGPT・Gemini・Perplexity）からの引用獲得｜株式会社サイプレス",
+    description: "サイプレスのAIO対策サービス。AI検索に引用されるコンテンツ最適化・構造化データ実装まで一貫支援。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/services/aio" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/services/aio" },
 };
 
 const faqItems = [
   {
     q: "AIO対策とは何ですか？",
-    a: "AIO（AI Overview Optimization / AI検索最適化）とは、ChatGPT・Gemini・Perplexity・GoogleのAI Overviewなど、生成AIを活用した検索サービスで自社の情報が引用・紹介されやすくなるための最適化施策です。従来のSEOがGoogleの検索順位を対象としていたのに対し、AIOはAIが生成する回答文の中に自社コンテンツが採用されることを目指します。",
+    a: "AIO（AI Optimization）とは、ChatGPT・Gemini・Perplexity・ClaudeなどのAI検索エンジンのレビューや回答に、自社の情報・コンテンツが引用・言及されやすくする施策です。AI検索の普及により、従来のGoogleSEOに加えてAIOへの対応が重要になっています。",
   },
   {
-    q: "SEO対策をやっていればAIO対策は不要ですか？",
-    a: "SEOとAIOは密接に関連していますが、別の対策が必要です。SEOで上位表示されているサイトがAI検索でも引用されやすい傾向はありますが、E-E-A-T（権威性・専門性）の明示、FAQの充実、構造化データの実装、著者情報の整備など、AIO特有の対応も重要です。サイプレスではSEOとAIOを統合した戦略をご提案します。",
+    q: "AI検索でのビジネス情報の引用を増やすにはどうすればいいですか？",
+    a: "E-E-A-T（経験・専門性・権威性・信頼性）が明確なコンテンツ、FAQページの整備、著者情報・会社情報の構造化、一次情報・専門的知見の掲載、引用しやすいFAQ・リスト形式のコンテンツが有効です。AIはこれらの「信頼できる情報源」から優先的に引用する傾向があります。",
   },
   {
-    q: "AIに引用されているかどうか確認できますか？",
-    a: "ChatGPT・Gemini・Perplexityなどで自社に関連するキーワードを実際に質問し、回答に自社情報が含まれているかを確認することができます。また、Google Search ConsoleのAI Overview表示データなども参考になります。サイプレスでは定期的なモニタリングもサポートしています。",
+    q: "SEO対策とAIO対策は別物ですか？",
+    a: "重複する部分が多いですが、完全に同じではありません。SEOはGoogle検索の順位向上が目標で、AIOはAI検索での引用獲得が目標です。良質なE-E-A-Tコンテンツ・構造化データ・専門性の明示はどちらにも有効です。サイプレスではSEO・AIO・MEOを統合した戦略をご提案します。",
   },
   {
-    q: "どのような業種でAIO対策が特に重要ですか？",
-    a: "ユーザーが調査・比較・質問をする業種で特に重要です。士業（弁護士・税理士）、医療・クリニック、コンサルティング、教育、金融、不動産など、専門知識を必要とする分野では、AIが回答を生成する際に信頼できる情報源として引用される価値が高くなります。",
+    q: "AIO対策の効果をどう計測しますか？",
+    a: "現状はChatGPT・Gemini等で業界関連のクエリを手動で検索し、自社情報が引用されているか確認する方法が主流です。一部のSEOツールではAI overviewの監視機能が提供されています。Googleの「AIオーバービュー（AI Overview）」への引用はGoogle Search Consoleで一定の確認が可能です。",
   },
   {
-    q: "AIO対策の効果が出るまでの期間は？",
-    a: "構造化データの実装や情報の整備は比較的早く反映されますが、AIが自社サイトを「権威ある情報源」として認識するようになるには継続的なコンテンツ充実とE-E-A-T向上が必要です。SEOと同様に3〜6ヶ月を目安に取り組むことをお勧めします。",
+    q: "どのようなコンテンツがAI検索で引用されやすいですか？",
+    a: "FAQページ（Q&A形式のコンテンツ）、数字・データを含む具体的な情報、専門家の見解・一次情報、明確な見出し構造（H2・H3）で整理されたコンテンツ、要点が箇条書きでまとめられたコンテンツが引用されやすい傾向があります。",
   },
   {
-    q: "既存サイトへの対応は可能ですか？",
-    a: "はい、既存のWebサイトに構造化データを追加したり、コンテンツを最適化したりする形での対応が可能です。WordPressサイトでも、Next.js等の開発サイトでも対応しています。まずは現状診断を行い、優先順位の高い改善項目をご提案します。",
+    q: "構造化データはAIO対策に効果がありますか？",
+    a: "はい。FAQPage・Article・Organization・LocalBusinessなどの構造化データは、AIがコンテンツの意味を正確に理解するのを助けます。特にFAQPage構造化データはAI検索での引用可能性を高めるため、サイプレスではすべてのページに実装を推奨しています。",
+  },
+  {
+    q: "llms.txtとは何ですか？AIO対策に必要ですか？",
+    a: "llms.txt は大規模言語モデル（LLM）向けに、サイトの概要・主要ページ・重要情報を記述するテキストファイルです（robots.txtのAI版）。一部のAIクローラーが参照するとされており、AIO対策の一環としてサイプレスでは実装を推奨しています。",
+  },
+  {
+    q: "AIO対策サービスの費用はどのくらいですか？",
+    a: "AIO対策はSEO対策との組み合わせが多く、SEO・AIO・MEOの統合プランとしてご提供しています。コンテンツ改善・構造化データ実装・llms.txt設置のみの初回対応から、継続的な最適化サポートまでご要望に合わせてプランをご提案します。詳細はお問い合わせください。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/aio", label: "AIO対策トップ", desc: "AIO対策の全体概要" },
-  { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTへの対応" },
-  { href: "/aio/structured-data", label: "構造化データ実装", desc: "Schema.org対応" },
-  { href: "/aio/generative-search", label: "AI Overview対策", desc: "Google SGEへの対応" },
-  { href: "/services/seo", label: "SEO対策", desc: "オーガニック検索対策" },
-  { href: "/services/web-design", label: "ホームページ制作", desc: "AIO対応サイト構築" },
+  { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化の基礎" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "Google検索上位表示" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ上位表示" },
+  { href: "/seo/structured-data", label: "構造化データ実装", desc: "JSON-LD・Schema.org設定" },
+  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "AI引用に強いコンテンツ制作" },
+  { href: "/cost/aio", label: "AIO対策の費用", desc: "料金プランと相場" },
+  { href: "/checklist/aio", label: "AIOチェックリスト", desc: "AI検索対策の確認項目" },
+  { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・権威性の高め方" },
+  { href: "/guide/seo-vs-aio", label: "SEOとAIOの違い", desc: "両対策の関係と戦略" },
+  { href: "/column/seo", label: "SEOコラム", desc: "AI検索・AIOの最新情報" },
+  { href: "/faq/aio", label: "AIO対策FAQ", desc: "よくある質問まとめ" },
+  { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
-export default function AioServicePage() {
+export default function ServicesAioPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#FFFFFF" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A]">ホーム</Link>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <Link href="/business" className="hover:text-[#0F172A]">事業内容</Link>
+              <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#374151" }}>AIO対策</span>
+              <span style={{ color: "#0F172A" }}>AIO対策</span>
             </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px, 4.5vw, 52px)", color: "#0F172A" }}>
-              AIO対策
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>AIO Service</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AIO対策サービス
             </h1>
-            <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              ChatGPT・Gemini・Perplexityに「あなたの会社の名前」が答えとして引用される時代が来ています。AI検索が普及する今、自社情報がAIに正しく認識・引用されるためのAIO（AI検索最適化）対策に取り組む必要があります。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              AIO（AI Optimization）対策とは、ChatGPT・Gemini・Perplexity・ClaudeなどのAI検索エンジンのレビューや回答に、自社の情報が引用・言及されやすくする施策です。AI検索が普及する現代において、SEOと並ぶ重要な集客戦略となっています。
             </p>
-          </div>
-        </section>
-
-        {/* Visual section */}
-        <section className="relative" style={{ height: "400px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
-            alt="ブルーのデジタルオーバーレイとともにタイピングするラップトップ — AIO対策・AI検索最適化"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
-        </section>
-
-        {/* AIO対策とは */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>About</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>AIO対策とは</h2>
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  AIO（AI Overview Optimization）とは、ChatGPT・Google Gemini・Perplexity・MicrosoftのCopilotといった生成AIベースの検索サービス、およびGoogleが提供するAI Overview（かつてのSearch Generative Experience）において、自社のWebサイト・コンテンツが情報源として引用・紹介されやすくなるための最適化施策です。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  従来のSEOがGoogleの検索結果ページでの順位（10件のリスト）を競うものだったのに対し、AIOはAIが生成する「回答文」の中に自社情報が採用されることを目指します。AI検索では1〜3件の情報源しか引用されないため、その狭い枠に入り込むことが次世代の集客競争の鍵となります。
-                </p>
-              </div>
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  AIが情報を引用する際の判断基準は、Googleが提唱するE-E-A-T（Experience・Expertise・Authoritativeness・Trustworthiness：経験・専門性・権威性・信頼性）に基づいていると考えられています。単に情報があるだけでなく、「誰が・どんな根拠で・どれほど信頼できる形で」情報を発信しているかが重要です。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  サイプレスでは、AIに正しく認識・引用されるためのWebサイト最適化を、SEO対策と連動させながら包括的に支援します。構造化データの実装からコンテンツの一次情報化、著者情報の整備まで、トータルで取り組みます。
-                </p>
-              </div>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              サイプレスでは、E-E-A-T強化・構造化データ実装・AIO向けコンテンツ最適化・llms.txt設置を通じて、AI検索からの認知と誘導を高める施策をご支援します。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #0F172A", color: "#0F172A" }}>
+                無料相談・お問い合わせ
+              </Link>
+              <Link href="/cost/aio" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                料金・プランを見る
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* なぜAIO対策が必要か */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/6.png" alt="AIO対策・AI検索最適化・ChatGPT引用獲得のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        </section>
+
+        {/* AIO対策の施策 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Why Now</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>なぜAIO対策が必要か</h2>
-            <div className="max-w-3xl">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AIO対策サービスの施策内容
+            </h2>
+            <div className="max-w-4xl space-y-0">
               {[
-                { num: "01", title: "検索行動がAIシフトしている", body: "ChatGPTのユーザー数は2億人を超え、若い世代を中心に「Googleで検索する前にAIに質問する」行動が定着しつつあります。AI検索での露出がなければ、次世代の集客機会を逃すことになります。" },
-                { num: "02", title: "AI OverviewがGoogle検索を変えた", body: "GoogleはAI Overviewを多くの検索クエリで表示するようになっています。AI Overviewに自社コンテンツが引用されると、通常の検索結果より上部に自社情報が表示され、大幅なブランド認知向上につながります。" },
-                { num: "03", title: "競合がまだ対策していない今がチャンス", body: "AIO対策に本格的に取り組んでいる企業はまだ少数です。今から対策を始めることで、競合他社に先んじてAI検索での存在感を確立できます。SEOの初期段階と同じように、早期着手が大きなアドバンテージになります。" },
-                { num: "04", title: "E-E-A-Tが評価の核心になっている", body: "Googleはコンテンツ評価基準としてE-E-A-T（経験・専門性・権威性・信頼性）を重視しており、これはAI検索でも同様です。実績・資格・経験に基づいた情報発信を構造化することで、AIから信頼される情報源になれます。" },
-              ].map((item) => (
-                <div key={item.num} style={{ borderTop: "1px solid #E8E4DC" }} className="py-6 flex gap-6">
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                { title: "E-E-A-Tコンテンツの最適化", body: "著者情報・専門性の明示、一次情報・体験談の付与、専門的知見の追加によってE-E-A-Tを強化します。AIが信頼できる情報源として認識するコンテンツの土台を作ります。" },
+                { title: "構造化データ（JSON-LD）の実装", body: "FAQPage・Article・Organization・LocalBusiness・WebSiteなどの構造化データをJSON-LD形式で実装します。AIがコンテンツの意味を正確に理解するための機械可読な情報提供を行います。" },
+                { title: "FAQ・リスト形式コンテンツの充実", body: "AI検索で引用されやすいFAQ形式・箇条書き・数字入りのコンテンツを拡充します。ユーザーが検索しそうな質問とその明確な回答を体系的に整備します。" },
+                { title: "会社情報・著者情報の構造化", body: "会社概要ページの充実、代表者プロフィールの整備、連絡先・所在地の明示を行います。AIは運営者情報が明確なサイトの情報をより信頼しやすい傾向があります。" },
+                { title: "llms.txtの設置", body: "大規模言語モデル向けのサイト情報ファイル（llms.txt）を設置します。サイトの概要・主要ページ・コンテンツカテゴリをAIクローラーに伝えることで、サイト全体の情報をAIが把握しやすくなります。" },
+                { title: "AIO効果の継続的な確認・改善", body: "対象クエリでAI検索に自社情報が引用されているか定期的に確認し、引用されていない場合はコンテンツの改善・FAQ追加・構造化データの修正を実施します。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
@@ -147,94 +141,11 @@ export default function AioServicePage() {
           </div>
         </section>
 
-        {/* 支援内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Services</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>サイプレスのAIO支援内容</h2>
-            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
-              {[
-                { title: "E-E-A-T（経験・専門性・権威性・信頼性）強化", body: "著者プロフィール・会社情報・実績・資格・受賞歴などをWebサイト上で適切に明示し、Googleおよび生成AIから「信頼できる情報源」として認識されるコンテンツ構造を整備します。" },
-                { title: "構造化データ実装（Organization/FAQ/Article/LocalBusiness）", body: "JSON-LD形式でSchema.orgの構造化データを実装します。OrganizationでブランドをAIに認識させ、FAQPageで質問への回答を明示化し、ArticleでE-E-A-Tを補強します。LocalBusinessは地域ビジネスに必須の実装です。" },
-                { title: "FAQ・Q&Aコンテンツ最適化", body: "AI検索はFAQ形式のコンテンツを特に引用しやすい特性があります。ユーザーが検索・質問しやすい形でFAQページや各サービスページにQ&Aセクションを充実させ、AI引用率を高めます。" },
-                { title: "著者情報・会社情報の明確化", body: "各コンテンツページに著者プロフィール（経歴・資格・SNSリンク）を追加し、会社情報ページを充実させます。誰が発信しているのかを明確にすることで、AIが情報の信頼性を判断しやすくなります。" },
-                { title: "コンテンツの一次情報化", body: "他のサイトの情報を転載・まとめたコンテンツではなく、自社独自の経験・調査・事例に基づいた一次情報を発信します。オリジナルの情報はAIに引用される可能性が高く、SEOにも強く評価されます。" },
-                { title: "見出し構造の最適化", body: "AIは見出し（H1〜H3）の構造を読み解いてコンテンツを理解します。ユーザーの質問に直接答える形の見出し設計、適切なキーワード配置、論理的な情報階層を整えることで、AI引用率を向上させます。" },
-                { title: "SEOとの連動設計", body: "AIO対策とSEO対策を別々に行うのではなく、統合戦略として設計します。GoogleオーガニックSEOの上位表示がAI引用の確率を高め、AI引用がブランド認知を向上させるという好循環を構築します。" },
-              ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
-                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SEOとの違い */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Comparison</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>SEOとの違い</h2>
-            <div className="max-w-4xl">
-              <div className="grid grid-cols-3 gap-0 text-[13px] mb-0">
-                <div className="py-3 pr-6 font-semibold" style={{ borderBottom: "1px solid #E8E4DC", color: "#9CA3AF" }}></div>
-                <div className="py-3 px-4 font-semibold text-center" style={{ borderBottom: "1px solid #E8E4DC", color: "#0F172A" }}>SEO対策</div>
-                <div className="py-3 px-4 font-semibold text-center" style={{ borderBottom: "1px solid #E8E4DC", color: "#0F172A" }}>AIO対策</div>
-              </div>
-              {[
-                { label: "目的", seo: "検索結果での上位表示", aio: "AIの回答に引用される" },
-                { label: "対象", seo: "Google・Yahoo!の検索", aio: "ChatGPT・Gemini・Perplexity" },
-                { label: "評価方法", seo: "順位・流入数", aio: "AI引用数・ブランド認知" },
-                { label: "主な施策", seo: "内部SEO・コンテンツ・被リンク", aio: "E-E-A-T・構造化データ・FAQ" },
-                { label: "共通基盤", seo: "コンテンツの質・技術実装", aio: "コンテンツの質・技術実装" },
-              ].map((row) => (
-                <div key={row.label} className="grid grid-cols-3 gap-0">
-                  <div className="py-4 pr-6 text-[13px] font-medium" style={{ borderBottom: "1px solid #E8E4DC", color: "#374151" }}>{row.label}</div>
-                  <div className="py-4 px-4 text-[13px] text-center" style={{ borderBottom: "1px solid #E8E4DC", color: "#374151" }}>{row.seo}</div>
-                  <div className="py-4 px-4 text-[13px] text-center" style={{ borderBottom: "1px solid #E8E4DC", color: "#374151" }}>{row.aio}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* AI時代の検索に先手を打つ — full-width cinematic */}
-        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
-            alt="AI検索最適化・AIO対策 — 抽象的なブルーデジタル背景"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 flex items-center" style={{ background: "rgba(15,23,42,0.65)" }}>
-            <div className="max-w-6xl mx-auto px-6">
-              <p className="text-white font-black text-[22px] md:text-[30px] max-w-xl">AI時代の検索に、先手を打つ。</p>
-            </div>
-          </div>
-        </section>
-
-        {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>
-            <div className="flex flex-wrap gap-3">
-              {["士業（弁護士・税理士・社労士）", "医療・クリニック", "コンサルティング", "IT・SaaS", "教育・スクール", "金融・保険", "不動産", "製造業", "飲食・フード", "観光・宿泊", "美容・ウェルネス", "コーポレート全般"].map((industry) => (
-                <span key={industry} className="px-4 py-2 text-[13px]" style={{ border: "1px solid #E8E4DC", color: "#374151" }}>
-                  {industry}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <FaqSection items={faqItems} heading="AIO対策についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
-          heading="AIO対策のご相談"
-          body="AI検索時代の集客戦略をご提案します。現在のサイト状況を分析し、ChatGPT・Gemini・AI Overviewへの対応策を具体的にご提案します。"
+          heading="AIO対策サービスの無料相談"
+          body="AI検索での引用・認知獲得に向けた施策をご提案します。SEO・MEOとの統合戦略もご相談ください。"
         />
       </main>
       <Footer />

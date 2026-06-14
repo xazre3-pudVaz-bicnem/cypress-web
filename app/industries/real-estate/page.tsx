@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "不動産会社のWeb集客｜MEO・SEO・ホームページ制作",
+  title: "不動産会社のWeb集客｜MEO・SEO・ホームページ制作｜株式会社サイプレス",
   description: "不動産会社・賃貸管理・売買仲介のWeb集客。Googleマップ上位表示・SEO・ホームページ制作・物件情報の見せ方最適化で問い合わせ数を増やします。",
+  keywords: ["不動産 MEO対策", "不動産会社 集客", "不動産 Googleマップ", "不動産 SEO", "不動産会社 ホームページ"],
+  openGraph: {
+    title: "不動産会社のWeb集客｜MEO・SEO・ホームページ制作｜株式会社サイプレス",
+    description: "不動産会社のWeb集客。MEO・SEO・ホームページ制作で問い合わせと来店を増やします。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/industries/real-estate" },
 };
 
 const faqItems = [
@@ -18,14 +27,22 @@ const faqItems = [
   { q: "不動産会社のSEO対策で狙うべきキーワードは？", a: "「○○市 マンション 売却」「○○駅 賃貸 1LDK」「○○区 不動産 売買 相談」など地域名+物件種別+ユーザーの目的を組み合わせたロングテールキーワードが効果的です。" },
   { q: "売却物件の情報はホームページに掲載すべきですか？", a: "売却物件（売主からの依頼物件）はポータルサイトへの掲載が主ですが、自社サイトでの掲載も可能です。売却相談のコンテンツ（「査定の流れ」「売却の注意点」）はSEOと信頼構築に有効です。" },
   { q: "不動産会社のSNS活用はどうすればいいですか？", a: "Instagramは物件写真・周辺エリア情報の発信に、YouTubeは物件動画・内見動画の公開に活用できます。地域の暮らし情報を発信することで、エリア検討中の顧客へのアプローチが可能です。" },
+  { q: "不動産会社のGoogleマップで口コミを増やすには？", a: "成約後のお礼連絡時に口コミリンクを送ることが最も自然で効果的な方法です。「お部屋探しのご感想をGoogleにいただけますか」という一言とQRコード・URLを組み合わせることで口コミ獲得率が上がります。担当者への個人的な信頼が口コミにつながりやすい業種です。" },
+  { q: "不動産会社のホームページで差別化するためのポイントは？", a: "「担当者紹介（顔写真・得意分野・経験）」「地域の暮らし情報ブログ」「お客様の声（購入・賃貸それぞれ）」「売却相談の流れ」など、会社の個性と専門性が伝わるコンテンツが差別化になります。ポータルサイトにない情報を自社サイトで発信することがポイントです。" },
+  { q: "不動産売買と賃貸管理の集客は分けて設計すべきですか？", a: "はい。売買仲介はSEO（「○○市 戸建て 購入」「査定 売却 相談」）とMEOが有効で、賃貸管理は「○○駅 賃貸 ペット可」のような絞り込み条件を含む地域SEOとポータルサイトの最適化が効果的です。ターゲット顧客が異なるため、ページとキーワード設計を分けた設計を推奨します。" },
 ];
 
 const relatedLinks = [
-  { href: "/industries", label: "業種別Web集客", desc: "業種別トップ" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/web-design/landing-page", label: "ランディングページ", desc: "LP制作" },
-  { href: "/services/web-design", label: "Web制作サービス", desc: "サービス詳細" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
+  { href: "/services/web-design", label: "ホームページ制作サービス", desc: "不動産会社向けサイト制作" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "物件・売却相談向けLP" },
+  { href: "/industries/professional-service", label: "士業・コンサルタントの集客", desc: "士業のWeb集客支援" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎知識" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/contact", label: "無料相談", desc: "不動産会社のWeb集客相談" },
 ];
 
 export default function Page() {

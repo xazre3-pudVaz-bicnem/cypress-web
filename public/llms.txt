@@ -4,46 +4,121 @@
 
 株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するWebマーケティングカンパニーです。
 
-- 所在地: 東京都葛飾区白鳥4-6-1-623
+- 会社名: 株式会社サイプレス
 - 代表取締役: 織田 春樹
 - 設立: 2026年5月13日
-- 対応エリア: 全国（オンライン対応）
+- 所在地: 東京都葛飾区白鳥4-6-1-623
+- 対応エリア: 全国（オンライン対応）/ 東京都内・葛飾区は訪問対応
 - メール: consulting.meo@gmail.com
-
-## Services
-
-- MEO対策: Googleビジネスプロフィール最適化・口コミ管理・順位改善
-- SEO対策: 内部SEO・コンテンツSEO・テクニカルSEO・外部SEO
-- AIO対策: AI検索最適化・ChatGPT対策・構造化データ実装・LLMO
-- ホームページ制作: Next.js/WordPress/Vercel構成・SEO対応Web制作
-- SNS運用: Instagram・X・LINE公式アカウント運用代行
-- AI活用支援: 業務自動化・チャットボット構築・コンテンツ自動化
+- ウェブサイト: https://www.cypress-all.co.jp
 
 ## Expertise
 
-MEO対策、SEO対策、AIO対策（AI Overview対策・LLM最適化）、Googleビジネスプロフィール運用、
-口コミ管理、ローカルSEO、コンテンツマーケティング、テクニカルSEO、構造化データ（Schema.org）、
-ホームページ制作、AI活用支援、中小企業Webマーケティング
+MEO対策（Googleマップ上位表示・Googleビジネスプロフィール最適化）、SEO対策（コンテンツSEO・テクニカルSEO・ローカルSEO）、AIO対策（AI検索最適化・ChatGPT対策・LLM最適化）、ホームページ制作（Next.js/WordPress）、SNS運用（Instagram・LINE公式アカウント）、AI活用支援（業務自動化・チャットボット構築）、中小企業のWebマーケティング全般
+
+## Services
+
+### MEO対策（Googleマップ集客）
+- Googleビジネスプロフィール最適化
+- 口コミ管理・獲得支援
+- 競合分析・順位改善
+- 写真・投稿の定期更新
+- NAP統一・構造化データ実装
+
+### SEO対策（検索上位表示）
+- コンテンツSEO・キーワード戦略
+- テクニカルSEO改善
+- ローカルSEO・エリアページ制作
+- E-E-A-T強化
+- 内部リンク最適化
+
+### AIO対策（AI検索最適化）
+- ChatGPT・Gemini・Perplexityへの最適化
+- llms.txt設置・AI向け情報整備
+- FAQ・構造化データ実装
+- E-E-A-T強化
+- 著者情報・会社情報の構造化
+
+### ホームページ制作
+- Next.js・TypeScript・Tailwind CSSによる高速サイト制作
+- WordPress（Headless CMS）対応
+- SEO対応・CV設計・レスポンシブデザイン
+- コーポレートサイト・ランディングページ・ECサイト
+
+### SNS運用
+- Instagram運用代行・コンテンツ制作
+- LINE公式アカウント構築・運用
+- 投稿戦略設計・ハッシュタグ最適化
+
+### AI活用支援
+- 業務自動化（n8n・Zapier・Make）
+- AIチャットボット構築（ChatGPT API・LINE連携）
+- AIコンテンツ制作体制の構築
+- プロンプト設計・AI導入コンサルティング
+
+## Target Customers
+
+- 中小企業・個人事業主
+- 飲食店・カフェ・居酒屋
+- 美容室・ヘアサロン・ネイルサロン
+- 整骨院・鍼灸院・整体院・クリニック
+- 工務店・リフォーム業・建設業
+- 不動産業・賃貸仲介
+- 士業（弁護士・税理士・社労士）
+- 学習塾・スクール・習い事教室
+- ペットショップ・ドッグサロン
+- ECサイト・小売業
+
+## Coverage Areas
+
+- 東京都（葛飾区・足立区・江戸川区・墨田区・その他23区・市部）
+- 千葉県・埼玉県・神奈川県
+- 全国対応（オンライン）
 
 ## Site Structure
 
+- / — トップページ
 - /services — サービス一覧
-- /meo — MEO対策（Googleマップ最適化）
-- /seo — SEO対策（検索エンジン最適化）
-- /aio — AIO対策（AI検索最適化）
-- /ai — AI活用支援
-- /web-design — ホームページ制作
-- /sns — SNS運用
+- /services/meo — MEO対策サービス
+- /services/seo — SEO対策サービス
+- /services/aio — AIO対策サービス
+- /services/web-design — ホームページ制作サービス
+- /services/sns — SNS運用サービス
+- /services/ai — AI活用支援サービス
+- /meo — MEO対策の完全ガイド
+- /seo — SEO対策の完全ガイド
+- /aio — AIO対策の完全ガイド
+- /ai — AI活用マーケティング
+- /web-design — ホームページ制作ガイド
+- /sns — SNS運用ガイド
 - /company — 会社情報
-- /industries — 業種別対応（飲食・美容・クリニック・整体・塾・リフォームなど）
-- /area — 対応エリア（東京・葛飾区・千葉・埼玉・神奈川・全国）
-- /recruit — 採用情報
-- /column — 専門コラム（MEO・SEO・AIO・Web制作・SNS）
-- /knowledge — ナレッジ（MEO・SEO・AIO・SNS・AI活用の専門知識）
-- /problems — お悩み別ページ
-- /goals — 目的別ページ
-- /solutions — ソリューション
-- /guide — ガイド
+- /industries — 業種別対応（飲食・美容・クリニック・整骨院・建設・不動産・士業・塾・ペットショップ・リフォームなど）
+- /area — 対応エリア（東京・葛飾区・足立区・江戸川区・墨田区・千葉・埼玉・神奈川・全国）
+- /problems — お悩み別ページ（問い合わせゼロ・SEO順位低下・競合負けなど）
+- /goals — 目的別ページ（問い合わせ増加・Google上位・MEO上位など）
+- /solutions — ソリューション（MEO+SEO・MEO+SNS・Web制作+SEOなど）
+- /guide — 実践ガイド（MEO対策・SEO対策の始め方など）
+- /knowledge — 専門ナレッジ
+- /checklist — チェックリスト
+- /glossary — 用語集
 - /cost — 費用・料金
 - /faq — よくある質問
+- /column — 専門コラム
+- /recruit — 採用情報
 - /contact — お問い合わせ
+
+## Key Differentiators
+
+1. MEO・SEO・AIOの三位一体の統合対策が可能
+2. AI活用による業務効率化と高品質コンテンツ制作の両立
+3. 東京葛飾区拠点の地域密着型サービス（訪問対応可）
+4. 中小企業・個人事業主に特化したコストパフォーマンス重視の支援
+5. Next.js等の最新技術を使った高性能Webサイト制作
+
+## E-E-A-T Information
+
+- 代表取締役 織田 春樹：Webマーケティング・MEO対策・SEO対策・AI活用の専門家
+- 設立：2026年5月13日
+- 事業所在地の証明：東京都葛飾区白鳥4-6-1-623
+- 連絡先：consulting.meo@gmail.com
+- 対応実績：飲食・美容・医療・建設・不動産・士業など幅広い業種

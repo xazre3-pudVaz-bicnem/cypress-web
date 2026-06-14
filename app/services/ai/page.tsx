@@ -3,136 +3,130 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FaqSection from "@/components/shared/FaqSection";
 import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "AI活用支援｜業務自動化・AIツール導入・コンテンツ生成｜株式会社サイプレス",
+  title: "AI活用支援サービス｜業務自動化・チャットボット・AIコンテンツ活用｜株式会社サイプレス",
   description:
-    "ChatGPTを使ったコンテンツ生成・n8n/Makeによる業務自動化・AIチャットボット構築・Googleビジネスプロフィール自動投稿など、中小企業のAI活用を具体的に支援します。",
-  keywords: ["AI活用支援", "業務自動化", "n8n", "ChatGPT活用", "AIチャットボット", "Webマーケティング自動化"],
+    "株式会社サイプレスのAI活用支援サービス。ChatGPT・Claude等のLLMを活用した業務効率化・チャットボット構築・AIコンテンツ制作支援・ワークフロー自動化をご支援。東京都葛飾区を拠点に全国対応。",
+  keywords: ["AI活用支援", "ChatGPT活用", "業務自動化", "チャットボット構築", "AIマーケティング", "AI業務効率化"],
   openGraph: {
-    title: "AI活用支援｜業務自動化・AIツール導入・コンテンツ生成｜株式会社サイプレス",
-    description:
-      "ChatGPTコンテンツ生成・n8n業務自動化・AIチャットボット・GBP自動投稿など、中小企業のAI活用を具体的に支援します。",
+    title: "AI活用支援サービス｜業務自動化・チャットボット・AIコンテンツ活用｜株式会社サイプレス",
+    description: "サイプレスのAI活用支援サービス。ChatGPT・Claude活用から業務自動化・チャットボット構築まで一貫支援。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/services/ai" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/services/ai" },
 };
 
 const faqItems = [
   {
-    q: "AIを活用したことがない会社でも相談できますか？",
-    a: "はい、AIツールの経験がない方向けの支援が中心です。何から始めれば良いかわからないという状態から、具体的にどのAIツールをどう活用するかをご提案します。まずは現状の業務フローを整理し、AIで効率化できる箇所を一緒に見つけていきます。",
+    q: "AI活用支援はどんな企業に向いていますか？",
+    a: "繰り返し業務が多い・コンテンツ制作に時間がかかっている・お問い合わせ対応を効率化したい・マーケティング業務の一部を自動化したいという企業に向いています。業種を問わず、リソースが限られる中小企業や個人事業主の方にも適しています。",
   },
   {
-    q: "どのようなAIツールを使いますか？",
-    a: "ChatGPT（OpenAI）・Gemini・Claude・Perplexityなどの生成AIに加え、業務自動化にはn8n・Make（旧Integromat）・Zapierを活用します。チャットボット構築にはVoiceflow・Botpressなどを用途に応じて選定します。特定ツールへの依存を避け、最適なツールセットをご提案します。",
+    q: "ChatGPTやClaudeをビジネスに活用するには何が必要ですか？",
+    a: "まず活用目的の明確化（どの業務を効率化したいか）と、適切なプロンプト設計が必要です。また、社内データとの連携が必要な場合はAPIの設定・カスタムGPTの構築が必要になります。サイプレスではプロンプト設計から導入支援・社員教育まで対応します。",
   },
   {
-    q: "Googleビジネスプロフィールの自動投稿とはどういうものですか？",
-    a: "n8nやMakeを使って、Googleビジネスプロフィールへの「最新情報」投稿を自動化する仕組みを構築します。例えば、週次でAIがコンテンツを生成し、指定した日時に自動投稿するフローを設定できます。MEO対策における継続的な投稿管理の手間を大幅に削減します。",
+    q: "チャットボットはどのようなシステムで構築しますか？",
+    a: "用途に応じて、ChatGPT APIを活用したカスタムチャットボット、LINE公式アカウントとの連携チャットボット、Webサイト組み込みのチャットボットなどを構築します。知識ベース（FAQ・製品情報）を連携した高精度な回答ができるシステムの設計も可能です。",
   },
   {
-    q: "社内でAIを活用できる人材がいないのですが、大丈夫ですか？",
-    a: "はい、社内でAIを使いこなせる人材がいない前提でご支援します。仕組みの構築だけでなく、実際に活用できるようになるためのレクチャーやマニュアル作成も行います。継続的なサポートプランもご用意しています。",
+    q: "AIを使ったコンテンツ制作支援とはどういうサービスですか？",
+    a: "AIを活用したSEO記事・SNS投稿・メルマガ・商品説明文などのコンテンツ制作ワークフローの設計と支援を行います。AIが生成したドラフトに対して、人間が専門知識・一次情報を追加して品質を高める「AI×人間協働」のコンテンツ制作体制を構築します。",
   },
   {
-    q: "Webマーケティングとの連携はできますか？",
-    a: "はい、AI活用支援はWebマーケティング（MEO・SEO・SNS運用）との連動が可能です。ブログ記事のAI生成→WordPress自動投稿、Googleビジネスプロフィールへの自動投稿、SNS投稿のAI作成支援など、マーケティング業務全体の自動化・効率化を一貫して支援できます。",
+    q: "業務自動化はどの範囲まで対応できますか？",
+    a: "主にマーケティング・広報・カスタマーサポート・社内文書作成などの知識業務の自動化を支援しています。Zapier・Make（旧Integromat）・n8nなどのノーコード自動化ツールとAIの組み合わせによるワークフロー自動化が得意です。本格的なシステム開発が必要な案件は外部開発者と連携します。",
+  },
+  {
+    q: "AI活用にはどのくらいのコストがかかりますか？",
+    a: "ChatGPT APIやClaude API自体の費用は使用量に応じた従量課金（月数千円〜）です。サイプレスの支援費用は、導入コンサルティング・プロンプト設計・ワークフロー構築の内容によって異なります。まずは無料相談で現状の課題と目標をお聞かせください。",
+  },
+  {
+    q: "社員がAIを活用できるように研修してもらえますか？",
+    a: "はい、ChatGPT・Claude等のLLMの基本的な使い方から、業務別の活用事例・プロンプト作成のコツまでを解説するAI活用研修（オンライン・対面）を実施しています。参加者のスキルレベルや業種に合わせてカスタマイズします。",
+  },
+  {
+    q: "SEO対策やAIO対策と組み合わせて依頼できますか？",
+    a: "はい、AI活用支援をSEO・AIO・MEO・Web制作と組み合わせた統合的なWebマーケティング支援が可能です。AIを使った効率的なコンテンツSEOの運用体制構築と、SEO対策を一緒に進めることで、費用対効果の高い集客基盤を構築できます。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/ai", label: "AI活用支援トップ", desc: "AI活用の全体概要" },
-  { href: "/ai/automation", label: "業務自動化（n8n/Make）", desc: "業務フロー自動化" },
-  { href: "/ai/chatbot", label: "AIチャットボット構築", desc: "問い合わせ自動化" },
-  { href: "/ai/content", label: "AIコンテンツ生成", desc: "記事・投稿の自動作成" },
-  { href: "/services/seo", label: "SEO対策", desc: "AI生成コンテンツのSEO活用" },
+  { href: "/ai", label: "AI活用とは", desc: "AIマーケティングの基礎知識" },
+  { href: "/ai/automation", label: "業務自動化", desc: "マーケティング業務のAI自動化" },
+  { href: "/ai/chatbot", label: "チャットボット構築", desc: "AIチャットボットの導入" },
+  { href: "/ai/content", label: "AIコンテンツ制作", desc: "AI×人間協働のコンテンツ制作" },
+  { href: "/ai/workflow", label: "AIワークフロー設計", desc: "n8n・Zapierとの連携" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "AIを活用したコンテンツSEO" },
+  { href: "/knowledge/chatgpt-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
+  { href: "/knowledge/ai-prompt", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
+  { href: "/column/seo", label: "SEOコラム", desc: "AI×マーケティングの最新情報" },
+  { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
+  { href: "/contact", label: "無料相談", desc: "AI活用支援のご相談" },
 ];
 
-export default function AiServicePage() {
+export default function ServicesAiPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-16 pb-14" style={{ background: "#FFFFFF" }}>
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A]">ホーム</Link>
+            <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
+              <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <Link href="/business" className="hover:text-[#0F172A]">事業内容</Link>
+              <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#374151" }}>AI活用支援</span>
+              <span style={{ color: "#0F172A" }}>AI活用支援</span>
             </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px, 4.5vw, 52px)", color: "#0F172A" }}>
-              AI活用支援
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>AI Utilization Service</p>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AI活用支援サービス
             </h1>
-            <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              AIは大企業だけのものではありません。中小企業・個人事業主こそ、AIで業務を自動化・効率化することで競合に差をつけられる時代です。コンテンツ生成・業務自動化・チャットボット構築・Webマーケティング連動まで、AIを使える組織づくりを支援します。
+            <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
+              株式会社サイプレスのAI活用支援サービスは、ChatGPT・Claudeなどの生成AIを活用した業務効率化・チャットボット構築・コンテンツ制作支援・ワークフロー自動化をご支援します。
             </p>
-          </div>
-        </section>
-
-        {/* Visual section */}
-        <section className="relative" style={{ height: "400px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
-            alt="ブルーのデジタルオーバーレイでタイピングするシーン — AI活用支援・業務自動化"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
-        </section>
-
-        {/* AI活用支援とは */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>About</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>AI活用支援とは</h2>
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  ChatGPT・Gemini・Claudeといった生成AIの登場により、文章作成・情報整理・アイデア出しのスピードが劇的に向上しました。さらにn8n・Make（旧Integromat）などのノーコード自動化ツールを組み合わせることで、繰り返し発生する定型業務をAIが自動で処理する仕組みを構築できます。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  しかし、「AIを使いたいが何から始めればいいかわからない」「試してみたが業務に定着しなかった」という声が多くの中小企業から聞こえます。サイプレスのAI活用支援は、ツールの導入だけでなく、実際の業務フローへの組み込みと定着化まで伴走します。
-                </p>
-              </div>
-              <div>
-                <p className="text-[15px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
-                  AIはWebマーケティングの分野でも大きな変革をもたらしています。ブログ記事・SNS投稿・Googleビジネスプロフィールの更新など、継続的に発信しなければならないコンテンツをAIで効率的に作成し、自動投稿する仕組みを構築することで、小さなチームでも大量のコンテンツを継続発信できるようになります。
-                </p>
-                <p className="text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                  サイプレスでは、MEO・SEO・SNS運用の実務知識を持つスタッフがAI活用支援を行います。マーケティングとAIの両方を理解したチームだからこそ、集客に直結するAI活用の仕組みを設計できます。
-                </p>
-              </div>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
+              AIツールを導入するだけでなく、実際にビジネス成果につながる使い方を設計します。SEO・AIO・MEOとの統合支援も可能です。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #0F172A", color: "#0F172A" }}>
+                無料相談・お問い合わせ
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* 支援内容 */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/1.png" alt="AI活用支援・業務自動化・ChatGPT活用のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+        </section>
+
+        {/* サービス内容 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Our Services</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>AI活用支援内容</h2>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AI活用支援サービスの内容
+            </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
               {[
-                { title: "ブログ記事・SNS投稿のAI作成支援", body: "ChatGPT・Claudeなどを活用したブログ記事・SNS投稿・メールマガジンのAI作成フローを構築します。キーワード調査→構成作成→本文生成→SEOチェックまでの一連のプロセスをAIで効率化し、コンテンツ制作コストを大幅に削減します。" },
-                { title: "業務フロー自動化（n8n・Make・Zapier）", body: "n8n・Make・Zapierを使って、繰り返し発生する定型業務を自動化します。問い合わせメールの自動振り分け・スプレッドシートへの自動記録・定期レポートの自動生成・Slack通知の自動化など、業種に合わせた自動化フローを設計・構築します。" },
-                { title: "AIチャットボット構築", body: "WebサイトやLINE公式アカウントに設置するAIチャットボットを構築します。よくある質問への自動回答・予約受付・資料請求フローの自動化により、営業時間外の問い合わせ対応と顧客体験の向上を実現します。" },
-                { title: "Googleビジネスプロフィール投稿の自動化", body: "AIがコンテンツを生成し、Googleビジネスプロフィールへ定期自動投稿するフローを構築します。MEO対策に重要な継続的な投稿更新を自動化することで、運用工数を削減しながら集客効果を維持します。" },
-                { title: "社内AIリテラシー向上支援", body: "ChatGPT・Gemini・Claudeの使い方から、業種別の活用事例・プロンプト設計・注意点まで、実践的なAI活用研修を提供します。社内でAIを使いこなせる人材を育成し、自走できる組織づくりを支援します。" },
-                { title: "Webマーケティングとの連動設計", body: "AI活用を単独の施策として終わらせず、MEO・SEO・SNS運用と連動させた統合マーケティング自動化を設計します。コンテンツ生成からGoogleビジネスプロフィール投稿・WordPress自動アップロード・SNS自動投稿まで、一連のマーケティングフローを自動化します。" },
+                { title: "AI活用コンサルティング", body: "現在の業務フローを確認し、AIで効率化できるポイントを特定します。ChatGPT・Claude・Gemini等のツール選定と活用計画を策定します。" },
+                { title: "プロンプト設計支援", body: "業種・業務内容に合わせた効果的なプロンプトを設計します。業務別のプロンプトライブラリを構築し、社内での活用を定着させます。" },
+                { title: "チャットボット構築", body: "ChatGPT APIを活用したWebサイト組み込みチャットボット・LINE連携チャットボット・社内Q&Aボットを構築します。" },
+                { title: "ワークフロー自動化", body: "Zapier・Make・n8nなどのノーコード自動化ツールとAIを組み合わせ、コンテンツ制作・メール対応・レポート作成などの業務を自動化します。" },
+                { title: "AIコンテンツ制作体制の構築", body: "AI生成コンテンツをベースに、人間が専門知識・一次情報を追加するAI×人間協働のコンテンツ制作ワークフローを設計します。" },
+                { title: "AI活用研修", body: "ChatGPT・Claude等の基本から業務別活用事例まで解説するオンライン研修を実施します。参加者のスキルに合わせてカスタマイズします。" },
               ].map((item, i) => (
                 <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -140,69 +134,11 @@ export default function AiServicePage() {
           </div>
         </section>
 
-        {/* こんな課題に */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Challenges</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-10" style={{ color: "#0F172A" }}>こんな課題に対応します</h2>
-            <div className="max-w-3xl">
-              {[
-                { num: "01", title: "コンテンツ発信を続けられない", body: "ブログ・SNS・Googleビジネスプロフィールへの投稿を継続したいが、人手不足・時間不足で止まってしまう。AIと自動化で継続発信の仕組みを作ります。" },
-                { num: "02", title: "同じ作業を毎日繰り返している", body: "毎日同じフォーマットのメール送信・データ入力・レポート作成などの定型業務に時間を取られている。業務フロー自動化で根本的に解決します。" },
-                { num: "03", title: "営業時間外の問い合わせに対応できていない", body: "夜間・休日の問い合わせへの対応が遅れ、機会損失が発生している。AIチャットボットで24時間自動対応を実現します。" },
-                { num: "04", title: "ChatGPTを使ってみたが業務定着しない", body: "試しに使ってみたが、使い方がよくわからず定着しなかった。業種・業務に特化したプロンプトテンプレートと活用フローをご提供します。" },
-              ].map((item) => (
-                <div key={item.num} style={{ borderTop: "1px solid #E8E4DC" }} className="py-6 flex gap-6">
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
-                  <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0F172A" }}>{item.title}</p>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
-                  </div>
-                </div>
-              ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
-            </div>
-          </div>
-        </section>
-
-        {/* AI×デジタル会議 — full-width cinematic with quote */}
-        <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
-            alt="デジタルオーバーレイのあるカンファレンスシーン — AI活用支援・業務変革"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 flex items-center" style={{ background: "rgba(15,23,42,0.65)" }}>
-            <div className="max-w-6xl mx-auto px-6">
-              <p className="text-white font-black text-[22px] md:text-[30px] max-w-2xl leading-snug">
-                AIで動く組織が、<br />次の10年をリードする。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>Industries</p>
-            <h2 className="font-black text-[26px] md:text-[30px] mb-8" style={{ color: "#0F172A" }}>対応業種</h2>
-            <div className="flex flex-wrap gap-3">
-              {["飲食店・カフェ", "美容室・サロン", "医療・クリニック", "士業・コンサルティング", "不動産", "教育・スクール", "小売・EC", "建設・リフォーム", "製造業", "IT・Web", "フィットネス・ヨガ", "宿泊・観光"].map((industry) => (
-                <span key={industry} className="px-4 py-2 text-[13px]" style={{ border: "1px solid #E8E4DC", color: "#374151" }}>
-                  {industry}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <FaqSection items={faqItems} heading="AI活用支援についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AI活用支援サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
-          heading="AI活用支援のご相談"
-          body="業務自動化・コンテンツ生成・AIチャットボット構築など、AIの活用について具体的なご提案をします。まずは現状の業務課題をお聞かせください。"
+          heading="AI活用支援の無料相談"
+          body="現在の業務課題をお聞きし、AIを活用した効率化・自動化の方法をご提案します。"
         />
       </main>
       <Footer />

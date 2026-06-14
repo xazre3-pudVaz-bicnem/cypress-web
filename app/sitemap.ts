@@ -27,30 +27,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...urls([
       "/seo", "/seo/internal-seo", "/seo/content-seo", "/seo/technical-seo",
       "/seo/local-seo", "/seo/keyword-research", "/seo/blog-strategy",
-      "/seo/e-e-a-t", "/seo/link-building", "/seo/schema-markup",
-      "/seo/page-speed", "/seo/mobile-seo", "/seo/seo-analysis",
-      "/seo/competitor-analysis", "/seo/ai-seo",
+      "/seo/page-speed", "/seo/mobile-seo", "/seo/search-console",
+      "/seo/seo-audit", "/seo/seo-writing", "/seo/structured-data",
+      "/seo/site-structure", "/seo/external-seo",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // MEO専門
     ...urls([
       "/meo", "/meo/google-business-profile", "/meo/review-management",
       "/meo/ranking", "/meo/photo-posting", "/meo/meo-audit",
-      "/meo/local-pack", "/meo/map-seo", "/meo/competitor-meo",
-      "/meo/multi-location", "/meo/gbp-post", "/meo/qa-management",
+      "/meo/beauty-salon-meo", "/meo/category-setting", "/meo/clinic-meo",
+      "/meo/construction-meo", "/meo/google-post", "/meo/local-keyword",
+      "/meo/map-ranking", "/meo/nap", "/meo/restaurant-meo", "/meo/store-marketing",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // AIO専門
     ...urls([
       "/aio", "/aio/chatgpt", "/aio/ai-overview", "/aio/structured-data",
-      "/aio/llms-txt", "/aio/faq-optimization", "/aio/e-e-a-t",
-      "/aio/author-info", "/aio/perplexity", "/aio/gemini",
+      "/aio/llms-txt", "/aio/faq-optimization", "/aio/ai-search",
+      "/aio/answer-engine-optimization", "/aio/entity-optimization",
+      "/aio/generative-search", "/aio/knowledge-graph",
+      "/aio/llm-optimization", "/aio/organization-data",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // AI活用
     ...urls([
-      "/ai", "/ai/automation", "/ai/chatgpt-business", "/ai/content-generation",
-      "/ai/seo-tools", "/ai/workflow",
+      "/ai", "/ai/automation", "/ai/chatbot", "/ai/content", "/ai/workflow",
+      "/ai/blog-automation", "/ai/customer-support", "/ai/internal-tools",
+      "/ai/prompt-design", "/ai/sns-automation",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // Web制作
@@ -59,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/web-design/nextjs", "/web-design/vercel", "/web-design/headless-wordpress",
       "/web-design/landing-page", "/web-design/mobile-friendly",
       "/web-design/page-speed", "/web-design/contact-form", "/web-design/maintenance",
+      "/web-design/recruit-site", "/web-design/service-site", "/web-design/wordpress",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // SNS
@@ -247,34 +252,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 用語集
     ...urls([
       "/glossary",
-      "/glossary/meo", "/glossary/seo", "/glossary/aio",
-      "/glossary/google-business-profile", "/glossary/keyword",
-      "/glossary/organic-search", "/glossary/serp",
-      "/glossary/core-web-vitals", "/glossary/e-e-a-t",
-      "/glossary/structured-data", "/glossary/local-seo",
-      "/glossary/content-marketing", "/glossary/backlink",
-      "/glossary/meta-tag", "/glossary/canonical",
-      "/glossary/llms-txt", "/glossary/ai-overview",
-      "/glossary/chatgpt", "/glossary/perplexity",
-      "/glossary/knowledge-panel", "/glossary/google-maps",
-      "/glossary/review-management", "/glossary/ctr",
-      "/glossary/conversion", "/glossary/mobile-first",
-      "/glossary/page-speed", "/glossary/sitemap-xml",
-      "/glossary/robots-txt", "/glossary/internal-link",
+      "/glossary/meo", "/glossary/gbp", "/glossary/local-pack",
+      "/glossary/seo", "/glossary/e-e-a-t", "/glossary/core-web-vitals",
+      "/glossary/aio", "/glossary/llms-txt", "/glossary/schema-org",
+      "/glossary/cv-rate", "/glossary/cta", "/glossary/og-image",
+      "/glossary/kpi", "/glossary/pdca", "/glossary/content-marketing",
+      "/glossary/sns-marketing", "/glossary/google-ads",
+      "/glossary/responsive-design", "/glossary/cms", "/glossary/lp",
+      "/glossary/domain-authority", "/glossary/isr",
+      "/glossary/meta-description", "/glossary/sitemap-xml",
+      "/glossary/bounce-rate",
     ], { changeFrequency: "monthly", priority: 0.6 }),
 
     // チェックリスト
     ...urls([
       "/checklist",
-      "/checklist/meo", "/checklist/seo", "/checklist/gbp",
-      "/checklist/homepage", "/checklist/core-web-vitals",
-      "/checklist/mobile", "/checklist/content", "/checklist/schema",
-      "/checklist/local-seo", "/checklist/sns", "/checklist/review",
-      "/checklist/contact-form", "/checklist/new-website",
-      "/checklist/website-redesign", "/checklist/aio",
-      "/checklist/analytics", "/checklist/competitor",
-      "/checklist/keyword", "/checklist/annual-seo",
-      "/checklist/restaurant-meo",
+      "/checklist/meo-setup", "/checklist/meo-monthly",
+      "/checklist/seo-basics", "/checklist/content-seo",
+      "/checklist/website-launch", "/checklist/sns-account-setup",
+      "/checklist/review-management", "/checklist/gbp-photo",
+      "/checklist/website-speed", "/checklist/new-store",
+      "/checklist/annual-seo", "/checklist/aio-readiness",
+      "/checklist/sns-monthly", "/checklist/contact-form",
+      "/checklist/local-seo", "/checklist/reputation",
+      "/checklist/website-redesign", "/checklist/analytics-confirmation",
     ], { changeFrequency: "monthly", priority: 0.6 }),
 
     // 費用・料金
@@ -301,19 +302,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // サポート
     ...urls([
       "/support",
-      "/support/operation", "/support/monthly-report",
-      "/support/consulting", "/support/training", "/support/tools",
-      "/support/emergency", "/support/analytics",
-      "/support/content-support", "/support/handover", "/support/annual-plan",
+      "/support/operation", "/support/reporting",
+      "/support/consulting", "/support/troubleshooting",
+      "/support/training", "/support/handover",
+      "/support/audit", "/support/account-management",
+      "/support/content-creation", "/support/analytics-setup",
     ], { changeFrequency: "monthly", priority: 0.6 }),
 
     // FAQ
     ...urls([
       "/faq",
-      "/faq/meo", "/faq/seo", "/faq/aio", "/faq/homepage",
-      "/faq/sns", "/faq/cost", "/faq/contract", "/faq/results",
-      "/faq/reporting", "/faq/ai", "/faq/local-business",
-      "/faq/beginner", "/faq/compare",
+      "/faq/meo-basics", "/faq/seo-basics", "/faq/web-design-basics",
+      "/faq/sns-marketing", "/faq/aio-chatgpt", "/faq/cost-payment",
+      "/faq/contract-flow", "/faq/results", "/faq/security-privacy",
+      "/faq/local-business", "/faq/industry-specific",
+      "/faq/comparison", "/faq/ai-tools",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // コラム専門ガイド（トピックページ）
@@ -337,6 +340,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/column/keyword-strategy-guide", "/column/instagram-for-restaurant",
       "/column/web-design-cv-improvement", "/column/meo-seo-combination",
       "/column/content-creation-ai", "/column/small-business-web-marketing",
+      "/column/ai-business-automation", "/column/instagram-local-business",
+      "/column/technical-seo-core-web-vitals", "/column/google-ai-overview-strategy",
+      "/column/recruit-website-strategy", "/column/web-marketing-small-business",
+      "/column/meo-review-management", "/column/chatgpt-prompt-guide",
+      "/column/cta-design-guide",
     ], { changeFrequency: "weekly", priority: 0.7 }),
 
     // ブログ (index + category pages — individual posts handled by WP)
@@ -349,7 +357,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 採用
     ...urls([
-      "/recruit", "/recruit/entry", "/recruit/message",
+      "/recruit", "/recruit/marketing", "/recruit/sales",
+      "/recruit/entry", "/recruit/message", "/recruit/career",
+      "/recruit/environment", "/recruit/faq",
       "/recruit/job-description", "/recruit/remote-work",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
