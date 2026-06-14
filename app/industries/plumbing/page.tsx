@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function PlumbingPage() {
               計画的な工事・リフォーム案件の集客にはSEOとホームページの整備が有効です。緊急依頼（MEO）と計画工事（SEO）の二軸で、年間を通じた安定した集客体制を構築します。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (9).png" alt="現場チームによる作業風景 — 水道・設備工事業のMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

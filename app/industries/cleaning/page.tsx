@@ -70,7 +70,7 @@ export default function Page() {
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_14_54.png" alt="ハウスクリーニング・清掃業のWeb集客" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (7).png" alt="オフィスロビーを清掃するプロスタッフ — ハウスクリーニング・清掃業のMEO対策" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 

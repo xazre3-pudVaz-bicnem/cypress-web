@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function RenovationPage() {
               施工事例コンテンツとGoogleマップの口コミが積み上がることで、大手ハウスメーカーのリフォーム部門に対しても地元業者としての信頼を確立できます。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_10_24 (4).png" alt="住宅外観と施工業者・施主カップルによる打ち合わせ — リフォーム会社・工務店のMEO対策" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

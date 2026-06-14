@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function SchoolPage() {
               英会話スクール・音楽教室・プログラミングスクール・スポーツスクールなど、業種を問わず地域密着型スクールのWeb集客全般に対応しています。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (10).png" alt="先生と生徒が学ぶ学習塾・スクールの教室 — 学習塾・スクールのMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

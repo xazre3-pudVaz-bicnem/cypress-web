@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function OsteopathicPage() {
               「院名で検索しても出てこない」「Googleマップで競合整体院の下に表示されている」「新規患者が紹介以外で増えない」—これらのお悩みを持つ整体院・接骨院・整骨院の集客改善を専門的に支援します。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_20 (3).png" alt="清潔感あるクリニックでの診察風景 — 整体院・接骨院・整骨院のMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

@@ -118,7 +118,7 @@ export default function RestaurantIndustryPage() {
 
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="飲食店のWebマーケティング・MEO対策・Instagram集客" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_20 (1).png" alt="和食レストランの温かみあるカウンター席 — 飲食店のMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.18)" }} />
         </section>
 

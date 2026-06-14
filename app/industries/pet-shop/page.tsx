@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -90,6 +91,11 @@ export default function PetShopPage() {
               ペットショップ・トリミングサロン・ドッグカフェは「〇〇駅 トリミング」「近くのペットショップ」でGoogleマップ検索されることが多く、MEO対策が特に効果的です。かわいいペットのビフォーアフター写真を活用したInstagram集客との組み合わせで、新規来店と定期利用の両方を実現します。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (8).png" alt="ペットのトリミングを行うグルーミングサロン — ペットショップ・トリミングサロンのMEO対策" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function HairSalonPage() {
               個人サロン・少人数サロン・多店舗展開まで、ヘアサロンの規模・スタイルに応じた集客戦略をご提案します。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_10_24 (2).png" alt="タブレットを使ったヘアサロンでのスタイル提案 — ヘアサロン・美容院のMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

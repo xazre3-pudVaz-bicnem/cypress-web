@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -93,6 +94,11 @@ export default function NailSalonPage() {
               個人サロン・プライベートネイルサロン・自宅サロンなど規模を問わず、Webからの集客体制を構築します。ホットペッパービューティーへの依存から脱却したい方のご相談も歓迎します。
             </p>
           </div>
+        </section>
+
+        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_20 (2).png" alt="美容室・サロンでのスタイリストとお客様のカウンセリング — ネイルサロンのMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>

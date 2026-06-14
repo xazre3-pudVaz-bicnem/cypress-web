@@ -190,168 +190,199 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            3. BUSINESS — 6 services, vertical rows
+            3. SERVICES — Visual grid blocks with bg images
         ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div style={{ marginBottom: "56px" }}>
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  letterSpacing: "0.25em",
-                  color: "#9ca3af",
-                  fontSize: "11px",
-                  marginBottom: "16px",
-                }}
-              >
-                Services
-              </p>
-              <h2
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "clamp(26px,3.5vw,42px)",
-                  color: "#0d1b2a",
-                  lineHeight: 1.3,
-                  fontWeight: 700,
-                }}
-              >
-                6つの領域で、<br />集客を設計する。
-              </h2>
-            </div>
+        <section style={{ background: "#0d1b2a" }}>
+          {/* Section header */}
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "96px 32px 64px" }}>
+            <p
+              style={{
+                fontFamily: "var(--font-display)",
+                letterSpacing: "0.25em",
+                color: "rgba(255,255,255,0.3)",
+                fontSize: "11px",
+                marginBottom: "16px",
+              }}
+            >
+              Services
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(26px,3.5vw,42px)",
+                color: "#ffffff",
+                lineHeight: 1.3,
+                fontWeight: 700,
+              }}
+            >
+              6つの領域で、<br />集客を設計する。
+            </h2>
+          </div>
 
-            <div>
-              {[
-                {
-                  num: "01",
-                  label: "MEO対策",
-                  href: "/services/meo",
-                  body: "Googleマップ上の表示順位を改善し、地域の検索ユーザーにアプローチします。Googleビジネスプロフィール（GBP）の最適化・写真・投稿・口コミ対策・NAP情報整理など、MEO全般を支援します。店舗・医療・士業・美容・飲食などの地域ビジネスに特に効果的です。",
-                  related: ["/meo", "/meo/google-business-profile", "/meo/review-management"],
-                  relatedLabels: ["MEO対策とは", "Googleビジネスプロフィール", "口コミ対策"],
-                },
-                {
-                  num: "02",
-                  label: "SEO対策",
-                  href: "/services/seo",
-                  body: "Google検索での自然流入を増やすための施策を総合的に提供します。キーワード調査・内部SEO・コンテンツSEO・テクニカルSEO・被リンク対策など、検索順位向上に必要な施策を組み合わせて実施します。即効性より持続的な集客基盤の構築を重視します。",
-                  related: ["/seo", "/seo/internal-seo", "/seo/content-seo"],
-                  relatedLabels: ["SEO対策とは", "内部SEO", "コンテンツSEO"],
-                },
-                {
-                  num: "03",
-                  label: "AIO対策",
-                  href: "/services/aio",
-                  body: "ChatGPT・Gemini・Perplexity・Google AI Overviewなど、AI検索エンジンからの引用・回答表示を目指した情報設計を行います。構造化データ・FAQ設計・E-E-A-T強化・コンテンツの一次情報化など、次世代の検索に対応したサイト設計を提供します。",
-                  related: ["/aio", "/aio/chatgpt", "/aio/structured-data"],
-                  relatedLabels: ["AIO対策とは", "ChatGPT対策", "構造化データ"],
-                },
-                {
-                  num: "04",
-                  label: "ホームページ制作",
-                  href: "/services/web-design",
-                  body: "見た目の美しさだけでなく、集客・問い合わせ・採用を目的とした設計を行います。Next.js / WordPress / Vercel構成を活用し、表示速度・モバイル対応・SEO設計・更新性を兼ね備えたサイトを制作します。制作後の保守・改善サポートにも対応しています。",
-                  related: ["/web-design", "/web-design/corporate-site", "/web-design/seo-site"],
-                  relatedLabels: ["Web制作とは", "コーポレートサイト", "SEOに強いサイト"],
-                },
-                {
-                  num: "05",
-                  label: "SNS運用",
-                  href: "/services/sns",
-                  body: "Instagram・X（旧Twitter）・LINE公式アカウントなどのSNS運用を支援します。投稿企画・文章作成・ハッシュタグ設計・分析・改善まで一貫して対応し、MEOやSEOとの連動を意識した情報発信の体制を構築します。",
-                  related: ["/services/meo", "/meo/store-marketing"],
-                  relatedLabels: ["MEO対策との連動", "店舗集客"],
-                },
-                {
-                  num: "06",
-                  label: "AI活用支援",
-                  href: "/services/ai",
-                  body: "業務効率化・チャットボット構築・コンテンツ制作自動化・ワークフロー改善など、AIを活用した経営改善を支援します。何から始めればよいかわからない企業から、すでにAI導入を検討している企業まで、現状に合わせた伴走型の支援を行います。",
-                  related: ["/ai", "/ai/automation", "/ai/chatbot"],
-                  relatedLabels: ["AI活用支援とは", "業務自動化", "AIチャットボット"],
-                },
-              ].map((svc, i) => (
-                <div key={svc.num}>
-                  <div
-                    className="grid md:grid-cols-[80px_1fr_auto] gap-6 md:gap-10 py-10"
-                    style={{ borderTop: "1px solid #e8e4dc" }}
+          {/* Visual grid */}
+          <div className="grid md:grid-cols-3" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+            {[
+              {
+                num: "01",
+                label: "MEO対策",
+                href: "/services/meo",
+                img: "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+                alt: "デジタルデータと握手でMEO対策・Googleマップ上位表示をイメージ",
+                body: "Googleマップ上位表示で地域の検索ユーザーに届く",
+              },
+              {
+                num: "02",
+                label: "SEO対策",
+                href: "/services/seo",
+                img: "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+                alt: "デジタルネットワーク上でタイピングしSEO対策・検索上位をイメージ",
+                body: "検索上位表示で持続的な自然流入を獲得",
+              },
+              {
+                num: "03",
+                label: "AIO対策",
+                href: "/services/aio",
+                img: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+                alt: "デジタル世界地図でAI検索対策・ChatGPT対応をイメージ",
+                body: "ChatGPT・Gemini等のAI検索に引用されるサイトへ",
+              },
+              {
+                num: "04",
+                label: "ホームページ制作",
+                href: "/services/web-design",
+                img: "/ChatGPT Image 2026年6月13日 20_02_56.png",
+                alt: "大型スクリーンで作業するWebデザイナー — ホームページ制作",
+                body: "集客・CVR・SEOを設計した高品質サイト制作",
+              },
+              {
+                num: "05",
+                label: "SNS運用",
+                href: "/services/sns",
+                img: "/ChatGPT Image 2026年6月13日 20_01_28.png",
+                alt: "スマートフォンで表示されるInstagramアプリ — SNS運用代行",
+                body: "Instagram・LINE等のSNS運用代行・戦略設計",
+              },
+              {
+                num: "06",
+                label: "AI活用支援",
+                href: "/services/ai",
+                img: "/ChatGPT Image 2026年6月14日 21_09_09 (5).png",
+                alt: "ラップトップ上のAIブレインビジュアライゼーション — AI活用支援",
+                body: "業務効率化・自動化・AI導入の伴走型支援",
+              },
+            ].map((svc) => (
+              <Link
+                key={svc.num}
+                href={svc.href}
+                style={{
+                  position: "relative",
+                  display: "block",
+                  height: "360px",
+                  overflow: "hidden",
+                  borderRight: "1px solid rgba(255,255,255,0.06)",
+                  borderBottom: "1px solid rgba(255,255,255,0.06)",
+                  textDecoration: "none",
+                }}
+              >
+                <Image
+                  src={svc.img}
+                  alt={svc.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: "linear-gradient(to top, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.28) 60%, rgba(13,27,42,0.12) 100%)",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    padding: "32px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      color: "rgba(255,255,255,0.35)",
+                      fontSize: "10px",
+                      letterSpacing: "0.2em",
+                      marginBottom: "10px",
+                    }}
                   >
-                    <div>
-                      <span
-                        style={{
-                          fontFamily: "var(--font-display)",
-                          color: "#9ca3af",
-                          fontSize: "12px",
-                        }}
-                      >
-                        {svc.num}
-                      </span>
-                    </div>
-                    <div>
-                      <h3
-                        style={{
-                          fontFamily: "var(--font-serif)",
-                          fontSize: "18px",
-                          fontWeight: 700,
-                          color: "#0d1b2a",
-                          marginBottom: "12px",
-                        }}
-                      >
-                        {svc.label}
-                      </h3>
-                      <p style={{ fontSize: "14px", lineHeight: "1.9", color: "#374151", marginBottom: "16px" }}>
-                        {svc.body}
-                      </p>
-                      <div className="flex flex-wrap gap-3">
-                        {svc.related.map((href, j) => (
-                          <Link key={href} href={href} className="text-[12px] hover:underline" style={{ color: "#6b7280" }}>
-                            → {svc.relatedLabels[j]}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="md:text-right">
-                      <Link
-                        href={svc.href}
-                        className="inline-flex items-center gap-1.5 text-[13px] transition-colors"
-                        style={{ color: "#374151" }}
-                      >
-                        詳しく見る
-                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                  {i === 2 && (
-                    <div style={{ position: "relative", height: "260px", overflow: "hidden", marginBottom: "0" }}>
-                      <Image
-                        src="/ChatGPT Image 2026年6月13日 19_18_57.png"
-                        alt="Webマーケティング支援の実績"
-                        fill
-                        className="object-cover"
-                        sizes="100vw"
-                      />
-                      <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.35)" }} />
-                      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
-                        <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-                          <p
-                            style={{
-                              fontFamily: "var(--font-serif)",
-                              color: "rgba(255,255,255,0.9)",
-                              fontSize: "20px",
-                              fontWeight: 500,
-                            }}
-                          >
-                            MEO・SEO・AIOを組み合わせた、包括的な集客設計
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+                    {svc.num}
+                  </p>
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-serif)",
+                      color: "#ffffff",
+                      fontSize: "clamp(18px,1.8vw,22px)",
+                      fontWeight: 700,
+                      marginBottom: "10px",
+                      lineHeight: 1.3,
+                    }}
+                  >
+                    {svc.label}
+                  </h3>
+                  <p
+                    style={{
+                      color: "rgba(255,255,255,0.65)",
+                      fontSize: "13px",
+                      lineHeight: "1.7",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {svc.body}
+                  </p>
+                  <span
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      color: "rgba(255,255,255,0.45)",
+                      fontSize: "11px",
+                      letterSpacing: "0.05em",
+                    }}
+                  >
+                    詳しく見る
+                    <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
                 </div>
-              ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
-            </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Bottom CTA row */}
+          <div style={{ padding: "48px 32px", textAlign: "center" }}>
+            <Link
+              href="/services"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "14px 32px",
+                border: "1px solid rgba(255,255,255,0.2)",
+                color: "rgba(255,255,255,0.7)",
+                fontSize: "13px",
+                letterSpacing: "0.05em",
+                fontFamily: "var(--font-display)",
+                textDecoration: "none",
+              }}
+            >
+              サービス一覧を見る
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </section>
 
