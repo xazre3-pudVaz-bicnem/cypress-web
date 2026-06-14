@@ -24,6 +24,9 @@ const COL_COMPANY: FooterSection[] = [
       { href: "/company/profile", label: "会社概要" },
       { href: "/company/history", label: "沿革" },
       { href: "/recruit", label: "採用情報" },
+      { href: "/recruit/sales", label: "正社員・営業職募集" },
+      { href: "/agent", label: "販売代理店募集" },
+      { href: "/partner/referral", label: "取次店・紹介パートナー" },
     ],
   },
   {
@@ -217,19 +220,25 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-7 gap-8 mb-14">
           {/* Column 1 — Brand */}
           <div className="col-span-2 md:col-span-1" style={{ minWidth: 0 }}>
-            <Link href="/" className="flex items-center gap-2.5 mb-5" style={{ width: "fit-content" }}>
-              <Image
-                src="/logo.png"
-                alt="株式会社サイプレス"
-                width={28}
-                height={28}
-                style={{ objectFit: "contain", width: "28px", height: "28px", filter: "brightness(0) invert(1)" }}
-              />
+            <Link href="/" className="flex items-center gap-3 mb-5" style={{ width: "fit-content", textDecoration: "none" }}>
+              <span style={{
+                display: "inline-flex", alignItems: "center", justifyContent: "center",
+                width: "36px", height: "36px", borderRadius: "8px",
+                background: "#ffffff", flexShrink: 0, overflow: "hidden",
+              }}>
+                <Image
+                  src="/logo.png"
+                  alt="Cypress"
+                  width={28}
+                  height={28}
+                  style={{ objectFit: "contain", width: "26px", height: "26px" }}
+                />
+              </span>
               <span
                 style={{
                   fontFamily: "var(--font-serif)",
-                  fontSize: "18px",
-                  fontWeight: 600,
+                  fontSize: "19px",
+                  fontWeight: 700,
                   color: "#e8e4dc",
                   letterSpacing: "0.04em",
                   lineHeight: 1,

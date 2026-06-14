@@ -116,7 +116,7 @@ export default function ServicesWebDesignPage() {
         </section>
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image src="/7.png" alt="Web制作サービス・コーポレートサイト・SEOサイト設計のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_13_52.png" alt="Web制作サービス・コーポレートサイト・SEOサイト設計のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
         </section>
 

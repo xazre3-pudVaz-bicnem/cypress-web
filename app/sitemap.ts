@@ -357,10 +357,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 採用
     ...urls([
-      "/recruit", "/recruit/marketing", "/recruit/sales",
-      "/recruit/entry", "/recruit/message", "/recruit/career",
-      "/recruit/environment", "/recruit/faq",
-      "/recruit/job-description", "/recruit/remote-work",
+      "/recruit", "/recruit/sales",
+    ], { changeFrequency: "monthly", priority: 0.7 }),
+
+    // パートナー・代理店
+    ...urls([
+      "/agent", "/partner/referral",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // その他
