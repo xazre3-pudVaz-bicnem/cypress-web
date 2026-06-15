@@ -63,20 +63,61 @@ const faqItems = [
     q: "縮毛矯正・白髪染めなど特定メニューへの集客はできますか？",
     a: "はい。「葛飾区 縮毛矯正」「亀有 白髪染め 美容室」など、特定メニュー×地域のキーワードで専用ページを作成し、SEOとGBPを最適化することで特定メニューへの問い合わせを集中的に増やすことができます。得意なメニューへの集客特化は収益性の向上にもつながります。",
   },
+  {
+    q: "ホットペッパービューティーから自社集客に移行するには何から始めますか？",
+    a: "まずGoogleビジネスプロフィール（GBP）の整備と口コミ獲得から着手します。Googleマップ経由の予約導線を自社サイトに向けることで、手数料のかからない自社集客の比率を段階的に高めていきます。LINE公式アカウントで既存顧客を直接フォローし、ホットペッパー経由でなく直接予約してもらう仕組みを作ることが離脱の鍵です。",
+  },
+  {
+    q: "GBPのカテゴリは「美容室」と「ヘアサロン」どちらを選べばいいですか？",
+    a: "Googleビジネスプロフィールのプライマリカテゴリとしては「美容室」が標準的に使用されています。「ヘアサロン」はサブカテゴリとして追加することができます。地域での検索ボリュームやターゲット客層を考慮しながら、カテゴリ設定とGBPの説明文を整合させることが上位表示への近道です。",
+  },
+  {
+    q: "男性客専門・メンズ特化のサービスはどう発信すればいいですか？",
+    a: "「葛飾区 メンズカット」「亀有 メンズサロン」などのキーワードでGBPと自社サイトを最適化します。GBPの写真にメンズスタイルの施術例を多く掲載し、男性客が検索で見つけやすい状態を作ることが重要です。Instagramでもメンズスタイルを専用ハイライトにまとめると、来店前に「ここは自分向けだ」と判断しやすくなります。",
+  },
+  {
+    q: "ヘアカラー・縮毛矯正など施術特化のSEOキーワードはどう選べばいいですか？",
+    a: "「地域名＋施術名」の組み合わせが基本です。「葛飾区 ヘアカラー」「亀有 縮毛矯正 上手い」「金町 白髪染め リタッチ」など、来店意欲が高い段階のキーワードを選定します。施術別の専用ランディングページを自社サイトに作成し、そのページのSEO対策とGBPのサービス欄の整備を同時進行で行います。",
+  },
+  {
+    q: "ヘアスタイル写真をInstagramに投稿する際の著作権・掲載ルールは？",
+    a: "お客様のお顔が写る写真を投稿する際は、必ず事前に掲載許可を口頭または書面で確認してください。撮影・掲載同意を施術前に取ることが安全です。後ろ姿・後頭部・シルエットのみの投稿であれば個人特定リスクが低いですが、念のため承諾を得ることを推奨します。使用楽曲についてもInstagramが提供する著作権フリー音源の利用が安全です。",
+  },
+  {
+    q: "美容室のGoogleマップの写真は何枚くらいが目安ですか？",
+    a: "外観・内装・施術例・スタッフ写真をあわせて最低30枚以上が目安です。競合との差別化を図るには50〜100枚を目指すことが理想です。写真の閲覧数はGBPのパフォーマンス指標に影響するため、週1〜2枚のペースで継続追加することが順位維持にも有効です。",
+  },
+  {
+    q: "予約システムはどれを使えばいいですか？",
+    a: "自社集客を強化したい場合は、自社サイトに直接予約フォームを設置するか、手数料の低いBOOK×BOOK・Airリザーブなどの予約ツールを組み合わせることを推奨します。ホットペッパーと並行して運用しながら、段階的に自社予約の比率を高めていく移行プランを設計することが現実的です。",
+  },
+  {
+    q: "美容室の口コミ返信はどう書けばいいですか？",
+    a: "高評価口コミへの返信は感謝と次回来店への期待を盛り込み、できれば担当したスタイリスト名や施術内容に触れた個別の返信を心がけます。低評価口コミへの返信は謝罪と改善の姿勢を示しつつ、直接連絡先を案内して非公開でのフォローを促します。全件返信することで、閲覧者に「誠実なサロン」という印象を与えられます。",
+  },
 ];
 
 const relatedLinks = [
+  { href: "/meo/beauty-salon-meo", label: "美容室のMEO対策", desc: "美容室専門のGoogleマップ対策" },
   { href: "/sns/instagram", label: "Instagram運用代行", desc: "美容室向けInstagram戦略" },
-  { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
+  { href: "/sns/photo-direction", label: "写真ディレクション", desc: "サロン向け撮影・写真戦略" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金プラン" },
-  { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },
-  { href: "/industries/beauty", label: "エステ・ネイル・まつエクの集客", desc: "美容サロン全般の集客支援" },
+  { href: "/services/sns", label: "SNS運用サービス", desc: "SNS運用代行の詳細" },
+  { href: "/web-design/corporate-site", label: "ホームページ制作", desc: "美容室向けサイト制作" },
+  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリア対応" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
-  { href: "/sns/photo-direction", label: "写真ディレクション", desc: "サロン向け撮影・写真戦略" },
-  { href: "/web-design", label: "ホームページ制作", desc: "美容室向けサイト制作" },
-  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
+  { href: "/industries/nail-salon", label: "ネイルサロンのWeb集客", desc: "ネイル専門の集客支援" },
+  { href: "/industries/beauty", label: "エステ・ネイル・まつエクの集客", desc: "美容サロン全般の集客支援" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
+  { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
+  { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },
+  { href: "/web-design", label: "Web制作サービス一覧", desc: "サービスメニュー全体" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
+  { href: "/industries/restaurant", label: "飲食店のWeb集客", desc: "飲食店専門の集客支援" },
+  { href: "/sns/local-sns", label: "地域密着SNS運用", desc: "エリアターゲットのSNS戦略" },
+  { href: "/area/adachi", label: "足立区の集客支援", desc: "足立区エリア対応" },
+  { href: "/contact", label: "無料相談はこちら", desc: "美容室のWeb集客を相談する" },
 ];
 
 export default function HairSalonIndustryPage() {
@@ -242,29 +283,6 @@ export default function HairSalonIndustryPage() {
           </div>
         </section>
 
-        {/* サイプレスができること */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
-          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
-              美容室・ヘアサロン向けにサイプレスができること
-            </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
-              {[
-                { t: "Instagram毎日投稿＋リール活用代行", b: "スタイル写真のキャプション作成・ハッシュタグ設計・リール動画の構成提案・投稿スケジュール管理まで一括代行。エンゲージメントを高め、フォロワーを来店顧客に変える運用を行います。" },
-                { t: "MEO（地域×美容室キーワード）対策", b: "「葛飾区 美容室」「亀有 ヘアサロン」など地域+業態キーワードのGoogleマップ上位表示を目指して、GBP最適化・写真充実・口コミ獲得を継続実施します。" },
-                { t: "ホットペッパー依存脱却の自社集客設計", b: "自社予約サイト・LINE予約・GBP予約を整備し、ホットペッパーからの顧客を段階的に自社集客に移行する設計を行います。手数料コストの削減と顧客の自社資産化を実現します。" },
-                { t: "スタイリスト別Instagram・指名予約増加設計", b: "各スタイリストのInstagramアカウント設計・店舗アカウントとの連動設計で指名予約を増加させます。スタイリストの個性と得意メニューを活かした投稿計画を作成します。" },
-              ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Webサイトの作り方 */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
@@ -282,6 +300,199 @@ export default function HairSalonIndustryPage() {
               <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
                 メニュー・料金ページは「金額への不安解消」として機能します。「初回限定割引」「学生割引」「頭皮ケア込みのトリートメントコース」など、メニューの詳細と料金目安を明記することで来店ハードルを下げます。予約ボタンは全ページのヘッダー固定で表示し、「行きたい」と思った瞬間に予約できる導線設計にします。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 集客フロー・実装ステップ */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+              美容室の集客フロー・実装ステップ
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                {
+                  n: "01",
+                  t: "Googleビジネスプロフィール（GBP）の完全整備",
+                  b: "店舗名・住所・電話番号・営業時間・カテゴリの正確な入力から始めます。サービス欄に施術メニューと価格帯を記入し、GBPの「説明文」にサロンの特徴・得意メニューを400文字以内で記述することが第一歩です。",
+                },
+                {
+                  n: "02",
+                  t: "GBP写真の充実（外観・内装・スタイル・スタッフ）",
+                  b: "外観・内装・スタイル完成写真・スタッフ写真を最低30枚揃え、週1〜2枚のペースで継続追加します。写真の閲覧数がGoogleマップの表示順位に影響するため、質の高い写真を定期的に追加することが継続的な順位維持の鍵です。",
+                },
+                {
+                  n: "03",
+                  t: "口コミ獲得フローの仕組み化",
+                  b: "施術後にQRコードカードを手渡すか、LINEで口コミリンクを送るフローを整備します。口コミへの丁寧な返信（全件）を習慣化することで、閲覧者への信頼構築と次の口コミ投稿率の向上を同時に実現します。",
+                },
+                {
+                  n: "04",
+                  t: "GBP投稿の週2回継続運用",
+                  b: "施術メニュー・季節トレンド・スタッフのおすすめ・キャンペーン情報をGBP投稿で発信します。投稿がアクティブなGBPはGoogleに「営業中の積極的な店舗」と認識されやすく、マップ上での視認性向上につながります。",
+                },
+                {
+                  n: "05",
+                  t: "Instagramアカウントのプロフィール最適化",
+                  b: "プロフィール文にサロン名・エリア・得意メニュー・予約リンクを明記します。ハイライト機能を使って「メニュー」「スタイリスト紹介」「ビフォーアフター」「アクセス」を整理し、初訪問のユーザーが必要な情報を即座に見つけられる設計にします。",
+                },
+                {
+                  n: "06",
+                  t: "週2〜3回のInstagram投稿とリール動画の制作",
+                  b: "スタイル完成写真・ビフォーアフターリール・スタイリングプロセス動画を組み合わせて定期投稿します。リール動画は通常投稿の数倍のリーチを獲得しやすく、フォロワー外への認知拡大に最も効果的なコンテンツです。",
+                },
+                {
+                  n: "07",
+                  t: "自社ホームページの制作とSEO設計",
+                  b: "施術メニュー別ページ・スタイリスト紹介ページ・アクセスページを軸に自社サイトを構築します。「葛飾区 縮毛矯正」「亀有 ヘアカラー」などのローカルキーワードをページタイトル・見出し・本文に組み込み、検索流入を獲得する設計にします。",
+                },
+                {
+                  n: "08",
+                  t: "LINE公式アカウントの開設と来店後フォロー設計",
+                  b: "来店後にLINE登録を促し、次回予約リマインド・クーポン配信・新メニュー告知を行います。LINEを予約受付窓口にすることで電話対応の負担を減らしながら、顧客との継続的なコミュニケーションを維持します。",
+                },
+                {
+                  n: "09",
+                  t: "自社予約導線の整備とホットペッパー依存の段階的解消",
+                  b: "自社サイトへの予約ボタン設置・GBPへの自社予約リンク追加・LINEでの直接予約受付を整えます。既存顧客にLINEや自社予約を案内することで、手数料が発生するホットペッパー経由の予約比率を徐々に引き下げていきます。",
+                },
+                {
+                  n: "10",
+                  t: "データ分析と施策の改善サイクル",
+                  b: "GBPのインサイト（検索数・写真閲覧数・電話タップ数）とInstagramのリーチ・エンゲージメントを月次で確認します。反応の高いコンテンツの傾向を分析し、次月の投稿計画と施策優先度に反映させる改善サイクルを回すことで、集客精度が継続的に向上します。",
+                },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px", flexShrink: 0, fontWeight: 700 }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 成果を測るKPI */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>KPI Metrics</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+              成果を測るKPI
+            </h2>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "40px" }}>
+              美容室のWeb集客では、感覚ではなくデータで成果を判断することが改善を加速させます。以下の指標を定期的にモニタリングし、施策の優先度を調整します。
+            </p>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                {
+                  kpi: "Googleマップの検索表示回数",
+                  where: "GBPインサイト",
+                  desc: "月ごとの検索表示回数の推移を確認し、MEO施策（写真追加・投稿・口コミ数）との相関を把握します。",
+                },
+                {
+                  kpi: "GBPの電話タップ数・ルート検索数",
+                  where: "GBPインサイト",
+                  desc: "来店に直結する行動データであり、表示回数が多くてもこの数値が低い場合はGBPの写真や情報内容に改善の余地があります。",
+                },
+                {
+                  kpi: "Googleマップの口コミ件数・平均評価",
+                  where: "GBPダッシュボード",
+                  desc: "口コミ件数と平均評価はMEO順位に直接影響し、来店前の信頼判断材料にもなるため、継続的な増加が最重要指標のひとつです。",
+                },
+                {
+                  kpi: "Instagramのリーチ数・フォロワー数の推移",
+                  where: "Instagramインサイト",
+                  desc: "特にリール動画のリーチ数を確認し、フォロワー外へどれだけ認知が拡がっているかを把握することが新規集客力の指標になります。",
+                },
+                {
+                  kpi: "自社サイトへのオーガニック流入数",
+                  where: "Google Search Console",
+                  desc: "「地域名＋美容室」「地域名＋施術名」などのキーワードからの自然検索流入数を計測し、SEOコンテンツの効果を評価します。",
+                },
+                {
+                  kpi: "自社予約・直接予約の比率",
+                  where: "予約システム管理画面",
+                  desc: "全予約数に占める自社予約（ホットペッパー以外）の比率を追跡し、ポータル依存脱却の進捗を定量的に管理します。",
+                },
+                {
+                  kpi: "LINE公式アカウントの友達登録数・メッセージ開封率",
+                  where: "LINE公式アカウント管理画面",
+                  desc: "登録者数の増加とメッセージ開封率はリピーター育成の健全性を示し、クーポン配信や次回予約リマインドの効果測定に使います。",
+                },
+              ].map((item) => (
+                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                  <div style={{ minWidth: "4px", width: "4px", height: "100%", background: "#c4b89a", flexShrink: 0, marginTop: "4px" }} />
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px", flexWrap: "wrap" }}>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", margin: 0 }}>{item.kpi}</p>
+                      <span style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em", background: "rgba(196,184,154,0.12)", padding: "2px 10px", borderRadius: "20px" }}>計測場所：{item.where}</span>
+                    </div>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", margin: 0 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスに依頼するメリット */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
+              サイプレスに依頼するメリット
+            </h2>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+              {[
+                {
+                  t: "MEO・SNS・Web制作をワンストップで対応",
+                  b: "Googleマップ対策・Instagram運用・ホームページ制作を別々の会社に依頼すると、施策間の連携が取れず効果が分散します。サイプレスはすべてを一括で担当するため、GBP・SNS・自社サイトが連動した統合集客設計を実現します。",
+                },
+                {
+                  t: "美容室専門の知見とコンテンツ設計力",
+                  b: "ヘアスタイル写真の撮影ディレクション・施術メニュー別キーワード設計・スタイリスト別アカウント運用など、美容室特有の集客課題に対応した専門知識でご支援します。一般的なWeb制作会社では対応しにくい業種特化の提案が可能です。",
+                },
+                {
+                  t: "ホットペッパー依存脱却のロードマップ設計",
+                  b: "ポータルサイト依存からの脱却は一朝一夕には実現しません。自社集客比率の段階的な引き上げ計画を6〜12ヶ月スパンで設計し、売上を落とさずに移行するロードマップを作成します。既存予約との兼ね合いを考慮した現実的なプランが強みです。",
+                },
+                {
+                  t: "地元密着エリア（葛飾区・東京東部）への深い理解",
+                  b: "葛飾区白鳥を拠点とするサイプレスは、亀有・金町・新小岩・柴又など葛飾区の地域特性と競合状況を熟知しています。地元ならではのキーワード選定・競合分析・エリア別集客戦略の提案が可能です。",
+                },
+              ].map((item) => (
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスができること */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+              美容室・ヘアサロン向けにサイプレスができること
+            </h2>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+              {[
+                { t: "Instagram毎日投稿＋リール活用代行", b: "スタイル写真のキャプション作成・ハッシュタグ設計・リール動画の構成提案・投稿スケジュール管理まで一括代行。エンゲージメントを高め、フォロワーを来店顧客に変える運用を行います。" },
+                { t: "MEO（地域×美容室キーワード）対策", b: "「葛飾区 美容室」「亀有 ヘアサロン」など地域+業態キーワードのGoogleマップ上位表示を目指して、GBP最適化・写真充実・口コミ獲得を継続実施します。" },
+                { t: "ホットペッパー依存脱却の自社集客設計", b: "自社予約サイト・LINE予約・GBP予約を整備し、ホットペッパーからの顧客を段階的に自社集客に移行する設計を行います。手数料コストの削減と顧客の自社資産化を実現します。" },
+                { t: "スタイリスト別Instagram・指名予約増加設計", b: "各スタイリストのInstagramアカウント設計・店舗アカウントとの連動設計で指名予約を増加させます。スタイリストの個性と得意メニューを活かした投稿計画を作成します。" },
+              ].map((item) => (
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#ffffff" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

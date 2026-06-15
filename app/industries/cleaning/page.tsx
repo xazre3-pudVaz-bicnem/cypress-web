@@ -72,21 +72,60 @@ const faqItems = [
     q: "清掃業のビフォーアフター写真はSEOに効果がありますか？",
     a: "はい。施工前後の写真はユーザーの信頼獲得に直結するだけでなく、Google画像検索からの流入増加、GBPの評価向上にも貢献します。キッチン・浴室・エアコン・窓ガラスなど箇所別の事例をできるだけ多く掲載することを推奨します。画像のalt属性に「エアコンクリーニング ビフォーアフター ○○区」などのキーワードを含めるとSEO効果が高まります。",
   },
+  {
+    q: "引越し需要に対応したSEO季節戦略を教えてください。",
+    a: "引越しシーズン（2〜4月・9〜10月）の1〜2か月前から「引越し前 ハウスクリーニング ○○区」「退去前 清掃 費用」などのキーワードを中心にコンテンツを強化します。賃貸退去・入居前クリーニングはまとまった金額の受注になりやすく、年2回の需要ピークを逃さない事前準備が売上に直結します。",
+  },
+  {
+    q: "「エアコンクリーニング」など単品サービスのキーワード戦略は？",
+    a: "エアコンクリーニング・浴室クリーニング・キッチンクリーニングなど単品サービスごとに専用ページを作成し、それぞれのページで「○○区 エアコンクリーニング 費用」「エアコン 内部洗浄 料金」などのキーワードを狙います。単品ページは検索意図が明確なユーザーのCV率が高く、MEOのサービス欄にも個別登録することで相乗効果が得られます。",
+  },
+  {
+    q: "価格競争を避けた集客戦略はありますか？",
+    a: "「安さ」で勝負せず、使用洗剤の安全性・作業保証・スタッフの研修制度・対応の丁寧さを前面に打ち出すことが有効です。ホームページに「なぜ当社を選ぶのか」を具体的に説明するセクションを設け、口コミ・実績で価値を証明します。「安い業者」ではなく「信頼できる業者」というポジショニングが単価と定期率を同時に高めます。",
+  },
+  {
+    q: "清掃業のGoogleビジネスプロフィール写真はどう撮ればいいですか？",
+    a: "作業前後の比較写真・スタッフが丁寧に作業している写真・使用する洗剤・機材・道具が揃った写真・ユニフォームを着たスタッフ集合写真が効果的です。スマートフォンで撮影する場合は明るい場所・整理された背景で撮ることが重要で、月2〜4枚のペースで新しい写真を追加し続けることがGBPの評価維持につながります。",
+  },
+  {
+    q: "定期契約につなげるデジタル導線はどう設計しますか？",
+    a: "LINE公式アカウントへの誘導をサービス完了時に設けることが最初のステップです。登録後は「3か月後のエアコンフィルター点検のご案内」「年末に向けた大掃除プランのご紹介」など、サービス完了日を起点にしたステップ配信を設定します。定期プランの料金・メリットを分かりやすく提示したLPへのリンクを配信に含めることで、定期契約への転換率が高まります。",
+  },
+  {
+    q: "清掃業のSNS（Instagram・TikTok）活用は効果がありますか？",
+    a: "ビフォーアフター動画・清掃のコツを紹介するショート動画は視聴完了率が高くバズりやすいコンテンツです。特にTikTokやInstagramリールでの「エアコン内部の汚れを取る瞬間」のような動画は拡散性があり、認知拡大・フォロワー増加・指名検索の増加につながります。ただしSNSから直接受注につながるまでには時間がかかるため、MEO・ホームページと並行して運用します。",
+  },
+  {
+    q: "女性オーナーや女性スタッフがいる場合、どうアピールすればいいですか？",
+    a: "「女性スタッフ在籍」「女性への清掃訪問が安心」という安心感はホームページのファーストビューとGBPプロフィールに明記します。一人暮らしの女性・小さな子供がいる家庭への訴求力が高く、「女性スタッフ ハウスクリーニング ○○区」のキーワードで差別化した集客が可能です。スタッフ紹介ページに顔写真と一言コメントを載せることで親しみやすさも演出できます。",
+  },
+  {
+    q: "清掃業のWeb集客にかかる費用の目安を教えてください。",
+    a: "ホームページ制作・MEO対策・SEOコンテンツ整備を組み合わせた初期費用と月次運用費用の構成が一般的です。具体的な費用はサイト規模・対応エリア・競合状況によって異なります。まずは無料相談でお客様の状況を確認したうえで、最適なプランをご提案します。",
+  },
 ];
 
 const relatedLinks = [
+  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
+  { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "清掃業向けサイト制作" },
   { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "高CV率LPの制作" },
+  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
   { href: "/services/line", label: "LINE公式アカウント活用", desc: "リピーター育成の仕組み化" },
+  { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
+  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/industries/plumbing", label: "水道・設備工事業のWeb集客", desc: "設備系業者の集客" },
   { href: "/industries/renovation", label: "リフォーム会社のWeb集客", desc: "リフォーム業の集客支援" },
   { href: "/industries/construction", label: "建設・工務店のWeb集客", desc: "建設業の集客支援" },
-  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
-  { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
+  { href: "/knowledge/local-seo-basics", label: "ローカルSEOの基礎知識", desc: "地域SEOの基本を学ぶ" },
   { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
-  { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
+  { href: "/knowledge/gbp-photo-guide", label: "GBP写真の撮り方ガイド", desc: "Googleビジネスプロフィール写真の最適化" },
+  { href: "/seo/content-seo", label: "コンテンツSEO対策", desc: "コンテンツで検索上位を目指す" },
+  { href: "/cost/seo", label: "SEO対策の料金", desc: "SEO対策の費用相場" },
+  { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/contact", label: "無料相談", desc: "清掃業のWeb集客相談" },
 ];
 
@@ -299,11 +338,181 @@ export default function CleaningIndustryPage() {
           </div>
         </section>
 
-        {/* サイプレスができること */}
+        {/* 集客フロー・実装ステップ */}
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+              清掃業の集客フロー・実装ステップ
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                {
+                  n: "01",
+                  t: "現状調査・競合分析",
+                  b: "対象エリアの競合清掃業者のGBP・ホームページ・口コミ状況を調査します。狙うべきキーワードと現在の自社の表示順位を把握し、優先対応すべき施策を整理します。",
+                },
+                {
+                  n: "02",
+                  t: "Googleビジネスプロフィールの完全整備",
+                  b: "カテゴリ設定・サービス一覧・料金目安・対応エリア・営業時間・写真（施工前後・スタッフ・機材）を全項目入力します。GBPが充実していない状態では競合との差が広がる一方です。",
+                },
+                {
+                  n: "03",
+                  t: "口コミ獲得フローの設計・運用開始",
+                  b: "サービス完了後のお礼メッセージとセットにGoogleマップ口コミURLのQRコード・LINEショートリンクを渡す仕組みを整備します。毎月継続することで口コミ件数が積み上がり、MEO順位の向上につながります。",
+                },
+                {
+                  n: "04",
+                  t: "ホームページ・LPの集客設計と制作",
+                  b: "料金表・ビフォーアフター写真・対応エリア・お客様の声・問い合わせフォームを最適配置した集客型サイトを制作します。エアコンクリーニング専用LP・引越しクリーニング専用LPなど、サービス別ページを設計します。",
+                },
+                {
+                  n: "05",
+                  t: "サービス別SEOキーワード設計",
+                  b: "「葛飾区 エアコンクリーニング」「亀有 浴室クリーニング 料金」など、サービス×地域×検索意図のキーワードマップを作成します。優先度と検索ボリュームに基づいてコンテンツ制作の順序を決定します。",
+                },
+                {
+                  n: "06",
+                  t: "季節SEOコンテンツの事前準備",
+                  b: "エアコンシーズン（3〜5月）・年末大掃除（10〜12月）・引越しシーズン（2〜4月）の2〜3か月前からコンテンツを公開します。検索順位が上がるまでのリードタイムを逆算した計画的な準備が受注増の鍵です。",
+                },
+                {
+                  n: "07",
+                  t: "LINE公式アカウントの構築と自動配信設定",
+                  b: "友だち追加のQRコードをサービス完了後に渡す動線を整備します。サービス完了日から3か月・6か月後の自動リマインド配信・季節キャンペーン一斉配信を設定し、定期契約への転換を促します。",
+                },
+                {
+                  n: "08",
+                  t: "GBP定期投稿・写真追加の継続運用",
+                  b: "週2回のGBP投稿（施工事例・キャンペーン・季節情報）と月4〜8枚の写真追加を継続します。更新頻度の高いGBPはGoogleから「活発な事業者」として評価され、MEO順位の維持・向上に貢献します。",
+                },
+                {
+                  n: "09",
+                  t: "Schema.org構造化データの実装",
+                  b: "LocalBusiness・Service・FAQPage Schemaを実装し、検索結果でのリッチスニペット表示を促進します。営業時間・評価・サービス内容が検索結果に直接表示されることでクリック率が向上します。",
+                },
+                {
+                  n: "10",
+                  t: "効果測定・改善サイクルの確立",
+                  b: "Googleアナリティクス・Search Console・GBPインサイトを月次で確認し、流入数・問い合わせ数・口コミ件数の推移を追います。データに基づいて投資対効果の高い施策に集中し、継続改善を行います。",
+                },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 成果を測るKPI */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>KPI</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "16px" }}>
+              成果を測るKPI
+            </h2>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "40px" }}>
+              清掃業のWeb集客では、施策ごとに適切な指標を設定して効果を継続的に計測します。数値で状況を把握することで、投資対効果の高い施策への集中と改善サイクルが確立できます。
+            </p>
+            <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column" }}>
+              {[
+                {
+                  kpi: "GBP検索表示回数",
+                  where: "GBPインサイト",
+                  desc: "「○○区 ハウスクリーニング」など地域キーワードで自社GBPが表示された回数を計測し、MEO施策の効果を確認します。",
+                },
+                {
+                  kpi: "GBPからの問い合わせ件数（電話・ウェブサイトクリック）",
+                  where: "GBPインサイト",
+                  desc: "Googleマップ上の電話タップ数とウェブサイトへのクリック数を追うことで、MEO対策が直接の集客につながっているかを把握します。",
+                },
+                {
+                  kpi: "Googleマップの口コミ件数・評点",
+                  where: "GBPインサイト・Googleマップ",
+                  desc: "月間の新規口コミ件数と総合評点の推移を管理し、口コミ獲得フローの効果と信頼性指標として継続的に改善します。",
+                },
+                {
+                  kpi: "ホームページからの問い合わせ・フォーム送信数",
+                  where: "Googleアナリティクス（コンバージョン）",
+                  desc: "サービス別LPや料金ページからの問い合わせフォーム送信数を計測し、ページ別のCV率を把握してコンテンツ改善に活かします。",
+                },
+                {
+                  kpi: "オーガニック検索流入数",
+                  where: "Google Search Console",
+                  desc: "SEOコンテンツからの自然検索流入を月次でモニタリングし、季節キーワードのコンテンツが需要期前に順位を上げているかを確認します。",
+                },
+                {
+                  kpi: "LINEの友だち追加数・ブロック率",
+                  where: "LINE公式アカウント管理画面",
+                  desc: "月間の友だち追加数とブロック率の推移を追い、定期配信の内容・頻度を最適化して定期契約への転換率を高めます。",
+                },
+                {
+                  kpi: "定期契約転換率",
+                  where: "自社管理台帳・CRM",
+                  desc: "単発利用から定期契約に移行した顧客の割合を記録し、LINEリマインド・定期プラン提案の効果を測定してリピート戦略を改善します。",
+                },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                  <div style={{ flexShrink: 0, minWidth: "8px", marginTop: "8px" }}>
+                    <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#c4b89a" }} />
+                  </div>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", letterSpacing: "0.1em", color: "#c4b89a", marginBottom: "8px" }}>計測場所：{item.where}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
+              サイプレスに依頼するメリット
+            </h2>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+              {[
+                {
+                  t: "清掃業の集客課題を深く理解した設計",
+                  b: "季節波動・単発リピート問題・価格競争・料金透明化など、ハウスクリーニング業特有の集客課題を熟知しています。業種の特性に合わせた施策の優先順位と設計で、無駄のない集客改善を実現します。",
+                },
+                {
+                  t: "MEO・SEO・LP・LINEを一貫して設計",
+                  b: "Googleマップ対策・ホームページ・SEOコンテンツ・LINE公式アカウントをバラバラに依頼すると一貫性が失われます。サイプレスはすべての施策を統合した集客設計で、ユーザーが検索から問い合わせ・定期契約まで迷わず進める導線を構築します。",
+                },
+                {
+                  t: "東京・葛飾区エリアの地域SEOに強い",
+                  b: "葛飾区・足立区・江戸川区・墨田区など東京東部エリアの地域キーワード特性・競合状況を把握しています。「亀有 エアコンクリーニング」「金町 ハウスクリーニング」など地域密着キーワードでの上位表示に向けた施策を設計します。",
+                },
+                {
+                  t: "継続的な改善と定量的な成果報告",
+                  b: "施策を実施して終わりではなく、GBPインサイト・Search Console・アナリティクスのデータを月次でレポートし、継続的な改善を行います。数値に基づいた運用改善で、集客コストを下げながら問い合わせ数を積み上げます。",
+                },
+              ].map((item) => (
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスができること */}
+        <section style={{ background: "#ffffff", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
               清掃業向けにサイプレスができること
             </h2>
             <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
@@ -313,9 +522,9 @@ export default function CleaningIndustryPage() {
                 { t: "季節SEO・コンテンツ対策", b: "「エアコン掃除 時期 ○○区」「引越し後 ハウスクリーニング 費用」などの需要期キーワードを狙ったSEOコンテンツを計画的に整備します。繁忙期前からの自然検索流入獲得を目指します。" },
                 { t: "LINE公式アカウント活用支援", b: "定期クリーニングのリマインダー配信・季節キャンペーン告知・口コミ獲得メッセージの自動送信を設計します。単発利用から定期契約へ転換するデジタル導線を構築します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>

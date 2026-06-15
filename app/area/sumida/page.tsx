@@ -51,6 +51,46 @@ const faqItems = [
     q: "SNS（Instagram）と組み合わせた集客は可能ですか？",
     a: "はい。押上・錦糸町・向島など墨田区はInstagramでの拡散効果が高いエリアです。おしゃれカフェ・スイーツ・伝統工芸など視覚的に魅力的なコンテンツのSNS運用をMEO・SEOと組み合わせて提案します。",
   },
+  {
+    q: "錦糸町と押上では集客のアプローチは異なりますか？",
+    a: "はい、明確に異なります。錦糸町は地元住民・ビジネスパーソンの日常利用が中心のため、「地元の常連客づくり」視点のMEO・SEOが有効です。押上はスカイツリー観光客が多く、インバウンド対応・多言語GBP・観光客向けコンテンツが集客に直結します。両エリアで戦略を使い分けた設計を行います。",
+  },
+  {
+    q: "スカイツリー観光客を自店舗に誘導することはできますか？",
+    a: "はい。押上・錦糸町エリアでスカイツリー観光客を取り込むには、Googleマップでの「スカイツリー付近 〇〇」検索への対応が重要です。GBPへの多言語写真・サービス説明追加、観光客が検索するキーワードでの上位表示、口コミの英語・中国語・韓国語での返信対応を組み合わせた戦略を提供します。",
+  },
+  {
+    q: "墨田区のMEO競合が少ないエリアはどこですか？",
+    a: "向島・曳舟・東向島・東曳舟エリアは飲食・美容・整体などの業種でMEO競合が比較的少ない穴場エリアです。Googleビジネスプロフィールの基本最適化と継続的な投稿・口コミ対応だけでも、短期間での上位表示が期待できます。エリアと業種の組み合わせで詳細な競合分析を行います。",
+  },
+  {
+    q: "伝統工芸・職人技術のビジネスでもWeb集客は効果がありますか？",
+    a: "はい、非常に効果的です。革細工・染色・和菓子・刃物など墨田区の職人技術系ビジネスはWebでの発信が遅れているケースが多く、正しく施策を打つことで全国・世界のファンへのリーチが可能です。世界観を伝えるブランドサイト＋Instagram＋SEOの組み合わせが特に有効です。",
+  },
+  {
+    q: "ホームページ制作と同時にMEO・SEOを依頼することはできますか？",
+    a: "はい、一括依頼が可能です。サイプレスではホームページ制作と同時にMEO・SEO対策を設計し、サイト公開時点からSEO・MEOが機能する状態でリリースします。制作後に別途SEO対応をするよりも効率的で費用対効果が高まります。",
+  },
+  {
+    q: "両国エリアでの相撲・観光業への集客は可能ですか？",
+    a: "はい。両国は国技館・相撲博物館・ちゃんこ鍋の聖地として観光需要があります。相撲ファン向けのコンテンツSEO・MEO最適化・インバウンド対応で、観光客を確実に集客する戦略を提供します。両国エリアのMEO競合は中程度で施策の効果が出やすいエリアです。",
+  },
+  {
+    q: "AIO対策（AI検索対策）にも対応していますか？",
+    a: "はい。ChatGPT・Gemini・Perplexityなどから「墨田区の〇〇」として引用されるためのE-E-A-T強化・構造化データ実装・FAQコンテンツ設計・著者情報整備を行います。下町情緒・伝統文化・観光といった墨田区の強みを活かした専門性の高いコンテンツ設計でAI検索での存在感を高めます。",
+  },
+  {
+    q: "墨田区のホームページ制作にかかる費用・期間はどのくらいですか？",
+    a: "ホームページ制作は内容・ページ数により異なりますが、中小企業・店舗向けの標準的なコーポレートサイトで数十万円台からご相談しています。制作期間は1〜2か月が目安です。MEO・SEO施策は月額制の継続サポートプランもご用意しています。まずは無料相談でご状況をお聞きし、最適なプランをご提案します。",
+  },
+  {
+    q: "他社でSEO対策を行っていましたが、成果が出ていません。改善できますか？",
+    a: "はい、既存施策の引き継ぎ・見直しにも対応しています。まず現状のGBP・ウェブサイト・施策内容を無料診断し、課題を明確にしたうえで改善プランをご提案します。他社からの乗り換えも歓迎です。",
+  },
+  {
+    q: "墨田区で美容室・ネイルサロンのMEO対策は効果がありますか？",
+    a: "はい。錦糸町・押上エリアは美容室の競合が多いですが、向島・曳舟・東向島エリアは競合が少なく効果が出やすい環境です。GBPの写真クオリティ・口コミ数・サービス情報の充実度で差別化できます。施術メニューの写真追加・口コミ獲得フロー・定期投稿を組み合わせた戦略を提供します。",
+  },
 ];
 
 const relatedLinks = [
@@ -60,13 +100,20 @@ const relatedLinks = [
   { href: "/area/edogawa", label: "江戸川区", desc: "江戸川区の集客支援" },
   { href: "/area/tokyo", label: "東京都", desc: "東京都全域の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
-  { href: "/services/web-design", label: "Web制作サービス", desc: "サービス詳細" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "SEOサービス詳細" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "ホームページ制作詳細" },
   { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
-  { href: "/knowledge/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
+  { href: "/industries/hair-salon", label: "美容室・サロンの集客", desc: "美容業向け支援" },
+  { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
+  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金・費用の目安" },
+  { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "企業サイト制作事例" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
+  { href: "/aio", label: "AIO対策とは", desc: "AI検索対策の基礎" },
+  { href: "/knowledge/local-seo", label: "ローカルSEO解説", desc: "地域SEOの詳細解説" },
+  { href: "/area/koto", label: "江東区", desc: "江東区の集客支援" },
   { href: "/company", label: "会社情報", desc: "サイプレス会社概要" },
+  { href: "/contact", label: "無料相談", desc: "お問い合わせ・相談" },
 ];
 
 export default function Page() {
@@ -270,19 +317,165 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Section 6: 依頼するメリット（ダーク背景） */}
+        {/* Section A: 業種別の集客ポイント */}
+        <section style={{ background: "#ffffff", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>By Industry</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              業種別の集客ポイント（墨田区）
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              墨田区は観光・下町文化・住宅が混在するエリアです。業種ごとに異なる集客ポイントと効果的な施策を解説します。
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+              {[
+                {
+                  industry: "飲食店・カフェ・居酒屋",
+                  point: "エリアによって攻め方が異なる",
+                  note: "錦糸町・押上は「観光客×地元客」の二重集客が有効。向島・曳舟は地元常連を掘り起こすローカルMEOが中心。Googleマップの写真クオリティと口コミ数が集客に直結します。ランチ・ディナー・テイクアウトなどシーン別のGBP投稿も効果的です。",
+                },
+                {
+                  industry: "美容室・ネイル・エステ",
+                  point: "エリア絞りで競合を回避",
+                  note: "錦糸町は美容室の競合が多いため、「錦糸町 縮毛矯正」「錦糸町 ヘアカラー専門」など特化キーワードでの差別化が有効です。向島・曳舟エリアは競合が少なくMEOで上位を狙いやすい環境です。施術写真・スタッフ写真のGBP追加が来店率を高めます。",
+                },
+                {
+                  industry: "整骨院・整体・治療院",
+                  point: "地域住民の日常需要をMEOで取り込む",
+                  note: "「錦糸町 整骨院」「曳舟 整体」など地域名+業種キーワードでのGoogleマップ上位表示が最重要です。予約フォームとGBPを連動させた来院フローの整備、口コミ獲得施策の継続で着実に集客基盤を構築できます。",
+                },
+                {
+                  industry: "伝統工芸・職人技術・クラフト",
+                  point: "世界観ブランディング×SNSで全国発信",
+                  note: "革細工・染色・和菓子・刃物など墨田区の職人系ビジネスは、ブランドサイト制作とInstagram運用の組み合わせが最も効果的です。「墨田区 革工房」などのニッチSEOで全国・海外のコアファンへのリーチが期待できます。",
+                },
+                {
+                  industry: "観光・体験・宿泊施設",
+                  point: "インバウンド対応が差別化の鍵",
+                  note: "スカイツリー周辺・両国エリアの観光・体験ビジネスは、英語・中国語・韓国語のGBP対応が外国人観光客集客に直結します。Googleマップでの評価管理・外国語クチコミへの返信・多言語LP制作を組み合わせた施策が効果的です。",
+                },
+                {
+                  industry: "クリニック・歯科・医療",
+                  point: "地域住民への信頼構築が最優先",
+                  note: "「錦糸町 歯科」「墨田区 クリニック」など地域名+診療科目のMEO・SEOが集患に直結します。医療広告ガイドラインに沿った正確なGBP設定・専門性を伝えるコンテンツSEOで、地域住民からの信頼を獲得する施策を設計します。",
+                },
+                {
+                  industry: "士業・コンサルタント・税理士",
+                  point: "専門性SEOとE-E-A-T強化",
+                  note: "「墨田区 税理士」「錦糸町 社労士」などのローカルキーワード＋専門性の高いコンテンツSEOで、Googleとユーザー双方からの信頼を構築します。AIO対策（AI検索での引用）も士業にとって重要な新しい集客チャネルです。",
+                },
+                {
+                  industry: "不動産・リノベーション",
+                  point: "エリア特化コンテンツで検索需要を取る",
+                  note: "「墨田区 賃貸」「錦糸町 不動産」「向島 リノベーション」など地域特化キーワードのSEOと、エリア情報・物件紹介コンテンツの充実が集客の核になります。下町エリアへの移住需要・リノベーション需要を掘り起こすコンテンツ設計が有効です。",
+                },
+              ].map((item) => (
+                <div key={item.industry} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "#c4b89a", textTransform: "uppercase", marginBottom: "8px" }}>{item.point}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>{item.industry}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section B: 実装フロー */}
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Implementation Flow</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              墨田区の地域ビジネス 集客施策の実装フロー
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "56px" }}>
+              サイプレスが墨田区のお客様に提供する集客支援は、ヒアリングから継続改善まで8つのステップで進行します。
+            </p>
+            <div style={{ maxWidth: "800px" }}>
+              {[
+                {
+                  step: "01",
+                  title: "無料ヒアリング・現状診断",
+                  desc: "業種・エリア・ターゲット・現在の集客状況をヒアリングします。GBP・ウェブサイト・競合の現状を無料で診断し、改善すべき優先順位を明確化します。",
+                },
+                {
+                  step: "02",
+                  title: "競合分析・キーワード調査",
+                  desc: "墨田区内の競合事業者のGBP・SEO状況を分析します。錦糸町・押上・両国・向島など各エリアの競合レベルと上位表示の難易度を調査し、勝てるキーワードを特定します。",
+                },
+                {
+                  step: "03",
+                  title: "集客戦略の設計",
+                  desc: "ヒアリング・競合分析をもとに、MEO・SEO・SNS・Web制作を組み合わせた墨田区特化の集客戦略を設計します。観光客向けと地元住民向けの二重集客設計も含めてご提案します。",
+                },
+                {
+                  step: "04",
+                  title: "Googleビジネスプロフィール（GBP）最適化",
+                  desc: "GBPの完全最適化を実施します。カテゴリ設定・営業時間・写真追加・サービス説明・多言語対応（英語・中国語・韓国語）まで徹底的に整備し、Googleマップでの上位表示を目指します。",
+                },
+                {
+                  step: "05",
+                  title: "ホームページ・ランディングページ制作",
+                  desc: "必要に応じてSEO対応のホームページ・LPを制作します。墨田区の地域キーワードを盛り込んだ構造化コンテンツ・Schema.org実装・Core Web Vitals最適化まで一括対応します。",
+                },
+                {
+                  step: "06",
+                  title: "コンテンツSEO・ローカルSEO施策",
+                  desc: "「墨田区 〇〇」「錦糸町 〇〇」などのローカルキーワードで検索上位表示を目指すコンテンツを作成します。伝統工芸・職人技術・観光コンテンツなど墨田区ならではの専門性の高いSEO記事も対応します。",
+                },
+                {
+                  step: "07",
+                  title: "口コミ獲得・SNS運用支援",
+                  desc: "来店客からのGoogle口コミ獲得フローを整備します。Instagram・X運用の代行・コンサルティングも対応し、MEO・SEOとSNSを連動させた統合集客戦略を実行します。",
+                },
+                {
+                  step: "08",
+                  title: "月次レポート・継続改善",
+                  desc: "毎月の検索順位・GBPのインサイト・ウェブサイトのアクセス分析をレポートします。データをもとに施策を継続改善し、墨田区での集客を長期的に最大化します。",
+                },
+              ].map((item) => (
+                <div key={item.step} style={{ display: "flex", gap: "28px", padding: "28px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <div style={{ minWidth: "48px" }}>
+                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "20px", fontWeight: 700 }}>{item.step}</span>
+                  </div>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section C: サイプレスに依頼するメリット（ダーク背景） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
-              サイプレスに墨田区の集客を依頼するメリット
+              サイプレスに依頼するメリット
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
               {[
-                { n: "01", t: "観光客×地元住民の二重集客戦略", b: "スカイツリー観光客向けの多言語MEO・インバウンドSEOと、地元住民向けのローカルMEO・コンテンツSEOを一元的に設計・管理します。二つのターゲット層を同時に攻める戦略が墨田区での集客を最大化します。" },
-                { n: "02", t: "葛飾区隣接 — 訪問相談が迅速", b: "葛飾区から隣接する墨田区への訪問相談に迅速に対応しています。錦糸町・押上・両国・向島エリアへの対面ヒアリングで、事業の世界観・ターゲットを深く理解したうえで施策を設計します。" },
-                { n: "03", t: "SNS×MEO×SEOの統合戦略", b: "InstagramのSNS拡散・GoogleマップのMEO上位表示・サイトへのSEO流入を組み合わせた統合的な集客戦略を提供します。墨田区のビジネス特性（下町カルチャー・観光）を最大限に活かします。" },
-                { n: "04", t: "伝統・クラフト系ビジネスの発信支援", b: "革細工・染色・和菓子・刃物など墨田区の職人技術系ビジネスのWeb発信支援に対応しています。世界観を伝えるブランドサイト制作・SNS運用で、全国・世界のファンを獲得するための施策を提案します。" },
+                {
+                  n: "01",
+                  t: "観光客×地元住民の二重集客戦略",
+                  b: "スカイツリー観光客向けの多言語MEO・インバウンドSEOと、地元住民向けのローカルMEO・コンテンツSEOを一元的に設計・管理します。二つのターゲット層を同時に攻める戦略が墨田区での集客を最大化します。",
+                },
+                {
+                  n: "02",
+                  t: "葛飾区隣接——訪問相談が迅速",
+                  b: "葛飾区から隣接する墨田区への訪問相談に迅速に対応しています。錦糸町・押上・両国・向島エリアへの対面ヒアリングで、事業の世界観・ターゲットを深く理解したうえで施策を設計します。",
+                },
+                {
+                  n: "03",
+                  t: "MEO・SEO・Web制作をワンストップで",
+                  b: "MEO対策・SEO対策・ホームページ制作・SNS運用をすべてサイプレスに依頼できます。複数の業者に分散するコストと手間を省き、一貫した戦略で墨田区の集客を最大化します。",
+                },
+                {
+                  n: "04",
+                  t: "伝統・クラフト系ビジネスの発信支援",
+                  b: "革細工・染色・和菓子・刃物など墨田区の職人技術系ビジネスのWeb発信支援に対応しています。世界観を伝えるブランドサイト制作・SNS運用で、全国・世界のファンを獲得するための施策を提案します。",
+                },
               ].map((item) => (
                 <div key={item.n}>
                   <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>

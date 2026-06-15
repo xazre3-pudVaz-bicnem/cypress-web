@@ -24,6 +24,9 @@ export const glossaryPages: GlossaryPage[] = [
       { title: "MEOとSEOの違い", body: "SEOはGoogleの通常検索（オーガニック検索）でのサイト順位を上げる施策。MEOはGoogleマップでの表示順位を上げる施策です。地域名＋業種の検索ではマップパック（MEO）が通常の検索結果より先に表示されることが多く、地域ビジネスではMEOを優先すべきケースが多いです。" },
       { title: "MEO対策の主な施策", body: "①Googleビジネスプロフィール（GBP）の基本情報を正確・詳細に入力、②高品質な写真・動画を定期的に追加、③Google口コミの獲得と迅速な返信、④GBPへの定期的な投稿（最新情報・イベント等）、⑤ローカルキーワードの最適化が主な施策です。" },
       { title: "MEOの効果が出るまでの期間", body: "適切な施策を実施すれば、1〜2ヶ月で順位変動が見られ始め、3〜6ヶ月で安定した上位表示が期待できます。競合の少ない地域・業種では1ヶ月以内に効果が出る場合もあります。" },
+      { title: "MEOが重要なビジネス種別", body: "飲食店・美容院・整体院・歯科・不動産・リフォーム業者・士業事務所など、来店や電話問い合わせを主な顧客接点とする地域ビジネス全般でMEOは特に重要です。スマートフォンで「近くの〇〇」と検索するユーザーが集客対象となる業種であれば、MEO対策は最優先の集客施策の一つです。" },
+      { title: "MEOの実際の効果と変化", body: "MEO対策を継続することで、Googleマップからの電話問い合わせ・ルート案内・ウェブサイトクリックが増加します。GBPのインサイトデータで月ごとの接触数を確認でき、来店数や問い合わせ増加として事業成果に反映されます。ローカルパックへの安定表示は広告費なしの継続的な集客基盤になります。" },
+      { title: "MEO対策を外注する場合の選び方", body: "MEO対策業者を選ぶ際は、対策内容の透明性（何をやってくれるか）・口コミ獲得のサポート有無・月次レポートの内容・Googleガイドライン準拠かどうかを確認してください。成果を保証する文言を使う業者や、口コミを人工的に操作する手法を提案する業者は避けることが重要です。" },
     ],
     faqs: [
       { q: "MEO対策は自分でできますか？", a: "GBPの基本設定・写真追加・口コミ返信は自社でも実施可能です。ただし、競合に勝つための継続的な改善・分析・戦略的な施策は専門知識が必要です。" },
@@ -42,6 +45,10 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/guide/meo-basics", label: "MEO基礎ガイド", desc: "始め方を学ぶ" },
       { href: "/cost/meo", label: "MEO対策の費用相場", desc: "月額2万円〜の詳細" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "MEO対策を相談する" },
+      { href: "/area/katsushika", label: "葛飾区のMEO対策", desc: "地域密着の対策事例" },
+      { href: "/area/tokyo", label: "東京のMEO対策", desc: "東京都内の集客支援" },
+      { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "信頼性でMEO評価も向上" },
+      { href: "/knowledge/local-seo", label: "ローカルSEOとは", desc: "MEOと連携する施策" },
     ],
   },
   {
@@ -56,6 +63,9 @@ export const glossaryPages: GlossaryPage[] = [
       { title: "GBPの基本設定で重要な項目", body: "①正確なビジネス名（通称・キャッチコピー禁止）、②業種カテゴリ（メインカテゴリの選択が最重要）、③正確な住所・電話番号・営業時間、④高品質な写真（店内・外観・商品・スタッフ）、⑤ウェブサイトURL・予約リンクの設定が基本項目です。" },
       { title: "GBPの投稿機能の活用", body: "GBPの「最新情報」「イベント」「特典」「商品」投稿を定期的に行うことで、Googleからの評価向上と顧客へのリーチ拡大が期待できます。週1〜2回の投稿が推奨されます。" },
       { title: "GBPのパフォーマンスデータの確認", body: "GBPのインサイト（電話タップ数・ルート案内数・ウェブサイトクリック数・写真閲覧数）を定期的に確認し、改善施策の効果測定に活用します。" },
+      { title: "GBPでできることの全体像", body: "GBPはビジネス情報の掲載にとどまらず、予約ボタンの設置・商品・サービス一覧の登録・Q&Aへの回答・メッセージ機能の有効化・投稿による最新情報の発信など多彩な機能を無料で利用できます。これらを活用することで、ユーザーとの接触機会が増えMEO評価の向上にもつながります。" },
+      { title: "GBPの認証方法の種類", body: "GBPのオーナー認証は電話・SMS・郵便ハガキ・ビデオ認証のいずれかで行います。郵便ハガキは到着まで約14日かかりますが最も一般的な方法です。ビデオ認証は実際の店舗・設備を映した動画をGoogleに送信することで認証でき、近年増えている手法です。認証完了後にGBPのすべての機能が使えるようになります。" },
+      { title: "GBPが表示される検索シナリオ", body: "GBPが表示される主なシナリオは、「地域名＋業種」での検索（例：葛飾区 美容院）、「near me」検索、Googleマップでの地域検索、ビジネス名の指名検索の4種類です。指名検索での知識パネル表示はブランド認知の強化に貢献します。各シナリオで適切に表示されるためにGBPを最適化することが重要です。" },
     ],
     faqs: [
       { q: "GBPの登録は無料ですか？", a: "はい、Googleビジネスプロフィールの登録・管理は完全無料です。ただし、専門業者にMEO対策を依頼する場合は費用が発生します。" },
@@ -74,6 +84,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/local-pack", label: "ローカルパック", desc: "GBP活用で上位表示" },
       { href: "/cost/meo", label: "MEO対策費用", desc: "GBP運用代行の費用" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "GBP最適化を依頼する" },
+      { href: "/area/tokyo", label: "東京のMEO対策", desc: "地域別のGBP活用事例" },
+      { href: "/knowledge/local-seo", label: "ローカルSEOとは", desc: "GBPと連携するSEO施策" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "GBP設定を相談する" },
     ],
   },
   {
@@ -87,6 +100,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "ローカルパックに表示される条件", body: "検索クエリに地域性がある場合（地域名を含む検索、または「near me」「近く」など位置情報を使った検索）にローカルパックが表示されます。GBPの情報充実度・口コミ数・距離・関連性がランキングを左右します。" },
       { title: "ローカルパックの3枠を決めるGoogleの評価基準", body: "Googleはローカル検索ランキングを「関連性（Relevance）」「距離（Distance）」「知名度（Prominence）」の3要素で評価します。GBPの充実度と口コミ数・評価が最も影響する要素です。" },
+      { title: "ローカルパックの表示要素と視覚的特徴", body: "ローカルパックにはビジネス名・評価（星）・レビュー数・住所・営業状況・業種カテゴリが表示されます。写真が設定されていると一部の表示ではサムネイルも加わります。評価の高さと口コミ数が多いビジネスはユーザーの目を引きやすく、クリック率の向上に直結します。" },
+      { title: "ローカルパックとウェブサイトSEOの相乗効果", body: "ローカルパック（MEO）とウェブサイトのオーガニック検索（SEO）は異なる枠に表示されます。両方で上位表示されることでSERP上の占有率が高まり、クリック総数の増加が期待できます。ウェブサイトに地域名を含むコンテンツを充実させることがMEO評価にも好影響を与えます。" },
+      { title: "ローカルパックへの表示と競合分析", body: "競合がどのようなGBP設定・口コミ数・写真で上位表示されているかを確認することが対策の第一歩です。競合の口コミ件数・評価・投稿頻度・カテゴリ設定を調べ、自社との差分を埋める施策を優先的に実施することで効率的にローカルパックへの掲載を目指せます。" },
     ],
     faqs: [
       { q: "ローカルパックとオーガニック検索（自然検索）はどう違いますか？", a: "ローカルパックはGoogleマップの情報が表示される枠（MEOの成果）で、オーガニック検索はWebサイトが表示される通常の検索結果（SEOの成果）です。地域名＋業種の検索では両方への対策が有効です。" },
@@ -105,6 +121,10 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/meo", label: "MEO対策費用", desc: "月額2万円〜" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "ローカルパック対策を相談" },
       { href: "/faq/meo-basics", label: "MEOよくある質問", desc: "詳しく学ぶ" },
+      { href: "/area/katsushika", label: "葛飾区のMEO対策", desc: "ローカルパック対策事例" },
+      { href: "/area/tokyo", label: "東京のMEO対策", desc: "都内ローカルパック支援" },
+      { href: "/glossary/seo", label: "SEO", desc: "ローカルパックと組み合わせる施策" },
+      { href: "/knowledge/local-seo", label: "ローカルSEOとは", desc: "ローカルパックを底上げする手法" },
     ],
   },
   {
@@ -119,6 +139,9 @@ export const glossaryPages: GlossaryPage[] = [
       { title: "SEO内部対策（技術的SEO）", body: "サイトの構造・URL設計・表示速度・Core Web Vitals・モバイル対応・メタデータ・構造化データ・XMLサイトマップ等の技術的な最適化です。Googleのクローラーがサイトを正確に認識・評価できる基盤を整えます。" },
       { title: "コンテンツSEO", body: "ターゲットキーワードに対応した高品質なコンテンツを作成・公開する施策です。E-E-A-T（経験・専門性・権威性・信頼性）が評価されるコンテンツが上位表示されやすくなります。" },
       { title: "外部対策（被リンク）", body: "他のウェブサイトから自社サイトへのリンク（被リンク）を獲得する施策です。信頼性の高いサイトからの被リンクはSEO評価を高めますが、低品質なリンクの購入はペナルティ対象になります。" },
+      { title: "SEOとキーワード戦略の考え方", body: "効果的なSEOには、まずターゲットとなる検索キーワードを「検索ボリューム」「競合の強さ」「ユーザーの検索意図」の3点で分析することが重要です。競合が弱く自社が専門性を発揮できるニッチなキーワードから攻略し、徐々に難易度の高いキーワードへ展開する戦略が現実的です。" },
+      { title: "ローカルSEOとMEOの連携", body: "地域ビジネスのSEOでは、ウェブサイトに地域名を含むコンテンツ（対応エリアページ・地域名＋サービスのランディングページ）を整備することがMEO評価にも好影響を与えます。GBPのウェブサイトURLを自社サイトに設定し、サイト内でNAP情報（名称・住所・電話番号）を一致させることがローカルSEOの基本です。" },
+      { title: "SEOの成果を継続させるための運用", body: "SEOは一度対策を行えば終わりではなく、Googleのアルゴリズム更新・競合の動向・コンテンツの鮮度を定期的に見直す継続的な取り組みが必要です。月次でキーワード順位・流入数・CV数を確認してPDCAを回し、上位表示したページをリライトで維持することが長期的なSEO成果の鍵です。" },
     ],
     faqs: [
       { q: "SEOの効果が出るまでどのくらいかかりますか？", a: "技術的SEOの改善は2〜3ヶ月、コンテンツSEOは3〜6ヶ月で成果が見え始めることが多いです。競合の強いキーワードは1年以上かかる場合もあります。" },
@@ -137,6 +160,10 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/guide/seo-strategy", label: "SEO戦略ガイド", desc: "SEOを詳しく学ぶ" },
       { href: "/cost/seo", label: "SEO対策費用", desc: "月額3万円〜の詳細" },
       { href: "/faq/seo-basics", label: "SEOよくある質問", desc: "疑問をまとめて解決" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "SEOと連携したコンテンツ戦略" },
+      { href: "/glossary/meta-description", label: "メタディスクリプション", desc: "CTRを高めるSEO要素" },
+      { href: "/glossary/sitemap-xml", label: "サイトマップ", desc: "インデックスを促進する技術" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "SEO改善を相談する" },
     ],
   },
   {
@@ -151,6 +178,9 @@ export const glossaryPages: GlossaryPage[] = [
       { title: "Experienceを高める方法", body: "実際の経験・体験に基づいた一次情報（写真・動画・具体的な事例）をコンテンツに含めることで、「実際に経験した人が書いた」という評価を得られます。" },
       { title: "Expertiseを高める方法", body: "著者プロフィール（資格・経歴・専門分野）の明示、専門的な情報の正確な記述、業界専門家の監修がExpertise評価を高めます。" },
       { title: "AuthoritativenessとTrustworthinessを高める方法", body: "信頼性の高い外部サイトからの被リンク・メディア掲載・プレスリリース・会社情報の充実・お客様の声・プライバシーポリシーの整備がAuthoritativeness・Trust向上に効果的です。" },
+      { title: "YMYLコンテンツとE-E-A-Tの関係", body: "YMYL（Your Money or Your Life）とは医療・法律・金融・健康など人の生活に大きな影響を与えるトピックの総称です。YMYLジャンルはE-E-A-Tの評価が特に厳しく、資格者の監修・根拠となる出典・会社情報の充実がなければ上位表示が難しい傾向があります。一般的なビジネス情報・地域情報に比べて高い専門性の明示が求められます。" },
+      { title: "E-E-A-TとAIO（AI検索）の接点", body: "ChatGPTやPerplexityなどのAI検索エンジンはE-E-A-Tの高いサイトを信頼できる情報源として引用しやすい傾向があります。著者情報・会社情報・実績の充実・構造化データの実装はSEOとAIOの両方に同時に貢献するため、E-E-A-T向上施策は最も費用対効果が高い取り組みの一つです。" },
+      { title: "サービスサイトでE-E-A-Tを高める具体的な方法", body: "会社概要ページへの代表者顔写真・経歴・資格の掲載、施工・対応実績の具体的な数字と写真の掲載、お客様の声（実名・写真付き）の掲載、プライバシーポリシー・特定商取引法記載の整備がサービスサイトのE-E-A-T向上の基本セットです。これらを整えることで検索評価と顧客からの信頼が同時に高まります。" },
     ],
     faqs: [
       { q: "AIで書いた記事はE-E-A-T評価が低くなりますか？", a: "AI生成コンテンツ自体はGoogleのガイドライン上問題ありません。ただし、実際の経験・専門知識・一次情報がないコンテンツはE-E-A-Tが低くなります。AI生成後に専門家の監修・体験談の追加が必要です。" },
@@ -169,6 +199,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/aio", label: "AIO", desc: "AI検索最適化との関係" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "E-E-A-T強化を依頼する" },
       { href: "/cost/content-writing", label: "コンテンツライティング費用", desc: "E-E-A-T対応記事の費用" },
+      { href: "/glossary/schema-org", label: "Schema.org", desc: "構造化データでE-E-A-T強化" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "E-E-A-Tを高めるコンテンツ戦略" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "E-E-A-T改善を相談する" },
     ],
   },
   {
@@ -183,6 +216,9 @@ export const glossaryPages: GlossaryPage[] = [
       { title: "LCP（Largest Contentful Paint）", body: "ページの主要コンテンツ（最大の画像やテキストブロック）が表示されるまでの時間。目標値は2.5秒以内。画像の最適化・遅延読み込み・サーバー応答速度の改善で改善できます。" },
       { title: "CLS（Cumulative Layout Shift）", body: "ページロード中のレイアウトのずれ（画像が突然表示されてコンテンツが動く等）の累積スコア。目標値は0.1以下。画像に固定サイズを指定し、動的コンテンツの予約スペースを設けることで改善できます。" },
       { title: "INP（Interaction to Next Paint）", body: "2024年3月にFIDに替わって導入されたユーザーのインタラクション応答性を測る指標。クリック・タップ・キーボード入力に対するページの反応速度を評価します。目標値は200ms以内。" },
+      { title: "Core Web VitalsとページエクスペリエンスシグナルURL", body: "Googleはモバイル対応・HTTPS・Core Web Vitals・インタースティシャル広告の非表示などを総合した「ページエクスペリエンスシグナル」でサイトを評価します。Core Web VitalsはそのうちLCP・CLS・INPの3指標を指し、Google Search Consoleの「コアウェブバイタル」レポートで自サイトの現状を無料で確認できます。" },
+      { title: "Next.jsサイトにおけるCore Web Vitals最適化", body: "Next.jsのnext/imageコンポーネントは画像の自動WebP変換・適切なサイズ配信・遅延読み込みを自動で処理し、LCPとCLSを改善します。next/fontはWebフォントの最適化でCLSを防ぎ、Dynamic Importはコード分割でINPを改善します。Next.jsを選択すること自体がCore Web Vitalsの改善に有利です。" },
+      { title: "Core Web VitalsをPageSpeed Insightsで読む方法", body: "PageSpeed Insightsの結果は「フィールドデータ（実際のユーザーデータ）」と「ラボデータ（シミュレーション）」の2種類に分かれます。SEO評価に影響するのはフィールドデータです。ラボデータのスコアが高くてもフィールドデータが不良の場合は改善が必要で、逆も同様です。Search Consoleと合わせて確認することが推奨されます。" },
     ],
     faqs: [
       { q: "Core Web VitalsはSEOにどのくらい影響しますか？", a: "Core Web Vitalsは200以上あるGoogleのランキング要因のひとつです。コンテンツの質・被リンク等のより影響力の大きい要因ほどではありませんが、技術的SEOの基盤として必ず最適化すべき指標です。" },
@@ -201,6 +237,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "Core Web Vitals対応サイト" },
       { href: "/glossary/isr", label: "ISR", desc: "Next.jsの高速化技術" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "表示速度改善を相談する" },
+      { href: "/glossary/responsive-design", label: "レスポンシブデザイン", desc: "モバイル対応とCWVの関係" },
+      { href: "/glossary/cms", label: "CMS", desc: "CMS選択と表示速度" },
+      { href: "/cost/homepage", label: "ホームページ制作費用", desc: "CWV対応サイトの費用" },
     ],
   },
   {
@@ -214,6 +253,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "AIOの主な施策", body: "①構造化データ（Schema.org）の実装、②llms.txtの設置、③E-E-A-T強化、④FAQ最適化、⑤見出し構造の整備、⑥著者情報・会社情報の充実が主なAIO施策です。" },
       { title: "AI Overviewとは", body: "Googleの検索結果上部に表示されるAIによる要約回答です。信頼性の高いサイトのコンテンツが引用・要約されて表示されます。SEOとAIOの両方の対策がAI Overview掲載に有効です。" },
+      { title: "AIOが重要になった背景", body: "ChatGPT・Perplexity・Google AI Overviewの普及により、ユーザーが従来のウェブ検索ではなくAIに直接質問して回答を得るケースが急増しています。AI検索では特定のサイトのURLが表示されないため、AIに引用されない企業は検索エンジンからの集客機会を失うリスクがあります。AIOはこの変化に対応するための施策です。" },
+      { title: "AIOとSEOの施策の共通点と相違点", body: "E-E-A-T強化・FAQ最適化・構造化データ実装・見出し構造の整備はSEOとAIOに共通して有効な施策です。一方、llms.txt設置・AI向けのコンテンツ要約（冒頭に結論を書く形式）・AIが引用しやすい簡潔な文章構造はAIO固有の取り組みです。SEO対策を進めながらAIO施策を追加することで両方の効果を同時に得られます。" },
+      { title: "引用されやすいコンテンツ構造の作り方", body: "AI検索エンジンに引用されやすいコンテンツは、冒頭に結論を述べ・見出しで要点を整理し・専門用語を正確に説明し・数字や事実に基づいた情報を含む形式です。「〇〇とは何か」「〇〇の方法」「〇〇の費用」など、ユーザーが質問する形に対応した見出し構造が特に効果的です。" },
     ],
     faqs: [
       { q: "AIO対策はSEOと何が違いますか？", a: "SEOはGoogleの通常検索結果（10件のリンク一覧）での上位表示、AIOはChatGPT・Perplexity等のAI回答での引用・掲載を目的とします。どちらも「信頼性・専門性の高いコンテンツ」が評価される点は共通です。" },
@@ -232,6 +274,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "AI引用に必要な信頼性" },
       { href: "/cost/aio", label: "AIO対策費用", desc: "月額2万円〜の詳細" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "AIO対策を相談する" },
+      { href: "/glossary/schema-org", label: "Schema.org", desc: "AIOに効果的な構造化データ" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "AI引用されるコンテンツ戦略" },
+      { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化の全体像" },
     ],
   },
   {
@@ -245,6 +290,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "llms.txtの基本構造", body: "# {サイト名} の情報\n\n## 会社情報\n- {会社の説明}\n\n## 主要サービス\n- {サービス一覧}\n\n## 参照推奨ページ\n- [{ページ名}]({URL}):{説明} のような形式で記述します。" },
       { title: "llms.txtの効果", body: "AIクローラーがサイトを適切に理解しやすくなり、ChatGPT・Claude等のAIが自社情報を正確に参照・引用できる可能性が高まります。まだ標準化されていない分野ですが、先行して実装することで競合優位になります。" },
+      { title: "llms.txtとrobots.txtの役割の違い", body: "robots.txtはGoogleBot等の検索エンジンクローラーへのクロール許可・拒否を指示するファイルです。llms.txtはLLM（大規模言語モデル）クローラーに対してサイトの概要・重要コンテンツ・参照すべきURLを伝えるファイルです。両ファイルは役割が異なるため、どちらも設置することが推奨されます。" },
+      { title: "llms.txtに記載すべき情報の優先順位", body: "①会社名・事業概要・所在地・連絡先（基本情報）、②主要サービスの説明と対応エリア、③専門分野・強み・実績、④主要コンテンツページのURL一覧の順で優先的に記述します。AIがどの情報を最も必要とするかを意識して、簡潔かつ正確な情報を上部に配置することがポイントです。" },
+      { title: "llms.txtの実装と管理のポイント", body: "llms.txtは静的テキストファイルとして設置するのが基本ですが、Next.jsではpublic/ディレクトリへの配置でOKです。サービス追加・会社情報変更のたびに内容を最新化することが重要です。AIクローラーへのアクセスログをサーバーで確認することで、どのAIがいつサイトを訪問したかを把握できます。" },
     ],
     faqs: [
       { q: "llms.txtを設置するとChatGPTで名前が出るようになりますか？", a: "llms.txtはAIクローラーへのヒントを提供するものですが、ChatGPTでの引用を直接保証するものではありません。E-E-A-T強化・構造化データ・高品質コンテンツとの組み合わせが重要です。" },
@@ -263,6 +311,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/schema-org", label: "Schema.org", desc: "構造化データとの連携" },
       { href: "/services/aio", label: "AIO対策サービス", desc: "llms.txt設置も対応" },
       { href: "/cost/aio", label: "AIO対策費用", desc: "実装コストの目安" },
+      { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "llms.txtと組み合わせる信頼性施策" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "llms.txt設置を依頼する" },
+      { href: "/aio", label: "AIO対策とは", desc: "AI検索対策の全体像" },
     ],
   },
   {
@@ -276,6 +327,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "主要なSchema.orgタイプ", body: "LocalBusiness（店舗・地域ビジネス）・FAQPage・Article（記事）・BreadcrumbList（パンくず）・Organization（会社）・Product（商品）・Review（口コミ）が最もよく使われるSchema.orgタイプです。" },
       { title: "JSON-LD形式での実装", body: "GoogleはJSON-LD形式（<script type=\"application/ld+json\">でHTMLに埋め込む）での構造化データ実装を推奨しています。Next.jsやWordPressで実装するための専門知識が必要です。" },
+      { title: "リッチリザルトと構造化データの関係", body: "FAQPageスキーマを実装すると検索結果に質問・回答が展開表示されるリッチリザルトになり、クリック率が向上します。ReviewやRatingを含むスキーマは星評価を表示させ、HowToスキーマは手順をリッチリザルトで視覚的に見せることができます。ただし実装していても必ずリッチリザルトになるとは限りません。" },
+      { title: "構造化データとAI検索（AIO）の関係", body: "ChatGPT・Gemini・PerplexityなどのAI検索エンジンは構造化データを利用してページの内容を正確に分類・理解します。OrganizationスキーマとLocalBusinessスキーマを実装することで、AIが自社の業種・サービス・所在地を正確に把握しやすくなり、AI検索での引用精度向上に貢献します。" },
+      { title: "Next.jsでの構造化データ実装方法", body: "Next.jsのApp Routerでは各ページのLayoutまたはPageファイルの<script>タグ内にJSON-LD形式で構造化データを記述します。動的ページ（ブログ記事・サービスページ）はデータに応じてスキーマを動的生成することで、全ページの構造化データを効率的に管理できます。Googleのリッチリザルトテストで確認してから本番に適用してください。" },
     ],
     faqs: [
       { q: "構造化データを実装すると検索結果が変わりますか？", a: "FAQPageスキーマを実装すると検索結果に質問と回答が直接表示されたり、LocalBusinessで星評価が表示されたりするリッチリザルトが期待できます。ただし、必ずしも即時に表示されるとは限りません。" },
@@ -294,6 +348,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "信頼性評価との関係" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "構造化データ実装も対応" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "実装を依頼する" },
+      { href: "/glossary/llms-txt", label: "llms.txt", desc: "AIクローラーへの情報提供" },
+      { href: "/glossary/meo", label: "MEO", desc: "LocalBusinessスキーマとの連携" },
+      { href: "/cost/seo", label: "SEO対策費用", desc: "構造化データ実装の費用" },
     ],
   },
   {
@@ -307,6 +364,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "業界別CV率の目安", body: "EC（購入）：0.5〜3%、B2Bサービス（問い合わせ）：1〜5%、飲食・美容（予約）：2〜8%、不動産（問い合わせ）：0.5〜2%が一般的な目安です。ただし業種・集客元・ページの目的によって大きく異なります。" },
       { title: "CV率を高める主な施策", body: "①ファーストビューでの価値訴求の明確化、②信頼要素（実績・口コミ・資格）の掲載、③CTAボタンの最適化（色・文言・配置）、④フォームの入力項目最小化、⑤スマホ対応の改善がCV率向上の主要施策です。" },
+      { title: "CV率改善でよくある見落としポイント", body: "多くのサイトでCV率が低い原因として、問い合わせフォームの入力項目が多すぎる・スマホでのボタンが小さくタップしにくい・ファーストビューに価格やサービス内容が書かれていないの3点がよく見られます。これらを修正するだけで大幅なCV率向上につながることが多いです。" },
+      { title: "CV率とLPO（ランディングページ最適化）", body: "LPO（Landing Page Optimization）はランディングページのCV率を継続的に改善する施策です。ヒートマップ分析・A/Bテスト・ユーザーインタビューを組み合わせてページのどの要素がCVを妨げているかを特定し、仮説→改善→検証のサイクルを繰り返します。月次でCV率を確認しながら改善を積み重ねることが重要です。" },
+      { title: "CVの種類と目標設定の考え方", body: "CVはビジネスの目標によって定義が異なります。問い合わせフォーム送信・電話タップ・LINE友だち追加・資料請求・予約完了など、自社のビジネスモデルに合ったCVを明確に定義しGA4で計測することが成果改善の出発点です。複数のCV目標を設定し、最終CVに近いものほど重要指標として管理します。" },
     ],
     faqs: [
       { q: "自社のCV率が良いか悪いかはどうやって判断しますか？", a: "Google Analytics 4のCV率と業界平均を比較してください。CV率が業界平均より低い場合はLP・フォーム・CTA等の改善余地があります。まずは現状のCV率を正確に計測することが第一歩です。" },
@@ -325,6 +385,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "CVR最適化設計" },
       { href: "/glossary/lp", label: "LP（ランディングページ）", desc: "CV率向上のためのLP" },
       { href: "/cost/lp", label: "LP制作費用", desc: "CVR改善のための投資" },
+      { href: "/glossary/bounce-rate", label: "直帰率", desc: "CV率と密接な離脱指標" },
+      { href: "/glossary/kpi", label: "KPI", desc: "CV率をKPIとして管理する" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "CV率改善を相談する" },
     ],
   },
   {
@@ -338,6 +401,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "効果的なCTAの文言", body: "「お問い合わせはこちら」より「今すぐ無料相談する」「3分で診断する」のように、ユーザーのメリット・行動のしやすさを具体的に伝える文言が効果的です。" },
       { title: "CTAのデザインと配置", body: "目立つ色（ページの他の要素と対比する色）のボタンを、ファーストビューと記事末尾の両方に配置することが基本です。スマホではタップしやすいサイズ（最低44×44px）が必要です。" },
+      { title: "CTAの種類と使い分け", body: "CTAには「電話」「フォーム」「LINE」「資料ダウンロード」「予約」など複数の種類があります。ユーザーが取りやすいアクション・ビジネスが対応しやすい問い合わせ手段を優先して設置することが重要です。複数のCTAを設置する場合は最も重要なものを視覚的に強調し、階層をつけることで迷いをなくします。" },
+      { title: "マイクロコピーとCTAの組み合わせ", body: "CTAボタン周辺に配置するマイクロコピー（「無料・秘密厳守・〇日以内に返信」などの短文）はユーザーの行動を後押しします。「今だけ〇〇」「〇名限定」などの限定性・緊急性を伝えるコピーも有効ですが、事実と異なる誇張表現は信頼を損なうため避けてください。" },
+      { title: "固定CTAとスクロール追従CTAの活用", body: "長いLPや記事ページでは、スクロール追従型のCTAボタン（画面に常に表示されるフローティングボタン）がCV率向上に効果的です。スマートフォンでは画面下部に固定表示する電話ボタン・LINEボタンが来電・LINE登録を増やす定番の手法です。ただし画面を過度に塞がないデザインが必要です。" },
     ],
     faqs: [
       { q: "CTAボタンの色は何色が効果的ですか？", a: "「この色が必ず効く」というものはなく、ページの背景・デザインとの対比で目立つ色が最も重要です。オレンジ・赤・緑が一般的に目立ちやすいですが、A/Bテストで確認することが最善策です。" },
@@ -356,6 +422,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "CTA最適化設計" },
       { href: "/cost/lp", label: "LP制作費用", desc: "CTA改善を含むLP制作" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "CVR改善を相談する" },
+      { href: "/glossary/bounce-rate", label: "直帰率", desc: "CTAクリック前の離脱を防ぐ" },
+      { href: "/glossary/og-image", label: "OGP", desc: "SNSシェア時のCTA効果" },
+      { href: "/glossary/kpi", label: "KPI", desc: "CTAクリック率をKPIで管理" },
     ],
   },
   {
@@ -369,6 +438,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "必須OGPタグ", body: "og:title（タイトル）・og:description（説明）・og:image（画像URL）・og:url（ページURL）・og:type（websiteまたはarticle）が基本的なOGPタグです。" },
       { title: "Twitter/X用メタタグ", body: "TwitterはOGPとは別に、twitter:card・twitter:titleなどの専用メタタグが必要です。twitter:cardは「summary_large_image」が大きなサムネイルを表示させる設定です。" },
+      { title: "OGP画像のデザインのベストプラクティス", body: "OGP画像（1200×630px）はブランドカラーを背景にタイトルや価値訴求を大きなテキストで配置するシンプルなデザインが効果的です。テキストは端から100px以上の余白をとり中央に配置することで、SNSでのトリミングによる切れを防げます。ロゴを右下に配置するとブランド認知にも貢献します。" },
+      { title: "OGPとSNS拡散・被リンク獲得の関係", body: "OGPが正しく設定されSNSシェア時に美しいカードが表示されると、クリック率と拡散率が向上します。SNSでバイラルしたコンテンツは外部サイトからの被リンク獲得につながりSEO評価にも好影響を与えます。OGP最適化はSNSマーケティングとSEOを同時に強化する施策です。" },
+      { title: "Next.jsでのOGP動的生成", body: "Next.jsのApp RouterではImageResponseを使うことで、ページのタイトルや内容に合わせたOGP画像を動的に生成できます。ブログ記事・サービスページごとに異なるOGP画像を自動生成することで、全ページのSNS拡散効果を高められます。静的なOGP画像より動的生成の方が各ページへのクリック率向上が期待できます。" },
     ],
     faqs: [
       { q: "OGPが設定されていないとどうなりますか？", a: "SNSでシェアされたとき、タイトル・画像が正しく表示されず地味なリンクになります。OGP未設定はクリック率を大幅に下げる要因になります。" },
@@ -387,6 +459,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "OGP設定込みの制作" },
       { href: "/cost/homepage", label: "ホームページ制作費用", desc: "OGP含む制作費用" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "OGP設定を依頼する" },
+      { href: "/glossary/meta-description", label: "メタディスクリプション", desc: "OGPと組み合わせるSEO施策" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "OGPで拡散を高めるコンテンツ戦略" },
+      { href: "/glossary/cv-rate", label: "CV率", desc: "OGP経由のSNS流入でCV率改善" },
     ],
   },
   {
@@ -400,6 +475,9 @@ export const glossaryPages: GlossaryPage[] = [
     points: [
       { title: "Web集客における主要なKPI", body: "・MEO：検索順位・GBPクリック数・電話タップ数 ・SEO：オーガニック流入数・キーワード順位 ・SNS：フォロワー数・エンゲージメント率 ・サイト全体：セッション数・CV数・CV率 が代表的なKPIです。" },
       { title: "KPIを定期的に見直す重要性", body: "KPIは固定せず、事業フェーズや施策の変化に応じて見直します。達成した指標は次のレベルに引き上げ、機能しない指標は変更する柔軟性が必要です。" },
+      { title: "KGIからKPIを逆算する方法", body: "KPI設計はまずKGI（最終目標）を明確にすることから始まります。例えばKGI「月間新規顧客10件」をKPIに分解すると「CV数10件→CV率2%なら500セッション必要→MEOで月500クリック獲得」のように逆算します。この逆算によって各施策に必要な数値目標が明確になり、達成可能なKPIを設定できます。" },
+      { title: "ローリングKPIと固定KPIの使い分け", body: "毎月見直す「ローリングKPI」（月次CV数・流入数）と半年〜1年単位で設定する「固定KPI」（ドメインオーソリティ・キーワード上位表示数）を使い分けることで、短期の成果管理と長期の基盤強化を同時に進められます。施策の種類（SEOは長期・広告は短期）に合わせた時間軸でKPIを設定することが重要です。" },
+      { title: "KPI計測ツールと管理の実践", body: "Google Analytics 4（流入・CV計測）・Google Search Console（キーワード順位・クリック数）・GBPインサイト（MEOのKPI）・各SNSアナリティクスを組み合わせてKPIを一元管理します。Googleスプレッドシートに月次KPIをまとめるシンプルな管理表から始め、データが増えてから専用ダッシュボード（Looker Studio等）への移行を検討するのが現実的です。" },
     ],
     faqs: [
       { q: "KPIとKGIの違いは何ですか？", a: "KGI（Key Goal Indicator）は最終的な経営目標（売上・利益・顧客数など）、KPIはKGI達成のための中間指標です。例えばKGI「月間売上100万円増」に対してKPI「月間問い合わせ数50件」を設定します。" },
@@ -418,6 +496,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/pdca", label: "PDCA", desc: "KPIを活かすPDCA" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "KPI設計を相談する" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "MEO KPI管理の実践" },
+      { href: "/glossary/bounce-rate", label: "直帰率", desc: "サイト品質を示すKPI" },
+      { href: "/glossary/google-ads", label: "Google広告", desc: "広告施策のKPI設定" },
+      { href: "/services/seo", label: "SEO対策サービス", desc: "SEO KPIを達成するための支援" },
     ],
   },
   {
@@ -430,6 +511,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "Web集客においては月次のPDCAサイクルが一般的です。毎月の施策実施→データ確認→原因分析→翌月の改善策を繰り返すことで、集客効果を積み上げていきます。",
     points: [
       { title: "Web集客のPDCAサイクル例", body: "Plan：翌月のGBP投稿・記事テーマ・SNS施策の計画 → Do：計画通りの施策実施 → Check：順位・流入数・CV数の変化を確認 → Act：効果の高かった施策を強化、効果のなかった施策を見直す" },
+      { title: "MEO対策でのPDCA実践例", body: "Plan：今月の口コミ獲得目標と投稿テーマを設定 → Do：GBP投稿4回・口コミ依頼の導線設置 → Check：GBPインサイト（電話タップ数・ルート案内数）の変化を確認 → Act：効果のあった投稿カテゴリを増やし、クリックが少ないキーワードは投稿内容を変更する。この月次サイクルを6ヶ月続けることでMEO成果が積み上がります。" },
+      { title: "PDCAを高速化するためのポイント", body: "PDCAを速く回すためには、Checkに使う計測ツール（GA4・GBPインサイト）を事前に整え、毎月同じタイミングで確認する仕組みを作ることが重要です。「計測できない施策はやらない」原則を徹底し、効果が数値で確認できる施策に集中することで高速PDCAが実現します。" },
+      { title: "PDCAと仮説思考の組み合わせ", body: "PDCAを効果的に回すにはCheckで「なぜ変化したか」の仮説を立てることが重要です。「口コミが3件増えて電話タップが増えた」→「口コミが来電に影響している仮説」→「来月は口コミ獲得施策を強化」のように仮説→検証サイクルを意識することで施策の精度が継続的に高まります。" },
     ],
     faqs: [
       { q: "PDCAをうまく回すためのポイントは何ですか？", a: "①Checkでは数値を正確に計測する計測環境の整備、②ActionではCheckで見つけた課題に具体的な施策を対応させる、③サイクルをできるだけ短くして高速PDCAを意識することが重要です。" },
@@ -448,6 +532,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/meo", label: "MEO対策サービス", desc: "月次PDCAで成果を出す" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "PDCA運用を相談する" },
       { href: "/cost/total-package", label: "トータルパッケージ費用", desc: "PDCA込みの運用プラン" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "コンテンツ施策のPDCA" },
+      { href: "/glossary/cv-rate", label: "CV率", desc: "PDCAで改善するCV率" },
+      { href: "/services/seo", label: "SEO対策サービス", desc: "SEOのPDCAを代行" },
     ],
   },
   {
@@ -460,6 +547,10 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "コンテンツマーケティングとSEOは密接に連携しています。SEOを意識したコンテンツを継続発信することで、広告費なしに検索エンジンから安定した流入を獲得できます。一度作成したコンテンツは継続的に集客し続ける「資産」になります。",
     points: [
       { title: "コンテンツマーケティングのフロー", body: "①ターゲットペルソナの設定 → ②キーワードリサーチ → ③コンテンツカレンダー策定 → ④コンテンツ制作・公開 → ⑤効果計測・リライト → ⑥繰り返し" },
+      { title: "SEOと連携したコンテンツ設計", body: "コンテンツマーケティングの成果を最大化するには、キーワードリサーチで検索意図を把握し、ユーザーが知りたい情報を網羅的に提供することが重要です。一つのコンテンツで一つの主要キーワードと関連キーワードを自然にカバーし、E-E-A-Tが評価される専門性と信頼性を持たせることがSEO連携の基本です。" },
+      { title: "コンテンツの種類と使い分け", body: "ブログ記事（検索流入・SEO）・動画（YouTube・SNS拡散）・インフォグラフィック（被リンク・SNS）・ホワイトペーパー（BtoBリード獲得）・FAQページ（検索+AI検索対策）など、目的によってコンテンツの形式を使い分けます。それぞれのコンテンツが最大の効果を発揮するチャネルと組み合わせることが重要です。" },
+      { title: "コンテンツカレンダーの作り方", body: "コンテンツカレンダーには公開日・テーマ・ターゲットキーワード・担当者・ステータス（企画中・執筆中・公開済み）を管理します。月2〜4本の公開を目安に、季節性のあるテーマ（年中行事・業界イベント）を前もって計画に入れることで、計画的な情報発信が可能になります。スプレッドシートやNotionで管理するシンプルな方法から始めることを推奨します。" },
+      { title: "コンテンツのリライトとリフレッシュ戦略", body: "公開から半年〜1年経過したコンテンツは情報の鮮度・検索順位・ユーザーニーズの変化を確認し、必要に応じてリライト（書き直し）を行います。既存コンテンツのリライトは新規記事の作成よりも少ない工数で順位向上が期待できることが多く、コスト効率の良いSEO施策です。公開日を更新し最新情報を追記することで検索エンジンからの評価を維持します。" },
     ],
     faqs: [
       { q: "コンテンツマーケティングはどのくらいの期間で効果が出ますか？", a: "一般的に3〜6ヶ月で成果が見え始め、1〜2年で安定した流入基盤が確立します。広告と異なり即効性は低いですが、長期的な費用対効果は非常に高くなります。" },
@@ -478,6 +569,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/content-writing", label: "コンテンツライティング費用", desc: "外注コストの目安" },
       { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "高品質コンテンツの評価基準" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "コンテンツ戦略を相談する" },
+      { href: "/glossary/aio", label: "AIO", desc: "AI検索にも対応したコンテンツ" },
+      { href: "/glossary/schema-org", label: "Schema.org", desc: "コンテンツの構造化データ実装" },
+      { href: "/glossary/domain-authority", label: "ドメインオーソリティ", desc: "コンテンツで被リンクを増やす" },
     ],
   },
   {
@@ -490,6 +584,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "SNSは広告費なしに情報を発信できるオウンドメディアとして機能し、フォロワーとの継続的なコミュニケーションでブランドロイヤルティを高めます。MEO・SEOと組み合わせることで相乗効果が生まれます。",
     points: [
       { title: "主要SNSの特徴と向いている業種", body: "Instagram：ビジュアル系（飲食・美容・ファッション・インテリア）/ X（Twitter）：情報拡散・リアルタイム / Facebook：地域ビジネス・中高年層 / LINE公式：リピーター定着・予約促進 / TikTok：若年層向け・動画コンテンツ" },
+      { title: "SNSマーケティングの目標設定と指標", body: "SNS運用の目標を「認知拡大」「リピーター獲得」「問い合わせ獲得」のどれに置くかによって、追うべきKPIが変わります。認知拡大はリーチ数・インプレッション数、リピーター獲得はフォロワー増加数・エンゲージメント率、問い合わせ獲得はプロフィールURLクリック数・問い合わせ件数を主なKPIとします。" },
+      { title: "SNSとMEO・SEOの連携効果", body: "InstagramやX（Twitter）で発信した内容がGoogleの検索結果に表示されることがあり、SNSとSEOは完全に独立した施策ではありません。GBPの最新情報投稿とInstagramの投稿を連動させることで、MEO評価の維持とSNSフォロワーへのリーチを同時に実現できます。SNSでのブランド認知向上は指名検索（ブランド名での検索）の増加にもつながります。" },
+      { title: "SNSコンテンツ制作のポイント", body: "SNSで反応が得やすいコンテンツは、役立つ情報（ノウハウ・豆知識）・ビジュアルが美しいコンテンツ・ユーザーが共感・保存したくなる内容です。過度な宣伝・売り込み投稿はフォロワーの離脱につながります。ブランドの専門性と親しみやすさを両立した投稿を継続することが長期的なSNSマーケティングの成功の鍵です。" },
     ],
     faqs: [
       { q: "どのSNSから始めるべきですか？", a: "自社のターゲット顧客が最も利用しているSNSを選ぶことが重要です。来店型ビジネスはInstagram・LINE公式から始めるのが効果的なケースが多いです。" },
@@ -508,6 +605,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/sns", label: "SNS運用代行費用", desc: "月額3万円〜の費用相場" },
       { href: "/glossary/cv-rate", label: "CV率", desc: "SNS集客の効果測定" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "SNS戦略を相談する" },
+      { href: "/glossary/og-image", label: "OGP", desc: "SNSシェアを最適化するOGP" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "SNSと連携するコンテンツ戦略" },
+      { href: "/glossary/kpi", label: "KPI", desc: "SNSマーケティングのKPI設定" },
     ],
   },
   {
@@ -520,6 +620,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "SEOと異なり、広告費を支払う限り即座に検索結果上位に表示できます。ただし、広告を止めると即座に表示がなくなります。短期的な集客や新商品・キャンペーンの告知に有効です。",
     points: [
       { title: "SEOとGoogle広告の使い分け", body: "即効性が必要な場面・新サービスの立ち上げ・季節キャンペーン：広告 / 長期的で安定した集客・コスト削減：SEO。多くの場合、両方を並行して実施することが最も効果的です。" },
+      { title: "Google広告の主なキャンペーンタイプ", body: "検索キャンペーン（リスティング広告・テキスト広告）・ディスプレイキャンペーン（バナー広告）・P-MAXキャンペーン（全チャネル自動配信）・ショッピングキャンペーン（EC向け）・動画キャンペーン（YouTube）が主なタイプです。地域ビジネスには検索キャンペーンとP-MAXの組み合わせが基本です。" },
+      { title: "Google広告の効果測定と最適化", body: "Google広告のコンバージョン設定（フォーム送信・電話クリック・購入）を正確に行うことで、どのキーワード・広告が成果につながっているかを把握できます。クリック数・コンバージョン数・CPA（獲得単価）・ROAS（広告費用対効果）を主な指標として週次で確認し、パフォーマンスの低いキーワードを除外・入札調整することで効率を高めます。" },
+      { title: "Google広告とランディングページの関係", body: "Google広告のクリック後に表示されるランディングページの品質はCV率と広告の品質スコアの両方に影響します。広告のキーワードとLP内容の一致度・ページの読み込み速度・CVへの導線設計がLPOの重要ポイントです。同じ広告費でもLPの改善によってCPAを半減させることができるケースも珍しくありません。" },
     ],
     faqs: [
       { q: "Google広告の予算はいくらから始められますか？", a: "1日500〜1,000円から開始可能ですが、データ収集と最適化のために最低1日3,000〜5,000円程度の予算を確保することを推奨します。クリック単価は業種・競合によって大きく異なります。" },
@@ -538,6 +641,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/glossary/kpi", label: "KPI", desc: "広告のKPI設定" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "広告戦略を相談する" },
       { href: "/cost/total-package", label: "トータルパッケージ費用", desc: "広告×SEOの総合運用" },
+      { href: "/glossary/lp", label: "LP（ランディングページ）", desc: "広告クリック後のLP最適化" },
+      { href: "/glossary/pdca", label: "PDCA", desc: "広告施策のPDCAサイクル" },
+      { href: "/glossary/meo", label: "MEO", desc: "広告×MEOの地域集客戦略" },
     ],
   },
   {
@@ -550,6 +656,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "Googleはモバイルファーストインデックス（スマホ版サイトを評価の基準にする）を採用しており、レスポンシブデザインはSEOの観点からも必須です。スマートフォンからの検索比率が全体の60〜70%を超える現在、レスポンシブ対応は絶対的な要件です。",
     points: [
       { title: "モバイルファーストの重要性", body: "現在の検索トラフィックの約60〜70%がスマートフォンからです。Googleはモバイル版サイトを評価の基準とするため、スマホで快適に使えるサイト設計がSEO・UX両方の観点で最優先事項です。" },
+      { title: "レスポンシブデザインのブレークポイント設計", body: "レスポンシブデザインではCSSのメディアクエリで画面幅ごとにレイアウトを切り替えます。一般的なブレークポイントはスマートフォン（〜767px）・タブレット（768〜1023px）・PC（1024px〜）の3段階です。Tailwind CSSを使うとsm・md・lg・xlのユーティリティクラスでブレークポイントを直感的に管理できます。" },
+      { title: "レスポンシブデザインとCV率の関係", body: "スマートフォンで表示が崩れているサイトは、ユーザーの離脱率が高くCV率が下がります。スマホでフォームが使いにくい・ボタンが小さすぎる・横スクロールが発生するなどの問題はCV率に直接影響します。実際のスマートフォン端末でサイトを確認しながら設計することが重要です。" },
+      { title: "レスポンシブデザインにおける画像の最適化", body: "デスクトップ向けの大きな画像をそのままスマホで表示するとLCPが悪化しCore Web Vitalsのスコアが下がります。next/imageやsrcset属性を使ってデバイスの画面サイズに合わせた適切な解像度の画像を配信することで、表示速度とユーザー体験を同時に最適化できます。" },
     ],
     faqs: [
       { q: "既存サイトをレスポンシブ対応にするにはどうすればいいですか？", a: "既存サイトの構造によりますが、CSSの修正で対応できる場合と、サイト全体のリニューアルが必要な場合があります。まずは現状のモバイル対応度をGoogle PageSpeed Insightsで確認しましょう。" },
@@ -568,6 +677,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/homepage", label: "ホームページ制作費用", desc: "レスポンシブ対応の費用" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "スマホ対応を依頼する" },
       { href: "/glossary/seo", label: "SEO", desc: "モバイルSEOへの影響" },
+      { href: "/glossary/cv-rate", label: "CV率", desc: "スマホ最適化でCV率向上" },
+      { href: "/glossary/lp", label: "LP（ランディングページ）", desc: "レスポンシブ対応LPの制作" },
+      { href: "/web-design/nextjs", label: "Next.js制作", desc: "最先端のレスポンシブ実装" },
     ],
   },
   {
@@ -580,6 +692,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "CMSを使うことで、ブログ記事の投稿・画像の変更・メニューの更新などを管理画面から簡単に行えます。Next.js等のフレームワークとWordPress等のCMSを組み合わせた「ヘッドレスCMS構成」も近年普及しています。",
     points: [
       { title: "主要CMSの比較", body: "WordPress：世界シェア1位・プラグインが豊富・SEOに対応 / Next.js（Jamstack）：表示速度・セキュリティ優秀・開発コスト高め / Shopify：EC特化・使いやすい管理画面 / Notion等ヘッドレスCMS：柔軟性高い" },
+      { title: "CMSを選ぶ際のチェックポイント", body: "CMSを選ぶときは①自社でコンテンツ更新をするか・②必要な機能（予約・EC・多言語等）・③将来的なスケーラビリティ・④セキュリティ要件・⑤開発・保守コストの5点を確認します。ブログ更新が中心の中小企業サイトはWordPress、高パフォーマンスを重視するサイトはNext.jsが現実的な選択肢です。" },
+      { title: "WordPress運用で注意すべきセキュリティ対策", body: "WordPressはサイバー攻撃の標的になりやすいCMSです。管理画面URLの変更・管理者ユーザー名の変更・Wordfenceなどのセキュリティプラグイン導入・定期的なWordPress本体とプラグインのアップデートが基本対策です。特にプラグインは脆弱性の原因になりやすいため、使っていないプラグインは削除することが重要です。" },
+      { title: "ヘッドレスCMSとNext.jsの組み合わせ", body: "MicroCMS・Contentful・Sanityなどのヘッドレスは管理画面でコンテンツを編集しAPIでNext.jsに配信する構成です。WordPressより高速・セキュアで、ISR（インクリメンタル静的再生成）と組み合わせることで更新が即時反映される高速ブログ・ECを実現できます。開発コストはWordPressより高いですが、高品質なサイトを求める場合に有力な選択肢です。" },
     ],
     faqs: [
       { q: "WordPressとNext.jsはどちらが良いですか？", a: "更新を自社でやりたい・SEOブログを運用したい：WordPress / 表示速度・セキュリティ・スケーラビリティを重視：Next.js / 両方のメリットが欲しい：ヘッドレスWordPress（WP+Next.js）という選択肢もあります。" },
@@ -598,6 +713,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/homepage", label: "ホームページ制作費用", desc: "CMS別の費用比較" },
       { href: "/glossary/core-web-vitals", label: "Core Web Vitals", desc: "CMS選択と表示速度" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "CMS選定を相談する" },
+      { href: "/glossary/isr", label: "ISR", desc: "Next.jsの高速更新技術" },
+      { href: "/glossary/responsive-design", label: "レスポンシブデザイン", desc: "CMS対応のスマホ最適化" },
+      { href: "/glossary/seo", label: "SEO", desc: "CMS選択とSEOの関係" },
     ],
   },
   {
@@ -610,6 +728,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "LPはCVに特化した縦長の1ページ構成が一般的です。コーポレートサイトが企業・サービス全体を紹介するのに対し、LPは特定のサービス・商品の購入・申し込みを促すための設計です。",
     points: [
       { title: "CV率の高いLPの構成要素", body: "①強力なキャッチコピー（ファーストビュー）、②悩み・課題への共感、③解決策（サービス紹介）、④信頼要素（実績・口コミ・受賞）、⑤FAQ（不安解消）、⑥CTA（行動喚起）を順に配置する構成が基本です。" },
+      { title: "LPのコピーライティングで重要なポイント", body: "LPで最もCVに影響するのはコピーライティングです。ファーストビューのキャッチコピーは「誰の（ターゲット）・どんな悩みを（課題）・どう解決するか（ソリューション）」を一文で伝えることが基本です。ベネフィット（得られる価値）をフィーチャー（機能・特徴）より前面に出すことでユーザーの共感と行動を促します。" },
+      { title: "LPと広告の組み合わせ最適化", body: "Google広告やSNS広告のクリック先にLPを使う場合、広告の訴求内容とLPのファーストビューが一致していることが重要です（メッセージマッチ）。広告で「無料相談」と訴求しているならLPの冒頭にも「無料相談」を強調することでユーザーの期待とページの内容が一致し、直帰率低下とCV率向上につながります。" },
+      { title: "LPのABテストで検証すべき要素", body: "LPでA/Bテストの効果が出やすい要素は、ファーストビューのキャッチコピー・CTAボタンの文言・色・配置・フォームの入力項目数・ヒーロー画像の選択の順です。一度に複数の要素を変えると効果の原因が特定できないため、1要素ずつ変更しながら検証するシングル変数テストが基本です。" },
     ],
     faqs: [
       { q: "LPとホームページの違いは何ですか？", a: "ホームページ（コーポレートサイト）は会社全体の情報を提供する複数ページのサイト、LPは特定の目的（購入・申込）に特化した1ページのサイトです。広告のリンク先にLPを使い、企業情報はホームページに置く使い分けが一般的です。" },
@@ -628,6 +749,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/lp", label: "LP制作費用", desc: "5万円〜の費用相場" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "LP制作を依頼する" },
       { href: "/solutions/", label: "Web集客ソリューション", desc: "LP×広告の提案" },
+      { href: "/glossary/google-ads", label: "Google広告", desc: "LP×広告の最適化" },
+      { href: "/glossary/responsive-design", label: "レスポンシブデザイン", desc: "LPのスマホ対応" },
+      { href: "/glossary/bounce-rate", label: "直帰率", desc: "LPの直帰率改善" },
     ],
   },
   {
@@ -640,6 +764,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "DAが高いサイト（大手ニュースサイト・有名企業・政府機関等）からの被リンクはSEO評価への影響が大きく、DAが低いサイトからの多量リンクはスパムとみなされるリスクがあります。",
     points: [
       { title: "ドメインオーソリティを高める方法", body: "①高品質なコンテンツの継続作成で自然な被リンクを獲得、②業界メディア・ブログへの寄稿・PR、③信頼性の高いサイトへの掲載（業界団体・メディア等）がDAを高める主要な方法です。" },
+      { title: "ドメインオーソリティとページオーソリティの違い", body: "ドメインオーソリティ（DA）はサイト全体のランキング力を示すスコアです。ページオーソリティ（PA：Page Authority）は個別ページのランキング力を示します。どちらもMozが提供する指標で、1〜100のスコアで表されます。SEO分析ではDAとPAの両方を確認することで、サイト全体の強さと個別ページの競争力を把握できます。" },
+      { title: "新しいドメインでDAを積み上げる現実的な戦略", body: "新規サイトはDAが低い状態から始まるため、まず競合DAが低いニッチなキーワードで上位表示実績を作ることが重要です。地域密着型コンテンツ・専門用語の解説記事・業界の一次情報が自然な被リンク獲得に効果的です。DAの向上は最低6ヶ月〜1年の継続的な取り組みが必要であることを前提に計画を立てることが大切です。" },
+      { title: "被リンク獲得の安全な方法と避けるべき方法", body: "Googleが推奨する自然な被リンク獲得は、価値あるコンテンツ作成・プレスリリース・業界団体への掲載・専門家インタビュー記事などです。一方、被リンクの購入・リンクファーム・相互リンクの過剰使用・無関係なサイトからのリンクはGoogleのガイドライン違反でペナルティリスクがあります。長期的なSEO評価のためには自然な被リンクのみを追求することが重要です。" },
     ],
     faqs: [
       { q: "新しいサイトのDAはなぜ低いのですか？", a: "新規サイトは被リンクがなく・サイト年齢も短いため、DAは1に近い低い値から始まります。高品質なコンテンツの継続発信と被リンク獲得活動を続けることでDAは徐々に向上します。" },
@@ -658,6 +785,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/cost/seo", label: "SEO対策費用", desc: "被リンク対策の費用" },
       { href: "/guide/seo-strategy", label: "SEO戦略ガイド", desc: "DA向上の戦略" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "SEO相談をする" },
+      { href: "/glossary/content-marketing", label: "コンテンツマーケティング", desc: "被リンクを生むコンテンツ戦略" },
+      { href: "/glossary/schema-org", label: "Schema.org", desc: "構造化データでSEO評価を高める" },
+      { href: "/glossary/core-web-vitals", label: "Core Web Vitals", desc: "技術的SEOでDA評価を補強" },
     ],
   },
   {
@@ -670,6 +800,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "ISRを使うことで、ブログ記事やECの商品ページを静的ファイルとして配信しながら、定期的に最新データに更新できます。完全静的生成より柔軟で、完全SSRよりも高速です。",
     points: [
       { title: "ISRの設定方法（Next.js App Router）", body: "ページファイルに export const revalidate = 3600 を追加するだけで、1時間（3600秒）ごとにページを再生成するISRが有効になります。0を設定すると動的レンダリング（毎回サーバーで生成）になります。" },
+      { title: "ISRとSSG・SSR・CSRの比較", body: "SSG（静的生成）はビルド時のみページ生成でコンテンツ更新不可・最高速度 / ISRは定期的に再生成・高速かつ更新可能 / SSRはリクエストごとに生成・常に最新だが遅い / CSRはクライアントで生成・初期表示遅いがインタラクティブ性高い。ISRは速度と更新性のバランスが取れた現実的な選択肢です。" },
+      { title: "オンデマンドISR（revalidatePath）の活用", body: "Next.jsのServer ActionsまたはRoute Handlersからrevalidatepath()・revalidateTag()を呼び出すことで、特定のページやデータを即時に再生成できます。CMSからの記事更新を検知してWebhookでNext.jsのAPIを叩き、更新されたページだけを再生成するオンデマンドISRが現在のベストプラクティスです。" },
+      { title: "ISRとSEOの相性", body: "ISRで生成されたページは静的HTMLとして配信されるため、クローラーが容易にインデックスできます。また表示速度が速くCore Web Vitals（特にLCP）の改善に貢献します。ページ内容が定期的に更新されるブログ・ECでは、ISRによって常に最新コンテンツをクローラーに提供できます。SEOとパフォーマンスの両立において最も効果的なレンダリング方式の一つです。" },
     ],
     faqs: [
       { q: "ISRを使うとSEOに影響しますか？", a: "ISRは静的ファイルを配信するため表示速度が速く、SEOに好影響があります。revalidateの間隔は更新頻度に応じて設定してください（ブログ記事なら3600秒〜86400秒が一般的）。" },
@@ -688,6 +821,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "Next.js ISR対応サイト" },
       { href: "/cost/homepage", label: "ホームページ制作費用", desc: "Next.js制作の費用" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "高速サイト制作を相談する" },
+      { href: "/glossary/seo", label: "SEO", desc: "ISRとSEOの相性" },
+      { href: "/glossary/sitemap-xml", label: "サイトマップ", desc: "ISRサイトのインデックス促進" },
+      { href: "/glossary/responsive-design", label: "レスポンシブデザイン", desc: "ISRと組み合わせるUI設計" },
     ],
   },
   {
@@ -700,6 +836,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "Googleが自動的に生成するスニペットとは異なり、メタディスクリプションを適切に設定することで検索ユーザーへの訴求力を高められます。ただし、Googleが設定値を採用しない場合もあります。",
     points: [
       { title: "効果的なメタディスクリプションの書き方", body: "①120文字以内（スマホで表示される文字数）、②ターゲットキーワードを自然に含める、③ページの内容を正確に要約する、④「無料」「〇〇日以内」等の具体的な価値をアピールする、⑤行動を促すフレーズで締めくくる、が基本です。" },
+      { title: "メタディスクリプションとCTRの関係", body: "メタディスクリプションは検索結果でのクリック率（CTR）に直接影響します。同じ検索順位でも、魅力的なメタディスクリプションを書いたページはCTRが高くなります。CTRが高いページはGoogleに「ユーザーに役立つページ」と評価され、間接的に検索順位の維持・向上につながります。" },
+      { title: "ページ種別ごとのメタディスクリプションの書き方", body: "トップページは会社・サービスの全体像と差別化ポイントを簡潔に、サービスページはサービス内容・対象・メリットを、ブログ記事は記事で解決できる悩みと内容の要点を盛り込みます。ECの商品ページは商品の特徴・仕様・配送条件を含めることでクリック率と購買判断を後押しします。" },
+      { title: "メタディスクリプションの一括最適化の方法", body: "大量のページのメタディスクリプションを最適化するには、Google Search ConsoleでCTRが低いページを抽出し、優先的に改善することが効率的です。WordPressではYoast SEOで全ページのメタディスクリプションを管理画面から一元管理できます。Next.jsでは動的なmetadata生成を使って記事タイトルやスニペットを自動的にメタディスクリプションに反映させることが可能です。" },
     ],
     faqs: [
       { q: "メタディスクリプションを設定しないとどうなりますか？", a: "Googleがページの本文から自動的にスニペットを生成します。意図しない文章が表示されることが多く、クリック率が下がる可能性があるため、全ページに適切に設定することを推奨します。" },
@@ -718,6 +857,9 @@ export const glossaryPages: GlossaryPage[] = [
       { href: "/services/seo", label: "SEO対策サービス", desc: "メタタグ最適化を依頼する" },
       { href: "/cost/seo", label: "SEO対策費用", desc: "内部SEO対策の費用" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "SEO改善を相談する" },
+      { href: "/glossary/og-image", label: "OGP", desc: "SNS表示の最適化（OGP連携）" },
+      { href: "/glossary/sitemap-xml", label: "サイトマップ", desc: "メタ設定と組み合わせる技術SEO" },
+      { href: "/glossary/e-e-a-t", label: "E-E-A-T", desc: "メタ情報と信頼性の関係" },
     ],
   },
   {
@@ -730,6 +872,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "特に新規サイト・ページ数の多いサイト・動的に生成されるページが多いサイトでは、サイトマップの設置・送信がインデックスを速めるために重要です。Next.jsではapp/sitemap.tsを作成することで自動的にsitemap.xmlが生成されます。",
     points: [
       { title: "サイトマップとHTMLサイトマップの違い", body: "sitemap.xmlはGoogleなどの検索エンジンのクローラー向けの機械読み取り用ファイル。HTMLサイトマップ（/sitemap のURL）はユーザー向けのナビゲーションページで、人間が読みやすい形式でサイトの全ページ一覧を提供します。" },
+      { title: "sitemap.xmlに含める情報", body: "sitemap.xmlの各URLエントリには<loc>（URL）・<lastmod>（最終更新日）・<changefreq>（更新頻度のヒント）・<priority>（優先度0.0〜1.0）を記述できます。Googleはchangefreqとpriorityを参考情報として扱うため過度に最適化するより正確なlastmodの更新が重要です。" },
+      { title: "画像・動画サイトマップの活用", body: "画像を多用するサイト（ECや飲食・美容）は画像サイトマップ（image:image要素）を実装することで、Googleの画像検索でのインデックスを促進できます。動画コンテンツがある場合は動画サイトマップ（video:video要素）でYouTube以外のホスト動画もGoogleに認識させることができます。" },
+      { title: "Next.jsでのsitemap.xml自動生成", body: "Next.jsのApp Routerではapp/sitemap.tsファイルを作成し、sitemap()関数でURLの配列を返すことで自動的にsitemap.xmlが生成されます。データベースやCMSから動的にURLを取得して生成することも可能です。ビルド時にすべてのURLが確定するSSGの場合はnext-sitemap等のライブラリが便利です。" },
     ],
     faqs: [
       { q: "サイトマップを送信するとすぐにインデックスされますか？", a: "サイトマップ送信はGoogleへのクロール要求ですが、実際のインデックスはGoogleの判断次第です。サイトマップ送信後、通常数日〜数週間でインデックスされます。" },
@@ -744,6 +889,11 @@ export const glossaryPages: GlossaryPage[] = [
     related: [
       { href: "/glossary/seo", label: "SEO", desc: "検索最適化" },
       { href: "/sitemap", label: "HTMLサイトマップ", desc: "サイト全体の一覧" },
+      { href: "/glossary/meta-description", label: "メタディスクリプション", desc: "サイトマップと組み合わせる内部SEO" },
+      { href: "/glossary/isr", label: "ISR", desc: "Next.jsでのサイトマップ自動更新" },
+      { href: "/glossary/core-web-vitals", label: "Core Web Vitals", desc: "技術的SEOの総合最適化" },
+      { href: "/services/seo", label: "SEO対策サービス", desc: "サイトマップ設定を含むSEO対策" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "技術的SEOを相談する" },
     ],
   },
   {
@@ -756,6 +906,9 @@ export const glossaryPages: GlossaryPage[] = [
     detail: "直帰率が高い場合、「ページの内容がユーザーの期待と合っていない」「ページが重くて離脱された」「そのページで目的を達成した」等の可能性があります。業種・ページ目的によって適切な直帰率の範囲が異なります。",
     points: [
       { title: "直帰率が高い場合の原因と改善", body: "ページの内容がキーワードの意図と合っていない（コンテンツを改善）/ 表示速度が遅い（Core Web Vitals対応）/ スマホ表示が崩れている（レスポンシブ対応）/ ファーストビューの訴求が弱い（CTA・キャッチコピーの改善）" },
+      { title: "GA4での直帰率・エンゲージメント率の確認方法", body: "GA4では「レポート→エンゲージメント→ページとスクリーン」からページ別のエンゲージメント率と平均エンゲージメント時間を確認できます。エンゲージメント率が低い（直帰率が高い）ページを特定し、コンテンツ・速度・導線を優先して改善することが効率的です。UA（旧Google Analytics）の直帰率とGA4のエンゲージメント率は計算方法が異なるため、数値の直接比較は注意が必要です。" },
+      { title: "内部リンクで直帰率を改善する方法", body: "直帰率を下げるために最も効果的な施策の一つが内部リンクの充実です。記事内や記事末尾に「関連記事」「次に読むべきコンテンツ」「関連サービスページ」へのリンクを配置することで、ユーザーが複数ページを閲覧するきっかけを作ります。内部リンクのテキスト（アンカーテキスト）を「こちらをクリック」より「〇〇についての詳しい解説」のように具体的にすることでクリック率が向上します。" },
+      { title: "業種・ページ種別による直帰率の目安", body: "直帰率の適正値は業種とページの目的によって異なります。ブログ記事・FAQ・情報提供ページは70〜90%でも正常です。LP・サービスページは50〜70%が目安で、これを超える場合は改善余地があります。ECトップページ・カテゴリページは30〜50%が目標です。自社業種・ページ目的の基準と比較することが改善判断の基本です。" },
     ],
     faqs: [
       { q: "直帰率はどのくらいであれば良いですか？", a: "業種・ページ種類によって異なります。ブログ記事は70〜90%、ECサイトは40〜60%、LP（ランディングページ）は50〜70%が一般的な目安です。自社の業界平均と比較して判断してください。" },
@@ -770,6 +923,11 @@ export const glossaryPages: GlossaryPage[] = [
     related: [
       { href: "/support/analytics-setup", label: "アナリティクス設定", desc: "GA4での計測" },
       { href: "/glossary/cv-rate", label: "CV率", desc: "コンバージョン率" },
+      { href: "/glossary/core-web-vitals", label: "Core Web Vitals", desc: "表示速度改善で直帰率を下げる" },
+      { href: "/glossary/cta", label: "CTA", desc: "直帰前にCTAでCVにつなげる" },
+      { href: "/glossary/responsive-design", label: "レスポンシブデザイン", desc: "スマホ表示改善で直帰率低下" },
+      { href: "/services/web-design", label: "ホームページ制作サービス", desc: "直帰率を意識した設計" },
+      { href: "/contact", label: "無料相談・お問い合わせ", desc: "直帰率改善を相談する" },
     ],
   },
 ];

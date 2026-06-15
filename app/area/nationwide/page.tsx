@@ -55,22 +55,101 @@ const faqItems = [
     q: "複数都道府県にまたがる事業者にも対応できますか？",
     a: "はい。複数の都道府県にわたって店舗・拠点を持つ事業者の一括SEO・MEO管理に対応しています。統合的な集客戦略の設計から各拠点の施策実行まで一貫してサポートします。",
   },
+  {
+    q: "オンライン相談はどのように進めますか？",
+    a: "まずはお問い合わせフォーム・メール・LINE公式アカウントでご連絡ください。日程調整後にZoom・Google Meetで30〜60分の無料初回相談を実施します。現状の課題・目標・予算をヒアリングし、最適な施策プランをご提案します。事前にURLや現状データを共有いただくとより具体的なご提案が可能です。",
+  },
+  {
+    q: "地方（東京以外）でのMEO対策は効果がありますか？",
+    a: "はい。むしろ地方・郊外エリアはMEO競合が少ないため、東京都心より効果が出やすいケースが多いです。「〇〇市 〇〇」のGoogleマップ検索で上位を取ることで、来店・問い合わせへの直接的なつながりが生まれます。地方のMEO対策は今が参入の大きなチャンスです。",
+  },
+  {
+    q: "遠距離でのプロジェクト進行はスムーズにできますか？",
+    a: "はい。Zoom定例ミーティング・プロジェクト管理ツール（Notion等）・メール・LINE公式アカウントを組み合わせた体制で、全国どこからでもスムーズな進行が可能です。週次または月次での定期報告で常に現状と次のアクションを共有します。コミュニケーション頻度・方法はご要望に合わせて柔軟に調整します。",
+  },
+  {
+    q: "全国チェーン店・フランチャイズの一括MEO対応はできますか？",
+    a: "はい。複数拠点のGBP一括管理・統一した情報設計・エリア別キーワード戦略の設計に対応しています。各拠点の個別最適化と全体ブランドの統一性を両立した戦略を提供します。詳細はご相談ください。",
+  },
+  {
+    q: "首都圏以外でのSEO対策の競合状況はどうですか？",
+    a: "地域・業種によりますが、地方都市・郊外エリアはSEO競合が東京都心より少ない傾向があります。特に「〇〇市 〇〇（業種）」のローカルキーワードは競合が薄く、比較的少ない施策費用で上位表示が狙えるケースが多いです。まずは競合調査のうえ現実的な期待値をご説明します。",
+  },
+  {
+    q: "SNS運用・広告運用の全国対応も可能ですか？",
+    a: "Instagram・X（Twitter）・LINE公式アカウントの運用支援はリモートで全国対応しています。Google広告・Meta広告の運用サポートについてもご相談いただけます。ただし、広告運用は別途お見積もりとなります。",
+  },
+  {
+    q: "全国対応のホームページ制作の納期はどのくらいですか？",
+    a: "サイト規模・ページ数・コンテンツ量によりますが、5〜10ページ程度のコーポレートサイトであれば4〜8週間を目安としています。急ぎの案件はご相談ください。オンラインで進行するためヒアリング・確認のスピード感はご要望に合わせて調整します。",
+  },
+  {
+    q: "全国対応の支払い方法を教えてください。",
+    a: "銀行振込に対応しています。月額サービスは月初または月末の請求となります。制作案件は着手金・中間金・納品時の分割払いが基本です。詳細は契約時にご説明します。",
+  },
+  {
+    q: "初回相談から契約までの流れを教えてください。",
+    a: "お問い合わせ→日程調整→Zoom無料初回相談（30〜60分）→ご提案・お見積もり（1〜3営業日以内）→ご確認・修正対応→ご契約→施策開始、という流れになります。初回相談から契約まで最短1〜2週間で進めることも可能です。",
+  },
+  {
+    q: "サイプレスはどこに拠点がありますか？",
+    a: "東京都葛飾区白鳥4-6-1-623に拠点を置くWeb集客専門会社です。葛飾区・足立区・江戸川区・墨田区・草加市・越谷市などには対面相談にも対応しています。それ以外の全国エリアは完全リモートで対応します。",
+  },
+  {
+    q: "全国対応の場合のオンライン打合せの具体的な流れは？",
+    a: "お問い合わせ後に担当者より日程調整のご連絡をします。Zoom（またはGoogle Meet）で初回相談（30〜60分）を実施し、課題のヒアリングと大まかな方向性をご提案します。その後、現状分析レポートをもとに具体的な施策プランと費用をオンラインでご説明します。ご契約後はZoom定例・プロジェクト管理ツールで進捗を共有しながら施策を進め、毎月末に月次レポートをZoomまたはメールでご報告します。",
+  },
+  {
+    q: "地方でのSEO・MEO競合状況は都市部と比べてどうですか？",
+    a: "地方都市・郊外エリアは東京都心と比較してSEO・MEO競合が大幅に少ない状態です。東京23区内では数十〜数百社が競合するキーワードでも、地方の市区町村レベルでは競合が5〜10社以下というケースが多く、正しい施策を実行するだけで上位表示を達成できる可能性が高いです。月次費用が同じであれば、地方エリアのほうが費用対効果が大きくなりやすいです。",
+  },
+  {
+    q: "沖縄・北海道など遠方も対応できますか？",
+    a: "はい。SEO対策・AIO対策・ホームページ制作はすべてリモートで完結するため、沖縄・北海道・離島など日本全国どこからでもご依頼いただけます。時差もないため通常のZoom打合せで進行できます。実際に遠方のお客様とのプロジェクト進行もオンラインで滞りなく完結しています。",
+  },
+  {
+    q: "複数拠点・チェーン店の全国一括支援は可能ですか？",
+    a: "はい。複数の都道府県にまたがる店舗・フランチャイズチェーン・企業グループの一括SEO・MEO管理に対応しています。各拠点ごとのGBP最適化・エリア別キーワード設計・統一されたブランドコンセプトのもとでの施策展開を提供します。拠点数・エリアに応じたご提案をしますのでまずはご相談ください。",
+  },
+  {
+    q: "外国語（英語・中国語）対応SEOの相談は可能ですか？",
+    a: "はい。英語・中国語でのウェブサイト制作・GBP多言語設定・外国語キーワードSEO対応についてご相談いただけます。インバウンド需要が見込まれる観光地・宿泊施設・飲食店・小売店などで特に有効です。外国語対応のコンテンツ設計からSEO施策まで一括して対応します。",
+  },
+  {
+    q: "全国対応で訪問（現地）サポートは受けられますか？",
+    a: "基本的には全国完全リモートでの対応となります。東京都内・首都圏（葛飾区・足立区・江戸川区・墨田区・千葉・埼玉近郊）については訪問相談にも対応できます。その他エリアへの出張については案件規模・状況によってご相談に応じますので、まずはお問い合わせください。",
+  },
+  {
+    q: "地方の中小企業が相談する場合の費用感は？",
+    a: "MEO対策は月額2〜5万円程度、ローカルSEOコンサルティングは月額3〜8万円程度、ホームページ制作は規模によりますが30〜100万円程度が目安です。地方エリアは競合が少ないため、比較的少ない施策費用でも成果が出やすく、費用対効果を重視した施策設計が可能です。まずは無料相談でご予算と目標をお聞きし、現実的なプランをご提案します。",
+  },
 ];
 
 const relatedLinks = [
   { href: "/area", label: "対応エリア一覧", desc: "全対応エリアを見る" },
   { href: "/area/tokyo", label: "東京都", desc: "東京都の集客支援" },
-  { href: "/area/katsushika", label: "葛飾区", desc: "葛飾区（拠点エリア）" },
-  { href: "/area/chiba", label: "千葉県", desc: "千葉県の集客支援" },
   { href: "/area/saitama", label: "埼玉県", desc: "埼玉県の集客支援" },
   { href: "/area/kanagawa", label: "神奈川県", desc: "神奈川県の集客支援" },
-  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/aio", label: "AIO対策とは", desc: "AI検索対策" },
+  { href: "/area/chiba", label: "千葉県", desc: "千葉県の集客支援" },
+  { href: "/area/katsushika", label: "葛飾区", desc: "葛飾区（拠点エリア）" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索対策サービス" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "サービス詳細" },
+  { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
+  { href: "/aio", label: "AIO対策とは", desc: "AI検索対策基礎知識" },
+  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金・費用の目安" },
+  { href: "/cost/seo", label: "SEO対策の費用", desc: "料金・費用の目安" },
+  { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "法人サイト制作" },
   { href: "/knowledge/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
   { href: "/company", label: "会社情報", desc: "サイプレス会社概要" },
+  { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずはご相談ください" },
+  { href: "/services", label: "サービス一覧", desc: "全サービスを見る" },
+  { href: "/area/edogawa", label: "江戸川区", desc: "江戸川区の集客支援" },
+  { href: "/area/adachi", label: "足立区", desc: "足立区の集客支援" },
+  { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
+  { href: "/industries/clinic", label: "クリニックの集客", desc: "医療・治療院向け支援" },
 ];
 
 export default function Page() {
@@ -197,20 +276,26 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Section 3: サービスフロー */}
+        {/* Section 3: オンライン対応プロセス */}
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Remote Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
               全国対応のオンラインサービスフロー
             </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              オンライン相談申込から改善サイクルの定着まで、すべてのステップをリモートで完結します。全国どこからでも東京と同じプロセスで施策を進められます。
+            </p>
             <div style={{ maxWidth: "800px" }}>
               {[
-                { n: "01", t: "無料オンライン初回相談（Zoom / Google Meet）", b: "まずはZoom・Google Meetでの30〜60分の無料初回相談から始まります。現状のWeb集客の課題・目標・予算をヒアリングし、どのような施策が最も効果的かをご提案します。全国どこからでも参加いただけます。日程調整はメール・LINE・お問い合わせフォームで行います。" },
-                { n: "02", t: "オンラインでのご提案・お見積もり", b: "ヒアリング内容をもとに施策内容・スケジュール・費用のご提案書を作成し、Zoomでご説明します。ご質問・修正にも丁寧にオンラインで対応します。ご契約後はすぐに施策を開始します。" },
-                { n: "03", t: "リモートでの施策実行", b: "SEO対策・AIO対策・コンテンツ制作・Web制作・MEO対策など、すべての施策実行はリモートで完結します。進捗はプロジェクト管理ツール・メール・定期Zoomで共有し、常に現状と次のステップを明確にします。" },
-                { n: "04", t: "月次レポートと継続改善", b: "毎月の成果レポート（順位変化・アクセス数・GBP表示回数・問い合わせ数など）をZoom・メールで報告します。データに基づいた継続的な改善提案を行い、集客の成果を積み上げていきます。" },
-                { n: "05", t: "オンラインでの納品・完了確認", b: "ホームページ制作・コンテンツ納品などもすべてオンラインで完結します。確認・修正・最終納品まで丁寧に対応します。納品後の保守・更新・追加施策のご相談もリモートで迅速に対応します。" },
+                { n: "01", t: "オンライン相談申込", b: "ウェブサイトのお問い合わせフォーム・メール・LINE公式アカウントよりご連絡ください。担当者が1営業日以内に返信し、Zoom初回相談の日程を調整します。全国どこからでも当日〜翌営業日中に対応します。" },
+                { n: "02", t: "ヒアリング（Zoom）", b: "30〜60分のZoom相談で現状のWeb集客課題・目標売上・ターゲット顧客・競合状況をヒアリングします。事前にウェブサイトURLや現在の集客データを共有いただくと、より具体的な提案が可能です。" },
+                { n: "03", t: "現状分析レポート", b: "ヒアリング内容をもとに対象エリア・業種の競合調査・キーワードボリューム分析・MEO競合状況の調査を実施します。地方エリアは競合が少なく、この段階で施策の優先順位が明確になります。分析結果はPDFレポートでご提出します。" },
+                { n: "04", t: "施策提案（オンライン）", b: "競合調査の結果をもとにSEO・MEO・AIO・Web制作の優先施策と費用・スケジュールをZoomでご説明します。提案書はPDF・スライド形式でメール送付します。ご質問・修正要望にも丁寧に対応します。" },
+                { n: "05", t: "契約・オンボーディング", b: "ご契約後は担当者によるオンボーディングMTGを実施し、施策スケジュール・報告頻度・連絡方法を確認します。プロジェクト管理ツール（Notion等）へのご招待も行い、いつでも進捗が確認できる体制を整えます。" },
+                { n: "06", t: "施策実施（SEO・MEO・Web制作・AIO）", b: "合意した施策を順次実行します。GBP最適化・コンテンツ制作・内部SEO改善・ホームページ制作など、すべてリモートで実施します。進捗はプロジェクト管理ツールとメールで随時共有します。" },
+                { n: "07", t: "月次レポート・定例Zoom", b: "毎月末に順位変動・アクセス数・GBP表示回数・問い合わせ数をまとめたレポートを作成し、Zoom（またはメール）でご説明します。データに基づく次月の施策改善方針もあわせて報告します。" },
+                { n: "08", t: "改善サイクル（継続的最適化）", b: "月次レポートのデータをもとに施策を継続的に改善します。検索アルゴリズムの変動・競合状況の変化・季節性トレンドに柔軟に対応しながら、集客の成果を着実に積み上げていきます。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
@@ -228,9 +313,12 @@ export default function Page() {
         <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Guide</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
               エリア別対応の強みと特徴
             </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              地方エリアはMEO・SEO競合が少なく、同じ月次費用でも東京都心より大きな成果が期待できます。地方こそ今すぐWeb集客に着手するメリットが大きいエリアです。
+            </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
               {[
                 { area: "東京都・葛飾区周辺", desc: "最も得意なエリア。葛飾区・足立区・江戸川区・墨田区への訪問相談対応。東京23区全域のSEO・MEO・Web制作を一貫してサポート。" },
@@ -274,24 +362,157 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Section 6: 依頼するメリット（ダーク背景） */}
+        {/* Section A: 業種別の集客ポイント */}
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Industry Guide</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              業種別の集客ポイント
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              全国どのエリアでも、業種ごとの集客特性を理解した施策設計が成果への近道です。地方・郊外では各業種の競合がさらに薄く、早期の参入効果が期待できます。
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+              {[
+                {
+                  industry: "整体・整骨院・接骨院",
+                  point: "地域密着型の来院ニーズが高く、「〇〇市 整体」などMEOが最重要チャネル。地方エリアは競合が少なくGBP最適化だけで大きな成果が見込める。施術特化ページのSEOと組み合わせると長期的な集客基盤を構築できる。",
+                },
+                {
+                  industry: "飲食店・カフェ・居酒屋",
+                  point: "GoogleマップのMEOが集客の中心。写真品質・口コミ数・投稿頻度が順位に直結する。地方都市ではホットペッパー等のポータル依存が高く、MEO・ホームページで差別化する余地が大きい。AIOでの「地域おすすめ」引用獲得も有効。",
+                },
+                {
+                  industry: "美容室・ネイルサロン・エステ",
+                  point: "指名検索と「〇〇市 美容室」の両方を狙うSEO+MEO戦略が有効。Instagramとの連携でビジュアル訴求を強化し、予約への導線を整備する。地方エリアはホットペッパー掲載料が高く、自社集客への切り替えメリットが大きい。",
+                },
+                {
+                  industry: "歯科・クリニック・医療機関",
+                  point: "「〇〇市 歯科」「近く 歯医者」などの地域検索MEOが患者獲得の主要チャネル。E-E-A-T（専門性・信頼性）の強化がSEO・AIO双方に効果的。YMYL分野のため情報の正確性・著者明示が特に重要。",
+                },
+                {
+                  industry: "士業（税理士・行政書士・司法書士）",
+                  point: "「〇〇市 税理士」などのローカルSEOと専門特化コンテンツSEOの両立が鍵。AI検索（AIO）での専門家推薦引用を狙うE-E-A-T強化が全国どこでも効果的。信頼性の高いホームページが問い合わせ転換率を左右する。",
+                },
+                {
+                  industry: "工務店・リフォーム・建設業",
+                  point: "「〇〇市 リフォーム」「〇〇県 工務店」の地域SEOが主要チャネル。施工事例ページの充実がSEO・信頼感の両面で重要。地方エリアはWeb集客に未着手の競合が多く、コンテンツSEOへの早期参入で差別化できる。",
+                },
+                {
+                  industry: "不動産・賃貸・売買仲介",
+                  point: "「〇〇市 不動産」「〇〇駅 賃貸」の地域キーワードSEOとMEOが集客の柱。物件情報ページの構造化データ実装でAI検索への対応も強化できる。ポータルサイト依存からの自社集客シフトが全国的な課題となっている。",
+                },
+                {
+                  industry: "学習塾・スクール・教室",
+                  point: "「〇〇市 塾」「〇〇駅 英会話」などのローカル検索MEOと体験授業への導線設計が重要。保護者向けコンテンツSEOで信頼感を醸成し、問い合わせ転換を高める。地方エリアは競合塾のWeb対策が遅れており、参入余地が大きい。",
+                },
+              ].map((item) => (
+                <div key={item.industry} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.industry}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.point}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section B: 実装フロー */}
+        <section style={{ background: "#ffffff", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Implementation Flow</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              実装フロー
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              全国どこからでもオンラインで進められるリモート対応の具体的な流れです。初回相談から施策の定着まで、透明性の高いプロセスで一貫サポートします。
+            </p>
+            <div style={{ maxWidth: "800px" }}>
+              {[
+                { n: "01", t: "お問い合わせ・日程調整", b: "ウェブサイトのお問い合わせフォーム・メール・LINE公式アカウントよりご連絡ください。担当者が1営業日以内に返信し、Zoom初回相談の日程を調整します。全国どこからでも当日〜翌営業日中に対応します。" },
+                { n: "02", t: "Zoom無料初回相談（現状ヒアリング）", b: "30〜60分のZoom相談で現状のWeb集客課題・目標売上・ターゲット顧客・競合状況をヒアリングします。事前にウェブサイトURLや現在の集客データを共有いただくと、より具体的な提案が可能です。" },
+                { n: "03", t: "競合調査・キーワード分析（リモート）", b: "ヒアリング内容をもとに対象エリア・業種の競合調査・キーワードボリューム分析・MEO競合状況の調査を実施します。地方エリアは競合が少なく、この段階で施策の優先順位が明確になります。" },
+                { n: "04", t: "施策プラン・お見積もりの提案（オンライン）", b: "競合調査の結果をもとにSEO・MEO・AIO・Web制作の優先施策と費用・スケジュールをZoomでご説明します。提案書はPDF・スライド形式でメール送付します。ご質問・修正要望にも丁寧に対応します。" },
+                { n: "05", t: "ご契約・オンボーディング", b: "ご契約後は担当者によるオンボーディングMTGを実施し、施策スケジュール・報告頻度・連絡方法を確認します。プロジェクト管理ツール（Notion等）へのご招待も行い、いつでも進捗が確認できる体制を整えます。" },
+                { n: "06", t: "施策実行（SEO・MEO・Web制作・AIO）", b: "合意した施策を順次実行します。GBP最適化・コンテンツ制作・内部SEO改善・ホームページ制作など、すべてリモートで実施します。進捗はプロジェクト管理ツールとメールで随時共有します。" },
+                { n: "07", t: "月次レポート・Zoom定例報告", b: "毎月末に順位変動・アクセス数・GBP表示回数・問い合わせ数をまとめたレポートを作成し、Zoom（またはメール）でご説明します。データに基づく次月の施策改善方針もあわせて報告します。" },
+                { n: "08", t: "継続改善・追加施策の提案", b: "月次レポートのデータをもとに施策を継続的に改善します。成果が出てきたタイミングで追加施策（新規コンテンツ・広告・SNS連携）のご提案も行います。長期的な集客基盤を一緒に育てていきます。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section C: サイプレスに依頼するメリット（ダーク背景・拡張版） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
-              サイプレスに全国の集客を依頼するメリット
+              サイプレスに依頼するメリット
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
               {[
-                { n: "01", t: "完全リモートで全国どこでも均一品質", b: "Zoom・メール・プロジェクト管理ツールを活用したリモート対応体制で、北海道から沖縄まで均一品質のサービスを提供します。距離・時差の影響を最小化した迅速な対応を心がけています。" },
-                { n: "02", t: "地方エリアほど費用対効果が高い", b: "SEO・MEO競合が少ない地方エリアは、同じ施策費用でも東京都心より大きな成果が期待できます。地方ビジネスの集客改善は、競合が増える前の今が最大のチャンスです。" },
-                { n: "03", t: "SEO・AIO・Web制作のワンストップ対応", b: "SEO対策・AIO対策（AI検索最適化）・ホームページ制作・SNS運用を全国リモートで一社に依頼できます。複数業者への発注コスト・コミュニケーション負荷を削減します。" },
-                { n: "04", t: "データドリブンな施策で成果を可視化", b: "毎月の施策成果（順位変動・アクセス増加・問い合わせ数）をデータで報告します。感覚ではなく数字に基づく施策改善で、確実に集客成果を積み上げていきます。" },
+                { n: "01", t: "完全リモートで全国どこでも均一品質", b: "Zoom・メール・プロジェクト管理ツールを活用したリモート対応体制で、北海道から沖縄まで均一品質のサービスを提供します。対面訪問不要で、スピーディかつ低コストなプロジェクト進行が可能です。" },
+                { n: "02", t: "SEO・AIO・MEO・Web制作のワンストップ対応", b: "SEO対策・AIO対策（AI検索最適化）・MEO対策・ホームページ制作を全国リモートで一社に依頼できます。複数業者への発注コスト・コミュニケーション負荷を削減し、施策の一貫性を保てます。" },
+                { n: "03", t: "地方エリアほど費用対効果が高い施策設計", b: "SEO・MEO競合が少ない地方エリアは、同じ施策費用でも東京都心より大きな成果が期待できます。地域の競合状況を踏まえた現実的な期待値設定と、費用対効果の高い施策の優先順位設計を得意としています。" },
+                { n: "04", t: "データドリブンな月次報告で成果を可視化", b: "毎月の施策成果（順位変動・アクセス増加・GBP表示・問い合わせ数）をデータで報告します。感覚ではなく数字に基づく施策改善で、全国どこのビジネスでも集客成果を着実に積み上げます。" },
               ].map((item) => (
                 <div key={item.n}>
                   <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section D: 地方エリアの集客機会 */}
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Regional Opportunity</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              地方エリアにこそある、大きなWeb集客の機会
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
+              東京都心で難しいWeb集客も、地方・郊外エリアでは環境が大きく異なります。競合の少なさという構造的な優位性を活かした集客戦略が、地方ビジネスには有効です。
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+              {[
+                {
+                  title: "MEO・SEO競合が少なく成果が出やすい",
+                  body: "地方都市・郊外エリアはMEO・SEO競合が東京都心と比べて大幅に少ない状態です。「〇〇市 整体」「〇〇県 税理士」などのローカルキーワードでは、競合事業者が5〜10社以下というケースが多く、基本的なGBP最適化・コンテンツSEOだけで上位表示を達成できる可能性が高いです。早期参入ほど長期的な優位性を確保できます。",
+                },
+                {
+                  title: "月次費用が同じでも効果が大きい",
+                  body: "東京都心と同じSEO・MEO対策の月次費用を投じても、地方エリアでは競合が少ないため成果の規模が異なります。東京で数百社が競合するキーワードでも、地方では数社〜十数社の競合しかいないケースが多く、同じ費用投資で圧倒的に大きな集客成果が期待できます。地方中小企業にとってWeb集客は最も費用対効果の高い投資の一つです。",
+                },
+                {
+                  title: "Webマーケティング未着手の競合が多い",
+                  body: "地方・郊外エリアはWebマーケティングに未着手の競合事業者が多い状態です。GBP未整備・ホームページが古い・SNS未活用など、基本的な整備が完了していない競合が多く、今すぐ施策を始めれば短期間で地域内での存在感を圧倒的に高めることができます。",
+                },
+                {
+                  title: "ポータルサイト依存からの脱却チャンス",
+                  body: "地方の飲食・美容・医療・不動産業界では、ホットペッパー・食べログ・スーモ等のポータルサイトへの依存が高い傾向があります。掲載費が高騰する中、MEO・自社SEO・ホームページへの投資はポータル依存から脱却し、自社集客の安定基盤を築く絶好の機会です。リモートで全国対応可能なサイプレスがその移行を支援します。",
+                },
+                {
+                  title: "AI検索（AIO）は地方でも同等に有効",
+                  body: "ChatGPT・Gemini・Perplexityなどのアシスタント型AI検索は、地方エリアのビジネスにとっても重要な新しい集客チャネルです。「〇〇市のおすすめ整体は？」といった質問への回答に引用されるためのAIO対策（E-E-A-T強化・FAQ設計・構造化データ）は、地域に関わらず全国どこでもリモートで対応します。",
+                },
+                {
+                  title: "オンラインで東京と同じ水準の支援を受けられる",
+                  body: "これまで地方のビジネスが高品質なWebマーケティング支援を受けるには東京の会社への依頼が難しいという課題がありました。サイプレスは完全リモートの対応体制により、北海道から沖縄まで東京と全く同じ水準のSEO・AIO・MEO・Web制作の支援を提供します。地理的な制約を超えたサービス提供が強みです。",
+                },
+              ].map((item) => (
+                <div key={item.title} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                 </div>
               ))}
             </div>
