@@ -101,7 +101,30 @@ export default function BlogStrategyPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_13_52.png" alt="ブログ戦略・コンテンツカレンダー・SEO記事設計のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* コンテンツ戦略なしのリスク */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Strategy Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              コンテンツ戦略なしのSEOで失う4つの機会
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "ターゲットキーワードが散漫になる", b: "ブログ記事を思いつきで書き続けても、特定のテーマでの専門性がGoogleに評価されません。テーマを絞ったピラーコンテンツ戦略で権威性を積み上げることが重要です。" },
+                { t: "記事を書いても流入がゼロ", b: "検索ボリュームのないキーワードや競合が強すぎるキーワードを狙った記事は、どれだけ質が高くても検索流入がゼロになります。戦略的なキーワード設計が集客の前提です。" },
+                { t: "継続できずにコンテンツが停止", b: "毎回「何を書こう」から始める運用は必ず行き詰まります。コンテンツカレンダーで3ヶ月先までテーマを決めておくことで、継続できる体制を作れます。" },
+                { t: "ブランドの専門性が伝わらない", b: "テーマがバラバラなブログは「この会社の専門は何か」がGoogleにもユーザーにも伝わりません。特定領域での専門性を示すコンテンツ群がE-E-A-T向上の核心です。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* コンテンツ戦略の設計 */}

@@ -142,6 +142,58 @@ export default function ServicesSeoPage() {
           </div>
         </section>
 
+        {/* SEOをやらないリスク */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Why SEO Matters</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
+              SEO対策をしないと続く4つの機会損失
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+              {[
+                { n: "01", t: "検索で競合に差をつけられ続ける", b: "検索上位に表示された競合が毎月無料で集客している間、自社は広告費を払い続けるか機会を失い続ける。SEOは「やらない」ではなく「後回しにしたほど差がつく」施策です。" },
+                { n: "02", t: "広告依存から抜け出せない", b: "SEOによる自然検索流入がないと、Web集客はすべて広告費に依存。広告を止めれば集客もゼロになる不安定な構造が続きます。SEOは一度積み上げれば資産になります。" },
+                { n: "03", t: "ブランドの信頼性・権威性が築けない", b: "Googleに「専門性が高い・信頼できる」と評価されるサイトは、AI検索（AIO）でも引用されやすくなります。SEO対策はAIO対策にも直結します。" },
+                { n: "04", t: "サイトへの流入が伸びず成長が止まる", b: "WebサイトはSEO対策なしでは「誰にも見られない名刺」です。適切な対策で検索流入が増えれば、問い合わせ数・売上・採用応募数のすべてが向上します。" },
+              ].map((item) => (
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px" }}>{item.n}</span>
+                  <p className="font-bold text-[15px] mb-3" style={{ color: "#ffffff" }}>{item.t}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO効果が出る仕組み */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>How SEO Works</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              サイプレスのSEO対策で成果が出る仕組み
+            </h2>
+            <div className="max-w-4xl">
+              {[
+                { step: "STEP 01", t: "現状診断・課題の特定", b: "Google Search Console・Analyticsのデータ、クロール診断、被リンク分析から現在の課題を特定します。「何をすべきか」の優先順位を明確にすることが出発点です。" },
+                { step: "STEP 02", t: "キーワード設計・コンテンツ計画", b: "ビジネス目標に直結するキーワードグループを選定。検索意図・ボリューム・競合難易度を分析し、どのページで何を狙うかのコンテンツマップを作成します。" },
+                { step: "STEP 03", t: "内部SEO・テクニカル改善", b: "メタデータ最適化・構造化データ実装・Core Web Vitals改善・クロール最適化など、サイトの技術的な評価を高めます。" },
+                { step: "STEP 04", t: "コンテンツ制作・E-E-A-T強化", b: "検索意図に沿った高品質な記事制作。著者情報・専門知識・一次情報の付与でE-E-A-Tを高め、AI検索（AIO）での引用にも対応します。" },
+                { step: "STEP 05", t: "効果計測・継続改善", b: "月次レポートで順位変動・流入数・CV数を確認。検索トレンド・競合の動向を踏まえて施策を継続改善します。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1" style={{ background: "#c4b89a", color: "#ffffff", letterSpacing: "0.1em" }}>{item.step}</span>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
         {/* 業種・エリア */}
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">

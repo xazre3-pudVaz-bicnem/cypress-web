@@ -54,6 +54,14 @@ const faqItems = [
     q: "自費診療と保険診療の両方を告知する際の注意点は？",
     a: "保険診療では柔道整復師法・あんまマッサージ指圧師法等の規制があります。自費診療はより自由に告知できますが、医療広告ガイドラインの範囲内で行う必要があります。具体的な適応症状の断定的な記載は避け、「対応可能なお悩み」という表現を推奨します。",
   },
+  {
+    q: "症状別のランディングページは整体院の集客に有効ですか？",
+    a: "非常に有効です。「腰痛専門ページ」「肩こり・頭痛の施術ページ」「産後ケアページ」など症状別のページを作成することで、特定の悩みを持つユーザーの検索に対応できます。各ページのSEO最適化と合わせて、悩み別の問い合わせ獲得経路を複数構築します。",
+  },
+  {
+    q: "整体院・接骨院でLINE公式アカウントを活用するメリットは？",
+    a: "LINE公式アカウントは次回予約のリマインド・施術後のフォローメッセージ・口コミ依頼・健康情報の定期配信に活用できます。患者さんとの継続的な接点を持つことでキャンセル率の低下・リピート率の向上・紹介の増加につながります。",
+  },
 ];
 
 const relatedLinks = [
@@ -63,6 +71,8 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "SNS運用代行の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "整体院向けサイト制作" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "症状別キーワードで集客" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
@@ -165,6 +175,55 @@ export default function OsteopathicPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              整体院・接骨院が抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "保険適用の説明が不十分で患者の不安が解消されていない", b: "「保険は使えるの？」「自費と保険はどう違う？」という疑問はほぼすべての新規患者が持っています。ホームページとGBPに保険適用の可否・適用条件・自費メニューとの違いをわかりやすく掲載することで問い合わせ前の疑問を解消し、予約のハードルを下げます。" },
+                { n: "02", t: "口コミが少なく競合院との差別化ができていない", b: "Googleマップで整体院を比較する患者は口コミの数と内容を最初に確認します。口コミが少ない・または古い院は信頼性が劣って見えます。施術後の口コミ依頼フロー（QRカード・LINE送付）を整備し、継続的に口コミを獲得する仕組みを構築することが集客の土台になります。" },
+                { n: "03", t: "症状別のコンテンツが不足し検索流入が少ない", b: "「腰痛 整体」「肩こり 治療 ○○区」「産後 骨盤矯正 ○○駅」など症状・部位・地域を組み合わせた検索への対応が不十分だと、SEO経由の問い合わせを取り逃します。症状別のサービスページ・お悩み解説コンテンツを整備することで、多様な検索に対応した集客経路を作ります。" },
+                { n: "04", t: "地域に競合院が増え差別化が難しくなっている", b: "整体院・整骨院は競合数が多く、立地だけでの差別化は困難です。「得意とする症状」「施術者の資格・経歴」「施術方針」「院の雰囲気」など、他院との違いを明確にWebで発信することが選ばれる理由をつくります。GBPの院内写真・施術者紹介・特色の言語化が重要です。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスの整体院・接骨院向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO対策", desc: "「腰痛 整体 ○○区」「肩こり 整骨院 ○○駅」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得・定期投稿を継続運用し、地域の新規患者獲得を強化します。" },
+                { label: "症状別SEO対策", desc: "「産後 骨盤矯正 ○○市」「慢性腰痛 整体 費用 ○○区」など症状×地域キーワードに対応したサービスページ・コンテンツを制作します。医療広告ガイドラインを遵守した表現で安全に集客します。" },
+                { label: "ホームページ制作", desc: "施術内容・料金・アクセス・施術者プロフィール・お客様の声・予約フォームを備えたホームページを制作します。初めての患者が安心して予約できる情報設計と導線を優先します。" },
+                { label: "口コミ管理支援", desc: "施術後のGoogleマップ口コミ獲得フロー（QRカード設計・LINE送付文面作成）を構築します。全口コミへの返信文面の作成代行も対応し、高評価の維持と信頼性の継続的な向上を支援します。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

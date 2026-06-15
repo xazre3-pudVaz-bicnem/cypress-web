@@ -141,6 +141,137 @@ export default function ServicesAioPage() {
           </div>
         </section>
 
+        {/* AI検索が従来SEOと異なる5つのポイント */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Key Differences</p>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
+              AI検索が従来SEOと異なる5つのポイント
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                {
+                  num: "01",
+                  title: "AIは単一の答えを提示する",
+                  body: "Google検索は複数のリンクを並べるが、ChatGPT等は1つの回答を提示。上位に引用されないと存在しないも同然。",
+                },
+                {
+                  num: "02",
+                  title: "クリック率より引用率が重要",
+                  body: "AIに回答の中で自社サービスが言及・引用されることが重要。クリックされる前段階で選別が完了している。",
+                },
+                {
+                  num: "03",
+                  title: "E-E-A-Tと専門性の明示が評価の核心",
+                  body: "著者情報・会社情報・根拠の明示がAIに信頼できる情報源と判断させる。運営者が曖昧なサイトは引用されにくい。",
+                },
+                {
+                  num: "04",
+                  title: "構造化されたコンテンツが引用されやすい",
+                  body: "見出し・箇条書き・FAQなど、AIが参照しやすい形式で書かれたコンテンツが選ばれる。長文の流し読みより要点の整理が効く。",
+                },
+                {
+                  num: "05",
+                  title: "llms.txtによるクローラー制御が有効",
+                  body: "AI検索エンジン向けのllms.txtを設置することで、どのページを参照させるかを制御できる。重要ページを明示的にAIへ伝える手段として注目されている。",
+                },
+              ].map((item) => (
+                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }}>
+                  <span className="text-[28px] font-black shrink-0 leading-none" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>{item.num}</span>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#FFFFFF" }}>{item.title}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#9CA3AF" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* 業種別AIO活用事例 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Industry Cases</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              業種別AIO活用事例
+            </h2>
+            <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
+              {[
+                {
+                  industry: "コンサルティング業",
+                  body: "業界課題・解決策のQ&A形式コンテンツがAIに引用され、専門性の高いコンサルとして認知されやすくなる。",
+                },
+                {
+                  industry: "医療・クリニック",
+                  body: "症状・治療に関する専門解説がAI検索で紹介される。患者が「どんな症状か」を聞いたときに自院が言及される状態を目指す。",
+                },
+                {
+                  industry: "士業・法律",
+                  body: "法律相談のFAQがAI回答の情報源になりやすい。「遺産相続の手順」「労働問題の相談先」などの質問での引用獲得が狙える。",
+                },
+                {
+                  industry: "IT・SaaS",
+                  body: "技術用語解説・比較記事がAI検索でリファレンスになる。「〇〇とは」「〇〇の選び方」クエリで自社コンテンツが引用される。",
+                },
+                {
+                  industry: "不動産",
+                  body: "エリア相場・物件選びガイドがAIに引用される。「〇〇区の家賃相場」「マンション購入の注意点」などの情報発信が効果的。",
+                },
+                {
+                  industry: "教育・スクール",
+                  body: "学習方法・選び方ガイドがAI検索で提示される。「プログラミングスクールの選び方」「英語学習のコツ」などのコンテンツが引用の起点になる。",
+                },
+              ].map((item) => (
+                <div key={item.industry} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                  <p className="font-bold text-[13px] mb-3" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>{item.industry}</p>
+                  <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスのAIO支援の流れ */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Our Process</p>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              サイプレスのAIO支援の流れ
+            </h2>
+            <div className="grid gap-8" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}>
+              {[
+                {
+                  step: "STEP 01",
+                  title: "現状のAI認知度診断",
+                  body: "ChatGPT・Gemini・Perplexityで自社が引用されるかどうかを確認。競合の引用状況も調査し、改善余地を明確にします。",
+                },
+                {
+                  step: "STEP 02",
+                  title: "AIO対策コンテンツ設計",
+                  body: "E-E-A-T強化・FAQ作成・著者情報整備・構造化データ実装の計画を策定。優先順位をつけてロードマップを作成します。",
+                },
+                {
+                  step: "STEP 03",
+                  title: "コンテンツ制作・サイト改善",
+                  body: "高品質なコンテンツ制作とWebサイトの技術的改善を実施。llms.txtの設置・JSON-LD実装・既存コンテンツのリライトを行います。",
+                },
+                {
+                  step: "STEP 04",
+                  title: "継続的モニタリングと改善",
+                  body: "AI検索での引用状況を継続的に確認し、引用されていないクエリに対してコンテンツを改善。効果を積み上げます。",
+                },
+              ].map((item) => (
+                <div key={item.step} className="py-8 px-6" style={{ borderTop: "3px solid #c4b89a", background: "#F9F8F5" }}>
+                  <p className="text-[11px] font-bold tracking-[0.18em] mb-3" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>{item.step}</p>
+                  <p className="font-bold text-[15px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
+                  <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <FaqSection items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

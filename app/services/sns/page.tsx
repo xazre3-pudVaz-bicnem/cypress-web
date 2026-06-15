@@ -141,7 +141,122 @@ export default function ServicesSnsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#FFFFFF" />
+        {/* SNS集客が重要な理由 */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Why SNS Matters</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
+              SNS集客が重要な理由｜今の検索行動の変化
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  title: "ユーザーの情報収集がSNS中心に",
+                  body: "Z世代の多くはGoogleより先にInstagramで情報を検索する傾向があります（参考値）。SNSは検索エンジンの代替として機能し始めており、SNS上での存在感が集客を左右します。",
+                },
+                {
+                  title: "飲食・美容・ファッション分野のSNS依存度",
+                  body: "「来店のきっかけ」としてInstagramを挙げる消費者が増加しています。SEOよりも購買決定に近い位置にあり、SNSは今や集客の最前線です。",
+                },
+                {
+                  title: "UGC（ユーザー生成コンテンツ）の信頼性",
+                  body: "企業の広告より、実際のユーザー投稿・口コミが購買判断に影響しやすい。UGCを生み出す仕組みをSNS運用の中に設計することで、自然な口コミ拡散を促せます。",
+                },
+                {
+                  title: "SNS×MEO×SEOの相乗効果",
+                  body: "SNSで認知→Googleマップで評価確認→予約・来店という導線が一般化しています。SNS単体ではなく、MEO・SEOと連動させることで集客効果が高まります。",
+                },
+              ].map((item, i) => (
+                <div key={i} className="p-6" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <p className="font-bold text-[15px] mb-3" style={{ color: "#FFFFFF" }}>{item.title}</p>
+                  <p className="text-[13px] leading-[1.9]" style={{ color: "#9CA3AF" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* プラットフォーム別活用ガイド */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Platform Guide</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              プラットフォーム別 活用ガイド
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                {
+                  num: "01",
+                  platform: "Instagram",
+                  target: "飲食・美容・ライフスタイル",
+                  body: "写真・リール中心のビジュアルコンテンツが強み。来店前の情報収集として活用されやすく、飲食・美容・ファッション・インテリアなど「見た目」で価値が伝わる業種に最適。",
+                },
+                {
+                  num: "02",
+                  platform: "X（Twitter）",
+                  target: "情報発信・ニュース・BtoB",
+                  body: "テキスト・リンク中心のリアルタイム情報発信に強い。BtoB企業・専門家・メディアとの繋がりを作りやすく、業界知識の発信でブランディングを高める用途に向いている。",
+                },
+                {
+                  num: "03",
+                  platform: "LINE公式アカウント",
+                  target: "既存顧客へのリテンション",
+                  body: "クーポン・予約・お知らせ配信に強く、友だち登録した既存顧客への継続的なコミュニケーションに最適。開封率がメールより高く、来店・再購入促進の導線として機能する。",
+                },
+                {
+                  num: "04",
+                  platform: "TikTok",
+                  target: "若年層・エンタメ・飲食",
+                  body: "縦型短尺動画でバズりやすいアルゴリズム。フォロワーゼロでも良質なコンテンツで拡散される可能性があり、若年層へのリーチや飲食店・エンタメ系のブランド認知拡大に有効。",
+                },
+              ].map((item) => (
+                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                      <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.platform}</p>
+                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#E8E4DC", color: "#374151" }}>{item.target}</span>
+                    </div>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* SNS運用で避けるべき失敗 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Common Mistakes</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SNS運用で避けるべき5つの失敗
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                "フォロワー数だけ追いかけてCV導線を作らない",
+                "投稿頻度が不安定でアルゴリズムに評価されない",
+                "「商品紹介だけ」の一方的な投稿でエンゲージメントが低い",
+                "業種・ターゲットに合わないプラットフォームを選んでいる",
+                "インサイトデータを見ずに改善できていない",
+              ].map((text, i) => (
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span
+                    className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-bold"
+                    style={{ background: "#FEE2E2", color: "#DC2626", minWidth: "24px", minHeight: "24px" }}
+                  >
+                    ✕
+                  </span>
+                  <p className="text-[14px] leading-[1.8] pt-0.5" style={{ color: "#374151" }}>{text}</p>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SNS運用サービスの無料相談"

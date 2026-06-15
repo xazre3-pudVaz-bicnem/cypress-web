@@ -157,6 +157,123 @@ export default function ServicesMeoPage() {
           </div>
         </section>
 
+        {/* MEO対策をしないと機会損失が続く理由 */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Why It Matters</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
+              MEO対策をしないと機会損失が続く理由
+            </h2>
+            <div className="grid gap-6" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))" }}>
+              {[
+                {
+                  title: "「近くの〇〇」検索がスマホで急増中",
+                  body: "スマホ検索の多くは地域情報を含む（参考値）。Googleマップ上位に出ないと検索ユーザーに選ばれる機会が生まれない。",
+                },
+                {
+                  title: "Googleマップは購買直前の最終確認場所",
+                  body: "来店を決めたユーザーが最後に確認するのがGoogleマップのレビュー・写真・情報。ここで離脱させてはならない。",
+                },
+                {
+                  title: "競合他社のGBPが充実していれば一方的に負ける",
+                  body: "近隣の競合が口コミ・写真・情報を充実させていれば、自社は選ばれない。放置するほど差は広がる。",
+                },
+                {
+                  title: "放置したGBPは誤情報が蓄積するリスク",
+                  body: "第三者による提案変更・古い情報・未管理の口コミが信頼を損なう。定期的な管理なしにGBPは健全を保てない。",
+                },
+              ].map((item) => (
+                <div key={item.title} className="p-6" style={{ border: "1px solid rgba(196,184,154,0.25)", background: "rgba(255,255,255,0.04)" }}>
+                  <p className="font-bold text-[14px] mb-3" style={{ color: "#FFFFFF" }}>{item.title}</p>
+                  <p className="text-[13px] leading-[1.9]" style={{ color: "#9CA3AF" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Googleが評価する3つの基準 */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Google Ranking Factors</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              Googleが評価する3つの基準×サイプレスの施策
+            </h2>
+            <div className="grid gap-6" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
+              {[
+                {
+                  criterion: "関連性（Relevance）",
+                  body: "カテゴリ・サービス名・説明文を最適化し「何の店か」をGoogleに正確に伝える。業種・サービスキーワードを適切に設定することで、関連する検索クエリにマッチしやすくなる。",
+                },
+                {
+                  criterion: "距離（Distance）",
+                  body: "対象エリア・サービス提供エリアを正確に設定し、地域ごとの検索に対応。住所・エリア情報の整合性を保ちながら、サービス提供範囲を明確にする。",
+                },
+                {
+                  criterion: "知名度（Prominence）",
+                  body: "口コミ獲得支援・高品質写真投稿・外部リンク構築で知名度スコアを向上。口コミ件数・評価・返信率・投稿更新頻度が知名度評価に影響する。",
+                },
+              ].map((item) => (
+                <div key={item.criterion} className="p-7" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderTop: "3px solid #c4b89a" }}>
+                  <p className="font-bold text-[14px] mb-3" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>{item.criterion}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 月次MEO対策レポートの内容 */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Monthly Report</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              月次MEO対策レポートの内容
+            </h2>
+            <p className="text-[14px] leading-[1.9] mb-10" style={{ color: "#374151", maxWidth: "600px" }}>
+              毎月の施策結果を可視化し、次月の改善方針を明確にするレポートをご提供します。
+            </p>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                {
+                  num: "01",
+                  title: "Googleビジネスプロフィール インサイト",
+                  desc: "検索表示回数・電話クリック数・経路クリック数・Webサイトクリック数を月次で集計。前月比の推移とともに報告します。",
+                },
+                {
+                  num: "02",
+                  title: "競合比較（検索順位・口コミ数）",
+                  desc: "主要キーワードにおける自社と競合他社の表示順位・口コミ件数・評価スコアを比較し、差分を明確にします。",
+                },
+                {
+                  num: "03",
+                  title: "口コミ件数・評価推移",
+                  desc: "当月獲得口コミ数・累計件数・平均評価スコアの推移を記録。口コミへの返信状況もあわせて確認します。",
+                },
+                {
+                  num: "04",
+                  title: "翌月の改善計画",
+                  desc: "インサイトデータと競合分析をもとに、翌月実施する施策の優先順位と具体的なアクションプランを提示します。",
+                },
+                {
+                  num: "05",
+                  title: "Q&Aの更新状況",
+                  desc: "Googleビジネスプロフィールの「Q&A」セクションへの新規投稿・回答状況を確認し、必要に応じてコンテンツを追加します。",
+                },
+              ].map((item) => (
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>{item.num}</span>
+                  <div>
+                    <p className="font-bold text-[14px] mb-1.5" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
         <FaqSection items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

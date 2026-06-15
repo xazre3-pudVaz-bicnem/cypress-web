@@ -145,6 +145,58 @@ export default function ServicesWebDesignPage() {
           </div>
         </section>
 
+        {/* Webサイトが集客を変える理由 */}
+        <section className="py-20" style={{ background: "#0d1b2a" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Why Your Website Matters</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
+              優れたWebサイトが集客・採用・信頼を変える理由
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+              {[
+                { n: "01", t: "Webサイトは24時間365日の営業担当者", b: "営業時間外でもサービス内容・実績・料金を自動で伝え、問い合わせを受け付けます。質の高いWebサイトは、営業・集客・信頼構築を同時に自動化します。" },
+                { n: "02", t: "SEO・MEO・SNSの成果の受け皿になる", b: "どれだけ検索順位を上げても、SNSでフォロワーが増えても、流入先のサイトが信頼を損なうなら成果はゼロになります。Webサイトはすべての施策の集約点です。" },
+                { n: "03", t: "採用候補者の応募意欲を大きく左右する", b: "求職者は応募前に必ず企業サイトを確認します。魅力的な採用ページ・代表メッセージ・チーム紹介が整っていると、応募率と採用品質が向上します。" },
+                { n: "04", t: "古いサイトが与える信頼毀損", b: "デザインが古い・モバイル対応していない・表示が遅いサイトは、ユーザーに不安を与えます。第一印象で離脱されれば、どれほど良いサービスでも選ばれません。" },
+              ].map((item) => (
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px" }}>{item.n}</span>
+                  <p className="font-bold text-[15px] mb-3" style={{ color: "#ffffff" }}>{item.t}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 制作の流れ */}
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Production Flow</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              Web制作の流れ
+            </h2>
+            <div className="max-w-4xl">
+              {[
+                { step: "STEP 01", t: "無料相談・要件ヒアリング", b: "ビジネス目標・ターゲット・必要なページ・予算・スケジュールをヒアリングします。競合サイトの調査・デザインの方向性についても確認します。" },
+                { step: "STEP 02", t: "サイト設計・提案", b: "サイトマップ・ページ構成・キーワード設計・コンテンツ構成・CV導線設計を設計します。デザインの方向性（参考イメージ・ブランドカラー）も決定します。" },
+                { step: "STEP 03", t: "デザイン・コーディング", b: "モバイルファーストでデザインを制作し、ご確認いただきながら進めます。フィードバックを反映しつつ、Next.jsまたはWordPressで実装します。" },
+                { step: "STEP 04", t: "SEO・パフォーマンス最適化", b: "内部SEO実装（メタデータ・構造化データ・サイトマップ）・Core Web Vitals最適化・モバイル表示確認を実施します。" },
+                { step: "STEP 05", t: "公開・保守サポート", b: "本番公開後の動作確認・Google Search Consoleへの登録・月次保守プランの開始まで対応します。公開後のSEO対策も継続支援します。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1" style={{ background: "#c4b89a", color: "#ffffff", letterSpacing: "0.1em" }}>{item.step}</span>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
         {/* こだわり */}
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">

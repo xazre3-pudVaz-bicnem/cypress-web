@@ -8,8 +8,18 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "SEOライティング｜検索意図に沿ったコンテンツ作成",
+  title: "SEOライティング｜検索意図に沿ったコンテンツ作成｜サイプレス",
   description: "SEOライティングの基本原則と実践方法。キーワードの自然な組み込み・見出し構造・E-E-A-T対応・検索意図への回答で検索上位を狙うコンテンツ作成術。",
+  keywords: ["SEOライティング", "SEO記事作成", "検索意図", "E-E-A-T", "コンテンツSEO", "キーワード最適化", "SEOコンテンツ"],
+  openGraph: {
+    title: "SEOライティング｜検索意図に沿ったコンテンツ作成",
+    description: "SEOライティングの基本原則と実践方法。キーワードの自然な組み込み・見出し構造・E-E-A-T対応・検索意図への回答で検索上位を狙うコンテンツ作成術。",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo/seo-writing" },
 };
 
 const faqItems = [
@@ -18,6 +28,8 @@ const faqItems = [
   { q: "AIを使ってSEO記事を書いてもいいですか？", a: "GoogleはAI生成コンテンツを禁止していませんが、「品質の高いコンテンツ」を評価基準にしています。AIの下書きをベースに人間が事実確認・編集・独自の経験や視点を加えることで、AIだけでは書けない価値あるコンテンツになります。" },
   { q: "SEO記事の適切な文字数はどのくらいですか？", a: "検索意図によって異なります。情報収集型は2,000〜4,000文字、比較検討型は1,500〜3,000文字が多いです。「文字数を多くすれば上位に上がる」は誤解で、検索意図を満たす内容量が重要です。" },
   { q: "既存記事のリライトはSEOに効果がありますか？", a: "非常に効果的です。古い情報の更新、検索意図へのより的確な回答、内部リンクの追加などでリライトした記事が上位表示されるケースは多くあります。Googleは「最新性」も評価します。" },
+  { q: "タイトルタグとH1の違いは何ですか？", a: "タイトルタグ（title要素）は検索結果に表示されるテキストで、H1はページ内の最上位見出しです。同じ内容か近い内容にすることが一般的ですが、タイトルタグは検索クリックを促すための表現、H1はページの内容を明確に示す表現として少し異なっても問題ありません。" },
+  { q: "SEOライティングでリード文（導入文）はどう書けばいいですか？", a: "リード文では検索クエリへの直接回答・このページで何がわかるか・読む価値があることを3〜5文で伝えます。長い前置きや「〇〇とはどういうことでしょうか？」のような問いかけから始めるのは避け、結論から入ることが重要です。" },
 ];
 
 const relatedLinks = [
@@ -25,6 +37,9 @@ const relatedLinks = [
   { href: "/seo/keyword-research", label: "キーワード調査", desc: "キーワード選定" },
   { href: "/seo/blog-strategy", label: "ブログ戦略", desc: "記事計画の立て方" },
   { href: "/ai/blog-automation", label: "AIブログ自動化", desc: "AI活用のコンテンツ制作" },
+  { href: "/seo/seo-audit", label: "SEO監査", desc: "現状診断から改善へ" },
+  { href: "/aio/ai-overview", label: "AI Overview対策", desc: "生成AI検索への引用対策" },
+  { href: "/seo/internal-seo", label: "内部SEO", desc: "サイト内部の最適化" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細" },
 ];
 
@@ -33,12 +48,12 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/seo">SEO対策</Link>
+              <Link href="/seo" style={{ color: "#6B7280" }}>SEO対策</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               SEOライティング
             </nav>
@@ -49,12 +64,44 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
               SEOライティングとは、検索エンジンとユーザーの両方に価値を提供する文章を書く技術です。キーワードの詰め込みではなく、検索意図を正確に把握し、専門性と読みやすさを両立したコンテンツ作成が求められます。
             </p>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "16px", maxWidth: "640px" }}>
+              Googleは「ユーザーにとって最も役立つ情報を最初に届ける」というミッションを持っています。検索意図を満たす高品質なコンテンツを作ることが、SEOの根幹であり最も持続可能な施策です。
+            </p>
           </div>
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_10_29.png" alt="SEOライティング・コンテンツ作成" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
+            <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+              <p style={{ color: "#ffffff", fontWeight: 700, fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6 }}>
+                検索1位のコンテンツは「キーワードが多い」のではなく「検索意図に最も正確に答えている」記事です。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Common Mistakes</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              SEOライティングで失敗する4つのパターン
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "キーワードを詰め込みすぎる", b: "不自然なほどキーワードを繰り返すと、Googleはスパムと判断します。読みにくい文章はユーザーも離脱します。自然な文章の中に適切な頻度で含めることが重要です。" },
+                { t: "検索意図とページ内容がズレている", b: "「安いホテル 東京」で検索したユーザーに高級ホテルの記事を見せても意味がありません。キーワードの背後にある意図を正確に把握してコンテンツを設計します。" },
+                { t: "結論を最後まで引っ張る構成", b: "前置きが長く、答えが後半に書かれている記事は直帰率が高くなります。Googleは「ユーザーが満足して戻らない」ことを重視するため、結論ファーストが基本です。" },
+                { t: "E-E-A-Tの根拠がない記事", b: "誰が書いたかわからない・専門性の根拠がない・出典不明の記事はGoogleの評価が低くなります。著者情報・実績・参照元の明示が品質評価を高めます。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>

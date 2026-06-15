@@ -101,7 +101,30 @@ export default function WordpressPage() {
 
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="WordPress制作・CMS・コンテンツ管理システムのイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* WordPress選択の課題 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Common Mistakes</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              WordPress制作で失敗する4つのよくあるミス
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "テーマを設定するだけで終わる", b: "既製テーマを購入して設置するだけでは、SEO設定・パフォーマンス最適化・セキュリティ対策が不十分なままです。Webサイトとして機能させるには適切なカスタマイズが必要です。" },
+                { t: "プラグインを入れすぎる", b: "便利だからと多数のプラグインをインストールすると表示速度が低下し、プラグイン同士の競合やセキュリティリスクが増加します。最低限必要なプラグインに絞ることが重要です。" },
+                { t: "セキュリティ設定を後回しにする", b: "WordPressは世界シェアが高いためサイバー攻撃のターゲットになりやすいです。ログインURL変更・2段階認証・定期バックアップなどの設定を最初から行う必要があります。" },
+                { t: "SSL・キャッシュ・CDNを設定しない", b: "HTTPS化・ブラウザキャッシュ・CDN設定をしないままでは表示速度が遅くSEO評価も低くなります。これらはWordPressでの標準的な設定として最初から行うべき項目です。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* WordPress制作の特徴 */}

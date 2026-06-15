@@ -54,6 +54,14 @@ const faqItems = [
     q: "InstagramやYouTubeでの集客は学習塾に効果がありますか？",
     a: "Instagramは勉強法Tips・合格速報・教室雰囲気の発信に有効で、保護者へのアプローチに向いています。YouTubeは解説動画・講師紹介などで専門性を示せますが、制作コストがかかります。まずはMEO・ホームページ・口コミ獲得を基盤として、予算に応じてSNSを追加するのが現実的な順序です。",
   },
+  {
+    q: "学習塾で体験授業の申込み率を高めるにはどうすればいいですか？",
+    a: "「無料体験授業受付中」「まず1回試してみてください」という低ハードルのCTAをホームページのファーストビューとGBPプロフィールに設置します。体験授業の流れ・所要時間・当日の服装・持ち物などを事前に明記することで、初めての保護者が申し込みやすい環境を整えます。LINEからの申し込み対応も問い合わせ率を高めます。",
+  },
+  {
+    q: "学習塾の合格実績はWebでどう活用すればいいですか？",
+    a: "合格実績はホームページのトップページ・合格実績ページに掲載し、具体的な学校名・人数・生徒のコメントを含めることで信頼性が高まります。Googleマップの写真として合格速報を掲載したり、GBP投稿で「〇〇高校 合格！」を告知することで地域での認知拡大と口コミ獲得にもつながります。",
+  },
 ];
 
 const relatedLinks = [
@@ -63,6 +71,8 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "学習塾向けサイト制作" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "体験申込み特化型LP" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
@@ -165,6 +175,55 @@ export default function SchoolPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              学習塾・スクールが抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "季節集客の難しさ — 閑散期の集客が安定しない", b: "春（新学期）・夏（夏期講習）・秋〜冬（受験シーズン）という繁忙期と閑散期の差が大きく、年間を通じた安定した入塾数の確保が課題です。各シーズンの2〜3か月前からSEOコンテンツ・GBP投稿・LPを準備し、需要ピーク時に最大限の集客効果を出す計画的なWeb戦略が必要です。" },
+                { n: "02", t: "大手チェーン塾との競争で地域検索に埋もれている", b: "「○○駅 学習塾」での検索で大手チェーンが上位を占め、個人塾・地域密着塾が見つかりにくい状況があります。Googleマップのプロフィール整備・口コミ獲得・地域に特化したSEOコンテンツの充実によって、大手に対して「地元の先生から直接習える」という強みで差別化した上位表示を狙います。" },
+                { n: "03", t: "合格実績・口コミが少なく信頼性の証明ができていない", b: "新しい塾・規模の小さい塾では口コミや合格実績が蓄積されておらず、保護者の検討段階で不安を感じさせてしまうことがあります。体験授業後・合格報告のタイミングを活用した口コミ依頼フローの整備と、合格実績のホームページ掲載が信頼構築の基盤になります。" },
+                { n: "04", t: "体験授業の申込み率が低く問い合わせが来ても入塾につながらない", b: "ホームページやGBPに体験授業の案内はあっても、「申し込みフォームが見つからない」「何を持参するか不明」「当日の流れがわからない」という情報不足が申込みのハードルを高めています。体験授業CTAのファーストビュー配置・当日の流れの明示・LINE申込みの選択肢追加で申込み率を向上させます。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスの学習塾・スクール向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO対策", desc: "「○○駅 学習塾」「○○区 英語塾 子ども」でGoogleマップ上位表示を実現します。GBPの教室写真・講師情報・口コミを整備し、体験申し込みにつながる地域検索からの流入を強化します。" },
+                { label: "ホームページ制作", desc: "合格実績・講師プロフィール・カリキュラム・料金・体験申し込みフォームを備えた入塾率を高めるホームページを制作します。保護者が「この塾なら安心」と感じる情報設計を優先します。" },
+                { label: "合格実績LP・季節LP", desc: "「夏期講習受付中」「○○受験対策コース」など季節・目的別のランディングページを制作します。入塾検討が高まる時期に向けた計画的なLP展開で体験申込み数を最大化します。" },
+                { label: "口コミ管理支援", desc: "体験授業後・合格報告タイミングでのGoogleマップ口コミ依頼フローを設計します。口コミ返信文面の作成代行も対応し、保護者の検討段階での信頼構築を継続的に支援します。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

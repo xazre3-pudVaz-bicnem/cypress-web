@@ -110,7 +110,30 @@ export default function PageSpeedPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 00_32_52.png" alt="ページ速度最適化・Core Web Vitals・Lighthouse改善のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* 速度の遅さがSEOに与える影響 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>SEO Impact</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              ページ速度が遅いとSEOに起きる4つの問題
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "Core Web Vitals不良でランキング低下", b: "LCP・CLS・INPがGoogleの「不良」基準を超えると、同等コンテンツでも速いページが優先されます。Core Web VitalsはGoogleの公式ランキング要因として採用されています。" },
+                { t: "直帰率上昇でGoogleの評価が下がる", b: "ページが3秒以内に表示されないと直帰率が32%増加します。高い直帰率は「このページはユーザーの期待に応えなかった」とGoogleに伝わり、さらなる順位低下を招きます。" },
+                { t: "モバイルユーザーが離脱しCV機会を失う", b: "スマートフォンユーザーはPCより速度に敏感です。LTEでの表示が遅いページはほぼすぐに離脱されます。モバイルの速度改善がSEOとCVの両方で最優先課題です。" },
+                { t: "クロール効率の低下でインデックスが遅れる", b: "GoogleのクロールバジェットはURLごとに制限があります。ページの表示が遅いとクローラーの効率が下がり、重要なページのインデックスが遅れる原因になります。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Core Web Vitals */}

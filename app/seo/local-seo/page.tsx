@@ -101,7 +101,30 @@ export default function LocalSeoPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="ローカルSEO・地域名キーワードでの上位表示イメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* ローカルSEO未対応の影響 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Local SEO Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              ローカルSEO未対応が地域ビジネスに与える4つの影響
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "地域名キーワードで表示されない", b: "「○○市 税理士」「渋谷 整骨院」など地域名を含む検索でWebサイトが上位表示されなければ、地元ユーザーからの問い合わせ機会がゼロになります。地域特化のコンテンツ設計が集客の鍵です。" },
+                { t: "地元競合に検索流入を奪われ続ける", b: "地域キーワードでの上位表示は競合との椅子取りゲームです。SEO対策をしている地元競合が上位を占めている間、すべての検索需要が競合へ流れ続けます。" },
+                { t: "広告なしでの地域集客がゼロになる", b: "ローカルSEOが機能していないと、地元からの無料集客チャンネルがなくなります。リスティング広告費が永遠にかかり続け、広告を止めたとたん集客がゼロになります。" },
+                { t: "MEOとSEOの相乗効果が得られない", b: "Googleマップ（MEO）と検索（SEO）の両方で上位表示されると集客力が倍増します。ローカルSEO未対応のままではこの相乗効果が得られず、競合との差が広がります。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* ローカルSEOの主要施策 */}

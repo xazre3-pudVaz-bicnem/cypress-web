@@ -99,9 +99,39 @@ export default function SiteStructurePage() {
           </div>
         </section>
 
-        <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image src="/1.png" alt="サイト構造設計・情報設計・IA・サイロ構造のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+        <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
+          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="サイト構造設計・情報設計・IA・サイロ構造のイメージ" fill className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-6xl mx-auto px-6">
+              <p className="font-bold text-white" style={{ fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6 }}>
+                SEOの土台はサイト構造で決まる。<br />設計段階から最適化することが成功への近道。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 構造問題のリスク */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Structure Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイト構造が整っていないと起きる4つのSEO問題
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "重要ページにPageRankが集まらない", b: "内部リンクが設計されていないサイトでは、SEO的に最も重要なページへの評価が集まりません。トップページから重要サービスページへの内部リンク設計がSEO評価の基盤です。" },
+                { t: "クローラーがページを正しく認識できない", b: "深い階層に埋まったページや孤立したページはGoogleのクローラーに見つけられにくくなります。フラットな構造とXMLサイトマップでクロール効率を最大化します。" },
+                { t: "カニバリゼーションで評価が分散する", b: "同じキーワードを複数ページで狙うとGoogleが「どのページを評価すべきか」と混乱します。類似ページの統合・canonicalの設定でキーワードの評価を一点集中させます。" },
+                { t: "内部リンクが機能せず回遊率が低下する", b: "ユーザーが次のページへ自然に移動できる内部リンク設計がないと、1ページだけ見て離脱します。回遊率低下は滞在時間の短縮としてGoogleの評価低下にもつながります。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* 設計の要素 */}
@@ -129,7 +159,34 @@ export default function SiteStructurePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サイト構造設計についてよくある質問" bgColor="#FFFFFF" />
+        {/* サイプレスのサポート */}
+        <section className="py-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              サイプレスのサイト構造設計支援
+            </h2>
+            <div className="max-w-4xl space-y-0">
+              {[
+                { title: "情報設計・IA設計", body: "サイト全体のURLマッピング・ページ階層・ナビゲーション設計を行います。制作前に情報設計を固めることで、後からの大幅修正を防ぎます。" },
+                { title: "トピッククラスター設計", body: "ビジネス目標から逆算し、どのテーマでどのページを作るかのクラスター設計を行います。SEOで狙うキーワード群と対応するページ構成をマッピングします。" },
+                { title: "内部リンク設計・実装", body: "現在のサイトの内部リンク不足・過剰・アンカーテキスト不適切を診断し、改善計画を立案。実装まで対応します。" },
+                { title: "既存サイトのリニューアル設計", body: "URL変更・301リダイレクト・サイトマップ更新・パンくずの再設計など、SEO評価を維持しながらのリニューアル設計に対応しています。" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={faqItems} heading="サイト構造設計についてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="サイト構造設計・SEO設計のご相談"

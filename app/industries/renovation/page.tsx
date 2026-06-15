@@ -54,6 +54,13 @@ const faqItems = [
     q: "リフォームのWeb集客に投資した場合、どのくらいで費用回収できますか？",
     a: "リフォーム1件の単価は数十万〜数百万円のため、Web集客への投資回収が早い業種です。MEO対策（月額2〜4万円）で月1件の見積もり依頼が増え、成約すれば投資額を大幅に上回る収益になります。具体的な収益試算を含めてご相談ください。",
   },
+  {
+    q: "施工事例ページはSEOにどう効果がありますか？",
+    a: "「キッチンリフォーム 費用 60万円台 葛飾区」「洗面所 リフォーム 工期 3日間 ○○市」のように費用・工期・地域を含む施工事例ページは、検索意図に完全に一致する独自コンテンツです。事例ページが蓄積するほど検索流入が増え、見積もり依頼の経路が増えます。" },
+  {
+    q: "工務店がホームページで信頼性を高めるために何を掲載すべきですか？",
+    a: "代表・スタッフの顔写真と経歴・保有資格（建築士・施工管理技士等）・施工事例のビフォーアフター・お客様の声・会社の歴史・施工保証の内容が有効です。「人」と「実績」を見せることで、大手には出せない地域密着業者の温かみと信頼を伝えられます。",
+  },
 ];
 
 const relatedLinks = [
@@ -64,6 +71,8 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "リフォーム会社向けサイト制作" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "見積もり依頼特化型LP" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/contact", label: "無料相談", desc: "リフォーム・工務店のWeb集客相談" },
@@ -165,6 +174,55 @@ export default function RenovationPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              リフォーム会社・工務店が抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "施工事例の掲載が少なく信頼性の証明ができていない", b: "リフォームを検討する施主が最も確認したいのは「どんな仕事をしてきたか」という施工実績です。ホームページに施工事例が少ない・写真の質が低い・費用や工期が書いていない、という状態では問い合わせ前に離脱されます。施工事例の充実化は最も投資対効果の高い集客施策です。" },
+                { n: "02", t: "費用相場の不明瞭さで問い合わせを躊躇されている", b: "「リフォームはいくらかかるか分からないから怖い」という心理が初回問い合わせの最大の障壁です。「キッチンリフォームの費用目安：50〜120万円」「洗面所改装の一般的な工期：3〜5日」など、具体的な数字の目安を掲載することで見積もり依頼のハードルを大幅に下げられます。" },
+                { n: "03", t: "競合リフォーム会社との差別化ポイントが伝わっていない", b: "「地域に同じようなリフォーム会社が複数あって選ばれない」という状況では、差別化ポイントの言語化が急務です。「創業○年の地元密着」「自社施工でマージンなし」「施工後1年間のアフター保証」など、数字と具体性のある強みをホームページで前面に出します。" },
+                { n: "04", t: "信頼性の証明が不十分で見積もりまで至らない", b: "リフォームは高額な買い物のため、施主は業者の信頼性を慎重に確認します。資格（建築士・施工管理技士）・施工保証・加入保険・代表者の顔写真と経歴などをホームページとGBPに明示することで「この会社なら安心」という決断を促します。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスのリフォーム会社・工務店向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO対策", desc: "「○○区 リフォーム」「近くの工務店 見積もり」でGoogleマップ上位表示を実現します。GBPの施工写真充実・口コミ獲得・定期投稿で地域の見積もり依頼を継続的に獲得します。" },
+                { label: "施工事例LP・ホームページ制作", desc: "施工事例ビフォーアフター・費用・工期・お客様の声を最適配置した受注型サイトを制作します。「無料見積もり」CTAの設計と問い合わせフォームの最適化で見積もり依頼率を高めます。" },
+                { label: "SEO・コンテンツ対策", desc: "「キッチンリフォーム 費用 ○○区」「外壁塗装 工務店 ○○市」など地域×施工種別キーワードを狙った施工事例ページ・費用ガイド記事を計画的に制作し、長期的な検索流入を獲得します。" },
+                { label: "ホームページ制作", desc: "代表・スタッフ紹介・資格・施工保証・施工事例ギャラリー・見積もりフォームを備えた信頼重視のホームページを制作します。地元密着の強みをデザインと文章で最大限に表現します。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

@@ -54,6 +54,14 @@ const faqItems = [
     q: "ペットグッズを販売するECサイトとトリミングサロンのWeb集客は同時に対応できますか？",
     a: "はい。ECサイトのSEO対策とトリミングサロンのMEO対策は異なる施策ですが、同一サイト内での統合設計も可能です。ECとリアル店舗の相乗効果を意識したWeb戦略をご提案します。",
   },
+  {
+    q: "ペットショップで専門的な知識をWebでどう伝えればいいですか？",
+    a: "「犬種別の適切なシャンプー剤の説明」「トリミングの頻度ガイド」「ペットの皮膚ケアTips」など専門家視点のコンテンツをブログ・Instagramで発信することで信頼性が高まります。「この店のスタッフは詳しい」という印象が口コミとリピートにつながります。",
+  },
+  {
+    q: "近隣の大手ペットショップに対してどう差別化できますか？",
+    a: "「1頭1頭のペットに時間をかけた丁寧な施術」「飼い主への丁寧な状態報告」「スタッフとペットの距離感の近さ」「フレキシブルな対応」など個人サロンの強みをGBP・口コミ・ホームページで具体的に伝えます。大手への不満（画一的な施術・ペットへのストレス）を逆手に取った差別化が有効です。",
+  },
 ];
 
 const relatedLinks = [
@@ -62,9 +70,11 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "ペットショップ向けサイト制作" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "コンテンツSEOで長期集客" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
+  { href: "/services/line", label: "LINE公式アカウント活用", desc: "定期利用促進の仕組み化" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
-  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/contact", label: "無料相談", desc: "ペットショップのWeb集客相談" },
 ];
@@ -162,6 +172,55 @@ export default function PetShopPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              ペットショップ・トリミングサロンが抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "専門知識・技術の高さがWebで伝わっていない", b: "「トリマーの資格・経歴」「使用しているシャンプーのこだわり」「犬種ごとの施術方針」など専門性の高い情報がホームページやGBPで発信できていないと、価格だけで比較されやすくなります。専門知識を言語化したコンテンツが信頼と来店の動機づけになります。" },
+                { n: "02", t: "施術実績・ビフォーアフターの見せ方が不十分", b: "トリミングサロンの最大の集客資産は施術写真です。Instagramやホームページのギャラリーにビフォーアフターをできるだけ多く掲載し、犬種別・カットスタイル別に整理することで「この店なら安心して任せられる」という信頼をビジュアルで構築できます。" },
+                { n: "03", t: "Instagramの投稿が続かず集客につながっていない", b: "かわいいペットの写真はInstagramで最も拡散されやすいコンテンツです。しかし投稿が不定期・ハッシュタグが最適化されていない・予約導線がプロフィールにない、という状態ではフォロワーが増えても集客につながりません。継続的な運用体制とプロフィール設計の最適化が必要です。" },
+                { n: "04", t: "定期利用者との接点が薄くリピートが途切れやすい", b: "トリミングは1〜2か月ごとの定期利用が理想ですが、予約の声かけ・リマインド手段がないと自然離脱が起きやすいです。LINE公式アカウントでの定期リマインド・次回予約の同時受付の声かけ・誕生日メッセージなどでペットオーナーとの関係を継続的に維持します。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスのペットショップ・トリミングサロン向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO対策", desc: "「○○駅 トリミング」「近くのペットショップ」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得フロー構築で地域の新規顧客獲得を強化します。" },
+                { label: "Instagram・SNS支援", desc: "ビフォーアフター写真の投稿計画・リール動画企画・ハッシュタグ戦略・プロフィール最適化を一括サポートします。かわいいペットコンテンツで地域フォロワーを集客に転換します。" },
+                { label: "ホームページ制作", desc: "施術写真ギャラリー・料金表（犬種別）・スタッフ紹介・予約フォームを備えたホームページを制作します。ペットオーナーが安心できる情報設計で問い合わせ率を向上させます。" },
+                { label: "コンテンツSEO", desc: "「犬種別トリミング 費用 ○○市」「ペットショップ 子犬 ○○区」など専門性の高いコンテンツページを整備します。飼い主の疑問に答えるブログ記事で信頼と検索流入を同時に高めます。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

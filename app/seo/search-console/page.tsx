@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Google Search Console活用｜SEOデータ分析と改善",
+  title: "Google Search Console活用｜SEOデータ分析と改善｜株式会社サイプレス",
   description: "Google Search Consoleを使ったSEOデータの見方・活用方法を解説。検索パフォーマンス・インデックス状況・Core Web Vitalsの確認から改善アクションまで。",
+  keywords: ["Google Search Console", "Search Console活用", "SEOデータ分析", "検索パフォーマンス", "インデックス確認"],
+  openGraph: {
+    title: "Google Search Console活用｜SEOデータ分析と改善",
+    description: "Search Consoleで検索パフォーマンス・インデックス・Core Web Vitalsを確認しSEO改善サイクルを回す実践ガイド。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo/search-console" },
 };
 
 const faqItems = [
@@ -33,14 +42,14 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
-              <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/seo">SEO対策</Link>
-              <span style={{ margin: "0 8px" }}>/</span>
-              Google Search Console活用
+            <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
+              <span>/</span>
+              <Link href="/seo" style={{ color: "#6B7280" }}>SEO対策</Link>
+              <span>/</span>
+              <span style={{ color: "#0d1b2a" }}>Google Search Console活用</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>SEO Tool</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
@@ -49,12 +58,45 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
               Google Search Consoleは、Googleが無料で提供するSEO分析の必須ツールです。検索パフォーマンス・インデックス状況・Core Web Vitalsなど、SEO改善に不可欠なデータを確認できます。
             </p>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "12px", maxWidth: "640px" }}>
+              月に一度Search Consoleのデータを確認し、PDCAを回すことが継続的なSEO改善の基本です。データを見ない・アクションを取らないことが最大のSEO機会損失です。
+            </p>
           </div>
         </section>
 
-        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+        <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="Google Search Console活用" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
+            <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+              <p style={{ color: "#ffffff", fontWeight: 700, fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6 }}>
+                データを見ないSEOは、目をつぶって走るのと同じ。<br />Search ConsoleでPDCAを回し続けることが成果につながる。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Search Consoleなしのリスク */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Risks Without Data</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              Search Consoleを活用しないと気づけない4つのSEO盲点
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "インデックスされていないページ", b: "一生懸命作ったページがGoogleにインデックスされていないと、検索結果に一切表示されません。Search Consoleでインデックスエラーをチェックするまでこのことはわかりません。" },
+                { t: "CTRが低いキーワード", b: "表示回数は多いのにクリックされていないキーワードはタイトル・説明文の改善だけで流入を大幅に増やせます。このデータはSearch Consoleでのみ確認できます。" },
+                { t: "Core Web Vitalsの問題", b: "LCP・CLS・INPのスコアがモバイルで「不良」でも、Search Consoleを見ないと気づかないまま機会損失が続きます。問題ページを特定して改善することが重要です。" },
+                { t: "順位低下の早期発見不能", b: "Googleのアルゴリズム更新後に特定ページの順位が下がっても、Search Consoleなしでは気づくのが遅くなります。週次・月次でのモニタリングが重要です。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>

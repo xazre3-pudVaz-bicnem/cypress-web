@@ -54,6 +54,14 @@ const faqItems = [
     q: "ネイルサロンのWeb集客にどのくらいの費用がかかりますか？",
     a: "MEO対策は月額2〜4万円、Instagram運用代行は月額3〜8万円、ホームページ制作は30〜80万円（機能・デザインによる）が目安です。現状のSNSフォロワー数・口コミ数・競合状況に応じて最適なプランをご提案します。まずは無料相談をご活用ください。",
   },
+  {
+    q: "施術中に写真を撮ってInstagramに投稿するタイミングはいつが良いですか？",
+    a: "仕上がり直後のフレッシュな状態で撮影・投稿するのが最も効果的です。お客様の手元・クローズアップショット・全体写真の3パターンを撮影し、施術当日または翌日中に投稿することでエンゲージメントが高まります。施術写真の投稿承諾を事前に丁寧に取ることも信頼構築につながります。",
+  },
+  {
+    q: "ネイルサロンでリピーターを増やすデジタル施策は何ですか？",
+    a: "LINE公式アカウントへの登録促進が最も効果的です。次回予約のリマインド・新デザイン告知・限定クーポン配信を通じて来店サイクルを維持します。「4〜6週間ごとのネイルケア」を自然に思い出させるコミュニケーション設計でリピート率の向上を図ります。",
+  },
 ];
 
 const relatedLinks = [
@@ -64,6 +72,8 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "ネイルサロン向けサイト制作" },
+  { href: "/services/line", label: "LINE公式アカウント活用", desc: "リピーター育成・予約リマインド" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/contact", label: "無料相談", desc: "ネイルサロンのWeb集客相談" },
@@ -165,6 +175,55 @@ export default function NailSalonPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              ネイルサロンが抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "施術写真の見せ方が集客に活かしきれていない", b: "美しいネイルデザインをInstagramに投稿していても、ハッシュタグ・投稿頻度・リール活用が最適化されていないと地域ユーザーへの露出が限られます。写真の撮影アングル・照明・トリミングの工夫と投稿ルーティンを整えることで、デザインの魅力を集客力に変換できます。" },
+                { n: "02", t: "ホットペッパービューティーへの依存で手数料が重い", b: "ポータルサイト経由の集客は安定している一方で、手数料・掲載費が収益を圧迫し、顧客情報も蓄積されません。MEO対策と自社ホームページへの予約導線整備・LINE公式アカウントでの顧客管理を構築することで、段階的に直接予約比率を高める移行が可能です。" },
+                { n: "03", t: "リピーター管理ができておらず来店が途切れやすい", b: "ネイルの付け替えは4〜6週間ごとのサイクルがあるにもかかわらず、連絡手段がなく顧客が自然離脱してしまうケースが多いです。LINE公式アカウントへの誘導・施術後の次回予約リマインド・トレンドデザイン告知の自動配信でリピートサイクルを維持します。" },
+                { n: "04", t: "予約管理のオンライン化が遅れ機会損失が発生している", b: "電話・DM中心の予約受付は、営業時間外の問い合わせに対応できず予約機会を逃します。自社ホームページの予約フォーム・GBPへの予約ボタン設置・LINE予約の導入により24時間予約受付を可能にし、取りこぼしのない予約体制を構築します。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスのネイルサロン向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO対策", desc: "「○○駅 ネイルサロン」「○○区 ネイル 予約」でGoogleマップ上位表示を実現します。GBPの写真充実・サービス情報の整備・口コミ獲得フロー構築で地域の来店意欲の高いユーザーを獲得します。" },
+                { label: "Instagram・SNS支援", desc: "ネイルデザイン写真の投稿計画・リール動画の企画・ハッシュタグ戦略・フォロワー増加施策を一括してサポートします。Instagram経由の予約導線設計も含めて対応します。" },
+                { label: "ホームページ制作", desc: "デザインギャラリー・料金表・ネイリストプロフィール・予約フォームを備えたネイルサロン専用ホームページを制作します。ブランドの世界観を表現した高品質なデザインで差別化します。" },
+                { label: "予約システム連携・LINE活用", desc: "自社予約フォームの設置・GBP予約ボタン設定・LINE公式アカウントでのリピーター管理を構築します。次回予約リマインドと新デザイン告知の自動配信でホットペッパー依存からの脱却を支援します。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

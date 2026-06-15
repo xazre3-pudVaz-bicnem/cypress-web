@@ -105,7 +105,30 @@ export default function TechnicalSeoPage() {
 
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 19_19_44.png" alt="テクニカルSEO・ページ速度改善・Core Web Vitals" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* テクニカルSEO未対応の問題 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Technical SEO Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              テクニカルSEO未対応が引き起こす4つの問題
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "インデックスされないページが増える", b: "noindex設定のミス・canonicalの設定誤り・robots.txtによるブロックでせっかく作ったページがGoogleにインデックスされないことがあります。定期的な技術的監査が必要です。" },
+                { t: "重複コンテンツでPageRankが分散する", b: "www/非www・http/https・URLパラメーターの違いで同じコンテンツが複数のURLに存在すると、PageRankが分散し評価が下がります。canonical・301リダイレクトで集約します。" },
+                { t: "ページ速度の問題でCore Web Vitals不良", b: "LCP・CLS・INPの目標値を達成できていないページはランキングで不利になります。Next.js・Vercelの活用や画像最適化などの技術的施策でスコアを改善します。" },
+                { t: "構造化データ未実装でリッチリザルトを取れない", b: "FAQ・パンくずリスト・組織情報などのSchema.orgマークアップがないと、検索結果での視認性が低くなります。構造化データはCTR向上とE-E-A-T向上の両方に貢献します。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* テクニカルSEOの主要領域 */}

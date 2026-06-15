@@ -101,7 +101,30 @@ export default function KeywordResearchPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="SEOキーワード調査・検索ボリューム分析のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* キーワード調査なしのリスク */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Keyword Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              キーワード調査なしのSEO施策が抱える4つのリスク
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "誰も検索しないキーワードで記事を書く", b: "月間検索ボリュームが数件しかないキーワードに対して記事を書いても、そもそもユーザーが検索しないため流入はゼロです。ツールで需要を確認してから着手することが基本です。" },
+                { t: "購買意図のないユーザーしか来ない", b: "「比較したい」「今すぐ買いたい」という購買意欲の高いキーワードを狙わず、情報収集段階のキーワードばかりに注力すると、アクセスはあっても問い合わせゼロが続きます。" },
+                { t: "競合に勝てないキーワードを狙い続ける", b: "大企業が上位を独占しているキーワードで戦っても成果は出ません。競合の弱いニッチキーワードや地域+業種の組み合わせから攻めることが中小企業のSEO戦略の基本です。" },
+                { t: "コンテンツを量産しても成果がゼロ", b: "方向性が間違ったまま記事を増やし続けても、キーワードが分散し評価が積み上がりません。調査に基づいたキーワード設計なしの量産は、リソースのムダになります。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* キーワードの種類 */}

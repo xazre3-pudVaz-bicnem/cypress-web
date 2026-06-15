@@ -54,6 +54,14 @@ const faqItems = [
     q: "リフォーム・増改築も扱っている場合、集客をどう設計しますか？",
     a: "緊急修理（MEO中心）と計画的なリフォーム（SEO・ホームページ中心）でターゲットユーザーが異なります。緊急修理はMEO・電話獲得を最優先、リフォームはSEOとホームページでの施工事例紹介・問い合わせ誘導を重視する二軸設計が効果的です。",
   },
+  {
+    q: "水道業者のホームページで問い合わせを増やすための最重要施策は？",
+    a: "スマートフォンで即電話できるボタン（クリックtoコール）の目立つ配置が最重要です。次に、料金の目安明示・対応エリアの明確化・資格・施工実績の掲載です。緊急性の高いユーザーは「今すぐ連絡できるか」「料金が不明瞭でないか」「本当に対応エリアか」を瞬時に判断するため、この3点を最初に解決するページ設計が問い合わせ率を高めます。",
+  },
+  {
+    q: "地域SEOで「○○区 水道工事」の検索上位に入るにはどうすればいいですか？",
+    a: "対応エリアページ（例：葛飾区の水道工事・足立区の排水管清掃）を個別に制作し、地域名＋サービス名のキーワードを含むコンテンツを整備します。GBPのサービスエリア設定・口コミの継続獲得・内部リンク設計と合わせてMEOとSEOを連動させることで地域検索での存在感が高まります。",
+  },
 ];
 
 const relatedLinks = [
@@ -63,6 +71,8 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "水道業向けサイト制作" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "緊急依頼獲得に特化したLP" },
+  { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
@@ -165,6 +175,55 @@ export default function PlumbingPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 集客課題 */}
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+              水道・設備工事業が抱えるよくある集客課題
+            </h2>
+            <div style={{ maxWidth: "720px" }}>
+              {[
+                { n: "01", t: "緊急時対応の情報がWebで伝わっておらず問い合わせを逃している", b: "「24時間対応」「最短30分で現地到着」「土日祝対応」など緊急時の安心情報がGBP・ホームページに掲載されていないと、検索したユーザーが他の業者に電話してしまいます。緊急対応の詳細をファーストビューに明示するだけで問い合わせ数が変わります。" },
+                { n: "02", t: "料金の不明瞭さで問い合わせ前に離脱している", b: "「見積もり無料」とだけ書いてあって料金目安が不明なサイトは、悪質業者への警戒から問い合わせを躊躇されます。「出張費○○円〜」「水漏れ修理の料金目安」などを掲載することで、ユーザーが安心して問い合わせできる環境を整えます。" },
+                { n: "03", t: "資格・技術力が伝わらず信頼性が低く見られる", b: "「水道工事士」「管工事施工管理技士」「給水装置工事主任技術者」などの資格はそのまま信頼の証明です。資格情報・施工実績・代表プロフィールをホームページとGBPで明示することで、悪質業者との差別化と信頼獲得が同時に実現します。" },
+                { n: "04", t: "対応エリアが明確でなく地域の顧客に届いていない", b: "「○○区・○○市・○○町対応」というエリア情報がGBPとホームページに記載されていないと、地域検索でのヒット率が下がります。主要対応エリアをページとGBPの両方で明示し、エリア別の地域ページを設けることで地域ごとの検索流入を獲得します。" },
+              ].map((item) => (
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <div>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* サイプレスの支援 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              サイプレスの水道・設備工事業向け支援
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+              {[
+                { label: "MEO緊急対応設計", desc: "「水漏れ ○○区 24時間」「排水管詰まり ○○市 今すぐ」でGoogleマップ上位表示を実現します。緊急対応・対応エリア・電話番号を最前面に配置したGBP設計で即問い合わせを獲得します。" },
+                { label: "ランディングページ制作", desc: "緊急修理専用LP・給湯器交換LP・定期点検LPなどサービス別の高CV率ランディングページを制作します。スマホ即電話ボタン・料金目安・施工事例・資格情報を最適配置します。" },
+                { label: "地域SEO対策", desc: "「葛飾区 水道工事 費用」「足立区 水漏れ修理 緊急」など地域×サービスキーワードを狙ったエリアページ・サービスページを整備します。MEOと連動した地域全体での検索流入を強化します。" },
+                { label: "口コミ管理支援", desc: "工事完了後の口コミ依頼フロー（お礼メッセージ＋口コミリンク送付文面）を設計します。全口コミへの返信文面作成代行も対応し、地域密着業者としての信頼を積み上げます。" },
+              ].map((s) => (
+                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
+                  <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
               ))}
             </div>

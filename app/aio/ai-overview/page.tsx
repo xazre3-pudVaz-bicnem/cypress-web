@@ -8,8 +8,18 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Google AI Overview対策｜生成AI検索で引用されるサイトへ",
+  title: "Google AI Overview対策｜生成AI検索で引用されるサイトへ｜サイプレス",
   description: "Googleの生成AI検索「AI Overview」に引用されるためのAIO対策。E-E-A-T・構造化データ・FAQ最適化で、AIが選ぶ情報源になる方法を解説。",
+  keywords: ["AI Overview対策", "AIO対策", "生成AI検索", "Google AI Overview", "E-E-A-T", "構造化データ", "AI検索対策"],
+  openGraph: {
+    title: "Google AI Overview対策｜生成AI検索で引用されるサイトへ",
+    description: "Googleの生成AI検索「AI Overview」に引用されるためのAIO対策。E-E-A-T・構造化データ・FAQ最適化で、AIが選ぶ情報源になる方法を解説。",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/aio/ai-overview" },
 };
 
 const faqItems = [
@@ -18,6 +28,8 @@ const faqItems = [
   { q: "AI Overviewは全ての検索で表示されますか？", a: "いいえ。情報収集型のクエリ（「〇〇とは」「〇〇の方法」「〇〇の比較」など）で表示されやすく、商品購入・地域検索・ニュースなどでは表示されにくい傾向があります。" },
   { q: "SEO対策とAI Overview対策は別物ですか？", a: "基本的な考え方は共通しています。E-E-A-T・良質なコンテンツ・構造化データは両方に有効です。AI Overview特有の対策としては、答えを最初の段落に明確に書く「結論ファースト」のライティングスタイルが重要です。" },
   { q: "AI Overviewに選ばれるためにどのくらいの期間がかかりますか？", a: "コンテンツ改善から引用されるまでの明確な期間はGoogleが公表していません。継続的なコンテンツ品質向上・E-E-A-T強化・構造化データ実装を積み重ねることが重要です。" },
+  { q: "中小企業でもAI Overviewに引用されますか？", a: "はい。大企業でなくても、特定の専門分野で質の高いコンテンツを持つサイトは引用される可能性があります。ニッチな専門領域に集中したコンテンツ戦略が効果的です。" },
+  { q: "AI Overviewに引用されているか確認する方法はありますか？", a: "対象キーワードをGoogle検索して直接確認するのが最も確実です。ただし表示はユーザーによって異なるため、Google Search Consoleのインプレッションデータも合わせて確認することを推奨します。" },
 ];
 
 const relatedLinks = [
@@ -25,6 +37,9 @@ const relatedLinks = [
   { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTへの引用対策" },
   { href: "/aio/structured-data", label: "構造化データ実装", desc: "Schema.org対策" },
   { href: "/aio/faq-optimization", label: "FAQ最適化", desc: "Q&Aコンテンツ" },
+  { href: "/aio/knowledge-graph", label: "ナレッジグラフ対策", desc: "Googleへのエンティティ登録" },
+  { href: "/aio/llm-optimization", label: "LLM最適化", desc: "AI言語モデル対策" },
+  { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツ戦略全般" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス詳細" },
 ];
 
@@ -33,12 +48,12 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/aio">AIO対策</Link>
+              <Link href="/aio" style={{ color: "#6B7280" }}>AIO対策</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               Google AI Overview対策
             </nav>
@@ -49,12 +64,44 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
               Google検索の最上部に表示される生成AI回答「AI Overview」に自社コンテンツが引用されることは、AIが主流になる検索時代のブランド戦略として重要です。引用されるサイトになるための実践的な対策を解説します。
             </p>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "16px", maxWidth: "640px" }}>
+              従来のSEOが「検索結果10位以内」を目標にしていたのに対し、AI Overview対策は「AIが最初に選ぶ情報源」になることを目標とします。E-E-A-T・構造化データ・結論ファーストのコンテンツ設計が不可欠です。
+            </p>
           </div>
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="Google AI Overview対策" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
+            <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+              <p style={{ color: "#ffffff", fontWeight: 700, fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6 }}>
+                AI Overviewに引用されるサイトは、E-E-A-Tと構造化データで「AIが信頼できる情報源」として認識されたページです。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Core Conditions</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              AI Overviewに引用されるための4つの条件
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "E-E-A-T（経験・専門性・権威性・信頼性）の明示", b: "著者情報・会社情報・専門性の根拠を構造化して明示します。Googleが信頼できる情報源かを判断する最重要シグナルです。" },
+                { t: "結論ファーストの文章構造", b: "回答をページの冒頭に明確に記述。Googleが「答え」として引用しやすい文章構造にすることで引用確率が高まります。" },
+                { t: "FAQスキーマの実装", b: "FAQPageスキーマを実装することでQ&A形式の回答がAI Overviewの引用候補になりやすくなります。構造化データは必須です。" },
+                { t: "権威あるサイトからの被リンク", b: "業界メディアや公的機関からの言及・被リンクが引用確率を高めます。権威性の高いサイトからの評価がAI判断に影響します。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>

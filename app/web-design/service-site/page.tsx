@@ -101,7 +101,30 @@ export default function ServiceSitePage() {
 
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="サービスサイト・LP制作・コンバージョン最適化のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
+        </section>
+
+        {/* CVが取れないLPの問題 */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>CV Blockers</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              CVが取れないサービスサイト・LPの4つの共通問題
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "ファーストビューで価値が伝わらない", b: "ユーザーはページを開いて3秒以内に「自分に関係あるか」を判断します。キャッチコピー・サブコピー・CTAが揃っていないファーストビューは、その3秒で多くのユーザーを失います。" },
+                { t: "CTA（行動喚起）の位置と数が不足", b: "「問い合わせはこちら」ボタンがフッターにしかないLPではCVが取れません。ファーストビュー・中間・フッターに戦略的にCTAを配置し、離脱機会を最小化します。" },
+                { t: "信頼要素が不足している", b: "初めて訪れるユーザーが「この会社に頼んで大丈夫か」と感じる不安を解消する要素（実績・事例・保証・口コミ）がないサービスサイトはCVRが著しく低くなります。" },
+                { t: "スマートフォンでの最適化不足", b: "サービスサイトへのアクセスの60%以上がスマートフォンです。PCで見栄えが良くてもスマートフォンで操作しにくいフォーム・小さすぎるボタンではCV機会を大きく失います。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* CV重視の設計要素 */}

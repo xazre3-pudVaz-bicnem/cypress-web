@@ -8,8 +8,17 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "モバイルSEO・スマートフォン対応 | SEO対策",
+  title: "モバイルSEO・スマートフォン対応｜モバイルファーストSEO対策｜株式会社サイプレス",
   description: "Googleのモバイルファーストインデックスに対応したスマートフォンSEOの実践。レスポンシブデザイン・表示速度・Core Web Vitalsで集客を最大化。",
+  keywords: ["モバイルSEO", "スマートフォン対応", "モバイルファーストインデックス", "Core Web Vitals", "レスポンシブSEO"],
+  openGraph: {
+    title: "モバイルSEO・スマートフォン対応｜モバイルファーストSEO対策",
+    description: "モバイルファーストインデックス対応のSEO実践ガイド。レスポンシブ・表示速度・Core Web Vitals改善で集客を最大化。",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/seo/mobile-seo" },
 };
 
 const faqItems = [
@@ -33,28 +42,61 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
-              <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/seo">SEO対策</Link>
-              <span style={{ margin: "0 8px" }}>/</span>
-              モバイルSEO
+            <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
+              <span>/</span>
+              <Link href="/seo" style={{ color: "#6B7280" }}>SEO対策</Link>
+              <span>/</span>
+              <span style={{ color: "#0d1b2a" }}>モバイルSEO</span>
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px", display: "block" }}>SEO Knowledge</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Mobile SEO</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
               モバイルSEO・スマートフォン対応
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
               Googleの検索トラフィックの60%以上がスマートフォンから発生しています。モバイルファーストインデックス時代において、スマートフォンでの表示品質・速度・操作性はSEO評価の根幹となります。
             </p>
+            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "12px", maxWidth: "640px" }}>
+              2023年以降、全サイトがモバイルファーストインデックス対象となっています。スマートフォン対応はもはやオプションではなく、SEOの前提条件です。
+            </p>
           </div>
         </section>
 
-        <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
+        <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="スマートフォンSEO対策" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
+            <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+              <p style={{ color: "#ffffff", fontWeight: 700, fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6 }}>
+                スマートフォンで見づらいサイトは、<br />Googleからも、ユーザーからも選ばれない。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* モバイル未対応のSEOリスク */}
+        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>SEO Risks</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
+              スマートフォン未最適化がSEOに与える4つのダメージ
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+              {[
+                { t: "Googleの評価低下", b: "モバイルファーストインデックスではスマートフォン版のコンテンツがSEO評価の基準です。PCで完璧でもスマートフォン版が劣ると検索順位が下がります。" },
+                { t: "直帰率の急上昇", b: "スマートフォンで見づらいサイトはユーザーが数秒で離脱します。高い直帰率はGoogleに「品質が低いページ」と評価され、さらに順位低下につながります。" },
+                { t: "Core Web Vitals不良", b: "LCP・CLS・INPのスコアがモバイルで「不良」になると、同等コンテンツの競合に検索順位で負けます。Core Web VitalsはGoogleの公式ランキング要因です。" },
+                { t: "機会損失の拡大", b: "検索流入の60%以上がスマートフォンから。対応していないサイトはこの大半のトラフィックを競合に奪われ続けます。毎日の積み重ねで差は広がるばかりです。" },
+              ].map((item, i) => (
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
