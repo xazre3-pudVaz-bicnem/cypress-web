@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://cypress-web.jp/area/saitama" },
+  alternates: { canonical: "https://www.cypress-all.co.jp/area/saitama" },
 };
 
 const faqItems = [
@@ -76,9 +76,9 @@ export default function Page() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://cypress-web.jp/" },
-          { "@type": "ListItem", position: 2, name: "対応エリア", item: "https://cypress-web.jp/area" },
-          { "@type": "ListItem", position: 3, name: "埼玉県", item: "https://cypress-web.jp/area/saitama" },
+          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://www.cypress-all.co.jp/" },
+          { "@type": "ListItem", position: 2, name: "対応エリア", item: "https://www.cypress-all.co.jp/area" },
+          { "@type": "ListItem", position: 3, name: "埼玉県", item: "https://www.cypress-all.co.jp/area/saitama" },
         ],
       },
       {
@@ -104,9 +104,9 @@ export default function Page() {
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
-              <Link href="/" style={{ color: "#9CA3AF", textDecoration: "none" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/area" style={{ color: "#9CA3AF", textDecoration: "none" }}>対応エリア</Link>
+              <Link href="/area" style={{ color: "#6B7280" }}>対応エリア</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>埼玉県</span>
             </nav>
@@ -133,7 +133,7 @@ export default function Page() {
             priority
             style={{ objectFit: "cover" }}
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.25)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* Section 1: ビジネス環境と集客課題 */}

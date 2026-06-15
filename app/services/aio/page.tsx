@@ -68,7 +68,7 @@ const relatedLinks = [
   { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・権威性の高め方" },
   { href: "/guide/seo-vs-aio", label: "SEOとAIOの違い", desc: "両対策の関係と戦略" },
   { href: "/column/seo", label: "SEOコラム", desc: "AI検索・AIOの最新情報" },
-  { href: "/faq/aio", label: "AIO対策FAQ", desc: "よくある質問まとめ" },
+  { href: "/faq/aio-chatgpt", label: "AIO対策FAQ", desc: "よくある質問まとめ" },
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
@@ -109,7 +109,7 @@ export default function ServicesAioPage() {
 
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="AIO対策・AI検索最適化・ChatGPT引用獲得のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* AIO対策の施策 */}

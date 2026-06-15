@@ -281,11 +281,11 @@ const sections: SitemapSection[] = [
     headingEn: "FAQ",
     links: [
       { href: "/faq", label: "FAQ一覧" },
-      { href: "/faq/meo", label: "MEO FAQ" },
-      { href: "/faq/seo", label: "SEO FAQ" },
-      { href: "/faq/cost", label: "料金 FAQ" },
+      { href: "/faq/meo-basics", label: "MEO FAQ" },
+      { href: "/faq/seo-basics", label: "SEO FAQ" },
+      { href: "/faq/cost-payment", label: "料金 FAQ" },
       { href: "/faq/results", label: "成果・効果 FAQ" },
-      { href: "/faq/beginner", label: "初心者 FAQ" },
+      { href: "/faq/contract-flow", label: "契約の流れ FAQ" },
     ],
   },
   {
@@ -333,7 +333,7 @@ export default function SitemapPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>

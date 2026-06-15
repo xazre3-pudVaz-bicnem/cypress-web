@@ -79,19 +79,30 @@ const relatedLinks = [
   { href: "/contact", label: "無料相談", desc: "学習塾・スクールのWeb集客相談" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
 export default function SchoolPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries">業種別Web集客</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              学習塾・スクール
+              <span style={{ color: "#0d1b2a" }}>学習塾・スクール</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>School & Cram School</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
@@ -108,7 +119,7 @@ export default function SchoolPage() {
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (10).png" alt="先生と生徒が学ぶ学習塾・スクールの教室 — 学習塾・スクールのMEO対策・Web集客" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>
@@ -170,7 +181,7 @@ export default function SchoolPage() {
                 },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -196,7 +207,7 @@ export default function SchoolPage() {
                 { n: "04", t: "体験授業の申込み率が低く問い合わせが来ても入塾につながらない", b: "ホームページやGBPに体験授業の案内はあっても、「申し込みフォームが見つからない」「何を持参するか不明」「当日の流れがわからない」という情報不足が申込みのハードルを高めています。体験授業CTAのファーストビュー配置・当日の流れの明示・LINE申込みの選択肢追加で申込み率を向上させます。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

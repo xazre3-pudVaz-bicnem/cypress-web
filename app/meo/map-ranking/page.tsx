@@ -49,9 +49,9 @@ export default function Page() {
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
-              <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>
-              <Link href="/meo" style={{ color: "#9CA3AF" }}>MEO対策</Link>
+              <Link href="/meo" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>
               <span style={{ color: "#374151" }}>Googleマップ上位表示</span>
             </nav>

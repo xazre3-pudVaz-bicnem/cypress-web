@@ -178,7 +178,7 @@ export default function ReferralPartnerPage() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", padding: "100px 0 80px", overflow: "hidden" }}>
+        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_13_52.png"

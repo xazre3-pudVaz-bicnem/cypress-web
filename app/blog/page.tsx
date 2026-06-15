@@ -29,7 +29,7 @@ export default async function BlogPage() {
       <Header />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>

@@ -101,7 +101,7 @@ export default function ContentSeoPage() {
 
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 19_20_52.png" alt="コンテンツSEO・記事制作のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* コンテンツSEOの流れ */}

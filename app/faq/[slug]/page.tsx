@@ -18,6 +18,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.title}｜よくある質問｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.title}｜よくある質問`,
+      description: page.metaDescription,
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `https://www.cypress-all.co.jp/faq/${slug}` },
   };
 }
 
@@ -45,14 +53,14 @@ export default async function FaqSlugPage({ params }: { params: Promise<{ slug: 
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/faq">よくある質問</Link>
+              <Link href="/faq" style={{ color: "#6B7280" }}>よくある質問</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.title}
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.25 }}>

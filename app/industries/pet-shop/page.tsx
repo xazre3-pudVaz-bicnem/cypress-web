@@ -79,19 +79,30 @@ const relatedLinks = [
   { href: "/contact", label: "無料相談", desc: "ペットショップのWeb集客相談" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
 export default function PetShopPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries">業種別Web集客</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              ペットショップ・トリミングサロン
+              <span style={{ color: "#0d1b2a" }}>ペットショップ・トリミングサロン</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Pet Shop & Trimming</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
@@ -105,7 +116,7 @@ export default function PetShopPage() {
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (8).png" alt="ペットのトリミングを行うグルーミングサロン — ペットショップ・トリミングサロンのMEO対策" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "72px 0" }}>
@@ -167,7 +178,7 @@ export default function PetShopPage() {
                 },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -193,7 +204,7 @@ export default function PetShopPage() {
                 { n: "04", t: "定期利用者との接点が薄くリピートが途切れやすい", b: "トリミングは1〜2か月ごとの定期利用が理想ですが、予約の声かけ・リマインド手段がないと自然離脱が起きやすいです。LINE公式アカウントでの定期リマインド・次回予約の同時受付の声かけ・誕生日メッセージなどでペットオーナーとの関係を継続的に維持します。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

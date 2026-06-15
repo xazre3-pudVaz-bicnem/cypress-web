@@ -271,7 +271,7 @@ export default function SeoPage() {
         {/* Visual */}
         <section className="relative overflow-hidden" style={{ height: "380px" }}>
           <Image src="/1.png" alt="SEO対策・検索上位表示の戦略設計" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* このページでわかること */}

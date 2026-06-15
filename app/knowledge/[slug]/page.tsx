@@ -88,14 +88,14 @@ export default async function KnowledgePage({
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f9f8f5", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f9f8f5", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", alignItems: "center", gap: "6px" }}>
-              <Link href="/" style={{ color: "#9ca3af" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <Link href="/knowledge" style={{ color: "#9ca3af" }}>ナレッジ</Link>
+              <Link href="/knowledge" style={{ color: "#6B7280" }}>ナレッジ</Link>
               <span>/</span>
-              <span style={{ color: "#374151" }}>{page.title}</span>
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <p
               style={{

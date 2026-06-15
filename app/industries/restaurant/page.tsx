@@ -115,9 +115,9 @@ export default function RestaurantIndustryPage() {
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
-              <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries" style={{ color: "#9CA3AF" }}>業種別Web集客</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>飲食店</span>
             </nav>
@@ -149,7 +149,7 @@ export default function RestaurantIndustryPage() {
             sizes="100vw"
             priority
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.25)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* 集客課題 */}
@@ -169,7 +169,7 @@ export default function RestaurantIndustryPage() {
                 { n: "06", t: "ランチ・ディナーの使い分けができておらずキーワードを取りこぼしている", b: "「○○駅 ランチ」と「○○駅 居酒屋 ディナー」では検索する時間帯・目的・ユーザーがまったく異なります。GBPのランチ・ディナー別メニュー登録と、ホームページでのランチ・ディナー別ページ設計により、異なる時間帯の需要を両方取り込むことができます。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9CA3AF", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

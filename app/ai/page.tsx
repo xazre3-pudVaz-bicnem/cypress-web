@@ -208,7 +208,7 @@ export default function AiPage() {
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* AI活用の主要領域 */}

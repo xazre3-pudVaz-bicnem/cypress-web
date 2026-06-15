@@ -185,7 +185,7 @@ export default function WebDesignPage() {
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* サイト種類 */}

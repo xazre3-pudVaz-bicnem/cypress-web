@@ -114,9 +114,9 @@ export default function ClinicIndustryPage() {
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
-              <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries" style={{ color: "#9CA3AF" }}>業種別Web集客</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>クリニック・整骨院</span>
             </nav>
@@ -148,7 +148,7 @@ export default function ClinicIndustryPage() {
             sizes="100vw"
             priority
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.25)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* 集客課題 */}
@@ -168,7 +168,7 @@ export default function ClinicIndustryPage() {
                 { n: "06", t: "患者教育コンテンツが不足し専門性の訴求ができていない", b: "「正しい歯の磨き方」「腰痛を予防するストレッチ」「生活習慣病の予防法」など、患者に有益な情報を発信するコンテンツが不足していると、SEO評価も下がり専門性の証明ができません。E-E-A-T（経験・専門性・権威性・信頼性）の観点で重要な要素です。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9CA3AF", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

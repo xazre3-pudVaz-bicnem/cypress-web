@@ -19,6 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.title}｜Webマーケティングソリューション｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.title}｜Webマーケティングソリューション`,
+      description: page.metaDescription,
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `https://www.cypress-all.co.jp/solutions/${slug}` },
   };
 }
 
@@ -27,19 +35,35 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
   const page = solutionPages.find((p) => p.slug === slug);
   if (!page) notFound();
 
+  const faqJsonLd = page.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
   return (
     <>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/solutions">ソリューション</Link>
+              <Link href="/solutions" style={{ color: "#6B7280" }}>ソリューション</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.title}
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
             <p style={{ fontSize: "12px", color: "#9ca3af", fontStyle: "italic", marginBottom: "12px" }}>{page.tagline}</p>
@@ -62,7 +86,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#ece8e0" }}>
               {page.features.map((item) => (
                 <div key={item.num} style={{ background: "#ffffff", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px", lineHeight: 1.4 }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>

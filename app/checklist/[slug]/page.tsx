@@ -19,6 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.title}｜チェックリスト｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.title}｜チェックリスト`,
+      description: page.metaDescription,
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `https://www.cypress-all.co.jp/checklist/${slug}` },
   };
 }
 
@@ -29,19 +37,35 @@ export default async function ChecklistSlugPage({ params }: { params: Promise<{ 
 
   const totalItems = page.sections.reduce((acc, s) => acc + s.items.length, 0);
 
+  const faqJsonLd = page.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
   return (
     <>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/checklist">チェックリスト</Link>
+              <Link href="/checklist" style={{ color: "#6B7280" }}>チェックリスト</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.title}
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>

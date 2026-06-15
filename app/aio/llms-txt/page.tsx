@@ -33,7 +33,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -54,7 +54,7 @@ export default function Page() {
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="llms.txtとAIクローラー対策" fill className="object-cover" sizes="100vw" />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.25)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>

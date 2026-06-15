@@ -36,16 +36,16 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries">業種別サービス</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別サービス</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href={INDUSTRY_HREF}>{INDUSTRY_LABEL}</Link>
+              <Link href={INDUSTRY_HREF} style={{ color: "#6B7280" }}>{INDUSTRY_LABEL}</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.title}
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>

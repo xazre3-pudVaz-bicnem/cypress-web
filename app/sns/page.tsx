@@ -218,7 +218,7 @@ export default function SnsPage() {
             sizes="100vw"
             priority
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.2)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* SNSサービス一覧 */}

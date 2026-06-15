@@ -114,9 +114,9 @@ export default function RealEstateIndustryPage() {
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
-              <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/industries" style={{ color: "#9CA3AF" }}>業種別Web集客</Link>
+              <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>不動産</span>
             </nav>
@@ -148,7 +148,7 @@ export default function RealEstateIndustryPage() {
             sizes="100vw"
             priority
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.25)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* 集客課題 */}
@@ -167,7 +167,7 @@ export default function RealEstateIndustryPage() {
                 { n: "05", t: "物件情報の更新が大変でサイトが古いまま放置されている", b: "物件情報は頻繁に変わるため、自社サイトの更新が追いつかず情報が古いまま放置されているケースが多くあります。更新しやすいCMS設計・ポータルとの連携・更新不要なコンテンツ（地域情報・会社情報）を軸にしたサイト設計で解決できます。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9CA3AF", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

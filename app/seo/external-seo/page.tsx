@@ -101,7 +101,7 @@ export default function ExternalSeoPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/8.png" alt="外部SEO・被リンク獲得・ドメイン評価向上のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.25)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* 外部SEOの主要施策 */}

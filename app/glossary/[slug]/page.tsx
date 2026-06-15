@@ -19,6 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.term}とは｜Web集客用語集｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.term}とは｜Web集客用語集`,
+      description: page.metaDescription,
+      locale: "ja_JP",
+      type: "article",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `https://www.cypress-all.co.jp/glossary/${slug}` },
   };
 }
 
@@ -48,14 +56,14 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/glossary">用語集</Link>
+              <Link href="/glossary" style={{ color: "#6B7280" }}>用語集</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.term}
+              <span style={{ color: "#0d1b2a" }}>{page.term}</span>
             </nav>
             <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {page.category}
@@ -94,7 +102,7 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
             <div style={{ maxWidth: "720px" }}>
               {page.points.map((point, i) => (
                 <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>

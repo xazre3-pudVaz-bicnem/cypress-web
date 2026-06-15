@@ -109,7 +109,7 @@ export default function ServicesSnsPage() {
 
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image src="/8.png" alt="SNS運用・Instagram・LINE公式アカウント・TikTok活用のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* サービス内容 */}

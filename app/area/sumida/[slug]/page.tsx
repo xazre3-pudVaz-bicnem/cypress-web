@@ -35,16 +35,16 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "80px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
-              <Link href="/">ホーム</Link>
+              <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href="/area">エリア別</Link>
+              <Link href="/area" style={{ color: "#6B7280" }}>エリア別</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <Link href={AREA_HREF}>{AREA_LABEL}</Link>
+              <Link href={AREA_HREF} style={{ color: "#6B7280" }}>{AREA_LABEL}</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              {page.title}
+              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
             <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {AREA_LABEL}

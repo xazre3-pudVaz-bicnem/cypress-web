@@ -68,7 +68,7 @@ const relatedLinks = [
   { href: "/industries/restaurant", label: "飲食店のMEO対策", desc: "飲食店向け集客施策" },
   { href: "/industries/beauty", label: "美容室のMEO対策", desc: "サロン向け集客施策" },
   { href: "/area/katsushika", label: "葛飾区のMEO対策", desc: "葛飾区エリアの支援" },
-  { href: "/faq/meo", label: "MEO対策FAQ", desc: "よくある質問まとめ" },
+  { href: "/faq/meo-basics", label: "MEO対策FAQ", desc: "よくある質問まとめ" },
   { href: "/checklist/meo", label: "MEOチェックリスト", desc: "Googleビジネスプロフィール確認項目" },
 ];
 
@@ -109,7 +109,7 @@ export default function ServicesMeoPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="MEO対策・Googleマップ上位表示・地域集客のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* サービス内容 */}

@@ -38,21 +38,52 @@ const faqItems = [
     q: "オフィスへの来訪は可能ですか？",
     a: "事前のご予約をいただければ対応可能です。所在地は東京都葛飾区白鳥4-6-1-623です。なお、恐れ入りますが事前予約なしの飛び込みご訪問はご対応が難しい場合があります。お問い合わせフォームよりご連絡ください。",
   },
+  {
+    q: "最寄り駅はどこですか？",
+    a: "JR常磐線の亀有駅が最寄り駅です。葛飾区白鳥4-6-1-623が所在地です。周辺エリアへの訪問対応のほか、北千住駅・綾瀬駅・金町駅などからもアクセスしやすい立地です。",
+  },
+  {
+    q: "オンライン相談はどのツールを使いますか？",
+    a: "主にZoomを使用しています。Google Meetにも対応可能です。画面共有・資料共有を行いながらご相談いただけます。事前にURLをお送りしますので、アカウント登録なしでも参加できます。",
+  },
+  {
+    q: "相談から契約までにどのくらいの時間がかかりますか？",
+    a: "初回相談（30〜60分）→ご提案・お見積もり（3〜5営業日）→ご検討→契約という流れが一般的です。急いでいる場合はその旨をお知らせください。できる限りスムーズに対応します。",
+  },
+  {
+    q: "複数の店舗・拠点がある場合もまとめて対応できますか？",
+    a: "はい。複数店舗のGBP管理・MEO対策・SEO対策を一括で対応できます。店舗ごとの状況を把握したうえで、優先順位をつけながら効率的に施策を進めます。法人様・フランチャイズ様もご相談ください。",
+  },
 ];
 
 const relatedLinks = [
   { href: "/company", label: "会社概要", desc: "サイプレス会社情報" },
   { href: "/company/profile", label: "会社プロフィール", desc: "詳細な会社情報" },
   { href: "/company/message", label: "代表メッセージ", desc: "代表・織田春樹より" },
+  { href: "/company/history", label: "沿革", desc: "会社設立からの歩み" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリア" },
+  { href: "/area/tokyo", label: "東京の集客支援", desc: "東京全域の対応" },
   { href: "/area", label: "対応エリア一覧", desc: "全対応エリア" },
   { href: "/area/nationwide", label: "全国対応", desc: "リモートで全国サポート" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ上位表示" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "検索順位向上の施策" },
   { href: "/contact", label: "お問い合わせ", desc: "ご相談はこちら" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>

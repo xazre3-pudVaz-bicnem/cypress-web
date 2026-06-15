@@ -101,7 +101,7 @@ export default function AutomationPage() {
 
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 00_32_52.png" alt="AI業務自動化・Zapier・n8n・ノーコード自動化のイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* 自動化できる業務 */}

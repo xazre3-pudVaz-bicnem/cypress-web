@@ -69,7 +69,7 @@ const relatedLinks = [
   { href: "/area/tokyo", label: "東京のSEO対策", desc: "東京エリアのSEO支援" },
   { href: "/area/katsushika", label: "葛飾区のSEO対策", desc: "葛飾区エリアのSEO支援" },
   { href: "/industries/restaurant", label: "飲食店のSEO対策", desc: "飲食業界の集客SEO" },
-  { href: "/faq/seo", label: "SEO対策FAQ", desc: "よくある質問まとめ" },
+  { href: "/faq/seo-basics", label: "SEO対策FAQ", desc: "よくある質問まとめ" },
 ];
 
 export default function ServicesSeoPage() {
@@ -109,7 +109,7 @@ export default function ServicesSeoPage() {
 
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image src="/ChatGPT Image 2026年6月14日 19_19_44.png" alt="SEO対策サービス・検索上位表示・コンテンツSEOのイメージ" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.2)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
         {/* サービス内容 */}
