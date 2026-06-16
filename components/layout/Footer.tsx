@@ -136,14 +136,14 @@ const COL_INDUSTRIES: FooterSection[] = [
 
 const COL_COLUMN_GUIDE: FooterSection[] = [
   {
-    heading: "専門コラム",
+    heading: "コラム・ブログ",
     links: [
-      { href: "/column/meo", label: "MEO対策とは" },
-      { href: "/column/seo", label: "SEO対策とは" },
-      { href: "/column/aio", label: "AIO対策とは" },
-      { href: "/column/web-design", label: "Web制作の考え方" },
-      { href: "/column/chatgpt", label: "ChatGPT活用" },
-      { href: "/column/local-seo", label: "ローカルSEO" },
+      { href: "/column", label: "専門コラム一覧" },
+      { href: "/column/meo", label: "MEO対策コラム" },
+      { href: "/column/seo", label: "SEO対策コラム" },
+      { href: "/column/aio", label: "AIO対策コラム" },
+      { href: "/blog", label: "ブログ" },
+      { href: "/news", label: "お知らせ" },
     ],
   },
   {
