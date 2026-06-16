@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
+import { COLUMNS } from "@/lib/data/columns";
 
 const BASE = "https://www.cypress-all.co.jp";
 
@@ -320,32 +322,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // コラム専門ガイド（トピックページ）
-    ...urls([
-      "/column/meo", "/column/seo", "/column/aio", "/column/google-business-profile",
-      "/column/local-seo", "/column/web-design", "/column/chatgpt", "/column/sns",
-      "/column/ai", "/column/review-management", "/column/content-marketing",
-      "/column/structured-data",
-    ], { changeFrequency: "monthly", priority: 0.8 }),
+    ...urls(
+      ALL_COLUMN_TOPICS.map((t) => `/column/${t.slug}`),
+      { changeFrequency: "monthly", priority: 0.8 }
+    ),
 
-    // コラム記事
-    ...urls([
-      "/column",
-      "/column/meo-ranking-2024", "/column/aio-chatgpt-strategy",
-      "/column/seo-content-strategy", "/column/local-seo-complete-guide",
-      "/column/gbp-optimization-tips", "/column/review-strategy-2024",
-      "/column/mobile-first-design-guide", "/column/chatgpt-business-use",
-      "/column/nextjs-seo-advantage", "/column/schema-markup-complete",
-      "/column/core-web-vitals-2024", "/column/sns-local-business-strategy",
-      "/column/ai-overview-impact", "/column/gbp-photo-guide",
-      "/column/keyword-strategy-guide", "/column/instagram-for-restaurant",
-      "/column/web-design-cv-improvement", "/column/meo-seo-combination",
-      "/column/content-creation-ai", "/column/small-business-web-marketing",
-      "/column/ai-business-automation", "/column/instagram-local-business",
-      "/column/technical-seo-core-web-vitals", "/column/google-ai-overview-strategy",
-      "/column/recruit-website-strategy", "/column/web-marketing-small-business",
-      "/column/meo-review-management", "/column/chatgpt-prompt-guide",
-      "/column/cta-design-guide",
-    ], { changeFrequency: "weekly", priority: 0.7 }),
+    // コラム記事（薄い記事）
+    ...urls(
+      ["/column", ...COLUMNS.map((c) => `/column/${c.slug}`)],
+      { changeFrequency: "weekly", priority: 0.7 }
+    ),
 
     // ブログ (index + category pages — individual posts handled by WP)
     ...urls([

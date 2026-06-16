@@ -4,7 +4,8 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { COLUMNS, COLUMN_CATEGORIES, type ColumnCategory } from "@/lib/data/columns";
-import { COLUMN_TOPICS, getColumnTopicBySlug, getAllColumnTopicSlugs } from "@/lib/data/columnTopicPages";
+import { COLUMN_TOPICS } from "@/lib/data/columnTopicPages";
+import { ALL_COLUMN_TOPICS, getColumnTopicBySlugAll, getAllColumnTopicSlugsAll } from "@/lib/data/column";
 
 const CATEGORY_BADGE_BG: Record<ColumnCategory, string> = {
   SEO: "#EFF6FF",
@@ -33,8 +34,13 @@ const TOPIC_CATEGORY_BG: Record<string, string> = {
   MEO: "#ECFDF5",
   AIO: "#F5F3FF",
   AI: "#ECFEFF",
+  "AI活用": "#ECFEFF",
   ホームページ制作: "#FFFBEB",
   SNS運用: "#FDF2F8",
+  業種別: "#FFF7ED",
+  地域別: "#ECFDF5",
+  課題解決: "#FEF2F2",
+  "比較・選び方": "#F8FAFC",
 };
 
 const TOPIC_CATEGORY_COLOR: Record<string, string> = {
@@ -42,13 +48,18 @@ const TOPIC_CATEGORY_COLOR: Record<string, string> = {
   MEO: "#047857",
   AIO: "#6D28D9",
   AI: "#0E7490",
+  "AI活用": "#0E7490",
   ホームページ制作: "#92400E",
   SNS運用: "#9D174D",
+  業種別: "#9A3412",
+  地域別: "#065F46",
+  課題解決: "#991B1B",
+  "比較・選び方": "#374151",
 };
 
 export async function generateStaticParams() {
   const articleParams = COLUMNS.map((c) => ({ slug: c.slug }));
-  const topicParams = getAllColumnTopicSlugs();
+  const topicParams = getAllColumnTopicSlugsAll();
   return [...articleParams, ...topicParams];
 }
 
@@ -59,7 +70,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
 
-  const topic = getColumnTopicBySlug(slug);
+  const topic = getColumnTopicBySlugAll(slug);
   if (topic) {
     return {
       title: `${topic.title}｜株式会社サイプレス`,
@@ -102,7 +113,7 @@ function formatDate(dateStr: string) {
 // ─── Topic Page ──────────────────────────────────────────────────────────────
 
 function ColumnTopicPage({ slug }: { slug: string }) {
-  const topic = getColumnTopicBySlug(slug);
+  const topic = getColumnTopicBySlugAll(slug);
   if (!topic) return null;
 
   const faqJsonLd = {
@@ -755,7 +766,7 @@ export default async function ColumnSlugPage({
 }) {
   const { slug } = await params;
 
-  const isTopic = COLUMN_TOPICS.some((t) => t.slug === slug);
+  const isTopic = ALL_COLUMN_TOPICS.some((t) => t.slug === slug);
   if (isTopic) return <ColumnTopicPage slug={slug} />;
 
   const isArticle = COLUMNS.some((c) => c.slug === slug);
