@@ -83,12 +83,12 @@ function Step({
           style={{
             width: "40px",
             height: "40px",
-            border: "1px solid rgba(255,255,255,0.12)",
+            border: "1px solid #E8E4DC",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             flexShrink: 0,
-            background: "rgba(255,255,255,0.04)",
+            background: "#F8F6F2",
           }}
         >
           <span
@@ -96,7 +96,7 @@ function Step({
               fontFamily: "var(--font-display)",
               fontSize: "11px",
               letterSpacing: "0.1em",
-              color: "rgba(255,255,255,0.45)",
+              color: "#9CA3AF",
             }}
           >
             {step.num}
@@ -108,7 +108,7 @@ function Step({
               width: "1px",
               flex: 1,
               marginTop: "8px",
-              background: "rgba(255,255,255,0.08)",
+              background: "#E8E4DC",
               minHeight: "48px",
             }}
             initial={{ scaleY: 0 }}
@@ -125,7 +125,7 @@ function Step({
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(15px, 1.6vw, 18px)",
-              color: "#ffffff",
+              color: "#0B1628",
               fontWeight: 700,
               lineHeight: 1.3,
             }}
@@ -136,8 +136,8 @@ function Step({
             style={{
               fontSize: "10px",
               padding: "2px 8px",
-              border: "1px solid rgba(255,255,255,0.1)",
-              color: "rgba(255,255,255,0.3)",
+              border: "1px solid #E8E4DC",
+              color: "#9CA3AF",
               fontFamily: "var(--font-display)",
               letterSpacing: "0.08em",
               flexShrink: 0,
@@ -149,7 +149,7 @@ function Step({
         <p
           style={{
             fontSize: "13px",
-            color: "rgba(255,255,255,0.45)",
+            color: "#9CA3AF",
             lineHeight: "1.9",
           }}
         >
@@ -167,9 +167,9 @@ export default function HomeProcess() {
   return (
     <section
       style={{
-        background: "#060E1C",
+        background: "#FFFFFF",
         padding: "clamp(72px, 10vh, 120px) 0",
-        borderTop: "1px solid rgba(255,255,255,0.04)",
+        borderTop: "1px solid #E8E4DC",
       }}
     >
       <div
@@ -200,7 +200,7 @@ export default function HomeProcess() {
               style={{
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.3em",
-                color: "rgba(196,169,106,0.55)",
+                color: "#9CA3AF",
                 fontSize: "10px",
                 marginBottom: "20px",
                 textTransform: "uppercase",
@@ -212,7 +212,7 @@ export default function HomeProcess() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(22px, 3vw, 38px)",
-                color: "#ffffff",
+                color: "#0B1628",
                 fontWeight: 700,
                 lineHeight: 1.3,
                 marginBottom: "24px",
@@ -223,7 +223,7 @@ export default function HomeProcess() {
             <p
               style={{
                 fontSize: "13px",
-                color: "rgba(255,255,255,0.38)",
+                color: "#6B7280",
                 lineHeight: "1.9",
                 marginBottom: "32px",
               }}
@@ -236,8 +236,8 @@ export default function HomeProcess() {
                 fontSize: "12px",
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.08em",
-                color: "rgba(255,255,255,0.3)",
-                borderBottom: "1px solid rgba(255,255,255,0.1)",
+                color: "#9CA3AF",
+                borderBottom: "1px solid #D1C9BE",
                 paddingBottom: "2px",
                 textDecoration: "none",
               }}

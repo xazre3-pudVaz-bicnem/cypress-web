@@ -16,8 +16,8 @@ const SERVICES = [
     alt: "Googleマップ上位表示 — MEO対策サービス",
     body: "Googleビジネスプロフィールを最適化し、地域名+業種キーワードでの検索上位を狙います。来店・予約・電話問い合わせが増える、地域集客の核心です。",
     stat: "来店数",
-    accentColor: "#C4A96A",
-    bg: "#060E1C",
+    accentColor: "#B8924A",
+    bg: "#FFFFFF",
   },
   {
     num: "02",
@@ -29,8 +29,8 @@ const SERVICES = [
     alt: "検索上位表示 — SEO対策サービス",
     body: "キーワード設計・コンテンツSEO・テクニカルSEOを組み合わせ、広告費ゼロで検索流入を増やします。中長期の集客基盤を構築します。",
     stat: "検索流入",
-    accentColor: "#7EC8C8",
-    bg: "#08111E",
+    accentColor: "#2A9BA0",
+    bg: "#F8F6F2",
   },
   {
     num: "03",
@@ -42,8 +42,8 @@ const SERVICES = [
     alt: "AI検索対策 — AIO・ChatGPT対応サービス",
     body: "ChatGPT・Gemini・PerplexityなどのAI検索に引用されるサイトへ。E-E-A-T強化・構造化データ・FAQ設計でAI検索時代の集客を実現します。",
     stat: "AI引用率",
-    accentColor: "#A78BFA",
-    bg: "#060E1C",
+    accentColor: "#7C5FC0",
+    bg: "#FFFFFF",
   },
   {
     num: "04",
@@ -55,8 +55,8 @@ const SERVICES = [
     alt: "ホームページ制作 — Next.js高速サイト",
     body: "集客・CVR・SEOを設計した高品質サイトを制作。デザインの美しさだけでなく、問い合わせ・来店・採用につながる導線設計を重視します。",
     stat: "問い合わせ率",
-    accentColor: "#F59E0B",
-    bg: "#08111E",
+    accentColor: "#C07820",
+    bg: "#F8F6F2",
   },
   {
     num: "05",
@@ -68,8 +68,8 @@ const SERVICES = [
     alt: "SNS運用代行 — Instagram・LINE",
     body: "Instagram・Google投稿・LINEなどのSNS運用を代行。投稿設計・画像制作・分析まで継続的な情報発信を支援し、MEOとの相乗効果を生みます。",
     stat: "フォロワー数",
-    accentColor: "#F472B6",
-    bg: "#060E1C",
+    accentColor: "#B0406A",
+    bg: "#FFFFFF",
   },
   {
     num: "06",
@@ -81,8 +81,8 @@ const SERVICES = [
     alt: "AI活用支援 — 業務自動化・ChatGPT導入",
     body: "ChatGPT・Make・Zapierを活用した業務効率化・自動化の伴走支援。ブログ自動生成・SNS投稿自動化・問い合わせ対応ボットなど導入から運用まで。",
     stat: "業務効率化",
-    accentColor: "#34D399",
-    bg: "#08111E",
+    accentColor: "#1E8A5C",
+    bg: "#F8F6F2",
   },
 ];
 
@@ -135,34 +135,26 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
         alignItems: "center",
       }}
     >
-      {/* Background image layer */}
-      <div style={{ position: "absolute", inset: 0 }}>
-        <Image
-          src={svc.img}
-          alt={svc.alt}
-          fill
-          className="object-cover"
-          sizes="100vw"
-          style={{ opacity: 0.08 }}
-        />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: `linear-gradient(120deg, ${svc.bg} 55%, transparent 100%)`,
-        }}
-      />
-
-      {/* Accent line top */}
+      {/* Top accent line */}
       <div
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           right: 0,
+          height: "2px",
+          background: `linear-gradient(90deg, ${svc.accentColor}60 0%, transparent 50%)`,
+        }}
+      />
+      {/* Bottom border */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
           height: "1px",
-          background: `linear-gradient(90deg, ${svc.accentColor}44 0%, transparent 60%)`,
+          background: "#E8E4DC",
         }}
       />
 
@@ -192,7 +184,6 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
               color: svc.accentColor,
               textTransform: "uppercase",
               marginBottom: "20px",
-              opacity: 0.8,
             }}
           >
             {svc.en}
@@ -202,7 +193,7 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(80px, 14vw, 180px)",
-                color: "rgba(255,255,255,0.04)",
+                color: "rgba(11,22,40,0.04)",
                 fontWeight: 700,
                 lineHeight: 1,
                 letterSpacing: "-0.03em",
@@ -215,7 +206,7 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(28px, 4vw, 52px)",
-              color: "#ffffff",
+              color: "#0B1628",
               fontWeight: 700,
               lineHeight: 1.2,
               marginTop: "-20px",
@@ -227,7 +218,7 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
           <p
             style={{
               fontSize: "14px",
-              color: "rgba(255,255,255,0.55)",
+              color: "#6B7280",
               lineHeight: "1.95",
               marginBottom: "32px",
               maxWidth: "400px",
@@ -242,8 +233,8 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
                 fontSize: "12px",
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.08em",
-                color: "#ffffff",
-                borderBottom: `1px solid ${svc.accentColor}60`,
+                color: "#0B1628",
+                borderBottom: `1px solid ${svc.accentColor}80`,
                 paddingBottom: "3px",
                 textDecoration: "none",
               }}
@@ -256,8 +247,8 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
                 fontSize: "12px",
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.08em",
-                color: "rgba(255,255,255,0.3)",
-                borderBottom: "1px solid rgba(255,255,255,0.1)",
+                color: "#9CA3AF",
+                borderBottom: "1px solid #E8E4DC",
                 paddingBottom: "3px",
                 textDecoration: "none",
               }}
@@ -276,13 +267,6 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background: "linear-gradient(135deg, rgba(6,14,28,0.3) 0%, transparent 60%)",
-            }}
-          />
           {/* Stat label */}
           <div
             style={{
@@ -290,7 +274,7 @@ function ServicePanel({ svc, index, scrollYProgress }: PanelProps) {
               bottom: "24px",
               right: "24px",
               padding: "10px 16px",
-              background: "rgba(6,14,28,0.75)",
+              background: "rgba(255,255,255,0.92)",
               backdropFilter: "blur(8px)",
               border: `1px solid ${svc.accentColor}30`,
             }}
@@ -340,7 +324,7 @@ function ProgressDots({ scrollYProgress }: { scrollYProgress: MotionValue<number
               background: useTransform(
                 active,
                 [0, 1],
-                ["rgba(255,255,255,0.2)", svc.accentColor]
+                ["rgba(11,22,40,0.15)", svc.accentColor]
               ),
               scale: useTransform(active, [0, 1], [1, 1.5]),
             }}
@@ -367,7 +351,7 @@ function SectionLabel({ scrollYProgress }: { scrollYProgress: MotionValue<number
           fontFamily: "var(--font-display)",
           fontSize: "9px",
           letterSpacing: "0.3em",
-          color: "rgba(255,255,255,0.22)",
+          color: "#9CA3AF",
           textTransform: "uppercase",
         }}
       >
