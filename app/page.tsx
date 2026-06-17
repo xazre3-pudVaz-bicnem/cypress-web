@@ -81,25 +81,13 @@ export default function Home() {
         ===================================================== */}
         <section
           style={{
-            background: "#0B1628",
+            background: "#F8F6F2",
             padding: "clamp(64px, 10vh, 120px) 0",
             position: "relative",
             overflow: "hidden",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "800px",
-              height: "300px",
-              background:
-                "radial-gradient(ellipse, rgba(196,169,106,0.05) 0%, transparent 65%)",
-              pointerEvents: "none",
-            }}
-          />
           <div
             style={{
               maxWidth: "800px",
@@ -114,7 +102,7 @@ export default function Home() {
               style={{
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.28em",
-                color: "rgba(196,169,106,0.5)",
+                color: "#C4A96A",
                 fontSize: "10px",
                 marginBottom: "32px",
                 textTransform: "uppercase",
@@ -126,7 +114,7 @@ export default function Home() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 3vw, 36px)",
-                color: "#ffffff",
+                color: "#0B1628",
                 lineHeight: 1.7,
                 fontWeight: 700,
                 marginBottom: "28px",
@@ -137,7 +125,7 @@ export default function Home() {
             <p
               style={{
                 fontSize: "13px",
-                color: "rgba(255,255,255,0.4)",
+                color: "#6B7280",
                 lineHeight: "1.95",
                 maxWidth: "560px",
                 margin: "0 auto 32px",
@@ -151,8 +139,8 @@ export default function Home() {
                 fontSize: "12px",
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.1em",
-                color: "rgba(255,255,255,0.28)",
-                borderBottom: "1px solid rgba(255,255,255,0.1)",
+                color: "#9CA3AF",
+                borderBottom: "1px solid #D1C9BE",
                 paddingBottom: "2px",
                 textDecoration: "none",
               }}

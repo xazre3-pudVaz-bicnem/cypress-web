@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function FinalContactBand() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,42 +11,13 @@ export default function FinalContactBand() {
   return (
     <section
       style={{
-        background: "#0B1628",
+        background: "#F5F3EE",
         position: "relative",
         overflow: "hidden",
         padding: "clamp(80px, 12vh, 140px) 0",
+        borderTop: "1px solid #E8E4DC",
       }}
     >
-      {/* Background image */}
-      <div style={{ position: "absolute", inset: 0 }}>
-        <Image
-          src="/ChatGPT Image 2026年6月13日 19_11_20.png"
-          alt=""
-          fill
-          className="object-cover"
-          sizes="100vw"
-          style={{ opacity: 0.06 }}
-        />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "linear-gradient(135deg, rgba(11,22,40,0.96) 40%, rgba(11,22,40,0.75) 100%)",
-        }}
-      />
-
-      {/* Top accent line */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          height: "1px",
-          background: "linear-gradient(90deg, transparent, rgba(196,169,106,0.3) 40%, rgba(196,169,106,0.3) 60%, transparent)",
-        }}
-      />
 
       <div
         style={{
@@ -89,7 +59,7 @@ export default function FinalContactBand() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(24px, 3.2vw, 44px)",
-                color: "#ffffff",
+                color: "#0B1628",
                 fontWeight: 700,
                 lineHeight: 1.25,
                 marginBottom: "20px",
@@ -100,7 +70,7 @@ export default function FinalContactBand() {
             <p
               style={{
                 fontSize: "13px",
-                color: "rgba(255,255,255,0.45)",
+                color: "#6B7280",
                 lineHeight: "1.95",
                 marginBottom: "36px",
                 maxWidth: "480px",
@@ -117,8 +87,8 @@ export default function FinalContactBand() {
                   alignItems: "center",
                   gap: "8px",
                   padding: "14px 28px",
-                  background: "#ffffff",
-                  color: "#0B1628",
+                  background: "#0B1628",
+                  color: "#FFFFFF",
                   fontSize: "13px",
                   fontWeight: 600,
                   letterSpacing: "0.05em",
@@ -138,8 +108,8 @@ export default function FinalContactBand() {
                   alignItems: "center",
                   gap: "8px",
                   padding: "14px 24px",
-                  border: "1px solid rgba(255,255,255,0.15)",
-                  color: "rgba(255,255,255,0.55)",
+                  border: "1px solid #D1C9BE",
+                  color: "#6B7280",
                   fontSize: "13px",
                   letterSpacing: "0.05em",
                   fontFamily: "var(--font-display)",
@@ -167,7 +137,7 @@ export default function FinalContactBand() {
                   justifyContent: "space-between",
                   alignItems: "center",
                   padding: "18px 0",
-                  borderBottom: "1px solid rgba(255,255,255,0.06)",
+                  borderBottom: "1px solid #E8E4DC",
                   textDecoration: "none",
                   gap: "16px",
                 }}
@@ -179,7 +149,7 @@ export default function FinalContactBand() {
                       fontFamily: "var(--font-display)",
                       fontSize: "9px",
                       letterSpacing: "0.22em",
-                      color: "rgba(255,255,255,0.25)",
+                      color: "#9CA3AF",
                       marginBottom: "4px",
                       textTransform: "uppercase",
                     }}
@@ -190,13 +160,13 @@ export default function FinalContactBand() {
                     style={{
                       fontFamily: "var(--font-serif)",
                       fontSize: "14px",
-                      color: "rgba(255,255,255,0.7)",
+                      color: "#0B1628",
                       fontWeight: 600,
                     }}
                   >
                     {item.label}
                   </p>
-                  <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.28)", marginTop: "2px" }}>
+                  <p style={{ fontSize: "11px", color: "#9CA3AF", marginTop: "2px" }}>
                     {item.sub}
                   </p>
                 </div>
@@ -205,7 +175,7 @@ export default function FinalContactBand() {
                   height="14"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="rgba(255,255,255,0.2)"
+                  stroke="#C4BAB0"
                   strokeWidth={2}
                   style={{ flexShrink: 0 }}
                 >
@@ -224,7 +194,7 @@ export default function FinalContactBand() {
           style={{
             marginTop: "clamp(48px, 6vh, 72px)",
             paddingTop: "28px",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
+            borderTop: "1px solid #E8E4DC",
             display: "flex",
             gap: "32px",
             flexWrap: "wrap",
@@ -237,13 +207,13 @@ export default function FinalContactBand() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "13px",
-                color: "rgba(255,255,255,0.35)",
+                color: "#6B7280",
                 marginBottom: "4px",
               }}
             >
               株式会社サイプレス
             </p>
-            <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.2)", letterSpacing: "0.05em" }}>
+            <p style={{ fontSize: "11px", color: "#9CA3AF", letterSpacing: "0.05em" }}>
               東京都葛飾区白鳥4-6-1-623&nbsp;&nbsp;|&nbsp;&nbsp;consulting.meo@gmail.com
             </p>
           </div>
@@ -258,7 +228,7 @@ export default function FinalContactBand() {
                 href={l.href}
                 style={{
                   fontSize: "11px",
-                  color: "rgba(255,255,255,0.2)",
+                  color: "#9CA3AF",
                   textDecoration: "none",
                   fontFamily: "var(--font-display)",
                   letterSpacing: "0.05em",
