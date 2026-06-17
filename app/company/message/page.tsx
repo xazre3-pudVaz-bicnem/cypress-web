@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "代表メッセージ | 株式会社サイプレス",
     description: "株式会社サイプレス代表取締役・織田春樹からのメッセージ。創業の背景とWebマーケティングへの想い。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

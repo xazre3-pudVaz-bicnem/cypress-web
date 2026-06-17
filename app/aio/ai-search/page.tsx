@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ｜サイプレス",
+  title: "AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ｜株式会社サイプレス",
   description: "AI検索エンジン（ChatGPT・Gemini・Perplexity・Claude）に引用されるためのAIO対策。E-E-A-T・構造化データ・llms.txt設置など実践的な最適化手法を解説。",
   keywords: ["AI検索対策", "AIO対策", "ChatGPT引用対策", "Gemini対策", "Perplexity対策", "AI検索最適化", "E-E-A-T", "構造化データ"],
   openGraph: {
     title: "AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ",
     description: "AI検索エンジン（ChatGPT・Gemini・Perplexity・Claude）に引用されるためのAIO対策。E-E-A-T・構造化データ・llms.txt設置など実践的な最適化手法を解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

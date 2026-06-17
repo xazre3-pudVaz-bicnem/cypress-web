@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "美容室・美容サロンのMEO対策｜Googleマップで新規集客と再来店促進",
+  title: "美容室・美容サロンのMEO対策｜Googleマップで新規集客と再来店促進｜株式会社サイプレス",
   description: "美容室・ネイルサロン・エステのGoogleマップ集客。GBPでの施術メニュー設定・ビフォーアフター写真・口コミ管理・予約連携など美容サロン特有のMEO対策を徹底解説。",
   keywords: ["美容室 MEO対策", "ヘアサロン Googleマップ", "美容室 集客", "サロン GBP最適化", "ネイルサロン MEO", "美容室 口コミ対策"],
   openGraph: {
-    title: "美容室・美容サロンのMEO対策｜Googleマップで新規集客と再来店促進",
+    title: "美容室・美容サロンのMEO対策｜Googleマップで新規集客と再来店促進｜株式会社サイプレス",
     description: "美容室・ネイルサロン・エステのGoogleマップ集客。GBPでのサービス設定・施術写真・口コミ管理・予約連携など美容サロン特有のMEO対策を徹底解説。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
     locale: "ja_JP",

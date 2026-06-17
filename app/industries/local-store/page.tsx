@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【地域密着型小売・専門店のMEO・Web集客】チェーンに負けない地域集客戦略｜株式会社サイプレス",
     description: "花屋・文具店・雑貨店など地域密着型小売・専門店のWeb集客。MEO・Instagram・ホームページで近くの人に見つけてもらいます。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

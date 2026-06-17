@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO特化サイト制作｜検索流入を最大化するWebサイト設計｜株式会社サイプレス",
     description: "SEO特化サイト制作のガイド。キーワード設計・コンテンツ構造・Core Web Vitals最適化まで解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

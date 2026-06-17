@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法",
+  title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
   description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿・業態別ポイントなど飲食店特有のMEO対策を徹底解説します。",
   keywords: ["飲食店 MEO対策", "レストラン Googleマップ", "カフェ 集客", "居酒屋 GBP最適化", "飲食店 口コミ対策", "Googleマップ 飲食店 予約"],
   openGraph: {
-    title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法",
+    title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
     description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿など飲食店特有のMEO対策を徹底解説します。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
     locale: "ja_JP",

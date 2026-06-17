@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【美容室・ヘアサロンのMEO・Instagram集客】ホットペッパー依存脱却で指名予約を増やす｜株式会社サイプレス",
     description: "美容室・ヘアサロンのWeb集客。MEO・Instagram・ホームページで新規来店と指名予約を増やします。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

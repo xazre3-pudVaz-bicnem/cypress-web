@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【ハウスクリーニング・清掃業のMEO・SEO対策】地域検索で選ばれる集客戦略｜株式会社サイプレス",
     description: "ハウスクリーニング・清掃業のWeb集客。MEO・SEO・ホームページで定期受注を増やします。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

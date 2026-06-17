@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "足立区のSEO対策・MEO対策・ホームページ制作｜北千住・竹ノ塚・西新井の集客支援",
+  title: "足立区のSEO対策・MEO対策・ホームページ制作｜北千住・竹ノ塚・西新井の集客支援｜株式会社サイプレス",
   description: "足立区のSEO対策・MEO対策・ホームページ制作。北千住・竹ノ塚・西新井・綾瀬・梅島・六町エリアの中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援。訪問相談対応。",
   keywords: ["足立区 SEO", "足立区 MEO", "北千住 集客", "竹ノ塚 MEO", "西新井 ホームページ制作", "足立区 Web制作", "綾瀬 SEO"],
   openGraph: {
-    title: "足立区のSEO対策・MEO対策・ホームページ制作｜北千住・竹ノ塚・西新井の集客支援",
+    title: "足立区のSEO対策・MEO対策・ホームページ制作｜北千住・竹ノ塚・西新井の集客支援｜株式会社サイプレス",
     description: "足立区の中小企業・店舗のSEO・MEO対策を葛飾区隣接のサイプレスが支援。北千住・竹ノ塚・西新井・綾瀬エリアへの訪問対応も迅速。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

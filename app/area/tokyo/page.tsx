@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "東京都のSEO対策・MEO対策・Web制作｜葛飾区拠点の集客支援会社",
     description: "東京23区全域のSEO・MEO・Web制作を支援。葛飾区拠点の株式会社サイプレスが成果の出る集客戦略を提供します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

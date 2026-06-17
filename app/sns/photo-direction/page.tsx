@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計",
+  title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
   description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
   keywords: ["SNS写真ディレクション", "Instagram写真", "フィード統一感", "スマートフォン撮影", "写真構図", "ビジュアルブランディング"],
   openGraph: {
-    title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計",
+    title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
     description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
     images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png", width: 1200, height: 630 }],
     locale: "ja_JP",

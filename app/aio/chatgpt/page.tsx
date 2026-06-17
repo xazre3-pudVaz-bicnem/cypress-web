@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT対策・生成AI時代の情報設計｜AIO対策｜株式会社サイプレス",
     description: "ChatGPTに引用・推薦される企業になるための情報設計と具体的施策。E-E-A-T・構造化データ・メディア露出・llms.txt対応まで解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

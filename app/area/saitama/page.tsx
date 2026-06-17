@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "埼玉県のSEO対策・MEO対策・Web制作｜草加・越谷・さいたま市・川口・大宮の集客支援",
+  title: "埼玉県のSEO対策・MEO対策・Web制作｜草加・越谷・さいたま市・川口・大宮の集客支援｜株式会社サイプレス",
   description: "埼玉県のSEO対策・MEO対策・ホームページ制作。草加市・越谷市・春日部市・川口市・さいたま市・浦和・大宮・川越の中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援。",
   keywords: ["埼玉県 SEO", "埼玉県 MEO", "草加 集客", "越谷 MEO", "さいたま市 SEO", "川口 ホームページ制作", "大宮 Web制作", "埼玉 MEO対策", "埼玉 ローカルSEO"],
   openGraph: {
-    title: "埼玉県のSEO対策・MEO対策・Web制作｜草加・越谷・さいたま市・川口の集客支援",
+    title: "埼玉県のSEO対策・MEO対策・Web制作｜草加・越谷・さいたま市・川口の集客支援｜株式会社サイプレス",
     description: "埼玉県の中小企業・店舗のSEO・MEO対策をサイプレスが支援。東京より競合が少なくMEOで上位を取りやすい。草加・越谷への訪問相談も対応。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

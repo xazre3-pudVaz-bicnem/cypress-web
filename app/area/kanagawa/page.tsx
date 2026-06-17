@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "神奈川県のSEO対策・MEO対策・Web制作｜横浜・川崎・藤沢・相模原の集客支援",
+  title: "神奈川県のSEO対策・MEO対策・Web制作｜横浜・川崎・藤沢・相模原の集客支援｜株式会社サイプレス",
   description: "神奈川県（横浜市・川崎市・藤沢市・相模原市・横須賀市・茅ヶ崎市・鎌倉市・小田原市）の中小企業・店舗のSEO対策・MEO対策・ホームページ制作をオンラインで支援。Zoomで全県対応。",
   keywords: ["神奈川県 SEO", "神奈川県 MEO", "横浜 集客", "川崎 MEO", "藤沢 ホームページ制作", "横浜 Web制作", "相模原 SEO", "鎌倉 集客", "湘南 MEO"],
   openGraph: {
-    title: "神奈川県のSEO対策・MEO対策・Web制作｜横浜・川崎・藤沢・相模原の集客支援",
+    title: "神奈川県のSEO対策・MEO対策・Web制作｜横浜・川崎・藤沢・相模原の集客支援｜株式会社サイプレス",
     description: "神奈川県の中小企業・店舗のSEO・MEO対策をサイプレスがオンラインで支援。横浜・川崎・藤沢・相模原全県Zoomで完全対応。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

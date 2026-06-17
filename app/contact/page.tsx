@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description:
     "株式会社サイプレスへのお問い合わせフォーム。MEO対策・SEO対策・AIO対策・AI活用支援のご相談をお受けしています。2営業日以内に返信します。",
   keywords: ["お問い合わせ", "MEO相談", "SEO相談", "AI活用相談", "株式会社サイプレス"],
+  alternates: { canonical: "https://www.cypress-all.co.jp/contact" },
+  robots: { index: false, follow: true },
 };
 
 const INFO = [

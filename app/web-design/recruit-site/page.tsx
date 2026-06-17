@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "採用サイト制作｜求職者の応募意欲を高める採用特化Webサイト｜株式会社サイプレス",
     description: "採用サイト制作のガイド。求職者の共感と応募意欲を高めるデザイン・コンテンツ・SEO対策まで解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

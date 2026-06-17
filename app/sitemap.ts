@@ -21,13 +21,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // サービス
     ...urls([
+      "/services",
+    ], { changeFrequency: "monthly", priority: 0.9 }),
+    ...urls([
       "/services/meo", "/services/seo", "/services/aio",
       "/services/web-design", "/services/sns", "/services/ai",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
+    // SEO・MEO・AIO ハブページ（優先度高）
+    ...urls([
+      "/seo", "/meo", "/aio", "/web-design",
+    ], { changeFrequency: "weekly", priority: 0.9 }),
+
     // SEO専門
     ...urls([
-      "/seo", "/seo/internal-seo", "/seo/content-seo", "/seo/technical-seo",
+      "/seo/internal-seo", "/seo/content-seo", "/seo/technical-seo",
       "/seo/local-seo", "/seo/keyword-research", "/seo/blog-strategy",
       "/seo/page-speed", "/seo/mobile-seo", "/seo/search-console",
       "/seo/seo-audit", "/seo/seo-writing", "/seo/structured-data",
@@ -36,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // MEO専門
     ...urls([
-      "/meo", "/meo/google-business-profile", "/meo/review-management",
+      "/meo/google-business-profile", "/meo/review-management",
       "/meo/ranking", "/meo/photo-posting", "/meo/meo-audit",
       "/meo/beauty-salon-meo", "/meo/category-setting", "/meo/clinic-meo",
       "/meo/construction-meo", "/meo/google-post", "/meo/local-keyword",
@@ -45,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // AIO専門
     ...urls([
-      "/aio", "/aio/chatgpt", "/aio/ai-overview", "/aio/structured-data",
+      "/aio/chatgpt", "/aio/ai-overview", "/aio/structured-data",
       "/aio/llms-txt", "/aio/faq-optimization", "/aio/ai-search",
       "/aio/answer-engine-optimization", "/aio/entity-optimization",
       "/aio/generative-search", "/aio/knowledge-graph",
@@ -61,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Web制作
     ...urls([
-      "/web-design", "/web-design/corporate-site", "/web-design/seo-site",
+      "/web-design/corporate-site", "/web-design/seo-site",
       "/web-design/nextjs", "/web-design/vercel", "/web-design/headless-wordpress",
       "/web-design/landing-page", "/web-design/mobile-friendly",
       "/web-design/page-speed", "/web-design/contact-form", "/web-design/maintenance",

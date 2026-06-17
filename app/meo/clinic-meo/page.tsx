@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略",
+  title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略｜株式会社サイプレス",
   description: "クリニック・医院・歯科のMEO対策。診療科目・診療時間・口コミ管理・院内写真・Web予約連携など医療機関特有のGBP最適化で地域患者の新規来院を増やします。",
   keywords: ["クリニック MEO対策", "歯科 Googleマップ", "医療機関 集客", "病院 GBP最適化", "医院 MEO", "内科 Googleマップ"],
   openGraph: {
-    title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略",
+    title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略｜株式会社サイプレス",
     description: "クリニック・医院・歯科のMEO対策。診療科目・診療時間・口コミ管理・院内写真・Web予約連携など医療機関特有のGBP最適化で地域患者の新規来院を増やします。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
     locale: "ja_JP",

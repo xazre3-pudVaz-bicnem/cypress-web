@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: "サイト全体のSEO課題を体系的に診断するSEO監査。インデックス状況・速度・コンテンツ・内部リンク・構造化データなど10項目以上を網羅的に調査し、優先度の高い改善計画を立てます。",
   keywords: ["SEO監査", "SEO Audit", "SEO診断", "サイト診断", "技術的SEO", "クロールエラー", "Core Web Vitals", "Search Console", "サイト健全性診断"],
   openGraph: {
-    title: "SEO監査（SEO Audit）｜現状診断から改善計画へ",
+    title: "SEO監査（SEO Audit）｜現状診断から改善計画へ｜株式会社サイプレス",
     description: "サイト全体のSEO課題を体系的に診断するSEO監査。インデックス状況・速度・コンテンツ・内部リンク・構造化データなど10項目以上を網羅的に調査します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

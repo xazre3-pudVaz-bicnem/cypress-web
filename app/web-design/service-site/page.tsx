@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "サービスサイト・LP制作｜コンバージョンを高める設計のWebサイト｜株式会社サイプレス",
     description: "サービスサイト・LP制作のガイド。問い合わせ・申し込みを増やすCV重視の設計を解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

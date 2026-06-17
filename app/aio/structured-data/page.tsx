@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "構造化データ実装（AIO向け）｜Schema.org完全ガイド｜株式会社サイプレス",
     description:
       "AI検索・Google検索で引用されやすくなる構造化データの実装。Schema.org対応でリッチリザルトとAIO引用率を同時に改善。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

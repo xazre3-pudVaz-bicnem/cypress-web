@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略",
+  title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略｜株式会社サイプレス",
   description: "建設業・工務店・リフォーム会社のMEO対策。施工事例写真・対応エリア設定・口コミ獲得・資格情報掲載など建設業特有のGBP最適化で地域からの問い合わせを増やします。",
   keywords: ["工務店 MEO対策", "建設業 Googleマップ", "リフォーム 集客", "建設会社 GBP最適化", "外壁塗装 MEO", "工務店 Googleマップ"],
   openGraph: {
-    title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略",
+    title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略｜株式会社サイプレス",
     description: "建設業・工務店・リフォーム会社のMEO対策。施工事例写真・対応エリア設定・口コミ獲得・資格情報掲載など建設業特有のGBP最適化で地域からの問い合わせを増やします。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.png", width: 1200, height: 630 }],
     locale: "ja_JP",

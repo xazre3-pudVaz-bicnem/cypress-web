@@ -10,6 +10,34 @@ export const metadata: Metadata = {
   description:
     "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI導入支援の6サービスを一気通貫で提供。中小企業のWeb集客を根本から改善します。",
   keywords: ["サービス一覧", "MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援", "株式会社サイプレス"],
+  alternates: { canonical: "https://www.cypress-all.co.jp/services" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "ホーム", item: "https://www.cypress-all.co.jp" },
+        { "@type": "ListItem", position: 2, name: "サービス一覧", item: "https://www.cypress-all.co.jp/services" },
+      ],
+    },
+    {
+      "@type": "ItemList",
+      name: "株式会社サイプレス サービス一覧",
+      description: "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI導入支援",
+      numberOfItems: 6,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "MEO対策", url: "https://www.cypress-all.co.jp/services/meo", description: "Googleマップ上位表示・Googleビジネスプロフィール最適化" },
+        { "@type": "ListItem", position: 2, name: "SEO対策", url: "https://www.cypress-all.co.jp/services/seo", description: "検索上位表示・コンテンツSEO・テクニカルSEO" },
+        { "@type": "ListItem", position: 3, name: "AIO対策", url: "https://www.cypress-all.co.jp/services/aio", description: "生成AI検索引用最適化・AI Overview対策" },
+        { "@type": "ListItem", position: 4, name: "ホームページ制作", url: "https://www.cypress-all.co.jp/services/web-design", description: "SEO対応Webサイト制作・Next.js・WordPress" },
+        { "@type": "ListItem", position: 5, name: "SNS運用", url: "https://www.cypress-all.co.jp/services/sns", description: "Instagram・X運用代行・ブランド認知拡大" },
+        { "@type": "ListItem", position: 6, name: "AI活用支援", url: "https://www.cypress-all.co.jp/services/ai", description: "業務自動化・AI導入コンサルティング" },
+      ],
+    },
+  ],
 };
 
 const SERVICE_GUIDANCE = [
@@ -43,6 +71,10 @@ const SERVICE_GUIDANCE = [
 export default function ServicesIndexPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}

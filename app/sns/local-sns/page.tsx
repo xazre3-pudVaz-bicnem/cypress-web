@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略",
+  title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略｜株式会社サイプレス",
   description: "地域名・地元感を活かして近隣ユーザーに届くSNS戦略。地域ハッシュタグ・位置情報タグ・MEO連携・地域インフルエンサー活用で来店を増やす地域密着SNS運用の全手法を解説。",
   keywords: ["地域密着SNS", "地域SNS集客", "地域ハッシュタグ", "MEO SNS連携", "地元集客", "店舗SNS運用"],
   openGraph: {
-    title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略",
+    title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略｜株式会社サイプレス",
     description: "地域名・地元感を活かして近隣ユーザーに届くSNS戦略。地域ハッシュタグ・位置情報タグ・MEO連携・地域インフルエンサー活用で来店を増やす地域密着SNS運用の全手法を解説。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.png", width: 1200, height: 630 }],
     locale: "ja_JP",

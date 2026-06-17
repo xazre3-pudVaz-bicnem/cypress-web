@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "SNS投稿AI自動化｜Instagram・X・TikTok投稿文を自動生成｜サイプレス",
+  title: "SNS投稿AI自動化｜Instagram・X・TikTok投稿文を自動生成｜株式会社サイプレス",
   description: "AIを使ったSNS投稿の自動化・効率化。Instagram・X・TikTokの投稿文・キャプション・ハッシュタグをChatGPT/Claude APIで自動生成し、Buffer/Zapier/Makeと連携して継続的な情報発信体制を構築する方法を解説。",
   keywords: ["SNS投稿自動化", "AI SNS運用", "Instagram自動化", "TikTok投稿自動化", "X投稿自動化", "ハッシュタグ自動生成", "SNS効率化", "ChatGPT SNS"],
   openGraph: {
     title: "SNS投稿AI自動化｜Instagram・X・TikTok投稿文を自動生成",
     description: "AIを使ったSNS投稿の自動化・効率化。Instagram・X・TikTokの投稿文・キャプション・ハッシュタグをChatGPT/Claude APIで自動生成し、Buffer/Zapier/Makeと連携して継続的な情報発信体制を構築する方法を解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

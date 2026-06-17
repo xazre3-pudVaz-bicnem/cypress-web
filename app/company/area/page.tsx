@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "対応エリア｜東京・神奈川・埼玉・千葉＋全国オンライン対応｜株式会社サイプレス",
     description: "東京都葛飾区拠点。首都圏訪問対応＋全国オンライン対応でMEO・SEO・Web集客をご支援。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

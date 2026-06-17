@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理",
+  title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
   description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
   keywords: ["コンテンツカレンダー", "SNS投稿計画", "SNS運用", "投稿スケジュール", "SNS継続"],
   openGraph: {
-    title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理",
+    title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
     description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
     images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.png", width: 1200, height: 630 }],
     locale: "ja_JP",

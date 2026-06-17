@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: "SEOライティングの基本原則と実践方法。検索意図の4分類・見出し設計・E-E-A-T対応・AI生成コンテンツへの対応・定期更新の重要性まで、検索上位を狙うコンテンツ作成の全体像を解説します。",
   keywords: ["SEOライティング", "SEO記事作成", "検索意図", "E-E-A-T", "コンテンツSEO", "キーワード最適化", "SEOコンテンツ", "記事設計", "見出し設計"],
   openGraph: {
-    title: "SEOライティング｜検索意図に応えるコンテンツ作成",
+    title: "SEOライティング｜検索意図に応えるコンテンツ作成｜株式会社サイプレス",
     description: "SEOライティングの基本原則と実践方法。検索意図の4分類・見出し設計・E-E-A-T対応・AI生成コンテンツへの対応・定期更新まで解説します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

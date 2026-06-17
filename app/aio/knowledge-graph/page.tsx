@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
     description: "GoogleナレッジグラフへのエンティティとしてのGoogle認識を高めるAIO対策。Organization構造化データ・GBP連携・権威サイト掲載で企業の知名度を向上。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

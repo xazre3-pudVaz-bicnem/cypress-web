@@ -1,913 +1,204 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ImmersiveHero from "@/components/home/ImmersiveHero";
+import ScrollStory from "@/components/home/ScrollStory";
+import ServiceEcosystem from "@/components/home/ServiceEcosystem";
+import DarkFeaturePanels from "@/components/home/DarkFeaturePanels";
+import IndustryShowcase from "@/components/home/IndustryShowcase";
+import ProblemSolution from "@/components/home/ProblemSolution";
+import HomeProcess from "@/components/home/HomeProcess";
+import FinalContactBand from "@/components/home/FinalContactBand";
 import { getLatestColumns } from "@/lib/data/columns";
-import { getLatestNews } from "@/lib/data/news";
 
 export const metadata: Metadata = {
   title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
-  description: "株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するマーケティングカンパニーです。東京都葛飾区。",
-  keywords: ["MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "Webマーケティング", "株式会社サイプレス"],
+  description:
+    "株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するマーケティングカンパニーです。東京都葛飾区。",
+  keywords: [
+    "MEO対策",
+    "SEO対策",
+    "AIO対策",
+    "ホームページ制作",
+    "Webマーケティング",
+    "株式会社サイプレス",
+    "葛飾区 SEO",
+    "葛飾区 MEO",
+    "中小企業 Web集客",
+    "AI検索対策",
+    "Googleマップ集客",
+  ],
   openGraph: {
     title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
-    description: "MEO対策・SEO対策・AIO対策・ホームページ制作を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。",
+    description:
+      "MEO対策・SEO対策・AIO対策・ホームページ制作を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。",
     locale: "ja_JP",
     type: "website",
   },
+  alternates: { canonical: "https://www.cypress-all.co.jp" },
 };
 
 export default function Home() {
   const columns = getLatestColumns(3);
-  const news = getLatestNews(5);
 
   return (
     <>
       <Header />
       <main>
-        {/* ============================================================
-            1. HERO — hero.png full background
-        ============================================================ */}
-        <section className="relative overflow-hidden" style={{ minHeight: "92vh" }}>
-          <Image
-            src="/hero.png"
-            alt="株式会社サイプレス"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0" style={{ background: "rgba(10,18,36,0.65)" }} />
+        {/* =====================================================
+            1. IMMERSIVE HERO — fullscreen parallax
+        ===================================================== */}
+        <ImmersiveHero />
+
+        {/* =====================================================
+            2. SCROLL STORY — sticky 6-service narrative
+        ===================================================== */}
+        <ScrollStory />
+
+        {/* =====================================================
+            3. SERVICE ECOSYSTEM — how the 6 services connect
+        ===================================================== */}
+        <ServiceEcosystem />
+
+        {/* =====================================================
+            4. DARK FEATURE PANELS — 4 strategic pillars
+        ===================================================== */}
+        <DarkFeaturePanels />
+
+        {/* =====================================================
+            5. INDUSTRY SHOWCASE — marquee of industries
+        ===================================================== */}
+        <IndustryShowcase />
+
+        {/* =====================================================
+            6. PROBLEM / SOLUTION — interactive issue finder
+        ===================================================== */}
+        <ProblemSolution />
+
+        {/* =====================================================
+            7. PHILOSOPHY — dark quote section
+        ===================================================== */}
+        <section
+          style={{
+            background: "#0B1628",
+            padding: "clamp(64px, 10vh, 120px) 0",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
           <div
-            className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 flex flex-col justify-center"
-            style={{ minHeight: "92vh" }}
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "800px",
+              height: "300px",
+              background:
+                "radial-gradient(ellipse, rgba(196,169,106,0.05) 0%, transparent 65%)",
+              pointerEvents: "none",
+            }}
+          />
+          <div
+            style={{
+              maxWidth: "800px",
+              margin: "0 auto",
+              padding: "0 clamp(24px, 5vw, 60px)",
+              textAlign: "center",
+              position: "relative",
+              zIndex: 10,
+            }}
           >
-            <div className="max-w-2xl">
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  letterSpacing: "0.3em",
-                  color: "rgba(255,255,255,0.45)",
-                  fontSize: "11px",
-                }}
-              >
-                AI × Web Marketing
-              </p>
-              <h1
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "clamp(40px,6vw,82px)",
-                  color: "#ffffff",
-                  lineHeight: 1.1,
-                  fontWeight: 700,
-                  marginTop: "24px",
-                  marginBottom: "28px",
-                }}
-              >
-                AIで、地域企業の<br />集客を変える。
-              </h1>
-              <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "16px", lineHeight: "1.9", maxWidth: "520px" }}>
-                株式会社サイプレスは、MEO・SEO・AIO・ホームページ制作を通じて、<br className="hidden md:block" />
-                中小企業のWeb集客を支援するマーケティングカンパニーです。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            2. ABOUT — 2-column, DESK image right
-        ============================================================ */}
-        <section className="py-28 md:py-36" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-              {/* LEFT: text */}
-              <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                  }}
-                >
-                  About
-                </p>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "clamp(26px,3.5vw,40px)",
-                    color: "#0d1b2a",
-                    lineHeight: 1.3,
-                    marginTop: "20px",
-                    marginBottom: "28px",
-                  }}
-                >
-                  地域企業のWeb集客を、<br />設計から運用まで支援する。
-                </h2>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                  多くの中小企業・地域ビジネスは、優れたサービスや商品を持ちながら、Webやデジタルマーケティングの壁に阻まれ、本来届くべき顧客に届いていません。Webサイトはあるが集客できない。Googleマップに表示されない。SNSを運用しているが成果が見えない。そういった課題は、設計と運用の両方が揃って初めて解決します。
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                  サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援という6つの領域を横断しながら、集客の仕組みを根本から整えます。単発の制作だけでなく、公開後の改善・分析・更新まで継続的に関わることで、検索されやすい状態を維持します。
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
-                  AI活用により、コンテンツ制作・投稿作成・データ分析の速度を上げ、これまで大企業のみが持てた情報発信の体制を、中小企業でも実現できるよう支援しています。創業以来、全国の中小企業・地域ビジネスの集客を支援してきた経験をもとに、現場に即した実践的な提案を行います。
-                </p>
-                <div style={{ marginTop: "40px" }}>
-                  {[
-                    {
-                      num: "01",
-                      title: "MEO・SEO・AIOを横断した設計",
-                      body: "Googleマップ・自然検索・AI検索の3つを分断せず、一体で設計することで複数の集客経路を構築します。",
-                    },
-                    {
-                      num: "02",
-                      title: "制作会社ではなく、マーケティング会社",
-                      body: "サイトの見た目だけを作る制作会社ではなく、集客・問い合わせ・売上改善を目的とした設計を行います。",
-                    },
-                    {
-                      num: "03",
-                      title: "AI活用による継続的な改善",
-                      body: "AIを活用して投稿・記事・分析レポートの作成を高速化し、公開後の継続的な改善体制を構築します。",
-                    },
-                    {
-                      num: "04",
-                      title: "地域ビジネスへの深い理解",
-                      body: "店舗・施設・士業・医療・建設業など、地域密着型のビジネス特性を理解した支援を行います。",
-                    },
-                  ].map((item) => (
-                    <div
-                      key={item.num}
-                      style={{
-                        display: "flex",
-                        gap: "20px",
-                        padding: "20px 0",
-                        borderTop: "1px solid #ece8e0",
-                      }}
-                    >
-                      <span
-                        style={{
-                          fontFamily: "var(--font-display)",
-                          color: "#9ca3af",
-                          fontSize: "12px",
-                          minWidth: "28px",
-                          paddingTop: "2px",
-                        }}
-                      >
-                        {item.num}
-                      </span>
-                      <div>
-                        <p
-                          style={{
-                            fontFamily: "var(--font-serif)",
-                            fontWeight: 600,
-                            fontSize: "15px",
-                            color: "#0d1b2a",
-                            marginBottom: "6px",
-                          }}
-                        >
-                          {item.title}
-                        </p>
-                        <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.body}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              {/* RIGHT: DESK image — full column height, no border-radius */}
-              <div style={{ position: "relative", height: "580px" }}>
-                <Image
-                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
-                  alt="サイプレスの働く環境"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.06)" }} />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            3. SERVICES — Visual grid blocks with bg images
-        ============================================================ */}
-        <section style={{ background: "#0d1b2a" }}>
-          {/* Section header */}
-          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "96px 32px 64px" }}>
             <p
               style={{
                 fontFamily: "var(--font-display)",
-                letterSpacing: "0.25em",
-                color: "rgba(255,255,255,0.3)",
-                fontSize: "11px",
-                marginBottom: "16px",
+                letterSpacing: "0.28em",
+                color: "rgba(196,169,106,0.5)",
+                fontSize: "10px",
+                marginBottom: "32px",
+                textTransform: "uppercase",
               }}
             >
-              Services
+              Philosophy
             </p>
-            <h2
+            <p
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: "clamp(26px,3.5vw,42px)",
+                fontSize: "clamp(20px, 3vw, 36px)",
                 color: "#ffffff",
-                lineHeight: 1.3,
+                lineHeight: 1.7,
                 fontWeight: 700,
+                marginBottom: "28px",
               }}
             >
-              6つの領域で、<br />集客を設計する。
-            </h2>
-          </div>
-
-          {/* Visual grid */}
-          <div className="grid md:grid-cols-3" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-            {[
-              {
-                num: "01",
-                label: "MEO対策",
-                href: "/services/meo",
-                img: "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
-                alt: "デジタルデータと握手でMEO対策・Googleマップ上位表示をイメージ",
-                body: "Googleマップ上位表示で地域の検索ユーザーに届く",
-              },
-              {
-                num: "02",
-                label: "SEO対策",
-                href: "/services/seo",
-                img: "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
-                alt: "デジタルネットワーク上でタイピングしSEO対策・検索上位をイメージ",
-                body: "検索上位表示で持続的な自然流入を獲得",
-              },
-              {
-                num: "03",
-                label: "AIO対策",
-                href: "/services/aio",
-                img: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
-                alt: "デジタル世界地図でAI検索対策・ChatGPT対応をイメージ",
-                body: "ChatGPT・Gemini等のAI検索に引用されるサイトへ",
-              },
-              {
-                num: "04",
-                label: "ホームページ制作",
-                href: "/services/web-design",
-                img: "/ChatGPT Image 2026年6月13日 20_02_56.png",
-                alt: "大型スクリーンで作業するWebデザイナー — ホームページ制作",
-                body: "集客・CVR・SEOを設計した高品質サイト制作",
-              },
-              {
-                num: "05",
-                label: "SNS運用",
-                href: "/services/sns",
-                img: "/ChatGPT Image 2026年6月13日 20_01_28.png",
-                alt: "スマートフォンで表示されるInstagramアプリ — SNS運用代行",
-                body: "Instagram・LINE等のSNS運用代行・戦略設計",
-              },
-              {
-                num: "06",
-                label: "AI活用支援",
-                href: "/services/ai",
-                img: "/ChatGPT Image 2026年6月14日 21_09_09 (5).png",
-                alt: "ラップトップ上のAIブレインビジュアライゼーション — AI活用支援",
-                body: "業務効率化・自動化・AI導入の伴走型支援",
-              },
-            ].map((svc) => (
-              <Link
-                key={svc.num}
-                href={svc.href}
-                style={{
-                  position: "relative",
-                  display: "block",
-                  height: "360px",
-                  overflow: "hidden",
-                  borderRight: "1px solid rgba(255,255,255,0.06)",
-                  borderBottom: "1px solid rgba(255,255,255,0.06)",
-                  textDecoration: "none",
-                }}
-              >
-                <Image
-                  src={svc.img}
-                  alt={svc.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: "linear-gradient(to top, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.28) 60%, rgba(13,27,42,0.12) 100%)",
-                  }}
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    padding: "32px",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-end",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      color: "rgba(255,255,255,0.35)",
-                      fontSize: "10px",
-                      letterSpacing: "0.2em",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {svc.num}
-                  </p>
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-serif)",
-                      color: "#ffffff",
-                      fontSize: "clamp(18px,1.8vw,22px)",
-                      fontWeight: 700,
-                      marginBottom: "10px",
-                      lineHeight: 1.3,
-                    }}
-                  >
-                    {svc.label}
-                  </h3>
-                  <p
-                    style={{
-                      color: "rgba(255,255,255,0.65)",
-                      fontSize: "13px",
-                      lineHeight: "1.7",
-                      marginBottom: "16px",
-                    }}
-                  >
-                    {svc.body}
-                  </p>
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      color: "rgba(255,255,255,0.45)",
-                      fontSize: "11px",
-                      letterSpacing: "0.05em",
-                    }}
-                  >
-                    詳しく見る
-                    <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Bottom CTA row */}
-          <div style={{ padding: "48px 32px", textAlign: "center" }}>
-            <Link
-              href="/services"
+              正しい会社が、正しく選ばれる世界をつくりたい。
+            </p>
+            <p
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "14px 32px",
-                border: "1px solid rgba(255,255,255,0.2)",
-                color: "rgba(255,255,255,0.7)",
                 fontSize: "13px",
-                letterSpacing: "0.05em",
+                color: "rgba(255,255,255,0.4)",
+                lineHeight: "1.95",
+                maxWidth: "560px",
+                margin: "0 auto 32px",
+              }}
+            >
+              素晴らしい技術・サービス・想いを持ちながら、Web上での露出が少ないだけで機会を逃している中小企業が数多く存在します。AIとWebマーケティングを活用し、その橋渡しをすることが私たちの使命です。
+            </p>
+            <Link
+              href="/company/philosophy"
+              style={{
+                fontSize: "12px",
                 fontFamily: "var(--font-display)",
+                letterSpacing: "0.1em",
+                color: "rgba(255,255,255,0.28)",
+                borderBottom: "1px solid rgba(255,255,255,0.1)",
+                paddingBottom: "2px",
                 textDecoration: "none",
               }}
             >
-              サービス一覧を見る
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
+              企業理念を読む →
             </Link>
           </div>
         </section>
 
-        {/* ============================================================
-            4. PHILOSOPHY — dark section, DIGITAL_BG background
-        ============================================================ */}
-        <section
-          style={{
-            background: "#0d1b2a",
-            position: "relative",
-            padding: "120px 0",
-            overflow: "hidden",
-          }}
-        >
-          <div style={{ position: "absolute", inset: 0 }}>
-            <Image
-              src="/ChatGPT Image 2026年6月13日 19_22_31.png"
-              alt=""
-              fill
-              className="object-cover"
-              sizes="100vw"
-              style={{ opacity: 0.12 }}
-            />
-          </div>
+        {/* =====================================================
+            8. PROCESS — 7-step workflow timeline
+        ===================================================== */}
+        <HomeProcess />
+
+        {/* =====================================================
+            9. COLUMN — latest articles (SEO internal linking)
+        ===================================================== */}
+        <section style={{ background: "#FFFFFF", padding: "clamp(64px, 9vh, 104px) 0" }}>
           <div
             style={{
-              position: "relative",
-              zIndex: 10,
-              maxWidth: "72rem",
+              maxWidth: "1152px",
               margin: "0 auto",
-              padding: "0 40px",
+              padding: "0 clamp(24px, 5vw, 60px)",
             }}
           >
-            <div style={{ maxWidth: "760px" }}>
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  letterSpacing: "0.25em",
-                  color: "rgba(255,255,255,0.3)",
-                  fontSize: "11px",
-                }}
-              >
-                Philosophy
-              </p>
-              <h2
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "clamp(28px,4vw,52px)",
-                  color: "#ffffff",
-                  lineHeight: 1.2,
-                  marginTop: "24px",
-                  marginBottom: "36px",
-                  fontWeight: 700,
-                }}
-              >
-                地域企業が、<br />正しく選ばれる仕組みをつくる。
-              </h2>
-              <p style={{ fontSize: "16px", lineHeight: "1.9", color: "rgba(255,255,255,0.65)", marginBottom: "20px" }}>
-                素晴らしいサービス・技術・想いを持ちながら、Webやデジタルマーケティングの壁に阻まれ、本来届くべき顧客に届いていない中小企業・地域ビジネスが多く存在します。
-              </p>
-              <p style={{ fontSize: "16px", lineHeight: "1.9", color: "rgba(255,255,255,0.65)", marginBottom: "40px" }}>
-                私たちは、AIとWebマーケティングを活用して集客の仕組みを根本から変え、正しい会社が正しく選ばれる世界の実現を目指しています。
-              </p>
-              <a
-                href="/company/philosophy"
-                style={{
-                  fontSize: "13px",
-                  color: "rgba(255,255,255,0.5)",
-                  borderBottom: "1px solid rgba(255,255,255,0.2)",
-                  paddingBottom: "2px",
-                }}
-              >
-                企業理念を読む →
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            5. STRENGTH — image left, list right
-        ============================================================ */}
-        <section style={{ background: "#FFFFFF", padding: "120px 0" }}>
-          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p
+            <div
               style={{
-                fontFamily: "var(--font-display)",
-                letterSpacing: "0.25em",
-                color: "#9ca3af",
-                fontSize: "11px",
-                marginBottom: "16px",
+                display: "flex",
+                alignItems: "flex-end",
+                justifyContent: "space-between",
+                marginBottom: "40px",
+                paddingBottom: "20px",
+                borderBottom: "1px solid #ECE8E0",
+                flexWrap: "wrap",
+                gap: "12px",
               }}
             >
-              Our Strength
-            </p>
-            <h2
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "clamp(24px,3vw,38px)",
-                color: "#0d1b2a",
-                marginBottom: "60px",
-                fontWeight: 700,
-              }}
-            >
-              サイプレスが選ばれる理由。
-            </h2>
-            <div
-              className="grid md:grid-cols-[1fr_1.3fr] gap-16"
-              style={{ alignItems: "start" }}
-            >
-              {/* Image — left column, tall */}
-              <div
-                className="order-2 md:order-1"
-                style={{ position: "relative", height: "500px" }}
-              >
-                <Image
-                  src="/1.png"
-                  alt="Webマーケティング戦略会議"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 42vw"
-                />
-                <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.1)" }} />
-              </div>
-              {/* List — right column */}
-              <div className="order-1 md:order-2">
-                {[
-                  {
-                    num: "01",
-                    title: "集客設計から逆算したWeb制作",
-                    body: "「見た目のいいサイトを作る」のではなく、「どんな人に、どのキーワードで検索されて、どんな行動をとってほしいか」を起点にサイト設計を行います。デザインより、集客動線と検索設計を先に考えます。",
-                  },
-                  {
-                    num: "02",
-                    title: "MEO・SEO・AIOを横断した支援",
-                    body: "Googleマップ・自然検索・AI検索はそれぞれ異なる集客経路です。3つを分断して考えず、一体で設計することで、複数の集客経路から継続的に流入を生み出す体制を構築します。",
-                  },
-                  {
-                    num: "03",
-                    title: "AIを活用した継続運用",
-                    body: "ブログ記事・SNS投稿・Googleビジネスプロフィールへの投稿をAIで効率化し、コンテンツの継続的な更新体制を実現します。更新が止まると検索評価も下がる、という問題を解決します。",
-                  },
-                  {
-                    num: "04",
-                    title: "地域ビジネスへの深い理解",
-                    body: "店舗集客・地域名キーワード・来店導線・口コミなど、地域密着型ビジネスに特有の課題と打ち手を熟知しています。全国の幅広い業種に対応しています。",
-                  },
-                  {
-                    num: "05",
-                    title: "制作後の改善まで対応",
-                    body: "サイト公開・MEO設定後も、アクセス解析・順位計測・改善提案を継続します。制作して終わりではなく、成果が出るまで関わり続けることを大切にしています。",
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.num}
-                    style={{
-                      paddingTop: "24px",
-                      paddingBottom: "24px",
-                      borderTop: "1px solid #ece8e0",
-                    }}
-                  >
-                    <div style={{ display: "flex", gap: "20px" }}>
-                      <span
-                        style={{
-                          fontFamily: "var(--font-display)",
-                          color: "#c4b89a",
-                          fontSize: "12px",
-                          minWidth: "28px",
-                        }}
-                      >
-                        {item.num}
-                      </span>
-                      <div>
-                        <h3
-                          style={{
-                            fontFamily: "var(--font-serif)",
-                            fontSize: "16px",
-                            color: "#0d1b2a",
-                            fontWeight: 600,
-                            marginBottom: "8px",
-                          }}
-                        >
-                          {item.title}
-                        </h3>
-                        <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.body}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                <div style={{ borderTop: "1px solid #ece8e0" }} />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            6. SERVICE STRUCTURE — #f8f6f2 background
-        ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="grid md:grid-cols-2 gap-16 items-start">
               <div>
                 <p
                   style={{
                     fontFamily: "var(--font-display)",
                     letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                    marginBottom: "16px",
-                  }}
-                >
-                  Structure
-                </p>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "clamp(24px,3vw,38px)",
-                    color: "#0d1b2a",
-                    lineHeight: 1.3,
-                    fontWeight: 700,
-                    marginBottom: "32px",
-                  }}
-                >
-                  6つの事業は、<br />連動して機能する。
-                </h2>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                  MEO・SEO・AIO・Web制作・SNS・AI活用は、それぞれ独立したサービスではなく、互いに連動することで最大の効果を発揮します。
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
-                  たとえば、Googleビジネスプロフィール（MEO）を整えながら、Webサイト（SEO）のコンテンツを充実させ、AIを使ってSNSと記事の更新を継続する。この体制が揃うことで、複数の集客経路から継続的にユーザーを獲得できます。
-                </p>
-              </div>
-              <div>
-                {/* DIGITAL_PHONE image — 200px, above table */}
-                <div style={{ position: "relative", height: "200px", marginBottom: "0", overflow: "hidden" }}>
-                  <Image
-                    src="/ChatGPT Image 2026年6月13日 19_18_03.png"
-                    alt="デジタルマーケティングの連動"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.12)" }} />
-                </div>
-                <div>
-                  {[
-                    { from: "MEO対策", to: "→ 地域名検索からの来店・問い合わせ" },
-                    { from: "SEO対策", to: "→ キーワード検索からのサイト流入" },
-                    { from: "AIO対策", to: "→ AI検索での引用・回答表示" },
-                    { from: "ホームページ制作", to: "→ 問い合わせ・採用の受け皿" },
-                    { from: "SNS運用", to: "→ 認知拡大・MEOとの相乗効果" },
-                    { from: "AI活用支援", to: "→ 継続的な情報発信の効率化" },
-                  ].map((row) => (
-                    <div
-                      key={row.from}
-                      className="flex items-center gap-4 py-4"
-                      style={{ borderBottom: "1px solid #e8e4dc" }}
-                    >
-                      <span className="text-[14px] font-semibold w-36 shrink-0" style={{ color: "#0d1b2a" }}>
-                        {row.from}
-                      </span>
-                      <span className="text-[13px]" style={{ color: "#6b7280" }}>{row.to}</span>
-                    </div>
-                  ))}
-                </div>
-                <div style={{ marginTop: "28px" }}>
-                  <Link
-                    href="/business"
-                    className="text-[13px] transition-colors hover:text-[#0d1b2a]"
-                    style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
-                  >
-                    事業内容の詳細を見る →
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            7. REPRESENTATIVE MESSAGE
-        ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="grid md:grid-cols-2 gap-16 items-start">
-              {/* LEFT: message text */}
-              <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                    marginBottom: "16px",
-                  }}
-                >
-                  Message
-                </p>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "clamp(22px,2.8vw,34px)",
-                    color: "#0d1b2a",
-                    lineHeight: 1.3,
-                    fontWeight: 700,
-                    marginBottom: "32px",
-                  }}
-                >
-                  正しい会社が、<br />正しく選ばれる世界をつくりたい。
-                </h2>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                  私がサイプレスを立ち上げた理由は、「良い会社が検索されない」という現実への問題意識からです。素晴らしい技術・サービス・想いを持ちながら、Web上での露出が少ないだけで機会を逃している企業を数多く見てきました。
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                  AIとWebマーケティングの掛け合わせにより、これまで大企業にしかできなかったような継続的な情報発信と集客設計が、中小企業にも実現できる時代になっています。私たちはその橋渡しをする会社でありたいと考えています。
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "32px" }}>
-                  クライアントの事業に深く関わり、数字で成果を確認しながら改善を続ける。その姿勢を大切にしています。
-                </p>
-                <div>
-                  <p
-                    style={{
-                      fontFamily: "var(--font-serif)",
-                      fontWeight: 700,
-                      fontSize: "15px",
-                      color: "#0d1b2a",
-                      marginBottom: "4px",
-                    }}
-                  >
-                    織田 春樹
-                  </p>
-                  <p style={{ fontSize: "13px", color: "#6b7280" }}>代表取締役　株式会社サイプレス</p>
-                  <div style={{ marginTop: "16px" }}>
-                    <Link
-                      href="/company/message"
-                      className="text-[13px] transition-colors hover:text-[#0d1b2a]"
-                      style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}
-                    >
-                      代表挨拶を読む →
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              {/* RIGHT: HANDSHAKE image + company profile */}
-              <div>
-                {/* HANDSHAKE image — 240px, full column width, no border-radius */}
-                <div style={{ position: "relative", height: "240px", marginBottom: "0", overflow: "hidden" }}>
-                  <Image
-                    src="/ChatGPT Image 2026年6月13日 19_11_20.png"
-                    alt="パートナーシップ・信頼関係"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.08)" }} />
-                </div>
-                {/* Company profile — no shadow, no blue */}
-                <div style={{ padding: "32px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
-                  <p
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      letterSpacing: "0.2em",
-                      fontSize: "11px",
-                      color: "#9ca3af",
-                      marginBottom: "20px",
-                    }}
-                  >
-                    Company Profile
-                  </p>
-                  <div>
-                    {[
-                      { label: "会社名", value: "株式会社サイプレス" },
-                      { label: "代表取締役", value: "織田 春樹" },
-                      { label: "設立", value: "2026年5月13日" },
-                      { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
-                      { label: "事業内容", value: "Webマーケティング支援全般" },
-                    ].map((row) => (
-                      <div
-                        key={row.label}
-                        className="flex gap-4 text-[13px] py-3"
-                        style={{ borderBottom: "1px solid #ece8e0" }}
-                      >
-                        <span className="w-24 shrink-0" style={{ color: "#9ca3af" }}>{row.label}</span>
-                        <span style={{ color: "#374151" }}>{row.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div style={{ marginTop: "20px" }}>
-                    <Link href="/company/profile" className="text-[12px]" style={{ color: "#6b7280" }}>
-                      会社概要 →
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            8. RECRUIT — #f8f6f2 background
-        ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#f8f6f2" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="grid md:grid-cols-2 gap-16 items-start">
-              <div>
-                <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>
-                  Recruit
-                </p>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3vw,38px)", color: "#0d1b2a", lineHeight: 1.3, fontWeight: 700, marginBottom: "20px" }}>
-                  Webマーケティング営業を<br />募集しています。
-                </h2>
-                <p style={{ fontSize: "13px", color: "#9ca3af", marginBottom: "16px", display: "inline-block", padding: "4px 12px", border: "1px solid #e8e4dc", background: "#ffffff" }}>
-                  現在募集中：Webマーケティング営業のみ
-                </p>
-                <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "28px" }}>
-                  株式会社サイプレスでは、MEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業を募集しています。月給35万円以上、年間休日130日。AI時代に必要とされる提案力を身につけながら、仕事もプライベートも充実させられる環境を目指しています。
-                </p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {["月給35万円以上", "年間休日130日", "未経験歓迎", "正社員募集", "AI×Webマーケティング"].map((tag) => (
-                    <span key={tag} className="text-[12px] px-3 py-1" style={{ border: "1px solid #e8e4dc", color: "#374151", background: "#ffffff" }}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex flex-wrap gap-5">
-                  <Link href="/recruit/sales" className="text-[13px] transition-colors hover:text-[#0d1b2a]" style={{ color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px", fontWeight: 600 }}>
-                    営業職詳細・応募 →
-                  </Link>
-                  <Link href="/recruit" className="text-[13px] transition-colors hover:text-[#0d1b2a]" style={{ color: "#374151", borderBottom: "1px solid #d1c9be", paddingBottom: "2px" }}>
-                    採用情報を見る →
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div style={{ position: "relative", height: "220px", marginBottom: "0", overflow: "hidden" }}>
-                  <Image
-                    src="/ChatGPT Image 2026年6月14日 21_13_52.png"
-                    alt="株式会社サイプレスのWebマーケティング営業 チームミーティング風景"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.08)" }} />
-                </div>
-                {[
-                  { label: "月給", value: "35万円以上" },
-                  { label: "年間休日", value: "130日" },
-                  { label: "雇用形態", value: "正社員" },
-                  { label: "応募資格", value: "未経験歓迎" },
-                ].map((item) => (
-                  <div key={item.label} className="flex items-center justify-between py-4" style={{ borderBottom: "1px solid #e8e4dc" }}>
-                    <span className="text-[13px]" style={{ color: "#9ca3af" }}>{item.label}</span>
-                    <span className="text-[14px] font-semibold" style={{ color: "#0d1b2a" }}>{item.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            8b. PARTNER — #ffffff background
-        ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#ffffff" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>
-              Partner
-            </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,36px)", color: "#0d1b2a", lineHeight: 1.3, fontWeight: 700, marginBottom: "20px" }}>
-              販売パートナー・取次パートナーを<br />募集しています。
-            </h2>
-            <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "640px" }}>
-              ホームページ制作・MEO対策・SEO対策・AIO対策を提案できる販売代理店・取次店を募集しています。制作・保守管理・運用は株式会社サイプレスが対応するため、パートナー様は販売・紹介活動に集中できます。
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div style={{ border: "1px solid #e8e4dc", padding: "32px", background: "#f8f6f2" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", marginBottom: "10px" }}>Sales Agency</p>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "14px" }}>販売代理店募集</p>
-                <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "20px" }}>
-                  ホームページ制作・MEO対策・SEO対策を販売したい法人・営業会社向けのパートナー制度です。制作や保守はサイプレスが対応するため、制作リソース不要で販売に集中できます。
-                </p>
-                <div className="flex flex-col gap-1 mb-6">
-                  {["制作・保守はサイプレスが対応", "専門スタッフ・リソース不要", "既存顧客への提案から始められる"].map((p) => (
-                    <p key={p} style={{ fontSize: "13px", color: "#374151" }}>✓ {p}</p>
-                  ))}
-                </div>
-                <Link href="/agent" style={{ fontSize: "13px", color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px" }}>
-                  販売代理店募集を見る →
-                </Link>
-              </div>
-              <div style={{ border: "1px solid #e8e4dc", padding: "32px", background: "#f8f6f2" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "11px", marginBottom: "10px" }}>Referral Partner</p>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "14px" }}>取次店・紹介パートナー募集</p>
-                <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "20px" }}>
-                  顧客紹介から始められる紹介パートナー制度です。専門知識が少なくても始めやすく、提案・制作・運用はサイプレスが対応します。士業・保険代理店・地域企業と相性が良い仕組みです。
-                </p>
-                <div className="flex flex-col gap-1 mb-6">
-                  {["紹介するだけでOK", "専門知識不要", "提案・制作・運用はサイプレスが対応"].map((p) => (
-                    <p key={p} style={{ fontSize: "13px", color: "#374151" }}>✓ {p}</p>
-                  ))}
-                </div>
-                <Link href="/partner/referral" style={{ fontSize: "13px", color: "#0d1b2a", borderBottom: "1px solid #0d1b2a", paddingBottom: "2px" }}>
-                  取次店・紹介パートナーを見る →
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ============================================================
-            9. COLUMN — white background
-        ============================================================ */}
-        <section className="py-24 md:py-32" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div
-              className="flex items-end justify-between mb-12"
-              style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "24px" }}
-            >
-              <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                    marginBottom: "10px",
+                    color: "#9CA3AF",
+                    fontSize: "10px",
+                    marginBottom: "8px",
+                    textTransform: "uppercase",
                   }}
                 >
                   Column
@@ -915,15 +206,26 @@ export default function Home() {
                 <h2
                   style={{
                     fontFamily: "var(--font-serif)",
-                    fontSize: "22px",
-                    color: "#0d1b2a",
+                    fontSize: "clamp(18px, 2vw, 24px)",
+                    color: "#0B1628",
                     fontWeight: 700,
                   }}
                 >
                   最新コラム
                 </h2>
               </div>
-              <Link href="/column" className="text-[13px]" style={{ color: "#6b7280" }}>
+              <Link
+                href="/column"
+                style={{
+                  fontSize: "12px",
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.08em",
+                  color: "#6B7280",
+                  textDecoration: "none",
+                  borderBottom: "1px solid #D1C9BE",
+                  paddingBottom: "2px",
+                }}
+              >
                 すべて見る →
               </Link>
             </div>
@@ -932,21 +234,44 @@ export default function Home() {
                 <Link
                   key={col.slug}
                   href={`/column/${col.slug}`}
-                  className="group flex items-start gap-8 py-6 transition-colors hover:bg-[#f8f6f2] -mx-3 px-3"
-                  style={{ borderBottom: "1px solid #ece8e0" }}
+                  className="group"
+                  style={{
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: "clamp(16px, 3vw, 32px)",
+                    padding: "20px 0",
+                    borderBottom: "1px solid #ECE8E0",
+                    textDecoration: "none",
+                  }}
                 >
-                  <span className="text-[12px] shrink-0 mt-1" style={{ fontFamily: "var(--font-display)", color: "#9ca3af" }}>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "11px",
+                      color: "#9CA3AF",
+                      flexShrink: 0,
+                      marginTop: "3px",
+                    }}
+                  >
                     {col.publishedAt.replace(/-/g, ".")}
                   </span>
                   <span
-                    className="text-[12px] px-2.5 py-1 shrink-0"
-                    style={{ background: "#ece8e0", color: "#6b7280" }}
+                    style={{
+                      fontSize: "11px",
+                      padding: "2px 10px",
+                      background: "#ECE8E0",
+                      color: "#6B7280",
+                      flexShrink: 0,
+                    }}
                   >
                     {col.category}
                   </span>
                   <span
-                    className="text-[14px] leading-relaxed group-hover:text-[#0d1b2a] transition-colors"
-                    style={{ color: "#374151" }}
+                    style={{
+                      fontSize: "14px",
+                      color: "#374151",
+                      lineHeight: "1.65",
+                    }}
                   >
                     {col.title}
                   </span>
@@ -956,124 +281,77 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ============================================================
-            10. NEWS — #f8f6f2 background
-        ============================================================ */}
-        <section className="py-16" style={{ background: "#f8f6f2" }}>
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div
-              className="flex items-end justify-between mb-8"
-              style={{ borderBottom: "1px solid #e8e4dc", paddingBottom: "16px" }}
+        {/* =====================================================
+            10. SEO INTERNAL LINKS — key pages nav
+        ===================================================== */}
+        <nav
+          aria-label="サービス・エリア導線"
+          style={{ background: "#F5F3EE", padding: "clamp(40px, 6vh, 64px) 0" }}
+        >
+          <div
+            style={{
+              maxWidth: "1152px",
+              margin: "0 auto",
+              padding: "0 clamp(24px, 5vw, 60px)",
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "var(--font-display)",
+                letterSpacing: "0.25em",
+                color: "#9CA3AF",
+                fontSize: "10px",
+                marginBottom: "24px",
+                textTransform: "uppercase",
+              }}
             >
-              <div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "0.25em",
-                    color: "#9ca3af",
-                    fontSize: "11px",
-                    marginBottom: "8px",
-                  }}
-                >
-                  News
-                </p>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "18px",
-                    color: "#0d1b2a",
-                    fontWeight: 700,
-                  }}
-                >
-                  お知らせ
-                </h2>
-              </div>
-              <Link href="/news" className="text-[13px]" style={{ color: "#6b7280" }}>
-                すべて見る →
-              </Link>
-            </div>
-            <div>
-              {news.map((item) => (
+              Quick Links
+            </p>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px 16px",
+              }}
+            >
+              {[
+                { label: "MEO対策", href: "/meo" },
+                { label: "SEO対策", href: "/seo" },
+                { label: "AIO対策", href: "/aio" },
+                { label: "ホームページ制作", href: "/web-design" },
+                { label: "SNS運用", href: "/sns" },
+                { label: "AI活用支援", href: "/ai" },
+                { label: "サービス一覧", href: "/services" },
+                { label: "業種別対応", href: "/industries" },
+                { label: "対応エリア", href: "/area" },
+                { label: "お悩み別", href: "/problems" },
+                { label: "料金・費用", href: "/cost" },
+                { label: "お問い合わせ", href: "/contact" },
+              ].map((l) => (
                 <Link
-                  key={item.slug}
-                  href={`/news/${item.slug}`}
-                  className="group flex items-center gap-6 py-4 hover:bg-white transition-colors -mx-3 px-3"
-                  style={{ borderBottom: "1px solid #e8e4dc" }}
+                  key={l.href}
+                  href={l.href}
+                  style={{
+                    fontSize: "12px",
+                    color: "#6B7280",
+                    textDecoration: "none",
+                    padding: "5px 12px",
+                    border: "1px solid #E8E4DC",
+                    background: "#ffffff",
+                    letterSpacing: "0.03em",
+                  }}
                 >
-                  <span
-                    className="text-[12px] shrink-0"
-                    style={{ fontFamily: "var(--font-display)", color: "#9ca3af" }}
-                  >
-                    {item.publishedAt.replace(/-/g, ".")}
-                  </span>
-                  <span
-                    className="text-[12px] px-2.5 py-0.5 shrink-0"
-                    style={{ background: "#e8e4dc", color: "#6b7280" }}
-                  >
-                    {item.category}
-                  </span>
-                  <span
-                    className="text-[13px] group-hover:text-[#0d1b2a] transition-colors"
-                    style={{ color: "#374151" }}
-                  >
-                    {item.title}
-                  </span>
+                  {l.label}
                 </Link>
               ))}
             </div>
           </div>
-        </section>
+        </nav>
 
-        {/* ============================================================
-            11. CONTACT — minimal, no blue CTA
-        ============================================================ */}
-        <section style={{ background: "#FFFFFF", padding: "96px 0", borderTop: "1px solid #ece8e0" }}>
-          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <div style={{ maxWidth: "600px" }}>
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  letterSpacing: "0.25em",
-                  color: "#9ca3af",
-                  fontSize: "11px",
-                  marginBottom: "16px",
-                }}
-              >
-                Contact
-              </p>
-              <h2
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "clamp(22px,2.8vw,34px)",
-                  color: "#0d1b2a",
-                  fontWeight: 700,
-                  marginBottom: "20px",
-                }}
-              >
-                Web集客に関するご相談
-              </h2>
-              <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "32px" }}>
-                MEO、SEO、AIO、ホームページ制作、SNS運用など、Web集客に関するご相談を承っています。現在の状況を確認したうえで、必要な施策をご提案します。
-              </p>
-              <Link
-                href="/contact"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "12px 28px",
-                  border: "1px solid #1a2332",
-                  color: "#1a2332",
-                  fontSize: "14px",
-                  transition: "all 0.2s",
-                }}
-                className="hover:bg-[#1a2332] hover:text-white"
-              >
-                お問い合わせ →
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* =====================================================
+            11. FINAL CTA — contact band
+        ===================================================== */}
+        <FinalContactBand />
       </main>
       <Footer />
     </>

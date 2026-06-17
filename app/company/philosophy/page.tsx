@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "経営理念・ミッション・ビジョン・バリュー | 株式会社サイプレス",
     description: "株式会社サイプレスの経営理念。Mission・Vision・Value・行動指針10条。地域企業が正しく選ばれる仕組みをつくる。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

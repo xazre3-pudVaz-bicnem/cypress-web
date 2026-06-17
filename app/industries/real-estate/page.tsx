@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【不動産会社のSEO・MEO集客】ポータルサイト依存から脱却する自社集客｜株式会社サイプレス",
     description: "不動産会社のWeb集客。MEO・SEO・ホームページ制作でSUUMO・HOME'S依存から脱却します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

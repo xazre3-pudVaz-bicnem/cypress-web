@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "千葉県のSEO対策・MEO対策・Web制作｜松戸・市川・船橋・柏の集客支援",
     description: "千葉県の中小企業・店舗のSEO・MEO対策を葛飾区拠点のサイプレスが支援。東京より競合が少なくMEOで上位を取りやすいエリア多数。松戸・市川への訪問相談も対応。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

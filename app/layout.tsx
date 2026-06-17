@@ -35,7 +35,6 @@ const organizationSchema = {
   image: `${SITE_URL}/hero.png`,
   description:
     "MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。東京都葛飾区。",
-  telephone: "",
   email: "consulting.meo@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -45,14 +44,19 @@ const organizationSchema = {
     postalCode: "124-0816",
     addressCountry: "JP",
   },
-  areaServed: {
-    "@type": "Country",
-    name: "JP",
-  },
+  areaServed: [
+    { "@type": "City", name: "葛飾区" },
+    { "@type": "City", name: "足立区" },
+    { "@type": "City", name: "江戸川区" },
+    { "@type": "State", name: "東京都" },
+    { "@type": "Country", name: "JP" },
+  ],
   founder: {
     "@type": "Person",
     name: "織田 春樹",
     jobTitle: "代表取締役",
+    worksFor: { "@type": "Organization", name: "株式会社サイプレス" },
+    knowsAbout: ["MEO対策", "SEO対策", "AIO対策", "Webマーケティング", "AI活用"],
   },
   foundingDate: "2026-05-13",
   sameAs: [],
@@ -64,7 +68,19 @@ const organizationSchema = {
     "SNS運用",
     "AI活用支援",
     "Webマーケティング",
+    "Googleビジネスプロフィール最適化",
+    "中小企業Web集客",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Webマーケティングサービス",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "MEO対策", url: `${SITE_URL}/services/meo` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO対策", url: `${SITE_URL}/services/seo` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "AIO対策", url: `${SITE_URL}/services/aio` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ホームページ制作", url: `${SITE_URL}/services/web-design` } },
+    ],
+  },
 };
 
 const websiteSchema = {
@@ -82,7 +98,7 @@ const websiteSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    template: "%s | 株式会社サイプレス",
+    template: "%s",
     default: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
   },
   description:
@@ -95,6 +111,7 @@ export const metadata: Metadata = {
     title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
     description:
       "MEO・SEO・AIO・ホームページ制作を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。",
+    images: [{ url: "/hero.png", alt: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作" }],
     locale: "ja_JP",
     type: "website",
     siteName: "株式会社サイプレス",

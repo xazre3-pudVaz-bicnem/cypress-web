@@ -8,13 +8,13 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "LLM最適化｜GPT・Gemini・ClaudeへのAI情報最適化｜サイプレス",
+  title: "LLM最適化｜GPT・Gemini・ClaudeへのAI情報最適化｜株式会社サイプレス",
   description: "LLM最適化でGPT・Gemini・Claudeが正確に認識する企業情報を構築。AIO対策の専門会社サイプレスが大規模言語モデルへの情報浸透を実施します。",
   keywords: ["LLM最適化", "大規模言語モデル最適化", "AIO対策", "AI情報最適化", "エンティティ最適化", "ナレッジグラフ"],
   openGraph: {
     title: "LLM最適化｜GPT・Gemini・ClaudeへのAI情報最適化",
     description: "LLM最適化でGPT・Gemini・Claudeが正確に認識する企業情報を構築。AIO対策の専門会社サイプレスが実施します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
