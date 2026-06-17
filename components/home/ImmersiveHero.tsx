@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ImmersiveHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -184,42 +183,6 @@ export default function ImmersiveHero() {
           </p>
         </motion.div>
 
-        {/* Links */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
-          style={{ marginTop: "44px", display: "flex", gap: "36px", alignItems: "center", flexWrap: "wrap" }}
-        >
-          <Link
-            href="/contact"
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.12em",
-              color: "#ffffff",
-              borderBottom: "1px solid rgba(255,255,255,0.45)",
-              paddingBottom: "3px",
-              fontFamily: "var(--font-display)",
-              textDecoration: "none",
-            }}
-          >
-            無料相談する
-          </Link>
-          <Link
-            href="/services"
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.12em",
-              color: "rgba(255,255,255,0.38)",
-              borderBottom: "1px solid rgba(255,255,255,0.12)",
-              paddingBottom: "3px",
-              fontFamily: "var(--font-display)",
-              textDecoration: "none",
-            }}
-          >
-            サービスを見る
-          </Link>
-        </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}
