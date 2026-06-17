@@ -132,9 +132,28 @@ const relatedLinks = [
   { href: "/checklist/seo", label: "SEOチェックリスト", desc: "サイト診断の確認項目" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "SEO対策サービス",
+  description: "キーワード調査・コンテンツSEO・テクニカルSEO・内部SEO・ローカルSEOを一貫してご支援。検索流入を増やし問い合わせ・売上につなげます。",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/seo",
+  serviceType: "SEO対策・検索エンジン最適化",
+};
+
 export default function ServicesSeoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}

@@ -132,9 +132,28 @@ const relatedLinks = [
   { href: "/checklist/meo", label: "MEOチェックリスト", desc: "GBP確認項目一覧" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "MEO対策サービス",
+  description: "Googleビジネスプロフィールの最適化・口コミ管理・写真戦略・投稿活用でGoogleマップ上位表示と地域集客を強化。",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/meo",
+  serviceType: "MEO対策・Googleマップ最適化",
+};
+
 export default function ServicesMeoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}

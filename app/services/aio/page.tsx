@@ -132,9 +132,28 @@ const relatedLinks = [
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "AIO対策の相談窓口" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AIO対策サービス（AI検索最適化）",
+  description: "ChatGPT・Gemini・Perplexity・Claude等のAI検索エンジンからの引用・推薦を増やすためのコンテンツ設計・構造化データ実装・E-E-A-T強化支援。",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/aio",
+  serviceType: "AIO対策・AI検索エンジン最適化",
+};
+
 export default function ServicesAioPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}

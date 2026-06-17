@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
 import { COLUMNS } from "@/lib/data/columns";
+import { getAllCaseSlugs } from "@/lib/data/cases";
 
 const BASE = "https://www.cypress-all.co.jp";
 
@@ -328,6 +329,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/faq/local-business", "/faq/industry-specific",
       "/faq/comparison", "/faq/ai-tools",
     ], { changeFrequency: "monthly", priority: 0.7 }),
+
+    // 支援事例
+    ...urls(["/cases"], { changeFrequency: "weekly", priority: 0.85 }),
+    ...urls(
+      getAllCaseSlugs().map((slug) => `/cases/${slug}`),
+      { changeFrequency: "monthly", priority: 0.8 }
+    ),
 
     // コラム専門ガイド（トピックページ）
     ...urls(

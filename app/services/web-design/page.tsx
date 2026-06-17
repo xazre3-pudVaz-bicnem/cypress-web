@@ -140,9 +140,28 @@ const siteTypes = [
   { type: "WordPress制作", desc: "担当者がCMSで更新できるWordPressサイト。ブログ・ニュース・実績ページの更新を内製化したい企業に適したプランです。", link: "/web-design/wordpress" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "ホームページ制作サービス",
+  description: "Next.js・TypeScript・Tailwind CSSを用いた高速・SEO対応のコーポレートサイト・ランディングページ制作。集客・CV改善まで考慮した設計で制作します。",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/web-design",
+  serviceType: "ホームページ制作・Webサイト設計",
+};
+
 export default function ServicesWebDesignPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}
