@@ -81,7 +81,7 @@ export default function Home() {
         ===================================================== */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#FFFFFF",
             padding: "clamp(64px, 10vh, 120px) 0",
             position: "relative",
             overflow: "hidden",
@@ -274,7 +274,7 @@ export default function Home() {
         ===================================================== */}
         <nav
           aria-label="サービス・エリア導線"
-          style={{ background: "#F5F3EE", padding: "clamp(40px, 6vh, 64px) 0" }}
+          style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}
         >
           <div
             style={{

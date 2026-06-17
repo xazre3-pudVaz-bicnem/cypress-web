@@ -59,7 +59,7 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
         gridTemplateColumns: "clamp(80px, 12vw, 160px) 1fr clamp(160px, 28vw, 340px)",
         gap: "clamp(24px, 4vw, 60px)",
         padding: "clamp(48px, 7vh, 88px) 0",
-        borderBottom: "1px solid rgba(255,255,255,0.05)",
+        borderBottom: "1px solid #E8E4DC",
         alignItems: "center",
         position: "relative",
       }}
@@ -86,7 +86,7 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
           style={{
             fontFamily: "var(--font-serif)",
             fontSize: "clamp(18px, 2.2vw, 28px)",
-            color: "#ffffff",
+            color: "#0B1628",
             fontWeight: 700,
             lineHeight: 1.3,
             marginBottom: "16px",
@@ -97,7 +97,7 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
         <p
           style={{
             fontSize: "13px",
-            color: "rgba(255,255,255,0.48)",
+            color: "#6B7280",
             lineHeight: "1.95",
             marginBottom: "24px",
             maxWidth: "520px",
@@ -111,8 +111,8 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
             fontSize: "11px",
             fontFamily: "var(--font-display)",
             letterSpacing: "0.1em",
-            color: "rgba(255,255,255,0.3)",
-            borderBottom: `1px solid rgba(255,255,255,0.1)`,
+            color: "#9CA3AF",
+            borderBottom: "1px solid #D1C9BE",
             paddingBottom: "2px",
             textDecoration: "none",
           }}
@@ -134,7 +134,7 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
           style={{
             position: "absolute",
             inset: 0,
-            background: "linear-gradient(135deg, rgba(6,14,28,0.5) 0%, transparent 70%)",
+            background: "linear-gradient(135deg, rgba(245,243,238,0.2) 0%, transparent 70%)",
           }}
         />
         {/* Accent border bottom */}
@@ -158,19 +158,7 @@ export default function DarkFeaturePanels() {
   const headerInView = useInView(headerRef, { once: true, margin: "-10%" });
 
   return (
-    <section style={{ background: "#060E1C", position: "relative", overflow: "hidden" }}>
-      {/* Subtle radial glow */}
-      <div
-        style={{
-          position: "absolute",
-          top: "20%",
-          right: "10%",
-          width: "600px",
-          height: "600px",
-          background: "radial-gradient(circle, rgba(167,139,250,0.04) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
+    <section style={{ background: "#F8F6F2", position: "relative", overflow: "hidden", borderTop: "1px solid #E8E4DC" }}>
 
       <div
         style={{
@@ -188,14 +176,14 @@ export default function DarkFeaturePanels() {
           style={{
             paddingTop: "clamp(80px, 10vh, 120px)",
             paddingBottom: "clamp(48px, 6vh, 72px)",
-            borderBottom: "1px solid rgba(255,255,255,0.05)",
+            borderBottom: "1px solid #E8E4DC",
           }}
         >
           <p
             style={{
               fontFamily: "var(--font-display)",
               letterSpacing: "0.3em",
-              color: "rgba(196,169,106,0.55)",
+              color: "#9CA3AF",
               fontSize: "10px",
               marginBottom: "20px",
               textTransform: "uppercase",
@@ -207,7 +195,7 @@ export default function DarkFeaturePanels() {
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(24px, 3.2vw, 42px)",
-              color: "#ffffff",
+              color: "#0B1628",
               lineHeight: 1.25,
               fontWeight: 700,
             }}

@@ -57,9 +57,10 @@ export default function ProblemSolution() {
   return (
     <section
       style={{
-        background: "#F5F3EE",
+        background: "#F8F6F2",
         padding: "clamp(72px, 10vh, 120px) 0",
         overflow: "hidden",
+        borderTop: "1px solid #E8E4DC",
       }}
     >
       <div

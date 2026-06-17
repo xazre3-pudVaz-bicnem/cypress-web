@@ -11,7 +11,7 @@ export default function FinalContactBand() {
   return (
     <section
       style={{
-        background: "#F5F3EE",
+        background: "#F8F6F2",
         position: "relative",
         overflow: "hidden",
         padding: "clamp(80px, 12vh, 140px) 0",

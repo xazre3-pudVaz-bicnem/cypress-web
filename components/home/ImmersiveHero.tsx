@@ -1,99 +1,83 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 export default function ImmersiveHero() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  const springX = useSpring(mouseX, { stiffness: 35, damping: 22 });
-  const springY = useSpring(mouseY, { stiffness: 35, damping: 22 });
-  const bgMoveX = useTransform(springX, [-0.5, 0.5], ["-3%", "3%"]);
-  const bgMoveY = useTransform(springY, [-0.5, 0.5], ["-2%", "2%"]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
   });
-  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.55], [1, 0]);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    mouseX.set((e.clientX - rect.left) / rect.width - 0.5);
-    mouseY.set((e.clientY - rect.top) / rect.height - 0.5);
-  };
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "16%"]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   return (
     <section
       ref={containerRef}
-      style={{ height: "100svh", minHeight: "680px", position: "relative", overflow: "hidden", background: "#060E1C" }}
-      onMouseMove={handleMouseMove}
+      style={{
+        height: "100svh",
+        minHeight: "680px",
+        position: "relative",
+        overflow: "hidden",
+        background: "#FFFFFF",
+        borderBottom: "1px solid #E8E4DC",
+      }}
     >
-      {/* Parallax background */}
-      <motion.div
-        style={{ position: "absolute", inset: "-6%", x: bgMoveX, y: bgMoveY, scale: bgScale }}
-      >
-        <Image
-          src="/hero.png"
-          alt="株式会社サイプレス — Web集客支援"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-      </motion.div>
-
-      {/* Second layer texture */}
-      <div style={{ position: "absolute", inset: 0 }}>
-        <Image
-          src="/ChatGPT Image 2026年6月13日 19_22_31.png"
-          alt=""
-          fill
-          className="object-cover"
-          sizes="100vw"
-          style={{ opacity: 0.12, mixBlendMode: "luminosity" }}
-        />
-      </div>
-
-      {/* Cinematic gradient */}
+      {/* Dot grid */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          background:
-            "linear-gradient(155deg, rgba(6,14,28,0.90) 0%, rgba(11,22,40,0.68) 48%, rgba(6,14,28,0.85) 100%)",
+          backgroundImage: "radial-gradient(circle, rgba(11,22,40,0.055) 1px, transparent 1px)",
+          backgroundSize: "36px 36px",
+          pointerEvents: "none",
         }}
       />
 
-      {/* Subtle grid */}
+      {/* Decorative circles top-right */}
       <div
         style={{
           position: "absolute",
-          inset: 0,
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)",
-          backgroundSize: "90px 90px",
+          top: "-20%",
+          right: "-8%",
+          width: "clamp(400px, 55vw, 800px)",
+          height: "clamp(400px, 55vw, 800px)",
+          borderRadius: "50%",
+          border: "1px solid rgba(11,22,40,0.045)",
+          pointerEvents: "none",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          top: "-5%",
+          right: "5%",
+          width: "clamp(250px, 36vw, 560px)",
+          height: "clamp(250px, 36vw, 560px)",
+          borderRadius: "50%",
+          border: "1px solid rgba(11,22,40,0.035)",
+          pointerEvents: "none",
         }}
       />
 
-      {/* Horizontal light line */}
+      {/* Thin horizontal accent line */}
       <motion.div
         initial={{ scaleX: 0, opacity: 0 }}
         animate={{ scaleX: 1, opacity: 1 }}
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
         style={{
           position: "absolute",
-          bottom: "38%",
+          top: "38%",
           left: 0,
           right: 0,
           height: "1px",
-          background: "rgba(255,255,255,0.04)",
+          background: "rgba(11,22,40,0.04)",
           transformOrigin: "left",
+          pointerEvents: "none",
         }}
       />
 
@@ -103,86 +87,151 @@ export default function ImmersiveHero() {
           position: "relative",
           zIndex: 10,
           height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          y: contentY,
-          opacity: contentOpacity,
-          maxWidth: "1152px",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          alignItems: "center",
+          gap: "clamp(32px, 5vw, 80px)",
+          maxWidth: "1280px",
           margin: "0 auto",
           padding: "0 clamp(24px, 5vw, 60px)",
+          y: contentY,
+          opacity: contentOpacity,
         }}
+        className="hero-content-grid"
       >
-        {/* Label */}
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          style={{
-            fontFamily: "var(--font-display)",
-            letterSpacing: "0.32em",
-            color: "rgba(196,169,106,0.65)",
-            fontSize: "10px",
-            textTransform: "uppercase",
-            marginBottom: "36px",
-          }}
-        >
-          AI × Web Marketing Agency — Tokyo
-        </motion.p>
+        {/* Left: text */}
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            style={{
+              fontFamily: "var(--font-display)",
+              letterSpacing: "0.32em",
+              color: "#B8924A",
+              fontSize: "10px",
+              textTransform: "uppercase",
+              marginBottom: "32px",
+            }}
+          >
+            AI × Web Marketing Agency — Tokyo
+          </motion.p>
 
-        {/* Display headline */}
-        {(["Reach.", "Be Chosen.", "Grow."] as const).map((word, i) => (
-          <div key={word} style={{ overflow: "hidden", lineHeight: 1 }}>
-            <motion.div
-              initial={{ y: "108%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1], delay: 0.08 + i * 0.12 }}
+          {(["Reach.", "Be Chosen.", "Grow."] as const).map((word, i) => (
+            <div key={word} style={{ overflow: "hidden", lineHeight: 1 }}>
+              <motion.div
+                initial={{ y: "108%" }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1], delay: 0.08 + i * 0.12 }}
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(44px, 7vw, 104px)",
+                  color:
+                    i === 0
+                      ? "#0B1628"
+                      : i === 1
+                      ? "rgba(11,22,40,0.2)"
+                      : "rgba(11,22,40,0.07)",
+                  fontWeight: 300,
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1,
+                  textTransform: "uppercase",
+                  paddingBottom: i < 2 ? "4px" : "36px",
+                }}
+              >
+                {word}
+              </motion.div>
+            </div>
+          ))}
+
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.65 }}
+          >
+            <p
               style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(50px, 8.5vw, 124px)",
-                color: i === 0 ? "#ffffff" : i === 1 ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.06)",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
-                lineHeight: 1,
-                textTransform: "uppercase",
-                paddingBottom: i < 2 ? "4px" : "48px",
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(14px, 1.5vw, 18px)",
+                color: "#0B1628",
+                lineHeight: 1.75,
+                marginBottom: "10px",
+                fontWeight: 400,
               }}
             >
-              {word}
-            </motion.div>
-          </div>
-        ))}
+              中小企業のWeb集客を、設計から運用まで。
+            </p>
+            <p
+              style={{
+                fontSize: "11px",
+                color: "#9CA3AF",
+                letterSpacing: "0.1em",
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              MEO&nbsp;&nbsp;/&nbsp;&nbsp;SEO&nbsp;&nbsp;/&nbsp;&nbsp;AIO&nbsp;&nbsp;/&nbsp;&nbsp;Web Production&nbsp;&nbsp;/&nbsp;&nbsp;SNS&nbsp;&nbsp;/&nbsp;&nbsp;AI
+            </p>
+          </motion.div>
+        </div>
 
-        {/* Japanese subtitle */}
+        {/* Right: hero image */}
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.65 }}
+          initial={{ opacity: 0, x: 40, scale: 0.97 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          style={{ y: imageY, position: "relative" }}
+          className="hero-image-col"
         >
-          <p
+          <div
             style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: "clamp(15px, 1.8vw, 21px)",
-              color: "rgba(255,255,255,0.82)",
-              lineHeight: 1.7,
-              marginBottom: "10px",
-              fontWeight: 400,
+              position: "relative",
+              height: "clamp(360px, 60vh, 680px)",
+              overflow: "hidden",
+              borderRadius: "2px",
+              boxShadow: "0 8px 48px rgba(11,22,40,0.1), 0 2px 8px rgba(11,22,40,0.06)",
             }}
           >
-            中小企業のWeb集客を、設計から運用まで。
-          </p>
-          <p
-            style={{
-              fontSize: "12px",
-              color: "rgba(255,255,255,0.35)",
-              letterSpacing: "0.1em",
-              fontFamily: "var(--font-display)",
-            }}
-          >
-            MEO&nbsp;&nbsp;/&nbsp;&nbsp;SEO&nbsp;&nbsp;/&nbsp;&nbsp;AIO&nbsp;&nbsp;/&nbsp;&nbsp;Web Production&nbsp;&nbsp;/&nbsp;&nbsp;SNS&nbsp;&nbsp;/&nbsp;&nbsp;AI
-          </p>
-        </motion.div>
+            <Image
+              src="/hero.png"
+              alt="株式会社サイプレス — Web集客支援"
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(135deg, rgba(248,246,242,0.12) 0%, transparent 55%)",
+              }}
+            />
+          </div>
 
+          {/* Decorative frame corners */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "-16px",
+              left: "-16px",
+              width: "88px",
+              height: "88px",
+              border: "1px solid #E8E4DC",
+              pointerEvents: "none",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "-16px",
+              right: "-16px",
+              width: "56px",
+              height: "56px",
+              border: "1px solid #E8E4DC",
+              pointerEvents: "none",
+            }}
+          />
+        </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}
@@ -207,7 +256,7 @@ export default function ImmersiveHero() {
             fontFamily: "var(--font-display)",
             fontSize: "9px",
             letterSpacing: "0.28em",
-            color: "rgba(255,255,255,0.25)",
+            color: "rgba(11,22,40,0.25)",
             textTransform: "uppercase",
           }}
         >
@@ -217,7 +266,7 @@ export default function ImmersiveHero() {
           style={{
             width: "1px",
             height: "52px",
-            background: "rgba(255,255,255,0.1)",
+            background: "rgba(11,22,40,0.1)",
             position: "relative",
             overflow: "hidden",
           }}
@@ -228,7 +277,7 @@ export default function ImmersiveHero() {
               top: 0,
               left: 0,
               right: 0,
-              background: "rgba(255,255,255,0.55)",
+              background: "rgba(11,22,40,0.4)",
               height: "42%",
             }}
             animate={{ y: ["0%", "220%"] }}
@@ -237,18 +286,18 @@ export default function ImmersiveHero() {
         </div>
       </motion.div>
 
-      {/* Bottom fade */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: "160px",
-          background: "linear-gradient(to top, rgba(6,14,28,0.6) 0%, transparent 100%)",
-          pointerEvents: "none",
-        }}
-      />
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-content-grid {
+            grid-template-columns: 1fr !important;
+            padding-top: 72px !important;
+            align-items: flex-start !important;
+          }
+          .hero-image-col {
+            display: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

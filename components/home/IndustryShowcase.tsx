@@ -97,7 +97,7 @@ export default function IndustryShowcase() {
   const row2 = [...ROW2, ...ROW2];
 
   return (
-    <section style={{ background: "#F5F3EE", overflow: "hidden", padding: "clamp(64px, 9vh, 112px) 0" }}>
+    <section style={{ background: "#FFFFFF", overflow: "hidden", padding: "clamp(64px, 9vh, 112px) 0", borderTop: "1px solid #E8E4DC" }}>
       <style>{`
         @media (prefers-reduced-motion: no-preference) {
           .marquee-row-left { animation: marqueeLeft 40s linear infinite; }

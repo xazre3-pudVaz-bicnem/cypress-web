@@ -5,12 +5,12 @@ import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
 const NODES = [
-  { label: "MEO対策", en: "Local Map", href: "/meo", x: 50, y: 5, accent: "#C4A96A", desc: "Googleマップ上位" },
-  { label: "SEO対策", en: "Search SEO", href: "/seo", x: 90, y: 38, accent: "#7EC8C8", desc: "検索上位表示" },
-  { label: "AIO対策", en: "AI Search", href: "/aio", x: 75, y: 80, accent: "#A78BFA", desc: "AI検索引用" },
-  { label: "Web制作", en: "Production", href: "/web-design", x: 25, y: 80, accent: "#F59E0B", desc: "問い合わせ受け皿" },
-  { label: "SNS運用", en: "Social", href: "/sns", x: 10, y: 38, accent: "#F472B6", desc: "認知・MEO連携" },
-  { label: "AI活用", en: "AI Biz", href: "/ai", x: 50, y: 65, accent: "#34D399", desc: "業務効率化" },
+  { num: "01", label: "MEO対策", en: "Local Map", href: "/meo", accent: "#C4A96A", desc: "Googleマップ上位表示で来店・電話・予約を増やす。地域集客の核心です。" },
+  { num: "02", label: "SEO対策", en: "Search SEO", href: "/seo", accent: "#2A9BA0", desc: "広告費ゼロで検索流入を増やす。中長期の集客基盤を構築します。" },
+  { num: "03", label: "AIO対策", en: "AI Search", href: "/aio", accent: "#7C5FC0", desc: "ChatGPT・Geminiに引用されるサイトへ。AI検索時代の集客設計。" },
+  { num: "04", label: "Web制作", en: "Production", href: "/web-design", accent: "#C07820", desc: "問い合わせにつながる高品質サイト。SEO・CVR設計を重視。" },
+  { num: "05", label: "SNS運用", en: "Social", href: "/sns", accent: "#B0406A", desc: "Instagram・LINE・Google投稿を代行。MEOとの相乗効果を生む。" },
+  { num: "06", label: "AI活用支援", en: "AI Biz", href: "/ai", accent: "#1E8A5C", desc: "ChatGPT・Make・Zapierで業務効率化。AIを現場に導入します。" },
 ];
 
 export default function ServiceEcosystem() {
@@ -20,31 +20,46 @@ export default function ServiceEcosystem() {
   return (
     <section
       style={{
-        background: "#0B1628",
-        padding: "clamp(72px, 10vh, 120px) 0",
+        background: "#FFFFFF",
+        padding: "clamp(80px, 11vh, 128px) 0",
         overflow: "hidden",
         position: "relative",
+        borderTop: "1px solid #E8E4DC",
       }}
     >
-      {/* Background glow */}
+      {/* Background decoration */}
       <div
         style={{
           position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: "700px",
-          height: "700px",
-          background: "radial-gradient(circle, rgba(124,195,200,0.04) 0%, transparent 65%)",
+          bottom: "-10%",
+          left: "-5%",
+          width: "clamp(300px, 45vw, 700px)",
+          height: "clamp(300px, 45vw, 700px)",
+          borderRadius: "50%",
+          border: "1px solid rgba(11,22,40,0.04)",
+          pointerEvents: "none",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          top: "10%",
+          right: "-3%",
+          width: "clamp(200px, 30vw, 480px)",
+          height: "clamp(200px, 30vw, 480px)",
+          borderRadius: "50%",
+          border: "1px solid rgba(11,22,40,0.03)",
           pointerEvents: "none",
         }}
       />
 
       <div
         style={{
-          maxWidth: "1152px",
+          maxWidth: "1200px",
           margin: "0 auto",
           padding: "0 clamp(24px, 5vw, 60px)",
+          position: "relative",
+          zIndex: 1,
         }}
       >
         {/* Header */}
@@ -53,13 +68,13 @@ export default function ServiceEcosystem() {
           initial={{ opacity: 0, y: 28 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          style={{ marginBottom: "clamp(48px, 6vh, 80px)", maxWidth: "560px" }}
+          style={{ marginBottom: "clamp(48px, 7vh, 80px)" }}
         >
           <p
             style={{
               fontFamily: "var(--font-display)",
               letterSpacing: "0.3em",
-              color: "rgba(196,169,106,0.55)",
+              color: "#9CA3AF",
               fontSize: "10px",
               marginBottom: "16px",
               textTransform: "uppercase",
@@ -71,53 +86,57 @@ export default function ServiceEcosystem() {
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(22px, 3vw, 38px)",
-              color: "#ffffff",
+              color: "#0B1628",
               fontWeight: 700,
               lineHeight: 1.3,
               marginBottom: "16px",
+              maxWidth: "480px",
             }}
           >
             6つの事業は、<br />連動して機能する。
           </h2>
-          <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.42)", lineHeight: "1.9" }}>
+          <p style={{ fontSize: "13px", color: "#6B7280", lineHeight: "1.9", maxWidth: "520px" }}>
             MEO・SEO・AIO・Web制作・SNS・AI活用は独立したサービスではなく、互いに連動することで複数の集客経路を構築します。
           </p>
         </motion.div>
 
-        {/* Grid layout */}
+        {/* Card grid */}
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "1px",
-            background: "rgba(255,255,255,0.05)",
+            gap: "clamp(16px, 2.5vw, 28px)",
           }}
           className="ecosystem-grid"
         >
           {NODES.map((node, i) => (
             <motion.div
               key={node.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 + i * 0.08 }}
+              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.1 + i * 0.07 }}
             >
               <Link
                 href={node.href}
                 style={{ textDecoration: "none", display: "block" }}
-                className="ecosystem-node"
+                className="eco-card-link"
               >
                 <div
                   style={{
-                    padding: "clamp(24px, 3vw, 40px)",
-                    background: "#0B1628",
+                    padding: "clamp(24px, 3vw, 36px)",
+                    background: "#FFFFFF",
+                    border: "1px solid #E8E4DC",
+                    borderRadius: "2px",
                     position: "relative",
                     overflow: "hidden",
-                    minHeight: "160px",
+                    minHeight: "200px",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
+                    boxShadow: "0 2px 12px rgba(11,22,40,0.04)",
+                    transition: "box-shadow 0.3s ease, transform 0.3s ease",
                   }}
-                  className="ecosystem-inner"
+                  className="eco-card-inner"
                 >
                   {/* Accent top line */}
                   <div
@@ -127,107 +146,114 @@ export default function ServiceEcosystem() {
                       left: 0,
                       right: 0,
                       height: "2px",
-                      background: `linear-gradient(90deg, ${node.accent}50, transparent)`,
-                      transformOrigin: "left",
+                      background: `linear-gradient(90deg, ${node.accent}70 0%, transparent 60%)`,
                     }}
                   />
 
-                  {/* Content */}
                   <div>
-                    <p
+                    {/* Number + EN label row */}
+                    <div
                       style={{
-                        fontFamily: "var(--font-display)",
-                        fontSize: "9px",
-                        letterSpacing: "0.22em",
-                        color: node.accent,
-                        opacity: 0.7,
-                        textTransform: "uppercase",
-                        marginBottom: "12px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        marginBottom: "20px",
                       }}
                     >
-                      {node.en}
-                    </p>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          fontSize: "9px",
+                          letterSpacing: "0.22em",
+                          color: node.accent,
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {node.en}
+                      </span>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          fontSize: "11px",
+                          letterSpacing: "0.1em",
+                          color: "rgba(11,22,40,0.1)",
+                          fontWeight: 300,
+                        }}
+                      >
+                        {node.num}
+                      </span>
+                    </div>
+
                     <p
                       style={{
                         fontFamily: "var(--font-serif)",
-                        fontSize: "clamp(15px, 1.6vw, 19px)",
-                        color: "#ffffff",
+                        fontSize: "clamp(16px, 1.7vw, 20px)",
+                        color: "#0B1628",
                         fontWeight: 700,
-                        marginBottom: "8px",
+                        marginBottom: "12px",
+                        lineHeight: 1.3,
                       }}
                     >
                       {node.label}
                     </p>
-                    <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.38)", lineHeight: "1.6" }}>
+                    <p style={{ fontSize: "12px", color: "#6B7280", lineHeight: "1.75" }}>
                       {node.desc}
                     </p>
                   </div>
 
-                  {/* Arrow */}
                   <div style={{ marginTop: "20px" }}>
                     <span
                       style={{
                         fontSize: "11px",
                         fontFamily: "var(--font-display)",
                         letterSpacing: "0.08em",
-                        color: "rgba(255,255,255,0.2)",
+                        color: "#C4BAB0",
+                        borderBottom: "1px solid #E8E4DC",
+                        paddingBottom: "1px",
                       }}
                     >
                       詳しく →
                     </span>
                   </div>
-
-                  {/* Hover glow */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      inset: 0,
-                      background: `radial-gradient(circle at 30% 50%, ${node.accent}08 0%, transparent 65%)`,
-                      pointerEvents: "none",
-                    }}
-                  />
                 </div>
               </Link>
             </motion.div>
           ))}
         </div>
 
-        {/* Center connection label */}
+        {/* Connection note */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.75 }}
           style={{
             textAlign: "center",
-            marginTop: "48px",
-            padding: "24px",
-            border: "1px solid rgba(255,255,255,0.06)",
-            display: "inline-block",
-            width: "100%",
+            marginTop: "clamp(40px, 5vh, 60px)",
+            padding: "clamp(20px, 3vw, 32px)",
+            border: "1px solid #E8E4DC",
+            background: "#F8F6F2",
           }}
         >
           <p
             style={{
               fontFamily: "var(--font-serif)",
-              fontSize: "clamp(13px, 1.5vw, 16px)",
-              color: "rgba(255,255,255,0.35)",
+              fontSize: "clamp(13px, 1.4vw, 16px)",
+              color: "#6B7280",
               lineHeight: "1.9",
             }}
           >
-            6つを組み合わせることで、検索 → マップ → AI → SNS → サイト → 問い合わせの
-            <br className="hidden md:block" />
-            集客フローが完成します。
+            6つを組み合わせることで、検索 → マップ → AI → SNS → サイト → 問い合わせの集客フローが完成します。
           </p>
           <Link
             href="/services"
             style={{
               display: "inline-block",
-              marginTop: "16px",
+              marginTop: "14px",
               fontSize: "12px",
               fontFamily: "var(--font-display)",
               letterSpacing: "0.1em",
-              color: "rgba(255,255,255,0.4)",
-              borderBottom: "1px solid rgba(255,255,255,0.12)",
+              color: "#6B7280",
+              borderBottom: "1px solid #D1C9BE",
               paddingBottom: "2px",
               textDecoration: "none",
             }}
@@ -239,16 +265,19 @@ export default function ServiceEcosystem() {
 
       <style>{`
         @media (hover: hover) {
-          .ecosystem-node .ecosystem-inner {
-            transition: background 0.3s ease;
-          }
-          .ecosystem-node:hover .ecosystem-inner {
-            background: #0F1E38;
+          .eco-card-link:hover .eco-card-inner {
+            box-shadow: 0 8px 32px rgba(11,22,40,0.09) !important;
+            transform: translateY(-2px);
           }
         }
         @media (max-width: 640px) {
           .ecosystem-grid {
             grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 420px) {
+          .ecosystem-grid {
+            grid-template-columns: 1fr !important;
           }
         }
       `}</style>
