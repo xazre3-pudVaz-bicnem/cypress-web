@@ -304,6 +304,7 @@ export default function Home() {
                 { label: "SNS運用", href: "/sns" },
                 { label: "AI活用支援", href: "/ai" },
                 { label: "サービス一覧", href: "/services" },
+                { label: "成功事例", href: "/cases" },
                 { label: "業種別対応", href: "/industries" },
                 { label: "対応エリア", href: "/area" },
                 { label: "お悩み別", href: "/problems" },
