@@ -44,7 +44,7 @@ const PANELS = [
   },
 ];
 
-function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
+function Panel({ panel }: { panel: (typeof PANELS)[0] }) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
 
@@ -55,99 +55,96 @@ function Panel({ panel, index }: { panel: (typeof PANELS)[0]; index: number }) {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       style={{
-        display: "grid",
-        gridTemplateColumns: "clamp(80px, 12vw, 160px) 1fr clamp(160px, 28vw, 340px)",
-        gap: "clamp(24px, 4vw, 60px)",
-        padding: "clamp(48px, 7vh, 88px) 0",
+        padding: "clamp(40px, 6vh, 80px) 0",
         borderBottom: "1px solid #E8E4DC",
-        alignItems: "center",
         position: "relative",
       }}
-      className="dark-panel-row"
     >
-      {/* Number */}
-      <div style={{ textAlign: "right" }}>
-        <span
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(11px, 1.2vw, 14px)",
-            letterSpacing: "0.2em",
-            color: panel.accent,
-            opacity: 0.7,
-          }}
-        >
-          {panel.num}
-        </span>
-      </div>
+      <div className="dark-panel-row">
+        {/* Text content */}
+        <div>
+          <span
+            style={{
+              display: "block",
+              fontFamily: "var(--font-display)",
+              fontSize: "11px",
+              letterSpacing: "0.2em",
+              color: panel.accent,
+              opacity: 0.7,
+              marginBottom: "14px",
+            }}
+          >
+            {panel.num}
+          </span>
+          <h3
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: "clamp(18px, 2.2vw, 28px)",
+              color: "#0B1628",
+              fontWeight: 700,
+              lineHeight: 1.3,
+              marginBottom: "16px",
+            }}
+          >
+            {panel.title}
+          </h3>
+          <p
+            style={{
+              fontSize: "13px",
+              color: "#6B7280",
+              lineHeight: "1.95",
+              marginBottom: "24px",
+              maxWidth: "520px",
+            }}
+          >
+            {panel.body}
+          </p>
+          <Link
+            href={panel.href}
+            style={{
+              fontSize: "11px",
+              fontFamily: "var(--font-display)",
+              letterSpacing: "0.1em",
+              color: "#9CA3AF",
+              borderBottom: "1px solid #D1C9BE",
+              paddingBottom: "2px",
+              textDecoration: "none",
+            }}
+          >
+            {panel.label}&nbsp;→
+          </Link>
+        </div>
 
-      {/* Text content */}
-      <div>
-        <h3
-          style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(18px, 2.2vw, 28px)",
-            color: "#0B1628",
-            fontWeight: 700,
-            lineHeight: 1.3,
-            marginBottom: "16px",
-          }}
-        >
-          {panel.title}
-        </h3>
-        <p
-          style={{
-            fontSize: "13px",
-            color: "#6B7280",
-            lineHeight: "1.95",
-            marginBottom: "24px",
-            maxWidth: "520px",
-          }}
-        >
-          {panel.body}
-        </p>
-        <Link
-          href={panel.href}
-          style={{
-            fontSize: "11px",
-            fontFamily: "var(--font-display)",
-            letterSpacing: "0.1em",
-            color: "#9CA3AF",
-            borderBottom: "1px solid #D1C9BE",
-            paddingBottom: "2px",
-            textDecoration: "none",
-          }}
-        >
-          {panel.label}&nbsp;→
-        </Link>
-      </div>
-
-      {/* Image */}
-      <div style={{ position: "relative", height: "clamp(140px, 18vw, 220px)", overflow: "hidden" }}>
-        <Image
-          src={panel.img}
-          alt={panel.title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 28vw"
-        />
+        {/* Image */}
         <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "linear-gradient(135deg, rgba(245,243,238,0.2) 0%, transparent 70%)",
-          }}
-        />
-        {/* Accent border bottom */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: "2px",
-            background: `linear-gradient(90deg, ${panel.accent}60, transparent)`,
-          }}
-        />
+          className="dark-panel-img"
+          style={{ position: "relative", overflow: "hidden", flexShrink: 0 }}
+        >
+          <Image
+            src={panel.img}
+            alt={panel.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 28vw"
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "linear-gradient(135deg, rgba(245,243,238,0.2) 0%, transparent 70%)",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "2px",
+              background: `linear-gradient(90deg, ${panel.accent}60, transparent)`,
+            }}
+          />
+        </div>
       </div>
     </motion.div>
   );
@@ -158,8 +155,14 @@ export default function DarkFeaturePanels() {
   const headerInView = useInView(headerRef, { once: true, margin: "-10%" });
 
   return (
-    <section style={{ background: "#F8F6F2", position: "relative", overflow: "hidden", borderTop: "1px solid #E8E4DC" }}>
-
+    <section
+      style={{
+        background: "#F8F6F2",
+        position: "relative",
+        overflow: "hidden",
+        borderTop: "1px solid #E8E4DC",
+      }}
+    >
       <div
         style={{
           maxWidth: "1152px",
@@ -174,8 +177,8 @@ export default function DarkFeaturePanels() {
           animate={headerInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           style={{
-            paddingTop: "clamp(80px, 10vh, 120px)",
-            paddingBottom: "clamp(48px, 6vh, 72px)",
+            paddingTop: "clamp(64px, 10vh, 112px)",
+            paddingBottom: "clamp(40px, 5vh, 64px)",
             borderBottom: "1px solid #E8E4DC",
           }}
         >
@@ -194,7 +197,7 @@ export default function DarkFeaturePanels() {
           <h2
             style={{
               fontFamily: "var(--font-serif)",
-              fontSize: "clamp(24px, 3.2vw, 42px)",
+              fontSize: "clamp(22px, 3.2vw, 40px)",
               color: "#0B1628",
               lineHeight: 1.25,
               fontWeight: 700,
@@ -205,12 +208,34 @@ export default function DarkFeaturePanels() {
         </motion.div>
 
         {/* Panels */}
-        {PANELS.map((panel, i) => (
-          <Panel key={panel.num} panel={panel} index={i} />
+        {PANELS.map((panel) => (
+          <Panel key={panel.num} panel={panel} />
         ))}
       </div>
 
-      <div style={{ height: "clamp(48px, 7vh, 80px)" }} />
+      <div style={{ height: "clamp(40px, 6vh, 72px)" }} />
+
+      <style>{`
+        .dark-panel-row {
+          display: grid;
+          grid-template-columns: 1fr clamp(180px, 28vw, 340px);
+          gap: clamp(28px, 4vw, 64px);
+          align-items: center;
+        }
+        .dark-panel-img {
+          height: clamp(140px, 18vw, 220px);
+        }
+        @media (max-width: 768px) {
+          .dark-panel-row {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .dark-panel-img {
+            height: 200px;
+            width: 100%;
+          }
+        }
+      `}</style>
     </section>
   );
 }
