@@ -4,7 +4,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ImmersiveHero from "@/components/home/ImmersiveHero";
 import ScrollStory from "@/components/home/ScrollStory";
-import ServiceEcosystem from "@/components/home/ServiceEcosystem";
 import DarkFeaturePanels from "@/components/home/DarkFeaturePanels";
 import IndustryShowcase from "@/components/home/IndustryShowcase";
 import ProblemSolution from "@/components/home/ProblemSolution";
@@ -57,12 +56,7 @@ export default function Home() {
         <ScrollStory />
 
         {/* =====================================================
-            3. SERVICE ECOSYSTEM — how the 6 services connect
-        ===================================================== */}
-        <ServiceEcosystem />
-
-        {/* =====================================================
-            4. DARK FEATURE PANELS — 4 strategic pillars
+            3. DARK FEATURE PANELS — 4 strategic pillars
         ===================================================== */}
         <DarkFeaturePanels />
 
