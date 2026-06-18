@@ -14,14 +14,15 @@ import { getLatestColumns } from "@/lib/data/columns";
 export const metadata: Metadata = {
   title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
   description:
-    "株式会社サイプレスは、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、中小企業のWeb集客を支援するマーケティングカンパニーです。東京都葛飾区。",
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・店舗のWeb集客を設計から運用まで支援します。",
   keywords: [
+    "株式会社サイプレス",
+    "Cypress Webマーケティング",
     "MEO対策",
     "SEO対策",
     "AIO対策",
     "ホームページ制作",
     "Webマーケティング",
-    "株式会社サイプレス",
     "葛飾区 SEO",
     "葛飾区 MEO",
     "中小企業 Web集客",
@@ -31,11 +32,60 @@ export const metadata: Metadata = {
   openGraph: {
     title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
     description:
-      "MEO対策・SEO対策・AIO対策・ホームページ制作を通じて、中小企業のWeb集客を支援するマーケティングカンパニー。",
+      "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。",
     locale: "ja_JP",
     type: "website",
   },
   alternates: { canonical: "https://www.cypress-all.co.jp" },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  logo: "https://www.cypress-all.co.jp/logo.png",
+  foundingDate: "2026-05-13",
+  founder: { "@type": "Person", name: "織田 春樹" },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "JP",
+    postalCode: "124-0816",
+    addressRegion: "東京都",
+    addressLocality: "葛飾区",
+    streetAddress: "白鳥4-6-1-623",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "consulting.meo@gmail.com",
+    contactType: "customer service",
+    availableLanguage: "Japanese",
+  },
+  description:
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を設計から運用まで支援します。",
+  knowsAbout: [
+    "ホームページ制作",
+    "SEO対策",
+    "MEO対策",
+    "AIO対策",
+    "SNS運用",
+    "AI活用支援",
+    "Webマーケティング",
+    "Googleビジネスプロフィール最適化",
+    "AI検索最適化",
+  ],
+  areaServed: ["東京都", "葛飾区", "神奈川県", "埼玉県", "千葉県", "全国"],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  description:
+    "株式会社サイプレスの公式サイト。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援のWebマーケティング会社。東京都葛飾区を拠点に全国対応。",
 };
 
 export default function Home() {
@@ -43,6 +93,14 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <Header />
       <main>
         {/* =====================================================
@@ -331,7 +389,48 @@ export default function Home() {
         </nav>
 
         {/* =====================================================
-            11. FINAL CTA — contact band
+            11b. COMPANY IDENTITY — brief description for SEO
+        ===================================================== */}
+        <section
+          style={{
+            background: "#FFFFFF",
+            padding: "clamp(32px, 5vh, 52px) 0",
+            borderTop: "1px solid #E8E4DC",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "800px",
+              margin: "0 auto",
+              padding: "0 clamp(24px, 5vw, 60px)",
+              textAlign: "center",
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "var(--font-sans)",
+                fontSize: "clamp(12px, 1.2vw, 13px)",
+                color: "#6B7280",
+                lineHeight: "1.9",
+              }}
+            >
+              <strong style={{ color: "#0B1628", fontWeight: 600 }}>株式会社サイプレス</strong>
+              は、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。
+              <br />
+              中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。
+              代表取締役：織田 春樹 / 設立：2026年5月 /&nbsp;
+              <a
+                href="/company/about-cypress"
+                style={{ color: "#C4A96A", textDecoration: "none", borderBottom: "1px solid #E8C97060" }}
+              >
+                株式会社サイプレスについて詳しく →
+              </a>
+            </p>
+          </div>
+        </section>
+
+        {/* =====================================================
+            11c. FINAL CTA — contact band
         ===================================================== */}
         <FinalContactBand />
       </main>

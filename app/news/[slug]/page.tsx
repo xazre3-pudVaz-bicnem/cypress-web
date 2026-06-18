@@ -39,8 +39,36 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
 
   const related = NEWS.filter((n) => n.slug !== slug && n.category === article.category).slice(0, 3);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    url: `https://www.cypress-all.co.jp/news/${article.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "株式会社サイプレス",
+      url: "https://www.cypress-all.co.jp/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.cypress-all.co.jp/logo.png",
+      },
+    },
+    author: {
+      "@type": "Organization",
+      name: "株式会社サイプレス",
+      url: "https://www.cypress-all.co.jp/",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}

@@ -19,12 +19,12 @@ const COL_COMPANY: FooterSection[] = [
   {
     heading: "会社情報",
     links: [
+      { href: "/company/about-cypress", label: "株式会社サイプレスとは" },
+      { href: "/company/profile", label: "会社概要" },
       { href: "/company/message", label: "代表挨拶" },
       { href: "/company/philosophy", label: "企業理念" },
-      { href: "/company/profile", label: "会社概要" },
       { href: "/company/history", label: "沿革" },
       { href: "/recruit", label: "採用情報" },
-      { href: "/recruit/sales", label: "正社員・営業職募集" },
     ],
   },
   {

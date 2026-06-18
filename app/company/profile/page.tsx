@@ -8,29 +8,83 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "会社概要 | 株式会社サイプレス",
+  title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
   description:
-    "株式会社サイプレスの会社概要。会社名・代表取締役・設立・所在地・事業内容など基本情報一覧。東京都葛飾区を拠点にSEO・MEO・AIO対策・Web制作・SNS運用・AI活用支援を全国対応で提供。",
+    "株式会社サイプレスの会社概要。東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社。代表：織田 春樹。設立：2026年5月13日。全国対応。",
   keywords: [
-    "会社概要",
-    "企業情報",
     "株式会社サイプレス",
-    "東京",
-    "葛飾区",
-    "Webマーケティング",
+    "サイプレス 会社概要",
+    "Cypress Webマーケティング",
+    "会社概要",
+    "葛飾区 Webマーケティング",
     "MEO対策",
     "SEO対策",
     "AIO対策",
+    "東京 ホームページ制作",
   ],
   openGraph: {
-    title: "会社概要 | 株式会社サイプレス",
+    title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
     description:
-      "株式会社サイプレスの会社概要。東京都葛飾区のWebマーケティング会社。MEO・SEO・AIO対策、ホームページ制作を全国対応で提供。",
+      "株式会社サイプレスの会社概要。東京都葛飾区を拠点にMEO・SEO・AIO対策、ホームページ制作を全国対応で提供するWebマーケティング会社。",
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/profile" },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  logo: "https://www.cypress-all.co.jp/logo.png",
+  foundingDate: "2026-05-13",
+  founder: { "@type": "Person", name: "織田 春樹" },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "JP",
+    postalCode: "124-0816",
+    addressRegion: "東京都",
+    addressLocality: "葛飾区",
+    streetAddress: "白鳥4-6-1-623",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "consulting.meo@gmail.com",
+    contactType: "customer service",
+    availableLanguage: "Japanese",
+  },
+  description:
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を支援します。",
+  knowsAbout: [
+    "ホームページ制作", "SEO対策", "MEO対策", "AIO対策",
+    "SNS運用", "AI活用支援", "Webマーケティング",
+    "Googleビジネスプロフィール最適化", "AI検索最適化",
+  ],
+  areaServed: ["東京都", "葛飾区", "神奈川県", "埼玉県", "千葉県", "全国"],
+};
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "JP",
+    postalCode: "124-0816",
+    addressRegion: "東京都",
+    addressLocality: "葛飾区",
+    streetAddress: "白鳥4-6-1-623",
+  },
+  email: "consulting.meo@gmail.com",
+  description:
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。",
+  areaServed: ["東京都", "神奈川県", "埼玉県", "千葉県", "全国"],
+  serviceType: ["SEO対策", "MEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援"],
 };
 
 const PROFILE_ROWS = [
@@ -169,6 +223,7 @@ const faqItems = [
 
 const relatedLinks = [
   { href: "/company", label: "会社情報トップ", desc: "サイプレス企業情報" },
+  { href: "/company/about-cypress", label: "株式会社サイプレスとは", desc: "会社の詳細・理念・強み" },
   { href: "/company/value", label: "企業理念・バリュー", desc: "私たちが大切にすること" },
   { href: "/company/message", label: "代表メッセージ", desc: "代表・織田春樹より" },
   { href: "/company/philosophy", label: "経営方針", desc: "事業への姿勢と方針" },
@@ -193,6 +248,14 @@ const relatedLinks = [
 export default function ProfilePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}
@@ -210,9 +273,9 @@ export default function ProfilePage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#0F172A", fontFamily: "var(--font-serif)" }}
             >
-              会社概要
+              株式会社サイプレス 会社概要
             </h1>
             <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
               株式会社サイプレスの基本情報一覧です。東京都葛飾区を拠点に、SEO・MEO・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、地域中小企業のWeb集客を支援しています。

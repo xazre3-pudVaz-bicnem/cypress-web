@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 会社情報
     ...urls([
+      "/company/about-cypress",
+    ], { changeFrequency: "monthly", priority: 0.85 }),
+    ...urls([
       "/company", "/company/message", "/company/philosophy", "/company/profile",
       "/company/history", "/company/value", "/company/support-policy", "/company/area",
     ], { changeFrequency: "monthly", priority: 0.7 }),
