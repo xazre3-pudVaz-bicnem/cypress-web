@@ -14,9 +14,9 @@ import {
 } from "@/lib/data/caseStudies";
 
 export const metadata: Metadata = {
-  title: "MEO・SEO・ホームページ制作 成功事例100選｜株式会社サイプレス",
+  title: "Web集客・ホームページ制作の成功事例｜株式会社サイプレス",
   description:
-    "株式会社サイプレスのWebマーケティング成功事例100選。MEO対策・SEO対策・ホームページ制作・SNS運用・AIO対策など、業種・地域・サービス別に施策内容と進め方を公開しています。",
+    "株式会社サイプレスのWeb集客支援事例を、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用などの商材別・業種別に紹介します。顧客名・店舗名は非公開。",
   keywords: [
     "MEO対策 事例",
     "SEO対策 事例",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     "株式会社サイプレス 実績",
   ],
   openGraph: {
-    title: "MEO・SEO・ホームページ制作 成功事例100選｜株式会社サイプレス",
-    description: "業種・地域・サービス別に100件のWebマーケティング成功事例を公開。",
+    title: "Web集客・ホームページ制作の成功事例｜株式会社サイプレス",
+    description: "業種・地域・サービス別にWeb集客支援の成功事例を公開。顧客名・店舗名は非公開。",
     images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
@@ -50,8 +50,8 @@ const breadcrumbJsonLd = {
 const collectionJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "MEO・SEO・ホームページ制作 成功事例100選",
-  description: "株式会社サイプレスのWebマーケティング成功事例一覧（業種・地域・サービス別）",
+  name: "Web集客・ホームページ制作の成功事例",
+  description: "株式会社サイプレスのWeb集客支援事例一覧（商材別・業種別・エリア別）",
   url: `${BASE}/cases`,
   mainEntity: {
     "@type": "ItemList",
@@ -103,20 +103,22 @@ export default function CasesPage() {
                 color: "#0B1628",
                 fontWeight: 700,
                 lineHeight: 1.3,
-                marginBottom: "20px",
+                marginBottom: "16px",
               }}
             >
-              MEO・SEO・ホームページ制作<br />成功事例100選
+              Web集客・ホームページ制作の成功事例
             </h1>
-            <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.9", maxWidth: "620px", marginBottom: "28px" }}>
-              株式会社サイプレスが取り組んだWebマーケティングの成功事例を100件公開しています。
-              業種・サービス・エリアで絞り込み、課題から施策・改善までの進め方をご覧いただけます。
-              顧客名・店舗名は非公開とし、誇大な数値表現は用いていません。
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "660px", marginBottom: "18px" }}>
+              MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用など、業種や目的に合わせて行ったWeb集客支援の成功事例を紹介します。
+            </p>
+            <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.9", maxWidth: "660px", marginBottom: "28px" }}>
+              株式会社サイプレスがこれまで支援してきたWeb集客の成功事例を、商材別・業種別・エリア別にご覧いただけます。
+              顧客名や店舗名は非公開とし、課題・施策・改善の流れを中心に掲載しています。
             </p>
 
             {/* Summary stats */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 12px" }}>
-              <Stat value="100" label="成功事例" />
+              <Stat value={String(CASE_STUDIES.length)} label="掲載事例" />
               <Stat value={String(getAllServiceSlugs().length)} label="対応サービス" />
               <Stat value={String(getAllIndustrySlugs().length)} label="対応業種" />
             </div>
