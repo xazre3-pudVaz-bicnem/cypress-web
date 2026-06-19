@@ -359,3 +359,193 @@ export const siteImages = {
 } as const;
 
 export type SiteImageKey = keyof typeof siteImages;
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SITE_IMAGES — industry-keyed catalog (single source of truth for case images)
+// Added 2026-06-19. `hero` = industry page hero, `pool` = rotation pool for
+// case studies. All paths are relative to /public.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const SITE_IMAGES = {
+  restaurant: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 08_54_07 (1).png",
+      "/ChatGPT Image 2026年6月19日 08_56_24 (1).png",
+      "/ChatGPT Image 2026年6月19日 08_54_08 (2).png",
+      "/ChatGPT Image 2026年6月19日 08_56_25 (3).png",
+      "/ChatGPT Image 2026年6月19日 08_54_09 (4).png",
+      "/ChatGPT Image 2026年6月19日 08_56_26 (5).png",
+      "/ChatGPT Image 2026年6月19日 08_54_10 (7).png",
+      "/ChatGPT Image 2026年6月19日 08_56_29 (10).png",
+      "/ChatGPT Image 2026年6月19日 08_54_09 (3).png",
+      "/ChatGPT Image 2026年6月19日 08_56_24 (2).png",
+    ],
+  },
+  "beauty-salon": {
+    hero: "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_03_12 (1).png",
+      "/ChatGPT Image 2026年6月19日 08_59_57 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_03_12 (2).png",
+      "/ChatGPT Image 2026年6月19日 08_59_59 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_03_12 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_00_02 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_03_13 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_00_02 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_03_14 (5).png",
+    ],
+  },
+  relaxation: {
+    hero: "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    pool: [
+      "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_05_29 (5).png",
+      "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_05_30 (6).png",
+      "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_05_30 (7).png",
+      "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    ],
+  },
+  dental: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_05_28 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_05_30 (7).png",
+      "/ChatGPT Image 2026年6月19日 09_05_32 (10).png",
+    ],
+  },
+  clinic: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_05_27 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_05_29 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_05_31 (8).png",
+    ],
+  },
+  construction: {
+    hero: "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_10_07 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_09_59 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_10_07 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_10_02 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_10_08 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_10_04 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_10_08 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_10_05 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_10_11 (10).png",
+    ],
+  },
+  "real-estate": {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    pool: [
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_10_07 (1).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_10_11 (10).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    ],
+  },
+  cleaning: {
+    hero: "/ChatGPT Image 2026年6月13日 19_20_52.png",
+    pool: [
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+      "/ChatGPT Image 2026年6月13日 19_20_52.png",
+    ],
+  },
+  logistics: {
+    hero: "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_26_25 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_26_27 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_26_29 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_26_33 (5).png",
+      "/ChatGPT Image 2026年6月19日 09_26_45 (10).png",
+    ],
+  },
+  pet: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_21 (8).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_26_40 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_26_42 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_26_48 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_26_55 (6).png",
+      "/ChatGPT Image 2026年6月19日 09_27_01 (9).png",
+    ],
+  },
+  school: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_21 (10).png",
+    pool: [
+      "/ChatGPT Image 2026年6月19日 09_27_09 (1).png",
+      "/ChatGPT Image 2026年6月19日 09_27_11 (2).png",
+      "/ChatGPT Image 2026年6月19日 09_27_13 (3).png",
+      "/ChatGPT Image 2026年6月19日 09_27_17 (4).png",
+      "/ChatGPT Image 2026年6月19日 09_27_21 (6).png",
+      "/ChatGPT Image 2026年6月19日 09_27_28 (9).png",
+      "/ChatGPT Image 2026年6月19日 09_27_30 (10).png",
+    ],
+  },
+  retail: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    pool: [
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月19日 08_56_29 (10).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月19日 08_56_26 (5).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    ],
+  },
+  accommodation: {
+    hero: "/ChatGPT Image 2026年6月14日 21_10_24 (1).png",
+    pool: [
+      "/ChatGPT Image 2026年6月14日 21_10_24 (1).png",
+      "/ChatGPT Image 2026年6月14日 21_10_24 (1).png",
+      "/ChatGPT Image 2026年6月14日 21_10_24 (1).png",
+      "/ChatGPT Image 2026年6月14日 21_10_24 (1).png",
+    ],
+  },
+  professional: {
+    hero: "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+    pool: [
+      "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+      "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+      "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+    ],
+  },
+  other: {
+    hero: "/ChatGPT Image 2026年6月13日 20_02_56.png",
+    pool: [
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+      "/ChatGPT Image 2026年6月13日 19_22_31.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月13日 20_01_28.png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月13日 20_02_56.png",
+      "/ChatGPT Image 2026年6月14日 21_09_09 (5).png",
+    ],
+  },
+} as const;
+
+export type SiteImageIndustry = keyof typeof SITE_IMAGES;
