@@ -347,7 +347,7 @@ export default async function CaseDetailPage({ params }: Props) {
 
   const regLabel = c.city ? `${c.region}${c.city}` : c.region;
   const relatedCases = getRelatedCases(c, 6);
-  const imageAlt = `${c.region}の${c.industry}の${c.services[0]}成功事例イメージ`;
+  const imageAlt = `${c.region}の${c.industry}の${c.services[0]}支援事例のイメージ`;
 
   const analysisPoints = getAnalysisPoints(c);
   const offerings = getCypressOfferings(c);

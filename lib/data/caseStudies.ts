@@ -159,7 +159,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "飲食店ではまずGoogleビジネスプロフィールの整備とサイトの検索意図対応が基本です。地域名＋ジャンルの検索に応えるページを設計し、来店・予約までの導線を分かりやすく整えることが成果の土台になります。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_54_07 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -251,7 +251,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_24 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -342,7 +342,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_54_08 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -434,7 +434,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_25 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -525,7 +525,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_54_09 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -616,7 +616,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_26 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -708,7 +708,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_54_10 (7).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -800,7 +800,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_29 (10).png",
     "publishedAt": "2026-06-01",
     "updatedAt": "2026-06-19"
   },
@@ -888,7 +888,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -979,7 +979,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_03_12 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1070,7 +1070,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_59_57 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1161,7 +1161,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_03_12 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1253,7 +1253,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_59_59 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1344,7 +1344,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_03_12 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1435,7 +1435,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_00_02 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1526,7 +1526,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_03_13 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1714,7 +1714,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_29 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -1897,7 +1897,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_30 (6).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2080,7 +2080,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_30 (7).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2263,7 +2263,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2355,7 +2355,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_28 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2446,7 +2446,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_30 (7).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2538,7 +2538,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_27 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2629,7 +2629,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_29 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2721,7 +2721,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_31 (8).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2814,7 +2814,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_05_32 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -2909,7 +2909,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "影響します。写真が充実したプロフィールは閲覧数・反応が多い傾向があり、特に来店型ビジネスでは外観・内観・サービスの写真が来店判断に直結します。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
     "publishedAt": "2026-05-01",
     "updatedAt": "2026-06-19"
   },
@@ -3001,7 +3001,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "可能です。既存コンテンツを活かしつつ、表示部分や構造化データ・内部リンクを再設計することで、運用を変えずに性能・SEOを改善できます。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_07 (1).png",
     "publishedAt": "2026-05-25",
     "updatedAt": "2026-06-19"
   },
@@ -3093,7 +3093,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_09_59 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3184,7 +3184,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_07 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3275,7 +3275,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_02 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3366,7 +3366,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_08 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3457,7 +3457,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_04 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3548,7 +3548,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_08 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3633,7 +3633,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_05 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3725,7 +3725,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "建設・リフォーム会社ではまずGoogleビジネスプロフィールの整備とサイトの検索意図対応が基本です。地域名＋工事種別の検索に応えるページを設計し、問い合わせ・見積までの導線を分かりやすく整えることが成果の土台になります。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_11 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3817,7 +3817,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3908,7 +3908,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_07 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -3999,7 +3999,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -4090,7 +4090,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_10_11 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -4183,7 +4183,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_10_24 (2).png",
+    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -4912,7 +4912,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "自社サイトの求人ページを検索・Google for Jobsに対応させることで、直接応募の経路を作れます。媒体依存を段階的に下げる基盤になります。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
     "publishedAt": "2026-05-20",
     "updatedAt": "2026-06-19"
   },
@@ -4998,7 +4998,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_25 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5089,7 +5089,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_27 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5177,7 +5177,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_29 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5261,7 +5261,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_33 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5353,7 +5353,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (3).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_45 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5445,7 +5445,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (4).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_40 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5537,7 +5537,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (4).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_42 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5628,7 +5628,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (4).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_48 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5720,7 +5720,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (4).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_26_55 (6).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5812,7 +5812,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (4).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_01 (9).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5903,7 +5903,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_09 (1).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -5995,7 +5995,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_11 (2).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6086,7 +6086,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_13 (3).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6177,7 +6177,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_17 (4).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6269,7 +6269,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_21 (6).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6356,7 +6356,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_28 (9).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6447,7 +6447,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (2).png",
+    "image": "/ChatGPT Image 2026年6月19日 09_27_30 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6633,7 +6633,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_29 (10).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -6815,7 +6815,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+    "image": "/ChatGPT Image 2026年6月19日 08_56_26 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -7453,7 +7453,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },
@@ -7632,7 +7632,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "answer": "本事例では顧客名・店舗名は非公開とし、誇大な数値表現も用いていません。実施した施策の内容と進め方を中心にご紹介しています。"
       }
     ],
-    "image": "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+    "image": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
     "publishedAt": "2026-06-19",
     "updatedAt": "2026-06-19"
   },

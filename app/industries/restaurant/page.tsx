@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【飲食店のMEO・Web集客】Googleマップ上位表示で来店数を増やす｜株式会社サイプレス",
     description: "飲食店専門のWebマーケティング。MEO・Instagram・口コミ対策で来店数を最大化します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

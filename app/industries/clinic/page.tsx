@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【クリニック・整骨院のMEO・Web集客】医療広告ガイドライン対応の新患獲得｜株式会社サイプレス",
     description: "クリニック・歯科・整骨院のWeb集客。MEO・ホームページ・医療SEOで新患獲得を支援します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
