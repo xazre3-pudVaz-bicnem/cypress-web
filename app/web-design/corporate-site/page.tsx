@@ -66,7 +66,7 @@ const faqItems = [
   },
   {
     q: "Lighthouseスコアやコアウェブバイタルの改善はできますか？",
-    a: "はい、LCP・CLS・FIDなどのCore Web Vitalsの最適化を標準で行います。画像のWebP変換・next/imageによるLazy Load・フォント最適化・コード分割などを実装し、Lighthouseスコア90以上を目標とします。",
+    a: "はい、LCP・INP・CLSなどのCore Web Vitalsの最適化を標準で行います。画像のWebP変換・next/imageによるLazy Load・フォント最適化・コード分割などを実装し、Lighthouseスコア90以上を目標とします。",
   },
   {
     q: "採用情報ページも同時に制作できますか？",

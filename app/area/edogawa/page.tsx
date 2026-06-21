@@ -332,7 +332,7 @@ export default function Page() {
                 { label: "MEO対策", tag: "最重要", desc: "「葛西 〇〇」「西葛西 〇〇」など地域検索でのGoogleマップ上位表示。競合が少ないエリアが多く、少ない投資で大きな成果が期待できる。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「江戸川区 〇〇」「小岩 〇〇」などのキーワードで検索上位表示。千葉県境界エリアの地理的優位性を活かした広域キーワード設計が可能。" },
                 { label: "多言語Web対応", tag: "差別化", desc: "西葛西の多文化コミュニティに向けた多言語GBP・英語Webサイトで差別化。競合のほとんどが日本語のみのため、多言語対応だけで圧倒的に有利になる。" },
-                { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの集客を確実に問い合わせ・来店に変換する高品質なホームページ。多言語・スマートフォン最適化・CV設計が集客効果を最大化する。" },
+                { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの集客を問い合わせ・来店につなぐ高品質なホームページ。多言語・スマートフォン最適化・CV設計で集客の受け皿を整えます。" },
               ].map((item) => (
                 <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>

@@ -266,7 +266,7 @@ export default function Page() {
                 { t: "フォント・行間の最適化", b: "本文フォントサイズを16px以上・行間を1.7〜1.9に設定します。見出しのサイズはPCより小さく設定し、スマートフォン画面内に適切に収まるよう調整します。" },
                 { t: "画像のWebP化・遅延読み込み", b: "既存のJPEG・PNG画像をWebP形式に変換し、ファイルサイズを削減します。スクロールしないと見えない画像には遅延読み込みを設定し、初期表示速度を改善します。" },
                 { t: "フォームのモバイルUX改善", b: "入力フィールドのサイズ拡大・適切なinputtype設定（tel・email・number等）・エラーメッセージの視認性改善・送信ボタンのサイズ拡大を実施します。" },
-                { t: "公開後のCore Web Vitals確認", b: "公開後にPageSpeed InsightsでモバイルのCore Web Vitals（LCP・CLS・FID）を測定します。Google Search ConsoleのCore Web Vitalsレポートで実際のユーザーデータも確認します。" },
+                { t: "公開後のCore Web Vitals確認", b: "公開後にPageSpeed InsightsでモバイルのCore Web Vitals（LCP・INP・CLS）を測定します。Google Search ConsoleのCore Web Vitalsレポートで実際のユーザーデータも確認します。" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
@@ -290,7 +290,7 @@ export default function Page() {
             <div style={{ maxWidth: "760px" }}>
               {[
                 { kpi: "Lighthouse モバイルスコア", target: "90+目標", where: "Chrome DevTools / PageSpeed Insights", desc: "パフォーマンス・アクセシビリティ・SEOのモバイルスコアを定期的に測定します。スコアが下がった場合は追加したプラグインや画像が原因であることが多く、特定して改善します。" },
-                { kpi: "Core Web Vitals モバイル（LCP・CLS・FID）", target: "LCP 2.5秒以内 / CLS 0.1以下", where: "PageSpeed Insights / Search Console", desc: "LCP（最大コンテンツの読み込み時間）・CLS（レイアウトの安定性）・FID/INP（応答速度）の3指標をモバイルで測定します。いずれも「良好」範囲に入ることを目標にします。" },
+                { kpi: "Core Web Vitals モバイル（LCP・INP・CLS）", target: "LCP 2.5秒以内 / CLS 0.1以下", where: "PageSpeed Insights / Search Console", desc: "LCP（最大コンテンツの読み込み時間）・CLS（レイアウトの安定性）・FID/INP（応答速度）の3指標をモバイルで測定します。いずれも「良好」範囲に入ることを目標にします。" },
                 { kpi: "モバイルCVR", target: "PCのCVR比80%以上", where: "Google Analytics（セグメント分割）", desc: "スマートフォンからの問い合わせ・資料請求・予約などのコンバージョン率を、PCとセグメント別に比較します。差が大きい場合はモバイルUXに改善余地があります。" },
                 { kpi: "モバイル直帰率", target: "改善前比10ポイント以上低下", where: "Google Analytics（デバイスセグメント）", desc: "スマートフォンからのアクセスのうち、1ページだけ見て離脱した割合です。高い直帰率はページ速度・コンテンツの関連性・UXの問題を示しています。" },
                 { kpi: "モバイル平均滞在時間", target: "改善前比20%以上向上", where: "Google Analytics（デバイスセグメント）", desc: "スマートフォンユーザーがサイト内で過ごす平均時間です。短い場合は読みにくさ・コンテンツの関連性・速度の問題が疑われます。改善後の比較で効果を測定します。" },

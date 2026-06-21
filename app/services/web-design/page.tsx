@@ -57,7 +57,7 @@ const faqItems = [
   },
   {
     q: "Core Web Vitalsの最適化は含まれますか？",
-    a: "はい、全案件でLCP 2.5秒以内・CLS 0.1以下・FID 100ms以下を標準目標としています。next/image・next/font・コード分割・CDN活用などの最適化を標準実装します。Lighthouse全項目90点以上を目指します。",
+    a: "はい、全案件でLCP 2.5秒以内・INP 200ms以下・CLS 0.1以下を標準目標としています。next/image・next/font・コード分割・CDN活用などの最適化を標準実装します。Lighthouse全項目90点以上を目指します。",
   },
   {
     q: "構造化データ（Schema.org）の実装は対応していますか？",
@@ -438,9 +438,9 @@ export default function ServicesWebDesignPage() {
                   desc: "モバイル・PCそれぞれのスコアを計測します。90点以上を目標とし、画像・コード・サーバーの最適化の効果を数値で把握できます。",
                 },
                 {
-                  kpi: "Core Web Vitals（LCP / CLS / FID）",
+                  kpi: "Core Web Vitals（LCP / INP / CLS）",
                   how: "Google Search Console「Core Web Vitals」レポート",
-                  desc: "LCP（表示速度）・CLS（レイアウト安定性）・FID（入力遅延）の3指標。Googleのランキング要因に直結するため、定期的なモニタリングが必要です。",
+                  desc: "LCP（表示速度）・INP（インタラクション応答）・CLS（レイアウト安定性）の3指標。Googleのランキング要因に直結するため、定期的なモニタリングが必要です。",
                 },
                 {
                   kpi: "問い合わせ数・フォーム送信数",

@@ -416,7 +416,7 @@ export default function Page() {
                 { label: "MEO対策", tag: "来店型に最重要", desc: "「近くの〇〇」検索が多い東京では最重要チャネル。エリアごとの競合レベルに応じた施策設計で、最短での上位表示を目指す。" },
                 { label: "ローカルSEO", tag: "中長期で効く", desc: "東京特化の地域名+業種キーワードで検索上位表示。競合の少ないキーワードを優先し、コンテンツSEOで着実にトラフィックを積み上げる。" },
                 { label: "AIO対策", tag: "次世代集客", desc: "ChatGPT・Geminiで「東京の〇〇おすすめ」と聞かれたとき引用されるための情報設計。東京のリテラシーの高い消費者層への有効打。" },
-                { label: "Web制作", tag: "集客の核", desc: "高品質なホームページがすべての集客の受け皿となる。SEO・MEO・SNSからの流入を確実に問い合わせ・予約・来店に変換するCV設計が重要。" },
+                { label: "Web制作", tag: "集客の核", desc: "高品質なホームページがすべての集客の受け皿となる。SEO・MEO・SNSからの流入を問い合わせ・予約・来店へつなぐCV設計が重要です。" },
               ].map((item) => (
                 <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>

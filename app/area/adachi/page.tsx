@@ -372,7 +372,7 @@ export default function Page() {
               {[
                 { label: "MEO対策", tag: "最重要", desc: "「北千住 〇〇」「竹ノ塚 〇〇」など地域検索でのGoogleマップ上位表示。来店型ビジネスに最も効果が高いチャネル。エリアによって競合レベルが異なるため、戦略的な設計が必要。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「足立区 〇〇」「北千住 〇〇」などのキーワードでの検索上位表示。MEOとの相乗効果で信頼感・認知度を高め、長期的な集客基盤を構築する。" },
-                { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの流入を確実に問い合わせ・予約・来店に変換する高品質なホームページ。スマートフォン対応・高速表示・わかりやすいCV設計が必須。" },
+                { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの流入を問い合わせ・予約・来店へとつなぐCV設計の高品質なホームページ。スマートフォン対応・高速表示・わかりやすい導線設計が重要です。" },
                 { label: "SNS（Instagram・LINE）", tag: "補完", desc: "地域コミュニティへのアプローチに有効。LINE公式アカウントでのリピーター獲得・Instagramでの認知拡大を、MEO・SEOと組み合わせて実施する。" },
               ].map((item) => (
                 <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>

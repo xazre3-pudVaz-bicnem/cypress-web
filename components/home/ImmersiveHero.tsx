@@ -159,7 +159,7 @@ export default function ImmersiveHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.65 }}
         >
-          <p
+          <h1
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(15px, 1.8vw, 21px)",
@@ -170,7 +170,7 @@ export default function ImmersiveHero() {
             }}
           >
             中小企業のWeb集客を、設計から運用まで。
-          </p>
+          </h1>
           <p
             style={{
               fontSize: "12px",

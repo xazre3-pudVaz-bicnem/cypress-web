@@ -726,8 +726,8 @@ export default function Page() {
                 },
                 {
                   n: "02",
-                  t: "Core Web Vitals（LCP・CLS・FID）",
-                  b: "Google Search ConsoleのCore Web Vitalsレポートで実ユーザーデータを確認。LCP 2.5秒以内・CLS 0.1以下・FID 100ms以下が「良好」の基準です。",
+                  t: "Core Web Vitals（LCP・INP・CLS）",
+                  b: "Google Search ConsoleのCore Web Vitalsレポートで実ユーザーデータを確認。LCP 2.5秒以内・INP 200ms以下・CLS 0.1以下が「良好」の基準です。",
                 },
                 {
                   n: "03",

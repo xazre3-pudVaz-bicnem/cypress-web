@@ -4,7 +4,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ImmersiveHero from "@/components/home/ImmersiveHero";
 import ScrollStory from "@/components/home/ScrollStory";
-import DarkFeaturePanels from "@/components/home/DarkFeaturePanels";
 import IndustryShowcase from "@/components/home/IndustryShowcase";
 import ProblemSolution from "@/components/home/ProblemSolution";
 import HomeProcess from "@/components/home/HomeProcess";
@@ -112,11 +111,6 @@ export default function Home() {
             2. SCROLL STORY — sticky 6-service narrative
         ===================================================== */}
         <ScrollStory />
-
-        {/* =====================================================
-            3. DARK FEATURE PANELS — 4 strategic pillars
-        ===================================================== */}
-        <DarkFeaturePanels />
 
         {/* =====================================================
             5. INDUSTRY SHOWCASE — marquee of industries
