@@ -34,6 +34,39 @@ const jsonLd = {
       ],
     },
     {
+      "@type": "Service",
+      "@id": "https://www.cypress-all.co.jp/seo#service",
+      "name": "SEO対策・検索エンジン最適化",
+      "description": "コンテンツSEO・テクニカルSEO・ローカルSEO・内部リンク最適化を組み合わせた総合的なSEO支援。自然検索流入の増加と中長期の集客基盤構築を目指します。中小企業・店舗・専門サービスを中心に対応。",
+      "url": "https://www.cypress-all.co.jp/seo",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.cypress-all.co.jp/#organization",
+        "name": "株式会社サイプレス",
+        "url": "https://www.cypress-all.co.jp/",
+      },
+      "areaServed": [
+        { "@type": "State", "name": "東京都" },
+        { "@type": "AdministrativeArea", "name": "全国（オンライン対応）" },
+      ],
+      "serviceType": "SEO対策・コンテンツマーケティング",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "中小企業・BtoB・地域ビジネス",
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SEO対策サービスメニュー",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "キーワード戦略立案" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "コンテンツSEO・記事制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "テクニカルSEO改善" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "内部リンク最適化" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Search Console活用・月次改善" } },
+        ],
+      },
+    },
+    {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "SEO対策の効果が出るまでどれくらいかかりますか？", acceptedAnswer: { "@type": "Answer", text: "競合状況や対象キーワードによりますが、一般的に着手から3〜6ヶ月で検索順位の変動が始まります。安定して上位表示されるまでには12ヶ月以上かかるケースが多いです。ただし、テクニカルSEOの修正（表示速度・クロールエラー修正など）は比較的早く反映されることがあります。継続的な取り組みが重要です。" } },

@@ -19,6 +19,39 @@ interface Props {
 
 const BASE = "https://www.cypress-all.co.jp";
 
+// 業種別ページ（/industries/*）へのマッピング（実在ディレクトリのみ）
+const INDUSTRY_PAGE_MAP: Record<string, string> = {
+  restaurant: "/industries/restaurant",
+  "beauty-salon": "/industries/beauty",
+  relaxation: "/industries/osteopathic",
+  dental: "/industries/clinic",
+  clinic: "/industries/clinic",
+  construction: "/industries/construction",
+  "real-estate": "/industries/real-estate",
+  pet: "/industries/pet-shop",
+  school: "/industries/school",
+  retail: "/industries/local-store",
+  professional: "/industries/professional-service",
+  cleaning: "/industries/cleaning",
+};
+
+// 業種別OGP画像（public/ に実在するファイルのみ）
+const INDUSTRY_OGP_IMAGES: Record<string, string> = {
+  restaurant: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png",
+  "beauty-salon": "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
+  relaxation: "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+  dental: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
+  clinic: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
+  construction: "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
+  "real-estate": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+  cleaning: "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
+  logistics: "/ChatGPT Image 2026年6月14日 21_09_21 (9).png",
+  pet: "/ChatGPT Image 2026年6月14日 21_09_21 (8).png",
+  school: "/ChatGPT Image 2026年6月14日 21_09_21 (10).png",
+  retail: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
+  professional: "/ChatGPT Image 2026年6月14日 21_09_09 (4).png",
+};
+
 export async function generateStaticParams() {
   return getAllIndustrySlugs().map((industry) => ({ industry }));
 }
@@ -34,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description: description.slice(0, 118),
     keywords: [`${label} Web集客 事例`, `${label} MEO`, `${label} SEO`, `${label} ホームページ制作`],
-    openGraph: { title, description, images: [{ url: "/hero.png", width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
+    openGraph: { title, description, images: [{ url: INDUSTRY_OGP_IMAGES[industry] ?? "/hero.png", width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `${BASE}/cases/industry/${industry}` },
   };
@@ -46,6 +79,23 @@ export default async function IndustryCasesPage({ params }: Props) {
   if (!label) notFound();
 
   const cases = getCasesByIndustry(industry);
+  const industryHref = INDUSTRY_PAGE_MAP[industry] ?? null;
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${label}のWeb集客成功事例一覧`,
+    description: `${label}のMEO対策・SEO対策・ホームページ制作の成功事例${cases.length}件`,
+    url: `${BASE}/cases/industry/${industry}`,
+    numberOfItems: cases.length,
+    itemListElement: cases.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.title,
+      url: `${BASE}/cases/${c.slug}`,
+      description: c.description,
+    })),
+  };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -60,6 +110,7 @@ export default async function IndustryCasesPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <Header />
       <main>
         <section style={{ background: "#F8F6F2", padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)", borderBottom: "1px solid #E8E4DC" }}>
@@ -113,6 +164,34 @@ export default async function IndustryCasesPage({ params }: Props) {
               {getAllServiceSlugs().map((s) => (
                 <Link key={s} href={`/cases/service/${s}`} style={linkChip}>{SERVICE_LABELS[s]}</Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 関連ページへの誘導 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.22em", color: "#9CA3AF", fontSize: "10px", marginBottom: "20px", textTransform: "uppercase" }}>
+              Related
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "24px" }}>
+              {industryHref && (
+                <Link href={industryHref} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                  {label}のWeb集客支援について →
+                </Link>
+              )}
+              <Link href="/cases/service/meo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                MEO対策の成功事例 →
+              </Link>
+              <Link href="/cases/service/seo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                SEO対策の成功事例 →
+              </Link>
+              <Link href="/cases/service/web-design" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                ホームページ制作の成功事例 →
+              </Link>
+              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                成功事例一覧に戻る →
+              </Link>
             </div>
           </div>
         </section>

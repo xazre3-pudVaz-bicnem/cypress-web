@@ -34,6 +34,43 @@ const jsonLd = {
       ],
     },
     {
+      "@type": "Service",
+      "@id": "https://www.cypress-all.co.jp/meo#service",
+      "name": "MEO対策（Googleマップ集客支援）",
+      "alternateName": "マップエンジン最適化",
+      "description": "Googleビジネスプロフィール最適化・口コミ管理・写真投稿・GBP投稿を通じて、Googleマップのローカルパック上位表示を目指す地域集客支援サービス。飲食店・美容室・クリニック・工務店など業種を問わず対応。",
+      "url": "https://www.cypress-all.co.jp/meo",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.cypress-all.co.jp/#organization",
+        "name": "株式会社サイプレス",
+        "url": "https://www.cypress-all.co.jp/",
+      },
+      "areaServed": [
+        { "@type": "State", "name": "東京都" },
+        { "@type": "State", "name": "千葉県" },
+        { "@type": "State", "name": "埼玉県" },
+        { "@type": "State", "name": "神奈川県" },
+        { "@type": "AdministrativeArea", "name": "全国（オンライン対応）" },
+      ],
+      "serviceType": "ローカルSEO・MEO対策",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "中小企業・地域ビジネス・店舗",
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "MEO対策サービスメニュー",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Googleビジネスプロフィール最適化" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "口コミ管理・獲得支援" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GBP投稿・写真更新" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "競合分析・順位改善" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "月次レポート・改善提案" } },
+        ],
+      },
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "MEO対策とSEO対策の違いは何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "SEO対策がGoogle検索のオーガニック結果での順位改善を目的とするのに対し、MEO対策はGoogleマップ（ローカルパック）での表示順位改善を目的とします。地域ビジネスにとってはMEOのほうが来店直前の検索行動に直結するため、ROIが高いケースが多いです。両方を組み合わせることで相乗効果が生まれます。" } },

@@ -33,6 +33,23 @@ const jsonLd = {
       ],
     },
     {
+      "@type": "Service",
+      "@id": "https://www.cypress-all.co.jp/sns#service",
+      "name": "SNS運用代行",
+      "description": "Instagram・Google投稿・LINE公式アカウントの運用代行と戦略設計。MEO対策との連動で地域集客効果を最大化します。投稿設計・コンテンツ制作・分析まで一括対応。",
+      "url": "https://www.cypress-all.co.jp/sns",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.cypress-all.co.jp/#organization",
+        "name": "株式会社サイプレス",
+        "url": "https://www.cypress-all.co.jp/",
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "全国（オンライン対応）" },
+      ],
+      "serviceType": "SNS運用代行・ソーシャルメディアマーケティング",
+    },
+    {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "SNS運用代行の費用はどのくらいですか？", acceptedAnswer: { "@type": "Answer", text: "投稿頻度・プラットフォーム数・写真制作の有無によって異なります。月額費用のご案内は個別にご相談ください。まずは現状のSNS活用状況と目標をお聞かせいただき、最適なプランをご提案します。" } },

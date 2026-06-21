@@ -34,6 +34,28 @@ const jsonLd = {
       ],
     },
     {
+      "@type": "Service",
+      "@id": "https://www.cypress-all.co.jp/aio#service",
+      "name": "AIO対策・AI検索最適化",
+      "alternateName": "AI Overview対策・LLMO",
+      "description": "ChatGPT・Gemini・Perplexity・ClaudeなどのAI検索エンジンに引用・推薦されるための情報設計。FAQ強化・構造化データ実装・E-E-A-T強化・llms.txt設置を中心としたAI検索時代の集客対策。",
+      "url": "https://www.cypress-all.co.jp/aio",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.cypress-all.co.jp/#organization",
+        "name": "株式会社サイプレス",
+        "url": "https://www.cypress-all.co.jp/",
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "全国（オンライン対応）" },
+      ],
+      "serviceType": "AI検索最適化・AIO対策",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "中小企業・専門サービス",
+      },
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "AIO対策とSEO対策は何が違いますか？", "acceptedAnswer": { "@type": "Answer", "text": "SEO対策がGoogleなどの検索エンジンの順位改善を目的とするのに対し、AIO対策はChatGPT・Gemini・Perplexityなどの生成AIが質問に回答する際に自社情報を引用・推薦するよう最適化します。ただし多くの施策（コンテンツ品質向上・権威性構築・構造化データ実装）は両方に有効であり、SEOとAIOを同時に進めることで相乗効果が生まれます。" } },

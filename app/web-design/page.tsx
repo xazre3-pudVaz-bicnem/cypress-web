@@ -33,6 +33,39 @@ const jsonLd = {
       ],
     },
     {
+      "@type": "Service",
+      "@id": "https://www.cypress-all.co.jp/web-design#service",
+      "name": "ホームページ制作・Webサイト制作",
+      "description": "SEO・CV・パフォーマンスを設計段階から組み込んだ高品質なWebサイト制作。Next.js・WordPress対応。中小企業・店舗・士業・クリニックのコーポレートサイト・採用サイト・LP制作に対応。",
+      "url": "https://www.cypress-all.co.jp/web-design",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.cypress-all.co.jp/#organization",
+        "name": "株式会社サイプレス",
+        "url": "https://www.cypress-all.co.jp/",
+      },
+      "areaServed": [
+        { "@type": "State", "name": "東京都" },
+        { "@type": "AdministrativeArea", "name": "全国（オンライン対応）" },
+      ],
+      "serviceType": "Webサイト制作・ホームページ制作",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "中小企業・店舗・士業・医療機関",
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ホームページ制作サービスメニュー",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "コーポレートサイト制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO特化サイト制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ランディングページ制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Next.js高速サイト制作" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress制作" } },
+        ],
+      },
+    },
+    {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "Webサイト制作の費用相場はどのくらいですか？", acceptedAnswer: { "@type": "Answer", text: "シンプルなコーポレートサイト（5〜10ページ）で50〜150万円、SEO特化サイト・採用サイトで100〜300万円、EC機能付きサイトで200万円〜が一般的な相場です。フリーランスへの依頼は30〜80万円と安価ですが、品質・保守体制に差があります。まずは要件を整理した上でお見積もりを取ることをお勧めします。" } },

@@ -11,7 +11,7 @@ import FinalContactBand from "@/components/home/FinalContactBand";
 import { getLatestColumns } from "@/lib/data/columns";
 
 export const metadata: Metadata = {
-  title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
+  title: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜葛飾区Webマーケティング",
   description:
     "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・店舗のWeb集客を設計から運用まで支援します。",
   keywords: [

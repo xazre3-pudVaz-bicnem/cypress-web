@@ -137,6 +137,31 @@ export default function Page() {
         ],
       },
       {
+        "@type": "LocalBusiness",
+        "@id": "https://www.cypress-all.co.jp/area/katsushika#localbusiness",
+        name: "株式会社サイプレス",
+        alternateName: "Cypress",
+        url: "https://www.cypress-all.co.jp/area/katsushika",
+        description:
+          "東京都葛飾区を拠点に、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用を提供するWebマーケティング会社。葛飾区・足立区・江戸川区など近隣エリアの中小企業・地域店舗の集客を支援します。",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "JP",
+          postalCode: "124-0816",
+          addressRegion: "東京都",
+          addressLocality: "葛飾区",
+          streetAddress: "白鳥4-6-1-623",
+        },
+        email: "consulting.meo@gmail.com",
+        areaServed: [
+          { "@type": "AdministrativeArea", name: "東京都葛飾区" },
+          { "@type": "AdministrativeArea", name: "東京都足立区" },
+          { "@type": "AdministrativeArea", name: "東京都江戸川区" },
+          { "@type": "AdministrativeArea", name: "東京都墨田区" },
+        ],
+        knowsAbout: ["MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "SNS運用", "Googleビジネスプロフィール最適化"],
+      },
+      {
         "@type": "FAQPage",
         mainEntity: faqItems.map((item) => ({
           "@type": "Question",
@@ -488,6 +513,39 @@ export default function Page() {
         </section>
 
         <FaqSection items={faqItems} heading="葛飾区に関するよくある質問" bgColor="#F9F8F5" />
+
+        {/* 成功事例への誘導 */}
+        <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Success Cases</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "26px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              業種別・施策別のWeb集客成功事例
+            </h2>
+            <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.9", maxWidth: "620px", marginBottom: "24px" }}>
+              飲食店・美容室・クリニックなど業種別、MEO・SEO・ホームページ制作など施策別の成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "成功事例一覧", href: "/cases" },
+                { label: "MEO対策の成功事例", href: "/cases/service/meo" },
+                { label: "SEO対策の成功事例", href: "/cases/service/seo" },
+                { label: "ホームページ制作の成功事例", href: "/cases/service/web-design" },
+                { label: "飲食店の成功事例", href: "/cases/industry/restaurant" },
+                { label: "美容室・サロンの成功事例", href: "/cases/industry/beauty-salon" },
+                { label: "クリニックの成功事例", href: "/cases/industry/clinic" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="葛飾区のWeb集客、まずは無料相談から"

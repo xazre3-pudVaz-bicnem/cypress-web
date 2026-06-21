@@ -20,6 +20,16 @@ interface Props {
 
 const BASE = "https://www.cypress-all.co.jp";
 
+// サービス別OGP画像（public/ に実在するファイルのみ）
+const SERVICE_OGP_IMAGES: Record<string, string> = {
+  meo: "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+  seo: "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+  aio: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+  "web-design": "/ChatGPT Image 2026年6月13日 20_02_56.png",
+  sns: "/ChatGPT Image 2026年6月13日 20_01_28.png",
+  lp: "/ChatGPT Image 2026年6月13日 20_02_56.png",
+};
+
 export async function generateStaticParams() {
   return getAllServiceSlugs().map((service) => ({ service }));
 }
@@ -31,11 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cases = getCasesByService(service);
   const title = `${label}の成功事例${cases.length}件｜業種別の施策内容｜株式会社サイプレス`;
   const description = `株式会社サイプレスの${label}成功事例${cases.length}件。飲食店・美容室・整体院・建設業など業種別に、${label}の課題から施策・改善までの進め方を公開しています。`;
+  const ogpImage = SERVICE_OGP_IMAGES[service] ?? "/hero.png";
   return {
     title,
     description: description.slice(0, 118),
     keywords: [`${label} 事例`, `${label} 成功事例`, `${label} 業種別`, "Web集客 事例"],
-    openGraph: { title, description, images: [{ url: "/hero.png", width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
+    openGraph: { title, description, images: [{ url: ogpImage, width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `${BASE}/cases/service/${service}` },
   };
