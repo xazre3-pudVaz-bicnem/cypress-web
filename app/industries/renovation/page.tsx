@@ -121,6 +121,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/construction", label: "建設・リフォームの成功事例", desc: "リフォーム会社のWeb集客成功事例" },
   { href: "/industries/renovation/meo", label: "リフォーム会社のMEO対策", desc: "Googleマップ上位表示で見積もり依頼増加" },
   { href: "/industries/renovation/seo", label: "リフォーム会社のSEO対策", desc: "施工事例・費用記事で長期集客" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },

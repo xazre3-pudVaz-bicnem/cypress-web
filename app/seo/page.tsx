@@ -297,6 +297,8 @@ const relatedLinks = [
   { href: "/guide/how-to-choose-seo-company", label: "SEO会社の選び方", desc: "外注先を選ぶポイント" },
   { href: "/cost/seo", label: "SEO対策の費用", desc: "料金相場と費用対効果" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援内容" },
+  { href: "/cases/service/seo", label: "SEO対策の成功事例", desc: "業種別のSEO成功事例一覧" },
+  { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
 ];
 
 export default function SeoPage() {
@@ -551,6 +553,39 @@ export default function SeoPage() {
         </section>
 
         <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#F9F8F5" />
+
+        {/* SEO成功事例 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SEO対策の成功事例
+            </h2>
+            <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
+              飲食店・美容室・クリニック・工務店など、業種別のSEO対策成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "SEO対策の成功事例一覧", href: "/cases/service/seo" },
+                { label: "飲食店のSEO事例", href: "/cases/industry/restaurant" },
+                { label: "美容室のSEO事例", href: "/cases/industry/beauty-salon" },
+                { label: "整体・整骨院のSEO事例", href: "/cases/industry/relaxation" },
+                { label: "クリニック・医療のSEO事例", href: "/cases/industry/clinic" },
+                { label: "建設・リフォームのSEO事例", href: "/cases/industry/construction" },
+                { label: "不動産会社のSEO事例", href: "/cases/industry/real-estate" },
+                { label: "学習塾・スクールのSEO事例", href: "/cases/industry/school" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <RelatedPages links={relatedLinks} />
 

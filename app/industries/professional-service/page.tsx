@@ -107,6 +107,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/professional", label: "士業・専門職の成功事例", desc: "士業のWeb集客成功事例" },
   { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎知識と手法" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "士業向け検索上位表示" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "信頼性の高い事務所サイト" },

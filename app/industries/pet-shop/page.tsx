@@ -141,6 +141,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/pet", label: "ペット関連の成功事例", desc: "ペット関連事業のWeb集客成功事例" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/sns/instagram", label: "Instagram運用支援", desc: "ペット写真でフォロワーを集客に転換" },
   { href: "/services/meo", label: "MEO対策サービス詳細", desc: "Googleビジネスプロフィール最適化" },

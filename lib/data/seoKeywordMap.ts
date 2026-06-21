@@ -1,0 +1,245 @@
+export interface SeoPageConfig {
+  url: string;
+  primaryKeyword: string;
+  secondaryKeywords: string[];
+  searchIntent: "informational" | "commercial" | "transactional" | "navigational";
+  targetUser: string;
+  conversionGoal: string;
+  parentPage: string | null;
+  tier: 1 | 2 | 3 | 4 | 5;
+  contentType: "hub" | "service" | "industry" | "case" | "area" | "faq" | "guide";
+  priority: number; // 1-10
+  canonicalUrl: string;
+  relatedPages: string[];
+  notes?: string;
+}
+
+const BASE = "https://www.cypress-all.co.jp";
+
+export const SEO_KEYWORD_MAP: SeoPageConfig[] = [
+  // === Tier 1: 最重要ページ ===
+  {
+    url: "/",
+    primaryKeyword: "株式会社サイプレス",
+    secondaryKeywords: ["Web集客支援", "MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "葛飾区 Webマーケティング"],
+    searchIntent: "navigational",
+    targetUser: "指名検索ユーザー・初回訪問者",
+    conversionGoal: "サービスページへ誘導・問い合わせ",
+    parentPage: null,
+    tier: 1,
+    contentType: "hub",
+    priority: 10,
+    canonicalUrl: `${BASE}/`,
+    relatedPages: ["/services", "/cases", "/company", "/contact"],
+    notes: "ブランド検索の正規化・会社識別のハブ",
+  },
+  {
+    url: "/seo",
+    primaryKeyword: "SEO対策 中小企業",
+    secondaryKeywords: ["SEO対策 店舗", "SEO対策 東京", "コンテンツSEO", "内部SEO", "SEOコンサル"],
+    searchIntent: "commercial",
+    targetUser: "SEO対策を検討している中小企業・店舗オーナー",
+    conversionGoal: "問い合わせ・無料診断申込",
+    parentPage: "/services",
+    tier: 1,
+    contentType: "hub",
+    priority: 9,
+    canonicalUrl: `${BASE}/seo`,
+    relatedPages: ["/cases/service/seo", "/seo/content-seo", "/seo/technical-seo", "/seo/local-seo"],
+  },
+  {
+    url: "/meo",
+    primaryKeyword: "MEO対策",
+    secondaryKeywords: ["Googleビジネスプロフィール 運用代行", "Googleマップ 集客", "店舗集客 MEO", "MEO対策 東京", "口コミ対策", "GBP最適化"],
+    searchIntent: "commercial",
+    targetUser: "地域ビジネス・店舗の集客を改善したいオーナー",
+    conversionGoal: "問い合わせ・無料診断申込",
+    parentPage: "/services",
+    tier: 1,
+    contentType: "hub",
+    priority: 10,
+    canonicalUrl: `${BASE}/meo`,
+    relatedPages: ["/cases/service/meo", "/meo/google-business-profile", "/meo/review-management"],
+  },
+  {
+    url: "/aio",
+    primaryKeyword: "AIO対策",
+    secondaryKeywords: ["AI検索対策", "ChatGPT検索対策", "生成AI SEO", "AI Overview 対策", "LLMO", "AIに引用されるサイト"],
+    searchIntent: "commercial",
+    targetUser: "AI検索時代の集客改善を検討している経営者",
+    conversionGoal: "問い合わせ・診断申込",
+    parentPage: "/services",
+    tier: 1,
+    contentType: "hub",
+    priority: 8,
+    canonicalUrl: `${BASE}/aio`,
+    relatedPages: ["/cases/service/aio", "/aio/chatgpt", "/aio/ai-overview", "/aio/structured-data"],
+  },
+  {
+    url: "/web-design",
+    primaryKeyword: "ホームページ制作",
+    secondaryKeywords: ["SEOに強いホームページ制作", "中小企業 ホームページ制作", "葛飾区 ホームページ制作", "東京 ホームページ制作", "店舗 ホームページ制作"],
+    searchIntent: "commercial",
+    targetUser: "ホームページ制作・リニューアルを検討している事業者",
+    conversionGoal: "問い合わせ・見積依頼",
+    parentPage: "/services",
+    tier: 1,
+    contentType: "hub",
+    priority: 9,
+    canonicalUrl: `${BASE}/web-design`,
+    relatedPages: ["/cases/service/web-design", "/web-design/corporate-site", "/web-design/seo-site"],
+  },
+  {
+    url: "/sns",
+    primaryKeyword: "SNS運用代行",
+    secondaryKeywords: ["Instagram運用代行", "Google投稿 運用", "店舗 SNS運用", "MEO SNS 連携"],
+    searchIntent: "commercial",
+    targetUser: "SNS運用の内製化が難しい店舗・中小企業",
+    conversionGoal: "問い合わせ・相談申込",
+    parentPage: "/services",
+    tier: 1,
+    contentType: "hub",
+    priority: 7,
+    canonicalUrl: `${BASE}/sns`,
+    relatedPages: ["/cases/service/sns", "/sns/instagram", "/sns/local-sns"],
+  },
+  {
+    url: "/cases",
+    primaryKeyword: "Web集客 成功事例",
+    secondaryKeywords: ["MEO対策 事例", "SEO対策 事例", "ホームページ制作 事例", "中小企業 SEO事例"],
+    searchIntent: "informational",
+    targetUser: "導入を検討中・比較検討中のユーザー",
+    conversionGoal: "詳細ページ回遊・問い合わせ",
+    parentPage: "/",
+    tier: 1,
+    contentType: "hub",
+    priority: 9,
+    canonicalUrl: `${BASE}/cases`,
+    relatedPages: ["/cases/service/meo", "/cases/service/seo", "/cases/service/web-design"],
+  },
+
+  // === Tier 3: 業種系 ===
+  {
+    url: "/industries/restaurant",
+    primaryKeyword: "飲食店 MEO対策",
+    secondaryKeywords: ["飲食店 ホームページ制作", "飲食店 SEO対策", "飲食店 集客 Web"],
+    searchIntent: "commercial",
+    targetUser: "飲食店・カフェ・居酒屋のオーナー",
+    conversionGoal: "サービスページ誘導・問い合わせ",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 8,
+    canonicalUrl: `${BASE}/industries/restaurant`,
+    relatedPages: ["/cases/industry/restaurant", "/meo", "/web-design"],
+  },
+  {
+    url: "/industries/beauty",
+    primaryKeyword: "美容室 ホームページ制作",
+    secondaryKeywords: ["美容室 MEO対策", "美容室 SEO対策", "ヘアサロン 集客 Web"],
+    searchIntent: "commercial",
+    targetUser: "美容室・ヘアサロンのオーナー",
+    conversionGoal: "サービスページ誘導・問い合わせ",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 8,
+    canonicalUrl: `${BASE}/industries/beauty`,
+    relatedPages: ["/cases/industry/beauty-salon", "/meo", "/web-design"],
+  },
+  {
+    url: "/industries/clinic",
+    primaryKeyword: "クリニック ホームページ制作",
+    secondaryKeywords: ["クリニック MEO対策", "医療 SEO対策", "歯科 ホームページ制作"],
+    searchIntent: "commercial",
+    targetUser: "クリニック・歯科院長・医療機関の担当者",
+    conversionGoal: "問い合わせ・診断申込",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 8,
+    canonicalUrl: `${BASE}/industries/clinic`,
+    relatedPages: ["/cases/industry/clinic", "/meo", "/web-design", "/seo"],
+  },
+  {
+    url: "/industries/construction",
+    primaryKeyword: "リフォーム会社 ホームページ制作",
+    secondaryKeywords: ["工務店 SEO対策", "建設業 Web集客", "リフォーム MEO対策"],
+    searchIntent: "commercial",
+    targetUser: "工務店・リフォーム会社の経営者・担当者",
+    conversionGoal: "問い合わせ",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 7,
+    canonicalUrl: `${BASE}/industries/construction`,
+    relatedPages: ["/cases/industry/construction", "/web-design", "/seo"],
+  },
+  {
+    url: "/industries/real-estate",
+    primaryKeyword: "不動産会社 SEO対策",
+    secondaryKeywords: ["不動産 ホームページ制作", "不動産 MEO対策", "賃貸 Web集客"],
+    searchIntent: "commercial",
+    targetUser: "不動産会社・賃貸仲介業の担当者",
+    conversionGoal: "問い合わせ",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 7,
+    canonicalUrl: `${BASE}/industries/real-estate`,
+    relatedPages: ["/cases/industry/real-estate", "/web-design", "/seo"],
+  },
+  {
+    url: "/industries/school",
+    primaryKeyword: "学習塾 SEO対策",
+    secondaryKeywords: ["学習塾 ホームページ制作", "スクール MEO対策", "習い事 Web集客"],
+    searchIntent: "commercial",
+    targetUser: "学習塾・スクール・習い事教室のオーナー",
+    conversionGoal: "問い合わせ",
+    parentPage: "/industries",
+    tier: 3,
+    contentType: "industry",
+    priority: 7,
+    canonicalUrl: `${BASE}/industries/school`,
+    relatedPages: ["/cases/industry/school", "/web-design", "/seo", "/meo"],
+  },
+
+  // === Tier 5: 地域系 ===
+  {
+    url: "/area/katsushika",
+    primaryKeyword: "葛飾区 ホームページ制作",
+    secondaryKeywords: ["葛飾区 SEO対策", "葛飾区 MEO対策", "葛飾区 Web集客"],
+    searchIntent: "commercial",
+    targetUser: "葛飾区内の中小企業・店舗オーナー",
+    conversionGoal: "問い合わせ・相談申込",
+    parentPage: "/area",
+    tier: 5,
+    contentType: "area",
+    priority: 9,
+    canonicalUrl: `${BASE}/area/katsushika`,
+    relatedPages: ["/company/about-cypress", "/meo", "/seo", "/web-design"],
+    notes: "本社所在地のため最高優先度",
+  },
+  {
+    url: "/area/tokyo",
+    primaryKeyword: "東京 MEO対策",
+    secondaryKeywords: ["東京 SEO対策", "東京 ホームページ制作", "東京都 Web集客"],
+    searchIntent: "commercial",
+    targetUser: "東京都内の中小企業・店舗オーナー",
+    conversionGoal: "問い合わせ",
+    parentPage: "/area",
+    tier: 5,
+    contentType: "area",
+    priority: 8,
+    canonicalUrl: `${BASE}/area/tokyo`,
+    relatedPages: ["/area/katsushika", "/meo", "/seo"],
+  },
+];
+
+export const TIER1_PAGES = SEO_KEYWORD_MAP.filter((p) => p.tier === 1);
+export const TIER3_INDUSTRY_PAGES = SEO_KEYWORD_MAP.filter((p) => p.tier === 3);
+export const AREA_PAGES = SEO_KEYWORD_MAP.filter((p) => p.contentType === "area");
+
+export function getSeoConfigByUrl(url: string): SeoPageConfig | undefined {
+  return SEO_KEYWORD_MAP.find((p) => p.url === url);
+}

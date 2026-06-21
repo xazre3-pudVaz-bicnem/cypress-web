@@ -141,6 +141,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/construction", label: "建設・設備工事の成功事例", desc: "建設・工事業のWeb集客成功事例" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/services/meo", label: "MEO対策サービス詳細", desc: "Googleビジネスプロフィール最適化" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },

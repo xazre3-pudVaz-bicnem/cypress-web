@@ -101,6 +101,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/school", label: "学習塾・スクールの成功事例", desc: "スクールのWeb集客成功事例" },
   { href: "/industries/school/meo", label: "学習塾のMEO対策", desc: "Googleマップ上位表示で体験申込みを増加" },
   { href: "/industries/school/seo", label: "学習塾のSEO対策", desc: "検索流入で長期集客を強化" },
   { href: "/industries/children", label: "子ども向け習い事の集客", desc: "習い事・スクールの集客支援" },

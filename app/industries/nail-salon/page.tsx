@@ -129,6 +129,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/beauty-salon", label: "美容室・サロンの成功事例", desc: "サロンのWeb集客成功事例" },
   { href: "/industries/nail-salon/meo", label: "ネイルサロンのMEO対策", desc: "Googleマップ上位表示で来店増加" },
   { href: "/industries/nail-salon/sns", label: "ネイルサロンのSNS運用", desc: "Instagram運用でファンを増やす" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },

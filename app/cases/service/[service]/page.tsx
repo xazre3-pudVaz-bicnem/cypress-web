@@ -118,6 +118,26 @@ export default async function ServiceCasesPage({ params }: Props) {
           </div>
         </section>
 
+        {/* 関連サービスページへのリンク */}
+        <section style={{ background: "#FFFFFF", padding: "40px 0", borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
+            <p style={{ fontSize: "13px", color: "#6B7280", marginBottom: "16px" }}>このサービスについて詳しく</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {SERVICE_HREFS[service] && (
+                <Link href={SERVICE_HREFS[service]} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                  {label}のサービスページを見る →
+                </Link>
+              )}
+              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                成功事例一覧に戻る →
+              </Link>
+              <Link href="/contact" style={{ fontSize: "13px", color: "#C4A96A", textDecoration: "none", padding: "8px 16px", border: "1px solid #C4A96A", background: "#FFFFFF" }}>
+                無料相談・お問い合わせ →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <PageContactCTA />
       </main>
       <Footer />

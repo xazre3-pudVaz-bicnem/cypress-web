@@ -102,6 +102,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/real-estate", label: "不動産会社の成功事例", desc: "不動産業のWeb集客成功事例" },
   { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎知識と手法" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で問い合わせ獲得" },

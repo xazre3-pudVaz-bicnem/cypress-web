@@ -98,6 +98,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/beauty-salon", label: "美容室の成功事例", desc: "美容室・サロンのWeb集客成功事例" },
   { href: "/meo/beauty-salon-meo", label: "美容室のMEO対策", desc: "美容室専門のGoogleマップ対策" },
   { href: "/sns/instagram", label: "Instagram運用代行", desc: "美容室向けInstagram戦略" },
   { href: "/sns/photo-direction", label: "写真ディレクション", desc: "サロン向け撮影・写真戦略" },

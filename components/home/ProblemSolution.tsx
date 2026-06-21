@@ -42,7 +42,7 @@ const ITEMS = [
   },
   {
     problem: "競合に検索で負けている",
-    solution: "競合分析・キーワードギャップ調査・コンテンツ差別化により、ニッチキーワードから確実に上位表示を狙います。",
+    solution: "競合分析・キーワードギャップ調査・コンテンツ差別化により、ニッチキーワードから着実に上位表示を狙います。",
     href: "/problems/losing-to-competitors",
     service: "SEO対策",
     serviceHref: "/services/seo",

@@ -107,6 +107,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/retail", label: "小売・店舗の成功事例", desc: "地域店舗のWeb集客成功事例" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "地域店舗向けサイト制作" },

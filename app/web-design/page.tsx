@@ -172,6 +172,8 @@ const relatedLinks = [
   { href: "/area/tokyo", label: "東京のWeb制作", desc: "東京エリアの制作対応" },
   { href: "/area/katsushika", label: "葛飾区のWeb制作", desc: "葛飾区エリアの制作対応" },
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
+  { href: "/cases/service/web-design", label: "ホームページ制作の成功事例", desc: "業種別の制作成功事例一覧" },
+  { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
 ];
 
 export default function WebDesignPage() {
@@ -369,6 +371,39 @@ export default function WebDesignPage() {
         </section>
 
         <FaqSection items={faqItems} heading="Webサイト制作についてよくある質問" bgColor="#FFFFFF" />
+
+        {/* ホームページ制作の成功事例 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              ホームページ制作の成功事例
+            </h2>
+            <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
+              クリニック・建設業・不動産・学習塾・士業など、業種別のホームページ制作成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "ホームページ制作の成功事例一覧", href: "/cases/service/web-design" },
+                { label: "クリニックのホームページ制作事例", href: "/cases/industry/clinic" },
+                { label: "建設・リフォームのホームページ制作事例", href: "/cases/industry/construction" },
+                { label: "不動産会社のホームページ制作事例", href: "/cases/industry/real-estate" },
+                { label: "学習塾のホームページ制作事例", href: "/cases/industry/school" },
+                { label: "士業のホームページ制作事例", href: "/cases/industry/professional" },
+                { label: "軽貨物・物流のホームページ制作事例", href: "/cases/industry/logistics" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Webサイト制作のご相談・無料見積もり"

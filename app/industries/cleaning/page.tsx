@@ -107,6 +107,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/cleaning", label: "清掃業の成功事例", desc: "清掃業のWeb集客成功事例" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },

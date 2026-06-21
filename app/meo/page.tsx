@@ -767,9 +767,43 @@ export default function MeoIndexPage() {
 
         <FaqSection items={faqItems} heading="MEO対策に関するよくある質問" bgColor="#FFFFFF" />
 
+        {/* MEO成功事例 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              MEO対策の成功事例
+            </h2>
+            <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
+              飲食店・美容室・クリニック・整体院など、業種別のMEO対策成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "MEO対策の成功事例一覧", href: "/cases/service/meo" },
+                { label: "飲食店のMEO事例", href: "/cases/industry/restaurant" },
+                { label: "美容室のMEO事例", href: "/cases/industry/beauty-salon" },
+                { label: "リラクゼーション・整体のMEO事例", href: "/cases/industry/relaxation" },
+                { label: "クリニックのMEO事例", href: "/cases/industry/clinic" },
+                { label: "ペットショップのMEO事例", href: "/cases/industry/pet" },
+                { label: "清掃業のMEO事例", href: "/cases/industry/cleaning" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <RelatedPages
           links={[
             { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+            { href: "/cases/service/meo", label: "MEO対策の成功事例", desc: "業種別のMEO成功事例一覧" },
+            { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
             { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化の完全ガイド" },
             { href: "/meo/review-management", label: "口コミ対策", desc: "高評価口コミを増やす戦略" },
             { href: "/meo/ranking", label: "MEO順位改善", desc: "ローカルパック上位表示の施策" },

@@ -98,6 +98,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/clinic", label: "クリニックの成功事例", desc: "医療機関のWeb集客成功事例" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
   { href: "/meo/clinic-meo", label: "医療クリニックのMEO対策", desc: "Googleマップ上位表示で新患獲得" },
   { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },

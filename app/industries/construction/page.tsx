@@ -98,6 +98,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/construction", label: "建設・リフォームの成功事例", desc: "建設業のWeb集客成功事例" },
   { href: "/seo", label: "SEO対策とは", desc: "検索上位表示の基礎知識" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で見積もり獲得" },

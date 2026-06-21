@@ -129,6 +129,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/relaxation", label: "整体・整骨院の成功事例", desc: "リラクゼーション・整体のWeb集客成功事例" },
   { href: "/industries/osteopathic/meo", label: "整体院のMEO対策", desc: "Googleマップ上位表示で新規患者獲得" },
   { href: "/industries/osteopathic/sns", label: "整体院のSNS運用", desc: "体の悩み解決コンテンツで集客" },
   { href: "/meo", label: "MEO対策とは", desc: "MEOの基礎知識" },

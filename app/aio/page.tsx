@@ -736,9 +736,41 @@ export default function AioIndexPage() {
 
         <FaqSection items={faqItems} heading="AIO対策に関するよくある質問" bgColor="#F9F8F5" />
 
+        {/* AIO成功事例 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              AIO対策の成功事例
+            </h2>
+            <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
+              飲食店・建設業・不動産・士業など、業種別のWeb集客・AIO関連の成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "AIO対策の成功事例一覧", href: "/cases/service/aio" },
+                { label: "飲食店のAIO事例", href: "/cases/industry/restaurant" },
+                { label: "建設業のAIO事例", href: "/cases/industry/construction" },
+                { label: "不動産のAIO事例", href: "/cases/industry/real-estate" },
+                { label: "士業のAIO事例", href: "/cases/industry/professional" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <RelatedPages
           links={[
             { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+            { href: "/cases/service/aio", label: "AIO対策の成功事例", desc: "業種別のAIO成功事例一覧" },
+            { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
             { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTへの引用戦略" },
             { href: "/aio/structured-data", label: "構造化データ", desc: "Schema.org実装ガイド" },
             { href: "/aio/generative-search", label: "生成AI検索対策", desc: "AI Overview対策の詳細" },

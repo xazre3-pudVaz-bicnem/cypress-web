@@ -114,6 +114,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/cases/industry/restaurant", label: "飲食店の成功事例", desc: "飲食店のWeb集客成功事例一覧" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ上位表示の基礎知識" },
   { href: "/sns/instagram", label: "Instagram運用代行", desc: "飲食店向けInstagram戦略" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金プラン" },

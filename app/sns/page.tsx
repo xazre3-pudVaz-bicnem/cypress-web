@@ -176,6 +176,8 @@ const relatedLinks = [
   { href: "/area/tokyo", label: "東京のSNS集客", desc: "東京都内のSNS運用支援" },
   { href: "/knowledge/instagram-business", label: "Instagram活用ガイド", desc: "ビジネスInstagram基礎知識" },
   { href: "/cost/sns", label: "SNS運用の費用", desc: "SNS運用代行の料金目安" },
+  { href: "/cases/service/sns", label: "SNS運用の成功事例", desc: "業種別のSNS運用成功事例一覧" },
+  { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
 ];
 
 export default function SnsPage() {
@@ -402,6 +404,36 @@ export default function SnsPage() {
         </section>
 
         <FaqSection items={faqItems} heading="SNS集客・運用代行についてよくある質問" bgColor="#F9F8F5" />
+
+        {/* SNS運用の成功事例 */}
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+              SNS運用の成功事例
+            </h2>
+            <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
+              飲食店・美容室・クリニックなど、業種別のSNS運用・Web集客の成功事例を公開しています。
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: "SNS運用の成功事例一覧", href: "/cases/service/sns" },
+                { label: "飲食店のSNS事例", href: "/cases/industry/restaurant" },
+                { label: "美容室のSNS事例", href: "/cases/industry/beauty-salon" },
+                { label: "クリニックのSNS事例", href: "/cases/industry/clinic" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SNS集客・運用代行のご相談"
