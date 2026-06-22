@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【不動産会社のSEO・MEO集客】ポータルサイト依存から脱却する自社集客｜株式会社サイプレス",
     description: "不動産会社のWeb集客。MEO・SEO・ホームページ制作でSUUMO・HOME'S依存から脱却します。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月19日 09_10_08 (3).png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -195,8 +195,8 @@ export default function RealEstateIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_20 (5).png"
-            alt="不動産エージェントの物件紹介"
+            src="/ChatGPT Image 2026年6月19日 09_10_08 (3).png"
+            alt="不動産会社のホームページ制作とSEO対策支援イメージ"
             fill
             sizes="100vw"
             priority

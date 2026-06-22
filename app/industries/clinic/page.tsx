@@ -186,8 +186,8 @@ export default function ClinicIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_20 (3).png"
-            alt="歯科クリニックの診察風景"
+            src="/ChatGPT Image 2026年6月19日 09_05_27 (2).png"
+            alt="クリニック・内科医院のWeb集客と患者導線設計イメージ"
             fill
             className="object-cover"
             sizes="100vw"

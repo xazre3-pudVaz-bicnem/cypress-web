@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【ハウスクリーニング・清掃業のMEO・SEO対策】地域検索で選ばれる集客戦略｜株式会社サイプレス",
     description: "ハウスクリーニング・清掃業のWeb集客。MEO・SEO・ホームページで定期受注を増やします。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月14日 21_10_24 (6).png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -192,8 +192,8 @@ export default function CleaningIndustryPage() {
         {/* Full-width image band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/hero.png"
-            alt="プロのハウスクリーニングスタッフが清掃作業を行う様子 — ハウスクリーニング・清掃業のMEO・SEO対策"
+            src="/ChatGPT Image 2026年6月14日 21_10_24 (6).png"
+            alt="清掃業・ハウスクリーニングのMEO対策とWeb集客支援イメージ"
             fill
             className="object-cover"
             sizes="100vw"

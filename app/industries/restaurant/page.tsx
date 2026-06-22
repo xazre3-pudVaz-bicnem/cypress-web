@@ -213,7 +213,7 @@ export default function RestaurantIndustryPage() {
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
             src="/ChatGPT Image 2026年6月14日 21_09_20 (1).png"
-            alt="和食レストランのカウンター"
+            alt="飲食店のMEO対策とホームページ制作支援イメージ"
             fill
             className="object-cover"
             sizes="100vw"

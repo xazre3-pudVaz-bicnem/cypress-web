@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【士業・専門家サービスのSEO・MEO対策】弁護士・税理士・司法書士のWeb集客｜株式会社サイプレス",
     description: "弁護士・税理士・社労士など士業・専門家のWeb集客。SEO・MEO・ホームページで顧問先・相談案件を継続獲得。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月14日 21_13_52.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -192,8 +192,8 @@ export default function ProfessionalServiceIndustryPage() {
         {/* Full-width image band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/hero.png"
-            alt="士業・専門家によるプロフェッショナルなコンサルティングの様子 — 士業・専門家サービスのSEO・MEO対策"
+            src="/ChatGPT Image 2026年6月14日 21_13_52.png"
+            alt="税理士・弁護士・士業のWeb集客と問い合わせ導線設計イメージ"
             fill
             className="object-cover"
             sizes="100vw"

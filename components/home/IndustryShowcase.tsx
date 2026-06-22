@@ -7,28 +7,28 @@ import Link from "next/link";
 
 const INDUSTRIES = [
   { label: "飲食店", en: "Restaurant", href: "/industries/restaurant", img: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png" },
-  { label: "美容室・サロン", en: "Beauty Salon", href: "/industries/beauty", img: "/ChatGPT Image 2026年6月14日 21_09_20 (2).png" },
-  { label: "クリニック", en: "Clinic", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月14日 21_09_20 (3).png" },
-  { label: "建設・リフォーム", en: "Construction", href: "/industries/construction", img: "/ChatGPT Image 2026年6月14日 21_09_20 (4).png" },
-  { label: "不動産", en: "Real Estate", href: "/industries/real-estate", img: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png" },
-  { label: "士業・専門職", en: "Professional", href: "/industries/professional-service", img: "/ChatGPT Image 2026年6月14日 21_09_20 (6).png" },
-  { label: "清掃業", en: "Cleaning", href: "/industries/cleaning", img: "/ChatGPT Image 2026年6月14日 21_09_21 (7).png" },
-  { label: "整骨院", en: "Osteopathic", href: "/industries/osteopathic", img: "/ChatGPT Image 2026年6月14日 21_09_21 (8).png" },
-  { label: "ペット", en: "Pet Shop", href: "/industries/pet-shop", img: "/ChatGPT Image 2026年6月14日 21_09_21 (9).png" },
-  { label: "スクール", en: "School", href: "/industries/school", img: "/ChatGPT Image 2026年6月14日 21_09_21 (10).png" },
+  { label: "美容室・サロン", en: "Beauty Salon", href: "/industries/beauty", img: "/ChatGPT Image 2026年6月19日 09_00_02 (4).png" },
+  { label: "クリニック", en: "Clinic", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月19日 09_05_27 (2).png" },
+  { label: "建設・リフォーム", en: "Construction", href: "/industries/construction", img: "/ChatGPT Image 2026年6月19日 09_10_04 (4).png" },
+  { label: "不動産", en: "Real Estate", href: "/industries/real-estate", img: "/ChatGPT Image 2026年6月19日 09_10_08 (3).png" },
+  { label: "士業・専門職", en: "Professional", href: "/industries/professional-service", img: "/ChatGPT Image 2026年6月14日 21_13_52.png" },
+  { label: "清掃業", en: "Cleaning", href: "/industries/cleaning", img: "/ChatGPT Image 2026年6月14日 21_10_24 (6).png" },
+  { label: "整骨院", en: "Osteopathic", href: "/industries/osteopathic", img: "/ChatGPT Image 2026年6月19日 09_05_31 (8).png" },
+  { label: "ペット", en: "Pet Shop", href: "/industries/pet-shop", img: "/ChatGPT Image 2026年6月19日 09_26_45 (3).png" },
+  { label: "スクール", en: "School", href: "/industries/school", img: "/ChatGPT Image 2026年6月19日 09_27_09 (1).png" },
 ];
 
 const ROW2 = [
-  { label: "ヘアサロン", en: "Hair Salon", href: "/industries/hair-salon", img: "/ChatGPT Image 2026年6月14日 21_10_24 (1).png" },
-  { label: "ネイルサロン", en: "Nail Salon", href: "/industries/nail-salon", img: "/ChatGPT Image 2026年6月14日 21_10_24 (2).png" },
-  { label: "リノベーション", en: "Renovation", href: "/industries/renovation", img: "/ChatGPT Image 2026年6月14日 21_10_24 (3).png" },
-  { label: "水道・設備", en: "Plumbing", href: "/industries/plumbing", img: "/ChatGPT Image 2026年6月14日 21_10_24 (4).png" },
-  { label: "地域店舗", en: "Local Store", href: "/industries/local-store", img: "/ChatGPT Image 2026年6月14日 21_10_24 (5).png" },
-  { label: "歯科・医療", en: "Dental/Medical", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月14日 21_10_24 (6).png" },
-  { label: "飲食店", en: "Restaurant", href: "/industries/restaurant", img: "/ChatGPT Image 2026年6月14日 21_10_25 (7).png" },
-  { label: "美容室・サロン", en: "Beauty Salon", href: "/industries/beauty", img: "/ChatGPT Image 2026年6月14日 21_10_25 (8).png" },
-  { label: "クリニック", en: "Clinic", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月14日 21_10_25 (9).png" },
-  { label: "建設・リフォーム", en: "Construction", href: "/industries/construction", img: "/ChatGPT Image 2026年6月14日 21_10_25 (10).png" },
+  { label: "ヘアサロン", en: "Hair Salon", href: "/industries/hair-salon", img: "/ChatGPT Image 2026年6月19日 08_59_57 (2).png" },
+  { label: "ネイルサロン", en: "Nail Salon", href: "/industries/nail-salon", img: "/ChatGPT Image 2026年6月19日 09_03_13 (4).png" },
+  { label: "リノベーション", en: "Renovation", href: "/industries/renovation", img: "/ChatGPT Image 2026年6月19日 09_10_08 (4).png" },
+  { label: "水道・設備", en: "Plumbing", href: "/industries/plumbing", img: "/ChatGPT Image 2026年6月19日 09_10_12 (8).png" },
+  { label: "地域店舗", en: "Local Store", href: "/industries/local-store", img: "/ChatGPT Image 2026年6月14日 21_10_25 (10).png" },
+  { label: "歯科・医療", en: "Dental/Medical", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月19日 09_05_30 (6).png" },
+  { label: "飲食店", en: "Restaurant", href: "/industries/restaurant", img: "/ChatGPT Image 2026年6月14日 21_10_24 (1).png" },
+  { label: "美容室・サロン", en: "Beauty Salon", href: "/industries/beauty", img: "/ChatGPT Image 2026年6月19日 09_00_04 (8).png" },
+  { label: "クリニック", en: "Clinic", href: "/industries/clinic", img: "/ChatGPT Image 2026年6月19日 09_05_29 (5).png" },
+  { label: "建設・リフォーム", en: "Construction", href: "/industries/construction", img: "/ChatGPT Image 2026年6月19日 09_10_08 (6).png" },
 ];
 
 function IndustryCard({ item }: { item: (typeof INDUSTRIES)[0] }) {

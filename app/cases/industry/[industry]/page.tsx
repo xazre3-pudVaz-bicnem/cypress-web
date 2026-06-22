@@ -39,17 +39,17 @@ const INDUSTRY_PAGE_MAP: Record<string, string> = {
 const INDUSTRY_OGP_IMAGES: Record<string, string> = {
   restaurant: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png",
   "beauty-salon": "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
-  relaxation: "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
-  dental: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
+  relaxation: "/ChatGPT Image 2026年6月19日 09_03_14 (6).png",
+  dental: "/ChatGPT Image 2026年6月19日 09_05_30 (6).png",
   clinic: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
-  construction: "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
-  "real-estate": "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
-  cleaning: "/ChatGPT Image 2026年6月14日 21_09_21 (7).png",
-  logistics: "/ChatGPT Image 2026年6月14日 21_09_21 (9).png",
-  pet: "/ChatGPT Image 2026年6月14日 21_09_21 (8).png",
-  school: "/ChatGPT Image 2026年6月14日 21_09_21 (10).png",
-  retail: "/ChatGPT Image 2026年6月14日 21_09_20 (5).png",
-  professional: "/ChatGPT Image 2026年6月14日 21_09_09 (4).png",
+  construction: "/ChatGPT Image 2026年6月19日 09_10_04 (4).png",
+  "real-estate": "/ChatGPT Image 2026年6月19日 09_10_08 (3).png",
+  cleaning: "/ChatGPT Image 2026年6月14日 21_10_24 (6).png",
+  logistics: "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
+  pet: "/ChatGPT Image 2026年6月19日 09_26_45 (3).png",
+  school: "/ChatGPT Image 2026年6月19日 09_27_09 (1).png",
+  retail: "/ChatGPT Image 2026年6月14日 21_10_25 (10).png",
+  professional: "/ChatGPT Image 2026年6月14日 21_13_52.png",
 };
 
 export async function generateStaticParams() {

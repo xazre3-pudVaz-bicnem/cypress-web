@@ -183,8 +183,8 @@ export default function HairSalonIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_20 (2).png"
-            alt="美容室でのスタイリスト相談"
+            src="/ChatGPT Image 2026年6月19日 08_59_57 (2).png"
+            alt="ヘアサロン・美容室のMEO対策とWeb集客支援イメージ"
             fill
             className="object-cover"
             sizes="100vw"

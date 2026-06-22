@@ -167,7 +167,7 @@ export default function SchoolPage() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_09_21 (10).png" alt="先生と生徒が学ぶ学習塾・スクールの教室 — 学習塾・スクールのMEO対策・Web集客" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月19日 09_27_09 (1).png" alt="学習塾・スクールのSEO対策と問い合わせ導線設計イメージ" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 
