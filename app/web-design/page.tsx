@@ -190,6 +190,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "制作・SEO・LP制作を組み合わせたパッケージ" },
   { href: "/services/web-design", label: "Web制作サービス詳細", desc: "サービス内容と料金プラン" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "制作後の検索集客強化" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ集客" },

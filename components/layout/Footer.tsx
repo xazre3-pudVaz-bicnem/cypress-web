@@ -105,6 +105,7 @@ const COL_AIO_AI: FooterSection[] = [
       { href: "/web-design", label: "Web制作" },
       { href: "/web-design/corporate-site", label: "コーポレートサイト" },
       { href: "/web-design/seo-site", label: "SEO対応サイト" },
+      { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金" },
       { href: "/ai", label: "AI活用支援" },
       { href: "/ai/automation", label: "業務自動化" },
     ],

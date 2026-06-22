@@ -314,6 +314,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "SEO対策を含む制作パッケージのご案内" },
   { href: "/seo/internal-seo", label: "内部SEO", desc: "タイトル・見出し・URL最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったコンテンツ制作" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "表示速度・Core Web Vitals改善" },

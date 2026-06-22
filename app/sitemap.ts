@@ -292,6 +292,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/checklist/website-redesign", "/checklist/analytics-confirmation",
     ], { changeFrequency: "monthly", priority: 0.6 }),
 
+    // 料金パッケージ
+    ...urls([
+      "/pricing/web-growth-package",
+    ], { changeFrequency: "monthly", priority: 0.8 }),
+
     // 費用・料金
     ...urls([
       "/cost",
