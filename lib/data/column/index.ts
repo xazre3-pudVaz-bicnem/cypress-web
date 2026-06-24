@@ -24,6 +24,12 @@ import { NEW_TOKYO_COLUMNS } from "./newTokyoColumns";
 import { NEW_RECRUIT_AGENT_COLUMNS } from "./newRecruitAgentColumns";
 import { NEW_COST_LOCAL_COLUMNS } from "./newCostLocalColumns";
 import { NEW_HIGH_VALUE_COLUMNS } from "./newHighValueColumns";
+import { NEW_HOWTO_COLUMNS } from "./newHowToColumns";
+import { NEW_AIO_ADVANCED_COLUMNS } from "./newAioAdvancedColumns";
+import { NEW_COMPARISON_COLUMNS } from "./newComparisonColumns";
+import { NEW_COST2_COLUMNS } from "./newCost2Columns";
+import { NEW_WARD_COLUMNS } from "./newWardColumns";
+import { NEW_INDUSTRY2_COLUMNS } from "./newIndustry2Columns";
 
 export type { ColumnTopicPage };
 
@@ -53,6 +59,12 @@ export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = [
   ...NEW_RECRUIT_AGENT_COLUMNS,
   ...NEW_COST_LOCAL_COLUMNS,
   ...NEW_HIGH_VALUE_COLUMNS,
+  ...NEW_HOWTO_COLUMNS,
+  ...NEW_AIO_ADVANCED_COLUMNS,
+  ...NEW_COMPARISON_COLUMNS,
+  ...NEW_COST2_COLUMNS,
+  ...NEW_WARD_COLUMNS,
+  ...NEW_INDUSTRY2_COLUMNS,
 ];
 
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {
