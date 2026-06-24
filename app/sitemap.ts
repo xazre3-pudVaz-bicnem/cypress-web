@@ -122,6 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/area", "/area/tokyo", "/area/katsushika", "/area/chiba",
       "/area/saitama", "/area/adachi", "/area/edogawa",
       "/area/sumida", "/area/kanagawa", "/area/nationwide",
+      "/area/arakawa", "/area/koto", "/area/taito",
+      "/area/kita", "/area/toshima",
     ], { changeFrequency: "monthly", priority: 0.7 }),
 
     // エリア × サービス sub-pages
