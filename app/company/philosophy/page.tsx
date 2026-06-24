@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -182,7 +182,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "理念について直接話を聞くことはできますか？",
-    a: "お問い合わせフォームまたはメール（consulting.meo@gmail.com）からご連絡いただければ、代表が直接対応いたします。理念に共感していただいた方からのご連絡をとりわけ歓迎しています。",
+    a: "お問い合わせフォームまたはメール（info@cypress-all.co.jp）からご連絡いただければ、代表が直接対応いたします。理念に共感していただいた方からのご連絡をとりわけ歓迎しています。",
   },
 ];
 

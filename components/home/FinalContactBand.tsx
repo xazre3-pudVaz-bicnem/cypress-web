@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -214,7 +214,7 @@ export default function FinalContactBand() {
               株式会社サイプレス
             </p>
             <p style={{ fontSize: "11px", color: "#9CA3AF", letterSpacing: "0.05em" }}>
-              東京都葛飾区白鳥4-6-1-623&nbsp;&nbsp;|&nbsp;&nbsp;consulting.meo@gmail.com
+              東京都葛飾区白鳥4-6-1-623&nbsp;&nbsp;|&nbsp;&nbsp;info@cypress-all.co.jp
             </p>
           </div>
           <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>

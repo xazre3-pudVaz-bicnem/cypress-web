@@ -7,20 +7,23 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "MEO対策の販売代理店募集｜店舗集客商材を販売したい企業様へ｜株式会社サイプレス",
+  title: "MEO対策の販売代理店募集｜Googleマップ集客商材を副業・本業で販売｜株式会社サイプレス",
   description:
-    "株式会社サイプレスでは、MEO対策・Googleビジネスプロフィール運用を販売いただける代理店様を募集しています。飲食店・美容室・整体・歯科などへの店舗集客提案に強い商材です。",
+    "株式会社サイプレスのMEO対策販売代理店募集。Googleビジネスプロフィール運用・Googleマップ上位表示支援を飲食店・美容室・整体・歯科などへ提案・販売。MEO運用の実務はサイプレスが全対応。副業・個人事業主・法人歓迎。",
   keywords: [
     "MEO対策 代理店募集",
     "MEO対策 販売代理店",
     "Googleビジネスプロフィール 代理店",
     "MEO 商材 代理店",
-    "MEO 取次店",
-    "Googleマップ 代理店",
+    "MEO 取次店 副業",
+    "Googleマップ 代理店 募集",
+    "MEO対策 代理店 報酬",
+    "MEO 代理店 未経験",
+    "店舗集客 代理店",
   ],
   openGraph: {
-    title: "MEO対策の販売代理店募集｜店舗集客商材を販売したい企業様へ｜株式会社サイプレス",
-    description: "MEO対策・Googleビジネスプロフィール運用の販売代理店募集。飲食店・美容室・整体など店舗業種に提案しやすい商材です。",
+    title: "MEO対策の販売代理店募集｜Googleマップ集客商材を副業・本業で販売｜株式会社サイプレス",
+    description: "MEO運用はサイプレスが全対応。代理店は販売に専念するだけ。飲食店・美容室・整体・歯科に提案しやすい店舗集客商材。副業・個人事業主歓迎。",
     locale: "ja_JP",
     type: "website",
   },

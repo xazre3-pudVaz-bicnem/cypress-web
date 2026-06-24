@@ -8,6 +8,12 @@ export interface ColumnTopicPage {
   title: string;
   titleEn: string;
   category: string;
+  categorySlug?: string;
+  primaryKeyword?: string;
+  publishedAt?: string;
+  eyecatchImage?: string;
+  eyecatchAlt?: string;
+  readingTime?: number;
   metaDescription: string;
   intro: string;
   sections: ColumnTopicSection[];

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -7,20 +7,24 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "正社員募集｜Webマーケティング営業・法人営業｜株式会社サイプレス",
+  title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
   description:
-    "株式会社サイプレスの正社員営業職募集。MEO対策・SEO対策・ホームページ制作を中小企業経営者へ提案する提案型法人営業。月給35万円以上・年間休日130日・未経験歓迎。東京葛飾区。",
+    "株式会社サイプレスの営業職（正社員）募集。東京都葛飾区拠点。MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業経営者へ提案する法人営業。月給35万円以上・年間休日130日・学歴不問・未経験歓迎。",
   keywords: [
-    "Webマーケティング 営業 求人",
-    "MEO対策 営業職",
-    "SEO営業 正社員",
-    "未経験 Webマーケティング 求人",
-    "法人営業 正社員 東京",
-    "中小企業向け 営業 求人",
+    "株式会社サイプレス 営業 求人",
+    "Webマーケティング 営業 正社員 東京",
+    "MEO対策 営業職 求人",
+    "SEO営業 正社員 東京",
+    "AIO 営業 求人",
+    "未経験 Webマーケティング 正社員",
+    "法人営業 正社員 東京 葛飾区",
+    "中小企業向け 営業 正社員",
+    "月給35万 営業 東京",
+    "IT 営業 未経験 東京",
   ],
   openGraph: {
-    title: "正社員募集｜Webマーケティング営業・法人営業｜株式会社サイプレス",
-    description: "月給35万円以上・年間休日130日。MEO・SEO・ホームページを中小企業経営者に提案する提案型法人営業。未経験歓迎。",
+    title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
+    description: "月給35万円以上・年間休日130日・未経験歓迎・学歴不問。MEO・SEO・ホームページを東京の中小企業経営者に提案する提案型法人営業。東京都葛飾区拠点の株式会社サイプレス。",
     locale: "ja_JP",
     type: "website",
   },
@@ -728,7 +732,7 @@ export default function RecruitSalesPage() {
                 { label: "設立", value: "2026年5月13日" },
                 { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
-                { label: "お問い合わせ", value: "consulting.meo@gmail.com" },
+                { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
                 <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>

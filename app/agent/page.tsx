@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -7,20 +7,26 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "販売代理店募集｜ホームページ制作・MEO対策・SEO対策の代理店募集｜株式会社サイプレス",
+  title: "販売代理店募集｜MEO・SEO・ホームページ制作を副業・本業で販売｜株式会社サイプレス",
   description:
-    "株式会社サイプレスの販売代理店募集。MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業へ販売。制作・保守・運用はサイプレスが全対応。代理店は販売に専念。",
+    "株式会社サイプレスの販売代理店募集。MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業へ販売。技術・制作リソース不要。制作・保守・運用はサイプレスが全対応。副業・法人・個人事業主歓迎。東京葛飾区。",
   keywords: [
+    "株式会社サイプレス 代理店",
     "販売代理店 募集 Webマーケティング",
-    "MEO対策 代理店",
-    "SEO対策 代理店",
-    "ホームページ制作 代理店",
+    "MEO対策 代理店 募集",
+    "SEO対策 代理店 募集",
+    "ホームページ制作 代理店 募集",
+    "AIO対策 代理店",
     "副業 Webマーケティング 代理店",
-    "副収入 代理店",
+    "副収入 代理店 東京",
+    "IT 代理店 副業",
+    "Webマーケティング 取次店",
+    "Web制作 代理店 未経験",
+    "東京 Webマーケティング 代理店",
   ],
   openGraph: {
-    title: "販売代理店募集｜ホームページ制作・MEO対策・SEO対策の代理店募集｜株式会社サイプレス",
-    description: "制作・保守・運用はサイプレスが全対応。代理店は販売に専念するだけ。Web制作リソース不要。",
+    title: "販売代理店募集｜MEO・SEO・ホームページ制作を副業・本業で販売｜株式会社サイプレス",
+    description: "技術・制作リソース不要。副業・法人・個人事業主歓迎。MEO対策・SEO対策・ホームページ制作・AIO対策の販売代理店を全国で募集。制作・保守・運用はサイプレスが全対応。",
     locale: "ja_JP",
     type: "website",
   },
@@ -670,7 +676,7 @@ export default function AgentPage() {
                 { label: "設立", value: "2026年5月13日" },
                 { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
-                { label: "お問い合わせ", value: "consulting.meo@gmail.com" },
+                { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
                 <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>

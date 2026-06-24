@@ -306,7 +306,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/cost/comparison", "/cost/small-business",
       "/cost/monthly-breakdown", "/cost/free-consultation",
       "/cost/ai-cost-reduction", "/cost/total-package",
-    ], { changeFrequency: "monthly", priority: 0.7 }),
+    ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // ご利用の流れ
     ...urls([
@@ -353,6 +353,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { changeFrequency: "monthly", priority: 0.75 }
     ),
 
+    // コラムカテゴリページ
+    ...urls([
+      "/column/category/seo",
+      "/column/category/meo",
+      "/column/category/aio",
+      "/column/category/web-design",
+      "/column/category/industries",
+      "/column/category/local-seo",
+      "/column/category/case-study",
+      "/column/category/sns",
+      "/column/category/search-console",
+      "/column/category/web-marketing",
+    ], { changeFrequency: "weekly", priority: 0.85 }),
+
     // コラム専門ガイド（トピックページ）
     ...urls(
       ALL_COLUMN_TOPICS.map((t) => `/column/${t.slug}`),
@@ -376,13 +390,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 採用
     ...urls([
       "/recruit", "/recruit/sales",
-    ], { changeFrequency: "monthly", priority: 0.7 }),
+    ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // パートナー・代理店
     ...urls([
       "/agent", "/agent/web-design", "/agent/meo", "/agent/seo", "/agent/aio", "/agent/faq",
       "/partner/referral",
-    ], { changeFrequency: "monthly", priority: 0.7 }),
+    ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // その他
     ...urls([

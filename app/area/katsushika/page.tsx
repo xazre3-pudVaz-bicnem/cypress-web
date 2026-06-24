@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
@@ -152,7 +152,7 @@ export default function Page() {
           addressLocality: "葛飾区",
           streetAddress: "白鳥4-6-1-623",
         },
-        email: "consulting.meo@gmail.com",
+        email: "info@cypress-all.co.jp",
         areaServed: [
           { "@type": "AdministrativeArea", name: "東京都葛飾区" },
           { "@type": "AdministrativeArea", name: "東京都足立区" },

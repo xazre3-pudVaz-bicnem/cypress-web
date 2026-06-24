@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -295,11 +295,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:consulting.meo@gmail.com"
+                  href="mailto:info@cypress-all.co.jp"
                   className="text-[12px] transition-colors hover:text-[#e8e4dc]"
                   style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
                 >
-                  consulting.meo@gmail.com
+                  info@cypress-all.co.jp
                 </a>
               </li>
               <li

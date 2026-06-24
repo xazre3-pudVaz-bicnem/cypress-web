@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -63,7 +63,7 @@ const PROMISES = [
 const FAQ_ITEMS = [
   {
     q: "代表の織田春樹に直接相談することはできますか？",
-    a: "はい、可能です。初回のご相談は代表が直接対応しております。メール（consulting.meo@gmail.com）またはお問い合わせフォームからご連絡ください。内容を確認のうえ、通常2営業日以内にご返信いたします。",
+    a: "はい、可能です。初回のご相談は代表が直接対応しております。メール（info@cypress-all.co.jp）またはお問い合わせフォームからご連絡ください。内容を確認のうえ、通常2営業日以内にご返信いたします。",
   },
   {
     q: "会社の規模はどのくらいですか？",
@@ -351,7 +351,7 @@ export default function MessagePage() {
                         { label: "会社名", value: "株式会社サイプレス" },
                         { label: "設立", value: "2026年5月13日" },
                         { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
-                        { label: "メール", value: "consulting.meo@gmail.com" },
+                        { label: "メール", value: "info@cypress-all.co.jp" },
                       ].map((row) => (
                         <div key={row.label}>
                           <span className="block text-[11px] font-medium mb-0.5" style={{ color: "#9CA3AF" }}>

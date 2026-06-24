@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -7,20 +7,24 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス",
+  title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
   description:
-    "株式会社サイプレスの採用情報。MEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業（正社員）を募集中。月給35万円以上・年間休日130日・未経験歓迎。東京葛飾区。",
+    "株式会社サイプレスの採用情報。東京都葛飾区拠点のWebマーケティング会社でMEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業（正社員）を募集中。月給35万円以上・年間休日130日・未経験歓迎。",
   keywords: [
+    "株式会社サイプレス 求人",
     "Webマーケティング 営業 求人",
-    "MEO 営業 求人",
-    "SEO 営業 求人",
-    "未経験 Webマーケティング 営業",
-    "東京 Webマーケティング 求人",
+    "Webマーケティング 正社員 東京",
+    "MEO対策 営業 求人",
+    "SEO営業 求人 東京",
+    "未経験 Webマーケティング 営業 東京",
+    "東京葛飾区 営業 求人",
+    "法人営業 未経験 東京",
     "AI マーケティング 営業 正社員",
+    "Webマーケティング会社 求人 東京",
   ],
   openGraph: {
-    title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス",
-    description: "Webマーケティング営業（正社員）募集。月給35万円以上・年間休日130日・未経験歓迎。",
+    title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
+    description: "東京都葛飾区拠点のWebマーケティング会社。Webマーケティング営業（正社員）募集。月給35万円以上・年間休日130日・未経験歓迎・学歴不問。",
     locale: "ja_JP",
     type: "website",
   },
@@ -79,6 +83,61 @@ const faqItems = [
   },
 ];
 
+const jobPostingSchema = {
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  title: "Webマーケティング営業職（正社員）",
+  description: "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を東京23区の中小企業経営者へ提案する提案型法人営業。未経験歓迎。月給35万円以上・年間休日130日。株式会社サイプレス（東京都葛飾区）。",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "株式会社サイプレス",
+    value: "cypress-sales-recruit-2026",
+  },
+  hiringOrganization: {
+    "@type": "Organization",
+    name: "株式会社サイプレス",
+    sameAs: "https://www.cypress-all.co.jp",
+    logo: "https://www.cypress-all.co.jp/logo.png",
+  },
+  jobLocation: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "白鳥4-6-1-623",
+      addressLocality: "葛飾区",
+      addressRegion: "東京都",
+      postalCode: "124-0816",
+      addressCountry: "JP",
+    },
+  },
+  employmentType: "FULL_TIME",
+  datePosted: "2026-06-01",
+  validThrough: "2026-12-31",
+  baseSalary: {
+    "@type": "MonetaryAmount",
+    currency: "JPY",
+    value: {
+      "@type": "QuantitativeValue",
+      minValue: 350000,
+      unitText: "MONTH",
+    },
+  },
+  jobBenefits: "年間休日130日、正社員雇用、未経験歓迎、入社研修・OJTサポートあり",
+  qualifications: "学歴・職歴・資格不問。成長意欲がある方歓迎。営業・Webマーケティング未経験可。",
+  responsibilities: "中小企業経営者へのMEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援の提案営業",
+  applicantLocationRequirements: { "@type": "Country", name: "Japan" },
+  jobLocationType: "TELECOMMUTE",
+  workHours: "月〜金（詳細は面談時にご案内）",
+  industry: "Webマーケティング・IT",
+  occupationalCategory: "営業・法人営業",
+  directApply: true,
+  applicationContact: {
+    "@type": "ContactPoint",
+    email: "info@cypress-all.co.jp",
+    contactType: "HR",
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -101,6 +160,7 @@ const faqSchema = {
 export default function RecruitPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
@@ -506,7 +566,7 @@ export default function RecruitPage() {
                 { label: "設立", value: "2026年5月13日" },
                 { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
-                { label: "お問い合わせ", value: "consulting.meo@gmail.com" },
+                { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
                 <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -399,7 +399,7 @@ export default function ReferralPartnerPage() {
                 { label: "設立", value: "2026年5月13日" },
                 { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
-                { label: "お問い合わせ", value: "consulting.meo@gmail.com" },
+                { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
                 <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>

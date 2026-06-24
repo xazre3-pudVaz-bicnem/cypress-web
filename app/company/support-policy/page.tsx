@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -38,7 +38,7 @@ const faqItems = [
   },
   {
     q: "連絡はメール以外でも対応していますか？",
-    a: "主な連絡手段はメール（consulting.meo@gmail.com）です。オンラインミーティング（Zoom・Google Meet等）でのご相談も随時対応しています。ご希望の連絡手段はご契約時にすり合わせます。",
+    a: "主な連絡手段はメール（info@cypress-all.co.jp）です。オンラインミーティング（Zoom・Google Meet等）でのご相談も随時対応しています。ご希望の連絡手段はご契約時にすり合わせます。",
   },
   {
     q: "月次レポートはどのような形式で届きますか？",
@@ -402,7 +402,7 @@ export default function SupportPolicyPage() {
                 {
                   label: "メールでのお問い合わせ",
                   detail:
-                    "consulting.meo@gmail.com 宛にご連絡ください。施策に関するご質問・資料のご送付・変更ご要望など、幅広いご相談に対応します。原則24時間以内（土日祝は翌営業日）にご返信します。",
+                    "info@cypress-all.co.jp 宛にご連絡ください。施策に関するご質問・資料のご送付・変更ご要望など、幅広いご相談に対応します。原則24時間以内（土日祝は翌営業日）にご返信します。",
                 },
                 {
                   label: "オンラインミーティング",

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
@@ -390,7 +390,7 @@ export default function Page() {
                   - [AIO対策](https://www.cypress-all.co.jp/aio): AIO対策の専門知識
                 </p>
                 <p style={{ color: "#c4b89a", marginBottom: "4px" }}>## 連絡先</p>
-                <p style={{ color: "#94a3b8" }}>consulting.meo@gmail.com | 東京都</p>
+                <p style={{ color: "#94a3b8" }}>info@cypress-all.co.jp | 東京都</p>
               </div>
             </div>
           </div>

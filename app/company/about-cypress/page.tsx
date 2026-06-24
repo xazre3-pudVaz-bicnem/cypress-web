@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -30,41 +30,115 @@ export const metadata: Metadata = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "株式会社サイプレス",
-  alternateName: "Cypress",
-  url: "https://www.cypress-all.co.jp/",
-  logo: "https://www.cypress-all.co.jp/logo.png",
-  foundingDate: "2026-05-13",
-  founder: { "@type": "Person", name: "織田 春樹" },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "JP",
-    postalCode: "124-0816",
-    addressRegion: "東京都",
-    addressLocality: "葛飾区",
-    streetAddress: "白鳥4-6-1-623",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "consulting.meo@gmail.com",
-    contactType: "customer service",
-    availableLanguage: "Japanese",
-  },
-  description:
-    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を設計から運用まで支援します。",
-  knowsAbout: [
-    "ホームページ制作",
-    "SEO対策",
-    "MEO対策",
-    "AIO対策",
-    "SNS運用",
-    "AI活用支援",
-    "Webマーケティング",
-    "Googleビジネスプロフィール最適化",
-    "AI検索最適化",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+      "@id": "https://www.cypress-all.co.jp/#organization",
+      name: "株式会社サイプレス",
+      legalName: "株式会社サイプレス",
+      alternateName: ["Cypress Inc.", "サイプレス", "Cypress", "cypress-all"],
+      url: "https://www.cypress-all.co.jp/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.cypress-all.co.jp/logo.png",
+        width: 200,
+        height: 60,
+      },
+      foundingDate: "2026-05-13",
+      founder: {
+        "@type": "Person",
+        "@id": "https://www.cypress-all.co.jp/company/message#representative",
+        name: "織田 春樹",
+        alternateName: "Haruki Oda",
+        jobTitle: "代表取締役",
+        worksFor: { "@id": "https://www.cypress-all.co.jp/#organization" },
+        knowsAbout: ["MEO対策", "SEO対策", "AIO対策", "Webマーケティング", "ホームページ制作", "AI活用"],
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "JP",
+        postalCode: "124-0816",
+        addressRegion: "東京都",
+        addressLocality: "葛飾区",
+        streetAddress: "白鳥4-6-1-623",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 35.7524,
+        longitude: 139.8471,
+      },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          email: "info@cypress-all.co.jp",
+          contactType: "customer service",
+          availableLanguage: "Japanese",
+          contactOption: "TollFree",
+        },
+        {
+          "@type": "ContactPoint",
+          email: "info@cypress-all.co.jp",
+          contactType: "sales",
+          availableLanguage: "Japanese",
+        },
+      ],
+      description:
+        "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を設計から運用まで支援します。",
+      knowsAbout: [
+        "ホームページ制作",
+        "SEO対策",
+        "MEO対策",
+        "AIO対策",
+        "SNS運用",
+        "AI活用支援",
+        "Webマーケティング",
+        "Googleビジネスプロフィール最適化",
+        "AI検索最適化",
+        "コンテンツSEO",
+        "テクニカルSEO",
+        "ローカルSEO",
+        "Next.js",
+        "WordPress",
+        "構造化データ",
+        "E-E-A-T",
+        "中小企業Web集客",
+      ],
+      areaServed: [
+        { "@type": "City", name: "葛飾区" },
+        { "@type": "City", name: "足立区" },
+        { "@type": "City", name: "江戸川区" },
+        { "@type": "City", name: "墨田区" },
+        { "@type": "City", name: "江東区" },
+        { "@type": "City", name: "荒川区" },
+        { "@type": "State", name: "東京都" },
+        { "@type": "State", name: "神奈川県" },
+        { "@type": "State", name: "埼玉県" },
+        { "@type": "State", name: "千葉県" },
+        { "@type": "Country", name: "日本" },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Webマーケティングサービス",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "MEO対策", url: "https://www.cypress-all.co.jp/services/meo" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO対策", url: "https://www.cypress-all.co.jp/services/seo" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "AIO対策", url: "https://www.cypress-all.co.jp/services/aio" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "ホームページ制作", url: "https://www.cypress-all.co.jp/services/web-design" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS運用", url: "https://www.cypress-all.co.jp/services/sns" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI活用支援", url: "https://www.cypress-all.co.jp/services/ai" } },
+        ],
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.cypress-all.co.jp/company/about-cypress#webpage",
+      url: "https://www.cypress-all.co.jp/company/about-cypress",
+      name: "株式会社サイプレスとは｜東京・葛飾区のWebマーケティング会社",
+      isPartOf: { "@id": "https://www.cypress-all.co.jp/#website" },
+      about: { "@id": "https://www.cypress-all.co.jp/#organization" },
+      inLanguage: "ja",
+    },
   ],
-  areaServed: ["東京都", "葛飾区", "神奈川県", "埼玉県", "千葉県", "全国"],
 };
 
 const breadcrumbJsonLd = {
@@ -193,7 +267,7 @@ export default function AboutCypressPage() {
                 { label: "代表取締役", value: "織田 春樹（Haruki Oda）" },
                 { label: "設立", value: "2026年5月13日" },
                 { label: "所在地", value: "〒124-0816 東京都葛飾区白鳥4-6-1-623" },
-                { label: "メール", value: "consulting.meo@gmail.com" },
+                { label: "メール", value: "info@cypress-all.co.jp" },
                 { label: "事業内容", value: "ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援" },
                 { label: "対応エリア", value: "東京都・神奈川県・埼玉県・千葉県（全国オンライン対応）" },
               ].map((row) => (

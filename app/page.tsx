@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -11,80 +11,102 @@ import FinalContactBand from "@/components/home/FinalContactBand";
 import { getLatestColumns } from "@/lib/data/columns";
 
 export const metadata: Metadata = {
-  title: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜葛飾区Webマーケティング",
+  title: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜東京葛飾区のWebマーケティング会社",
   description:
-    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・店舗のWeb集客を設計から運用まで支援します。",
+    "株式会社サイプレスは東京都葛飾区拠点のWebマーケティング会社。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、東京23区・全国の中小企業のWeb集客を一気通貫で支援します。初回相談無料。",
   keywords: [
     "株式会社サイプレス",
+    "サイプレス 東京",
     "Cypress Webマーケティング",
-    "MEO対策",
-    "SEO対策",
-    "AIO対策",
-    "ホームページ制作",
-    "Webマーケティング",
-    "葛飾区 SEO",
-    "葛飾区 MEO",
-    "中小企業 Web集客",
-    "AI検索対策",
-    "Googleマップ集客",
+    "MEO対策 東京",
+    "SEO対策 東京",
+    "AIO対策 東京",
+    "ホームページ制作 東京",
+    "Webマーケティング 葛飾区",
+    "葛飾区 SEO対策",
+    "葛飾区 MEO対策",
+    "葛飾区 ホームページ制作",
+    "中小企業 Web集客 東京",
+    "AI検索対策 東京",
+    "Googleマップ集客 東京",
+    "東京 Webマーケティング会社",
   ],
   openGraph: {
-    title: "株式会社サイプレス | MEO・SEO・AIO・ホームページ制作",
+    title: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜東京葛飾区のWebマーケティング会社",
     description:
-      "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。",
+      "東京都葛飾区拠点のWebマーケティング会社。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援。東京23区・全国の中小企業のWeb集客を一気通貫で支援します。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "株式会社サイプレス 東京葛飾区のWebマーケティング会社" }],
   },
+  twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp" },
 };
 
-const organizationJsonLd = {
+// layout.tsx で Organization + WebSite スキーマ（@id付き）を出力済みのため、
+// homepage では WebPage スキーマ + speakable のみ追加する
+const homePageJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "株式会社サイプレス",
-  alternateName: "Cypress",
-  url: "https://www.cypress-all.co.jp/",
-  logo: "https://www.cypress-all.co.jp/logo.png",
-  foundingDate: "2026-05-13",
-  founder: { "@type": "Person", name: "織田 春樹" },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "JP",
-    postalCode: "124-0816",
-    addressRegion: "東京都",
-    addressLocality: "葛飾区",
-    streetAddress: "白鳥4-6-1-623",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "consulting.meo@gmail.com",
-    contactType: "customer service",
-    availableLanguage: "Japanese",
-  },
-  description:
-    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を設計から運用まで支援します。",
-  knowsAbout: [
-    "ホームページ制作",
-    "SEO対策",
-    "MEO対策",
-    "AIO対策",
-    "SNS運用",
-    "AI活用支援",
-    "Webマーケティング",
-    "Googleビジネスプロフィール最適化",
-    "AI検索最適化",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.cypress-all.co.jp/#webpage",
+      url: "https://www.cypress-all.co.jp/",
+      name: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜葛飾区Webマーケティング",
+      description:
+        "株式会社サイプレスは東京都葛飾区を拠点に、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を提供するWebマーケティング会社です。中小企業・地域店舗のWeb集客を一気通貫で支援します。",
+      inLanguage: "ja",
+      isPartOf: { "@id": "https://www.cypress-all.co.jp/#website" },
+      about: { "@id": "https://www.cypress-all.co.jp/#organization" },
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://www.cypress-all.co.jp" },
+        ],
+      },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["h1", "h2", ".hero-description"],
+      },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "株式会社サイプレスはどんな会社ですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "東京都葛飾区（〒124-0816）を拠点とするWebマーケティング会社です。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の6サービスを提供し、東京23区・全国の中小企業・地域店舗のWeb集客を支援します。代表取締役：織田 春樹。設立：2026年5月13日。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "葛飾区でWebマーケティングを依頼できる会社はありますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "株式会社サイプレスは東京都葛飾区に拠点を置き、葛飾区・足立区・江戸川区など東京東部エリアへ訪問対応でMEO対策・SEO対策・ホームページ制作を提供しています。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "MEO対策・SEO対策の費用はいくらですか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "MEO対策は月2〜15万円、SEO対策は月5〜30万円が目安です。ホームページ制作は50〜300万円程度。初回相談は無料です。info@cypress-all.co.jp またはお問い合わせフォームからご連絡ください。",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "ChatGPT・Gemini・PerplexityなどのAI検索にも対応できますか？",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "はい、AIO対策（AI検索最適化）として、ChatGPT・Gemini・Perplexityに引用・推薦されるための構造化データ実装・FAQ設計・E-E-A-T強化・llms.txt設置を実施します。",
+          },
+        },
+      ],
+    },
   ],
-  areaServed: ["東京都", "葛飾区", "神奈川県", "埼玉県", "千葉県", "全国"],
-};
-
-const websiteJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "株式会社サイプレス",
-  alternateName: "Cypress",
-  url: "https://www.cypress-all.co.jp/",
-  description:
-    "株式会社サイプレスの公式サイト。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援のWebマーケティング会社。東京都葛飾区を拠点に全国対応。",
 };
 
 export default function Home() {
@@ -94,11 +116,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageJsonLd) }}
       />
       <Header />
       <main>

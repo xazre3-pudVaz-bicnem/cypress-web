@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -52,7 +52,7 @@ const organizationJsonLd = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "consulting.meo@gmail.com",
+    email: "info@cypress-all.co.jp",
     contactType: "customer service",
     availableLanguage: "Japanese",
   },
@@ -80,7 +80,7 @@ const localBusinessJsonLd = {
     addressLocality: "葛飾区",
     streetAddress: "白鳥4-6-1-623",
   },
-  email: "consulting.meo@gmail.com",
+  email: "info@cypress-all.co.jp",
   description:
     "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。",
   areaServed: ["東京都", "神奈川県", "埼玉県", "千葉県", "全国"],
@@ -92,7 +92,7 @@ const PROFILE_ROWS = [
   { label: "代表取締役", value: "織田 春樹" },
   { label: "設立", value: "2026年5月13日" },
   { label: "所在地", value: "〒124-0816 東京都葛飾区白鳥4-6-1-623" },
-  { label: "メールアドレス", value: "consulting.meo@gmail.com" },
+  { label: "メールアドレス", value: "info@cypress-all.co.jp" },
   {
     label: "事業内容",
     value:
@@ -161,7 +161,7 @@ const PREF_AREAS = [
 const faqItems = [
   {
     q: "問い合わせはどのようにすればいいですか？",
-    a: "お問い合わせページのフォームから24時間受け付けています。また、メール（consulting.meo@gmail.com）でも直接ご連絡いただけます。通常1〜2営業日以内にご返信します。",
+    a: "お問い合わせページのフォームから24時間受け付けています。また、メール（info@cypress-all.co.jp）でも直接ご連絡いただけます。通常1〜2営業日以内にご返信します。",
   },
   {
     q: "東京都外からの依頼も受け付けていますか？",
@@ -376,7 +376,7 @@ export default function ProfilePage() {
               >
                 <p className="text-[13px] font-semibold mb-3" style={{ color: "#0d1b2a" }}>会社への連絡について</p>
                 <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
-                  お問い合わせはメール（consulting.meo@gmail.com）またはお問い合わせフォームから受け付けています。通常1〜2営業日以内にご返信します。
+                  お問い合わせはメール（info@cypress-all.co.jp）またはお問い合わせフォームから受け付けています。通常1〜2営業日以内にご返信します。
                 </p>
                 <div className="mt-5" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
                   <Link
@@ -543,11 +543,11 @@ export default function ProfilePage() {
                   <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
                     <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>メール</p>
                     <a
-                      href="mailto:consulting.meo@gmail.com"
+                      href="mailto:info@cypress-all.co.jp"
                       className="text-[15px] transition-colors hover:text-[#0F172A]"
                       style={{ color: "#374151" }}
                     >
-                      consulting.meo@gmail.com
+                      info@cypress-all.co.jp
                     </a>
                   </div>
                   <div>

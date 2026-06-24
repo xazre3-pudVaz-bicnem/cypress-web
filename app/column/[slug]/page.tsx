@@ -75,12 +75,26 @@ export async function generateMetadata({
     return {
       title: `${topic.title}｜株式会社サイプレス`,
       description: topic.metaDescription,
-      keywords: [topic.category, "株式会社サイプレス", "Webマーケティング"],
+      keywords: [
+        ...(topic.primaryKeyword ? [topic.primaryKeyword] : []),
+        topic.category,
+        "株式会社サイプレス",
+        "Webマーケティング",
+        "東京 葛飾区",
+        "中小企業 Web集客",
+      ],
+      authors: [{ name: "株式会社サイプレス 編集部", url: "https://www.cypress-all.co.jp/company/about-cypress" }],
       openGraph: {
         title: topic.title,
         description: topic.metaDescription,
         locale: "ja_JP",
         type: "article",
+        publishedTime: topic.publishedAt,
+        modifiedTime: topic.publishedAt,
+        authors: ["https://www.cypress-all.co.jp/company/about-cypress"],
+        images: topic.eyecatchImage
+          ? [{ url: topic.eyecatchImage, width: 1200, height: 630, alt: topic.eyecatchAlt }]
+          : undefined,
       },
       twitter: { card: "summary_large_image" },
       alternates: { canonical: `https://www.cypress-all.co.jp/column/${slug}` },
@@ -129,19 +143,51 @@ function ColumnTopicPage({ slug }: { slug: string }) {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `https://www.cypress-all.co.jp/column/${slug}#article`,
     headline: topic.title,
     description: topic.metaDescription,
+    datePublished: topic.publishedAt,
+    dateModified: topic.publishedAt,
+    inLanguage: "ja",
+    keywords: topic.primaryKeyword ?? topic.category,
+    wordCount: (topic.readingTime ?? 8) * 550,
+    image: topic.eyecatchImage
+      ? {
+          "@type": "ImageObject",
+          url: `https://www.cypress-all.co.jp${topic.eyecatchImage}`,
+          width: 1200,
+          height: 630,
+        }
+      : undefined,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.cypress-all.co.jp/column/${slug}`,
+    },
     author: {
       "@type": "Organization",
+      "@id": "https://www.cypress-all.co.jp/#organization",
       name: "株式会社サイプレス",
       url: "https://www.cypress-all.co.jp",
     },
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.cypress-all.co.jp/#organization",
       name: "株式会社サイプレス",
       url: "https://www.cypress-all.co.jp",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.cypress-all.co.jp/logo.png",
+        width: 200,
+        height: 60,
+      },
     },
     url: `https://www.cypress-all.co.jp/column/${slug}`,
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": "https://www.cypress-all.co.jp/#website",
+      name: "株式会社サイプレス 専門コラム",
+      url: "https://www.cypress-all.co.jp",
+    },
   };
 
   const breadcrumbJsonLd = {

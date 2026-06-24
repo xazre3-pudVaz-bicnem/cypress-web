@@ -1,4 +1,4 @@
-# 外部SEO・サイテーション施策チェックリスト
+﻿# 外部SEO・サイテーション施策チェックリスト
 株式会社サイプレス 作成日: 2026-06-21
 
 ## 統一表記（すべての外部媒体で統一すること）
@@ -7,7 +7,7 @@
 - 英語名: Cypress Inc.
 - 所在地: 東京都葛飾区白鳥4-6-1-623（〒124-0816）
 - 公式URL: https://www.cypress-all.co.jp/
-- メール: consulting.meo@gmail.com
+- メール: info@cypress-all.co.jp
 - 事業内容: ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援
 
 ---

@@ -1,4 +1,4 @@
-export interface ProcessPage {
+﻿export interface ProcessPage {
   slug: string;
   title: string;
   titleEn: string;
@@ -20,7 +20,7 @@ export const processPages: ProcessPage[] = [
       {
         num: "01",
         title: "お問い合わせフォームまたはメールで相談申し込み",
-        body: "Webサイトのお問い合わせフォームまたはメール（consulting.meo@gmail.com）にてご連絡ください。「Web集客について相談したい」などのご要望を簡単に記入するだけで構いません。",
+        body: "Webサイトのお問い合わせフォームまたはメール（info@cypress-all.co.jp）にてご連絡ください。「Web集客について相談したい」などのご要望を簡単に記入するだけで構いません。",
         duration: "5分",
       },
       {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/layout/Header";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 const INFO = [
-  { label: "メールアドレス", value: "consulting.meo@gmail.com" },
+  { label: "メールアドレス", value: "info@cypress-all.co.jp" },
   { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
   { label: "対応時間", value: "平日 10:00 – 18:00" },
   { label: "返信目安", value: "2営業日以内" },
