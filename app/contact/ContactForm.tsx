@@ -6,6 +6,14 @@ type FormState = "idle" | "sending" | "success" | "error";
 
 const INQUIRY_TYPES = [
   { value: "general", label: "サービスに関するご相談" },
+  { value: "homepage", label: "ホームページ制作について" },
+  { value: "seo", label: "SEO対策について" },
+  { value: "meo", label: "MEO対策について" },
+  { value: "aio", label: "AIO対策（AI検索対策）について" },
+  { value: "package", label: "Web集客パッケージについて" },
+  { value: "partner", label: "販売パートナー制度について" },
+  { value: "agent", label: "取次店制度について" },
+  { value: "startup", label: "葛飾区での創業・Web集客について" },
   { value: "recruit", label: "採用に関するお問い合わせ" },
   { value: "other", label: "その他" },
 ];

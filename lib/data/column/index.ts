@@ -30,6 +30,9 @@ import { NEW_COMPARISON_COLUMNS } from "./newComparisonColumns";
 import { NEW_COST2_COLUMNS } from "./newCost2Columns";
 import { NEW_WARD_COLUMNS } from "./newWardColumns";
 import { NEW_INDUSTRY2_COLUMNS } from "./newIndustry2Columns";
+import { NEW_STARTUP_COLUMNS } from "./newStartupColumns";
+import { NEW_STARTUP2_COLUMNS } from "./newStartup2Columns";
+import { NEW_STARTUP3_COLUMNS } from "./newStartup3Columns";
 
 export type { ColumnTopicPage };
 
@@ -65,6 +68,9 @@ export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = [
   ...NEW_COST2_COLUMNS,
   ...NEW_WARD_COLUMNS,
   ...NEW_INDUSTRY2_COLUMNS,
+  ...NEW_STARTUP_COLUMNS,
+  ...NEW_STARTUP2_COLUMNS,
+  ...NEW_STARTUP3_COLUMNS,
 ];
 
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {

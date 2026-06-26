@@ -119,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 対応エリア
     ...urls([
-      "/area", "/area/tokyo", "/area/katsushika", "/area/chiba",
+      "/area", "/area/tokyo", "/area/katsushika", "/area/tokyo/katsushika", "/area/chiba",
       "/area/saitama", "/area/adachi", "/area/edogawa",
       "/area/sumida", "/area/kanagawa", "/area/nationwide",
       "/area/arakawa", "/area/koto", "/area/taito",
@@ -130,6 +130,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...urls([
       "/area/tokyo/meo", "/area/tokyo/seo", "/area/tokyo/web-design", "/area/tokyo/aio",
       "/area/katsushika/meo", "/area/katsushika/seo", "/area/katsushika/web-design",
+      "/area/katsushika/web-design-subsidy",
+      "/area/katsushika/start-business",
+      "/area/katsushika/startup-web-marketing",
+      "/area/tokyo/katsushika/start-business",
+      "/area/tokyo/katsushika/start-business-checklist",
+      "/area/tokyo/katsushika/startup-funding",
+      "/area/tokyo/katsushika/startup-web-marketing",
+      "/area/tokyo/katsushika/startup-revenue-streams",
+      "/area/tokyo/katsushika/web-design-subsidy",
       "/area/adachi/meo", "/area/adachi/seo", "/area/adachi/web-design",
       "/area/edogawa/meo", "/area/edogawa/seo",
       "/area/sumida/meo", "/area/sumida/seo",
@@ -397,7 +406,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // パートナー・代理店
     ...urls([
       "/agent", "/agent/web-design", "/agent/meo", "/agent/seo", "/agent/aio", "/agent/faq",
-      "/partner/referral",
+      "/partner", "/partner/referral", "/partner/local-sales-agent", "/partner/katsushika-startup",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // その他

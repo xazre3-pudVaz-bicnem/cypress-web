@@ -512,6 +512,48 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Section: ホームページ制作・補助金活用 */}
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Web Design & Subsidy</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              葛飾区でホームページ制作や補助金活用を検討する場合
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" }}>
+              葛飾区にはホームページ作成費補助など、区内事業者向けの支援制度が用意されている場合があります。制度内容は年度によって変わるため、必ず葛飾区公式サイトで最新情報をご確認ください。補助金の対象になるかどうかだけでなく、SEO・MEO・問い合わせ導線まで含めて制作内容を設計することが、集客効果を高める上で重要です。
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px", marginBottom: "40px" }}>
+              {[
+                { t: "ホームページ制作 + SEO設計", b: "「葛飾区 〇〇」「亀有 〇〇」などのキーワードで検索上位を狙うSEO設計を、制作段階から組み込みます。" },
+                { t: "MEO対策との連動", b: "ホームページとGoogleビジネスプロフィールの情報を統一し、地域検索での信頼性を高めます。" },
+                { t: "問い合わせ導線設計", b: "電話・フォーム・LINE・予約システムなど、業種に最適な問い合わせ導線を設計します。" },
+                { t: "補助金時の見積内容整理", b: "申請に必要な制作内容・見積書の整理をサポートします（採択・支給の保証はできません）。" },
+              ].map((item) => (
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 20px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                  <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
+                </div>
+              ))}
+            </div>
+            <Link
+              href="/area/katsushika/web-design-subsidy"
+              style={{
+                display: "inline-block",
+                background: "#0d1b2a",
+                color: "#fff",
+                padding: "13px 24px",
+                fontSize: "14px",
+                fontWeight: 600,
+                letterSpacing: "0.04em",
+                textDecoration: "none",
+                borderRadius: "4px",
+              }}
+            >
+              葛飾区のホームページ制作・補助金活用について詳しく見る →
+            </Link>
+          </div>
+        </section>
+
         <FaqSection items={faqItems} heading="葛飾区に関するよくある質問" bgColor="#F9F8F5" />
 
         {/* 成功事例への誘導 */}
