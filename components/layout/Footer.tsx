@@ -129,6 +129,7 @@ const COL_INDUSTRIES: FooterSection[] = [
     links: [
       { href: "/area/tokyo", label: "東京都" },
       { href: "/area/katsushika", label: "葛飾区" },
+      { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作" },
       { href: "/area/chiba", label: "千葉県" },
       { href: "/area/saitama", label: "埼玉県" },
       { href: "/area/nationwide", label: "全国対応" },

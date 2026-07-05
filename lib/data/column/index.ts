@@ -33,6 +33,7 @@ import { NEW_INDUSTRY2_COLUMNS } from "./newIndustry2Columns";
 import { NEW_STARTUP_COLUMNS } from "./newStartupColumns";
 import { NEW_STARTUP2_COLUMNS } from "./newStartup2Columns";
 import { NEW_STARTUP3_COLUMNS } from "./newStartup3Columns";
+import { NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS } from "./newKatsushikaWebDesignColumns";
 
 export type { ColumnTopicPage };
 
@@ -71,6 +72,7 @@ export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = [
   ...NEW_STARTUP_COLUMNS,
   ...NEW_STARTUP2_COLUMNS,
   ...NEW_STARTUP3_COLUMNS,
+  ...NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS,
 ];
 
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {

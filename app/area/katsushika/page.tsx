@@ -98,6 +98,10 @@ const faqItems = [
 ];
 
 const relatedLinks = [
+  { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "SEOに強い集客サイト制作" },
+  { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "地域キーワードで上位表示" },
+  { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップで上位表示" },
+  { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "補助金活用の進め方" },
   { href: "/area", label: "対応エリア一覧", desc: "全対応エリアを見る" },
   { href: "/area/adachi", label: "足立区", desc: "足立区の集客支援" },
   { href: "/area/edogawa", label: "江戸川区", desc: "江戸川区の集客支援" },
@@ -200,6 +204,22 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px" }}>
               葛飾区は東京都内でも競合が少ない穴場エリアが多く、正しい施策を実行するだけで短期間での集客改善が見込めます。地元に根ざした視点でビジネスの課題を解決します。
             </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "28px" }}>
+              {[
+                { label: "葛飾区のホームページ制作", href: "/area/katsushika/web-design" },
+                { label: "葛飾区のSEO対策", href: "/area/katsushika/seo" },
+                { label: "葛飾区のMEO対策", href: "/area/katsushika/meo" },
+                { label: "HP制作の補助金活用", href: "/area/katsushika/web-design-subsidy" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#0d1b2a", textDecoration: "none", fontWeight: 600,
+                  padding: "9px 18px", border: "1px solid #0d1b2a", background: "#FFFFFF",
+                  borderRadius: "4px", letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -535,22 +555,41 @@ export default function Page() {
                 </div>
               ))}
             </div>
-            <Link
-              href="/area/katsushika/web-design-subsidy"
-              style={{
-                display: "inline-block",
-                background: "#0d1b2a",
-                color: "#fff",
-                padding: "13px 24px",
-                fontSize: "14px",
-                fontWeight: 600,
-                letterSpacing: "0.04em",
-                textDecoration: "none",
-                borderRadius: "4px",
-              }}
-            >
-              葛飾区のホームページ制作・補助金活用について詳しく見る →
-            </Link>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+              <Link
+                href="/area/katsushika/web-design"
+                style={{
+                  display: "inline-block",
+                  background: "#0d1b2a",
+                  color: "#fff",
+                  padding: "13px 24px",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                  textDecoration: "none",
+                  borderRadius: "4px",
+                }}
+              >
+                葛飾区のホームページ制作について詳しく見る →
+              </Link>
+              <Link
+                href="/area/katsushika/web-design-subsidy"
+                style={{
+                  display: "inline-block",
+                  background: "#FFFFFF",
+                  color: "#0d1b2a",
+                  border: "1px solid #0d1b2a",
+                  padding: "13px 24px",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                  textDecoration: "none",
+                  borderRadius: "4px",
+                }}
+              >
+                補助金活用の進め方を見る →
+              </Link>
+            </div>
           </div>
         </section>
 
