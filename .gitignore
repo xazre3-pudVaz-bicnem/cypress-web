@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 提案資料（公開サイトに載せない・pushしない）
+public/golem-proposal*
+scripts/generate-golem-proposal-pdf.js
