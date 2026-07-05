@@ -204,7 +204,7 @@ export default function HistoryPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              What You'll Learn
+              What You&apos;ll Learn
             </p>
             <h2
               style={{
@@ -417,7 +417,7 @@ export default function HistoryPage() {
         <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Problem We're Solving
+              Problem We&apos;re Solving
             </p>
             <h2
               style={{

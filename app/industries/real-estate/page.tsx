@@ -175,7 +175,7 @@ export default function RealEstateIndustryPage() {
               不動産会社のSEO・MEO・<br />ホームページ集客
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
-              不動産会社のWeb集客は、SUUMO・HOME'Sなどポータルサイトへの依存から脱却し、自社サイトとGoogleマップを軸にした独自集客体制を構築することが長期的な事業成長の鍵です。地域名×物件種別の地域SEOとMEOを組み合わせることで、ポータルサイトに頼らない問い合わせ獲得が実現します。
+              不動産会社のWeb集客は、SUUMO・HOME&apos;Sなどポータルサイトへの依存から脱却し、自社サイトとGoogleマップを軸にした独自集客体制を構築することが長期的な事業成長の鍵です。地域名×物件種別の地域SEOとMEOを組み合わせることで、ポータルサイトに頼らない問い合わせ獲得が実現します。
             </p>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
               不動産の売買・賃貸・管理業ではWebでの信頼構築が来店・問い合わせの決め手になります。「この会社に相談して大丈夫か」という不安を解消するコンテンツ（担当者紹介・成約事例・お客様の声・会社の歴史）と、地域での専門性を示す情報発信が、競合他社との差別化になります。

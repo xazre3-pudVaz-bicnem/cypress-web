@@ -146,7 +146,7 @@ export default function CareerPage() {
               {VOICES.map((v, i) => (
                 <ScrollReveal key={v.name} delay={i * 0.08}>
                   <GlassCard className="p-6">
-                    <p className="text-[#64748B] text-sm leading-relaxed mb-5 italic">"{v.quote}"</p>
+                    <p className="text-[#64748B] text-sm leading-relaxed mb-5 italic">&quot;{v.quote}&quot;</p>
                     <div>
                       <p className="text-[#0F172A] text-sm font-bold">{v.name}</p>
                       <p className="text-[#475569] text-xs mt-0.5">{v.role}</p>

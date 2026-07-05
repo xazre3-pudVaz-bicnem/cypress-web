@@ -243,7 +243,7 @@ export default function PhilosophyPage() {
         <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              What you'll learn
+              What you&apos;ll learn
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
