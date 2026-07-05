@@ -147,7 +147,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
     headline: topic.title,
     description: topic.metaDescription,
     datePublished: topic.publishedAt,
-    dateModified: topic.publishedAt,
+    dateModified: topic.updatedAt ?? topic.publishedAt,
     inLanguage: "ja",
     keywords: topic.primaryKeyword ?? topic.category,
     wordCount: (topic.readingTime ?? 8) * 550,

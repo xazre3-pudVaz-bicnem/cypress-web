@@ -11,6 +11,7 @@ export interface ColumnTopicPage {
   categorySlug?: string;
   primaryKeyword?: string;
   publishedAt?: string;
+  updatedAt?: string;
   eyecatchImage?: string;
   eyecatchAlt?: string;
   readingTime?: number;

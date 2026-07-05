@@ -131,25 +131,65 @@ export default async function BlogPostPage({
       ? RELATED_PAGES[post.category].slice(0, 6)
       : DEFAULT_RELATED;
 
+  const categoryLabel = CATEGORY_NAMES[post.category] || post.category;
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `https://www.cypress-all.co.jp/blog/${slug}#article`,
     headline: post.title,
+    description: post.description || post.title,
     url: `https://www.cypress-all.co.jp/blog/${slug}`,
     datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: "ja",
+    keywords: (post.tags && post.tags.length > 0 ? post.tags.join(", ") : categoryLabel),
+    articleSection: categoryLabel,
+    image: {
+      "@type": "ImageObject",
+      url: "https://www.cypress-all.co.jp/hero.png",
+      width: 1200,
+      height: 630,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.cypress-all.co.jp/blog/${slug}`,
+    },
     author: {
       "@type": "Organization",
+      "@id": "https://www.cypress-all.co.jp/#organization",
       name: "株式会社サイプレス",
       url: "https://www.cypress-all.co.jp",
     },
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.cypress-all.co.jp/#organization",
       name: "株式会社サイプレス",
+      url: "https://www.cypress-all.co.jp",
       logo: {
         "@type": "ImageObject",
         url: "https://www.cypress-all.co.jp/logo.png",
+        width: 200,
+        height: 60,
       },
     },
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": "https://www.cypress-all.co.jp/#website",
+      name: "株式会社サイプレス ブログ",
+      url: "https://www.cypress-all.co.jp",
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://www.cypress-all.co.jp" },
+      { "@type": "ListItem", position: 2, name: "ブログ", item: "https://www.cypress-all.co.jp/blog" },
+      { "@type": "ListItem", position: 3, name: categoryLabel, item: `https://www.cypress-all.co.jp/blog/category/${post.category}` },
+      { "@type": "ListItem", position: 4, name: post.title, item: `https://www.cypress-all.co.jp/blog/${slug}` },
+    ],
   };
 
   return (
@@ -157,6 +197,10 @@ export default async function BlogPostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Header />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
