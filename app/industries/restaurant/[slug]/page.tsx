@@ -23,6 +23,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.title}｜${INDUSTRY_LABEL}向けサービス｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.title}｜${INDUSTRY_LABEL}向けサービス｜株式会社サイプレス`,
+      description: page.metaDescription,
+      images: [{ url: "/hero.png", width: 1200, height: 630 }],
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `https://www.cypress-all.co.jp${INDUSTRY_HREF}/${slug}` },
   };
 }
 

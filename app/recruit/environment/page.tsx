@@ -9,6 +9,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 
 export const metadata: Metadata = {
   title: "職場環境・福利厚生｜フルリモート・年間休日130日｜株式会社サイプレス",
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/environment" },
   description:
     "株式会社サイプレスの職場環境・福利厚生をご紹介。フルリモートワーク・完全週休2日制・年間休日130日・AI活用ツール完備。働きやすさと成果を両立する環境です。",
   keywords: ["職場環境", "福利厚生", "フルリモート", "働きやすい会社", "株式会社サイプレス"],

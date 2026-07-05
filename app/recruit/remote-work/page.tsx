@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
   title: "リモートワーク制度｜株式会社サイプレスの働き方",
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/remote-work" },
   description: "株式会社サイプレスのリモートワーク制度。フルリモート・フルフレックス・AIツール支給・書籍補助で場所を問わず成果を出せる働き方。全国どこからでも働けます。",
 };
 

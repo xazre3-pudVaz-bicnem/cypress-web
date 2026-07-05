@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "サイトマップ｜株式会社サイプレス",
+  alternates: { canonical: "https://www.cypress-all.co.jp/sitemap" },
   description: "株式会社サイプレスのサイトマップ。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の全ページ一覧です。",
 };
 

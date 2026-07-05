@@ -7,6 +7,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
   title: "応募エントリー｜株式会社サイプレス採用情報",
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/entry" },
   description: "株式会社サイプレスへの応募エントリーページ。Web集客支援（SEO・MEO・AI活用・Web制作）に携わりたい方のエントリー受付。リモートワーク対応・フルフレックス。",
 };
 

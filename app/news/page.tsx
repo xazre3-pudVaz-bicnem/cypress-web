@@ -6,6 +6,7 @@ import { NEWS, type NewsArticle } from "@/lib/data/news";
 
 export const metadata: Metadata = {
   title: "お知らせ｜株式会社サイプレス",
+  alternates: { canonical: "https://www.cypress-all.co.jp/news" },
   description:
     "株式会社サイプレスの最新ニュース・お知らせ。新サービス発表・実績・メディア掲載情報などを随時更新しています。",
   keywords: ["お知らせ", "ニュース", "プレスリリース", "株式会社サイプレス"],

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "株式会社サイプレスのキャリアパスをご紹介。入社後の成長ロードマップ、昇格・昇給の仕組み、独立・フリーランスへのキャリアパスまで透明性を持ってお伝えします。",
   keywords: ["キャリアパス", "成長ロードマップ", "昇給", "キャリアアップ", "株式会社サイプレス"],
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/career" },
 };
 
 const CAREER_PATHS = [

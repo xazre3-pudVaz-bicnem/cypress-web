@@ -11,6 +11,7 @@ import { getAreaSubPagesByArea, getAreaSubPage } from "@/lib/data/areaSubPages";
 const AREA = "kanagawa";
 const AREA_LABEL = "神奈川県";
 const AREA_HREF = "/area/kanagawa";
+const BASE = "https://www.cypress-all.co.jp";
 
 export async function generateStaticParams() {
   return getAreaSubPagesByArea(AREA).map((p) => ({ slug: p.slug }));
@@ -23,6 +24,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
     description: page.metaDescription,
+    openGraph: {
+      title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
+      description: page.metaDescription,
+      images: [{ url: "/hero.png", width: 1200, height: 630 }],
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `${BASE}${AREA_HREF}/${slug}` },
   };
 }
 
@@ -31,8 +41,55 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
   const page = getAreaSubPage(AREA, slug);
   if (!page) notFound();
 
+  const siblings = getAreaSubPagesByArea(AREA).filter((p) => p.slug !== slug);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "ホーム", item: `${BASE}/` },
+          { "@type": "ListItem", position: 2, name: "対応エリア", item: `${BASE}/area` },
+          { "@type": "ListItem", position: 3, name: AREA_LABEL, item: `${BASE}${AREA_HREF}` },
+          { "@type": "ListItem", position: 4, name: page.title, item: `${BASE}${AREA_HREF}/${slug}` },
+        ],
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${BASE}${AREA_HREF}/${slug}#localbusiness`,
+        name: "株式会社サイプレス",
+        alternateName: "Cypress",
+        url: `${BASE}${AREA_HREF}/${slug}`,
+        description: page.metaDescription,
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "JP",
+          postalCode: "124-0816",
+          addressRegion: "東京都",
+          addressLocality: "葛飾区",
+          streetAddress: "白鳥4-6-1-623",
+        },
+        email: "info@cypress-all.co.jp",
+        areaServed: [{ "@type": "AdministrativeArea", name: "神奈川県" }],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: page.faqs.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main>
         <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
@@ -77,11 +134,36 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        {/* エリア内の関連専門ページへの導線 */}
+        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Related Services</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,24px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+              {AREA_LABEL}のWeb集客 — 専門ページ
+            </h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+              {[
+                { label: `${AREA_LABEL}の集客支援トップ`, href: AREA_HREF },
+                ...siblings.map((p) => ({ label: p.title, href: `${AREA_HREF}/${p.slug}` })),
+                { label: "対応エリア一覧", href: "/area" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{
+                  fontSize: "13px", color: "#374151", textDecoration: "none",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  letterSpacing: "0.02em",
+                }}>
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <FaqSection items={page.faqs} bgColor="#ffffff" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading={`${AREA_LABEL}での集客はサイプレスへ`}
-          body={`${AREA_LABEL}の地域特性を踏まえた集客支援を提供しています。オンラインで全国対応しています。`}
+          body={`${AREA_LABEL}の地域特性を踏まえた集客支援を提供しています。訪問・オンラインでのご相談、お見積もりは無料です。お気軽にご相談ください。`}
         />
       </main>
       <Footer />

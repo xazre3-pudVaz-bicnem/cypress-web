@@ -7,6 +7,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
   title: "募集要項｜株式会社サイプレス採用情報",
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/job-description" },
   description: "株式会社サイプレスの募集要項。Webマーケター・Web制作・コンテンツライター。リモートワーク・フルフレックス制度。未経験可・成長意欲重視の採用。",
 };
 

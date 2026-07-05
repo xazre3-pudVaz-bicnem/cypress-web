@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
   title: "代表メッセージ｜株式会社サイプレス 代表 織田 春樹",
+  alternates: { canonical: "https://www.cypress-all.co.jp/recruit/message" },
   description: "株式会社サイプレス代表 織田 春樹から採用応募者へのメッセージ。Web集客支援への想い・チームの文化・求める人物像・一緒に働くことで実現したいこと。",
 };
 

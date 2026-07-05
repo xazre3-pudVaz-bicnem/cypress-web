@@ -214,7 +214,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
-  alternates: { canonical: SITE_URL },
+  // NOTE: canonical はページごとに必ず個別設定する。
+  // layout で設定すると未設定の全ページが「トップページの複製」扱いになり、
+  // Google のインデックスから除外される（2026-07 に59ページで発生し修正済み）。
   authors: [{ name: "株式会社サイプレス", url: SITE_URL }],
   creator: "株式会社サイプレス",
   publisher: "株式会社サイプレス",
