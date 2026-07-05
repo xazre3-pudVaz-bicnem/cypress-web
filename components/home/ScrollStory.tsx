@@ -81,9 +81,9 @@ function ServiceCard({ svc, index }: { svc: (typeof SERVICES)[0]; index: number 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 24 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: (index % 3) * 0.08 }}
+      initial={{ opacity: 0, y: 34, clipPath: "inset(10% 0% 0% 0%)" }}
+      animate={inView ? { opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" } : {}}
+      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: (index % 3) * 0.1 }}
       style={{
         background: "#FFFFFF",
         border: "1px solid #E8E4DC",
@@ -94,7 +94,7 @@ function ServiceCard({ svc, index }: { svc: (typeof SERVICES)[0]; index: number 
       className="service-story-card"
     >
       {/* Image */}
-      <div style={{ position: "relative", height: "clamp(120px, 12vw, 168px)", flexShrink: 0 }}>
+      <div className="card-img" style={{ position: "relative", height: "clamp(120px, 12vw, 168px)", flexShrink: 0, overflow: "hidden" }}>
         <Image
           src={svc.img}
           alt={svc.alt}
@@ -110,8 +110,10 @@ function ServiceCard({ svc, index }: { svc: (typeof SERVICES)[0]; index: number 
             right: 0,
             height: "2px",
             background: `linear-gradient(90deg, ${svc.accentColor}, transparent)`,
+            zIndex: 2,
           }}
         />
+        <span className="card-sheen" aria-hidden />
       </div>
 
       {/* Content */}
@@ -295,11 +297,41 @@ export default function ScrollStory() {
           gap: clamp(16px, 2.5vw, 28px);
         }
         .service-story-card {
-          transition: box-shadow 0.22s, transform 0.22s;
+          transition: box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s;
         }
         .service-story-card:hover {
-          box-shadow: 0 8px 32px rgba(11,22,40,0.09);
-          transform: translateY(-2px);
+          box-shadow: 0 18px 48px rgba(11,22,40,0.13);
+          transform: translateY(-5px);
+          border-color: #D8CFC0;
+        }
+        .service-story-card .card-img img {
+          transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+          will-change: transform;
+        }
+        .service-story-card:hover .card-img img {
+          transform: scale(1.07);
+        }
+        .card-sheen {
+          position: absolute;
+          top: -20%;
+          bottom: -20%;
+          left: 0;
+          width: 45%;
+          background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,0.28) 50%, transparent 100%);
+          transform: translateX(-140%) skewX(-14deg);
+          transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+          pointer-events: none;
+          z-index: 1;
+        }
+        .service-story-card:hover .card-sheen {
+          transform: translateX(340%) skewX(-14deg);
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .service-story-card,
+          .service-story-card .card-img img,
+          .card-sheen {
+            transition: none;
+          }
         }
         @media (max-width: 1024px) {
           .service-story-grid {

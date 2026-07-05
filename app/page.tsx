@@ -2,7 +2,9 @@
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import HomeMotionProvider from "@/components/home/HomeMotionProvider";
 import ImmersiveHero from "@/components/home/ImmersiveHero";
+import CinematicStatement from "@/components/home/CinematicStatement";
 import ScrollStory from "@/components/home/ScrollStory";
 import IndustryShowcase from "@/components/home/IndustryShowcase";
 import ProblemSolution from "@/components/home/ProblemSolution";
@@ -120,6 +122,7 @@ export default function Home() {
       />
       <Header />
       <main>
+        <HomeMotionProvider>
         {/* =====================================================
             1. IMMERSIVE HERO — fullscreen parallax
         ===================================================== */}
@@ -141,78 +144,9 @@ export default function Home() {
         <ProblemSolution />
 
         {/* =====================================================
-            7. PHILOSOPHY — dark quote section
+            7. PHILOSOPHY — cinematic scroll-lit statement
         ===================================================== */}
-        <section
-          style={{
-            background: "#FFFFFF",
-            padding: "clamp(64px, 10vh, 120px) 0",
-            position: "relative",
-            overflow: "hidden",
-            borderTop: "1px solid #E8E4DC",
-          }}
-        >
-          <div
-            style={{
-              maxWidth: "800px",
-              margin: "0 auto",
-              padding: "0 clamp(24px, 5vw, 60px)",
-              textAlign: "center",
-              position: "relative",
-              zIndex: 10,
-            }}
-          >
-            <p
-              style={{
-                fontFamily: "var(--font-display)",
-                letterSpacing: "0.28em",
-                color: "#C4A96A",
-                fontSize: "10px",
-                marginBottom: "32px",
-                textTransform: "uppercase",
-              }}
-            >
-              Philosophy
-            </p>
-            <p
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "clamp(20px, 3vw, 36px)",
-                color: "#0B1628",
-                lineHeight: 1.7,
-                fontWeight: 700,
-                marginBottom: "28px",
-              }}
-            >
-              正しい会社が、正しく選ばれる世界をつくりたい。
-            </p>
-            <p
-              style={{
-                fontSize: "13px",
-                color: "#6B7280",
-                lineHeight: "1.95",
-                maxWidth: "560px",
-                margin: "0 auto 32px",
-              }}
-            >
-              素晴らしい技術・サービス・想いを持ちながら、Web上での露出が少ないだけで機会を逃している中小企業が数多く存在します。AIとWebマーケティングを活用し、その橋渡しをすることが私たちの使命です。
-            </p>
-            <Link
-              href="/company/philosophy"
-              style={{
-                fontSize: "12px",
-                fontFamily: "var(--font-display)",
-                letterSpacing: "0.1em",
-                color: "#9CA3AF",
-                borderBottom: "1px solid #D1C9BE",
-                paddingBottom: "2px",
-                textDecoration: "none",
-              }}
-            >
-              企業理念を読む →
-            </Link>
-          </div>
-        </section>
+        <CinematicStatement />
 
         {/* =====================================================
             8. PROCESS — 7-step workflow timeline
@@ -446,6 +380,7 @@ export default function Home() {
             11c. FINAL CTA — contact band
         ===================================================== */}
         <FinalContactBand />
+        </HomeMotionProvider>
       </main>
       <Footer />
     </>

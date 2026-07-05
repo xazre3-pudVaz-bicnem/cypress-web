@@ -1,8 +1,68 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValue, useSpring, type MotionValue } from "framer-motion";
 import Image from "next/image";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+// フィルムグレイン（インラインSVGノイズ）
+const GRAIN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")";
+
+const WORDS = ["Reach.", "Be Chosen.", "Grow."] as const;
+
+function RevealWord({
+  word,
+  wordIndex,
+  color,
+  exitY,
+  paddingBottom,
+}: {
+  word: string;
+  wordIndex: number;
+  color: string;
+  exitY: MotionValue<string>;
+  paddingBottom: string;
+}) {
+  return (
+    <motion.div style={{ y: exitY, lineHeight: 1 }}>
+      <div style={{ overflow: "hidden", paddingBottom }}>
+        <span className="sr-only">{word}</span>
+        <div
+          aria-hidden
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "clamp(50px, 8.5vw, 124px)",
+            color,
+            fontWeight: 300,
+            letterSpacing: "-0.02em",
+            lineHeight: 1,
+            textTransform: "uppercase",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {word.split("").map((ch, i) => (
+            <motion.span
+              key={`${ch}-${i}`}
+              aria-hidden
+              initial={{ y: "115%", rotate: 5, opacity: 0, filter: "blur(10px)" }}
+              animate={{ y: 0, rotate: 0, opacity: 1, filter: "blur(0px)" }}
+              transition={{
+                duration: 1.1,
+                ease: EASE,
+                delay: 0.12 + wordIndex * 0.16 + i * 0.028,
+              }}
+              style={{ display: "inline-block", willChange: "transform", transformOrigin: "0% 100%" }}
+            >
+              {ch === " " ? " " : ch}
+            </motion.span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function ImmersiveHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,9 +78,16 @@ export default function ImmersiveHero() {
     target: containerRef,
     offset: ["start start", "end start"],
   });
-  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.14]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.55], [1, 0]);
+  const subY = useTransform(scrollYProgress, [0, 1], ["0%", "180%"]);
+
+  // 3語がそれぞれ異なる速度で退場する（奥行きパララックス）
+  const wordY1 = useTransform(scrollYProgress, [0, 1], ["0%", "46%"]);
+  const wordY2 = useTransform(scrollYProgress, [0, 1], ["0%", "88%"]);
+  const wordY3 = useTransform(scrollYProgress, [0, 1], ["0%", "140%"]);
+  const wordYs = [wordY1, wordY2, wordY3];
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -34,18 +101,22 @@ export default function ImmersiveHero() {
       style={{ height: "100svh", minHeight: "680px", position: "relative", overflow: "hidden", background: "#060E1C" }}
       onMouseMove={handleMouseMove}
     >
-      {/* Parallax background */}
-      <motion.div
-        style={{ position: "absolute", inset: "-6%", x: bgMoveX, y: bgMoveY, scale: bgScale }}
-      >
-        <Image
-          src="/hero.png"
-          alt="株式会社サイプレス — Web集客支援"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      {/* Parallax background: 外層=マウス+スクロール / 内層=常時ケンバーンズ */}
+      <motion.div style={{ position: "absolute", inset: "-6%", x: bgMoveX, y: bgMoveY, scale: bgScale }}>
+        <motion.div
+          style={{ position: "absolute", inset: 0, y: bgY }}
+          animate={{ scale: [1.02, 1.09] }}
+          transition={{ duration: 22, repeat: Infinity, repeatType: "mirror", ease: "linear" }}
+        >
+          <Image
+            src="/hero.png"
+            alt="株式会社サイプレス — Web集客支援"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </motion.div>
       </motion.div>
 
       {/* Second layer texture */}
@@ -70,6 +141,29 @@ export default function ImmersiveHero() {
         }}
       />
 
+      {/* Vignette（映画的な周辺減光） */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "radial-gradient(ellipse 120% 90% at 50% 45%, transparent 55%, rgba(3,8,18,0.55) 100%)",
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* Film grain */}
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: GRAIN,
+          opacity: 0.055,
+          mixBlendMode: "overlay",
+          pointerEvents: "none",
+        }}
+      />
+
       {/* Subtle grid */}
       <div
         style={{
@@ -85,15 +179,34 @@ export default function ImmersiveHero() {
       <motion.div
         initial={{ scaleX: 0, opacity: 0 }}
         animate={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
+        transition={{ duration: 1.4, ease: EASE, delay: 0.5 }}
         style={{
           position: "absolute",
           bottom: "38%",
           left: 0,
           right: 0,
           height: "1px",
-          background: "rgba(255,255,255,0.04)",
+          background: "linear-gradient(90deg, rgba(196,169,106,0.22), rgba(255,255,255,0.05) 40%, transparent 90%)",
           transformOrigin: "left",
+        }}
+      />
+
+      {/* 真鍮色のライトビーム（初回のみ斜めに一閃） */}
+      <motion.div
+        aria-hidden
+        initial={{ x: "-70%", opacity: 0 }}
+        animate={{ x: "170%", opacity: [0, 0.6, 0] }}
+        transition={{ duration: 1.9, ease: "easeInOut", delay: 1.15 }}
+        style={{
+          position: "absolute",
+          top: "-20%",
+          bottom: "-20%",
+          width: "34%",
+          background:
+            "linear-gradient(100deg, transparent 0%, rgba(196,169,106,0.06) 35%, rgba(255,255,255,0.10) 50%, rgba(196,169,106,0.06) 65%, transparent 100%)",
+          transform: "skewX(-12deg)",
+          pointerEvents: "none",
+          zIndex: 5,
         }}
       />
 
@@ -106,7 +219,6 @@ export default function ImmersiveHero() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          y: contentY,
           opacity: contentOpacity,
           maxWidth: "1152px",
           margin: "0 auto",
@@ -115,12 +227,11 @@ export default function ImmersiveHero() {
       >
         {/* Label */}
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0, y: 12, letterSpacing: "0.55em" }}
+          animate={{ opacity: 1, y: 0, letterSpacing: "0.32em" }}
+          transition={{ duration: 1.2, ease: EASE }}
           style={{
             fontFamily: "var(--font-display)",
-            letterSpacing: "0.32em",
             color: "rgba(196,169,106,0.65)",
             fontSize: "10px",
             textTransform: "uppercase",
@@ -130,34 +241,24 @@ export default function ImmersiveHero() {
           AI × Web Marketing Agency — Tokyo
         </motion.p>
 
-        {/* Display headline */}
-        {(["Reach.", "Be Chosen.", "Grow."] as const).map((word, i) => (
-          <div key={word} style={{ overflow: "hidden", lineHeight: 1 }}>
-            <motion.div
-              initial={{ y: "108%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1.05, ease: [0.22, 1, 0.36, 1], delay: 0.08 + i * 0.12 }}
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(50px, 8.5vw, 124px)",
-                color: i === 0 ? "#ffffff" : i === 1 ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.06)",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
-                lineHeight: 1,
-                textTransform: "uppercase",
-                paddingBottom: i < 2 ? "4px" : "48px",
-              }}
-            >
-              {word}
-            </motion.div>
-          </div>
+        {/* Display headline — 文字単位のマスクリビール */}
+        {WORDS.map((word, i) => (
+          <RevealWord
+            key={word}
+            word={word}
+            wordIndex={i}
+            color={i === 0 ? "#ffffff" : i === 1 ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.06)"}
+            exitY={wordYs[i]}
+            paddingBottom={i < 2 ? "4px" : "48px"}
+          />
         ))}
 
         {/* Japanese subtitle */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.65 }}
+          transition={{ duration: 0.85, ease: EASE, delay: 0.85 }}
+          style={{ y: subY }}
         >
           <h1
             style={{
@@ -171,7 +272,10 @@ export default function ImmersiveHero() {
           >
             中小企業のWeb集客を、設計から運用まで。
           </h1>
-          <p
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.05 }}
             style={{
               fontSize: "12px",
               color: "rgba(255,255,255,0.35)",
@@ -180,9 +284,8 @@ export default function ImmersiveHero() {
             }}
           >
             MEO&nbsp;&nbsp;/&nbsp;&nbsp;SEO&nbsp;&nbsp;/&nbsp;&nbsp;AIO&nbsp;&nbsp;/&nbsp;&nbsp;Web Production&nbsp;&nbsp;/&nbsp;&nbsp;SNS&nbsp;&nbsp;/&nbsp;&nbsp;AI
-          </p>
+          </motion.p>
         </motion.div>
-
       </motion.div>
 
       {/* Scroll indicator */}
@@ -228,7 +331,7 @@ export default function ImmersiveHero() {
               top: 0,
               left: 0,
               right: 0,
-              background: "rgba(255,255,255,0.55)",
+              background: "rgba(196,169,106,0.75)",
               height: "42%",
             }}
             animate={{ y: ["0%", "220%"] }}
