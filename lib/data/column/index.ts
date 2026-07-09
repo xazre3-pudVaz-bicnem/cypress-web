@@ -34,10 +34,13 @@ import { NEW_STARTUP_COLUMNS } from "./newStartupColumns";
 import { NEW_STARTUP2_COLUMNS } from "./newStartup2Columns";
 import { NEW_STARTUP3_COLUMNS } from "./newStartup3Columns";
 import { NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS } from "./newKatsushikaWebDesignColumns";
+import { KATSUSHIKA_INDUSTRY_COLUMNS } from "./katsushikaIndustryColumns";
+import { KATSUSHIKA_STATION_COLUMNS } from "./katsushikaStationColumns";
+import { KATSUSHIKA_TACTICS_COLUMNS } from "./katsushikaTacticsColumns";
 
 export type { ColumnTopicPage };
 
-export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = [
+const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
   ...COLUMN_TOPICS,
   ...SEO_COLUMNS,
   ...MEO_COLUMNS,
@@ -73,7 +76,19 @@ export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = [
   ...NEW_STARTUP2_COLUMNS,
   ...NEW_STARTUP3_COLUMNS,
   ...NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS,
+  ...KATSUSHIKA_INDUSTRY_COLUMNS,
+  ...KATSUSHIKA_STATION_COLUMNS,
+  ...KATSUSHIKA_TACTICS_COLUMNS,
 ];
+
+/**
+ * slugの重複を排除する（先に定義されたものを採用）。
+ * 重複したslugをそのまま残すと、generateStaticParams と sitemap.xml に
+ * 同一URLが二重に出力され、SEO上の重複URL問題を招く。
+ */
+export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = ALL_COLUMN_TOPICS_RAW.filter(
+  (topic, index, all) => all.findIndex((t) => t.slug === topic.slug) === index
+);
 
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {
   return ALL_COLUMN_TOPICS.find((t) => t.slug === slug);

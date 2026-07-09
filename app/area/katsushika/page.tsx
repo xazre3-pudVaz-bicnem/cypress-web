@@ -595,6 +595,88 @@ export default function Page() {
 
         <FaqSection items={faqItems} heading="葛飾区に関するよくある質問" bgColor="#F9F8F5" />
 
+        {/* 葛飾区の専門コラム（トピッククラスター） */}
+        <section style={{ background: "#f8f6f2", padding: "clamp(56px, 8vh, 96px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Katsushika Columns</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+              葛飾区のWeb集客 — 専門コラム
+            </h2>
+            <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "40px" }}>
+              業種別・エリア別・施策別に、葛飾区でのWeb集客の実務ノウハウを解説しています。地元で実際に支援している視点から、具体的な手順と数字でお伝えします。
+            </p>
+
+            {[
+              {
+                group: "業種別の集客ノウハウ",
+                items: [
+                  { href: "/column/katsushika-restaurant-meo", label: "飲食店のGoogleマップ集客" },
+                  { href: "/column/katsushika-hair-salon-shukyaku", label: "美容室の集客ガイド" },
+                  { href: "/column/katsushika-clinic-shukyaku", label: "クリニック・歯科の集患" },
+                  { href: "/column/katsushika-seikotsuin-shukyaku", label: "整骨院・接骨院の集客" },
+                  { href: "/column/katsushika-komuten-reform", label: "工務店・リフォームの集客" },
+                  { href: "/column/katsushika-shigyo-shukyaku", label: "士業のWeb集客" },
+                  { href: "/column/katsushika-juku-shukyaku", label: "学習塾の生徒募集" },
+                  { href: "/column/katsushika-fudosan-shukyaku", label: "不動産会社のWeb集客" },
+                  { href: "/column/katsushika-nail-esthe-shukyaku", label: "ネイル・エステサロンの集客" },
+                  { href: "/column/katsushika-pet-shop-trimming", label: "ペットショップ・トリミング" },
+                  { href: "/column/katsushika-cleaning-service", label: "ハウスクリーニング・便利屋" },
+                  { href: "/column/katsushika-local-store-ec", label: "商店・小売店のネット販売" },
+                ],
+              },
+              {
+                group: "エリア・駅別の集客戦略",
+                items: [
+                  { href: "/column/kameari-meo-shukyaku", label: "亀有の店舗集客ガイド" },
+                  { href: "/column/kanamachi-meo-shukyaku", label: "金町の店舗集客ガイド" },
+                  { href: "/column/shinkoiwa-meo-shukyaku", label: "新小岩の店舗集客ガイド" },
+                  { href: "/column/tateishi-meo-shukyaku", label: "立石の店舗集客ガイド" },
+                  { href: "/column/shibamata-inbound-shukyaku", label: "柴又の観光集客・インバウンド" },
+                  { href: "/column/aoto-takasago-ohanajaya-horikiri-meo", label: "青砥・高砂・お花茶屋・堀切" },
+                ],
+              },
+              {
+                group: "施策別の実践ノウハウ",
+                items: [
+                  { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド" },
+                  { href: "/column/katsushika-kuchikomi-taisaku", label: "口コミを増やす方法" },
+                  { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない9つの原因" },
+                  { href: "/column/katsushika-local-seo-keyword", label: "ローカルSEOキーワード選定術" },
+                  { href: "/column/katsushika-competitor-analysis", label: "競合分析のやり方" },
+                  { href: "/column/katsushika-instagram-shukyaku", label: "Instagram集客の運用設計" },
+                  { href: "/column/katsushika-line-shukyaku", label: "LINE公式アカウント活用" },
+                  { href: "/column/katsushika-aio-taisaku", label: "AIO対策（AI検索）" },
+                  { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト" },
+                  { href: "/column/katsushika-web-shukyaku-hiyo", label: "Web集客の費用相場" },
+                  { href: "/column/katsushika-inbound-tagengo", label: "インバウンド・多言語対応" },
+                  { href: "/column/katsushika-saiyo-site", label: "採用サイト戦略" },
+                  { href: "/column/katsushika-web-design-cost", label: "ホームページ制作の費用" },
+                  { href: "/column/katsushika-web-design-company-guide", label: "制作会社の選び方" },
+                  { href: "/column/katsushika-homepage-renewal", label: "ホームページのリニューアル" },
+                  { href: "/column/katsushika-startup-web-design", label: "開業・創業時のHP準備" },
+                ],
+              },
+            ].map((block) => (
+              <div key={block.group} style={{ marginBottom: "36px" }}>
+                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "14px", paddingBottom: "10px", borderBottom: "1px solid #E8E4DC" }}>
+                  {block.group}
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                  {block.items.map((l) => (
+                    <Link key={l.href} href={l.href} style={{
+                      fontSize: "13px", color: "#374151", textDecoration: "none",
+                      padding: "8px 14px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                      borderRadius: "4px", letterSpacing: "0.02em",
+                    }}>
+                      {l.label} →
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* 成功事例への誘導 */}
         <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
