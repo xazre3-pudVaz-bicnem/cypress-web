@@ -6,9 +6,9 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "葛飾区で起業・創業する方へ｜開業準備・Web集客・販売パートナー制度｜株式会社サイプレス",
+  title: "葛飾区の起業・創業ガイド【総合版】｜資金・Web集客・収益づくりを一気通貫で解説｜株式会社サイプレス",
   description:
-    "葛飾区で起業・創業を検討している方向けに、開業準備、創業支援制度の確認ポイント、ホームページ制作、Web集客、創業初期の収益柱づくり、販売パートナー制度を解説します。",
+    "葛飾区で起業・創業する方向けの総合ガイド。開業準備チェックリスト・創業資金の確認ポイント・ホームページ制作とGBP整備・Web集客の優先順位・収益柱づくりまで、創業ステップごとに詳しく解説します。",
   keywords: [
     "葛飾区 起業",
     "葛飾区 創業",
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     "葛飾区 開業 集客",
   ],
   openGraph: {
-    title: "葛飾区で起業・創業する方へ｜開業準備・Web集客・販売パートナー制度",
-    description: "葛飾区で起業・創業を検討している方向けに、開業準備、創業支援制度の確認ポイント、ホームページ制作、Web集客、創業初期の収益柱づくり、販売パートナー制度を解説します。",
+    title: "葛飾区の起業・創業ガイド【総合版】｜資金・Web集客・収益づくりを一気通貫で解説",
+    description: "葛飾区で起業・創業する方向けの総合ガイド。開業準備・創業資金・ホームページ制作とGBP整備・Web集客の優先順位・収益柱づくりまで、創業ステップごとに詳しく解説します。",
     images: [{ url: "/hero.png", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
