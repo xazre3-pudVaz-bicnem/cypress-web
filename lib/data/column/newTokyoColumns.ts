@@ -233,6 +233,9 @@ export const NEW_TOKYO_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/edogawa", label: "江戸川区の集客支援を見る", desc: "江戸川区特化ページ" },
       { href: "/company/about-cypress", label: "株式会社サイプレスについて", desc: "葛飾区の会社概要" },
       { href: "/contact", label: "東京東部エリアのWeb集客を相談する", desc: "無料相談はこちら" },
+      { href: "/column/tateishi-meo-shukyaku", label: "立石の店舗集客ガイド", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-yotsugi-meo-shukyaku", label: "四つ木・東四つ木の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-niijuku-okudo-meo", label: "新宿(にいじゅく)・奥戸の集客", desc: "エリア別の集客戦略" },
     ],
   },
   {

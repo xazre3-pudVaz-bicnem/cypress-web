@@ -51,6 +51,9 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
       { href: "/cost/web-design", label: "ホームページ制作の費用相場", desc: "全国的な相場の解説" },
       { href: "/column/katsushika-web-design-company-guide", label: "葛飾区の制作会社の選び方", desc: "失敗しない選定基準" },
       { href: "/contact", label: "無料見積もり・相談", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-aio-taisaku", label: "AIO対策（AI検索）", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-blog-content-seo", label: "店舗ブログのコンテンツSEO", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-page-speed-mobile", label: "表示速度・スマホ最適化", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -99,6 +102,9 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design/maintenance", label: "保守・運用サポートとは", desc: "公開後の管理体制" },
       { href: "/cases/service/web-design", label: "ホームページ制作の成功事例", desc: "施策別の事例紹介" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "相見積もりも歓迎" },
+      { href: "/column/katsushika-blog-content-seo", label: "店舗ブログのコンテンツSEO", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-page-speed-mobile", label: "表示速度・スマホ最適化", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-domain-server", label: "ドメイン・サーバー選び", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -146,6 +152,9 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "地域キーワードで上位表示" },
       { href: "/column/katsushika-web-design-cost", label: "葛飾区のHP制作費用・相場", desc: "料金の内訳と予算の決め方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "訪問打ち合わせに対応" },
+      { href: "/column/kanamachi-meo-shukyaku", label: "金町の店舗集客ガイド", desc: "エリア別の集客戦略" },
+      { href: "/column/shinkoiwa-meo-shukyaku", label: "新小岩の店舗集客ガイド", desc: "エリア別の集客戦略" },
+      { href: "/column/shibamata-inbound-shukyaku", label: "柴又の観光集客・インバウンド", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -194,6 +203,9 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design/mobile-friendly", label: "スマホ対応サイト", desc: "モバイル最適化の基礎" },
       { href: "/column/katsushika-web-design-company-guide", label: "葛飾区の制作会社の選び方", desc: "失敗しない選定基準" },
       { href: "/contact", label: "無料診断・お問い合わせ", desc: "現サイトの課題を診断" },
+      { href: "/column/katsushika-domain-server", label: "ドメイン・サーバー選び", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-analytics-kaizen", label: "アクセス解析・改善サイクル", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-yoyaku-system", label: "予約システム導入ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -241,6 +253,9 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/startup-web-marketing", label: "葛飾区の創業Web集客ガイド", desc: "GBP・SEO・MEOの優先順位" },
       { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "補助金活用の進め方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "創業前の相談も歓迎" },
+      { href: "/column/katsushika-startup-homepage", label: "創業期のHP制作の失敗回避", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-homepage-seo", label: "創業期のSEOに強いHP作り", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 ];

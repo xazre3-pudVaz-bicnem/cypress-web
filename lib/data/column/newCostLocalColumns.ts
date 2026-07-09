@@ -132,6 +132,8 @@ export const NEW_COST_LOCAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "葛飾区SEO対策の詳細" },
       { href: "/column/katsushika-adachi-edogawa-web-marketing", label: "葛飾区・足立区・江戸川区のWeb集客", desc: "東京東部エリアの集客戦略" },
       { href: "/contact", label: "葛飾区の無料相談", desc: "訪問対応での相談" },
+      { href: "/column/katsushika-local-business-web-needs", label: "地域事業者のWeb集客ニーズ", desc: "関連するWeb集客の考え方" },
+      { href: "/column/katsushika-web-marketing", label: "葛飾区のWeb集客戦略", desc: "関連するWeb集客の考え方" },
     ],
   },
   {

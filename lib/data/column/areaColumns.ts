@@ -66,6 +66,8 @@ export const AREA_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/tokyo-seo-strategy", label: "東京のSEO戦略", desc: "東京の集客戦略" },
       { href: "/column/adachi-web-marketing", label: "足立区のWeb集客", desc: "隣接エリアの戦略" },
       { href: "/contact", label: "無料相談", desc: "葛飾区のWeb集客のご相談" },
+      { href: "/column/katsushika-local-business-web-needs", label: "地域事業者のWeb集客ニーズ", desc: "関連するWeb集客の考え方" },
+      { href: "/column/katsushika-meo-seo-guide", label: "葛飾区のMEO・SEOガイド", desc: "関連するWeb集客の考え方" },
     ],
   },
   {

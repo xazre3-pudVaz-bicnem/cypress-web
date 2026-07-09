@@ -42,6 +42,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-web-shukyaku-hiyo", label: "葛飾区のWeb集客の費用相場", desc: "予算配分の考え方" },
       { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "予算配分のご相談も可" },
+      { href: "/column/katsushika-ooteagency-vs-chiiki", label: "大手代理店 vs 地域密着会社", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-jisaku-vs-seisakugaisha", label: "HP自作 vs 制作会社", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-wordpress-vs-static", label: "WordPress vs 静的サイト", desc: "比較検討の参考に" },
     ],
   },
   {
@@ -86,6 +89,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-web-design-cost", label: "葛飾区のHP制作費用・相場", desc: "料金の内訳と予算の決め方" },
       { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "公開前の確認20項目" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "現状のサイト診断も無料" },
+      { href: "/column/katsushika-seo-vs-listing-ad", label: "SEO vs リスティング広告", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-wordpress-vs-static", label: "WordPress vs 静的サイト", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-hotpepper-vs-jishagata", label: "ポータルサイト vs 自社集客", desc: "比較検討の参考に" },
     ],
   },
   {
@@ -126,6 +132,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design/wordpress", label: "WordPress制作サービス", desc: "サービスの詳細" },
       { href: "/web-design/nextjs", label: "Next.jsサイト制作", desc: "静的サイトの技術詳細" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "構成のご相談も可" },
+      { href: "/column/katsushika-jisaku-vs-seisakugaisha", label: "HP自作 vs 制作会社", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-hotpepper-vs-jishagata", label: "ポータルサイト vs 自社集客", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-ooteagency-vs-chiiki", label: "大手代理店 vs 地域密着会社", desc: "比較検討の参考に" },
     ],
   },
   {
@@ -166,6 +175,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-hair-salon-shukyaku", label: "葛飾区の美容室の集客", desc: "自社集客への移行実務" },
       { href: "/column/katsushika-line-shukyaku", label: "葛飾区のLINE活用ガイド", desc: "リピート導線の構築" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "移行計画のご相談も可" },
+      { href: "/column/katsushika-wordpress-vs-static", label: "WordPress vs 静的サイト", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-ooteagency-vs-chiiki", label: "大手代理店 vs 地域密着会社", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-seo-vs-listing-ad", label: "SEO vs リスティング広告", desc: "比較検討の参考に" },
     ],
   },
   {
@@ -205,6 +217,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/column/katsushika-web-design-company-guide", label: "葛飾区の制作会社の選び方", desc: "失敗しない選定基準" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "相見積もりも歓迎" },
+      { href: "/column/katsushika-hotpepper-vs-jishagata", label: "ポータルサイト vs 自社集客", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-seo-vs-listing-ad", label: "SEO vs リスティング広告", desc: "比較検討の参考に" },
+      { href: "/column/katsushika-jisaku-vs-seisakugaisha", label: "HP自作 vs 制作会社", desc: "比較検討の参考に" },
     ],
   },
   {
@@ -249,6 +264,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "公開前後の確認20項目" },
       { href: "/column/katsushika-analytics-kaizen", label: "アクセス解析・改善サイクル", desc: "数字に基づく改善方法" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "無料診断を実施します" },
+      { href: "/column/katsushika-shukyaku-dekinai-tenpo", label: "集客できない店舗の特徴", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-kaigyou-hangaku-shukyaku-zero", label: "開業半年で集客ゼロから脱出", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-repeat-fuenai", label: "リピーターが増えない原因", desc: "課題解決のヒント" },
     ],
   },
   {
@@ -293,6 +311,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-gbp-setup", label: "葛飾区のGBP設定完全ガイド", desc: "基本設定の完全手順" },
       { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない原因", desc: "9つの原因と対処法" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "現状診断も無料" },
+      { href: "/column/katsushika-kaigyou-hangaku-shukyaku-zero", label: "開業半年で集客ゼロから脱出", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-repeat-fuenai", label: "リピーターが増えない原因", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-kyuujin-konai", label: "求人応募が来ない原因", desc: "課題解決のヒント" },
     ],
   },
   {
@@ -337,6 +358,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-startup-web-design", label: "葛飾区の開業者向けHP準備", desc: "開業前の準備ガイド" },
       { href: "/column/katsushika-kuchikomi-taisaku", label: "葛飾区の口コミ獲得戦略", desc: "口コミを増やす実務" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "立て直しのご相談も可" },
+      { href: "/column/katsushika-startup-google-business-profile", label: "開業時のGBP整備", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-homepage", label: "創業期のHP制作の失敗回避", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-homepage-seo", label: "創業期のSEOに強いHP作り", desc: "開業・創業期の参考に" },
     ],
   },
   {
@@ -377,6 +401,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-line-shukyaku", label: "葛飾区のLINE活用ガイド", desc: "リピート率を上げる導線設計" },
       { href: "/column/katsushika-hotpepper-vs-jishagata", label: "ポータルサイトと自社集客の比較", desc: "新規とリピートの構造分析" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "リピート施策のご相談も可" },
+      { href: "/column/katsushika-kyuujin-konai", label: "求人応募が来ない原因", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-hp-koka-nai", label: "HPの効果が出ない原因", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-shukyaku-dekinai-tenpo", label: "集客できない店舗の特徴", desc: "課題解決のヒント" },
     ],
   },
   {
@@ -421,6 +448,9 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-saiyo-site", label: "葛飾区の採用サイト戦略", desc: "採用サイトの作り方の詳細" },
       { href: "/web-design/recruit-site", label: "採用サイト制作", desc: "サービスの詳細" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "採用課題のご相談も可" },
+      { href: "/column/katsushika-hp-koka-nai", label: "HPの効果が出ない原因", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-shukyaku-dekinai-tenpo", label: "集客できない店舗の特徴", desc: "課題解決のヒント" },
+      { href: "/column/katsushika-kaigyou-hangaku-shukyaku-zero", label: "開業半年で集客ゼロから脱出", desc: "課題解決のヒント" },
     ],
   },
 ];

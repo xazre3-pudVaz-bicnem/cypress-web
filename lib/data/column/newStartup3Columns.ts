@@ -72,6 +72,9 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/tokyo/katsushika/startup-funding", label: "葛飾区の創業資金・補助金ガイド", desc: "融資・補助金の注意点" },
       { href: "/partner/katsushika-startup", label: "葛飾区起業者向け販売パートナー制度", desc: "収益柱の一つとして検討できる制度" },
       { href: "/area/tokyo/katsushika/startup-web-marketing", label: "葛飾区創業者向けWeb集客ガイド", desc: "GBP・HP・SEO・MEOの優先順位" },
+      { href: "/column/katsushika-sales-agent-business", label: "販売代理店ビジネスの検討", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-kaigyou-hangaku-shukyaku-zero", label: "開業半年で集客ゼロから脱出", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 
@@ -410,6 +413,8 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika", label: "葛飾区のWeb集客支援", desc: "葛飾区の対応エリアページ" },
       { href: "/meo", label: "MEO対策サービス", desc: "Googleマップ集客支援" },
       { href: "/seo", label: "SEO対策サービス", desc: "検索上位表示支援" },
+      { href: "/column/katsushika-web-marketing", label: "葛飾区のWeb集客戦略", desc: "関連するWeb集客の考え方" },
+      { href: "/column/katsushika-meo-seo-guide", label: "葛飾区のMEO・SEOガイド", desc: "関連するWeb集客の考え方" },
     ],
   },
 
@@ -748,6 +753,9 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/tokyo/katsushika/start-business", label: "葛飾区で起業・創業する方へ", desc: "創業準備の総合ガイド" },
       { href: "/column/katsushika-local-business-web-needs", label: "葛飾区の地域事業者にWeb集客ニーズがある理由", desc: "地域事業者の課題分析" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "葛飾区特化のMEO支援" },
+      { href: "/column/katsushika-start-business-guide", label: "葛飾区の起業・創業準備ガイド", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-checklist", label: "開業前チェックリスト完全版", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 
@@ -826,6 +834,9 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design", label: "ホームページ制作サービス", desc: "SEO設計込み制作の詳細" },
       { href: "/area/tokyo/katsushika/start-business", label: "葛飾区で起業・創業する方へ", desc: "創業準備の総合ガイド" },
       { href: "/column/katsushika-startup-google-business-profile", label: "葛飾区開業時のGBP整備ガイド", desc: "GBP設定の手順と注意点" },
+      { href: "/column/katsushika-startup-checklist", label: "開業前チェックリスト完全版", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-funding-web", label: "創業資金とWeb集客費用", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 ];

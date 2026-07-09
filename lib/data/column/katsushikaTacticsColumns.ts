@@ -55,6 +55,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-kuchikomi-taisaku", label: "葛飾区の口コミ獲得戦略", desc: "口コミを増やす実務" },
       { href: "/meo/category-setting", label: "カテゴリ設定ガイド", desc: "順位を左右する選び方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "GBP診断も無料" },
+      { href: "/column/katsushika-web-design-company-guide", label: "制作会社の選び方", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-photo-strategy", label: "GBP写真戦略の完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-zokusei-guide", label: "GBP「属性」設定完全ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -103,6 +106,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-gbp-setup", label: "葛飾区のGBP設定ガイド", desc: "登録から最適化まで" },
       { href: "/meo/ranking", label: "マップ順位改善の方法", desc: "順位決定要因の解説" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "口コミ運用の相談も可" },
+      { href: "/column/katsushika-gbp-photo-strategy", label: "GBP写真戦略の完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-zokusei-guide", label: "GBP「属性」設定完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-qanda-katsuyou", label: "GBP「Q&A」機能活用ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -151,6 +157,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "地域密着のSEO支援" },
       { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "キーワード調査も対応" },
+      { href: "/column/katsushika-gbp-photo-strategy", label: "GBP写真戦略の完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-zokusei-guide", label: "GBP「属性」設定完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-qanda-katsuyou", label: "GBP「Q&A」機能活用ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -198,6 +207,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップとの連携" },
       { href: "/sns/hashtag", label: "ハッシュタグ戦略", desc: "タグ選定の考え方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "SNS運用の相談も可" },
+      { href: "/column/katsushika-gbp-zokusei-guide", label: "GBP「属性」設定完全ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-qanda-katsuyou", label: "GBP「Q&A」機能活用ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-fukusuu-tenpo-gbp", label: "複数店舗のGBP管理術", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -245,6 +257,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-instagram-shukyaku", label: "葛飾区のInstagram集客", desc: "発見を生む運用設計" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "LINE運用の相談も可" },
+      { href: "/column/katsushika-gbp-qanda-katsuyou", label: "GBP「Q&A」機能活用ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-fukusuu-tenpo-gbp", label: "複数店舗のGBP管理術", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-kuchikomi-taisaku", label: "口コミを増やす方法", desc: "口コミ獲得の実務" },
     ],
   },
   {
@@ -292,6 +307,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-kuchikomi-taisaku", label: "葛飾区の口コミ獲得戦略", desc: "口コミを増やす実務" },
       { href: "/meo/meo-audit", label: "MEO監査サービス", desc: "現状のGBPを無料診断" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "順位低下の原因を診断" },
+      { href: "/column/katsushika-fukusuu-tenpo-gbp", label: "複数店舗のGBP管理術", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-local-seo-keyword", label: "ローカルSEOキーワード選定術", desc: "地域キーワード選定術" },
+      { href: "/column/katsushika-competitor-analysis", label: "競合分析のやり方", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -343,6 +361,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "競合分析からの戦略設計" },
       { href: "/seo/seo-audit", label: "SEO監査サービス", desc: "サイトの現状分析" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "競合分析もご相談ください" },
+      { href: "/column/katsushika-kuchikomi-taisaku", label: "口コミを増やす方法", desc: "口コミ獲得の実務" },
+      { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない9つの原因", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-instagram-shukyaku", label: "Instagram集客の運用設計", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -390,6 +411,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "経験・専門性の示し方" },
       { href: "/aio/faq-optimization", label: "FAQ最適化", desc: "AI引用されやすい構成" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "AIO対策も対応" },
+      { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない9つの原因", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-local-seo-keyword", label: "ローカルSEOキーワード選定術", desc: "地域キーワード選定術" },
+      { href: "/column/katsushika-competitor-analysis", label: "競合分析のやり方", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -438,6 +462,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "SEO標準搭載の制作" },
       { href: "/seo/structured-data", label: "構造化データの実装", desc: "Schema.orgの活用法" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "サイト診断も無料" },
+      { href: "/column/katsushika-local-seo-keyword", label: "ローカルSEOキーワード選定術", desc: "地域キーワード選定術" },
+      { href: "/column/katsushika-competitor-analysis", label: "競合分析のやり方", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-instagram-shukyaku", label: "Instagram集客の運用設計", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -486,6 +513,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/cost/seo", label: "SEO対策の費用相場", desc: "料金の内訳と選び方" },
       { href: "/column/katsushika-web-design-cost", label: "葛飾区のHP制作費用", desc: "制作費の内訳と予算" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "お見積もりは無料" },
+      { href: "/column/katsushika-competitor-analysis", label: "競合分析のやり方", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-instagram-shukyaku", label: "Instagram集客の運用設計", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-line-shukyaku", label: "LINE公式アカウント活用", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -534,6 +564,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/meo/google-business-profile", label: "GBP最適化ガイド", desc: "設定項目の完全解説" },
       { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "エリア全体のサービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-mizumoto-meo-shukyaku", label: "水元・西水元の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/kameari-kanamachi-shinkoiwa-web-design", label: "亀有・金町・新小岩のHP制作", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-adachi-edogawa-web-marketing", label: "足立・江戸川区のWeb集客戦略", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -582,6 +615,9 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/seo", label: "葛飾区のSEO対策", desc: "求人検索での上位表示" },
       { href: "/seo/structured-data", label: "構造化データの実装", desc: "JobPostingの活用" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-line-shukyaku", label: "LINE公式アカウント活用", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-youtube-shukyaku", label: "YouTube集客のはじめ方", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-aio-taisaku", label: "AIO対策（AI検索）", desc: "実践ノウハウの詳細" },
     ],
   },
 ];

@@ -48,6 +48,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-line-shukyaku", label: "葛飾区のLINE活用ガイド", desc: "リピート・継続の設計" },
       { href: "/sns/instagram", label: "Instagram運用支援", desc: "ビフォーアフター発信の設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-karate-budo", label: "空手・柔道場の集客", desc: "スポーツ教室の集客ノウハウ" },
+      { href: "/column/katsushika-tennis-school", label: "テニススクールの集客", desc: "スポーツ教室の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -93,6 +96,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-instagram-shukyaku", label: "葛飾区のInstagram集客", desc: "発見される投稿設計" },
       { href: "/column/katsushika-line-shukyaku", label: "葛飾区のLINE活用ガイド", desc: "継続会員化の仕組み" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-tennis-school", label: "テニススクールの集客", desc: "スポーツ教室の集客ノウハウ" },
+      { href: "/column/katsushika-swimming-school", label: "スイミングスクールの集客", desc: "スポーツ教室の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -138,6 +144,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/web-design/contact-form", label: "問い合わせフォーム最適化", desc: "申込数を増やす設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-ongaku-kyoshitsu", label: "音楽教室・そろばん教室", desc: "教室・教育業種の集客ノウハウ" },
+      { href: "/column/katsushika-yobikou-daigaku-juken", label: "予備校・大学受験専門塾", desc: "教室・教育業種の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -179,6 +188,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-kuchikomi-taisaku", label: "葛飾区の口コミ獲得戦略", desc: "口コミを増やす実務" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "教室サイトの制作" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-yobikou-daigaku-juken", label: "予備校・大学受験専門塾", desc: "教室・教育業種の集客ノウハウ" },
+      { href: "/column/katsushika-shikaku-school", label: "資格スクールの集客", desc: "教室・教育業種の集客ノウハウ" },
+      { href: "/column/katsushika-ryouri-kyoshitsu", label: "料理教室・パン教室の集客", desc: "教室・教育業種の集客ノウハウ" },
     ],
   },
   {
@@ -219,6 +231,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "保育施設サイトの制作" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-ryouri-kyoshitsu", label: "料理教室・パン教室の集客", desc: "教室・教育業種の集客ノウハウ" },
+      { href: "/column/katsushika-kaji-daikou", label: "家事代行・ベビーシッター", desc: "子育て・介護サービスの集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -260,6 +275,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "介護施設サイトの制作" },
       { href: "/column/katsushika-saiyo-site", label: "葛飾区の採用サイト戦略", desc: "介護人材の採用にも" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-hoikuen-yochien", label: "保育園・幼稚園・学童保育", desc: "子育て・介護サービスの集客" },
+      { href: "/column/katsushika-kaji-daikou", label: "家事代行・ベビーシッター", desc: "子育て・介護サービスの集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -300,6 +318,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "公開前の確認項目" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-jitensha-ten", label: "自転車店の集客", desc: "自動車関連業種の集客" },
+      { href: "/column/katsushika-chuuko-jidousha", label: "中古車販売・買取店の集客", desc: "自動車関連業種の集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -340,6 +361,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/column/katsushika-web-shukyaku-hiyo", label: "葛飾区のWeb集客の費用相場", desc: "予算配分の考え方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-kagiya-shukyaku", label: "鍵屋・鍵交換業者の集客", desc: "緊急対応サービスの集客" },
+      { href: "/column/katsushika-cleaning-service", label: "ハウスクリーニング・便利屋", desc: "緊急対応サービスの集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -380,6 +404,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "信頼性を伝えるサイト設計" },
       { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・信頼性の示し方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-hanaya-shashinkan", label: "花屋・写真館の集客", desc: "ライフイベント関連の集客" },
+      { href: "/column/katsushika-bridal-photo-wedding", label: "フォトウェディングの集客", desc: "ライフイベント関連の集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -420,6 +447,9 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "緊急対応サイトの設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-kekkon-soudanjo", label: "結婚相談所・探偵事務所", desc: "ライフイベント関連の集客" },
+      { href: "/column/katsushika-bridal-photo-wedding", label: "フォトウェディングの集客", desc: "ライフイベント関連の集客" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 ];

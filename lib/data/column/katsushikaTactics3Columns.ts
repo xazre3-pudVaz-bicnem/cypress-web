@@ -46,6 +46,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-gbp-setup", label: "葛飾区のGBP設定完全ガイド", desc: "基本設定の手順" },
       { href: "/meo/photo-posting", label: "GBP写真投稿ガイド", desc: "効果的な写真投稿の基礎" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "写真戦略のご相談も可" },
+      { href: "/column/katsushika-google-ads-nyumon", label: "Google広告（リスティング）入門", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-sns-ads-nyumon", label: "SNS広告入門ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-multi-channel-senryaku", label: "複数チャネル戦略でリスク分散", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -90,6 +93,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design/page-speed", label: "表示速度の改善サービス", desc: "技術的な最適化の詳細" },
       { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "公開前の確認20項目" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "速度診断も無料" },
+      { href: "/column/katsushika-sns-ads-nyumon", label: "SNS広告入門ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-multi-channel-senryaku", label: "複数チャネル戦略でリスク分散", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-claim-taiou-enjou-boushi", label: "クレーム対応・炎上防止ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -134,6 +140,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo/content-seo", label: "コンテンツSEOの詳細", desc: "記事制作の完全ガイド" },
       { href: "/seo/blog-strategy", label: "ブログ戦略の基礎", desc: "SEOブログの設計方法" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "コンテンツ制作の相談も可" },
+      { href: "/column/katsushika-multi-channel-senryaku", label: "複数チャネル戦略でリスク分散", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-claim-taiou-enjou-boushi", label: "クレーム対応・炎上防止ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-tenpo-tenkai-fc", label: "多店舗展開・フランチャイズ化", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -174,6 +183,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/sns", label: "SNS運用支援", desc: "サービス全体の詳細" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "動画埋め込みサイトの制作" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "動画活用のご相談も可" },
+      { href: "/column/katsushika-claim-taiou-enjou-boushi", label: "クレーム対応・炎上防止ガイド", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-tenpo-tenkai-fc", label: "多店舗展開・フランチャイズ化", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-shukyaku-hiyo", label: "Web集客の費用相場", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -214,6 +226,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/web-design/contact-form", label: "問い合わせフォーム最適化", desc: "申込数を増やす設計" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "GBPからの予約導線" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "予約システム連携のご相談も可" },
+      { href: "/column/katsushika-tenpo-tenkai-fc", label: "多店舗展開・フランチャイズ化", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-shukyaku-hiyo", label: "Web集客の費用相場", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-saiyo-site", label: "採用サイト戦略", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -254,6 +269,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/ai/customer-support", label: "AIカスタマーサポート導入", desc: "サービスの詳細" },
       { href: "/ai", label: "AI活用支援", desc: "業務効率化の総合案内" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "チャットボット導入のご相談も可" },
+      { href: "/column/katsushika-web-shukyaku-hiyo", label: "Web集客の費用相場", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-saiyo-site", label: "採用サイト戦略", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -299,6 +317,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "ホームページ補助金の詳細" },
       { href: "/column/katsushika-web-shukyaku-hiyo", label: "葛飾区のWeb集客の費用相場", desc: "予算配分の考え方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "見積書整理のサポートも可" },
+      { href: "/column/katsushika-saiyo-site", label: "採用サイト戦略", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-homepage-renewal", label: "ホームページのリニューアル", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -343,6 +364,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-web-design-company-guide", label: "葛飾区の制作会社の選び方", desc: "契約時の注意点" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "サイプレスの制作サービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "ドメイン移管のご相談も可" },
+      { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-homepage-renewal", label: "ホームページのリニューアル", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-design-cost", label: "ホームページ制作の費用", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -383,6 +407,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo/search-console", label: "サーチコンソール活用ガイド", desc: "詳細な使い方の解説" },
       { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない原因", desc: "GBPインサイトの見方" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "解析レポートのご相談も可" },
+      { href: "/column/katsushika-homepage-renewal", label: "ホームページのリニューアル", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-design-cost", label: "ホームページ制作の費用", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-design-company-guide", label: "制作会社の選び方", desc: "実践ノウハウの詳細" },
     ],
   },
   {
@@ -423,6 +450,9 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-gbp-setup", label: "葛飾区のGBP設定完全ガイド", desc: "基本設定の手順" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "地域密着のMEO支援" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "複数店舗運用のご相談も可" },
+      { href: "/column/katsushika-web-design-cost", label: "ホームページ制作の費用", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-web-design-company-guide", label: "制作会社の選び方", desc: "実践ノウハウの詳細" },
+      { href: "/column/katsushika-gbp-photo-strategy", label: "GBP写真戦略の完全ガイド", desc: "実践ノウハウの詳細" },
     ],
   },
 ];

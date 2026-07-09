@@ -50,6 +50,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/kanamachi-meo-shukyaku", label: "金町の店舗集客ガイド", desc: "隣接エリアの戦略" },
       { href: "/meo/local-keyword", label: "ローカルキーワード選定", desc: "地域名キーワードの設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "亀有は訪問対応可" },
+      { href: "/column/tateishi-meo-shukyaku", label: "立石の店舗集客ガイド", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-yotsugi-meo-shukyaku", label: "四つ木・東四つ木の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-niijuku-okudo-meo", label: "新宿(にいじゅく)・奥戸の集客", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -97,6 +100,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-juku-shukyaku", label: "葛飾区の学習塾の集客", desc: "文教エリアの生徒募集" },
       { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "エリア全体のサービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "金町は訪問対応可" },
+      { href: "/column/katsushika-yotsugi-meo-shukyaku", label: "四つ木・東四つ木の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-niijuku-okudo-meo", label: "新宿(にいじゅく)・奥戸の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-mizumoto-meo-shukyaku", label: "水元・西水元の集客", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -144,6 +150,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/kameari-meo-shukyaku", label: "亀有の店舗集客ガイド", desc: "区内他エリアの戦略" },
       { href: "/meo/local-keyword", label: "ローカルキーワード選定", desc: "地域名キーワードの設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "新小岩は訪問対応可" },
+      { href: "/column/katsushika-niijuku-okudo-meo", label: "新宿(にいじゅく)・奥戸の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-mizumoto-meo-shukyaku", label: "水元・西水元の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/kameari-kanamachi-shinkoiwa-web-design", label: "亀有・金町・新小岩のHP制作", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -191,6 +200,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/sns/instagram", label: "Instagram運用支援", desc: "拡散される投稿設計" },
       { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "エリア全体のサービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "立石は訪問対応可" },
+      { href: "/column/katsushika-mizumoto-meo-shukyaku", label: "水元・西水元の集客", desc: "エリア別の集客戦略" },
+      { href: "/column/kameari-kanamachi-shinkoiwa-web-design", label: "亀有・金町・新小岩のHP制作", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-adachi-edogawa-web-marketing", label: "足立・江戸川区のWeb集客戦略", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -238,6 +250,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-inbound-tagengo", label: "葛飾区のインバウンド対策", desc: "多言語対応の実務" },
       { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "エリア全体のサービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "柴又は訪問対応可" },
+      { href: "/column/kameari-kanamachi-shinkoiwa-web-design", label: "亀有・金町・新小岩のHP制作", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-adachi-edogawa-web-marketing", label: "足立・江戸川区のWeb集客戦略", desc: "エリア別の集客戦略" },
+      { href: "/column/aoto-takasago-ohanajaya-horikiri-meo", label: "青砥・高砂・お花茶屋・堀切", desc: "エリア別の集客戦略" },
     ],
   },
   {
@@ -286,6 +301,9 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-gbp-setup", label: "葛飾区のGBP初期設定", desc: "登録から最適化まで" },
       { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "エリア全体のサービス" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区全域に訪問対応可" },
+      { href: "/column/katsushika-adachi-edogawa-web-marketing", label: "足立・江戸川区のWeb集客戦略", desc: "エリア別の集客戦略" },
+      { href: "/column/katsushika-inbound-tagengo", label: "インバウンド・多言語対応", desc: "エリア別の集客戦略" },
+      { href: "/column/kameari-meo-shukyaku", label: "亀有の店舗集客ガイド", desc: "エリア別の集客戦略" },
     ],
   },
 ];

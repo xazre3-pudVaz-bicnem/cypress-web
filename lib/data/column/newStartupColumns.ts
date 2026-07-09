@@ -56,6 +56,9 @@ export const NEW_STARTUP_COLUMNS: ColumnTopicPage[] = [
       { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
       { href: "/seo", label: "SEO対策", desc: "検索上位表示支援" },
       { href: "/contact", label: "無料相談", desc: "葛飾区の起業相談" },
+      { href: "/column/katsushika-startup-funding-web", label: "創業資金とWeb集客費用", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-google-business-profile", label: "開業時のGBP整備", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -112,6 +115,9 @@ export const NEW_STARTUP_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo", label: "SEO対策", desc: "検索上位表示支援" },
       { href: "/area/katsushika", label: "葛飾区Web集客", desc: "葛飾区の集客支援" },
       { href: "/contact", label: "無料相談", desc: "制作・補助金のご相談" },
+      { href: "/column/katsushika-startup-google-business-profile", label: "開業時のGBP整備", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-homepage-seo", label: "創業期のSEOに強いHP作り", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -163,6 +169,9 @@ export const NEW_STARTUP_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/start-business", label: "葛飾区で起業する方へ", desc: "起業総合ガイド" },
       { href: "/partner/referral", label: "取次店（紹介パートナー）", desc: "シンプルな紹介制度" },
       { href: "/contact", label: "無料相談", desc: "パートナー制度のご相談" },
+      { href: "/column/katsushika-startup-homepage", label: "創業期のHP制作の失敗回避", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-startup-homepage-seo", label: "創業期のSEOに強いHP作り", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {

@@ -46,6 +46,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-clinic-shukyaku", label: "葛飾区のクリニックの集患", desc: "医療広告規制の基礎" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-shinryonaika-shukyaku", label: "精神科・心療内科の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-doubutsu-byoin", label: "動物病院の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -90,6 +93,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-biyou-clinic", label: "葛飾区の美容クリニックの集患", desc: "自由診療との違い" },
       { href: "/column/katsushika-clinic-shukyaku", label: "葛飾区のクリニックの集患", desc: "医療広告規制の基礎" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-doubutsu-byoin", label: "動物病院の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-seikotsuin-shukyaku", label: "整骨院・接骨院の集客", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -134,6 +140,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-clinic-shukyaku", label: "葛飾区のクリニックの集患", desc: "医療広告規制の基礎" },
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "配慮あるサイト設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-biyou-clinic", label: "美容クリニックの集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-seikotsuin-shukyaku", label: "整骨院・接骨院の集客", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -178,6 +187,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-pet-shop-trimming", label: "葛飾区のペットショップの集客", desc: "ペット関連業種の基礎" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-pet-reien", label: "ペット霊園・ペット葬儀", desc: "ペット関連業種の集客ノウハウ" },
+      { href: "/column/katsushika-pet-hotel", label: "ペットホテルの集客", desc: "ペット関連業種の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -222,6 +234,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-seikotsuin-shukyaku", label: "葛飾区の整骨院の集客", desc: "保険診療との違い" },
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-chiropractic-shukyaku", label: "カイロプラクティックの集客", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-ganka-shukyaku", label: "眼科の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -266,6 +281,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-shigyo-shukyaku", label: "葛飾区の士業のWeb集客", desc: "士業全般の集客設計" },
       { href: "/column/katsushika-souzoku-shukatsu", label: "葛飾区の終活サポートの集客", desc: "相続分野との連携" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-jinzai-haken", label: "人材紹介・派遣会社の集客", desc: "専門サービス業の集客ノウハウ" },
+      { href: "/column/katsushika-office-seisou", label: "オフィス清掃業の集客", desc: "専門サービス業の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -310,6 +328,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-seikotsuin-shukyaku", label: "葛飾区の整骨院の集客", desc: "保険診療との違い" },
       { href: "/column/katsushika-shinkyuin-shukyaku", label: "葛飾区の鍼灸院の集客", desc: "東洋医学的アプローチとの比較" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-ganka-shukyaku", label: "眼科の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-hifuka-shukyaku", label: "皮膚科の集患", desc: "医療・専門診療の集患ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -354,6 +375,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-nail-esthe-shukyaku", label: "葛飾区のネイル・エステの集客", desc: "美容サロン全般の集客設計" },
       { href: "/sns/instagram", label: "Instagram運用支援", desc: "サロン発信の設計" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-hair-salon-shukyaku", label: "美容室の集客ガイド", desc: "美容業種の集客ノウハウ" },
+      { href: "/column/katsushika-barber-mens-biyou", label: "メンズ美容室・バーバー", desc: "美容業種の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -398,6 +422,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/column/katsushika-hair-salon-shukyaku", label: "葛飾区の美容室の集客", desc: "美容室全般の集客設計" },
       { href: "/column/katsushika-yoyaku-system", label: "予約システム導入ガイド", desc: "オンライン予約の導入方法" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-nail-esthe-shukyaku", label: "ネイル・エステサロンの集客", desc: "美容業種の集客ノウハウ" },
+      { href: "/column/katsushika-datsumou-salon", label: "脱毛サロンの集客", desc: "美容業種の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
   {
@@ -442,6 +469,9 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
       { href: "/column/katsushika-google-map-junni-sagaru", label: "マップ順位が上がらない原因", desc: "緊急業種のGBP最適化" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
+      { href: "/column/katsushika-bousui-amamori", label: "防水工事・雨漏り修理", desc: "住宅関連業種の集客ノウハウ" },
+      { href: "/column/katsushika-aircon-kyuutouki", label: "エアコン工事・給湯器交換", desc: "住宅関連業種の集客ノウハウ" },
+      { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },
 ];
