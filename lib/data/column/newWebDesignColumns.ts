@@ -419,7 +419,7 @@ export const NEW_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/web-design", label: "ホームページ制作サービスを見る", desc: "美容室向けHP制作" },
-      { href: "/industries/beauty-salon", label: "美容室のWeb集客支援を見る", desc: "美容室特化の集客支援" },
+      { href: "/industries/beauty", label: "美容室のWeb集客支援を見る", desc: "美容室特化の集客支援" },
       { href: "/meo", label: "MEO対策サービスを見る", desc: "Googleマップ集客" },
       { href: "/contact", label: "美容室HP制作の無料相談をする", desc: "新規客獲得の設計" },
     ],

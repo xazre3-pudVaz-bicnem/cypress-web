@@ -881,7 +881,7 @@ export const NEW_INDUSTRIES_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/services/seo", label: "SEO対策サービスを見る", desc: "コンテンツSEO戦略" },
       { href: "/services/aio", label: "AIO対策サービスを見る", desc: "AI検索最適化" },
-      { href: "/column/aio-content-strategy", label: "AIOコンテンツ戦略を読む", desc: "AI検索への対応方法" },
+      { href: "/column/content-strategy-faq-aio", label: "FAQ強化によるAIO戦略", desc: "AI検索への対応方法" },
       { href: "/contact", label: "IT企業のWeb集客を相談する", desc: "無料相談はこちら" },
     ],
   },

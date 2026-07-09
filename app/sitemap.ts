@@ -2,11 +2,17 @@ import type { MetadataRoute } from "next";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
 import { COLUMNS } from "@/lib/data/columns";
 import { getAllCaseSlugs, getAllServiceSlugs, getAllIndustrySlugs } from "@/lib/data/caseStudies";
+import { getAllPosts } from "@/lib/blog";
 
 const BASE = "https://www.cypress-all.co.jp";
 
+// ビルド時刻を毎回lastModifiedにすると、更新していないページまで
+// 「今日更新した」とGoogleに伝えてしまい、鮮度シグナルの信頼性を損なう。
+// サイト全体の基準日（このファイルを最後に手動更新した日）のみ固定値で使う。
+const SITE_BASE_DATE = new Date("2026-07-10");
+
 function urls(paths: string[], opts: Partial<MetadataRoute.Sitemap[0]> = {}): MetadataRoute.Sitemap {
-  return paths.map((p) => ({ url: `${BASE}${p}`, lastModified: new Date(), ...opts }));
+  return paths.map((p) => ({ url: `${BASE}${p}`, lastModified: SITE_BASE_DATE, ...opts }));
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -378,11 +384,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/column/category/web-marketing",
     ], { changeFrequency: "weekly", priority: 0.85 }),
 
-    // コラム専門ガイド（トピックページ）
-    ...urls(
-      ALL_COLUMN_TOPICS.map((t) => `/column/${t.slug}`),
-      { changeFrequency: "monthly", priority: 0.8 }
-    ),
+    // コラム専門ガイド（トピックページ）— 各記事の実際の公開日・更新日を反映
+    ...ALL_COLUMN_TOPICS.map((t) => ({
+      url: `${BASE}/column/${t.slug}`,
+      lastModified: new Date(t.updatedAt ?? t.publishedAt ?? SITE_BASE_DATE),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
 
     // コラム記事（薄い記事）
     ...urls(
@@ -390,13 +398,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { changeFrequency: "weekly", priority: 0.7 }
     ),
 
-    // ブログ (index + category pages — individual posts handled by WP)
+    // ブログ index・カテゴリページ
     ...urls([
       "/blog",
       "/blog/category/meo", "/blog/category/seo",
       "/blog/category/aio", "/blog/category/web-design",
       "/blog/category/sns", "/blog/category/ai",
     ], { changeFrequency: "daily", priority: 0.7 }),
+
+    // ブログ個別記事（日次cronで自動追加される記事を含む。実際の公開日を反映）
+    ...getAllPosts().map((p) => ({
+      url: `${BASE}/blog/${p.slug}`,
+      lastModified: new Date(p.date || SITE_BASE_DATE),
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
+    })),
 
     // 採用
     ...urls([

@@ -176,7 +176,7 @@ export const NEW_STARTUP_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "local-business-sales-partner",
-    title: "地域事業者向けWeb集客サービスを紹介する販売パートナー制度とは",
+    title: "Web集客の取次店・代理店とは｜向いている人と収益モデルを解説",
     titleEn: "Local Business Web Marketing Sales Partner Program",
     category: "Webマーケティング",
     primaryKeyword: "Web集客 代理店 取次店",
@@ -228,7 +228,7 @@ export const NEW_STARTUP_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "startup-side-revenue-web-services",
-    title: "創業初期に収益の柱を増やす方法とWeb集客サービスの取次モデル",
+    title: "創業者・個人事業主の副収入モデル｜Web集客取次の始め方",
     titleEn: "Startup Side Revenue Web Services",
     category: "Webマーケティング",
     primaryKeyword: "創業 副業 Web集客 取次",

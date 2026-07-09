@@ -164,7 +164,7 @@ export const WEB_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/web-design/page-speed", label: "ページ速度改善サービス", desc: "Core Web Vitals対策" },
       { href: "/knowledge/website-speed", label: "表示速度基礎知識", desc: "ページ速度の重要性" },
-      { href: "/knowledge/core-web-vitals-guide", label: "Core Web Vitalsガイド", desc: "3指標の詳しい解説" },
+      { href: "/glossary/core-web-vitals", label: "Core Web Vitals用語解説", desc: "3指標の詳しい解説" },
       { href: "/web-design", label: "Web制作サービス", desc: "高速サイト制作" },
       { href: "/column/sme-website-essentials", label: "ホームページ必須要素", desc: "サイト設計の基本" },
       { href: "/seo", label: "SEO対策", desc: "表示速度とSEOの関係" },

@@ -200,7 +200,7 @@ export const NEW_MEO_COLUMNS: ColumnTopicPage[] = [
       { href: "/meo", label: "MEO対策サービスを見る", desc: "写真戦略の支援" },
       { href: "/column/gbp-setup-first-steps", label: "GBP基本設定の整え方を読む", desc: "プロフィール最適化の全体" },
       { href: "/industries/restaurant", label: "飲食店のWeb集客支援を見る", desc: "飲食店の写真戦略" },
-      { href: "/industries/beauty-salon", label: "美容室のWeb集客支援を見る", desc: "美容室の写真活用" },
+      { href: "/industries/beauty", label: "美容室のWeb集客支援を見る", desc: "美容室の写真活用" },
       { href: "/contact", label: "MEO対策の無料相談をする", desc: "写真戦略のアドバイス" },
     ],
   },
@@ -342,7 +342,7 @@ export const NEW_MEO_COLUMNS: ColumnTopicPage[] = [
       { q: "スタイリストごとのSNSアカウントはGBPに関係しますか？", a: "GBPとの直接的な連動はありませんが、スタイリスト個人のSNSへのフォロワーがサロン選択に影響することがあります。スタイリストのInstagramなどのSNSリンクをGBPの説明文に掲載することもできます。" },
     ],
     related: [
-      { href: "/industries/beauty-salon", label: "美容室のWeb集客支援を見る", desc: "美容室向けSEO・MEO戦略" },
+      { href: "/industries/beauty", label: "美容室のWeb集客支援を見る", desc: "美容室向けSEO・MEO戦略" },
       { href: "/meo", label: "MEO対策サービスを見る", desc: "美容室のGoogleマップ集客" },
       { href: "/column/google-map-photo-strategy", label: "Googleマップ写真投稿の活用方法を読む", desc: "写真戦略の詳細" },
       { href: "/contact", label: "美容室MEO対策の無料相談をする", desc: "集客力向上のアドバイス" },

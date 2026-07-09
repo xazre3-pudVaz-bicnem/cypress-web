@@ -291,7 +291,7 @@ export const NEW_STARTUP2_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "local-sales-agent-web-marketing",
-    title: "地域事業者向けWeb集客サービスを紹介する販売パートナー制度とは",
+    title: "Web集客サービスの販売パートナー制度とは｜概要と活動の始め方",
     titleEn: "Sales Partner Program for Local Web Marketing Services",
     category: "Webマーケティング",
     categorySlug: "web-marketing",
@@ -364,7 +364,7 @@ export const NEW_STARTUP2_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "startup-revenue-streams-web-services",
-    title: "創業初期に収益の柱を増やす方法とWeb集客サービスの取次モデル",
+    title: "創業初期の収益の柱づくり｜営業経験を活かすWeb集客取次モデル",
     titleEn: "Building Revenue Streams for Startups with Web Service Referrals",
     category: "Webマーケティング",
     categorySlug: "web-marketing",

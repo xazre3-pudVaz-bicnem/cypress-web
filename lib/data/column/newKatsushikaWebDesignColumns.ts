@@ -48,7 +48,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "料金・制作の流れ・対応エリア" },
       { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "補助金活用の進め方" },
-      { href: "/cost/web-design", label: "ホームページ制作の費用相場", desc: "全国的な相場の解説" },
+      { href: "/cost/homepage", label: "ホームページ制作の費用相場", desc: "全国的な相場の解説" },
       { href: "/column/katsushika-web-design-company-guide", label: "葛飾区の制作会社の選び方", desc: "失敗しない選定基準" },
       { href: "/contact", label: "無料見積もり・相談", desc: "葛飾区は訪問対応可" },
       { href: "/column/katsushika-aio-taisaku", label: "AIO対策（AI検索）", desc: "実践ノウハウの詳細" },

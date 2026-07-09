@@ -327,7 +327,7 @@ export const NEW_AIO_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/aio", label: "AIO対策サービスを見る", desc: "業種別ページのAIO対策支援" },
       { href: "/industries/restaurant", label: "飲食店のWeb集客支援を見る", desc: "業種別ページの実例" },
-      { href: "/industries/beauty-salon", label: "美容室のWeb集客支援を見る", desc: "美容室向けページの実例" },
+      { href: "/industries/beauty", label: "美容室のWeb集客支援を見る", desc: "美容室向けページの実例" },
       { href: "/column/what-is-aio-vs-seo", label: "AIO対策の基本を読む", desc: "AIO全体像の理解" },
       { href: "/contact", label: "AIO対策の無料相談をする", desc: "業種別ページの最適化" },
     ],

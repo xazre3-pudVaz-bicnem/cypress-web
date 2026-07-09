@@ -184,7 +184,7 @@ export const NEW_CASE_STUDY_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/meo", label: "MEO対策サービスを見る", desc: "美容室のMEO対策支援" },
-      { href: "/industries/beauty-salon", label: "美容室・サロンの集客支援を見る", desc: "美容室特化の集客支援" },
+      { href: "/industries/beauty", label: "美容室・サロンの集客支援を見る", desc: "美容室特化の集客支援" },
       { href: "/column/beauty-salon-meo-photo-review", label: "美容室のMEO写真・口コミ戦略を読む", desc: "MEO詳細施策" },
       { href: "/contact", label: "美容室のMEO・SEO対策を相談する", desc: "集客改善の相談" },
     ],
@@ -231,7 +231,7 @@ export const NEW_CASE_STUDY_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/meo", label: "MEO対策サービスを見る", desc: "整骨院・整体院のMEO支援" },
-      { href: "/industries/osteopathic-clinic", label: "整骨院・整体院の集客支援を見る", desc: "整骨院特化の集客支援" },
+      { href: "/industries/osteopathic", label: "整骨院・整体院の集客支援を見る", desc: "整骨院特化の集客支援" },
       { href: "/column/osteopathic-meo-search-intent", label: "整骨院のMEO検索意図を読む", desc: "MEO詳細施策" },
       { href: "/contact", label: "整骨院のMEO対策を相談する", desc: "集客改善の相談" },
     ],

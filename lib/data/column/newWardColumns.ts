@@ -127,7 +127,7 @@ export const NEW_WARD_COLUMNS: ColumnTopicPage[] = [
       { q: "台東区の飲食店でGoogleマップの口コミを増やすには？", a: "テーブルにGoogleマップQRコードを設置・会計時に口コミ依頼カードを手渡し・LINE公式アカウントでリピーターへの口コミ依頼が効果的です。観光客が多いエリアは滞在時に口コミを書いてもらいやすい特性があります。" },
     ],
     related: [
-      { href: "/column/sumida-meo-seo-guide", label: "墨田区のMEO・SEOガイド", desc: "隣接エリアの戦略" },
+      { href: "/column/adachi-edogawa-sumida-web-marketing", label: "足立・江戸川・墨田区のWeb集客戦略", desc: "隣接エリアの戦略" },
       { href: "/column/adachi-edogawa-sumida-web-marketing", label: "東部エリアMEO・SEOガイド", desc: "東京東部の戦略" },
       { href: "/meo/google-business-profile", label: "GBP多言語対応", desc: "外国語対応のMEO" },
       { href: "/contact", label: "台東区の無料相談", desc: "訪問対応でのご相談" },

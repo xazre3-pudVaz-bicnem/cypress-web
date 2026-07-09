@@ -41,7 +41,7 @@ export const NEW_COST2_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/column/web-marketing-strategy-7-rules", label: "Webマーケティング7鉄則", desc: "全体戦略の解説" },
       { href: "/column/google-analytics-ga4-setup-guide", label: "GA4設定・使い方", desc: "効果測定ツールの設定" },
-      { href: "/services/web-marketing", label: "Web集客・マーケティング", desc: "サービス詳細" },
+      { href: "/services", label: "サービス一覧", desc: "サービス詳細" },
       { href: "/contact", label: "ROI分析・改善の相談", desc: "無料相談はこちら" },
     ],
   },
@@ -83,8 +83,8 @@ export const NEW_COST2_COLUMNS: ColumnTopicPage[] = [
       { q: "MEO対策とSEO対策を同時に依頼できますか？", a: "はい、株式会社サイプレスではMEO対策・SEO対策をセットで提供しています。セット依頼の場合は費用面での優遇もあります。初回相談は無料です。" },
     ],
     related: [
-      { href: "/meo/pricing", label: "MEO対策の費用・プラン", desc: "詳細な費用情報" },
-      { href: "/seo/pricing", label: "SEO対策の費用・プラン", desc: "SEO投資の詳細" },
+      { href: "/cost/meo", label: "MEO対策の費用・プラン", desc: "詳細な費用情報" },
+      { href: "/cost/seo", label: "SEO対策の費用・プラン", desc: "SEO投資の詳細" },
       { href: "/column/meo-vs-google-ads-comparison", label: "MEOとGoogle広告の比較", desc: "集客施策の比較" },
       { href: "/contact", label: "MEO・SEOの費用相談", desc: "無料で見積もり相談" },
     ],
@@ -127,7 +127,7 @@ export const NEW_COST2_COLUMNS: ColumnTopicPage[] = [
       { q: "Google広告の運用代行を依頼できますか？", a: "はい、株式会社サイプレスではGoogle広告の設定・運用代行・月次レポートを提供しています。MEO対策・SEOと組み合わせた統合的なWeb集客も提案可能です。初回相談は無料です。" },
     ],
     related: [
-      { href: "/services/google-ads", label: "Google広告運用サービス", desc: "広告運用の詳細" },
+      { href: "/services", label: "サービス一覧・ご相談", desc: "広告運用の詳細" },
       { href: "/column/meo-vs-google-ads-comparison", label: "MEOとGoogle広告の比較", desc: "施策の使い分け" },
       { href: "/column/web-marketing-roi-calculation-guide", label: "Webマーケティング費用対効果", desc: "ROI計算方法" },
       { href: "/contact", label: "Google広告の無料相談", desc: "費用・効果の見積もり" },
@@ -173,7 +173,7 @@ export const NEW_COST2_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/column/web-marketing-roi-calculation-guide", label: "WebマーケティングROI計算", desc: "費用対効果の測定" },
       { href: "/column/web-marketing-strategy-7-rules", label: "Webマーケティング7鉄則", desc: "全体戦略ガイド" },
-      { href: "/services/web-marketing", label: "Web集客・マーケティング", desc: "包括的サービス詳細" },
+      { href: "/services", label: "サービス一覧", desc: "包括的サービス詳細" },
       { href: "/contact", label: "予算計画の無料相談", desc: "最適な予算配分をご提案" },
     ],
   },
@@ -216,7 +216,7 @@ export const NEW_COST2_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/seo", label: "SEO対策完全ガイド", desc: "SEO全体の正しい知識" },
-      { href: "/seo/pricing", label: "SEO対策の適正費用", desc: "適切な費用の目安" },
+      { href: "/cost/seo", label: "SEO対策の適正費用", desc: "適切な費用の目安" },
       { href: "/column/seo-vs-listing-ads-comparison", label: "SEOとリスティング広告の比較", desc: "集客施策の選択" },
       { href: "/contact", label: "SEO業者の評価・相談", desc: "無料セカンドオピニオン" },
     ],

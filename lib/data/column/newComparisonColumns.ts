@@ -40,7 +40,7 @@ export const NEW_COMPARISON_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/meo", label: "MEO対策完全ガイド", desc: "Googleマップ集客の詳細" },
-      { href: "/meo/pricing", label: "MEO対策の費用", desc: "月額費用の詳細" },
+      { href: "/cost/meo", label: "MEO対策の費用", desc: "月額費用の詳細" },
       { href: "/column/meo-company-selection-guide", label: "MEO会社の選び方", desc: "依頼先選定のコツ" },
       { href: "/contact", label: "MEO・広告の無料相談", desc: "最適な施策をご提案" },
     ],
@@ -84,7 +84,7 @@ export const NEW_COMPARISON_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/seo", label: "SEO対策完全ガイド", desc: "SEO全体像" },
-      { href: "/seo/pricing", label: "SEO対策の費用相場", desc: "SEO投資の目安" },
+      { href: "/cost/seo", label: "SEO対策の費用相場", desc: "SEO投資の目安" },
       { href: "/column/meo-vs-google-ads-comparison", label: "MEOとGoogle広告の比較", desc: "地域集客の比較" },
       { href: "/contact", label: "SEO・広告の無料相談", desc: "最適な施策をご提案" },
     ],
@@ -128,7 +128,7 @@ export const NEW_COMPARISON_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/meo", label: "MEO対策完全ガイド", desc: "MEO対策の全体像" },
-      { href: "/meo/pricing", label: "MEO対策費用", desc: "費用・プランの詳細" },
+      { href: "/cost/meo", label: "MEO対策費用", desc: "費用・プランの詳細" },
       { href: "/column/meo-vs-google-ads-comparison", label: "MEOとGoogle広告の比較", desc: "施策の使い分け" },
       { href: "/contact", label: "MEO対策の無料相談", desc: "信頼できる業者を探す" },
     ],
@@ -216,7 +216,7 @@ export const NEW_COMPARISON_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/meo", label: "MEO対策完全ガイド", desc: "Googleマップ集客の全体像" },
-      { href: "/meo/pricing", label: "MEO対策の費用", desc: "費用・プランの詳細" },
+      { href: "/cost/meo", label: "MEO対策の費用", desc: "費用・プランの詳細" },
       { href: "/column/meo-company-selection-guide", label: "MEO会社の選び方", desc: "業者選定ガイド" },
       { href: "/contact", label: "MEO対策の無料相談", desc: "自社に最適な方法を確認" },
     ],
