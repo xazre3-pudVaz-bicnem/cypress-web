@@ -17,6 +17,7 @@ import { NEW_WEB_DESIGN_COLUMNS } from "./newWebDesignColumns";
 import { NEW_LOCAL_SEO_COLUMNS } from "./newLocalSeoColumns";
 import { NEW_CASE_STUDY_COLUMNS } from "./newCaseStudyColumns";
 import { NEW_SNS_COLUMNS } from "./newSnsColumns";
+import { SNS_ADVANCED_COLUMNS } from "./snsAdvancedColumns";
 import { NEW_SEARCH_CONSOLE_COLUMNS } from "./newSearchConsoleColumns";
 import { NEW_WEB_MARKETING_COLUMNS } from "./newWebMarketingColumns";
 import { NEW_INDUSTRIES_COLUMNS } from "./newIndustriesColumns";
@@ -56,6 +57,15 @@ import { TRAINING_INDUSTRY2_COLUMNS } from "./trainingIndustry2Columns";
 import { TRAINING_ROLE_TOOL_COLUMNS } from "./trainingRoleToolColumns";
 import { TRAINING_COST_PLAN_COLUMNS } from "./trainingCostPlanColumns";
 import { TRAINING_COURSE_AREA_COLUMNS } from "./trainingCourseAreaColumns";
+import { CONTENT_QUALITY_COLUMNS } from "./contentQualityColumns";
+import { SC_CONSOLE_ADVANCED_COLUMNS } from "./scConsoleAdvancedColumns";
+import { ANALYTICS_COLUMNS } from "./analyticsColumns";
+import { AIO_ADVANCED2_COLUMNS } from "./aioAdvanced2Columns";
+import { PERFORMANCE_COLUMNS } from "./performanceColumns";
+import { CONVERSION_COLUMNS } from "./conversionColumns";
+import { ADS_COLUMNS } from "./adsColumns";
+import { TECHNICAL_SEO_COLUMNS } from "./technicalSeoColumns";
+import { WEB_OPERATION_COLUMNS } from "./webOperationColumns";
 
 export type { ColumnTopicPage };
 
@@ -78,6 +88,7 @@ const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
   ...NEW_LOCAL_SEO_COLUMNS,
   ...NEW_CASE_STUDY_COLUMNS,
   ...NEW_SNS_COLUMNS,
+  ...SNS_ADVANCED_COLUMNS,
   ...NEW_SEARCH_CONSOLE_COLUMNS,
   ...NEW_WEB_MARKETING_COLUMNS,
   ...NEW_INDUSTRIES_COLUMNS,
@@ -117,6 +128,15 @@ const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
   ...TRAINING_ROLE_TOOL_COLUMNS,
   ...TRAINING_COST_PLAN_COLUMNS,
   ...TRAINING_COURSE_AREA_COLUMNS,
+  ...CONTENT_QUALITY_COLUMNS,
+  ...SC_CONSOLE_ADVANCED_COLUMNS,
+  ...ANALYTICS_COLUMNS,
+  ...AIO_ADVANCED2_COLUMNS,
+  ...PERFORMANCE_COLUMNS,
+  ...CONVERSION_COLUMNS,
+  ...ADS_COLUMNS,
+  ...TECHNICAL_SEO_COLUMNS,
+  ...WEB_OPERATION_COLUMNS,
 ];
 
 /**
