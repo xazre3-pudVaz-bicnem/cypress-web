@@ -47,6 +47,9 @@ import { KATSUSHIKA_FOOD_RETAIL2_COLUMNS } from "./katsushikaFoodRetail2Columns"
 import { KATSUSHIKA_HOUSING_B2B_COLUMNS } from "./katsushikaHousingB2BColumns";
 import { KATSUSHIKA_LEISURE_EDU_COLUMNS } from "./katsushikaLeisureEduColumns";
 import { KATSUSHIKA_AREA_DEEPDIVE_COLUMNS } from "./katsushikaAreaDeepDiveColumns";
+import { TRAINING_SUBSIDY_COLUMNS } from "./trainingSubsidyColumns";
+import { TRAINING_AI_COLUMNS } from "./trainingAiColumns";
+import { TRAINING_WEB_COLUMNS } from "./trainingWebColumns";
 
 export type { ColumnTopicPage };
 
@@ -99,6 +102,9 @@ const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
   ...KATSUSHIKA_HOUSING_B2B_COLUMNS,
   ...KATSUSHIKA_LEISURE_EDU_COLUMNS,
   ...KATSUSHIKA_AREA_DEEPDIVE_COLUMNS,
+  ...TRAINING_SUBSIDY_COLUMNS,
+  ...TRAINING_AI_COLUMNS,
+  ...TRAINING_WEB_COLUMNS,
 ];
 
 /**

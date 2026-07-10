@@ -382,6 +382,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/column/category/sns",
       "/column/category/search-console",
       "/column/category/web-marketing",
+      "/column/category/training",
     ], { changeFrequency: "weekly", priority: 0.85 }),
 
     // コラム専門ガイド（トピックページ）— 各記事の実際の公開日・更新日を反映
@@ -423,7 +424,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...urls([
       "/agent", "/agent/web-design", "/agent/meo", "/agent/seo", "/agent/aio", "/agent/faq",
       "/partner", "/partner/referral", "/partner/local-sales-agent", "/partner/katsushika-startup",
+      "/partner/training-company-referral",
     ], { changeFrequency: "monthly", priority: 0.8 }),
+
+    // リスキリング研修・人材開発支援助成金（中心ページを最優先）
+    ...urls([
+      "/training/reskilling-subsidy",
+    ], { changeFrequency: "weekly", priority: 0.9 }),
+    ...urls([
+      "/training/ai-dx-reskilling", "/training/chatgpt-ai-training",
+      "/training/web-marketing-training", "/training/hr-development-subsidy-guide",
+      "/training/reskilling-training-company-referral",
+    ], { changeFrequency: "monthly", priority: 0.85 }),
 
     // その他
     ...urls([

@@ -37,7 +37,16 @@ const FAQS = [
   },
 ];
 
-export default function ContactPage() {
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  // 研修ページのCTAから /contact?type=xxx で遷移した場合に問い合わせ種別を自動選択する。
+  const sp = await searchParams;
+  const raw = sp.type;
+  const typeParam = typeof raw === "string" ? raw : undefined;
+
   return (
     <>
       <Header />
@@ -79,7 +88,7 @@ export default function ContactPage() {
                 <h2 className="font-bold text-[#0F172A] text-lg mb-8">
                   お問い合わせフォーム
                 </h2>
-                <ContactForm />
+                <ContactForm initialType={typeParam} />
               </div>
             </ScrollReveal>
 
@@ -150,6 +159,14 @@ export default function ContactPage() {
                     </li>
                     <li>
                       <p className="text-[#374151] text-xs leading-relaxed font-medium mb-0.5">
+                        研修導入・研修会社の紹介
+                      </p>
+                      <p className="text-[#6B7280] text-xs leading-relaxed">
+                        リスキリング・AI・DX・Webマーケティング研修のご相談。実績ある提携研修会社をご紹介します
+                      </p>
+                    </li>
+                    <li>
+                      <p className="text-[#374151] text-xs leading-relaxed font-medium mb-0.5">
                         採用に関するお問い合わせ
                       </p>
                       <p className="text-[#6B7280] text-xs leading-relaxed">
@@ -165,6 +182,9 @@ export default function ContactPage() {
                       </p>
                     </li>
                   </ul>
+                  <p className="text-[#9CA3AF] text-[11px] leading-[1.85] mt-4 pt-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                    株式会社サイプレスは研修会社への紹介窓口です。助成金の申請代行は行っておらず、採択・支給を保証するものではありません。
+                  </p>
                 </div>
               </ScrollReveal>
             </div>

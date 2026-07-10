@@ -57,6 +57,7 @@ const COL_AGENT: FooterSection[] = [
     heading: "パートナー",
     links: [
       { href: "/partner/referral", label: "取次店・紹介パートナー" },
+      { href: "/training/reskilling-subsidy", label: "研修導入相談" },
     ],
   },
 ];

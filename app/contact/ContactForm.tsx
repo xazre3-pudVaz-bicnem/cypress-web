@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 type FormState = "idle" | "sending" | "success" | "error";
 
@@ -11,6 +12,13 @@ const INQUIRY_TYPES = [
   { value: "meo", label: "MEO対策について" },
   { value: "aio", label: "AIO対策（AI検索対策）について" },
   { value: "package", label: "Web集客パッケージについて" },
+  { value: "reskilling", label: "リスキリング研修について" },
+  { value: "ai-dx-training", label: "AI・DX研修について" },
+  { value: "chatgpt-training", label: "ChatGPT・生成AI研修について" },
+  { value: "web-marketing-training", label: "Webマーケティング研修について" },
+  { value: "subsidy-training", label: "人材開発支援助成金を活用した研修について" },
+  { value: "training-referral", label: "研修会社の紹介について" },
+  { value: "partner-training", label: "提携研修会社への相談について" },
   { value: "partner", label: "販売パートナー制度について" },
   { value: "agent", label: "取次店制度について" },
   { value: "startup", label: "葛飾区での創業・Web集客について" },
@@ -18,15 +26,41 @@ const INQUIRY_TYPES = [
   { value: "other", label: "その他" },
 ];
 
-export default function ContactForm() {
+const VALID_TYPES = new Set(INQUIRY_TYPES.map((t) => t.value));
+
+/**
+ * 研修関連の種別を選んだ場合のみ、提携研修会社への情報共有の同意欄を表示する。
+ * 同意がない場合、提携研修会社へ情報を共有しない運用とする（個人情報保護法上の第三者提供）。
+ */
+const TRAINING_TYPES = new Set([
+  "reskilling",
+  "ai-dx-training",
+  "chatgpt-training",
+  "web-marketing-training",
+  "subsidy-training",
+  "training-referral",
+  "partner-training",
+]);
+
+/**
+ * initialType は Server Component 側で ?type= を読み取って渡す。
+ * useSearchParams を使うとフォーム全体がクライアント描画になり、
+ * 初回表示でローディングが挟まるため、サーバーで解決する。
+ */
+export default function ContactForm({ initialType }: { initialType?: string }) {
+  const defaultType = initialType && VALID_TYPES.has(initialType) ? initialType : "general";
+
   const [state, setState] = useState<FormState>("idle");
   const [form, setForm] = useState({
     name: "",
     company: "",
     email: "",
-    type: "general",
+    type: defaultType,
     message: "",
   });
+  const [shareConsent, setShareConsent] = useState(false);
+
+  const isTrainingInquiry = TRAINING_TYPES.has(form.type);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -41,8 +75,8 @@ export default function ContactForm() {
     setState("sending");
     /*
       TODO: Integrate email service (e.g. Resend, SendGrid, Formspree).
-      Example with fetch:
-      const res = await fetch('/api/contact', { method: 'POST', body: JSON.stringify(form) });
+      送信時は shareConsent が false の場合、提携研修会社へ情報を共有しないこと。
+      const payload = { ...form, shareConsent: isTrainingInquiry && shareConsent };
     */
     await new Promise((r) => setTimeout(r, 900));
     setState("success");
@@ -185,9 +219,35 @@ export default function ContactForm() {
         />
       </div>
 
+      {isTrainingInquiry && (
+        <div className="p-5" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+          <p className="text-[#0F172A] text-sm font-medium mb-3">
+            提携研修会社への情報共有について
+          </p>
+          <label className="flex items-start gap-3 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={shareConsent}
+              onChange={(e) => setShareConsent(e.target.checked)}
+              className="mt-1 shrink-0"
+              style={{ width: "16px", height: "16px", accentColor: "#0F172A" }}
+            />
+            <span className="text-[#374151] text-[13px] leading-[1.9]">
+              お問い合わせ内容に応じて、提携する研修会社へ会社名、ご担当者名、連絡先、お問い合わせ内容を共有する場合があります。内容を確認し、同意します。
+            </span>
+          </label>
+          <p className="text-[#9CA3AF] text-xs leading-[1.85] mt-3 pt-3" style={{ borderTop: "1px solid #E8E4DC" }}>
+            同意いただかない場合、提携研修会社へ情報を共有することはありません。その場合も、株式会社サイプレスからのご返信は行います。詳細は
+            <Link href="/privacy-policy" className="underline" style={{ color: "#374151" }}>
+              プライバシーポリシー
+            </Link>
+            をご確認ください。
+          </p>
+        </div>
+      )}
+
       <p className="text-[#9CA3AF] text-xs leading-relaxed">
-        送信いただいた個人情報は、お問い合わせへの対応のみに使用し、
-        第三者への提供は行いません。
+        送信いただいた個人情報は、お問い合わせへの対応のみに使用します。ご本人の同意なく第三者へ提供することはありません。
       </p>
 
       <button

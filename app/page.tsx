@@ -154,6 +154,74 @@ export default function Home() {
         <HomeProcess />
 
         {/* =====================================================
+            8.5 TRAINING — 法人向け研修導入相談への導線（1箇所のみ）
+            サイプレスは研修会社ではなく提携研修会社への紹介窓口。
+        ===================================================== */}
+        <section style={{ background: "#F9F8F5", borderTop: "1px solid #ECE8E0", padding: "clamp(48px, 6vh, 72px) 0" }}>
+          <div
+            style={{
+              maxWidth: "1152px",
+              margin: "0 auto",
+              padding: "0 clamp(24px, 5vw, 60px)",
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "space-between",
+              gap: "28px",
+              flexWrap: "wrap",
+            }}
+          >
+            <div style={{ maxWidth: "640px" }}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  letterSpacing: "0.25em",
+                  color: "#9CA3AF",
+                  fontSize: "10px",
+                  marginBottom: "10px",
+                  textTransform: "uppercase",
+                }}
+              >
+                Training
+              </p>
+              <h2
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "clamp(18px, 2.2vw, 26px)",
+                  color: "#0F172A",
+                  fontWeight: 700,
+                  lineHeight: 1.4,
+                  marginBottom: "12px",
+                }}
+              >
+                法人向けAI・DX研修、リスキリング研修の導入相談
+              </h2>
+              <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.95" }}>
+                人材開発支援助成金の活用を検討している企業向けに、AI・DX・Webマーケティング研修の導入相談を承っています。サイプレスは研修会社への紹介窓口として、実績ある提携研修会社をご紹介します。
+              </p>
+              <p style={{ fontSize: "11.5px", color: "#9CA3AF", lineHeight: "1.85", marginTop: "12px" }}>
+                助成金の申請代行は行っておらず、採択・支給を保証するものではありません。
+              </p>
+            </div>
+            <Link
+              href="/training/reskilling-subsidy"
+              style={{
+                fontSize: "13px",
+                fontFamily: "var(--font-display)",
+                letterSpacing: "0.06em",
+                color: "#0F172A",
+                textDecoration: "none",
+                border: "1px solid #0F172A",
+                padding: "12px 26px",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
+              }}
+            >
+              研修導入相談を見る →
+            </Link>
+          </div>
+        </section>
+
+        {/* =====================================================
             9. COLUMN — latest articles (SEO internal linking)
         ===================================================== */}
         <section style={{ background: "#FFFFFF", padding: "clamp(64px, 9vh, 104px) 0" }}>

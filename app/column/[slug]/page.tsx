@@ -247,7 +247,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
 
             <p
               className="text-[15px] leading-[1.9] max-w-2xl"
-              style={{ color: "#374151" }}
+              style={{ color: "#374151", overflowWrap: "anywhere" }}
             >
               {topic.intro}
             </p>
@@ -257,8 +257,10 @@ function ColumnTopicPage({ slug }: { slug: string }) {
         {/* Article + Sidebar */}
         <section className="pb-20 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-[1fr_240px] gap-12">
-            {/* Main */}
-            <div>
+            {/* Main
+                min-w-0: 本文に長いURL等の分割不可能な文字列があると
+                grid の 1fr トラックが min-content まで広がり横スクロールが発生するため。 */}
+            <div className="min-w-0">
               {/* Table of contents */}
               <div
                 className="p-6 mb-10"
@@ -300,7 +302,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                     >
                       {sec.heading}
                     </h2>
-                    <p className="text-[15px] leading-[1.9]">{sec.body}</p>
+                    <p className="text-[15px] leading-[1.9]" style={{ overflowWrap: "anywhere" }}>{sec.body}</p>
                   </div>
                 ))}
 
@@ -326,7 +328,10 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                           >
                             Q
                           </span>
-                          {faq.q}
+                          {/* min-w-0 + overflow-wrap:anywhere:
+                              flex の匿名アイテムは min-width:auto のため、長いURLを含むと
+                              min-content 幅まで広がり横スクロールを起こす。要素化して抑える。 */}
+                          <span className="min-w-0" style={{ overflowWrap: "anywhere" }}>{faq.q}</span>
                         </dt>
                         <dd className="text-[14px] leading-[1.9] flex items-start gap-3" style={{ color: "#374151" }}>
                           <span
@@ -335,7 +340,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                           >
                             A
                           </span>
-                          {faq.a}
+                          <span className="min-w-0" style={{ overflowWrap: "anywhere" }}>{faq.a}</span>
                         </dd>
                       </div>
                     ))}

@@ -143,6 +143,19 @@ export const COLUMN_CATEGORY_DEFS: {
       { q: "Web集客を外注する際に注意すべきことは？", a: "目的・予算・成果指標（KPI）を先に決めてから依頼することが重要です。「とりあえず任せる」では期待外れの結果になりがちです。何を改善したいかを明確にして依頼しましょう。" },
     ],
   },
+  {
+    slug: "training",
+    name: "研修・人材育成",
+    nameEn: "Training",
+    description:
+      "AI研修・DX研修・Webマーケティング研修など、リスキリング研修の導入を検討する企業向けのコラムです。人材開発支援助成金の活用を検討する際の注意点、研修会社の選び方、社内で定着させる進め方を解説します。株式会社サイプレスは研修会社への紹介窓口であり、助成金の申請代行は行っていません。",
+    relatedService: "/training/reskilling-subsidy",
+    faq: [
+      { q: "研修・人材育成コラムはどんな方に向いていますか？", a: "社員にAIやDXのスキルを身につけさせたい経営者・人事担当者、Web集客を社内で理解できる人材を育てたい企業の方に向けた内容です。" },
+      { q: "サイプレスは研修を実施しているのですか？", a: "いいえ。株式会社サイプレスはWebマーケティング会社であり、研修を実施する会社ではありません。研修導入を検討する企業と、実績ある提携研修会社をつなぐ紹介窓口として対応しています。" },
+      { q: "助成金の申請代行はしてもらえますか？", a: "いいえ。サイプレスは助成金の申請書作成、計画届作成、支給申請、労働局対応などの申請代行を行っていません。申請手続きは、申請企業自身または社会保険労務士等の専門家へご相談ください。また、助成金の採択・支給を保証するものではありません。" },
+    ],
+  },
 ];
 
 export const COLUMN_CATEGORY_MAP = Object.fromEntries(
@@ -291,9 +304,12 @@ export default async function ColumnCategoryPage({
         </section>
 
         <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "64px 24px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: "64px", alignItems: "start" }}>
+          {/* lg未満では1カラムに畳む。280pxのサイドバーが固定のままだと
+              スマホで横スクロールが発生するため。minmax(0,1fr) は長いURL等で
+              1frトラックが min-content まで広がるのを防ぐ。 */}
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-12 lg:gap-16 items-start">
             {/* 記事一覧 */}
-            <div>
+            <div className="min-w-0">
               {articles.length === 0 ? (
                 <div style={{ padding: "80px 0", textAlign: "center", color: "#9ca3af" }}>
                   <p>このカテゴリのコラムは準備中です。</p>
@@ -347,8 +363,8 @@ export default async function ColumnCategoryPage({
               )}
             </div>
 
-            {/* サイドバー */}
-            <aside style={{ position: "sticky", top: "88px" }}>
+            {/* サイドバー（1カラムに畳まれるlg未満ではstickyを無効化） */}
+            <aside className="w-full min-w-0 lg:sticky lg:top-[88px]">
               {/* カテゴリリスト */}
               <div style={{ marginBottom: "40px" }}>
                 <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "16px" }}>

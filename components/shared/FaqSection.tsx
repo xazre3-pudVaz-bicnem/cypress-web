@@ -43,7 +43,7 @@ export default function FaqSection({ items, heading = "よくある質問", bgCo
               </button>
               {open === i && (
                 <div className="pb-5">
-                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.a}</p>
+                  <p className="text-[14px] leading-[1.9]" style={{ color: "#374151", overflowWrap: "anywhere" }}>{item.a}</p>
                 </div>
               )}
             </div>
