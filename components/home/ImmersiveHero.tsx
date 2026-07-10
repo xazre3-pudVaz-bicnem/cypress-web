@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useMotionValue, useSpring, type MotionValue } from "framer-motion";
 import Image from "next/image";
 
@@ -64,8 +64,70 @@ function RevealWord({
   );
 }
 
+/**
+ * ヒーロー背景動画の読み込み可否。
+ * LCPは常に hero.jpg（priority付きImage）が担い、動画はマウント後に後追いで読む。
+ * 以下のいずれかに該当する場合は動画を読み込まない（静止画のまま）:
+ *  - prefers-reduced-motion: reduce
+ *  - Save-Data が有効、または低速回線（2G/3G）
+ *  - 狭い画面（モバイルは2.8MBの転送に見合わない）
+ */
+function shouldLoadHeroVideo(): boolean {
+  if (typeof window === "undefined") return false;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+  if (window.innerWidth < 768) return false;
+
+  const conn = (
+    navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+    }
+  ).connection;
+  if (conn?.saveData) return false;
+  if (conn?.effectiveType && /(^|-)2g$|3g/.test(conn.effectiveType)) return false;
+
+  return true;
+}
+
 export default function ImmersiveHero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  // src は最初空。条件を満たしたときだけ後から差し込む（preload="none" と併せて初期転送を防ぐ）
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    if (!shouldLoadHeroVideo()) return;
+
+    let idleId: number | undefined;
+    let timeoutId: number | undefined;
+
+    // 動画の転送がLCPと帯域を奪い合わないよう、load 完了 → アイドル、の順で読み込む。
+    const schedule = () => {
+      const ric = (window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number })
+        .requestIdleCallback;
+      if (ric) idleId = ric(() => setVideoSrc("/hero-loop.mp4"), { timeout: 2000 });
+      else timeoutId = window.setTimeout(() => setVideoSrc("/hero-loop.mp4"), 500);
+    };
+
+    if (document.readyState === "complete") schedule();
+    else window.addEventListener("load", schedule, { once: true });
+
+    return () => {
+      window.removeEventListener("load", schedule);
+      const cic = (window as Window & { cancelIdleCallback?: (h: number) => void }).cancelIdleCallback;
+      if (idleId !== undefined) cic?.(idleId);
+      if (timeoutId !== undefined) window.clearTimeout(timeoutId);
+    };
+  }, []);
+
+  // src が入ったら明示的に再生を試みる（autoPlay が効かないブラウザ対策）
+  useEffect(() => {
+    if (!videoSrc) return;
+    videoRef.current?.play().catch(() => {
+      /* 自動再生がブロックされた場合は静止画のまま。表示は崩れない。 */
+    });
+  }, [videoSrc]);
+
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -108,6 +170,7 @@ export default function ImmersiveHero() {
           animate={{ scale: [1.02, 1.09] }}
           transition={{ duration: 22, repeat: Infinity, repeatType: "mirror", ease: "linear" }}
         >
+          {/* LCP要素。動画が再生できない環境ではこのまま背景として残る。 */}
           <Image
             src="/hero.jpg"
             alt="株式会社サイプレス — Web集客支援"
@@ -116,6 +179,36 @@ export default function ImmersiveHero() {
             className="object-cover"
             sizes="100vw"
           />
+
+          {/* 背景ループ動画。hero.jpg の上にフェードインで重ねる。
+              scaleX(-1): 光の塊が左に寄っており左寄せの見出しと競合するため左右反転する。
+              scale(1.05): 動画に焼き込まれたフィルム風の黒縁・角丸を切り落とす。
+              poster属性は付けない。真下の next/image が同じ hero.jpg を最適化して表示しており、
+              poster を指定すると未最適化の原本を二重取得してLCPを押し下げる。 */}
+          {videoSrc && (
+            <video
+              ref={videoRef}
+              src={videoSrc}
+              muted
+              loop
+              playsInline
+              preload="none"
+              aria-hidden
+              tabIndex={-1}
+              onCanPlay={() => setVideoReady(true)}
+              className="object-cover"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                transform: "scaleX(-1) scale(1.05)",
+                opacity: videoReady ? 1 : 0,
+                transition: "opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1)",
+                pointerEvents: "none",
+              }}
+            />
+          )}
         </motion.div>
       </motion.div>
 
