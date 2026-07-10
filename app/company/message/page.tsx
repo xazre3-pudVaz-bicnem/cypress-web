@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "代表メッセージ | 株式会社サイプレス",
     description: "株式会社サイプレス代表取締役・織田春樹からのメッセージ。創業の背景とWebマーケティングへの想い。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -332,7 +332,7 @@ export default function MessagePage() {
               <div className="md:sticky md:top-24">
                 <div className="relative overflow-hidden mb-6" style={{ height: "260px" }}>
                   <Image
-                    src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+                    src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
                     alt="ビジネスパートナーとの握手・信頼関係"
                     fill
                     className="object-cover"
@@ -403,7 +403,7 @@ export default function MessagePage() {
         {/* Cinematic break */}
         <section className="relative overflow-hidden" style={{ height: "280px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+            src="/ChatGPT Image 2026年6月13日 19_13_37.jpg"
             alt="ミーティングでドキュメントを確認するビジネスパーソン"
             fill
             className="object-cover"

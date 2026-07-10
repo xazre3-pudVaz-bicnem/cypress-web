@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
     description: "GoogleナレッジグラフへのエンティティとしてのGoogle認識を高めるAIO対策。Organization構造化データ・GBP連携・権威サイト掲載で企業の知名度を向上。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -354,7 +354,7 @@ export default function KnowledgeGraphPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="Googleナレッジグラフ対策"
             fill
             className="object-cover"

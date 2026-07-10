@@ -173,7 +173,7 @@ export default function StructuredDataPage() {
 
         {/* Hero image */}
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 19_12_19.png" alt="構造化データ・JSON-LD・Schema.org実装のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_12_19.jpg" alt="構造化データ・JSON-LD・Schema.org実装のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

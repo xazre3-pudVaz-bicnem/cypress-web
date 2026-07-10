@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区のホームページ制作・補助金活用支援｜SEOに強いWeb制作",
     description: "葛飾区のホームページ制作と補助金・助成金の確認ポイントを解説。SEO・MEO対応のホームページ制作と、ホームページ作成費補助の注意点をまとめています。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

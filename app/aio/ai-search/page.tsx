@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ",
     description: "AI検索エンジン（ChatGPT・Gemini・Perplexity・Claude）に引用されるためのAIO対策。E-E-A-T・構造化データ・llms.txt設置など実践的な最適化手法を解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -183,7 +183,7 @@ export default function AiSearchPage() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="AI検索対策・AIO最適化" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.jpg" alt="AI検索対策・AIO最適化" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(15,23,42,0.50)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

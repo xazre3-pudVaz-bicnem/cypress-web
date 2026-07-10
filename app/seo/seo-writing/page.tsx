@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEOライティング｜検索意図に応えるコンテンツ作成｜株式会社サイプレス",
     description: "SEOライティングの基本原則と実践方法。検索意図の4分類・見出し設計・E-E-A-T対応・AI生成コンテンツへの対応・定期更新まで解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -103,7 +103,7 @@ export default function Page() {
 
         {/* Hero image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_10_29.png" alt="SEOライティング・コンテンツ作成" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_10_29.jpg" alt="SEOライティング・コンテンツ作成" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
@@ -258,7 +258,7 @@ export default function Page() {
 
         {/* Image break */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_11_20.png" alt="コンテンツ設計・記事制作" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_11_20.jpg" alt="コンテンツ設計・記事制作" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.5)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

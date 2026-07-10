@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "llms.txt設置・設定方法｜AIクローラー向けサイト最適化",
     description: "llms.txtの役割・書き方・Next.jsでの設置手順を解説。AIクローラーにサイト情報を正確に提供するAIO対策の新しい実装方法です。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -194,7 +194,7 @@ export default function Page() {
         ============================================================ */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="llms.txtとAIクローラー対策"
             fill
             sizes="100vw"

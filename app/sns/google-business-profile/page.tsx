@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Googleビジネスプロフィール投稿活用｜SNS×GBP連携で集客を強化｜株式会社サイプレス",
     description:
       "GoogleビジネスプロフィールをSNSチャネルとして活用する投稿・写真戦略。InstagramとGBPの連携設計から効果測定まで。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -196,7 +196,7 @@ export default function Page() {
         {/* =================== Hero Image =================== */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
             alt="Googleビジネスプロフィール投稿活用イメージ"
             fill
             sizes="100vw"

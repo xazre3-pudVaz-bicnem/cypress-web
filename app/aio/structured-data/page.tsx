@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "構造化データ実装（AIO向け）｜Schema.org完全ガイド｜株式会社サイプレス",
     description:
       "AI検索・Google検索で引用されやすくなる構造化データの実装。Schema.org対応でリッチリザルトとAIO引用率を同時に改善。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -421,7 +421,7 @@ export default function StructuredDataPage() {
 
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="構造化データ実装・AI検索最適化" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.jpg" alt="構造化データ実装・AI検索最適化" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.3)" }} />
         </section>
 
@@ -613,7 +613,7 @@ export default function StructuredDataPage() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
-                <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="構造化データの実装手順・ラップトップアナリティクス" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src="/ChatGPT Image 2026年6月13日 19_19_44.jpg" alt="構造化データの実装手順・ラップトップアナリティクス" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>

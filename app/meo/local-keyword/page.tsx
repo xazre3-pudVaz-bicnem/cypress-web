@@ -348,7 +348,7 @@ export default function LocalKeywordPage() {
 
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
-          <Image src="/1.png" alt="地域キーワード設計・チャートを確認するグループ" fill className="object-cover" sizes="100vw" />
+          <Image src="/1.jpg" alt="地域キーワード設計・チャートを確認するグループ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.15)" }} />
         </section>
 
@@ -581,7 +581,7 @@ export default function LocalKeywordPage() {
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+                  src="/ChatGPT Image 2026年6月13日 19_12_19.jpg"
                   alt="キーワード設計・タブレットを使ったミーティング"
                   fill
                   className="object-cover"

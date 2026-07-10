@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "江東区のSEO対策・MEO対策・ホームページ制作｜亀戸・錦糸町・豊洲の集客支援｜株式会社サイプレス",
     description: "江東区の中小企業・店舗のSEO・MEO対策をサイプレスが支援。亀戸・錦糸町・豊洲・木場・清澄白河エリアの地域特性に合わせた集客戦略を提供。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -130,7 +130,7 @@ export default function Page() {
         </section>
 
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_57.png" alt="江東区のデジタルマーケティング" fill sizes="100vw" priority style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_57.jpg" alt="江東区のデジタルマーケティング" fill sizes="100vw" priority style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

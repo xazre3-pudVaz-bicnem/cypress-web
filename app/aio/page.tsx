@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIO対策とは｜生成AI検索で引用される企業になる方法｜株式会社サイプレス",
     description: "ChatGPT・Gemini・Perplexityに引用される企業になるためのAIO対策完全ガイド。AI検索時代の新しい集客戦略。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -263,7 +263,7 @@ export default function AioIndexPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "400px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
             alt="AI検索最適化・AIO対策"
             fill
             className="object-cover"
@@ -677,7 +677,7 @@ export default function AioIndexPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+                  src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
                   alt="AIOとSEOの違い・デジタル環境でのタイピング"
                   fill
                   className="object-cover"

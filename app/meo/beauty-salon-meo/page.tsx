@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "美容室・美容サロンのMEO対策｜Googleマップで新規集客と再来店促進｜株式会社サイプレス",
     description: "美容室・ネイルサロン・エステのGoogleマップ集客。GBPでのサービス設定・施術写真・口コミ管理・予約連携など美容サロン特有のMEO対策を徹底解説。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -162,7 +162,7 @@ export default function Page() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="美容室・サロンのMEO対策" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.jpg" alt="美容室・サロンのMEO対策" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(16px,2.5vw,24px)", letterSpacing: "0.05em", textAlign: "center" }}>
               Googleマップで選ばれるサロンへ

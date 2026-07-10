@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "サービスサイト・LP制作｜コンバージョンを高める設計のWebサイト｜株式会社サイプレス",
     description: "サービスサイト・LP制作のガイド。問い合わせ・申し込みを増やすCV重視の設計を解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -163,7 +163,7 @@ export default function ServiceSitePage() {
 
         {/* Image Band */}
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="サービスサイト・LP制作・コンバージョン最適化のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="サービスサイト・LP制作・コンバージョン最適化のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
           <div className="relative flex items-center justify-center h-full text-center px-6">
             <p className="font-black" style={{ fontSize: "clamp(20px,3vw,36px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>問い合わせが増えるサイト設計</p>

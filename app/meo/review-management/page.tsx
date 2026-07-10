@@ -343,7 +343,7 @@ export default function ReviewManagementPage() {
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+            src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
             alt="口コミ対策・スマートフォンを活用する女性たち"
             fill
             className="object-cover"
@@ -567,7 +567,7 @@ export default function ReviewManagementPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_13_37.png"
+                  src="/ChatGPT Image 2026年6月13日 19_13_37.jpg"
                   alt="口コミ返信の重要性・ドキュメントを確認するビジネスパーソン"
                   fill
                   className="object-cover"

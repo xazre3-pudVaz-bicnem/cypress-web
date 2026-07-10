@@ -243,7 +243,7 @@ export default function WebDesignPage() {
         {/* Image Band */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 20_02_56.png"
+            src="/ChatGPT Image 2026年6月13日 20_02_56.jpg"
             alt="Webサイト制作・コーポレートサイト・SEOサイト設計のイメージ"
             fill
             className="object-cover"

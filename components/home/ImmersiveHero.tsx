@@ -109,7 +109,7 @@ export default function ImmersiveHero() {
           transition={{ duration: 22, repeat: Infinity, repeatType: "mirror", ease: "linear" }}
         >
           <Image
-            src="/hero.png"
+            src="/hero.jpg"
             alt="株式会社サイプレス — Web集客支援"
             fill
             priority
@@ -122,7 +122,7 @@ export default function ImmersiveHero() {
       {/* Second layer texture */}
       <div style={{ position: "absolute", inset: 0 }}>
         <Image
-          src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+          src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
           alt=""
           fill
           className="object-cover"

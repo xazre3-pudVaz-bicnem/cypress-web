@@ -169,7 +169,7 @@ export default function RecruitPage() {
         <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "72px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_13_52.png"
+              src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
               alt="株式会社サイプレス採用 チームミーティング"
               fill
               className="object-cover"

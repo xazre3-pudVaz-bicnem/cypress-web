@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "神奈川県のSEO対策・MEO対策・Web制作｜横浜・川崎・藤沢・相模原の集客支援｜株式会社サイプレス",
     description: "神奈川県の中小企業・店舗のSEO・MEO対策をサイプレスがオンラインで支援。横浜・川崎・藤沢・相模原全県Zoomで完全対応。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -180,7 +180,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png"
+            src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
             alt="神奈川県のコーポレートミーティング"
             fill
             sizes="100vw"

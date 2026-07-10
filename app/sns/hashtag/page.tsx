@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ハッシュタグ戦略｜InstagramとXで新規リーチを拡大するタグ設計｜株式会社サイプレス",
     description: "InstagramとXのハッシュタグ戦略。ビッグ・ミドル・ニッチの3層設計・地域タグ・業種タグ・ブランドタグを組み合わせて新規フォロワーを効率的に獲得する方法を解説します。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_20_52.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_20_52.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,7 +111,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="ハッシュタグ戦略" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.jpg" alt="ハッシュタグ戦略" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               正しいハッシュタグが、あなたの投稿を届ける。

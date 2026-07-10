@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "採用サイト制作｜求職者の応募意欲を高める採用特化Webサイト｜株式会社サイプレス",
     description: "採用サイト制作のガイド。求職者の共感と応募意欲を高めるデザイン・コンテンツ・SEO対策まで解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -163,7 +163,7 @@ export default function RecruitSitePage() {
 
         {/* Image Band */}
         <section className="relative flex items-center justify-center" style={{ height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png" alt="採用サイト制作・リクルートサイト・採用ブランディングのイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg" alt="採用サイト制作・リクルートサイト・採用ブランディングのイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.5)" }} />
           <div className="relative text-center px-6">
             <p className="font-black" style={{ fontSize: "clamp(20px,3vw,36px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>「ここで働きたい」を設計する</p>

@@ -165,7 +165,7 @@ export default function BlogStrategyPage() {
 
         {/* Hero Image */}
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_13_52.png" alt="ブログ戦略・コンテンツカレンダー・SEO記事設計のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_13_52.jpg" alt="ブログ戦略・コンテンツカレンダー・SEO記事設計のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-6xl mx-auto px-6">

@@ -13,7 +13,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "四つ木 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_23 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_23 (7).jpg",
     eyecatchAlt: "四つ木・東四つ木エリアの店舗集客を解説するイメージ",
     metaDescription:
       "四つ木・東四つ木エリアの店舗・中小企業向け集客ガイド。京成押上線沿線の商圏特性、下町商店街の生活密着型ビジネスに効くMEO戦略を解説します。",
@@ -60,7 +60,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "新宿 にいじゅく 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_25 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_25 (8).jpg",
     eyecatchAlt: "新宿（にいじゅく）・奥戸エリアの店舗集客を解説するイメージ",
     metaDescription:
       "葛飾区新宿（にいじゅく）・奥戸エリアの店舗向け集客ガイド。落ち着いた住宅地としての特性、ファミリー層への訴求、地域名の読み方の周知も含めた情報発信を解説します。",
@@ -107,7 +107,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "水元 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_28 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_28 (9).jpg",
     eyecatchAlt: "水元・西水元エリアの店舗集客を解説するイメージ",
     metaDescription:
       "葛飾区水元・西水元エリアの店舗向け集客ガイド。水元公園を訪れる来園者の取り込み方、住宅地としての日常需要、金町エリアとの連携戦略を解説します。",
@@ -154,7 +154,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 Google広告 出稿",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_30 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_30 (10).jpg",
     eyecatchAlt: "葛飾区の店舗のGoogle広告入門を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けGoogle広告（リスティング広告）入門ガイド。地域限定配信の設定方法、無駄な予算消化を防ぐキーワード選定、初めての出稿で気をつける点を解説します。",
@@ -201,7 +201,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 SNS広告",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (6).jpg",
     eyecatchAlt: "葛飾区の店舗のSNS広告入門を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けInstagram・Facebook広告入門ガイド。地域・年齢・興味関心で絞り込む配信設定、少額予算での試し方、効果測定の基本を解説します。",
@@ -248,7 +248,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 店舗 集客チャネル",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (6).jpg",
     eyecatchAlt: "葛飾区の店舗の複数チャネル戦略を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向け複数チャネル戦略ガイド。単一の集客経路への依存リスク、GBP・SEO・SNS・LINEを組み合わせた分散戦略、チャネルごとの役割分担を解説します。",
@@ -295,7 +295,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 GBP 属性設定",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (7).jpg",
     eyecatchAlt: "葛飾区の店舗のGBP属性設定を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けGoogleビジネスプロフィール「属性」設定完全ガイド。業種別に設定すべき属性項目、絞り込み検索での露出を高める活用法を解説します。",
@@ -342,7 +342,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 店舗 クレーム対応",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (8).jpg",
     eyecatchAlt: "葛飾区の店舗のクレーム対応・炎上防止を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けクレーム対応・炎上防止ガイド。低評価口コミへの適切な返信方法、SNSでの拡散リスクへの備え、日頃からできる予防策を解説します。",
@@ -389,7 +389,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 多店舗展開 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (9).jpg",
     eyecatchAlt: "葛飾区発の多店舗展開・フランチャイズ化を解説するイメージ",
     metaDescription:
       "葛飾区で1号店を成功させた店舗の多店舗展開・フランチャイズ化に向けたWeb戦略ガイド。ブランド統一と地域最適化の両立、加盟店募集ページの設計を解説します。",
@@ -436,7 +436,7 @@ export const KATSUSHIKA_AREA_DEEPDIVE_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 GBP Q&A",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_12 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_12 (8).jpg",
     eyecatchAlt: "葛飾区の店舗のGBP Q&A機能活用を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けGoogleビジネスプロフィール「Q&A」機能活用ガイド。誰でも投稿できる仕組みの理解、自作自演の注意点、よくある質問の先回り投稿方法を解説します。",

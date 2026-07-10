@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Web集客パッケージ料金｜ホームページ制作・SEO・LP制作｜株式会社サイプレス",
     description:
       "ホームページ制作・SEO対策・LP制作を組み合わせたWeb集客パッケージ。150万円・200万円・300万円の3プランをご案内します。",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

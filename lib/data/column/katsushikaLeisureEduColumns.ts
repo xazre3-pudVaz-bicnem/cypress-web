@@ -13,7 +13,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 カラオケ店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_57 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_57 (7).jpg",
     eyecatchAlt: "葛飾区のカラオケ店の集客を解説するイメージ",
     metaDescription:
       "葛飾区のカラオケ店向け集客ガイド。放課後の学生利用と夜の宴会利用で異なる訴求設計、フリータイムプランの見せ方、パーティー利用の獲得方法を解説します。",
@@ -59,7 +59,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 スーパー銭湯",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_59 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_59 (8).jpg",
     eyecatchAlt: "葛飾区のスーパー銭湯・温浴施設の集客を解説するイメージ",
     metaDescription:
       "葛飾区のスーパー銭湯・温浴施設向け集客ガイド。日常利用の常連客獲得、イベント風呂の発信、サウナブームを取り込む情報設計を解説します。",
@@ -101,7 +101,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 テニススクール",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_01 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_01 (9).jpg",
     eyecatchAlt: "葛飾区のテニススクールの集客を解説するイメージ",
     metaDescription:
       "葛飾区のテニススクール向け集客ガイド。初心者から上級者までのレベル別クラス設計、子ども向けジュニアクラスの訴求、体験レッスンの申込導線を解説します。",
@@ -148,7 +148,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 スイミングスクール",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_03 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_03 (10).jpg",
     eyecatchAlt: "葛飾区のスイミングスクールの集客を解説するイメージ",
     metaDescription:
       "葛飾区のスイミングスクール向け集客ガイド。乳幼児から大人までの幅広い対象層への訴求分け、進級システムの分かりやすい説明、安全管理体制の伝え方を解説します。",
@@ -195,7 +195,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ゴルフスクール",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_09 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_09 (1).jpg",
     eyecatchAlt: "葛飾区のゴルフスクールの集客を解説するイメージ",
     metaDescription:
       "葛飾区のゴルフスクール向け集客ガイド。道具を持たない初心者への訴求、レッスンプロの指導実績の見せ方、コースデビューまでのサポート体制を解説します。",
@@ -242,7 +242,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 予備校 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_11 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_11 (2).jpg",
     eyecatchAlt: "葛飾区の予備校・大学受験専門塾の集客を解説するイメージ",
     metaDescription:
       "葛飾区の予備校・大学受験専門塾向け集客ガイド。合格実績の正確な見せ方、個別指導と集団授業の違いの説明、保護者と生徒双方への訴求分けを解説します。",
@@ -289,7 +289,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 資格スクール",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_13 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_13 (3).jpg",
     eyecatchAlt: "葛飾区の資格スクール（簿記・宅建）の集客を解説するイメージ",
     metaDescription:
       "葛飾区の資格スクール（簿記・宅建・行政書士など）向け集客ガイド。働きながら学ぶ社会人への訴求、合格率の正確な提示、通学とオンラインの併用提案を解説します。",
@@ -336,7 +336,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ペットホテル",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_17 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_17 (4).jpg",
     eyecatchAlt: "葛飾区のペットホテルの集客を解説するイメージ",
     metaDescription:
       "葛飾区のペットホテル向け集客ガイド。旅行・出張時の預け先探しの検索行動、施設の様子を伝える写真戦略、緊急時の対応体制の明示方法を解説します。",
@@ -382,7 +382,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 パソコン修理",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_18 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_18 (5).jpg",
     eyecatchAlt: "葛飾区のパソコン修理・ITサポート業者の集客を解説するイメージ",
     metaDescription:
       "葛飾区のパソコン修理・ITサポート業者向け集客ガイド。専門用語を使わない分かりやすい説明、出張サポートの訴求、シニア層・法人それぞれへの対応を解説します。",
@@ -429,7 +429,7 @@ export const KATSUSHIKA_LEISURE_EDU_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 キッチンリフォーム",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_21 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_27_21 (6).jpg",
     eyecatchAlt: "葛飾区のキッチンリフォーム専門店の集客を解説するイメージ",
     metaDescription:
       "葛飾区のキッチンリフォーム専門店向け集客ガイド。工期中の生活への影響への配慮、グレード別の価格帯提示、システムキッチンメーカーとの取扱関係を解説します。",

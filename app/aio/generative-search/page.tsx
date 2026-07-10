@@ -360,7 +360,7 @@ export default function GenerativeSearchPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
             alt="生成AI検索・AI Overview対策"
             fill
             className="object-cover"
@@ -578,7 +578,7 @@ export default function GenerativeSearchPage() {
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+                  src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
                   alt="生成AI検索・デジタルオーバーレイのカンファレンス"
                   fill
                   className="object-cover"

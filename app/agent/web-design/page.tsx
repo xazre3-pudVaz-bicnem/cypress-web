@@ -136,7 +136,7 @@ export default function AgentWebDesignPage() {
         <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png"
+              src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
               alt="ホームページ制作の販売代理店 ビジネスパートナーとの商談風景"
               fill
               className="object-cover"

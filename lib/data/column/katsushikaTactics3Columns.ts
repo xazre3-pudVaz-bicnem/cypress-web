@@ -13,7 +13,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 GBP 写真",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (2).jpg",
     eyecatchAlt: "葛飾区の店舗のGBP写真戦略を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けGoogleビジネスプロフィール写真戦略ガイド。業種別に撮るべき写真の種類、スマホでの撮影のコツ、更新頻度の目安、避けるべき写真の失敗例を解説します。",
@@ -60,7 +60,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ 表示速度",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (3).jpg",
     eyecatchAlt: "葛飾区の店舗サイトの表示速度改善を解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けホームページ表示速度改善ガイド。スマホでの離脱を防ぐ具体的な改善方法、画像最適化の手順、無料ツールでの診断方法を解説します。",
@@ -107,7 +107,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ブログ 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_13 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_13 (4).jpg",
     eyecatchAlt: "葛飾区の店舗ブログ・コンテンツSEO戦略を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けブログ・コンテンツSEO戦略。続けられるネタの見つけ方、地域名を含めたタイトルの付け方、更新が続かない問題への対処法を解説します。",
@@ -154,7 +154,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 YouTube 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (5).jpg",
     eyecatchAlt: "葛飾区の店舗のYouTube集客を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けYouTube集客ガイド。動画ならではの信頼構築効果、スマホ1台で始める撮影と編集、GBP・ホームページとの連携方法を解説します。",
@@ -197,7 +197,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 予約システム 導入",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (6).jpg",
     eyecatchAlt: "葛飾区の店舗の予約システム導入を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けオンライン予約システム導入ガイド。電話対応の負担軽減、深夜早朝の予約取りこぼし防止、GBP・ホームページとの連携方法を解説します。",
@@ -240,7 +240,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 チャットボット 導入",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_14 (7).jpg",
     eyecatchAlt: "葛飾区の店舗のチャットボット導入を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けチャットボット導入ガイド。営業時間外の問い合わせに自動対応する方法、よくある質問の整理手順、導入時の注意点を解説します。",
@@ -283,7 +283,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 IT導入補助金",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_15 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_15 (8).jpg",
     eyecatchAlt: "葛飾区の中小企業のIT導入補助金活用を解説するイメージ",
     metaDescription:
       "葛飾区の中小企業向けIT導入補助金活用ガイド。ホームページ制作・予約システム・会計ソフト導入に活用できる補助制度の考え方、申請の進め方、注意点を解説します。",
@@ -331,7 +331,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ドメイン取得",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_15 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_15 (9).jpg",
     eyecatchAlt: "葛飾区の事業者のドメイン・サーバー選びを解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けドメイン・サーバー選びガイド。独自ドメインを取得する重要性、所有権を自社名義にする理由、制作会社に任せる際の注意点を解説します。",
@@ -378,7 +378,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 アクセス解析",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_27 (1).jpg",
     eyecatchAlt: "葛飾区の店舗のアクセス解析・改善サイクルを解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けアクセス解析ガイド。Googleサーチコンソール・アナリティクスで見るべき数字、GBPインサイトの活用法、データに基づく改善サイクルの回し方を解説します。",
@@ -421,7 +421,7 @@ export const KATSUSHIKA_TACTICS3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 複数店舗 GBP",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_27 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_27 (2).jpg",
     eyecatchAlt: "葛飾区で複数店舗を運営する場合のGBP管理術を解説するイメージ",
     metaDescription:
       "葛飾区で複数店舗・多拠点を運営する事業者向けGBP管理ガイド。店舗ごとのプロフィール分離、ビジネスグループ機能の活用、統一感と地域特性の両立方法を解説します。",

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LLM最適化｜GPT・Gemini・ClaudeへのAI情報最適化",
     description: "LLM最適化でGPT・Gemini・Claudeが正確に認識する企業情報を構築。AIO対策の専門会社サイプレスが実施します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -194,7 +194,7 @@ export default function Page() {
         ============================================================ */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="LLM最適化・大規模言語モデルへのAI情報最適化"
             fill
             sizes="100vw"
@@ -343,7 +343,7 @@ export default function Page() {
                 }}
               >
                 <Image
-                  src="/1.png"
+                  src="/1.jpg"
                   alt="LLM最適化・チャートを確認するグループ"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

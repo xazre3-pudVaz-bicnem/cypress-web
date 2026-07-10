@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で創業初期に収益柱を増やす方法｜販売パートナー制度の活用",
     description: "葛飾区で創業・起業する方向けに、創業初期の収益柱づくりと、Web集客サービスを地域事業者へ紹介できる販売パートナー制度の活用方法を解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

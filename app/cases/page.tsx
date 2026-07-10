@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web集客・ホームページ制作の成功事例｜株式会社サイプレス",
     description: "業種・地域・サービス別にWeb集客支援の成功事例を公開。顧客名・店舗名は非公開。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

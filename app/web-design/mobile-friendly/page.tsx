@@ -101,7 +101,7 @@ export default function Page() {
 
         {/* Hero image */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="スマートフォン対応Web制作" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.jpg" alt="スマートフォン対応Web制作" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

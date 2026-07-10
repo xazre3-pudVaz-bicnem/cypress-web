@@ -77,7 +77,7 @@ export default function SupportPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.png"
+            src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
             alt="Web集客サポート・継続的な運用支援"
             fill
             className="object-cover"

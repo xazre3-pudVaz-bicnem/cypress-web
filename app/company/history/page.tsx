@@ -372,7 +372,7 @@ export default function HistoryPage() {
             >
               <div style={{ position: "relative", height: "360px", overflow: "hidden" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_10_29.png"
+                  src="/ChatGPT Image 2026年6月13日 19_10_29.jpg"
                   alt="落ち着いたオフィス環境でノートパソコンを使うスタッフ"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

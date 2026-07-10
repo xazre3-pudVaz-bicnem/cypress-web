@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で創業する方向けWeb集客ガイド｜ホームページ・SEO・MEO・GBP",
     description: "葛飾区で起業・創業する事業者向けに、ホームページ制作・SEO・MEO・Googleビジネスプロフィール・SNSの優先順位と始め方を解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

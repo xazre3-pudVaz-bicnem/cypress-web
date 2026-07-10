@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区で起業する方向け販売パートナー制度｜Web集客サービスの取次・紹介",
     description:
       "葛飾区で起業・創業する方に向けて、ホームページ制作・SEO・MEO・AIOなどのWeb集客サービスを地域事業者へ紹介できる販売パートナー制度をご案内します。成果を保証するものではありません。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

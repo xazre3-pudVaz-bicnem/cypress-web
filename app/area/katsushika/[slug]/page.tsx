@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
       description: page.metaDescription,
-      images: [{ url: "/hero.png", width: 1200, height: 630 }],
+      images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
       locale: "ja_JP",
       type: "website",
     },

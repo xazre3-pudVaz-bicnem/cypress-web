@@ -162,7 +162,7 @@ export default function AiContentPage() {
 
         {/* Hero Image */}
         <section className="relative" style={{ height: "280px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.png" alt="AIコンテンツ制作・ChatGPT記事生成・AI×人間協働のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.jpg" alt="AIコンテンツ制作・ChatGPT記事生成・AI×人間協働のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【エステ・脱毛サロンの集客】Instagram×MEOで個人サロンの予約を増やす｜株式会社サイプレス",
     description: "エステ・脱毛サロン・ネイル・まつエクのWeb集客。Instagram×MEO・ホームページで新規顧客を増やします。",
-    images: [{ url: "/ChatGPT Image 2026年6月19日 09_00_02 (4).png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月19日 09_00_02 (4).jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -201,7 +201,7 @@ export default function BeautyIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月19日 09_00_02 (4).png"
+            src="/ChatGPT Image 2026年6月19日 09_00_02 (4).jpg"
             alt="美容室・ヘアサロンのSEO対策とWeb集客支援イメージ"
             fill
             sizes="100vw"

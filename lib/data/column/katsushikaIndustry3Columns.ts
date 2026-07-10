@@ -13,7 +13,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 フィットネスジム 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_07 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_07 (1).jpg",
     eyecatchAlt: "葛飾区のフィットネスジム・パーソナルトレーニングの集客を解説するイメージ",
     metaDescription:
       "葛飾区のフィットネスジム・パーソナルトレーニングジム向け集客ガイド。体験入会を増やすGBP運用、ビフォーアフターを活かしたSNS発信、継続率を高めるLINE活用を解説します。",
@@ -62,7 +62,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ヨガスタジオ 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_08 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_08 (2).jpg",
     eyecatchAlt: "葛飾区のヨガ・ダンススタジオの集客を解説するイメージ",
     metaDescription:
       "葛飾区のヨガスタジオ・ダンススタジオ向け集客ガイド。体験レッスンの予約を増やすGBPとInstagram運用、講師の魅力を伝えるコンテンツ設計、継続会員化の導線を解説します。",
@@ -110,7 +110,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 英会話教室 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_09 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_09 (3).jpg",
     eyecatchAlt: "葛飾区の英会話教室・プログラミングスクールの集客を解説するイメージ",
     metaDescription:
       "葛飾区の英会話教室・プログラミングスクール向け生徒募集ガイド。子供向けと大人向けで異なる訴求ポイント、無料体験の申込を増やすホームページ設計、駅名キーワードの選定を解説します。",
@@ -158,7 +158,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 音楽教室 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_09 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_09 (4).jpg",
     eyecatchAlt: "葛飾区の音楽教室・そろばん教室の生徒募集を解説するイメージ",
     metaDescription:
       "葛飾区の音楽教室・そろばん教室・習字教室向け生徒募集ガイド。個人教室が大手フランチャイズに埋もれないための情報発信、体験レッスンの導線、口コミ獲得の方法を解説します。",
@@ -202,7 +202,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 保育園 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (5).jpg",
     eyecatchAlt: "葛飾区の保育園・幼稚園・学童保育の集客を解説するイメージ",
     metaDescription:
       "葛飾区の保育園・幼稚園・学童保育施設向け情報発信ガイド。認可外施設が選ばれるための情報公開、見学予約の導線設計、保護者が本当に知りたい情報を解説します。",
@@ -245,7 +245,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 介護施設 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (6).jpg",
     eyecatchAlt: "葛飾区の介護施設・訪問看護ステーションの集客を解説するイメージ",
     metaDescription:
       "葛飾区の介護施設・デイサービス・訪問看護ステーション向け集客ガイド。ケアマネジャーとの連携、家族が施設を選ぶ判断基準、Googleマップと口コミの活用法を解説します。",
@@ -289,7 +289,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 自動車教習所 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (7).jpg",
     eyecatchAlt: "葛飾区の自動車教習所・整備工場の集客を解説するイメージ",
     metaDescription:
       "葛飾区の自動車教習所・車検整備工場向け集客ガイド。合宿免許との比較で選ばれる情報設計、車検見積もりの透明性、Googleマップでの口コミ対策を解説します。",
@@ -332,7 +332,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 引越し業者 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (8).jpg",
     eyecatchAlt: "葛飾区の引越し業者・運送会社の集客を解説するイメージ",
     metaDescription:
       "葛飾区の引越し業者・運送会社向け集客ガイド。一括見積もりサイトに依存しない自社集客の作り方、繁忙期の予約管理、法人向け運送需要の獲得方法を解説します。",
@@ -375,7 +375,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 結婚相談所 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (10).jpg",
     eyecatchAlt: "葛飾区の結婚相談所・探偵事務所の集客を解説するイメージ",
     metaDescription:
       "葛飾区の結婚相談所・探偵事務所向け集客ガイド。プライバシーへの配慮が求められる業種での情報発信、無料相談の申込を増やす導線、口コミに頼らない信頼構築の方法を解説します。",
@@ -418,7 +418,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 葬儀社 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (9).jpg",
     eyecatchAlt: "葛飾区の葬儀社・仏壇店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の葬儀社・仏壇店向け集客ガイド。緊急時に検索される葬儀社のWeb対策、事前相談の申込を増やす導線、料金の透明性で信頼を得る方法を解説します。",

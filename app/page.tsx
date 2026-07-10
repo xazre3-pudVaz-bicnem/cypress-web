@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "東京都葛飾区拠点のWebマーケティング会社。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援。東京23区・全国の中小企業のWeb集客を一気通貫で支援します。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "株式会社サイプレス 東京葛飾区のWebマーケティング会社" }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630, alt: "株式会社サイプレス 東京葛飾区のWebマーケティング会社" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp" },

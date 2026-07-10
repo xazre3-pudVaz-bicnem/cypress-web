@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
     description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿など飲食店特有のMEO対策を徹底解説します。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -162,7 +162,7 @@ export default function Page() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="飲食店のMEO対策" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.jpg" alt="飲食店のMEO対策" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(16px,2.5vw,24px)", letterSpacing: "0.05em", textAlign: "center" }}>
               今日行くお店に選ばれる飲食店へ

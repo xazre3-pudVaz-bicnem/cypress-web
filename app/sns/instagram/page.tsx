@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Instagram運用代行｜ビジュアル戦略・リール活用で集客するインスタ運用法｜株式会社サイプレス",
     description: "中小企業・店舗のInstagram運用代行。フィード設計・リール活用・ストーリーズ・ハッシュタグ戦略・インサイト分析でInstagramを集客エンジンに変えます。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,7 +111,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.png" alt="Instagram運用" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_21_48.jpg" alt="Instagram運用" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               Instagramを、集客エンジンに変える。

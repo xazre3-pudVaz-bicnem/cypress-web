@@ -201,7 +201,7 @@ export default function AiPage() {
         {/* Image Band */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_09 (5).png"
+            src="/ChatGPT Image 2026年6月14日 21_09_09 (5).jpg"
             alt="AI活用マーケティング・生成AI・ChatGPT業務活用のイメージ"
             fill
             className="object-cover"

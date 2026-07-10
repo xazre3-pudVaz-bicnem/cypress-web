@@ -13,7 +13,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 SEO リスティング広告",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_28 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_28 (3).jpg",
     eyecatchAlt: "葛飾区でSEOとリスティング広告どちらを選ぶかを解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けSEOとリスティング広告の比較ガイド。即効性と持続性の違い、業種別の向き不向き、限られた予算での併用の考え方を具体的に解説します。",
@@ -56,7 +56,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ 自作",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_28 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_28 (4).jpg",
     eyecatchAlt: "葛飾区でホームページを自作するか制作会社に頼むかを解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けホームページ自作 vs 制作会社依頼の比較ガイド。無料ツールでできる範囲と限界、集客目的なら依頼すべき理由、判断の目安を解説します。",
@@ -103,7 +103,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 WordPress ホームページ",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_29 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_29 (5).jpg",
     eyecatchAlt: "葛飾区の事業者がWordPressと静的サイトどちらを選ぶかを解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けWordPressと静的サイトの比較ガイド。更新頻度・セキュリティ・表示速度の違い、業種別にどちらが向いているか、判断基準を解説します。",
@@ -146,7 +146,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホットペッパー 自社集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_30 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_30 (6).jpg",
     eyecatchAlt: "葛飾区の美容室・飲食店のポータルサイトと自社集客の比較を解説するイメージ",
     metaDescription:
       "葛飾区の美容室・飲食店向けポータルサイト（ホットペッパー等）と自社集客の比較ガイド。掲載料と手数料の実態、損益分岐点の考え方、移行のステップを解説します。",
@@ -189,7 +189,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 Web集客 代理店",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_30 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_30 (7).jpg",
     eyecatchAlt: "葛飾区で大手代理店と地域密着会社どちらに依頼すべきかを解説するイメージ",
     metaDescription:
       "葛飾区の事業者向け大手代理店と地域密着会社の比較ガイド。体制・費用・地域理解の違い、事業規模別の向き不向き、選定時のチェックポイントを解説します。",
@@ -231,7 +231,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ 効果ない",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_31 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_31 (8).jpg",
     eyecatchAlt: "葛飾区でホームページの効果が出ない原因を解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けホームページの効果が出ない原因と対策ガイド。検索に出てこない、問い合わせが来ない、それぞれの原因を切り分けて具体的な改善策を解説します。",
@@ -278,7 +278,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 集客できない",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_32 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_05_32 (10).jpg",
     eyecatchAlt: "葛飾区で集客できない店舗の特徴を解説するイメージ",
     metaDescription:
       "葛飾区で集客に悩む店舗に共通する5つの特徴を解説。GBP未整備、情報の一貫性欠如、写真不足、口コミ対応の放置、更新停止という典型パターンと改善策を紹介します。",
@@ -325,7 +325,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 開業 集客できない",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_09_57 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_09_57 (1).jpg",
     eyecatchAlt: "葛飾区で開業後の集客ゼロから抜け出す方法を解説するイメージ",
     metaDescription:
       "葛飾区で開業から半年経っても集客できない店舗向けの立て直しガイド。よくある開業期の失敗パターン、口コミゼロからの脱出方法、優先順位をつけた立て直し手順を解説します。",
@@ -372,7 +372,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 リピーター 増えない",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_09_59 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_09_59 (2).jpg",
     eyecatchAlt: "葛飾区の店舗でリピーターが増えない原因を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けリピーターが増えない原因と改善策。新規客に偏った施策の落とし穴、再来店の接点設計、LINE活用による継続率の改善方法を解説します。",
@@ -415,7 +415,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 求人 応募が来ない",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_02 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_02 (3).jpg",
     eyecatchAlt: "葛飾区の中小企業で求人応募が来ない原因を解説するイメージ",
     metaDescription:
       "葛飾区の中小企業向け求人応募が来ない原因と対策。求人票だけに頼る限界、会社名検索での受け皿不足、採用サイトを整える優先順位を解説します。",

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web集客サービスの販売代理店・取次店募集｜ホームページ制作・SEO・MEO",
     description: "株式会社サイプレスでは、ホームページ制作、SEO対策、MEO対策、AIO対策などのWeb集客サービスを紹介できる販売代理店・取次店を募集しています。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

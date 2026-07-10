@@ -88,7 +88,7 @@ export default function AreaPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="対応エリア・全国Web集客支援"
             fill
             className="object-cover"

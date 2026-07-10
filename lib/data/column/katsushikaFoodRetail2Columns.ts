@@ -13,7 +13,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 焼肉店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (9).jpg",
     eyecatchAlt: "葛飾区の焼肉店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の焼肉店向け集客ガイド。家族利用と接待・宴会利用で異なる訴求ポイント、煙対策の明記、ランチ需要の取り込み方を解説します。",
@@ -60,7 +60,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 寿司店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_11 (10).jpg",
     eyecatchAlt: "葛飾区の寿司店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の寿司店向け集客ガイド。カウンター寿司と回転寿司で異なる訴求ポイント、ネタの仕入れへのこだわりの伝え方、記念日利用の獲得方法を解説します。",
@@ -107,7 +107,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 中華料理店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_12 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_12 (8).jpg",
     eyecatchAlt: "葛飾区の中華料理店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の中華料理店向け集客ガイド。昔ながらの町中華と専門的なガチ中華、それぞれの客層に応じたキーワード設計、ランチ・宴会・デリバリー需要の獲得を解説します。",
@@ -154,7 +154,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 定食屋 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_16 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_16 (1).jpg",
     eyecatchAlt: "葛飾区の定食屋・食堂の集客を解説するイメージ",
     metaDescription:
       "葛飾区の定食屋・食堂向け集客ガイド。日替わり定食の発信で常連を作る方法、栄養バランスの訴求、働く世代の日常利用を取り込むGBP活用を解説します。",
@@ -201,7 +201,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ケーキ屋 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_17 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_17 (2).jpg",
     eyecatchAlt: "葛飾区のケーキ屋・パティスリーの集客を解説するイメージ",
     metaDescription:
       "葛飾区のケーキ屋・パティスリー向け集客ガイド。誕生日ケーキの予約導線、クリスマス・季節イベントの先回り発信、写真映えする作品発信の設計を解説します。",
@@ -248,7 +248,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 青果店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_23 (1).jpg",
     eyecatchAlt: "葛飾区の米屋・青果店・鮮魚店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の米屋・青果店・鮮魚店向け集客ガイド。スーパーとの差別化ポイント、目利きの専門性を伝える発信、御用聞き・配達サービスの訴求方法を解説します。",
@@ -295,7 +295,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 書店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_25 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_25 (2).jpg",
     eyecatchAlt: "葛飾区の書店・文房具店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の書店・文房具店向け集客ガイド。ネット書店にはない専門性の伝え方、学校指定文房具の取り扱い訴求、地域交流イベントの活用方法を解説します。",
@@ -342,7 +342,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 買取 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_27 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_27 (3).jpg",
     eyecatchAlt: "葛飾区のリサイクルショップ・買取店の集客を解説するイメージ",
     metaDescription:
       "葛飾区のリサイクルショップ・買取店向け集客ガイド。査定と販売という2つの顧客層への訴求分け、出張買取の需要獲得、遺品整理との連携方法を解説します。",
@@ -389,7 +389,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 布団店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_29 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_29 (4).jpg",
     eyecatchAlt: "葛飾区の布団店・寝具店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の布団店・寝具店向け集客ガイド。睡眠の悩みから探される検索意図、専門知識による差別化、打ち直し・クリーニングサービスの訴求方法を解説します。",
@@ -436,7 +436,7 @@ export const KATSUSHIKA_FOOD_RETAIL2_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 家具店 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_33 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_33 (5).jpg",
     eyecatchAlt: "葛飾区の家具店・インテリアショップの集客を解説するイメージ",
     metaDescription:
       "葛飾区の家具店・インテリアショップ向け集客ガイド。大型家具量販店との差別化、コーディネート提案の発信、配送・組み立てサービスの訴求方法を解説します。",

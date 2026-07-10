@@ -73,7 +73,7 @@ export default function SolutionsPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png"
+            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
             alt="統合Webマーケティングソリューション"
             fill
             className="object-cover"

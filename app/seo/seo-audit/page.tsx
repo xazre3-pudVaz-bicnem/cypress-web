@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO監査（SEO Audit）｜現状診断から改善計画へ｜株式会社サイプレス",
     description: "サイト全体のSEO課題を体系的に診断するSEO監査。インデックス状況・速度・コンテンツ・内部リンク・構造化データなど10項目以上を網羅的に調査します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -102,7 +102,7 @@ export default function Page() {
 
         {/* Hero image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_14_54.png" alt="SEO監査・現状診断" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_14_54.jpg" alt="SEO監査・現状診断" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
@@ -311,7 +311,7 @@ export default function Page() {
 
         {/* Image break */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.png" alt="SEO分析・データ確認" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.jpg" alt="SEO分析・データ確認" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.5)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
     description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,7 +111,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_57.png" alt="SNSコンテンツカレンダー" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_18_57.jpg" alt="SNSコンテンツカレンダー" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               計画があれば、SNSは怖くない。

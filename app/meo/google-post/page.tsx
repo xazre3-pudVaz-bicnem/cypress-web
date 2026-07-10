@@ -301,7 +301,7 @@ export default function GooglePostPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
             alt="スマートフォンとデジタルアイコン・Google投稿MEO対策"
             fill
             className="object-cover"

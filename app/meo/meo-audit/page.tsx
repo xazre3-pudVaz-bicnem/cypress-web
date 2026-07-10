@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MEO診断・監査サービス｜Googleマップ対策の現状診断｜株式会社サイプレス",
     description: "GBP全項目・競合状況・順位・口コミを体系的に診断するMEO監査。Googleマップ集客の課題を特定し、優先度の高い改善アクションをご提案します。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -167,7 +167,7 @@ export default function Page() {
 
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="MEO診断・現状診断サービス" fill sizes="100vw" className="object-cover" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="MEO診断・現状診断サービス" fill sizes="100vw" className="object-cover" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(16px,2.5vw,26px)", letterSpacing: "0.05em", textAlign: "center" }}>
               課題を見える化し、最短で改善へ
@@ -566,7 +566,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "400px" }}>
-                <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="MEO診断レポートと改善フロー" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="MEO診断レポートと改善フロー" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
             </div>
           </div>

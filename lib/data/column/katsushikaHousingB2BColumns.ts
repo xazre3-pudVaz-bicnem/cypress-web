@@ -13,7 +13,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 外壁塗装 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_34 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_34 (6).jpg",
     eyecatchAlt: "葛飾区の外壁塗装専門店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の外壁塗装専門店向け集客ガイド。相見積もりが前提の業界での差別化ポイント、施工事例の見せ方、訪問営業への不信感を払拭する情報発信を解説します。",
@@ -60,7 +60,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 シロアリ駆除",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_37 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_37 (7).jpg",
     eyecatchAlt: "葛飾区のシロアリ駆除・害虫駆除業者の集客を解説するイメージ",
     metaDescription:
       "葛飾区のシロアリ駆除・害虫駆除業者向け集客ガイド。緊急性の高い害虫トラブルへの対応、木造住宅の多い地域特性を踏まえた予防提案、料金の透明性を解説します。",
@@ -107,7 +107,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 雨漏り修理",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_39 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_39 (8).jpg",
     eyecatchAlt: "葛飾区の防水工事・雨漏り修理業者の集客を解説するイメージ",
     metaDescription:
       "葛飾区の防水工事・雨漏り修理業者向け集客ガイド。雨漏り発生時の緊急対応、原因特定の専門性の伝え方、屋上防水・ベランダ防水の予防提案を解説します。",
@@ -154,7 +154,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 エアコン工事 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_40 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_40 (1).jpg",
     eyecatchAlt: "葛飾区のエアコン工事・給湯器交換業者の集客を解説するイメージ",
     metaDescription:
       "葛飾区のエアコン工事・給湯器交換業者向け集客ガイド。夏場の繁忙期対策、給湯器故障時の緊急対応、量販店取り付けとの違いの伝え方を解説します。",
@@ -201,7 +201,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 人材紹介 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_41 (9).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_41 (9).jpg",
     eyecatchAlt: "葛飾区の人材紹介・人材派遣会社の集客を解説するイメージ",
     metaDescription:
       "葛飾区の人材紹介・人材派遣会社向け集客ガイド。求職者向けと企業向けで異なる訴求設計、地域密着の強みの伝え方、専門職種特化の差別化を解説します。",
@@ -248,7 +248,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 オフィス清掃 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_42 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_42 (2).jpg",
     eyecatchAlt: "葛飾区のオフィス清掃・清掃業務請負会社の集客を解説するイメージ",
     metaDescription:
       "葛飾区のオフィス清掃・清掃業務請負会社向け集客ガイド。個人宅とは異なる法人契約の獲得方法、定期契約のプラン設計、実績と信頼性の伝え方を解説します。",
@@ -294,7 +294,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 保険代理店",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_45 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_45 (10).jpg",
     eyecatchAlt: "葛飾区の保険代理店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の保険代理店向け集客ガイド。保険見直し相談のハードルを下げる情報設計、複数保険会社の取り扱いという強みの伝え方、ライフイベント別の訴求を解説します。",
@@ -340,7 +340,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 住宅ローン相談",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_48 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_48 (4).jpg",
     eyecatchAlt: "葛飾区の住宅ローン相談・FPの集客を解説するイメージ",
     metaDescription:
       "葛飾区の住宅ローン相談・ファイナンシャルプランナー向け集客ガイド。数字への不安を解消するコンテンツ設計、無料相談の訴求、不動産会社との連携方法を解説します。",
@@ -387,7 +387,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 墓石店",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_50 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_50 (5).jpg",
     eyecatchAlt: "葛飾区の墓石店・石材店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の墓石店・石材店向け集客ガイド。お墓の建立・改修という重い意思決定を支える情報設計、永代供養や樹木葬など多様化するニーズへの対応を解説します。",
@@ -434,7 +434,7 @@ export const KATSUSHIKA_HOUSING_B2B_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 フォトウェディング",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_55 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_26_55 (6).jpg",
     eyecatchAlt: "葛飾区のブライダル・フォトウェディングの集客を解説するイメージ",
     metaDescription:
       "葛飾区のフォトウェディング・ブライダル関連事業者向け集客ガイド。柴又・水元公園などロケーション撮影の魅力発信、料金プランの透明性、Instagram活用を解説します。",

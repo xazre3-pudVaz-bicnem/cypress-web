@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI業務自動化｜Make・Zapier×ChatGPT APIで繰り返し業務を自動化｜株式会社サイプレス",
     description: "AI業務自動化の実践ガイド。Make・Zapier・n8nとChatGPT/Claude APIを組み合わせた繰り返し業務の自動化方法を業種別に解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -163,7 +163,7 @@ export default function AutomationPage() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 00_32_52.png" alt="AI業務自動化・Make・Zapier・n8n・ノーコード自動化のイメージ" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 00_32_52.jpg" alt="AI業務自動化・Make・Zapier・n8n・ノーコード自動化のイメージ" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

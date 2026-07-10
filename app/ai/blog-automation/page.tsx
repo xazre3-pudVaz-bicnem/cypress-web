@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIブログ・コンテンツ自動化｜SEO記事を効率的に量産する方法｜株式会社サイプレス",
     description: "AIを活用したブログ記事制作の効率化。キーワードから構成・下書き・リライトまでAIで効率化する方法を解説。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_20_52.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_20_52.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,7 +164,7 @@ export default function Page() {
         {/* Image Band */}
         <section className="relative" style={{ height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="AIブログ自動化・SEOコンテンツ量産のイメージ"
             fill
             className="object-cover"

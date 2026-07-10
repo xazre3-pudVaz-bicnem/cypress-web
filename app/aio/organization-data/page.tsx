@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Organization構造化データ｜AIO・SEO対策｜株式会社サイプレス",
     description: "Organization Schemaの実装でGoogleとAIへの企業認識を最大化する方法を解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -409,7 +409,7 @@ export default function OrganizationDataPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
             alt="Organization構造化データ・JSON-LD実装のデジタルイメージ"
             fill
             className="object-cover"

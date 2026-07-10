@@ -13,7 +13,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 カフェ 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_11 (8).jpg",
     eyecatchAlt: "葛飾区のカフェ・ベーカリーの集客を解説するイメージ",
     metaDescription:
       "葛飾区のカフェ・ベーカリー向け集客ガイド。Instagram映えする写真戦略、モーニング・テイクアウト需要の取り込み方、Googleマップでの差別化ポイントを解説します。",
@@ -61,7 +61,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 居酒屋 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_54_10 (5).jpg",
     eyecatchAlt: "葛飾区の居酒屋・バーの集客を解説するイメージ",
     metaDescription:
       "葛飾区の居酒屋・バー向け集客ガイド。夜間帯の検索行動に対応するGBP設定、一人飲み・宴会需要の使い分け、深夜営業の露出を高める方法を解説します。",
@@ -105,7 +105,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ラーメン店 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_24 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_24 (1).jpg",
     eyecatchAlt: "葛飾区のラーメン店・カレー店の集客を解説するイメージ",
     metaDescription:
       "葛飾区のラーメン店・カレー店向け集客ガイド。スープの系統やスパイスの特徴で選ばれるキーワード設計、行列を作らず回転率を保つ工夫、口コミ評価との向き合い方を解説します。",
@@ -148,7 +148,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 和菓子屋 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_25 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_25 (3).jpg",
     eyecatchAlt: "葛飾区の和菓子屋・酒屋の集客を解説するイメージ",
     metaDescription:
       "葛飾区の和菓子屋・酒屋向け集客ガイド。柴又の観光需要の取り込み方、地酒・季節商品のオンライン展開、常連客と新規客を両立する情報発信を解説します。",
@@ -191,7 +191,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 花屋 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_26 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_26 (5).jpg",
     eyecatchAlt: "葛飾区の花屋・写真館の集客を解説するイメージ",
     metaDescription:
       "葛飾区の花屋・写真館向け集客ガイド。母の日・卒業式など記念日需要の先回り発信、七五三・成人式撮影の予約を増やす導線、Instagramでの作品発信を解説します。",
@@ -234,7 +234,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 自転車店 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_28 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_28 (7).jpg",
     eyecatchAlt: "葛飾区の自転車店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の自転車店向け集客ガイド。パンク修理や防犯登録などの日常需要を取り込むMEO対策、電動自転車の販売・修理対応の訴求、法人向け業務用自転車の需要獲得を解説します。",
@@ -276,7 +276,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 中古車 買取",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_28 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_28 (8).jpg",
     eyecatchAlt: "葛飾区の中古車販売・買取店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の中古車販売・買取店向け集客ガイド。売りたい人と買いたい人で異なるキーワード設計、在庫情報の鮮度管理、査定の透明性で選ばれる方法を解説します。",
@@ -319,7 +319,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 着物レンタル",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_29 (10).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_56_29 (10).jpg",
     eyecatchAlt: "葛飾区の着物レンタル・旅行会社の集客を解説するイメージ",
     metaDescription:
       "葛飾区の着物レンタル・旅行会社向け集客ガイド。柴又観光と連動した着物レンタルの予約導線、地域発着ツアーの企画、訪日外国人観光客への対応方法を解説します。",
@@ -362,7 +362,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 印刷会社 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_59_57 (1).jpg",
     eyecatchAlt: "葛飾区の印刷会社・看板製作会社の集客を解説するイメージ",
     metaDescription:
       "葛飾区の印刷会社・看板製作会社向け集客ガイド。法人の急ぎの発注に対応する情報設計、施工事例による実績の見せ方、地域の店舗改装需要の獲得方法を解説します。",
@@ -405,7 +405,7 @@ export const KATSUSHIKA_INDUSTRY4_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 電気工事店 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_02 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_02 (4).jpg",
     eyecatchAlt: "葛飾区の設計事務所・電気工事店・水道工事店の集客を解説するイメージ",
     metaDescription:
       "葛飾区の設計事務所・電気工事店・水道工事店向け集客ガイド。緊急対応が求められる水道トラブルの検索行動、法人取引につながる実績の見せ方、資格保有の訴求方法を解説します。",

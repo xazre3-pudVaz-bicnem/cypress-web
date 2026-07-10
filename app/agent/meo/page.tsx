@@ -139,7 +139,7 @@ export default function AgentMeoPage() {
         <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png"
+              src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
               alt="MEO対策販売代理店 店舗集客提案の商談風景"
               fill
               className="object-cover"

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIカスタマーサポートとは｜チャットボット・自動応答で顧客対応を効率化｜株式会社サイプレス",
     description: "AIチャットボットで24時間FAQ自動対応・問い合わせ振り分けを実現。顧客満足度と業務効率を同時に高める方法を解説。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,7 +164,7 @@ export default function Page() {
         {/* Image Band */}
         <section className="relative" style={{ height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
             alt="AIカスタマーサポート・チャットボット・自動応答システムのイメージ"
             fill
             className="object-cover"

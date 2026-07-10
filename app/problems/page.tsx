@@ -78,7 +78,7 @@ export default function ProblemsPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="Web集客の悩みを解決するデジタルマーケティング戦略"
             fill
             className="object-cover"

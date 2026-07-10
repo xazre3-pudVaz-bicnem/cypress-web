@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO特化サイト制作｜検索流入を最大化するWebサイト設計｜株式会社サイプレス",
     description: "SEO特化サイト制作のガイド。キーワード設計・コンテンツ構造・Core Web Vitals最適化まで解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -163,7 +163,7 @@ export default function SeoSitePage() {
 
         {/* Image Band */}
         <section className="relative flex items-center justify-center" style={{ height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="SEO特化サイト制作・コンテンツSEO・検索上位表示のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.jpg" alt="SEO特化サイト制作・コンテンツSEO・検索上位表示のイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.5)" }} />
           <div className="relative text-center px-6">
             <p className="font-black" style={{ fontSize: "clamp(20px,3vw,36px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>検索流入を、長期的な資産へ</p>

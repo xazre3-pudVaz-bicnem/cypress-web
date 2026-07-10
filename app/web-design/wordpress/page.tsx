@@ -174,7 +174,7 @@ export default function WordpressPage() {
         {/* Hero Image */}
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="WordPress制作・CMS・コンテンツ管理システムのイメージ"
             fill
             className="object-cover"

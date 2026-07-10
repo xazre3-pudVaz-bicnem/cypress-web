@@ -203,7 +203,7 @@ export default function PlumbingPage() {
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月19日 09_10_12 (8).png" alt="水道工事・設備業者のホームページ制作とMEO対策支援イメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月19日 09_10_12 (8).jpg" alt="水道工事・設備業者のホームページ制作とMEO対策支援イメージ" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

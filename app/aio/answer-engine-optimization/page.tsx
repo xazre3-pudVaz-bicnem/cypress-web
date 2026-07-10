@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AEO（回答エンジン最適化）｜AI検索で選ばれるコンテンツへ｜株式会社サイプレス",
     description: "AEO（Answer Engine Optimization）とは、AIが生成する回答に最適化する戦略。FAQ・結論ファースト・構造化データでAI検索からの引用を増やす方法を解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -162,7 +162,7 @@ export default function Page() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
             alt="AEO回答エンジン最適化 - AI検索で選ばれるコンテンツ設計"
             fill
             sizes="100vw"

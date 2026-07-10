@@ -136,7 +136,7 @@ export default function AgentAioPage() {
         <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png"
+              src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
               alt="AIO対策販売代理店 AI検索対策のデジタルインターフェース"
               fill
               className="object-cover"

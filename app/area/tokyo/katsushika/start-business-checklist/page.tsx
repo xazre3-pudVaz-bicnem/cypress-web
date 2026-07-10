@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で起業する前に確認したい開業準備チェックリスト",
     description: "葛飾区で起業・開業を検討している方向けに、創業前に確認すべき事業設計・資金計画・集客・ホームページ・GBP・SNS・営業先・収益柱のチェックリストをまとめました。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

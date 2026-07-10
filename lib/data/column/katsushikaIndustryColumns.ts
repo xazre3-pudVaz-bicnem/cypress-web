@@ -14,7 +14,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 飲食店 集客",
     publishedAt: "2026-07-09",
     readingTime: 9,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_04_05.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_04_05.jpg",
     eyecatchAlt: "葛飾区の飲食店のGoogleマップ集客を解説するイメージ",
     metaDescription:
       "葛飾区の飲食店向けGoogleマップ集客（MEO）の実践ガイド。亀有・立石・新小岩・金町のエリア別競合状況、ローカルパック上位表示の条件、写真と口コミの運用、グルメサイト依存からの脱却方法を解説します。",
@@ -69,7 +69,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 美容室 集客",
     publishedAt: "2026-07-09",
     readingTime: 9,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_05_16.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_05_16.jpg",
     eyecatchAlt: "葛飾区の美容室集客を解説するイメージ",
     metaDescription:
       "葛飾区の美容室・ヘアサロン向け集客ガイド。ホットペッパービューティー依存から抜け出すためのGoogleマップ（MEO）対策、指名検索を増やすInstagram運用、リピート率を高める導線設計を実例ベースで解説します。",
@@ -120,7 +120,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 クリニック 集患",
     publishedAt: "2026-07-09",
     readingTime: 9,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_06_06.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_06_06.jpg",
     eyecatchAlt: "葛飾区のクリニック・歯科医院の集患を解説するイメージ",
     metaDescription:
       "葛飾区のクリニック・歯科医院向け集患ガイド。医療広告ガイドラインを守りながらGoogleマップ（MEO）・ホームページで新患を増やす方法、症状別ページの作り方、口コミ対応の注意点を専門的に解説します。",
@@ -171,7 +171,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 整骨院 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_07_36.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_07_36.jpg",
     eyecatchAlt: "葛飾区の整骨院・接骨院の集客を解説するイメージ",
     metaDescription:
       "葛飾区の整骨院・接骨院・鍼灸院向け集客ガイド。保険診療と自費診療で異なる集客導線の設計、症状別ページのSEO、Googleマップ上位表示のポイント、口コミ獲得の実務を解説します。",
@@ -221,7 +221,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 リフォーム 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_08_39.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_08_39.jpg",
     eyecatchAlt: "葛飾区の工務店・リフォーム会社のWeb集客を解説するイメージ",
     metaDescription:
       "葛飾区の工務店・リフォーム会社向けWeb集客ガイド。施工事例ページの正しい作り方、「地域名＋工事種別」キーワードのSEO、相見積もりで選ばれるための情報設計、一括見積もりサイト依存からの脱却方法を解説します。",
@@ -272,7 +272,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 税理士 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_09_37.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_09_37.jpg",
     eyecatchAlt: "葛飾区の士業のWeb集客を解説するイメージ",
     metaDescription:
       "葛飾区の税理士・行政書士・司法書士・社労士向けWeb集客ガイド。相談分野別ページによるSEO、E-E-A-Tを高める著者情報の設計、AI検索（AIO）で引用される専門コンテンツの作り方を解説します。",
@@ -323,7 +323,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 学習塾 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_19_44.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_19_44.jpg",
     eyecatchAlt: "葛飾区の学習塾・個別指導塾の生徒募集を解説するイメージ",
     metaDescription:
       "葛飾区の学習塾・個別指導塾向け生徒募集ガイド。金町・亀有の文教エリア特性、保護者が塾を選ぶ判断基準、体験申込を増やすホームページ設計、Googleマップと口コミの活用法を解説します。",
@@ -373,7 +373,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 不動産 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_20_52.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_20_52.jpg",
     eyecatchAlt: "葛飾区の不動産会社のWeb集客を解説するイメージ",
     metaDescription:
       "葛飾区の不動産会社向けWeb集客ガイド。SUUMO・HOME'Sなど大手ポータルと戦わずに勝つ地域情報コンテンツ戦略、売却査定の問い合わせを増やす設計、地域SEOとMEOの実践方法を解説します。",
@@ -423,7 +423,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ネイルサロン 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_21_48.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_21_48.jpg",
     eyecatchAlt: "葛飾区のネイルサロン・エステサロンの集客を解説するイメージ",
     metaDescription:
       "葛飾区のネイルサロン・エステサロン・まつげエクステ向け集客ガイド。自宅サロン・マンションサロンでも成果が出るInstagram運用とMEO対策、予約導線の設計、リピート率を高める仕組みを解説します。",
@@ -473,7 +473,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 トリミング 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_03.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_03.jpg",
     eyecatchAlt: "葛飾区のペットショップ・トリミングサロンの集客を解説するイメージ",
     metaDescription:
       "葛飾区のペットショップ・トリミングサロン・ペットホテル向け集客ガイド。飼い主が店を選ぶ判断基準、Googleマップ対策、Instagramでの信頼構築、リピートを生む予約導線の設計を解説します。",
@@ -523,7 +523,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ハウスクリーニング 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_57.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_57.jpg",
     eyecatchAlt: "葛飾区のハウスクリーニング・便利屋の集客を解説するイメージ",
     metaDescription:
       "葛飾区のハウスクリーニング・便利屋・遺品整理業向け集客ガイド。緊急ニーズを取りこぼさない導線設計、料金の見せ方、大手比較サイトに依存しないMEO対策と地域SEOを解説します。",
@@ -573,7 +573,7 @@ export const KATSUSHIKA_INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 小売店 ネット販売",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 00_32_52.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 00_32_52.jpg",
     eyecatchAlt: "葛飾区の商店・小売店のネット販売を解説するイメージ",
     metaDescription:
       "葛飾区の商店街・小売店向けネット販売ガイド。実店舗の強みを活かしたEC立ち上げの手順、BASE・Shopifyの選び方、Googleマップとの連携、送料設計と在庫管理の現実的な運用方法を解説します。",

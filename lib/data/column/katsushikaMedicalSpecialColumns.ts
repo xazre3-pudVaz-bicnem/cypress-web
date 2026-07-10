@@ -13,7 +13,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 眼科 集患",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_07 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_07 (1).jpg",
     eyecatchAlt: "葛飾区の眼科の集患を解説するイメージ",
     metaDescription:
       "葛飾区の眼科クリニック向け集患ガイド。白内障手術・コンタクトレンズ処方・小児眼科など診療内容別の検索意図への対応、医療広告規制に配慮した情報発信を解説します。",
@@ -60,7 +60,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 皮膚科 集患",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_07 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_07 (2).jpg",
     eyecatchAlt: "葛飾区の皮膚科の集患を解説するイメージ",
     metaDescription:
       "葛飾区の皮膚科クリニック向け集患ガイド。保険診療の症状別ページ設計、アトピー・にきび・水虫など具体的な悩みへの対応、美容皮膚科との違いの伝え方を解説します。",
@@ -107,7 +107,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 心療内科 集患",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (3).jpg",
     eyecatchAlt: "葛飾区の精神科・心療内科の集患を解説するイメージ",
     metaDescription:
       "葛飾区の精神科・心療内科向け集患ガイド。受診をためらう患者への配慮ある情報設計、初診の流れの丁寧な説明、プライバシーへの配慮方法を解説します。",
@@ -154,7 +154,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 動物病院 集患",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (4).jpg",
     eyecatchAlt: "葛飾区の動物病院の集患を解説するイメージ",
     metaDescription:
       "葛飾区の動物病院向け集患ガイド。緊急時の「今すぐ診てほしい」需要への対応、予防接種・健康診断の日常需要、飼い主が安心する情報発信を解説します。",
@@ -201,7 +201,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 鍼灸院 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (5).jpg",
     eyecatchAlt: "葛飾区の鍼灸院の集客を解説するイメージ",
     metaDescription:
       "葛飾区の鍼灸院向け集客ガイド。美容鍼・不妊鍼灸・自律神経の悩みなど自由診療の専門性を伝える方法、保険診療との違いの説明、初めての方への不安解消を解説します。",
@@ -248,7 +248,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 弁護士 集客",
     publishedAt: "2026-07-10",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_08 (6).jpg",
     eyecatchAlt: "葛飾区の弁護士事務所の集客を解説するイメージ",
     metaDescription:
       "葛飾区の弁護士事務所向け集客ガイド。離婚・相続・債務整理など相談分野別のページ設計、初回無料相談の訴求、弁護士広告規程に配慮した情報発信を解説します。",
@@ -295,7 +295,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 カイロプラクティック",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (6).jpg",
     eyecatchAlt: "葛飾区のカイロプラクティックの集客を解説するイメージ",
     metaDescription:
       "葛飾区のカイロプラクティック院向け集客ガイド。保険適用外である点の分かりやすい説明、骨格・姿勢の悩みに応えるコンテンツ設計、口コミによる信頼構築を解説します。",
@@ -342,7 +342,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 脱毛サロン 集客",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_09 (7).jpg",
     eyecatchAlt: "葛飾区の脱毛サロンの集客を解説するイメージ",
     metaDescription:
       "葛飾区の脱毛サロン向け集客ガイド。継続コースの料金透明性、痛み・肌トラブルへの不安解消、都度払いとコース契約の使い分け提案を解説します。",
@@ -389,7 +389,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 メンズ美容室",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (7).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (7).jpg",
     eyecatchAlt: "葛飾区のメンズ美容室・バーバーの集客を解説するイメージ",
     metaDescription:
       "葛飾区のメンズ美容室・バーバー向け集客ガイド。男性客特有の来店動機、予約のしやすさを重視した導線設計、髭剃り・眉毛整えなど付加サービスの訴求を解説します。",
@@ -436,7 +436,7 @@ export const KATSUSHIKA_MEDICAL_SPECIAL_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 鍵屋",
     publishedAt: "2026-07-10",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (8).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_10_10 (8).jpg",
     eyecatchAlt: "葛飾区の鍵屋・鍵交換業者の集客を解説するイメージ",
     metaDescription:
       "葛飾区の鍵屋・鍵交換業者向け集客ガイド。鍵の閉じ込みなど緊急対応の検索行動、料金の透明性による信頼構築、防犯性向上を目的とした計画的な依頼の獲得を解説します。",

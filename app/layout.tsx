@@ -39,7 +39,7 @@ const organizationSchema = {
     width: 200,
     height: 60,
   },
-  image: `${SITE_URL}/hero.png`,
+  image: `${SITE_URL}/hero.jpg`,
   description:
     "株式会社サイプレスは、東京都葛飾区を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。",
   email: "info@cypress-all.co.jp",
@@ -206,7 +206,7 @@ export const metadata: Metadata = {
     title: "株式会社サイプレス｜東京・葛飾区のWebマーケティング会社",
     description:
       "株式会社サイプレスは東京都葛飾区拠点。MEO・SEO・AIO・ホームページ制作を通じて東京23区・全国の中小企業のWeb集客を支援するWebマーケティング会社です。",
-    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
     locale: "ja_JP",
     type: "website",
     siteName: "株式会社サイプレス",

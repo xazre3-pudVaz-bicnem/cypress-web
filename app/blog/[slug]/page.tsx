@@ -147,7 +147,7 @@ export default async function BlogPostPage({
     articleSection: categoryLabel,
     image: {
       "@type": "ImageObject",
-      url: "https://www.cypress-all.co.jp/hero.png",
+      url: "https://www.cypress-all.co.jp/hero.jpg",
       width: 1200,
       height: 630,
     },

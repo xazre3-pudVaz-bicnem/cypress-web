@@ -54,7 +54,7 @@ export default function GlossaryPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.png"
+            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
             alt="Webマーケティング用語集"
             fill
             className="object-cover"

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区のホームページ制作・補助金活用｜SEOに強いWeb制作なら株式会社サイプレス",
     description:
       "葛飾区でホームページ制作や補助金・助成金の活用を検討している中小企業・店舗向けに、SEOに強いWeb制作、MEO対策、制作前に確認すべきポイントを解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

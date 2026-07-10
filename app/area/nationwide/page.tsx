@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "全国対応｜SEO対策・AIO対策・Web制作はリモートで日本全国対応",
     description: "サイプレスのSEO・AIO・Web制作は全国完全リモート対応。Zoomで初回相談〜納品まで完結。北海道から沖縄まで対応。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -209,7 +209,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png"
+            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
             alt="全国対応のデジタルサービス"
             fill
             sizes="100vw"

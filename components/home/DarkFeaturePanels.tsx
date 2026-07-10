@@ -12,7 +12,7 @@ const PANELS = [
     body: "検索エンジンが評価するサイト設計を起点に、コンテンツ・内部リンク・テクニカル要素を整備します。キーワード設計から始め、検索意図に合ったページ構造で検索上位を狙います。",
     href: "/seo",
     label: "SEO対策を詳しく",
-    img: "/ChatGPT Image 2026年6月13日 19_22_31.png",
+    img: "/ChatGPT Image 2026年6月13日 19_22_31.jpg",
     accent: "#7EC8C8",
   },
   {
@@ -21,7 +21,7 @@ const PANELS = [
     body: "Googleビジネスプロフィールを最適化し、地域名＋業種キーワードでの検索上位表示を実現します。口コミ・写真・投稿を継続的に改善し、マップ検索からの来店率を高めます。",
     href: "/meo",
     label: "MEO対策を詳しく",
-    img: "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+    img: "/ChatGPT Image 2026年6月14日 21_09_09 (6).jpg",
     accent: "#C4A96A",
   },
   {
@@ -30,7 +30,7 @@ const PANELS = [
     body: "ChatGPT・GeminiなどのAI検索エンジンは、信頼性が高く構造化された情報を優先的に引用します。E-E-A-T・FAQ・構造化データを整え、AI検索時代に備えた設計を行います。",
     href: "/aio",
     label: "AIO対策を詳しく",
-    img: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    img: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg",
     accent: "#A78BFA",
   },
   {
@@ -39,7 +39,7 @@ const PANELS = [
     body: "アクセスを集めるだけでは売上は変わりません。ユーザーの行動を設計し、問い合わせ・予約・購入へ誘導する導線をサイト全体で構築します。CVRを最大化する設計思想です。",
     href: "/web-design",
     label: "Web制作を詳しく",
-    img: "/ChatGPT Image 2026年6月13日 20_02_56.png",
+    img: "/ChatGPT Image 2026年6月13日 20_02_56.jpg",
     accent: "#F59E0B",
   },
 ];

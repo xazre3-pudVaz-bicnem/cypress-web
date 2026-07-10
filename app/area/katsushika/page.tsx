@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区のSEO対策・MEO対策・ホームページ制作｜株式会社サイプレス",
     description: "葛飾区拠点のWeb集客専門会社。亀有・柴又・金町・新小岩・立石エリアへの訪問相談対応。MEO・SEO・Web制作を地域密着で支援。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -226,7 +226,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_11_20.png"
+            src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
             alt="葛飾区のビジネスパートナーシップ"
             fill
             sizes="100vw"

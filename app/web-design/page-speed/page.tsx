@@ -200,7 +200,7 @@ export default function Page() {
         {/* ── Hero image ───────────────────────────────────── */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
             alt="ページ速度改善・Core Web Vitals"
             fill
             sizes="100vw"

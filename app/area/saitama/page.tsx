@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "埼玉県のSEO対策・MEO対策・Web制作｜草加・越谷・さいたま市・川口の集客支援｜株式会社サイプレス",
     description: "埼玉県の中小企業・店舗のSEO・MEO対策をサイプレスが支援。東京より競合が少なくMEOで上位を取りやすい。草加・越谷への訪問相談も対応。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -178,7 +178,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+            src="/ChatGPT Image 2026年6月13日 00_32_58.jpg"
             alt="埼玉県のビジネスコンサルティング"
             fill
             sizes="100vw"

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "墨田区のSEO対策・MEO対策・ホームページ制作｜錦糸町・押上・両国の集客支援｜株式会社サイプレス",
     description: "墨田区の観光客と地域住民への二重集客をサポート。錦糸町・押上・両国・向島エリアのMEO・SEO・Web制作を葛飾区拠点のサイプレスが支援。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -173,7 +173,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 20_04_05.png"
+            src="/ChatGPT Image 2026年6月13日 20_04_05.jpg"
             alt="墨田区のビジネスアナリティクス"
             fill
             sizes="100vw"

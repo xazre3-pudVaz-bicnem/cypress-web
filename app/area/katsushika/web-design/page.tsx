@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区のホームページ制作会社｜SEOに強い集客サイトを地域密着で",
     description:
       "葛飾区拠点のホームページ制作会社。対面打ち合わせ・訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から。補助金活用の相談も可能。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -224,7 +224,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_12_19.png"
+            src="/ChatGPT Image 2026年6月13日 19_12_19.jpg"
             alt="葛飾区のホームページ制作 — 打ち合わせ風景"
             fill
             sizes="100vw"

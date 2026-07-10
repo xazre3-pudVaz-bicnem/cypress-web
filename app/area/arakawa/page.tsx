@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "荒川区のSEO対策・MEO対策・ホームページ制作｜南千住・町屋・西日暮里の集客支援｜株式会社サイプレス",
     description: "荒川区の中小企業・店舗のSEO・MEO対策を葛飾区拠点のサイプレスが支援。南千住・三ノ輪・町屋・西日暮里エリアへの訪問対応も迅速。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -139,7 +139,7 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="荒川区のデジタルマーケティング"
             fill
             sizes="100vw"

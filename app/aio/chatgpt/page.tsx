@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT対策・生成AI時代の情報設計｜AIO対策｜株式会社サイプレス",
     description: "ChatGPTに引用・推薦される企業になるための情報設計と具体的施策。E-E-A-T・構造化データ・メディア露出・llms.txt対応まで解説。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -185,7 +185,7 @@ export default function ChatgptAioPage() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.png"
+            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
             alt="ChatGPT対策・生成AI時代の情報設計"
             fill
             sizes="100vw"
@@ -429,7 +429,7 @@ export default function ChatgptAioPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_19_44.png"
+                  src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
                   alt="ChatGPT引用のポイント・ラップトップアナリティクス"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略｜株式会社サイプレス",
     description: "建設業・工務店・リフォーム会社のMEO対策。施工事例写真・対応エリア設定・口コミ獲得・資格情報掲載など建設業特有のGBP最適化で地域からの問い合わせを増やします。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,7 +164,7 @@ export default function Page() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="建設・リフォーム・工務店のMEO対策"
             fill
             sizes="100vw"

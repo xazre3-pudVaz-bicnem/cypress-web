@@ -78,7 +78,7 @@ export default function GoalsPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 00_32_58.png"
+            src="/ChatGPT Image 2026年6月13日 00_32_58.jpg"
             alt="ビジネス目標達成のためのWeb集客戦略"
             fill
             className="object-cover"

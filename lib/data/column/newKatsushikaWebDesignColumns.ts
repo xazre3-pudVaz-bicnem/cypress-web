@@ -10,7 +10,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ制作 費用",
     publishedAt: "2026-07-04",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_13_37.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_13_37.jpg",
     eyecatchAlt: "葛飾区のホームページ制作費用を解説するイメージ",
     metaDescription:
       "葛飾区でホームページ制作を依頼する場合の費用相場を解説。LP20〜40万円・小規模サイト10〜50万円・コーポレートサイト50〜150万円の内訳、保守費用、補助金活用、格安サービスとの違いまで具体的に説明します。",
@@ -65,7 +65,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ制作会社",
     publishedAt: "2026-07-04",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_14_54.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_14_54.jpg",
     eyecatchAlt: "葛飾区のホームページ制作会社の選び方を解説するイメージ",
     metaDescription:
       "葛飾区でホームページ制作会社を選ぶ際の比較ポイントを解説。地元制作会社・大手・格安サービス・フリーランスの違い、見積もり比較のチェックリスト、失敗事例から学ぶ注意点まで具体的に説明します。",
@@ -116,7 +116,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "亀有 ホームページ制作",
     publishedAt: "2026-07-04",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_03.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_03.jpg",
     eyecatchAlt: "亀有・金町・新小岩のホームページ制作を解説するイメージ",
     metaDescription:
       "亀有・金町・新小岩エリアの店舗・中小企業向けホームページ制作ガイド。駅ごとの商圏特性・客層に合わせたサイト設計、「駅名＋業種」キーワードのSEO設計、制作費用の目安を地元目線で解説します。",
@@ -166,7 +166,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ リニューアル",
     publishedAt: "2026-07-04",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_57.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_18_57.jpg",
     eyecatchAlt: "葛飾区のホームページリニューアルを解説するイメージ",
     metaDescription:
       "葛飾区の中小企業・店舗向けホームページリニューアルガイド。リニューアルすべきサインの診断、検索順位を落とさない移行手順（URL・リダイレクト設計）、費用相場、失敗しない進め方を解説します。",
@@ -217,7 +217,7 @@ export const NEW_KATSUSHIKA_WEB_DESIGN_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 開業 ホームページ",
     publishedAt: "2026-07-04",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_10_29.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_10_29.jpg",
     eyecatchAlt: "葛飾区で開業する方のホームページ準備を解説するイメージ",
     metaDescription:
       "葛飾区で開業・創業する個人事業主・小規模事業者向けのホームページ準備ガイド。開業前に整えるべきWeb基盤、最小構成での始め方、Googleビジネスプロフィールとの連携、補助金の確認ポイントを解説します。",

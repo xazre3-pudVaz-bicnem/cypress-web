@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略｜株式会社サイプレス",
     description: "地域名・地元感を活かして近隣ユーザーに届くSNS戦略。地域ハッシュタグ・位置情報タグ・MEO連携・地域インフルエンサー活用で来店を増やす地域密着SNS運用の全手法を解説。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_22_31.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -112,7 +112,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.png" alt="地域密着SNS運用" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.jpg" alt="地域密着SNS運用" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               地元に愛されるお店は、地元に届くSNSをしている。

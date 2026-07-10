@@ -89,7 +89,7 @@ export default function IndustriesPage() {
 
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
-          <Image src="/1.png" alt="業種別Webマーケティング・集客支援" fill className="object-cover" sizes="100vw" />
+          <Image src="/1.jpg" alt="業種別Webマーケティング・集客支援" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

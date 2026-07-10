@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で起業・創業する方向けガイド｜開業準備からWeb集客まで",
     description: "葛飾区で起業・創業を検討している方向けに、開業準備チェックリスト、創業資金確認、Web集客ガイド、ホームページ補助金、収益柱づくり、販売パートナー制度を解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

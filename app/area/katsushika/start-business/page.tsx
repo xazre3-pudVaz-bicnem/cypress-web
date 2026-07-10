@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区で起業する方への開業準備ガイド｜支援制度・Web集客の始め方",
     description:
       "葛飾区で起業・創業を検討している方向けの開業準備ガイド。支援制度の調べ方、開業前に整えるホームページ・Web集客の基礎、販売パートナー制度を紹介します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

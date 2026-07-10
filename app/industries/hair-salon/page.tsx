@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【美容室・ヘアサロンのMEO・Instagram集客】ホットペッパー依存脱却で指名予約を増やす｜株式会社サイプレス",
     description: "美容室・ヘアサロンのWeb集客。MEO・Instagram・ホームページで新規来店と指名予約を増やします。",
-    images: [{ url: "/ChatGPT Image 2026年6月19日 08_59_57 (1).png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月19日 08_59_57 (1).jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -183,7 +183,7 @@ export default function HairSalonIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月19日 08_59_57 (2).png"
+            src="/ChatGPT Image 2026年6月19日 08_59_57 (2).jpg"
             alt="ヘアサロン・美容室のMEO対策とWeb集客支援イメージ"
             fill
             className="object-cover"

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で創業資金・融資・補助金を確認する前に知っておきたいこと",
     description: "葛飾区で創業を考えている方向けに、創業融資・補助金・ホームページ作成費補助の確認ポイントを整理。申請前の注意点とWeb集客費用の考え方を解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

@@ -37,19 +37,19 @@ const INDUSTRY_PAGE_MAP: Record<string, string> = {
 
 // 業種別OGP画像（public/ に実在するファイルのみ）
 const INDUSTRY_OGP_IMAGES: Record<string, string> = {
-  restaurant: "/ChatGPT Image 2026年6月14日 21_09_20 (1).png",
-  "beauty-salon": "/ChatGPT Image 2026年6月19日 08_59_57 (1).png",
-  relaxation: "/ChatGPT Image 2026年6月19日 09_03_14 (6).png",
-  dental: "/ChatGPT Image 2026年6月19日 09_05_30 (6).png",
-  clinic: "/ChatGPT Image 2026年6月19日 09_05_27 (1).png",
-  construction: "/ChatGPT Image 2026年6月19日 09_10_04 (4).png",
-  "real-estate": "/ChatGPT Image 2026年6月19日 09_10_08 (3).png",
-  cleaning: "/ChatGPT Image 2026年6月14日 21_10_24 (6).png",
-  logistics: "/ChatGPT Image 2026年6月19日 09_26_23 (1).png",
-  pet: "/ChatGPT Image 2026年6月19日 09_26_45 (3).png",
-  school: "/ChatGPT Image 2026年6月19日 09_27_09 (1).png",
-  retail: "/ChatGPT Image 2026年6月14日 21_10_25 (10).png",
-  professional: "/ChatGPT Image 2026年6月14日 21_13_52.png",
+  restaurant: "/ChatGPT Image 2026年6月14日 21_09_20 (1).jpg",
+  "beauty-salon": "/ChatGPT Image 2026年6月19日 08_59_57 (1).jpg",
+  relaxation: "/ChatGPT Image 2026年6月19日 09_03_14 (6).jpg",
+  dental: "/ChatGPT Image 2026年6月19日 09_05_30 (6).jpg",
+  clinic: "/ChatGPT Image 2026年6月19日 09_05_27 (1).jpg",
+  construction: "/ChatGPT Image 2026年6月19日 09_10_04 (4).jpg",
+  "real-estate": "/ChatGPT Image 2026年6月19日 09_10_08 (3).jpg",
+  cleaning: "/ChatGPT Image 2026年6月14日 21_10_24 (6).jpg",
+  logistics: "/ChatGPT Image 2026年6月19日 09_26_23 (1).jpg",
+  pet: "/ChatGPT Image 2026年6月19日 09_26_45 (3).jpg",
+  school: "/ChatGPT Image 2026年6月19日 09_27_09 (1).jpg",
+  retail: "/ChatGPT Image 2026年6月14日 21_10_25 (10).jpg",
+  professional: "/ChatGPT Image 2026年6月14日 21_13_52.jpg",
 };
 
 export async function generateStaticParams() {
@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description: description.slice(0, 118),
     keywords: [`${label} Web集客 事例`, `${label} MEO`, `${label} SEO`, `${label} ホームページ制作`],
-    openGraph: { title, description, images: [{ url: INDUSTRY_OGP_IMAGES[industry] ?? "/hero.png", width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
+    openGraph: { title, description, images: [{ url: INDUSTRY_OGP_IMAGES[industry] ?? "/hero.jpg", width: 1200, height: 630 }], locale: "ja_JP", type: "website" },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `${BASE}/cases/industry/${industry}` },
   };

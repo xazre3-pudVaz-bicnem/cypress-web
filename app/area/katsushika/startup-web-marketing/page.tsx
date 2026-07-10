@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区で創業する方向けWeb集客ガイド｜ホームページ制作・SEO・MEO",
     description:
       "葛飾区で創業・開業する事業者向けに、ホームページ制作、SEO対策、MEO対策、SNS、Googleビジネスプロフィールを活用したWeb集客の考え方を解説します。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },

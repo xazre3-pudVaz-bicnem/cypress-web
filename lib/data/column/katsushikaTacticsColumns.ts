@@ -14,7 +14,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 Googleビジネスプロフィール",
     publishedAt: "2026-07-09",
     readingTime: 9,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_09_09 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_09_09 (6).jpg",
     eyecatchAlt: "葛飾区の事業者向けGoogleビジネスプロフィール設定を解説するイメージ",
     metaDescription:
       "葛飾区の店舗・中小企業向けGoogleビジネスプロフィール（GBP）設定ガイド。オーナー確認の手順、カテゴリ選定、営業時間・写真・属性の登録、よくある設定ミスと対処法を実務レベルで解説します。",
@@ -69,7 +69,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 口コミ 増やす",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (2).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (2).jpg",
     eyecatchAlt: "葛飾区の店舗の口コミ獲得戦略を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向け口コミ獲得ガイド。Googleのガイドラインに違反しない依頼方法、口コミが集まる導線の作り方、低評価への返信の型、やってはいけないNG施策を具体例つきで解説します。",
@@ -120,7 +120,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ローカルSEO キーワード",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_58 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_58 (5).jpg",
     eyecatchAlt: "葛飾区のローカルSEOキーワード選定を解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けローカルSEOキーワード選定ガイド。区名・駅名・複合キーワードの使い分け、競合の強さを見極める方法、検索ボリュームより「勝てるか」を優先する考え方を実例で解説します。",
@@ -171,7 +171,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 Instagram 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (3).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (3).jpg",
     eyecatchAlt: "葛飾区の店舗のInstagram集客を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けInstagram集客ガイド。フォロワー数より来店を生む運用設計、地域ハッシュタグの使い方、プロフィールと予約導線の作り方、MEOとの相乗効果を実務レベルで解説します。",
@@ -221,7 +221,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 LINE公式アカウント 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (4).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_57 (4).jpg",
     eyecatchAlt: "葛飾区の店舗のLINE公式アカウント活用を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けLINE公式アカウント活用ガイド。友だち追加を増やす導線、リピート率を上げる配信設計、ポータルサイト依存から脱却する再来店の仕組み、配信頻度とブロック対策を解説します。",
@@ -271,7 +271,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "Googleマップ 順位 上がらない",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg",
     eyecatchAlt: "Googleマップの順位が上がらない原因を解説するイメージ",
     metaDescription:
       "葛飾区の店舗でGoogleマップの順位が上がらない・下がった原因を9つに分類して解説。カテゴリ設定ミス、NAP情報の不一致、口コミ不足、ガイドライン違反など、原因別の具体的な対処法を示します。",
@@ -321,7 +321,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 競合分析",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_56 (1).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_08_56 (1).jpg",
     eyecatchAlt: "葛飾区での競合分析の方法を解説するイメージ",
     metaDescription:
       "葛飾区の事業者向け競合分析ガイド。無料ツールでできる競合のGBP・ホームページ・口コミの調査手順、勝てるキーワードの見つけ方、分析結果を施策に落とし込む方法を5ステップで解説します。",
@@ -375,7 +375,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 AIO対策",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_09_09 (5).png",
+    eyecatchImage: "/ChatGPT Image 2026年6月14日 21_09_09 (5).jpg",
     eyecatchAlt: "葛飾区の事業者のAIO対策を解説するイメージ",
     metaDescription:
       "葛飾区の事業者向けAIO対策（AI検索最適化）ガイド。ChatGPT・Gemini・Perplexityに引用されるための情報設計、構造化データとllms.txt、地域事業者だからこそ有利な理由を解説します。",
@@ -425,7 +425,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ホームページ SEO",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_13_37.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_13_37.jpg",
     eyecatchAlt: "葛飾区の事業者向けホームページSEOチェックリストのイメージ",
     metaDescription:
       "葛飾区の事業者向けホームページSEOチェックリスト。公開前・公開後に確認すべき20項目を、タイトルタグ・見出し構造・表示速度・構造化データ・スマホ対応の観点から具体的に解説します。",
@@ -476,7 +476,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 Web集客 費用",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_12_19.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_12_19.jpg",
     eyecatchAlt: "葛飾区のWeb集客の費用相場を解説するイメージ",
     metaDescription:
       "葛飾区の中小企業・店舗向けWeb集客の費用相場ガイド。MEO対策・SEO対策・ホームページ制作・SNS運用の料金目安、限られた予算での優先順位、悪質な業者を見抜くポイントを解説します。",
@@ -527,7 +527,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 インバウンド 対策",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_14_54.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_14_54.jpg",
     eyecatchAlt: "葛飾区のインバウンド対策・多言語対応を解説するイメージ",
     metaDescription:
       "葛飾区の店舗向けインバウンド対策ガイド。柴又・亀有を訪れる訪日外国人を集客する方法、Googleビジネスプロフィールの多言語対応、費用をかけずに始める翻訳と決済の実務を解説します。",
@@ -578,7 +578,7 @@ export const KATSUSHIKA_TACTICS_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 採用サイト",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 00_32_58.png",
+    eyecatchImage: "/ChatGPT Image 2026年6月13日 00_32_58.jpg",
     eyecatchAlt: "葛飾区の中小企業の採用サイト戦略を解説するイメージ",
     metaDescription:
       "葛飾区の中小企業向け採用サイト戦略。求人媒体に依存せず応募を集める採用サイトの作り方、求職者が本当に知りたい情報、Indeedとの連携、採用コストを下げる仕組みを解説します。",

@@ -250,7 +250,7 @@ export default function InternalSeoPage() {
 
         {/* Visual */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 19_12_19.png" alt="内部SEO最適化・HTMLソースコード分析" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_12_19.jpg" alt="内部SEO最適化・HTMLソースコード分析" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

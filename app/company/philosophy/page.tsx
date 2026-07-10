@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "経営理念・ミッション・ビジョン・バリュー | 株式会社サイプレス",
     description: "株式会社サイプレスの経営理念。Mission・Vision・Value・行動指針10条。地域企業が正しく選ばれる仕組みをつくる。",
-    images: [{ url: "/hero.png", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -278,7 +278,7 @@ export default function PhilosophyPage() {
         <section className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#0d1b2a" }}>
           <div className="absolute inset-0">
             <Image
-              src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+              src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
               alt="サイプレスの理念"
               fill
               className="object-cover opacity-25"
@@ -430,7 +430,7 @@ export default function PhilosophyPage() {
         {/* Cinematic break */}
         <section className="relative overflow-hidden" style={{ height: "280px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="サイプレスの理念を象徴するビジュアル"
             fill
             className="object-cover"

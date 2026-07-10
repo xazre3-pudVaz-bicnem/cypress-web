@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
     description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,7 +111,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="SNS写真ディレクション" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="SNS写真ディレクション" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               美しい写真が、フォローと来店を生む。

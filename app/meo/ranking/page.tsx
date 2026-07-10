@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MEO順位改善｜Googleマップ上位3位を獲得する方法｜株式会社サイプレス",
     description: "Googleマップのローカルパック上位表示を達成するためのMEO順位改善戦略。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_19_44.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_19_44.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -192,7 +192,7 @@ export default function MeoRankingPage() {
 
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_19_44.png" alt="MEO順位改善・アナリティクスダッシュボード" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月13日 19_19_44.jpg" alt="MEO順位改善・アナリティクスダッシュボード" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.15)" }} />
         </section>
 
@@ -630,7 +630,7 @@ export default function MeoRankingPage() {
                 </div>
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
-                <Image src="/ChatGPT Image 2026年6月13日 19_14_54.png" alt="MEO順位改善の分析・グラフとミーティング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src="/ChatGPT Image 2026年6月13日 19_14_54.jpg" alt="MEO順位改善の分析・グラフとミーティング" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
             </div>
           </div>

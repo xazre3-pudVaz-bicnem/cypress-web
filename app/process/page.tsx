@@ -77,7 +77,7 @@ export default function ProcessPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_09 (4).png"
+            src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
             alt="サービス利用の流れ・打ち合わせの様子"
             fill
             className="object-cover"

@@ -195,7 +195,7 @@ export default function OsteopathicPage() {
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月19日 09_05_31 (8).png" alt="整体院・整骨院のMEO対策と地域集客支援イメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月19日 09_05_31 (8).jpg" alt="整体院・整骨院のMEO対策と地域集客支援イメージ" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

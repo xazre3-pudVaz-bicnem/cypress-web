@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Googleマップ上位表示｜ローカルパック3位以内の戦略と実装｜株式会社サイプレス",
     description: "Googleマップのローカルパック（上位3枠）に表示されるためのMEO対策。関連性・距離・知名度の3要素を最適化し、地域検索での上位表示を実現します。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.png", width: 1200, height: 630 }],
+    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -331,7 +331,7 @@ export default function MapRankingPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
             alt="Googleマップ上位表示対策"
             fill
             sizes="100vw"

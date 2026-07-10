@@ -162,7 +162,7 @@ export default function WorkflowPage() {
 
         {/* Hero Image */}
         <section className="relative" style={{ height: "280px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).png" alt="AIワークフロー設計・AI導入ロードマップのイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="AIワークフロー設計・AI導入ロードマップのイメージ" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

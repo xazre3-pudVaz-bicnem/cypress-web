@@ -358,7 +358,7 @@ export default function GoogleBusinessProfilePage() {
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.png"
+            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
             alt="Googleビジネスプロフィール最適化・デジタルマーケティング"
             fill
             className="object-cover"
@@ -607,7 +607,7 @@ export default function GoogleBusinessProfilePage() {
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_14_54.png"
+                  src="/ChatGPT Image 2026年6月13日 19_14_54.jpg"
                   alt="GBP最適化の分析・戦略会議"
                   fill
                   className="object-cover"
