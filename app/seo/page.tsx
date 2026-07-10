@@ -332,6 +332,8 @@ const relatedLinks = [
   { href: "/cost/seo", label: "SEO対策の費用", desc: "料金相場と費用対効果" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援内容" },
   { href: "/cases/service/seo", label: "SEO対策の成功事例", desc: "業種別のSEO成功事例一覧" },
+  { href: "/training/web-marketing-training", label: "Webマーケティング研修", desc: "SEOを社内で判断できる人材を育てる" },
+  { href: "/training", label: "法人研修の導入相談", desc: "提携研修会社の紹介窓口" },
   { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
 ];
 

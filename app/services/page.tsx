@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import RelatedPages from "@/components/shared/RelatedPages";
 import { SERVICES } from "@/lib/data/services";
 
 export const metadata: Metadata = {
@@ -229,6 +230,20 @@ export default function ServicesIndexPage() {
             </ScrollReveal>
           </div>
         </section>
+
+        <RelatedPages
+          heading="関連ページ"
+          links={[
+            { href: "/seo", label: "SEO対策", desc: "検索流入を増やす施策" },
+            { href: "/meo", label: "MEO対策", desc: "Googleマップ集客" },
+            { href: "/aio", label: "AIO対策", desc: "AI検索での引用獲得" },
+            { href: "/ai", label: "AI活用支援", desc: "業務自動化・AI導入支援" },
+            { href: "/web-design", label: "ホームページ制作", desc: "集客できるサイト設計" },
+            { href: "/training", label: "法人研修の導入相談", desc: "AI・DX・Web研修の紹介窓口" },
+            { href: "/training/reskilling-subsidy", label: "リスキリング研修相談", desc: "助成金活用を検討する企業向け" },
+            { href: "/cost", label: "料金・費用ガイド", desc: "各サービスの費用相場" },
+          ]}
+        />
       </main>
       <Footer />
     </>

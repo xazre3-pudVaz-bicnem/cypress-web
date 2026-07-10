@@ -50,6 +50,12 @@ import { KATSUSHIKA_AREA_DEEPDIVE_COLUMNS } from "./katsushikaAreaDeepDiveColumn
 import { TRAINING_SUBSIDY_COLUMNS } from "./trainingSubsidyColumns";
 import { TRAINING_AI_COLUMNS } from "./trainingAiColumns";
 import { TRAINING_WEB_COLUMNS } from "./trainingWebColumns";
+import { TRAINING_COMPARE_COLUMNS } from "./trainingCompareColumns";
+import { TRAINING_INDUSTRY_COLUMNS } from "./trainingIndustryColumns";
+import { TRAINING_INDUSTRY2_COLUMNS } from "./trainingIndustry2Columns";
+import { TRAINING_ROLE_TOOL_COLUMNS } from "./trainingRoleToolColumns";
+import { TRAINING_COST_PLAN_COLUMNS } from "./trainingCostPlanColumns";
+import { TRAINING_COURSE_AREA_COLUMNS } from "./trainingCourseAreaColumns";
 
 export type { ColumnTopicPage };
 
@@ -105,6 +111,12 @@ const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
   ...TRAINING_SUBSIDY_COLUMNS,
   ...TRAINING_AI_COLUMNS,
   ...TRAINING_WEB_COLUMNS,
+  ...TRAINING_COMPARE_COLUMNS,
+  ...TRAINING_INDUSTRY_COLUMNS,
+  ...TRAINING_INDUSTRY2_COLUMNS,
+  ...TRAINING_ROLE_TOOL_COLUMNS,
+  ...TRAINING_COST_PLAN_COLUMNS,
+  ...TRAINING_COURSE_AREA_COLUMNS,
 ];
 
 /**

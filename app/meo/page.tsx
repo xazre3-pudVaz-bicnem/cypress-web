@@ -855,6 +855,8 @@ export default function MeoIndexPage() {
             { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食店のMEO・マーケティング" },
             { href: "/industries/hair-salon", label: "美容室の集客", desc: "美容室のMEO・マーケティング" },
             { href: "/industries/clinic", label: "クリニックの集客", desc: "医療機関のMEO・マーケティング" },
+            { href: "/training/web-marketing-training", label: "MEO・Webマーケティング研修", desc: "店舗運用を社内で回せるようにする" },
+            { href: "/training", label: "法人研修の導入相談", desc: "提携研修会社の紹介窓口" },
           ]}
         />
 

@@ -165,6 +165,9 @@ const relatedLinks = [
   { href: "/knowledge/chatgpt-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
   { href: "/knowledge/ai-prompt", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "AI×コンテンツSEO戦略" },
+  { href: "/training/ai-dx-reskilling", label: "AI・DX研修の導入相談", desc: "社員のAI活用スキルを育てる" },
+  { href: "/training/chatgpt-ai-training", label: "ChatGPT・生成AI研修", desc: "職種別のAI活用を学ぶ法人研修" },
+  { href: "/training", label: "法人研修の導入相談", desc: "提携研修会社の紹介窓口" },
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 

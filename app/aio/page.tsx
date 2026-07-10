@@ -807,6 +807,8 @@ export default function AioIndexPage() {
             { href: "/meo", label: "MEO対策", desc: "地域ビジネスの集客施策" },
             { href: "/sns", label: "SNS運用", desc: "SNSとAIOの連動戦略" },
             { href: "/knowledge", label: "マーケティング知識", desc: "デジタルマーケティング全般" },
+            { href: "/training/chatgpt-ai-training", label: "ChatGPT・生成AI研修", desc: "生成AI活用を社内で学ぶ法人研修" },
+            { href: "/training", label: "法人研修の導入相談", desc: "提携研修会社の紹介窓口" },
           ]}
         />
 

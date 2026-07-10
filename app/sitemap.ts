@@ -427,9 +427,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/partner/training-company-referral",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
-    // リスキリング研修・人材開発支援助成金（中心ページを最優先）
+    // リスキリング研修・人材開発支援助成金（ハブと中心ページを最優先）
     ...urls([
-      "/training/reskilling-subsidy",
+      "/training", "/training/reskilling-subsidy",
     ], { changeFrequency: "weekly", priority: 0.9 }),
     ...urls([
       "/training/ai-dx-reskilling", "/training/chatgpt-ai-training",
