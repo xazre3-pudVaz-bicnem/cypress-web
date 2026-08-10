@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 interface Props {
   heading?: string;
@@ -31,16 +32,34 @@ export default function PageContactCTA({
           <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
             {body}
           </p>
-          <Link
-            href={href}
-            className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-            style={{ border: "1px solid #0F172A", color: "#0F172A" }}
-          >
-            {ctaLabel}
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </Link>
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <Link
+              href={href}
+              className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
+              style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+            >
+              {ctaLabel}
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+            {/* フォームを使いたくない層の離脱を防ぐため、直接のメール窓口も併記する。 */}
+            <div>
+              <p className="text-[11px] tracking-[0.14em] uppercase mb-1" style={{ color: "#9CA3AF" }}>
+                メールでのご相談
+              </p>
+              <a
+                href={CONTACT_MAILTO}
+                className="text-[15px] font-medium underline underline-offset-4 transition-opacity hover:opacity-60"
+                style={{ color: "#0F172A" }}
+              >
+                {CONTACT_EMAIL}
+              </a>
+              <p className="text-[12px] mt-1" style={{ color: "#9CA3AF" }}>
+                受付時間 {CONTACT_HOURS}
+              </p>
+            </div>
+          </div>
           {note && (
             <p className="text-[12px] leading-[1.9] mt-6 max-w-xl" style={{ color: "#9CA3AF" }}>
               {note}

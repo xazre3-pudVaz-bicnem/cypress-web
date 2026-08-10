@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
@@ -87,12 +88,13 @@ const localBusinessJsonLd = {
   serviceType: ["SEO対策", "MEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援"],
 };
 
-const PROFILE_ROWS = [
+const PROFILE_ROWS: { label: string; value: string; href?: string }[] = [
   { label: "会社名", value: "株式会社サイプレス" },
   { label: "代表取締役", value: "織田 春樹" },
   { label: "設立", value: "2026年5月13日" },
   { label: "所在地", value: "〒124-0816 東京都葛飾区白鳥4-6-1-623" },
-  { label: "メールアドレス", value: "info@cypress-all.co.jp" },
+  { label: "メールアドレス", value: CONTACT_EMAIL, href: CONTACT_MAILTO },
+  { label: "受付時間", value: CONTACT_HOURS },
   {
     label: "事業内容",
     value:
@@ -362,7 +364,17 @@ export default function ProfilePage() {
                       className="py-5 pl-6 text-[14px] leading-[1.8]"
                       style={{ color: "#374151", background: "#FFFFFF" }}
                     >
-                      {row.value}
+                      {row.href ? (
+                        <a
+                          href={row.href}
+                          className="underline underline-offset-4 transition-opacity hover:opacity-60"
+                          style={{ color: "#0F172A", fontWeight: 500 }}
+                        >
+                          {row.value}
+                        </a>
+                      ) : (
+                        row.value
+                      )}
                     </dd>
                   </div>
                 ))}

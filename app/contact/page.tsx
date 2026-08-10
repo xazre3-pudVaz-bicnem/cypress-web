@@ -4,6 +4,12 @@ import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import {
+  CONTACT_EMAIL,
+  CONTACT_HOURS,
+  CONTACT_MAILTO,
+  CONTACT_REPLY_TIME,
+} from "@/lib/contact";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -15,11 +21,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const INFO = [
-  { label: "メールアドレス", value: "info@cypress-all.co.jp" },
+const INFO: { label: string; value: string; href?: string }[] = [
+  { label: "メールアドレス", value: CONTACT_EMAIL, href: CONTACT_MAILTO },
   { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
-  { label: "対応時間", value: "平日 10:00 – 18:00" },
-  { label: "返信目安", value: "2営業日以内" },
+  { label: "対応時間", value: CONTACT_HOURS },
+  { label: "返信目安", value: CONTACT_REPLY_TIME },
 ];
 
 const FAQS = [
@@ -126,10 +132,30 @@ export default async function ContactPage({
                         <p className="text-[#9CA3AF] text-[10px] tracking-wider uppercase mb-1">
                           {item.label}
                         </p>
-                        <p className="text-[#374151] text-sm">{item.value}</p>
+                        {item.href ? (
+                          <a
+                            href={item.href}
+                            className="text-sm underline underline-offset-4 transition-colors hover:text-[#0F172A]"
+                            style={{ color: "#0F172A", fontWeight: 500 }}
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          <p className="text-[#374151] text-sm">{item.value}</p>
+                        )}
                       </div>
                     ))}
                   </div>
+                  <a
+                    href={CONTACT_MAILTO}
+                    className="mt-5 flex items-center justify-center gap-2 w-full py-3 text-[13px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
+                    style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    メールで問い合わせる
+                  </a>
                 </div>
               </ScrollReveal>
 

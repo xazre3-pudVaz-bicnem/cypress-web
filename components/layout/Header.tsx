@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 // ─── Navigation data ────────────────────────────────────────────────────────
 
@@ -425,11 +426,24 @@ export default function Header() {
               </Link>
             </nav>
 
-            {/* お問い合わせ button */}
-            <div className="hidden lg:block ml-4">
+            {/* メールアドレス + お問い合わせ button */}
+            <div className="hidden lg:flex items-center gap-4 ml-4">
+              {/* xl以上でのみ表示。lgではナビと競合して折り返すため隠す。 */}
+              <a
+                href={CONTACT_MAILTO}
+                className="hidden xl:block text-right leading-tight transition-opacity hover:opacity-60"
+                style={{ fontFamily: "var(--font-sans)" }}
+              >
+                <span className="block text-[14px] font-semibold" style={{ color: "#1a2332", letterSpacing: "0.01em" }}>
+                  {CONTACT_EMAIL}
+                </span>
+                <span className="block text-[10px] mt-0.5" style={{ color: "#9ca3af" }}>
+                  受付 {CONTACT_HOURS}
+                </span>
+              </a>
               <Link
                 href="/contact"
-                className="px-5 py-2 text-[13px] font-medium transition-all hover:bg-[#1a2332] hover:text-white"
+                className="px-5 py-2 text-[13px] font-medium transition-all hover:bg-[#1a2332] hover:text-white shrink-0"
                 style={{
                   border: "1px solid #1a2332",
                   color: "#1a2332",
@@ -749,7 +763,7 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* お問い合わせ button */}
+            {/* お問い合わせ button + メール窓口 */}
             <div className="mt-8 pb-8">
               <Link
                 href="/contact"
@@ -763,6 +777,19 @@ export default function Header() {
               >
                 お問い合わせ
               </Link>
+              <a
+                href={CONTACT_MAILTO}
+                onClick={closeMobile}
+                className="block w-full text-center mt-4"
+                style={{ fontFamily: "var(--font-sans)" }}
+              >
+                <span className="block text-[14px] font-semibold" style={{ color: "#1a2332" }}>
+                  {CONTACT_EMAIL}
+                </span>
+                <span className="block text-[11px] mt-1" style={{ color: "#9ca3af" }}>
+                  受付 {CONTACT_HOURS}
+                </span>
+              </a>
             </div>
           </div>
         </div>

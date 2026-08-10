@@ -2,45 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import {
+  CONTACT_EMAIL,
+  CONTACT_MAILTO,
+  INQUIRY_TYPES,
+  TRAINING_TYPES,
+  isInquiryType,
+} from "@/lib/contact";
 
 type FormState = "idle" | "sending" | "success" | "error";
-
-const INQUIRY_TYPES = [
-  { value: "general", label: "サービスに関するご相談" },
-  { value: "homepage", label: "ホームページ制作について" },
-  { value: "seo", label: "SEO対策について" },
-  { value: "meo", label: "MEO対策について" },
-  { value: "aio", label: "AIO対策（AI検索対策）について" },
-  { value: "package", label: "Web集客パッケージについて" },
-  { value: "reskilling", label: "リスキリング研修について" },
-  { value: "ai-dx-training", label: "AI・DX研修について" },
-  { value: "chatgpt-training", label: "ChatGPT・生成AI研修について" },
-  { value: "web-marketing-training", label: "Webマーケティング研修について" },
-  { value: "subsidy-training", label: "人材開発支援助成金を活用した研修について" },
-  { value: "training-referral", label: "研修会社の紹介について" },
-  { value: "partner-training", label: "提携研修会社への相談について" },
-  { value: "partner", label: "販売パートナー制度について" },
-  { value: "agent", label: "取次店制度について" },
-  { value: "startup", label: "葛飾区での創業・Web集客について" },
-  { value: "recruit", label: "採用に関するお問い合わせ" },
-  { value: "other", label: "その他" },
-];
-
-const VALID_TYPES = new Set(INQUIRY_TYPES.map((t) => t.value));
-
-/**
- * 研修関連の種別を選んだ場合のみ、提携研修会社への情報共有の同意欄を表示する。
- * 同意がない場合、提携研修会社へ情報を共有しない運用とする（個人情報保護法上の第三者提供）。
- */
-const TRAINING_TYPES = new Set([
-  "reskilling",
-  "ai-dx-training",
-  "chatgpt-training",
-  "web-marketing-training",
-  "subsidy-training",
-  "training-referral",
-  "partner-training",
-]);
 
 /**
  * initialType は Server Component 側で ?type= を読み取って渡す。
@@ -48,17 +18,20 @@ const TRAINING_TYPES = new Set([
  * 初回表示でローディングが挟まるため、サーバーで解決する。
  */
 export default function ContactForm({ initialType }: { initialType?: string }) {
-  const defaultType = initialType && VALID_TYPES.has(initialType) ? initialType : "general";
+  const defaultType = initialType && isInquiryType(initialType) ? initialType : "general";
 
   const [state, setState] = useState<FormState>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
   const [form, setForm] = useState({
     name: "",
     company: "",
     email: "",
-    type: defaultType,
+    type: defaultType as string,
     message: "",
   });
   const [shareConsent, setShareConsent] = useState(false);
+  // ハニーポット。CSSで隠し、人間は入力しない前提のbot判定用フィールド。
+  const [website, setWebsite] = useState("");
 
   const isTrainingInquiry = TRAINING_TYPES.has(form.type);
 
@@ -73,13 +46,41 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setState("sending");
-    /*
-      TODO: Integrate email service (e.g. Resend, SendGrid, Formspree).
-      送信時は shareConsent が false の場合、提携研修会社へ情報を共有しないこと。
-      const payload = { ...form, shareConsent: isTrainingInquiry && shareConsent };
-    */
-    await new Promise((r) => setTimeout(r, 900));
-    setState("success");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          // 研修関連の種別を選んだ場合のみ、提携研修会社への情報共有の同意を送る。
+          shareConsent: isTrainingInquiry && shareConsent,
+          website,
+        }),
+      });
+
+      const result = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        error?: string;
+      };
+
+      if (!res.ok || !result.ok) {
+        setErrorMessage(
+          result.error ??
+            `送信に失敗しました。お手数ですが ${CONTACT_EMAIL} まで直接ご連絡ください。`
+        );
+        setState("error");
+        return;
+      }
+
+      setState("success");
+    } catch {
+      setErrorMessage(
+        `通信エラーが発生しました。電波状況をご確認のうえ再度お試しいただくか、${CONTACT_EMAIL} まで直接ご連絡ください。`
+      );
+      setState("error");
+    }
   };
 
   const inputClass =
@@ -116,12 +117,35 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
           <br />
           担当者より2営業日以内にご連絡いたします。
         </p>
+        <p className="text-[#9CA3AF] text-xs leading-relaxed mt-5">
+          ご入力のメールアドレス宛に自動返信メールをお送りしました。
+          <br />
+          届かない場合は迷惑メールフォルダをご確認いただくか、
+          <a href={CONTACT_MAILTO} className="underline" style={{ color: "#374151" }}>
+            {CONTACT_EMAIL}
+          </a>
+          までご連絡ください。
+        </p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* ハニーポット。スクリーンリーダーからも外し、botのみが埋める想定。 */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0 }}>
+        <label htmlFor="website">ウェブサイト（入力しないでください）</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+        />
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-[#0F172A] text-sm font-medium mb-2">
@@ -132,6 +156,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
             type="text"
             name="name"
             required
+            autoComplete="name"
             placeholder="山田 太郎"
             value={form.name}
             onChange={handleChange}
@@ -148,6 +173,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
           <input
             type="text"
             name="company"
+            autoComplete="organization"
             placeholder="株式会社サンプル"
             value={form.company}
             onChange={handleChange}
@@ -168,6 +194,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
           type="email"
           name="email"
           required
+          autoComplete="email"
           placeholder="info@example.com"
           value={form.email}
           onChange={handleChange}
@@ -247,8 +274,22 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       )}
 
       <p className="text-[#9CA3AF] text-xs leading-relaxed">
-        送信いただいた個人情報は、お問い合わせへの対応のみに使用します。ご本人の同意なく第三者へ提供することはありません。
+        送信いただいた個人情報は、お問い合わせへの対応のみに使用します。ご本人の同意なく第三者へ提供することはありません。フォームがうまく動作しない場合は
+        <a href={CONTACT_MAILTO} className="underline" style={{ color: "#374151" }}>
+          {CONTACT_EMAIL}
+        </a>
+        まで直接ご連絡ください。
       </p>
+
+      {state === "error" && errorMessage && (
+        <div
+          role="alert"
+          className="p-4 text-[13px] leading-[1.9]"
+          style={{ background: "#FEF2F2", border: "1px solid #FECACA", color: "#B91C1C" }}
+        >
+          {errorMessage}
+        </div>
+      )}
 
       <button
         type="submit"
@@ -291,6 +332,8 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
             </svg>
             送信中...
           </>
+        ) : state === "error" ? (
+          "再送信する"
         ) : (
           "送信する"
         )}
