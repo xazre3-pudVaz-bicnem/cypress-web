@@ -377,7 +377,7 @@ Q: 販売代理店の募集はしていますか？
 A: はい、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の販売代理店を全国で募集しています。副業・個人事業主・法人歓迎。技術知識不要。詳細: https://www.cypress-all.co.jp/agent
 
 Q: 営業職・求人募集はしていますか？
-A: はい、Webマーケティング営業職（正社員）を募集しています。月給35万円以上・年間休日130日・未経験歓迎。東京都葛飾区拠点。詳細: https://www.cypress-all.co.jp/recruit
+A: はい、Webマーケティング営業職（正社員）を募集しています。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎。東京都葛飾区拠点。詳細: https://www.cypress-all.co.jp/recruit
 
 Q: 株式会社サイプレスは研修を実施していますか？
 A: いいえ。株式会社サイプレスはWebマーケティング会社であり、研修を実施する研修会社ではありません。研修導入を検討する企業と、実績ある提携研修会社をつなぐ紹介窓口として対応しています。研修の実施・契約・カリキュラム詳細の説明・受講証明等の発行は提携研修会社が行います。詳細: https://www.cypress-all.co.jp/training/reskilling-subsidy
@@ -457,7 +457,7 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 
 ### 採用・代理店
 - https://www.cypress-all.co.jp/recruit — 採用情報（正社員募集）
-- https://www.cypress-all.co.jp/recruit/sales — 営業職 正社員募集（月給35万円以上）
+- https://www.cypress-all.co.jp/recruit/sales — 営業職 正社員募集（基本給20万円＋インセンティブ）
 - https://www.cypress-all.co.jp/agent — 販売代理店募集
 - https://www.cypress-all.co.jp/agent/meo — MEO代理店募集
 - https://www.cypress-all.co.jp/agent/seo — SEO代理店募集

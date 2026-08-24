@@ -53,7 +53,7 @@ export default function Page() {
                     { label: "必須スキル", val: "基本的なPCスキル・コミュニケーション能力・継続的な学習意欲" },
                     { label: "歓迎スキル", val: "SEO・MEOの実務経験・Google Analytics / Search Console の使用経験・AIツール（ChatGPT等）の活用経験" },
                     { label: "雇用形態", val: "正社員 / 業務委託（相談可）" },
-                    { label: "給与", val: "月給20万円〜（経験・スキルにより応相談）" },
+                    { label: "給与", val: "基本給20万円＋インセンティブ（経験・スキルにより応相談）" },
                     { label: "勤務地", val: "リモートワーク（フルリモート可）/ 葛飾区オフィス" },
                   ]
                 },

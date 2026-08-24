@@ -9,7 +9,7 @@ import FaqSection from "@/components/shared/FaqSection";
 export const metadata: Metadata = {
   title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
   description:
-    "株式会社サイプレスの採用情報。東京都葛飾区拠点のWebマーケティング会社でMEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業（正社員）を募集中。月給35万円以上・年間休日130日・未経験歓迎。",
+    "株式会社サイプレスの採用情報。東京都葛飾区拠点のWebマーケティング会社でMEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業（正社員）を募集中。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎。",
   keywords: [
     "株式会社サイプレス 求人",
     "Webマーケティング 営業 求人",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
-    description: "東京都葛飾区拠点のWebマーケティング会社。Webマーケティング営業（正社員）募集。月給35万円以上・年間休日130日・未経験歓迎・学歴不問。",
+    description: "東京都葛飾区拠点のWebマーケティング会社。Webマーケティング営業（正社員）募集。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。",
     locale: "ja_JP",
     type: "website",
   },
@@ -42,8 +42,8 @@ const faqItems = [
     a: "はい、歓迎します。Webマーケティングや営業の経験がなくても、「成長意欲がある」「経営者と対話できる力をつけたい」「しっかり稼ぎたい」という方であればご応募ください。入社後は商材研修・OJT同行を通じてサポートします。",
   },
   {
-    q: "月給35万円以上とありますが、未経験でも同額ですか？",
-    a: "給与は経験・スキル・面談での評価をもとに決定します。35万円は採用時の最低保証ラインです。成果や経験によって上昇することがあります。詳細は面談時にご案内します。",
+    q: "基本給20万円とありますが、未経験でも同じ条件ですか？",
+    a: "はい。基本給20万円は経験を問わず、成果にかかわらず毎月固定で支給する金額です。これに加えて、受注実績に応じたインセンティブを上乗せします。経験・スキル・面談での評価によって基本給を上乗せする場合もあります。詳細は面談時にご案内します。",
   },
   {
     q: "年間休日130日は本当ですか？",
@@ -87,7 +87,7 @@ const jobPostingSchema = {
   "@context": "https://schema.org",
   "@type": "JobPosting",
   title: "Webマーケティング営業職（正社員）",
-  description: "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を東京23区の中小企業経営者へ提案する提案型法人営業。未経験歓迎。月給35万円以上・年間休日130日。株式会社サイプレス（東京都葛飾区）。",
+  description: "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を東京23区の中小企業経営者へ提案する提案型法人営業。未経験歓迎。基本給20万円＋インセンティブ・年間休日130日。株式会社サイプレス（東京都葛飾区）。",
   identifier: {
     "@type": "PropertyValue",
     name: "株式会社サイプレス",
@@ -118,7 +118,8 @@ const jobPostingSchema = {
     currency: "JPY",
     value: {
       "@type": "QuantitativeValue",
-      minValue: 350000,
+      // 基本給のみ。インセンティブは変動するため baseSalary に含めない。
+      value: 200000,
       unitText: "MONTH",
     },
   },
@@ -246,10 +247,10 @@ export default function RecruitPage() {
                     Webマーケティング営業（正社員）
                   </p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", maxWidth: "560px", marginBottom: "16px" }}>
-                    MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業の経営者へ提案する営業職です。月給35万円以上・年間休日130日。未経験歓迎。
+                    MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業の経営者へ提案する営業職です。基本給20万円＋インセンティブ・年間休日130日。未経験歓迎。
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                    {["月給35万円以上", "年間休日130日", "正社員", "未経験歓迎", "提案型営業"].map((tag) => (
+                    {["基本給20万円＋インセンティブ", "年間休日130日", "正社員", "未経験歓迎", "提案型営業"].map((tag) => (
                       <span key={tag} style={{ fontSize: "11px", padding: "4px 12px", background: "#e8e4dc", color: "#374151", borderRadius: "100px" }}>{tag}</span>
                     ))}
                   </div>
@@ -290,7 +291,7 @@ export default function RecruitPage() {
                 {
                   n: "03",
                   title: "稼ぎながら休める",
-                  body: "月給35万円以上・年間休日130日を実現しています。「しっかり稼いで、しっかり休む」という考え方が根本にあります。",
+                  body: "基本給20万円＋インセンティブ・年間休日130日。成果がそのまま収入に反映される一方で、休みはしっかり確保できる設計です。「しっかり稼いで、しっかり休む」という考え方が根本にあります。",
                 },
                 {
                   n: "04",
@@ -308,23 +309,28 @@ export default function RecruitPage() {
           </div>
         </section>
 
-        {/* ── 3. 月給35万円以上・年間休日130日の考え方 ──────────────────── */}
+        {/* ── 3. 基本給＋インセンティブ・年間休日130日の考え方 ──────────────────── */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Compensation</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
-              月給35万円以上・年間休日130日の考え方
+              基本給＋インセンティブ・年間休日130日の考え方
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div style={{ padding: "36px", border: "1px solid rgba(255,255,255,0.12)" }}>
                 <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>COMPENSATION</p>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>月給35万円以上</p>
-                <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>採用時の最低保証ライン</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>
+                  {/* 「イ／ンセンティブ」のような語中改行を防ぐため、語単位で折り返す。 */}
+                  <span style={{ whiteSpace: "nowrap" }}>基本給20万円</span>
+                  {" ＋ "}
+                  <span style={{ whiteSpace: "nowrap" }}>インセンティブ</span>
+                </p>
+                <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>固定給に成果報酬を上乗せ</p>
                 <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px" }}>
                   {[
-                    "35万円は入社時の最低保証額です",
-                    "経験・スキル・実績によって変動します",
-                    "成果次第でさらに上を目指せます",
+                    "基本給20万円は成果にかかわらず毎月固定で支給します",
+                    "インセンティブは受注実績に応じて基本給に上乗せされます",
+                    "経験・スキルにより基本給を上乗せする場合があります",
                     "「必ず○万円稼げる」という保証ではありません",
                   ].map((txt) => (
                     <p key={txt} style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7", marginBottom: "10px", paddingLeft: "16px", position: "relative" }}>
@@ -481,7 +487,7 @@ export default function RecruitPage() {
                   <tbody>
                     {[
                       { label: "雇用形態", value: "正社員（試用期間あり）" },
-                      { label: "給与", value: "月給35万円以上（経験・スキルにより変動）" },
+                      { label: "給与", value: "基本給20万円＋インセンティブ（経験・スキルにより基本給を上乗せする場合があります）" },
                       { label: "勤務地", value: "東京都葛飾区（外回り営業あり）" },
                       { label: "勤務時間", value: "9:00〜18:00（休憩60分）" },
                       { label: "休日", value: "完全週休2日（土・日）＋祝日＋年末年始" },
@@ -502,7 +508,7 @@ export default function RecruitPage() {
                 {[
                   {
                     title: "稼げる × 休める環境",
-                    body: "「高収入か、休日か」を選ぶ必要はありません。月給35万円以上・年間休日130日という水準を標準として設定しています。",
+                    body: "「高収入か、休日か」を選ぶ必要はありません。基本給20万円＋インセンティブ・年間休日130日を標準として設定しています。",
                   },
                   {
                     title: "AI時代に強い営業スキルが身につく",

@@ -9,7 +9,7 @@ import FaqSection from "@/components/shared/FaqSection";
 export const metadata: Metadata = {
   title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
   description:
-    "株式会社サイプレスの営業職（正社員）募集。東京都葛飾区拠点。MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業経営者へ提案する法人営業。月給35万円以上・年間休日130日・学歴不問・未経験歓迎。",
+    "株式会社サイプレスの営業職（正社員）募集。東京都葛飾区拠点。MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業経営者へ提案する法人営業。基本給20万円＋インセンティブ・年間休日130日・学歴不問・未経験歓迎。",
   keywords: [
     "株式会社サイプレス 営業 求人",
     "Webマーケティング 営業 正社員 東京",
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     "未経験 Webマーケティング 正社員",
     "法人営業 正社員 東京 葛飾区",
     "中小企業向け 営業 正社員",
-    "月給35万 営業 東京",
+    "インセンティブ 営業 東京",
     "IT 営業 未経験 東京",
   ],
   openGraph: {
     title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
-    description: "月給35万円以上・年間休日130日・未経験歓迎・学歴不問。MEO・SEO・ホームページを東京の中小企業経営者に提案する提案型法人営業。東京都葛飾区拠点の株式会社サイプレス。",
+    description: "基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。MEO・SEO・ホームページを東京の中小企業経営者に提案する提案型法人営業。東京都葛飾区拠点の株式会社サイプレス。",
     locale: "ja_JP",
     type: "website",
   },
@@ -42,8 +42,8 @@ const faqItems = [
     a: "はい、歓迎します。Webマーケティングや営業の経験は不問です。「経営者と話すのが好き」「成長意欲が高い」「しっかり稼ぎたい」という方であれば活躍できます。入社後は商材知識研修・提案トークの練習・同行サポートで着実にスキルを身につけられます。",
   },
   {
-    q: "月給35万円以上とは、未経験でも同額ですか？",
-    a: "給与は経験・スキル・面談での評価をもとに個別に決定します。ご経験・ご状況について面談時に詳しくお聞きしたうえでご案内します。",
+    q: "基本給20万円とは、未経験でも同じ条件ですか？",
+    a: "はい。基本給20万円は経験を問わず固定で支給します。これに加えて受注実績に応じたインセンティブが上乗せされます。経験・スキル・面談での評価により基本給を上乗せする場合もあるため、詳しくは面談時にご案内します。",
   },
   {
     q: "年間休日130日とはどのような休日ですか？",
@@ -120,7 +120,7 @@ const jobPostingSchema = {
   "@type": "JobPosting",
   title: "Webマーケティング営業（正社員）",
   description:
-    "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業経営者へ提案する提案型法人営業職。未経験歓迎。月給35万円以上・年間休日130日。",
+    "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業経営者へ提案する提案型法人営業職。未経験歓迎。基本給20万円＋インセンティブ・年間休日130日。",
   identifier: {
     "@type": "PropertyValue",
     name: "株式会社サイプレス",
@@ -151,7 +151,8 @@ const jobPostingSchema = {
     currency: "JPY",
     value: {
       "@type": "QuantitativeValue",
-      minValue: 350000,
+      // 基本給のみ。インセンティブは変動するため baseSalary に含めない。
+      value: 200000,
       unitText: "MONTH",
     },
   },
@@ -220,7 +221,7 @@ export default function RecruitSalesPage() {
             </h1>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "32px" }}>
               {[
-                { label: "月給", value: "35万円以上" },
+                { label: "給与", value: "基本給20万円＋インセンティブ" },
                 { label: "年間休日", value: "130日" },
                 { label: "雇用形態", value: "正社員" },
                 { label: "経験", value: "未経験歓迎" },
@@ -320,7 +321,7 @@ export default function RecruitSalesPage() {
               {[
                 {
                   n: "01",
-                  title: "月給35万円以上 × 年間休日130日",
+                  title: "基本給20万円＋インセンティブ × 年間休日130日",
                   body: "収入とプライベートを両立できる環境を整えています。「稼げるけど休めない」「休めるけど稼げない」どちらも不要。両方を本気で実現します。",
                 },
                 {
@@ -349,25 +350,25 @@ export default function RecruitSalesPage() {
           </div>
         </section>
 
-        {/* ── 月給35万円以上について ──────────────────────────────── */}
+        {/* ── 給与（基本給＋インセンティブ）について ──────────────────────────────── */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <div style={{ maxWidth: "720px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Salary</p>
               <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
-                月給35万円以上について
+                給与（基本給＋インセンティブ）について
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
-                「Webマーケティング営業」と聞くと、インセンティブ頼みで基本給が低いイメージを持つ方もいるかもしれません。サイプレスでは月給35万円以上を提示しています。
+                サイプレスの給与は、基本給20万円に成果に応じたインセンティブを加える構成です。基本給は成果にかかわらず毎月固定で支給し、そのうえで受注実績に応じたインセンティブが上乗せされます。
               </p>
               <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
-                具体的な給与は、あなたの経験・スキル・面談時の評価をもとに個別に決定します。「必ず○万円になる」という断定はしませんが、成果次第で高収入を狙える環境を整えています。
+                経験・スキル・面談時の評価によって、基本給を上乗せする場合があります。インセンティブの額は成果によって変動するため「必ず○万円になる」という断定はしませんが、出した成果がそのまま収入に反映される仕組みです。
               </p>
               <div style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px", marginBottom: "18px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>給与に関するよくある疑問</p>
                 {[
-                  "未経験でも35万円以上ですか？ → 経験・スキルにより個別決定。面談でご確認ください。",
-                  "インセンティブ・歩合はありますか？ → 詳細は面談時にご説明します。",
+                  "未経験でも基本給20万円ですか？ → はい。基本給は経験を問わず固定です。",
+                  "インセンティブはどう決まりますか？ → 受注実績に応じて支給します。詳細は面談時にご説明します。",
                   "昇給タイミングはいつですか？ → 評価サイクルについては面談でご確認ください。",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc", fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -680,7 +681,7 @@ export default function RecruitSalesPage() {
               {[
                 { label: "職種", value: "Webマーケティング営業（法人営業）" },
                 { label: "雇用形態", value: "正社員（正規雇用）" },
-                { label: "月給", value: "35万円以上（経験・スキルにより決定）" },
+                { label: "給与", value: "基本給20万円＋インセンティブ（経験・スキルにより基本給を上乗せする場合があります）" },
                 { label: "年間休日", value: "130日（詳細は面談時にご説明します）" },
                 { label: "勤務地", value: "東京都葛飾区白鳥4-6-1-623（詳細は面談時に確認）" },
                 { label: "仕事内容", value: "MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業経営者へ提案する法人営業" },

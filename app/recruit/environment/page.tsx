@@ -65,7 +65,7 @@ const STATS = [
   { value: "98%", label: "定着率（設立来）", color: "#10B981" },
   { value: "100%", label: "フルリモート対応", color: "#3B82F6" },
   { value: "130日", label: "年間休日", color: "#8B5CF6" },
-  { value: "40万円〜", label: "月給スタート", color: "#F59E0B" },
+  { value: "20万円", label: "基本給（＋インセンティブ）", color: "#F59E0B" },
 ];
 
 export default function EnvironmentPage() {
