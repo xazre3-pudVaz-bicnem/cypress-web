@@ -27,6 +27,21 @@ CONTACT_TO_EMAIL=info@cypress-all.co.jp
 
 > `.env*` は `.gitignore` の対象。API キーをリポジトリにコミットしないこと。
 
+### Vercel に設定するときの注意
+
+**Vercel の入力欄は引用符を外さない。** 上の `.env.local` の記法をそのまま貼ると
+`"` ごと値として保存され、Resend が差出人を解釈できず 502（Resend 側は 422）になる。
+ダッシュボードには**引用符なし**で入力すること。
+
+| | 値 |
+| --- | --- |
+| ✅ Vercel | `株式会社サイプレス <noreply@cypress-all.co.jp>` |
+| ❌ Vercel | `"株式会社サイプレス <noreply@cypress-all.co.jp>"` |
+| ✅ .env.local | `CONTACT_FROM_EMAIL="株式会社サイプレス <noreply@cypress-all.co.jp>"` |
+
+また **環境変数は追加・変更しただけでは反映されない**。既存のデプロイは古い値のまま動くため、
+設定後に必ず再デプロイする（ビルドキャッシュは使わない）。
+
 ## Resend 側の初期設定
 
 1. Resend にサインアップし、Domains で `cypress-all.co.jp` を追加
