@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/chatbot/ChatWidget";
 
 const notoSerifJP = Noto_Serif_JP({
   variable: "--font-serif",
@@ -243,7 +244,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        {children}
+        {/* AI相談チャット。APIキー未設定の環境で壊れたUIを出さないよう、明示的に有効化したときだけ表示する。 */}
+        {process.env.CHATBOT_ENABLED === "true" && <ChatWidget />}
+      </body>
     </html>
   );
 }
