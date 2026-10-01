@@ -8,6 +8,7 @@ import {
   CHAT_SYSTEM_PROMPT,
   type ChatMessage,
 } from "@/lib/chatbot";
+import { isUuid, logExchange } from "@/lib/chat-db";
 
 // Claude APIへのストリーミング中継のため、静的最適化やキャッシュを一切効かせない。
 export const runtime = "nodejs";
@@ -22,11 +23,13 @@ const UNAVAILABLE_MESSAGE =
 
 // ─── Validation ──────────────────────────────────────────────────────────────
 
-function parse(body: unknown): { messages: ChatMessage[] } | { error: string } {
+type Parsed = { messages: ChatMessage[]; conversationId: string | null; pagePath: string };
+
+function parse(body: unknown): Parsed | { error: string } {
   if (typeof body !== "object" || body === null) {
     return { error: "リクエストの形式が正しくありません。" };
   }
-  const raw = (body as Record<string, unknown>).messages;
+  const { messages: raw, conversationId, pagePath } = body as Record<string, unknown>;
   if (!Array.isArray(raw) || raw.length === 0) {
     return { error: "メッセージがありません。" };
   }
@@ -55,7 +58,12 @@ function parse(body: unknown): { messages: ChatMessage[] } | { error: string } {
   if (recent.length === 0 || recent[recent.length - 1].role !== "user") {
     return { error: "メッセージがありません。" };
   }
-  return { messages: recent };
+  return {
+    messages: recent,
+    // 会話IDはログ用。ブラウザが生成した値なので形式だけ確認し、不正なら記録しない。
+    conversationId: isUuid(conversationId) ? conversationId : null,
+    pagePath: typeof pagePath === "string" ? pagePath.slice(0, 300) : "",
+  };
 }
 
 // ─── Rate limit ──────────────────────────────────────────────────────────────
@@ -145,21 +153,28 @@ export async function POST(request: NextRequest) {
   const encoder = new TextEncoder();
   const responseBody = new ReadableStream<Uint8Array>({
     async start(controller) {
-      let sentText = false;
+      let reply = "";
       try {
         for await (const event of stream) {
           if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
-            sentText = true;
+            reply += event.delta.text;
             controller.enqueue(encoder.encode(event.delta.text));
           }
         }
         const message = await stream.finalMessage();
-        if (message.stop_reason === "refusal" && !sentText) {
-          controller.enqueue(
-            encoder.encode(
-              "申し訳ありません。その内容にはお答えできません。Web集客についてのご相談でしたら、お気軽にお聞かせください。"
-            )
-          );
+        if (message.stop_reason === "refusal" && !reply) {
+          reply =
+            "申し訳ありません。その内容にはお答えできません。Web集客についてのご相談でしたら、お気軽にお聞かせください。";
+          controller.enqueue(encoder.encode(reply));
+        }
+        // 応答を閉じる前に保存する。閉じた後の処理はサーバーレス環境では完了が保証されない。
+        if (parsed.conversationId && reply.trim()) {
+          await logExchange({
+            conversationId: parsed.conversationId,
+            pagePath: parsed.pagePath,
+            user: parsed.messages[parsed.messages.length - 1].content,
+            assistant: reply,
+          });
         }
         controller.close();
       } catch (error) {

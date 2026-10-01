@@ -13,6 +13,7 @@ import { CONTACT_EMAIL } from "@/lib/contact";
 
 const STORAGE_KEY = "cypress-chat-v1";
 const BUBBLE_DISMISSED_KEY = "cypress-chat-bubble-dismissed";
+const CONVERSATION_ID_KEY = "cypress-chat-id";
 /** 吹き出しを出すまでの待ち時間。ファーストビューを読む時間を確保する。 */
 const BUBBLE_DELAY_MS = 8000;
 const GENERIC_ERROR = `うまく接続できませんでした。少し時間をおいてお試しいただくか、${CONTACT_EMAIL} までご連絡ください。`;
@@ -35,6 +36,38 @@ function writeSession(key: string, value: unknown) {
   }
 }
 
+/** 管理画面の会話ログで1つの会話として束ねるためのID。「最初から」で作り直す。 */
+function conversationId(renew = false): string {
+  const saved = renew ? null : readSession<string>(CONVERSATION_ID_KEY);
+  if (saved) return saved;
+  const id =
+    typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) =>
+          (Number(c) ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (Number(c) / 4)))).toString(16)
+        );
+  writeSession(CONVERSATION_ID_KEY, id);
+  return id;
+}
+
+type TrackType = "open" | "link_click" | "contact_click" | "tel_click";
+
+/** 管理画面のKPI用の計測。ページ遷移と同時でも届くよう sendBeacon を使う。 */
+function track(type: TrackType) {
+  try {
+    navigator.sendBeacon(
+      "/api/chat/event",
+      JSON.stringify({ type, conversationId: conversationId(), pagePath: window.location.pathname })
+    );
+  } catch {
+    // 計測の失敗で操作を止めない
+  }
+}
+
+function trackLink(href: string) {
+  track(href.startsWith("tel:") ? "tel_click" : href.startsWith("/contact") ? "contact_click" : "link_click");
+}
+
 const LINK_PATTERN = /\[([^\]\n]+)\]\((\/[^)\s]*|tel:[0-9+-]+|mailto:[^)\s]+)\)/g;
 
 /** 回答中の [表示名](/path) と電話・メールだけをリンクにする。外部URLはリンク化しない。 */
@@ -50,11 +83,19 @@ function MessageText({ text: rawText, onNavigate }: { text: string; onNavigate: 
       "font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4 hover:text-[#6B7280]";
     parts.push(
       !match[2].startsWith("/") ? (
-        <a key={index} href={match[2]} className={className}>
+        <a key={index} href={match[2]} onClick={() => trackLink(match[2])} className={className}>
           {match[1]}
         </a>
       ) : (
-        <Link key={index} href={match[2]} onClick={onNavigate} className={className}>
+        <Link
+          key={index}
+          href={match[2]}
+          onClick={() => {
+            trackLink(match[2]);
+            onNavigate();
+          }}
+          className={className}
+        >
           {match[1]}
         </Link>
       )
@@ -79,6 +120,7 @@ export default function ChatWidget() {
   const abortRef = useRef<AbortController | null>(null);
 
   const restoredRef = useRef(false);
+  const openTrackedRef = useRef(false);
 
   // 復元（初回に開いたとき）より前に空の履歴で上書きしないよう、復元後だけ保存する。
   useEffect(() => {
@@ -123,6 +165,11 @@ export default function ChatWidget() {
       const saved = readSession<ChatMessage[]>(STORAGE_KEY);
       if (Array.isArray(saved)) setMessages(saved);
     }
+    // 開閉を繰り返しても、1回のページ表示につき1回だけ数える。
+    if (!openTrackedRef.current) {
+      openTrackedRef.current = true;
+      track("open");
+    }
     setOpen(true);
   }, [dismissBubble]);
 
@@ -144,7 +191,11 @@ export default function ChatWidget() {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ messages: history }),
+          body: JSON.stringify({
+            messages: history,
+            conversationId: conversationId(),
+            pagePath: window.location.pathname,
+          }),
           signal: controller.signal,
         });
         if (!res.ok || !res.body) {
@@ -175,6 +226,7 @@ export default function ChatWidget() {
 
   const reset = useCallback(() => {
     abortRef.current?.abort();
+    conversationId(true);
     setMessages([]);
     setError(null);
     setPending(false);
@@ -197,6 +249,9 @@ export default function ChatWidget() {
   const hasConversation = messages.length > 0;
   const lastMessage = messages[messages.length - 1];
   const waitingFirstToken = pending && lastMessage?.role === "assistant" && !lastMessage.content;
+
+  // 管理画面には出さない（計測にも混ぜない）。
+  if (pathname.startsWith("/admin")) return null;
 
   return (
     <div className="print:hidden">
@@ -333,11 +388,14 @@ export default function ChatWidget() {
           </form>
           <div className="mt-2 flex items-center justify-between gap-3">
             <p className="text-[10px] leading-snug text-[#9CA3AF]">
-              AIによる自動応答です。個人情報は入力しないでください。
+              AIによる自動応答です。品質向上のため会話を記録します。個人情報は入力しないでください。
             </p>
             <Link
               href="/contact"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                track("contact_click");
+                setOpen(false);
+              }}
               className="shrink-0 text-[12px] font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4"
             >
               無料相談フォーム
