@@ -35,24 +35,29 @@ function writeSession(key: string, value: unknown) {
   }
 }
 
-const LINK_PATTERN = /\[([^\]\n]+)\]\((\/[^)\s]*)\)/g;
+const LINK_PATTERN = /\[([^\]\n]+)\]\((\/[^)\s]*|tel:[0-9+-]+|mailto:[^)\s]+)\)/g;
 
-/** 回答中の [表示名](/path) だけをサイト内リンクにする。外部URLはリンク化しない。 */
-function MessageText({ text, onNavigate }: { text: string; onNavigate: () => void }) {
+/** 回答中の [表示名](/path) と電話・メールだけをリンクにする。外部URLはリンク化しない。 */
+function MessageText({ text: rawText, onNavigate }: { text: string; onNavigate: () => void }) {
+  // マークダウンは描画しないため、モデルが太字記号を書いた場合は記号だけ取り除く。
+  const text = rawText.replace(/\*\*/g, "");
   const parts: React.ReactNode[] = [];
   let last = 0;
   for (const match of text.matchAll(LINK_PATTERN)) {
     const index = match.index ?? 0;
     if (index > last) parts.push(text.slice(last, index));
+    const className =
+      "font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4 hover:text-[#6B7280]";
     parts.push(
-      <Link
-        key={index}
-        href={match[2]}
-        onClick={onNavigate}
-        className="font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4 hover:text-[#6B7280]"
-      >
-        {match[1]}
-      </Link>
+      !match[2].startsWith("/") ? (
+        <a key={index} href={match[2]} className={className}>
+          {match[1]}
+        </a>
+      ) : (
+        <Link key={index} href={match[2]} onClick={onNavigate} className={className}>
+          {match[1]}
+        </Link>
+      )
     );
     last = index + match[0].length;
   }

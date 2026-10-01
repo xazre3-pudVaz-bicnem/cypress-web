@@ -13,14 +13,9 @@ import {
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const MODEL = "claude-opus-5-5";
-/** 安全フィルタで回答が止まった場合にAPI側で引き継ぐモデル。 */
-const FALLBACK_MODEL = "claude-opus-4-8";
-/**
- * 誰でも叩ける公開エンドポイントなので、1回の出力に上限を設けて費用を抑える。
- * 思考トークンもこの枠に含まれるため、本文の目安（200文字）より大きく取っている。
- */
-const MAX_TOKENS = 4000;
+const MODEL = "claude-haiku-4-5";
+/** 誰でも叩ける公開エンドポイントなので、1回の出力に上限を設けて費用を抑える。 */
+const MAX_TOKENS = 1500;
 
 const UNAVAILABLE_MESSAGE =
   "ただいまチャットをご利用いただけません。お手数ですが、お問い合わせフォームからご連絡ください。";
@@ -134,13 +129,10 @@ export async function POST(request: NextRequest) {
   }
 
   const client = new Anthropic();
-  const stream = client.beta.messages.stream(
+  const stream = client.messages.stream(
     {
       model: MODEL,
       max_tokens: MAX_TOKENS,
-      output_config: { effort: "low" },
-      betas: ["server-side-fallback-2026-06-01"],
-      fallbacks: [{ model: FALLBACK_MODEL }],
       system: [
         { type: "text", text: CHAT_SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
       ],

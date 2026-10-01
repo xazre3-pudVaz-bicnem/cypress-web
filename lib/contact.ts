@@ -4,6 +4,9 @@
  */
 export const CONTACT_EMAIL = "info@cypress-all.co.jp";
 export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}`;
+/** 電話窓口。表示用（ハイフンあり）と tel: リンク用で同じ番号を指す。 */
+export const CONTACT_TEL = "090-2360-0052";
+export const CONTACT_TEL_HREF = "tel:09023600052";
 export const CONTACT_HOURS = "平日 10:00 – 18:00";
 export const CONTACT_REPLY_TIME = "2営業日以内";
 
