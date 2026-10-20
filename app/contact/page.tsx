@@ -3,17 +3,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FaqSection from "@/components/shared/FaqSection";
 import PageHero from "@/components/ui/PageHero";
-import { PhoneIcon } from "@/components/ui/Button";
+import { MailIcon } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Section";
 import { COMPANY, COMPANY_ADDRESS_WITH_POSTAL } from "@/lib/company";
-import {
-  CONTACT_EMAIL,
-  CONTACT_HOURS,
-  CONTACT_MAILTO,
-  CONTACT_REPLY_TIME,
-  CONTACT_TEL,
-  CONTACT_TEL_HREF,
-} from "@/lib/contact";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO, CONTACT_REPLY_TIME } from "@/lib/contact";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -65,24 +58,24 @@ export default async function ContactPage({
           eyebrow="Contact"
           title="お問い合わせ"
           catchCopy="ご相談は無料です。お気軽にどうぞ。"
-          lead={`フォーム送信後、${CONTACT_REPLY_TIME}にご連絡します。お急ぎの方はお電話ください。`}
+          lead={`フォーム送信後、${CONTACT_REPLY_TIME}にご連絡します。メールでも受け付けています。`}
         >
           <div className="flex flex-wrap gap-3">
             <a
-              href={CONTACT_TEL_HREF}
-              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-ink px-6 text-[15px] font-semibold text-white transition-colors hover:bg-navy-800"
+              href="#form"
+              className="inline-flex h-12 items-center rounded-full bg-ink px-6 text-[15px] font-semibold text-white transition-colors hover:bg-navy-800"
             >
-              <PhoneIcon className="h-4 w-4 text-cyan" />
-              <span className="font-en tracking-[0.02em]">{CONTACT_TEL}</span>
+              フォームから相談する
             </a>
             <a
               href={CONTACT_MAILTO}
-              className="inline-flex h-12 items-center rounded-full px-6 text-[14px] font-semibold text-ink ring-1 ring-inset ring-line-strong transition-colors hover:ring-ink"
+              className="inline-flex h-12 items-center gap-2.5 rounded-full px-6 text-[14px] font-semibold text-ink ring-1 ring-inset ring-line-strong transition-colors hover:ring-ink"
             >
+              <MailIcon className="h-4 w-4 text-accent" />
               {CONTACT_EMAIL}
             </a>
           </div>
-          <p className="mt-3 text-[13px] text-muted">電話受付 {CONTACT_HOURS}</p>
+          <p className="mt-3 text-[13px] text-muted">受付 {CONTACT_HOURS}</p>
         </PageHero>
 
         <section className="bg-white pb-20 md:pb-28">
@@ -117,21 +110,16 @@ export default async function ContactPage({
                   <h2 className="text-[16px] font-bold">連絡先</h2>
                   <dl className="mt-4 space-y-3 text-[14px]">
                     <div>
-                      <dt className="text-[12px] font-bold text-muted">電話</dt>
-                      <dd>
-                        <a href={CONTACT_TEL_HREF} className="font-en font-semibold text-ink hover:text-accent">
-                          {CONTACT_TEL}
-                        </a>
-                        <span className="ml-2 text-[12.5px] text-muted">{CONTACT_HOURS}</span>
-                      </dd>
-                    </div>
-                    <div>
                       <dt className="text-[12px] font-bold text-muted">メール</dt>
                       <dd>
                         <a href={CONTACT_MAILTO} className="text-ink underline-offset-4 hover:text-accent hover:underline">
                           {CONTACT_EMAIL}
                         </a>
                       </dd>
+                    </div>
+                    <div>
+                      <dt className="text-[12px] font-bold text-muted">受付時間</dt>
+                      <dd className="text-ink">{CONTACT_HOURS}</dd>
                     </div>
                     <div>
                       <dt className="text-[12px] font-bold text-muted">所在地</dt>

@@ -39,7 +39,6 @@ const organizationSchema = {
   description:
     "株式会社サイプレスは、東京都葛飾区亀有を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
   email: CONTACT_EMAIL,
-  telephone: "+81-90-2360-0052",
   address: {
     "@type": "PostalAddress",
     streetAddress: "亀有3-16-14-201",
@@ -160,7 +159,6 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     email: CONTACT_EMAIL,
-    telephone: "+81-90-2360-0052",
     contactType: "customer support",
     availableLanguage: "Japanese",
     areaServed: "JP",

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { ButtonLink, PhoneIcon } from "@/components/ui/Button";
+import { ButtonLink, MailIcon } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Section";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO, CONTACT_TEL, CONTACT_TEL_HREF } from "@/lib/contact";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 interface Props {
   heading?: string;
@@ -14,7 +14,7 @@ interface Props {
   note?: string;
 }
 
-/** ページ末尾の問い合わせ導線。フォーム・電話・メールの3つを並べ、選びやすくする。 */
+/** ページ末尾の問い合わせ導線。フォームとメールを並べ、選びやすくする。 */
 export default function PageContactCTA({
   heading = "Web集客のご相談は、無料です。",
   body = "MEO・SEO・AIO・ホームページ制作など、今の状況を伺ったうえで必要な施策だけをご提案します。",
@@ -43,19 +43,14 @@ export default function PageContactCTA({
               {ctaLabel}
             </ButtonLink>
             <a
-              href={CONTACT_TEL_HREF}
+              href={CONTACT_MAILTO}
               className="inline-flex h-14 items-center gap-2.5 rounded-full px-6 text-[15px] font-semibold text-white ring-1 ring-inset ring-white/25 transition-colors hover:bg-white/10"
             >
-              <PhoneIcon className="h-4 w-4 text-cyan" />
-              <span className="font-en tracking-[0.02em]">{CONTACT_TEL}</span>
+              <MailIcon className="h-4 w-4 text-cyan" />
+              <span className="font-en tracking-[0.02em]">{CONTACT_EMAIL}</span>
             </a>
           </div>
-          <p className="mt-6 text-[13px] text-white/55">
-            受付 {CONTACT_HOURS}　／　メール{" "}
-            <a href={CONTACT_MAILTO} className="text-white/80 underline-offset-4 hover:underline">
-              {CONTACT_EMAIL}
-            </a>
-          </p>
+          <p className="mt-6 text-[13px] text-white/55">受付 {CONTACT_HOURS}</p>
           {note && <p className="mt-6 max-w-xl text-[12px] leading-[1.9] text-white/50">{note}</p>}
         </div>
       </Container>

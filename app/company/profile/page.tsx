@@ -10,7 +10,7 @@ import { breadcrumbJsonLd, type Crumb } from "@/components/ui/Breadcrumbs";
 import { ExternalIcon } from "@/components/ui/Button";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { COMPANY, COMPANY_ADDRESS_WITH_POSTAL, COMPANY_MAP_QUERY } from "@/lib/company";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO, CONTACT_TEL, CONTACT_TEL_HREF } from "@/lib/contact";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
@@ -56,14 +56,6 @@ const PROFILE_ROWS: { label: string; value: React.ReactNode }[] = [
         {COMPANY_ADDRESS_WITH_POSTAL}
         <span className="mt-1 block text-[13.5px] text-muted">最寄り駅：{COMPANY.nearestStation}</span>
       </>
-    ),
-  },
-  {
-    label: "電話",
-    value: (
-      <a href={CONTACT_TEL_HREF} className="font-en font-semibold text-ink hover:text-accent">
-        {CONTACT_TEL}
-      </a>
     ),
   },
   {

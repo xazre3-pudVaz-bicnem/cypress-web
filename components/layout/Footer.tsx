@@ -2,7 +2,7 @@
 import LogoMark from "@/components/ui/LogoMark";
 import { ExternalIcon } from "@/components/ui/Button";
 import { COMPANY, COMPANY_ADDRESS_WITH_POSTAL } from "@/lib/company";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO, CONTACT_TEL, CONTACT_TEL_HREF } from "@/lib/contact";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 import {
   BUSINESS_LINKS,
   COMPANY_LINKS,
@@ -89,15 +89,11 @@ export default function Footer() {
                 <span className="text-white/45">最寄り駅：{COMPANY.nearestStation}</span>
               </p>
               <p>
-                <a href={CONTACT_TEL_HREF} className="font-en text-[16px] font-semibold text-white hover:text-cyan">
-                  {CONTACT_TEL}
-                </a>
-                <span className="ml-2 text-white/45">{CONTACT_HOURS}</span>
-              </p>
-              <p>
-                <a href={CONTACT_MAILTO} className="hover:text-white">
+                <a href={CONTACT_MAILTO} className="text-white hover:text-cyan">
                   {CONTACT_EMAIL}
                 </a>
+                <br />
+                <span className="text-white/45">受付 {CONTACT_HOURS}</span>
               </p>
             </address>
           </div>

@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LogoMark from "@/components/ui/LogoMark";
-import { ArrowIcon, ExternalIcon, PhoneIcon, buttonClass } from "@/components/ui/Button";
-import { CONTACT_TEL, CONTACT_TEL_HREF } from "@/lib/contact";
+import { ArrowIcon, ExternalIcon, buttonClass } from "@/components/ui/Button";
+import { CONTACT_MAILTO } from "@/lib/contact";
 import {
   BUSINESS_LINKS,
   COMPANY_LINKS,
@@ -239,13 +239,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <a
-              href={CONTACT_TEL_HREF}
-              className={`hidden items-center gap-2 text-[14px] font-semibold xl:flex ${solid ? "text-ink" : "text-white"}`}
-            >
-              <PhoneIcon className={`h-4 w-4 ${solid ? "text-accent" : "text-cyan"}`} />
-              <span className="font-en tracking-[0.02em]">{CONTACT_TEL}</span>
-            </a>
             <Link href="/contact" className={`${buttonClass("primary", "md")} hidden sm:inline-flex`}>
               無料相談
             </Link>
@@ -320,9 +313,8 @@ export default function Header() {
               無料で相談する
               <ArrowIcon />
             </Link>
-            <a href={CONTACT_TEL_HREF} className={buttonClass("secondary", "lg")}>
-              <PhoneIcon className="h-4 w-4 text-accent" />
-              <span className="font-en">{CONTACT_TEL}</span>
+            <a href={CONTACT_MAILTO} className={buttonClass("secondary", "lg")}>
+              メールで相談する
             </a>
           </div>
         </div>

@@ -45,15 +45,11 @@ export function ExternalIcon({ className = "h-3.5 w-3.5" }: { className?: string
   );
 }
 
-export function PhoneIcon({ className = "h-4 w-4" }: { className?: string }) {
+export function MailIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
     <svg viewBox="0 0 16 16" fill="none" className={className} aria-hidden="true">
-      <path
-        d="M5.3 2.5 3.4 2.6c-.5 0-.9.4-.9.9 0 5.5 4.5 10 10 10 .5 0 .9-.4.9-.9l.1-1.9a.9.9 0 0 0-.7-.9l-2.2-.5a.9.9 0 0 0-.9.3l-.8 1a7 7 0 0 1-3.4-3.4l1-.8c.3-.2.4-.6.3-.9L6.3 3.2a.9.9 0 0 0-1-.7Z"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinejoin="round"
-      />
+      <rect x="2" y="3.5" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3" />
+      <path d="m2.5 4.5 5.5 4.25 5.5-4.25" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
