@@ -61,15 +61,15 @@ export default function HomeContact() {
               <Link
                 href={b.href}
                 className={`group flex items-center justify-between gap-4 rounded-[18px] px-6 py-5 transition-transform duration-500 md:aspect-square md:w-[clamp(220px,19vw,290px)] md:flex-col md:justify-center md:gap-0 md:rounded-full md:px-6 md:py-0 md:text-center md:hover:scale-[1.04] ${
-                  b.tone === "white" ? "bg-white text-[var(--v2-ink)]" : "border border-white/40 bg-white/20 text-white backdrop-blur-md"
+                  b.tone === "white" ? "bg-white text-[var(--v2-ink)]" : "border border-white/40 bg-[rgba(4,52,110,0.5)] text-white backdrop-blur-md"
                 }`}
                 style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
               >
                 <span>
-                  <span className="v2-display block text-[12px] opacity-80">{b.label}</span>
+                  <span className="v2-display block text-[13px]">{b.label}</span>
                   <span className="mt-1 block text-[clamp(22px,2.2vw,32px)] font-bold tracking-[0.04em]">{b.title}</span>
                   {b.text.length > 0 && (
-                    <span className="mt-2 block text-[12px] font-semibold leading-[1.8] opacity-90">
+                    <span className="mt-2 block text-[12px] font-semibold leading-[1.8]">
                       {b.text.map((t) => (
                         <span key={t} className="md:block">
                           {t}

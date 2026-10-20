@@ -24,7 +24,7 @@ export default function MotionToggle({ tone = "light", className = "" }: Props) 
       type="button"
       onClick={() => setMotionEnabled(!enabled)}
       aria-pressed={enabled}
-      aria-label={enabled ? "アニメーションを停止する" : "アニメーションを再生する"}
+      title={enabled ? "アニメーションを停止する" : "アニメーションを再生する"}
       className={`group inline-flex items-center gap-2.5 rounded-full py-1 pl-1 text-[14px] font-bold ${className}`}
       style={{ color }}
     >

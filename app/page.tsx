@@ -14,6 +14,7 @@ import HomeFaq from "@/components/home/HomeFaq";
 import HomeCompany from "@/components/home/HomeCompany";
 import HomeCareers from "@/components/home/HomeCareers";
 import HomeContact from "@/components/home/HomeContact";
+import Deferred from "@/components/ui/Deferred";
 import { CASES } from "@/lib/data/cases";
 import { getLatestColumns } from "@/lib/data/columns";
 import { getLatestNews } from "@/lib/data/news";
@@ -164,30 +165,49 @@ export default function Home() {
         <main className="v2" style={{ background: "var(--v2-bg)" }}>
           {/* 1. ヒーロー → 円に縮む 3D → ステートメント → 2つの柱 */}
           <HomeHero />
+          {/* 2 以降は画面に近づくまで描画計算を省く（初回表示を軽くする） */}
           {/* 2. 支援事例 */}
-          <HomeCases cases={caseCards} />
+          <Deferred size={3200}>
+            <HomeCases cases={caseCards} />
+          </Deferred>
           {/* 3. 専門コラム（濃紺の帯） */}
-          <HomeInsights items={insights} />
+          <Deferred size={1600}>
+            <HomeInsights items={insights} />
+          </Deferred>
           {/* 4. サービス一覧（青い帯） */}
-          <HomeServices />
+          <Deferred size={1450}>
+            <HomeServices />
+          </Deferred>
           {/* 5. 最新情報（流れる巨大文字 → お知らせ・ブログ） */}
           <HomeActivities />
-          <HomeUpdates
-            groups={[
-              { title: "News", ja: "お知らせ", href: "/news", items: news },
-              { title: "Blog", ja: "ブログ", href: "/blog", items: posts },
-            ]}
-          />
+          <Deferred size={1500}>
+            <HomeUpdates
+              groups={[
+                { title: "News", ja: "お知らせ", href: "/news", items: news },
+                { title: "Blog", ja: "ブログ", href: "/blog", items: posts },
+              ]}
+            />
+          </Deferred>
           {/* 6. そのほかの事業（軽貨物・太陽光） */}
-          <HomeGroupBanner />
+          <Deferred size={520}>
+            <HomeGroupBanner />
+          </Deferred>
           {/* 7. よくあるご質問 */}
-          <HomeFaq items={HOME_FAQ} />
+          <Deferred size={800}>
+            <HomeFaq items={HOME_FAQ} />
+          </Deferred>
           {/* 8. 会社情報 */}
-          <HomeCompany />
+          <Deferred size={1450}>
+            <HomeCompany />
+          </Deferred>
           {/* 9. 採用 */}
-          <HomeCareers />
+          <Deferred size={980}>
+            <HomeCareers />
+          </Deferred>
           {/* 10. お問い合わせ */}
-          <HomeContact />
+          <Deferred size={1000}>
+            <HomeContact />
+          </Deferred>
         </main>
       </SmoothScroll>
       <Footer />

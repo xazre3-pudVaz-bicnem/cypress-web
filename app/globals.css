@@ -483,3 +483,29 @@ html.cy-intro-skip {
 .cy-wave-char {
   transform: translateY(calc(sin(var(--i, 0) * 0.62 - var(--p, 0) * 16) * 0.07em * min(1, min(var(--p, 0), 1 - var(--p, 0)) * 5)));
 }
+
+/* 装飾として置く巨大な英字（中身は data-text から描き、読み上げやコントラスト判定の対象にしない） */
+.cy-deco-text::before {
+  content: attr(data-text);
+}
+
+/* スマホ: ヒーローの静止画をゆっくり寄せて動きを出す（リアルタイム 3D の代わり） */
+@media (max-width: 767px) {
+  .cy-poster {
+    animation: cy-breathe 16s ease-in-out infinite alternate;
+  }
+  /* 表示を速く見せるため、スマホではヒーローの文字を最初から出しておく */
+  .cy-char,
+  .cy-hero-sub {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes cy-breathe {
+  from { transform: scale(1); }
+  to { transform: scale(1.07); }
+}
+html[data-motion="off"] .cy-poster {
+  animation-play-state: paused;
+}

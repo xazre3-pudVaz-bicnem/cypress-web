@@ -20,11 +20,11 @@ export default function HomeGroupBanner() {
           style={{ background: "var(--v2-blue)" }}
         >
           <div className="relative z-10 px-7 pb-4 pt-10 md:py-14 md:pl-14 md:pr-4">
-            <p className="v2-display text-[14px] opacity-80">Group Business</p>
+            <p className="v2-display text-[15px]">Group Business</p>
             <h2 id="home-group-title" className="mt-3 text-[clamp(24px,2.3vw,32px)] font-bold tracking-[0.02em]">
               そのほかの事業
             </h2>
-            <p className="mt-5 max-w-[30em] text-[13px] font-semibold leading-[2] opacity-90">
+            <p className="mt-5 max-w-[30em] text-[13px] font-semibold leading-[2]">
               サイプレスは、Webマーケティングに加えて、軽貨物の配送事業と、住宅向けの太陽光・蓄電池の事業を運営しています。それぞれ専用のサイトでご案内しています。
             </p>
             <ul className="mt-7 flex flex-wrap gap-x-7 gap-y-3">

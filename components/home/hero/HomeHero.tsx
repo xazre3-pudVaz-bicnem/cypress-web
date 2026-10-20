@@ -28,7 +28,7 @@ const PILLARS = [
     line2: "Visit",
     text: ["MEO・SEO・AIOで、検索から", "来店・問い合わせまでの道をつくる"],
     href: "/services",
-    label: "Web集客サービスの詳細を見る",
+    label: "View Details：Web集客サービスの詳細",
     image: "/images/v2/pillar-search.jpg",
   },
   {
@@ -37,7 +37,7 @@ const PILLARS = [
     line2: "Convert",
     text: ["ホームページとSNSで、", "比べられても選ばれる理由を届ける"],
     href: "/services/web-design",
-    label: "ホームページ制作の詳細を見る",
+    label: "View Details：ホームページ制作の詳細",
     image: "/images/v2/pillar-design.jpg",
   },
 ];

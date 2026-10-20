@@ -124,7 +124,7 @@ function ServiceList() {
                   <span className="v2-display block text-[clamp(28px,2.6vw,40px)] leading-none transition-transform duration-500 group-hover:translate-x-2" style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}>
                     {s.en}
                   </span>
-                  <span className="mt-2 block text-[12px] font-bold tracking-[0.02em] opacity-90 md:text-[13px]">{s.ja}</span>
+                  <span className="mt-2 block text-[12px] font-bold tracking-[0.02em] md:text-[13px]">{s.ja}</span>
                 </span>
                 <span
                   aria-hidden

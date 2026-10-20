@@ -52,9 +52,7 @@ export default function HomeInsights({ items }: { items: InsightCard[] }) {
 
       {/* 画面中央に止まる巨大な文字。上半分はセクションの上端で切れて見える */}
       <div aria-hidden className="pointer-events-none sticky top-1/2 z-0 -translate-y-1/2 text-center">
-        <motion.p className="v2-display v2-giant whitespace-nowrap leading-none" style={{ opacity }}>
-          Insights
-        </motion.p>
+        <motion.p className="cy-deco-text v2-display v2-giant whitespace-nowrap leading-none" data-text="Insights" style={{ opacity }} />
       </div>
 
       <div className="relative z-10 px-[var(--v2-gutter)] pb-28 pt-[70svh] md:pb-36 md:pt-[80svh]">

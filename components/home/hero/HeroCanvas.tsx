@@ -23,7 +23,7 @@ interface SceneHandle {
 
 /**
  * ヒーローの 3D。まず同じ構図の静止画を出し、ブラウザが落ち着いてから 3D を準備して重ねる。
- * 対応ブラウザでは Web Worker（OffscreenCanvas）で描き、メインスレッドを止めない。
+ * 対応ブラウザでは Web Worker（OffscreenCanvas）で描き、メインスレッドを止めない。スマホは静止画のみ。
  * 画面外にあるとき・タブが裏にあるとき・モーションOFF のときは描画を止める。
  */
 export default function HeroCanvas({ playIntro, introAt }: Props) {
@@ -45,6 +45,8 @@ export default function HeroCanvas({ playIntro, introAt }: Props) {
   useEffect(() => {
     const box = boxRef.current;
     if (!box) return;
+    // スマホは表示の速さと電池を優先し、リアルタイムの 3D は使わず静止画をゆっくり動かすだけにする
+    if (window.matchMedia("(max-width: 767px)").matches) return;
     // WebGL が使えない端末では静止画のままにする
     const probe = document.createElement("canvas");
     if (!(probe.getContext("webgl2") || probe.getContext("webgl"))) return;
@@ -175,7 +177,7 @@ export default function HeroCanvas({ playIntro, introAt }: Props) {
         <source media="(min-aspect-ratio: 3/4)" srcSet={wideSet} sizes="(min-aspect-ratio: 12/5) 100vw, 240vh" />
         <source media="(max-aspect-ratio: 3/4)" srcSet={tallSet} sizes="(max-aspect-ratio: 1170/2532) 100vw, 46vh" />
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
-        <img {...tall} className="absolute inset-0 h-full w-full object-cover" />
+        <img {...tall} className="cy-poster absolute inset-0 h-full w-full object-cover" data-motion-loop />
       </picture>
     </div>
   );

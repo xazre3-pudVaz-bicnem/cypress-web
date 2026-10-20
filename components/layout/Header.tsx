@@ -166,7 +166,7 @@ export default function Header({ variant = "default", introFade = false }: Props
               className={`flex items-center px-4 transition-[height] duration-500 lg:px-6 ${panel ? "h-16" : "h-16 lg:h-[88px]"}`}
               style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
             >
-              <Link href="/" aria-label="株式会社サイプレス トップページ" className="shrink-0 text-[17px]" onClick={closeAll}>
+              <Link href="/" aria-label="Cypress（株式会社サイプレス）トップページ" className="shrink-0 text-[17px]" onClick={closeAll}>
                 <Logo tone={light ? "white" : "color"} />
               </Link>
 
@@ -419,7 +419,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
       transition={{ duration: 0.6, ease: EASE }}
     >
       <div className="flex h-16 items-center justify-between px-4">
-        <Link href="/" onClick={onClose} className="text-[17px]" aria-label="株式会社サイプレス トップページ">
+        <Link href="/" onClick={onClose} className="text-[17px]" aria-label="Cypress（株式会社サイプレス）トップページ">
           <Logo />
         </Link>
         <button type="button" aria-label="メニューを閉じる" onClick={onClose} className="grid h-10 w-10 place-items-center rounded-full bg-white">
