@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "ローカルキーワード調査でMEOとローカルSEOの集客力を最大化する実践ガイド。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/local-keyword" },
@@ -295,23 +296,23 @@ const relatedLinks = [
   { href: "/meo/photo-posting", label: "写真投稿対策", desc: "GBP写真の最適化" },
   { href: "/meo/meo-audit", label: "MEO診断", desc: "現状診断サービス" },
   { href: "/meo/ranking", label: "MEO順位管理", desc: "順位トラッキング" },
-  { href: "/meo/post-strategy", label: "投稿戦略", desc: "GBP投稿の最適化" },
+  { href: "/meo/google-post", label: "投稿戦略", desc: "GBP投稿の最適化" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索での上位表示" },
   { href: "/seo/keyword-research", label: "キーワード調査", desc: "SEOキーワード戦略" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツ制作と最適化" },
-  { href: "/seo/on-page-seo", label: "ページ内SEO", desc: "オンページ最適化" },
+  { href: "/seo/internal-seo", label: "ページ内SEO", desc: "オンページ最適化" },
   { href: "/aio", label: "AIO対策", desc: "AI検索最適化" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEOコンサルティング" },
   { href: "/services/web-design", label: "Webサイト制作", desc: "地域ビジネス向けサイト" },
-  { href: "/industry/restaurant", label: "飲食店MEO", desc: "飲食業界向け対策" },
-  { href: "/industry/beauty", label: "美容室MEO", desc: "美容業界向け対策" },
-  { href: "/industry/dental", label: "歯科MEO", desc: "歯科クリニック向け対策" },
-  { href: "/industry/clinic", label: "クリニックMEO", desc: "医療機関向け対策" },
-  { href: "/industry/real-estate", label: "不動産MEO", desc: "不動産業界向け対策" },
+  { href: "/industries/restaurant", label: "飲食店MEO", desc: "飲食業界向け対策" },
+  { href: "/industries/beauty", label: "美容室MEO", desc: "美容業界向け対策" },
+  { href: "/industries/clinic", label: "歯科MEO", desc: "歯科クリニック向け対策" },
+  { href: "/industries/clinic", label: "クリニックMEO", desc: "医療機関向け対策" },
+  { href: "/industries/real-estate", label: "不動産MEO", desc: "不動産業界向け対策" },
   { href: "/area/tokyo", label: "東京都MEO", desc: "東京都の地域集客" },
-  { href: "/area/osaka", label: "大阪府MEO", desc: "大阪府の地域集客" },
-  { href: "/area/nagoya", label: "名古屋市MEO", desc: "名古屋市の地域集客" },
+  { href: "/area/nationwide", label: "大阪府MEO", desc: "大阪府の地域集客" },
+  { href: "/area/nationwide", label: "名古屋市MEO", desc: "名古屋市の地域集客" },
 ];
 
 export default function LocalKeywordPage() {
@@ -353,7 +354,7 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* このページでわかること — Section A */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -371,7 +372,7 @@ export default function LocalKeywordPage() {
                 "キーワード戦略の効果を測るKPIと、3ヶ月ごとの見直しサイクルの作り方",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
                   <span className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</span>
                 </li>
               ))}
@@ -414,7 +415,7 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* よくある課題と原因 — Section B */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
@@ -424,7 +425,7 @@ export default function LocalKeywordPage() {
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -434,7 +435,7 @@ export default function LocalKeywordPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -450,7 +451,7 @@ export default function LocalKeywordPage() {
             </h2>
             <div className="max-w-3xl">
               {keywordMethods.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -460,13 +461,13 @@ export default function LocalKeywordPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント — Section C */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
@@ -476,7 +477,7 @@ export default function LocalKeywordPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
               {industryPoints.map((item, i) => (
-                <div key={i} className="py-6 px-4" style={{ borderTop: "1px solid #E8E4DC", borderLeft: i % 2 !== 0 ? "1px solid #E8E4DC" : "none" }}>
+                <div key={i} className="py-6 px-4" style={{ borderTop: "1px solid #E2E8F0", borderLeft: i % 2 !== 0 ? "1px solid #E2E8F0" : "none" }}>
                   <div className="flex items-start gap-4">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
@@ -514,7 +515,7 @@ export default function LocalKeywordPage() {
                   { label: "投稿コンテンツ", content: "週1回以上の投稿に地域情報を組み込みます。「新宿エリアのお客様へのお知らせ」「渋谷・代官山近くにお住まいの方へ」などの地域を明示したタイトル・内容が効果的です。" },
                   { label: "Q&A欄", content: "「渋谷区内での出張対応は可能ですか？」「新宿駅から徒歩何分ですか？」などの地域に関連した質問と回答を設定することで、地域キーワードとの関連性を高めます。" },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -524,14 +525,14 @@ export default function LocalKeywordPage() {
                     </div>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E8E4DC" }} />
+                <div style={{ borderTop: "1px solid #E2E8F0" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー — Section D */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -541,7 +542,7 @@ export default function LocalKeywordPage() {
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -551,7 +552,7 @@ export default function LocalKeywordPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -593,7 +594,7 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* 成果を見るための指標 — Section E */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs &amp; Metrics
@@ -603,18 +604,18 @@ export default function LocalKeywordPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3 className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.name}</h3>
-                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#c4b89a" }}>確認場所: {item.where}</p>
+                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#3A9BDC" }}>確認場所: {item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

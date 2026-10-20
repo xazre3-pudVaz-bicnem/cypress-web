@@ -251,7 +251,7 @@ export default function ReskillingSubsidyPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-5">
               {RESKILLING_DRIVERS.map((item) => (
-                <div key={item.title} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
+                <div key={item.title} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -261,7 +261,7 @@ export default function ReskillingSubsidyPage() {
         </section>
 
         {/* ── 事業展開等リスキリング支援コースとは ─────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>About The Program</p>
@@ -278,7 +278,7 @@ export default function ReskillingSubsidyPage() {
                 ただし、実際に助成の対象となるかどうかは、訓練計画の内容、対象となる労働者、研修の実施形態、申請のタイミングなど、複数の要素によって個別に判断されます。研修を受講すれば自動的に助成されるという制度ではありません。
               </p>
 
-              <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", borderLeft: "3px solid #0d1b2a", padding: "24px 26px" }}>
+              <div style={{ background: "#ffffff", border: "1px solid #E2E8F0", borderLeft: "3px solid #0d1b2a", padding: "24px 26px" }}>
                 <p style={{ fontSize: "13px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>必ずご確認ください</p>
                 <p style={{ fontSize: "13.5px", lineHeight: "1.95", color: "#374151" }}>
                   制度内容、対象要件、助成率、上限額、申請期限、必要書類は変更される可能性があります。最新情報は必ず厚生労働省、管轄労働局、社労士等へご確認ください。本ページでは、改定により古くなりうる助成率・上限額などの数値は掲載していません。
@@ -300,7 +300,7 @@ export default function ReskillingSubsidyPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {TRAINING_THEMES.map((item) => (
-                <div key={item.label} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "22px" }}>
+                <div key={item.label} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "22px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -356,18 +356,18 @@ export default function ReskillingSubsidyPage() {
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {PARTNER_TRAINING_FEATURES.map((item) => (
-                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* ── 相談から紹介までの流れ ──────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -375,15 +375,15 @@ export default function ReskillingSubsidyPage() {
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {REFERRAL_FLOW.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -397,8 +397,8 @@ export default function ReskillingSubsidyPage() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-x-8" style={{ maxWidth: "820px" }}>
               {commonInquiries.map((item) => (
-                <div key={item} style={{ display: "flex", gap: "12px", padding: "15px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ color: "#c4b89a", flexShrink: 0, fontSize: "13px", paddingTop: "1px" }}>—</span>
+                <div key={item} style={{ display: "flex", gap: "12px", padding: "15px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ color: "#3A9BDC", flexShrink: 0, fontSize: "13px", paddingTop: "1px" }}>—</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
               ))}
@@ -406,7 +406,7 @@ export default function ReskillingSubsidyPage() {
           </div>
         </section>
 
-        <SubsidyDisclaimer bgColor="#f8f6f2" />
+        <SubsidyDisclaimer bgColor="#F4F6FA" />
 
         <FaqSection items={faqItems} heading="リスキリング研修・助成金についてよくある質問" bgColor="#ffffff" />
 

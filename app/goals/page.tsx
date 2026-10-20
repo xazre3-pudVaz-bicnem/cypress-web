@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: "達成したいビジネス目標から逆算して最適な施策プランを提示します。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/goals" },
@@ -52,7 +53,7 @@ export default function GoalsPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -101,7 +102,7 @@ export default function GoalsPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               目的別施策プラン一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
               {goalPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -130,7 +131,7 @@ export default function GoalsPage() {
         </section>
 
         {/* How to use */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>How It Works</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -143,8 +144,8 @@ export default function GoalsPage() {
                 { n: "03", t: "関連するサービスページを確認する", b: "施策の詳細・費用感・対応内容はサービスページに記載しています。目的別ページで方向性を確認し、サービスページで具体的な支援内容を確認する流れをお勧めします。" },
                 { n: "04", t: "不明点は無料相談で確認する", b: "「自社にどれが合うか判断できない」「複数の施策を組み合わせたい」という場合は、無料相談でご状況をお聞きした上で最適なプランをご提案します。お気軽にご相談ください。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "20px", fontWeight: 700, minWidth: "36px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "20px", fontWeight: 700, minWidth: "36px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>

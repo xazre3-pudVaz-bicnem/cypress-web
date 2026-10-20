@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       "SEO対策の基礎から最新トレンドまで徹底解説。内部SEO・コンテンツSEO・テクニカルSEO・ローカルSEO・外部SEOの5つの柱で体系的に対策できます。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo" },
@@ -376,7 +377,7 @@ export default function SeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-16" style={{ background: "#F9F8F5" }}>
+        <section className="py-16" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Contents</p>
             <h2 className="font-black text-[24px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -390,7 +391,7 @@ export default function SeoPage() {
                 "業種別のSEO活用ポイント",
                 "SEO対策に関するよくある質問（FAQ）",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex items-start gap-3 p-4" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 pt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-[14px]" style={{ color: "#374151" }}>{item}</span>
                 </div>
@@ -414,7 +415,7 @@ export default function SeoPage() {
                 <Link key={p.num} href={p.href}>
                   <div
                     className="flex gap-6 py-7 hover:opacity-80 transition-opacity"
-                    style={{ borderTop: "1px solid #E8E4DC", borderBottom: i === pillars.length - 1 ? "1px solid #E8E4DC" : undefined }}
+                    style={{ borderTop: "1px solid #E2E8F0", borderBottom: i === pillars.length - 1 ? "1px solid #E2E8F0" : undefined }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
                     <div>
@@ -429,7 +430,7 @@ export default function SeoPage() {
         </section>
 
         {/* SEO専門ページ一覧 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Sub Pages</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -440,7 +441,7 @@ export default function SeoPage() {
                 <Link key={p.href} href={p.href}>
                   <div
                     className="py-5 pr-4 hover:opacity-80 transition-opacity flex items-start justify-between gap-4"
-                    style={{ borderTop: "1px solid #E8E4DC" }}
+                    style={{ borderTop: "1px solid #E2E8F0" }}
                   >
                     <div>
                       <p className="font-semibold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{p.label}</p>
@@ -468,7 +469,7 @@ export default function SeoPage() {
             </p>
             <div className="max-w-4xl">
               {challenges.map((c) => (
-                <div key={c.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={c.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{c.num}</span>
                   <div>
                     <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{c.title}</p>
@@ -476,7 +477,7 @@ export default function SeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -521,7 +522,7 @@ export default function SeoPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
               {supportItems.map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -531,7 +532,7 @@ export default function SeoPage() {
         </section>
 
         {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industries</p>
             <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -545,7 +546,7 @@ export default function SeoPage() {
                 <div
                   key={ind.name}
                   className="flex gap-4 py-4"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #E2E8F0" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
@@ -573,7 +574,7 @@ export default function SeoPage() {
                 { step: "STEP 04", title: "コンテンツ制作・拡充", body: "検索意図に合ったコンテンツを月次で制作・公開。既存ページのリライト・情報拡充も並行して実施します。" },
                 { step: "STEP 05", title: "計測・月次改善", body: "Google Search Console・順位計測ツールでKPIを追跡。毎月の成果レポートをもとにPDCAを回し、継続的に成果を改善します。" },
               ].map((s, i) => (
-                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="shrink-0">
                     <p className="text-[11px] font-semibold" style={{ color: "#9CA3AF" }}>{s.step}</p>
                   </div>
@@ -583,15 +584,15 @@ export default function SeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#F4F6FA" />
 
         {/* SEO成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#F4F6FA", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -613,7 +614,7 @@ export default function SeoPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

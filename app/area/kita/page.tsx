@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "北区のSEO対策・MEO対策・ホームページ制作｜赤羽・王子・十条・田端の集客支援｜株式会社サイプレス",
     description: "北区の中小企業・店舗のSEO・MEO対策をサイプレスが支援。赤羽・王子・十条・田端エリアの地域特性に合わせた集客戦略を提供。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -99,7 +99,7 @@ export default function Page() {
       />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -140,8 +140,8 @@ export default function Page() {
                 { n: "04", t: "滝野川・岩淵：下町の住宅エリア", b: "滝野川・岩淵は下町の住宅地で地域密着型の小規模ビジネスが多いエリアです。競合が非常に少なく、基本的なGBP最適化だけで上位表示できるケースが多くあります。" },
                 { n: "05", t: "人口35万人超の大きな区", b: "北区は人口35万人超で、地域住民向けの需要が安定しています。赤羽に次ぐ第2の商業エリアである王子・十条を含め、エリアを絞った集客で費用対効果を最大化できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -152,7 +152,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -167,7 +167,7 @@ export default function Page() {
                 { area: "滝野川", desc: "石神井川沿いの住宅エリア。商業施設は少ないが地域住民の生活密着型需要が安定。MEO・SEO競合が非常に少なく、スモールスタートでも効果が出やすい。" },
                 { area: "岩淵・浮間", desc: "荒川・新河岸川に囲まれた静かな住宅エリア。地域住民密着型の小規模ビジネス向け。基本施策だけで長期安定した集客を実現しやすいエリア。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -178,7 +178,7 @@ export default function Page() {
 
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -190,7 +190,7 @@ export default function Page() {
                 { n: "04", t: "隣接エリアへのアクセスが良く訪問対応も可能", b: "葛飾区を拠点とするサイプレスは、北区・荒川区・足立区など東部エリアへの訪問打ち合わせに迅速に対応できます。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -199,7 +199,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="北区に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="北区に関するよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="北区のWeb集客、まずは無料相談から"

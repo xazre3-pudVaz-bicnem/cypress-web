@@ -5,7 +5,7 @@
 
 - 会社名: 株式会社サイプレス
 - 英語名: Cypress Inc.
-- 所在地: 東京都葛飾区白鳥4-6-1-623（〒124-0816）
+- 所在地: 東京都葛飾区亀有3-16-14-201（〒125-0061）
 - 公式URL: https://www.cypress-all.co.jp/
 - メール: info@cypress-all.co.jp
 - 事業内容: ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援

@@ -98,7 +98,7 @@ export const guidePages: GuidePage[] = [
         desc: "サイプレスのMEO対策を見る",
       },
       {
-        href: "/checklist/meo",
+        href: "/checklist/meo-setup",
         label: "MEO対策チェックリスト",
         desc: "自社MEOの現状を確認する",
       },
@@ -196,7 +196,7 @@ export const guidePages: GuidePage[] = [
         desc: "サイプレスのSEO対策を見る",
       },
       {
-        href: "/checklist/seo",
+        href: "/checklist/seo-basics",
         label: "SEOチェックリスト",
         desc: "自社サイトのSEO現状確認",
       },
@@ -495,12 +495,12 @@ export const guidePages: GuidePage[] = [
         desc: "効果的な口コミ獲得戦略",
       },
       {
-        href: "/checklist/gbp",
+        href: "/checklist/meo-setup",
         label: "GBPチェックリスト",
         desc: "設定漏れをゼロにする",
       },
       {
-        href: "/glossary/google-business-profile",
+        href: "/glossary/gbp",
         label: "GBPとは？用語解説",
         desc: "Googleビジネスプロフィールの基礎知識",
       },
@@ -583,7 +583,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/review",
+        href: "/checklist/review-management",
         label: "口コミ獲得チェックリスト",
         desc: "口コミ戦略を体系的に整理",
       },
@@ -598,7 +598,7 @@ export const guidePages: GuidePage[] = [
         desc: "口コミ設定の前提を整える",
       },
       {
-        href: "/glossary/review-management",
+        href: "/meo/review-management",
         label: "口コミ管理とは",
         desc: "口コミ管理の基礎知識",
       },
@@ -681,7 +681,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/keyword",
+        href: "/guide/keyword-research-basics",
         label: "キーワード調査チェックリスト",
         desc: "調査の抜け漏れを防ぐ",
       },
@@ -794,7 +794,7 @@ export const guidePages: GuidePage[] = [
         desc: "サイプレスの対応エリアを確認",
       },
       {
-        href: "/glossary/local-seo",
+        href: "/seo/local-seo",
         label: "地域SEOとは",
         desc: "ローカルSEOの用語解説",
       },
@@ -882,12 +882,12 @@ export const guidePages: GuidePage[] = [
         desc: "サイプレスのサイト制作プランを見る",
       },
       {
-        href: "/checklist/homepage",
+        href: "/checklist/website-launch",
         label: "ホームページ品質チェックリスト",
         desc: "制作前に確認すべき品質基準",
       },
       {
-        href: "/checklist/new-website",
+        href: "/checklist/website-launch",
         label: "新規サイト公開前チェックリスト",
         desc: "公開前の最終確認に使う",
       },
@@ -1181,7 +1181,7 @@ export const guidePages: GuidePage[] = [
         desc: "記事テーマ選定の方法",
       },
       {
-        href: "/checklist/content",
+        href: "/checklist/content-seo",
         label: "コンテンツSEOチェックリスト",
         desc: "記事公開前の確認事項",
       },
@@ -1269,7 +1269,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/analytics",
+        href: "/checklist/analytics-confirmation",
         label: "アクセス解析チェックリスト",
         desc: "GA4設定の漏れを確認する",
       },
@@ -1372,7 +1372,7 @@ export const guidePages: GuidePage[] = [
         desc: "サイプレスのSNS代行プラン",
       },
       {
-        href: "/checklist/sns",
+        href: "/checklist/sns-monthly",
         label: "SNS運用チェックリスト",
         desc: "SNS運用の基準を整理する",
       },
@@ -1475,7 +1475,7 @@ export const guidePages: GuidePage[] = [
         desc: "AIO時代の検索集客戦略",
       },
       {
-        href: "/checklist/aio",
+        href: "/checklist/aio-readiness",
         label: "AIO対策チェックリスト",
         desc: "AIO施策の抜け漏れを確認",
       },
@@ -1661,12 +1661,12 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/schema",
+        href: "/guide/schema-markup-guide",
         label: "構造化データチェックリスト",
         desc: "実装の抜け漏れを確認する",
       },
       {
-        href: "/glossary/structured-data",
+        href: "/glossary/schema-org",
         label: "構造化データとは",
         desc: "Schema.orgの基礎知識",
       },
@@ -1759,7 +1759,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/mobile",
+        href: "/knowledge/mobile-optimization",
         label: "スマホ対応チェックリスト",
         desc: "モバイル対応の抜け漏れを確認",
       },
@@ -1769,7 +1769,7 @@ export const guidePages: GuidePage[] = [
         desc: "モバイルSEOの重要指標を改善",
       },
       {
-        href: "/glossary/mobile-first",
+        href: "/glossary/responsive-design",
         label: "モバイルファーストとは",
         desc: "モバイルファーストインデックスの解説",
       },
@@ -1857,7 +1857,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/core-web-vitals",
+        href: "/checklist/website-speed",
         label: "Core Web Vitalsチェックリスト",
         desc: "3指標の確認と改善ガイド",
       },
@@ -1872,7 +1872,7 @@ export const guidePages: GuidePage[] = [
         desc: "3指標の詳細解説",
       },
       {
-        href: "/glossary/page-speed",
+        href: "/knowledge/website-speed",
         label: "ページスピードとは",
         desc: "表示速度改善の基礎知識",
       },
@@ -1955,7 +1955,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/content",
+        href: "/checklist/content-seo",
         label: "コンテンツSEOチェックリスト",
         desc: "記事品質の確認リスト",
       },
@@ -2053,7 +2053,7 @@ export const guidePages: GuidePage[] = [
     ],
     related: [
       {
-        href: "/checklist/competitor",
+        href: "/guide/competitor-analysis-method",
         label: "競合調査チェックリスト",
         desc: "競合分析の抜け漏れを防ぐ",
       },

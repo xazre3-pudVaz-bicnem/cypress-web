@@ -55,16 +55,16 @@ export default function NewsPage() {
         {/* News List */}
         <section className="pb-24 max-w-5xl mx-auto px-6">
           <div
-            style={{ borderTop: "1px solid #E8E4DC" }}
+            style={{ borderTop: "1px solid #E2E8F0" }}
           >
             {sorted.map((article) => (
               <div
                 key={article.slug}
-                style={{ borderBottom: "1px solid #E8E4DC" }}
+                style={{ borderBottom: "1px solid #E2E8F0" }}
               >
                 <Link
                   href={`/news/${article.slug}`}
-                  className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-5 -mx-3 px-3 transition-colors hover:bg-[#F9F8F5]"
+                  className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-5 -mx-3 px-3 transition-colors hover:bg-[#F4F6FA]"
                 >
                   <span
                     className="font-mono text-xs shrink-0"

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "コーポレートサイト制作｜企業ブランドと信頼を伝えるWebサイト設計｜株式会社サイプレス",
     description: "コーポレートサイト制作のガイド。企業ブランドと信頼を伝えるデザイン設計・SEO・CV改善まで解説。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,26 +111,26 @@ const relatedLinks = [
   { href: "/web-design", label: "Web制作とは", desc: "Webサイト制作の基礎" },
   { href: "/web-design/seo-site", label: "SEO特化サイト制作", desc: "検索流入を最大化するサイト" },
   { href: "/web-design/recruit-site", label: "採用サイト制作", desc: "採用強化のためのサイト" },
-  { href: "/web-design/ec-site", label: "ECサイト制作", desc: "売れるネットショップ設計" },
-  { href: "/web-design/lp", label: "LP制作", desc: "コンバージョン特化のランディングページ" },
+  { href: "/web-design", label: "ECサイト制作", desc: "売れるネットショップ設計" },
+  { href: "/web-design/landing-page", label: "LP制作", desc: "コンバージョン特化のランディングページ" },
   { href: "/web-design/wordpress", label: "WordPress制作", desc: "運用しやすいCMS制作" },
-  { href: "/web-design/renewal", label: "サイトリニューアル", desc: "SEO評価を引き継いだ刷新" },
-  { href: "/web-design/one-page", label: "ワンページサイト制作", desc: "スクロール型のシンプルな企業サイト" },
-  { href: "/web-design/portfolio", label: "ポートフォリオサイト制作", desc: "実績・作品集のWebサイト" },
+  { href: "/checklist/website-redesign", label: "サイトリニューアル", desc: "SEO評価を引き継いだ刷新" },
+  { href: "/web-design/landing-page", label: "ワンページサイト制作", desc: "スクロール型のシンプルな企業サイト" },
+  { href: "/cases/service/web-design", label: "ポートフォリオサイト制作", desc: "実績・作品集のWebサイト" },
   { href: "/seo", label: "SEO対策", desc: "検索上位表示のための施策" },
   { href: "/seo/internal-seo", label: "内部SEO対策", desc: "技術SEO・構造化データ" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "記事・コラムによる集客" },
   { href: "/seo/local-seo", label: "ローカルSEO・MEO", desc: "地域ビジネスの検索対策" },
-  { href: "/services/branding", label: "ブランディング支援", desc: "企業ブランドの設計・構築" },
-  { href: "/services/maintenance", label: "保守・運用サポート", desc: "公開後の継続サポート" },
-  { href: "/cost/web-design", label: "Web制作の費用", desc: "料金プランと相場" },
+  { href: "/services/web-design", label: "ブランディング支援", desc: "企業ブランドの設計・構築" },
+  { href: "/web-design/maintenance", label: "保守・運用サポート", desc: "公開後の継続サポート" },
+  { href: "/cost/homepage", label: "Web制作の費用", desc: "料金プランと相場" },
   { href: "/cost/corporate-site", label: "コーポレートサイトの費用", desc: "具体的な料金目安" },
-  { href: "/industry/it", label: "IT・SaaS企業のWeb制作", desc: "テック企業向け制作実績" },
-  { href: "/industry/manufacturing", label: "製造業のWeb制作", desc: "工場・メーカー向け設計" },
-  { href: "/industry/construction", label: "建設・ゼネコンのWeb制作", desc: "工事実績・会社信頼性の表現" },
-  { href: "/industry/medical", label: "医療法人のWeb制作", desc: "クリニック・病院サイト" },
+  { href: "/industries", label: "IT・SaaS企業のWeb制作", desc: "テック企業向け制作実績" },
+  { href: "/industries", label: "製造業のWeb制作", desc: "工場・メーカー向け設計" },
+  { href: "/industries/construction", label: "建設・ゼネコンのWeb制作", desc: "工事実績・会社信頼性の表現" },
+  { href: "/industries/clinic", label: "医療法人のWeb制作", desc: "クリニック・病院サイト" },
   { href: "/contact", label: "無料相談", desc: "コーポレートサイトのご相談" },
-  { href: "/case", label: "制作実績", desc: "サイプレスの制作事例" },
+  { href: "/cases", label: "制作実績", desc: "サイプレスの制作事例" },
 ];
 
 export default function CorporateSitePage() {
@@ -171,7 +171,7 @@ export default function CorporateSitePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -187,7 +187,7 @@ export default function CorporateSitePage() {
                 "コーポレートサイト制作会社の選び方と依頼前に確認すべき質問リスト",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[14px] leading-[1.85]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -198,7 +198,7 @@ export default function CorporateSitePage() {
         {/* コーポレートサイト課題 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", fontWeight: 600 }}>Common Problems</p>
+            <p style={{ letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", fontWeight: 600 }}>Common Problems</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コーポレートサイトがない・古い企業が失っている4つの機会
             </h2>
@@ -209,7 +209,7 @@ export default function CorporateSitePage() {
                 { t: "SEO流入機会のゼロ", b: "会社名・サービス名・業種+地域など、潜在顧客が検索するキーワードに対してWebサイトが答えていないと、検索からの問い合わせがゼロのままです。" },
                 { t: "競合比較で選ばれない", b: "複数社を比較検討する顧客は必ずWebサイトの質で判断します。競合がわかりやすく充実したサイトを持っていれば、サイトの質だけで敗北します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -238,7 +238,7 @@ export default function CorporateSitePage() {
                 { title: "ブランドカラー・デザインに統一感がない", body: "色・フォント・余白・写真のトーンがページごとにバラバラなサイトは、信頼性と高級感を損ないます。デザインシステムを策定し、全ページで統一されたビジュアル言語を使うことがブランド強化につながります。" },
                 { title: "制作会社の提案が画一的", body: "業種・ターゲット・事業規模を無視した「テンプレート提案」では、自社の課題は解決しません。競合分析・ブランドコンセプト・KPI設計から始めるオーダーメイドの提案を行う制作会社を選ぶことが重要です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -246,13 +246,13 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 設計要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Design Elements</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -267,7 +267,7 @@ export default function CorporateSitePage() {
                 { title: "Core Web Vitals・パフォーマンス最適化", body: "画像最適化・コード分割・フォント最適化・CDN活用でLighthouseスコア向上を目標とします。表示速度の改善はSEOとユーザー体験に直結します。" },
                 { title: "採用・IR情報との統合", body: "採用情報ページの設計・IR情報の掲載・ニュース・プレスリリースのCMS化まで一貫して設計します。企業の成長に合わせて拡張できるスケーラブルな設計を心がけます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -294,7 +294,7 @@ export default function CorporateSitePage() {
                 { industry: "学習塾・教育", point: "理念・講師紹介・合格実績の三点セットが入塾判断を左右します。保護者が安心できる講師プロフィールと、具体的な指導方針・カリキュラムの説明、合格校リスト（個人特定しない形）の掲載が効果的です。" },
                 { industry: "BtoB製品・商社", point: "カタログ・仕様・販売網の情報整備が取引拡大につながります。製品カテゴリ別のページ設計・PDFカタログのダウンロード機能・取引先リスト・販売代理店情報を整備し、展示会や営業活動の補完ツールとして活用します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
@@ -302,13 +302,13 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 制作・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Production Flow</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -327,7 +327,7 @@ export default function CorporateSitePage() {
                 { step: "テスト・品質確認", body: "クロスブラウザ・クロスデバイステスト・リンクチェック・フォーム動作確認・Lighthouseスコア測定・アクセシビリティ確認を実施します。本番環境での最終確認も行います。" },
                 { step: "公開・アクセス解析設定", body: "本番環境へのデプロイ・DNS設定・SSL設定を行います。GA4・Google Search ConsoleのURL登録・目標設定（問い合わせコンバージョン）を設定し、公開後すぐにデータ計測を開始します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</p>
@@ -335,7 +335,7 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -354,7 +354,7 @@ export default function CorporateSitePage() {
                 { title: "リニューアル実績と301対応", body: "既存サイトのSEO評価を引き継いだリニューアル実績があるか確認しましょう。URLマッピング・301リダイレクト設計を正確にできる会社を選んでください。" },
                 { title: "制作後の保守・運用サポート", body: "Webサイトは公開後の運用が重要です。月次保守・コンテンツ追加・SEO改善を継続的に依頼できる体制があるか確認しましょう。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -362,13 +362,13 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs to Track</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -384,7 +384,7 @@ export default function CorporateSitePage() {
                 { kpi: "Lighthouseスコア（90+）", where: "Chrome DevTools > Lighthouse / PageSpeed Insights", body: "パフォーマンス・アクセシビリティ・SEO・ベストプラクティスの4項目で90以上を目標とします。特にパフォーマンススコアはLCP・CLSに直結します。" },
                 { kpi: "オーガニック流入数", where: "GA4 > 集客 > トラフィック獲得 > セッションのデフォルト チャネル グループ", body: "広告費ゼロの自然検索からの流入数。コンテンツSEO・内部SEO施策の成果を測る指標として6ヶ月以上の長期で追跡します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
@@ -393,7 +393,7 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -419,7 +419,7 @@ export default function CorporateSitePage() {
                 { page: "採用情報（/recruit）", desc: "募集要項・社員インタビュー・福利厚生・応募フォームを掲載します。JobPosting構造化データを実装しGoogleしごと検索に対応します。" },
                 { page: "お問い合わせ（/contact）", desc: "最小限の入力項目・スマートフォン最適化フォーム・自動返信メール設定を備えます。コーポレートサイトのコンバージョンゴールとなるページです。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.page}</p>
@@ -427,7 +427,7 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -448,7 +448,7 @@ export default function CorporateSitePage() {
                 { title: "リニューアル時のSEO引継ぎ対応", body: "既存サイトのURL設計・301リダイレクトマップ・内部リンク更新を丁寧に行い、リニューアル後のSEO評価の急落を防ぎます。リニューアルに伴うオーガニック流入減少は対策次第で最小化できます。" },
                 { title: "公開後の保守・運用サポート", body: "月次保守プランによるセキュリティ更新・バックアップ・コンテンツ追加・SEO改善を継続的に提供します。公開後も長期的なビジネスパートナーとして関わり続けます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -458,7 +458,7 @@ export default function CorporateSitePage() {
         </section>
 
         {/* よくあるご要望と対応内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Requests</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -473,7 +473,7 @@ export default function CorporateSitePage() {
                 { req: "「競合と差別化できるデザインにしたい」", res: "競合サイト5〜10社の分析（デザイン・構成・キーワード・CV設計）を行い、差別化のポイントを明確にします。ブランドコンセプトから設計し、「あの会社のサイト」と記憶に残る独自のデザインを制作します。" },
                 { req: "「英語版・多言語サイトも作りたい」", res: "Next.jsのi18n機能を活用し、日本語・英語・中国語などの多言語対応サイトを構築します。hreflang設定・各言語でのSEO最適化・翻訳コーディネートまで含めて対応可能です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.req}</p>
@@ -481,7 +481,7 @@ export default function CorporateSitePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -489,7 +489,7 @@ export default function CorporateSitePage() {
         {/* CTA Banner */}
         <section className="py-16" style={{ background: "#0d1b2a" }}>
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#c4b89a" }}>Free Consultation</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#3A9BDC" }}>Free Consultation</p>
             <h2 className="font-black mb-6" style={{ fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               まずは無料相談から始めましょう
             </h2>
@@ -499,14 +499,14 @@ export default function CorporateSitePage() {
             <Link
               href="/contact"
               className="inline-block px-10 py-4 font-bold text-[14px] tracking-wide"
-              style={{ background: "#0F172A", color: "#FFFFFF", border: "1px solid rgba(196,184,154,0.4)" }}
+              style={{ background: "#0F172A", color: "#FFFFFF", border: "1px solid rgba(58,155,220,0.4)" }}
             >
               無料相談を申し込む
             </Link>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="コーポレートサイト制作についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="コーポレートサイト制作についてよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="コーポレートサイト制作のご相談"

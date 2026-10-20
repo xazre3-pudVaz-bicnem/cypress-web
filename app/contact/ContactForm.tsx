@@ -84,44 +84,27 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
   };
 
   const inputClass =
-    "w-full px-4 py-3 text-[#0F172A] text-sm placeholder-[#9CA3AF] focus:outline-none transition-all bg-white";
-  const inputStyle = {
-    border: "1px solid #D1C9BE",
-  };
-  const inputFocusStyle = {
-    border: "1px solid #0F172A",
-  };
+    "block w-full rounded-xl border border-line-strong bg-white px-4 py-3.5 text-[16px] text-ink placeholder:text-subtle transition-[border-color,box-shadow] focus:border-accent focus:outline-none focus:ring-4 focus:ring-accent/15";
 
   if (state === "success") {
     return (
-      <div className="py-16 text-center">
-        <div
-          className="w-12 h-12 flex items-center justify-center mx-auto mb-6"
-          style={{ border: "1px solid #0F172A" }}
-        >
-          <svg width="18" height="18" viewBox="0 0 22 22" fill="none">
-            <path
-              d="M4 11l5 5L18 6"
-              stroke="#0F172A"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+      <div className="py-14 text-center" role="status">
+        <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M4 11l5 5L18 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <h3 className="font-bold text-[#0F172A] text-xl mb-3">
-          送信が完了しました
-        </h3>
-        <p className="text-[#6B7280] text-sm leading-relaxed">
+        <h3 className="text-[22px] font-bold">送信が完了しました</h3>
+        <p className="mt-3 text-[15px] leading-relaxed text-muted">
           お問い合わせいただきありがとうございます。
           <br />
           担当者より2営業日以内にご連絡いたします。
         </p>
-        <p className="text-[#9CA3AF] text-xs leading-relaxed mt-5">
+        <p className="mt-5 text-[13px] leading-relaxed text-subtle">
           ご入力のメールアドレス宛に自動返信メールをお送りしました。
           <br />
           届かない場合は迷惑メールフォルダをご確認いただくか、
-          <a href={CONTACT_MAILTO} className="underline" style={{ color: "#374151" }}>
+          <a href={CONTACT_MAILTO} className="text-ink underline underline-offset-4">
             {CONTACT_EMAIL}
           </a>
           までご連絡ください。
@@ -131,7 +114,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-6">
       {/* ハニーポット。スクリーンリーダーからも外し、botのみが埋める想定。 */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0 }}>
         <label htmlFor="website">ウェブサイト（入力しないでください）</label>
@@ -146,13 +129,10 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div>
-          <label className="block text-[#0F172A] text-sm font-medium mb-2">
-            お名前
-            <span className="text-[#EF4444] ml-1">*</span>
-          </label>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <Field id="contact-name" label="お名前" required>
           <input
+            id="contact-name"
             type="text"
             name="name"
             required
@@ -161,16 +141,11 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
             value={form.name}
             onChange={handleChange}
             className={inputClass}
-            style={inputStyle}
-            onFocus={(e) => Object.assign(e.currentTarget.style, inputFocusStyle)}
-            onBlur={(e) => Object.assign(e.currentTarget.style, inputStyle)}
           />
-        </div>
-        <div>
-          <label className="block text-[#0F172A] text-sm font-medium mb-2">
-            会社名
-          </label>
+        </Field>
+        <Field id="contact-company" label="会社名">
           <input
+            id="contact-company"
             type="text"
             name="company"
             autoComplete="organization"
@@ -178,94 +153,80 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
             value={form.company}
             onChange={handleChange}
             className={inputClass}
-            style={inputStyle}
-            onFocus={(e) => Object.assign(e.currentTarget.style, inputFocusStyle)}
-            onBlur={(e) => Object.assign(e.currentTarget.style, inputStyle)}
           />
-        </div>
+        </Field>
       </div>
 
-      <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
-          メールアドレス
-          <span className="text-[#EF4444] ml-1">*</span>
-        </label>
+      <Field id="contact-email" label="メールアドレス" required>
         <input
+          id="contact-email"
           type="email"
           name="email"
           required
           autoComplete="email"
+          inputMode="email"
           placeholder="info@example.com"
           value={form.email}
           onChange={handleChange}
           className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => Object.assign(e.currentTarget.style, inputFocusStyle)}
-          onBlur={(e) => Object.assign(e.currentTarget.style, inputStyle)}
         />
-      </div>
+      </Field>
 
-      <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
-          お問い合わせ種別
-          <span className="text-[#EF4444] ml-1">*</span>
-        </label>
-        <select
-          name="type"
-          value={form.type}
-          onChange={handleChange}
-          className={inputClass}
-          style={inputStyle}
-          onFocus={(e) => Object.assign(e.currentTarget.style, inputFocusStyle)}
-          onBlur={(e) => Object.assign(e.currentTarget.style, inputStyle)}
-        >
-          {INQUIRY_TYPES.map((t) => (
-            <option key={t.value} value={t.value}>
-              {t.label}
-            </option>
-          ))}
-        </select>
-      </div>
+      <Field id="contact-type" label="お問い合わせ種別" required>
+        <div className="relative">
+          <select
+            id="contact-type"
+            name="type"
+            value={form.type}
+            onChange={handleChange}
+            className={`${inputClass} appearance-none pr-10`}
+          >
+            {INQUIRY_TYPES.map((t) => (
+              <option key={t.value} value={t.value}>
+                {t.label}
+              </option>
+            ))}
+          </select>
+          <svg
+            viewBox="0 0 12 12"
+            className="pointer-events-none absolute right-4 top-1/2 h-3 w-3 -translate-y-1/2 text-muted"
+            aria-hidden="true"
+          >
+            <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </div>
+      </Field>
 
-      <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
-          お問い合わせ内容
-          <span className="text-[#EF4444] ml-1">*</span>
-        </label>
+      <Field id="contact-message" label="お問い合わせ内容" required>
         <textarea
+          id="contact-message"
           name="message"
           required
           rows={6}
-          placeholder="ご相談内容をご入力ください"
+          placeholder="ご相談内容をご入力ください（例：Googleマップで上位に出したい、ホームページを作り直したい など）"
           value={form.message}
           onChange={handleChange}
-          className={`${inputClass} resize-none`}
-          style={inputStyle}
-          onFocus={(e) => Object.assign(e.currentTarget.style, inputFocusStyle)}
-          onBlur={(e) => Object.assign(e.currentTarget.style, inputStyle)}
+          className={`${inputClass} resize-y`}
         />
-      </div>
+      </Field>
 
       {isTrainingInquiry && (
-        <div className="p-5" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
-          <p className="text-[#0F172A] text-sm font-medium mb-3">
-            提携研修会社への情報共有について
-          </p>
-          <label className="flex items-start gap-3 cursor-pointer">
+        <div className="rounded-2xl border border-line bg-surface p-5">
+          <p className="mb-3 text-[14px] font-bold text-ink">提携研修会社への情報共有について</p>
+          <label className="flex cursor-pointer items-start gap-3">
             <input
               type="checkbox"
               checked={shareConsent}
               onChange={(e) => setShareConsent(e.target.checked)}
-              className="mt-1 shrink-0"
-              style={{ width: "16px", height: "16px", accentColor: "#0F172A" }}
+              className="mt-1 h-4 w-4 shrink-0 accent-[#0b78c2]"
             />
-            <span className="text-[#374151] text-[13px] leading-[1.9]">
+            <span className="text-[13.5px] leading-[1.9] text-ink-2">
               お問い合わせ内容に応じて、提携する研修会社へ会社名、ご担当者名、連絡先、お問い合わせ内容を共有する場合があります。内容を確認し、同意します。
             </span>
           </label>
-          <p className="text-[#9CA3AF] text-xs leading-[1.85] mt-3 pt-3" style={{ borderTop: "1px solid #E8E4DC" }}>
+          <p className="mt-3 border-t border-line pt-3 text-[12.5px] leading-[1.85] text-muted">
             同意いただかない場合、提携研修会社へ情報を共有することはありません。その場合も、株式会社サイプレスからのご返信は行います。詳細は
-            <Link href="/privacy-policy" className="underline" style={{ color: "#374151" }}>
+            <Link href="/privacy-policy" className="text-ink underline underline-offset-4">
               プライバシーポリシー
             </Link>
             をご確認ください。
@@ -273,20 +234,16 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
         </div>
       )}
 
-      <p className="text-[#9CA3AF] text-xs leading-relaxed">
+      <p className="text-[12.5px] leading-relaxed text-muted">
         送信いただいた個人情報は、お問い合わせへの対応のみに使用します。ご本人の同意なく第三者へ提供することはありません。フォームがうまく動作しない場合は
-        <a href={CONTACT_MAILTO} className="underline" style={{ color: "#374151" }}>
+        <a href={CONTACT_MAILTO} className="text-ink underline underline-offset-4">
           {CONTACT_EMAIL}
         </a>
         まで直接ご連絡ください。
       </p>
 
       {state === "error" && errorMessage && (
-        <div
-          role="alert"
-          className="p-4 text-[13px] leading-[1.9]"
-          style={{ background: "#FEF2F2", border: "1px solid #FECACA", color: "#B91C1C" }}
-        >
+        <div role="alert" className="rounded-xl border border-[#FECACA] bg-[#FEF2F2] p-4 text-[13.5px] leading-[1.9] text-[#B91C1C]">
           {errorMessage}
         </div>
       )}
@@ -294,50 +251,37 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       <button
         type="submit"
         disabled={state === "sending"}
-        className="w-full flex items-center justify-center gap-2 py-4 font-medium text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed group"
-        style={{
-          border: "1px solid #0F172A",
-          color: "#0F172A",
-          background: "transparent",
-        }}
-        onMouseEnter={(e) => {
-          if (state !== "sending") {
-            e.currentTarget.style.background = "#0F172A";
-            e.currentTarget.style.color = "#FFFFFF";
-          }
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = "transparent";
-          e.currentTarget.style.color = "#0F172A";
-        }}
+        className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-accent text-[15px] font-semibold tracking-[0.04em] text-white shadow-[0_10px_30px_-12px_rgba(11,120,194,0.7)] transition-colors hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-60"
       >
         {state === "sending" ? (
           <>
-            <svg
-              className="animate-spin"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-            >
-              <circle
-                cx="8"
-                cy="8"
-                r="6"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeDasharray="28"
-                strokeDashoffset="10"
-              />
+            <svg className="animate-spin" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="2" strokeDasharray="28" strokeDashoffset="10" />
             </svg>
             送信中...
           </>
         ) : state === "error" ? (
           "再送信する"
         ) : (
-          "送信する"
+          "この内容で送信する"
         )}
       </button>
     </form>
+  );
+}
+
+function Field({ id, label, required = false, children }: { id: string; label: string; required?: boolean; children: React.ReactNode }) {
+  return (
+    <div>
+      <label htmlFor={id} className="mb-2 flex items-center gap-2 text-[14px] font-bold text-ink">
+        {label}
+        {required ? (
+          <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent">必須</span>
+        ) : (
+          <span className="rounded-full bg-surface px-2 py-0.5 text-[11px] font-semibold text-muted">任意</span>
+        )}
+      </label>
+      {children}
+    </div>
   );
 }

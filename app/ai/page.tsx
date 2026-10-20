@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "生成AIを活用したマーケティング実践ガイド。ChatGPT活用から業務自動化・AIO（AI検索）対策まで一貫解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/ai" },
@@ -162,8 +163,8 @@ const relatedLinks = [
   { href: "/seo", label: "SEO対策とは", desc: "SEO×AIOの統合戦略" },
   { href: "/aio/llms-txt", label: "llms.txt設置", desc: "AI検索への情報提供設定" },
   { href: "/aio/faq-optimization", label: "FAQ最適化でAIO対策", desc: "AI検索引用を高めるFAQ設計" },
-  { href: "/knowledge/chatgpt-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
-  { href: "/knowledge/ai-prompt", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
+  { href: "/knowledge/ai-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
+  { href: "/ai/prompt-design", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "AI×コンテンツSEO戦略" },
   { href: "/training/ai-dx-reskilling", label: "AI・DX研修の導入相談", desc: "社員のAI活用スキルを育てる" },
   { href: "/training/chatgpt-ai-training", label: "ChatGPT・生成AI研修", desc: "職種別のAI活用を学ぶ法人研修" },
@@ -215,7 +216,7 @@ export default function AiPage() {
         </section>
 
         {/* AI活用の主要領域 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Areas</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -226,7 +227,7 @@ export default function AiPage() {
             </p>
             <div className="max-w-4xl space-y-0">
               {aiAreas.map((area, i) => (
-                <Link key={i} href={area.href} className="block group py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <Link key={i} href={area.href} className="block group py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#0d1b2a" }}>{area.title}</p>
@@ -236,7 +237,7 @@ export default function AiPage() {
                   </div>
                 </Link>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -253,7 +254,7 @@ export default function AiPage() {
             </p>
             <div className="max-w-4xl">
               {aiBusinessImpacts.map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -261,13 +262,13 @@ export default function AiPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Split: AI×SEO×AIO */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI × SEO × AIO</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -278,7 +279,7 @@ export default function AiPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl">
               {aiSeoAio.map((item, i) => (
-                <div key={i} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#ffffff" }}>
+                <div key={i} style={{ padding: "28px", border: "1px solid #E2E8F0", background: "#ffffff" }}>
                   <p className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -299,7 +300,7 @@ export default function AiPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {aiIndustryCases.map((c, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#F9F8F5" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid #E2E8F0", background: "#F4F6FA" }}>
                   <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{c.industry}</p>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{c.use}</p>
                 </div>
@@ -311,7 +312,7 @@ export default function AiPage() {
         {/* Dark section: サイプレスのAI支援 */}
         <section className="py-20" style={{ background: "#0d1b2a" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Our Capabilities</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC", fontFamily: "var(--font-display)" }}>Our Capabilities</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               サイプレスのAI活用支援でできること
             </h2>
@@ -335,7 +336,7 @@ export default function AiPage() {
         </section>
 
         {/* AI活用でよくある失敗 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
             <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -343,7 +344,7 @@ export default function AiPage() {
             </h2>
             <div className="max-w-4xl">
               {aiMistakes.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -351,7 +352,7 @@ export default function AiPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

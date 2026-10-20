@@ -30,7 +30,7 @@ export const faqPages: FaqPage[] = [
     ],
     related: [
       { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細を見る" },
-      { href: "/guide/meo-basics", label: "MEO基礎ガイド", desc: "もっと詳しく学ぶ" },
+      { href: "/meo", label: "MEO基礎ガイド", desc: "もっと詳しく学ぶ" },
       { href: "/cost/meo", label: "MEO費用", desc: "料金の詳細" },
       { href: "/contact", label: "無料相談", desc: "お気軽にご相談ください" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "SEOとMEOの違い" },
@@ -60,7 +60,7 @@ export const faqPages: FaqPage[] = [
     ],
     related: [
       { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細" },
-      { href: "/guide/seo-strategy", label: "SEO戦略ガイド", desc: "詳しく学ぶ" },
+      { href: "/seo", label: "SEO戦略ガイド", desc: "詳しく学ぶ" },
       { href: "/cost/seo", label: "SEO費用相場", desc: "料金の目安" },
       { href: "/seo/keyword-research", label: "キーワードリサーチ", desc: "選定方法の詳細" },
       { href: "/contact", label: "無料相談", desc: "お気軽にご相談ください" },
@@ -86,7 +86,7 @@ export const faqPages: FaqPage[] = [
     ],
     related: [
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "制作の詳細" },
-      { href: "/cost/web-design", label: "制作費用", desc: "料金の目安" },
+      { href: "/cost/homepage", label: "制作費用", desc: "料金の目安" },
       { href: "/process/website-production", label: "制作の流れ", desc: "プロセス詳細" },
       { href: "/support/operation", label: "保守・運用サポート", desc: "制作後のサポート" },
       { href: "/contact", label: "無料相談", desc: "お気軽にご相談ください" },
@@ -113,7 +113,7 @@ export const faqPages: FaqPage[] = [
     related: [
       { href: "/services/sns", label: "SNS運用代行サービス", desc: "サービス詳細" },
       { href: "/sns/instagram", label: "Instagram運用", desc: "ビジュアル系SNS" },
-      { href: "/sns/line", label: "LINE公式アカウント", desc: "リピーター定着" },
+      { href: "/knowledge/line-official", label: "LINE公式アカウント", desc: "リピーター定着" },
       { href: "/cost/sns", label: "SNS費用", desc: "料金の目安" },
       { href: "/contact", label: "無料相談", desc: "お気軽にご相談ください" },
     ],
@@ -216,7 +216,7 @@ export const faqPages: FaqPage[] = [
       { q: "SNS運用の成果はどう測定しますか？", a: "フォロワー数・エンゲージメント率（いいね・保存・コメント）・プロフィールアクセス数・ウェブサイトクリック数・LINE追加数などのKPIを月次で計測・報告します。最終的な集客効果との関連も追います。" },
     ],
     related: [
-      { href: "/company/about", label: "会社概要", desc: "サイプレスについて" },
+      { href: "/company/about-cypress", label: "会社概要", desc: "サイプレスについて" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "具体的な施策内容" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "SEOの施策内容" },
       { href: "/contact", label: "事例を聞く", desc: "打ち合わせで詳しく" },
@@ -243,7 +243,7 @@ export const faqPages: FaqPage[] = [
       { q: "NDA（秘密保持契約）の締結は可能ですか？", a: "はい。ご要望に応じてNDAを締結します。こちらの標準NDA書式のご提供、またはお客様のNDA書式での締結にも対応しています。" },
     ],
     related: [
-      { href: "/company/privacy", label: "プライバシーポリシー", desc: "情報管理の詳細" },
+      { href: "/privacy-policy", label: "プライバシーポリシー", desc: "情報管理の詳細" },
       { href: "/support/account-management", label: "アカウント管理代行", desc: "権限の付与方法" },
       { href: "/contact", label: "お問い合わせ", desc: "詳細はご相談ください" },
       { href: "/faq/contract-flow", label: "契約の流れFAQ", desc: "契約・手続きの詳細" },
@@ -321,7 +321,7 @@ export const faqPages: FaqPage[] = [
       { q: "MEO・SEO・SNS全部を一社に依頼するメリットはありますか？", a: "施策間の情報共有がスムーズになり、MEOで獲得したキーワード知見をSEOに活用するなどの相乗効果が生まれます。複数業者への管理コスト・連絡コストも削減でき、一貫した戦略のもとで施策を進められます。" },
     ],
     related: [
-      { href: "/company/about", label: "サイプレスについて", desc: "会社・特徴の紹介" },
+      { href: "/company/about-cypress", label: "サイプレスについて", desc: "会社・特徴の紹介" },
       { href: "/contact", label: "無料相談・見積もり", desc: "まずはご連絡ください" },
       { href: "/cost/comparison", label: "費用比較", desc: "サービス別料金" },
       { href: "/process/consultation", label: "相談の流れ", desc: "依頼開始のプロセス" },

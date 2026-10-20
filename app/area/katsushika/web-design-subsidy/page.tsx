@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区のホームページ制作・補助金活用｜SEOに強いWeb制作なら株式会社サイプレス",
     description:
       "葛飾区でホームページ制作や補助金・助成金の活用を検討している中小企業・店舗向けに、SEOに強いWeb制作、MEO対策、制作前に確認すべきポイントを解説します。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -78,7 +78,7 @@ const faqItems = [
   },
   {
     q: "葛飾区の対面ヒアリングはできますか？",
-    a: "はい。株式会社サイプレスは葛飾区白鳥4-6-1-623に拠点を置いています。亀有・柴又・金町・新小岩・立石・お花茶屋・堀切など葛飾区内全域への訪問相談・打ち合わせに対応しています。補助金制度についての情報整理や制作内容の確認も含め、お気軽にご相談ください。",
+    a: "はい。株式会社サイプレスは葛飾区亀有3-16-14-201に拠点を置いています。亀有・柴又・金町・新小岩・立石・お花茶屋・堀切など葛飾区内全域への訪問相談・打ち合わせに対応しています。補助金制度についての情報整理や制作内容の確認も含め、お気軽にご相談ください。",
   },
   {
     q: "AI検索（ChatGPT・Gemini）対策もホームページ制作で対応できますか？",
@@ -164,10 +164,10 @@ export default function Page() {
           address: {
             "@type": "PostalAddress",
             addressCountry: "JP",
-            postalCode: "124-0816",
+            postalCode: "125-0061",
             addressRegion: "東京都",
             addressLocality: "葛飾区",
-            streetAddress: "白鳥4-6-1-623",
+            streetAddress: "亀有3-16-14-201",
           },
           email: "info@cypress-all.co.jp",
         },
@@ -213,7 +213,7 @@ export default function Page() {
       <main>
 
         {/* ===== HERO ===== */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -315,8 +315,8 @@ export default function Page() {
                   b: "葛飾区にはホームページ作成費補助などの制度が設けられている場合があります。制度内容・申請時期・対象範囲は年度によって変わる可能性があるため、制作の検討段階で公式サイトを確認しておくことが重要です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -328,7 +328,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 3: HOMEPAGE SUBSIDY ===== */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Subsidy Info</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>
@@ -375,8 +375,8 @@ export default function Page() {
                   b: "申請要件・必要書類・申請窓口・申請期間は公式サイトに掲載されています。不明点は葛飾区産業経済課などの担当窓口に直接お問い合わせください。サイプレスでは公式情報の確認を強くおすすめしています。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -440,8 +440,8 @@ export default function Page() {
                   b: "目的に応じた制度選択が必要です。「ホームページを新たに作りたい」「既存サイトをリニューアルしたい」という目的にはホームページ作成費補助が、「業務全体のデジタル化を進めたい」という場合はデジタル化支援制度が適している可能性があります。ただし、最終的な判断は葛飾区公式サイトまたは担当窓口でご確認ください。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -469,7 +469,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 5: WHAT TO PREPARE ===== */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Checklist</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -490,7 +490,7 @@ export default function Page() {
                 { t: "制作スケジュール", b: "補助金申請が着手前申請の場合、制作開始前に承認を受ける必要があります。申請期間・承認期間・制作期間を逆算してスケジュールを立てます。" },
                 { t: "見積書の内訳", b: "補助金申請では、制作費用の内訳（デザイン費・コーディング費・SEO設定費・保守費など）を明記した見積書が必要になる場合があります。サイプレスでは詳細な見積書を発行できます。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 20px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "24px 20px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>
                     <span style={{ display: "inline-block", width: "18px", height: "18px", background: "#0d1b2a", borderRadius: "3px", marginRight: "8px", verticalAlign: "middle" }}></span>
                     {item.t}
@@ -522,8 +522,8 @@ export default function Page() {
                 { n: "06", t: "FAQページの設計", b: "「葛飾区でホームページ制作に補助金は使えますか？」「亀有の整骨院はどう選べばよい？」など、お客様がよく持つ疑問に答えるFAQページは、SEO効果とAI検索での引用率向上に有効です。" },
                 { n: "07", t: "Googleビジネスプロフィールとの情報統一", b: "ホームページ上の住所・電話番号・営業時間・サービス内容を、Googleビジネスプロフィール（Googleマップ）の情報と一致させることが、MEO対策とSEOの両面で重要です。情報の不一致はGoogleからの信頼性低下につながります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -535,7 +535,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 7: INDUSTRY-SPECIFIC ===== */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>By Industry</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -597,8 +597,8 @@ export default function Page() {
                   b: "取扱商品・在庫状況・お得な情報・営業時間・アクセスが重要コンテンツです。「亀有 〇〇ショップ」「葛飾区 〇〇専門店」など地域名＋商品カテゴリのキーワードに対応したページ設計が集客につながります。Googleビジネスプロフィールとの情報統一も必須です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -612,12 +612,12 @@ export default function Page() {
         {/* ===== SECTION 8: WHAT CYPRESS CAN DO ===== */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               サイプレスが対応できること
             </h2>
             <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
-              株式会社サイプレスは葛飾区白鳥に拠点を置き、葛飾区の中小企業・店舗向けにホームページ制作からWeb集客支援まで一貫して対応しています。補助金活用時に必要となる制作内容・見積内容の整理もサポートします（採択・支給を保証するものではありません）。
+              株式会社サイプレスは葛飾区亀有に拠点を置き、葛飾区の中小企業・店舗向けにホームページ制作からWeb集客支援まで一貫して対応しています。補助金活用時に必要となる制作内容・見積内容の整理もサポートします（採択・支給を保証するものではありません）。
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
               {[
@@ -632,7 +632,7 @@ export default function Page() {
                 { n: "09", t: "申請時の制作内容・見積内容の整理サポート", b: "補助金申請時に必要となるホームページ制作内容・機能一覧・見積書の整理をサポートします。ただし、補助金の採択・支給の保証はできません。申請手続きは葛飾区公式窓口へご確認ください。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -642,7 +642,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 9: PRICING LINK ===== */}
-        <section style={{ background: "#ffffff", padding: "72px 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#ffffff", padding: "72px 0", borderTop: "1px solid #E2E8F0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Pricing</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -671,7 +671,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 10: RELATED SERVICES ===== */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Related Services</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
@@ -689,7 +689,7 @@ export default function Page() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px", textDecoration: "none", display: "block" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px", textDecoration: "none", display: "block" }}
                 >
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.label}</p>
                   <p style={{ fontSize: "12px", color: "#6B7280" }}>{item.desc}</p>
@@ -700,7 +700,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 11: RELATED AREAS ===== */}
-        <section style={{ background: "#ffffff", padding: "72px 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#ffffff", padding: "72px 0", borderTop: "1px solid #E2E8F0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Related Areas</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
@@ -722,7 +722,7 @@ export default function Page() {
                   href={item.href}
                   style={{
                     fontSize: "13px", color: "#374151", textDecoration: "none",
-                    padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                    padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   }}
                 >
                   {item.label} →
@@ -733,7 +733,7 @@ export default function Page() {
         </section>
 
         {/* ===== SECTION 12: RELATED COLUMNS ===== */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Related Columns</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
@@ -755,7 +755,7 @@ export default function Page() {
                   href={item.href}
                   style={{
                     fontSize: "13px", color: "#374151", textDecoration: "none",
-                    padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                    padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   }}
                 >
                   {item.label} →
@@ -769,7 +769,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区のホームページ制作・補助金活用に関するよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#F4F6FA"
         />
 
         <PageContactCTA

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: "業種ごとに最適な集客方法は異なります。飲食・美容・医療・建設など、業種特化のWebマーケティング支援。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries" },
@@ -117,7 +118,7 @@ export default function IndustriesPage() {
         </section>
 
         {/* Industries list */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)", letterSpacing: "0.25em" }}>
               Supported Industries
@@ -130,7 +131,7 @@ export default function IndustriesPage() {
                 <Link key={industry.href} href={industry.href}>
                   <div
                     className="flex gap-6 py-6 hover:opacity-80 transition-opacity"
-                    style={{ borderTop: "1px solid #ece8e0", borderBottom: i === INDUSTRIES.length - 1 ? "1px solid #ece8e0" : undefined }}
+                    style={{ borderTop: "1px solid #E2E8F0", borderBottom: i === INDUSTRIES.length - 1 ? "1px solid #E2E8F0" : undefined }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
@@ -178,7 +179,7 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages
           links={[

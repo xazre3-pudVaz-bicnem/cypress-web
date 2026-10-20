@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Organization構造化データ｜AIO・SEO対策｜株式会社サイプレス",
     description: "Organization Schemaの実装でGoogleとAIへの企業認識を最大化する方法を解説。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -348,27 +348,27 @@ const RELATED_LINKS = [
   { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化の全体戦略" },
   { href: "/aio/structured-data", label: "構造化データ（AIO向け）", desc: "AI検索対応のSchema.org完全ガイド" },
   { href: "/aio/entity-optimization", label: "エンティティ最適化", desc: "Googleへのエンティティ認識強化" },
-  { href: "/aio/eeat", label: "E-E-A-T対策", desc: "経験・専門性・権威性・信頼性の構築" },
-  { href: "/aio/faq-content", label: "FAQ構造化コンテンツ", desc: "FAQPageスキーマと引用率向上" },
+  { href: "/knowledge/eeat", label: "E-E-A-T対策", desc: "経験・専門性・権威性・信頼性の構築" },
+  { href: "/aio/faq-optimization", label: "FAQ構造化コンテンツ", desc: "FAQPageスキーマと引用率向上" },
   { href: "/aio/chatgpt", label: "ChatGPT引用対策", desc: "ChatGPTに引用されるサイト設計" },
-  { href: "/aio/gemini", label: "Gemini対策", desc: "Google Geminiへの最適化" },
-  { href: "/aio/perplexity", label: "Perplexity対策", desc: "Perplexity AIでの引用戦略" },
+  { href: "/aio/ai-search", label: "Gemini対策", desc: "Google Geminiへの最適化" },
+  { href: "/aio/ai-search", label: "Perplexity対策", desc: "Perplexity AIでの引用戦略" },
   { href: "/seo/structured-data", label: "SEO構造化データ", desc: "SEO観点のSchema活用" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "技術面からの検索最適化" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスの検索対策" },
-  { href: "/seo/schema-faq", label: "FAQPage Schema", desc: "FAQリッチリザルトの実装方法" },
+  { href: "/seo/structured-data", label: "FAQPage Schema", desc: "FAQリッチリザルトの実装方法" },
   { href: "/meo", label: "MEO対策", desc: "Googleビジネスプロフィール最適化" },
-  { href: "/meo/google-business", label: "Googleビジネスプロフィール", desc: "GBP登録・運用ガイド" },
+  { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP登録・運用ガイド" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO施策の全体支援" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "構造化データ対応のサイト制作" },
-  { href: "/industry/medical", label: "医療機関向けAIO", desc: "MedicalOrganization Schema対応" },
-  { href: "/industry/legal", label: "法律事務所向けAIO", desc: "LegalService Schema対応" },
-  { href: "/industry/restaurant", label: "飲食店向けAIO", desc: "FoodEstablishment Schema対応" },
-  { href: "/industry/education", label: "教育機関向けAIO", desc: "EducationalOrganization Schema" },
+  { href: "/industries/clinic", label: "医療機関向けAIO", desc: "MedicalOrganization Schema対応" },
+  { href: "/industries/professional-service", label: "法律事務所向けAIO", desc: "LegalService Schema対応" },
+  { href: "/industries/restaurant", label: "飲食店向けAIO", desc: "FoodEstablishment Schema対応" },
+  { href: "/industries/school", label: "教育機関向けAIO", desc: "EducationalOrganization Schema" },
   { href: "/area/tokyo", label: "東京のAIO対策", desc: "東京エリアの対応実績" },
-  { href: "/area/osaka", label: "大阪のAIO対策", desc: "大阪エリアの対応実績" },
-  { href: "/blog/schema-guide", label: "Schema実装ブログ", desc: "JSON-LD実装の実践ガイド" },
+  { href: "/area/nationwide", label: "大阪のAIO対策", desc: "大阪エリアの対応実績" },
+  { href: "/guide/schema-markup-guide", label: "Schema実装ブログ", desc: "JSON-LD実装の実践ガイド" },
 ];
 
 export default function OrganizationDataPage() {
@@ -419,7 +419,7 @@ export default function OrganizationDataPage() {
         </section>
 
         {/* Organizationスキーマとは */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -462,7 +462,7 @@ export default function OrganizationDataPage() {
                   "実装後のバリデーション方法と継続的な効果測定の指標",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px]" style={{ color: "#374151" }}>
-                    <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                    <span className="shrink-0 font-bold" style={{ color: "#3A9BDC" }}>→</span>
                     {item}
                   </li>
                 ))}
@@ -472,7 +472,7 @@ export default function OrganizationDataPage() {
         </section>
 
         {/* 主要情報 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Required Fields
@@ -482,7 +482,7 @@ export default function OrganizationDataPage() {
             </h2>
             <div className="max-w-3xl">
               {ITEMS.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
@@ -490,7 +490,7 @@ export default function OrganizationDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -506,7 +506,7 @@ export default function OrganizationDataPage() {
             </h2>
             <div className="max-w-3xl">
               {ISSUES.map((issue) => (
-                <div key={issue.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={issue.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{issue.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{issue.title}</h3>
@@ -514,13 +514,13 @@ export default function OrganizationDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Guide
@@ -533,12 +533,12 @@ export default function OrganizationDataPage() {
             </p>
             <div className="max-w-4xl">
               {INDUSTRIES.map((ind) => (
-                <div key={ind.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={ind.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{ind.num}</span>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{ind.industry}</h3>
-                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #E8E4DC" }}>
+                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #E2E8F0" }}>
                         {ind.schema}
                       </span>
                     </div>
@@ -546,7 +546,7 @@ export default function OrganizationDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -562,7 +562,7 @@ export default function OrganizationDataPage() {
             </h2>
             <div className="max-w-3xl">
               {FLOW_STEPS.map((step) => (
-                <div key={step.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={step.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{step.num}</span>
                   <div>
                     <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{step.title}</h3>
@@ -570,13 +570,13 @@ export default function OrganizationDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 実装方法 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -617,7 +617,7 @@ export default function OrganizationDataPage() {
             </p>
             <div className="max-w-3xl">
               {KPIS.map((kpi) => (
-                <div key={kpi.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={kpi.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{kpi.num}</span>
                   <div>
                     <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{kpi.title}</h3>
@@ -625,12 +625,12 @@ export default function OrganizationDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="Organization構造化データに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={FAQ_ITEMS} heading="Organization構造化データに関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={RELATED_LINKS} />
 

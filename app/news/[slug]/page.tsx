@@ -109,7 +109,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <section className="pb-24 max-w-3xl mx-auto px-6">
           <div
             className="p-8 md:p-10 mb-10"
-            style={{ border: "1px solid #E8E4DC" }}
+            style={{ border: "1px solid #E2E8F0" }}
           >
             <p className="text-[#374151] text-[15px] leading-[1.95]">
               {article.body || article.excerpt}
@@ -144,20 +144,20 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         {related.length > 0 && (
           <section
             className="py-16"
-            style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+            style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}
           >
             <div className="max-w-3xl mx-auto px-6">
               <h2
                 className="font-bold text-[#0F172A] text-lg mb-8 pb-6"
-                style={{ borderBottom: "1px solid #E8E4DC" }}
+                style={{ borderBottom: "1px solid #E2E8F0" }}
               >
                 関連ニュース
               </h2>
-              <div style={{ borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ borderTop: "1px solid #E2E8F0" }}>
                 {related.map((rel) => (
                   <div
                     key={rel.slug}
-                    style={{ borderBottom: "1px solid #E8E4DC" }}
+                    style={{ borderBottom: "1px solid #E2E8F0" }}
                   >
                     <Link
                       href={`/news/${rel.slug}`}

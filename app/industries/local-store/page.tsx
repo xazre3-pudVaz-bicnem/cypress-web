@@ -111,7 +111,7 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ最適化の詳細" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "地域店舗向けサイト制作" },
-  { href: "/services/line", label: "LINE公式アカウント活用", desc: "リピーター育成・クーポン配信" },
+  { href: "/sns", label: "LINE公式アカウント活用", desc: "リピーター育成・クーポン配信" },
   { href: "/industries/restaurant", label: "飲食店のWebマーケティング", desc: "飲食店専門の集客支援" },
   { href: "/industries/nail-salon", label: "ネイルサロンのWeb集客", desc: "サロン系の集客事例" },
   { href: "/industries/hair-salon", label: "美容室のWeb集客", desc: "美容室の集客支援" },
@@ -165,7 +165,7 @@ export default function LocalStoreIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -208,11 +208,11 @@ export default function LocalStoreIndustryPage() {
         {/* 集客課題 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               地域密着型小売・専門店が抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(58,155,220,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -236,7 +236,7 @@ export default function LocalStoreIndustryPage() {
                 },
               ].map((item) => (
                 <div key={item.n} style={{ background: "#0d1b2a", padding: "28px" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9CA3AF", lineHeight: "1.8" }}>{item.b}</p>
                 </div>
@@ -261,8 +261,8 @@ export default function LocalStoreIndustryPage() {
                 { n: "05", t: "口コミ管理で高評価を維持・増加", b: "来店後にQRコード・LINEでGoogleマップ口コミへの誘導を行います。全口コミへの丁寧な返信も評判管理と来店決断への影響があります。口コミ数と平均評価の改善がMEO順位向上に直結します。" },
                 { n: "06", t: "LINE公式アカウントでリピートを促進", b: "LINE公式アカウントで新商品入荷・期間限定商品・クーポン・イベント告知を配信します。一度来店したお客様を再訪させる最も直接的な手段として活用し、来店頻度と顧客単価を高めます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -274,7 +274,7 @@ export default function LocalStoreIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略詳細 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -316,7 +316,7 @@ export default function LocalStoreIndustryPage() {
         </section>
 
         {/* 店舗ジャンル別アプローチ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Sub Services</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -329,7 +329,7 @@ export default function LocalStoreIndustryPage() {
                   { t: "文具店・書店・セレクトショップ", b: "「○○市 文具 こだわり」「○○区 おしゃれ 雑貨店」「○○駅 書店 品揃え」など、地域+ジャンル+価値観のキーワードでMEO・SEO対策を行います。スタッフの選書・おすすめ特集コンテンツは専門性のアピールと同時にSEO効果も発揮します。" },
                   { t: "ペットショップ・自転車店・楽器店", b: "専門的な知識が必要なジャンルの店舗は「専門家に相談したい」ニーズが高く、スタッフの経験・知識をアピールするコンテンツが集客力になります。「○○区 自転車 修理 専門店」「○○市 楽器 初心者 相談」などのロングテールキーワードでSEO対策します。" },
                 ].map((item, i) => (
-                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -340,7 +340,7 @@ export default function LocalStoreIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "8px" }}>
@@ -402,8 +402,8 @@ export default function LocalStoreIndustryPage() {
                   b: "GBPインサイト（検索数・マップ表示数・来店クリック数）・Instagramアナリティクス・LINE配信の開封率を月次でチェックします。数値を見ながら投稿内容・配信タイミング・口コミ施策を調整することで集客効果が安定的に向上します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -424,7 +424,7 @@ export default function LocalStoreIndustryPage() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "40px" }}>
               地域密着型小売・専門店のWebマーケティングは「感覚」ではなく数字で改善します。以下のKPIを月次でモニタリングすることで、どの施策が来店に効いているかを把握し、PDCAを回せます。
             </p>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "#E8E4DC" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "#E2E8F0" }}>
               {[
                 {
                   name: "GBPルート検索数",
@@ -464,7 +464,7 @@ export default function LocalStoreIndustryPage() {
               ].map((kpi) => (
                 <div key={kpi.name} style={{ background: "#ffffff", padding: "28px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{kpi.name}</p>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em", marginBottom: "10px" }}>{kpi.where}</p>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em", marginBottom: "10px" }}>{kpi.where}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{kpi.desc}</p>
                 </div>
               ))}
@@ -475,7 +475,7 @@ export default function LocalStoreIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -498,9 +498,9 @@ export default function LocalStoreIndustryPage() {
                   b: "GBPインサイト・Instagramアナリティクス・LINE配信結果を月次でまとめたレポートを提供します。何が効いていて何を改善すべきかを数値で把握できるため、感覚ではなくデータに基づいた集客改善が継続できます。",
                 },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -510,7 +510,7 @@ export default function LocalStoreIndustryPage() {
         {/* サイプレスができること */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               地域密着型小売・専門店向けにサイプレスができること
             </h2>
@@ -521,16 +521,16 @@ export default function LocalStoreIndustryPage() {
                 { t: "地域店舗向けホームページ制作", b: "お店のこだわり・スタッフ・商品の魅力・アクセス情報を最大限に伝えるホームページを制作します。スマートフォン最適化・SEO対策込みで地域検索からの流入も強化します。" },
                 { t: "LINE公式アカウント・口コミ管理", b: "新商品入荷・季節イベント・クーポンのLINE配信設計と、Googleマップ口コミ獲得の仕組み化（QRコード設計・依頼文面作成）を支援します。一度の来店を長期ファンへ転換します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="地域密着型小売・専門店のWeb集客に関するよくある質問" bgColor="#f9f8f5" />
+        <FaqSection items={faqItems} heading="地域密着型小売・専門店のWeb集客に関するよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="地域密着型小売・専門店のWeb集客ご相談"

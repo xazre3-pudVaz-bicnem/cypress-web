@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "website",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/solutions/${slug}` },
@@ -56,7 +57,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -83,10 +84,10 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               このソリューションの特徴
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
               {page.features.map((item) => (
                 <div key={item.num} style={{ background: "#ffffff", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px", lineHeight: 1.4 }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -96,7 +97,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
         </section>
 
         {/* Target Customer */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>For Whom</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>
@@ -104,7 +105,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
             </h2>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, maxWidth: "640px" }}>
               {page.targetCustomer.map((item, i) => (
-                <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderTop: "1px solid #ece8e0" }}>
+                <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderTop: "1px solid #E2E8F0" }}>
                   <svg style={{ flexShrink: 0, marginTop: "3px" }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d1b2a" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
@@ -136,7 +137,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#F4F6FA" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading="このソリューションについて相談する"

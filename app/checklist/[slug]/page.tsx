@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "website",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/checklist/${slug}` },
@@ -58,7 +59,7 @@ export default async function ChecklistSlugPage({ params }: { params: Promise<{ 
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -91,18 +92,18 @@ export default async function ChecklistSlugPage({ params }: { params: Promise<{ 
                   </h2>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                     {section.items.map((item, ii) => (
-                      <li key={ii} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderBottom: "1px solid #ece8e0" }}>
+                      <li key={ii} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderBottom: "1px solid #E2E8F0" }}>
                         <span style={{
                           flexShrink: 0,
                           width: "20px",
                           height: "20px",
-                          border: "1.5px solid #ece8e0",
+                          border: "1.5px solid #E2E8F0",
                           marginTop: "2px",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
                         }} aria-hidden="true">
-                          <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#ece8e0" strokeWidth={2.5}>
+                          <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#E2E8F0" strokeWidth={2.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                           </svg>
                         </span>
@@ -121,7 +122,7 @@ export default async function ChecklistSlugPage({ params }: { params: Promise<{ 
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#F4F6FA" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading="チェックリストの実施を支援します"

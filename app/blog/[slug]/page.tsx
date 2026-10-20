@@ -103,6 +103,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime: post.date,
       locale: "ja_JP",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: {
@@ -147,7 +148,7 @@ export default async function BlogPostPage({
     articleSection: categoryLabel,
     image: {
       "@type": "ImageObject",
-      url: "https://www.cypress-all.co.jp/hero.jpg",
+      url: "https://www.cypress-all.co.jp/og-image.jpg",
       width: 1200,
       height: 630,
     },
@@ -207,7 +208,7 @@ export default async function BlogPostPage({
         {/* Hero */}
         <section
           style={{
-            background: "#f8f6f2",
+            background: "#F4F6FA",
             paddingTop: "128px",
             paddingBottom: "48px",
           }}
@@ -319,8 +320,8 @@ export default async function BlogPostPage({
                 style={{
                   marginTop: "64px",
                   padding: "32px",
-                  background: "#f8f6f2",
-                  border: "1px solid #E8E4DC",
+                  background: "#F4F6FA",
+                  border: "1px solid #E2E8F0",
                 }}
               >
                 <p
@@ -361,7 +362,7 @@ export default async function BlogPostPage({
                         display: "block",
                         padding: "14px 16px",
                         background: "#ffffff",
-                        border: "1px solid #E8E4DC",
+                        border: "1px solid #E2E8F0",
                         textDecoration: "none",
                       }}
                     >
@@ -397,8 +398,8 @@ export default async function BlogPostPage({
                 style={{
                   marginTop: "40px",
                   padding: "24px",
-                  background: "#f8f6f2",
-                  border: "1px solid #E8E4DC",
+                  background: "#F4F6FA",
+                  border: "1px solid #E2E8F0",
                   display: "flex",
                   gap: "16px",
                   alignItems: "flex-start",
@@ -500,7 +501,7 @@ export default async function BlogPostPage({
                       display: "flex",
                       justifyContent: "space-between",
                       padding: "10px 0",
-                      borderBottom: "1px solid #E8E4DC",
+                      borderBottom: "1px solid #E2E8F0",
                       fontSize: "13px",
                       color: cat.slug === post.category ? "#0d1b2a" : "#374151",
                       fontWeight: cat.slug === post.category ? 600 : 400,
@@ -528,7 +529,7 @@ export default async function BlogPostPage({
                     Recent
                   </p>
                   {recentPosts.map((p) => (
-                    <div key={p.slug} style={{ borderBottom: "1px solid #E8E4DC" }}>
+                    <div key={p.slug} style={{ borderBottom: "1px solid #E2E8F0" }}>
                       <Link
                         href={`/blog/${p.slug}`}
                         style={{
@@ -550,9 +551,9 @@ export default async function BlogPostPage({
               {/* CTA */}
               <div
                 style={{
-                  background: "#f8f6f2",
+                  background: "#F4F6FA",
                   padding: "24px",
-                  border: "1px solid #E8E4DC",
+                  border: "1px solid #E2E8F0",
                 }}
               >
                 <p

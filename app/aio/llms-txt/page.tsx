@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "llms.txt設置・設定方法｜AIクローラー向けサイト最適化",
     description: "llms.txtの役割・書き方・Next.jsでの設置手順を解説。AIクローラーにサイト情報を正確に提供するAIO対策の新しい実装方法です。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -110,7 +110,7 @@ const relatedLinks = [
   { href: "/aio/llm-optimization", label: "LLM最適化", desc: "大規模言語モデル最適化" },
   { href: "/aio/structured-data", label: "構造化データ実装", desc: "Schema.org全般" },
   { href: "/aio/entity-optimization", label: "エンティティ最適化", desc: "AI認識の最適化" },
-  { href: "/aio/eeat", label: "E-E-A-T強化", desc: "専門性・権威性の向上" },
+  { href: "/knowledge/eeat", label: "E-E-A-T強化", desc: "専門性・権威性の向上" },
   { href: "/aio/ai-overview", label: "AI Overview対策", desc: "生成AI検索への引用対策" },
   { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTでの引用戦略" },
   { href: "/aio/knowledge-graph", label: "ナレッジグラフ対策", desc: "Googleエンティティ登録" },
@@ -119,15 +119,15 @@ const relatedLinks = [
   { href: "/seo", label: "SEO対策", desc: "SEO対策の全体像" },
   { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス詳細" },
-  { href: "/services/web-development", label: "Web制作サービス", desc: "Next.js開発" },
-  { href: "/industry/it", label: "IT・SaaS向け", desc: "IT業界のAIO対策" },
-  { href: "/industry/medical", label: "医療・クリニック向け", desc: "医療業界のAIO対策" },
-  { href: "/industry/legal", label: "士業・法律事務所向け", desc: "法律業界のAIO対策" },
-  { href: "/industry/ec", label: "EC・通販向け", desc: "EC業界のAIO対策" },
-  { href: "/industry/education", label: "教育・スクール向け", desc: "教育業界のAIO対策" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "Next.js開発" },
+  { href: "/industries", label: "IT・SaaS向け", desc: "IT業界のAIO対策" },
+  { href: "/industries/clinic", label: "医療・クリニック向け", desc: "医療業界のAIO対策" },
+  { href: "/industries/professional-service", label: "士業・法律事務所向け", desc: "法律業界のAIO対策" },
+  { href: "/industries/local-store", label: "EC・通販向け", desc: "EC業界のAIO対策" },
+  { href: "/industries/school", label: "教育・スクール向け", desc: "教育業界のAIO対策" },
   { href: "/area/tokyo", label: "東京のAIO対策", desc: "東京エリア対応" },
-  { href: "/area/osaka", label: "大阪のAIO対策", desc: "大阪エリア対応" },
-  { href: "/area/nagoya", label: "名古屋のAIO対策", desc: "名古屋エリア対応" },
+  { href: "/area/nationwide", label: "大阪のAIO対策", desc: "大阪エリア対応" },
+  { href: "/area/nationwide", label: "名古屋のAIO対策", desc: "名古屋エリア対応" },
   { href: "/blog/llms-txt-guide", label: "llms.txt実装ガイド", desc: "実践解説記事" },
   { href: "/contact", label: "無料相談", desc: "お問い合わせ" },
 ];
@@ -141,7 +141,7 @@ export default function Page() {
         {/* ============================================================
             Hero Section
         ============================================================ */}
-        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
+        <section style={{ background: "#F4F6FA" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -247,7 +247,7 @@ export default function Page() {
                 "設置後の効果確認方法とAI引用状況のモニタリング指標7項目",
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, flexShrink: 0, fontSize: "16px" }}>→</span>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, flexShrink: 0, fontSize: "16px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
               ))}
@@ -258,7 +258,7 @@ export default function Page() {
         {/* ============================================================
             llms.txtに記述すべき内容
         ============================================================ */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Content Guide
@@ -313,7 +313,7 @@ export default function Page() {
                     display: "flex",
                     gap: "20px",
                     padding: "20px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -369,17 +369,17 @@ export default function Page() {
                   overflowX: "auto",
                 }}
               >
-                <p style={{ color: "#c4b89a", marginBottom: "4px" }}># 株式会社サイプレス</p>
+                <p style={{ color: "#3A9BDC", marginBottom: "4px" }}># 株式会社サイプレス</p>
                 <p style={{ color: "#94a3b8", marginBottom: "16px" }}>
                   {"> "}MEO対策・SEO対策・AIO対策・Web制作の専門会社。東京拠点、全国対応。
                 </p>
-                <p style={{ color: "#c4b89a", marginBottom: "4px" }}>## 専門分野</p>
+                <p style={{ color: "#3A9BDC", marginBottom: "4px" }}>## 専門分野</p>
                 <p style={{ color: "#94a3b8", marginBottom: "4px" }}>- MEO対策（Googleマップ最適化・口コミ管理）</p>
                 <p style={{ color: "#94a3b8", marginBottom: "4px" }}>- SEO対策（コンテンツSEO・テクニカルSEO・被リンク獲得）</p>
                 <p style={{ color: "#94a3b8", marginBottom: "16px" }}>
                   - AIO対策（LLM最適化・AI Overview対策・構造化データ実装）
                 </p>
-                <p style={{ color: "#c4b89a", marginBottom: "4px" }}>## 重要ページ</p>
+                <p style={{ color: "#3A9BDC", marginBottom: "4px" }}>## 重要ページ</p>
                 <p style={{ color: "#94a3b8", marginBottom: "4px" }}>
                   - [MEO対策](https://www.cypress-all.co.jp/meo): Googleマップ最適化の専門知識
                 </p>
@@ -389,7 +389,7 @@ export default function Page() {
                 <p style={{ color: "#94a3b8", marginBottom: "16px" }}>
                   - [AIO対策](https://www.cypress-all.co.jp/aio): AIO対策の専門知識
                 </p>
-                <p style={{ color: "#c4b89a", marginBottom: "4px" }}>## 連絡先</p>
+                <p style={{ color: "#3A9BDC", marginBottom: "4px" }}>## 連絡先</p>
                 <p style={{ color: "#94a3b8" }}>info@cypress-all.co.jp | 東京都</p>
               </div>
             </div>
@@ -399,7 +399,7 @@ export default function Page() {
         {/* ============================================================
             Section B: よくある課題と原因
         ============================================================ */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
@@ -474,7 +474,7 @@ export default function Page() {
                     display: "flex",
                     gap: "20px",
                     padding: "22px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -579,9 +579,9 @@ export default function Page() {
                 <div
                   key={i}
                   style={{
-                    background: "#F9F8F5",
+                    background: "#F4F6FA",
                     padding: "24px",
-                    borderTop: "3px solid #c4b89a",
+                    borderTop: "3px solid #3A9BDC",
                   }}
                 >
                   <p
@@ -617,7 +617,7 @@ export default function Page() {
         {/* ============================================================
             Section D: 実装・改善フロー
         ============================================================ */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -692,7 +692,7 @@ export default function Page() {
                     display: "flex",
                     gap: "20px",
                     padding: "22px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -793,7 +793,7 @@ export default function Page() {
                   key={item.n}
                   style={{
                     padding: "22px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <div style={{ display: "flex", gap: "20px", alignItems: "flex-start" }}>
@@ -824,7 +824,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="llms.txt設置・AIO対策のご相談"

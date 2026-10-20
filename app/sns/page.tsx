@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "Instagram・Googleビジネスプロフィールを活用した中小企業・店舗のSNS集客を一貫支援。SEO・MEOとの統合戦略で最大の集客効果を実現。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/sns" },
@@ -191,7 +192,7 @@ const relatedLinks = [
   { href: "/industries/clinic", label: "クリニックのSNS活用", desc: "医療機関のSNS運用" },
   { href: "/area/katsushika", label: "葛飾区のSNS集客", desc: "葛飾区エリアの集客支援" },
   { href: "/area/tokyo", label: "東京のSNS集客", desc: "東京都内のSNS運用支援" },
-  { href: "/knowledge/instagram-business", label: "Instagram活用ガイド", desc: "ビジネスInstagram基礎知識" },
+  { href: "/knowledge/instagram-tips", label: "Instagram活用ガイド", desc: "ビジネスInstagram基礎知識" },
   { href: "/cost/sns", label: "SNS運用の費用", desc: "SNS運用代行の料金目安" },
   { href: "/cases/service/sns", label: "SNS運用の成功事例", desc: "業種別のSNS運用成功事例一覧" },
   { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
@@ -207,7 +208,7 @@ export default function SnsPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6b7280" }} className="hover:underline">ホーム</Link>
@@ -252,7 +253,7 @@ export default function SnsPage() {
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
               {services.map((s) => (
-                <Link key={s.href} href={s.href} style={{ display: "block", padding: "28px 32px", border: "1px solid #e8e4dc", background: "#fafaf8", textDecoration: "none", transition: "border-color 0.2s" }}>
+                <Link key={s.href} href={s.href} style={{ display: "block", padding: "28px 32px", border: "1px solid #E2E8F0", background: "#fafaf8", textDecoration: "none", transition: "border-color 0.2s" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{s.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{s.desc}</p>
                 </Link>
@@ -262,7 +263,7 @@ export default function SnsPage() {
         </section>
 
         {/* SNSが重要な理由 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Why SNS</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 900, marginBottom: "12px" }}>
@@ -279,7 +280,7 @@ export default function SnsPage() {
                 { n: "04", t: "低コストで始められる継続的な集客資産", b: "リスティング広告は出稿を止めると集客が止まりますが、SNSのフォロワーは継続的に情報を受け取ってくれる資産です。投稿1回のコストは広告より大幅に低く、継続することでアカウントの価値が積み上がります。" },
                 { n: "05", t: "Googleビジネスプロフィールとの連動効果", b: "GBP（Googleビジネスプロフィール）への投稿を継続することで、Googleマップ上での評価向上が期待できます。InstagramとGBPの両方を運用し、写真・イベント・最新情報を連動発信することでSNSとMEOの相乗効果が得られます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -287,7 +288,7 @@ export default function SnsPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -304,7 +305,7 @@ export default function SnsPage() {
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
               {industrySnsCases.map((c) => (
-                <div key={c.industry} style={{ padding: "28px", border: "1px solid #e8e4dc", background: "#fafaf8" }}>
+                <div key={c.industry} style={{ padding: "28px", border: "1px solid #E2E8F0", background: "#fafaf8" }}>
                   <p style={{ fontSize: "18px", marginBottom: "8px" }}>{c.icon}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{c.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{c.body}</p>
@@ -317,7 +318,7 @@ export default function SnsPage() {
         {/* Instagramで集客を強化する具体的施策 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Instagram Tactics</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Instagram Tactics</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#ffffff", fontWeight: 900, marginBottom: "12px" }}>
               Instagramで集客を強化する6つの施策
             </h2>
@@ -327,7 +328,7 @@ export default function SnsPage() {
             <div style={{ maxWidth: "720px" }}>
               {instagramTactics.map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.7)", lineHeight: "1.9" }}>{item.b}</p>
@@ -340,7 +341,7 @@ export default function SnsPage() {
         </section>
 
         {/* GBP投稿との連携 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>GBP × SNS</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 900, marginBottom: "12px" }}>
@@ -351,7 +352,7 @@ export default function SnsPage() {
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px", maxWidth: "900px" }}>
               {gbpTactics.map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #e8e4dc", background: "#ffffff" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid #E2E8F0", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.b}</p>
                 </div>
@@ -372,7 +373,7 @@ export default function SnsPage() {
             </p>
             <div style={{ maxWidth: "720px" }}>
               {failurePatterns.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -380,13 +381,13 @@ export default function SnsPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* サイプレスの強み */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Our Strengths</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 900, marginBottom: "40px" }}>
@@ -394,7 +395,7 @@ export default function SnsPage() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
               {cypressStrengths.map((s, i) => (
-                <div key={i} style={{ padding: "32px", border: "1px solid #e8e4dc", background: "#ffffff" }}>
+                <div key={i} style={{ padding: "32px", border: "1px solid #E2E8F0", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>{s.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{s.body}</p>
                 </div>
@@ -412,7 +413,7 @@ export default function SnsPage() {
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
               {["Instagram", "Googleビジネスプロフィール（GBP）", "LINE公式アカウント", "X（旧Twitter）", "Facebook Page", "TikTok", "YouTube Shorts"].map((platform) => (
-                <span key={platform} style={{ padding: "8px 20px", border: "1px solid #e8e4dc", fontSize: "13px", color: "#374151", background: "#fafaf8" }}>
+                <span key={platform} style={{ padding: "8px 20px", border: "1px solid #E2E8F0", fontSize: "13px", color: "#374151", background: "#fafaf8" }}>
                   {platform}
                 </span>
               ))}
@@ -420,10 +421,10 @@ export default function SnsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SNS集客・運用代行についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="SNS集客・運用代行についてよくある質問" bgColor="#F4F6FA" />
 
         {/* SNS運用の成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#F4F6FA", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -441,7 +442,7 @@ export default function SnsPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

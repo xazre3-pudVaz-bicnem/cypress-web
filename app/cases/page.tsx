@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web集客・ホームページ制作の成功事例｜株式会社サイプレス",
     description: "業種・地域・サービス別にWeb集客支援の成功事例を公開。顧客名・店舗名は非公開。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -79,9 +79,9 @@ export default function CasesPage() {
         {/* Page header */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#F4F6FA",
             padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #E2E8F0",
           }}
         >
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
@@ -140,7 +140,7 @@ export default function CasesPage() {
         </section>
 
         {/* Browse by category */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#F4F6FA", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E2E8F0" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ ...eyebrow, marginBottom: "20px" }}>Browse by Service</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "32px" }}>
@@ -175,12 +175,12 @@ function Stat({ value, label }: { value: string; label: string }) {
         display: "inline-flex",
         alignItems: "baseline",
         gap: "6px",
-        border: "1px solid #E8E4DC",
+        border: "1px solid #E2E8F0",
         background: "#FFFFFF",
         padding: "8px 16px",
       }}
     >
-      <strong style={{ fontFamily: "var(--font-serif)", fontSize: "20px", color: "#C4A96A", fontWeight: 700 }}>{value}</strong>
+      <strong style={{ fontFamily: "var(--font-serif)", fontSize: "20px", color: "#3A9BDC", fontWeight: 700 }}>{value}</strong>
       <span style={{ fontSize: "12px", color: "#6B7280", fontFamily: "var(--font-sans)" }}>{label}</span>
     </span>
   );
@@ -197,7 +197,7 @@ const crumbLink: React.CSSProperties = {
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--font-display)",
   letterSpacing: "0.25em",
-  color: "rgba(196,169,106,0.7)",
+  color: "rgba(58,155,220,0.7)",
   fontSize: "10px",
   marginBottom: "16px",
   textTransform: "uppercase",
@@ -208,7 +208,7 @@ const linkChip: React.CSSProperties = {
   color: "#6B7280",
   textDecoration: "none",
   padding: "6px 14px",
-  border: "1px solid #E8E4DC",
+  border: "1px solid #E2E8F0",
   background: "#ffffff",
   letterSpacing: "0.03em",
 };

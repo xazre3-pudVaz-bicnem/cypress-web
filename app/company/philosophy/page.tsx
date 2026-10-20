@@ -1,11 +1,13 @@
-﻿import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import PageContactCTA from "@/components/shared/PageContactCTA";
 import RelatedPages from "@/components/shared/RelatedPages";
+import PageHero from "@/components/ui/PageHero";
+import Reveal from "@/components/ui/Reveal";
+import { breadcrumbJsonLd, type Crumb } from "@/components/ui/Breadcrumbs";
+import { Container, Section, SectionHeading } from "@/components/ui/Section";
 
 export const metadata: Metadata = {
   title: "経営理念・ミッション・ビジョン・バリュー | 株式会社サイプレス",
@@ -24,13 +26,34 @@ export const metadata: Metadata = {
   openGraph: {
     title: "経営理念・ミッション・ビジョン・バリュー | 株式会社サイプレス",
     description: "株式会社サイプレスの経営理念。Mission・Vision・Value・行動指針10条。地域企業が正しく選ばれる仕組みをつくる。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/philosophy" },
 };
+
+const SITE_URL = "https://www.cypress-all.co.jp";
+
+const CRUMBS: Crumb[] = [
+  { name: "ホーム", href: "/" },
+  { name: "会社情報", href: "/company" },
+  { name: "経営理念" },
+];
+
+const MISSION_VISION = [
+  {
+    label: "Mission — 使命",
+    title: "地域企業が、正しく選ばれる仕組みをつくる。",
+    body: "素晴らしい技術や想いがあるのに、デジタルの壁に阻まれて届いていない。その構造を、集客の仕組みから変えます。",
+  },
+  {
+    label: "Vision — ビジョン",
+    title: "AIとWebの力で、地域経済を再生する。",
+    body: "予算の多寡ではなく、知識と仕組みの差を埋める。地域の優れた企業が、大企業と対等に選ばれる社会を目指します。",
+  },
+];
 
 const VALUES = [
   {
@@ -123,6 +146,15 @@ const PRINCIPLES = [
   },
 ];
 
+// 「なぜ、この理念が生まれたか」の原文。要約の下に折りたたんで表示する。
+const WHY_PARAGRAPHS = [
+  "2026年5月、東京都葛飾区に株式会社サイプレスを設立したとき、私たちが最初に決めたのは、「何のための会社か」という問いへの答えでした。",
+  "地域の中小企業・個人事業主と話すなかで、繰り返し同じ現実を目にしてきました。腕がある、サービスが丁寧、地域に根ざした信頼がある。それなのに、インターネットで検索しても出てこない。Googleマップでも上位に表示されない。その結果、知名度と予算のある企業に顧客を奪われ続けている現実。",
+  "これは実力の差ではなく、デジタルマーケティングの知識と仕組みの差です。この差を埋めることに本質的な価値があると確信したとき、ミッション「地域企業が、正しく選ばれる仕組みをつくる」が生まれました。",
+  "ビジョン「AIとWebの力で、地域経済を再生する」は、そのミッションを長期的な視点で語ったものです。AIの台頭により、中小企業でも大企業並みの情報発信ができる時代が到来しつつある。この転換期に正しいツールと知識を届けることが、地域経済の構造を変える力を持ちます。",
+  "7つのバリューと10の行動指針は、この理念を日々の仕事に落とし込んだものです。大きな言葉を掲げるだけでなく、毎日の意思決定と行動のなかに理念を生きさせることを、私たちは最も大切にしています。",
+];
+
 const FAQ_ITEMS = [
   {
     q: "サイプレスのミッションはどのような意味ですか？",
@@ -194,7 +226,7 @@ const RELATED_LINKS = [
   { href: "/services/seo", label: "SEO対策", desc: "検索順位の改善" },
   { href: "/services/meo", label: "MEO対策", desc: "Googleマップ集客" },
   { href: "/services/aio", label: "AIO対策", desc: "AI検索への最適化" },
-  { href: "/services/web", label: "ホームページ制作", desc: "Next.js × 高速サイト" },
+  { href: "/services/web-design", label: "ホームページ制作", desc: "Next.js × 高速サイト" },
   { href: "/services/sns", label: "SNS運用", desc: "Instagram・Google投稿" },
   { href: "/services/ai", label: "AI活用支援", desc: "業務効率化・自動化" },
   { href: "/services", label: "サービス一覧", desc: "全施策の概要" },
@@ -202,372 +234,160 @@ const RELATED_LINKS = [
   { href: "/blog", label: "ブログ", desc: "SEO・MEO・AIO情報" },
   { href: "/cases", label: "事例・実績", desc: "支援事例の紹介" },
   { href: "/faq", label: "よくある質問", desc: "ご利用前の疑問を解決" },
-  { href: "/price", label: "料金プラン", desc: "費用・プラン案内" },
+  { href: "/pricing/web-growth-package", label: "料金プラン", desc: "費用・プラン案内" },
   { href: "/recruit", label: "採用情報", desc: "一緒に働く方を募集" },
   { href: "/area/tokyo", label: "東京都の対応エリア", desc: "都内全域対応" },
   { href: "/area/kanagawa", label: "神奈川の対応エリア", desc: "横浜・川崎など" },
   { href: "/area/saitama", label: "埼玉の対応エリア", desc: "さいたま市ほか" },
 ];
 
+/** 「誠実さ（Integrity）」を和文と英語に分ける */
+function splitTitle(title: string) {
+  const m = title.match(/^(.+?)（(.+)）$/);
+  return m ? { ja: m[1], en: m[2] } : { ja: title, en: "" };
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": `${SITE_URL}/company/philosophy#webpage`,
+      url: `${SITE_URL}/company/philosophy`,
+      name: "経営理念 | 株式会社サイプレス",
+      inLanguage: "ja",
+      about: { "@id": `${SITE_URL}/#organization` },
+    },
+    breadcrumbJsonLd(CRUMBS, "/company/philosophy"),
+    {
+      "@type": "FAQPage",
+      mainEntity: FAQ_ITEMS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
+
 export default function PhilosophyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
       <main>
-        {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
-              <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
-              <span>/</span>
-              <span style={{ color: "#374151" }}>経営理念</span>
-            </nav>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Philosophy
-            </p>
-            <h1
-              className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-            >
-              経営理念
-            </h1>
-            <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
-              私たちが何のために存在し、どこを目指し、どのように行動するか。サイプレスの根幹となる考え方をお伝えします。
-            </p>
-          </div>
-        </section>
+        <PageHero
+          crumbs={CRUMBS}
+          eyebrow="Philosophy"
+          title="経営理念"
+          catchCopy="良い企業が、正しく評価される世界へ。"
+          lead="私たちが何のために存在し、どこを目指し、どう行動するか。サイプレスの考え方の根っこです。"
+        />
 
-        {/* Section A: このページでわかること */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              What you&apos;ll learn
-            </p>
-            <h2
-              className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-            >
-              このページでわかること
-            </h2>
-            <div className="max-w-3xl space-y-0">
-              {[
-                "ミッション「地域企業が、正しく選ばれる仕組みをつくる」の意味",
-                "ビジョン「AIとWebの力で、地域経済を再生する」の背景と目指す世界",
-                "誠実・革新・成長・共創・専門性・透明性・継続の7つのバリュー",
-                "日常業務に根ざした行動指針10条の全内容",
-                "なぜこの理念が生まれたか——設立背景と理念の一致",
-                "理念を体現するサービス設計と、チームが一丸となって大切にしていること",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 py-4"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[14px] font-bold shrink-0" style={{ color: "#c4b89a" }}>→</span>
-                  <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
-                </div>
+        {/* Mission / Vision */}
+        <section aria-label="ミッションとビジョン" className="relative overflow-hidden bg-navy-900 py-20 text-white md:py-28">
+          <div aria-hidden="true" className="absolute -right-40 -top-20 h-[520px] w-[820px] rounded-full bg-accent/25 blur-[140px]" />
+          <Container className="relative">
+            <div className="grid gap-px overflow-hidden rounded-[28px] border border-white/10 bg-white/10 lg:grid-cols-2">
+              {MISSION_VISION.map((m, i) => (
+                <Reveal key={m.label} delay={i * 0.08} className="bg-navy-900 p-8 md:p-12">
+                  <p className="eyebrow text-cyan">{m.label}</p>
+                  <h2 className="mt-6 text-[28px] font-bold leading-snug !text-white md:text-[36px]">{m.title}</h2>
+                  <p className="phrase mt-6 max-w-lg text-[15.5px] leading-[1.95] text-white/70">{m.body}</p>
+                </Reveal>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
-          </div>
+          </Container>
         </section>
 
-        {/* Mission — dark section */}
-        <section className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#0d1b2a" }}>
-          <div className="absolute inset-0">
-            <Image
-              src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-              alt="サイプレスの理念"
-              fill
-              className="object-cover opacity-25"
-              sizes="100vw"
-            />
-          </div>
-          <div className="relative z-10 max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-8" style={{ color: "#475569" }}>
-                Mission — 使命
-              </p>
-              <h2
-                className="font-black leading-[1.15] tracking-tight mb-10"
-                style={{ fontSize: "clamp(30px, 4.5vw, 58px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}
-              >
-                地域企業が、<br />正しく選ばれる<br />仕組みをつくる。
-              </h2>
-              <p className="text-[16px] leading-[1.9]" style={{ color: "#94A3B8" }}>
-                素晴らしいサービス・技術・想いを持ちながら、Webやデジタルマーケティングの壁に阻まれ、本来届くべき顧客に届いていない中小企業・地域ビジネスのために、集客の仕組みを根本から変えます。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Section B: ミッション詳細 */}
-        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                Mission — 使命
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-              >
-                地域企業が、正しく選ばれる仕組みをつくる。
-              </h2>
-              <div className="space-y-4 text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                <p>
-                  日本の中小企業・地域ビジネスには、長年培ってきた技術や、地域に根ざした丁寧なサービス、顧客への深い思いやりがあります。その価値は、多くの大企業には真似できないものです。しかし、デジタルの世界では、その価値がほとんど可視化されていない現実があります。
-                </p>
-                <p>
-                  Webで検索しても出てこない。Googleマップに表示されない。情報発信が止まっていて、最新情報がわからない。こういった状況が積み重なることで、消費者は実力のある企業より、Webに力を入れている企業を選んでしまいます。
-                </p>
-                <p>
-                  私たちの使命は、その構造を変えることです。MEO・SEO・AIO・ホームページ制作・SNS・AI活用という6つの手段を組み合わせ、中小企業が持つ本来の価値を、デジタルの世界でも正しく届ける仕組みを設計します。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Vision */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
-                Vision — ビジョン
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-              >
-                AIとWebの力で、地域経済を再生する。
-              </h2>
-              <div className="space-y-4 text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                <p>
-                  私たちが目指す世界は、地域のあらゆる中小企業・店舗・施設・士業・医療機関が、大企業と対等なデジタル競争力を持てる社会です。予算の多寡ではなく、知識と仕組みの差を埋めることで、あらゆる企業が正しく評価される環境を作り出します。
-                </p>
-                <p>
-                  AIの登場は、その実現を一気に加速させました。コンテンツ制作・分析・投稿・改善のサイクルをAIで効率化することで、これまで大企業だけが実現できた継続的な情報発信が、中小企業にも可能になりました。私たちはその橋渡しをする会社でありたいと考えています。
-                </p>
-                <p>
-                  地域の優れた企業が正しく選ばれることは、消費者にとっても、地域経済にとっても良いことです。良い企業が存続し、成長することで、地域に雇用が生まれ、サービスの質が上がり、コミュニティが豊かになる。そのサイクルを支えることが、サイプレスの長期的な貢献です。
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Value */}
-        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Values — 大切にすること
-            </p>
-            <h2
-              className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-            >
-              7つのバリュー
-            </h2>
-            <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
-              私たちが日々の仕事において判断基準としている7つの価値観です。どれも独立した美徳ではなく、相互に支え合うことで機能します。
-            </p>
-            <div className="max-w-3xl space-y-0">
-              {VALUES.map((v) => (
-                <div
-                  key={v.num}
-                  className="grid grid-cols-[48px_1fr] gap-6 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{v.num}</span>
-                  <div>
-                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#0d1b2a" }}>{v.title}</h3>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{v.body}</p>
-                  </div>
-                </div>
-              ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
-            </div>
-          </div>
-        </section>
-
-        {/* Section C: 行動指針10条 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Principles — 行動指針
-            </p>
-            <h2
-              className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-            >
-              行動指針10条
-            </h2>
-            <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
-              バリューを日々の行動に落とし込んだ10の指針です。すべての業務・判断・コミュニケーションにおいて、これらを実践します。
-            </p>
-            <div className="max-w-3xl space-y-0">
-              {PRINCIPLES.map((p) => (
-                <div
-                  key={p.num}
-                  className="grid grid-cols-[48px_1fr] gap-6 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
-                  <div>
-                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#0d1b2a" }}>{p.title}</h3>
-                    <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{p.body}</p>
-                  </div>
-                </div>
-              ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
-            </div>
-          </div>
-        </section>
-
-        {/* Cinematic break */}
-        <section className="relative overflow-hidden" style={{ height: "280px" }}>
-          <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-            alt="サイプレスの理念を象徴するビジュアル"
-            fill
-            className="object-cover"
-            sizes="100vw"
+        {/* Values */}
+        <Section tone="white" labelledBy="philosophy-values">
+          <SectionHeading
+            id="philosophy-values"
+            eyebrow="Values"
+            title="7つのバリュー"
+            lead="日々の仕事で、判断の基準にしている価値観です。"
           />
-          <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.5)" }} />
-          <div className="absolute inset-0 flex items-center">
-            <div className="max-w-6xl mx-auto px-6 w-full">
-              <p className="text-[13px] font-semibold tracking-[0.18em] uppercase mb-3" style={{ color: "rgba(255,255,255,0.5)" }}>
-                Our Vision
-              </p>
-              <p
-                className="font-black leading-[1.2]"
-                style={{ fontSize: "clamp(22px, 3vw, 40px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}
-              >
-                良い企業が、<br />正しく評価される世界へ。
-              </p>
-            </div>
-          </div>
-        </section>
+          <ol className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+            {VALUES.map((v, i) => {
+              const t = splitTitle(v.title);
+              return (
+                <Reveal as="li" key={v.title} delay={(i % 4) * 0.04} className="bg-white p-7">
+                  <span className="t-num text-[13px] font-semibold text-accent">{v.num}</span>
+                  <h3 className="mt-3 text-[19px] font-bold">{t.ja}</h3>
+                  {t.en && <p className="font-en text-[12px] tracking-[0.08em] text-subtle">{t.en}</p>}
+                  <p className="phrase mt-3 text-[14px] leading-[1.85] text-muted">{v.body}</p>
+                </Reveal>
+              );
+            })}
+          </ol>
+        </Section>
 
-        {/* Section D: なぜこの理念か */}
-        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-                Why This Philosophy
-              </p>
-              <h2
-                className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-              >
+        {/* Principles */}
+        <Section tone="surface" labelledBy="philosophy-principles">
+          <SectionHeading
+            id="philosophy-principles"
+            eyebrow="Principles"
+            title="行動指針10条"
+            lead="バリューを毎日の行動に落とし込んだ10の指針です。開くと内容を読めます。"
+          />
+          <ol className="grid gap-3 md:grid-cols-2">
+            {PRINCIPLES.map((p) => (
+              <li key={p.num}>
+                <details className="group h-full rounded-2xl border border-line bg-white open:border-accent/30">
+                  <summary className="flex cursor-pointer list-none items-center gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                    <span className="t-num text-[14px] font-semibold text-accent">{p.num}</span>
+                    <span className="flex-1 text-[15.5px] font-bold leading-snug text-ink">{p.title}</span>
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-surface text-ink transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+                      <svg viewBox="0 0 12 12" className="h-3 w-3">
+                        <path d="M6 1.5v9M1.5 6h9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="px-6 pb-6 pl-[3.25rem] text-[14.5px] leading-[1.9] text-ink-2">{p.body}</p>
+                </details>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        {/* Why */}
+        <Section tone="white" labelledBy="philosophy-why">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-16">
+            <div>
+              <p className="eyebrow mb-4 text-accent">Why This Philosophy</p>
+              <h2 id="philosophy-why" className="t-h2">
                 なぜ、この理念が生まれたか
               </h2>
-              <div className="space-y-5 text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
-                <p>
-                  2026年5月、東京都葛飾区に株式会社サイプレスを設立したとき、私たちが最初に決めたのは、「何のための会社か」という問いへの答えでした。
-                </p>
-                <p>
-                  地域の中小企業・個人事業主と話すなかで、繰り返し同じ現実を目にしてきました。腕がある、サービスが丁寧、地域に根ざした信頼がある。それなのに、インターネットで検索しても出てこない。Googleマップでも上位に表示されない。その結果、知名度と予算のある企業に顧客を奪われ続けている現実。
-                </p>
-                <p>
-                  これは実力の差ではなく、デジタルマーケティングの知識と仕組みの差です。この差を埋めることに本質的な価値があると確信したとき、ミッション「地域企業が、正しく選ばれる仕組みをつくる」が生まれました。
-                </p>
-                <p>
-                  ビジョン「AIとWebの力で、地域経済を再生する」は、そのミッションを長期的な視点で語ったものです。AIの台頭により、中小企業でも大企業並みの情報発信ができる時代が到来しつつある。この転換期に正しいツールと知識を届けることが、地域経済の構造を変える力を持ちます。
-                </p>
-                <p>
-                  7つのバリューと10の行動指針は、この理念を日々の仕事に落とし込んだものです。大きな言葉を掲げるだけでなく、毎日の意思決定と行動のなかに理念を生きさせることを、私たちは最も大切にしています。
-                </p>
-              </div>
             </div>
-          </div>
-        </section>
-
-        {/* Section E: 理念を体現するサービス設計 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
-          <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Philosophy in Action
-            </p>
-            <h2
-              className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
-            >
-              理念を体現するサービス設計
-            </h2>
-            <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
-              {[
-                {
-                  num: "01",
-                  service: "MEO対策",
-                  philosophy: "Googleマップで地域企業を正しく可視化する。最も身近な「見つけてもらう」手段を整備します。",
-                },
-                {
-                  num: "02",
-                  service: "SEO対策",
-                  philosophy: "検索エンジンが評価する専門性と信頼性を構築。長期的な集客基盤を積み上げます。",
-                },
-                {
-                  num: "03",
-                  service: "AIO対策",
-                  philosophy: "AI検索時代に備え、引用されやすい権威あるコンテンツ設計を行います。",
-                },
-                {
-                  num: "04",
-                  service: "ホームページ制作",
-                  philosophy: "美しさと成果を両立した、SEOに強い高速サイトを設計・構築します。",
-                },
-                {
-                  num: "05",
-                  service: "SNS運用",
-                  philosophy: "継続的な情報発信で、ブランドと信頼を積み上げる習慣をつくります。",
-                },
-                {
-                  num: "06",
-                  service: "AI活用支援",
-                  philosophy: "業務効率化で生まれた時間を、価値あるコンテンツ発信に転換します。",
-                },
-              ].map((item) => (
-                <div
-                  key={item.num}
-                  className="grid grid-cols-[40px_1fr] gap-4 py-6 pr-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
-                >
-                  <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{item.num}</span>
-                  <div>
-                    <h3 className="font-black text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.service}</h3>
-                    <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{item.philosophy}</p>
-                  </div>
+            <div>
+              <p className="t-lead text-ink-2">
+                腕がある、サービスが丁寧、地域の信頼もある。それなのに、検索しても見つからない。これは実力の差ではなく、デジタルマーケティングの知識と仕組みの差です。この差を埋めることに価値があると確信して、理念が生まれました。
+              </p>
+              <details className="group mt-8 rounded-3xl border border-line bg-surface open:bg-white">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-[15px] font-bold text-ink [&::-webkit-details-marker]:hidden">
+                  <span className="group-open:hidden">設立の背景を詳しく読む</span>
+                  <span className="hidden group-open:inline">閉じる</span>
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white text-ink transition-transform duration-300 group-open:rotate-45" aria-hidden="true">
+                    <svg viewBox="0 0 12 12" className="h-3 w-3">
+                      <path d="M6 1.5v9M1.5 6h9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="space-y-4 px-6 pb-8 pt-2 md:px-8">
+                  {WHY_PARAGRAPHS.map((p) => (
+                    <p key={p} className="text-[15px] leading-[2] text-ink-2">
+                      {p}
+                    </p>
+                  ))}
                 </div>
-              ))}
-            </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "56rem", marginTop: "0" }} />
-            <div className="mt-10">
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-semibold transition-opacity hover:opacity-80"
-                style={{ background: "#0F172A", color: "#FFFFFF" }}
-              >
-                サービス一覧を見る
-              </Link>
+              </details>
             </div>
           </div>
-        </section>
+        </Section>
 
-        <FaqSection
-          items={FAQ_ITEMS}
-          heading="経営理念に関するよくある質問"
-          bgColor="#FFFFFF"
-        />
-
-        <RelatedPages
-          links={RELATED_LINKS}
-          heading="Related Pages"
-        />
-
+        <FaqSection items={FAQ_ITEMS} heading="経営理念に関するよくある質問" bgColor="#F4F6FA" initialCount={6} />
+        <RelatedPages links={RELATED_LINKS} />
         <PageContactCTA />
       </main>
       <Footer />

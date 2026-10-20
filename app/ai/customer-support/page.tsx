@@ -116,20 +116,20 @@ const relatedLinks = [
   { href: "/ai/blog-automation", label: "AIブログ自動化", desc: "コンテンツ量産の効率化" },
   { href: "/ai/content", label: "AIコンテンツ制作", desc: "コンテンツ全般のAI活用" },
   { href: "/ai/sns-automation", label: "SNS投稿自動化", desc: "SNS自動化の仕組み" },
-  { href: "/ai/seo-optimization", label: "AI×SEO最適化", desc: "AIを使ったSEO改善" },
-  { href: "/ai/data-analysis", label: "AIデータ分析", desc: "データ分析の自動化" },
-  { href: "/ai/writing", label: "AIライティング支援", desc: "ライティングの効率化" },
+  { href: "/ai/content", label: "AI×SEO最適化", desc: "AIを使ったSEO改善" },
+  { href: "/ai", label: "AIデータ分析", desc: "データ分析の自動化" },
+  { href: "/ai/content", label: "AIライティング支援", desc: "ライティングの効率化" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "LINE公式アカウント運用" },
-  { href: "/services/web", label: "Web制作サービス", desc: "サイト制作の概要" },
+  { href: "/services/web-design", label: "Web制作サービス", desc: "サイト制作の概要" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "SEOコンテンツ戦略" },
   { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化の概要" },
-  { href: "/industry/medical", label: "医療・クリニックのAI活用", desc: "クリニック向けAI導入" },
-  { href: "/industry/real-estate", label: "不動産業界のAI活用", desc: "不動産向けAI導入" },
-  { href: "/industry/restaurant", label: "飲食業界のAI活用", desc: "飲食店向けAI導入" },
-  { href: "/industry/beauty", label: "美容業界のAI活用", desc: "美容室向けAI導入" },
-  { href: "/industry/ec", label: "EC・通販のAI活用", desc: "ECサイト向けAI導入" },
-  { href: "/industry/law", label: "士業のAI活用", desc: "法律・税務向けAI導入" },
-  { href: "/industry/education", label: "教育・学習塾のAI活用", desc: "学習塾向けAI導入" },
+  { href: "/industries/clinic", label: "医療・クリニックのAI活用", desc: "クリニック向けAI導入" },
+  { href: "/industries/real-estate", label: "不動産業界のAI活用", desc: "不動産向けAI導入" },
+  { href: "/industries/restaurant", label: "飲食業界のAI活用", desc: "飲食店向けAI導入" },
+  { href: "/industries/beauty", label: "美容業界のAI活用", desc: "美容室向けAI導入" },
+  { href: "/industries/local-store", label: "EC・通販のAI活用", desc: "ECサイト向けAI導入" },
+  { href: "/industries/professional-service", label: "士業のAI活用", desc: "法律・税務向けAI導入" },
+  { href: "/industries/school", label: "教育・学習塾のAI活用", desc: "学習塾向けAI導入" },
   { href: "/contact", label: "無料相談", desc: "AIカスタマーサポートのご相談" },
 ];
 
@@ -172,7 +172,7 @@ export default function Page() {
           />
           <div className="absolute inset-0 flex items-center px-8 md:px-20" style={{ background: "rgba(13,27,42,0.5)" }}>
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>AI × Support</p>
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#3A9BDC", fontFamily: "var(--font-display)" }}>AI × Support</p>
               <p className="font-black text-[22px] md:text-[28px] leading-snug" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
                 24時間365日、AIが<br />顧客対応の最前線に立つ
               </p>
@@ -196,18 +196,18 @@ export default function Page() {
                 "個人情報・ハルシネーションリスクへの対策と安全な運用体制の作り方",
                 "自動対応率・顧客満足度・人件費削減などKPI設計と計測ツールの選び方",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E2E8F0" }}>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Capabilities */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Capabilities</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -221,7 +221,7 @@ export default function Page() {
                 { n: "04", t: "24時間対応体制の構築", b: "夜間・休日でもAIが初期対応を行います。「営業時間外です。翌日〇時に担当者から連絡します」など適切な自動応答で機会損失を防ぎます。" },
                 { n: "05", t: "多言語対応", b: "英語・中国語・韓国語など複数言語での自動応答が可能です。インバウンド対応や海外顧客へのサポートに活用できます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -229,7 +229,7 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -257,7 +257,7 @@ export default function Page() {
                 { n: "09", t: "個人情報の取り扱いが不安", b: "チャットで取得した氏名・連絡先などの個人情報管理に不安があります。プライバシーポリシーへの明記・APIオプトアウト設定・データ保存先の確認など、適切なデータガバナンスの設計が必要です。" },
                 { n: "10", t: "効果測定の仕組みがない", b: "チャットボットを導入しても「どれだけ効果が出ているか」が計測できていないケースがあります。自動対応率・エスカレーション率・顧客満足度スコアなどのKPIを設計し、ダッシュボードで定期的に確認する仕組みが必要です。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -265,13 +265,13 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -291,7 +291,7 @@ export default function Page() {
                 { n: "07", industry: "学習塾・教育", note: "コース・料金・体験申込の自動FAQ対応。「小学3年生に合うコースは？」「月謝はいくらですか？」「体験授業の申し込み方法は？」をAIが自動対応。保護者からの問い合わせピークタイム（夜間）への24時間対応で機会損失を防ぎます。" },
                 { n: "08", industry: "士業・コンサル", note: "相談内容・費用・手続きの自動FAQ対応。「相続の相談はできますか？」「初回相談は無料ですか？」「手続きの流れを教えて」をAIが自動応答します。複雑な法律・税務相談は人間にエスカレーションする設計が信頼性を保ちます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-5 p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-5 p-6" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
@@ -326,7 +326,7 @@ export default function Page() {
                 { n: "09", t: "スタッフ引き継ぎルール設定", b: "AIから人間にエスカレーションされた際の担当者・対応時間・返答方法を明文化します。チャットボットが「担当者が対応します。平日9時〜18時以内にご連絡します」と自動通知する設定も行います。" },
                 { n: "10", t: "月次精度改善", b: "毎月、チャットログを確認して「AIが答えられなかった質問」「ユーザーが不満を示した回答」を分析します。FAQへの追加・回答文の改善・エスカレーション条件の調整を月次で実施し、自動対応率を継続的に向上させます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -334,13 +334,13 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -359,7 +359,7 @@ export default function Page() {
                 { n: "06", t: "FAQチャットボット利用数", b: "月間のチャット開始数・会話数・ユニークユーザー数をチャットボットダッシュボードで計測します。利用数の増減を確認することで、ユーザーのチャットボット認知・利用習慣の定着度が分かります。" },
                 { n: "07", t: "月間問い合わせ件数（推移）", b: "電話・メール・フォーム・チャット全チャネルの問い合わせ件数を合算して月次で追います。AI導入後も定型質問の件数が変わらない場合はFAQページへの誘導強化や、チャットボットの認知度向上施策が必要です。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -367,7 +367,7 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

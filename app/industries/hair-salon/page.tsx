@@ -153,7 +153,7 @@ export default function HairSalonIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -209,8 +209,8 @@ export default function HairSalonIndustryPage() {
                 { n: "05", t: "GBPの写真が古く、現在のサロンの雰囲気が伝わっていない", b: "Googleマップのプロフィール写真が数年前のもの・少ない状態では、現在の内装・スタッフ・雰囲気が伝わりません。GBPの写真は来店前の決定打になるため、定期的な更新と質の高い内装・外観・スタッフ写真の追加が欠かせません。" },
                 { n: "06", t: "口コミ数が少なく競合との信頼度差が広がっている", b: "口コミ50件と5件のサロンが並んだとき、多くのユーザーは口コミが多い方を選びます。口コミ獲得のフロー（QRコード・LINE送信・カード配布）を整備し、来店のたびに自然に口コミが増える仕組みを作ることが競合との差別化につながります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -222,7 +222,7 @@ export default function HairSalonIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -264,7 +264,7 @@ export default function HairSalonIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SNS Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -306,7 +306,7 @@ export default function HairSalonIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -365,8 +365,8 @@ export default function HairSalonIndustryPage() {
                   b: "GBPのインサイト（検索数・写真閲覧数・電話タップ数）とInstagramのリーチ・エンゲージメントを月次で確認します。反応の高いコンテンツの傾向を分析し、次月の投稿計画と施策優先度に反映させる改善サイクルを回すことで、集客精度が継続的に向上します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px", flexShrink: 0, fontWeight: 700 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "28px", flexShrink: 0, fontWeight: 700 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -425,12 +425,12 @@ export default function HairSalonIndustryPage() {
                   desc: "登録者数の増加とメッセージ開封率はリピーター育成の健全性を示し、クーポン配信や次回予約リマインドの効果測定に使います。",
                 },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                  <div style={{ minWidth: "4px", width: "4px", height: "100%", background: "#c4b89a", flexShrink: 0, marginTop: "4px" }} />
+                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0", alignItems: "flex-start" }}>
+                  <div style={{ minWidth: "4px", width: "4px", height: "100%", background: "#3A9BDC", flexShrink: 0, marginTop: "4px" }} />
                   <div>
                     <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px", flexWrap: "wrap" }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", margin: 0 }}>{item.kpi}</p>
-                      <span style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em", background: "rgba(196,184,154,0.12)", padding: "2px 10px", borderRadius: "20px" }}>計測場所：{item.where}</span>
+                      <span style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em", background: "rgba(58,155,220,0.12)", padding: "2px 10px", borderRadius: "20px" }}>計測場所：{item.where}</span>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", margin: 0 }}>{item.desc}</p>
                   </div>
@@ -443,7 +443,7 @@ export default function HairSalonIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -463,12 +463,12 @@ export default function HairSalonIndustryPage() {
                 },
                 {
                   t: "地元密着エリア（葛飾区・東京東部）への深い理解",
-                  b: "葛飾区白鳥を拠点とするサイプレスは、亀有・金町・新小岩・柴又など葛飾区の地域特性と競合状況を熟知しています。地元ならではのキーワード選定・競合分析・エリア別集客戦略の提案が可能です。",
+                  b: "葛飾区亀有を拠点とするサイプレスは、亀有・金町・新小岩・柴又など葛飾区の地域特性と競合状況を熟知しています。地元ならではのキーワード選定・競合分析・エリア別集客戦略の提案が可能です。",
                 },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -476,7 +476,7 @@ export default function HairSalonIndustryPage() {
         </section>
 
         {/* サイプレスができること */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -489,7 +489,7 @@ export default function HairSalonIndustryPage() {
                 { t: "ホットペッパー依存脱却の自社集客設計", b: "自社予約サイト・LINE予約・GBP予約を整備し、ホットペッパーからの顧客を段階的に自社集客に移行する設計を行います。手数料コストの削減と顧客の自社資産化を実現します。" },
                 { t: "スタイリスト別Instagram・指名予約増加設計", b: "各スタイリストのInstagramアカウント設計・店舗アカウントとの連動設計で指名予約を増加させます。スタイリストの個性と得意メニューを活かした投稿計画を作成します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#ffffff" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #E2E8F0", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -498,7 +498,7 @@ export default function HairSalonIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="美容室・ヘアサロンのWeb集客に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="美容室・ヘアサロンのWeb集客に関するよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="美容室・ヘアサロンのWeb集客ご相談"

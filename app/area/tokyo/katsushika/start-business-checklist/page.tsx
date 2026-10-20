@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で起業する前に確認したい開業準備チェックリスト",
     description: "葛飾区で起業・開業を検討している方向けに、創業前に確認すべき事業設計・資金計画・集客・ホームページ・GBP・SNS・営業先・収益柱のチェックリストをまとめました。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -76,8 +76,8 @@ const S = {
   h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  checkItem: { display: "flex", gap: "16px", padding: "20px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
-  checkMark: { color: "#c4b89a", fontSize: "18px", minWidth: "24px", paddingTop: "1px" },
+  checkItem: { display: "flex", gap: "16px", padding: "20px 0", borderTop: "1px solid #E2E8F0" } as React.CSSProperties,
+  checkMark: { color: "#3A9BDC", fontSize: "18px", minWidth: "24px", paddingTop: "1px" },
   itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" },
   itemBody: { fontSize: "13px", color: "#374151", lineHeight: "1.85" },
 };
@@ -235,7 +235,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -267,8 +267,8 @@ export default function Page() {
             <p style={S.body}>以下の8カテゴリのチェックリストを順番に確認してください。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px", maxWidth: "800px" }}>
               {categories.map((cat, i) => (
-                <div key={cat} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px" }}>0{i + 1}</span>
+                <div key={cat} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "28px" }}>0{i + 1}</span>
                   <span style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a" }}>{cat}</span>
                 </div>
               ))}
@@ -276,7 +276,7 @@ export default function Page() {
           </div>
         </section>
 
-        <CheckSection title="事業設計チェック" items={businessDesignItems} bg="#f8f6f2" />
+        <CheckSection title="事業設計チェック" items={businessDesignItems} bg="#F4F6FA" />
 
         {/* SECTION 4: 資金計画 */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
@@ -301,17 +301,17 @@ export default function Page() {
           </div>
         </section>
 
-        <CheckSection title="集客導線チェック" items={marketingItems} bg="#f8f6f2" />
+        <CheckSection title="集客導線チェック" items={marketingItems} bg="#F4F6FA" />
         <CheckSection title="ホームページ制作チェック" items={hpItems} bg="#ffffff" />
-        <CheckSection title="Googleビジネスプロフィール（GBP）チェック" items={gbpItems} bg="#f8f6f2" />
+        <CheckSection title="Googleビジネスプロフィール（GBP）チェック" items={gbpItems} bg="#F4F6FA" />
         <CheckSection title="SNS・口コミ導線チェック" items={snsItems} bg="#ffffff" />
-        <CheckSection title="営業先・販路チェック" items={salesItems} bg="#f8f6f2" />
+        <CheckSection title="営業先・販路チェック" items={salesItems} bg="#F4F6FA" />
         <CheckSection title="収益柱チェック" items={revenueItems} bg="#ffffff" />
 
         {/* SECTION 11: 販売パートナー制度 */}
         <section style={{ background: "#0d1b2a", padding: "72px 0" }}>
           <div style={S.container}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "20px" }}>
               販売パートナー制度を検討するタイミング
             </h2>
@@ -325,13 +325,13 @@ export default function Page() {
         </section>
 
         {/* SECTION 12: 関連ページ */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
@@ -343,7 +343,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区での開業準備についてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#F4F6FA"
         />
 
         <PageContactCTA

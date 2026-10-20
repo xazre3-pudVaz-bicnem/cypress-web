@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: "水道工事・水漏れ修理業者のWeb集客。MEO・ホームページ制作で緊急依頼と通常工事の問い合わせを増やします。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries/plumbing" },
@@ -180,7 +181,7 @@ export default function PlumbingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -226,7 +227,7 @@ export default function PlumbingPage() {
                   desc: "スマホから即電話できる設計・対応エリア明記・施工事例・料金表示で信頼と問い合わせ数を向上させます。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #e8e4dc", textDecoration: "none", background: "#f9f8f5" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E2E8F0", textDecoration: "none", background: "#F4F6FA" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>詳細を見る →</p>
@@ -236,7 +237,7 @@ export default function PlumbingPage() {
           </div>
         </section>
 
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Why MEO Wins</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -265,8 +266,8 @@ export default function PlumbingPage() {
                   b: "Googleの口コミで「丁寧な対応」「料金が明確」「説明がわかりやすい」という評価が積み上がることで、大手チェーンに対する地元業者の信頼が形成されます。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -278,7 +279,7 @@ export default function PlumbingPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -291,8 +292,8 @@ export default function PlumbingPage() {
                 { n: "03", t: "資格・技術力が伝わらず信頼性が低く見られる", b: "「水道工事士」「管工事施工管理技士」「給水装置工事主任技術者」などの資格はそのまま信頼の証明です。資格情報・施工実績・代表プロフィールをホームページとGBPで明示することで、悪質業者との差別化と信頼獲得が同時に実現します。" },
                 { n: "04", t: "対応エリアが明確でなく地域の顧客に届いていない", b: "「○○区・○○市・○○町対応」というエリア情報がGBPとホームページに記載されていないと、地域検索でのヒット率が下がります。主要対応エリアをページとGBPの両方で明示し、エリア別の地域ページを設けることで地域ごとの検索流入を獲得します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -306,11 +307,11 @@ export default function PlumbingPage() {
         {/* サイプレスの支援 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの水道工事・水漏れ修理業向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)" }}>
               {[
                 { label: "MEO緊急対応設計", desc: "「水漏れ ○○区 24時間」「排水管詰まり ○○市 今すぐ」でGoogleマップ上位表示を実現します。緊急対応・対応エリア・電話番号を最前面に配置したGBP設計で即問い合わせを獲得します。" },
                 { label: "ランディングページ制作", desc: "緊急修理専用LP・給湯器交換LP・定期点検LPなどサービス別の高CV率ランディングページを制作します。スマホ即電話ボタン・料金目安・施工事例・資格情報を最適配置します。" },
@@ -327,7 +328,7 @@ export default function PlumbingPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -379,8 +380,8 @@ export default function PlumbingPage() {
                   b: "GBPの電話タップ数・検索表示回数・ホームページ問い合わせ件数・エリアページの検索流入数を月次でレポートします。数値をもとに施策の優先順位を見直し、緊急依頼と計画工事の両方の問い合わせを継続的に増やします。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -434,10 +435,10 @@ export default function PlumbingPage() {
                   desc: "Web経由の問い合わせが実際の受注につながった割合を計測し、問い合わせの質と現場対応の改善に活用します。",
                 },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", padding: "20px 0", borderTop: "1px solid #e8e4dc", alignItems: "start" }}>
+                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", padding: "20px 0", borderTop: "1px solid #E2E8F0", alignItems: "start" }}>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -449,7 +450,7 @@ export default function PlumbingPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -476,8 +477,8 @@ export default function PlumbingPage() {
                   b: "資格情報・施工事例・代表プロフィール・建設業許可番号・対応エリアなどを整理して発信することで、悪質業者との差別化と地元業者としての信頼を積み上げます。地域の顧客に「安心して依頼できる業者」として認知される情報設計を行います。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ borderTop: "1px solid rgba(196,184,154,0.3)", paddingTop: "24px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
+                <div key={item.n} style={{ borderTop: "1px solid rgba(58,155,220,0.3)", paddingTop: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "12px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -487,7 +488,7 @@ export default function PlumbingPage() {
         </section>
 
         {/* 対応エリア */}
-        <section style={{ background: "#f8f6f2", padding: "48px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "48px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Service Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,26px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>対応エリア</h2>

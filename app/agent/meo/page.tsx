@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description: "MEO運用はサイプレスが全対応。代理店は販売に専念するだけ。飲食店・美容室・整体・歯科に提案しやすい店舗集客商材。副業・個人事業主歓迎。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/agent/meo" },
@@ -183,8 +184,8 @@ export default function AgentMeoPage() {
                 { n: "05", title: "AI検索時代の重要性が高まっている", body: "AIO対策（AI検索最適化）との組み合わせで、より広いWeb集客を提案できます。今後ますます重要になる商材です。" },
                 { n: "06", title: "経営者が課題を認識している", body: "「マップに出てこない」「競合が上位にいる」という課題を自覚している経営者が多く、提案を受け入れやすい状態になっています。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "8px" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "24px", background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "8px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                 </div>
@@ -194,7 +195,7 @@ export default function AgentMeoPage() {
         </section>
 
         {/* 役割分担 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Role Division</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -202,24 +203,24 @@ export default function AgentMeoPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8" style={{ maxWidth: "820px" }}>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "20px", padding: "12px 16px", background: "#e8e4dc" }}>代理店様のご担当</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "20px", padding: "12px 16px", background: "#E2E8F0" }}>代理店様のご担当</p>
                 {["見込み店舗の開拓・アポイント", "MEO対策の必要性・効果の説明", "サイプレスの担当者紹介・商談設定", "顧客情報の共有・受注手続き", "必要に応じた顧客フォロー"].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
                     <span style={{ color: "#0d1b2a", flexShrink: 0 }}>✓</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #E2E8F0" }} />
               </div>
               <div>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "20px", padding: "12px 16px", background: "#0d1b2a" }}>サイプレスが担当</p>
                 {["Googleビジネスプロフィール分析・最適化", "カテゴリ・サービス情報の整備", "写真投稿・Googleポスト投稿運用", "口コミへの返信サポート", "Googleマップ順位改善施策の実施", "月次運用レポートの作成", "顧客からの技術的な問い合わせ対応"].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
                     <span style={{ color: "#9ca3af", flexShrink: 0 }}>→</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #E2E8F0" }} />
               </div>
             </div>
           </div>
@@ -254,7 +255,7 @@ export default function AgentMeoPage() {
                 { label: "MEO＋SEO対策", desc: "Googleマップと検索結果の両方で上位表示を狙う二軸の集客戦略。地域ビジネスの集客を最大化します。" },
                 { label: "MEO＋AIO対策", desc: "AI検索（ChatGPT・Gemini）からも引用・紹介されるよう最適化。次世代型のWeb集客をパッケージで提案できます。" },
               ].map((item) => (
-                <div key={item.label} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
+                <div key={item.label} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
@@ -280,7 +281,7 @@ export default function AgentMeoPage() {
                 { title: "ホームページへのアクセスが少ない", body: "「ホームページを作ったが来店に繋がらない」という店舗には、MEO対策でGoogleマップ経由の流入を増やすことをセット提案できます。" },
                 { title: "新規客の獲得に苦しんでいる", body: "常連客に頼りきりで新規集客の手段が乏しい地域店舗は、Googleマップ経由の新規来店増加への期待値が高く、提案が刺さりやすいです。" },
               ].map((item) => (
-                <div key={item.title} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "24px", background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                 </div>
@@ -290,7 +291,7 @@ export default function AgentMeoPage() {
         </section>
 
         {/* 販売フロー */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Sales Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -304,7 +305,7 @@ export default function AgentMeoPage() {
                 { step: "Step 4", title: "受注・契約手続き", body: "顧客の合意後、契約書面を取り交わします。以降の実務対応（GBP設定・写真投稿・レポート）はサイプレスが行います。" },
                 { step: "Step 5", title: "継続フォロー・追加提案", body: "月次レポートを顧客に共有しながら継続的な関係を維持します。効果が出た段階でホームページ制作・SEO対策の追加提案を行うチャンスにもなります。" },
               ].map((item, i) => (
-                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
                     <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
                   </div>
@@ -315,13 +316,13 @@ export default function AgentMeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 関連ページ */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "24px" }}>関連ページ</h2>
             <div className="grid md:grid-cols-3 gap-4">
@@ -333,7 +334,7 @@ export default function AgentMeoPage() {
                 { href: "/agent/faq", label: "代理店募集FAQ" },
                 { href: "/partner/referral", label: "取次店・紹介パートナー募集" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #e8e4dc", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #E2E8F0", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
                   {item.label} →
                 </Link>
               ))}

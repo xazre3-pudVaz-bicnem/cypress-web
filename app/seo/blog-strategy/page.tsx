@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "SEOに強いブログ戦略の実践ガイド。記事テーマ設計からリライト改善・AIライティング活用まで解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo/blog-strategy" },
@@ -120,19 +121,19 @@ const relatedLinks = [
   { href: "/blog", label: "サイプレスのブログ", desc: "最新SEO情報を毎月更新" },
   { href: "/knowledge/content-seo", label: "コンテンツSEO基礎", desc: "初心者向けガイド" },
   { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・権威性の高め方" },
-  { href: "/knowledge/rewrite", label: "リライトガイド", desc: "記事改善の判断基準と手順" },
-  { href: "/knowledge/topic-cluster", label: "トピッククラスター設計", desc: "ピラーとクラスターの作り方" },
+  { href: "/knowledge/content-seo", label: "リライトガイド", desc: "記事改善の判断基準と手順" },
+  { href: "/knowledge/content-seo", label: "トピッククラスター設計", desc: "ピラーとクラスターの作り方" },
   { href: "/column/seo", label: "SEOコラム", desc: "SEOの最新情報・基礎解説" },
   { href: "/column/content-marketing", label: "コンテンツマーケティングコラム", desc: "記事設計の実践知識" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
   { href: "/cost/seo", label: "SEO対策の費用", desc: "ブログ運用込みの料金目安" },
-  { href: "/checklist/seo", label: "SEOチェックリスト", desc: "記事公開前の確認項目" },
-  { href: "/cases/seo", label: "SEO改善事例", desc: "ブログ運用による流入増加の事例" },
-  { href: "/lp/seo-diagnosis", label: "無料SEO診断", desc: "記事の課題を無料で確認" },
+  { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "記事公開前の確認項目" },
+  { href: "/cases/service/seo", label: "SEO改善事例", desc: "ブログ運用による流入増加の事例" },
+  { href: "/services/seo", label: "無料SEO診断", desc: "記事の課題を無料で確認" },
   { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "ブログを活かせるサイト設計" },
-  { href: "/knowledge/ai-writing", label: "AIライティング活用ガイド", desc: "ChatGPT・AIツールとSEOの関係" },
-  { href: "/knowledge/content-calendar", label: "コンテンツカレンダー作成ガイド", desc: "3ヶ月先まで計画する方法" },
-  { href: "/knowledge/blog-category", label: "ブログカテゴリ設計ガイド", desc: "専門性を高めるカテゴリ構成" },
+  { href: "/ai/content", label: "AIライティング活用ガイド", desc: "ChatGPT・AIツールとSEOの関係" },
+  { href: "/sns/content-calendar", label: "コンテンツカレンダー作成ガイド", desc: "3ヶ月先まで計画する方法" },
+  { href: "/seo/blog-strategy", label: "ブログカテゴリ設計ガイド", desc: "専門性を高めるカテゴリ構成" },
 ];
 
 export default function BlogStrategyPage() {
@@ -177,7 +178,7 @@ export default function BlogStrategyPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -192,12 +193,12 @@ export default function BlogStrategyPage() {
                 "AIライティングツールの活用方法と、SEO的に問題なく使うための注意点",
                 "業種別のブログテーマ設計パターンと、公開から成果計測までの実施フロー",
               ].map((text, i) => (
-                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -205,7 +206,7 @@ export default function BlogStrategyPage() {
         {/* コンテンツ戦略なしのリスク */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Strategy Risks</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Strategy Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コンテンツ戦略なしのSEOで失う4つの機会
             </h2>
@@ -216,7 +217,7 @@ export default function BlogStrategyPage() {
                 { t: "継続できずにコンテンツが停止", b: "毎回「何を書こう」から始める運用は必ず行き詰まります。コンテンツカレンダーで3ヶ月先までテーマを決めておくことで、継続できる体制を作れます。" },
                 { t: "ブランドの専門性が伝わらない", b: "テーマがバラバラなブログは「この会社の専門は何か」がGoogleにもユーザーにも伝わりません。特定領域での専門性を示すコンテンツ群がE-E-A-T向上の核心です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -247,7 +248,7 @@ export default function BlogStrategyPage() {
                 { title: "記事を公開したまま放置している", body: "コンテンツは公開で終わりではなく、GSCデータを見てリライト・内部リンク追加・情報更新を行うサイクルが重要です。特に1〜3年前の記事は情報が古くなり、競合に追い抜かれていることがあります。" },
                 { title: "内部リンクが設定されていない", body: "記事に他の関連記事や主要サービスページへの内部リンクがない状態。新記事はサイロ構造に組み込んでこそクロール・PageRank伝播・回遊率向上の効果があります。公開時に内部リンク設定を標準作業に含めます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6 pr-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6 pr-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -256,12 +257,12 @@ export default function BlogStrategyPage() {
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* コンテンツ戦略の設計 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Content Strategy</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -276,7 +277,7 @@ export default function BlogStrategyPage() {
                 { title: "内部リンク計画の立案", body: "新規記事を公開するたびに、既存ページとの内部リンクを設計します。新記事→関連コンテンツ、関連コンテンツ→新記事の相互リンクを設定することで、クロールとページ評価の伝播を促進します。記事公開チェックリストに「内部リンク設定」を必須項目として組み込みます。" },
                 { title: "AIO対策を兼ねたコンテンツ設計", body: "ChatGPT・Gemini・Perplexityなどのレビューで引用されるには、E-E-A-Tが高く・要点が整理された・FAQ形式のコンテンツが有効です。見出し構造を明確に・数字・事例・専門家の知見を含める・FAQ形式で疑問に直接答えるフォーマットが引用されやすい文章構造です。AIO（AI検索最適化）を意識したコンテンツ設計をブログ戦略に組み込みます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -338,21 +339,21 @@ export default function BlogStrategyPage() {
                   body: "エリア別の家賃・物件相場・住み心地レポート・物件選びのポイント・引越し・住み替えの流れ。「〜区 一人暮らし 家賃相場」「マンション 購入 失敗しない 選び方」などの意向キーワードで購買検討層に直接アプローチします。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-7 pr-8" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-7 pr-8" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[11px] font-semibold tracking-[0.18em] uppercase px-2 py-1" style={{ background: "#F9F8F5", color: "#6B7280" }}>{item.label}</span>
+                    <span className="text-[11px] font-semibold tracking-[0.18em] uppercase px-2 py-1" style={{ background: "#F4F6FA", color: "#6B7280" }}>{item.label}</span>
                     <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.industry}</p>
                   </div>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* 設計・実施フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -374,7 +375,7 @@ export default function BlogStrategyPage() {
                 { step: "STEP 09", title: "リライト・統合・削除の判断と実施", body: "表示回数が多いのに11〜30位の記事はリライトで大きく改善できます。流入がゼロで薄いコンテンツはnoindexまたは削除を検討します。テーマが重複する複数記事は1本に統合（301リダイレクト）することで評価を集約します。" },
                 { step: "STEP 10", title: "コンテンツカレンダーの見直しと次サイクルへ", body: "毎月のデータを踏まえてコンテンツカレンダーを更新します。成果が出ているテーマは深掘り（クラスター拡充）し、成果が出ていないテーマはキーワード見直しを行います。このPDCAサイクルを継続することがコンテンツSEOの成果を複利で積み上げるための鍵です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[11px] font-semibold tracking-[0.12em] shrink-0 mt-1" style={{ color: "#9CA3AF", minWidth: "64px" }}>{item.step}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -382,7 +383,7 @@ export default function BlogStrategyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -407,7 +408,7 @@ export default function BlogStrategyPage() {
                 { metric: "セッション内ページ回遊数", tool: "Google Analytics", desc: "ブログ記事に訪れたユーザーがセッション内で何ページ閲覧したか。内部リンクが機能しているかの指標で、1.2〜1.5ページ以下であれば内部リンクの充実を優先します。" },
                 { metric: "リライト後の順位変動", tool: "Google Search Console", desc: "リライト前後の平均掲載順位・クリック数・インプレッション数を比較します。リライトから2〜4週間後に変動が現れることが多く、効果を計測して次のリライト優先度に反映します。" },
               ].map((item, i) => (
-                <div key={i} className="py-6 pr-8" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6 pr-8" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex items-start gap-4 mb-2">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <div>
@@ -419,12 +420,12 @@ export default function BlogStrategyPage() {
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* サイプレスの支援内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -438,7 +439,7 @@ export default function BlogStrategyPage() {
                 { title: "既存記事のリライト", body: "現在の記事のGSCデータを分析し、11〜30位の記事を優先的にリライトします。情報の追加・構成改善・タイトル最適化・内部リンクの充実を実施します。リライト後の効果計測レポートもご提供します。" },
                 { title: "月次コンテンツ運用サポート", body: "毎月のSEO計測レポート・翌月のコンテンツ計画提案・リライト優先度リスト・内部リンク改善提案を月次でご提供します。コンテンツ戦略の「プロジェクトマネージャー」として伴走するプランです。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -446,7 +447,7 @@ export default function BlogStrategyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

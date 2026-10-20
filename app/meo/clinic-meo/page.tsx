@@ -117,18 +117,18 @@ const relatedLinks = [
   { href: "/meo/local-keyword", label: "ローカルキーワード", desc: "地域キーワード選定" },
   { href: "/meo/construction-meo", label: "建設業のMEO対策", desc: "工務店・リフォーム向け" },
   { href: "/meo/restaurant-meo", label: "飲食店のMEO対策", desc: "飲食店向けGBP最適化" },
-  { href: "/meo/beauty-meo", label: "美容室のMEO対策", desc: "サロン向けMEO" },
+  { href: "/meo/beauty-salon-meo", label: "美容室のMEO対策", desc: "サロン向けMEO" },
   { href: "/seo", label: "SEO対策とは", desc: "検索エンジン最適化" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEOサービス詳細" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索対策" },
   { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "ChatGPT・Gemini対策" },
-  { href: "/services/content-marketing", label: "コンテンツマーケティング", desc: "集客コンテンツ制作" },
+  { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "集客コンテンツ制作" },
   { href: "/services/web-design", label: "Webデザイン", desc: "クリニックサイト制作" },
-  { href: "/industries/dental", label: "歯科のWeb集客", desc: "歯科医院向け支援" },
-  { href: "/areas/tokyo", label: "東京のMEO対策", desc: "東京都内対応" },
-  { href: "/areas/osaka", label: "大阪のMEO対策", desc: "大阪府内対応" },
-  { href: "/blog/meo", label: "MEO対策コラム", desc: "MEOノウハウ記事" },
+  { href: "/industries/clinic", label: "歯科のWeb集客", desc: "歯科医院向け支援" },
+  { href: "/area/tokyo", label: "東京のMEO対策", desc: "東京都内対応" },
+  { href: "/area/nationwide", label: "大阪のMEO対策", desc: "大阪府内対応" },
+  { href: "/blog/category/meo", label: "MEO対策コラム", desc: "MEOノウハウ記事" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "MEO対策のご相談" },
 ];
 
@@ -138,7 +138,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
+        <section style={{ background: "#F4F6FA" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -194,7 +194,7 @@ export default function Page() {
                 "診療科目別（内科・歯科・皮膚科・整形外科など）の活用ポイントと注意事項",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -205,7 +205,7 @@ export default function Page() {
         {/* Risks (dark) */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Clinic MEO Challenges</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Clinic MEO Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               クリニック・歯科がMEO対策をしないと起きる4つのリスク
             </h2>
@@ -228,7 +228,7 @@ export default function Page() {
                   b: "GBPの予約URLが未設定、または古いURLのままでは、予約したい患者がその場で離脱します。GBPから直接予約できる導線設計が患者数向上に直結します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -238,7 +238,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -297,7 +297,7 @@ export default function Page() {
                   b: "患者への苦情返信で感情的な表現や否定・反論を行うと、第三者に「対応の悪いクリニック」という印象を与えます。全口コミに対して感謝と改善姿勢を示す冷静な返信が、長期的な評判管理の基本です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -359,7 +359,7 @@ export default function Page() {
                   b: "施術結果の写真・比較・成功事例はGBPへの掲載が医療広告ガイドライン上できません。施設の外観・受付・清潔な空間の写真を中心に構成し、詳細はウェブサイトへの誘導で対応します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -372,7 +372,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -431,7 +431,7 @@ export default function Page() {
                   b: "近隣の調剤薬局・連携医療機関の情報をGBPに記載し、患者の利便性を高めます。ウェブサイトにアクセスマップ・最寄り駐車場情報も整備し、初診患者のナビゲーションをサポートします。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -488,7 +488,7 @@ export default function Page() {
                   b: "GBPインサイトの「検索クエリ」でどのキーワードで表示されているかを確認します。「〇〇市 歯科」「近く 内科」など想定キーワードでの表示回数を増やすことがMEO改善の目標です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -501,7 +501,7 @@ export default function Page() {
         </section>
 
         {/* Why It Matters */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why It Matters</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -535,7 +535,7 @@ export default function Page() {
                   b: "開業前からGBPを設定・最適化することで、地域での認知度を早期に高められます。口コミが少ない時期でも写真・情報充実で差別化できます。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>

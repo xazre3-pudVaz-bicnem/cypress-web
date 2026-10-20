@@ -27,6 +27,7 @@ export async function generateMetadata({
       description: page.metaDescription,
       locale: "ja_JP",
       type: "article",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
   };
@@ -88,7 +89,7 @@ export default async function KnowledgePage({
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f9f8f5", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", alignItems: "center", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -111,7 +112,7 @@ export default async function KnowledgePage({
             <div
               style={{
                 display: "inline-block",
-                background: "#f0ede6",
+                background: "#EDF1F7",
                 color: "#6b7280",
                 fontSize: "11px",
                 fontWeight: 600,
@@ -153,8 +154,8 @@ export default async function KnowledgePage({
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div
               style={{
-                background: "#f9f8f5",
-                border: "1px solid #e8e4dc",
+                background: "#F4F6FA",
+                border: "1px solid #E2E8F0",
                 padding: "28px 32px",
                 maxWidth: "600px",
               }}
@@ -199,7 +200,7 @@ export default async function KnowledgePage({
                 <div
                   key={i}
                   style={{
-                    borderTop: "1px solid #e8e4dc",
+                    borderTop: "1px solid #E2E8F0",
                     paddingTop: "40px",
                     marginTop: "40px",
                   }}
@@ -246,7 +247,7 @@ export default async function KnowledgePage({
         </section>
 
         {/* FAQ */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p
               style={{
@@ -276,7 +277,7 @@ export default async function KnowledgePage({
                 <div
                   key={i}
                   style={{
-                    borderTop: "1px solid #e8e4dc",
+                    borderTop: "1px solid #E2E8F0",
                     padding: "28px 0",
                   }}
                 >
@@ -306,7 +307,7 @@ export default async function KnowledgePage({
                   </p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -342,8 +343,8 @@ export default async function KnowledgePage({
                     style={{
                       display: "block",
                       padding: "20px 24px",
-                      border: "1px solid #e8e4dc",
-                      background: "#f9f8f5",
+                      border: "1px solid #E2E8F0",
+                      background: "#F4F6FA",
                       textDecoration: "none",
                     }}
                   >

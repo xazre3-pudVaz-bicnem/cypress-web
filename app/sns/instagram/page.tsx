@@ -52,23 +52,23 @@ const relatedLinks = [
   { href: "/sns/content-calendar", label: "コンテンツカレンダー", desc: "投稿スケジュール管理" },
   { href: "/sns/post-planning", label: "投稿企画・運用設計", desc: "コンテンツ制作" },
   { href: "/sns/local-sns", label: "地域SNS集客", desc: "地域向けSNS戦略" },
-  { href: "/sns/reels", label: "リール動画制作", desc: "短尺動画で拡散" },
-  { href: "/sns/stories", label: "ストーリーズ活用", desc: "日常的な接点作り" },
+  { href: "/sns/instagram", label: "リール動画制作", desc: "短尺動画で拡散" },
+  { href: "/sns/instagram", label: "ストーリーズ活用", desc: "日常的な接点作り" },
   { href: "/services/sns", label: "SNSサービス詳細", desc: "SNS運用サービス一覧" },
   { href: "/ai/sns-automation", label: "SNS自動化", desc: "AIによる効率化" },
   { href: "/seo", label: "SEO対策", desc: "検索上位表示の戦略" },
-  { href: "/seo/local", label: "ローカルSEO", desc: "地域検索の最適化" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索の最適化" },
   { href: "/meo", label: "MEO対策", desc: "Googleマップ集客" },
-  { href: "/meo/review", label: "口コミ管理", desc: "レビュー戦略" },
+  { href: "/meo/review-management", label: "口コミ管理", desc: "レビュー戦略" },
   { href: "/aio", label: "AIO対策", desc: "AI検索への最適化" },
   { href: "/services", label: "サービス一覧", desc: "全サービスを見る" },
-  { href: "/industry/restaurant", label: "飲食業界向け", desc: "飲食店のInstagram活用" },
-  { href: "/industry/beauty", label: "美容業界向け", desc: "美容室のSNS戦略" },
-  { href: "/industry/dental", label: "歯科医院向け", desc: "歯科のSNS運用" },
-  { href: "/industry/construction", label: "建設・リフォーム向け", desc: "施工事例の発信" },
-  { href: "/industry/retail", label: "小売・EC向け", desc: "商品訴求の方法" },
+  { href: "/industries/restaurant", label: "飲食業界向け", desc: "飲食店のInstagram活用" },
+  { href: "/industries/beauty", label: "美容業界向け", desc: "美容室のSNS戦略" },
+  { href: "/industries/clinic", label: "歯科医院向け", desc: "歯科のSNS運用" },
+  { href: "/industries/construction", label: "建設・リフォーム向け", desc: "施工事例の発信" },
+  { href: "/industries/local-store", label: "小売・EC向け", desc: "商品訴求の方法" },
   { href: "/area/tokyo", label: "東京エリア", desc: "東京の集客支援" },
-  { href: "/area/osaka", label: "大阪エリア", desc: "大阪の集客支援" },
+  { href: "/area/nationwide", label: "大阪エリア", desc: "大阪の集客支援" },
   { href: "/contact", label: "無料相談", desc: "Instagram運用の相談" },
 ];
 
@@ -87,7 +87,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -135,8 +135,8 @@ export default function Page() {
                 "業種別（飲食・美容・歯科・不動産など）のInstagramコンテンツ活用事例",
                 "インサイト分析で集客効果を計測しPDCAを回すための指標と手順",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.75" }}>{item}</p>
                 </div>
               ))}
@@ -145,7 +145,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>COMMON PROBLEMS</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -194,7 +194,7 @@ export default function Page() {
                   body: "通常投稿はブランド構築・信頼蓄積・オーガニックリーチが目的です。広告は特定のキャンペーン・新規顧客獲得・商圏外へのリーチ拡大に適しています。まずオーガニック運用で世界観を作り、広告で増幅させる順序が効果的です。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
@@ -256,9 +256,9 @@ export default function Page() {
                   note: "会員のビフォーアフターは信頼構築に最も効果的なコンテンツです。トレーニング動画・食事アドバイス・モチベーション投稿でフォロワーとの継続的な接点を作ります。「無料体験へのDM誘導」をキャプションとストーリーズに組み込む導線設計が重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px", border: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ padding: "28px", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "6px" }}>{item.industry}</p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "12px", fontFamily: "var(--font-serif)", letterSpacing: "0.03em" }}>{item.content}</p>
+                  <p style={{ fontSize: "12px", color: "#3A9BDC", marginBottom: "12px", fontFamily: "var(--font-serif)", letterSpacing: "0.03em" }}>{item.content}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                 </div>
               ))}
@@ -267,7 +267,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・運用フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>IMPLEMENTATION FLOW</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -286,7 +286,7 @@ export default function Page() {
                 { title: "インサイト分析", body: "月次でフォロワー数推移・リーチ数・エンゲージメント率・プロフィールアクセス数・ウェブサイトタップ数を確認します。高パフォーマンス投稿の共通点を分析し、翌月の投稿計画に反映します。" },
                 { title: "月次改善", body: "分析結果をもとにコンテンツテーマ・投稿頻度・ハッシュタグ・フォーマット比率を調整します。四半期ごとにプロフィール・ハイライト・フィードコンセプトを見直し、アカウントの成長フェーズに合わせて戦略をアップデートします。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
@@ -315,11 +315,11 @@ export default function Page() {
                 { kpi: "プロフィールアクセス数", where: "Instagramインサイト > プロフィールへのアクセス", note: "投稿またはリールを見た後にプロフィールページを訪問した数です。フォロー・問い合わせへの転換前段階の指標として月次で追跡します。" },
                 { kpi: "ウェブサイトタップ数", where: "Instagramインサイト > ウェブサイトのタップ", note: "プロフィールのURLをタップしてサイトに移動した数です。Instagram経由の実際の集客効果に最も近い指標です。増減の要因をコンテンツと合わせて分析します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div style={{ flex: 1 }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "8px", fontFamily: "var(--font-serif)" }}>{item.where}</p>
+                    <p style={{ fontSize: "12px", color: "#3A9BDC", marginBottom: "8px", fontFamily: "var(--font-serif)" }}>{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                   </div>
                 </div>
@@ -331,7 +331,7 @@ export default function Page() {
         {/* 集客できないInstagramの共通点 */}
         <section style={{ background: "#0d1b2a", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
-            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
+            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               Instagramで集客できないアカウントの4つの共通点
             </h2>
@@ -342,7 +342,7 @@ export default function Page() {
                 { t: "写真の品質・統一感がない", b: "明るさ・色調・構図がバラバラのフィードはブランドイメージが伝わらず、フォローに至りません。カラートーンを統一するだけで印象が大きく変わります。" },
                 { t: "分析なしで改善サイクルが回らない", b: "インサイトを確認せず感覚だけで投稿を続けても成長しません。何がリーチしたか・何がエンゲージメントを生んだかを毎月確認してPDCAを回すことが集客力向上の鍵です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -360,8 +360,8 @@ export default function Page() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
-                <div key={i} style={{ padding: "32px", background: "#F9F8F5", borderRadius: "4px", borderTop: "3px solid #c4b89a" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>{String(i + 1).padStart(2, "0")}</p>
+                <div key={i} style={{ padding: "32px", background: "#F4F6FA", borderRadius: "4px", borderTop: "3px solid #3A9BDC" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>{String(i + 1).padStart(2, "0")}</p>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>{item.title}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.85", color: "#374151" }}>{item.body}</p>
                 </div>
@@ -371,7 +371,7 @@ export default function Page() {
         </section>
 
         {/* Instagram Format Comparison */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>FORMAT GUIDE</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -383,7 +383,7 @@ export default function Page() {
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
                 <thead>
-                  <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
+                  <tr style={{ borderBottom: "2px solid #E2E8F0" }}>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>フォーマット</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>主な目的</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>拡散力</th>
@@ -399,11 +399,11 @@ export default function Page() {
                     { format: "ストーリーズ", purpose: "日常接点・エンゲージメント", spread: "低（フォロワー向け）", freq: "毎日", content: "告知・アンケート・Q&A・日常" },
                     { format: "ライブ", purpose: "リアルタイム信頼構築", spread: "中", freq: "月1〜2回", content: "イベント・Q&Aセッション" },
                   ].map((row, i) => (
-                    <tr key={i} style={{ borderBottom: "1px solid #E8E4DC", background: i % 2 === 0 ? "#FFFFFF" : "#F9F8F5" }}>
+                    <tr key={i} style={{ borderBottom: "1px solid #E2E8F0", background: i % 2 === 0 ? "#FFFFFF" : "#F4F6FA" }}>
                       <td style={{ padding: "14px 16px", color: "#0d1b2a", fontWeight: 600 }}>{row.format}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.purpose}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.spread}</td>
-                      <td style={{ padding: "14px 16px", color: "#c4b89a", fontWeight: 600 }}>{row.freq}</td>
+                      <td style={{ padding: "14px 16px", color: "#3A9BDC", fontWeight: 600 }}>{row.freq}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.content}</td>
                     </tr>
                   ))}
@@ -474,12 +474,12 @@ export default function Page() {
                   ],
                 },
               ].map((cat, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "16px" }}>{cat.category}</p>
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                     {cat.checks.map((check, j) => (
                       <div key={j} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                        <span style={{ color: "#c4b89a", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>→</span>
+                        <span style={{ color: "#3A9BDC", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>→</span>
                         <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{check}</p>
                       </div>
                     ))}
@@ -493,7 +493,7 @@ export default function Page() {
         {/* CTA Banner */}
         <section style={{ background: "#0d1b2a", padding: "64px 24px" }}>
           <div style={{ maxWidth: "56rem", margin: "0 auto", textAlign: "center" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>FREE CONSULTATION</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>FREE CONSULTATION</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               Instagram運用の無料相談を受け付けています
             </h2>
@@ -505,7 +505,7 @@ export default function Page() {
               style={{
                 display: "inline-block",
                 background: "#0F172A",
-                border: "1px solid rgba(196,184,154,0.4)",
+                border: "1px solid rgba(58,155,220,0.4)",
                 color: "#FFFFFF",
                 fontSize: "14px",
                 fontWeight: 600,

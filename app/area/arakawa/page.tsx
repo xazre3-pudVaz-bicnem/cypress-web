@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "荒川区のSEO対策・MEO対策・ホームページ制作｜南千住・町屋・西日暮里の集客支援｜株式会社サイプレス",
     description: "荒川区の中小企業・店舗のSEO・MEO対策を葛飾区拠点のサイプレスが支援。南千住・三ノ輪・町屋・西日暮里エリアへの訪問対応も迅速。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -114,7 +114,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -164,8 +164,8 @@ export default function Page() {
                 { n: "04", t: "西日暮里・日暮里は交通の要所", b: "JR山手線・東京メトロ千代田線・京成線が通る西日暮里・日暮里は通勤客も多いエリアです。「駅からの近さ」を訴求するMEO・SEO設計が来店につながります。" },
                 { n: "05", t: "飲食・美容・医療・サービス業の需要が高い", b: "荒川区の人口は約22万人。地域住民向けの飲食・美容・整骨院・歯科・学習塾など生活密着型ビジネスの需要が高く、ローカル集客のポテンシャルは十分にあります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -177,7 +177,7 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -192,8 +192,8 @@ export default function Page() {
                 { n: "02", t: "MEO競合レベル：南千住は中〜高、その他は低〜中", b: "南千住は再開発で競合が増えていますが、町屋・荒川・三ノ輪は競合が少なく基本的なGBP最適化だけで上位表示が狙えるケースが多くあります。" },
                 { n: "03", t: "荒川区のローカルSEOキーワード設計", b: "「荒川区 〇〇」「南千住 〇〇」「町屋 〇〇」などの地域名+業種キーワードに対応したコンテンツページを作成し、Googleビジネスプロフィールとの連携で相乗効果を生み出します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -218,8 +218,8 @@ export default function Page() {
                 { n: "03", t: "ホームページ・LP制作（訪問ヒアリング対応）", b: "飲食店・美容室・クリニック・士業など荒川区の各業種に対応したホームページ・LP制作を行います。Next.js構成の高速・SEO対応サイトを提供します。" },
                 { n: "04", t: "Web集客の総合コンサルティング", b: "MEO・SEO・ホームページの現状分析と改善提案を、訪問または対面形式で行います。「何から始めれば良いかわからない」という方でも、優先施策を明確にしてスタートできます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -231,7 +231,7 @@ export default function Page() {
         </section>
 
         {/* Section 4: 主要エリア */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -246,7 +246,7 @@ export default function Page() {
                 { area: "西日暮里・日暮里", desc: "JR山手線・東京メトロ千代田線・京成線が通る交通利便性の高いエリア。通勤客・住民が多く、飲食・美容・整骨院などの需要が高いです。" },
                 { area: "熊野前・東尾久・西尾久", desc: "都電荒川線沿いの静かな住宅エリア。地域住民向けの生活密着型サービスへの需要があり、MEO競合が非常に少ない穴場エリアです。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -271,7 +271,7 @@ export default function Page() {
                 { industry: "学習塾・習い事教室", points: "荒川区は子育て世帯が多いエリアです。「町屋 学習塾」「南千住 英会話」などのキーワードでMEO・SEOを設計し、無料体験申込みへの導線を整備することが重要です。" },
                 { industry: "工務店・リフォーム・内装", points: "「荒川区 リフォーム」「南千住 外壁塗装」などの工事系キーワードは単価が高く、SEOで上位を取ると費用対効果が非常に高い業種です。施工事例・ビフォーアフターの充実が重要です。" },
               ].map((item) => (
-                <div key={item.industry} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.industry} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>{item.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.points}</p>
                 </div>
@@ -283,7 +283,7 @@ export default function Page() {
         {/* Dark Section: サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -295,7 +295,7 @@ export default function Page() {
                 { n: "04", t: "中小企業・個人事業主の予算感に合わせた提案", b: "荒川区の中小企業・個人事業主がスモールスタートできるプランから、事業成長に合わせて段階的に拡張できる柔軟な料金体系をご用意しています。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -304,7 +304,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="荒川区に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="荒川区に関するよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="荒川区のWeb集客、まずは無料相談から"

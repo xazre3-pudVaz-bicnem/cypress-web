@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "東京都葛飾区拠点。首都圏のMEO・SEO対策はもちろん、Web制作・AIO対策は全国対応。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/area" },
@@ -63,7 +64,7 @@ export default function AreaPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -111,7 +112,7 @@ export default function AreaPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               エリア別サービス
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
               {areas.map((area) => (
                 <Link
                   key={area.href}
@@ -135,7 +136,7 @@ export default function AreaPage() {
         </section>
 
         {/* Base info */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Our Base</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>
@@ -143,7 +144,7 @@ export default function AreaPage() {
             </h2>
             <div style={{ maxWidth: "720px" }}>
               <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "20px" }}>
-                株式会社サイプレスは<strong>東京都葛飾区白鳥4-6-1-623</strong>に拠点を置き、
+                株式会社サイプレスは<strong>東京都葛飾区亀有3-16-14-201</strong>に拠点を置き、
                 首都圏（東京・千葉・埼玉・神奈川）を中心に対面でのコンサルティングに対応しています。
                 葛飾区・足立区・江戸川区・墨田区などの東東京エリアへのアクセスが特にスムーズです。
               </p>
@@ -164,7 +165,7 @@ export default function AreaPage() {
         {/* Online support highlight */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Remote Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Remote Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               オンライン対応だからこそできること
             </h2>
@@ -175,7 +176,7 @@ export default function AreaPage() {
                 { t: "Googleビジネスプロフィールをリモート管理", b: "MEO対策に必要なGBPの情報更新・口コミ返信・写真投稿はすべてリモートで対応します。" },
                 { t: "全国一律の料金体系", b: "対応エリアに関わらず、サービス品質・料金は同一です。都市部・地方を問わず公平な料金設定です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "12px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>

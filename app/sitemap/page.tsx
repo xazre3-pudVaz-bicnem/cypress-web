@@ -53,14 +53,14 @@ const sections: SitemapSection[] = [
       { href: "/seo/local-seo", label: "地域SEO" },
       { href: "/seo/keyword-research", label: "キーワード調査" },
       { href: "/seo/blog-strategy", label: "ブログ戦略" },
-      { href: "/seo/e-e-a-t", label: "E-E-A-T対策" },
-      { href: "/seo/link-building", label: "被リンク対策" },
-      { href: "/seo/schema-markup", label: "構造化データ" },
+      { href: "/knowledge/eeat", label: "E-E-A-T対策" },
+      { href: "/seo/external-seo", label: "被リンク対策" },
+      { href: "/seo/structured-data", label: "構造化データ" },
       { href: "/seo/page-speed", label: "ページ速度改善" },
       { href: "/seo/mobile-seo", label: "モバイルSEO" },
-      { href: "/seo/seo-analysis", label: "SEO分析・レポート" },
-      { href: "/seo/competitor-analysis", label: "競合分析" },
-      { href: "/seo/ai-seo", label: "AI時代のSEO" },
+      { href: "/seo/seo-audit", label: "SEO分析・レポート" },
+      { href: "/guide/competitor-analysis-method", label: "競合分析" },
+      { href: "/aio", label: "AI時代のSEO" },
     ],
   },
   {
@@ -73,12 +73,12 @@ const sections: SitemapSection[] = [
       { href: "/meo/ranking", label: "順位改善" },
       { href: "/meo/photo-posting", label: "写真投稿" },
       { href: "/meo/meo-audit", label: "MEO監査" },
-      { href: "/meo/local-pack", label: "ローカルパック対策" },
-      { href: "/meo/map-seo", label: "マップSEO" },
-      { href: "/meo/competitor-meo", label: "競合MEO分析" },
-      { href: "/meo/multi-location", label: "多店舗MEO管理" },
-      { href: "/meo/gbp-post", label: "GBP投稿運用" },
-      { href: "/meo/qa-management", label: "Q&A管理" },
+      { href: "/glossary/local-pack", label: "ローカルパック対策" },
+      { href: "/meo/map-ranking", label: "マップSEO" },
+      { href: "/meo/meo-audit", label: "競合MEO分析" },
+      { href: "/meo/store-marketing", label: "多店舗MEO管理" },
+      { href: "/meo/google-post", label: "GBP投稿運用" },
+      { href: "/meo/google-business-profile", label: "Q&A管理" },
     ],
   },
   {
@@ -91,10 +91,10 @@ const sections: SitemapSection[] = [
       { href: "/aio/structured-data", label: "構造化データ" },
       { href: "/aio/llms-txt", label: "LLMS.txt" },
       { href: "/aio/faq-optimization", label: "FAQ最適化" },
-      { href: "/aio/e-e-a-t", label: "E-E-A-T" },
-      { href: "/aio/author-info", label: "著者情報最適化" },
-      { href: "/aio/perplexity", label: "Perplexity対策" },
-      { href: "/aio/gemini", label: "Gemini対策" },
+      { href: "/knowledge/eeat", label: "E-E-A-T" },
+      { href: "/aio/organization-data", label: "著者情報最適化" },
+      { href: "/aio/ai-search", label: "Perplexity対策" },
+      { href: "/aio/ai-search", label: "Gemini対策" },
     ],
   },
   {
@@ -134,9 +134,9 @@ const sections: SitemapSection[] = [
     links: [
       { href: "/ai", label: "AI活用支援" },
       { href: "/ai/automation", label: "業務自動化" },
-      { href: "/ai/chatgpt-business", label: "ChatGPT活用" },
-      { href: "/ai/content-generation", label: "AI記事生成" },
-      { href: "/ai/seo-tools", label: "AIツール活用" },
+      { href: "/knowledge/ai-business", label: "ChatGPT活用" },
+      { href: "/ai/content", label: "AI記事生成" },
+      { href: "/ai/internal-tools", label: "AIツール活用" },
       { href: "/ai/workflow", label: "AIワークフロー" },
     ],
   },
@@ -227,7 +227,7 @@ const sections: SitemapSection[] = [
       { href: "/glossary/meo", label: "MEO" },
       { href: "/glossary/seo", label: "SEO" },
       { href: "/glossary/aio", label: "AIO" },
-      { href: "/glossary/google-business-profile", label: "Googleビジネスプロフィール" },
+      { href: "/glossary/gbp", label: "Googleビジネスプロフィール" },
       { href: "/glossary/e-e-a-t", label: "E-E-A-T" },
       { href: "/glossary/core-web-vitals", label: "Core Web Vitals" },
       { href: "/glossary/llms-txt", label: "llms.txt" },
@@ -238,11 +238,11 @@ const sections: SitemapSection[] = [
     headingEn: "Checklist",
     links: [
       { href: "/checklist", label: "チェックリスト一覧" },
-      { href: "/checklist/meo", label: "MEOチェックリスト" },
-      { href: "/checklist/seo", label: "SEOチェックリスト" },
-      { href: "/checklist/gbp", label: "GBPチェックリスト" },
-      { href: "/checklist/homepage", label: "HPチェックリスト" },
-      { href: "/checklist/new-website", label: "新規公開前チェック" },
+      { href: "/checklist/meo-setup", label: "MEOチェックリスト" },
+      { href: "/checklist/seo-basics", label: "SEOチェックリスト" },
+      { href: "/checklist/meo-setup", label: "GBPチェックリスト" },
+      { href: "/checklist/website-launch", label: "HPチェックリスト" },
+      { href: "/checklist/website-launch", label: "新規公開前チェック" },
     ],
   },
   {
@@ -273,7 +273,7 @@ const sections: SitemapSection[] = [
     links: [
       { href: "/support", label: "サポート一覧" },
       { href: "/support/operation", label: "運用サポート" },
-      { href: "/support/monthly-report", label: "月次レポート" },
+      { href: "/support/reporting", label: "月次レポート" },
       { href: "/support/consulting", label: "コンサルティング" },
     ],
   },
@@ -334,7 +334,7 @@ export default function SitemapPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -360,7 +360,7 @@ export default function SitemapPage() {
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                     {section.headingEn}
                   </p>
-                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px", paddingBottom: "8px", borderBottom: "1px solid #ece8e0" }}>
+                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px", paddingBottom: "8px", borderBottom: "1px solid #E2E8F0" }}>
                     {section.heading}
                   </h2>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
@@ -370,7 +370,7 @@ export default function SitemapPage() {
                           href={link.href}
                           style={{ fontSize: "13px", color: "#374151", textDecoration: "none", display: "flex", alignItems: "center", gap: "6px", padding: "3px 0" }}
                         >
-                          <span style={{ color: "#ece8e0", fontSize: "10px" }}>›</span>
+                          <span style={{ color: "#E2E8F0", fontSize: "10px" }}>›</span>
                           {link.label}
                         </Link>
                       </li>

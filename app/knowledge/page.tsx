@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: "MEO・SEO・AIO・SNS・Web制作・AI活用に関する専門知識。中小企業のWeb集客担当者向けナレッジベース。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -32,7 +33,7 @@ export default function KnowledgePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f9f8f5", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -87,7 +88,7 @@ export default function KnowledgePage() {
                 >
                   <article
                     style={{
-                      border: "1px solid #e8e4dc",
+                      border: "1px solid #E2E8F0",
                       padding: "28px 28px 24px",
                       height: "100%",
                       background: "#ffffff",
@@ -97,7 +98,7 @@ export default function KnowledgePage() {
                     <span
                       style={{
                         display: "inline-block",
-                        background: "#f0ede6",
+                        background: "#EDF1F7",
                         color: "#6b7280",
                         fontSize: "10px",
                         fontWeight: 700,

@@ -220,7 +220,7 @@ export default function ReskillingTrainingCompanyReferralPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "880px" }}>
               {whyIncreasing.map((item) => (
-                <div key={item.title} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
+                <div key={item.title} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -230,7 +230,7 @@ export default function ReskillingTrainingCompanyReferralPage() {
         </section>
 
         {/* ── 研修会社選びで確認すべきこと ───────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Check Points</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -238,12 +238,12 @@ export default function ReskillingTrainingCompanyReferralPage() {
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {checkPoints.map((item) => (
-                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -260,8 +260,8 @@ export default function ReskillingTrainingCompanyReferralPage() {
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8" style={{ maxWidth: "900px" }}>
               {referralThemes.map((theme) => (
-                <div key={theme} style={{ display: "flex", gap: "12px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ color: "#c4b89a", flexShrink: 0, fontSize: "13px", paddingTop: "1px" }}>—</span>
+                <div key={theme} style={{ display: "flex", gap: "12px", padding: "14px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ color: "#3A9BDC", flexShrink: 0, fontSize: "13px", paddingTop: "1px" }}>—</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{theme}</p>
                 </div>
               ))}
@@ -270,7 +270,7 @@ export default function ReskillingTrainingCompanyReferralPage() {
         </section>
 
         {/* ── 提携研修会社の特徴 ─────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Partner Training Companies</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -278,12 +278,12 @@ export default function ReskillingTrainingCompanyReferralPage() {
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {PARTNER_TRAINING_FEATURES.map((item) => (
-                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -297,15 +297,15 @@ export default function ReskillingTrainingCompanyReferralPage() {
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {REFERRAL_FLOW.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -336,7 +336,7 @@ export default function ReskillingTrainingCompanyReferralPage() {
 
         <SubsidyDisclaimer bgColor="#ffffff" />
 
-        <FaqSection items={faqItems} heading="研修会社の紹介についてよくある質問" bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} heading="研修会社の紹介についてよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={relatedLinks} heading="関連ページ" />
 

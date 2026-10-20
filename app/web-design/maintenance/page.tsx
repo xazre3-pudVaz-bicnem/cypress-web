@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: "WordPressセキュリティ対策・定期バックアップ・プラグイン更新・コンテンツ更新で継続的なサイト運用を支援します。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/maintenance" },
@@ -52,21 +53,21 @@ const relatedLinks = [
   { href: "/web-design/vercel", label: "Vercelホスティング", desc: "高速ホスティング" },
   { href: "/web-design/mobile-friendly", label: "スマートフォン対応", desc: "モバイルフレンドリー化" },
   { href: "/web-design/contact-form", label: "フォーム最適化", desc: "問い合わせフォーム設計" },
-  { href: "/web-design/lp", label: "LP制作", desc: "ランディングページ" },
-  { href: "/web-design/renewal", label: "サイトリニューアル", desc: "既存サイトの刷新" },
-  { href: "/web-design/cms", label: "CMS導入", desc: "コンテンツ管理システム" },
+  { href: "/web-design/landing-page", label: "LP制作", desc: "ランディングページ" },
+  { href: "/checklist/website-redesign", label: "サイトリニューアル", desc: "既存サイトの刷新" },
+  { href: "/web-design/wordpress", label: "CMS導入", desc: "コンテンツ管理システム" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "技術的なSEO改善" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスのSEO" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "制作サービス" },
   { href: "/services/seo", label: "SEOサービス", desc: "SEO支援" },
-  { href: "/services/consulting", label: "Webコンサルティング", desc: "戦略立案" },
+  { href: "/services", label: "Webコンサルティング", desc: "戦略立案" },
   { href: "/company/support-policy", label: "サポート方針", desc: "継続支援の考え方" },
-  { href: "/industry/restaurant", label: "飲食店Web制作", desc: "飲食業界の実績" },
-  { href: "/industry/beauty", label: "美容室Web制作", desc: "美容業界の実績" },
-  { href: "/industry/clinic", label: "クリニックWeb制作", desc: "医療・歯科の実績" },
-  { href: "/industry/construction", label: "建設・リフォームWeb制作", desc: "建設業界の実績" },
-  { href: "/industry/real-estate", label: "不動産Web制作", desc: "不動産業界の実績" },
+  { href: "/industries/restaurant", label: "飲食店Web制作", desc: "飲食業界の実績" },
+  { href: "/industries/beauty", label: "美容室Web制作", desc: "美容業界の実績" },
+  { href: "/industries/clinic", label: "クリニックWeb制作", desc: "医療・歯科の実績" },
+  { href: "/industries/construction", label: "建設・リフォームWeb制作", desc: "建設業界の実績" },
+  { href: "/industries/real-estate", label: "不動産Web制作", desc: "不動産業界の実績" },
   { href: "/blog", label: "Web制作ブログ", desc: "最新情報・ノウハウ" },
   { href: "/contact", label: "お問い合わせ", desc: "ご相談はこちら" },
 ];
@@ -77,7 +78,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -129,7 +130,7 @@ export default function Page() {
                 "費用対効果を判断するためのKPIと計測方法",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "2px" }}>→</span>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "2px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -140,7 +141,7 @@ export default function Page() {
         {/* Risks dark section */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Risks Without Maintenance</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Risks Without Maintenance</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               保守を怠ると起きる4つのリスク
             </h2>
@@ -151,7 +152,7 @@ export default function Page() {
                 { t: "表示崩れの長期放置", b: "ブラウザのアップデートやスマートフォンOSの更新で、ある日突然レイアウトが崩れることがあります。保守なしでは発見が遅れ、崩れたまま顧客に見せ続ける状態になります。" },
                 { t: "SEO評価の低下", b: "コンテンツの鮮度が落ちると、Googleは「更新されていないサイト」として評価を下げます。定期的な情報更新・SSL維持・クロールエラー対応が継続的に必要です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -161,7 +162,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems & Causes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -180,7 +181,7 @@ export default function Page() {
                 { t: "保守費用の妥当性が分からない", b: "月額費用の相場観がなく、現在の保守費用が高いのか安いのかが分からないというご相談をよくいただきます。対応内容・稼働時間・実績を照らし合わせて判断するためのチェックポイントをご説明します。" },
                 { t: "セキュリティ診断をしたことがない", b: "サイトを公開してから一度もセキュリティ診断をしていないケースは珍しくありません。マルウェアが埋め込まれていても見た目には分からないことが多く、定期的なスキャンが重要です。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -208,7 +209,7 @@ export default function Page() {
                 { n: "05", t: "アクセス解析・SEO状況のモニタリング", b: "Google AnalyticsとSearch Consoleのデータを月次でレポートします。アクセス数の変化・順位の変動・改善提案を定期的にご報告します。" },
                 { n: "06", t: "表示崩れ・不具合対応", b: "ブラウザ更新・スマートフォンOSの更新による表示崩れ・リンク切れ・フォームエラーなどの不具合を発見・修正します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -221,7 +222,7 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -238,7 +239,7 @@ export default function Page() {
                 { industry: "学習塾", point: "カリキュラム・合格実績の更新", detail: "年度ごとの合格実績・コース料金・体験授業の案内は入塾検討者が必ず確認する情報です。古い年度の実績が残っていると信頼を損なうため、年度切り替えのタイミングでの更新が重要です。" },
                 { industry: "EC・通販", point: "商品情報・在庫状況の更新", detail: "品切れ商品の表示管理・新商品の追加・季節商品の切り替えは売上に直結します。決済システム・在庫管理システムとの連携維持も保守の重要な要素です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", borderTop: "1px solid #E8E4DC", borderRight: i % 2 === 0 ? "1px solid #E8E4DC" : "none" }}>
+                <div key={i} style={{ padding: "24px", borderTop: "1px solid #E2E8F0", borderRight: i % 2 === 0 ? "1px solid #E2E8F0" : "none" }}>
                   <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", color: "#9CA3AF", marginBottom: "6px", textTransform: "uppercase" }}>{item.industry}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "10px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.detail}</p>
@@ -268,7 +269,7 @@ export default function Page() {
                 { t: "コンテンツ更新対応", b: "お知らせ・ブログ記事・スタッフ情報・施工事例などのコンテンツ更新を随時受け付けます。依頼から反映まで通常2〜3営業日で対応します。" },
                 { t: "年次の総合チェック", b: "年に一度、サイト全体の総合診断を実施します。セキュリティ・パフォーマンス・SEO・コンテンツの鮮度を総合評価し、翌年の改善計画を提案します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -281,7 +282,7 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -297,12 +298,12 @@ export default function Page() {
                 { kpi: "月次更新件数", target: "依頼内容による", where: "作業ログ・月次レポート", desc: "その月にコンテンツ更新・不具合修正・設定変更などを何件対応したかを記録します。更新件数が増えるとSEOにも好影響を与えます。" },
                 { kpi: "問い合わせ対応時間", target: "平日翌営業日以内", where: "メール・チケットシステム", desc: "保守に関する問い合わせ・作業依頼への最初の返信までにかかる時間です。緊急度の高い問い合わせへの優先対応も含めて管理します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "8px", marginBottom: "4px" }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a" }}>{item.kpi}</p>
-                      <span style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", letterSpacing: "0.05em" }}>{item.target}</span>
+                      <span style={{ fontSize: "12px", fontWeight: 600, color: "#3A9BDC", letterSpacing: "0.05em" }}>{item.target}</span>
                     </div>
                     <p style={{ fontSize: "11px", color: "#9CA3AF", marginBottom: "6px" }}>計測場所: {item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>

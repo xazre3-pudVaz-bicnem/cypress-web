@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "GBP最適化でMEO対策の効果を最大化。主要最適化ポイントを解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/google-business-profile" },
@@ -300,27 +301,27 @@ const relatedLinks = [
   { href: "/meo", label: "MEO対策", desc: "MEO対策の全体戦略" },
   { href: "/meo/review-management", label: "口コミ対策", desc: "高評価口コミを増やす" },
   { href: "/meo/ranking", label: "MEO順位改善", desc: "ローカルパック上位表示" },
-  { href: "/meo/local-seo", label: "ローカルSEO", desc: "地域検索での集客強化" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索での集客強化" },
   { href: "/meo/store-marketing", label: "店舗集客", desc: "MEOで来店数を増やす" },
-  { href: "/meo/map-search", label: "Googleマップ検索対策", desc: "マップ表示の最適化" },
-  { href: "/meo/citation", label: "サイテーション対策", desc: "NAP情報の統一と拡散" },
-  { href: "/meo/photo-strategy", label: "写真投稿戦略", desc: "GBP写真で集客を高める" },
+  { href: "/meo/map-ranking", label: "Googleマップ検索対策", desc: "マップ表示の最適化" },
+  { href: "/meo/nap", label: "サイテーション対策", desc: "NAP情報の統一と拡散" },
+  { href: "/meo/photo-posting", label: "写真投稿戦略", desc: "GBP写真で集客を高める" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示の専門支援" },
   { href: "/services/sns", label: "SNS運用", desc: "MEOと連動したSNS集客" },
-  { href: "/services/website", label: "ウェブサイト制作", desc: "GBPと連動するサイト構築" },
+  { href: "/services/web-design", label: "ウェブサイト制作", desc: "GBPと連動するサイト構築" },
   { href: "/seo", label: "SEO対策", desc: "オーガニック検索からの集客" },
-  { href: "/seo/local", label: "ローカルSEO", desc: "地域キーワードでの上位表示" },
+  { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域キーワードでの上位表示" },
   { href: "/aio", label: "AIO対策", desc: "AI検索への最適化" },
-  { href: "/industry/restaurant", label: "飲食店のMEO対策", desc: "飲食業種特化の戦略" },
-  { href: "/industry/beauty", label: "美容室のMEO対策", desc: "美容業種特化の戦略" },
-  { href: "/industry/clinic", label: "クリニックのMEO対策", desc: "医療機関のGBP最適化" },
-  { href: "/industry/construction", label: "建設・リフォームのMEO", desc: "施工業種の集客戦略" },
-  { href: "/industry/judo", label: "整骨院のMEO対策", desc: "整骨院・接骨院の集客" },
+  { href: "/industries/restaurant", label: "飲食店のMEO対策", desc: "飲食業種特化の戦略" },
+  { href: "/industries/beauty", label: "美容室のMEO対策", desc: "美容業種特化の戦略" },
+  { href: "/industries/clinic", label: "クリニックのMEO対策", desc: "医療機関のGBP最適化" },
+  { href: "/industries/construction", label: "建設・リフォームのMEO", desc: "施工業種の集客戦略" },
+  { href: "/industries/osteopathic", label: "整骨院のMEO対策", desc: "整骨院・接骨院の集客" },
   { href: "/area/tokyo", label: "東京のMEO対策", desc: "東京都内の地域別対策" },
-  { href: "/area/osaka", label: "大阪のMEO対策", desc: "大阪府内の地域別対策" },
-  { href: "/area/nagoya", label: "名古屋のMEO対策", desc: "名古屋市周辺の対策" },
-  { href: "/blog/gbp-optimization", label: "GBP最適化ガイド", desc: "詳細な解説記事" },
+  { href: "/area/nationwide", label: "大阪のMEO対策", desc: "大阪府内の地域別対策" },
+  { href: "/area/nationwide", label: "名古屋のMEO対策", desc: "名古屋市周辺の対策" },
+  { href: "/blog/gbp-optimization-complete", label: "GBP最適化ガイド", desc: "詳細な解説記事" },
 ];
 
 export default function GoogleBusinessProfilePage() {
@@ -368,7 +369,7 @@ export default function GoogleBusinessProfilePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -389,7 +390,7 @@ export default function GoogleBusinessProfilePage() {
                 "GBP最適化の効果を測定するための7つのKPIと確認場所",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -427,7 +428,7 @@ export default function GoogleBusinessProfilePage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
@@ -440,7 +441,7 @@ export default function GoogleBusinessProfilePage() {
             </h2>
             <div className="max-w-3xl">
               {issueItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -450,7 +451,7 @@ export default function GoogleBusinessProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -469,7 +470,7 @@ export default function GoogleBusinessProfilePage() {
             </h2>
             <div className="max-w-3xl">
               {optimizationPoints.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -479,13 +480,13 @@ export default function GoogleBusinessProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
@@ -498,7 +499,7 @@ export default function GoogleBusinessProfilePage() {
             </h2>
             <div className="max-w-3xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -510,7 +511,7 @@ export default function GoogleBusinessProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -529,7 +530,7 @@ export default function GoogleBusinessProfilePage() {
             </h2>
             <div className="max-w-3xl">
               {flowItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -539,13 +540,13 @@ export default function GoogleBusinessProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
@@ -558,7 +559,7 @@ export default function GoogleBusinessProfilePage() {
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -568,7 +569,7 @@ export default function GoogleBusinessProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -618,7 +619,7 @@ export default function GoogleBusinessProfilePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="GBP最適化に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="GBP最適化に関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={relatedLinks} />
 

@@ -28,7 +28,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
       </Link>
 
       <div className="mt-3 grid gap-4 lg:grid-cols-[minmax(0,1fr)_360px]">
-        <section className="rounded-2xl border border-[#E8E4DC] bg-white px-5 py-5" aria-labelledby="conversation-heading">
+        <section className="rounded-2xl border border-[#E2E8F0] bg-white px-5 py-5" aria-labelledby="conversation-heading">
           <p className="label-en text-[#6B7280]">Conversation</p>
           <h1 id="conversation-heading" className="mt-1 text-[18px]">
             {formatDateTime(c.created_at)} の会話
@@ -42,7 +42,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
           </p>
 
           {c.ai_verdict && (
-            <div className="mt-4 rounded-xl border-l-4 border-[#D1C9BE] bg-[#F9F8F5] px-4 py-3">
+            <div className="mt-4 rounded-xl border-l-4 border-[#CBD5E1] bg-[#F4F6FA] px-4 py-3">
               <AiVerdictBadge verdict={c.ai_verdict} />
               {c.ai_reason && <p className="mt-2 text-[13px] leading-relaxed text-[#1a2332]">{c.ai_reason}</p>}
             </div>
@@ -53,7 +53,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
               <li
                 key={m.id}
                 className={`max-w-[88%] rounded-2xl px-4 py-3 ${
-                  m.role === "user" ? "ml-auto bg-[#0d1b2a] text-white" : "border border-[#E8E4DC] bg-[#F9F8F5]"
+                  m.role === "user" ? "ml-auto bg-[#0d1b2a] text-white" : "border border-[#E2E8F0] bg-[#F4F6FA]"
                 }`}
               >
                 <p className={`text-[10px] ${m.role === "user" ? "text-white/60" : "text-[#6B7280]"}`}>
@@ -72,7 +72,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
         </section>
 
         <section
-          className="h-fit rounded-2xl border border-[#E8E4DC] bg-white px-5 py-5 lg:sticky lg:top-8"
+          className="h-fit rounded-2xl border border-[#E2E8F0] bg-white px-5 py-5 lg:sticky lg:top-8"
           aria-labelledby="review-heading"
         >
           <p className="label-en text-[#6B7280]">Structured Review</p>
@@ -91,7 +91,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
                 {VERDICTS.map((v) => (
                   <label
                     key={v}
-                    className="flex cursor-pointer items-center justify-center rounded-lg border border-[#E8E4DC] px-2 py-2.5 text-center text-[12px] font-medium has-[:checked]:border-[#0d1b2a] has-[:checked]:bg-[#0d1b2a] has-[:checked]:text-white has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#0d1b2a]"
+                    className="flex cursor-pointer items-center justify-center rounded-lg border border-[#E2E8F0] px-2 py-2.5 text-center text-[12px] font-medium has-[:checked]:border-[#0d1b2a] has-[:checked]:bg-[#0d1b2a] has-[:checked]:text-white has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#0d1b2a]"
                   >
                     <input
                       type="radio"
@@ -117,7 +117,7 @@ export default async function AdminConversationPage({ params }: { params: Promis
                 maxLength={2000}
                 defaultValue={c.review_note}
                 placeholder="例：料金を聞かれたら、先に見積りの出し方を一言で答える。"
-                className="mt-1.5 w-full rounded-lg border border-[#E8E4DC] px-3 py-2 text-[14px] leading-relaxed focus:border-[#0d1b2a] focus:outline-none"
+                className="mt-1.5 w-full rounded-lg border border-[#E2E8F0] px-3 py-2 text-[14px] leading-relaxed focus:border-[#0d1b2a] focus:outline-none"
               />
             </div>
             <button type="submit" className="h-11 w-full rounded-lg bg-[#0d1b2a] text-[13px] font-medium text-white">

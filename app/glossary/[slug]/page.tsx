@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "article",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/glossary/${slug}` },
@@ -56,7 +57,7 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -65,7 +66,7 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>{page.term}</span>
             </nav>
-            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
+            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#E2E8F0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {page.category}
             </span>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", color: "#9ca3af", fontSize: "11px", marginBottom: "8px" }}>{page.termEn}</p>
@@ -80,7 +81,7 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "800px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>Definition</p>
-              <div style={{ padding: "28px 32px", background: "#f8f6f2", borderLeft: "3px solid #0d1b2a", marginBottom: "32px" }}>
+              <div style={{ padding: "28px 32px", background: "#F4F6FA", borderLeft: "3px solid #0d1b2a", marginBottom: "32px" }}>
                 <p style={{ fontSize: "15px", lineHeight: "2", color: "#0d1b2a", fontWeight: 500 }}>
                   {page.definition}
                 </p>
@@ -93,7 +94,7 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
         </section>
 
         {/* Points */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Key Points</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -101,8 +102,8 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {page.points.map((point, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>

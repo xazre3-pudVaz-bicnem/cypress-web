@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "website",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/faq/${slug}` },
@@ -53,7 +54,7 @@ export default async function FaqSlugPage({ params }: { params: Promise<{ slug: 
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -79,7 +80,7 @@ export default async function FaqSlugPage({ params }: { params: Promise<{ slug: 
               {page.faqs.map((faq, i) => (
                 <details
                   key={i}
-                  style={{ borderTop: "1px solid #ece8e0" }}
+                  style={{ borderTop: "1px solid #E2E8F0" }}
                 >
                   <summary style={{
                     display: "flex",
@@ -114,7 +115,7 @@ export default async function FaqSlugPage({ params }: { params: Promise<{ slug: 
                       flexShrink: 0,
                       width: "28px",
                       height: "28px",
-                      background: "#f8f6f2",
+                      background: "#F4F6FA",
                       color: "#9ca3af",
                       display: "flex",
                       alignItems: "center",
@@ -126,7 +127,7 @@ export default async function FaqSlugPage({ params }: { params: Promise<{ slug: 
                   </div>
                 </details>
               ))}
-              <div style={{ borderTop: "1px solid #ece8e0" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

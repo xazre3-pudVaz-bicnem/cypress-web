@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: "ネイルサロン向けWeb集客。MEO・Instagram・ホームページで新規顧客来店と定期予約を増やします。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries/nail-salon" },
@@ -148,8 +149,8 @@ const relatedLinks = [
   { href: "/knowledge/instagram-tips", label: "Instagram活用のコツ", desc: "フォロワーを増やす投稿術" },
   { href: "/knowledge/local-seo-guide", label: "ローカルSEOガイド", desc: "地域密着型集客の考え方" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "ネイルサロン向けサイト制作" },
-  { href: "/services/line", label: "LINE公式アカウント活用", desc: "リピーター育成・予約リマインド" },
-  { href: "/knowledge/google-business-profile", label: "Googleビジネスプロフィール活用", desc: "GBP設定・運用ガイド" },
+  { href: "/sns", label: "LINE公式アカウント活用", desc: "リピーター育成・予約リマインド" },
+  { href: "/knowledge/google-business-profile-setup", label: "Googleビジネスプロフィール活用", desc: "GBP設定・運用ガイド" },
   { href: "/sns/hashtag", label: "ハッシュタグ戦略", desc: "地域・業種ハッシュタグの使い方" },
   { href: "/meo/beauty-salon-meo", label: "美容サロンのMEO対策", desc: "サロン業界のGBP最適化" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
@@ -172,7 +173,7 @@ export default function NailSalonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -218,7 +219,7 @@ export default function NailSalonPage() {
                   desc: "デザイン写真・リール動画でフォロワーを増やし、SNS経由の予約を獲得する運用代行サービスです。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #e8e4dc", textDecoration: "none", background: "#f9f8f5" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E2E8F0", textDecoration: "none", background: "#F4F6FA" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>詳細を見る →</p>
@@ -228,7 +229,7 @@ export default function NailSalonPage() {
           </div>
         </section>
 
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Strategy Points</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -257,8 +258,8 @@ export default function NailSalonPage() {
                   b: "デザインギャラリー・料金表・ネイリストプロフィール・予約フォームを整えたホームページは、SNS・マップからの訪問者を予約に転換する最重要の受け皿です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -270,7 +271,7 @@ export default function NailSalonPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -283,8 +284,8 @@ export default function NailSalonPage() {
                 { n: "03", t: "リピーター管理ができておらず来店が途切れやすい", b: "ネイルの付け替えは4〜6週間ごとのサイクルがあるにもかかわらず、連絡手段がなく顧客が自然離脱してしまうケースが多いです。LINE公式アカウントへの誘導・施術後の次回予約リマインド・トレンドデザイン告知の自動配信でリピートサイクルを維持します。" },
                 { n: "04", t: "予約管理のオンライン化が遅れ機会損失が発生している", b: "電話・DM中心の予約受付は、営業時間外の問い合わせに対応できず予約機会を逃します。自社ホームページの予約フォーム・GBPへの予約ボタン設置・LINE予約の導入により24時間予約受付を可能にし、取りこぼしのない予約体制を構築します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -298,11 +299,11 @@ export default function NailSalonPage() {
         {/* サイプレスの支援 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのネイルサロン向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 ネイルサロン」「○○区 ネイル 予約」でGoogleマップ上位表示を実現します。GBPの写真充実・サービス情報の整備・口コミ獲得フロー構築で地域の来店意欲の高いユーザーを獲得します。" },
                 { label: "Instagram・SNS支援", desc: "ネイルデザイン写真の投稿計画・リール動画の企画・ハッシュタグ戦略・フォロワー増加施策を一括してサポートします。Instagram経由の予約導線設計も含めて対応します。" },
@@ -319,7 +320,7 @@ export default function NailSalonPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -371,8 +372,8 @@ export default function NailSalonPage() {
                   b: "検索表示回数・マップクリック数・Instagram指標・LINE友だち数を毎月確認します。シーズンごとのトレンドデザイン投稿・GBP投稿・LINE配信を連携させ、集客効果を継続的に最大化します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -426,9 +427,9 @@ export default function NailSalonPage() {
                   desc: "登録者数の推移とメッセージ開封率を確認します。開封率が低い場合は配信内容・タイミング・セグメント設定の見直しが効果的です。リピート予約数との相関も追います。",
                 },
               ].map((item) => (
-                <div key={item.kpi} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.kpi} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>計測場所：{item.where}</p>
+                  <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>計測場所：{item.where}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
@@ -439,7 +440,7 @@ export default function NailSalonPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -466,8 +467,8 @@ export default function NailSalonPage() {
                   b: "東京都葛飾区に拠点を置くサイプレスは、地域の競合状況・ユーザーの検索傾向・地域性を踏まえたローカルSEO・MEO設計が可能です。「〇〇駅 ネイルサロン」で選ばれる存在になるための地域密着型支援を行います。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.25)" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.25)" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -477,7 +478,7 @@ export default function NailSalonPage() {
         </section>
 
         {/* 料金の目安・相談の流れ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Pricing & Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -514,10 +515,10 @@ export default function NailSalonPage() {
                   desc: "MEO対策・Instagram運用・LINE管理を一括で対応する統合プランです。施策間の連携を最大化した上で、効率的な集客体制を構築します。",
                 },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc", display: "flex", gap: "20px", flexWrap: "wrap" }}>
+                <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0", display: "flex", gap: "20px", flexWrap: "wrap" }}>
                   <div style={{ flex: 1, minWidth: "200px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.label}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
+                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>

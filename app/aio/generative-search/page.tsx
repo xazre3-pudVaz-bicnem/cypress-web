@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "Google AI Overview等の生成AI検索に引用されやすいコンテンツ設計の完全ガイド。SGE・E-E-A-T・構造化データから運用フローまで解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/aio/generative-search" },
@@ -306,9 +307,9 @@ const relatedLinks = [
   { href: "/aio/entity-optimization", label: "エンティティ最適化", desc: "Googleのエンティティ認識強化" },
   { href: "/aio/structured-data", label: "構造化データ実装", desc: "Schema.org・JSON-LD" },
   { href: "/aio/ai-overview", label: "AI Overview対策", desc: "Google AI Overview引用獲得" },
-  { href: "/aio/e-e-a-t", label: "E-E-A-T強化", desc: "専門性・権威性・信頼性の向上" },
+  { href: "/knowledge/eeat", label: "E-E-A-T強化", desc: "専門性・権威性・信頼性の向上" },
   { href: "/aio/faq-optimization", label: "FAQ最適化", desc: "FAQPageスキーマ実装" },
-  { href: "/aio/perplexity", label: "Perplexity対策", desc: "Perplexity引用戦略" },
+  { href: "/aio/ai-search", label: "Perplexity対策", desc: "Perplexity引用戦略" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツによる集客強化" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "技術的SEO対策" },
@@ -316,13 +317,13 @@ const relatedLinks = [
   { href: "/meo", label: "MEO対策", desc: "Googleマップ・地域集客対策" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO支援サービス詳細" },
-  { href: "/services/content-marketing", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用支援" },
+  { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用支援" },
   { href: "/services/web-design", label: "Webデザイン制作", desc: "高品質サイト制作" },
-  { href: "/industry/medical", label: "医療・クリニック向け", desc: "医療業界のAIO・SEO対策" },
-  { href: "/industry/finance", label: "金融・保険向け", desc: "金融業界のAIO・SEO対策" },
-  { href: "/industry/real-estate", label: "不動産向け", desc: "不動産業界のAIO・SEO対策" },
+  { href: "/industries/clinic", label: "医療・クリニック向け", desc: "医療業界のAIO・SEO対策" },
+  { href: "/industries/professional-service", label: "金融・保険向け", desc: "金融業界のAIO・SEO対策" },
+  { href: "/industries/real-estate", label: "不動産向け", desc: "不動産業界のAIO・SEO対策" },
   { href: "/area/tokyo", label: "東京のAIO対策", desc: "東京エリアの実績・対応" },
-  { href: "/area/osaka", label: "大阪のAIO対策", desc: "大阪エリアの実績・対応" },
+  { href: "/area/nationwide", label: "大阪のAIO対策", desc: "大阪エリアの実績・対応" },
 ];
 
 export default function GenerativeSearchPage() {
@@ -370,7 +371,7 @@ export default function GenerativeSearchPage() {
         </section>
 
         {/* 生成AI検索とは */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is Generative Search
@@ -420,7 +421,7 @@ export default function GenerativeSearchPage() {
                 "AI引用効果を測定するための7つのKPIと確認場所",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -429,7 +430,7 @@ export default function GenerativeSearchPage() {
         </section>
 
         {/* 引用されやすいページの特徴 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Content Features
@@ -439,7 +440,7 @@ export default function GenerativeSearchPage() {
             </h2>
             <div className="max-w-3xl">
               {contentFeatures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -449,7 +450,7 @@ export default function GenerativeSearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -465,7 +466,7 @@ export default function GenerativeSearchPage() {
             </h2>
             <div className="max-w-3xl">
               {problemItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -475,13 +476,13 @@ export default function GenerativeSearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Applications
@@ -491,7 +492,7 @@ export default function GenerativeSearchPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <h3 className="font-bold text-[15px]" style={{ color: "#0F172A" }}>{item.industry}</h3>
@@ -514,7 +515,7 @@ export default function GenerativeSearchPage() {
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
@@ -522,13 +523,13 @@ export default function GenerativeSearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPI &amp; Metrics
@@ -538,7 +539,7 @@ export default function GenerativeSearchPage() {
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -548,7 +549,7 @@ export default function GenerativeSearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -589,7 +590,7 @@ export default function GenerativeSearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={relatedLinks} />
 

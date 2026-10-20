@@ -21,7 +21,7 @@ export default function LoginForm() {
           required
           autoFocus
           autoComplete="current-password"
-          className="mt-1.5 h-11 w-full rounded-lg border border-[#E8E4DC] px-3 text-[16px] focus:border-[#0d1b2a] focus:outline-none"
+          className="mt-1.5 h-11 w-full rounded-lg border border-[#E2E8F0] px-3 text-[16px] focus:border-[#0d1b2a] focus:outline-none"
         />
       </div>
       {state.error && (

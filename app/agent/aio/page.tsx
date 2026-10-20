@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description: "AIO対策・AI検索対策の販売代理店募集。ChatGPT・Gemini時代のWeb集客支援を制作リソースなしで提案できます。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/agent/aio" },
@@ -186,7 +187,7 @@ export default function AgentAioPage() {
         </section>
 
         {/* なぜ今AI検索対策が商材になるのか */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Market Opportunity</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -199,7 +200,7 @@ export default function AgentAioPage() {
                 { title: "SEO代理店との明確な差別化", body: "SEO対策を扱う代理店は多いですが、AIO対策を提案できる代理店はまだ少数です。「AI検索にも対応できる」という付加価値で差別化した提案ができます。" },
                 { title: "SEO・MEO・ホームページとセット", body: "既存のホームページ制作・SEO・MEO顧客への追加提案として自然に行えます。「これまでの施策に加えてAI検索対策も」という提案が受け入れやすいです。" },
               ].map((item) => (
-                <div key={item.title} style={{ padding: "28px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "28px", background: "#ffffff", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -256,7 +257,7 @@ export default function AgentAioPage() {
                 { title: "広告費用を削減したい", body: "オーガニック流入を増やしたい経営者に対して、SEO×AIO×MEOの複合提案で「広告に頼らない集客」を提案できます。" },
                 { title: "新技術・デジタルに関心が高い", body: "最新のデジタルマーケティングに関心のある経営者は、AIO対策という最新トレンドへの感度が高く提案を受け入れやすいです。" },
               ].map((item) => (
-                <div key={item.title} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "24px", background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                 </div>
@@ -266,7 +267,7 @@ export default function AgentAioPage() {
         </section>
 
         {/* 相性の良い代理店 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Ideal Partners</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -282,7 +283,7 @@ export default function AgentAioPage() {
                 { label: "中小企業支援・コンサルタント", desc: "経営課題として「デジタル集客」を扱っている支援者が、AIO対策という具体的な施策を提案できます。" },
                 { label: "フリーランス・副業マーケター", desc: "新しい分野への挑戦に意欲的な個人の方が最新商材としてAIO対策を扱いたい場合も相談可能です。" },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "24px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                <div key={item.label} style={{ padding: "24px", background: "#ffffff", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
@@ -292,7 +293,7 @@ export default function AgentAioPage() {
         </section>
 
         {/* 関連ページ */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "24px" }}>関連ページ</h2>
             <div className="grid md:grid-cols-3 gap-4">
@@ -304,7 +305,7 @@ export default function AgentAioPage() {
                 { href: "/agent/faq", label: "代理店募集FAQ" },
                 { href: "/partner/referral", label: "取次店・紹介パートナー募集" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #e8e4dc", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #E2E8F0", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
                   {item.label} →
                 </Link>
               ))}

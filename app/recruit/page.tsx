@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     description: "東京都葛飾区拠点のWebマーケティング会社。Webマーケティング営業（正社員）募集。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/recruit" },
@@ -103,10 +104,10 @@ const jobPostingSchema = {
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "白鳥4-6-1-623",
+      streetAddress: "亀有3-16-14-201",
       addressLocality: "葛飾区",
       addressRegion: "東京都",
-      postalCode: "124-0816",
+      postalCode: "125-0061",
       addressCountry: "JP",
     },
   },
@@ -228,7 +229,7 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 1. 現在の募集職種 ──────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Open Positions</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -239,7 +240,7 @@ export default function RecruitPage() {
             </p>
             <Link
               href="/recruit/sales"
-              style={{ display: "block", borderTop: "1px solid #e8e4dc", borderBottom: "1px solid #e8e4dc", padding: "32px 0", textDecoration: "none" }}
+              style={{ display: "block", borderTop: "1px solid #E2E8F0", borderBottom: "1px solid #E2E8F0", padding: "32px 0", textDecoration: "none" }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                 <div>
@@ -251,7 +252,7 @@ export default function RecruitPage() {
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {["基本給20万円＋インセンティブ", "年間休日130日", "正社員", "未経験歓迎", "提案型営業"].map((tag) => (
-                      <span key={tag} style={{ fontSize: "11px", padding: "4px 12px", background: "#e8e4dc", color: "#374151", borderRadius: "100px" }}>{tag}</span>
+                      <span key={tag} style={{ fontSize: "11px", padding: "4px 12px", background: "#E2E8F0", color: "#374151", borderRadius: "100px" }}>{tag}</span>
                     ))}
                   </div>
                 </div>
@@ -299,8 +300,8 @@ export default function RecruitPage() {
                   body: "設立まもない会社だからこそ、自分の行動が会社の成長に直結します。チームリーダー・マネジメントなど、早期にキャリアアップできる環境です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "32px", background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "17px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                 </div>
@@ -318,7 +319,7 @@ export default function RecruitPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div style={{ padding: "36px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>COMPENSATION</p>
+                <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>COMPENSATION</p>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>
                   {/* 「イ／ンセンティブ」のような語中改行を防ぐため、語単位で折り返す。 */}
                   <span style={{ whiteSpace: "nowrap" }}>基本給20万円</span>
@@ -334,14 +335,14 @@ export default function RecruitPage() {
                     "「必ず○万円稼げる」という保証ではありません",
                   ].map((txt) => (
                     <p key={txt} style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7", marginBottom: "10px", paddingLeft: "16px", position: "relative" }}>
-                      <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>–</span>
+                      <span style={{ position: "absolute", left: 0, color: "#3A9BDC" }}>–</span>
                       {txt}
                     </p>
                   ))}
                 </div>
               </div>
               <div style={{ padding: "36px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>HOLIDAYS</p>
+                <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>HOLIDAYS</p>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>年間休日130日</p>
                 <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>週休2日 ＋ 祝日 ＋ 年末年始</p>
                 <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px" }}>
@@ -352,7 +353,7 @@ export default function RecruitPage() {
                     "有給休暇（法定通り付与）",
                   ].map((txt) => (
                     <p key={txt} style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7", marginBottom: "10px", paddingLeft: "16px", position: "relative" }}>
-                      <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>–</span>
+                      <span style={{ position: "absolute", left: 0, color: "#3A9BDC" }}>–</span>
                       {txt}
                     </p>
                   ))}
@@ -363,7 +364,7 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 4. 未経験からWebマーケティング営業になる流れ ────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Career Path</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -408,12 +409,12 @@ export default function RecruitPage() {
                     display: "flex",
                     gap: "24px",
                     padding: "28px 0",
-                    borderTop: i === 0 ? "1px solid #e8e4dc" : "none",
-                    borderBottom: "1px solid #e8e4dc",
+                    borderTop: i === 0 ? "1px solid #E2E8F0" : "none",
+                    borderBottom: "1px solid #E2E8F0",
                   }}
                 >
                   <div style={{ minWidth: "120px", flexShrink: 0 }}>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "#c4b89a", marginBottom: "4px" }}>{s.step}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "#3A9BDC", marginBottom: "4px" }}>{s.step}</p>
                     <p style={{ fontSize: "11px", color: "#9ca3af" }}>{s.period}</p>
                   </div>
                   <div>
@@ -463,7 +464,7 @@ export default function RecruitPage() {
                   detail: "提案しやすい業種：専門性の高い業種・情報発信をしたい企業全般",
                 },
               ].map((item) => (
-                <div key={item.tag} style={{ padding: "28px", border: "1px solid #e8e4dc" }}>
+                <div key={item.tag} style={{ padding: "28px", border: "1px solid #E2E8F0" }}>
                   <span style={{ display: "inline-block", fontSize: "11px", padding: "3px 10px", background: "#0d1b2a", color: "#ffffff", marginBottom: "14px" }}>{item.tag}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", marginBottom: "14px" }}>{item.body}</p>
@@ -475,7 +476,7 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 6. 働き方 ────────────────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Work Style</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -496,7 +497,7 @@ export default function RecruitPage() {
                       { label: "社会保険", value: "健康保険・厚生年金・雇用保険・労災保険" },
                       { label: "交通費", value: "全額支給" },
                     ].map((row) => (
-                      <tr key={row.label} style={{ borderBottom: "1px solid #e8e4dc" }}>
+                      <tr key={row.label} style={{ borderBottom: "1px solid #E2E8F0" }}>
                         <td style={{ padding: "14px 0", width: "120px", fontSize: "12px", fontWeight: 600, color: "#0d1b2a", verticalAlign: "top" }}>{row.label}</td>
                         <td style={{ padding: "14px 0 14px 16px", fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{row.value}</td>
                       </tr>
@@ -519,7 +520,7 @@ export default function RecruitPage() {
                     body: "成果次第で高収入を狙えます。チームリーダー・マネジメントなど、複数のキャリアパスを用意しています。",
                   },
                 ].map((item) => (
-                  <div key={item.title} style={{ padding: "24px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                  <div key={item.title} style={{ padding: "24px", background: "#ffffff", border: "1px solid #E2E8F0" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
@@ -561,7 +562,7 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 会社情報 ─────────────────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Company Info</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>会社基本情報</h2>
@@ -570,16 +571,16 @@ export default function RecruitPage() {
                 { label: "会社名", value: "株式会社サイプレス" },
                 { label: "代表取締役", value: "織田 春樹" },
                 { label: "設立", value: "2026年5月13日" },
-                { label: "所在地", value: "東京都葛飾区白鳥4-6-1-623" },
+                { label: "所在地", value: "東京都葛飾区亀有3-16-14-201" },
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
                 { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
-                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>
                   <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{row.value}</span>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

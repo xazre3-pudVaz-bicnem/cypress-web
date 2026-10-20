@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "外部SEOの実践ガイド。良質な被リンク獲得・サイテーション強化・スパムリンク対処まで解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo/external-seo" },
@@ -115,19 +116,19 @@ const relatedLinks = [
   { href: "/seo/seo-audit", label: "SEO診断", desc: "被リンクプロファイルの評価" },
   { href: "/meo", label: "MEO対策", desc: "ローカルSEOとサイテーション" },
   { href: "/aio", label: "AIO対策", desc: "AI検索での引用・言及獲得" },
-  { href: "/knowledge/backlink", label: "被リンク獲得ガイド", desc: "自然な被リンクの増やし方" },
-  { href: "/knowledge/domain-authority", label: "ドメイン評価の高め方", desc: "DA・DRを改善する方法" },
-  { href: "/knowledge/citation", label: "サイテーション管理", desc: "NAP情報統一の実践" },
-  { href: "/knowledge/disavow", label: "スパムリンク否認ガイド", desc: "Disavowツールの使い方" },
-  { href: "/guide/link-building", label: "リンクビルディング入門", desc: "被リンク戦略の全体像" },
+  { href: "/seo/external-seo", label: "被リンク獲得ガイド", desc: "自然な被リンクの増やし方" },
+  { href: "/glossary/domain-authority", label: "ドメイン評価の高め方", desc: "DA・DRを改善する方法" },
+  { href: "/meo/nap", label: "サイテーション管理", desc: "NAP情報統一の実践" },
+  { href: "/seo/external-seo", label: "スパムリンク否認ガイド", desc: "Disavowツールの使い方" },
+  { href: "/seo/external-seo", label: "リンクビルディング入門", desc: "被リンク戦略の全体像" },
   { href: "/cost/seo", label: "SEO対策の費用", desc: "外部SEO込みの料金目安" },
-  { href: "/checklist/seo", label: "SEOチェックリスト", desc: "被リンク状況の確認項目" },
-  { href: "/faq/seo", label: "SEO FAQ", desc: "外部SEOのよくある質問集" },
-  { href: "/glossary/backlink", label: "被リンク用語集", desc: "DA・DR・Disavowなどを解説" },
+  { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "被リンク状況の確認項目" },
+  { href: "/faq/seo-basics", label: "SEO FAQ", desc: "外部SEOのよくある質問集" },
+  { href: "/seo/external-seo", label: "被リンク用語集", desc: "DA・DR・Disavowなどを解説" },
   { href: "/column/seo", label: "SEOコラム", desc: "外部SEOの最新情報" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
-  { href: "/services/pr", label: "PRサービス", desc: "メディア掲載・被リンク獲得支援" },
-  { href: "/case/seo", label: "SEO支援事例", desc: "被リンク獲得の成功事例" },
+  { href: "/services", label: "PRサービス", desc: "メディア掲載・被リンク獲得支援" },
+  { href: "/cases/service/seo", label: "SEO支援事例", desc: "被リンク獲得の成功事例" },
   { href: "/seo/blog-strategy", label: "ブログ戦略", desc: "被リンクを生むコンテンツ設計" },
   { href: "/seo/content-seo", label: "コンテンツSEO詳細", desc: "引用されるコンテンツの作り方" },
 ];
@@ -170,7 +171,7 @@ export default function ExternalSeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -185,7 +186,7 @@ export default function ExternalSeoPage() {
                 { title: "スパムリンクの特定とDisavow処理", body: "有害なリンクがサイト評価を下げるメカニズム、Google Search Consoleでの確認方法、Disavowファイルの作成と提出手順を学べます。" },
                 { title: "外部SEOの効果測定と改善サイクル", body: "参照ドメイン数・ドメイン評価・オーガニック流入の変化を追うためのKPI設計と、Ahrefs・Search Consoleを使った測定方法を習得できます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -193,7 +194,7 @@ export default function ExternalSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -216,7 +217,7 @@ export default function ExternalSeoPage() {
                 { title: "スパムリンクの否認（Disavow）", body: "低品質なスパムリンクが多数向けられている場合、Google Search ConsoleのDisavowツールを使って否認します。否認ファイルにはdomain:example.comの形式でドメイン単位の否認を指定できます。不自然なリンクプロファイルはGoogleのアルゴリズムにより評価が下がる可能性があるため、Ahrefsなどのツールを使った定期的なリンクプロファイルの確認が重要です。" },
                 { title: "リンク切れ修復（ブロークンリンクビルディング）", body: "競合サイトや関連サイトのリンク切れページを見つけ、そのページの代替コンテンツを自社サイトで提供したうえで、リンク元サイトに差し替えを提案する手法です。相手にとってもリンク切れ修復のメリットがあるため、アウトリーチが受け入れられやすい特徴があります。Ahrefsの「Broken Links」機能で効率的に候補を見つけられます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -224,13 +225,13 @@ export default function ExternalSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -249,7 +250,7 @@ export default function ExternalSeoPage() {
                 { title: "リンクの多様性が低い（特定ドメインからのみ）", body: "一つのドメインから大量のリンクが来ていても、評価は一つのドメインからの被リンクとしてカウントされます。参照ドメイン数（Referring Domains）の増加が被リンク数の増加より重要で、多様なドメインから自然に被リンクされているプロファイルが健全です。" },
                 { title: "アンカーテキストが最適化されすぎている", body: "「葛飾区 SEO対策 格安」など特定のキーワードを含むアンカーテキストのリンクが集中すると、人工的なリンク操作とみなされるリスクがあります。ブランド名・URL・「詳しくはこちら」など自然なアンカーテキストが多様に混在している状態が理想的です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -257,7 +258,7 @@ export default function ExternalSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -331,7 +332,7 @@ export default function ExternalSeoPage() {
                   points: "不動産業者登録サイト・住宅情報ポータルへのNAP登録、不動産関連協会への加盟が基本的な被リンク源。地域の住まいメディア・マンション管理組合の情報への貢献記事、住まい系メディアへの専門家コメント提供が有効。物件情報の詳細コンテンツが住まい系キュレーションサイトに引用されます。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6 rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                <div key={i} className="p-6 rounded" style={{ background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#0d1b2a" }}>{item.industry}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.points}</p>
                 </div>
@@ -341,7 +342,7 @@ export default function ExternalSeoPage() {
         </section>
 
         {/* 具体的な作業手順 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Step by Step</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -360,7 +361,7 @@ export default function ExternalSeoPage() {
                 { title: "Step 9：月次で被リンク増加をモニタリングする", body: "毎月、Search ConsoleとAhrefsで参照ドメイン数・新規被リンク数・失われた被リンク数を確認します。急激な被リンクの増減は原因を調査します。競合との被リンク差が縮まっているかを確認し、次の施策の優先度を決定します。" },
                 { title: "Step 10：内部リンクと連動して評価を流通させる", body: "獲得した被リンクが向いているページ（LP・ブログ記事など）から、SEO上強化したいサービスページ・対策キーワードページに向けて内部リンクを設置します。外部から流入した評価をサイト内で分散・効果最大化させることが重要です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -368,7 +369,7 @@ export default function ExternalSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -426,9 +427,9 @@ export default function ExternalSeoPage() {
                   detail: "どのコンテンツが最も多くの被リンクを獲得しているかを把握します。成功しているコンテンツの共通点を分析し、次のリンクベイトコンテンツの企画に活かします。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid #E8E4DC", borderRadius: "6px" }}>
+                <div key={i} className="p-6" style={{ border: "1px solid #E2E8F0", borderRadius: "6px" }}>
                   <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                  <p className="text-[11px] font-semibold mb-3" style={{ color: "#c4b89a" }}>{item.where}</p>
+                  <p className="text-[11px] font-semibold mb-3" style={{ color: "#3A9BDC" }}>{item.where}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
               ))}
@@ -436,7 +437,7 @@ export default function ExternalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="外部SEOについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="外部SEOについてよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="外部SEO・被リンク戦略のご相談"

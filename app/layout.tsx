@@ -1,26 +1,21 @@
 ﻿import type { Metadata } from "next";
-import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
+import { Geist, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/chatbot/ChatWidget";
+import { BUSINESSES, COMPANY } from "@/lib/company";
+import { CONTACT_EMAIL } from "@/lib/contact";
 
-const notoSerifJP = Noto_Serif_JP({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
-  display: "swap",
-});
-
+// 和文は Noto Sans JP、欧文・数字は Geist。どちらも可変フォントで、ウェイトごとにファイルを増やさない。
+// 書体の組み合わせ（フォールバック込み）は globals.css の --font-stack で定義している。
 const notoSansJP = Noto_Sans_JP({
-  variable: "--font-sans",
+  variable: "--font-jp",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-display",
+const geist = Geist({
+  variable: "--font-latin",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -40,22 +35,23 @@ const organizationSchema = {
     width: 200,
     height: 60,
   },
-  image: `${SITE_URL}/hero.jpg`,
+  image: `${SITE_URL}/og-image.jpg`,
   description:
-    "株式会社サイプレスは、東京都葛飾区を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。",
-  email: "info@cypress-all.co.jp",
+    "株式会社サイプレスは、東京都葛飾区亀有を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
+  email: CONTACT_EMAIL,
+  telephone: "+81-90-2360-0052",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "白鳥4-6-1-623",
+    streetAddress: "亀有3-16-14-201",
     addressLocality: "葛飾区",
     addressRegion: "東京都",
-    postalCode: "124-0816",
+    postalCode: "125-0061",
     addressCountry: "JP",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 35.7524,
-    longitude: 139.8471,
+    latitude: 35.7636,
+    longitude: 139.8486,
   },
   areaServed: [
     { "@type": "State", name: "東京都" },
@@ -118,7 +114,7 @@ const organizationSchema = {
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
+    opens: "10:00",
     closes: "18:00",
   },
   // sameAs: TODO: 公式SNS・GBP URLが確定次第追加
@@ -137,7 +133,18 @@ const organizationSchema = {
     "東京都のMEO対策",
     "地域SEO",
     "コンテンツマーケティング",
+    "軽貨物運送",
+    "住宅用太陽光発電",
+    "家庭用蓄電池",
   ],
+  // 軽貨物・太陽光はそれぞれ専用サイトで運営している事業部門
+  department: BUSINESSES.filter((b) => b.external).map((b) => ({
+    "@type": "Organization",
+    name: b.key === "cargo" ? `${COMPANY.name} 軽貨物事業部` : "SOLAR SHIFT（株式会社サイプレス 太陽光事業）",
+    url: b.href,
+    description: b.description,
+    parentOrganization: { "@id": `${SITE_URL}/#organization` },
+  })),
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Webマーケティングサービス一覧",
@@ -152,10 +159,10 @@ const organizationSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@cypress-all.co.jp",
+    email: CONTACT_EMAIL,
+    telephone: "+81-90-2360-0052",
     contactType: "customer support",
     availableLanguage: "Japanese",
-    contactOption: "TollFree",
     areaServed: "JP",
   },
 };
@@ -207,7 +214,7 @@ export const metadata: Metadata = {
     title: "株式会社サイプレス｜東京・葛飾区のWebマーケティング会社",
     description:
       "株式会社サイプレスは東京都葛飾区拠点。MEO・SEO・AIO・ホームページ制作を通じて東京23区・全国の中小企業のWeb集客を支援するWebマーケティング会社です。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
     locale: "ja_JP",
     type: "website",
     siteName: "株式会社サイプレス",
@@ -232,7 +239,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${notoSerifJP.variable} ${notoSansJP.variable} ${cormorant.variable} h-full`}
+      className={`${notoSansJP.variable} ${geist.variable} h-full`}
     >
       <head>
         <script

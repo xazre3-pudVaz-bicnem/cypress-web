@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI業務自動化｜Make・Zapier×ChatGPT APIで繰り返し業務を自動化｜株式会社サイプレス",
     description: "AI業務自動化の実践ガイド。Make・Zapier・n8nとChatGPT/Claude APIを組み合わせた繰り返し業務の自動化方法を業種別に解説。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -113,21 +113,21 @@ const relatedLinks = [
   { href: "/ai/workflow", label: "AIワークフロー設計", desc: "n8n・Zapierとの連携設計" },
   { href: "/ai/sns-automation", label: "SNS投稿AI自動化", desc: "Instagram・X・TikTok自動化" },
   { href: "/ai/blog-automation", label: "AIブログ自動化", desc: "ブログ記事の自動化" },
-  { href: "/ai/report", label: "AIレポート自動化", desc: "月次レポートの自動生成" },
-  { href: "/ai/seo-content", label: "AI SEOコンテンツ", desc: "検索に強いコンテンツ生成" },
+  { href: "/ai/automation", label: "AIレポート自動化", desc: "月次レポートの自動生成" },
+  { href: "/ai/content", label: "AI SEOコンテンツ", desc: "検索に強いコンテンツ生成" },
   { href: "/services/ai", label: "AI活用支援サービス", desc: "サイプレスのAI支援" },
   { href: "/aio", label: "AIO対策", desc: "AI検索最適化" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索への引用獲得" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化" },
-  { href: "/industry/ec", label: "EC・小売のAI活用", desc: "EC業務の自動化" },
-  { href: "/industry/restaurant", label: "飲食業のAI活用", desc: "飲食店向け業務自動化" },
-  { href: "/industry/real-estate", label: "不動産のAI活用", desc: "不動産業の業務効率化" },
-  { href: "/industry/medical", label: "医療・クリニックのAI活用", desc: "医療現場の業務自動化" },
-  { href: "/industry/construction", label: "建設業のAI活用", desc: "建設・リフォームの自動化" },
-  { href: "/industry/btob", label: "BtoBのAI活用", desc: "法人向け業務自動化" },
-  { href: "/knowledge/chatgpt-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
-  { href: "/knowledge/ai-prompt", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
-  { href: "/knowledge/make-guide", label: "Make活用ガイド", desc: "Makeの使い方と設計のコツ" },
+  { href: "/industries/local-store", label: "EC・小売のAI活用", desc: "EC業務の自動化" },
+  { href: "/industries/restaurant", label: "飲食業のAI活用", desc: "飲食店向け業務自動化" },
+  { href: "/industries/real-estate", label: "不動産のAI活用", desc: "不動産業の業務効率化" },
+  { href: "/industries/clinic", label: "医療・クリニックのAI活用", desc: "医療現場の業務自動化" },
+  { href: "/industries/construction", label: "建設業のAI活用", desc: "建設・リフォームの自動化" },
+  { href: "/industries/professional-service", label: "BtoBのAI活用", desc: "法人向け業務自動化" },
+  { href: "/knowledge/ai-business", label: "ChatGPTビジネス活用", desc: "具体的な活用事例" },
+  { href: "/ai/prompt-design", label: "プロンプト設計ガイド", desc: "効果的なプロンプトの書き方" },
+  { href: "/ai/automation", label: "Make活用ガイド", desc: "Makeの使い方と設計のコツ" },
   { href: "/column/seo", label: "SEOコラム", desc: "AI×マーケティングの最新情報" },
   { href: "/contact", label: "無料相談", desc: "業務自動化のご相談" },
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
@@ -168,7 +168,7 @@ export default function AutomationPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -183,8 +183,8 @@ export default function AutomationPage() {
                 "個人情報・機密情報を含む業務を自動化する際のセキュリティ上の注意点",
                 "自動化効果を定量的に把握するKPI設定と計測場所の一覧",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
               ))}
@@ -208,7 +208,7 @@ export default function AutomationPage() {
                 { title: "リードナーチャリングの自動化", body: "問い合わせ者へのステップメール・フォロー連絡をCRM（HubSpot・Salesforce等）と連携してAI支援で自動化します。担当者への通知・メモの自動生成も含みます。" },
                 { title: "社内文書・議事録の効率化", body: "会議録音→文字起こし→要約・アクションアイテム抽出→Notionへの自動保存というワークフローをAIで構築します。議事録作成の時間を大幅に削減できます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC", paddingTop: "24px", paddingBottom: "24px" }}>
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0", paddingTop: "24px", paddingBottom: "24px" }}>
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -218,7 +218,7 @@ export default function AutomationPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -267,7 +267,7 @@ export default function AutomationPage() {
                   b: "ROI計算は「削減できる時間×時給換算」と「ツール・API費用」の比較で算出できます。月20時間削減できれば時給3,000円換算で月6万円分の価値があり、ツール費用が月1〜2万円程度であれば3〜4ヶ月以内に投資回収できます。導入前にROI試算を行い、経営判断の材料とすることが重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -331,10 +331,10 @@ export default function AutomationPage() {
                   detail: "見積依頼フォームの送信から、案件情報のスプレッドシート登録・担当者への自動割り振り・進捗ステータスの更新・顧客へのフォローメールまで一連のフローを自動化します。対応漏れ防止と顧客体験向上を同時に実現できます。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px 24px 28px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ padding: "28px 24px 28px 0", borderTop: "1px solid #E2E8F0" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "#c4b89a" }}>{item.industry}</span>
+                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "#3A9BDC" }}>{item.industry}</span>
                   </div>
                   <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.detail}</p>
@@ -345,7 +345,7 @@ export default function AutomationPage() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -404,7 +404,7 @@ export default function AutomationPage() {
                   b: "月次でワークフローの動作確認・エラーログの確認・API仕様変更への対応・プロンプトの改善を実施します。削減時間・処理件数・コストのKPIをレポートし、次の自動化候補の検討も継続的に行います。",
                 },
               ].map((item) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
                     <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -454,7 +454,7 @@ export default function AutomationPage() {
                   how: "自動化対象業務を担当していたメンバーの月間残業時間の推移を確認。給与明細・勤怠管理システムで計測。自動化による生産性向上の最終指標として活用。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-semibold mb-1" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
@@ -466,7 +466,7 @@ export default function AutomationPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI業務自動化のご相談"

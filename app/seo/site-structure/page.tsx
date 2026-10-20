@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "SEOに強いサイト構造設計のガイド。URL・パンくず・内部リンク・サイロ構造の設計方法を解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo/site-structure" },
@@ -117,17 +118,17 @@ const relatedLinks = [
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスの構造設計" },
   { href: "/web-design", label: "Webサイト制作", desc: "SEOを考慮したサイト設計" },
   { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "構造設計から制作まで" },
-  { href: "/knowledge/site-structure", label: "サイト構造設計ガイド", desc: "情報設計の基礎" },
-  { href: "/checklist/seo", label: "SEOチェックリスト", desc: "構造設計の確認項目" },
+  { href: "/seo/site-structure", label: "サイト構造設計ガイド", desc: "情報設計の基礎" },
+  { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "構造設計の確認項目" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
   { href: "/cost/seo", label: "SEO対策の費用", desc: "構造設計込みの料金目安" },
-  { href: "/column/site-structure", label: "サイト構造コラム", desc: "情報設計の最新知識" },
-  { href: "/knowledge/internal-link", label: "内部リンク設計ガイド", desc: "PageRank伝播の仕組み" },
-  { href: "/knowledge/url-design", label: "URL設計ガイド", desc: "SEOに強いURL命名規則" },
-  { href: "/knowledge/breadcrumb", label: "パンくず実装ガイド", desc: "BreadcrumbList構造化データ" },
-  { href: "/cases/seo", label: "SEO改善事例", desc: "構造改善による順位向上の実績" },
+  { href: "/seo/site-structure", label: "サイト構造コラム", desc: "情報設計の最新知識" },
+  { href: "/knowledge/internal-linking", label: "内部リンク設計ガイド", desc: "PageRank伝播の仕組み" },
+  { href: "/seo/site-structure", label: "URL設計ガイド", desc: "SEOに強いURL命名規則" },
+  { href: "/seo/site-structure", label: "パンくず実装ガイド", desc: "BreadcrumbList構造化データ" },
+  { href: "/cases/service/seo", label: "SEO改善事例", desc: "構造改善による順位向上の実績" },
   { href: "/aio", label: "AIO対策", desc: "AI検索に対応したコンテンツ構造" },
-  { href: "/lp/seo-diagnosis", label: "無料SEO診断", desc: "サイト構造の問題点を無料で確認" },
+  { href: "/services/seo", label: "無料SEO診断", desc: "サイト構造の問題点を無料で確認" },
 ];
 
 export default function SiteStructurePage() {
@@ -172,7 +173,7 @@ export default function SiteStructurePage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -187,12 +188,12 @@ export default function SiteStructurePage() {
                 "孤立ページの見つけ方・重複コンテンツの発生箇所と対処法",
                 "業種別のサイト構造パターンと、設計から実装までのフロー",
               ].map((text, i) => (
-                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -200,7 +201,7 @@ export default function SiteStructurePage() {
         {/* 構造問題のリスク */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Structure Risks</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Structure Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイト構造が整っていないと起きる4つのSEO問題
             </h2>
@@ -211,7 +212,7 @@ export default function SiteStructurePage() {
                 { t: "カニバリゼーションで評価が分散する", b: "同じキーワードを複数ページで狙うとGoogleが「どのページを評価すべきか」と混乱します。類似ページの統合・canonicalの設定でキーワードの評価を一点集中させます。" },
                 { t: "内部リンクが機能せず回遊率が低下する", b: "ユーザーが次のページへ自然に移動できる内部リンク設計がないと、1ページだけ見て離脱します。回遊率低下は滞在時間の短縮としてGoogleの評価低下にもつながります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -243,7 +244,7 @@ export default function SiteStructurePage() {
                 { title: "重要ページがトップページから遠い位置にある", body: "コンバージョン目標となるページへの到達に4クリック以上かかる設計。クロールの到達率が下がり、PageRankの伝播も薄くなります。重要ページほどナビゲーションや上位ページから直接リンクします。" },
                 { title: "内部リンクのアンカーテキストが「こちら」ばかり", body: "「こちら」「詳細はこちら」というアンカーテキストはGoogleにリンク先のページが何について書かれているかを伝えません。アンカーテキストにはリンク先のキーワードを自然に含めることが重要です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6 pr-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6 pr-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -252,12 +253,12 @@ export default function SiteStructurePage() {
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* 設計の要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Elements</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -272,7 +273,7 @@ export default function SiteStructurePage() {
                 { title: "XMLサイトマップ", body: "全公開ページのURLリストをXML形式で作成し、Google Search Consoleに登録します。Next.jsではapp/sitemap.tsで動的生成が可能です。noindexページはサイトマップから除外します。lastmod（最終更新日）を正確に記述することでGooglebotが優先的にクロールします。大規模サイトでは1ファイル5万URL上限のため、カテゴリ別に分割してsitemap indexを使います。" },
                 { title: "内部リンク設計", body: "親ページ↔子ページの相互リンク・関連ページへの横断リンク・コンテンツ内の自然なテキストリンクを組み合わせます。アンカーテキストにキーワードを含めることで、リンク先のページに文脈情報を渡します。重要なCVページへの内部リンクは複数ページから設定し、PageRankの集約を図ります。リンク数が多すぎるページはリンクごとの評価が希薄になるため、ページあたり100リンク以内が目安です。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -334,21 +335,21 @@ export default function SiteStructurePage() {
                   body: "ホーム → 機能・ソリューション別（課題別にページを分ける）→ 導入事例（業種別）→ 料金プラン → 資料請求・デモ申込。業種別の課題解決ページ（例：/solution/retail）は潜在顧客の検索意図に対応し、導入事例との内部リンクで信頼性を高めます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-7 pr-8" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-7 pr-8" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[11px] font-semibold tracking-[0.18em] uppercase px-2 py-1" style={{ background: "#F9F8F5", color: "#6B7280" }}>{item.label}</span>
+                    <span className="text-[11px] font-semibold tracking-[0.18em] uppercase px-2 py-1" style={{ background: "#F4F6FA", color: "#6B7280" }}>{item.label}</span>
                     <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.industry}</p>
                   </div>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* 設計・実施フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -370,7 +371,7 @@ export default function SiteStructurePage() {
                 { step: "STEP 09", title: "Search Consoleへの登録・監視", body: "サイトマップ登録後、Search Consoleのクロールレポートでエラーがないかを監視します。インデックス状況・クロール済みページ数・エラーページを定期的に確認し、問題があれば速やかに対処します。" },
                 { step: "STEP 10", title: "定期的な構造レビューと改善", body: "半年〜1年ごとに、新規ページの追加・コンテンツ増加に伴いサイト構造を見直します。孤立ページの発生・内部リンクの不足・重複コンテンツの発生がないかを定期診断し、継続的に構造の品質を維持します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[11px] font-semibold tracking-[0.12em] shrink-0 mt-1" style={{ color: "#9CA3AF", minWidth: "64px" }}>{item.step}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -378,7 +379,7 @@ export default function SiteStructurePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -403,7 +404,7 @@ export default function SiteStructurePage() {
                 { metric: "トップページからの到達ステップ数", tool: "ScreamingFrog / Screaming Frog", desc: "重要ページへトップページから何クリックで到達できるかを計測します。目標は重要ページが3クリック以内。改善後に計測し直すことでフラット化の効果を検証します。" },
                 { metric: "リッチリザルト（パンくず）の表示数", tool: "Google Search Console", desc: "検索結果にパンくずリストが表示されているページ数。BreadcrumbList構造化データの実装が正しく機能しているかの確認指標です。表示されると検索結果でのクリック率（CTR）向上につながります。" },
               ].map((item, i) => (
-                <div key={i} className="py-6 pr-8" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6 pr-8" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex items-start gap-4 mb-2">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <div>
@@ -415,12 +416,12 @@ export default function SiteStructurePage() {
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #E2E8F0" }} />
           </div>
         </section>
 
         {/* サイプレスのサポート */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -434,7 +435,7 @@ export default function SiteStructurePage() {
                 { title: "既存サイトのリニューアル設計", body: "URL変更・301リダイレクト・サイトマップ更新・パンくずの再設計など、SEO評価を維持しながらのリニューアル設計に対応しています。リニューアル前後のSearch Consoleモニタリングも行います。" },
                 { title: "孤立ページ・重複コンテンツの診断と解消", body: "ScreamingFrogなどのクロールツールでサイト全体をクロールし、孤立ページ・重複コンテンツ・リダイレクトエラー・パンくず未設定ページを一覧化します。優先度をつけて改善計画を提供します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -442,7 +443,7 @@ export default function SiteStructurePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

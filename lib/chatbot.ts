@@ -6,6 +6,7 @@ import {
   CONTACT_TEL_HREF,
 } from "@/lib/contact";
 import { SERVICES } from "@/lib/data/services";
+import { BUSINESSES } from "@/lib/company";
 
 /**
  * サイト常設のAI相談チャットの設定。
@@ -45,7 +46,11 @@ const LINKABLE_PAGES: { path: string; label: string }[] = [
   { path: "/company/area", label: "対応エリア" },
   { path: "/recruit", label: "採用情報" },
   { path: "/agent", label: "代理店募集" },
+  { path: "/business", label: "事業内容（Webマーケティング・軽貨物・太陽光）" },
 ];
+
+/** 別サイトで運営している事業。チャット欄でもリンクとして表示する（ChatWidget の EXTERNAL_LINK と対応）。 */
+const EXTERNAL_BUSINESSES = BUSINESSES.filter((b) => b.external);
 
 function serviceKnowledge(): string {
   return SERVICES.map((s) => {
@@ -94,8 +99,8 @@ export const CHAT_SYSTEM_PROMPT = `あなたは株式会社サイプレスの公
 
 # 会社情報
 - 会社名：株式会社サイプレス（代表取締役 織田 春樹）
-- 所在地：〒124-0816 東京都葛飾区白鳥4-6-1-623
-- 事業：MEO対策、SEO対策、AIO対策、ホームページ制作、SNS運用、AI活用支援。設計から運用まで一気通貫で支援するWebマーケティング会社
+- 所在地：〒125-0061 東京都葛飾区亀有3-16-14-201
+- 事業：MEO対策、SEO対策、AIO対策、ホームページ制作、SNS運用、AI活用支援。設計から運用まで一気通貫で支援するWebマーケティング会社。あわせて軽貨物事業と太陽光事業を運営している（下記）
 - 対応エリア：東京23区を中心に、神奈川・埼玉・千葉、および全国（オンライン対応）
 - 電話：${CONTACT_TEL}（${CONTACT_HOURS}）。急ぎの方や、文章にするより話したほうが早い方に案内します
 - 受付時間：${CONTACT_HOURS}
@@ -104,6 +109,10 @@ export const CHAT_SYSTEM_PROMPT = `あなたは株式会社サイプレスの公
 
 # 案内できるページ
 ${LINKABLE_PAGES.map((p) => `- ${p.label}：${p.path}`).join("\n")}
+
+# 別サイトで運営している事業
+このチャットの相談対象はWebマーケティングです。次の事業について聞かれたら、概要だけを伝えて専用サイトへ案内します。条件・料金・補助金額などの詳細はこのチャットでは答えず、専用サイトか電話で確認してもらいます。
+${EXTERNAL_BUSINESSES.map((b) => `- ${b.name}：${b.description} 案内するときは [${b.name}のサイト](${b.href}) と書きます。`).join("\n")}
 
 # サービス情報
 ${serviceKnowledge()}`;

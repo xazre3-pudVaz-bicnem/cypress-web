@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "website",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/process/${slug}` },
@@ -55,7 +56,7 @@ export default async function ProcessSlugPage({ params }: { params: Promise<{ sl
       )}
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -83,13 +84,13 @@ export default async function ProcessSlugPage({ params }: { params: Promise<{ sl
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {page.steps.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.num}</span>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.num}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "8px", flexWrap: "wrap" }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a" }}>{item.title}</p>
                       {item.duration && (
-                        <span style={{ fontSize: "11px", color: "#9ca3af", background: "#f8f6f2", padding: "2px 10px", border: "1px solid #ece8e0" }}>
+                        <span style={{ fontSize: "11px", color: "#9ca3af", background: "#F4F6FA", padding: "2px 10px", border: "1px solid #E2E8F0" }}>
                           {item.duration}
                         </span>
                       )}
@@ -102,7 +103,7 @@ export default async function ProcessSlugPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#F4F6FA" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading="お気軽にお問い合わせください"

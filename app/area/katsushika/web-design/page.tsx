@@ -10,7 +10,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 export const metadata: Metadata = {
   title: "葛飾区のホームページ制作会社｜SEOに強い集客サイトを地域密着で｜株式会社サイプレス",
   description:
-    "葛飾区のホームページ制作は地元・白鳥拠点のサイプレスへ。亀有・金町・新小岩・柴又・立石など区内全域に訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から制作。補助金活用の相談も可能です。",
+    "葛飾区のホームページ制作は地元・亀有拠点のサイプレスへ。亀有・金町・新小岩・柴又・立石など区内全域に訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から制作。補助金活用の相談も可能です。",
   keywords: [
     "葛飾区 ホームページ制作",
     "葛飾区 ホームページ制作会社",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区のホームページ制作会社｜SEOに強い集客サイトを地域密着で",
     description:
       "葛飾区拠点のホームページ制作会社。対面打ち合わせ・訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から。補助金活用の相談も可能。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -44,7 +44,7 @@ const faqItems = [
   },
   {
     q: "葛飾区内で対面での打ち合わせは可能ですか？",
-    a: "はい。サイプレスは葛飾区白鳥4-6-1-623に拠点があり、亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域への訪問打ち合わせに対応しています。店舗・事務所の雰囲気を実際に拝見してデザインに反映できることが地元制作会社の強みです。",
+    a: "はい。サイプレスは葛飾区亀有3-16-14-201に拠点があり、亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域への訪問打ち合わせに対応しています。店舗・事務所の雰囲気を実際に拝見してデザインに反映できることが地元制作会社の強みです。",
   },
   {
     q: "葛飾区のホームページ制作に補助金は使えますか？",
@@ -114,7 +114,7 @@ const relatedLinks = [
   { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップで上位表示" },
   { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "補助金活用時の進め方" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "サービス全体の詳細" },
-  { href: "/cost/web-design", label: "ホームページ制作の費用相場", desc: "料金の内訳と目安" },
+  { href: "/cost/homepage", label: "ホームページ制作の費用相場", desc: "料金の内訳と目安" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "会社サイトの作り方" },
   { href: "/web-design/landing-page", label: "LP制作", desc: "1枚完結の集客ページ" },
   { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "検索される構造設計" },
@@ -153,10 +153,10 @@ export default function Page() {
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",
-          postalCode: "124-0816",
+          postalCode: "125-0061",
           addressRegion: "東京都",
           addressLocality: "葛飾区",
-          streetAddress: "白鳥4-6-1-623",
+          streetAddress: "亀有3-16-14-201",
         },
         email: "info@cypress-all.co.jp",
         areaServed: [
@@ -197,7 +197,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -213,7 +213,7 @@ export default function Page() {
               葛飾区のホームページ制作
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "660px", marginBottom: "16px" }}>
-              株式会社サイプレスは、葛飾区白鳥に拠点を置くホームページ制作会社です。亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域への訪問打ち合わせに対応し、SEO内部対策・スマホ最適化・高速表示を標準搭載した「集客できるホームページ」を制作します。
+              株式会社サイプレスは、葛飾区亀有に拠点を置くホームページ制作会社です。亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域への訪問打ち合わせに対応し、SEO内部対策・スマホ最適化・高速表示を標準搭載した「集客できるホームページ」を制作します。
             </p>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "660px" }}>
               小規模サイトは10万円台から。葛飾区のホームページ作成関連の補助金活用のご相談、制作後のSEO対策・MEO対策・保守運用まで、地元の会社としてワンストップで伴走します。
@@ -250,7 +250,7 @@ export default function Page() {
                 { t: "何から始めればいいか分からない", b: "ホームページ・SNS・Googleマップ、どれから手を付けるべきか分からない。相談できる地元の専門家がいない。" },
                 { t: "補助金を使いたいが手続きが不安", b: "葛飾区の補助金制度を使ってホームページを作りたいが、見積書の準備や制作内容の整理を手伝ってほしい。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -263,7 +263,7 @@ export default function Page() {
         </section>
 
         {/* Section 2: 選ばれる理由 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -271,15 +271,15 @@ export default function Page() {
             </h2>
             <div style={{ maxWidth: "800px" }}>
               {[
-                { n: "01", t: "葛飾区拠点 — 対面打ち合わせ・訪問対応", b: "葛飾区白鳥の地元企業だから、亀有・金町・新小岩・柴又・立石など区内全域へすぐに伺えます。店舗の雰囲気・商圏・お客様層を実際に見てデザインと文章に反映できるのは、地元制作会社ならではの強みです。" },
+                { n: "01", t: "葛飾区拠点 — 対面打ち合わせ・訪問対応", b: "葛飾区亀有の地元企業だから、亀有・金町・新小岩・柴又・立石など区内全域へすぐに伺えます。店舗の雰囲気・商圏・お客様層を実際に見てデザインと文章に反映できるのは、地元制作会社ならではの強みです。" },
                 { n: "02", t: "SEO内部対策を標準搭載", b: "「葛飾区 ○○」「亀有 ○○」など地域キーワードで検索されるための内部SEO（タイトル設計・見出し構造・構造化データ・サイトマップ）を制作段階から組み込みます。後付けのSEOより費用対効果が高い方法です。" },
                 { n: "03", t: "高速表示・スマホ最適化", b: "Next.js等のモダン技術による高速なサイトを構築します。表示速度は検索順位と離脱率に直結する要素です。地域検索の7〜8割を占めるスマホユーザーを最優先した設計（モバイルファースト）を徹底します。" },
                 { n: "04", t: "集客まで見据えたワンストップ支援", b: "制作後のSEO対策・MEO対策（Googleマップ）・SNS運用まで一社で対応します。ホームページとGoogleビジネスプロフィールの情報を統一し、「検索でもマップでも見つかる」状態を作ります。" },
                 { n: "05", t: "中小企業・個人事業主に合わせた適正価格", b: "小規模サイトは10万円台から。創業期はまず最小構成で公開し、売上に応じて拡張していく段階的なプランも提案します。葛飾区のホームページ関連補助金を活用する場合の見積整理もサポートします。" },
                 { n: "06", t: "公開後の保守・更新も地元で安心", b: "月額1〜3万円の保守プランで更新代行・サーバー管理・セキュリティ対応まで任せられます。「業者と連絡が取れない」という他社制作サイトの引き継ぎ・リニューアル相談にも対応しています。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -321,21 +321,21 @@ export default function Page() {
                   items: ["ブランド・構成設計", "10ページ以上の本格構成", "CMS（更新システム）", "構造化データ・AIO対応"],
                 },
               ].map((item) => (
-                <div key={item.plan} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "32px 28px", background: "#FFFFFF" }}>
+                <div key={item.plan} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "32px 28px", background: "#FFFFFF" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "8px" }}>{item.plan}</p>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "#c4b89a", fontWeight: 600, marginBottom: "14px" }}>{item.price}<span style={{ fontSize: "12px", color: "#9CA3AF", marginLeft: "6px" }}>（税別・目安）</span></p>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "#3A9BDC", fontWeight: 600, marginBottom: "14px" }}>{item.price}<span style={{ fontSize: "12px", color: "#9CA3AF", marginLeft: "6px" }}>（税別・目安）</span></p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", marginBottom: "16px" }}>{item.desc}</p>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                     {item.items.map((li) => (
                       <li key={li} style={{ fontSize: "13px", color: "#374151", lineHeight: "2", paddingLeft: "16px", position: "relative" }}>
-                        <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>✓</span>{li}
+                        <span style={{ position: "absolute", left: 0, color: "#3A9BDC" }}>✓</span>{li}
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
-            <div style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 28px", maxWidth: "800px" }}>
+            <div style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "24px 28px", maxWidth: "800px" }}>
               <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>保守・運用サポート：月額1〜3万円</p>
               <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>
                 テキスト・画像の更新代行、サーバー・ドメイン管理、セキュリティ対応、アクセスレポートを含みます。SEO対策（月額3万円〜）・MEO対策（月額2万円〜）とのセットプランもご用意しています。
@@ -345,7 +345,7 @@ export default function Page() {
         </section>
 
         {/* Section 4: 制作の流れ */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -364,9 +364,9 @@ export default function Page() {
                 { step: "STEP 06", t: "公開・検索エンジン登録", b: "本番公開後、Googleサーチコンソール・サイトマップの登録、Googleビジネスプロフィールとの連携設定まで行い、検索される状態を整えます。" },
                 { step: "STEP 07", t: "運用開始・集客施策へ", b: "公開後は保守プランでの更新代行、またはSEO・MEO対策による集客強化フェーズへ移行します。月次レポートで効果を確認しながら改善を続けます。" },
               ].map((item, idx) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #E2E8F0" }}>
                   <div style={{ minWidth: "80px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.1em", display: "block" }}>{item.step}</span>
+                    <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.1em", display: "block" }}>{item.step}</span>
                   </div>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -397,7 +397,7 @@ export default function Page() {
                 { area: "立石・青砥", desc: "せんべろの聖地として注目される立石と、京成本線・押上線が交わる青砥。飲食店の熱量・雰囲気が伝わる写真中心の構成と、SNS連携を組み込んだサイトが効果的です。" },
                 { area: "高砂・お花茶屋・堀切", desc: "住宅地が中心の生活密着エリア。整体・美容室・教室業などは、地域住民の「近くの○○」検索に応えるローカルSEO設計とGoogleマップ連携で、着実に集客できるサイトを作ります。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -407,7 +407,7 @@ export default function Page() {
         </section>
 
         {/* Section 6: 業種別 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Industry</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -427,8 +427,8 @@ export default function Page() {
                 { n: "07", t: "小売・EC", b: "実店舗の商品をオンラインでも販売したい場合、Shopify・BASE等のECカート連携に対応します。店舗案内とネットショップを一体化させ、地域のお客様のリピート購入につなげます。" },
                 { n: "08", t: "企業サイト・採用サイト", b: "葛飾区の製造業・建設業・運送業など、BtoB企業や採用強化を目的としたコーポレートサイトも多数対応しています。会社の信頼性を伝える実績・代表メッセージ・採用情報の設計を行います。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -471,7 +471,7 @@ export default function Page() {
         {/* Section 8: 制作後の集客（SEO/MEO連携） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>After Launch</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>After Launch</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               「作って終わり」にしない。公開後の集客まで一貫支援
             </h2>
@@ -484,10 +484,10 @@ export default function Page() {
                 { t: "葛飾区のMEO対策", b: "Googleマップでの上位表示を狙うGoogleビジネスプロフィール最適化・口コミ獲得支援・投稿代行を提供します。", href: "/area/katsushika/meo", cta: "葛飾区のMEO対策を見る" },
                 { t: "SNS運用・AI活用", b: "Instagram運用やAIチャットボット・ブログ自動化など、ホームページと連動した集客チャネルの拡張を支援します。", href: "/services/sns", cta: "SNS運用支援を見る" },
               ].map((item) => (
-                <div key={item.t} style={{ border: "1px solid rgba(196,184,154,0.3)", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.t} style={{ border: "1px solid rgba(58,155,220,0.3)", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9", marginBottom: "16px" }}>{item.b}</p>
-                  <Link href={item.href} style={{ fontSize: "13px", color: "#c4b89a", textDecoration: "none", fontWeight: 600 }}>
+                  <Link href={item.href} style={{ fontSize: "13px", color: "#3A9BDC", textDecoration: "none", fontWeight: 600 }}>
                     {item.cta} →
                   </Link>
                 </div>
@@ -496,10 +496,10 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="葛飾区のホームページ制作 — よくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="葛飾区のホームページ制作 — よくある質問" bgColor="#F4F6FA" />
 
         {/* 成功事例への誘導 */}
-        <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E2E8F0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Success Cases</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "26px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -518,7 +518,7 @@ export default function Page() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

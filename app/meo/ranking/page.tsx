@@ -142,21 +142,21 @@ const relatedLinks = [
   { href: "/meo/meo-audit", label: "MEO診断・監査", desc: "現状診断と改善優先度の特定" },
   { href: "/meo/map-ranking", label: "マップ上位表示", desc: "ローカルパック攻略法" },
   { href: "/meo/nap", label: "NAP統一対策", desc: "名称・住所・電話番号の整合性" },
-  { href: "/meo/gbp-posting", label: "GBP投稿運用", desc: "効果的な投稿戦略と頻度" },
-  { href: "/meo/competitor-analysis", label: "競合MEO分析", desc: "競合と差をつける分析手法" },
+  { href: "/meo/google-post", label: "GBP投稿運用", desc: "効果的な投稿戦略と頻度" },
+  { href: "/meo/meo-audit", label: "競合MEO分析", desc: "競合と差をつける分析手法" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "MEOと連動するSEO施策" },
   { href: "/seo", label: "SEO対策とは", desc: "検索エンジン最適化の基礎" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスのSEO戦略" },
-  { href: "/seo/schema-markup", label: "構造化データ実装", desc: "LocalBusinessスキーマの設定" },
+  { href: "/seo/structured-data", label: "構造化データ実装", desc: "LocalBusinessスキーマの設定" },
   { href: "/aio", label: "AIO対策とは", desc: "AI検索への最適化対策" },
-  { href: "/industry/restaurant", label: "飲食店のMEO対策", desc: "飲食業界の特化施策" },
-  { href: "/industry/beauty", label: "美容室・サロンのMEO", desc: "美容業界の集客施策" },
-  { href: "/industry/dental", label: "歯科医院のMEO対策", desc: "歯科クリニックの集客" },
-  { href: "/industry/clinic", label: "クリニックのMEO対策", desc: "医療機関の地域集客" },
+  { href: "/industries/restaurant", label: "飲食店のMEO対策", desc: "飲食業界の特化施策" },
+  { href: "/industries/beauty", label: "美容室・サロンのMEO", desc: "美容業界の集客施策" },
+  { href: "/industries/clinic", label: "歯科医院のMEO対策", desc: "歯科クリニックの集客" },
+  { href: "/industries/clinic", label: "クリニックのMEO対策", desc: "医療機関の地域集客" },
   { href: "/area/tokyo", label: "東京のMEO対策", desc: "東京エリアの競合と施策" },
-  { href: "/area/osaka", label: "大阪のMEO対策", desc: "大阪エリアの競合と施策" },
-  { href: "/blog/meo", label: "MEO対策コラム", desc: "最新情報と実践ノウハウ" },
+  { href: "/area/nationwide", label: "大阪のMEO対策", desc: "大阪エリアの競合と施策" },
+  { href: "/blog/category/meo", label: "MEO対策コラム", desc: "最新情報と実践ノウハウ" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずは現状診断から" },
 ];
 
@@ -197,7 +197,7 @@ export default function MeoRankingPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -215,7 +215,7 @@ export default function MeoRankingPage() {
                 "施策実施から効果確認までのステップと成果測定に使うべきKPI一覧",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -244,7 +244,7 @@ export default function MeoRankingPage() {
                 { num: "02", title: "関連性（Relevance）", body: "ビジネスがユーザーの検索クエリにどれだけマッチしているかです。GBPのカテゴリ設定・説明文・サービス情報・投稿コンテンツに含まれるキーワードが評価されます。「美容室」で検索したユーザーに対して「美容室」カテゴリに設定されたGBPが高く評価されるように、カテゴリとキーワードの最適化が関連性を高めます。" },
                 { num: "03", title: "知名度（Prominence）", body: "ビジネスがオンライン上でどれだけ認知されているかです。口コミの件数・評価スコア・外部サイトからの被リンク・サイテーション（NAP情報の掲載）・SEO評価などが影響します。リアルな知名度（チェーン店・老舗など）もGoogleは考慮しますが、中小企業でも口コミ獲得・外部サイト掲載・SEO改善で知名度を高めることができます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
@@ -252,13 +252,13 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 順位改善の施策 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Improvement Measures
@@ -268,7 +268,7 @@ export default function MeoRankingPage() {
             </h2>
             <div className="max-w-3xl">
               {rankingMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -278,7 +278,7 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -334,7 +334,7 @@ export default function MeoRankingPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
@@ -389,7 +389,7 @@ export default function MeoRankingPage() {
                   body: "「バリアフリー対応」「子ども連れ歓迎」「駐車場あり」「Wi-Fi完備」などの属性が未設定だと、該当する絞り込み検索で表示されません。業種に合わせた属性をすべて設定することで表示機会が広がります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -399,7 +399,7 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -452,7 +452,7 @@ export default function MeoRankingPage() {
                   point: "診療科目ごとのカテゴリ・属性設定を正確に行います。オンライン診療・予約システムとの連携で「今すぐ予約」ボタンを活用します。医療広告ガイドラインに沿った表現で口コミ返信・投稿を行い、信頼性を高めます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -462,13 +462,13 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -523,7 +523,7 @@ export default function MeoRankingPage() {
                   detail: "月次で順位・インプレッション・クリック数・電話タップ数・ルートタップ数・口コミ数を記録し、施策の効果を定量的に評価します。順位変動があった場合は原因を分析し、次月の施策に反映するPDCAを回します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -533,7 +533,7 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -582,7 +582,7 @@ export default function MeoRankingPage() {
                   detail: "GBPのウェブサイトリンクからの流入数です。Googleアナリティクス（参照元：google / medium：organic）またはGBPインサイトで確認します。MEOの改善がウェブサイトへの送客にどう貢献しているかを測ります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -592,13 +592,13 @@ export default function MeoRankingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 2-col: 順位を決める3要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>

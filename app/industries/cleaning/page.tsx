@@ -115,15 +115,15 @@ const relatedLinks = [
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "清掃業向けサイト制作" },
   { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "高CV率LPの制作" },
   { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
-  { href: "/services/line", label: "LINE公式アカウント活用", desc: "リピーター育成の仕組み化" },
+  { href: "/sns", label: "LINE公式アカウント活用", desc: "リピーター育成の仕組み化" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/industries/plumbing", label: "水道・設備工事業のWeb集客", desc: "設備系業者の集客" },
   { href: "/industries/renovation", label: "リフォーム会社のWeb集客", desc: "リフォーム業の集客支援" },
   { href: "/industries/construction", label: "建設・工務店のWeb集客", desc: "建設業の集客支援" },
-  { href: "/knowledge/local-seo-basics", label: "ローカルSEOの基礎知識", desc: "地域SEOの基本を学ぶ" },
+  { href: "/knowledge/local-seo-guide", label: "ローカルSEOの基礎知識", desc: "地域SEOの基本を学ぶ" },
   { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
-  { href: "/knowledge/gbp-photo-guide", label: "GBP写真の撮り方ガイド", desc: "Googleビジネスプロフィール写真の最適化" },
+  { href: "/meo/photo-posting", label: "GBP写真の撮り方ガイド", desc: "Googleビジネスプロフィール写真の最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO対策", desc: "コンテンツで検索上位を目指す" },
   { href: "/cost/seo", label: "SEO対策の料金", desc: "SEO対策の費用相場" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
@@ -162,7 +162,7 @@ export default function CleaningIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -205,11 +205,11 @@ export default function CleaningIndustryPage() {
         {/* 集客課題 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               ハウスクリーニング業が抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(58,155,220,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -233,7 +233,7 @@ export default function CleaningIndustryPage() {
                 },
               ].map((item) => (
                 <div key={item.n} style={{ background: "#0d1b2a", padding: "28px" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9CA3AF", lineHeight: "1.8" }}>{item.b}</p>
                 </div>
@@ -258,8 +258,8 @@ export default function CleaningIndustryPage() {
                 { n: "05", t: "口コミ管理で信頼と検索順位を高める", b: "サービス完了後に口コミ依頼のフロー（QRコード・LINE送信）を整備します。清掃業は口コミが選択の決め手になりやすいため、継続的な口コミ獲得と全件返信が重要です。" },
                 { n: "06", t: "LINE公式アカウントで定期契約を促進", b: "LINE公式アカウントで定期クリーニングのリマインダー・季節キャンペーン告知を配信します。一度の利用から3か月・6か月ごとの定期契約への転換を促すデジタル動線を構築します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -271,7 +271,7 @@ export default function CleaningIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略詳細 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -313,7 +313,7 @@ export default function CleaningIndustryPage() {
         </section>
 
         {/* サービス展開 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Sub Services</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -329,7 +329,7 @@ export default function CleaningIndustryPage() {
                   { t: "エアコンクリーニング専門集客", b: "シーズン前（3〜5月）の需要急増期に向け、「エアコン洗浄の効果・必要性」の啓発コンテンツと「○○区 エアコンクリーニング 業者比較」系のキーワードを組み合わせ、シーズン前からの流入獲得と予約受付を促進します。" },
                   { t: "法人・施設清掃（オフィス・店舗）", b: "資格保有（建築物環境衛生管理技術者等）・実績規模・セキュリティへの配慮・定期清掃の契約実績をホームページで明示します。「オフィス清掃 定期契約 ○○区」系キーワードのSEOコンテンツと法人向け問い合わせフォームで商談機会を創出します。" },
                 ].map((item, i) => (
-                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -340,7 +340,7 @@ export default function CleaningIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -399,8 +399,8 @@ export default function CleaningIndustryPage() {
                   b: "Googleアナリティクス・Search Console・GBPインサイトを月次で確認し、流入数・問い合わせ数・口コミ件数の推移を追います。データに基づいて投資対効果の高い施策に集中し、継続改善を行います。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -459,13 +459,13 @@ export default function CleaningIndustryPage() {
                   desc: "単発利用から定期契約に移行した顧客の割合を記録し、LINEリマインド・定期プラン提案の効果を測定してリピート戦略を改善します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, minWidth: "8px", marginTop: "8px" }}>
-                    <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#c4b89a" }} />
+                    <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#3A9BDC" }} />
                   </div>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", letterSpacing: "0.1em", color: "#c4b89a", marginBottom: "8px" }}>計測場所：{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", letterSpacing: "0.1em", color: "#3A9BDC", marginBottom: "8px" }}>計測場所：{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>
@@ -477,7 +477,7 @@ export default function CleaningIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -500,9 +500,9 @@ export default function CleaningIndustryPage() {
                   b: "施策を実施して終わりではなく、GBPインサイト・Search Console・アナリティクスのデータを月次でレポートし、継続的な改善を行います。数値に基づいた運用改善で、集客コストを下げながら問い合わせ数を積み上げます。",
                 },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -523,7 +523,7 @@ export default function CleaningIndustryPage() {
                 { t: "季節SEO・コンテンツ対策", b: "「エアコン掃除 時期 ○○区」「引越し後 ハウスクリーニング 費用」などの需要期キーワードを狙ったSEOコンテンツを計画的に整備します。繁忙期前からの自然検索流入獲得を目指します。" },
                 { t: "LINE公式アカウント活用支援", b: "定期クリーニングのリマインダー配信・季節キャンペーン告知・口コミ獲得メッセージの自動送信を設計します。単発利用から定期契約へ転換するデジタル導線を構築します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -532,7 +532,7 @@ export default function CleaningIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ハウスクリーニング・清掃業のWeb集客に関するよくある質問" bgColor="#f9f8f5" />
+        <FaqSection items={faqItems} heading="ハウスクリーニング・清掃業のWeb集客に関するよくある質問" bgColor="#F4F6FA" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="清掃業のWeb集客ご相談"

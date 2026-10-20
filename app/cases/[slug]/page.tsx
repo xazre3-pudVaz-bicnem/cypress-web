@@ -410,9 +410,9 @@ export default async function CaseDetailPage({ params }: Props) {
         {/* Hero */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#F4F6FA",
             padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #E2E8F0",
           }}
         >
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
@@ -490,7 +490,7 @@ export default async function CaseDetailPage({ params }: Props) {
             {/* Left */}
             <div>
               {/* Hero image */}
-              <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", overflow: "hidden", marginBottom: "40px", border: "1px solid #E8E4DC" }}>
+              <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", overflow: "hidden", marginBottom: "40px", border: "1px solid #E2E8F0" }}>
                 <Image src={c.image} alt={imageAlt} fill sizes="(max-width: 1152px) 100vw, 760px" style={{ objectFit: "cover" }} priority />
               </div>
 
@@ -513,7 +513,7 @@ export default async function CaseDetailPage({ params }: Props) {
                 <p style={bodyStyle}>{c.challenge}</p>
                 <div style={{ display: "grid", gap: "20px", marginTop: "8px" }}>
                   {c.beforeIssues.map((issue, i) => (
-                    <section key={i} style={{ borderLeft: "2px solid #E8E4DC", paddingLeft: "18px" }}>
+                    <section key={i} style={{ borderLeft: "2px solid #E2E8F0", paddingLeft: "18px" }}>
                       <h3 style={h3Style}>
                         <span style={{ color: "#C46A6A", fontFamily: "var(--font-display)", marginRight: "8px" }}>
                           課題 {String(i + 1).padStart(2, "0")}
@@ -564,7 +564,7 @@ export default async function CaseDetailPage({ params }: Props) {
                   {c.implementedActions.map((action, i) => (
                     <section key={i}>
                       <h3 style={h3Style}>
-                        <span style={{ color: "#C4A96A", fontFamily: "var(--font-display)", marginRight: "8px" }}>
+                        <span style={{ color: "#3A9BDC", fontFamily: "var(--font-display)", marginRight: "8px" }}>
                           施策 {String(i + 1).padStart(2, "0")}
                         </span>
                         {action}
@@ -581,9 +581,9 @@ export default async function CaseDetailPage({ params }: Props) {
                 <h2 style={h2Style}>成功につながったポイント</h2>
                 <div style={{ display: "grid", gap: "16px" }}>
                   {c.successPoints.map((item, i) => (
-                    <section key={i} style={{ border: "1px solid #E8E4DC", padding: "20px 22px" }}>
+                    <section key={i} style={{ border: "1px solid #E2E8F0", padding: "20px 22px" }}>
                       <div style={{ display: "flex", gap: "14px", alignItems: "flex-start", marginBottom: "8px" }}>
-                        <span style={{ fontFamily: "var(--font-display)", fontSize: "18px", color: "#C4A96A", lineHeight: 1, flexShrink: 0 }}>
+                        <span style={{ fontFamily: "var(--font-display)", fontSize: "18px", color: "#3A9BDC", lineHeight: 1, flexShrink: 0 }}>
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         <h3 style={{ ...h3Style, margin: 0, paddingBottom: 0, borderBottom: "none" }}>{item}</h3>
@@ -610,7 +610,7 @@ export default async function CaseDetailPage({ params }: Props) {
                         color: "#374151",
                         lineHeight: "1.75",
                         padding: "16px 18px",
-                        background: "#F8F6F2",
+                        background: "#F4F6FA",
                         border: "1px solid #EFE9DF",
                         display: "flex",
                         gap: "12px",
@@ -636,7 +636,7 @@ export default async function CaseDetailPage({ params }: Props) {
                 </p>
                 <div style={{ display: "grid", gap: "12px" }}>
                   {offerings.map((o, i) => (
-                    <section key={i} style={{ border: "1px solid #E8E4DC", padding: "18px 20px", background: "#FAFAF8" }}>
+                    <section key={i} style={{ border: "1px solid #E2E8F0", padding: "18px 20px", background: "#FAFAF8" }}>
                       <h3 style={{ ...h3Style, paddingBottom: "8px", marginBottom: "8px" }}>{o.title}</h3>
                       <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", margin: 0 }}>{o.body}</p>
                     </section>
@@ -688,7 +688,7 @@ export default async function CaseDetailPage({ params }: Props) {
                   <h2 style={h2Style}>よくある質問</h2>
                   <div>
                     {allFaqs.map((item, i) => (
-                      <details key={i} style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "4px", marginBottom: "4px" }}>
+                      <details key={i} style={{ borderBottom: "1px solid #E2E8F0", paddingBottom: "4px", marginBottom: "4px" }}>
                         <summary
                           style={{
                             fontFamily: "var(--font-serif)",
@@ -705,7 +705,7 @@ export default async function CaseDetailPage({ params }: Props) {
                           }}
                         >
                           <span>Q. {item.question}</span>
-                          <span style={{ color: "#C4A96A", fontSize: "16px", flexShrink: 0 }}>+</span>
+                          <span style={{ color: "#3A9BDC", fontSize: "16px", flexShrink: 0 }}>+</span>
                         </summary>
                         <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", padding: "4px 0 16px" }}>
                           {item.answer}
@@ -720,7 +720,7 @@ export default async function CaseDetailPage({ params }: Props) {
             {/* Sidebar */}
             <aside className="case-detail-sidebar" style={{ position: "sticky", top: "24px" }}>
               {/* Summary card */}
-              <div style={{ border: "1px solid #E8E4DC", padding: "24px", marginBottom: "20px", background: "#FAFAF8" }}>
+              <div style={{ border: "1px solid #E2E8F0", padding: "24px", marginBottom: "20px", background: "#FAFAF8" }}>
                 <p style={sideLabel}>Case Info</p>
                 <dl style={{ margin: 0 }}>
                   <SideRow label="業種" value={c.industry} href={`/cases/industry/${c.industrySlug}`} />
@@ -739,7 +739,7 @@ export default async function CaseDetailPage({ params }: Props) {
                         fontFamily: "var(--font-serif)",
                         padding: "8px 12px",
                         background: "#FFFFFF",
-                        border: "1px solid #E8E4DC",
+                        border: "1px solid #E2E8F0",
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
@@ -753,7 +753,7 @@ export default async function CaseDetailPage({ params }: Props) {
               </div>
 
               {/* CTA */}
-              <div style={{ border: "1px solid #E8E4DC", padding: "24px", background: "#0B1628" }}>
+              <div style={{ border: "1px solid #E2E8F0", padding: "24px", background: "#0B1628" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#FFFFFF", fontWeight: 700, lineHeight: 1.5, marginBottom: "12px" }}>
                   同様の施策について<br />ご相談ください
                 </p>
@@ -766,7 +766,7 @@ export default async function CaseDetailPage({ params }: Props) {
                     display: "block",
                     textAlign: "center",
                     padding: "12px 20px",
-                    background: "#C4A96A",
+                    background: "#3A9BDC",
                     color: "#FFFFFF",
                     fontSize: "13px",
                     fontWeight: 600,
@@ -784,7 +784,7 @@ export default async function CaseDetailPage({ params }: Props) {
 
         {/* Related cases */}
         {relatedCases.length > 0 && (
-          <section style={{ background: "#F8F6F2", padding: "clamp(40px, 7vh, 72px) 0", borderTop: "1px solid #E8E4DC" }}>
+          <section style={{ background: "#F4F6FA", padding: "clamp(40px, 7vh, 72px) 0", borderTop: "1px solid #E2E8F0" }}>
             <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
               <p style={{ ...eyebrow, marginBottom: "8px" }}>Related Cases</p>
               <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", color: "#0B1628", fontWeight: 700, marginBottom: "28px" }}>
@@ -796,7 +796,7 @@ export default async function CaseDetailPage({ params }: Props) {
                     key={rc.slug}
                     href={`/cases/${rc.slug}`}
                     className="related-card"
-                    style={{ display: "block", border: "1px solid #E8E4DC", background: "#FFFFFF", padding: "20px", textDecoration: "none" }}
+                    style={{ display: "block", border: "1px solid #E2E8F0", background: "#FFFFFF", padding: "20px", textDecoration: "none" }}
                   >
                     <p style={{ fontSize: "10px", color: "#9CA3AF", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>
                       {rc.industry} · {rc.region}
@@ -831,7 +831,7 @@ export default async function CaseDetailPage({ params }: Props) {
                     textDecoration: "none",
                     fontFamily: "var(--font-display)",
                     letterSpacing: "0.05em",
-                    borderBottom: "1px solid #D1C9BE",
+                    borderBottom: "1px solid #CBD5E1",
                     paddingBottom: "2px",
                   }}
                 >
@@ -849,7 +849,7 @@ export default async function CaseDetailPage({ params }: Props) {
       <style>{`
         .related-card { transition: box-shadow 0.2s, transform 0.2s; }
         .related-card:hover { box-shadow: 0 4px 16px rgba(11,22,40,0.08); transform: translateY(-1px); }
-        .related-internal:hover { border-color: #C4A96A !important; }
+        .related-internal:hover { border-color: #3A9BDC !important; }
         @media (max-width: 768px) {
           .case-detail-grid { grid-template-columns: 1fr !important; }
           .case-detail-sidebar { position: static !important; }
@@ -873,7 +873,7 @@ function RelatedLink({ label, href }: { label: string; href: string }) {
         justifyContent: "space-between",
         alignItems: "center",
         gap: "12px",
-        border: "1px solid #E8E4DC",
+        border: "1px solid #E2E8F0",
         background: "#FFFFFF",
         padding: "12px 16px",
         fontSize: "13px",
@@ -884,7 +884,7 @@ function RelatedLink({ label, href }: { label: string; href: string }) {
       }}
     >
       <span>{label}</span>
-      <span style={{ color: "#C4A96A", fontSize: "12px" }}>→</span>
+      <span style={{ color: "#3A9BDC", fontSize: "12px" }}>→</span>
     </Link>
   );
 }
@@ -895,7 +895,7 @@ function SideRow({ label, value, href }: { label: string; value: string; href?: 
       <dt style={{ fontSize: "11px", color: "#9CA3AF", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{label}</dt>
       <dd style={{ margin: 0, fontSize: "13px", color: "#0B1628", fontFamily: "var(--font-serif)" }}>
         {href ? (
-          <Link href={href} style={{ color: "#0B1628", textDecoration: "none", borderBottom: "1px solid #D1C9BE" }}>
+          <Link href={href} style={{ color: "#0B1628", textDecoration: "none", borderBottom: "1px solid #CBD5E1" }}>
             {value}
           </Link>
         ) : (
@@ -917,7 +917,7 @@ const crumbLink: React.CSSProperties = {
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--font-display)",
   letterSpacing: "0.25em",
-  color: "rgba(196,169,106,0.65)",
+  color: "rgba(58,155,220,0.65)",
   fontSize: "10px",
   marginBottom: "8px",
   textTransform: "uppercase",
@@ -928,7 +928,7 @@ const metaBadge: React.CSSProperties = {
   fontFamily: "var(--font-display)",
   letterSpacing: "0.08em",
   color: "#6B7280",
-  background: "#E8E4DC",
+  background: "#E2E8F0",
   padding: "3px 12px",
 };
 
@@ -939,7 +939,7 @@ const h2Style: React.CSSProperties = {
   fontWeight: 700,
   marginBottom: "20px",
   paddingBottom: "12px",
-  borderBottom: "1px solid #E8E4DC",
+  borderBottom: "1px solid #E2E8F0",
 };
 
 const h3Style: React.CSSProperties = {

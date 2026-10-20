@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/about-cypress" },
@@ -57,15 +58,15 @@ const organizationJsonLd = {
       address: {
         "@type": "PostalAddress",
         addressCountry: "JP",
-        postalCode: "124-0816",
+        postalCode: "125-0061",
         addressRegion: "東京都",
         addressLocality: "葛飾区",
-        streetAddress: "白鳥4-6-1-623",
+        streetAddress: "亀有3-16-14-201",
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: 35.7524,
-        longitude: 139.8471,
+        latitude: 35.7636,
+        longitude: 139.8486,
       },
       contactPoint: [
         {
@@ -250,7 +251,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Company Info */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Overview
@@ -266,7 +267,7 @@ export default function AboutCypressPage() {
                 { label: "会社名", value: "株式会社サイプレス（英名：Cypress Inc.）" },
                 { label: "代表取締役", value: "織田 春樹（Haruki Oda）" },
                 { label: "設立", value: "2026年5月13日" },
-                { label: "所在地", value: "〒124-0816 東京都葛飾区白鳥4-6-1-623" },
+                { label: "所在地", value: "〒125-0061 東京都葛飾区亀有3-16-14-201" },
                 { label: "メール", value: "info@cypress-all.co.jp" },
                 { label: "事業内容", value: "ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援" },
                 { label: "対応エリア", value: "東京都・神奈川県・埼玉県・千葉県（全国オンライン対応）" },
@@ -278,7 +279,7 @@ export default function AboutCypressPage() {
                     gridTemplateColumns: "140px 1fr",
                     gap: "16px",
                     padding: "16px 0",
-                    borderBottom: "1px solid #E8E4DC",
+                    borderBottom: "1px solid #E2E8F0",
                   }}
                 >
                   <dt className="text-[13px] font-semibold" style={{ color: "#0F172A" }}>{row.label}</dt>
@@ -297,7 +298,7 @@ export default function AboutCypressPage() {
                   fontSize: "13px",
                   color: "#6B7280",
                   textDecoration: "none",
-                  borderBottom: "1px solid #D1C9BE",
+                  borderBottom: "1px solid #CBD5E1",
                   paddingBottom: "2px",
                 }}
               >
@@ -308,7 +309,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Name Origin */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Name
@@ -338,7 +339,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Services */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Services
@@ -361,7 +362,7 @@ export default function AboutCypressPage() {
                   key={svc.num}
                   style={{
                     background: "#FFFFFF",
-                    border: "1px solid #E8E4DC",
+                    border: "1px solid #E2E8F0",
                     padding: "24px",
                   }}
                 >
@@ -370,7 +371,7 @@ export default function AboutCypressPage() {
                       display: "block",
                       fontSize: "10px",
                       letterSpacing: "0.2em",
-                      color: "#C4A96A",
+                      color: "#3A9BDC",
                       marginBottom: "8px",
                       fontFamily: "var(--font-display)",
                     }}
@@ -397,7 +398,7 @@ export default function AboutCypressPage() {
                       fontSize: "12px",
                       color: "#0F172A",
                       textDecoration: "none",
-                      borderBottom: "1px solid #E8E4DC",
+                      borderBottom: "1px solid #E2E8F0",
                       paddingBottom: "2px",
                     }}
                   >
@@ -427,7 +428,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Why Cypress */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why Cypress
@@ -448,14 +449,14 @@ export default function AboutCypressPage() {
                     gap: "20px",
                     alignItems: "start",
                     paddingBottom: "32px",
-                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #E8E4DC" : "none",
+                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #E2E8F0" : "none",
                   }}
                 >
                   <span
                     style={{
                       fontFamily: "var(--font-display)",
                       fontSize: "24px",
-                      color: "#E8E4DC",
+                      color: "#E2E8F0",
                       letterSpacing: "0.05em",
                       lineHeight: 1,
                       paddingTop: "4px",
@@ -486,7 +487,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Related Links */}
-        <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-16" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-4xl mx-auto px-6">
             <h2
               className="font-bold text-[#0d1b2a] mb-8"
@@ -517,7 +518,7 @@ export default function AboutCypressPage() {
                     display: "block",
                     padding: "12px 16px",
                     background: "#FFFFFF",
-                    border: "1px solid #E8E4DC",
+                    border: "1px solid #E2E8F0",
                     fontSize: "13px",
                     color: "#374151",
                     textDecoration: "none",

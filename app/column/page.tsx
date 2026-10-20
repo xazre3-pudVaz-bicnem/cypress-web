@@ -138,7 +138,7 @@ export default function ColumnPage() {
           style={{
             background: "rgba(255,255,255,0.97)",
             backdropFilter: "blur(8px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #E2E8F0",
           }}
         >
           <div className="max-w-6xl mx-auto px-6">
@@ -152,7 +152,7 @@ export default function ColumnPage() {
                 style={{
                   background: activeCategory === "all" ? "#0F172A" : "transparent",
                   color: activeCategory === "all" ? "#FFFFFF" : "#6B7280",
-                  border: `1px solid ${activeCategory === "all" ? "#0F172A" : "#E8E4DC"}`,
+                  border: `1px solid ${activeCategory === "all" ? "#0F172A" : "#E2E8F0"}`,
                 }}
               >
                 すべて ({allItems.length})
@@ -171,7 +171,7 @@ export default function ColumnPage() {
                     style={{
                       background: isActive ? "#0F172A" : "transparent",
                       color: isActive ? "#FFFFFF" : "#6B7280",
-                      border: `1px solid ${isActive ? "#0F172A" : "#E8E4DC"}`,
+                      border: `1px solid ${isActive ? "#0F172A" : "#E2E8F0"}`,
                     }}
                   >
                     {cat} ({count})
@@ -193,11 +193,11 @@ export default function ColumnPage() {
               {filtered.map((item) => (
                 <div
                   key={item.slug}
-                  style={{ borderBottom: "1px solid #E8E4DC" }}
+                  style={{ borderBottom: "1px solid #E2E8F0" }}
                 >
                   <Link
                     href={`/column/${item.slug}`}
-                    className="group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6 py-5 transition-colors hover:bg-[#F9F8F5] -mx-3 px-3"
+                    className="group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6 py-5 transition-colors hover:bg-[#F4F6FA] -mx-3 px-3"
                   >
                     <span
                       className="font-mono text-xs shrink-0 pt-0.5"
@@ -208,7 +208,7 @@ export default function ColumnPage() {
                     <span
                       className="shrink-0 self-start text-[10px] px-2 py-0.5 font-medium"
                       style={{
-                        background: BADGE_BG[item.category] ?? "#F9F8F5",
+                        background: BADGE_BG[item.category] ?? "#F4F6FA",
                         color: BADGE_COLOR[item.category] ?? "#374151",
                         minWidth: "72px",
                         textAlign: "center",
@@ -256,7 +256,7 @@ export default function ColumnPage() {
         {/* CTA */}
         <section
           className="py-20"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="font-bold text-[#0F172A] text-xl mb-4">

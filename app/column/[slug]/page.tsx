@@ -113,6 +113,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime: article.publishedAt,
       locale: "ja_JP",
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/column/${slug}` },
@@ -200,7 +201,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
     ],
   };
 
-  const badgeBg = TOPIC_CATEGORY_BG[topic.category] ?? "#F9F8F5";
+  const badgeBg = TOPIC_CATEGORY_BG[topic.category] ?? "#F4F6FA";
   const badgeColor = TOPIC_CATEGORY_COLOR[topic.category] ?? "#374151";
 
   const relatedArticles = COLUMNS.filter(
@@ -264,7 +265,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
               {/* Table of contents */}
               <div
                 className="p-6 mb-10"
-                style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+                style={{ background: "#F4F6FA", border: "1px solid #E2E8F0" }}
               >
                 <p className="text-[11px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
                   目次
@@ -296,7 +297,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                     <h2
                       className="font-bold text-[#0F172A] mb-5 pb-3"
                       style={{
-                        borderBottom: "1px solid #E8E4DC",
+                        borderBottom: "1px solid #E2E8F0",
                         fontSize: "clamp(16px, 2vw, 20px)",
                       }}
                     >
@@ -310,7 +311,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-[#0F172A] mb-8 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)" }}
+                    style={{ borderBottom: "1px solid #E2E8F0", fontSize: "clamp(16px, 2vw, 20px)" }}
                   >
                     よくある質問（FAQ）
                   </h2>
@@ -319,7 +320,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                       <div
                         key={i}
                         className="py-6"
-                        style={{ borderBottom: "1px solid #E8E4DC" }}
+                        style={{ borderBottom: "1px solid #E2E8F0" }}
                       >
                         <dt className="font-bold text-[15px] mb-3 flex items-start gap-3" style={{ color: "#0F172A" }}>
                           <span
@@ -336,7 +337,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                         <dd className="text-[14px] leading-[1.9] flex items-start gap-3" style={{ color: "#374151" }}>
                           <span
                             className="text-[11px] font-mono shrink-0 mt-0.5 px-1.5 py-0.5"
-                            style={{ background: "#F9F8F5", color: "#6B7280", border: "1px solid #E8E4DC" }}
+                            style={{ background: "#F4F6FA", color: "#6B7280", border: "1px solid #E2E8F0" }}
                           >
                             A
                           </span>
@@ -359,8 +360,8 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                       <Link
                         key={rel.href}
                         href={rel.href}
-                        className="group block p-4 transition-colors hover:bg-[#F9F8F5]"
-                        style={{ border: "1px solid #E8E4DC" }}
+                        className="group block p-4 transition-colors hover:bg-[#F4F6FA]"
+                        style={{ border: "1px solid #E2E8F0" }}
                       >
                         <p className="text-[14px] font-medium group-hover:underline underline-offset-2 mb-1" style={{ color: "#0F172A" }}>
                           {rel.label}
@@ -375,11 +376,11 @@ function ColumnTopicPage({ slug }: { slug: string }) {
               {/* Author box */}
               <div
                 className="mt-12 p-6 flex items-center gap-4"
-                style={{ border: "1px solid #E8E4DC" }}
+                style={{ border: "1px solid #E2E8F0" }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center shrink-0 font-black text-base"
-                  style={{ background: "#F9F8F5", color: "#0F172A", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#F4F6FA", color: "#0F172A", border: "1px solid #E2E8F0" }}
                 >
                   C
                 </div>
@@ -415,7 +416,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                   </h3>
                   <ul className="space-y-0">
                     {COLUMN_TOPICS.map((t) => (
-                      <li key={t.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                      <li key={t.slug} style={{ borderBottom: "1px solid #EDF1F7" }}>
                         <Link
                           href={`/column/${t.slug}`}
                           className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#0F172A]"
@@ -435,7 +436,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                     </h3>
                     <ul className="space-y-0">
                       {relatedArticles.map((rel) => (
-                        <li key={rel.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                        <li key={rel.slug} style={{ borderBottom: "1px solid #EDF1F7" }}>
                           <Link
                             href={`/column/${rel.slug}`}
                             className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#0F172A] hover:underline underline-offset-2"
@@ -456,7 +457,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
         {/* CTA */}
         <section
           className="py-16"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
@@ -571,7 +572,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <span
                   key={tag}
                   className="text-[11px] px-2 py-0.5"
-                  style={{ background: "#F9F8F5", color: "#6B7280", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#F4F6FA", color: "#6B7280", border: "1px solid #E2E8F0" }}
                 >
                   #{tag}
                 </span>
@@ -586,7 +587,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
             {/* Article Body */}
             <div>
               {/* Lead */}
-              <div className="p-6 mb-10" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+              <div className="p-6 mb-10" style={{ background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
                 <p className="text-sm leading-[1.9]" style={{ color: "#374151" }}>{article.excerpt}</p>
               </div>
 
@@ -595,7 +596,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #E2E8F0", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
                   >
                     はじめに
                   </h2>
@@ -608,7 +609,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #E2E8F0", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
                   >
                     なぜ今、{article.category}が重要なのか
                   </h2>
@@ -627,7 +628,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #E2E8F0", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
                   >
                     実践のポイント
                   </h2>
@@ -649,7 +650,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #E2E8F0", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
                   >
                     まとめ
                   </h2>
@@ -665,10 +666,10 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
               </div>
 
               {/* Author */}
-              <div className="mt-12 p-6 flex items-center gap-4" style={{ border: "1px solid #E8E4DC" }}>
+              <div className="mt-12 p-6 flex items-center gap-4" style={{ border: "1px solid #E2E8F0" }}>
                 <div
                   className="w-12 h-12 flex items-center justify-center shrink-0 font-black text-base"
-                  style={{ background: "#F9F8F5", color: "#0F172A", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#F4F6FA", color: "#0F172A", border: "1px solid #E2E8F0" }}
                 >
                   C
                 </div>
@@ -704,7 +705,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                   </h3>
                   <ul className="space-y-0">
                     {allCategories.map((cat) => (
-                      <li key={cat} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                      <li key={cat} style={{ borderBottom: "1px solid #EDF1F7" }}>
                         <Link
                           href={`/column?category=${cat}`}
                           className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#0F172A]"
@@ -727,7 +728,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                     </h3>
                     <ul className="space-y-0">
                       {related.map((rel) => (
-                        <li key={rel.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                        <li key={rel.slug} style={{ borderBottom: "1px solid #EDF1F7" }}>
                           <Link
                             href={`/column/${rel.slug}`}
                             className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#0F172A] hover:underline underline-offset-2"
@@ -747,17 +748,17 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
 
         {/* Related bottom */}
         {related.length > 0 && (
-          <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+          <section className="py-16" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
             <div className="max-w-6xl mx-auto px-6">
               <h2
                 className="font-bold text-lg mb-8 pb-6"
-                style={{ borderBottom: "1px solid #E8E4DC", color: "#0F172A" }}
+                style={{ borderBottom: "1px solid #E2E8F0", color: "#0F172A" }}
               >
                 関連コラム
               </h2>
               <div className="space-y-0">
                 {related.map((rel) => (
-                  <div key={rel.slug} style={{ borderBottom: "1px solid #E8E4DC" }}>
+                  <div key={rel.slug} style={{ borderBottom: "1px solid #E2E8F0" }}>
                     <Link
                       href={`/column/${rel.slug}`}
                       className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-4 -mx-3 px-3 transition-colors hover:bg-white"

@@ -9,9 +9,9 @@ interface Props {
  * 助成金に触れるすべてのページに設置する注意書き。
  * 内容は lib/data/trainingPages.ts に集約し、全ページで文言を一致させる。
  */
-export default function SubsidyDisclaimer({ bgColor = "#F9F8F5" }: Props) {
+export default function SubsidyDisclaimer({ bgColor = "#F4F6FA" }: Props) {
   return (
-    <section className="py-16" style={{ background: bgColor, borderTop: "1px solid #E8E4DC" }}>
+    <section className="py-16" style={{ background: bgColor, borderTop: "1px solid #E2E8F0" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-3xl">
           <p
@@ -24,12 +24,12 @@ export default function SubsidyDisclaimer({ bgColor = "#F9F8F5" }: Props) {
             助成金に関するご注意
           </h2>
 
-          <div style={{ borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ borderTop: "1px solid #E2E8F0" }}>
             {SUBSIDY_DISCLAIMERS.map((text) => (
               <p
                 key={text}
                 className="text-[13px] leading-[1.95] py-4"
-                style={{ color: "#374151", borderBottom: "1px solid #E8E4DC" }}
+                style={{ color: "#374151", borderBottom: "1px solid #E2E8F0" }}
               >
                 {text}
               </p>

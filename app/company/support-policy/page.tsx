@@ -1,6 +1,5 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
@@ -26,6 +25,7 @@ export const metadata: Metadata = {
       "月次レポート・定例MTG・24時間以内レスポンス。「制作して終わり」ではない長期伴走型支援のスタンスを詳しく解説します。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/support-policy" },
@@ -109,7 +109,7 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ上位表示" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索エンジン最適化" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索への対応" },
-  { href: "/services/web", label: "ホームページ制作", desc: "集客設計のサイト制作" },
+  { href: "/services/web-design", label: "ホームページ制作", desc: "集客設計のサイト制作" },
   { href: "/services/sns", label: "SNS運用代行", desc: "SNSの継続運用支援" },
   { href: "/cost/meo", label: "MEO費用", desc: "月額料金の目安" },
   { href: "/cost/seo", label: "SEO費用", desc: "SEO対策の費用感" },
@@ -137,7 +137,7 @@ export default function SupportPolicyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -254,7 +254,7 @@ export default function SupportPolicyPage() {
                     display: "flex",
                     gap: "20px",
                     padding: "20px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -276,13 +276,13 @@ export default function SupportPolicyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 私たちのサポート方針 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Our Policy
@@ -345,7 +345,7 @@ export default function SupportPolicyPage() {
                     display: "flex",
                     gap: "24px",
                     padding: "28px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -367,7 +367,7 @@ export default function SupportPolicyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -424,7 +424,7 @@ export default function SupportPolicyPage() {
                   key={i}
                   style={{
                     padding: "28px",
-                    border: "1px solid #E8E4DC",
+                    border: "1px solid #E2E8F0",
                   }}
                 >
                   <p
@@ -448,8 +448,8 @@ export default function SupportPolicyPage() {
               style={{
                 maxWidth: "720px",
                 padding: "24px 28px",
-                background: "#F9F8F5",
-                borderLeft: "3px solid #c4b89a",
+                background: "#F4F6FA",
+                borderLeft: "3px solid #3A9BDC",
               }}
             >
               <p
@@ -473,7 +473,7 @@ export default function SupportPolicyPage() {
         </section>
 
         {/* ご支援の流れ（契約後） */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Post-Contract Flow
@@ -534,7 +534,7 @@ export default function SupportPolicyPage() {
                     display: "flex",
                     gap: "24px",
                     padding: "28px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <div style={{ flexShrink: 0, minWidth: "80px" }}>
@@ -543,7 +543,7 @@ export default function SupportPolicyPage() {
                         fontSize: "11px",
                         fontWeight: 600,
                         letterSpacing: "0.1em",
-                        color: "#c4b89a",
+                        color: "#3A9BDC",
                         marginBottom: "4px",
                       }}
                     >
@@ -566,7 +566,7 @@ export default function SupportPolicyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -574,7 +574,7 @@ export default function SupportPolicyPage() {
         {/* 月次レポートの内容 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>
               Monthly Report
             </p>
             <h2
@@ -638,7 +638,7 @@ export default function SupportPolicyPage() {
                   key={i}
                   style={{
                     padding: "24px",
-                    border: "1px solid rgba(196,184,154,0.2)",
+                    border: "1px solid rgba(58,155,220,0.2)",
                   }}
                 >
                   <p
@@ -719,7 +719,7 @@ export default function SupportPolicyPage() {
                     display: "flex",
                     gap: "16px",
                     padding: "20px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
                   <span
@@ -756,13 +756,13 @@ export default function SupportPolicyPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* サポートに関するQ&A — intro */}
-        <section style={{ background: "#F9F8F5", padding: "60px 0 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "60px 0 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               FAQ
@@ -796,7 +796,7 @@ export default function SupportPolicyPage() {
         <FaqSection
           items={faqItems}
           heading="サポートポリシーについてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#F4F6FA"
         />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

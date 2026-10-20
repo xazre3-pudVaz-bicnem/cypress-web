@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "MEO順位を決定するカテゴリ設定の正しい選び方と競合分析手法を解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/category-setting" },
@@ -261,26 +262,26 @@ const relatedLinks = [
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "MEO対策の根幹ツール" },
   { href: "/meo/ranking", label: "MEO順位改善", desc: "ローカルパック上位表示" },
   { href: "/meo/local-keyword", label: "地域キーワード設計", desc: "地域集客のキーワード戦略" },
-  { href: "/meo/review", label: "口コミ獲得・管理", desc: "GBP口コミ対策の全体像" },
+  { href: "/meo/review-management", label: "口コミ獲得・管理", desc: "GBP口コミ対策の全体像" },
   { href: "/meo/nap", label: "NAP情報統一", desc: "名称・住所・電話番号の統一" },
-  { href: "/meo/photo", label: "写真・画像最適化", desc: "GBP写真のMEO効果" },
-  { href: "/meo/post", label: "GBP投稿活用", desc: "最新情報投稿でエンゲージメント向上" },
-  { href: "/meo/q-and-a", label: "Q&A活用", desc: "よくある質問でCV改善" },
-  { href: "/meo/attribute", label: "属性設定", desc: "GBP属性の最適化" },
-  { href: "/meo/service-area", label: "サービス提供エリア", desc: "出張・訪問型ビジネスのエリア設定" },
-  { href: "/meo/insight", label: "GBPインサイト分析", desc: "データで改善を進める方法" },
+  { href: "/meo/photo-posting", label: "写真・画像最適化", desc: "GBP写真のMEO効果" },
+  { href: "/meo/google-post", label: "GBP投稿活用", desc: "最新情報投稿でエンゲージメント向上" },
+  { href: "/meo/google-business-profile", label: "Q&A活用", desc: "よくある質問でCV改善" },
+  { href: "/meo/google-business-profile", label: "属性設定", desc: "GBP属性の最適化" },
+  { href: "/meo/local-keyword", label: "サービス提供エリア", desc: "出張・訪問型ビジネスのエリア設定" },
+  { href: "/meo/meo-audit", label: "GBPインサイト分析", desc: "データで改善を進める方法" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域特化SEO対策" },
-  { href: "/seo/schema", label: "構造化データ", desc: "Schema.orgによるSEO強化" },
+  { href: "/seo/structured-data", label: "構造化データ", desc: "Schema.orgによるSEO強化" },
   { href: "/aio", label: "AIO対策", desc: "AI検索エンジンへの最適化" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEOサービス内容と料金" },
-  { href: "/services/gbp-audit", label: "GBP監査サービス", desc: "GBP現状診断と改善提案" },
-  { href: "/industry/restaurant", label: "飲食店MEO対策", desc: "飲食店向けMEO施策" },
-  { href: "/industry/beauty", label: "美容室MEO対策", desc: "美容室向けMEO施策" },
-  { href: "/industry/clinic", label: "クリニックMEO対策", desc: "医療機関向けMEO施策" },
+  { href: "/meo/meo-audit", label: "GBP監査サービス", desc: "GBP現状診断と改善提案" },
+  { href: "/industries/restaurant", label: "飲食店MEO対策", desc: "飲食店向けMEO施策" },
+  { href: "/industries/beauty", label: "美容室MEO対策", desc: "美容室向けMEO施策" },
+  { href: "/industries/clinic", label: "クリニックMEO対策", desc: "医療機関向けMEO施策" },
   { href: "/area/tokyo", label: "東京MEO対策", desc: "東京エリアのMEO支援" },
-  { href: "/area/osaka", label: "大阪MEO対策", desc: "大阪エリアのMEO支援" },
+  { href: "/area/nationwide", label: "大阪MEO対策", desc: "大阪エリアのMEO支援" },
 ];
 
 export default function CategorySettingPage() {
@@ -289,7 +290,7 @@ export default function CategorySettingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -351,7 +352,7 @@ export default function CategorySettingPage() {
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                   <span
                     className="shrink-0 font-bold text-[15px]"
-                    style={{ color: "#c4b89a", marginTop: "2px" }}
+                    style={{ color: "#3A9BDC", marginTop: "2px" }}
                   >
                     →
                   </span>
@@ -363,7 +364,7 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ設定がMEOに与える影響 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Impact on MEO
@@ -424,7 +425,7 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ選定のポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Selection Guide
@@ -437,7 +438,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {categoryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -452,7 +453,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -471,7 +472,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -486,13 +487,13 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
@@ -505,7 +506,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {industryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -520,7 +521,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -539,7 +540,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -554,13 +555,13 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs to Track
@@ -573,7 +574,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -588,7 +589,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

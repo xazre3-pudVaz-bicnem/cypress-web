@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "エンティティ最適化によるナレッジグラフ登録とAI引用率向上の戦略を解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/aio/entity-optimization" },
@@ -272,24 +273,24 @@ const RELATED_LINKS = [
   { href: "/aio/knowledge-graph", label: "ナレッジグラフ対策", desc: "Googleへの認識登録" },
   { href: "/aio/faq-optimization", label: "FAQ最適化", desc: "AI引用されるFAQ設計" },
   { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTに引用される情報設計" },
-  { href: "/aio/gemini", label: "Gemini対策", desc: "Google AI検索への最適化" },
-  { href: "/aio/perplexity", label: "Perplexity対策", desc: "Perplexity AI引用対策" },
-  { href: "/aio/eeat", label: "E-E-A-T対策", desc: "経験・専門性・権威性・信頼性" },
-  { href: "/aio/topical-authority", label: "トピカルオーソリティ", desc: "専門性の確立と維持" },
-  { href: "/aio/local-seo", label: "ローカルSEO連携", desc: "地域エンティティの構築" },
+  { href: "/aio/ai-search", label: "Gemini対策", desc: "Google AI検索への最適化" },
+  { href: "/aio/ai-search", label: "Perplexity対策", desc: "Perplexity AI引用対策" },
+  { href: "/knowledge/eeat", label: "E-E-A-T対策", desc: "経験・専門性・権威性・信頼性" },
+  { href: "/aio/entity-optimization", label: "トピカルオーソリティ", desc: "専門性の確立と維持" },
+  { href: "/seo/local-seo", label: "ローカルSEO連携", desc: "地域エンティティの構築" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "サイト構造・速度の最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索流入を増やすコンテンツ戦略" },
   { href: "/meo", label: "MEO対策", desc: "Googleマップ・地図検索対策" },
   { href: "/services/web-design", label: "Webデザイン", desc: "高品質サイト制作" },
-  { href: "/services/lp", label: "LP制作", desc: "CV最大化のランディングページ" },
-  { href: "/industry/medical", label: "医療機関向け", desc: "医師・病院エンティティ設計" },
-  { href: "/industry/legal", label: "士業向け", desc: "法律事務所のエンティティ対策" },
-  { href: "/industry/restaurant", label: "飲食店向け", desc: "地域ビジネスエンティティ" },
-  { href: "/industry/education", label: "教育機関向け", desc: "学校法人エンティティ構造化" },
+  { href: "/web-design/landing-page", label: "LP制作", desc: "CV最大化のランディングページ" },
+  { href: "/industries/clinic", label: "医療機関向け", desc: "医師・病院エンティティ設計" },
+  { href: "/industries/professional-service", label: "士業向け", desc: "法律事務所のエンティティ対策" },
+  { href: "/industries/restaurant", label: "飲食店向け", desc: "地域ビジネスエンティティ" },
+  { href: "/industries/school", label: "教育機関向け", desc: "学校法人エンティティ構造化" },
   { href: "/area/tokyo", label: "東京のAIO対策", desc: "東京エリアの施策事例" },
-  { href: "/area/osaka", label: "大阪のAIO対策", desc: "大阪エリアの施策事例" },
+  { href: "/area/nationwide", label: "大阪のAIO対策", desc: "大阪エリアの施策事例" },
 ];
 
 export default function EntityOptimizationPage() {
@@ -334,7 +335,7 @@ export default function EntityOptimizationPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -353,7 +354,7 @@ export default function EntityOptimizationPage() {
                   "エンティティ最適化の効果を測定するための7つのKPI",
                 ].map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px] leading-[1.8]" style={{ color: "#374151" }}>
-                    <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                    <span className="shrink-0 font-bold" style={{ color: "#3A9BDC" }}>→</span>
                     {point}
                   </li>
                 ))}
@@ -388,7 +389,7 @@ export default function EntityOptimizationPage() {
         </section>
 
         {/* エンティティ最適化の重要性 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -422,7 +423,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {CHALLENGES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
@@ -430,13 +431,13 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* エンティティ最適化の施策 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Key Measures
@@ -446,7 +447,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {MEASURES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
@@ -454,7 +455,7 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -470,24 +471,24 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {INDUSTRIES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.industry}</h3>
-                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F9F8F5", color: "#c4b89a", border: "1px solid #E8E4DC" }}>{item.point}</span>
+                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0" }}>{item.point}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -497,7 +498,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {FLOW.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.step}</h3>
@@ -505,7 +506,7 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -521,23 +522,23 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {KPIS.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-start gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.kpi}</h3>
-                      <span className="text-[11px] shrink-0" style={{ color: "#c4b89a" }}>確認場所：{item.where}</span>
+                      <span className="text-[11px] shrink-0" style={{ color: "#3A9BDC" }}>確認場所：{item.where}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={RELATED_LINKS} />
 

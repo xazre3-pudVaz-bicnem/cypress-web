@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description: "MEO・SEO・AIO・Web集客の専門用語をわかりやすく解説する用語集。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/glossary" },
@@ -29,7 +30,7 @@ export default function GlossaryPage() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -73,11 +74,11 @@ export default function GlossaryPage() {
         {categories.map((cat) => {
           const pages = glossaryPages.filter((p) => p.category === cat);
           return (
-            <section key={cat} style={{ background: "#ffffff", padding: "60px 0", borderBottom: "1px solid #ece8e0" }}>
+            <section key={cat} style={{ background: "#ffffff", padding: "60px 0", borderBottom: "1px solid #E2E8F0" }}>
               <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
                 <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "8px" }}>Category</p>
                 <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(16px,2vw,20px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>{cat}</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
                   {pages.map((page) => (
                     <Link
                       key={page.slug}
@@ -105,7 +106,7 @@ export default function GlossaryPage() {
         })}
 
         {/* How to use section */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>How To Use</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "36px" }}>
@@ -118,8 +119,8 @@ export default function GlossaryPage() {
                 { n: "03", t: "サービスページへ発展", b: "「MEOとは」を読んだ後は「MEO対策サービス」ページで具体的な支援内容や事例をご覧いただけます。" },
                 { n: "04", t: "不明点は無料相談", b: "用語を読んだ上で「自社への活用方法がわからない」場合はお気軽に無料相談をご利用ください。" },
               ].map((item) => (
-                <div key={item.n} style={{ background: "#ffffff", padding: "24px", borderLeft: "3px solid #c4b89a" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "20px", fontWeight: 700, marginBottom: "8px" }}>{item.n}</p>
+                <div key={item.n} style={{ background: "#ffffff", padding: "24px", borderLeft: "3px solid #3A9BDC" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "20px", fontWeight: 700, marginBottom: "8px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>

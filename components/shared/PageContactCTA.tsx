@@ -1,5 +1,7 @@
-import Link from "next/link";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
+import Image from "next/image";
+import { ButtonLink, PhoneIcon } from "@/components/ui/Button";
+import { Container } from "@/components/ui/Section";
+import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO, CONTACT_TEL, CONTACT_TEL_HREF } from "@/lib/contact";
 
 interface Props {
   heading?: string;
@@ -12,61 +14,51 @@ interface Props {
   note?: string;
 }
 
+/** ページ末尾の問い合わせ導線。フォーム・電話・メールの3つを並べ、選びやすくする。 */
 export default function PageContactCTA({
-  heading = "Web集客に関するご相談",
-  body = "MEO、SEO、AIO、ホームページ制作、SNS運用など、Web集客に関するご相談を承っています。現在の状況を確認したうえで、必要な施策をご提案します。",
+  heading = "Web集客のご相談は、無料です。",
+  body = "MEO・SEO・AIO・ホームページ制作など、今の状況を伺ったうえで必要な施策だけをご提案します。",
   href = "/contact",
-  ctaLabel = "お問い合わせ",
+  ctaLabel = "無料で相談する",
   note,
 }: Props) {
   return (
-    <section className="py-20 md:py-24" style={{ background: "#FFFFFF", borderTop: "1px solid #F0EDE6" }}>
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative overflow-hidden bg-navy-900 py-20 text-white md:py-28">
+      <Image
+        src="/images/brand/hero-diamond.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover object-right opacity-35"
+        aria-hidden="true"
+      />
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/90 to-navy-900/30" />
+      <Container className="relative">
         <div className="max-w-2xl">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-            Contact
-          </p>
-          <h2 className="font-black text-[26px] mb-5 leading-tight" style={{ color: "#0F172A" }}>
-            {heading}
-          </h2>
-          <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
-            {body}
-          </p>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-            <Link
-              href={href}
-              className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-              style={{ border: "1px solid #0F172A", color: "#0F172A" }}
-            >
+          <p className="eyebrow mb-4 text-cyan">Contact</p>
+          <h2 className="t-h2 !text-white">{heading}</h2>
+          <p className="t-lead mt-5 text-white/75">{body}</p>
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <ButtonLink href={href} size="lg">
               {ctaLabel}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-            {/* フォームを使いたくない層の離脱を防ぐため、直接のメール窓口も併記する。 */}
-            <div>
-              <p className="text-[11px] tracking-[0.14em] uppercase mb-1" style={{ color: "#9CA3AF" }}>
-                メールでのご相談
-              </p>
-              <a
-                href={CONTACT_MAILTO}
-                className="text-[15px] font-medium underline underline-offset-4 transition-opacity hover:opacity-60"
-                style={{ color: "#0F172A" }}
-              >
-                {CONTACT_EMAIL}
-              </a>
-              <p className="text-[12px] mt-1" style={{ color: "#9CA3AF" }}>
-                受付時間 {CONTACT_HOURS}
-              </p>
-            </div>
+            </ButtonLink>
+            <a
+              href={CONTACT_TEL_HREF}
+              className="inline-flex h-14 items-center gap-2.5 rounded-full px-6 text-[15px] font-semibold text-white ring-1 ring-inset ring-white/25 transition-colors hover:bg-white/10"
+            >
+              <PhoneIcon className="h-4 w-4 text-cyan" />
+              <span className="font-en tracking-[0.02em]">{CONTACT_TEL}</span>
+            </a>
           </div>
-          {note && (
-            <p className="text-[12px] leading-[1.9] mt-6 max-w-xl" style={{ color: "#9CA3AF" }}>
-              {note}
-            </p>
-          )}
+          <p className="mt-6 text-[13px] text-white/55">
+            受付 {CONTACT_HOURS}　／　メール{" "}
+            <a href={CONTACT_MAILTO} className="text-white/80 underline-offset-4 hover:underline">
+              {CONTACT_EMAIL}
+            </a>
+          </p>
+          {note && <p className="mt-6 max-w-xl text-[12px] leading-[1.9] text-white/50">{note}</p>}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

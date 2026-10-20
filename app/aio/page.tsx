@@ -315,7 +315,7 @@ export default function AioIndexPage() {
         </section>
 
         {/* 従来のSEOとの違い */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               AIO vs SEO
@@ -327,7 +327,7 @@ export default function AioIndexPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-[14px]" style={{ borderCollapse: "collapse" }}>
                   <thead>
-                    <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
+                    <tr style={{ borderBottom: "2px solid #E2E8F0" }}>
                       <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0F172A", width: "30%" }}>項目</th>
                       <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0F172A" }}>SEO対策</th>
                       <th className="text-left py-3 font-semibold" style={{ color: "#0F172A" }}>AIO対策</th>
@@ -342,7 +342,7 @@ export default function AioIndexPage() {
                       { item: "計測", seo: "順位・セッション数（比較的明確）", aio: "AI引用率・指名検索（計測が難しい）" },
                       { item: "更新頻度", seo: "Googleアルゴリズム更新に追従", aio: "AIモデル更新・学習データに依存" },
                     ].map((row, i) => (
-                      <tr key={i} style={{ borderBottom: "1px solid #E8E4DC" }}>
+                      <tr key={i} style={{ borderBottom: "1px solid #E2E8F0" }}>
                         <td className="py-4 pr-6 font-medium" style={{ color: "#0F172A" }}>{row.item}</td>
                         <td className="py-4 pr-6" style={{ color: "#374151" }}>{row.seo}</td>
                         <td className="py-4" style={{ color: "#374151" }}>{row.aio}</td>
@@ -401,7 +401,7 @@ export default function AioIndexPage() {
                 <div key={item.num} className="flex gap-8">
                   <span
                     className="text-[28px] font-black shrink-0 leading-none mt-1"
-                    style={{ color: "#c4b89a", fontFamily: "var(--font-serif)" }}
+                    style={{ color: "#3A9BDC", fontFamily: "var(--font-serif)" }}
                   >
                     {item.num}
                   </span>
@@ -418,7 +418,7 @@ export default function AioIndexPage() {
         {/* AIに引用されるための施策 */}
         <section className="py-20" style={{ background: "#0d1b2a" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>
               Key Actions
             </p>
             <h2 className="font-black text-[28px] mb-12" style={{ color: "#FFFFFF" }}>
@@ -470,7 +470,7 @@ export default function AioIndexPage() {
                 <div key={item.num} className="flex gap-8">
                   <span
                     className="text-[22px] font-black shrink-0 leading-none mt-1"
-                    style={{ color: "#c4b89a", fontFamily: "var(--font-serif)" }}
+                    style={{ color: "#3A9BDC", fontFamily: "var(--font-serif)" }}
                   >
                     {item.num}
                   </span>
@@ -499,8 +499,8 @@ export default function AioIndexPage() {
                   <div
                     className="flex gap-6 py-6 hover:opacity-80 transition-opacity"
                     style={{
-                      borderTop: "1px solid #E8E4DC",
-                      borderBottom: i === subPages.length - 1 ? "1px solid #E8E4DC" : undefined,
+                      borderTop: "1px solid #E2E8F0",
+                      borderBottom: i === subPages.length - 1 ? "1px solid #E2E8F0" : undefined,
                     }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -518,7 +518,7 @@ export default function AioIndexPage() {
         </section>
 
         {/* 業種別AIO活用事例 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Cases
@@ -596,14 +596,14 @@ export default function AioIndexPage() {
                 <div
                   key={c.industry}
                   className="p-6"
-                  style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
                 >
                   <div className="text-3xl mb-3">{c.icon}</div>
                   <h3 className="font-bold text-[16px] mb-4" style={{ color: "#0F172A" }}>{c.industry}</h3>
                   <ul className="space-y-2">
                     {c.points.map((pt, j) => (
                       <li key={j} className="flex gap-2 text-[13px] leading-[1.7]" style={{ color: "#374151" }}>
-                        <span className="shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>▸</span>
+                        <span className="shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>▸</span>
                         {pt}
                       </li>
                     ))}
@@ -660,7 +660,7 @@ export default function AioIndexPage() {
                   <div
                     key={s.label}
                     className="p-4"
-                    style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+                    style={{ background: "#F4F6FA", border: "1px solid #E2E8F0" }}
                   >
                     <div className="font-bold text-[13px] mb-1" style={{ color: "#0F172A" }}>{s.label}</div>
                     <div className="text-[12px]" style={{ color: "#9CA3AF" }}>{s.desc}</div>
@@ -672,7 +672,7 @@ export default function AioIndexPage() {
         </section>
 
         {/* AIOとSEOの違い 2col */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
@@ -739,7 +739,7 @@ export default function AioIndexPage() {
                   body: "AIO対策はSEO・MEO・コンテンツマーケティングと連動させることで最大の効果を発揮します。単独で実施すると効果が限定的になります。特にSEOと連動させたコンテンツ戦略が最も費用対効果が高い施策です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderBottom: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderBottom: "1px solid #E2E8F0" }}>
                   <div
                     className="shrink-0 w-8 h-8 flex items-center justify-center text-[13px] font-bold"
                     style={{ background: "#FEE2E2", color: "#DC2626", borderRadius: "50%" }}
@@ -756,10 +756,10 @@ export default function AioIndexPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIO対策に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AIO対策に関するよくある質問" bgColor="#F4F6FA" />
 
         {/* AIO成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#F4F6FA", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E2E8F0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -778,7 +778,7 @@ export default function AioIndexPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

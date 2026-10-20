@@ -116,18 +116,18 @@ const relatedLinks = [
   { href: "/ai/chatbot", label: "AIチャットボット構築", desc: "社内Q&Aボットの構築" },
   { href: "/ai/content", label: "AIコンテンツ制作", desc: "コンテンツ生成の自動化" },
   { href: "/ai/blog-automation", label: "AIブログ自動化", desc: "ブログ記事制作の効率化" },
-  { href: "/ai/seo-content", label: "AI×SEOコンテンツ", desc: "検索流入を狙うコンテンツ設計" },
-  { href: "/ai/rag", label: "RAG構築支援", desc: "社内データを活かすAI検索" },
-  { href: "/ai/line-bot", label: "LINE AIボット", desc: "LINE連携の社内・顧客AIツール" },
-  { href: "/services/dx", label: "DX推進支援", desc: "デジタル変革の全体戦略" },
-  { href: "/services/system", label: "システム開発", desc: "既存システムとの連携開発" },
-  { href: "/industry/manufacturing", label: "製造業のAI活用", desc: "設計書チェック・品質管理AI" },
-  { href: "/industry/construction", label: "建設業のAI活用", desc: "見積もり補助・工程管理AI" },
-  { href: "/industry/legal", label: "士業のAI活用", desc: "契約書作成補助・判例検索AI" },
-  { href: "/industry/medical", label: "医療のAI活用", desc: "カルテ要約・診断補助AI" },
-  { href: "/industry/real-estate", label: "不動産のAI活用", desc: "物件説明文生成・査定補助AI" },
-  { href: "/industry/finance", label: "金融のAI活用", desc: "レポート作成・リスク分析AI" },
-  { href: "/industry/education", label: "教育のAI活用", desc: "問題生成・個別学習支援AI" },
+  { href: "/ai/content", label: "AI×SEOコンテンツ", desc: "検索流入を狙うコンテンツ設計" },
+  { href: "/ai/internal-tools", label: "RAG構築支援", desc: "社内データを活かすAI検索" },
+  { href: "/ai/chatbot", label: "LINE AIボット", desc: "LINE連携の社内・顧客AIツール" },
+  { href: "/services/ai", label: "DX推進支援", desc: "デジタル変革の全体戦略" },
+  { href: "/services/ai", label: "システム開発", desc: "既存システムとの連携開発" },
+  { href: "/industries", label: "製造業のAI活用", desc: "設計書チェック・品質管理AI" },
+  { href: "/industries/construction", label: "建設業のAI活用", desc: "見積もり補助・工程管理AI" },
+  { href: "/industries/professional-service", label: "士業のAI活用", desc: "契約書作成補助・判例検索AI" },
+  { href: "/industries/clinic", label: "医療のAI活用", desc: "カルテ要約・診断補助AI" },
+  { href: "/industries/real-estate", label: "不動産のAI活用", desc: "物件説明文生成・査定補助AI" },
+  { href: "/industries/professional-service", label: "金融のAI活用", desc: "レポート作成・リスク分析AI" },
+  { href: "/industries/school", label: "教育のAI活用", desc: "問題生成・個別学習支援AI" },
   { href: "/seo", label: "SEO対策", desc: "検索流入を増やす対策" },
   { href: "/aio", label: "AIO対策", desc: "AI検索からの流入対策" },
   { href: "/contact", label: "無料相談", desc: "AI社内ツール導入のご相談" },
@@ -172,7 +172,7 @@ export default function Page() {
           />
           <div className="absolute inset-0 flex items-center px-8 md:px-20" style={{ background: "rgba(13,27,42,0.5)" }}>
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#c4b89a" }}>AI × DX</p>
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#3A9BDC" }}>AI × DX</p>
               <p className="font-black text-[22px] md:text-[28px] leading-snug" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
                 社内の繰り返し業務をAIに任せ、<br />人はコア業務に集中する
               </p>
@@ -181,7 +181,7 @@ export default function Page() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -197,7 +197,7 @@ export default function Page() {
                 "PoCから本番化・社員研修・継続改善までの10ステップ導入フロー",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -221,7 +221,7 @@ export default function Page() {
                 { n: "05", t: "メール返信の下書き作成", b: "受信したメールの内容をAIが分析し、返信案を自動生成します。定型的な問い合わせ・見積もり依頼・アポイント調整などで特に効果的です。" },
                 { n: "06", t: "契約書・書類のチェック補助", b: "契約書・法的文書をAIがチェックし、リスク条項・不明点・確認すべき点を指摘します。最終判断は人間が行いますが、見落としリスクを下げられます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -229,13 +229,13 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -294,7 +294,7 @@ export default function Page() {
                   b: "AIツールはUIの設計次第で誰でも使いやすくなります。プロンプトを書かなくても入力フォームから自動生成される仕組みにすることで、AIリテラシーが低い社員でも活用できます。導入時の研修と段階的な展開がリテラシー課題を解決します。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -302,7 +302,7 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -357,10 +357,10 @@ export default function Page() {
                   body: "商品スペックデータから販売ページ用の説明文を自動生成し、掲載作業を効率化します。よくある問い合わせをAIが自動回答するカスタマーサポートボットにより、対応コストを削減しながら顧客満足度を維持します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="pt-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="pt-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="flex items-center gap-3 mb-2">
                     <p className="font-black text-[15px]" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
-                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F9F8F5", color: "#c4b89a", border: "1px solid #E8E4DC" }}>{item.note}</span>
+                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0" }}>{item.note}</span>
                   </div>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -370,7 +370,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -429,7 +429,7 @@ export default function Page() {
                   b: "月次・四半期での効果測定結果をもとに改善を実施します。AIモデルのバージョンアップへの対応・社内データの更新・新規業務への拡張など、運用フェーズでの継続改善がツールの価値を高め続けます。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -437,7 +437,7 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -459,7 +459,7 @@ export default function Page() {
                 { title: "ミスの削減と品質向上", body: "チェック業務・転記作業・計算などをAIが補助することで、人的ミスのリスクを下げます。社内QAプロセスへのAI活用で品質基準を底上げできます。" },
                 { title: "データに基づく意思決定", body: "売上・顧客・在庫データをAIが分析・要約することで、経営者や管理職が迅速にデータを参照して意思決定できる体制を構築します。" },
               ].map((item, i) => (
-                <div key={i} className="pt-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="pt-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -469,7 +469,7 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI & Metrics</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -513,7 +513,7 @@ export default function Page() {
                   detail: "社員からのフィードバック・改善要望の件数を月次で集計します。要望件数が多いほどツールの活用が進んでいる証拠でもあり、継続改善の優先順位付けに活用します。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
@@ -521,7 +521,7 @@ export default function Page() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

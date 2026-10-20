@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "コンテンツSEOの実践ガイド。検索意図の分析からE-E-A-T強化まで徹底解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo/content-seo" },
@@ -151,19 +152,19 @@ const relatedLinks = [
   { href: "/seo/seo-audit", label: "SEO診断", desc: "コンテンツの現状評価" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "表示速度・Core Web Vitals" },
   { href: "/aio", label: "AIO対策", desc: "AI検索でのコンテンツ引用" },
-  { href: "/aio/eeat", label: "E-E-A-T強化", desc: "AI検索・SEOの信頼性向上" },
+  { href: "/knowledge/eeat", label: "E-E-A-T強化", desc: "AI検索・SEOの信頼性向上" },
   { href: "/knowledge/content-seo", label: "コンテンツSEO基礎", desc: "初心者向けガイド" },
   { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・権威性の高め方" },
-  { href: "/knowledge/seo-ranking-factors", label: "SEOランキング要因", desc: "Googleが評価するコンテンツの要素" },
-  { href: "/knowledge/topic-cluster", label: "トピッククラスターとは", desc: "コンテンツ設計の基本手法" },
+  { href: "/knowledge/seo-basics", label: "SEOランキング要因", desc: "Googleが評価するコンテンツの要素" },
+  { href: "/knowledge/content-seo", label: "トピッククラスターとは", desc: "コンテンツ設計の基本手法" },
   { href: "/guide/keyword-research-basics", label: "キーワード調査の基本", desc: "検索意図別のキーワード選定法" },
-  { href: "/guide/content-brief", label: "コンテンツ構成案の作り方", desc: "SEO記事の設計手順" },
+  { href: "/guide/content-seo-basics", label: "コンテンツ構成案の作り方", desc: "SEO記事の設計手順" },
   { href: "/column/seo", label: "SEOコラム", desc: "SEOの最新情報・基礎解説" },
   { href: "/cost/seo", label: "SEO対策の費用", desc: "コンテンツSEOの料金目安" },
   { href: "/checklist/seo-basics", label: "SEO基本チェックリスト", desc: "コンテンツSEO確認項目" },
   { href: "/faq/seo-basics", label: "SEOよくある質問", desc: "コンテンツSEOの疑問集" },
   { href: "/glossary/e-e-a-t", label: "E-E-A-T用語解説", desc: "経験・専門性・権威性・信頼性の定義" },
-  { href: "/glossary/search-intent", label: "検索意図とは", desc: "4分類の詳細解説" },
+  { href: "/knowledge/keyword-research", label: "検索意図とは", desc: "4分類の詳細解説" },
   { href: "/solutions/seo-content", label: "SEOコンテンツ制作", desc: "記事制作からリライトまで一括支援" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "SEO対応サイト制作" },
@@ -205,7 +206,7 @@ export default function ContentSeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -221,12 +222,12 @@ export default function ContentSeoPage() {
                 "業種別のコンテンツSEO活用ポイントと優先して取り組むべきキーワード",
                 "成果計測に使うKPIと、リライト・改善のタイミングの判断方法",
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[13px] font-semibold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                <li key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E2E8F0" }}>
+                  <span className="text-[13px] font-semibold shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
                   <span className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item}</span>
                 </li>
               ))}
-              <li style={{ borderTop: "1px solid #E8E4DC" }} />
+              <li style={{ borderTop: "1px solid #E2E8F0" }} />
             </ul>
           </div>
         </section>
@@ -271,7 +272,7 @@ export default function ContentSeoPage() {
                   body: "公開後はGoogle Search Consoleで掲載順位・クリック率・表示回数を追跡します。3〜6ヶ月後に成果が出ていないコンテンツはリライトを実施。情報の更新・構成の改善・内部リンクの追加を行い、継続的に順位改善を図ります。特に11〜30位のコンテンツはリライトによって大幅な順位改善が見込める「準上位」コンテンツとして優先します。",
                 },
               ].map((s, i) => (
-                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <div className="shrink-0">
                     <p className="text-[11px] font-semibold" style={{ color: "#9CA3AF" }}>{s.step}</p>
                   </div>
@@ -281,13 +282,13 @@ export default function ContentSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 検索意図の4分類 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Search Intent</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -319,13 +320,13 @@ export default function ContentSeoPage() {
                   body: "具体的な操作・作業・問題解決を目的とした検索です。手順をステップ形式で示し、スクリーンショット・コードサンプルなどの具体的な補足情報を付けることが重要です。HowTo SchemaやVideo Schemaの実装でリッチリザルト獲得を狙います。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.type}</p>
                   <p className="text-[12px] mb-3 font-medium" style={{ color: "#9CA3AF" }}>{item.example}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -349,7 +350,7 @@ export default function ContentSeoPage() {
                 { title: "コンテンツの定期的な更新", body: "「最終更新日」を明示し、情報を定期的に更新することで、常に最新・正確な情報を提供している信頼できるサイトであることを示します。特に変化の早い分野では重要です。更新した際はSearch ConsoleからURL検査を実施し、再クロールを促します。" },
                 { title: "外部からの引用・言及", body: "他サイトからリンクされている・メディアに掲載されている・SNSで言及されているといった外部評価が積み重なることで、権威性が高まります。被リンク獲得戦略と連動した取り組みが重要です。プレスリリース・業界団体への寄稿・インタビュー掲載なども権威性強化の手段です。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #E2E8F0" }} className="pt-6">
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -359,7 +360,7 @@ export default function ContentSeoPage() {
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -407,7 +408,7 @@ export default function ContentSeoPage() {
                   body: "AI生成ツールで大量に記事を作成しているが、人間による編集・一次情報の追加・品質チェックが行われず、薄いコンテンツとなっているケースです。Googleは生成AIの使用そのものを禁止していませんが、品質の低いコンテンツは評価されません。AIはドラフト作成の補助として使い、専門知識の付与・編集を必ず行うワークフローが必要です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -415,7 +416,7 @@ export default function ContentSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -465,18 +466,18 @@ export default function ContentSeoPage() {
                   body: "「ピアノ 始める年齢」「英会話 独学 vs スクール」「子供 プログラミング 何歳から」など、入会を検討する親・生徒が疑問に思うことをコンテンツ化します。無料体験・説明会ページへの内部リンクをコンテンツ全体に組み込み、知識獲得からCV（体験申込）への導線を設計します。生徒・保護者の声コンテンツがE-E-A-T（信頼性）強化に特に有効です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -538,7 +539,7 @@ export default function ContentSeoPage() {
                   body: "毎月のSearch Console・GA4レポートをもとに、成果の出たキーワードの周辺トピックへの展開・成果の出ていないコンテンツの改善計画を立てます。季節性キーワードのコンテンツ公開タイミングをコンテンツカレンダーに落とし込み、PDCAサイクルを継続します。",
                 },
               ].map((step, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{step.num}</span>
                   <div>
                     <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{step.title}</p>
@@ -546,7 +547,7 @@ export default function ContentSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -604,19 +605,19 @@ export default function ContentSeoPage() {
                   detail: "FAQPage SchemaやArticle Schemaが正常に機能しているか確認します。FAQ表示が検索結果に出ると、表示面積の拡大によりクリック率向上が期待できます。エラーページはゼロを目標に管理します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                  <p className="text-[11px] font-semibold mb-2" style={{ color: "#c4b89a" }}>確認場所: {item.where}</p>
+                  <p className="text-[11px] font-semibold mb-2" style={{ color: "#3A9BDC" }}>確認場所: {item.where}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* サイプレスの支援 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -630,7 +631,7 @@ export default function ContentSeoPage() {
                 { title: "既存コンテンツのリライト", body: "現在11〜30位に位置するコンテンツのリライトは費用対効果が高い施策です。情報の追加・構成の改善・内部リンクの充実を行い、上位表示を目指します。古い情報・リンク切れの修正・最終更新日の更新も合わせて実施します。" },
                 { title: "コンテンツ効果計測・改善", body: "Google Search Consoleで月次のコンテンツパフォーマンスを追跡し、成果の出ているコンテンツの横展開・成果の出ていないコンテンツの改善を継続的に実施します。月次レポートと次月の改善計画を定期的にご提供します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -638,7 +639,7 @@ export default function ContentSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>

@@ -23,7 +23,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -76,7 +76,7 @@ export default function Page() {
                   <table style={{ width: "100%", fontSize: "14px", borderCollapse: "collapse" }}>
                     <tbody>
                       {job.items.map((item, ii) => (
-                        <tr key={ii} style={{ borderTop: "1px solid #ece8e0" }}>
+                        <tr key={ii} style={{ borderTop: "1px solid #E2E8F0" }}>
                           <td style={{ color: "#9ca3af", paddingTop: "12px", paddingBottom: "12px", paddingRight: "24px", whiteSpace: "nowrap", verticalAlign: "top", width: "120px" }}>{item.label}</td>
                           <td style={{ color: "#374151", paddingTop: "12px", paddingBottom: "12px", lineHeight: "1.8" }}>{item.val}</td>
                         </tr>
@@ -99,7 +99,7 @@ export default function Page() {
                       { label: "書籍・学習費", val: "業務関連の書籍・オンライン講座費用を会社負担" },
                       { label: "AIツール費用", val: "ChatGPT Plus・Claude Pro等のAIツール利用費を支給" },
                     ].map((item, ii) => (
-                      <tr key={ii} style={{ borderTop: "1px solid #ece8e0" }}>
+                      <tr key={ii} style={{ borderTop: "1px solid #E2E8F0" }}>
                         <td style={{ color: "#9ca3af", paddingTop: "12px", paddingBottom: "12px", paddingRight: "24px", whiteSpace: "nowrap", verticalAlign: "top", width: "120px" }}>{item.label}</td>
                         <td style={{ color: "#374151", paddingTop: "12px", paddingBottom: "12px", lineHeight: "1.8" }}>{item.val}</td>
                       </tr>

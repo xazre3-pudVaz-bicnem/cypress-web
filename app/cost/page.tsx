@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: "各サービスの費用・料金相場を透明に公開。初期費用・月額費用・プランの内訳まで解説。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/cost" },
@@ -52,7 +53,7 @@ export default function CostPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -118,10 +119,10 @@ export default function CostPage() {
                     { service: "SNS運用代行", initial: "3〜5万円", monthly: "3〜10万円/月" },
                     { service: "AIO対策", initial: "5〜10万円", monthly: "3〜8万円/月" },
                   ].map((row, i) => (
-                    <tr key={i} style={{ background: i % 2 === 0 ? "#ffffff" : "#f9f8f5", borderBottom: "1px solid #E8E4DC" }}>
+                    <tr key={i} style={{ background: i % 2 === 0 ? "#ffffff" : "#F4F6FA", borderBottom: "1px solid #E2E8F0" }}>
                       <td style={{ padding: "14px 16px", color: "#0d1b2a", fontWeight: 500 }}>{row.service}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.initial}</td>
-                      <td style={{ padding: "14px 16px", color: "#c4b89a", fontWeight: 600 }}>{row.monthly}</td>
+                      <td style={{ padding: "14px 16px", color: "#3A9BDC", fontWeight: 600 }}>{row.monthly}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -134,13 +135,13 @@ export default function CostPage() {
         </section>
 
         {/* Cost pages grid */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Detail Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               サービス別 費用・料金ガイド
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
               {costPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -154,7 +155,7 @@ export default function CostPage() {
                     {page.title}
                   </p>
                   {page.priceRanges[0] && (
-                    <p style={{ fontSize: "13px", color: "#c4b89a", fontWeight: 700, marginBottom: "8px" }}>
+                    <p style={{ fontSize: "13px", color: "#3A9BDC", fontWeight: 700, marginBottom: "8px" }}>
                       {page.priceRanges[0].price}〜
                     </p>
                   )}

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description: "SEO対策の販売代理店募集。内部SEO・コンテンツSEO・ブログ運用はサイプレスが対応。代理店は販売に集中できます。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/agent/seo" },
@@ -178,45 +179,45 @@ export default function AgentSeoPage() {
                 { n: "03", t: "ホームページ制作の後続提案として最適", b: "ホームページを制作した後に「作っただけでは集客できない」という顧客の課題に応えるSEO提案は、タイミングが合いやすく成約しやすいです。" },
                 { n: "04", t: "採用系・地域系と特に相性が良い", b: "採用に困っている企業には採用SEO、地域ビジネスには地域名×業種キーワードのSEOという形で、顧客の具体的な悩みに直結した提案ができます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 役割分担 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               代理店様とサイプレスの役割分担
             </h2>
             <div className="grid md:grid-cols-2 gap-8" style={{ maxWidth: "820px" }}>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "20px", padding: "12px 16px", background: "#e8e4dc" }}>代理店様のご担当</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "20px", padding: "12px 16px", background: "#E2E8F0" }}>代理店様のご担当</p>
                 {["顧客の検索集客の課題ヒアリング", "SEO対策の必要性・効果の説明", "サービス紹介・商談設定", "受注・契約手続き"].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
                     <span style={{ color: "#0d1b2a", flexShrink: 0 }}>✓</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #E2E8F0" }} />
               </div>
               <div>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "20px", padding: "12px 16px", background: "#0d1b2a" }}>サイプレスが担当</p>
                 {["内部SEO（meta・見出し・構造）設定", "コンテンツSEO・キーワード設計", "ブログ記事制作・投稿運用", "サイト構造・内部リンク設計", "構造化データ（Schema.org）実装", "Google Search Console分析・改善提案", "月次レポート作成"].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
                     <span style={{ color: "#9ca3af", flexShrink: 0 }}>→</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #E2E8F0" }} />
               </div>
             </div>
           </div>
@@ -236,7 +237,7 @@ export default function AgentSeoPage() {
                 { title: "地域名で検索しても出てこない", body: "「○○市 ○○業」という地域×業種キーワードで弱い企業には地域SEO・MEOのセット提案が有効です。" },
                 { title: "Google広告費を削減したい", body: "広告費に依存している企業へ「SEOでオーガニック流入を増やして広告費を削減」という提案が有効です。" },
               ].map((item) => (
-                <div key={item.title} style={{ padding: "24px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ padding: "24px", background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                 </div>
@@ -285,7 +286,7 @@ export default function AgentSeoPage() {
                 { step: "Step 4", title: "受注・契約手続き", body: "顧客の合意後、契約書面を取り交わします。以降のSEO施策・コンテンツ制作・月次レポートはサイプレスが担当します。" },
                 { step: "Step 5", title: "継続・追加提案", body: "月次レポートを顧客に共有しながら継続的な関係を維持します。効果が出た段階でAIO対策・MEO対策・ホームページリニューアルの追加提案を行うチャンスになります。" },
               ].map((item, i) => (
-                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
                     <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
                   </div>
@@ -296,13 +297,13 @@ export default function AgentSeoPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 関連ページ */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "24px" }}>関連ページ</h2>
             <div className="grid md:grid-cols-3 gap-4">
@@ -314,7 +315,7 @@ export default function AgentSeoPage() {
                 { href: "/agent/faq", label: "代理店募集FAQ" },
                 { href: "/partner/referral", label: "取次店・紹介パートナー募集" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #e8e4dc", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #E2E8F0", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
                   {item.label} →
                 </Link>
               ))}

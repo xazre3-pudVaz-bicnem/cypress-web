@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       "画像最適化・CDN活用・Next.js構成でLighthouse全項目90+を実現。Core Web Vitals「良好」を目指す速度改善支援。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/page-speed" },
@@ -113,23 +114,23 @@ const relatedLinks = [
   { href: "/web-design/seo-site", label: "SEO対応サイト制作", desc: "SEO特化の制作" },
   { href: "/web-design/mobile-friendly", label: "スマートフォン対応", desc: "モバイル最適化" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "企業サイト制作" },
-  { href: "/web-design/lp", label: "ランディングページ制作", desc: "LP制作・高速化" },
+  { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "LP制作・高速化" },
   { href: "/web-design/headless-wordpress", label: "ヘッドレスWordPress", desc: "WP高速化の手法" },
-  { href: "/web-design/cms", label: "CMS導入", desc: "CMSの選定と導入" },
-  { href: "/web-design/renewal", label: "サイトリニューアル", desc: "速度改善を含む刷新" },
+  { href: "/web-design/wordpress", label: "CMS導入", desc: "CMSの選定と導入" },
+  { href: "/checklist/website-redesign", label: "サイトリニューアル", desc: "速度改善を含む刷新" },
   { href: "/seo", label: "SEO対策とは", desc: "SEOの基礎知識" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "技術面のSEO改善" },
   { href: "/seo/page-speed", label: "SEO観点の速度改善", desc: "速度とSEOの関係" },
   { href: "/seo/structured-data", label: "構造化データ", desc: "Schema.org実装" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "サービス詳細" },
   { href: "/services/seo", label: "SEOサービス", desc: "SEO支援サービス" },
-  { href: "/industry/restaurant", label: "飲食店向けWeb制作", desc: "飲食業の速度改善" },
-  { href: "/industry/salon", label: "美容室向けWeb制作", desc: "サロンサイトの最適化" },
-  { href: "/industry/dental", label: "歯科向けWeb制作", desc: "クリニックサイト" },
-  { href: "/industry/ec", label: "ECサイト制作", desc: "EC高速化" },
-  { href: "/industry/btob", label: "BtoB向けWeb制作", desc: "法人サイトの最適化" },
-  { href: "/industry/medical", label: "医療機関向けWeb制作", desc: "医療サイトの高速化" },
-  { href: "/works", label: "制作実績", desc: "速度改善の実績" },
+  { href: "/industries/restaurant", label: "飲食店向けWeb制作", desc: "飲食業の速度改善" },
+  { href: "/industries/beauty", label: "美容室向けWeb制作", desc: "サロンサイトの最適化" },
+  { href: "/industries/clinic", label: "歯科向けWeb制作", desc: "クリニックサイト" },
+  { href: "/industries/local-store", label: "ECサイト制作", desc: "EC高速化" },
+  { href: "/industries/professional-service", label: "BtoB向けWeb制作", desc: "法人サイトの最適化" },
+  { href: "/industries/clinic", label: "医療機関向けWeb制作", desc: "医療サイトの高速化" },
+  { href: "/cases", label: "制作実績", desc: "速度改善の実績" },
   { href: "/contact", label: "お問い合わせ", desc: "ご相談はこちら" },
 ];
 
@@ -140,7 +141,7 @@ export default function Page() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────── */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -257,10 +258,10 @@ export default function Page() {
                     alignItems: "flex-start",
                     gap: "12px",
                     padding: "14px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #E2E8F0",
                   }}
                 >
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
                     →
                   </span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
@@ -273,7 +274,7 @@ export default function Page() {
         {/* ── Business impact – dark section ───────────────── */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>
               Business Impact
             </p>
             <h2
@@ -313,7 +314,7 @@ export default function Page() {
                   b: "表示が遅いサイトは「古いサイトで大丈夫か」という印象を与えます。初回の接触でブランドへの信頼を損なうと、その後のCV機会も減ります。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
                   <p
                     style={{
                       fontFamily: "var(--font-serif)",
@@ -389,7 +390,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -415,7 +416,7 @@ export default function Page() {
         </section>
 
         {/* ── Section B: よくある課題と原因 ───────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Challenges
@@ -486,7 +487,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -533,7 +534,7 @@ export default function Page() {
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
                 gap: "1px",
-                background: "#E8E4DC",
+                background: "#E2E8F0",
               }}
             >
               {[
@@ -609,7 +610,7 @@ export default function Page() {
         </section>
 
         {/* ── Section D: 速度改善の実装フロー ─────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Optimization Flow
@@ -680,7 +681,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -767,7 +768,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -793,7 +794,7 @@ export default function Page() {
         </section>
 
         {/* ── Inline CTA ───────────────────────────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "64px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
           <div
             style={{
               maxWidth: "72rem",

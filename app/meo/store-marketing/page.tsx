@@ -27,6 +27,7 @@ export const metadata: Metadata = {
       "MEO・SNS・ウェブサイトを組み合わせた実店舗集客マーケティングの全体設計をわかりやすく解説します。",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/store-marketing" },
@@ -309,26 +310,26 @@ const relatedLinks = [
   { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎と全体戦略" },
   { href: "/meo/review-management", label: "口コミ管理・返信", desc: "高評価口コミを増やす仕組み" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化の完全ガイド" },
-  { href: "/meo/local-seo", label: "ローカルSEO対策", desc: "地域検索での上位表示戦略" },
+  { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での上位表示戦略" },
   { href: "/meo/map-ranking", label: "Googleマップ順位改善", desc: "マップパックの上位表示施策" },
-  { href: "/meo/competitor-analysis", label: "競合分析", desc: "競合店のGBP・口コミを分析する" },
-  { href: "/meo/photo-strategy", label: "写真戦略", desc: "来店意欲を高める写真掲載" },
-  { href: "/meo/post-management", label: "投稿管理", desc: "GBP最新情報投稿の運用術" },
+  { href: "/meo/meo-audit", label: "競合分析", desc: "競合店のGBP・口コミを分析する" },
+  { href: "/meo/photo-posting", label: "写真戦略", desc: "来店意欲を高める写真掲載" },
+  { href: "/meo/google-post", label: "投稿管理", desc: "GBP最新情報投稿の運用術" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金プラン" },
   { href: "/services/sns", label: "SNS運用代行", desc: "MEOと連動したSNS集客" },
-  { href: "/services/line", label: "LINE公式アカウント運用", desc: "リピーター獲得の仕組み化" },
+  { href: "/sns", label: "LINE公式アカウント運用", desc: "リピーター獲得の仕組み化" },
   { href: "/services/web-design", label: "ウェブサイト制作", desc: "集客につながるサイト設計" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
-  { href: "/seo/local-content", label: "地域コンテンツSEO", desc: "地域特化コンテンツで上位表示" },
+  { href: "/seo/local-seo", label: "地域コンテンツSEO", desc: "地域特化コンテンツで上位表示" },
   { href: "/aio", label: "AIO対策", desc: "AI検索への最適化戦略" },
-  { href: "/aio/eeat", label: "E-E-A-T強化", desc: "専門性・権威性・信頼性の構築" },
-  { href: "/industry/restaurant", label: "飲食店のMEO対策", desc: "飲食店特化の集客施策" },
-  { href: "/industry/beauty", label: "美容室のMEO対策", desc: "美容室の新規・リピート施策" },
-  { href: "/industry/dental", label: "歯科のMEO対策", desc: "歯科医院の患者獲得戦略" },
-  { href: "/industry/clinic", label: "クリニックのMEO対策", desc: "医療機関の集患マーケティング" },
+  { href: "/knowledge/eeat", label: "E-E-A-T強化", desc: "専門性・権威性・信頼性の構築" },
+  { href: "/industries/restaurant", label: "飲食店のMEO対策", desc: "飲食店特化の集客施策" },
+  { href: "/industries/beauty", label: "美容室のMEO対策", desc: "美容室の新規・リピート施策" },
+  { href: "/industries/clinic", label: "歯科のMEO対策", desc: "歯科医院の患者獲得戦略" },
+  { href: "/industries/clinic", label: "クリニックのMEO対策", desc: "医療機関の集患マーケティング" },
   { href: "/area/tokyo", label: "東京のMEO対策", desc: "東京都内の店舗集客支援" },
-  { href: "/area/osaka", label: "大阪のMEO対策", desc: "大阪府内の店舗集客支援" },
-  { href: "/area/nagoya", label: "名古屋のMEO対策", desc: "名古屋市内の店舗集客支援" },
+  { href: "/area/nationwide", label: "大阪のMEO対策", desc: "大阪府内の店舗集客支援" },
+  { href: "/area/nationwide", label: "名古屋のMEO対策", desc: "名古屋市内の店舗集客支援" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "店舗集客のご相談はこちら" },
 ];
 
@@ -376,7 +377,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -397,7 +398,7 @@ export default function StoreMarketingPage() {
                 "よくある失敗パターンと、各施策が成果につながるための設計の考え方",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "#3A9BDC" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -440,7 +441,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* 来店導線の最適化 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Visit Optimization
@@ -453,7 +454,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {visitMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -463,7 +464,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -482,7 +483,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {challenges.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -492,13 +493,13 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
@@ -511,7 +512,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {industries.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -521,7 +522,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -566,7 +567,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#F4F6FA" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -579,7 +580,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -589,7 +590,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -608,25 +609,25 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-1" style={{ color: "#0F172A" }}>{item.label}</h3>
-                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#c4b89a" }}>
+                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#3A9BDC" }}>
                       計測場所：{item.where}
                     </p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={relatedLinks} />
 

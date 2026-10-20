@@ -262,15 +262,15 @@ export default function TrainingCompanyReferralPartnerPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {roles.map((role) => (
-                <div key={role.actor} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.18em", color: "#c4b89a", marginBottom: "10px", textTransform: "uppercase" }}>
+                <div key={role.actor} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.18em", color: "#3A9BDC", marginBottom: "10px", textTransform: "uppercase" }}>
                     {role.subtitle}
                   </p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "18px" }}>
                     {role.actor}
                   </p>
                   {role.items.map((item) => (
-                    <div key={item} style={{ display: "flex", gap: "10px", padding: "9px 0", borderTop: "1px solid #e8e4dc" }}>
+                    <div key={item} style={{ display: "flex", gap: "10px", padding: "9px 0", borderTop: "1px solid #E2E8F0" }}>
                       <span style={{ color: "#0d1b2a", flexShrink: 0, fontSize: "12px" }}>✓</span>
                       <p style={{ fontSize: "12.5px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                     </div>
@@ -279,7 +279,7 @@ export default function TrainingCompanyReferralPartnerPage() {
                     <>
                       <p style={{ fontSize: "11px", color: "#9ca3af", marginTop: "18px", marginBottom: "6px", fontWeight: 600 }}>行わないこと</p>
                       {role.excludes.map((item) => (
-                        <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc" }}>
+                        <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #E2E8F0" }}>
                           <span style={{ color: "#9ca3af", flexShrink: 0, fontSize: "12px" }}>×</span>
                           <p style={{ fontSize: "12.5px", color: "#9ca3af", lineHeight: "1.8" }}>{item}</p>
                         </div>
@@ -293,7 +293,7 @@ export default function TrainingCompanyReferralPartnerPage() {
         </section>
 
         {/* ── 紹介できる研修テーマ ───────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Themes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -301,7 +301,7 @@ export default function TrainingCompanyReferralPartnerPage() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {referralThemes.map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "22px" }}>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "22px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -332,7 +332,7 @@ export default function TrainingCompanyReferralPartnerPage() {
         </section>
 
         {/* ── 問い合わせから紹介までの流れ ───────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -340,15 +340,15 @@ export default function TrainingCompanyReferralPartnerPage() {
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {REFERRAL_FLOW.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -398,7 +398,7 @@ export default function TrainingCompanyReferralPartnerPage() {
           </div>
         </section>
 
-        <SubsidyDisclaimer bgColor="#f8f6f2" />
+        <SubsidyDisclaimer bgColor="#F4F6FA" />
 
         <FaqSection items={faqItems} heading="研修会社紹介パートナー制度についてよくある質問" bgColor="#ffffff" />
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT対策・生成AI時代の情報設計｜AIO対策｜株式会社サイプレス",
     description: "ChatGPTに引用・推薦される企業になるための情報設計と具体的施策。E-E-A-T・構造化データ・メディア露出・llms.txt対応まで解説。",
-    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -134,24 +134,24 @@ const relatedLinks = [
   { href: "/aio/structured-data", label: "構造化データ実装", desc: "Schema.org設計・実装" },
   { href: "/aio/generative-search", label: "生成AI検索対策", desc: "AI Overview等への対策" },
   { href: "/aio/ai-overview", label: "AI Overview対策", desc: "Google生成AI検索対策" },
-  { href: "/aio/perplexity", label: "Perplexity対策", desc: "Perplexity AI引用最適化" },
-  { href: "/aio/e-e-a-t", label: "E-E-A-T対策", desc: "信頼性・専門性の強化" },
+  { href: "/aio/ai-search", label: "Perplexity対策", desc: "Perplexity AI引用最適化" },
+  { href: "/knowledge/eeat", label: "E-E-A-T対策", desc: "信頼性・専門性の強化" },
   { href: "/aio/llms-txt", label: "llms.txt設置", desc: "AIクローラー向け設定" },
   { href: "/aio/faq-optimization", label: "FAQ最適化", desc: "Q&Aコンテンツの最適化" },
-  { href: "/aio/content-strategy", label: "AIコンテンツ戦略", desc: "AI時代のコンテンツ設計" },
+  { href: "/aio/generative-search", label: "AIコンテンツ戦略", desc: "AI時代のコンテンツ設計" },
   { href: "/seo", label: "SEO対策とは", desc: "検索エンジン最適化の基礎" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツ最適化戦略" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "サイト構造・速度最適化" },
-  { href: "/seo/e-e-a-t", label: "SEO E-E-A-T対策", desc: "SEOの信頼性強化" },
+  { href: "/knowledge/eeat", label: "SEO E-E-A-T対策", desc: "SEOの信頼性強化" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ検索対策" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化ガイド" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO支援サービス" },
-  { href: "/services/content-marketing", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用" },
-  { href: "/industry/legal", label: "士業・法律事務所向け", desc: "士業のAIO・SEO戦略" },
-  { href: "/industry/medical", label: "医療・クリニック向け", desc: "医療業界のAIO・SEO" },
-  { href: "/industry/btob", label: "BtoB企業向け", desc: "BtoBのデジタル戦略" },
-  { href: "/area/osaka", label: "大阪のAIO対策", desc: "大阪エリアの実績" },
+  { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用" },
+  { href: "/industries/professional-service", label: "士業・法律事務所向け", desc: "士業のAIO・SEO戦略" },
+  { href: "/industries/clinic", label: "医療・クリニック向け", desc: "医療業界のAIO・SEO" },
+  { href: "/industries/professional-service", label: "BtoB企業向け", desc: "BtoBのデジタル戦略" },
+  { href: "/area/nationwide", label: "大阪のAIO対策", desc: "大阪エリアの実績" },
   { href: "/area/tokyo", label: "東京のAIO対策", desc: "東京エリアの実績" },
 ];
 
@@ -195,7 +195,7 @@ export default function ChatgptAioPage() {
         </section>
 
         {/* ChatGPTに引用されるための情報設計 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               How ChatGPT Cites
@@ -232,18 +232,18 @@ export default function ChatgptAioPage() {
                 "メディア露出・被リンク獲得・SNSブランド戦略の具体的な進め方",
                 "ChatGPT対策の成果を測定するKPI一覧と確認・追跡方法",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* 必要な施策 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Key Measures
@@ -253,7 +253,7 @@ export default function ChatgptAioPage() {
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {measures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -263,7 +263,7 @@ export default function ChatgptAioPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -330,7 +330,7 @@ export default function ChatgptAioPage() {
                   b: "ChatGPT無料版（学習データのみ）とChatGPT Search（Webリアルタイム検索）では最適化アプローチが異なります。Search機能ではクロール可能なサイト構造・コンテンツの鮮度・クリック価値が重要です。両方の特性を踏まえた複合的な対策が必要です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -338,13 +338,13 @@ export default function ChatgptAioPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
@@ -407,15 +407,15 @@ export default function ChatgptAioPage() {
                   key={item.n}
                   style={{
                     padding: "24px",
-                    borderTop: "1px solid #E8E4DC",
-                    borderLeft: i % 2 === 1 ? "1px solid #E8E4DC" : "none",
+                    borderTop: "1px solid #E2E8F0",
+                    borderLeft: i % 2 === 1 ? "1px solid #E2E8F0" : "none",
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginBottom: "6px" }}>
                     <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{item.n}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
                   </div>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "10px" }}>{item.note}</p>
+                  <p style={{ fontSize: "12px", color: "#3A9BDC", fontWeight: 600, marginBottom: "10px" }}>{item.note}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.detail}</p>
                 </div>
               ))}
@@ -458,7 +458,7 @@ export default function ChatgptAioPage() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -519,7 +519,7 @@ export default function ChatgptAioPage() {
                   b: "毎月、ChatGPT・Perplexity・Google AI Overviewで主要クエリを調査し、自社言及率の推移を記録します。言及されたコンテンツURL・言及文脈・競合の状況を分析し、次月の改善施策に反映させるPDCAサイクルを回します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -527,7 +527,7 @@ export default function ChatgptAioPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
@@ -586,21 +586,21 @@ export default function ChatgptAioPage() {
                   note: "AI経由の問い合わせを直接計測することは現状困難なため、AIO対策コンテンツページからのコンバージョン数と全体の問い合わせ数推移を代替指標として使用します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "6px", fontWeight: 600 }}>{item.where}</p>
+                    <p style={{ fontSize: "12px", color: "#3A9BDC", marginBottom: "6px", fontWeight: 600 }}>{item.where}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #E2E8F0" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ChatGPT対策に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="ChatGPT対策に関するよくある質問" bgColor="#F4F6FA" />
 
         <RelatedPages links={relatedLinks} />
 
