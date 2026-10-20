@@ -1,844 +1,504 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
-import { BUSINESSES } from "@/lib/company";
+import { AnimatePresence, motion } from "framer-motion";
+import Logo from "@/components/brand/Logo";
+import { CONTACT_LINK, PRIMARY_NAV, SECONDARY_NAV, type NavGroup, type NavLink } from "@/lib/navigation";
 
-/** Webマーケティング以外の事業（専用サイトで運営）。「事業内容」メニューの下段に出す。 */
-const OTHER_BUSINESSES = BUSINESSES.filter((b) => b.external);
-
-// ─── Navigation data ────────────────────────────────────────────────────────
-
-const COMPANY_MENU: { href: string; label: string }[] = [
-  { href: "/company/message", label: "代表挨拶" },
-  { href: "/company/philosophy", label: "企業理念" },
-  { href: "/company/profile", label: "会社概要" },
-  { href: "/company/history", label: "沿革" },
-  { href: "/company/area", label: "対応エリア" },
-];
-
-const SERVICES_MENU: { href: string; label: string }[] = [
-  { href: "/services/meo", label: "MEO対策" },
-  { href: "/services/seo", label: "SEO対策" },
-  { href: "/services/aio", label: "AIO対策" },
-  { href: "/services/web-design", label: "ホームページ制作" },
-  { href: "/services/sns", label: "SNS運用" },
-  { href: "/services/ai", label: "AI活用支援" },
-];
-
-const KNOWLEDGE_LEFT: { href: string; label: string }[] = [
-  { href: "/seo", label: "SEO対策" },
-  { href: "/meo", label: "MEO対策" },
-  { href: "/aio", label: "AIO対策" },
-  { href: "/ai", label: "AI活用" },
-];
-
-const KNOWLEDGE_RIGHT: { href: string; label: string }[] = [
-  { href: "/web-design", label: "Web制作" },
-  { href: "/sns", label: "SNS運用" },
-  { href: "/industries", label: "業種別対応" },
-  { href: "/area", label: "対応エリア" },
-];
-
-const RECRUIT_MENU: { href: string; label: string }[] = [
-  { href: "/recruit", label: "採用情報トップ" },
-  { href: "/recruit/sales", label: "Webマーケティング営業" },
-];
-
-const PARTNER_LEFT: { href: string; label: string }[] = [
-  { href: "/agent", label: "代理店募集トップ" },
-  { href: "/agent/web-design", label: "ホームページ制作代理店" },
-  { href: "/agent/meo", label: "MEO対策代理店" },
-  { href: "/agent/seo", label: "SEO対策代理店" },
-  { href: "/agent/aio", label: "AIO対策代理店" },
-  { href: "/agent/faq", label: "代理店FAQ" },
-];
-
-const PARTNER_RIGHT: { href: string; label: string }[] = [
-  { href: "/partner/referral", label: "取次店・紹介パートナー" },
-];
-
-// ─── Types ──────────────────────────────────────────────────────────────────
-
-type DropdownKey = "company" | "services" | "knowledge" | "recruit" | "partner";
-
-// ─── Chevron icon ────────────────────────────────────────────────────────────
-
-function ChevronDown() {
-  return (
-    <svg className="w-3 h-3 mt-px shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-  );
+interface Props {
+  /** overlay: トップページのヒーローに白文字で重ねる / default: 明るい背景のページ */
+  variant?: "overlay" | "default";
+  /** トップのイントロ演出が終わってから表示する */
+  introFade?: boolean;
 }
 
-// ─── Dropdown link ───────────────────────────────────────────────────────────
+type Mode = "top" | "shown" | "hidden";
 
-function DropLink({ href, label, last = false }: { href: string; label: string; last?: boolean }) {
-  return (
-    <Link
-      href={href}
-      className="block px-5 py-2.5 text-[13px] hover:bg-[#f8f6f2] transition-colors"
-      style={{
-        color: "#374151",
-        borderBottom: last ? "none" : "1px solid #f0ede8",
-        fontFamily: "var(--font-sans)",
-      }}
-    >
-      {label}
-    </Link>
-  );
-}
+/** ページ最上部にいるときのヘッダーの高さ（px）。下層ページではこの分だけ本文を下げる。 */
+const BAR_HEIGHT = 88;
+const EASE = [0.22, 1, 0.36, 1] as const;
 
-function ExternalDropLink({ href, label, last = false }: { href: string; label: string; last?: boolean }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center justify-between gap-3 px-5 py-2.5 text-[13px] hover:bg-[#f8f6f2] transition-colors"
-      style={{
-        color: "#374151",
-        borderBottom: last ? "none" : "1px solid #f0ede8",
-        fontFamily: "var(--font-sans)",
-      }}
-    >
-      {label}
-      <span aria-hidden="true" style={{ color: "#9CA3AF", fontSize: "11px" }}>↗</span>
-    </a>
-  );
-}
-
-// ─── Main component ──────────────────────────────────────────────────────────
-
-export default function Header() {
-  const [openMenu, setOpenMenu] = useState<DropdownKey | null>(null);
+/**
+ * サイト共通ヘッダー。
+ * - 最上部: 背景なしで本文と一緒にスクロールして消える
+ * - 下にスクロール中: 隠す / 上にスクロールしたとき: 白いパネルとして上部に出す
+ * - メニューにホバー: 白いパネルが広がり、背景をぼかしてメガメニューを出す
+ */
+export default function Header({ variant = "default", introFade = false }: Props) {
+  const [mode, setMode] = useState<Mode>("top");
+  const [openKey, setOpenKey] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const barRef = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<number | null>(null);
+  const modeRef = useRef<Mode>("top");
 
-  const handleEnter = (key: DropdownKey) => {
-    if (timerRef.current) clearTimeout(timerRef.current);
-    setOpenMenu(key);
+  /** 最上部では本文と同じ速さで上へ流し、それ以外は出し入れをアニメーションさせる */
+  const placeBar = (m: Mode, y: number) => {
+    const el = barRef.current;
+    if (!el) return;
+    el.style.transition = m === "top" ? "none" : "transform 0.5s cubic-bezier(0.22,1,0.36,1)";
+    el.style.transform = m === "top" ? `translate3d(0, ${-Math.min(y, BAR_HEIGHT)}px, 0)` : m === "hidden" ? "translate3d(0,-130%,0)" : "translate3d(0,0,0)";
   };
 
-  const handleLeave = () => {
-    timerRef.current = setTimeout(() => setOpenMenu(null), 180);
-  };
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const y = window.scrollY;
+      const dy = y - lastY;
+      lastY = y;
+      let next = modeRef.current;
+      if (y <= 4) next = "top";
+      else if (next === "top" && y < BAR_HEIGHT) next = "top";
+      else if (dy > 2) next = "hidden";
+      else if (dy < -2) next = "shown";
+      else if (next === "top") next = "hidden";
+      if (next !== modeRef.current) {
+        modeRef.current = next;
+        setMode(next);
+      }
+      placeBar(next, y);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
 
-  const toggleDropdown = (key: string) => {
-    setOpenDropdown(openDropdown === key ? null : key);
-  };
+  // メニューを開いている間は Esc で閉じ、モバイルメニュー表示中は背面のスクロールを止める
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpenKey(null);
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
-  const closeMobile = () => {
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const root = document.documentElement;
+    const prev = root.style.overflow;
+    root.style.overflow = "hidden";
+    window.__cyLenis?.stop();
+    return () => {
+      root.style.overflow = prev;
+      window.__cyLenis?.start();
+    };
+  }, [mobileOpen]);
+
+  const openMenu = (key: string | null) => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    setOpenKey(key);
+  };
+  const scheduleClose = () => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setOpenKey(null), 160);
+  };
+  const closeAll = () => {
+    setOpenKey(null);
     setMobileOpen(false);
-    setOpenDropdown(null);
   };
+
+  const menuOpen = openKey !== null;
+  // 白いパネル表示か（上スクロール時・メニュー展開時）
+  const panel = menuOpen || mode === "shown";
+  const light = !panel && variant === "overlay";
+  const openGroup = [...PRIMARY_NAV, ...SECONDARY_NAV].find((g) => g.key === openKey && g.menu);
 
   return (
     <>
-      {/* ── Desktop header ─────────────────────────────────────────────────── */}
+      {variant === "default" && <div aria-hidden className="h-16 lg:h-[88px]" />}
+
+      {/* メガメニュー表示中は背面をぼかす */}
+      <AnimatePresence>
+        {openGroup && (
+          <motion.div
+            key="backdrop"
+            aria-hidden
+            className="fixed inset-0 z-40 hidden lg:block"
+            style={{ background: "rgba(41,53,64,0.28)", backdropFilter: "blur(14px)", WebkitBackdropFilter: "blur(14px)" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: EASE }}
+            onMouseEnter={scheduleClose}
+            onClick={() => setOpenKey(null)}
+          />
+        )}
+      </AnimatePresence>
+
       <header
-        className="fixed top-0 left-0 right-0 z-50"
-        style={{
-          background: "rgba(255,255,255,0.98)",
-          backdropFilter: "blur(12px)",
-          WebkitBackdropFilter: "blur(12px)",
-          borderBottom: "1px solid #ece8e0",
+        className="v2 fixed inset-x-0 top-0 z-50"
+        onFocusCapture={() => {
+          if (modeRef.current === "hidden") {
+            modeRef.current = "shown";
+            setMode("shown");
+            placeBar("shown", window.scrollY);
+          }
         }}
       >
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link href="/" className="shrink-0 flex items-center gap-3">
-              <Image
-                src="/logo.png"
-                alt="株式会社サイプレス"
-                width={32}
-                height={32}
-                style={{ objectFit: "contain", width: "32px", height: "32px" }}
-                priority
-              />
+        <div ref={barRef} className="will-change-transform">
+          <div
+            className={`transition-[margin,border-radius,background-color,box-shadow] duration-500 ${introFade ? "cy-hero-sub" : ""}`}
+            style={{
+              margin: panel ? "8px 8px 0" : "0",
+              borderRadius: panel ? 12 : 0,
+              background: panel ? "rgba(255,255,255,0.94)" : "transparent",
+              backdropFilter: panel ? "blur(12px)" : undefined,
+              WebkitBackdropFilter: panel ? "blur(12px)" : undefined,
+              boxShadow: panel ? "0 10px 30px rgba(41,53,64,0.08)" : "none",
+              transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)",
+            }}
+            onMouseLeave={scheduleClose}
+          >
+            <div
+              className={`flex items-center px-4 transition-[height] duration-500 lg:px-6 ${panel ? "h-16" : "h-16 lg:h-[88px]"}`}
+              style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
+            >
+              <Link href="/" aria-label="株式会社サイプレス トップページ" className="shrink-0 text-[17px]" onClick={closeAll}>
+                <Logo tone={light ? "white" : "color"} />
+              </Link>
+
               <span
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "20px",
-                  fontWeight: 600,
-                  color: "#0d1b2a",
-                  letterSpacing: "0.04em",
-                  lineHeight: 1,
-                }}
-              >
-                Cypress
-              </span>
-            </Link>
+                aria-hidden
+                className="mx-5 hidden h-5 w-px lg:block"
+                style={{ background: light ? "rgba(255,255,255,0.4)" : "var(--v2-line)" }}
+              />
 
-            {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center gap-0">
-              {/* 会社情報 */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleEnter("company")}
-                onMouseLeave={handleLeave}
-              >
+              <nav aria-label="メインメニュー" className="hidden flex-1 items-center justify-between lg:flex">
+                <NavRow groups={PRIMARY_NAV} light={light} openKey={openKey} onOpen={openMenu} onNavigate={closeAll} />
+                <div className="flex items-center gap-4">
+                  <NavRow groups={SECONDARY_NAV} light={light} openKey={openKey} onOpen={openMenu} onNavigate={closeAll} />
+                  <ContactPill light={light} onClick={closeAll} />
+                </div>
+              </nav>
+
+              <div className="ml-auto flex items-center gap-3 lg:hidden">
+                <ContactPill light={light} onClick={closeAll} compact />
                 <button
-                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
-                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
+                  type="button"
+                  aria-label="メニューを開く"
+                  aria-expanded={mobileOpen}
+                  aria-controls="mobile-menu"
+                  onClick={() => setMobileOpen(true)}
+                  className="grid h-10 w-10 place-items-center rounded-full"
+                  style={{ color: light ? "#fff" : "var(--v2-ink)" }}
                 >
-                  会社情報
-                  <ChevronDown />
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                    <path d="M1 1h20M1 11h20" />
+                  </svg>
                 </button>
-                {openMenu === "company" && (
-                  <div
-                    className="absolute top-full left-0 pt-2"
-                    onMouseEnter={() => handleEnter("company")}
-                    onMouseLeave={handleLeave}
-                  >
-                    <div
-                      style={{
-                        background: "#ffffff",
-                        border: "1px solid #ece8e0",
-                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
-                        minWidth: "180px",
-                      }}
-                    >
-                      {COMPANY_MENU.map((l, i) => (
-                        <DropLink
-                          key={l.href}
-                          href={l.href}
-                          label={l.label}
-                          last={i === COMPANY_MENU.length - 1}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
-
-              {/* 事業内容 */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleEnter("services")}
-                onMouseLeave={handleLeave}
-              >
-                <button
-                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
-                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                >
-                  事業内容
-                  <ChevronDown />
-                </button>
-                {openMenu === "services" && (
-                  <div
-                    className="absolute top-full left-0 pt-2"
-                    onMouseEnter={() => handleEnter("services")}
-                    onMouseLeave={handleLeave}
-                  >
-                    <div
-                      style={{
-                        background: "#ffffff",
-                        border: "1px solid #ece8e0",
-                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
-                        minWidth: "180px",
-                      }}
-                    >
-                      {SERVICES_MENU.map((l) => (
-                        <DropLink key={l.href} href={l.href} label={l.label} />
-                      ))}
-                      <p
-                        className="px-5 pt-3 pb-1 text-[10px] tracking-[0.18em]"
-                        style={{ color: "#9CA3AF", fontFamily: "var(--font-sans)" }}
-                      >
-                        そのほかの事業
-                      </p>
-                      {OTHER_BUSINESSES.map((b, i) => (
-                        <ExternalDropLink
-                          key={b.href}
-                          href={b.href}
-                          label={b.name}
-                          last={i === OTHER_BUSINESSES.length - 1}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* 専門知識 — 2-column */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleEnter("knowledge")}
-                onMouseLeave={handleLeave}
-              >
-                <button
-                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
-                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                >
-                  専門知識
-                  <ChevronDown />
-                </button>
-                {openMenu === "knowledge" && (
-                  <div
-                    className="absolute top-full left-0 pt-2"
-                    style={{ transform: "translateX(-40px)" }}
-                    onMouseEnter={() => handleEnter("knowledge")}
-                    onMouseLeave={handleLeave}
-                  >
-                    <div
-                      style={{
-                        background: "#ffffff",
-                        border: "1px solid #ece8e0",
-                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
-                        minWidth: "320px",
-                      }}
-                    >
-                      <div className="grid grid-cols-2">
-                        <div style={{ borderRight: "1px solid #f0ede8" }}>
-                          {KNOWLEDGE_LEFT.map((l, i) => (
-                            <DropLink
-                              key={l.href}
-                              href={l.href}
-                              label={l.label}
-                              last={i === KNOWLEDGE_LEFT.length - 1}
-                            />
-                          ))}
-                        </div>
-                        <div>
-                          {KNOWLEDGE_RIGHT.map((l, i) => (
-                            <DropLink
-                              key={l.href}
-                              href={l.href}
-                              label={l.label}
-                              last={i === KNOWLEDGE_RIGHT.length - 1}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* 採用情報 — dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleEnter("recruit")}
-                onMouseLeave={handleLeave}
-              >
-                <button
-                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
-                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                >
-                  採用情報
-                  <ChevronDown />
-                </button>
-                {openMenu === "recruit" && (
-                  <div
-                    className="absolute top-full left-0 pt-2"
-                    onMouseEnter={() => handleEnter("recruit")}
-                    onMouseLeave={handleLeave}
-                  >
-                    <div
-                      style={{
-                        background: "#ffffff",
-                        border: "1px solid #ece8e0",
-                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
-                        minWidth: "210px",
-                      }}
-                    >
-                      {RECRUIT_MENU.map((l, i) => (
-                        <DropLink
-                          key={l.href}
-                          href={l.href}
-                          label={l.label}
-                          last={i === RECRUIT_MENU.length - 1}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* パートナー募集 — 2-column dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => handleEnter("partner")}
-                onMouseLeave={handleLeave}
-              >
-                <button
-                  className="flex items-center gap-1 px-4 py-2 text-[13px] transition-colors"
-                  style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                >
-                  パートナー募集
-                  <ChevronDown />
-                </button>
-                {openMenu === "partner" && (
-                  <div
-                    className="absolute top-full left-0 pt-2"
-                    style={{ transform: "translateX(-60px)" }}
-                    onMouseEnter={() => handleEnter("partner")}
-                    onMouseLeave={handleLeave}
-                  >
-                    <div
-                      style={{
-                        background: "#ffffff",
-                        border: "1px solid #ece8e0",
-                        boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
-                        minWidth: "380px",
-                      }}
-                    >
-                      <div
-                        style={{
-                          padding: "8px 16px 6px",
-                          fontSize: "10px",
-                          letterSpacing: "0.12em",
-                          color: "#9ca3af",
-                          fontFamily: "var(--font-sans)",
-                          textTransform: "uppercase",
-                          borderBottom: "1px solid #f0ede8",
-                        }}
-                      >
-                        販売代理店募集
-                      </div>
-                      <div className="grid grid-cols-2">
-                        <div style={{ borderRight: "1px solid #f0ede8" }}>
-                          {PARTNER_LEFT.map((l, i) => (
-                            <DropLink
-                              key={l.href}
-                              href={l.href}
-                              label={l.label}
-                              last={i === PARTNER_LEFT.length - 1}
-                            />
-                          ))}
-                        </div>
-                        <div>
-                          <div
-                            style={{
-                              padding: "6px 20px 4px",
-                              fontSize: "10px",
-                              letterSpacing: "0.12em",
-                              color: "#9ca3af",
-                              fontFamily: "var(--font-sans)",
-                              textTransform: "uppercase",
-                              borderBottom: "1px solid #f0ede8",
-                            }}
-                          >
-                            取次・紹介パートナー
-                          </div>
-                          {PARTNER_RIGHT.map((l, i) => (
-                            <DropLink
-                              key={l.href}
-                              href={l.href}
-                              label={l.label}
-                              last={i === PARTNER_RIGHT.length - 1}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              <Link
-                href="/column"
-                className="px-4 py-2 text-[13px] transition-colors hover:opacity-70"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-              >
-                コラム
-              </Link>
-              <Link
-                href="/news"
-                className="px-4 py-2 text-[13px] transition-colors hover:opacity-70"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-              >
-                お知らせ
-              </Link>
-            </nav>
-
-            {/* メールアドレス + お問い合わせ button */}
-            <div className="hidden lg:flex items-center gap-4 ml-4">
-              {/* xl以上でのみ表示。lgではナビと競合して折り返すため隠す。 */}
-              <a
-                href={CONTACT_MAILTO}
-                className="hidden xl:block text-right leading-tight transition-opacity hover:opacity-60"
-                style={{ fontFamily: "var(--font-sans)" }}
-              >
-                <span className="block text-[14px] font-semibold" style={{ color: "#1a2332", letterSpacing: "0.01em" }}>
-                  {CONTACT_EMAIL}
-                </span>
-                <span className="block text-[10px] mt-0.5" style={{ color: "#9ca3af" }}>
-                  受付 {CONTACT_HOURS}
-                </span>
-              </a>
-              <Link
-                href="/contact"
-                className="px-5 py-2 text-[13px] font-medium transition-all hover:bg-[#1a2332] hover:text-white shrink-0"
-                style={{
-                  border: "1px solid #1a2332",
-                  color: "#1a2332",
-                  fontFamily: "var(--font-sans)",
-                }}
-              >
-                お問い合わせ
-              </Link>
             </div>
 
-            {/* Mobile hamburger */}
-            <button
-              className="lg:hidden p-2 ml-2"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? "メニューを閉じる" : "メニューを開く"}
-            >
-              <svg
-                className="w-5 h-5"
-                style={{ color: "#1a2332" }}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                {mobileOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                )}
-              </svg>
-            </button>
+            <AnimatePresence initial={false}>
+              {openGroup?.menu && (
+                <motion.div
+                  key={openGroup.key}
+                  className="hidden overflow-hidden lg:block"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.45, ease: EASE }}
+                  onMouseEnter={() => openMenu(openGroup.key)}
+                >
+                  <MegaMenu group={openGroup} onNavigate={closeAll} />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </header>
 
-      {/* Spacer so page content doesn't sit under the fixed header */}
-      <div className="h-16" />
+      <AnimatePresence>{mobileOpen && <MobileMenu onClose={closeAll} />}</AnimatePresence>
+    </>
+  );
+}
 
-      {/* ── Mobile drawer (full-screen) ──────────────────────────────────────── */}
-      {mobileOpen && (
-        <div
-          className="lg:hidden"
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 50,
-            background: "#ffffff",
-            overflowY: "auto",
-          }}
-        >
-          {/* Drawer header */}
-          <div
-            className="flex items-center justify-between px-6 h-16"
-            style={{ borderBottom: "1px solid #ece8e0" }}
-          >
-            <Link href="/" onClick={closeMobile} className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="株式会社サイプレス"
-                width={28}
-                height={28}
-                style={{ objectFit: "contain", width: "28px", height: "28px" }}
-              />
+// ─── 横並びのナビ ───────────────────────────────────────────────────────────
+
+function NavRow({
+  groups,
+  light,
+  openKey,
+  onOpen,
+  onNavigate,
+}: {
+  groups: NavGroup[];
+  light: boolean;
+  openKey: string | null;
+  onOpen: (key: string | null) => void;
+  onNavigate: () => void;
+}) {
+  return (
+    <ul className="flex h-10 items-center">
+      {groups.map((g) => {
+        const active = openKey === g.key;
+        return (
+          <li key={g.key} className="relative h-full" onMouseEnter={() => onOpen(g.menu ? g.key : null)}>
+            <Link
+              href={g.href}
+              onClick={onNavigate}
+              onFocus={() => onOpen(g.menu ? g.key : null)}
+              aria-haspopup={g.menu ? "true" : undefined}
+              aria-expanded={g.menu ? active : undefined}
+              className="relative flex h-full items-center px-2.5 text-[14px] font-semibold tracking-[0.01em] transition-colors duration-300"
+              style={{ color: active ? "var(--v2-blue)" : light ? "#fff" : "var(--v2-ink)" }}
+            >
+              {g.label}
+              <span className="sr-only">（{g.ja}）</span>
               <span
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "18px",
-                  fontWeight: 600,
-                  color: "#0d1b2a",
-                  letterSpacing: "0.04em",
-                }}
-              >
-                Cypress
-              </span>
+                aria-hidden
+                className="absolute inset-x-2.5 -bottom-3 h-[2px] origin-left rounded-full transition-transform duration-300"
+                style={{ background: "var(--v2-blue)", transform: active ? "scaleX(1)" : "scaleX(0)" }}
+              />
             </Link>
-            <button onClick={closeMobile} aria-label="メニューを閉じる" className="p-2">
-              <svg
-                className="w-5 h-5"
-                style={{ color: "#1a2332" }}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
-          {/* Drawer body */}
-          <div className="px-6 py-4">
-            {/* 会社情報 accordion */}
-            <div style={{ borderBottom: "1px solid #f0ede8" }}>
-              <button
-                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                onClick={() => toggleDropdown("company")}
-              >
-                会社情報
-                <svg
-                  className="w-4 h-4 transition-transform"
-                  style={{
-                    color: "#9ca3af",
-                    transform: openDropdown === "company" ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              {openDropdown === "company" && (
-                <div className="pb-3 pl-4">
-                  {COMPANY_MENU.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+// ─── お問い合わせボタン（ホバーで文字が下から入れ替わる） ───────────────────
 
-            {/* 事業内容 accordion */}
-            <div style={{ borderBottom: "1px solid #f0ede8" }}>
-              <button
-                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                onClick={() => toggleDropdown("services")}
-              >
-                事業内容
-                <svg
-                  className="w-4 h-4 transition-transform"
-                  style={{
-                    color: "#9ca3af",
-                    transform: openDropdown === "services" ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              {openDropdown === "services" && (
-                <div className="pb-3 pl-4">
-                  {SERVICES_MENU.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                  {OTHER_BUSINESSES.map((b) => (
-                    <a
-                      key={b.href}
-                      href={b.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {b.name} ↗
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+function ContactPill({ light, onClick, compact = false }: { light: boolean; onClick: () => void; compact?: boolean }) {
+  return (
+    <Link
+      href={CONTACT_LINK.href}
+      onClick={onClick}
+      className={`group inline-flex items-center rounded-full font-semibold transition-colors duration-300 ${compact ? "px-3.5 py-1.5 text-[13px]" : "px-4 py-2 text-[14px]"}`}
+      style={{ background: light ? "#fff" : "var(--v2-blue)", color: light ? "var(--v2-blue)" : "#fff" }}
+    >
+      <span className="relative block overflow-hidden leading-[1.4]">
+        <span className="block transition-transform duration-500 group-hover:-translate-y-full" style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}>
+          {CONTACT_LINK.en}
+        </span>
+        <span
+          aria-hidden
+          className="absolute inset-0 block translate-y-full transition-transform duration-500 group-hover:translate-y-0"
+          style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
+        >
+          {CONTACT_LINK.en}
+        </span>
+      </span>
+      <span className="sr-only">（{CONTACT_LINK.label}）</span>
+    </Link>
+  );
+}
 
-            {/* 専門知識 accordion */}
-            <div style={{ borderBottom: "1px solid #f0ede8" }}>
-              <button
-                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                onClick={() => toggleDropdown("knowledge")}
-              >
-                専門知識
-                <svg
-                  className="w-4 h-4 transition-transform"
-                  style={{
-                    color: "#9ca3af",
-                    transform: openDropdown === "knowledge" ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              {openDropdown === "knowledge" && (
-                <div className="pb-3 pl-4">
-                  {[...KNOWLEDGE_LEFT, ...KNOWLEDGE_RIGHT].map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+// ─── メガメニュー ───────────────────────────────────────────────────────────
 
-            {/* 採用情報 accordion */}
-            <div style={{ borderBottom: "1px solid #f0ede8" }}>
-              <button
-                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                onClick={() => toggleDropdown("recruit")}
-              >
-                採用情報
-                <svg
-                  className="w-4 h-4 transition-transform"
-                  style={{
-                    color: "#9ca3af",
-                    transform: openDropdown === "recruit" ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              {openDropdown === "recruit" && (
-                <div className="pb-3 pl-4">
-                  {RECRUIT_MENU.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* パートナー募集 accordion */}
-            <div style={{ borderBottom: "1px solid #f0ede8" }}>
-              <button
-                className="w-full flex items-center justify-between py-4 text-[14px] font-medium"
-                style={{ color: "#1a2332", fontFamily: "var(--font-sans)" }}
-                onClick={() => toggleDropdown("partner")}
-              >
-                パートナー募集
-                <svg
-                  className="w-4 h-4 transition-transform"
-                  style={{
-                    color: "#9ca3af",
-                    transform: openDropdown === "partner" ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-              </button>
-              {openDropdown === "partner" && (
-                <div className="pb-3 pl-4">
-                  <p style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#9ca3af", marginBottom: "4px", marginTop: "4px", textTransform: "uppercase" }}>販売代理店募集</p>
-                  {PARTNER_LEFT.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                  <p style={{ fontSize: "10px", letterSpacing: "0.1em", color: "#9ca3af", marginBottom: "4px", marginTop: "12px", textTransform: "uppercase" }}>取次・紹介</p>
-                  {PARTNER_RIGHT.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      onClick={closeMobile}
-                      className="block py-2.5 text-[13px]"
-                      style={{ color: "#4b5563", fontFamily: "var(--font-sans)" }}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Direct links */}
-            {[
-              { href: "/column", label: "コラム" },
-              { href: "/news", label: "お知らせ" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                onClick={closeMobile}
-                className="block py-4 text-[14px] font-medium"
-                style={{
-                  color: "#1a2332",
-                  borderBottom: "1px solid #f0ede8",
-                  fontFamily: "var(--font-sans)",
-                }}
-              >
-                {l.label}
-              </Link>
+function MegaMenu({ group, onNavigate }: { group: NavGroup; onNavigate: () => void }) {
+  const menu = group.menu!;
+  return (
+    <div className="grid grid-cols-[minmax(220px,1fr)_3fr] gap-10 px-6 pb-8 pt-6">
+      <div>
+        <p className="v2-display text-[44px]">{group.label}</p>
+        <Link
+          href={group.href}
+          onClick={onNavigate}
+          className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-[var(--v2-blue)]"
+        >
+          {group.ja}トップ
+          <ArrowDot />
+        </Link>
+      </div>
+      <div>
+        {menu.cards && (
+          <ul className="grid grid-cols-3 gap-x-5 gap-y-6">
+            {menu.cards.map((c) => (
+              <li key={c.href}>
+                <Link href={c.href} onClick={onNavigate} className="group block">
+                  <span className="relative block aspect-[3/2] overflow-hidden rounded-lg bg-[var(--v2-blue)]">
+                    {c.image && (
+                      <Image
+                        src={c.image}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 22vw, 50vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                        style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
+                      />
+                    )}
+                  </span>
+                  <span className="mt-3 block text-[18px] font-semibold leading-tight">{c.en}</span>
+                  <span className="mt-1 block text-[12px] font-semibold text-[var(--v2-blue)]">{c.label}</span>
+                </Link>
+              </li>
             ))}
-
-            {/* お問い合わせ button + メール窓口 */}
-            <div className="mt-8 pb-8">
-              <Link
-                href="/contact"
-                onClick={closeMobile}
-                className="block w-full text-center py-3.5 text-[14px] font-medium transition-all hover:bg-[#1a2332] hover:text-white"
-                style={{
-                  border: "1px solid #1a2332",
-                  color: "#1a2332",
-                  fontFamily: "var(--font-sans)",
-                }}
-              >
-                お問い合わせ
-              </Link>
-              <a
-                href={CONTACT_MAILTO}
-                onClick={closeMobile}
-                className="block w-full text-center mt-4"
-                style={{ fontFamily: "var(--font-sans)" }}
-              >
-                <span className="block text-[14px] font-semibold" style={{ color: "#1a2332" }}>
-                  {CONTACT_EMAIL}
-                </span>
-                <span className="block text-[11px] mt-1" style={{ color: "#9ca3af" }}>
-                  受付 {CONTACT_HOURS}
-                </span>
-              </a>
-            </div>
+          </ul>
+        )}
+        {menu.links && (
+          <ul className="grid grid-cols-3 gap-x-5">
+            {menu.links.map((l) => (
+              <li key={l.href} style={{ borderBottom: "1px solid var(--v2-line)" }}>
+                <MenuTextLink link={l} onNavigate={onNavigate} />
+              </li>
+            ))}
+          </ul>
+        )}
+        {menu.extra && (
+          <div className="mt-7 flex items-center gap-6 border-t pt-5" style={{ borderColor: "var(--v2-line)" }}>
+            <p className="text-[12px] font-bold text-[var(--v2-ink-sub)]">{menu.extra.title}</p>
+            {menu.extra.links.map((l) => (
+              <MenuTextLink key={l.href} link={l} onNavigate={onNavigate} inline />
+            ))}
           </div>
-        </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function MenuTextLink({ link, onNavigate, inline = false }: { link: NavLink; onNavigate: () => void; inline?: boolean }) {
+  const body = (
+    <>
+      <span className={inline ? "text-[14px] font-semibold" : "block text-[18px] font-semibold leading-tight"}>{inline ? link.label : link.en}</span>
+      {!inline && <span className="mt-1 block text-[12px] font-semibold text-[var(--v2-blue)]">{link.label}</span>}
+      {link.external && (
+        <span aria-hidden className="ml-1 text-[12px]">
+          ↗
+        </span>
       )}
     </>
+  );
+  const cls = inline
+    ? "inline-flex items-center transition-colors hover:text-[var(--v2-blue)]"
+    : "block py-4 transition-colors hover:text-[var(--v2-blue)]";
+  return link.external ? (
+    <a href={link.href} target="_blank" rel="noopener noreferrer" className={cls} onClick={onNavigate}>
+      {body}
+      <span className="sr-only">（別サイトが開きます）</span>
+    </a>
+  ) : (
+    <Link href={link.href} className={cls} onClick={onNavigate}>
+      {body}
+    </Link>
+  );
+}
+
+function ArrowDot() {
+  return (
+    <span aria-hidden className="grid h-5 w-5 place-items-center rounded-full bg-[var(--v2-blue)] text-white">
+      <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M1.5 5h7M5.5 2l3 3-3 3" />
+      </svg>
+    </span>
+  );
+}
+
+// ─── モバイルメニュー ───────────────────────────────────────────────────────
+
+function MobileMenu({ onClose }: { onClose: () => void }) {
+  const [open, setOpen] = useState<string | null>(null);
+  const groups = [...PRIMARY_NAV, ...SECONDARY_NAV];
+  return (
+    <motion.div
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="メニュー"
+      data-lenis-prevent
+      className="v2 fixed inset-0 z-[60] overflow-y-auto lg:hidden"
+      style={{ background: "var(--v2-bg)" }}
+      initial={{ clipPath: "circle(0% at calc(100% - 36px) 32px)" }}
+      animate={{ clipPath: "circle(150% at calc(100% - 36px) 32px)" }}
+      exit={{ clipPath: "circle(0% at calc(100% - 36px) 32px)" }}
+      transition={{ duration: 0.6, ease: EASE }}
+    >
+      <div className="flex h-16 items-center justify-between px-4">
+        <Link href="/" onClick={onClose} className="text-[17px]" aria-label="株式会社サイプレス トップページ">
+          <Logo />
+        </Link>
+        <button type="button" aria-label="メニューを閉じる" onClick={onClose} className="grid h-10 w-10 place-items-center rounded-full bg-white">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M1 1l12 12M13 1L1 13" />
+          </svg>
+        </button>
+      </div>
+      <nav aria-label="メインメニュー" className="px-4 pb-10 pt-4">
+        <ul>
+          {groups.map((g) => {
+            const links = g.menu?.cards ?? g.menu?.links;
+            const expanded = open === g.key;
+            return (
+              <li key={g.key} style={{ borderBottom: "1px solid var(--v2-line)" }}>
+                <div className="flex items-center justify-between">
+                  <Link href={g.href} onClick={onClose} className="flex-1 py-4">
+                    <span className="v2-display block text-[30px]">{g.label}</span>
+                    <span className="mt-1 block text-[12px] font-semibold text-[var(--v2-blue)]">{g.ja}</span>
+                  </Link>
+                  {links && (
+                    <button
+                      type="button"
+                      aria-label={`${g.ja}のメニューを${expanded ? "閉じる" : "開く"}`}
+                      aria-expanded={expanded}
+                      onClick={() => setOpen(expanded ? null : g.key)}
+                      className="grid h-9 w-9 place-items-center rounded-full text-white transition-transform duration-300"
+                      style={{ background: "var(--v2-blue)", transform: expanded ? "rotate(45deg)" : "none" }}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 12 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                        <path d="M6 1v10M1 6h10" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+                <AnimatePresence initial={false}>
+                  {links && expanded && (
+                    <motion.ul
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.4, ease: EASE }}
+                      className="overflow-hidden pb-3"
+                    >
+                      {[...links, ...(g.menu?.extra?.links ?? [])].map((l) => (
+                        <li key={l.href}>
+                          {l.external ? (
+                            <a href={l.href} target="_blank" rel="noopener noreferrer" onClick={onClose} className="block py-2 pl-1 text-[15px] font-semibold">
+                              {l.label} <span aria-hidden>↗</span>
+                            </a>
+                          ) : (
+                            <Link href={l.href} onClick={onClose} className="block py-2 pl-1 text-[15px] font-semibold">
+                              {l.label}
+                            </Link>
+                          )}
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </li>
+            );
+          })}
+        </ul>
+        <Link
+          href={CONTACT_LINK.href}
+          onClick={onClose}
+          className="mt-8 flex items-center justify-between rounded-2xl px-6 py-5 text-white"
+          style={{ background: "var(--v2-blue)" }}
+        >
+          <span>
+            <span className="v2-display block text-[28px]">Contact</span>
+            <span className="mt-1 block text-[13px] font-semibold">お問い合わせ・ご相談（無料）</span>
+          </span>
+          <span aria-hidden className="grid h-10 w-10 place-items-center rounded-full bg-white text-[var(--v2-blue)]">
+            →
+          </span>
+        </Link>
+      </nav>
+    </motion.div>
   );
 }

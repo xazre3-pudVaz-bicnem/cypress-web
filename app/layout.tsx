@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next";
-import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
+import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond, Google_Sans_Flex } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/chatbot/ChatWidget";
 import { BUSINESSES, COMPANY } from "@/lib/company";
@@ -22,6 +22,13 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
+  display: "swap",
+});
+
+// 英字の見出し・ナビに使う可変フォント。幅・光学サイズの軸まで読むと 315KB になるため、太さの軸だけ（約51KB）を使う。
+const googleSansFlex = Google_Sans_Flex({
+  variable: "--font-gsf",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -243,7 +250,9 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${notoSerifJP.variable} ${notoSansJP.variable} ${cormorant.variable} h-full`}
+      // トップのイントロ判定スクリプトが描画前に class / data-motion を付けるため
+      suppressHydrationWarning
+      className={`${notoSerifJP.variable} ${notoSansJP.variable} ${cormorant.variable} ${googleSansFlex.variable} h-full`}
     >
       <head>
         <script

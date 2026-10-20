@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* 作業用のリポジトリ複製（.claude/worktrees）まで走査すると、使っていないクラスで CSS が数倍に膨らむため除外する */
+@source not "../.claude";
 
 @theme inline {
   --color-background: #ffffff;
@@ -291,4 +293,193 @@ p, li, td, th, span, a {
   background: #f8f6f2;
   color: #0d1b2a;
   font-weight: 600;
+}
+
+/* =====================================================================
+   Design v2（2026-10 リニューアル）
+   .v2 を付けた要素の中だけに新デザインの文字組み・色を適用する。
+   旧デザインのページは従来どおり見えるよう、グローバルな h1〜h3 の明朝指定などは残している。
+   ===================================================================== */
+:root {
+  --v2-blue: #096fc8;
+  --v2-blue-deep: #0759a3;
+  --v2-blue-pale: #e3eef9;
+  --v2-ink: #333333;
+  --v2-ink-sub: #60666d;
+  --v2-bg: #f0f1f2;
+  --v2-navy: #293540;
+  --v2-coral: #ff8f7e;
+  --v2-line: rgba(51, 51, 51, 0.14);
+  --v2-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --v2-gutter: clamp(16px, 2.3vw, 32px);
+}
+
+html.lenis {
+  scroll-behavior: auto;
+}
+
+.v2 {
+  font-family: var(--font-gsf), var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-feature-settings: "palt";
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--v2-ink);
+}
+
+/* 旧デザインのグローバル指定（見出しの明朝体・本文の固定フォント）を新デザインの範囲では打ち消す */
+.v2 :where(h1, h2, h3, h4, h5, h6, p, li, span, a, td, th, dt, dd, button, label, small, strong) {
+  font-family: inherit;
+}
+
+.v2 :where(h1, h2, h3, h4, h5, h6) {
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+/* 大きな英字見出し（Google Sans Flex をやや詰めた幅で使う） */
+.v2-display {
+  font-family: var(--font-gsf), sans-serif;
+  font-weight: 600;
+  /* 参考サイトは幅 95% の字形。軽量化のため幅の軸は読まず、字間を少し詰めて近づける */
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.v2-giant {
+  font-size: clamp(44px, 12.5vw, 224px);
+}
+
+.v2-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* 文字を1文字ずつ下から出すための折り返し用マスク */
+.v2-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v2 *,
+  .v2 *::before,
+  .v2 *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* モーションOFF（画面右上のスイッチ）のときは装飾アニメーションを止める */
+html[data-motion="off"] .v2 [data-motion-loop] {
+  animation-play-state: paused !important;
+}
+
+/* ---- トップのイントロ（そのタブで初めてトップを開いたときだけ） ---- */
+.cy-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--v2-blue);
+  pointer-events: none;
+  animation: cy-intro-out 0.7s 1.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+html.cy-intro-skip .cy-intro {
+  display: none;
+}
+.cy-intro__logo {
+  position: relative;
+  font-size: 22px;
+  opacity: 0;
+  animation: cy-fade-in 0.7s 0.15s ease forwards, cy-fade-out 0.45s 1.25s ease forwards;
+}
+.cy-intro__ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 160px;
+  height: 160px;
+  margin: -80px 0 0 -80px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  opacity: 0;
+  animation: cy-ring 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+.cy-intro__ring:nth-child(1) { animation-delay: 0.9s; }
+.cy-intro__ring:nth-child(2) { animation-delay: 1.05s; }
+.cy-intro__ring:nth-child(3) { animation-delay: 1.2s; }
+
+@keyframes cy-ring {
+  0% { transform: scale(0.25); opacity: 0; }
+  15% { opacity: 0.9; }
+  100% { transform: scale(13); opacity: 0; }
+}
+@keyframes cy-intro-out {
+  to { opacity: 0; visibility: hidden; }
+}
+@keyframes cy-fade-in {
+  to { opacity: 1; }
+}
+@keyframes cy-fade-out {
+  to { opacity: 0; }
+}
+
+/* ヒーローの英字は1文字ずつ下から、添え文はイントロ後にふわっと出す */
+.cy-char {
+  transform: translateY(108%);
+  animation: cy-char-in 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--intro-delay, 2.05s) + var(--i, 0) * 0.035s);
+}
+.cy-hero-sub {
+  opacity: 0;
+  animation: cy-fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--intro-delay, 2.05s) + 0.45s);
+}
+html.cy-intro-skip {
+  --intro-delay: 0.2s;
+}
+@keyframes cy-char-in {
+  to { transform: none; }
+}
+@keyframes cy-fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cy-char,
+  .cy-hero-sub {
+    animation-delay: 0s !important;
+  }
+}
+
+/* ゆっくり上下に漂う（モーションOFFで停止） */
+.cy-float {
+  animation: cy-float 6s ease-in-out infinite;
+}
+@keyframes cy-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(2deg); }
+}
+
+
+/* ステートメント: 親の --r（-0.15〜1）に合わせて、文字ごとの --at の位置から濃くなる */
+.cy-reveal-char {
+  opacity: min(1, clamp(0, (var(--r, 1) + 0.15) / 0.15 * 0.12, 0.12) + 0.88 * clamp(0, (var(--r, 1) - var(--at, 0) * 0.8) / 0.2, 1));
+}
+
+/* Latest Activities: 親の --p（0〜1）に合わせて文字が上下に波打つ。端では揺れを弱める */
+.cy-wave-char {
+  transform: translateY(calc(sin(var(--i, 0) * 0.62 - var(--p, 0) * 16) * 0.07em * min(1, min(var(--p, 0), 1 - var(--p, 0)) * 5)));
 }

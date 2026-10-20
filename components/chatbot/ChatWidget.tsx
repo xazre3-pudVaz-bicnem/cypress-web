@@ -85,7 +85,7 @@ function MessageText({ text: rawText, onNavigate }: { text: string; onNavigate: 
     const index = match.index ?? 0;
     if (index > last) parts.push(text.slice(last, index));
     const className =
-      "font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4 hover:text-[#6B7280]";
+      "font-medium text-[var(--v2-ink)] underline decoration-[var(--v2-blue)] decoration-2 underline-offset-4 hover:text-[#6B7280]";
     parts.push(
       !match[2].startsWith("/") ? (
         <a
@@ -142,8 +142,24 @@ export default function ChatWidget() {
   useEffect(() => {
     if (open || pathname.startsWith("/contact")) return;
     if (readSession<boolean>(BUBBLE_DISMISSED_KEY)) return;
-    const timer = window.setTimeout(() => setShowBubble(true), BUBBLE_DELAY_MS);
-    return () => window.clearTimeout(timer);
+    let timer = 0;
+    const arm = () => {
+      timer = window.setTimeout(() => setShowBubble(true), BUBBLE_DELAY_MS);
+    };
+    if (pathname !== "/") {
+      arm();
+      return () => window.clearTimeout(timer);
+    }
+    const onScroll = () => {
+      if (window.scrollY < window.innerHeight) return;
+      window.removeEventListener("scroll", onScroll);
+      arm();
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.clearTimeout(timer);
+    };
   }, [open, pathname]);
 
   useEffect(() => {
@@ -265,7 +281,7 @@ export default function ChatWidget() {
   if (pathname.startsWith("/admin")) return null;
 
   return (
-    <div className="print:hidden">
+    <div className="v2 print:hidden">
       {/* ── Chat window ── */}
       <div
         role="dialog"
@@ -276,9 +292,9 @@ export default function ChatWidget() {
           open ? "opacity-100 translate-y-0" : "pointer-events-none opacity-0 translate-y-4"
         }`}
       >
-        <div className="flex items-center justify-between bg-[#0d1b2a] px-5 py-4 text-white">
+        <div className="flex items-center justify-between bg-[var(--v2-navy)] px-5 py-4 text-white">
           <div>
-            <p className="label-en text-[10px] text-[#D1C9BE]">AI Assistant</p>
+            <p className="v2-display text-[12px] text-white/70">AI Assistant</p>
             <p className="text-[15px] font-medium leading-tight text-white">サイプレスに相談する</p>
           </div>
           <div className="flex items-center gap-1">
@@ -309,9 +325,9 @@ export default function ChatWidget() {
           ref={bodyRef}
           data-lenis-prevent
           aria-live="polite"
-          className="flex-1 space-y-3 overflow-y-auto overscroll-contain bg-[#F9F8F5] px-4 py-5"
+          className="flex-1 space-y-3 overflow-y-auto overscroll-contain bg-[var(--v2-bg)] px-4 py-5"
         >
-          <p className="max-w-[88%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[14px] leading-[1.8] text-[#1a2332] shadow-sm">
+          <p className="max-w-[88%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[14px] leading-[1.8] text-[var(--v2-ink)] shadow-sm">
             {CHAT_GREETING}
           </p>
 
@@ -322,7 +338,7 @@ export default function ChatWidget() {
                   key={choice}
                   type="button"
                   onClick={() => void send(choice)}
-                  className="rounded-full border border-[#E8E4DC] bg-white px-4 py-2 text-left text-[13px] leading-snug text-[#0d1b2a] transition-colors hover:border-[#0d1b2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0d1b2a]"
+                  className="rounded-full border border-[var(--v2-line)] bg-white px-4 py-2 text-left text-[13px] leading-snug text-[var(--v2-ink)] transition-colors hover:border-[var(--v2-blue)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--v2-blue)]"
                 >
                   {choice}
                 </button>
@@ -334,14 +350,14 @@ export default function ChatWidget() {
             message.role === "user" ? (
               <p
                 key={i}
-                className="ml-auto max-w-[88%] whitespace-pre-wrap break-words rounded-2xl rounded-tr-sm bg-[#0d1b2a] px-4 py-3 text-[14px] leading-[1.8] text-white"
+                className="ml-auto max-w-[88%] whitespace-pre-wrap break-words rounded-2xl rounded-tr-sm bg-[var(--v2-blue)] px-4 py-3 text-[14px] leading-[1.8] text-white"
               >
                 {message.content}
               </p>
             ) : message.content ? (
               <p
                 key={i}
-                className="max-w-[88%] whitespace-pre-wrap break-words rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[14px] leading-[1.8] text-[#1a2332] shadow-sm"
+                className="max-w-[88%] whitespace-pre-wrap break-words rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[14px] leading-[1.8] text-[var(--v2-ink)] shadow-sm"
               >
                 <MessageText text={message.content} onNavigate={() => setOpen(false)} />
               </p>
@@ -364,13 +380,13 @@ export default function ChatWidget() {
           )}
 
           {error && (
-            <p role="alert" className="rounded-lg border border-[#E8E4DC] bg-white px-4 py-3 text-[13px] leading-relaxed text-[#B91C1C]">
+            <p role="alert" className="rounded-lg border border-[var(--v2-line)] bg-white px-4 py-3 text-[13px] leading-relaxed text-[#B91C1C]">
               {error}
             </p>
           )}
         </div>
 
-        <div className="border-t border-[#E8E4DC] bg-white px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
+        <div className="border-t border-[var(--v2-line)] bg-white px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
           <form onSubmit={onSubmit} className="flex items-end gap-2">
             <label htmlFor="chat-input" className="sr-only">
               メッセージ
@@ -384,13 +400,13 @@ export default function ChatWidget() {
               rows={1}
               maxLength={CHAT_MAX_USER_CHARS}
               placeholder="ご相談内容を入力"
-              className="max-h-28 min-h-[44px] flex-1 resize-none rounded-xl border border-[#E8E4DC] px-3 py-2.5 text-[16px] leading-snug text-[#1a2332] placeholder:text-[#9CA3AF] focus:border-[#0d1b2a] focus:outline-none sm:text-[14px]"
+              className="max-h-28 min-h-[44px] flex-1 resize-none rounded-xl border border-[var(--v2-line)] px-3 py-2.5 text-[16px] leading-snug text-[var(--v2-ink)] placeholder:text-[#9CA3AF] focus:border-[var(--v2-blue)] focus:outline-none sm:text-[14px]"
             />
             <button
               type="submit"
               disabled={pending || !input.trim()}
               aria-label="送信"
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0d1b2a] text-white transition-opacity disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d1b2a]"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--v2-blue)] text-white transition-opacity disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--v2-blue)]"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path d="M3 9h11M10 4.5L14.5 9 10 13.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -407,7 +423,7 @@ export default function ChatWidget() {
                 track("contact_click");
                 setOpen(false);
               }}
-              className="shrink-0 text-[12px] font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4"
+              className="shrink-0 text-[12px] font-medium text-[var(--v2-ink)] underline decoration-[var(--v2-blue)] decoration-2 underline-offset-4"
             >
               無料相談フォーム
             </Link>
@@ -418,14 +434,14 @@ export default function ChatWidget() {
       {/* ── Proactive bubble ── */}
       {showBubble && !open && (
         <div className="fixed bottom-24 right-4 z-[60] flex max-w-[260px] items-start gap-1 rounded-2xl rounded-br-sm bg-white py-3 pl-4 pr-2 shadow-[0_12px_32px_rgba(13,27,42,0.18)] sm:right-6">
-          <button type="button" onClick={openChat} className="text-left text-[13px] leading-relaxed text-[#0d1b2a]">
+          <button type="button" onClick={openChat} className="text-left text-[13px] leading-relaxed text-[var(--v2-ink)]">
             Web集客のお悩み、AIがその場でお答えします。
           </button>
           <button
             type="button"
             onClick={dismissBubble}
             aria-label="案内を閉じる"
-            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[#9CA3AF] hover:text-[#0d1b2a]"
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[#9CA3AF] hover:text-[var(--v2-ink)]"
           >
             <svg width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -440,7 +456,7 @@ export default function ChatWidget() {
         onClick={() => (open ? setOpen(false) : openChat())}
         aria-expanded={open}
         aria-label={open ? "チャットを閉じる" : "AIアシスタントに相談する"}
-        className={`fixed bottom-5 right-4 z-[60] h-14 w-14 items-center justify-center rounded-full bg-[#0d1b2a] text-white shadow-[0_12px_32px_rgba(13,27,42,0.35)] transition-transform duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d1b2a] sm:right-6 ${
+        className={`fixed bottom-5 right-4 z-[60] h-14 w-14 items-center justify-center rounded-full bg-[var(--v2-blue)] text-white shadow-[0_12px_32px_rgba(13,27,42,0.35)] transition-transform duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--v2-blue)] sm:right-6 ${
           open ? "hidden sm:flex" : "flex"
         }`}
       >
