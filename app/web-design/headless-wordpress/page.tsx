@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "WP管理画面を保ちながらNext.jsフロントエンドで超高速化。ヘッドレスWordPress制作の専門支援。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/headless-wordpress" },
@@ -78,7 +78,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA" }} className="pt-32 pb-20">
+        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -129,8 +129,8 @@ export default function Page() {
                 "既存WordPressからのヘッドレス移行10ステップの実装フロー",
                 "Lighthouseスコア・表示速度・セキュリティインシデントなど成果を測る7つのKPI",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E2E8F0", alignItems: "flex-start" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -141,7 +141,7 @@ export default function Page() {
         {/* WordPress Problems → Solutions */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.15em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>WordPress Problems → Solutions</p>
+            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.15em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>WordPress Problems → Solutions</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               通常WordPressの4つの課題とヘッドレスの解決策
             </h2>
@@ -152,7 +152,7 @@ export default function Page() {
                 { t: "デザインの制約", b: "通常WP：テーマのHTML/CSS構造に縛られ、自由なデザインが困難。カスタムCSSの競合も発生しやすい。ヘッドレス：Next.js側でHTML/CSSを完全制御。Tailwind CSSで自由なデザインが実現。" },
                 { t: "スケーリングの課題", b: "通常WP：サーバーリソースの上限があり、アクセス急増時にサイトが落ちる可能性。ヘッドレス：Vercelのサーバーレスアーキテクチャが自動スケーリングするため、高トラフィックにも耐性がある。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -177,7 +177,7 @@ export default function Page() {
                 { n: "05", t: "Vercelによる高速CDN配信", b: "Next.jsをVercelにデプロイすることで世界規模のEdge Networkから配信されます。国内外からのアクセス速度が大幅に改善します。" },
                 { n: "06", t: "開発の自由度が高い", b: "WordPressテーマのHTML・CSS制約がなく、デザインと機能を完全に自由に実装できます。Tailwind CSS・Framer Motionなど最新技術を使ったサイト制作が可能です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -190,7 +190,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
@@ -212,7 +212,7 @@ export default function Page() {
                 { n: "09", t: "画像管理をWordPressで続けたい", b: "WordPressメディアライブラリで管理した画像URLをAPIで取得し、next/imageで最適配信できます。自動WebP変換・適切なサイズでの配信・Lazy Loadが適用されるため、画像パフォーマンスも向上します。" },
                 { n: "10", t: "ヘッドレスCMS移行のコストが不明", b: "コンテンツ量・カスタム投稿タイプ数・フォーム・会員機能などの複雑度によって工数が変わります。サイプレスでは既存サイト調査の上で詳細な見積もりを提示します。初期投資と長期的なメンテナンスコストを合わせてご説明します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -245,7 +245,7 @@ export default function Page() {
                 { industry: "BtoB・製造", point: "製品情報・ホワイトペーパーのCMS管理", detail: "製品カタログ・技術資料・事例紹介をWordPressのカスタム投稿で管理します。ホワイトペーパーはPDFをメディアライブラリで管理し、Next.jsフロントでゲート付きダウンロードページを構築できます。" },
                 { industry: "メディア・オウンドメディア", point: "記事コンテンツのWP×Next.js", detail: "大量の記事コンテンツをWordPress管理画面で効率的に運用しながら、Next.jsのISRで更新を高速反映します。カテゴリ・タグ・著者ページもAPIで取得してSEOに強い構成を実現します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>{item.industry}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.detail}</p>
@@ -256,7 +256,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 技術選定・実装フロー */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
@@ -278,7 +278,7 @@ export default function Page() {
                 { n: "09", t: "Vercelデプロイ設定", b: "VercelにNext.jsプロジェクトを連携し、WORDPRESS_API_URLなどの環境変数をVercel EnvironmentsのProductionに設定します。デプロイ後にAPIからデータが正常取得できるか確認します。" },
                 { n: "10", t: "WordPress側のWebhook設定", b: "WordPressのpost_updated・publish_postアクションフックでVercelのOn-Demand ISR APIへHTTPリクエストを送信します。これにより記事保存のほぼ即時にフロントエンドが自動更新されます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -310,7 +310,7 @@ export default function Page() {
                 { n: "06", t: "開発工数（移行後の保守）", b: "移行後の月次保守工数（プラグイン更新・フロントエンド依存パッケージ更新・不具合対応）を記録します。フロントとバックエンドの関心が分離されることで、デザイン変更がCMSに影響しない保守のしやすさを実感できます。" },
                 { n: "07", t: "オーガニック流入数推移", b: "Google Search Consoleで移行前後のオーガニック検索クリック数・表示回数を比較します。Lighthouseスコア向上・Core Web Vitals改善がGoogle検索順位に与える影響を数ヶ月単位で追跡します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -325,20 +325,20 @@ export default function Page() {
         {/* CTA Banner */}
         <section style={{ background: "#0d1b2a", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Get Started</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Get Started</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               WordPressの使いやすさを保ちながら高速化する
             </h2>
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9", marginBottom: "32px", maxWidth: "520px", margin: "0 auto 32px" }}>
               既存WordPressサイトのヘッドレス移行・新規ヘッドレスWP+Next.js制作をご相談ください。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#FFFFFF", padding: "14px 40px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em", border: "1px solid rgba(58,155,220,0.4)", textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#FFFFFF", padding: "14px 40px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em", border: "1px solid rgba(196,184,154,0.4)", textDecoration: "none" }}>
               無料相談を申し込む
             </Link>
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F4F6FA" heading="ヘッドレスWordPressについてよくある質問" />
+        <FaqSection items={faqItems} bgColor="#F9F8F5" heading="ヘッドレスWordPressについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="ヘッドレスWordPress制作のご相談" body="既存WordPressサイトのヘッドレス移行・新規ヘッドレスWP+Next.js制作をご相談ください。WordPressの使いやすさを保ちながら、速度とSEOを最大化します。" />
       </main>

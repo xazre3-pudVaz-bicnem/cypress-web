@@ -155,14 +155,14 @@ function buildNotification(data: Payload) {
     ${rows
       .map(
         ([label, value]) => `<tr>
-      <th style="text-align:left;padding:10px 16px;background:#F4F6FA;border:1px solid #E2E8F0;width:180px;color:#6B7280;font-weight:500;">${escapeHtml(label)}</th>
-      <td style="padding:10px 16px;border:1px solid #E2E8F0;">${escapeHtml(value)}</td>
+      <th style="text-align:left;padding:10px 16px;background:#F9F8F5;border:1px solid #E8E4DC;width:180px;color:#6B7280;font-weight:500;">${escapeHtml(label)}</th>
+      <td style="padding:10px 16px;border:1px solid #E8E4DC;">${escapeHtml(value)}</td>
     </tr>`
       )
       .join("")}
   </table>
   <p style="font-size:13px;color:#6B7280;margin:24px 0 8px;">お問い合わせ内容</p>
-  <div style="padding:16px;border:1px solid #E2E8F0;background:#FFFFFF;font-size:14px;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
+  <div style="padding:16px;border:1px solid #E8E4DC;background:#FFFFFF;font-size:14px;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
   <p style="font-size:12px;color:#9CA3AF;margin-top:24px;">このメールにそのまま返信すると、お客様（${escapeHtml(data.email)}）宛に届きます。</p>
 </div>`.trim();
 
@@ -200,8 +200,8 @@ https://www.cypress-all.co.jp
   <p style="font-size:13px;color:#6B7280;margin:24px 0 8px;">お問い合わせ種別</p>
   <p style="margin:0 0 16px;">${escapeHtml(typeLabel)}</p>
   <p style="font-size:13px;color:#6B7280;margin:24px 0 8px;">お問い合わせ内容</p>
-  <div style="padding:16px;border:1px solid #E2E8F0;background:#F4F6FA;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
-  <div style="margin-top:32px;padding-top:20px;border-top:1px solid #E2E8F0;font-size:13px;color:#6B7280;">
+  <div style="padding:16px;border:1px solid #E8E4DC;background:#F9F8F5;white-space:pre-wrap;">${escapeHtml(data.message)}</div>
+  <div style="margin-top:32px;padding-top:20px;border-top:1px solid #E8E4DC;font-size:13px;color:#6B7280;">
     <p style="margin:0 0 4px;color:#0F172A;font-weight:600;">株式会社サイプレス</p>
     <p style="margin:0;">〒125-0061 東京都葛飾区亀有3-16-14-201</p>
     <p style="margin:0;">Mail: <a href="mailto:${CONTACT_EMAIL}" style="color:#0F172A;">${CONTACT_EMAIL}</a></p>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Google口コミ管理で評価を向上。口コミ獲得の仕組み化からネガティブ対応まで。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/review-management" },
@@ -353,7 +353,7 @@ export default function ReviewManagementPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -374,7 +374,7 @@ export default function ReviewManagementPage() {
                 "口コミ施策の成果を測る7つのKPIと測定方法・目標設定の考え方",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "#3A9BDC" }}>→</span>
+                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -418,7 +418,7 @@ export default function ReviewManagementPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
@@ -431,7 +431,7 @@ export default function ReviewManagementPage() {
             </h2>
             <div className="max-w-3xl">
               {issueItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -441,7 +441,7 @@ export default function ReviewManagementPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -460,7 +460,7 @@ export default function ReviewManagementPage() {
             </h2>
             <div className="max-w-3xl">
               {reviewMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -470,13 +470,13 @@ export default function ReviewManagementPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
@@ -489,7 +489,7 @@ export default function ReviewManagementPage() {
             </h2>
             <div className="max-w-3xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -499,7 +499,7 @@ export default function ReviewManagementPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -518,7 +518,7 @@ export default function ReviewManagementPage() {
             </h2>
             <div className="max-w-3xl">
               {flowItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -528,13 +528,13 @@ export default function ReviewManagementPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
@@ -547,7 +547,7 @@ export default function ReviewManagementPage() {
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -557,7 +557,7 @@ export default function ReviewManagementPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -607,7 +607,7 @@ export default function ReviewManagementPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#F9F8F5" />
 
         <RelatedPages links={relatedLinks} />
 

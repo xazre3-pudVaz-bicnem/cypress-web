@@ -88,7 +88,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -136,8 +136,8 @@ export default function Page() {
                 "飲食・美容・歯科・整骨院・建設など業種別の地域SNS活用のポイントと投稿テーマ",
                 "地域SNS集客の効果を測定するKPI（来店数・地域エンゲージメント・口コミ等）の設定方法",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "16px", flexShrink: 0, lineHeight: 1.6 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", flexShrink: 0, lineHeight: 1.6 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -148,7 +148,7 @@ export default function Page() {
         {/* Dark section: 成果が出ない理由 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Why Local SNS Fails</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why Local SNS Fails</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               地域SNS集客で成果が出ない4つの理由
             </h2>
@@ -159,7 +159,7 @@ export default function Page() {
                 { t: "MEOとSNSが連携できていない", b: "Googleマップで来店意欲が高まったユーザーとInstagramで認知したユーザーの2ルートを活かせていません。GBP投稿・Instagram連携でより多くの地域ユーザーに届きます。" },
                 { t: "地域ユーザーに刺さるコンテンツがない", b: "全国向けの一般的なコンテンツは地元ユーザーの共感を生みません。地域のイベント・季節の話題・スタッフの顔が見えるコンテンツが「地元のお店感」を生み集客につながります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -169,7 +169,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -191,7 +191,7 @@ export default function Page() {
                 { title: "地域の季節イベント・お祭りへの対応なし", body: "地元の年間行事（夏祭り・年末年始・地域の記念日等）に合わせた投稿計画がなく、季節の盛り上がりに乗れていません。地域イベントカレンダーを作成して事前に投稿を設計することが重要です。" },
                 { title: "近隣エリアのターゲティング広告未活用", body: "Meta広告の「特定エリア半径○km以内」ターゲティングを使っていないため、来店可能エリアのユーザーへの有料リーチが取れていません。少額（月1〜3万円）でも地域限定広告は高いROIを発揮します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
@@ -212,8 +212,8 @@ export default function Page() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
-                <div key={i} style={{ padding: "32px", background: "#F4F6FA", borderRadius: "4px", borderTop: "3px solid #3A9BDC" }}>
-                  <p style={{ color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>{String(i + 1).padStart(2, "0")}</p>
+                <div key={i} style={{ padding: "32px", background: "#F9F8F5", borderRadius: "4px", borderTop: "3px solid #c4b89a" }}>
+                  <p style={{ color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>{String(i + 1).padStart(2, "0")}</p>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>{item.title}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.85", color: "#374151" }}>{item.body}</p>
                 </div>
@@ -223,7 +223,7 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -243,7 +243,7 @@ export default function Page() {
                 { industry: "学習塾", point: "地元の進学実績（合格校名入り）・地域の中学・高校の受験情報・地域の教育に関する保護者向けコラムで信頼を構築。地域特有の受験事情・公立校情報の発信が保護者層のフォロワー獲得に有効。" },
                 { industry: "不動産", point: "地域の住環境紹介・生活利便性（近隣スーパー・公園・学校）・地域の住みやすさコンテンツが潜在顧客の信頼獲得に効果的。地域の街歩き動画・季節の風景投稿で「この地域に詳しい専門家」感を演出。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ padding: "28px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.industry}</p>
@@ -278,7 +278,7 @@ export default function Page() {
                 { step: "地域広告ターゲティング設定", detail: "Meta広告マネージャーで店舗から半径2〜5kmのターゲティングを設定します。既存フォロワーの除外・年齢・興味関心の組み合わせで、来店可能性の高い地域ユーザーへの効率的な配信を実現します。" },
                 { step: "月次効果測定とPDCA", detail: "地域タグ経由リーチ・地元フォロワー比率・来店数（SNS経由）を月次で計測します。投稿テーマ・タグ・投稿時間帯などのパラメータを1つずつ改善するA/Bテストサイクルを回します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.step}</p>
@@ -291,7 +291,7 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -310,12 +310,12 @@ export default function Page() {
                 { kpi: "SNS経由の来店数（地域ユーザー）", where: "来店時アンケート / LINE登録時の流入元確認", note: "「Instagramを見て来店した」「SNSを見て知った」の回答数を月次集計。最も重要なKPI。" },
                 { kpi: "地域メンション・タグ付け数", where: "Instagram メンション通知 / タグ付き投稿", note: "お客様が自発的にタグ付けしてくれた投稿数。UGC量が地域への定着度を示す指標となる。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ padding: "24px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "10px" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.kpi}</p>
                   </div>
-                  <p style={{ fontSize: "11px", color: "#3A9BDC", marginBottom: "8px", paddingLeft: "28px" }}>{item.where}</p>
+                  <p style={{ fontSize: "11px", color: "#c4b89a", marginBottom: "8px", paddingLeft: "28px" }}>{item.where}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8", paddingLeft: "28px" }}>{item.note}</p>
                 </div>
               ))}

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "株式会社サイプレスのパートナー制度一覧。Web集客サービスの紹介・販売に関わるパートナープログラムをご案内します。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/partner" },
@@ -71,7 +71,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -98,7 +98,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>パートナー制度の一覧</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", maxWidth: "800px" }}>
               {programs.map((prog) => (
-                <Link key={prog.href} href={prog.href} style={{ display: "block", background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "32px 28px", textDecoration: "none" }}>
+                <Link key={prog.href} href={prog.href} style={{ display: "block", background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "32px 28px", textDecoration: "none" }}>
                   <p style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "8px" }}>{prog.sub}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "20px", color: "#0d1b2a", marginBottom: "12px" }}>{prog.label}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "16px" }}>{prog.desc}</p>

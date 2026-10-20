@@ -36,7 +36,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
     <>
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link><span style={{ margin: "0 8px" }}>/</span>
@@ -53,7 +53,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "720px" }}>
               {page.points.map((pt) => (
-                <div key={pt.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={pt.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{pt.num}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{pt.title}</p>
@@ -64,7 +64,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
             </div>
           </div>
         </section>
-        <FaqSection items={page.faqs} bgColor="#F4F6FA" />
+        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA />
       </main>

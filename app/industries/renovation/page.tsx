@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "リフォーム会社・工務店のWeb集客。MEO・SEO・ホームページで見積もり依頼と受注を増やします。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries/renovation" },
@@ -163,7 +163,7 @@ export default function RenovationPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -217,7 +217,7 @@ export default function RenovationPage() {
                   desc: "施工事例・費用表・お客様の声・見積もりフォームを備えた受注につながるサイトを制作します。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E2E8F0", textDecoration: "none", background: "#F4F6FA" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #e8e4dc", textDecoration: "none", background: "#f9f8f5" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>詳細を見る →</p>
@@ -227,7 +227,7 @@ export default function RenovationPage() {
           </div>
         </section>
 
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Why It Works</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -261,8 +261,8 @@ export default function RenovationPage() {
                   b: "省エネリフォーム補助金・子育てエコホーム支援事業など国や自治体の補助制度が充実し、リフォーム検討者の裾野が広がっています。補助金情報を活用した集客コンテンツは、費用に敏感な施主層へのアプローチとして特に効果的です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -295,7 +295,7 @@ export default function RenovationPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -309,8 +309,8 @@ export default function RenovationPage() {
                 { n: "04", t: "信頼性の証明が不十分で見積もりまで至らない", b: "リフォームは高額な買い物のため、施主は業者の信頼性を慎重に確認します。資格（建築士・施工管理技士）・施工保証・加入保険・代表者の顔写真と経歴などをホームページとGBPに明示することで「この会社なら安心」という決断を促します。" },
                 { n: "05", t: "一括見積もりサイト経由の依存で利益率が下がっている", b: "ホームプロ・リショップナビなどの比較サイトは集客力がある一方、掲載費・紹介料・価格競争によって利益率が圧迫されます。自社MEO・SEO・ホームページによる直接問い合わせの比率を高めることで、比較サイト依存から脱却し、健全な収益構造を構築できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -324,11 +324,11 @@ export default function RenovationPage() {
         {/* サイプレスの支援 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのリフォーム会社・工務店向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○区 リフォーム」「近くの工務店 見積もり」でGoogleマップ上位表示を実現します。GBPの施工写真充実・口コミ獲得・定期投稿で地域の見積もり依頼を継続的に獲得します。" },
                 { label: "施工事例LP・ホームページ制作", desc: "施工事例ビフォーアフター・費用・工期・お客様の声を最適配置した受注型サイトを制作します。「無料見積もり」CTAの設計と問い合わせフォームの最適化で見積もり依頼率を高めます。" },
@@ -345,7 +345,7 @@ export default function RenovationPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
@@ -402,8 +402,8 @@ export default function RenovationPage() {
                   b: "Googleアナリティクス・サーチコンソール・GBPインサイトのデータを月次で確認し、流入キーワード・問い合わせ経路・離脱ページを分析します。データに基づいた改善策を継続的に実施することで集客精度が向上します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -462,12 +462,12 @@ export default function RenovationPage() {
                   desc: "Webからの問い合わせが実際の見積もり実施・成約につながる割合で、集客の質と営業プロセスを総合的に評価できます。高単価業種のため転換率の改善が収益に直結します。",
                 },
               ].map((item, i) => (
-                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 180px", gap: "16px", padding: "20px 0", borderTop: i === 0 ? "1px solid #E2E8F0" : "1px solid #E2E8F0", alignItems: "start" }}>
+                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 180px", gap: "16px", padding: "20px 0", borderTop: i === 0 ? "1px solid #e8e4dc" : "1px solid #e8e4dc", alignItems: "start" }}>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.kpi}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                   </div>
-                  <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em", lineHeight: "1.6", paddingTop: "2px" }}>{item.where}</p>
+                  <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", lineHeight: "1.6", paddingTop: "2px" }}>{item.where}</p>
                 </div>
               ))}
             </div>
@@ -477,7 +477,7 @@ export default function RenovationPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Choose Us</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Choose Us</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -504,8 +504,8 @@ export default function RenovationPage() {
                   b: "集客施策が複数の会社に分散すると戦略の一貫性が失われます。サイプレスではMEO対策・SEOコンテンツ・ホームページ制作・改善提案をワンストップで担うことで、施策間の連携を最大化した効率的な集客体制を構築します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ borderTop: "1px solid rgba(58,155,220,0.3)", paddingTop: "24px" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
+                <div key={item.n} style={{ borderTop: "1px solid rgba(196,184,154,0.3)", paddingTop: "24px" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "10px", lineHeight: "1.5" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.9" }}>{item.b}</p>
                 </div>

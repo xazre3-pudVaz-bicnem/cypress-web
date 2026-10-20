@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "整体院・接骨院・整骨院向けWeb集客。MEO・SNS・ホームページで新規患者獲得とリピーター定着を支援。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries/osteopathic" },
@@ -173,7 +173,7 @@ export default function OsteopathicPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -219,7 +219,7 @@ export default function OsteopathicPage() {
                   desc: "体の悩み解決コンテンツ・ストレッチ動画・ビフォーアフターでSNS集客を強化します。医療広告ガイドライン対応。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E2E8F0", textDecoration: "none", background: "#F4F6FA" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #e8e4dc", textDecoration: "none", background: "#f9f8f5" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>詳細を見る →</p>
@@ -229,7 +229,7 @@ export default function OsteopathicPage() {
           </div>
         </section>
 
-        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Why MEO Matters</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -258,8 +258,8 @@ export default function OsteopathicPage() {
                   b: "ポータルサイトへの掲載費・手数料を削減し、自社のGoogleマップ・ホームページ経由の直接予約を増やすことで収益性を改善できます。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -271,7 +271,7 @@ export default function OsteopathicPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -284,8 +284,8 @@ export default function OsteopathicPage() {
                 { n: "03", t: "症状別のコンテンツが不足し検索流入が少ない", b: "「腰痛 整体」「肩こり 治療 ○○区」「産後 骨盤矯正 ○○駅」など症状・部位・地域を組み合わせた検索への対応が不十分だと、SEO経由の問い合わせを取り逃します。症状別のサービスページ・お悩み解説コンテンツを整備することで、多様な検索に対応した集客経路を作ります。" },
                 { n: "04", t: "地域に競合院が増え差別化が難しくなっている", b: "整体院・整骨院は競合数が多く、立地だけでの差別化は困難です。「得意とする症状」「施術者の資格・経歴」「施術方針」「院の雰囲気」など、他院との違いを明確にWebで発信することが選ばれる理由をつくります。GBPの院内写真・施術者紹介・特色の言語化が重要です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -299,11 +299,11 @@ export default function OsteopathicPage() {
         {/* サイプレスの支援 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの整体院・接骨院向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「腰痛 整体 ○○区」「肩こり 整骨院 ○○駅」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得・定期投稿を継続運用し、地域の新規患者獲得を強化します。" },
                 { label: "症状別SEO対策", desc: "「産後 骨盤矯正 ○○市」「慢性腰痛 整体 費用 ○○区」など症状×地域キーワードに対応したサービスページ・コンテンツを制作します。医療広告ガイドラインを遵守した表現で安全に集客します。" },
@@ -320,7 +320,7 @@ export default function OsteopathicPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -372,8 +372,8 @@ export default function OsteopathicPage() {
                   b: "「腰痛の原因と予防」「産後の骨盤ケア」「ランナー膝のセルフケア」など患者に役立つコンテンツを継続的に発信します。専門性の高いコラムは検索流入とE-E-A-T向上の両方に貢献します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -432,9 +432,9 @@ export default function OsteopathicPage() {
                   desc: "初診患者が2回目以降も来院する割合。LINE施策・フォローアップの効果を測る指標で、リピート率の向上が収益の安定と口コミ増加につながります。",
                 },
               ].map((item) => (
-                <div key={item.kpi} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.kpi} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                  <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>計測場所：{item.where}</p>
+                  <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>計測場所：{item.where}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
@@ -445,7 +445,7 @@ export default function OsteopathicPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -472,8 +472,8 @@ export default function OsteopathicPage() {
                   b: "東京都葛飾区に拠点を置くサイプレスは、葛飾区・江戸川区・足立区など東京東部エリアの地域特性・競合状況を把握した上でMEO・SEO設計が可能です。「○○駅 整体」で地域の患者に選ばれる院になるための地域密着型支援を提供します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.25)" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.25)" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -483,7 +483,7 @@ export default function OsteopathicPage() {
         </section>
 
         {/* 料金の目安・相談の流れ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Pricing & Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -520,10 +520,10 @@ export default function OsteopathicPage() {
                   desc: "MEO対策・症状別SEO・LINE運用を一括で対応する統合プランです。施策間の連携を最大化し、新患獲得からリピーター定着までを一貫して支援します。",
                 },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0", display: "flex", gap: "20px", flexWrap: "wrap" }}>
+                <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc", display: "flex", gap: "20px", flexWrap: "wrap" }}>
                   <div style={{ flex: 1, minWidth: "200px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.label}</p>
-                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
+                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>

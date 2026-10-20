@@ -159,7 +159,7 @@ export default function RealEstateIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -220,8 +220,8 @@ export default function RealEstateIndustryPage() {
                 { n: "04", t: "GBPが未最適化で地域検索でのMapパック表示がない", b: "Googleビジネスプロフィールが基本情報のみで、写真・口コミ・定期投稿が不足している状態では、Googleマップのローカルパック（上位3件）への表示が困難です。GBP最適化が地域検索での露出増加への最速ルートです。" },
                 { n: "05", t: "物件情報の更新が大変でサイトが古いまま放置されている", b: "物件情報は頻繁に変わるため、自社サイトの更新が追いつかず情報が古いまま放置されているケースが多くあります。更新しやすいCMS設計・ポータルとの連携・更新不要なコンテンツ（地域情報・会社情報）を軸にしたサイト設計で解決できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -233,7 +233,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -275,7 +275,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Content Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -317,7 +317,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
@@ -337,8 +337,8 @@ export default function RealEstateIndustryPage() {
                 { n: "07", t: "地域コンテンツブログで専門性を積み上げる", b: "「葛飾区の家賃相場と暮らしやすさ」「亀有駅周辺の生活環境レポート」「不動産売却の流れ完全ガイド」など、地域情報と不動産専門知識を組み合わせたコンテンツを月2〜4本ペースで継続発信します。" },
                 { n: "08", t: "月次でKPIを確認しPDCAを回す", b: "GBPインサイト（問い合わせ数・経路検索数）・自社サイトのオーガニック流入・フォーム問い合わせ数・口コミ数を月次で確認します。数値の変化に基づき施策の優先順位を調整し、集客の精度を継続的に改善します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -368,10 +368,10 @@ export default function RealEstateIndustryPage() {
                 { kpi: "Googleマップ口コミ数・平均評価", where: "GBPインサイト", desc: "累計口コミ数と平均星評価。新規顧客が来店を判断する最重要の信頼指標で、口コミ獲得フローの成果を反映します。" },
                 { kpi: "サイト全体のオーガニック流入数", where: "Google Search Console", desc: "Googleの自然検索からのクリック数。コンテンツSEO・物件ページSEOの成果を総合的に示す指標です。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <div style={{ minWidth: "200px", flexShrink: 0 }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
@@ -383,7 +383,7 @@ export default function RealEstateIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -394,9 +394,9 @@ export default function RealEstateIndustryPage() {
                 { t: "SEO・MEO・ホームページを一社完結で対応", b: "地域SEOコンテンツ制作・GBP最適化・ホームページ制作・SNS設計をサイプレス一社で完結します。制作会社・SEO会社・MEO会社をバラバラに契約することなく、戦略の一貫性を保ちながら集客施策を進められます。" },
                 { t: "小規模・地域密着不動産会社に合わせた予算設計", b: "大規模予算を前提とした提案ではなく、地域密着型の小規模不動産会社が継続できる予算規模での施策をご提案します。優先順位を明確にした段階的な集客力向上プランで、費用対効果の高い施策から実施します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -404,7 +404,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* サイプレスができること */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -417,7 +417,7 @@ export default function RealEstateIndustryPage() {
                 { t: "物件情報のコンテンツSEO設計", b: "物件情報ページへのSEO設計・地域コンテンツの制作・CMS導入で更新しやすいサイト構造を構築。ポータルサイトに依存しない自社流入の拡大を実現します。" },
                 { t: "SNSで物件紹介・地域情報発信", b: "Instagram・YouTubeでの物件紹介・地域暮らし情報の発信設計。エリアを検討中の顧客に物件探し前の段階からアプローチし、来店・問い合わせへの導線を構築します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid #E2E8F0", background: "#FFFFFF" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -427,7 +427,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* よくある失敗と改善策 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Common Mistakes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
@@ -443,8 +443,8 @@ export default function RealEstateIndustryPage() {
                 { n: "失敗03", t: "「会社案内」のようなホームページで信頼情報が伝わらない", b: "会社概要・物件一覧・問い合わせフォームだけのシンプルなホームページでは、新規顧客が「この会社に相談したい」と感じるコンテンツが不足しています。改善策：担当者紹介・お客様の声・地域情報コンテンツ・取引の流れを追加し、信頼と専門性を伝える情報設計に改善します。" },
                 { n: "失敗04", t: "ポータルサイト脱却を急ぎすぎて集客が激減する", b: "自社集客チャネルが整備される前にポータルサイトの掲載を停止すると、問い合わせが一時的に激減するリスクがあります。改善策：自社サイトのオーガニック流入とGBP問い合わせが月○件を超えるまでポータルと並行運用し、段階的に移行することで安全に脱却できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -493,8 +493,8 @@ export default function RealEstateIndustryPage() {
                 { n: "不動産管理", t: "オーナー向けLPと入居者向けページの二本柱", b: "管理会社のWebは「不動産オーナー向けの管理委託ページ」と「入居者向けの物件情報ページ」を明確に分けて設計します。オーナー向けには管理実績・対応内容・費用感・担当者紹介を、入居者向けには物件情報・周辺環境・申し込み導線を丁寧に整備します。" },
                 { n: "土地・建物買取", t: "「早く売りたい」ニーズに直接応答するLPとSEO", b: "「葛飾区 不動産 買取 査定」「空き家 買取 葛飾」など、早期売却ニーズを持つ売主を直接ターゲットにしたキーワードと専用ランディングページを作成します。「最短〇日で買取可能」「現金化スピード」「手続きの簡便さ」を前面に出した訴求設計が有効です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -506,7 +506,7 @@ export default function RealEstateIndustryPage() {
         </section>
 
         {/* 不動産E-E-A-T・AIO対策 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>E-E-A-T / AIO</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -545,7 +545,7 @@ export default function RealEstateIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="不動産会社のWeb集客に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="不動産会社のWeb集客に関するよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="不動産会社のWeb集客ご相談"

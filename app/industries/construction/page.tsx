@@ -155,7 +155,7 @@ export default function ConstructionIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -210,8 +210,8 @@ export default function ConstructionIndustryPage() {
                 { n: "04", t: "ホームページが古くCV率が低い", b: "10年前に制作したホームページはスマートフォン対応が不十分・表示が遅い・信頼感のないデザインという問題を抱えています。現代の建設業ホームページはスマホファースト・施工事例ギャラリー・24時間対応の問い合わせフォームが必須です。" },
                 { n: "05", t: "Googleマップに登録していない・または未最適化のまま", b: "建設業のGBP登録率は他業種と比べて低い傾向があります。登録しているだけで写真・施工エリア・口コミへの返信が不足している状態では、競合他社との差が広がります。GBPの施工写真・サービスエリア設定・口コミ対応が見積もり依頼増加の基盤です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -223,7 +223,7 @@ export default function ConstructionIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -265,7 +265,7 @@ export default function ConstructionIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Content Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -288,7 +288,7 @@ export default function ConstructionIndustryPage() {
         {/* サイプレスができること */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               建設・リフォーム業向けにサイプレスができること
             </h2>
@@ -299,9 +299,9 @@ export default function ConstructionIndustryPage() {
                 { t: "建設業許可番号・資格掲載で信頼構築", b: "建設業許可番号・代表者顔写真・保有資格（一級建築士・一級塗装技能士等）・施工保証内容の明示で、悪徳業者との差別化と新規顧客の不安解消を実現します。" },
                 { t: "LocalBusiness Schema実装で検索リッチ表示", b: "LocalBusiness Schemaの実装でGoogleの検索結果に営業時間・評価・サービス内容が表示されやすくなります。複数エリア対応の場合はエリアページを個別作成し対応エリアでの上位表示を強化します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -330,7 +330,7 @@ export default function ConstructionIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
@@ -350,8 +350,8 @@ export default function ConstructionIndustryPage() {
                 { n: "07", t: "YouTube施工動画チャンネルの立ち上げ", b: "施工現場のタイムラプス・職人インタビュー・ビフォーアフター動画を月1本のペースで公開します。動画はホームページの施工事例ページにも埋め込み、ページ滞在時間の向上とSEO評価への好影響を狙います。チャンネル登録者数より地域顧客への認知拡大を優先します。" },
                 { n: "08", t: "月次データ分析と施策の継続改善", b: "GBPインサイト・Google Search Console・GA4のデータを月次で分析し、検索流入・問い合わせ数の推移を把握します。上位表示されているキーワードの深掘りと、流入の少ないページの改善を継続的に行い、集客の質と量を高め続けます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -381,10 +381,10 @@ export default function ConstructionIndustryPage() {
                 { name: "Googleクチコミ件数・平均評価点", where: "GBPインサイト", desc: "口コミ獲得フローの効果を測定します。建設業では4.0以上の評価と具体的な口コミ内容が新規顧客の信頼構築に直結します。月次で増加数を確認します。" },
                 { name: "コンバージョン率（訪問→見積もり依頼）", where: "Google Analytics（GA4）", desc: "サイト訪問者のうち見積もり依頼フォームを送信した割合。フォーム改善・CTAの配置変更・ページコンテンツの充実による改善効果を月次で測定します。" },
               ].map((item) => (
-                <div key={item.name} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.name} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <div style={{ minWidth: "220px", flexShrink: 0 }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.name}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
@@ -396,7 +396,7 @@ export default function ConstructionIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -423,8 +423,8 @@ export default function ConstructionIndustryPage() {
                   b: "GBPインサイト・Google Search Console・GA4のデータを月次でレポートし、見積もり依頼数の推移と施策効果を可視化します。数値に基づいた改善提案を継続的に行うパートナーとして機能します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", border: "1px solid rgba(58,155,220,0.25)", background: "rgba(255,255,255,0.03)" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", marginBottom: "12px" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "32px", border: "1px solid rgba(196,184,154,0.25)", background: "rgba(255,255,255,0.03)" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#FFFFFF", marginBottom: "14px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -434,7 +434,7 @@ export default function ConstructionIndustryPage() {
         </section>
 
         {/* 施工種別ごとのSEO設計 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>By Service Type</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -459,11 +459,11 @@ export default function ConstructionIndustryPage() {
                   points: ["「中古物件 リノベーション ○○市」でSEO", "物件探しから施工まで一括対応をアピール", "Before/After事例に費用・工期を明示", "インスタグラムで完成した空間の美しさを発信"],
                 },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "24px", border: "1px solid #E2E8F0", background: "#ffffff" }}>
+                <div key={item.label} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "12px" }}>{item.label}</p>
                   <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
                     {item.points.map((pt) => (
-                      <li key={pt} style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9", paddingBottom: "4px", borderBottom: "1px solid #E2E8F0", marginBottom: "4px" }}>— {pt}</li>
+                      <li key={pt} style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9", paddingBottom: "4px", borderBottom: "1px solid #E8E4DC", marginBottom: "4px" }}>— {pt}</li>
                     ))}
                   </ul>
                 </div>
@@ -493,8 +493,8 @@ export default function ConstructionIndustryPage() {
                   { n: "06", t: "施工事例数と対応実績数", b: "「施工事例○○件以上」「創業○○年」など実績の数値で経験値を証明します。" },
                   { n: "07", t: "資格・認定マークの表示", b: "一級建築士・一級施工管理技士・塗装技能士等の資格バッジをトップページに表示します。" },
                 ].map((item) => (
-                  <div key={item.n} style={{ padding: "20px", border: "1px solid #E2E8F0", background: "#F4F6FA" }}>
-                    <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "6px" }}>{item.n}</p>
+                  <div key={item.n} style={{ padding: "20px", border: "1px solid #E8E4DC", background: "#f9f8f5" }}>
+                    <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "6px" }}>{item.n}</p>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.b}</p>
                   </div>
@@ -504,9 +504,9 @@ export default function ConstructionIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="建設・リフォーム業のWeb集客に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="建設・リフォーム業のWeb集客に関するよくある質問" bgColor="#F9F8F5" />
         {/* 対応エリア */}
-        <section style={{ background: "#F4F6FA", padding: "56px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "56px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Service Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,26px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "16px" }}>主な対応エリア</h2>
@@ -515,7 +515,7 @@ export default function ConstructionIndustryPage() {
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {["葛飾区", "足立区", "江戸川区", "墨田区", "荒川区", "北区", "板橋区", "練馬区", "品川区", "大田区", "千葉市", "船橋市", "市川市", "さいたま市", "川口市"].map((area) => (
-                <span key={area} style={{ padding: "6px 14px", border: "1px solid #E2E8F0", fontSize: "13px", color: "#374151", background: "#ffffff" }}>{area}</span>
+                <span key={area} style={{ padding: "6px 14px", border: "1px solid #E8E4DC", fontSize: "13px", color: "#374151", background: "#ffffff" }}>{area}</span>
               ))}
             </div>
           </div>

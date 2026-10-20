@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: page.metaDescription,
       locale: "ja_JP",
       type: "website",
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+      images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `https://www.cypress-all.co.jp/goals/${slug}` },
@@ -56,7 +56,7 @@ export default async function GoalSlugPage({ params }: { params: Promise<{ slug:
       )}
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -84,8 +84,8 @@ export default async function GoalSlugPage({ params }: { params: Promise<{ slug:
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {page.services.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.num}</span>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.num}</span>
                   <div style={{ flex: 1 }}>
                     <Link
                       href={item.href}
@@ -105,7 +105,7 @@ export default async function GoalSlugPage({ params }: { params: Promise<{ slug:
         </section>
 
         {/* Steps */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Steps</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -113,8 +113,8 @@ export default async function GoalSlugPage({ params }: { params: Promise<{ slug:
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {page.steps.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.num}</span>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #ece8e0" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.num}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>

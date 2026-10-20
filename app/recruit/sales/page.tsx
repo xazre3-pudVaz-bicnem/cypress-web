@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。MEO・SEO・ホームページを東京の中小企業経営者に提案する提案型法人営業。東京都葛飾区拠点の株式会社サイプレス。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/recruit/sales" },
@@ -262,7 +262,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── サイプレスで営業をする意味 ─────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <div style={{ maxWidth: "720px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Why Cypress</p>
@@ -278,12 +278,12 @@ export default function RecruitSalesPage() {
                   { t: "MEO・SEO・AIO・AI活用を横断提案できる", b: "単一商材ではなく、Googleマップ・検索・AI検索・ホームページを組み合わせた複合提案が可能です。顧客の課題に最も適した提案ができるため、成約率が高まります。" },
                   { t: "ChatGPT・AI時代の最前線で働ける", b: "AIO対策・AI活用支援という最新商材を扱える環境です。「AI時代に価値が上がる営業スキル」を身につけながら、顧客に実際の価値を届けられます。" },
                 ].map((item) => (
-                  <div key={item.t} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <div key={item.t} style={{ padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E2E8F0" }} />
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
               </div>
             </div>
           </div>
@@ -312,7 +312,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 仕事の魅力 ─────────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Highlights</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -341,8 +341,8 @@ export default function RecruitSalesPage() {
                   body: "ターゲットは中小企業の経営者・オーナー。「集客の悩みを解決したい」という切実なニーズに応える仕事です。単なる数字合わせではなく、経営者の課題解決パートナーとして信頼されるポジションです。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", background: "#ffffff", border: "1px solid #E2E8F0" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "10px" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "32px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "17px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -365,26 +365,26 @@ export default function RecruitSalesPage() {
               <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
                 経験・スキル・面談時の評価によって、基本給を上乗せする場合があります。インセンティブの額は成果によって変動するため「必ず○万円になる」という断定はしませんが、出した成果がそのまま収入に反映される仕組みです。
               </p>
-              <div style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "24px", marginBottom: "18px" }}>
+              <div style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px", marginBottom: "18px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>給与に関するよくある疑問</p>
                 {[
                   "未経験でも基本給20万円ですか？ → はい。基本給は経験を問わず固定です。",
                   "インセンティブはどう決まりますか？ → 受注実績に応じて支給します。詳細は面談時にご説明します。",
                   "昇給タイミングはいつですか？ → 評価サイクルについては面談でご確認ください。",
                 ].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #E2E8F0", fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
-                    <span style={{ flexShrink: 0, color: "#3A9BDC" }}>Q</span>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc", fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
+                    <span style={{ flexShrink: 0, color: "#c4b89a" }}>Q</span>
                     <span>{item}</span>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E2E8F0" }} />
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* ── 年間休日130日について ────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <div style={{ maxWidth: "720px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Holiday</p>
@@ -397,7 +397,7 @@ export default function RecruitSalesPage() {
               <p style={{ fontSize: "15px", lineHeight: "2.0", color: "#374151", marginBottom: "18px" }}>
                 営業職は「働けば働くほど成果が出る」という面もありますが、疲弊した状態では質の高い提案ができません。十分な休暇を取ることで、顧客との商談でベストなパフォーマンスを発揮してほしいという考えから、年間130日の休日を設けています。
               </p>
-              <div style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "20px" }}>
+              <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "20px" }}>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>
                   休日の詳細（有給休暇・特別休暇等）は面談時にご確認ください。年間休日130日を超える休暇取得についても個別にご相談いただけます。
                 </p>
@@ -420,21 +420,21 @@ export default function RecruitSalesPage() {
                 { n: "03", t: "受注・契約締結", b: "提案内容に合意いただいた後、契約手続きを行います。制作・保守・運用の引き継ぎは社内チームへ。顧客対応はアフターフォローに移行します。" },
                 { n: "04", t: "アフターフォロー・追加提案", b: "既存顧客への定期連絡・成果報告・追加プランの提案を行います。長期的な信頼関係を積み上げることで、安定した受注基盤を構築します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ── 1日の流れ ─────────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Daily Schedule</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -450,15 +450,15 @@ export default function RecruitSalesPage() {
                 { time: "16:00", title: "提案書作成・社内共有", body: "翌日以降の商談に向けた提案書作成。社内チームとの情報共有・受注後の引き継ぎ対応。" },
                 { time: "18:00", title: "退社", body: "業務終了。プライベートの時間を大切にしてください。" },
               ].map((item) => (
-                <div key={item.time} style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #E2E8F0", alignItems: "flex-start" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "52px", paddingTop: "2px" }}>{item.time}</span>
+                <div key={item.time} style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #e8e4dc", alignItems: "flex-start" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "52px", paddingTop: "2px" }}>{item.time}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.title}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
               <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>※上記はあくまでも一例です。実際の業務はプロジェクトや状況によって異なります。</p>
             </div>
           </div>
@@ -509,7 +509,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 提案する商材 ───────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Products</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -525,7 +525,7 @@ export default function RecruitSalesPage() {
                 { label: "AI活用支援", desc: "業務自動化・チャットボット・AIコンテンツ生成など、中小企業のAI導入を支援します。" },
                 { label: "SNS運用", desc: "Instagram・LINE・Google口コミなどを活用した集客・ブランディング支援。" },
               ].map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "24px" }}>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
@@ -548,7 +548,7 @@ export default function RecruitSalesPage() {
                 { title: "競合との比較で勝てるケースが多い", body: "中小企業のWeb集客はまだ整備されていないケースが多く、MEO・SEOを丁寧に行うだけで差が生まれます。「今は何もしていない」という経営者ほど、提案のインパクトが大きくなります。" },
                 { title: "AI時代の追い風がある", body: "ChatGPT・Geminiなど生成AIの普及で「AIにも引用されるWebサイト・Googleマップ」の重要性が急速に認識されています。AIO対策・AI活用支援という新商材が加わることで、提案の切り口がさらに広がっています。" },
               ].map((item) => (
-                <div key={item.title} style={{ border: "1px solid #E2E8F0", padding: "28px" }}>
+                <div key={item.title} style={{ border: "1px solid #e8e4dc", padding: "28px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -558,7 +558,7 @@ export default function RecruitSalesPage() {
         </section>
 
         {/* ── 求める人物像 ────────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Ideal Candidate</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -575,28 +575,28 @@ export default function RecruitSalesPage() {
                   "新しいことを吸収するのが苦でない（AI・Webの最新知識）",
                   "誠実にお客様と向き合いたい",
                 ].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
                     <span style={{ color: "#0d1b2a", flexShrink: 0 }}>✓</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E2E8F0" }} />
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
               </div>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#9ca3af", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #E2E8F0" }}>こんな方は向いていないかも</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#9ca3af", marginBottom: "16px", paddingBottom: "10px", borderBottom: "2px solid #e8e4dc" }}>こんな方は向いていないかも</p>
                 {[
                   "安定収入だけを求め、成長・挑戦への意欲がない方",
                   "顧客と向き合うのが苦手で、完全に内向きの業務だけをしたい方",
                   "日々変化するAI・Webのトレンドを追うことに抵抗がある方",
                   "数字や目標に向き合うことを避けたい方",
                 ].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
                     <span style={{ color: "#9ca3af", flexShrink: 0 }}>×</span>
                     <p style={{ fontSize: "14px", color: "#9ca3af" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E2E8F0" }} />
-                <div style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "16px", marginTop: "16px" }}>
+                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "16px", marginTop: "16px" }}>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
                     「自分がどちらか分からない」という方も歓迎します。面談でお話を聞かせてください。
                   </p>
@@ -611,12 +611,12 @@ export default function RecruitSalesPage() {
                 "飲食・美容・建設・医療・士業などのビジネス経験",
                 "スタートアップ・ベンチャー経験",
               ].map((item) => (
-                <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ color: "#9ca3af", flexShrink: 0 }}>◇</span>
                   <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
@@ -638,18 +638,18 @@ export default function RecruitSalesPage() {
                 { point: "仕事への動機", desc: "なぜこの仕事に興味を持ったか。収入・成長・社会貢献など、自分の動機が明確か。" },
                 { point: "コミュニケーション力", desc: "経営者と対話できるか。相手の話を聞いて整理し、分かりやすく説明できるか。" },
               ].map((item) => (
-                <div key={item.point} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.point} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a", fontSize: "13px", fontWeight: 700, minWidth: "120px", paddingTop: "2px" }}>{item.point}</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ── 入社後のサポート ──────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Onboarding Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -661,7 +661,7 @@ export default function RecruitSalesPage() {
                 { phase: "1〜3ヶ月", title: "提案トーク習得", body: "提案資料の使い方・商談の進め方・よくある質問への回答方法を習得。先輩の同行から始め、一人立ちを目指します。" },
                 { phase: "3ヶ月以降", title: "独立営業＋フォロー", body: "一人で商談・受注できるようになったあとも、チームで情報共有しながら課題を解決する体制を継続します。" },
               ].map((item) => (
-                <div key={item.phase} style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "28px" }}>
+                <div key={item.phase} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "28px" }}>
                   <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "6px", fontFamily: "var(--font-display)" }}>{item.phase}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
@@ -689,18 +689,18 @@ export default function RecruitSalesPage() {
                 { label: "対象", value: "学歴・職歴・資格不問。成長意欲のある方歓迎。未経験可。" },
                 { label: "研修", value: "入社後は商材知識・提案トーク研修・同行サポートあり" },
               ].map((row) => (
-                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "16px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "16px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "100px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>
                   <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{row.value}</span>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ── キャリアパス ────────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Career Path</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -712,7 +712,7 @@ export default function RecruitSalesPage() {
                 { phase: "6ヶ月〜2年", title: "個人目標達成・専門性強化", body: "独立した営業担当として受注を積み上げます。特定業種（飲食・医療・建設など）のスペシャリストとして専門性を高める道もあります。" },
                 { phase: "2年以降", title: "リーダー・マネジメント", body: "チームリーダー・マネージャーとしてメンバーの育成・組織目標の達成を担うキャリアが開きます。成長の方向性を一緒に設計します。" },
               ].map((item) => (
-                <div key={item.phase} style={{ border: "1px solid #E2E8F0", padding: "28px", background: "#ffffff" }}>
+                <div key={item.phase} style={{ border: "1px solid #e8e4dc", padding: "28px", background: "#ffffff" }}>
                   <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "6px", fontFamily: "var(--font-display)" }}>{item.phase}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
@@ -736,18 +736,18 @@ export default function RecruitSalesPage() {
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
                 { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
-                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
                   <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>
                   <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{row.value}</span>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ── 選考フロー ──────────────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Selection Process</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -760,7 +760,7 @@ export default function RecruitSalesPage() {
                 { step: "Step 3", title: "面談（1〜2回）", body: "会社・仕事内容・あなたの経歴・志望動機についてお話しします。オンライン面談に対応しています。" },
                 { step: "Step 4", title: "内定・入社", body: "面談後、内定をお伝えします。入社日・条件など個別にご相談いただけます。" },
               ].map((item, i) => (
-                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: "40px" }}>
                     <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
@@ -773,7 +773,7 @@ export default function RecruitSalesPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>

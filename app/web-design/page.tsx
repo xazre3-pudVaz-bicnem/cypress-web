@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Webサイト制作の総合ガイド。種類・費用・選び方・SEO・CV改善まで解説。東京葛飾区のWeb制作会社。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design" },
@@ -255,7 +255,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* サイト種類 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Site Types</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -266,7 +266,7 @@ export default function WebDesignPage() {
             </p>
             <div className="max-w-4xl space-y-0">
               {subPages.map((page, i) => (
-                <Link key={i} href={page.href} className="block group py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <Link key={i} href={page.href} className="block group py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#0d1b2a" }}>{page.title}</p>
@@ -276,7 +276,7 @@ export default function WebDesignPage() {
                   </div>
                 </Link>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -293,10 +293,10 @@ export default function WebDesignPage() {
             </p>
             <div className="max-w-4xl">
               {processSteps.map((step) => (
-                <div key={step.step} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={step.step} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <div className="shrink-0">
                     <span className="text-[12px] font-mono block" style={{ color: "#9CA3AF" }}>{step.step}</span>
-                    <span className="text-[11px] mt-1 block" style={{ color: "#3A9BDC" }}>{step.period}</span>
+                    <span className="text-[11px] mt-1 block" style={{ color: "#c4b89a" }}>{step.period}</span>
                   </div>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{step.title}</p>
@@ -304,7 +304,7 @@ export default function WebDesignPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -312,7 +312,7 @@ export default function WebDesignPage() {
         {/* 費用目安 */}
         <section className="py-20" style={{ background: "#0d1b2a" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC", fontFamily: "var(--font-display)" }}>Cost Guide</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Cost Guide</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               種類別 制作費用の目安
             </h2>
@@ -324,8 +324,8 @@ export default function WebDesignPage() {
                 <div key={i} style={{ padding: "24px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
                   <div className="flex flex-wrap gap-4 mb-3 items-baseline">
                     <span className="font-bold text-[15px]" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>{c.type}</span>
-                    <span className="text-[13px]" style={{ color: "#3A9BDC" }}>{c.pages}</span>
-                    <span className="text-[15px] font-bold ml-auto" style={{ color: "#3A9BDC" }}>{c.cost}</span>
+                    <span className="text-[13px]" style={{ color: "#c4b89a" }}>{c.pages}</span>
+                    <span className="text-[15px] font-bold ml-auto" style={{ color: "#c4b89a" }}>{c.cost}</span>
                   </div>
                   <p className="text-[13px]" style={{ color: "rgba(255,255,255,0.6)" }}>{c.features}</p>
                 </div>
@@ -335,7 +335,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* 制作のこだわり */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Approach</p>
             <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -349,7 +349,7 @@ export default function WebDesignPage() {
                 { title: "構造化データ・AIO対策の標準実装", body: "BreadcrumbList・FAQPage・Organizationなどの構造化データを全案件で実装。リッチリザルトとAI検索（AIO）からの認知・引用に同時対応します。" },
                 { title: "公開後の集客・改善まで一貫サポート", body: "制作で終わりではなく、公開後のSEO対策・MEO対策・コンテンツ追加・リライト・CV改善まで継続的にサポートします。長期的なWebマーケティングのパートナーとして伴走します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
@@ -357,7 +357,7 @@ export default function WebDesignPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -374,7 +374,7 @@ export default function WebDesignPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {industryPoints.map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E2E8F0", background: "#F4F6FA" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#F9F8F5" }}>
                   <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{item.points}</p>
                 </div>
@@ -384,7 +384,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* よくある失敗パターン */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
             <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -392,7 +392,7 @@ export default function WebDesignPage() {
             </h2>
             <div className="max-w-4xl">
               {failurePatterns.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
@@ -400,7 +400,7 @@ export default function WebDesignPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -408,7 +408,7 @@ export default function WebDesignPage() {
         <FaqSection items={faqItems} heading="Webサイト制作についてよくある質問" bgColor="#FFFFFF" />
 
         {/* ホームページ制作の成功事例 */}
-        <section style={{ background: "#F4F6FA", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E2E8F0" }}>
+        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -429,7 +429,7 @@ export default function WebDesignPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で起業・創業する方向けガイド｜開業準備からWeb集客まで",
     description: "葛飾区で起業・創業を検討している方向けに、開業準備チェックリスト、創業資金確認、Web集客ガイド、ホームページ補助金、収益柱づくり、販売パートナー制度を解説します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -100,7 +100,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -130,11 +130,11 @@ export default function Page() {
                 <Link
                   key={card.href}
                   href={card.href}
-                  style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "24px 22px", textDecoration: "none", display: "block" }}
+                  style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 22px", textDecoration: "none", display: "block" }}
                 >
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px", lineHeight: 1.5 }}>{card.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{card.desc}</p>
-                  <p style={{ fontSize: "12px", color: "#3A9BDC", marginTop: "12px", fontWeight: 600 }}>詳細を見る →</p>
+                  <p style={{ fontSize: "12px", color: "#c4b89a", marginTop: "12px", fontWeight: 600 }}>詳細を見る →</p>
                 </Link>
               ))}
             </div>

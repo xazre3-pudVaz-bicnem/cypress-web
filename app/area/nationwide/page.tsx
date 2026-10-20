@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "全国対応｜SEO対策・AIO対策・Web制作はリモートで日本全国対応",
     description: "サイプレスのSEO・AIO・Web制作は全国完全リモート対応。Zoomで初回相談〜納品まで完結。北海道から沖縄まで対応。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -184,7 +184,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -235,8 +235,8 @@ export default function Page() {
                 { n: "05", t: "MEO対策は東京近郊が得意、全国もご相談可能", b: "MEO対策（Googleビジネスプロフィールの最適化）はリモートで全国対応できます。地域特性の深い理解という点では東京・首都圏（葛飾区・足立区・江戸川区・千葉・埼玉）が最も得意ですが、地方エリアについてもまずはご相談ください。" },
                 { n: "06", t: "複数エリアの一括管理もリモートで対応", b: "全国に複数の店舗・拠点・フランチャイズを持つ事業者の一括SEO・MEO管理もリモートで対応しています。各拠点のGBP管理・統合的なSEO戦略の設計・月次レポートを一元的に提供します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -248,7 +248,7 @@ export default function Page() {
         </section>
 
         {/* Section 2: 全国対応サービスの特徴 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>What We Offer</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -264,8 +264,8 @@ export default function Page() {
                 { n: "03", t: "高速・SEO対応のホームページをリモートで制作", b: "Next.js+TypeScript構成の高速・SEO対応ウェブサイトを日本全国リモートで制作します。ヒアリング・デザイン確認・修正・納品まですべてZoom・メールで完結します。コアウェブバイタル最適化・スマートフォン対応・画像最適化は標準対応しています。" },
                 { n: "04", t: "月次レポートで全国どこでも透明性の高い施策管理", b: "毎月の順位動向・GBP表示回数・サイトアクセス数をレポートにまとめ、Zoomでの解説・メール報告を行います。全国どこにいても施策の進捗と成果を明確に把握できる透明性の高い報告体制を維持しています。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -297,8 +297,8 @@ export default function Page() {
                 { n: "07", t: "月次レポート・定例Zoom", b: "毎月末に順位変動・アクセス数・GBP表示回数・問い合わせ数をまとめたレポートを作成し、Zoom（またはメール）でご説明します。データに基づく次月の施策改善方針もあわせて報告します。" },
                 { n: "08", t: "改善サイクル（継続的最適化）", b: "月次レポートのデータをもとに施策を継続的に改善します。検索アルゴリズムの変動・競合状況の変化・季節性トレンドに柔軟に対応しながら、集客の成果を着実に積み上げていきます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -310,7 +310,7 @@ export default function Page() {
         </section>
 
         {/* Section 4: 対応エリア別の強み */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Guide</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -327,7 +327,7 @@ export default function Page() {
                 { area: "東海・北陸・東北・北海道", desc: "完全リモート対応。地方エリアほどSEO・MEO競合が少なく施策効果が出やすい。SEO・AIO・Web制作をオンラインで完全支援。" },
                 { area: "九州・中国・四国・沖縄", desc: "完全リモートで全国対応。地方のWebマーケティング格差を解消するための施策設計が得意。今から始めれば早期に競合から頭一つ抜け出せる。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -350,10 +350,10 @@ export default function Page() {
                 { label: "MEO対策", tag: "東京近郊特に得意", desc: "来店型ビジネスには最重要チャネル。東京・首都圏が最も得意だが、全国のご相談も受け付け。地方エリアは競合が少なくMEO効果が大きい。" },
                 { label: "Web制作", tag: "全国完全リモート", desc: "SEO・MEO・SNS・AIの各チャネルからの集客を来店・問い合わせに変換するホームページ制作を全国リモートで対応。Next.js構成の高速・SEO対応サイト。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -363,7 +363,7 @@ export default function Page() {
         </section>
 
         {/* Section A: 業種別の集客ポイント */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Industry Guide</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -407,7 +407,7 @@ export default function Page() {
                   point: "「〇〇市 塾」「〇〇駅 英会話」などのローカル検索MEOと体験授業への導線設計が重要。保護者向けコンテンツSEOで信頼感を醸成し、問い合わせ転換を高める。地方エリアは競合塾のWeb対策が遅れており、参入余地が大きい。",
                 },
               ].map((item) => (
-                <div key={item.industry} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.industry} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.point}</p>
                 </div>
@@ -437,8 +437,8 @@ export default function Page() {
                 { n: "07", t: "月次レポート・Zoom定例報告", b: "毎月末に順位変動・アクセス数・GBP表示回数・問い合わせ数をまとめたレポートを作成し、Zoom（またはメール）でご説明します。データに基づく次月の施策改善方針もあわせて報告します。" },
                 { n: "08", t: "継続改善・追加施策の提案", b: "月次レポートのデータをもとに施策を継続的に改善します。成果が出てきたタイミングで追加施策（新規コンテンツ・広告・SNS連携）のご提案も行います。長期的な集客基盤を一緒に育てていきます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -452,7 +452,7 @@ export default function Page() {
         {/* Section C: サイプレスに依頼するメリット（ダーク背景・拡張版） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -464,7 +464,7 @@ export default function Page() {
                 { n: "04", t: "データドリブンな月次報告で成果を可視化", b: "毎月の施策成果（順位変動・アクセス増加・GBP表示・問い合わせ数）をデータで報告します。感覚ではなく数字に基づく施策改善で、全国どこのビジネスでも集客成果を着実に積み上げます。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -474,7 +474,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 地方エリアの集客機会 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Regional Opportunity</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -510,7 +510,7 @@ export default function Page() {
                   body: "これまで地方のビジネスが高品質なWebマーケティング支援を受けるには東京の会社への依頼が難しいという課題がありました。サイプレスは完全リモートの対応体制により、北海道から沖縄まで東京と全く同じ水準のSEO・AIO・MEO・Web制作の支援を提供します。地理的な制約を超えたサービス提供が強みです。",
                 },
               ].map((item) => (
-                <div key={item.title} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.title} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                 </div>
@@ -519,7 +519,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="全国対応に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="全国対応に関するよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="全国どこからでもご相談ください"

@@ -64,7 +64,7 @@ export default async function BlogCategoryPage({
         {/* Hero */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#f8f6f2",
             paddingTop: "128px",
             paddingBottom: "48px",
           }}
@@ -170,7 +170,7 @@ export default async function BlogCategoryPage({
                   <article
                     key={post.slug}
                     style={{
-                      borderBottom: "1px solid #E2E8F0",
+                      borderBottom: "1px solid #ece8e0",
                       paddingBottom: "40px",
                       marginBottom: "40px",
                     }}
@@ -197,7 +197,7 @@ export default async function BlogCategoryPage({
                         style={{
                           fontSize: "11px",
                           padding: "2px 8px",
-                          background: "#EDF1F7",
+                          background: "#f0ede8",
                           color: "#374151",
                         }}
                       >
@@ -299,7 +299,7 @@ export default async function BlogCategoryPage({
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #E2E8F0",
+                        borderBottom: "1px solid #ece8e0",
                         fontSize: "13px",
                         color: slug === category ? "#0d1b2a" : "#374151",
                         textDecoration: "none",
@@ -316,9 +316,9 @@ export default async function BlogCategoryPage({
               </div>
               <div
                 style={{
-                  background: "#F4F6FA",
+                  background: "#f8f6f2",
                   padding: "24px",
-                  border: "1px solid #E2E8F0",
+                  border: "1px solid #ece8e0",
                 }}
               >
                 <p

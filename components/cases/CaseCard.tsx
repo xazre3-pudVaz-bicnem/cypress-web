@@ -10,7 +10,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
       style={{
         display: "flex",
         flexDirection: "column",
-        border: "1px solid #E2E8F0",
+        border: "1px solid #E8E4DC",
         background: "#FFFFFF",
         textDecoration: "none",
         transition: "box-shadow 0.22s, transform 0.22s",
@@ -115,7 +115,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
         <span style={{ fontSize: "11px", color: "#9CA3AF", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
           {c.publishedAt.replace(/-/g, ".")}
         </span>
-        <span style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
+        <span style={{ fontSize: "12px", color: "#C4A96A", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
           詳細を見る →
         </span>
       </div>

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${page.title}｜${INDUSTRY_LABEL}向けサービス｜株式会社サイプレス`,
       description: page.metaDescription,
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+      images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
       locale: "ja_JP",
       type: "website",
     },
@@ -44,7 +44,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
     <>
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -71,7 +71,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
               {INDUSTRY_LABEL}に特化した対策ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
               {page.points.map((pt) => (
                 <div key={pt.num} style={{ background: "#ffffff", padding: "32px" }}>
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "12px" }}>{pt.num}</p>
@@ -83,7 +83,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#F4F6FA" />
+        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading={`${page.title}のご相談はサイプレスへ`}

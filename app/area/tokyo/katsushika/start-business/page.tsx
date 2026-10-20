@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区の起業・創業ガイド【総合版】｜資金・Web集客・収益づくりを一気通貫で解説",
     description: "葛飾区で起業・創業する方向けの総合ガイド。開業準備・創業資金・ホームページ制作とGBP整備・Web集客の優先順位・収益柱づくりまで、創業ステップごとに詳しく解説します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -102,8 +102,8 @@ const S = {
   h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" } as React.CSSProperties,
-  num: { fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
+  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
+  num: { fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
   itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" },
   itemBody: { fontSize: "14px", color: "#374151", lineHeight: "1.9" },
 };
@@ -216,7 +216,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -269,7 +269,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 3: 創業支援・相談窓口 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Support</p>
             <h2 style={S.h2}>葛飾区の創業支援・相談窓口を確認する</h2>
@@ -289,7 +289,7 @@ export default function Page() {
                 { t: "日本政策金融公庫（創業融資）", b: "創業期に活用できる融資制度があります。審査があり、融資実行を保証するものではありません。" },
                 { t: "東京都中小企業振興公社", b: "東京都内の中小企業・創業者向けの支援機関。各種制度の最新情報は公式サイトでご確認ください。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -306,7 +306,7 @@ export default function Page() {
             <p style={S.body}>葛飾区で創業した方からよく聞く課題を12項目にまとめました。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "960px" }}>
               {challengeItems.map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -316,14 +316,14 @@ export default function Page() {
         </section>
 
         {/* SECTION 5: HP・SEO・MEOを整える理由 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Why Web</p>
             <h2 style={S.h2}>創業時にホームページ・SEO・MEOを整えるべき理由</h2>
             <p style={S.body}>創業初期こそWeb集客の基盤を整えることが、長期的な集客力に差をつけます。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "900px" }}>
               {reasonCards.map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "22px 20px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 20px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -335,7 +335,7 @@ export default function Page() {
         {/* SECTION 6: 販売パートナー制度 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={S.container}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,32px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "24px" }}>
               創業初期の収益柱として販売パートナー制度を検討する
             </h2>
@@ -380,7 +380,7 @@ export default function Page() {
                   b: "知人・取引先など身近な事業者に「こんなサービスがあるよ」と伝えるだけの形態。成約した場合に謝礼が発生するケースが多く、契約形態はシンプルです。",
                 },
               ].map((item) => (
-                <div key={item.label} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "22px 18px" }}>
+                <div key={item.label} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
                   </div>
@@ -406,7 +406,7 @@ export default function Page() {
             <p style={S.body}>葛飾区を拠点とする株式会社サイプレスが提供できる支援の一覧です。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "900px" }}>
               {supportItems.map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -422,7 +422,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
@@ -434,7 +434,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区での起業・創業についてよくある質問"
-          bgColor="#F4F6FA"
+          bgColor="#F9F8F5"
         />
 
         <PageContactCTA

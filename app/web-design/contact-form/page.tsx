@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "入力項目最小化・SP最適化・自動返信メールで問い合わせCV率を改善。サイプレスのフォーム設計支援。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/contact-form" },
@@ -78,7 +78,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA" }} className="pt-32 pb-20">
+        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -129,8 +129,8 @@ export default function Page() {
                 "reCAPTCHAなどスパム対策の実装方法とUXとのバランス",
                 "GTM・GA4を使ったフォームCV計測とA/Bテストの進め方",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "14px", padding: "16px 0", borderTop: "1px solid #E2E8F0", alignItems: "flex-start" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "14px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -139,7 +139,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -158,7 +158,7 @@ export default function Page() {
                 { n: "09", t: "フォームへの誘導導線が弱い", b: "フォームページは存在するのに、サイトのどこからも目立つリンクがない状態ではCV率は下がります。ヘッダーへのCTAボタン設置・各ページ末尾への誘導・スクロール追従ボタンなど、複数の誘導導線を設けることが重要です。" },
                 { n: "10", t: "送信後の案内が不十分", b: "「送信完了しました」の一文だけで終わるサンクスページは機会損失です。「〇〇営業日以内にご返信します」「よくある質問はこちら」「他のサービスもご覧ください」といった次のアクションへの案内を設置することでユーザーとの関係が続きます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -173,7 +173,7 @@ export default function Page() {
         {/* フォームの問題でCVを失う理由 — existing dark section */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Common Problems</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Common Problems</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               フォームの問題でCVを失っている4つの理由
             </h2>
@@ -184,7 +184,7 @@ export default function Page() {
                 { t: "スマートフォン未最適化", b: "PCで見やすいフォームがスマートフォンでは文字が小さく、ボタンが押しにくい状態になっていることがあります。今や問い合わせの半数以上はスマートフォンからです。" },
                 { t: "送信後の体験設計がない", b: "送信ボタンを押した後に何も起きないと「本当に送れたのか」と不安になります。サンクスページ表示と自動返信メールの両方を設置することで信頼感が大きく上がります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -211,12 +211,12 @@ export default function Page() {
                 { n: "07", industry: "学習塾", use: "体験授業申込・資料請求", b: "体験授業申込フォームは学年・科目・希望日時・保護者氏名を収集します。資料請求フォームは最小項目に絞り、送付先住所はオプションにします。申込後の自動返信で体験授業の当日の流れを案内することで不安を解消します。" },
                 { n: "08", industry: "BtoB（法人向けサービス）", use: "デモ申込・資料ダウンロード", b: "デモ申込フォームには会社名・担当者名・メール・電話・会社規模・現在の課題を収集します。資料ダウンロードフォームは最小項目（名前・メール・会社名）に絞り、DL後のナーチャリングをメールで行う設計が効果的です。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "24px 0 24px 0", borderTop: "1px solid #E2E8F0", display: "flex", gap: "20px" }}>
+                <div key={item.n} style={{ padding: "24px 0 24px 0", borderTop: "1px solid #E8E4DC", display: "flex", gap: "20px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline", marginBottom: "6px" }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
-                      <p style={{ fontSize: "12px", color: "#3A9BDC", fontWeight: 600 }}>{item.use}</p>
+                      <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600 }}>{item.use}</p>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -227,7 +227,7 @@ export default function Page() {
         </section>
 
         {/* CV率を上げるフォーム設計の原則 — existing section */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Form Design</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -242,7 +242,7 @@ export default function Page() {
                 { n: "05", t: "サンクスページ・自動返信メールの設置", b: "送信後に「受付完了ページ」を表示し、返信期間を明記します。自動返信メールで「〇〇営業日以内にご連絡します」と伝えることで問い合わせ者の不安を解消します。" },
                 { n: "06", t: "プライバシーポリシーへのリンク", b: "送信ボタン付近にプライバシーポリシーへのリンクを設置します。個人情報の取扱いを明示することで信頼性が上がり、チェックボックス方式でGDPR対応も可能です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -274,7 +274,7 @@ export default function Page() {
                 { n: "09", t: "GTM・GA4でのCV計測設定", b: "GTMでフォーム送信完了イベントを設定し、GA4でCVとして計測します。サンクスページへの到達・フォームのsubmitイベントどちらでも計測可能です。フォームファネル分析のためのイベントも設定します。" },
                 { n: "10", t: "A/Bテスト計画", b: "公開後の改善サイクルとして、送信ボタンのテキスト・入力項目の構成・エラーメッセージのパターンなどのA/Bテスト計画を立てます。VWOやGA4の実験機能を使って、CV率が高い方を採用します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -287,7 +287,7 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs &amp; Measurement</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -303,12 +303,12 @@ export default function Page() {
                 { n: "06", t: "月間問い合わせ数", measure: "GA4 → コンバージョン数 / CRM・メール受信件数", b: "フォーム改善・誘導動線改善の結果として最も直接的に表れる指標です。月次推移をモニタリングし、改善施策の前後で比較します。" },
                 { n: "07", t: "問い合わせ→商談転換率", measure: "CRM / 営業管理ツールでの追跡", b: "フォームから来た問い合わせが商談・成約に至った割合です。フォームの入力項目・質問設計によって問い合わせの質が変わります。量だけでなく質の向上も設計の目的です。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", gap: "20px" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                     <div style={{ flex: 1 }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.t}</p>
-                      <p style={{ fontSize: "11px", color: "#3A9BDC", fontWeight: 600, marginBottom: "8px", fontFamily: "var(--font-mono, monospace)" }}>{item.measure}</p>
+                      <p style={{ fontSize: "11px", color: "#c4b89a", fontWeight: 600, marginBottom: "8px", fontFamily: "var(--font-mono, monospace)" }}>{item.measure}</p>
                       <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                     </div>
                   </div>

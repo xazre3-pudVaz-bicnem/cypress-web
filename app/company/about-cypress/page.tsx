@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/about-cypress" },
@@ -251,7 +251,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Company Info */}
-        <section className="py-20" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
+        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Overview
@@ -279,7 +279,7 @@ export default function AboutCypressPage() {
                     gridTemplateColumns: "140px 1fr",
                     gap: "16px",
                     padding: "16px 0",
-                    borderBottom: "1px solid #E2E8F0",
+                    borderBottom: "1px solid #E8E4DC",
                   }}
                 >
                   <dt className="text-[13px] font-semibold" style={{ color: "#0F172A" }}>{row.label}</dt>
@@ -298,7 +298,7 @@ export default function AboutCypressPage() {
                   fontSize: "13px",
                   color: "#6B7280",
                   textDecoration: "none",
-                  borderBottom: "1px solid #CBD5E1",
+                  borderBottom: "1px solid #D1C9BE",
                   paddingBottom: "2px",
                 }}
               >
@@ -309,7 +309,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Name Origin */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Name
@@ -339,7 +339,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Services */}
-        <section className="py-20" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
+        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Services
@@ -362,7 +362,7 @@ export default function AboutCypressPage() {
                   key={svc.num}
                   style={{
                     background: "#FFFFFF",
-                    border: "1px solid #E2E8F0",
+                    border: "1px solid #E8E4DC",
                     padding: "24px",
                   }}
                 >
@@ -371,7 +371,7 @@ export default function AboutCypressPage() {
                       display: "block",
                       fontSize: "10px",
                       letterSpacing: "0.2em",
-                      color: "#3A9BDC",
+                      color: "#C4A96A",
                       marginBottom: "8px",
                       fontFamily: "var(--font-display)",
                     }}
@@ -398,7 +398,7 @@ export default function AboutCypressPage() {
                       fontSize: "12px",
                       color: "#0F172A",
                       textDecoration: "none",
-                      borderBottom: "1px solid #E2E8F0",
+                      borderBottom: "1px solid #E8E4DC",
                       paddingBottom: "2px",
                     }}
                   >
@@ -428,7 +428,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Why Cypress */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why Cypress
@@ -449,14 +449,14 @@ export default function AboutCypressPage() {
                     gap: "20px",
                     alignItems: "start",
                     paddingBottom: "32px",
-                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #E2E8F0" : "none",
+                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #E8E4DC" : "none",
                   }}
                 >
                   <span
                     style={{
                       fontFamily: "var(--font-display)",
                       fontSize: "24px",
-                      color: "#E2E8F0",
+                      color: "#E8E4DC",
                       letterSpacing: "0.05em",
                       lineHeight: 1,
                       paddingTop: "4px",
@@ -487,7 +487,7 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Related Links */}
-        <section className="py-16" style={{ background: "#F4F6FA", borderTop: "1px solid #E2E8F0" }}>
+        <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
           <div className="max-w-4xl mx-auto px-6">
             <h2
               className="font-bold text-[#0d1b2a] mb-8"
@@ -518,7 +518,7 @@ export default function AboutCypressPage() {
                     display: "block",
                     padding: "12px 16px",
                     background: "#FFFFFF",
-                    border: "1px solid #E2E8F0",
+                    border: "1px solid #E8E4DC",
                     fontSize: "13px",
                     color: "#374151",
                     textDecoration: "none",

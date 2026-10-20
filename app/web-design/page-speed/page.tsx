@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       "画像最適化・CDN活用・Next.js構成でLighthouse全項目90+を実現。Core Web Vitals「良好」を目指す速度改善支援。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/page-speed" },
@@ -141,7 +141,7 @@ export default function Page() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────── */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -258,10 +258,10 @@ export default function Page() {
                     alignItems: "flex-start",
                     gap: "12px",
                     padding: "14px 0",
-                    borderTop: "1px solid #E2E8F0",
+                    borderTop: "1px solid #E8E4DC",
                   }}
                 >
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
                     →
                   </span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
@@ -274,7 +274,7 @@ export default function Page() {
         {/* ── Business impact – dark section ───────────────── */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
               Business Impact
             </p>
             <h2
@@ -314,7 +314,7 @@ export default function Page() {
                   b: "表示が遅いサイトは「古いサイトで大丈夫か」という印象を与えます。初回の接触でブランドへの信頼を損なうと、その後のCV機会も減ります。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p
                     style={{
                       fontFamily: "var(--font-serif)",
@@ -390,7 +390,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}
+                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -416,7 +416,7 @@ export default function Page() {
         </section>
 
         {/* ── Section B: よくある課題と原因 ───────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Challenges
@@ -487,7 +487,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -534,7 +534,7 @@ export default function Page() {
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
                 gap: "1px",
-                background: "#E2E8F0",
+                background: "#E8E4DC",
               }}
             >
               {[
@@ -610,7 +610,7 @@ export default function Page() {
         </section>
 
         {/* ── Section D: 速度改善の実装フロー ─────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Optimization Flow
@@ -681,7 +681,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -768,7 +768,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -794,7 +794,7 @@ export default function Page() {
         </section>
 
         {/* ── Inline CTA ───────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "64px 0" }}>
           <div
             style={{
               maxWidth: "72rem",

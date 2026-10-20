@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cases = getCasesByService(service);
   const title = `${label}の成功事例${cases.length}件｜業種別の施策内容｜株式会社サイプレス`;
   const description = `株式会社サイプレスの${label}成功事例${cases.length}件。飲食店・美容室・整体院・建設業など業種別に、${label}の課題から施策・改善までの進め方を公開しています。`;
-  const ogpImage = SERVICE_OGP_IMAGES[service] ?? "/og-image.jpg";
+  const ogpImage = SERVICE_OGP_IMAGES[service] ?? "/hero.jpg";
   return {
     title,
     description: description.slice(0, 118),
@@ -74,7 +74,7 @@ export default async function ServiceCasesPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)", borderBottom: "1px solid #E2E8F0" }}>
+        <section style={{ background: "#F8F6F2", padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)", borderBottom: "1px solid #E8E4DC" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <nav aria-label="パンくず" style={{ marginBottom: "28px" }}>
               <ol style={{ display: "flex", gap: "8px", listStyle: "none", padding: 0, margin: 0, flexWrap: "wrap" }}>
@@ -112,7 +112,7 @@ export default async function ServiceCasesPage({ params }: Props) {
         </section>
 
         {/* Other services + industries */}
-        <section style={{ background: "#F4F6FA", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E2E8F0" }}>
+        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ ...eyebrow, marginBottom: "20px" }}>Other Services</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "32px" }}>
@@ -130,19 +130,19 @@ export default async function ServiceCasesPage({ params }: Props) {
         </section>
 
         {/* 関連サービスページへのリンク */}
-        <section style={{ background: "#FFFFFF", padding: "40px 0", borderTop: "1px solid #E2E8F0" }}>
+        <section style={{ background: "#FFFFFF", padding: "40px 0", borderTop: "1px solid #E8E4DC" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ fontSize: "13px", color: "#6B7280", marginBottom: "16px" }}>このサービスについて詳しく</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {SERVICE_HREFS[service] && (
-                <Link href={SERVICE_HREFS[service]} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF" }}>
+                <Link href={SERVICE_HREFS[service]} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
                   {label}のサービスページを見る →
                 </Link>
               )}
-              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF" }}>
+              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
                 成功事例一覧に戻る →
               </Link>
-              <Link href="/contact" style={{ fontSize: "13px", color: "#3A9BDC", textDecoration: "none", padding: "8px 16px", border: "1px solid #3A9BDC", background: "#FFFFFF" }}>
+              <Link href="/contact" style={{ fontSize: "13px", color: "#C4A96A", textDecoration: "none", padding: "8px 16px", border: "1px solid #C4A96A", background: "#FFFFFF" }}>
                 無料相談・お問い合わせ →
               </Link>
             </div>
@@ -158,6 +158,6 @@ export default async function ServiceCasesPage({ params }: Props) {
 }
 
 const crumbLink: React.CSSProperties = { fontSize: "11px", color: "#9CA3AF", textDecoration: "none", fontFamily: "var(--font-display)", letterSpacing: "0.05em" };
-const eyebrow: React.CSSProperties = { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(58,155,220,0.7)", fontSize: "10px", marginBottom: "16px", textTransform: "uppercase" };
-const linkChip: React.CSSProperties = { fontSize: "12px", color: "#6B7280", textDecoration: "none", padding: "6px 14px", border: "1px solid #E2E8F0", background: "#ffffff", letterSpacing: "0.03em" };
-const inlineLink: React.CSSProperties = { fontSize: "13px", color: "#6B7280", textDecoration: "none", fontFamily: "var(--font-display)", letterSpacing: "0.05em", borderBottom: "1px solid #CBD5E1", paddingBottom: "2px" };
+const eyebrow: React.CSSProperties = { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(196,169,106,0.7)", fontSize: "10px", marginBottom: "16px", textTransform: "uppercase" };
+const linkChip: React.CSSProperties = { fontSize: "12px", color: "#6B7280", textDecoration: "none", padding: "6px 14px", border: "1px solid #E8E4DC", background: "#ffffff", letterSpacing: "0.03em" };
+const inlineLink: React.CSSProperties = { fontSize: "13px", color: "#6B7280", textDecoration: "none", fontFamily: "var(--font-display)", letterSpacing: "0.05em", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" };

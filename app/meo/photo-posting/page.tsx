@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "MEO対策の要・写真投稿の戦略を解説。種類・品質・更新頻度のすべて。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/photo-posting" },
@@ -283,7 +283,7 @@ export default function PhotoPostingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -343,7 +343,7 @@ export default function PhotoPostingPage() {
                 "インサイトで追うべきKPIと競合比較を活用した改善サイクルの回し方",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#3A9BDC" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -352,7 +352,7 @@ export default function PhotoPostingPage() {
         </section>
 
         {/* 写真投稿がMEO順位に与える影響 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Impact on MEO
@@ -398,7 +398,7 @@ export default function PhotoPostingPage() {
             </h2>
             <div className="max-w-3xl">
               {issueItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
@@ -411,13 +411,13 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 投稿すべき写真の種類 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Photo Types
@@ -430,7 +430,7 @@ export default function PhotoPostingPage() {
             </h2>
             <div className="max-w-3xl">
               {photoTypes.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -445,7 +445,7 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -464,7 +464,7 @@ export default function PhotoPostingPage() {
             </h2>
             <div className="max-w-3xl">
               {industryItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -479,13 +479,13 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 写真の品質と更新頻度 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Quality &amp; Frequency
@@ -530,7 +530,7 @@ export default function PhotoPostingPage() {
             </h2>
             <div className="max-w-3xl">
               {flowItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
@@ -543,13 +543,13 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
@@ -562,7 +562,7 @@ export default function PhotoPostingPage() {
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
@@ -575,7 +575,7 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -599,7 +599,7 @@ export default function PhotoPostingPage() {
                 { title: "ピントを被写体に合わせる", body: "撮影前に画面内の被写体部分をタップしてピントを合わせます。オートフォーカスに任せると意図しない場所にピントが合うことがあります。特に料理・商品の接写では、主役となる部分を明確にタップしてからシャッターを切ることが重要です。" },
                 { title: "撮影後の簡単な調整", body: "スマートフォン標準の写真編集機能で明るさ・コントラスト・彩度を調整するだけで品質が大きく向上します。「明るさ+10〜20」「コントラスト+5〜10」「彩度+5〜10」が食品・内装写真の目安です。過度な加工は実際の店舗・商品との乖離を生むため控えめに。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -614,12 +614,12 @@ export default function PhotoPostingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="写真投稿・管理に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="写真投稿・管理に関するよくある質問" bgColor="#F9F8F5" />
 
         <RelatedPages links={relatedLinks} />
 

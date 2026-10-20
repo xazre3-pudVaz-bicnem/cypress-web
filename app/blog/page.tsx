@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "MEO・SEO・AIO・Web集客の最新ノウハウを発信するサイプレス公式ブログ。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   alternates: { canonical: "https://www.cypress-all.co.jp/blog" },
 };
@@ -30,7 +30,7 @@ export default function BlogPage() {
         {/* Hero */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#f8f6f2",
             paddingTop: "128px",
             paddingBottom: "48px",
           }}
@@ -120,7 +120,7 @@ export default function BlogPage() {
                     <article
                       key={post.slug}
                       style={{
-                        borderBottom: "1px solid #E2E8F0",
+                        borderBottom: "1px solid #ece8e0",
                         paddingBottom: "40px",
                         marginBottom: "40px",
                       }}
@@ -143,7 +143,7 @@ export default function BlogPage() {
                             style={{
                               fontSize: "11px",
                               padding: "2px 8px",
-                              background: "#EDF1F7",
+                              background: "#f0ede8",
                               color: "#374151",
                               textDecoration: "none",
                             }}
@@ -190,7 +190,7 @@ export default function BlogPage() {
                               style={{
                                 fontSize: "11px",
                                 padding: "2px 8px",
-                                border: "1px solid #E2E8F0",
+                                border: "1px solid #ece8e0",
                                 color: "#6b7280",
                               }}
                             >
@@ -268,7 +268,7 @@ export default function BlogPage() {
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #E2E8F0",
+                        borderBottom: "1px solid #ece8e0",
                         fontSize: "13px",
                         color: "#374151",
                         textDecoration: "none",
@@ -287,7 +287,7 @@ export default function BlogPage() {
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #E2E8F0",
+                        borderBottom: "1px solid #ece8e0",
                         fontSize: "13px",
                         color: "#374151",
                         textDecoration: "none",
@@ -302,9 +302,9 @@ export default function BlogPage() {
               {/* CTA box */}
               <div
                 style={{
-                  background: "#F4F6FA",
+                  background: "#f8f6f2",
                   padding: "24px",
-                  border: "1px solid #E2E8F0",
+                  border: "1px solid #ece8e0",
                 }}
               >
                 <p

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "AIチャットボット構築の実践ガイド。ChatGPT API・RAG・LINE連携から設計・導入・精度改善まで解説。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/ai/chatbot" },
@@ -168,7 +168,7 @@ export default function ChatbotPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>On This Page</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -184,7 +184,7 @@ export default function ChatbotPage() {
                 "自動対応率・解決率・人件費削減額など効果を可視化するための7つのKPI指標",
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#3A9BDC" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{point}</p>
                 </div>
               ))}
@@ -206,7 +206,7 @@ export default function ChatbotPage() {
                 { type: "社内Q&Aボット（Slack・Teams連携）", desc: "社内規程・マニュアル・FAQ情報を知識ベースに登録し、SlackやTeams上での社員からの質問に自動回答します。人事・総務・IT等の問い合わせ対応負荷を削減できます。" },
                 { type: "ECサイト商品案内ボット", desc: "商品情報・在庫・サイズ・用途などの情報をAIが案内し、購買意欲を高めます。カート追加・決済への誘導や、カスタマーサポートとの連携も設計できます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.type}</p>
@@ -214,13 +214,13 @@ export default function ChatbotPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -269,7 +269,7 @@ export default function ChatbotPage() {
                   body: "チャットボットが単なるFAQ回答に留まり、実際のアクション（予約・注文）まで完結できないと利便性が半減します。既存システムのAPI仕様を確認し、チャットボットからのアクション実行まで設計する必要があります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -277,7 +277,7 @@ export default function ChatbotPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -324,7 +324,7 @@ export default function ChatbotPage() {
                   points: "製品仕様・規格・対応材質の問い合わせ・発注プロセス案内・納期目安の回答を自動化。技術的な仕様書をRAGで学習させることで、営業担当と同水準の回答精度を実現します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6 pr-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="py-6 pr-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <div className="flex gap-4">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <div>
@@ -339,7 +339,7 @@ export default function ChatbotPage() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -398,9 +398,9 @@ export default function ChatbotPage() {
                   body: "毎月、会話ログを分析して「回答できなかった質問」「有人切り替えが多い話題」を特定し、知識ベースの更新・プロンプトの調整を行います。チャットボットは継続的な改善で成果が積み上がります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <div className="shrink-0 w-20">
-                    <p className="text-[11px] font-semibold" style={{ color: "#3A9BDC" }}>{item.step}</p>
+                    <p className="text-[11px] font-semibold" style={{ color: "#c4b89a" }}>{item.step}</p>
                   </div>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -408,7 +408,7 @@ export default function ChatbotPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -458,21 +458,21 @@ export default function ChatbotPage() {
                   desc: "「AIが自動対応しなかった場合に人間が費やす時間と費用」を試算することで、投資対効果を経営層に説明できます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#3A9BDC" }}>計測場所: {item.where}</p>
+                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#c4b89a" }}>計測場所: {item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIチャットボット構築についてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="AIチャットボット構築についてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIチャットボット構築のご相談"

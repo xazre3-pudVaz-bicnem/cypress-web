@@ -1,146 +1,381 @@
 ﻿import Link from "next/link";
-import LogoMark from "@/components/ui/LogoMark";
-import { ExternalIcon } from "@/components/ui/Button";
-import { COMPANY, COMPANY_ADDRESS_WITH_POSTAL } from "@/lib/company";
-import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
-import {
-  BUSINESS_LINKS,
-  COMPANY_LINKS,
-  FOOTER_SITEMAP,
-  KNOWLEDGE_LINKS,
-  PARTNER_LINKS,
-  RECRUIT_LINKS,
-  SERVICE_SUMMARIES,
-  type NavLink,
-} from "@/lib/navigation";
+import Image from "next/image";
+import { BUSINESSES } from "@/lib/company";
 
-const COLUMNS: { heading: string; links: NavLink[] }[] = [
+// ─── Types ──────────────────────────────────────────────────────────────────
+
+interface FooterLink {
+  href: string;
+  label: string;
+  /** 別サイト（軽貨物・太陽光）へのリンク。新しいタブで開く */
+  external?: boolean;
+}
+
+interface FooterSection {
+  heading: string;
+  links: FooterLink[];
+}
+
+// ─── Data ────────────────────────────────────────────────────────────────────
+
+const COL_COMPANY: FooterSection[] = [
   {
-    heading: "サービス",
+    heading: "会社情報",
     links: [
-      ...SERVICE_SUMMARIES.map((s) => ({ href: s.href, label: s.name })),
-      { href: "/pricing/web-growth-package", label: "料金プラン" },
-      { href: "/cases", label: "支援事例" },
+      { href: "/company/about-cypress", label: "株式会社サイプレスとは" },
+      { href: "/company/profile", label: "会社概要" },
+      { href: "/company/message", label: "代表挨拶" },
+      { href: "/company/philosophy", label: "企業理念" },
+      { href: "/company/history", label: "沿革" },
+      { href: "/cases", label: "成功事例" },
+      { href: "/recruit", label: "採用情報" },
     ],
   },
-  { heading: "事業内容", links: BUSINESS_LINKS.map(({ href, label, external }) => ({ href, label, external })) },
-  { heading: "会社情報", links: [...COMPANY_LINKS, { href: "/contact", label: "お問い合わせ" }] },
-  { heading: "ナレッジ", links: KNOWLEDGE_LINKS.slice(0, 8) },
-  { heading: "採用・パートナー", links: [...RECRUIT_LINKS, ...PARTNER_LINKS] },
+  {
+    heading: "事業内容",
+    links: [
+      { href: "/services/meo", label: "MEO対策" },
+      { href: "/services/seo", label: "SEO対策" },
+      { href: "/services/aio", label: "AIO対策" },
+      { href: "/services/web-design", label: "Web制作" },
+      { href: "/services/sns", label: "SNS運用" },
+      { href: "/services/ai", label: "AI活用" },
+      // Webマーケティング以外の事業（専用サイトで運営）
+      ...BUSINESSES.filter((b) => b.external).map((b) => ({ href: b.href, label: `${b.name} ↗`, external: true })),
+    ],
+  },
 ];
 
-function FooterLink({ link, small = false }: { link: NavLink; small?: boolean }) {
-  const className = `inline-flex items-center gap-1.5 transition-colors hover:text-white ${
-    small ? "text-[12.5px] text-white/55" : "text-[14px] text-white/70"
-  }`;
-  return link.external ? (
-    <a href={link.href} target="_blank" rel="noopener noreferrer" className={className}>
-      {link.label}
-      <ExternalIcon className="h-3 w-3" />
-    </a>
-  ) : (
-    <Link href={link.href} className={className}>
-      {link.label}
+const COL_AGENT: FooterSection[] = [
+  {
+    heading: "販売代理店募集",
+    links: [
+      { href: "/agent", label: "代理店募集トップ" },
+      { href: "/agent/web-design", label: "ホームページ制作代理店" },
+      { href: "/agent/meo", label: "MEO対策代理店" },
+      { href: "/agent/seo", label: "SEO対策代理店" },
+      { href: "/agent/aio", label: "AIO対策代理店" },
+      { href: "/agent/faq", label: "代理店FAQ" },
+    ],
+  },
+  {
+    heading: "パートナー",
+    links: [
+      { href: "/partner/referral", label: "取次店・紹介パートナー" },
+      { href: "/training/reskilling-subsidy", label: "研修導入相談" },
+    ],
+  },
+];
+
+const COL_SEO_MEO: FooterSection[] = [
+  {
+    heading: "SEO対策",
+    links: [
+      { href: "/seo", label: "SEO対策とは" },
+      { href: "/seo/internal-seo", label: "内部SEO" },
+      { href: "/seo/content-seo", label: "コンテンツSEO" },
+      { href: "/seo/technical-seo", label: "テクニカルSEO" },
+      { href: "/seo/local-seo", label: "地域SEO" },
+      { href: "/seo/keyword-research", label: "キーワード調査" },
+      { href: "/seo/blog-strategy", label: "ブログ戦略" },
+    ],
+  },
+  {
+    heading: "MEO対策",
+    links: [
+      { href: "/meo", label: "MEO対策とは" },
+      { href: "/meo/google-business-profile", label: "GBP最適化" },
+      { href: "/meo/review-management", label: "口コミ対策" },
+      { href: "/meo/ranking", label: "順位改善" },
+      { href: "/meo/photo-posting", label: "写真投稿" },
+      { href: "/meo/meo-audit", label: "MEO監査" },
+    ],
+  },
+];
+
+const COL_AIO_AI: FooterSection[] = [
+  {
+    heading: "AIO対策",
+    links: [
+      { href: "/aio", label: "AIO対策とは" },
+      { href: "/aio/chatgpt", label: "ChatGPT対策" },
+      { href: "/aio/ai-overview", label: "AI Overview" },
+      { href: "/aio/structured-data", label: "構造化データ" },
+      { href: "/aio/llms-txt", label: "LLMS.txt" },
+      { href: "/aio/faq-optimization", label: "FAQ最適化" },
+    ],
+  },
+  {
+    heading: "Web制作・AI",
+    links: [
+      { href: "/web-design", label: "Web制作" },
+      { href: "/web-design/corporate-site", label: "コーポレートサイト" },
+      { href: "/web-design/seo-site", label: "SEO対応サイト" },
+      { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金" },
+      { href: "/ai", label: "AI活用支援" },
+      { href: "/ai/automation", label: "業務自動化" },
+    ],
+  },
+];
+
+const COL_INDUSTRIES: FooterSection[] = [
+  {
+    heading: "業種別対応",
+    links: [
+      { href: "/industries/restaurant", label: "飲食店" },
+      { href: "/industries/beauty", label: "美容室" },
+      { href: "/industries/clinic", label: "医療・歯科" },
+      { href: "/industries/construction", label: "建設業" },
+      { href: "/industries/professional-service", label: "士業" },
+      { href: "/industries/local-store", label: "地域店舗" },
+    ],
+  },
+  {
+    heading: "対応エリア",
+    links: [
+      { href: "/area/tokyo", label: "東京都" },
+      { href: "/area/katsushika", label: "葛飾区" },
+      { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作" },
+      { href: "/area/chiba", label: "千葉県" },
+      { href: "/area/saitama", label: "埼玉県" },
+      { href: "/area/nationwide", label: "全国対応" },
+    ],
+  },
+];
+
+const COL_COLUMN_GUIDE: FooterSection[] = [
+  {
+    heading: "コラム・ブログ",
+    links: [
+      { href: "/column", label: "専門コラム一覧" },
+      { href: "/column/meo", label: "MEO対策コラム" },
+      { href: "/column/seo", label: "SEO対策コラム" },
+      { href: "/column/aio", label: "AIO対策コラム" },
+      { href: "/blog", label: "ブログ" },
+      { href: "/news", label: "お知らせ" },
+    ],
+  },
+  {
+    heading: "お悩み・目的別",
+    links: [
+      { href: "/problems/no-inquiries", label: "問い合わせが来ない" },
+      { href: "/problems/map-ranking-low", label: "マップに表示されない" },
+      { href: "/problems/losing-to-competitors", label: "競合に負けている" },
+      { href: "/goals/increase-inquiries", label: "問い合わせを増やしたい" },
+      { href: "/goals/meo-top", label: "マップ順位を上げたい" },
+      { href: "/solutions/meo-seo", label: "MEO×SEO統合対策" },
+    ],
+  },
+];
+
+const COL_KNOWLEDGE: FooterSection[] = [
+  {
+    heading: "ナレッジ",
+    links: [
+      { href: "/knowledge/meo-vs-seo", label: "MEOとSEOの違い" },
+      { href: "/knowledge/meo-ranking-factors", label: "MEO順位決定要因" },
+      { href: "/knowledge/review-strategy", label: "口コミ増やし方" },
+      { href: "/knowledge/seo-basics", label: "SEO基礎知識" },
+      { href: "/knowledge/aio-basics", label: "AIO基礎知識" },
+      { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド" },
+    ],
+  },
+  {
+    heading: "新業種対応",
+    links: [
+      { href: "/industries/hair-salon", label: "ヘアサロン集客" },
+      { href: "/industries/nail-salon", label: "ネイルサロン集客" },
+      { href: "/industries/osteopathic", label: "整体院・接骨院" },
+      { href: "/industries/renovation", label: "リフォーム会社" },
+      { href: "/industries/school", label: "学習塾・スクール" },
+      { href: "/industries/pet-shop", label: "ペットショップ" },
+    ],
+  },
+];
+
+// ─── Sub-components ──────────────────────────────────────────────────────────
+
+function SectionHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <p
+      className="text-[11px] font-semibold tracking-[0.18em] uppercase mb-4 pb-2"
+      style={{
+        color: "#e8e4dc",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        fontFamily: "var(--font-sans)",
+      }}
+    >
+      {children}
+    </p>
+  );
+}
+
+function FooterLinkItem({ href, label, external }: FooterLink) {
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[12px] leading-relaxed transition-colors hover:text-[#e8e4dc]"
+        style={{ color: "#6b7a8d", display: "block", marginBottom: "6px" }}
+      >
+        {label}
+      </a>
+    );
+  }
+  return (
+    <Link
+      href={href}
+      className="text-[12px] leading-relaxed transition-colors hover:text-[#e8e4dc]"
+      style={{ color: "#6b7a8d", display: "block", marginBottom: "6px" }}
+    >
+      {label}
     </Link>
   );
 }
 
-function SitemapGrid() {
+function FooterColumn({ sections }: { sections: FooterSection[] }) {
   return (
-    <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
-      {FOOTER_SITEMAP.map((group) => (
-        <div key={group.heading}>
-          <p className="mb-3 text-[12px] font-bold text-white/80">{group.heading}</p>
-          <ul className="space-y-2">
-            {group.links.map((l) => (
-              <li key={l.href}>
-                <FooterLink link={l} small />
-              </li>
-            ))}
-          </ul>
+    <div>
+      {sections.map((section, i) => (
+        <div key={section.heading} style={{ marginBottom: i < sections.length - 1 ? "28px" : 0 }}>
+          <SectionHeading>{section.heading}</SectionHeading>
+          {section.links.map((l) => (
+            <FooterLinkItem key={l.href} href={l.href} label={l.label} external={l.external} />
+          ))}
         </div>
       ))}
     </div>
   );
 }
 
+// ─── Main component ──────────────────────────────────────────────────────────
+
 export default function Footer() {
   return (
-    <footer className="relative bg-navy-950 text-white">
-      {/* 上端のライン（ロゴの紺→シアン） */}
-      <div aria-hidden="true" className="h-px bg-gradient-to-r from-transparent via-accent-bright/60 to-transparent" />
-
-      <div className="mx-auto max-w-[1280px] px-5 pb-10 pt-16 sm:px-8 md:pt-20">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.3fr)] lg:gap-16">
-          {/* Brand + contact */}
-          <div>
-            <Link href="/" className="inline-flex items-center gap-2.5" aria-label="株式会社サイプレス トップページ">
-              <LogoMark tone="dark" className="h-9 w-9" />
-              <span className="flex flex-col leading-none">
-                <span className="font-en text-[22px] font-semibold tracking-[-0.01em]">Cypress</span>
-                <span className="mt-1 text-[10px] tracking-[0.12em] text-white/55">株式会社サイプレス</span>
+    <footer style={{ background: "#0d1b2a", color: "#8b97a8" }}>
+      <div className="max-w-7xl mx-auto px-6 pt-16 pb-0">
+        {/* 8-column grid */}
+        <div className="grid grid-cols-2 md:grid-cols-8 gap-8 mb-14">
+          {/* Column 1 — Brand */}
+          <div className="col-span-2 md:col-span-1" style={{ minWidth: 0 }}>
+            <Link href="/" className="flex items-center gap-3 mb-5" style={{ width: "fit-content", textDecoration: "none" }}>
+              <span style={{
+                display: "inline-flex", alignItems: "center", justifyContent: "center",
+                width: "36px", height: "36px", borderRadius: "8px",
+                background: "#ffffff", flexShrink: 0, overflow: "hidden",
+              }}>
+                <Image
+                  src="/logo.png"
+                  alt="Cypress"
+                  width={28}
+                  height={28}
+                  style={{ objectFit: "contain", width: "26px", height: "26px" }}
+                />
+              </span>
+              <span
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "19px",
+                  fontWeight: 700,
+                  color: "#e8e4dc",
+                  letterSpacing: "0.04em",
+                  lineHeight: 1,
+                }}
+              >
+                Cypress
               </span>
             </Link>
-            <p className="mt-6 text-[15px] font-bold leading-relaxed">選ばれる理由を、Webでつくる。</p>
-            <address className="mt-6 space-y-3 text-[13.5px] not-italic leading-relaxed text-white/65">
-              <p>
-                {COMPANY_ADDRESS_WITH_POSTAL}
-                <br />
-                <span className="text-white/45">最寄り駅：{COMPANY.nearestStation}</span>
-              </p>
-              <p>
-                <a href={CONTACT_MAILTO} className="text-white hover:text-cyan">
-                  {CONTACT_EMAIL}
+            <p
+              className="text-[12px] leading-relaxed mb-1"
+              style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+            >
+              株式会社サイプレス
+            </p>
+            <p
+              className="text-[12px] leading-relaxed mb-5"
+              style={{ color: "#8b97a8", fontFamily: "var(--font-sans)" }}
+            >
+              MEO・SEO・AIO・ホームページ制作を通じて、<br />
+              中小企業のWeb集客を支援するマーケティングカンパニー。
+            </p>
+            <ul className="space-y-2">
+              <li
+                className="text-[12px]"
+                style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+              >
+                東京都葛飾区亀有3-16-14-201
+              </li>
+              <li
+                className="text-[12px]"
+                style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+              >
+                設立：2026年5月13日
+              </li>
+              <li>
+                <a
+                  href="mailto:info@cypress-all.co.jp"
+                  className="text-[12px] transition-colors hover:text-[#e8e4dc]"
+                  style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+                >
+                  info@cypress-all.co.jp
                 </a>
-                <br />
-                <span className="text-white/45">受付 {CONTACT_HOURS}</span>
-              </p>
-            </address>
+              </li>
+              <li
+                className="text-[12px]"
+                style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+              >
+                対応エリア：全国（オンライン対応）
+              </li>
+            </ul>
           </div>
 
-          {/* Main navigation */}
-          <nav aria-label="フッターメニュー" className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
-            {COLUMNS.map((col) => (
-              <div key={col.heading}>
-                <p className="mb-4 text-[12px] font-bold tracking-[0.08em] text-cyan">{col.heading}</p>
-                <ul className="space-y-2.5">
-                  {col.links.map((l) => (
-                    <li key={l.href}>
-                      <FooterLink link={l} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </nav>
-        </div>
+          {/* Column 2 — 会社情報 & 事業内容 */}
+          <FooterColumn sections={COL_COMPANY} />
 
-        {/* Sitemap — 検索流入の入口ページへの内部リンク。モバイルでは折りたたむ */}
-        <div className="mt-14 border-t border-white/10 pt-8">
-          <div className="hidden md:block">
-            <p className="eyebrow mb-6 text-[11px] text-white/45">Sitemap</p>
-            <SitemapGrid />
-          </div>
-          <details className="group md:hidden">
-            <summary className="flex cursor-pointer list-none items-center justify-between py-1 [&::-webkit-details-marker]:hidden">
-              <span className="eyebrow text-[11px] text-white/45">Sitemap</span>
-              <svg viewBox="0 0 12 12" className="h-3 w-3 text-white/60 transition-transform group-open:rotate-45" aria-hidden="true">
-                <path d="M6 1.5v9M1.5 6h9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </summary>
-            <div className="mt-6">
-              <SitemapGrid />
-            </div>
-          </details>
-        </div>
+          {/* Column 3 — 代理店募集 & パートナー */}
+          <FooterColumn sections={COL_AGENT} />
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-[12px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-en">© 2026 Cypress Inc.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white">
+          {/* Column 4 — SEO & MEO */}
+          <FooterColumn sections={COL_SEO_MEO} />
+
+          {/* Column 4 — AIO & Web制作・AI */}
+          <FooterColumn sections={COL_AIO_AI} />
+
+          {/* Column 5 — 業種別 & 対応エリア */}
+          <FooterColumn sections={COL_INDUSTRIES} />
+
+          {/* Column 6 — コラム & お悩み別 */}
+          <FooterColumn sections={COL_COLUMN_GUIDE} />
+
+          {/* Column 7 — ナレッジ & 新業種 */}
+          <FooterColumn sections={COL_KNOWLEDGE} />
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <p
+            className="text-[12px]"
+            style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+          >
+            © 2026 株式会社サイプレス. All rights reserved.
+          </p>
+          <div className="flex items-center gap-5">
+            <Link
+              href="/privacy-policy"
+              className="text-[12px] transition-colors hover:text-[#e8e4dc]"
+              style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+            >
               プライバシーポリシー
             </Link>
-            <Link href="/sitemap" className="hover:text-white">
+            <Link
+              href="/sitemap"
+              className="text-[12px] transition-colors hover:text-[#e8e4dc]"
+              style={{ color: "#6b7a8d", fontFamily: "var(--font-sans)" }}
+            >
               サイトマップ
             </Link>
           </div>

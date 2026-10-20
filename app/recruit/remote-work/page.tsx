@@ -31,7 +31,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -65,7 +65,7 @@ export default function Page() {
                 { n: "05", t: "週1回のオンライン朝礼", b: "週1回・30分のZoom朝礼で進捗共有・相談・情報交換を行います。それ以外のコミュニケーションはSlackで非同期で行います。" },
                 { n: "06", t: "成果ベースの評価・昇給", b: "稼働時間ではなく成果を評価します。クライアントの集客成果・顧客満足度・新しいスキル習得を評価基準とした明確な昇給制度があります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #ece8e0" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -77,7 +77,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} bgColor="#f8f6f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="一緒に働きませんか" body="フルリモート・フルフレックスでWeb集客の専門家として働きたい方、ぜひお話しましょう。採用エントリーはお問い合わせフォームからどうぞ。" />
       </main>

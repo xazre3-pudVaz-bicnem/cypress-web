@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
       description: page.metaDescription,
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+      images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
       locale: "ja_JP",
       type: "website",
     },
@@ -100,7 +100,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
       />
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -111,7 +111,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#0d1b2a" }}>{page.title}</span>
             </nav>
-            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#E2E8F0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
+            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {AREA_LABEL}
             </span>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
@@ -130,7 +130,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
               {AREA_LABEL}ならではの対策ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
               {page.points.map((pt) => (
                 <div key={pt.num} style={{ background: "#ffffff", padding: "32px" }}>
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "12px" }}>{pt.num}</p>
@@ -143,7 +143,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
         </section>
 
         {/* 葛飾区の関連専門ページへの導線 */}
-        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Katsushika Services</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,24px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
@@ -159,7 +159,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E2E8F0", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

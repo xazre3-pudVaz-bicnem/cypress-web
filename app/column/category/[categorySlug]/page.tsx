@@ -194,7 +194,7 @@ export async function generateMetadata({
       description: cat.description.slice(0, 120),
       locale: "ja_JP",
       type: "website",
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+      images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
     },
   };
 }
@@ -254,7 +254,7 @@ export default async function ColumnCategoryPage({
       />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "56px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "56px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#9ca3af", textDecoration: "none" }}>ホーム</Link>
@@ -263,7 +263,7 @@ export default async function ColumnCategoryPage({
               <span style={{ margin: "0 8px" }}>/</span>
               {cat.name}
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4a96a", fontSize: "11px", marginBottom: "12px" }}>
               {cat.nameEn}
             </p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,40px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
@@ -279,7 +279,7 @@ export default async function ColumnCategoryPage({
         </section>
 
         {/* カテゴリナビ */}
-        <section style={{ borderBottom: "1px solid #E2E8F0", background: "#ffffff" }}>
+        <section style={{ borderBottom: "1px solid #ece8e0", background: "#ffffff" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ display: "flex", gap: "0", overflowX: "auto" }}>
               {COLUMN_CATEGORY_DEFS.map((c) => (
@@ -292,7 +292,7 @@ export default async function ColumnCategoryPage({
                     fontSize: "13px",
                     whiteSpace: "nowrap",
                     color: c.slug === categorySlug ? "#0d1b2a" : "#6b7280",
-                    borderBottom: c.slug === categorySlug ? "2px solid #3A9BDC" : "2px solid transparent",
+                    borderBottom: c.slug === categorySlug ? "2px solid #c4a96a" : "2px solid transparent",
                     textDecoration: "none",
                     fontWeight: c.slug === categorySlug ? 600 : 400,
                   }}
@@ -319,7 +319,7 @@ export default async function ColumnCategoryPage({
                 articles.map((article) => (
                   <article
                     key={article.slug}
-                    style={{ borderBottom: "1px solid #E2E8F0", paddingBottom: "40px", marginBottom: "40px" }}
+                    style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "40px", marginBottom: "40px" }}
                   >
                     <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                       {article.publishedAt && (
@@ -327,7 +327,7 @@ export default async function ColumnCategoryPage({
                           {article.publishedAt.replace(/-/g, ".")}
                         </time>
                       )}
-                      <span style={{ fontSize: "11px", padding: "2px 8px", background: "#EDF1F7", color: "#374151" }}>
+                      <span style={{ fontSize: "11px", padding: "2px 8px", background: "#f0ede8", color: "#374151" }}>
                         {cat.name}
                       </span>
                       {article.primaryKeyword && (
@@ -379,7 +379,7 @@ export default async function ColumnCategoryPage({
                       display: "flex",
                       justifyContent: "space-between",
                       padding: "10px 0",
-                      borderBottom: "1px solid #E2E8F0",
+                      borderBottom: "1px solid #ece8e0",
                       fontSize: "13px",
                       color: c.slug === categorySlug ? "#0d1b2a" : "#374151",
                       textDecoration: "none",
@@ -393,7 +393,7 @@ export default async function ColumnCategoryPage({
               </div>
 
               {/* 関連サービス */}
-              <div style={{ background: "#F4F6FA", padding: "24px", border: "1px solid #E2E8F0", marginBottom: "24px" }}>
+              <div style={{ background: "#f8f6f2", padding: "24px", border: "1px solid #ece8e0", marginBottom: "24px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
                   関連サービス
                 </p>
@@ -416,12 +416,12 @@ export default async function ColumnCategoryPage({
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#ffffff", fontWeight: 700, marginBottom: "10px" }}>
                   Web集客の無料相談
                 </p>
-                <p style={{ fontSize: "12px", color: "#3A9BDC", lineHeight: "1.8", marginBottom: "16px" }}>
+                <p style={{ fontSize: "12px", color: "#c4a96a", lineHeight: "1.8", marginBottom: "16px" }}>
                   {cat.name}についてご不明な点はお気軽にご相談ください。
                 </p>
                 <Link
                   href="/contact"
-                  style={{ display: "block", textAlign: "center", padding: "10px", fontSize: "13px", background: "#3A9BDC", color: "#0d1b2a", textDecoration: "none", fontWeight: 600 }}
+                  style={{ display: "block", textAlign: "center", padding: "10px", fontSize: "13px", background: "#c4a96a", color: "#0d1b2a", textDecoration: "none", fontWeight: 600 }}
                 >
                   無料相談はこちら
                 </Link>
@@ -430,14 +430,14 @@ export default async function ColumnCategoryPage({
           </div>
 
           {/* FAQ */}
-          <section style={{ marginTop: "80px", paddingTop: "64px", borderTop: "1px solid #E2E8F0" }}>
+          <section style={{ marginTop: "80px", paddingTop: "64px", borderTop: "1px solid #ece8e0" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", fontSize: "11px", color: "#9ca3af", marginBottom: "8px" }}>FAQ</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               よくある質問
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {cat.faq.map((f, i) => (
-                <div key={i} style={{ borderBottom: "1px solid #E2E8F0", paddingBottom: "28px", marginBottom: "28px" }}>
+                <div key={i} style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "28px", marginBottom: "28px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px", lineHeight: 1.5 }}>
                     Q. {f.q}
                   </p>

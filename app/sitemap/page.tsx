@@ -334,7 +334,7 @@ export default function SitemapPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -360,7 +360,7 @@ export default function SitemapPage() {
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                     {section.headingEn}
                   </p>
-                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px", paddingBottom: "8px", borderBottom: "1px solid #E2E8F0" }}>
+                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px", paddingBottom: "8px", borderBottom: "1px solid #ece8e0" }}>
                     {section.heading}
                   </h2>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
@@ -370,7 +370,7 @@ export default function SitemapPage() {
                           href={link.href}
                           style={{ fontSize: "13px", color: "#374151", textDecoration: "none", display: "flex", alignItems: "center", gap: "6px", padding: "3px 0" }}
                         >
-                          <span style={{ color: "#E2E8F0", fontSize: "10px" }}>›</span>
+                          <span style={{ color: "#ece8e0", fontSize: "10px" }}>›</span>
                           {link.label}
                         </Link>
                       </li>

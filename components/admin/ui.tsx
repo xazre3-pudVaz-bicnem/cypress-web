@@ -21,7 +21,7 @@ export function formatRate(numerator: number, denominator: number): string {
 
 export function PageHeader({ en, title, lead }: { en: string; title: string; lead: string }) {
   return (
-    <header className="rounded-2xl border border-[#E2E8F0] bg-white px-6 py-6">
+    <header className="rounded-2xl border border-[#E8E4DC] bg-white px-6 py-6">
       <p className="label-en text-[#6B7280]">{en}</p>
       <h1 className="mt-1 text-[24px]">{title}</h1>
       <p className="mt-2 text-[13px] leading-relaxed text-[#6B7280]">{lead}</p>
@@ -31,7 +31,7 @@ export function PageHeader({ en, title, lead }: { en: string; title: string; lea
 
 export function DbNotConfigured() {
   return (
-    <div className="mt-4 rounded-2xl border border-[#E2E8F0] bg-white px-6 py-6 text-[14px] leading-relaxed">
+    <div className="mt-4 rounded-2xl border border-[#E8E4DC] bg-white px-6 py-6 text-[14px] leading-relaxed">
       <p className="font-medium">データベースが未接続です。</p>
       <p className="mt-1 text-[#6B7280]">
         環境変数 DATABASE_URL を設定して再デプロイすると、会話ログの記録が始まります（docs/chatbot-setup.md）。
@@ -44,7 +44,7 @@ export function DbNotConfigured() {
 const TONE = {
   warning: "border-[#F0D9A8] bg-[#FDF6E3] text-[#7A5200]",
   good: "border-[#BFE3CF] bg-[#EEF8F2] text-[#17603A]",
-  neutral: "border-[#E2E8F0] bg-[#F4F6FA] text-[#6B7280]",
+  neutral: "border-[#E8E4DC] bg-[#F9F8F5] text-[#6B7280]",
 } as const;
 
 function Badge({ tone, children }: { tone: keyof typeof TONE; children: React.ReactNode }) {

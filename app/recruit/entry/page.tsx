@@ -23,7 +23,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -55,7 +55,7 @@ export default function Page() {
                 { n: "03", t: "カジュアル面談（オンライン・30〜60分）", b: "代表または担当者とのZoomでのカジュアル面談を行います。仕事内容・働き方・給与など疑問点を解消する場です。選考というより相互理解の場です。" },
                 { n: "04", t: "最終面接・条件確認", b: "カジュアル面談後、双方が前向きな場合に最終面接を行います。入社時期・給与・働き方の詳細を確認して内定に至ります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #ece8e0" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>

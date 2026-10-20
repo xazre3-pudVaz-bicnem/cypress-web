@@ -8,7 +8,7 @@ const PERIODS = [7, 30, 90] as const;
 
 function Tile({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <div className="rounded-2xl border border-[#E2E8F0] bg-white px-5 py-4">
+    <div className="rounded-2xl border border-[#E8E4DC] bg-white px-5 py-4">
       <p className="text-[12px] text-[#6B7280]">{label}</p>
       <p className="mt-1 text-[26px] font-medium leading-tight text-[#0d1b2a] tabular-nums">{value}</p>
       {note && <p className="mt-1 text-[11px] text-[#6B7280] tabular-nums">{note}</p>}
@@ -32,7 +32,7 @@ function Kpi({
   basis: string;
 }) {
   return (
-    <li className="rounded-2xl border border-[#E2E8F0] bg-white px-5 py-4">
+    <li className="rounded-2xl border border-[#E8E4DC] bg-white px-5 py-4">
       <p className="text-[11px] text-[#6B7280]">
         {index}｜{stage}
       </p>
@@ -61,7 +61,7 @@ function DailyChart({ data }: { data: DailyPoint[] }) {
           <span>0</span>
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex h-40 items-end gap-[2px] border-b border-[#E2E8F0]">
+          <div className="flex h-40 items-end gap-[2px] border-b border-[#E8E4DC]">
             {data.map((d) => (
               <div
                 key={d.day}
@@ -88,14 +88,14 @@ function DailyChart({ data }: { data: DailyPoint[] }) {
         <summary className="cursor-pointer">表で見る</summary>
         <table className="mt-2 w-full max-w-xs text-left tabular-nums">
           <thead>
-            <tr className="border-b border-[#E2E8F0]">
+            <tr className="border-b border-[#E8E4DC]">
               <th className="py-1 font-medium">日付</th>
               <th className="py-1 text-right font-medium">会話数</th>
             </tr>
           </thead>
           <tbody>
             {[...data].reverse().map((d) => (
-              <tr key={d.day} className="border-b border-[#EDF1F7]">
+              <tr key={d.day} className="border-b border-[#F0EDE8]">
                 <td className="py-1">{d.day}</td>
                 <td className="py-1 text-right">{d.conversations}</td>
               </tr>
@@ -147,7 +147,7 @@ export default async function AdminSummaryPage({
             className={`rounded-full border px-4 py-1.5 text-[12px] font-medium ${
               p === days
                 ? "border-[#0d1b2a] bg-[#0d1b2a] text-white"
-                : "border-[#E2E8F0] bg-white text-[#1a2332] hover:border-[#0d1b2a]"
+                : "border-[#E8E4DC] bg-white text-[#1a2332] hover:border-[#0d1b2a]"
             }`}
           >
             直近{p}日
@@ -183,18 +183,18 @@ export default async function AdminSummaryPage({
       </section>
 
       <div className="mt-6 grid gap-3 lg:grid-cols-2">
-        <section className="rounded-2xl border border-[#E2E8F0] bg-white px-6 py-5">
+        <section className="rounded-2xl border border-[#E8E4DC] bg-white px-6 py-5">
           <p className="label-en text-[#6B7280]">Loop 1</p>
           <h2 className="mt-1 text-[16px]">AIが会話を点検</h2>
           <p className="mt-2 text-[13px] leading-relaxed text-[#6B7280]">
             未チェックの会話をAIが読み、回答に問題がありそうな会話だけを拾い上げます（1回10件まで）。
           </p>
           <dl className="mt-4 grid grid-cols-2 gap-3">
-            <div className="rounded-xl bg-[#F4F6FA] px-4 py-3">
+            <div className="rounded-xl bg-[#F9F8F5] px-4 py-3">
               <dt className="text-[11px] text-[#6B7280]">未チェック</dt>
               <dd className="text-[22px] font-medium text-[#0d1b2a] tabular-nums">{s.aiUnchecked}</dd>
             </div>
-            <div className="rounded-xl bg-[#F4F6FA] px-4 py-3">
+            <div className="rounded-xl bg-[#F9F8F5] px-4 py-3">
               <dt className="text-[11px] text-[#6B7280]">人の確認を推奨</dt>
               <dd className="text-[22px] font-medium text-[#0d1b2a] tabular-nums">{s.aiNeedsReview}</dd>
             </div>
@@ -204,18 +204,18 @@ export default async function AdminSummaryPage({
           </div>
         </section>
 
-        <section className="rounded-2xl border border-[#E2E8F0] bg-white px-6 py-5">
+        <section className="rounded-2xl border border-[#E8E4DC] bg-white px-6 py-5">
           <p className="label-en text-[#6B7280]">Loop 2</p>
           <h2 className="mt-1 text-[16px]">人が確認して判定</h2>
           <p className="mt-2 text-[13px] leading-relaxed text-[#6B7280]">
             AIが拾った会話の全文を読み、良い会話か、改善が必要かを判定してメモを残します。
           </p>
           <dl className="mt-4 grid grid-cols-2 gap-3">
-            <div className="rounded-xl bg-[#F4F6FA] px-4 py-3">
+            <div className="rounded-xl bg-[#F9F8F5] px-4 py-3">
               <dt className="text-[11px] text-[#6B7280]">確認待ち</dt>
               <dd className="text-[22px] font-medium text-[#0d1b2a] tabular-nums">{s.reviewPending}</dd>
             </div>
-            <div className="rounded-xl bg-[#F4F6FA] px-4 py-3">
+            <div className="rounded-xl bg-[#F9F8F5] px-4 py-3">
               <dt className="text-[11px] text-[#6B7280]">レビュー済み</dt>
               <dd className="text-[22px] font-medium text-[#0d1b2a] tabular-nums">{s.reviewed}</dd>
             </div>
@@ -231,7 +231,7 @@ export default async function AdminSummaryPage({
         </section>
       </div>
 
-      <section className="mt-6 rounded-2xl border border-[#E2E8F0] bg-white px-6 py-5">
+      <section className="mt-6 rounded-2xl border border-[#E8E4DC] bg-white px-6 py-5">
         <h2 className="text-[16px]">日別の会話数（直近{days}日）</h2>
         <div className="mt-4">
           <DailyChart data={daily} />

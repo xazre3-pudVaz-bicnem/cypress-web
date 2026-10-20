@@ -230,7 +230,7 @@ export default function ChatGptAiTrainingPage() {
         </section>
 
         {/* ── 学ぶべきスキル ─────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Skills</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -238,12 +238,12 @@ export default function ChatGptAiTrainingPage() {
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {skills.map((item) => (
-                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
@@ -257,7 +257,7 @@ export default function ChatGptAiTrainingPage() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
               {jobUseCases.map((item) => (
-                <div key={item.role} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "22px" }}>
+                <div key={item.role} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "22px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.role}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                 </div>
@@ -267,7 +267,7 @@ export default function ChatGptAiTrainingPage() {
         </section>
 
         {/* ── カリキュラム例 ─────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Curriculum</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "18px" }}>
@@ -278,15 +278,15 @@ export default function ChatGptAiTrainingPage() {
             </p>
             <div style={{ maxWidth: "760px" }}>
               {curriculum.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
@@ -333,7 +333,7 @@ export default function ChatGptAiTrainingPage() {
           </div>
         </section>
 
-        <SubsidyDisclaimer bgColor="#F4F6FA" />
+        <SubsidyDisclaimer bgColor="#f8f6f2" />
 
         <FaqSection items={faqItems} heading="ChatGPT・生成AI研修についてよくある質問" bgColor="#ffffff" />
 

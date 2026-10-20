@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
     description: "GoogleナレッジグラフへのエンティティとしてのGoogle認識を高めるAIO対策。Organization構造化データ・GBP連携・権威サイト掲載で企業の知名度を向上。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -372,7 +372,7 @@ export default function KnowledgeGraphPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               On This Page
@@ -390,7 +390,7 @@ export default function KnowledgeGraphPage() {
                 "ナレッジグラフ対策の効果を測定するための7つのKPIと確認方法",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -401,7 +401,7 @@ export default function KnowledgeGraphPage() {
         {/* 登録要件 (dark section) */}
         <section className="py-20" style={{ background: "#0d1b2a" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
               Requirements
             </p>
             <h2
@@ -412,9 +412,9 @@ export default function KnowledgeGraphPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6" style={{ maxWidth: "900px" }}>
               {requirementItems.map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} className="p-6" style={{ border: "1px solid rgba(196,184,154,0.2)" }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[12px] font-mono" style={{ color: "#3A9BDC" }}>{String(i + 1).padStart(2, "0")}</span>
+                    <span className="text-[12px] font-mono" style={{ color: "#c4b89a" }}>{String(i + 1).padStart(2, "0")}</span>
                     <p className="font-bold text-[14px]" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                   </div>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.body}</p>
@@ -435,7 +435,7 @@ export default function KnowledgeGraphPage() {
             </h2>
             <div className="max-w-3xl">
               {problemItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -445,13 +445,13 @@ export default function KnowledgeGraphPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Applications
@@ -461,7 +461,7 @@ export default function KnowledgeGraphPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <h3 className="font-bold text-[15px]" style={{ color: "#0F172A" }}>{item.industry}</h3>
@@ -484,7 +484,7 @@ export default function KnowledgeGraphPage() {
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
@@ -492,13 +492,13 @@ export default function KnowledgeGraphPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPI &amp; Metrics
@@ -508,7 +508,7 @@ export default function KnowledgeGraphPage() {
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -518,7 +518,7 @@ export default function KnowledgeGraphPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>

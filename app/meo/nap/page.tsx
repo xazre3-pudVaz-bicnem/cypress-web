@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "NAP統一がSEO・MEOに与える影響と、統一対象・よくある不一致パターンを解説。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/nap" },
@@ -291,7 +291,7 @@ export default function NapPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -353,7 +353,7 @@ export default function NapPage() {
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                   <span
                     className="shrink-0 font-bold text-[15px]"
-                    style={{ color: "#3A9BDC", marginTop: "2px" }}
+                    style={{ color: "#c4b89a", marginTop: "2px" }}
                   >
                     →
                   </span>
@@ -365,7 +365,7 @@ export default function NapPage() {
         </section>
 
         {/* NAPとは */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is NAP
@@ -413,7 +413,7 @@ export default function NapPage() {
             </h2>
             <div className="max-w-3xl">
               {napTargets.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -428,13 +428,13 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
@@ -447,7 +447,7 @@ export default function NapPage() {
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -462,7 +462,7 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -481,7 +481,7 @@ export default function NapPage() {
             </h2>
             <div className="max-w-3xl">
               {industryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -496,13 +496,13 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -515,7 +515,7 @@ export default function NapPage() {
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -530,7 +530,7 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -549,7 +549,7 @@ export default function NapPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -564,12 +564,12 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#F9F8F5" />
 
         <RelatedPages links={relatedLinks} />
 

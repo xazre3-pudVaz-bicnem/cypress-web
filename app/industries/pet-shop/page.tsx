@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "ペットショップ・動物病院向けWeb集客。MEO・Instagram・ホームページで新規顧客と定期利用を増やします。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/industries/pet-shop" },
@@ -183,7 +183,7 @@ export default function PetShopPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -226,7 +226,7 @@ export default function PetShopPage() {
                   desc: "ビフォーアフター写真・施術動画・来店ペット紹介でフォロワーを増やし、定期利用につなげます。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E2E8F0", textDecoration: "none", background: "#F4F6FA" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #e8e4dc", textDecoration: "none", background: "#f9f8f5" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "12px" }}>詳細を見る →</p>
@@ -236,7 +236,7 @@ export default function PetShopPage() {
           </div>
         </section>
 
-        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Why It Works</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -265,8 +265,8 @@ export default function PetShopPage() {
                   b: "かわいいペットの写真はInstagramで自然に拡散され、地域フォロワーからの集客とGoogleマップ評価の向上（訪問者増加による知名度アップ）に相乗効果が生まれます。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -278,7 +278,7 @@ export default function PetShopPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -291,8 +291,8 @@ export default function PetShopPage() {
                 { n: "03", t: "Instagramの投稿が続かず集客につながっていない", b: "かわいいペットの写真はInstagramで最も拡散されやすいコンテンツです。しかし投稿が不定期・ハッシュタグが最適化されていない・予約導線がプロフィールにない、という状態ではフォロワーが増えても集客につながりません。継続的な運用体制とプロフィール設計の最適化が必要です。" },
                 { n: "04", t: "定期利用者との接点が薄くリピートが途切れやすい", b: "トリミングは1〜2か月ごとの定期利用が理想ですが、予約の声かけ・リマインド手段がないと自然離脱が起きやすいです。LINE公式アカウントでの定期リマインド・次回予約の同時受付の声かけ・誕生日メッセージなどでペットオーナーとの関係を継続的に維持します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -306,11 +306,11 @@ export default function PetShopPage() {
         {/* サイプレスの支援 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのペットショップ・動物病院向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 トリミング」「近くの動物病院」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得フロー構築で地域の新規顧客獲得を強化します。" },
                 { label: "Instagram・SNS支援", desc: "ビフォーアフター写真の投稿計画・リール動画企画・ハッシュタグ戦略・プロフィール最適化を一括サポートします。かわいいペットコンテンツで地域フォロワーを集客に転換します。" },
@@ -327,7 +327,7 @@ export default function PetShopPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -379,8 +379,8 @@ export default function PetShopPage() {
                   b: "GBPの検索表示回数・電話タップ数・Instagramのリーチ・フォロワー数・LINE友だち登録数・ホームページ予約件数を月次でレポートします。数値をもとに施策の優先順位を継続的に見直し改善します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -434,10 +434,10 @@ export default function PetShopPage() {
                   desc: "LINE登録者からの再来店率はリテンション施策の効果を示し、長期的な売上安定性を測る指標として重要です。",
                 },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", padding: "20px 0", borderTop: "1px solid #E2E8F0", alignItems: "start" }}>
+                <div key={item.kpi} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", padding: "20px 0", borderTop: "1px solid #e8e4dc", alignItems: "start" }}>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -449,7 +449,7 @@ export default function PetShopPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -476,8 +476,8 @@ export default function PetShopPage() {
                   b: "個人経営のトリミングサロンや小規模動物病院でも無理なく始められる段階的な施策提案を行います。まずGBP整備と口コミ獲得から始め、成果を確認しながらSNS運用・ホームページ改善へと展開するプランも対応可能です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ borderTop: "1px solid rgba(58,155,220,0.3)", paddingTop: "24px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
+                <div key={item.n} style={{ borderTop: "1px solid rgba(196,184,154,0.3)", paddingTop: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "10px", letterSpacing: "0.15em" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "12px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -487,7 +487,7 @@ export default function PetShopPage() {
         </section>
 
         {/* 対応エリア */}
-        <section style={{ background: "#F4F6FA", padding: "48px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "48px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Service Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,26px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>対応エリア</h2>

@@ -162,7 +162,7 @@ export default function ProfessionalServiceIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -205,11 +205,11 @@ export default function ProfessionalServiceIndustryPage() {
         {/* 集客課題 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               士業・専門家サービスが抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(58,155,220,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(196,184,154,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -233,7 +233,7 @@ export default function ProfessionalServiceIndustryPage() {
                 },
               ].map((item) => (
                 <div key={item.n} style={{ background: "#0d1b2a", padding: "28px" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9CA3AF", lineHeight: "1.8" }}>{item.b}</p>
                 </div>
@@ -258,8 +258,8 @@ export default function ProfessionalServiceIndustryPage() {
                 { n: "05", t: "初回相談の敷居を下げる導線設計", b: "「30分無料相談」「メールで気軽に質問」「LINEで相談受付」など初回接触の心理的障壁を下げる施策を設置します。問い合わせフォームは入力3項目以内を目標にシンプルに設計します。" },
                 { n: "06", t: "紹介・リピートを生むデジタル関係構築", b: "メールマガジン・LINE公式アカウントで税制・法改正・最新情報を定期発信することで、既存顧客との関係を維持しつつ紹介につながる信頼を醸成します。顧問先の維持と紹介増加につながります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -271,7 +271,7 @@ export default function ProfessionalServiceIndustryPage() {
         </section>
 
         {/* SEO・AIO戦略詳細 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO / AIO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -313,7 +313,7 @@ export default function ProfessionalServiceIndustryPage() {
         </section>
 
         {/* 士業ジャンル別アプローチ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Sub Services</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
@@ -326,7 +326,7 @@ export default function ProfessionalServiceIndustryPage() {
                   { t: "弁護士・法律事務所", b: "離婚・相続・交通事故・労働問題・刑事弁護など専門分野別のページを整備します。「○○区 弁護士 無料相談」「交通事故 弁護士 ○○市」など、ユーザーが緊急性の高い場面で検索するキーワードへの対応が重要です。無料相談の予約しやすい導線設計がCV率に直結します。" },
                   { t: "司法書士・行政書士・社労士", b: "「会社設立 行政書士 ○○区」「相続登記 司法書士 ○○市」「36協定 社労士 ○○区」など手続き別・業務別のSEOキーワードでコンテンツを整備します。手続きの流れと費用目安を丁寧に掲載することで、「初めての手続き」という不安を抱えた見込み顧客の問い合わせを促進します。" },
                 ].map((item, i) => (
-                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <div key={i} style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -337,7 +337,7 @@ export default function ProfessionalServiceIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
@@ -396,8 +396,8 @@ export default function ProfessionalServiceIndustryPage() {
                   b: "Google Search ConsoleとGA4で流入キーワード・問い合わせ数・CVRを月次で確認します。順位変動・ユーザー行動データを分析し、コンテンツ改善・新規ページ追加の優先順位を継続的に見直します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -456,10 +456,10 @@ export default function ProfessionalServiceIndustryPage() {
                   desc: "士業サイトでは「代表者プロフィール」「料金ページ」「FAQ」の滞在時間が長いほど信頼形成が進んでいるサインです。離脱の多いページを特定して改善します。",
                 },
               ].map((kpi, i) => (
-                <div key={i} style={{ display: "flex", flexDirection: "column", gap: "4px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", flexDirection: "column", gap: "4px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "12px", flexWrap: "wrap" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", margin: 0 }}>{kpi.name}</p>
-                    <span style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em", flexShrink: 0 }}>{kpi.where}</span>
+                    <span style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em", flexShrink: 0 }}>{kpi.where}</span>
                   </div>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", margin: 0 }}>{kpi.desc}</p>
                 </div>
@@ -471,7 +471,7 @@ export default function ProfessionalServiceIndustryPage() {
         {/* サイプレスに依頼するメリット */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -494,9 +494,9 @@ export default function ProfessionalServiceIndustryPage() {
                   b: "GBP口コミ件数・検索順位・問い合わせ数・CVRをまとめた月次レポートを提供します。施策の効果を数値で確認しながら、次月の優先施策を一緒に決定するサポート体制を整えています。",
                 },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -506,7 +506,7 @@ export default function ProfessionalServiceIndustryPage() {
         {/* サイプレスができること */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               士業・専門家サービス向けにサイプレスができること
             </h2>
@@ -517,16 +517,16 @@ export default function ProfessionalServiceIndustryPage() {
                 { t: "コンテンツSEO・専門記事制作", b: "「○○区 税理士 個人事業主」「相続 手続き ○○市 費用」など顧客が検索するキーワードに対応した専門コンテンツを企画・制作します。月次の記事制作から構造化データ実装まで対応します。" },
                 { t: "MEO対策・口コミ管理", b: "地域名での検索でGoogleマップ上位に表示される事務所を目指します。既存顧客からの口コミ獲得フロー設計・全口コミへの返信文面作成・GBP最適化を一括してサポートします。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(58,155,220,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#3A9BDC", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="士業・専門家サービスのWeb集客に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="士業・専門家サービスのWeb集客に関するよくある質問" bgColor="#f9f8f5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="士業・専門家サービスのWeb集客ご相談"

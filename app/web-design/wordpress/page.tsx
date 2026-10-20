@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "WordPress制作・カスタマイズの専門ガイド。テーマ選定・セキュリティ・高速化・SEO設定まで解説。業種別の活用ポイントと制作フローも紹介。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/web-design/wordpress" },
@@ -185,7 +185,7 @@ export default function WordpressPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -200,12 +200,12 @@ export default function WordpressPage() {
                 "制作後に成果を確認するための具体的なKPI指標",
                 "セキュリティ・速度・SEOを同時に満たすWordPress構築の考え方",
               ].map((text, i) => (
-                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #E2E8F0" }}>
-                  <span className="shrink-0 font-bold text-[14px]" style={{ color: "#3A9BDC" }}>→</span>
+                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="shrink-0 font-bold text-[14px]" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -260,7 +260,7 @@ export default function WordpressPage() {
                   body: "表示速度とセキュリティの限界を感じてヘッドレス構成への移行を検討するケースが増えています。コンテンツの移行先選定・URL引き継ぎ・開発コストの試算をご相談ベースで進めることが可能です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -268,13 +268,13 @@ export default function WordpressPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* WordPress制作の特徴（existing, moved after Section B) */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Features</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -289,7 +289,7 @@ export default function WordpressPage() {
                 { title: "担当者向けの操作マニュアル", body: "制作完了後、自社スタッフが更新できるよう操作マニュアルをご提供します。記事の追加・修正方法・画像のアップロード方法などを図解で説明します。" },
                 { title: "月次保守プランのご提供", body: "WordPressコア・テーマ・プラグインの月次アップデート、定期バックアップ、セキュリティ監視を行う月次保守プランを提供しています。更新漏れによるセキュリティリスクを防ぎます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -297,7 +297,7 @@ export default function WordpressPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -309,7 +309,7 @@ export default function WordpressPage() {
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#E8E4DC" }}>
               {[
                 {
                   industry: "飲食店",
@@ -353,7 +353,7 @@ export default function WordpressPage() {
                 },
               ].map((item, i) => (
                 <div key={i} style={{ background: "#FFFFFF", padding: "28px 24px" }}>
-                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#3A9BDC" }}>{item.industry}</p>
+                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#c4b89a" }}>{item.industry}</p>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.point}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
@@ -363,7 +363,7 @@ export default function WordpressPage() {
         </section>
 
         {/* Section D: 制作・実装フロー */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Production Flow</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -412,7 +412,7 @@ export default function WordpressPage() {
                   body: "本番環境への移行・DNS切り替え後、担当者向けに管理画面の操作説明（オンライン60分）と操作マニュアル（PDF）をご提供します。納品後のフォロー期間（30日間）も設けています。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -420,7 +420,7 @@ export default function WordpressPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -467,7 +467,7 @@ export default function WordpressPage() {
                   detail: "GA4のコンバージョン設定（フォーム送信・電話タップ・LINE遷移）で月次のCV数を計測します。WordPressのContact Form 7やWPFormsと連携したトラッキングを設定します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
@@ -475,7 +475,7 @@ export default function WordpressPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -483,7 +483,7 @@ export default function WordpressPage() {
         {/* Common Mistakes (dark section, preserved from original) */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Common Mistakes</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Common Mistakes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               WordPress制作で失敗する4つのよくあるミス
             </h2>
@@ -494,7 +494,7 @@ export default function WordpressPage() {
                 { t: "セキュリティ設定を後回しにする", b: "WordPressは世界シェアが高いためサイバー攻撃のターゲットになりやすいです。ログインURL変更・2段階認証・定期バックアップなどの設定を最初から行う必要があります。" },
                 { t: "SSL・キャッシュ・CDNを設定しない", b: "HTTPS化・ブラウザキャッシュ・CDN設定をしないままでは表示速度が遅くSEO評価も低くなります。これらはWordPressでの標準的な設定として最初から行うべき項目です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -503,7 +503,7 @@ export default function WordpressPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="WordPress制作についてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="WordPress制作についてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="WordPress制作のご相談"

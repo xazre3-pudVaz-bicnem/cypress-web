@@ -57,7 +57,7 @@ export default async function AdminConversationsPage({
             className={`rounded-full border px-4 py-1.5 text-[12px] font-medium ${
               f.value === filter
                 ? "border-[#0d1b2a] bg-[#0d1b2a] text-white"
-                : "border-[#E2E8F0] bg-white text-[#1a2332] hover:border-[#0d1b2a]"
+                : "border-[#E8E4DC] bg-white text-[#1a2332] hover:border-[#0d1b2a]"
             }`}
           >
             {f.label}
@@ -66,7 +66,7 @@ export default async function AdminConversationsPage({
       </div>
 
       {conversations.length === 0 ? (
-        <p className="mt-4 rounded-2xl border border-[#E2E8F0] bg-white px-6 py-8 text-center text-[13px] text-[#6B7280]">
+        <p className="mt-4 rounded-2xl border border-[#E8E4DC] bg-white px-6 py-8 text-center text-[13px] text-[#6B7280]">
           該当する会話はありません。
         </p>
       ) : (
@@ -75,7 +75,7 @@ export default async function AdminConversationsPage({
             <li key={c.id}>
               <Link
                 href={`/admin/conversations/${c.id}`}
-                className="block rounded-2xl border border-[#E2E8F0] bg-white px-5 py-4 transition-colors hover:border-[#0d1b2a]"
+                className="block rounded-2xl border border-[#E8E4DC] bg-white px-5 py-4 transition-colors hover:border-[#0d1b2a]"
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <AiVerdictBadge verdict={c.ai_verdict} />

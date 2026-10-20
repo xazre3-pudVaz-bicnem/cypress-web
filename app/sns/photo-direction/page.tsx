@@ -87,7 +87,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -135,8 +135,8 @@ export default function Page() {
                 "写真品質改善後の効果測定に使うKPI（保存率・エンゲージメント率・フォロワー増加率等）の見方",
                 "撮影スケジュールの組み方・素材ストック計画・定期ビジュアル見直しのPDCAサイクル設計",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "16px", flexShrink: 0, lineHeight: 1.6 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", flexShrink: 0, lineHeight: 1.6 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -147,7 +147,7 @@ export default function Page() {
         {/* Dark section: 写真品質が集客に与える影響 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Visual Impact</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Visual Impact</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SNS写真の品質が集客に与える4つの影響
             </h2>
@@ -158,7 +158,7 @@ export default function Page() {
                 { t: "ブランドイメージが伝わらない", b: "写真のカラートーン・スタイリング・雰囲気がバラバラだと「どんなお店・サービスか」が伝わりません。一貫したビジュアルこそがブランドを作り指名検索につながります。" },
                 { t: "プロフィールページで来店意欲が下がる", b: "予約・購入を検討しているユーザーが最終確認でプロフィールを見ます。この時点でビジュアルに魅力がないと来店・問い合わせに至りません。写真は最後のクロージングです。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -168,7 +168,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -190,7 +190,7 @@ export default function Page() {
                 { title: "写真と動画の使い分けが分からない", body: "写真は「情報・商品・ビフォーアフター」など詳細を伝えるのに適し、動画（リール）は「体験・プロセス・感情・before→after動き」を見せるのに効果的です。フィードは写真中心・リールは動画専用と役割を分けることで使い分けが明確になります。" },
                 { title: "撮影のタイミング・頻度が分からない", body: "週1回の「撮影デー」を設け、1〜2時間で10〜15枚の素材を一括撮影するストック方式が最も効率的です。毎日投稿前に撮影するやり方は継続性が低く品質も安定しません。撮影スケジュールを投稿カレンダーと連動させて計画的に管理します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
@@ -211,8 +211,8 @@ export default function Page() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
-                <div key={i} style={{ padding: "32px", background: "#F4F6FA", borderRadius: "4px", borderLeft: "3px solid #3A9BDC" }}>
-                  <p style={{ color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>POINT {String(i + 1).padStart(2, "0")}</p>
+                <div key={i} style={{ padding: "32px", background: "#F9F8F5", borderRadius: "4px", borderLeft: "3px solid #c4b89a" }}>
+                  <p style={{ color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>POINT {String(i + 1).padStart(2, "0")}</p>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>{item.title}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.85", color: "#374151" }}>{item.body}</p>
                 </div>
@@ -222,7 +222,7 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -242,7 +242,7 @@ export default function Page() {
                 { industry: "不動産", point: "物件写真は「採光・空間の広さ・使い勝手」を最大限に伝える構図が重要です。広角レンズ（スマートフォンの超広角モード）でリビングを撮影し、昼間の自然光が入る時間帯に撮影します。周辺環境（公園・駅・商業施設）の写真も物件の魅力として積極的に投稿します。" },
                 { industry: "フィットネス", point: "トレーニングシーンは「動き・力強さ・楽しさ」を捉えることが重要です。連写モードで動きのある写真を選ぶか、短い動画（リール）で実際のトレーニング内容を見せます。ビフォーアフターは会員の許可を得た上で、同じ条件（照明・服装・アングル）で撮影することで説得力が生まれます。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ padding: "28px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.industry}</p>
@@ -277,7 +277,7 @@ export default function Page() {
                 { step: "撮影スケジュール・素材ストック計画", detail: "月間投稿計画と連動した撮影スケジュールを作成します。週1回の撮影セッション（2時間）で月分の素材を一括撮影するストック方式を採用し、投稿直前に撮影するのをやめます。季節・イベントに合わせた先行撮影計画も合わせて作成します。" },
                 { step: "定期的なビジュアル見直し", detail: "3か月ごとにフィード全体を見直し、カラートーン・撮影スタイル・エンゲージメントの高い写真パターンを分析します。保存率の高い写真タイプを増やし・低い写真タイプを改善するPDCAを回します。季節の変わり目はビジュアルテーマを微調整します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", alignItems: "flex-start", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.step}</p>
@@ -290,7 +290,7 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -309,12 +309,12 @@ export default function Page() {
                 { kpi: "フィード統一感スコア（主観評価）", where: "月1回、プロフィールを客観的に見て5段階評価", note: "外部の目（スタッフ・知人・支援会社）で統一感を評価する定性指標。カラートーン・構図スタイル・雰囲気のバラつきをチェックする。" },
                 { kpi: "ウェブサイトタップ数", where: "Instagram インサイト → プロフィール → リンクタップ", note: "魅力的なプロフィール写真がウェブ流入・予約・問い合わせへの導線になっているかを確認する最終的な集客指標。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E2E8F0" }}>
+                <div key={i} style={{ padding: "24px", background: "#FFFFFF", borderRadius: "4px", border: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "10px" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.kpi}</p>
                   </div>
-                  <p style={{ fontSize: "11px", color: "#3A9BDC", marginBottom: "8px", paddingLeft: "28px" }}>{item.where}</p>
+                  <p style={{ fontSize: "11px", color: "#c4b89a", marginBottom: "8px", paddingLeft: "28px" }}>{item.where}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8", paddingLeft: "28px" }}>{item.note}</p>
                 </div>
               ))}

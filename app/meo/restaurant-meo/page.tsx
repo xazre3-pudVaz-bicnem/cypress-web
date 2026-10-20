@@ -138,7 +138,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -187,7 +187,7 @@ export default function Page() {
                 "飲食店特有のFAQ20問——現場でよく出る疑問に全て答えます",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "16px", lineHeight: "1.7", flexShrink: 0 }}>→</span>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.7", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -198,7 +198,7 @@ export default function Page() {
         {/* Dark challenges block */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Restaurant MEO Challenges</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Restaurant MEO Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               飲食店がGoogleマップ対策を怠ると失う4つの機会
             </h2>
@@ -209,7 +209,7 @@ export default function Page() {
                 { t: "口コミ放置でブランド毀損が続く", b: "悪い口コミへの返信がない飲食店は「クレームに誠実に対応しない店」という印象を与えます。全口コミへの丁寧な返信が信頼と再来店につながります。" },
                 { t: "誤情報が来客機会を妨げる", b: "営業時間・定休日・メニュー・電話番号がGBPで正しく更新されていないと、来たかったのに閉まっていた・電話がつながらないというネガティブ体験を生みます。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -219,7 +219,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -271,7 +271,7 @@ export default function Page() {
                   b: "店名・住所・電話番号（NAP情報）が食べログ・ホットペッパー・自社サイト・GBPで異なると、Googleが情報の信頼性を低く評価します。全プラットフォームでNAP情報を統一することがMEO強化の基本です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -293,7 +293,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               飲食店のMEO対策は業態によって重要なポイントが異なります。自店舗の業態に合った最適化を行うことで、ターゲットユーザーへの訴求力が高まります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0", border: "1px solid #E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E8E4DC", border: "1px solid #E8E4DC" }}>
               {[
                 {
                   type: "ラーメン店",
@@ -338,7 +338,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -390,7 +390,7 @@ export default function Page() {
                   b: "GBPインサイトで検索クエリ・クリック数・ルート案内リクエスト・電話タップ数を月次で確認します。前月比で改善した指標・悪化した指標を把握し、次の施策に反映します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
@@ -422,11 +422,11 @@ export default function Page() {
                 { n: "06", t: "最新情報投稿クリック数", where: "計測場所：GBP各投稿の「詳細を表示」クリック数", b: "投稿（最新情報）のクリック数はコンテンツの訴求力を測る指標です。写真の有無・キャッチコピーによってクリック率が変わります。" },
                 { n: "07", t: "競合比較（口コミ数・写真数）", where: "計測場所：Googleマップで競合GBPを手動確認", b: "競合店舗と自店のGBPを比較し、口コミ数・写真数・更新頻度の差を把握します。差が大きい部分から優先的に改善します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.t}</p>
-                    <p style={{ fontSize: "12px", color: "#3A9BDC", marginBottom: "8px", fontStyle: "italic" }}>{item.where}</p>
+                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "8px", fontStyle: "italic" }}>{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -436,7 +436,7 @@ export default function Page() {
         </section>
 
         {/* Why MEO Matters */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why MEO Matters</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -462,7 +462,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9", maxWidth: "520px" }}>
               GBPの現状・競合との差・改善優先度を無料でお伝えします。飲食店専門のMEOコンサルタントがご対応します。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", padding: "14px 40px", background: "#0F172A", color: "#FFFFFF", fontSize: "14px", fontWeight: 600, letterSpacing: "0.08em", border: "1px solid rgba(58,155,220,0.4)", textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", padding: "14px 40px", background: "#0F172A", color: "#FFFFFF", fontSize: "14px", fontWeight: 600, letterSpacing: "0.08em", border: "1px solid rgba(196,184,154,0.4)", textDecoration: "none" }}>
               無料診断を依頼する
             </Link>
           </div>

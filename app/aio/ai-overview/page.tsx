@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Google AI Overview対策｜生成AI検索で引用されるサイトへ",
     description: "Googleの生成AI検索「AI Overview」に引用されるためのAIO対策。E-E-A-T・構造化データ・FAQ最適化で、AIが選ぶ情報源になる方法を解説。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -156,7 +156,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -211,7 +211,7 @@ export default function Page() {
                 "引用状況をモニタリングするためのKPIと計測ツール",
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <span style={{ color: "#3A9BDC", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                 </div>
               ))}
@@ -222,7 +222,7 @@ export default function Page() {
         {/* Core Conditions (dark) */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Core Conditions</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Core Conditions</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               AI Overviewに引用されるための4つの条件
             </h2>
@@ -233,7 +233,7 @@ export default function Page() {
                 { t: "FAQスキーマの実装", b: "FAQPageスキーマを実装することでQ&A形式の回答がAI Overviewの引用候補になりやすくなります。構造化データは必須です。" },
                 { t: "権威あるサイトからの被リンク", b: "業界メディアや公的機関からの言及・被リンクが引用確率を高めます。権威性の高いサイトからの評価がAI判断に影響します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -259,7 +259,7 @@ export default function Page() {
                 { n: "06", t: "ローカルクエリへの対応（GBPとWebサイトの連携）", b: "「〇〇市のMEO業者」などの地域検索でのAI Overviewには、GBPと連携したWebサイトのローカルSEO対策が重要です。" },
                 { n: "07", t: "定期的なコンテンツ更新", b: "最新性はAI Overviewへの引用可能性に影響します。記事の更新日を明記し、情報が古くなったら随時更新することが重要です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -272,7 +272,7 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -291,7 +291,7 @@ export default function Page() {
                 { n: "09", t: "コンテンツの権威性が低い", b: "業界の専門メディアや公的機関から言及・引用されていないコンテンツは権威性が低く評価されます。外部からの評価を獲得するためのコンテンツマーケティングが必要です。" },
                 { n: "10", t: "モバイル最適化不足", b: "GoogleはモバイルファーストインデックスでページをクロールするためCWVスコアの低下はページ評価全体を下げます。表示速度・レイアウトの安定性・タップ操作性の改善が必要です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -321,12 +321,12 @@ export default function Page() {
                 { n: "07", industry: "BtoB・SaaS", point: "業界知識・課題解決コンテンツ", detail: "「〇〇ツールの活用方法」「業務効率化のコツ」など課題解決型クエリでAI Overviewへの引用が見込めます。導入事例・ROIデータ・業界統計を一次情報として掲載し、権威性を確立します。" },
                 { n: "08", industry: "教育", point: "学習方法・試験対策コンテンツ", detail: "「〇〇の勉強法」「〇〇試験の合格率」など学習情報クエリで有効です。CourseスキーマとFAQPageスキーマを組み合わせ、講師の資格・合格実績をPersonスキーマで構造化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "24px", borderTop: "1px solid #E2E8F0", borderLeft: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ padding: "24px", borderTop: "1px solid #E8E4DC", borderLeft: "1px solid #E8E4DC" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{item.n}</span>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
                   </div>
-                  <p style={{ fontSize: "12px", fontWeight: 600, color: "#3A9BDC", marginBottom: "8px" }}>{item.point}</p>
+                  <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.detail}</p>
                 </div>
               ))}
@@ -335,7 +335,7 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
@@ -354,7 +354,7 @@ export default function Page() {
                 { n: "09", t: "モニタリング設定", b: "Google Search ConsoleでAI Overview関連のインプレッション・クリック・CTRを追跡します。対象キーワードの実際のAI Overview表示を定期的に確認する体制を整えます。" },
                 { n: "10", t: "定期見直しとPDCA", b: "月次でコンテンツのパフォーマンスを評価し、引用されていないページの改善を継続します。Googleのアルゴリズム変動に合わせて対策内容を柔軟に見直します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
@@ -383,12 +383,12 @@ export default function Page() {
                 { n: "06", t: "コンテンツの引用可能性スコア", where: "専用AIOツール", b: "回答型ライティング・E-E-A-T情報・構造化データの充足度を定量的に評価するAIO診断ツールのスコアを定期的に確認します。" },
                 { n: "07", t: "月間オーガニック流入数", where: "Google Analytics", b: "AI Overview対策の最終的なビジネス成果としてオーガニック流入数の推移を追跡します。AI Overview引用が増えた時期との流入数の相関を分析します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "4px", flexWrap: "wrap" }}>
                       <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a" }}>{item.t}</p>
-                      <span style={{ fontSize: "11px", color: "#3A9BDC", fontWeight: 600, letterSpacing: "0.05em" }}>{item.where}</span>
+                      <span style={{ fontSize: "11px", color: "#c4b89a", fontWeight: 600, letterSpacing: "0.05em" }}>{item.where}</span>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -401,7 +401,7 @@ export default function Page() {
         {/* Service Features */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#3A9BDC" }}>Why Choose Us</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why Choose Us</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "12px" }}>
               サイプレスのAI Overview対策サービス
             </h2>
@@ -435,7 +435,7 @@ export default function Page() {
                   b: "Googleのアルゴリズム変動・AI Overview仕様変更に合わせて対策内容を柔軟に更新します。業界最新情報のキャッチアップと継続的な改善提案で成果を維持します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.72)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -462,14 +462,14 @@ export default function Page() {
                   "FAQセクションがない・少ない",
                   "モバイル表示が最適化されていない",
                 ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
                     <span style={{ color: "#9CA3AF", fontSize: "14px", flexShrink: 0, marginTop: "2px" }}>—</span>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                   </div>
                 ))}
               </div>
               <div>
-                <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", color: "#3A9BDC", marginBottom: "16px" }}>AFTER — 対策後</p>
+                <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", color: "#c4b89a", marginBottom: "16px" }}>AFTER — 対策後</p>
                 {[
                   "対象キーワードでAI Overviewに定期的に引用",
                   "全ページにSchema.org完全実装",
@@ -478,8 +478,8 @@ export default function Page() {
                   "20問以上のFAQセクションを設置",
                   "Core Web Vitals全項目でLighthouse 90+",
                 ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E2E8F0" }}>
-                    <span style={{ color: "#3A9BDC", fontSize: "14px", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>✓</span>
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
+                    <span style={{ color: "#c4b89a", fontSize: "14px", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>✓</span>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                   </div>
                 ))}
@@ -488,7 +488,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI Overview対策のご相談"

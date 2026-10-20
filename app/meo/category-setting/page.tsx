@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "MEO順位を決定するカテゴリ設定の正しい選び方と競合分析手法を解説。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/category-setting" },
@@ -290,7 +290,7 @@ export default function CategorySettingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F4F6FA" }}>
+        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -352,7 +352,7 @@ export default function CategorySettingPage() {
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                   <span
                     className="shrink-0 font-bold text-[15px]"
-                    style={{ color: "#3A9BDC", marginTop: "2px" }}
+                    style={{ color: "#c4b89a", marginTop: "2px" }}
                   >
                     →
                   </span>
@@ -364,7 +364,7 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ設定がMEOに与える影響 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Impact on MEO
@@ -425,7 +425,7 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ選定のポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Selection Guide
@@ -438,7 +438,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {categoryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -453,7 +453,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -472,7 +472,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -487,13 +487,13 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
@@ -506,7 +506,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {industryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -521,7 +521,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -540,7 +540,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -555,13 +555,13 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs to Track
@@ -574,7 +574,7 @@ export default function CategorySettingPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
@@ -589,7 +589,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>

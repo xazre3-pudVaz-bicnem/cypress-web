@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "組織全体のAI活用戦略と段階的な導入計画の設計方法を解説。AIワークフロー設計から効果測定まで体系的にご支援します。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/ai/workflow" },
@@ -168,7 +168,7 @@ export default function WorkflowPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -183,8 +183,8 @@ export default function WorkflowPage() {
                 "AI活用の成果を数値で示すための7つのKPIと、どこで計測するか",
                 "AI活用を属人化させず組織の競争力に変えるための体制・仕組みの作り方",
               ].map((text, i) => (
-                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E2E8F0" }}>
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#3A9BDC" }}>→</span>
+                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -202,7 +202,7 @@ export default function WorkflowPage() {
             <div className="max-w-5xl overflow-x-auto">
               <table className="w-full text-[13px]">
                 <thead>
-                  <tr style={{ borderBottom: "2px solid #E2E8F0" }}>
+                  <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
                     <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>ツール</th>
                     <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>使いやすさ</th>
                     <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>費用</th>
@@ -216,7 +216,7 @@ export default function WorkflowPage() {
                     { tool: "n8n（クラウド）", ease: "★★★☆☆", cost: "月額$20〜", use: "AIエージェント・カスタム処理・柔軟な設計" },
                     { tool: "n8n（セルフホスト）", ease: "★★☆☆☆（技術知識が必要）", cost: "ホスティング費のみ（実質ほぼ無料）", use: "機密データの管理・完全カスタム・大規模処理" },
                   ].map((row, i) => (
-                    <tr key={i} style={{ borderBottom: "1px solid #E2E8F0" }}>
+                    <tr key={i} style={{ borderBottom: "1px solid #E8E4DC" }}>
                       <td className="py-4 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>{row.tool}</td>
                       <td className="py-4 pr-6" style={{ color: "#374151" }}>{row.ease}</td>
                       <td className="py-4 pr-6" style={{ color: "#374151" }}>{row.cost}</td>
@@ -230,7 +230,7 @@ export default function WorkflowPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -279,7 +279,7 @@ export default function WorkflowPage() {
                   body: "AI活用は一度導入したら終わりではなく、モデルの進化・業務変化・組織拡大に合わせた継続的な見直しが必要です。月次レビュー・四半期振り返り・年次戦略更新の3層サイクルを設計することで、AI活用を組織の持続的競争力に変えられます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -305,7 +305,7 @@ export default function WorkflowPage() {
                 { title: "月次SEOレポート自動作成", flow: "GSC・GA4 API → データ集計 → GPTで分析コメント生成 → Notionページに自動出力" },
                 { title: "SNS投稿バリエーション生成", flow: "コアメッセージ入力 → ChatGPTで5バリエーション生成 → 担当者がレビュー → Buffer/Hootsuite自動投稿" },
               ].map((item, i) => (
-                <div key={i} className="p-5 rounded" style={{ background: "#F4F6FA", border: "1px solid #E2E8F0" }}>
+                <div key={i} className="p-5 rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
                   <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{item.flow}</p>
                 </div>
@@ -315,7 +315,7 @@ export default function WorkflowPage() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Applications</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -364,12 +364,12 @@ export default function WorkflowPage() {
                   detail: "曜日・天候・イベントデータをもとにAIが食材発注量を推薦し、廃棄ロスを削減。過去の来店データと申請状況からシフトの最適案をAIが生成し、LINEやInstagramのコメント・DM対応をチャットボットで自動化します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <div className="flex items-baseline gap-3 mb-2 flex-wrap">
                       <span className="font-black text-[15px]" style={{ color: "#0d1b2a" }}>{item.industry}</span>
-                      <span className="text-[12px] font-semibold" style={{ color: "#3A9BDC" }}>{item.point}</span>
+                      <span className="text-[12px] font-semibold" style={{ color: "#c4b89a" }}>{item.point}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
@@ -429,7 +429,7 @@ export default function WorkflowPage() {
                   detail: "パイロット成功業務で培ったノウハウ・ガイドライン・研修プログラムを横展開し、Phase 2・Phase 3のロードマップに従って対象業務・対象部門を拡大します。社内AI推進チームの育成も並行して進めます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</p>
@@ -442,7 +442,7 @@ export default function WorkflowPage() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI & Metrics</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -486,12 +486,12 @@ export default function WorkflowPage() {
                   detail: "AI活用拡大のための経営層への提案が承認された割合。ROI算出の精度・説明資料の質を反映する指標で、承認率が上がるほど組織のAI活用が加速します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div className="flex-1">
                     <div className="flex items-start justify-between gap-4 flex-wrap mb-2">
                       <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                      <p className="text-[12px] shrink-0" style={{ color: "#3A9BDC" }}>計測場所：{item.where}</p>
+                      <p className="text-[12px] shrink-0" style={{ color: "#c4b89a" }}>計測場所：{item.where}</p>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>

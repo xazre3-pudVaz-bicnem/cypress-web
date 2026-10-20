@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "SEOキーワード調査の実践ガイド。検索意図の分析から対策キーワードの選定まで解説。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/seo/keyword-research" },
@@ -171,7 +171,7 @@ export default function KeywordResearchPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -186,7 +186,7 @@ export default function KeywordResearchPage() {
                 { title: "トピッククラスター戦略によるサイト設計", body: "ピラーページとクラスターページを内部リンクで結ぶサイロ構造の作り方と、テーマ全体の専門性をGoogleに示す戦略的なサイト設計を理解できます。" },
                 { title: "Search Consoleを使った継続的なキーワード改善", body: "Google Search Consoleの「検索パフォーマンス」レポートを活用した、既存コンテンツの改善・機会キーワードの発見・カニバリゼーションの検出方法を習得できます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -194,7 +194,7 @@ export default function KeywordResearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -202,7 +202,7 @@ export default function KeywordResearchPage() {
         {/* キーワード調査なしのリスク */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Keyword Risks</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Keyword Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               キーワード調査なしのSEO施策が抱える4つのリスク
             </h2>
@@ -213,7 +213,7 @@ export default function KeywordResearchPage() {
                 { t: "競合に勝てないキーワードを狙い続ける", b: "大企業が上位を独占しているキーワードで戦っても成果は出ません。競合難易度（KD）を確認し、競合の弱いニッチキーワードや地域+業種の組み合わせから攻めることが中小企業のSEO戦略の基本です。" },
                 { t: "コンテンツを量産しても成果がゼロ", b: "方向性が間違ったまま記事を増やし続けても、キーワードが分散し評価が積み上がりません。調査に基づいたキーワード設計なしの量産は、リソースのムダになるだけでなく、サイトの評価を下げる可能性もあります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(58,155,220,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -223,7 +223,7 @@ export default function KeywordResearchPage() {
         </section>
 
         {/* キーワードの種類 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Keyword Types</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -238,7 +238,7 @@ export default function KeywordResearchPage() {
                 { type: "比較・検討型（Compare）", volume: "「〜おすすめ」「〜比較」", desc: "購入・契約前の比較検討段階のキーワード。CV率が高く重要。自社の強みと比較ポイントを明確にしたコンテンツが効果的。「〇〇 vs 〇〇」「〇〇の選び方」形式のページが検索意図に合致しやすい。" },
                 { type: "購買・問い合わせ型（Buy/Go）", volume: "「〜依頼」「〜料金」「〜見積もり」", desc: "購入・問い合わせに直結するキーワード。検索ボリュームは小さいが最もCV率が高い。サービスページ・料金ページに対応させる。このキーワードを持つページのCTAとフォームを最適化することがCV改善の最短経路。" },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <div className="flex items-start gap-4 mb-2">
                     <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.type}</p>
                     <span className="text-[11px] shrink-0 mt-0.5 px-2 py-0.5 rounded" style={{ background: "#F0EDE7", color: "#6B7280" }}>{item.volume}</span>
@@ -246,7 +246,7 @@ export default function KeywordResearchPage() {
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -270,7 +270,7 @@ export default function KeywordResearchPage() {
                 { title: "Search Consoleのデータを活用できていない", body: "Search ConsoleにはサイトへのリアルなGoogleからの流入データが蓄積されています。掲載順位が11〜20位のキーワード（2ページ目相当）は少し改善するだけで1ページ目に上がれる「ネクストキーワード」であり、優先的に強化すべき対象です。このデータを見ていない会社が多いです。" },
                 { title: "ユーザー目線でなく自社目線でキーワードを選んでいる", body: "「我々の強みはXXです」という自社目線のキーワードではなく、「ユーザーが何を検索しているか」の視点でキーワードを選ぶことが重要です。ターゲット顧客が普段使う言葉・悩みの表現を実際のインタビューやSearch Consoleデータから収集することが正確なキーワード調査の基礎です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -278,13 +278,13 @@ export default function KeywordResearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -328,7 +328,7 @@ export default function KeywordResearchPage() {
                   points: "「資格名＋取り方」「〜通信講座 おすすめ」「地域名＋〜スクール 社会人」などの情報収集型から問い合わせ型まで段階的に設計する。「〜合格率 比較」「〜費用 比較」などの比較キーワードが検討段階のユーザーを獲得するのに有効。無料体験・説明会関連キーワードは問い合わせ直結のため優先度を高く設定する。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+                <div key={i} className="p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#0d1b2a" }}>{item.industry}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.points}</p>
                 </div>
@@ -357,7 +357,7 @@ export default function KeywordResearchPage() {
                 { title: "Step 9：Search Consoleで「ネクストキーワード」を発見する", body: "Search Consoleで掲載順位が11〜20位のキーワード（2ページ目相当）を抽出します。これらは「もう少し改善すれば1ページ目に入れる」キーワードです。該当ページのコンテンツを拡充・改善することが、最短でオーガニック流入を増やせる施策です。月次でこのリストを確認します。" },
                 { title: "Step 10：3ヶ月ごとにキーワードマップを更新する", body: "キーワードの検索ボリューム・競合状況・自サイトの掲載順位は常に変化します。3ヶ月ごとにAhrefsとSearch Consoleのデータを更新し、キーワードマップを見直します。新しく台頭している競合・新しいトレンドキーワードの発見・成果が出たキーワードの深掘りを継続的に行うことがSEOの複利効果を生みます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
@@ -365,13 +365,13 @@ export default function KeywordResearchPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* トピッククラスター戦略 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Strategy</p>
             <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
@@ -380,11 +380,11 @@ export default function KeywordResearchPage() {
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
               キーワードを孤立させずに「テーマ群（クラスター）」として設計することで、サイト全体としての専門性をGoogleに示すことができます。ピラーページ（主要テーマ）とクラスターページ（関連テーマ）を内部リンクで結ぶサイロ構造がSEOの基本です。単独ページでの上位表示が難しいビッグキーワードも、クラスター全体の権威性が高まることで上位表示しやすくなります。
             </p>
-            <div className="max-w-3xl p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+            <div className="max-w-3xl p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
               <p className="font-bold text-[14px] mb-4" style={{ color: "#0d1b2a" }}>例：MEO対策のトピッククラスター</p>
               <div className="space-y-2 text-[13px]" style={{ color: "#374151" }}>
                 <p className="font-bold" style={{ color: "#0d1b2a" }}>ピラーページ：/meo（MEO対策とは）</p>
-                <div className="pl-4 space-y-1" style={{ borderLeft: "2px solid #E2E8F0" }}>
+                <div className="pl-4 space-y-1" style={{ borderLeft: "2px solid #E8E4DC" }}>
                   <p>→ /meo/google-business-profile（Googleビジネスプロフィールの最適化）</p>
                   <p>→ /meo/ranking（MEO上位表示の方法）</p>
                   <p>→ /meo/review-strategy（口コミ獲得戦略）</p>
@@ -452,9 +452,9 @@ export default function KeywordResearchPage() {
                   detail: "前月と比較して新たに流入を獲得したキーワード数を確認します。これが増加し続けていればコンテンツが正常に評価・展開されていることの証です。期間比較レポートで簡単に確認できます。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid #E2E8F0", borderRadius: "6px" }}>
+                <div key={i} className="p-6" style={{ border: "1px solid #E8E4DC", borderRadius: "6px" }}>
                   <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                  <p className="text-[11px] font-semibold mb-3" style={{ color: "#3A9BDC" }}>{item.where}</p>
+                  <p className="text-[11px] font-semibold mb-3" style={{ color: "#c4b89a" }}>{item.where}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
               ))}
@@ -462,7 +462,7 @@ export default function KeywordResearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="キーワード調査・SEO戦略のご相談"

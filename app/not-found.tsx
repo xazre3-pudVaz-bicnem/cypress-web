@@ -21,7 +21,7 @@ export default function NotFound() {
           <div className="max-w-6xl mx-auto px-6 text-center">
             <p
               className="font-mono font-black mb-6"
-              style={{ fontSize: "clamp(72px, 12vw, 140px)", color: "#E2E8F0", lineHeight: 1 }}
+              style={{ fontSize: "clamp(72px, 12vw, 140px)", color: "#E8E4DC", lineHeight: 1 }}
             >
               404
             </p>

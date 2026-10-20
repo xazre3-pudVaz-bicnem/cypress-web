@@ -65,7 +65,7 @@ export const INDUSTRY_LABELS: Record<string, string> = {
 export const SERVICE_BADGE_COLORS: Record<string, string> = {
   "ホームページ制作": "#6AC48B",
   "ランディングページ": "#6AC48B",
-  "MEO対策": "#3A9BDC",
+  "MEO対策": "#C4A96A",
   "SEO対策": "#6A9CC4",
   "AIO対策": "#9C6AC4",
   "SNS運用": "#C46A9C",

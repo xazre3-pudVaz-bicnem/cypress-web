@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "MEO・SNS・ウェブサイトを組み合わせた実店舗集客マーケティングの全体設計をわかりやすく解説します。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/meo/store-marketing" },
@@ -377,7 +377,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
@@ -398,7 +398,7 @@ export default function StoreMarketingPage() {
                 "よくある失敗パターンと、各施策が成果につながるための設計の考え方",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "#3A9BDC" }}>→</span>
+                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "#c4b89a" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -441,7 +441,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* 来店導線の最適化 */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Visit Optimization
@@ -454,7 +454,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {visitMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -464,7 +464,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -483,7 +483,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {challenges.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -493,13 +493,13 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
@@ -512,7 +512,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {industries.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -522,7 +522,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -567,7 +567,7 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F4F6FA" }}>
+        <section className="py-20" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -580,7 +580,7 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -590,7 +590,7 @@ export default function StoreMarketingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -609,25 +609,25 @@ export default function StoreMarketingPage() {
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-1" style={{ color: "#0F172A" }}>{item.label}</h3>
-                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#3A9BDC" }}>
+                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#c4b89a" }}>
                       計測場所：{item.where}
                     </p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#F9F8F5" />
 
         <RelatedPages links={relatedLinks} />
 

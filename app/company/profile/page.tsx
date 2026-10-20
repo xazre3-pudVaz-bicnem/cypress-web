@@ -1,83 +1,149 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import BusinessCards from "@/components/shared/BusinessCards";
-import FaqSection from "@/components/shared/FaqSection";
 import PageContactCTA from "@/components/shared/PageContactCTA";
+import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
-import PageHero from "@/components/ui/PageHero";
-import { breadcrumbJsonLd, type Crumb } from "@/components/ui/Breadcrumbs";
-import { ExternalIcon } from "@/components/ui/Button";
-import { Section, SectionHeading } from "@/components/ui/Section";
-import { COMPANY, COMPANY_ADDRESS_WITH_POSTAL, COMPANY_MAP_QUERY } from "@/lib/company";
 import { CONTACT_EMAIL, CONTACT_HOURS, CONTACT_MAILTO } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
   description:
-    "株式会社サイプレスの会社概要。東京都葛飾区亀有を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社。軽貨物事業・太陽光事業も運営。代表：織田 春樹。設立：2026年5月13日。",
+    "株式会社サイプレスの会社概要。東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社。代表：織田 春樹。設立：2026年5月13日。全国対応。",
   keywords: [
     "株式会社サイプレス",
     "サイプレス 会社概要",
     "Cypress Webマーケティング",
     "会社概要",
     "葛飾区 Webマーケティング",
-    "亀有 ホームページ制作",
     "MEO対策",
     "SEO対策",
     "AIO対策",
+    "東京 ホームページ制作",
   ],
   openGraph: {
     title: "株式会社サイプレス 会社概要｜Web集客・SEO・MEO・AIO支援",
     description:
-      "株式会社サイプレスの会社概要。東京都葛飾区亀有を拠点にMEO・SEO・AIO対策、ホームページ制作を全国対応で提供するWebマーケティング会社。",
+      "株式会社サイプレスの会社概要。東京都葛飾区を拠点にMEO・SEO・AIO対策、ホームページ制作を全国対応で提供するWebマーケティング会社。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/company/profile" },
 };
 
-const CRUMBS: Crumb[] = [
-  { name: "ホーム", href: "/" },
-  { name: "会社情報", href: "/company" },
-  { name: "会社概要" },
-];
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  logo: "https://www.cypress-all.co.jp/logo.png",
+  foundingDate: "2026-05-13",
+  founder: { "@type": "Person", name: "織田 春樹" },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "JP",
+    postalCode: "125-0061",
+    addressRegion: "東京都",
+    addressLocality: "葛飾区",
+    streetAddress: "亀有3-16-14-201",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "info@cypress-all.co.jp",
+    contactType: "customer service",
+    availableLanguage: "Japanese",
+  },
+  description:
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作、SEO対策、MEO対策、AIO対策、SNS運用、AI活用支援を行うWebマーケティング会社です。中小企業・地域店舗のWeb集客を支援します。",
+  knowsAbout: [
+    "ホームページ制作", "SEO対策", "MEO対策", "AIO対策",
+    "SNS運用", "AI活用支援", "Webマーケティング",
+    "Googleビジネスプロフィール最適化", "AI検索最適化",
+  ],
+  areaServed: ["東京都", "葛飾区", "神奈川県", "埼玉県", "千葉県", "全国"],
+};
 
-const PROFILE_ROWS: { label: string; value: React.ReactNode }[] = [
-  { label: "会社名", value: `${COMPANY.name}（${COMPANY.nameEn}）` },
-  { label: "代表取締役", value: COMPANY.representative },
-  { label: "設立", value: COMPANY.founded },
-  {
-    label: "所在地",
-    value: (
-      <>
-        {COMPANY_ADDRESS_WITH_POSTAL}
-        <span className="mt-1 block text-[13.5px] text-muted">最寄り駅：{COMPANY.nearestStation}</span>
-      </>
-    ),
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "株式会社サイプレス",
+  alternateName: "Cypress",
+  url: "https://www.cypress-all.co.jp/",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "JP",
+    postalCode: "125-0061",
+    addressRegion: "東京都",
+    addressLocality: "葛飾区",
+    streetAddress: "亀有3-16-14-201",
   },
-  {
-    label: "メール",
-    value: (
-      <a href={CONTACT_MAILTO} className="text-ink underline-offset-4 hover:text-accent hover:underline">
-        {CONTACT_EMAIL}
-      </a>
-    ),
-  },
+  email: "info@cypress-all.co.jp",
+  description:
+    "株式会社サイプレスは、東京都葛飾区を拠点に、ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用・AI活用支援を行うWebマーケティング会社です。",
+  areaServed: ["東京都", "神奈川県", "埼玉県", "千葉県", "全国"],
+  serviceType: ["SEO対策", "MEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援"],
+};
+
+const PROFILE_ROWS: { label: string; value: string; href?: string }[] = [
+  { label: "会社名", value: "株式会社サイプレス" },
+  { label: "代表取締役", value: "織田 春樹" },
+  { label: "設立", value: "2026年5月13日" },
+  { label: "所在地", value: "〒125-0061 東京都葛飾区亀有3-16-14-201" },
+  { label: "メールアドレス", value: CONTACT_EMAIL, href: CONTACT_MAILTO },
   { label: "受付時間", value: CONTACT_HOURS },
   {
     label: "事業内容",
-    value: (
-      <ul className="space-y-1">
-        <li>Webマーケティング事業（MEO・SEO・AIO対策、ホームページ制作、SNS運用、AI活用支援）</li>
-        <li>軽貨物事業（軽貨物配送）</li>
-        <li>太陽光事業（住宅用太陽光発電・家庭用蓄電池の導入サポート「SOLAR SHIFT」）</li>
-      </ul>
-    ),
+    value:
+      "SEO対策・MEO対策・AIO（AI検索最適化）・Web制作・SNS運用・AI活用支援／軽貨物事業／太陽光事業（SOLAR SHIFT）",
   },
-  { label: "対応エリア", value: "東京都・神奈川県・埼玉県・千葉県（全国オンライン対応可）" },
+  {
+    label: "対応エリア",
+    value: "東京都・神奈川県・埼玉県・千葉県（全国オンライン対応可）",
+  },
+];
+
+const SERVICES = [
+  {
+    num: "01",
+    label: "MEO対策",
+    tag: "Googleマップ集客",
+    body: "Googleマップ上の表示順位を改善し、「近くの○○」検索からの来店・問い合わせを増やします。Googleビジネスプロフィールの最適化・写真・投稿・口コミ対策を包括的に支援します。飲食店・美容室・クリニック・整体院など、地域集客が重要なビジネスに特に効果的です。",
+  },
+  {
+    num: "02",
+    label: "SEO対策",
+    tag: "Google自然検索",
+    body: "Google自然検索での流入増加を目指し、内部SEO・コンテンツSEO・テクニカルSEO・被リンク対策を総合的に実施します。キーワード調査から記事制作・改善まで一気通貫で対応し、検索流入の持続的な増加を支援します。",
+  },
+  {
+    num: "03",
+    label: "AIO対策",
+    tag: "AI検索最適化",
+    body: "ChatGPT・Gemini・Perplexityなど、AI検索エンジンからの引用・回答表示を目指した情報設計を行います。E-E-A-T（経験・専門性・権威性・信頼性）の明示、FAQ整備、構造化データの実装などを通じて、AI時代の検索流入基盤を構築します。",
+  },
+  {
+    num: "04",
+    label: "Web制作",
+    tag: "ホームページ・LP",
+    body: "集客・問い合わせ・採用を目的とした設計で、表示速度・SEO・モバイル対応を兼ね備えたWebサイトを制作します。Next.js + TypeScript + Tailwind CSSによる高性能サイトから、WordPressによる運用しやすいサイトまで用途に応じて対応します。",
+  },
+  {
+    num: "05",
+    label: "SNS運用",
+    tag: "Instagram・X・LINE",
+    body: "Instagram・X・LINE公式アカウントの投稿企画・文章作成・分析・改善まで一貫して支援します。フォロワーを増やすことより、見込み顧客への認知向上と問い合わせ促進を重視した運用設計を行います。",
+  },
+  {
+    num: "06",
+    label: "AI活用支援",
+    tag: "業務効率化・自動化",
+    body: "業務効率化・チャットボット構築・コンテンツ制作自動化など、AIを活用した経営改善を伴走支援します。どのAIツールをどの業務に使うべきかの選定から、実際の導入・運用定着まで支援します。",
+  },
 ];
 
 const TOKYO_AREAS = [
@@ -85,14 +151,14 @@ const TOKYO_AREAS = [
   "台東区", "江東区", "新宿区", "渋谷区", "港区",
   "千代田区", "中央区", "品川区", "目黒区", "世田谷区",
   "杉並区", "中野区", "豊島区", "北区", "板橋区",
-  "練馬区", "文京区",
+  "練馬区", "文京区", "東京23区全域",
 ];
 
 const PREF_AREAS = [
   { pref: "神奈川県", cities: "横浜市・川崎市・相模原市・横須賀市・藤沢市 など" },
   { pref: "埼玉県", cities: "さいたま市・川口市・越谷市・川越市・所沢市 など" },
   { pref: "千葉県", cities: "千葉市・船橋市・松戸市・柏市・市川市 など" },
-  { pref: "全国", cities: "オンライン（Zoom / Google Meet）で対応" },
+  { pref: "全国対応", cities: "オンライン（Zoom / Google Meet）にて対応可" },
 ];
 
 const faqItems = [
@@ -182,122 +248,375 @@ const relatedLinks = [
   { href: "/recruit", label: "採用情報", desc: "仲間を募集しています" },
 ];
 
-// 会社そのもの（Organization）は app/layout.tsx で @id 付きで出力しているため、ここでは参照だけにする。
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "AboutPage",
-      "@id": "https://www.cypress-all.co.jp/company/profile#webpage",
-      url: "https://www.cypress-all.co.jp/company/profile",
-      name: "株式会社サイプレス 会社概要",
-      inLanguage: "ja",
-      about: { "@id": "https://www.cypress-all.co.jp/#organization" },
-    },
-    breadcrumbJsonLd(CRUMBS, "/company/profile"),
-    {
-      "@type": "FAQPage",
-      mainEntity: faqItems.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-  ],
-};
-
-export default function CompanyProfilePage() {
+export default function ProfilePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       <Header />
       <main>
-        <PageHero
-          crumbs={CRUMBS}
-          eyebrow="Company Profile"
-          title="会社概要"
-          lead="東京都葛飾区亀有を拠点に、Webマーケティング事業を中心として、軽貨物事業と太陽光事業を運営しています。"
+        {/* Hero */}
+        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
+              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <span>/</span>
+              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <span>/</span>
+              <span style={{ color: "#374151" }}>会社概要</span>
+            </nav>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              Company Profile
+            </p>
+            <h1
+              className="font-black leading-tight tracking-tight mb-8"
+              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#0F172A", fontFamily: "var(--font-serif)" }}
+            >
+              株式会社サイプレス 会社概要
+            </h1>
+            <p className="text-[15px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
+              株式会社サイプレスの基本情報一覧です。東京都葛飾区を拠点に、SEO・MEO・AIO対策・ホームページ制作・SNS運用・AI活用支援を通じて、地域中小企業のWeb集客を支援しています。
+            </p>
+          </div>
+        </section>
+
+        {/* Visual break */}
+        <section className="relative overflow-hidden w-full" style={{ height: "360px" }}>
+          <Image
+            src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
+            alt="株式会社サイプレス — ビジネスパートナーとの信頼関係"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </section>
+
+        {/* Section A: このページでわかること */}
+        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              On This Page
+            </p>
+            <h2
+              className="font-black leading-tight tracking-tight mb-10"
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+            >
+              このページでわかること
+            </h2>
+            <div className="max-w-3xl space-y-0">
+              {[
+                { num: "01", text: "株式会社サイプレスの会社名・設立・代表・所在地などの基本情報" },
+                { num: "02", text: "SEO・MEO・AIO・Web制作・SNS運用・AI活用支援の6つの事業領域の詳細" },
+                { num: "03", text: "対応エリア（東京都・神奈川・埼玉・千葉および全国オンライン対応）" },
+                { num: "04", text: "所在地・アクセス・ご来社時の注意事項" },
+                { num: "05", text: "お問い合わせ方法・料金体系・契約形態など15のよくある質問と回答" },
+                { num: "06", text: "関連ページへのリンク（サービス詳細・対応エリア・企業理念など）" },
+              ].map((item) => (
+                <div
+                  key={item.num}
+                  className="flex items-start gap-5 py-5"
+                  style={{ borderTop: "1px solid #E8E4DC" }}
+                >
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                  <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item.text}</p>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* Section B: 会社概要テーブル */}
+        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              Corporate Information
+            </p>
+            <h2
+              className="font-black leading-tight tracking-tight mb-12"
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+            >
+              基本情報
+            </h2>
+            <div className="max-w-3xl">
+              <dl>
+                {PROFILE_ROWS.map((row, i) => (
+                  <div
+                    key={row.label}
+                    className="grid grid-cols-[140px_1fr] sm:grid-cols-[200px_1fr]"
+                    style={{
+                      borderTop: "1px solid #E8E4DC",
+                      borderBottom: i === PROFILE_ROWS.length - 1 ? "1px solid #E8E4DC" : "none",
+                    }}
+                  >
+                    <dt
+                      className="py-5 pr-6 text-[14px] font-medium"
+                      style={{ color: "#6B7280", background: "#F9F8F5", borderRight: "1px solid #E8E4DC" }}
+                    >
+                      {row.label}
+                    </dt>
+                    <dd
+                      className="py-5 pl-6 text-[14px] leading-[1.8]"
+                      style={{ color: "#374151", background: "#FFFFFF" }}
+                    >
+                      {row.href ? (
+                        <a
+                          href={row.href}
+                          className="underline underline-offset-4 transition-opacity hover:opacity-60"
+                          style={{ color: "#0F172A", fontWeight: 500 }}
+                        >
+                          {row.value}
+                        </a>
+                      ) : (
+                        row.value
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <div className="mt-12 max-w-3xl">
+              <div
+                className="p-8"
+                style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+              >
+                <p className="text-[13px] font-semibold mb-3" style={{ color: "#0d1b2a" }}>会社への連絡について</p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  お問い合わせはメール（info@cypress-all.co.jp）またはお問い合わせフォームから受け付けています。通常1〜2営業日以内にご返信します。
+                </p>
+                <div className="mt-5" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 px-6 py-3 text-[13px] font-semibold"
+                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                  >
+                    お問い合わせフォームへ
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section C: 事業内容の詳細 */}
+        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              Business Areas
+            </p>
+            <h2
+              className="font-black leading-tight tracking-tight mb-4"
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+            >
+              事業内容
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-14" style={{ color: "#374151" }}>
+              サイプレスでは、Web集客に必要な6つの領域を統合的に提供しています。個別のご依頼から複数サービスの組み合わせまで、貴社の課題に合わせて柔軟に対応します。
+            </p>
+            <div className="max-w-3xl space-y-0">
+              {SERVICES.map((item) => (
+                <div
+                  key={item.num}
+                  className="py-7"
+                  style={{ borderTop: "1px solid #E8E4DC" }}
+                >
+                  <div className="flex items-start gap-6">
+                    <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
+                    <div>
+                      <div className="flex items-center gap-3 mb-2">
+                        <p className="font-black text-[16px]" style={{ color: "#0d1b2a" }}>{item.label}</p>
+                        <span
+                          className="text-[11px] font-medium px-2 py-0.5"
+                          style={{ background: "#E8E4DC", color: "#374151" }}
+                        >
+                          {item.tag}
+                        </span>
+                      </div>
+                      <p className="text-[14px] leading-[1.85]" style={{ color: "#374151" }}>{item.body}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            </div>
+
+            <div className="mt-12">
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 px-7 py-3.5 text-[13px] font-semibold"
+                style={{ background: "#0F172A", color: "#FFFFFF" }}
+              >
+                サービス一覧を見る
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Section D: 対応エリア */}
+        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              Service Area
+            </p>
+            <h2
+              className="font-black leading-tight tracking-tight mb-4"
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+            >
+              対応エリア
+            </h2>
+            <p className="text-[15px] leading-[1.9] max-w-2xl mb-14" style={{ color: "#374151" }}>
+              東京都葛飾区を拠点として、首都圏を中心に対応しています。オンライン（Zoom / Google Meet）を活用することで全国のお客様にもご支援可能です。
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl">
+              {/* 東京都内 */}
+              <div>
+                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#0d1b2a", borderBottom: "1px solid #E8E4DC" }}>
+                  東京都内（23区）
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {TOKYO_AREAS.map((area) => (
+                    <span
+                      key={area}
+                      className="text-[12px] px-2.5 py-1"
+                      style={{ background: "#F9F8F5", color: "#374151", border: "1px solid #E8E4DC" }}
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* 近隣県・全国 */}
+              <div>
+                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#0d1b2a", borderBottom: "1px solid #E8E4DC" }}>
+                  首都圏・全国対応
+                </p>
+                <div className="space-y-0">
+                  {PREF_AREAS.map((item, i) => (
+                    <div
+                      key={item.pref}
+                      className="py-4"
+                      style={{
+                        borderTop: i === 0 ? "1px solid #E8E4DC" : "none",
+                        borderBottom: "1px solid #E8E4DC",
+                      }}
+                    >
+                      <p className="text-[13px] font-semibold mb-1" style={{ color: "#0d1b2a" }}>{item.pref}</p>
+                      <p className="text-[13px]" style={{ color: "#374151" }}>{item.cities}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 p-5" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                  <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>
+                    上記以外の地域も、オンラインにて対応可能です。まずはお気軽にご相談ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section E: アクセス情報 */}
+        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
+              Access
+            </p>
+            <h2
+              className="font-black leading-tight tracking-tight mb-10"
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+            >
+              所在地・アクセス
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl items-start">
+              <div>
+                <address className="not-italic">
+                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                    <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>郵便番号</p>
+                    <p className="text-[15px]" style={{ color: "#374151" }}>〒125-0061</p>
+                  </div>
+                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                    <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>所在地</p>
+                    <p className="text-[15px]" style={{ color: "#374151" }}>東京都葛飾区亀有3-16-14-201</p>
+                  </div>
+                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                    <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>メール</p>
+                    <a
+                      href="mailto:info@cypress-all.co.jp"
+                      className="text-[15px] transition-colors hover:text-[#0F172A]"
+                      style={{ color: "#374151" }}
+                    >
+                      info@cypress-all.co.jp
+                    </a>
+                  </div>
+                  <div>
+                    <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>対応エリア</p>
+                    <p className="text-[15px]" style={{ color: "#374151" }}>東京都・神奈川・埼玉・千葉（全国オンライン対応）</p>
+                  </div>
+                </address>
+                <div className="mt-8">
+                  <a
+                    href="https://maps.google.com/?q=東京都葛飾区亀有3-16-14-201"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[13px] font-medium transition-colors hover:text-[#0F172A]"
+                    style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                  >
+                    Googleマップで確認する →
+                  </a>
+                </div>
+              </div>
+
+              <div
+                className="p-8"
+                style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}
+              >
+                <p className="text-[14px] font-semibold mb-4" style={{ color: "#0d1b2a" }}>ご来社について</p>
+                <p className="text-[14px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
+                  通常、商談・ご相談はオンライン（Zoom・Google Meet）にて対応しています。場所を選ばず、全国どこからでもご相談いただけます。
+                </p>
+                <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
+                  ご来社をご希望の場合は、事前にお問い合わせフォームよりご連絡ください。日程を調整したうえでご案内します。
+                </p>
+                <div className="mt-6" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 px-6 py-3 text-[13px] font-semibold"
+                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                  >
+                    お問い合わせ
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <FaqSection
+          items={faqItems}
+          heading="会社概要・お問い合わせについてよくある質問"
+          bgColor="#FFFFFF"
         />
 
-        <Section tone="white" className="!pt-0" labelledBy="profile-table">
-          <h2 id="profile-table" className="sr-only">
-            会社データ
-          </h2>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-12">
-            <dl className="overflow-hidden rounded-3xl border border-line">
-              {PROFILE_ROWS.map((row, i) => (
-                <div
-                  key={row.label}
-                  className={`grid gap-1 px-6 py-5 sm:grid-cols-[140px_minmax(0,1fr)] sm:gap-6 md:px-8 ${i > 0 ? "border-t border-line" : ""}`}
-                >
-                  <dt className="text-[13.5px] font-bold text-muted">{row.label}</dt>
-                  <dd className="text-[15.5px] leading-relaxed text-ink">{row.value}</dd>
-                </div>
-              ))}
-            </dl>
-
-            <div className="flex flex-col gap-4">
-              <div className="relative min-h-[320px] flex-1 overflow-hidden rounded-3xl border border-line bg-surface">
-                <iframe
-                  title="株式会社サイプレスの所在地（Googleマップ）"
-                  src={`https://www.google.com/maps?q=${COMPANY_MAP_QUERY}&output=embed`}
-                  className="absolute inset-0 h-full w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${COMPANY_MAP_QUERY}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 self-start text-[14px] font-semibold text-accent hover:text-accent-strong"
-              >
-                Googleマップで開く
-                <ExternalIcon />
-              </a>
-              <p className="text-[13.5px] leading-relaxed text-muted">
-                ご来社の際は事前にご連絡ください。通常のお打ち合わせはオンラインでも承ります。
-              </p>
-            </div>
-          </div>
-        </Section>
-
-        <Section tone="surface" labelledBy="profile-business">
-          <SectionHeading id="profile-business" eyebrow="Business" title="事業内容" />
-          <BusinessCards />
-        </Section>
-
-        <Section tone="white" labelledBy="profile-area">
-          <SectionHeading
-            id="profile-area"
-            eyebrow="Area"
-            title="対応エリア"
-            lead="東京23区は訪問でも、そのほかの地域はオンラインで対応しています。"
-          />
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div>
-              <p className="mb-4 text-[15px] font-bold text-ink">東京都</p>
-              <ul className="flex flex-wrap gap-2">
-                {TOKYO_AREAS.map((a) => (
-                  <li key={a} className="rounded-full bg-surface px-3.5 py-1.5 text-[13.5px] text-ink-2">
-                    {a}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <dl className="overflow-hidden rounded-3xl border border-line">
-              {PREF_AREAS.map((p, i) => (
-                <div key={p.pref} className={`grid gap-1 px-6 py-4 sm:grid-cols-[110px_minmax(0,1fr)] ${i > 0 ? "border-t border-line" : ""}`}>
-                  <dt className="text-[14.5px] font-bold text-ink">{p.pref}</dt>
-                  <dd className="text-[14px] text-muted">{p.cities}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </Section>
-
-        <FaqSection items={faqItems} heading="会社についてよくある質問" bgColor="#F4F6FA" initialCount={6} />
         <RelatedPages links={relatedLinks} heading="関連ページ" />
+
         <PageContactCTA />
       </main>
       <Footer />

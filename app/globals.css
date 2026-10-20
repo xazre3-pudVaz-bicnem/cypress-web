@@ -1,51 +1,58 @@
 @import "tailwindcss";
 
-/*
- * Design tokens.
- * パレットはロゴ（紺→シアンのグラデーションとグレーの菱形）から取っている。
- * 旧デザインの金・ベージュは使わない。
- */
 @theme inline {
-  --color-ink: #0b1220;
-  --color-ink-2: #1b2433;
-  --color-muted: #5a6578;
-  --color-subtle: #8b95a7;
-  --color-line: #e2e8f0;
-  --color-line-strong: #cbd5e1;
-  --color-surface: #f4f6fa;
-  --color-surface-2: #edf1f7;
-  --color-navy-950: #040b18;
-  --color-navy-900: #06142a;
-  --color-navy-800: #0b2142;
-  --color-navy-700: #12305e;
-  --color-accent: #0b78c2;
-  --color-accent-strong: #0866a8;
-  --color-accent-bright: #3a9bdc;
-  --color-cyan: #5cc8ff;
   --color-background: #ffffff;
-  --color-foreground: #1b2433;
-
-  --font-sans: var(--font-stack);
-  --font-en: var(--font-stack-en);
-  /* 旧ページのクラス名（font-serif / font-display）は残し、新しい書体に向ける */
-  --font-serif: var(--font-stack);
-  --font-display: var(--font-stack-en);
-
-  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --color-foreground: #1a2332;
+  --font-sans: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-serif: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-display: var(--font-display), Georgia, serif;
 }
 
-/*
- * 実行時に参照するフォント変数。--font-jp / --font-latin は next/font（app/layout.tsx）が設定する。
- * 旧ページのインラインスタイルが var(--font-serif) / var(--font-display) を直接参照しているため、
- * 明朝体・Cormorant を廃止した後もこの名前で新しい書体を返す。
- */
-:root {
-  --font-stack-jp: var(--font-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
-  --font-stack: var(--font-latin), var(--font-stack-jp);
-  --font-stack-en: var(--font-latin), var(--font-stack-jp);
-  --font-sans: var(--font-stack);
-  --font-serif: var(--font-stack);
-  --font-display: var(--font-stack-en);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a2332;
+  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  line-height: 1.3;
+  color: #0d1b2a;
+  letter-spacing: 0.02em;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.5;
+  color: #1a2332;
+}
+
+p, li, td, th, span, a {
+  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif !important;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif !important;
+}
+
+.label-en {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: 0.25em;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 *,
@@ -54,184 +61,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  background: #ffffff;
-  color: var(--color-ink-2);
-  font-family: var(--font-stack);
-  font-size: 16px;
-  line-height: 1.85;
-  letter-spacing: 0.02em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-stack);
-  color: var(--color-ink);
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-  /* 見出しだけ約物を詰めて、和文の太字を引き締める */
-  font-feature-settings: "palt" 1;
-  /* 文節の途中で改行しない（対応ブラウザのみ。非対応ブラウザは通常の改行） */
-  word-break: auto-phrase;
-  text-wrap: balance;
-}
-
-/* 短い説明文も文節で改行し、1文字だけの行（「る。」など）を作らない */
-.phrase {
-  word-break: auto-phrase;
-  text-wrap: pretty;
-}
-
-h1, h2, h3 {
-  line-height: 1.3;
-}
-
-::selection {
-  background: rgba(11, 120, 194, 0.18);
-}
-
-:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
-}
-
-.font-serif {
-  font-family: var(--font-stack) !important;
-}
-
-.font-display {
-  font-family: var(--font-stack-en) !important;
-}
-
-.label-en {
-  font-family: var(--font-stack-en);
-  letter-spacing: 0.18em;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-/* ── Typography utilities（新デザインの部品はこれを使う） ── */
-@utility eyebrow {
-  font-family: var(--font-stack-en);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
-@utility t-display {
-  font-size: clamp(40px, 6.4vw, 88px);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.01em;
-  font-feature-settings: "palt" 1;
-}
-
-@utility t-h1 {
-  font-size: clamp(32px, 4.8vw, 60px);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0;
-  font-feature-settings: "palt" 1;
-}
-
-@utility t-h2 {
-  font-size: clamp(26px, 3.4vw, 42px);
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0.01em;
-  font-feature-settings: "palt" 1;
-}
-
-@utility t-h3 {
-  font-size: clamp(18px, 1.6vw, 21px);
-  font-weight: 700;
-  line-height: 1.5;
-  font-feature-settings: "palt" 1;
-}
-
-@utility t-lead {
-  font-size: clamp(16px, 1.35vw, 18px);
-  line-height: 1.9;
-  word-break: auto-phrase;
-  text-wrap: pretty;
-}
-
-@utility t-num {
-  font-family: var(--font-stack-en);
-  font-feature-settings: "tnum" 1;
-  letter-spacing: -0.02em;
-}
-
-/* ── Motion ── */
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: none; }
-}
-@keyframes rise {
-  from { transform: translateY(14px); }
-  to { transform: none; }
-}
-@keyframes hero-zoom {
-  from { transform: scale(1.08); }
-  to { transform: scale(1); }
-}
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@utility anim-fade-up {
-  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-/* LCPになる見出しは透明から始めない（不透明度0の要素はLCPの計測が遅れる） */
-@utility anim-rise {
-  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-@utility anim-hero-zoom {
-  animation: hero-zoom 2.4s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-/* 数字やEN見出しに使うグラデーション文字 */
-@utility text-gradient-brand {
-  background: linear-gradient(120deg, #5cc8ff 0%, #3a9bdc 45%, #8b95a7 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
 /* Image handling utilities */
 .img-overlay-dark::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(6, 20, 42, 0.55);
+  background: rgba(13, 27, 42, 0.55);
   pointer-events: none;
 }
 
@@ -239,13 +74,13 @@ h1, h2, h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(6, 20, 42, 0.18);
+  background: rgba(13, 27, 42, 0.18);
   pointer-events: none;
 }
 
 /* Corporate section patterns */
 .section-rule {
-  border-top: 1px solid #E2E8F0;
+  border-top: 1px solid #e2ddd6;
 }
 
 .section-rule-dark {
@@ -261,7 +96,7 @@ h1, h2, h3 {
   margin-top: 48px;
   margin-bottom: 20px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px solid #ece8e0;
 }
 
 .wp-content h3 {
@@ -305,7 +140,7 @@ h1, h2, h3 {
   border-left: 3px solid #0d1b2a;
   margin: 32px 0;
   padding: 16px 24px;
-  background: #F4F6FA;
+  background: #f8f6f2;
   font-style: normal;
 }
 
@@ -324,12 +159,12 @@ h1, h2, h3 {
 
 .wp-content th, .wp-content td {
   padding: 10px 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #ece8e0;
   text-align: left;
 }
 
 .wp-content th {
-  background: #F4F6FA;
+  background: #f8f6f2;
   color: #0d1b2a;
   font-weight: 600;
 }
@@ -348,7 +183,7 @@ h1, h2, h3 {
   font-weight: 700;
   margin: 48px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px solid #ece8e0;
   line-height: 1.4;
 }
 
@@ -391,8 +226,8 @@ h1, h2, h3 {
 .blog-content blockquote {
   margin: 28px 0;
   padding: 16px 20px;
-  border-left: 3px solid #3A9BDC;
-  background: #F4F6FA;
+  border-left: 3px solid #c4a96a;
+  background: #f8f6f2;
   color: #374151;
   font-size: 14px;
   line-height: 1.85;
@@ -405,7 +240,7 @@ h1, h2, h3 {
 .blog-content hr {
   margin: 40px 0;
   border: none;
-  border-top: 1px solid #E2E8F0;
+  border-top: 1px solid #ece8e0;
 }
 
 .blog-content a {
@@ -416,7 +251,7 @@ h1, h2, h3 {
 
 .blog-content code {
   font-size: 13px;
-  background: #EDF1F7;
+  background: #f0ede8;
   padding: 2px 6px;
   border-radius: 2px;
   font-family: monospace;
@@ -424,7 +259,7 @@ h1, h2, h3 {
 
 .blog-content pre {
   background: #1a2332;
-  color: #E2E8F0;
+  color: #e8e4dc;
   padding: 20px;
   overflow-x: auto;
   margin: 28px 0;
@@ -448,12 +283,12 @@ h1, h2, h3 {
 .blog-content th,
 .blog-content td {
   padding: 10px 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #ece8e0;
   text-align: left;
 }
 
 .blog-content th {
-  background: #F4F6FA;
+  background: #f8f6f2;
   color: #0d1b2a;
   font-weight: 600;
 }

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区で創業初期に収益柱を増やす方法｜販売パートナー制度の活用",
     description: "葛飾区で創業・起業する方向けに、創業初期の収益柱づくりと、Web集客サービスを地域事業者へ紹介できる販売パートナー制度の活用方法を解説します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -79,8 +79,8 @@ const S = {
   h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" } as React.CSSProperties,
-  num: { fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
+  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
+  num: { fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
   itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" },
   itemBody: { fontSize: "14px", color: "#374151", lineHeight: "1.9" },
 };
@@ -192,7 +192,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -239,7 +239,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 3: 収益柱を複数持つメリット */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Benefits</p>
             <h2 style={S.h2}>収益柱を複数持つメリット</h2>
@@ -280,7 +280,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 5: 取次モデル */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Referral Model</p>
             <h2 style={S.h2}>Web集客サービスを紹介する取次モデル</h2>
@@ -294,7 +294,7 @@ export default function Page() {
                 { t: "専門知識不要", b: "詳細な提案・制作・運用はサイプレスが担当します。「課題感を確認して紹介する」だけでも活動できます。" },
                 { t: "資料・FAQ集の提供", b: "サービス内容・よくある質問をまとめた簡易資料を提供しています。紹介時の説明に役立てていただけます。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -318,7 +318,7 @@ export default function Page() {
                 { t: "資料提供あり", b: "サービス説明・よくある質問をまとめた資料を提供します。" },
                 { t: "成果を保証するものではない", b: "成約には商談内容・提案先の状況・タイミングが影響します。成果・収入を保証するものではありません。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -328,13 +328,13 @@ export default function Page() {
         </section>
 
         {/* SECTION 7: 向いている人 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Suitable For</p>
             <h2 style={S.h2}>向いている人</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
               {suitableItems.map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -350,7 +350,7 @@ export default function Page() {
             <h2 style={S.h2}>向いていない人</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
               {unsuitableItems.map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -360,14 +360,14 @@ export default function Page() {
         </section>
 
         {/* SECTION 9: 紹介しやすい業種 */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Target Industries</p>
             <h2 style={S.h2}>紹介しやすい業種</h2>
             <p style={S.body}>Web集客課題を持ちやすい業種への紹介活動がしやすい環境です。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px", maxWidth: "900px" }}>
               {reachableIndustries.map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px 14px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
                   <p style={{ fontSize: "12px", color: "#374151", lineHeight: "1.75" }}>{item.b}</p>
                 </div>
@@ -407,13 +407,13 @@ export default function Page() {
         </section>
 
         {/* SECTION 12: 関連ページ */}
-        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
@@ -425,7 +425,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区での収益柱づくり・販売パートナー制度についてよくある質問"
-          bgColor="#F4F6FA"
+          bgColor="#F9F8F5"
         />
 
         <PageContactCTA

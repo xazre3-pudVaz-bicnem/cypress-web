@@ -244,7 +244,7 @@ export default function WebMarketingTrainingPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "880px" }}>
               {targetCompanies.map((item) => (
-                <div key={item.title} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", padding: "24px" }}>
+                <div key={item.title} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
@@ -254,7 +254,7 @@ export default function WebMarketingTrainingPage() {
         </section>
 
         {/* ── 研修テーマ例 ───────────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Themes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "18px" }}>
@@ -265,7 +265,7 @@ export default function WebMarketingTrainingPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {themes.map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #E2E8F0", padding: "22px" }}>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "22px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -283,7 +283,7 @@ export default function WebMarketingTrainingPage() {
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {detailBlocks.map((block) => (
-                <div key={block.heading} style={{ padding: "28px 0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={block.heading} style={{ padding: "28px 0", borderTop: "1px solid #e8e4dc" }}>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>
                     {block.heading}
                   </h3>
@@ -293,13 +293,13 @@ export default function WebMarketingTrainingPage() {
                   </Link>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #e8e4dc" }} />
             </div>
           </div>
         </section>
 
         {/* ── 助成金活用の注意点 ─────────────────────────────── */}
-        <section style={{ background: "#F4F6FA", padding: "80px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Before You Apply</p>
@@ -342,7 +342,7 @@ export default function WebMarketingTrainingPage() {
 
         <SubsidyDisclaimer bgColor="#ffffff" />
 
-        <FaqSection items={faqItems} heading="Webマーケティング研修についてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="Webマーケティング研修についてよくある質問" bgColor="#f8f6f2" />
 
         <RelatedPages links={relatedLinks} heading="関連ページ" />
 

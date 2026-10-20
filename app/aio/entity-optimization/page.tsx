@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "エンティティ最適化によるナレッジグラフ登録とAI引用率向上の戦略を解説。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/aio/entity-optimization" },
@@ -335,7 +335,7 @@ export default function EntityOptimizationPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-24" style={{ background: "#F4F6FA" }}>
+        <section className="py-24" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -354,7 +354,7 @@ export default function EntityOptimizationPage() {
                   "エンティティ最適化の効果を測定するための7つのKPI",
                 ].map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px] leading-[1.8]" style={{ color: "#374151" }}>
-                    <span className="shrink-0 font-bold" style={{ color: "#3A9BDC" }}>→</span>
+                    <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
                     {point}
                   </li>
                 ))}
@@ -389,7 +389,7 @@ export default function EntityOptimizationPage() {
         </section>
 
         {/* エンティティ最適化の重要性 */}
-        <section className="py-24" style={{ background: "#F4F6FA" }}>
+        <section className="py-24" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -423,7 +423,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {CHALLENGES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
@@ -431,13 +431,13 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* エンティティ最適化の施策 */}
-        <section className="py-24" style={{ background: "#F4F6FA" }}>
+        <section className="py-24" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Key Measures
@@ -447,7 +447,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {MEASURES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
@@ -455,7 +455,7 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -471,24 +471,24 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {INDUSTRIES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.industry}</h3>
-                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0" }}>{item.point}</span>
+                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F9F8F5", color: "#c4b89a", border: "1px solid #E8E4DC" }}>{item.point}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-24" style={{ background: "#F4F6FA" }}>
+        <section className="py-24" style={{ background: "#F9F8F5" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -498,7 +498,7 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {FLOW.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.step}</h3>
@@ -506,7 +506,7 @@ export default function EntityOptimizationPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
@@ -522,23 +522,23 @@ export default function EntityOptimizationPage() {
             </h2>
             <div className="max-w-3xl">
               {KPIS.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-start gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.kpi}</h3>
-                      <span className="text-[11px] shrink-0" style={{ color: "#3A9BDC" }}>確認場所：{item.where}</span>
+                      <span className="text-[11px] shrink-0" style={{ color: "#c4b89a" }}>確認場所：{item.where}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E2E8F0" }} />
+              <div style={{ borderTop: "1px solid #E8E4DC" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#F9F8F5" />
 
         <RelatedPages links={RELATED_LINKS} />
 

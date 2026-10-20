@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "足立区のSEO対策・MEO対策・ホームページ制作｜北千住・竹ノ塚・西新井の集客支援｜株式会社サイプレス",
     description: "足立区の中小企業・店舗のSEO・MEO対策を葛飾区隣接のサイプレスが支援。北千住・竹ノ塚・西新井・綾瀬エリアへの訪問対応も迅速。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -163,7 +163,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -214,8 +214,8 @@ export default function Page() {
                 { n: "05", t: "葛飾区からの商圏重複でエリア拡大が有利", b: "足立区と葛飾区は商圏が重複するエリアが多く、葛飾区のMEO・SEO施策と連動した足立区攻略が効率的です。両区をまたいだ集客戦略により、より広い商圏からの集客が可能になります。" },
                 { n: "06", t: "Webマーケティング未着手の事業者が多い", b: "足立区の中小企業・個人事業主はWebマーケティングの活用が十分でないケースが多く見られます。Googleビジネスプロフィールを最適化するだけで大きな改善が期待できる事業者が多い、チャンスの多いエリアです。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -227,7 +227,7 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -243,8 +243,8 @@ export default function Page() {
                 { n: "03", t: "ローカルSEOのキーワード設計", b: "「足立区 〇〇」「北千住 〇〇」「竹ノ塚 〇〇」などの地域名+業種キーワードで検索上位を目指します。エリア特化のランディングページ作成・Googleビジネスプロフィールとの連携で相乗効果を生み出します。" },
                 { n: "04", t: "葛飾区×足立区の広域キーワード戦略", b: "「葛飾区・足立区で〇〇をお探しの方へ」という広域対応のコンテンツを設計することで、両区の検索ユーザーを同時に取り込む戦略も有効です。サイプレスの拠点特性を最大限に活かした施策を提供します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -270,8 +270,8 @@ export default function Page() {
                 { n: "04", t: "SNS運用支援（Instagram・LINE公式）", b: "Instagram・LINE公式アカウントの運用代行・コンサルティングを提供します。足立区の地域コミュニティを活かしたフォロワー獲得・来店促進施策を設計します。" },
                 { n: "05", t: "Web集客の総合コンサルティング", b: "MEO・SEO・ホームページ・SNSの現状分析と改善提案を、訪問または対面形式で行います。「何から始めれば良いかわからない」という方でも、優先施策を明確にしてスタートできます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -283,7 +283,7 @@ export default function Page() {
         </section>
 
         {/* Section 4: 主要スポット・地域特性 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Area</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -298,7 +298,7 @@ export default function Page() {
                 { area: "梅島・五反野", desc: "東武スカイツリーライン沿線の静かな住宅エリア。地域住民の生活密着型需要が高く、MEO・SEO競合が少ない。今から着手すれば早期に上位表示を獲得できるエリアとして注目度が高い。" },
                 { area: "六町・扇・五反野", desc: "つくばエクスプレス六町駅周辺は新興住宅地で若いファミリー層が増加中。五反野・扇エリアは古くからの住宅街で、地域密着型のサービスへの需要が安定している。競合少なく狙い目。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -352,7 +352,7 @@ export default function Page() {
                   points: "士業はMEOよりSEOが主戦場です。「足立区 税理士 相続」「北千住 行政書士 会社設立」などのニーズ特化キーワードでのコンテンツSEOが効果的です。E-E-A-T（専門性・権威性・信頼性）を示す資格情報・実績・著者情報をサイトに掲載することが重要です。",
                 },
               ].map((item) => (
-                <div key={item.industry} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.industry} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>{item.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.points}</p>
                 </div>
@@ -362,7 +362,7 @@ export default function Page() {
         </section>
 
         {/* Section 6: おすすめ集客チャネル */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Channel Mix</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -375,10 +375,10 @@ export default function Page() {
                 { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの流入を問い合わせ・予約・来店へとつなぐCV設計の高品質なホームページ。スマートフォン対応・高速表示・わかりやすい導線設計が重要です。" },
                 { label: "SNS（Instagram・LINE）", tag: "補完", desc: "地域コミュニティへのアプローチに有効。LINE公式アカウントでのリピーター獲得・Instagramでの認知拡大を、MEO・SEOと組み合わせて実施する。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
+                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -408,9 +408,9 @@ export default function Page() {
                 { step: "STEP 07", title: "口コミ獲得・SNS施策", desc: "MEO効果を高める口コミ獲得のためのアドバイス・テンプレート提供を行います。Instagram・LINEとの連携施策も組み合わせ、オフラインとオンラインの接点を強化します。" },
                 { step: "STEP 08", title: "月次レポート・改善サイクル", desc: "毎月の順位変動・アクセス状況・問い合わせ件数をレポートにまとめてご報告します。データをもとに次月の施策を調整するPDCAサイクルを回し、継続的な集客改善を実現します。" },
               ].map((item, idx) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #E2E8F0" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #E8E4DC" }}>
                   <div style={{ minWidth: "80px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "11px", letterSpacing: "0.15em", display: "block" }}>{item.step}</span>
+                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.15em", display: "block" }}>{item.step}</span>
                   </div>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
@@ -423,7 +423,7 @@ export default function Page() {
         </section>
 
         {/* Section 8: 成果を測るKPI */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>KPI Metrics</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
@@ -432,7 +432,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
               足立区でのMEO・SEO施策の成果を定量的に把握するために、以下のKPIを月次でモニタリングします。データに基づいた改善サイクルで、集客の仕組みを育て続けます。
             </p>
-            <div style={{ display: "grid", gap: "1px", background: "#E2E8F0", maxWidth: "760px" }}>
+            <div style={{ display: "grid", gap: "1px", background: "#E8E4DC", maxWidth: "760px" }}>
               {[
                 { name: "Googleマップ表示回数（インプレッション）", where: "GBPインサイト", desc: "「北千住 居酒屋」「竹ノ塚 美容室」などの検索でGBPが表示された回数。MEO施策の直接効果を測る最重要指標です。北千住エリアとその他エリアを分けて評価します。" },
                 { name: "GBPからの電話タップ数・ルート検索数", where: "GBPインサイト", desc: "Googleマップから実際に電話・ルート検索した潜在顧客数を測定します。来店・問い合わせ意向の高い行動を追跡することで、MEO施策の実質効果を把握します。" },
@@ -442,9 +442,9 @@ export default function Page() {
                 { name: "主要キーワードの検索順位推移", where: "Google Search Console", desc: "「北千住 〇〇」「竹ノ塚 〇〇」など業種ごとの主要キーワードで掲載順位を毎月追跡します。順位の推移がMEO・SEO施策の効果を直接示す先行指標となります。" },
               ].map((item) => (
                 <div key={item.name} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0", background: "#FFFFFF" }}>
-                  <div style={{ padding: "20px 24px", borderRight: "1px solid #E2E8F0" }}>
+                  <div style={{ padding: "20px 24px", borderRight: "1px solid #E8E4DC" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.name}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#3A9BDC", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <div style={{ padding: "20px 24px" }}>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
@@ -458,7 +458,7 @@ export default function Page() {
         {/* Section 9: 足立区の集客に関するデータ・数字 */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Data</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Data</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               足立区の集客を知るための基礎データ
             </h2>
@@ -472,8 +472,8 @@ export default function Page() {
                 { num: "約30km²", label: "足立区の面積", note: "23区中第2位の広さ" },
                 { num: "多数", label: "中小企業・個人事業主", note: "Web未活用の事業者が多い" },
               ].map((item) => (
-                <div key={item.label} style={{ borderTop: "1px solid rgba(58,155,220,0.3)", paddingTop: "24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,3vw,40px)", color: "#3A9BDC", fontWeight: 700, marginBottom: "8px", lineHeight: 1 }}>{item.num}</p>
+                <div key={item.label} style={{ borderTop: "1px solid rgba(196,184,154,0.3)", paddingTop: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,3vw,40px)", color: "#c4b89a", fontWeight: 700, marginBottom: "8px", lineHeight: 1 }}>{item.num}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#FFFFFF", fontWeight: 600, marginBottom: "4px" }}>{item.label}</p>
                   <p style={{ fontSize: "12px", color: "#9CA3AF" }}>{item.note}</p>
                 </div>
@@ -485,7 +485,7 @@ export default function Page() {
         {/* Section 10: サイプレスに依頼するメリット（ダーク背景） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -497,7 +497,7 @@ export default function Page() {
                 { n: "04", t: "中小企業・個人事業主の予算感に合わせた提案", b: "大手代理店のような高額な最低費用は設定していません。足立区の中小企業・個人事業主がスモールスタートできるプランから、事業成長に合わせて段階的に拡張できる柔軟な料金体系をご用意しています。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -523,18 +523,18 @@ export default function Page() {
                 { area: "西新井エリア", access: "葛飾区より車で約25〜35分", note: "アリオ西新井周辺の中小店舗・西新井大師周辺の飲食・サービス業への集客支援の相談に対応します。" },
                 { area: "綾瀬・六町エリア", access: "葛飾区より車・電車で約15〜25分", note: "綾瀬は葛飾区からのアクセスが特に良好です。整骨院・整体院・歯科など医療系クリニックの相談が多いエリアです。" },
               ].map((item) => (
-                <div key={item.area} style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: "0", borderTop: "1px solid #E2E8F0" }}>
+                <div key={item.area} style={{ display: "grid", gridTemplateColumns: "180px 1fr", gap: "0", borderTop: "1px solid #E8E4DC" }}>
                   <div style={{ padding: "20px 20px 20px 0" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.area}</p>
-                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontFamily: "var(--font-display)" }}>{item.access}</p>
+                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)" }}>{item.access}</p>
                   </div>
-                  <div style={{ padding: "20px 0 20px 20px", borderLeft: "1px solid #E2E8F0" }}>
+                  <div style={{ padding: "20px 0 20px 20px", borderLeft: "1px solid #E8E4DC" }}>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: "48px", padding: "32px", background: "#F4F6FA", maxWidth: "640px" }}>
+            <div style={{ marginTop: "48px", padding: "32px", background: "#f8f6f2", maxWidth: "640px" }}>
               <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>訪問相談のご予約</p>
               <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "20px" }}>
                 お問い合わせフォームまたはお電話にて、訪問希望エリアとご都合の日程をお知らせください。原則として1営業日以内にご連絡いたします。初回相談は無料で対応しています。
@@ -549,7 +549,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="足立区に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="足立区に関するよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="足立区のWeb集客、まずは無料相談から"

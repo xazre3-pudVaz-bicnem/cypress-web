@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     type: "website",
     url: URL,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
 };
 
@@ -192,7 +192,7 @@ export default function PrivacyPolicyPage() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               {SECTIONS.map((sec) => (
-                <div key={sec.heading} className="py-9" style={{ borderTop: "1px solid #E2E8F0" }}>
+                <div key={sec.heading} className="py-9" style={{ borderTop: "1px solid #E8E4DC" }}>
                   <h2 className="font-bold text-[17px] mb-5 leading-snug" style={{ color: "#0F172A" }}>
                     {sec.heading}
                   </h2>
@@ -205,7 +205,7 @@ export default function PrivacyPolicyPage() {
                     <ul className="mt-2 mb-2">
                       {sec.list.map((item) => (
                         <li key={item} className="flex gap-3 py-2">
-                          <span className="shrink-0 text-[13px]" style={{ color: "#3A9BDC" }}>—</span>
+                          <span className="shrink-0 text-[13px]" style={{ color: "#C4B89A" }}>—</span>
                           <span className="text-[13.5px] leading-[1.9]" style={{ color: "#374151" }}>{item}</span>
                         </li>
                       ))}
@@ -214,7 +214,7 @@ export default function PrivacyPolicyPage() {
                   {sec.note && (
                     <p
                       className="text-[13px] leading-[1.95] mt-5 p-4"
-                      style={{ color: "#374151", background: "#F4F6FA", borderLeft: "3px solid #0F172A" }}
+                      style={{ color: "#374151", background: "#F9F8F5", borderLeft: "3px solid #0F172A" }}
                     >
                       {sec.note}
                     </p>
@@ -223,18 +223,18 @@ export default function PrivacyPolicyPage() {
               ))}
 
               {/* 事業者情報 */}
-              <div className="py-9" style={{ borderTop: "1px solid #E2E8F0" }}>
+              <div className="py-9" style={{ borderTop: "1px solid #E8E4DC" }}>
                 <h2 className="font-bold text-[17px] mb-6 leading-snug" style={{ color: "#0F172A" }}>
                   12. 事業者情報・お問い合わせ窓口
                 </h2>
                 <div>
                   {CONTACT_ROWS.map((row) => (
-                    <div key={row.label} className="flex flex-col sm:flex-row gap-1 sm:gap-8 py-3.5" style={{ borderTop: "1px solid #E2E8F0" }}>
+                    <div key={row.label} className="flex flex-col sm:flex-row gap-1 sm:gap-8 py-3.5" style={{ borderTop: "1px solid #E8E4DC" }}>
                       <span className="sm:w-44 shrink-0 text-[13px] font-semibold" style={{ color: "#0F172A" }}>{row.label}</span>
                       <span className="text-[13px] leading-[1.85]" style={{ color: "#374151" }}>{row.value}</span>
                     </div>
                   ))}
-                  <div style={{ borderTop: "1px solid #E2E8F0" }} />
+                  <div style={{ borderTop: "1px solid #E8E4DC" }} />
                 </div>
                 <p className="text-[13px] leading-[1.95] mt-6" style={{ color: "#374151" }}>
                   本方針に関するご質問、個人情報の開示・訂正・利用停止等のご請求は、上記のお問い合わせ窓口までご連絡ください。

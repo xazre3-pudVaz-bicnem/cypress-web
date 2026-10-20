@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "東京都のSEO対策・MEO対策・Web制作｜葛飾区拠点の集客支援会社",
     description: "東京23区全域のSEO・MEO・Web制作を支援。葛飾区拠点の株式会社サイプレスが成果の出る集客戦略を提供します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -155,7 +155,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -206,8 +206,8 @@ export default function Page() {
                 { n: "05", t: "インバウンド集客の拡大", b: "東京を訪れる外国人観光客は年々増加しており、飲食・観光・小売・ホテルなど多くの業種でインバウンド集客が重要性を増しています。英語・中国語・韓国語対応のGBP設定・多言語SEOへの対応支援も提供しています。" },
                 { n: "06", t: "中小企業・個人事業主のデジタル化の遅れ", b: "東京都内でもWebマーケティングを十分に活用できていない中小企業・個人事業主は多く存在します。ホームページの未整備・Googleビジネスプロフィールの放置・SNS未活用など、着手するだけで成果が出るケースは少なくありません。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -219,7 +219,7 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
@@ -235,8 +235,8 @@ export default function Page() {
                 { n: "03", t: "MEO（Googleマップ）の競合レベル", b: "東京都内のMEO競合は23区によって大きく異なります。渋谷・新宿・池袋は激戦ですが、葛飾区・足立区・江戸川区・墨田区はまだ上位を取りやすいエリアが多数あります。エリアと業種を組み合わせた競合分析を行い、最も成果が出やすい施策から実施します。" },
                 { n: "04", t: "AIO対策（AI検索対策）の重要性", b: "東京の企業・消費者はChatGPT・Gemini・Perplexityを積極的に活用しており、AI検索での上位引用がブランド認知・集客に直結する時代が到来しています。E-E-A-T強化・構造化データ・FAQ設計・著者情報の整備でAI検索対策を実施します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -262,8 +262,8 @@ export default function Page() {
                 { n: "04", t: "AIO対策・AI検索最適化", b: "ChatGPT・Geminiなどから「東京の〇〇業者」として引用されるための情報設計を行います。E-E-A-T強化・構造化データ・FAQ・著者情報・専門性の高いコンテンツでAI検索での存在感を高めます。" },
                 { n: "05", t: "SNS運用・デジタルマーケティング支援", b: "Instagram・X・LINE公式アカウントの運用代行・コンサルティングを提供します。東京の消費者行動に合わせたコンテンツ設計で、フォロワー増加・来店・問い合わせへの転換を最大化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -319,7 +319,7 @@ export default function Page() {
                   desc: "東京のB2B企業はAIO対策とコンテンツSEOが最も費用対効果の高い集客手段です。ChatGPT・Geminiで「東京 Webマーケティング会社」「東京 ITコンサル」と検索されたとき引用されることが新規商談の入口になります。専門性の高いホワイトペーパー・事例コンテンツの充実が重要です。",
                 },
               ].map((item) => (
-                <div key={item.industry} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.industry} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -329,7 +329,7 @@ export default function Page() {
         </section>
 
         {/* Section 5: 主要エリア別特性 */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Breakdown</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -362,7 +362,7 @@ export default function Page() {
                   desc: "板橋区・北区・豊島区は埼玉県に隣接し、ベッドタウンとして住宅・商業が混在するエリアです。飲食・美容・医療など生活密着型ビジネスのMEO競合は都心より緩やかで、早期参入でポジションを確立しやすいです。「板橋区 整骨院」「北区 学習塾」など区名特化のキーワードが有効です。",
                 },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -392,8 +392,8 @@ export default function Page() {
                 { n: "07", t: "口コミ獲得支援・定期投稿代行", b: "MEO評価に直結するGoogleレビューの獲得を支援します。お客様への口コミ依頼テンプレート提供・返信代行・GBP定期投稿代行で、東京の競合と差別化できる口コミ評価を着実に積み上げます。" },
                 { n: "08", t: "月次レポート・改善サイクル", b: "毎月Googleビジネスプロフィールのインサイト・検索順位・流入キーワード・問い合わせ数をまとめた月次レポートを提出します。数値に基づいた改善提案を継続的に実施し、東京都での集客成果を着実に積み上げます。" },
               ].map((s) => (
-                <div key={s.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E2E8F0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{s.n}</span>
+                <div key={s.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{s.n}</span>
                   <div>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{s.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{s.b}</p>
@@ -405,7 +405,7 @@ export default function Page() {
         </section>
 
         {/* Section 7: 集客チャネル */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Channel Mix</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
@@ -418,10 +418,10 @@ export default function Page() {
                 { label: "AIO対策", tag: "次世代集客", desc: "ChatGPT・Geminiで「東京の〇〇おすすめ」と聞かれたとき引用されるための情報設計。東京のリテラシーの高い消費者層への有効打。" },
                 { label: "Web制作", tag: "集客の核", desc: "高品質なホームページがすべての集客の受け皿となる。SEO・MEO・SNSからの流入を問い合わせ・予約・来店へつなぐCV設計が重要です。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
+                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#F4F6FA", color: "#3A9BDC", border: "1px solid #E2E8F0", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -445,7 +445,7 @@ export default function Page() {
                 { t: "ホームページが古く・遅い", b: "スマートフォンでの表示速度が遅いサイトは東京のモバイルファーストユーザーに離脱されます。MEOから流入した見込み客が古いデザインのサイトで不信感を持ち、問い合わせしないという機会損失が起きています。" },
                 { t: "口コミ管理を放置している", b: "低評価口コミへの返信がない・口コミ数が競合より少ない状態では、東京の情報感度が高い消費者の来店には至りません。口コミ返信・獲得施策の継続は、東京での集客を安定させる重要な要素です。" },
               ].map((item, i) => (
-                <div key={i} style={{ background: "#fff", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "24px" }}>
+                <div key={i} style={{ background: "#fff", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px" }}>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</h3>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -457,7 +457,7 @@ export default function Page() {
         {/* Section 9: 依頼するメリット（ダーク背景） */}
         <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -469,7 +469,7 @@ export default function Page() {
                 { n: "04", t: "業種別の深い知見で成果を最大化", b: "飲食店・美容室・クリニック・士業・不動産・コンサルタントなど、東京都内の各業種のWeb集客に特化した知見を持っています。業種別のKPI設定・施策設計で集客成果を最大化します。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -479,7 +479,7 @@ export default function Page() {
         </section>
 
         {/* Section 10: 東京都 市場データ */}
-        <section style={{ background: "#F4F6FA", padding: "64px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Market Data</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "32px" }}>東京都の市場概要</h2>
@@ -490,7 +490,7 @@ export default function Page() {
                 { label: "葛飾区人口", value: "約46万人", note: "サイプレス拠点エリア・東京東部の中核" },
                 { label: "東京の訪日観光客数", value: "年間1,500万人超", note: "インバウンド集客の最大市場" },
               ].map((d, i) => (
-                <div key={i} style={{ background: "#ffffff", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "24px 20px" }}>
+                <div key={i} style={{ background: "#ffffff", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 20px" }}>
                   <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#9CA3AF", letterSpacing: "0.1em", marginBottom: "8px", textTransform: "uppercase" }}>{d.label}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2vw,26px)", fontWeight: 800, color: "#0d1b2a", marginBottom: "6px" }}>{d.value}</p>
                   <p style={{ fontSize: "12px", color: "#374151", lineHeight: "1.7" }}>{d.note}</p>
@@ -500,7 +500,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="東京都のSEO・MEO対策に関するよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="東京都のSEO・MEO対策に関するよくある質問" bgColor="#F9F8F5" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="東京都のWeb集客、まずは無料相談から"

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Web集客の継続運用サポート・月次レポーティング・コンサルティングまで幅広く対応。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/support" },
@@ -53,7 +53,7 @@ export default function SupportPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -101,7 +101,7 @@ export default function SupportPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               サポート・運用支援一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
               {supportPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -132,11 +132,11 @@ export default function SupportPage() {
         {/* Why継続サポートが重要か */}
         <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#3A9BDC", fontSize: "11px", marginBottom: "12px" }}>Why Continuous</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Continuous</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               継続サポートが集客成果に直結する理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "rgba(58,155,220,0.2)", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)", maxWidth: "900px" }}>
               {[
                 { label: "Googleアルゴリズムは変化し続ける", desc: "MEO・SEOの評価基準は定期的にアップデートされます。一度設定して終わりにすると、アップデートで順位が下がるリスクがあります。" },
                 { label: "口コミは継続的に獲得し続ける必要がある", desc: "口コミの最新性はGoogleマップの順位評価に影響します。継続的な口コミ獲得と返信が必要です。" },
@@ -152,7 +152,7 @@ export default function SupportPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#f9f8f5" />
 
         <RelatedPages
           links={[

@@ -1,21 +1,27 @@
 ﻿import type { Metadata } from "next";
-import { Geist, Noto_Sans_JP } from "next/font/google";
+import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/chatbot/ChatWidget";
 import { BUSINESSES, COMPANY } from "@/lib/company";
-import { CONTACT_EMAIL } from "@/lib/contact";
 
-// 和文は Noto Sans JP、欧文・数字は Geist。どちらも可変フォントで、ウェイトごとにファイルを増やさない。
-// 書体の組み合わせ（フォールバック込み）は globals.css の --font-stack で定義している。
-const notoSansJP = Noto_Sans_JP({
-  variable: "--font-jp",
+const notoSerifJP = Noto_Serif_JP({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "900"],
   display: "swap",
 });
 
-const geist = Geist({
-  variable: "--font-latin",
+const notoSansJP = Noto_Sans_JP({
+  variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -35,10 +41,10 @@ const organizationSchema = {
     width: 200,
     height: 60,
   },
-  image: `${SITE_URL}/og-image.jpg`,
+  image: `${SITE_URL}/hero.jpg`,
   description:
-    "株式会社サイプレスは、東京都葛飾区亀有を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
-  email: CONTACT_EMAIL,
+    "株式会社サイプレスは、東京都葛飾区を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
+  email: "info@cypress-all.co.jp",
   address: {
     "@type": "PostalAddress",
     streetAddress: "亀有3-16-14-201",
@@ -158,7 +164,7 @@ const organizationSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: CONTACT_EMAIL,
+    email: "info@cypress-all.co.jp",
     contactType: "customer support",
     availableLanguage: "Japanese",
     areaServed: "JP",
@@ -212,7 +218,7 @@ export const metadata: Metadata = {
     title: "株式会社サイプレス｜東京・葛飾区のWebマーケティング会社",
     description:
       "株式会社サイプレスは東京都葛飾区拠点。MEO・SEO・AIO・ホームページ制作を通じて東京23区・全国の中小企業のWeb集客を支援するWebマーケティング会社です。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630, alt: "株式会社サイプレス｜東京のWebマーケティング会社" }],
     locale: "ja_JP",
     type: "website",
     siteName: "株式会社サイプレス",
@@ -237,7 +243,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${notoSansJP.variable} ${geist.variable} h-full`}
+      className={`${notoSerifJP.variable} ${notoSansJP.variable} ${cormorant.variable} h-full`}
     >
       <head>
         <script

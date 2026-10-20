@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Web集客パッケージ料金｜ホームページ制作・SEO・LP制作｜株式会社サイプレス",
     description:
       "ホームページ制作・SEO対策・LP制作を組み合わせたWeb集客パッケージ。150万円・200万円・300万円の3プランをご案内します。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -347,9 +347,9 @@ export default function WebGrowthPackagePage() {
         {/* ── Hero ── */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#F8F6F2",
             padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)",
-            borderBottom: "1px solid #E2E8F0",
+            borderBottom: "1px solid #E8E4DC",
           }}
         >
           <div
@@ -387,7 +387,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.28em",
-                color: "rgba(58,155,220,0.7)",
+                color: "rgba(196,169,106,0.7)",
                 fontSize: "10px",
                 marginBottom: "20px",
                 textTransform: "uppercase",
@@ -438,7 +438,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 8vh, 80px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <style>{`
@@ -492,7 +492,7 @@ export default function WebGrowthPackagePage() {
                 <div
                   key={plan.label}
                   style={{
-                    border: plan.featured ? "1px solid #3A9BDC" : "1px solid #E2E8F0",
+                    border: plan.featured ? "1px solid #C4A96A" : "1px solid #E8E4DC",
                     background: "#FFFFFF",
                     padding: "clamp(24px, 3vw, 36px)",
                     position: "relative",
@@ -506,7 +506,7 @@ export default function WebGrowthPackagePage() {
                         left: 0,
                         right: 0,
                         height: "2px",
-                        background: "linear-gradient(90deg, #3A9BDC, #E8C970)",
+                        background: "linear-gradient(90deg, #C4A96A, #E8C970)",
                       }}
                     />
                   )}
@@ -538,7 +538,7 @@ export default function WebGrowthPackagePage() {
                     style={{
                       marginBottom: "20px",
                       paddingBottom: "20px",
-                      borderBottom: "1px solid #E2E8F0",
+                      borderBottom: "1px solid #E8E4DC",
                     }}
                   >
                     <span
@@ -595,7 +595,7 @@ export default function WebGrowthPackagePage() {
                       >
                         <span
                           style={{
-                            color: "#3A9BDC",
+                            color: "#C4A96A",
                             flexShrink: 0,
                             marginTop: "1px",
                           }}
@@ -626,9 +626,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 各プラン詳細 ── */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#F8F6F2",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <style>{`
@@ -680,7 +680,7 @@ export default function WebGrowthPackagePage() {
                   key={plan.label}
                   style={{
                     padding: "clamp(28px, 4vh, 40px) 0",
-                    borderTop: "1px solid #E2E8F0",
+                    borderTop: "1px solid #E8E4DC",
                   }}
                 >
                   <div className="plan-detail-grid">
@@ -690,7 +690,7 @@ export default function WebGrowthPackagePage() {
                           fontFamily: "var(--font-display)",
                           fontSize: "10px",
                           letterSpacing: "0.2em",
-                          color: "#3A9BDC",
+                          color: "#C4A96A",
                           marginBottom: "10px",
                           textTransform: "uppercase",
                         }}
@@ -756,7 +756,7 @@ export default function WebGrowthPackagePage() {
                                 width: "4px",
                                 height: "4px",
                                 borderRadius: "50%",
-                                background: "#3A9BDC",
+                                background: "#C4A96A",
                                 flexShrink: 0,
                                 marginTop: "7px",
                               }}
@@ -778,7 +778,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <style>{`
@@ -829,8 +829,8 @@ export default function WebGrowthPackagePage() {
                   key={item.title}
                   style={{
                     padding: "clamp(20px, 2.5vw, 28px)",
-                    border: "1px solid #E2E8F0",
-                    background: "#F4F6FA",
+                    border: "1px solid #E8E4DC",
+                    background: "#F8F6F2",
                   }}
                 >
                   <h3
@@ -863,9 +863,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 制作の流れ ── */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#F8F6F2",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <div
@@ -911,7 +911,7 @@ export default function WebGrowthPackagePage() {
                     display: "flex",
                     gap: "clamp(20px, 4vw, 48px)",
                     padding: "clamp(20px, 3vh, 28px) 0",
-                    borderTop: i === 0 ? "none" : "1px solid #E2E8F0",
+                    borderTop: i === 0 ? "none" : "1px solid #E8E4DC",
                     alignItems: "flex-start",
                   }}
                 >
@@ -919,7 +919,7 @@ export default function WebGrowthPackagePage() {
                     style={{
                       fontFamily: "var(--font-display)",
                       fontSize: "clamp(20px, 2.5vw, 28px)",
-                      color: "#E2E8F0",
+                      color: "#E8E4DC",
                       fontWeight: 300,
                       flexShrink: 0,
                       letterSpacing: "0.05em",
@@ -963,7 +963,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <div
@@ -1002,7 +1002,7 @@ export default function WebGrowthPackagePage() {
                   key={i}
                   style={{
                     padding: "clamp(20px, 3vh, 28px) 0",
-                    borderTop: "1px solid #E2E8F0",
+                    borderTop: "1px solid #E8E4DC",
                   }}
                 >
                   <p
@@ -1036,9 +1036,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 注意事項 ── */}
         <section
           style={{
-            background: "#F4F6FA",
+            background: "#F8F6F2",
             padding: "clamp(28px, 4vh, 40px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <div
@@ -1075,7 +1075,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(36px, 5vh, 52px) 0",
-            borderTop: "1px solid #E2E8F0",
+            borderTop: "1px solid #E8E4DC",
           }}
         >
           <div
@@ -1112,8 +1112,8 @@ export default function WebGrowthPackagePage() {
                     color: "#374151",
                     textDecoration: "none",
                     padding: "8px 16px",
-                    border: "1px solid #E2E8F0",
-                    background: "#F4F6FA",
+                    border: "1px solid #E8E4DC",
+                    background: "#F8F6F2",
                   }}
                 >
                   {l.label} →

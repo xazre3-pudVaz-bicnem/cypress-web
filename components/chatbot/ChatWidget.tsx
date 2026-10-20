@@ -85,7 +85,7 @@ function MessageText({ text: rawText, onNavigate }: { text: string; onNavigate: 
     const index = match.index ?? 0;
     if (index > last) parts.push(text.slice(last, index));
     const className =
-      "font-medium text-[#0d1b2a] underline decoration-[#CBD5E1] decoration-2 underline-offset-4 hover:text-[#6B7280]";
+      "font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4 hover:text-[#6B7280]";
     parts.push(
       !match[2].startsWith("/") ? (
         <a
@@ -278,7 +278,7 @@ export default function ChatWidget() {
       >
         <div className="flex items-center justify-between bg-[#0d1b2a] px-5 py-4 text-white">
           <div>
-            <p className="label-en text-[10px] text-[#CBD5E1]">AI Assistant</p>
+            <p className="label-en text-[10px] text-[#D1C9BE]">AI Assistant</p>
             <p className="text-[15px] font-medium leading-tight text-white">サイプレスに相談する</p>
           </div>
           <div className="flex items-center gap-1">
@@ -303,10 +303,13 @@ export default function ChatWidget() {
             </button>
           </div>
         </div>
+
+        {/* data-lenis-prevent: Lenisのスムーススクロールにホイール操作を奪われないようにする */}
         <div
           ref={bodyRef}
+          data-lenis-prevent
           aria-live="polite"
-          className="flex-1 space-y-3 overflow-y-auto overscroll-contain bg-[#F4F6FA] px-4 py-5"
+          className="flex-1 space-y-3 overflow-y-auto overscroll-contain bg-[#F9F8F5] px-4 py-5"
         >
           <p className="max-w-[88%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[14px] leading-[1.8] text-[#1a2332] shadow-sm">
             {CHAT_GREETING}
@@ -319,7 +322,7 @@ export default function ChatWidget() {
                   key={choice}
                   type="button"
                   onClick={() => void send(choice)}
-                  className="rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-left text-[13px] leading-snug text-[#0d1b2a] transition-colors hover:border-[#0d1b2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0d1b2a]"
+                  className="rounded-full border border-[#E8E4DC] bg-white px-4 py-2 text-left text-[13px] leading-snug text-[#0d1b2a] transition-colors hover:border-[#0d1b2a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0d1b2a]"
                 >
                   {choice}
                 </button>
@@ -361,13 +364,13 @@ export default function ChatWidget() {
           )}
 
           {error && (
-            <p role="alert" className="rounded-lg border border-[#E2E8F0] bg-white px-4 py-3 text-[13px] leading-relaxed text-[#B91C1C]">
+            <p role="alert" className="rounded-lg border border-[#E8E4DC] bg-white px-4 py-3 text-[13px] leading-relaxed text-[#B91C1C]">
               {error}
             </p>
           )}
         </div>
 
-        <div className="border-t border-[#E2E8F0] bg-white px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
+        <div className="border-t border-[#E8E4DC] bg-white px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
           <form onSubmit={onSubmit} className="flex items-end gap-2">
             <label htmlFor="chat-input" className="sr-only">
               メッセージ
@@ -381,7 +384,7 @@ export default function ChatWidget() {
               rows={1}
               maxLength={CHAT_MAX_USER_CHARS}
               placeholder="ご相談内容を入力"
-              className="max-h-28 min-h-[44px] flex-1 resize-none rounded-xl border border-[#E2E8F0] px-3 py-2.5 text-[16px] leading-snug text-[#1a2332] placeholder:text-[#9CA3AF] focus:border-[#0d1b2a] focus:outline-none sm:text-[14px]"
+              className="max-h-28 min-h-[44px] flex-1 resize-none rounded-xl border border-[#E8E4DC] px-3 py-2.5 text-[16px] leading-snug text-[#1a2332] placeholder:text-[#9CA3AF] focus:border-[#0d1b2a] focus:outline-none sm:text-[14px]"
             />
             <button
               type="submit"
@@ -404,7 +407,7 @@ export default function ChatWidget() {
                 track("contact_click");
                 setOpen(false);
               }}
-              className="shrink-0 text-[12px] font-medium text-[#0d1b2a] underline decoration-[#CBD5E1] decoration-2 underline-offset-4"
+              className="shrink-0 text-[12px] font-medium text-[#0d1b2a] underline decoration-[#D1C9BE] decoration-2 underline-offset-4"
             >
               無料相談フォーム
             </Link>
@@ -413,9 +416,8 @@ export default function ChatWidget() {
       </div>
 
       {/* ── Proactive bubble ── */}
-      {/* スマホでは本文やボタンに重なるため出さない（右下のボタンだけにする） */}
       {showBubble && !open && (
-        <div className="fixed bottom-24 right-4 z-[60] hidden max-w-[260px] items-start gap-1 rounded-2xl rounded-br-sm bg-white py-3 pl-4 pr-2 shadow-[0_12px_32px_rgba(13,27,42,0.18)] sm:right-6 sm:flex">
+        <div className="fixed bottom-24 right-4 z-[60] flex max-w-[260px] items-start gap-1 rounded-2xl rounded-br-sm bg-white py-3 pl-4 pr-2 shadow-[0_12px_32px_rgba(13,27,42,0.18)] sm:right-6">
           <button type="button" onClick={openChat} className="text-left text-[13px] leading-relaxed text-[#0d1b2a]">
             Web集客のお悩み、AIがその場でお答えします。
           </button>

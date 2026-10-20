@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "葛飾区で起業する方向け販売パートナー制度｜Web集客サービスの取次・紹介",
     description:
       "葛飾区で起業・創業する方に向けて、ホームページ制作・SEO・MEO・AIOなどのWeb集客サービスを地域事業者へ紹介できる販売パートナー制度をご案内します。成果を保証するものではありません。",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -91,8 +91,8 @@ const S = {
   h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E2E8F0" } as React.CSSProperties,
-  num: { fontFamily: "var(--font-display)", color: "#3A9BDC", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
+  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
+  num: { fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
   itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" },
   itemBody: { fontSize: "14px", color: "#374151", lineHeight: "1.9" },
 };
@@ -148,7 +148,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -196,7 +196,7 @@ export default function Page() {
                 { t: "副業・複業として営業案件を扱いたい方", b: "週に数時間から始められる副業・複業として検討したい方。ただし成果を保証するものではありません。" },
                 { t: "人と人をつなぐことが得意な方", b: "専門知識よりも、信頼関係を作り、課題感のある事業者をサイプレスにつなぐことが主な役割です。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -206,7 +206,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 3: なぜ葛飾区で提案しやすいか */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Local Market</p>
             <h2 style={S.h2}>葛飾区でWeb集客ニーズのある業種</h2>
@@ -226,7 +226,7 @@ export default function Page() {
                 { t: "学習塾・個別指導塾", b: "「亀有 塾」「葛飾区 高校受験 対策」などの地域名キーワードへの対応が集客に直結する。" },
                 { t: "小売店", b: "GBPの写真整備・投稿充実と地域名＋商品カテゴリページの整備で差別化しやすい。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "20px 18px" }}>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -250,7 +250,7 @@ export default function Page() {
                 { t: "SNS運用支援", b: "Instagram・X等のコンテンツ作成・投稿代行。ホームページ・GBPとの連動設計で集客効果を高めます。" },
                 { t: "Web集客パッケージ", b: "制作+SEO+MEO+問い合わせ導線設計をセットで提供。予算が決まっている事業者に提案しやすいセットプランです。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "22px 20px" }}>
+                <div key={item.t} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 20px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
@@ -265,7 +265,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 5: 提案先の例 */}
-        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Referral Targets</p>
             <h2 style={S.h2}>紹介先・提案先の例</h2>
@@ -301,7 +301,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "20px" }}>
               報酬体系の詳細は、ご参加いただく制度（取次店・販売代理店）や紹介案件の内容によって異なります。個別のご相談の中でご案内します。
             </p>
-            <div style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "28px 24px", maxWidth: "600px", marginBottom: "28px" }}>
+            <div style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", maxWidth: "600px", marginBottom: "28px" }}>
               <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>報酬に関する重要な確認事項</p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[
@@ -311,7 +311,7 @@ export default function Page() {
                   "詳細な報酬条件は個別にご案内します",
                 ].map((item) => (
                   <li key={item} style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", paddingLeft: "18px", position: "relative", marginBottom: "8px" }}>
-                    <span style={{ position: "absolute", left: 0, color: "#3A9BDC" }}>–</span>
+                    <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>–</span>
                     {item}
                   </li>
                 ))}
@@ -324,7 +324,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 7: 代理店・取次店・紹介パートナーの違い */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Partner Types</p>
             <h2 style={S.h2}>代理店・取次店・紹介パートナーの違い</h2>
@@ -336,7 +336,7 @@ export default function Page() {
                 {
                   label: "紹介パートナー（ライト型）",
                   tag: "最も気軽",
-                  tagBg: "#3A9BDC",
+                  tagBg: "#c4b89a",
                   b: "知人・取引先の経営者に「こういうサービスがあります」と伝えるだけの形。説明の難しい部分はサイプレスが担当するため、専門知識は不要です。",
                 },
                 {
@@ -352,7 +352,7 @@ export default function Page() {
                   b: "自社の名前で提案・見積もり・説明まで行うモデル。自由度は高いが、サービスを深く理解した上での営業が求められます。",
                 },
               ].map((item) => (
-                <div key={item.label} style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "22px 18px" }}>
+                <div key={item.label} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
                   <span style={{ display: "inline-block", background: item.tagBg, color: "#fff", fontSize: "10px", padding: "2px 8px", borderRadius: "3px", marginBottom: "10px", letterSpacing: "0.04em" }}>{item.tag}</span>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
@@ -366,7 +366,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 8: 取次の流れ */}
-        <section style={{ background: "#F4F6FA", padding: "96px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>How It Works</p>
             <h2 style={S.h2}>パートナー活動・取次の流れ</h2>
@@ -418,7 +418,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 10: NG営業ルール */}
-        <section style={{ background: "#F4F6FA", padding: "72px 0" }}>
+        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>NG Rules</p>
             <h2 style={S.h2}>NG営業・使ってはいけない表現</h2>
@@ -490,7 +490,7 @@ export default function Page() {
                 { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
                 { href: "/contact", label: "お問い合わせ", desc: "まずはご相談ください" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#F4F6FA", border: "1px solid #E2E8F0", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                <Link key={item.href} href={item.href} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px" }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
@@ -503,7 +503,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区起業者向け販売パートナー制度についてよくある質問"
-          bgColor="#F4F6FA"
+          bgColor="#F9F8F5"
         />
 
         <PageContactCTA

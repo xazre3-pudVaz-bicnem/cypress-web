@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "MEO・SEO・SNS・ホームページのチェックリスト集。施策の漏れを防ぐセルフチェックにご利用ください。",
     locale: "ja_JP",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "株式会社サイプレス" }],
+    images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://www.cypress-all.co.jp/checklist" },
@@ -45,7 +45,7 @@ export default function ChecklistPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F4F6FA", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -93,7 +93,7 @@ export default function ChecklistPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
               チェックリスト一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E2E8F0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
               {checklistPages.map((page) => {
                 const totalItems = page.sections.reduce((acc, s) => acc + s.items.length, 0);
                 return (
@@ -108,7 +108,7 @@ export default function ChecklistPage() {
                     <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px", lineHeight: 1.4 }}>
                       {page.title}
                     </p>
-                    <p style={{ fontSize: "12px", color: "#3A9BDC", fontWeight: 600, marginBottom: "8px" }}>
+                    <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "8px" }}>
                       {totalItems}項目のチェック
                     </p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -127,7 +127,7 @@ export default function ChecklistPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="チェックリストについてよくある質問" bgColor="#F4F6FA" />
+        <FaqSection items={faqItems} heading="チェックリストについてよくある質問" bgColor="#f9f8f5" />
 
         <RelatedPages
           links={[
