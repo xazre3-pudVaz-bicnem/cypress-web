@@ -204,7 +204,7 @@ export default function RenovationPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               リフォーム会社・工務店向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/renovation/meo",
@@ -328,7 +328,7 @@ export default function RenovationPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのリフォーム会社・工務店向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○区 リフォーム」「近くの工務店 見積もり」でGoogleマップ上位表示を実現します。GBPの施工写真充実・口コミ獲得・定期投稿で地域の見積もり依頼を継続的に獲得します。" },
                 { label: "施工事例LP・ホームページ制作", desc: "施工事例ビフォーアフター・費用・工期・お客様の声を最適配置した受注型サイトを制作します。「無料見積もり」CTAの設計と問い合わせフォームの最適化で見積もり依頼率を高めます。" },
@@ -481,7 +481,7 @@ export default function RenovationPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "32px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "32px", maxWidth: "900px" }}>
               {[
                 {
                   n: "01",

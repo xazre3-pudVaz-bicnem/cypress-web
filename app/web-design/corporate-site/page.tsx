@@ -202,7 +202,7 @@ export default function CorporateSitePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コーポレートサイトがない・古い企業が失っている4つの機会
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "取引・入札機会の喪失", b: "企業間取引では担当者が必ずWebサイトを確認します。情報が古いサイト・存在しないサイトは「信頼できない会社」と判断され、商談に進む前に失注しています。" },
                 { t: "採用応募者数の減少", b: "求職者の約90%が応募前にWebサイトを確認します。会社の文化・事業内容・働き方が伝わらないサイトは、優秀な候補者が応募をやめる要因となります。" },

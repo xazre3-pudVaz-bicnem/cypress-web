@@ -209,7 +209,7 @@ export default function CleaningIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               ハウスクリーニング業が抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", background: "rgba(9,111,200,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -481,7 +481,7 @@ export default function CleaningIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   t: "清掃業の集客課題を深く理解した設計",
@@ -516,7 +516,7 @@ export default function CleaningIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               清掃業向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "MEO対策・GBP最適化", b: "「○○区 ハウスクリーニング」「エアコン掃除 ○○市」でGoogleマップ上位表示を実現します。写真充実・口コミ獲得フロー設計・GBP投稿の継続運用で地域の清掃需要を確実に捕捉します。" },
                 { t: "清掃業向けホームページ・LP制作", b: "ビフォーアフター写真・料金表・対応エリア・口コミを最適配置した集客型サイトを制作します。エアコンクリーニング専用LP・年末大掃除専用LPなどサービス別ページも対応します。" },

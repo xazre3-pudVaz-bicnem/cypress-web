@@ -331,7 +331,7 @@ export default async function KnowledgePage({
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))",
                   gap: "16px",
                   maxWidth: "740px",
                 }}

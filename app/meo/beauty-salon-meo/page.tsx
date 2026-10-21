@@ -202,7 +202,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               美容室・サロンのMEO対策で解決できる集客課題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "Googleマップで見つけてもらえない", b: "「○○市 美容室」「近くの美容室」で検索した際にローカルパックに表示されないサロンは、そのユーザーには存在しないも同然です。MEO対策で検索上位に入ることが集客の入口です。" },
                 { t: "口コミが少なく選ばれない", b: "美容室選びで口コミは最重要の判断材料です。口コミが5件以下のサロンは競合に比べて大きく不利です。来店後の口コミ依頼導線を設計することが継続的な集客につながります。" },
@@ -293,7 +293,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               美容サロンのMEO対策は取り扱うサービスによって重要なポイントが異なります。自店舗の主力施術に合わせた最適化を行うことで集客の精度が上がります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4", border: "1px solid #dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "1px", background: "#dde0e4", border: "1px solid #dde0e4" }}>
               {[
                 {
                   type: "カラー専門サロン",

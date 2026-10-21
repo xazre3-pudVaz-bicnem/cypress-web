@@ -205,7 +205,7 @@ export default function Page() {
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               SNS自動化なしで起きる4つのコスト
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "毎回の投稿文考案に時間が奪われる", b: "1投稿あたり20〜40分かかる投稿文作成が、週複数回発生します。その時間を接客・施術・本業に使えていない機会損失です。" },
                 { t: "継続できずフォロワーが離れる", b: "投稿が途切れるとアルゴリズムに不利になりフォロワーも離れます。「再開」するたびにゼロに近い状態から積み上げ直しになります。" },
@@ -320,7 +320,7 @@ export default function Page() {
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 {
                   industry: "飲食",

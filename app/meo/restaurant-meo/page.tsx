@@ -202,7 +202,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               飲食店がGoogleマップ対策を怠ると失う4つの機会
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "「今日行きたい」検索で競合に負ける", b: "「渋谷 ランチ 今日」「近く 居酒屋 空いてる」などの即時性の高い検索でローカルパックに表示されないと、来店意欲が最も高いユーザーを競合に奪われます。" },
                 { t: "写真が少なく来店意欲が下がる", b: "料理・内装・外観の写真が少ない飲食店は「どんなお店かわからない」という不安から来店を躊躇されます。競合が20枚以上の写真を揃えている中で写真が5枚以下では勝負になりません。" },
@@ -293,7 +293,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               飲食店のMEO対策は業態によって重要なポイントが異なります。自店舗の業態に合った最適化を行うことで、ターゲットユーザーへの訴求力が高まります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4", border: "1px solid #dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "1px", background: "#dde0e4", border: "1px solid #dde0e4" }}>
               {[
                 {
                   type: "ラーメン店",
@@ -442,7 +442,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               飲食店にMEO対策が特に重要な理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "32px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "32px", maxWidth: "900px" }}>
               <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151" }}>
                 飲食店を探すユーザーの検索行動は「今・近く・今日」という即時性が高い特徴があります。「渋谷 ランチ 1000円以内」「新宿 居酒屋 今日 予約」など、具体的な場所と時間軸を含む検索が多く、Googleマップで上位に表示されることが集客に直結します。
               </p>

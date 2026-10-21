@@ -101,7 +101,7 @@ export default function SupportPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               サポート・運用支援一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
               {supportPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -136,7 +136,7 @@ export default function SupportPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               継続サポートが集客成果に直結する理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)", maxWidth: "900px" }}>
               {[
                 { label: "Googleアルゴリズムは変化し続ける", desc: "MEO・SEOの評価基準は定期的にアップデートされます。一度設定して終わりにすると、アップデートで順位が下がるリスクがあります。" },
                 { label: "口コミは継続的に獲得し続ける必要がある", desc: "口コミの最新性はGoogleマップの順位評価に影響します。継続的な口コミ獲得と返信が必要です。" },

@@ -319,7 +319,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               地方エリアはMEO・SEO競合が少なく、同じ月次費用でも東京都心より大きな成果が期待できます。地方こそ今すぐWeb集客に着手するメリットが大きいエリアです。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "東京都・葛飾区周辺", desc: "最も得意なエリア。葛飾区・足立区・江戸川区・墨田区への訪問相談対応。東京23区全域のSEO・MEO・Web制作を一貫してサポート。" },
                 { area: "千葉・埼玉・神奈川（首都圏）", desc: "オンライン＋一部訪問で対応。東京より競合が少なく費用対効果が高いエリア多数。特に千葉・埼玉はMEO競合が少なくチャンスが大きい。" },
@@ -343,7 +343,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               全国対応のおすすめ集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "SEO対策", tag: "地域問わず有効", desc: "地域名+業種のローカルSEO・専門特化コンテンツSEOは全国どこでも有効。地方ほど競合が少なく、比較的少ない施策費用で上位表示を実現できる可能性が高い。" },
                 { label: "AIO対策", tag: "全国・次世代集客", desc: "ChatGPT・Gemini等のAI検索での引用は地域に関わらず全国で重要性を増している。情報設計・E-E-A-T強化でAI検索での存在感を高める新しい集客施策。" },
@@ -372,7 +372,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               全国どのエリアでも、業種ごとの集客特性を理解した施策設計が成果への近道です。地方・郊外では各業種の競合がさらに薄く、早期の参入効果が期待できます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "整体・整骨院・接骨院",
@@ -456,7 +456,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "完全リモートで全国どこでも均一品質", b: "Zoom・メール・プロジェクト管理ツールを活用したリモート対応体制で、北海道から沖縄まで均一品質のサービスを提供します。対面訪問不要で、スピーディかつ低コストなプロジェクト進行が可能です。" },
                 { n: "02", t: "SEO・AIO・MEO・Web制作のワンストップ対応", b: "SEO対策・AIO対策（AI検索最適化）・MEO対策・ホームページ制作を全国リモートで一社に依頼できます。複数業者への発注コスト・コミュニケーション負荷を削減し、施策の一貫性を保てます。" },
@@ -483,7 +483,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               東京都心で難しいWeb集客も、地方・郊外エリアでは環境が大きく異なります。競合の少なさという構造的な優位性を活かした集客戦略が、地方ビジネスには有効です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   title: "MEO・SEO競合が少なく成果が出やすい",

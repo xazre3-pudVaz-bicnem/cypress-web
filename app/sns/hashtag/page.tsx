@@ -213,7 +213,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               業種別ハッシュタグ活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店",
@@ -335,7 +335,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ハッシュタグ選定を間違えると起きる4つの問題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "ビッグワードだけで投稿が埋もれる", b: "投稿数が数百万件のビッグタグだけを使うと投稿は数分で埋もれます。どれだけ良い写真でも発見されないまま終わります。ミドル・ニッチタグとの組み合わせが必須です。" },
                 { t: "ターゲット外ユーザーにしか届かない", b: "業種・ターゲット・地域と関係のないタグを大量に使っても、実際に来店・購入に至るターゲット層に届きません。精度の高いタグ選定が集客効率を左右します。" },
@@ -358,7 +358,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               効果的なハッシュタグの6つのカテゴリ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderLeft: "3px solid var(--v2-accent)" }}>
                   <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>{item.label}</h3>
@@ -422,7 +422,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.85", marginBottom: "40px", maxWidth: "640px" }}>
               プラットフォームによってハッシュタグの機能・使い方・最適な個数は大きく異なります。同じタグ戦略を両方に適用するのではなく、各プラットフォームの特性に合わせて設計することが集客効率を高めます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "32px" }}>
               <div style={{ padding: "32px", border: "1px solid #dde0e4" }}>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>INSTAGRAM</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>

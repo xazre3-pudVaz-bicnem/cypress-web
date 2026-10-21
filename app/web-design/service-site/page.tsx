@@ -177,7 +177,7 @@ export default function ServiceSitePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               CVが取れないサービスサイト・LPの4つの共通問題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "ファーストビューで価値が伝わらない", b: "ユーザーはページを開いて3秒以内に「自分に関係あるか」を判断します。キャッチコピー・サブコピー・CTAが揃っていないファーストビューは、その3秒で多くのユーザーを失います。" },
                 { t: "CTA（行動喚起）の位置と数が不足", b: "「問い合わせはこちら」ボタンがフッターにしかないLPではCVが取れません。ファーストビュー・中間・フッターに戦略的にCTAを配置し、離脱機会を最小化します。" },

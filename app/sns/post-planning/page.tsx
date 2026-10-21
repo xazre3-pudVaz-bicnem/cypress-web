@@ -151,7 +151,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SNS運用で成果が出ない4つのパターン
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "投稿目的が不明確", b: "「とりあえず投稿する」運用では何を達成したいのか曖昧なまま時間だけが過ぎます。来店促進・認知拡大・指名検索増加など明確な目的を設定することが集客の出発点です。" },
                 { t: "ターゲットを意識していない投稿", b: "全員に向けた投稿は誰にも刺さりません。30代女性・地域在住・美容に関心ありなど具体的なターゲット像を持つことで共感を得られるコンテンツが生まれます。" },
@@ -174,7 +174,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               投稿企画・運用設計の6ステップ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderTop: "3px solid var(--v2-accent)" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>STEP {String(i + 1).padStart(2, "0")}</p>
@@ -232,7 +232,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               SNS投稿企画は業種によって有効なアプローチが異なります。それぞれの業種特性に合わせた設計が必要です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(320px,100%), 1fr))", gap: "0" }}>
               {[
                 { industry: "飲食店", point: "料理・雰囲気・シーン別投稿", body: "ランチ・ディナー・季節メニューの料理写真を起点に、来店シーン・席の雰囲気・スタッフの人柄を発信します。「今日のおすすめ」「仕込みの裏側」などリアルタイム投稿が予約につながります。" },
                 { industry: "美容室・サロン", point: "Before-After・スタッフ・キャンペーン", body: "施術のBefore-After写真は保存率が高くフォロワー獲得に直結します。スタイリストの個性・こだわり技術・来店しやすいクーポン情報を組み合わせて指名予約を促進します。" },

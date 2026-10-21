@@ -297,7 +297,7 @@ export default function ClinicIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               クリニック・整骨院向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "医療広告ガイドライン対応のSEO・SNS設計", b: "医療広告ガイドラインを正確に理解した上で、ガイドライン準拠かつ最大限の集患効果を発揮するSEO戦略・SNSコンテンツ設計を行います。違反リスクゼロで専門性を訴求します。" },
                 { t: "GBP最適化・口コミ返信テンプレート作成", b: "診療科目・対応症状・設備・写真・営業時間を完全整備したGBP最適化を実施。個人情報保護に配慮した口コミ返信テンプレートを作成し、全件返信体制を整備します。" },
@@ -423,7 +423,7 @@ export default function ClinicIndustryPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
               内科・歯科・整形外科・皮膚科・眼科・整骨院・鍼灸院それぞれで、患者の検索行動・有効な施策・注意すべき規制が異なります。診療科の特性に合わせた設計が集患効果を最大化します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px", maxWidth: "960px" }}>
               {[
                 {
                   label: "内科・小児科",
@@ -466,7 +466,7 @@ export default function ClinicIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "32px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gap: "32px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "960px" }}>
               {[
                 {
                   n: "01",

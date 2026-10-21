@@ -206,7 +206,7 @@ export default function NailSalonPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               ネイルサロン向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/nail-salon/meo",
@@ -303,7 +303,7 @@ export default function NailSalonPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのネイルサロン向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 ネイルサロン」「○○区 ネイル 予約」でGoogleマップ上位表示を実現します。GBPの写真充実・サービス情報の整備・口コミ獲得フロー構築で地域の来店意欲の高いユーザーを獲得します。" },
                 { label: "Instagram・SNS支援", desc: "ネイルデザイン写真の投稿計画・リール動画の企画・ハッシュタグ戦略・フォロワー増加施策を一括してサポートします。Instagram経由の予約導線設計も含めて対応します。" },
@@ -444,7 +444,7 @@ export default function NailSalonPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   n: "01",

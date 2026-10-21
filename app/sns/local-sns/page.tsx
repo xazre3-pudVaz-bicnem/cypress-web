@@ -152,7 +152,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               地域SNS集客で成果が出ない4つの理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "地域ハッシュタグを使っていない", b: "「#東京カフェ」「#○○市美容室」など地域名を含むタグを使わないと、地元ユーザーの検索に引っかかりません。来店型ビジネスにとって地域タグは集客の根幹です。" },
                 { t: "位置情報タグを設定していない", b: "Instagramの「場所を追加」機能を設定していないと、位置情報検索からの流入がゼロになります。近くにいるユーザーへのリーチは位置情報タグなしには実現できません。" },
@@ -210,7 +210,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               地域集客を強化する6つの施策
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderTop: "3px solid var(--v2-accent)" }}>
                   <p style={{ color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>{String(i + 1).padStart(2, "0")}</p>
@@ -232,7 +232,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               業種によって地域SNSで伝えるべきコンテンツテーマ・訴求ポイントは異なります。自業種の特性に合わせた戦略設計が重要です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 { industry: "飲食店", point: "地元食材の産地・生産者紹介・地域の食文化との繋がり・近隣ランチ情報の発信で「地元に根ざした店」感を演出。地域のフードイベント参加報告や旬の食材を使ったメニュー紹介が高エンゲージメントを生む。" },
                 { industry: "美容室", point: "スタッフの地元エピソード・地域住民との繋がりを前面に出す投稿で「近所の行きつけ」感を醸成。地域のオシャレスポット紹介や季節のヘアアレンジ提案で地元女性層のフォロワーを獲得。" },
@@ -300,7 +300,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               地域密着SNS運用の成果は「フォロワー数」ではなく「来店につながる指標」で判断します。以下のKPIを月次でモニタリングすることで改善サイクルが機能します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "20px" }}>
               {[
                 { kpi: "地域タグ経由リーチ数", where: "Instagram インサイト → リーチ → ハッシュタグ", note: "地域ハッシュタグからの発見数を確認。増加傾向が地域露出の拡大を示す。" },
                 { kpi: "地元フォロワー比率", where: "Instagram インサイト → オーディエンス → 上位都市", note: "フォロワーの居住地が店舗エリアに集中しているかを確認。来店可能性の高いフォロワー比率が重要。" },

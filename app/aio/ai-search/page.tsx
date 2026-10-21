@@ -232,7 +232,7 @@ export default function AiSearchPage() {
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.7)", lineHeight: "1.9", maxWidth: "600px", marginBottom: "40px" }}>
               AIO対策は単発の施策ではなく、コンテンツ・技術・権威性・継続運用の4つの柱を同時に整備することで初めて効果が出ます。どれか一つが欠けてもAI検索エンジンへの引用確率は高まりません。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "E-E-A-T（経験・専門性・権威性・信頼性）の確立", b: "著者情報・会社情報・資格・実績を構造化して明示します。AIが「信頼できる情報源」と判断する基盤を整えます。" },
                 { t: "回答型コンテンツへのリライト", b: "ユーザーの質問に直接答える「結論ファースト」の構成にします。AIが引用しやすい明確な回答と具体的な説明の組み合わせが鍵です。" },
@@ -293,7 +293,7 @@ export default function AiSearchPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
               業種によってAI検索で引用されやすいクエリの種類・必要なE-E-A-T情報・使用すべきスキーマが異なります。自社の業種に合った最適化のポイントを確認してください。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 { n: "01", industry: "飲食業", point: "レシピ・食材情報の引用対象として", detail: "「〇〇料理の作り方」「食材の栄養効果」などの情報収集クエリでAIに引用されやすいコンテンツが有効です。RecipeスキーマとFAQPageを組み合わせ、シェフや調理師資格保有者の監修情報を著者として明示します。" },
                 { n: "02", industry: "医療・健康", point: "YMYL領域でのE-E-A-T重要性", detail: "医師・薬剤師などの有資格者による監修が必須です。「〇〇の症状」「〇〇の治療法」などの検索クエリに対して医師が明確に回答するコンテンツを整備し、MedicalConditionスキーマで構造化します。" },
@@ -397,7 +397,7 @@ export default function AiSearchPage() {
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.7)", lineHeight: "1.9", maxWidth: "600px", marginBottom: "40px" }}>
               各AI検索エンジンはデータソース・クローラー・引用基準が異なります。全体共通の基盤を整えた上で、各エンジン固有の対策を行います。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 {
                   t: "Google AI Overview",

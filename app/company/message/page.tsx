@@ -328,8 +328,8 @@ export default function MessagePage() {
                 </div>
               </div>
 
-              {/* Profile sidebar */}
-              <div className="md:sticky md:top-24">
+              {/* Profile sidebar（画面より高いので追従させない。追従すると下の方が最後まで見えない） */}
+              <div>
                 <div className="relative overflow-hidden mb-6" style={{ height: "260px" }}>
                   <Image
                     src="/images/v2/b-company.jpg"

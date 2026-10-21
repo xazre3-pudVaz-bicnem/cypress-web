@@ -186,7 +186,7 @@ export default function Page() {
             <p style={S.body}>
               葛飾区での創業・起業を予定している方、または創業直後の方で、以下のいずれかに当てはまる場合に活動しやすい制度です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "860px" }}>
               {[
                 { t: "葛飾区で起業予定・創業直後の方", b: "創業初期の収益柱の一つとして検討できます。自社サービスの立ち上げと並行して活動可能です。" },
                 { t: "営業経験がある方", b: "前職や以前のビジネスで培った営業経験・商談スキルを活かせる可能性があります。" },
@@ -213,7 +213,7 @@ export default function Page() {
             <p style={S.body}>
               葛飾区は地域密着型の事業者が多く、Web集客の整備が追いついていない事業者が広く存在します。地域事業者との接点を活かしやすい商材です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "14px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "14px", maxWidth: "900px" }}>
               {[
                 { t: "飲食店", b: "「亀有 ランチ」「金町 居酒屋」などの地域名検索対応・Googleマップの口コミ充実が課題になりやすい。" },
                 { t: "美容室・ネイルサロン", b: "SNS中心でホームページ・SEOが不十分なサロンが多く、地域名キーワードでの集客余地がある。" },
@@ -241,7 +241,7 @@ export default function Page() {
             <p style={S.label}>Products</p>
             <h2 style={S.h2}>紹介できるサイプレスの商材</h2>
             <p style={S.body}>地域事業者のニーズに応じた多様なWeb集客サービスを紹介できます。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { t: "ホームページ制作", b: "SEOに強い高速サイトを制作。飲食・美容・士業・クリニック向けのシンプルなパッケージから、SEO設計込みの制作まで対応。" },
                 { t: "SEO対策", b: "「葛飾区＋業種」「亀有・金町・新小岩＋業種」などの地域キーワードでの上位表示を目指すローカルSEO。" },
@@ -331,7 +331,7 @@ export default function Page() {
             <p style={S.body}>
               パートナー制度にはいくつかの種類があります。活動スタイル・時間・専門性によって最適なモデルが変わります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "16px", maxWidth: "900px", marginBottom: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "16px", maxWidth: "900px", marginBottom: "32px" }}>
               {[
                 {
                   label: "紹介パートナー（ライト型）",
@@ -425,7 +425,7 @@ export default function Page() {
             <p style={S.body}>
               パートナー活動において絶対に使用してはいけない表現・禁止行為を明示します。これらはサイプレス・パートナー双方の信頼を守るために設けています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "14px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "14px", maxWidth: "900px" }}>
               {[
                 { t: "「誰でも稼げます」", b: "収入・成果を保証する表現は使用禁止です。成果は提案先や商談内容によって変わります。" },
                 { t: "「簡単に稼げます」「ノーリスクで稼げます」", b: "過度に簡単だと思わせる表現は禁止です。紹介活動には時間と関係づくりが必要です。" },
@@ -477,7 +477,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px" }}>
               {[
                 { href: "/partner/local-sales-agent", label: "全国向け代理店・取次店募集", desc: "詳細な制度説明・全国対応" },
                 { href: "/partner/referral", label: "取次店（紹介パートナー）", desc: "最もシンプルな紹介制度" },

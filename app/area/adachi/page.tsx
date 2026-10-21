@@ -289,7 +289,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               足立区の主要スポット・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "北千住", desc: "5路線が乗り入れる足立区最大のターミナル駅。大学（東京電機大学・帝京科学大学等）が集積し、学生・社会人・ファミリーと多様な客層が集まる。飲食・美容の競合が多いが、集客ポテンシャルも区内最高クラス。" },
                 { area: "西新井", desc: "東武大師線・日比谷線が乗り入れるエリア。西新井大師（関東三大師）への参拝客と住宅街の生活需要が共存。アリオ西新井（大型ショッピングモール）があり、周辺の中小店舗は差別化が集客のカギ。" },
@@ -317,7 +317,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               足立区の主要業種ごとに、地域特性に合わせた集客のポイントを整理しました。業種によって有効な施策・優先すべきチャネルが異なります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ・居酒屋",
@@ -368,7 +368,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               足立区でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要", desc: "「北千住 〇〇」「竹ノ塚 〇〇」など地域検索でのGoogleマップ上位表示。来店型ビジネスに最も効果が高いチャネル。エリアによって競合レベルが異なるため、戦略的な設計が必要。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「足立区 〇〇」「北千住 〇〇」などのキーワードでの検索上位表示。MEOとの相乗効果で信頼感・認知度を高め、長期的な集客基盤を構築する。" },
@@ -465,7 +465,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#9CA3AF", maxWidth: "640px", marginBottom: "56px" }}>
               足立区のビジネス環境を正確に把握することが、効果的な集客戦略の出発点です。エリアの規模・商圏・ターゲット層を理解した上で施策を設計します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "32px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px,100%), 1fr))", gap: "32px", maxWidth: "860px" }}>
               {[
                 { num: "約68万人", label: "足立区の人口", note: "東京23区中第3位規模" },
                 { num: "5路線", label: "北千住の乗り入れ路線数", note: "東京東部最大のターミナル" },
@@ -489,7 +489,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "足立区・葛飾区のエリア事情を熟知", b: "葛飾区に拠点を置くサイプレスは、隣接する足立区の各エリアの特性・競合状況・ターゲット層の行動パターンを日常的に把握しています。机上の戦略ではなく、地域の実態に基づいた施策を設計します。" },
                 { n: "02", t: "「勝てるキーワード」から逆算した戦略", b: "北千住の激戦区でも、竹ノ塚・梅島の穴場エリアでも、現状の競合を精緻に分析したうえで「今最も費用対効果が高い施策」を優先して実行します。予算の無駄を最小化した提案を心がけます。" },

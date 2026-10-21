@@ -368,12 +368,12 @@ export default function RealEstateIndustryPage() {
                 { kpi: "Googleマップ口コミ数・平均評価", where: "GBPインサイト", desc: "累計口コミ数と平均星評価。新規顧客が来店を判断する最重要の信頼指標で、口コミ獲得フローの成果を反映します。" },
                 { kpi: "サイト全体のオーガニック流入数", where: "Google Search Console", desc: "Googleの自然検索からのクリック数。コンテンツSEO・物件ページSEOの成果を総合的に示す指標です。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
-                  <div style={{ minWidth: "200px", flexShrink: 0 }}>
+                <div key={item.kpi} style={{ display: "flex", flexWrap: "wrap", columnGap: "20px", rowGap: "8px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <div style={{ flex: "0 0 200px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
                     <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
-                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                  <p style={{ flex: "1 1 260px", minWidth: 0, fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -387,7 +387,7 @@ export default function RealEstateIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "不動産業の集客構造を理解した設計", b: "売買・賃貸・管理・買取と事業モデルが多様な不動産業に対して、業態ごとのターゲットとキーワード構造を理解した上でSEO・MEO・ホームページを設計します。一般的なWebマーケティング会社とは異なる業種特化の視点で提案します。" },
                 { t: "宅建業法広告規制に配慮したコンテンツ設計", b: "不動産広告は宅地建物取引業法・公正競争規約による規制があります。法令リスクを避けながら集客力の高いコンテンツを設計し、SEO・LP・SNSのすべての表現を適切な範囲でご提案します。" },
@@ -410,7 +410,7 @@ export default function RealEstateIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               不動産会社向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "地域名×物件種別のSEO戦略", b: "「葛飾区 賃貸」「亀有 マンション 売却」などのキーワードで自社サイトの検索上位を目指すSEO戦略を設計。地域コンテンツ・物件紹介ページ・売却相談ページを組み合わせた多角的な集客体制を構築します。" },
                 { t: "GBP口コミ増加で信頼度UP", b: "成約後の口コミ依頼フロー設計・GBP写真の充実・週次投稿で口コミ件数と平均評価を向上させ、Googleマップでの信頼性を高めます。地域検索でのローカルパック表示を目指します。" },

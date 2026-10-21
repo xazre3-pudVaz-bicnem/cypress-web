@@ -718,7 +718,7 @@ export default async function CaseDetailPage({ params }: Props) {
             </div>
 
             {/* Sidebar */}
-            <aside className="case-detail-sidebar" style={{ position: "sticky", top: "24px" }}>
+            <aside className="case-detail-sidebar" style={{ position: "sticky", top: "104px" }}>
               {/* Summary card */}
               <div style={{ border: "1px solid #dde0e4", padding: "24px", marginBottom: "20px", background: "#f0f1f2" }}>
                 <p style={sideLabel}>Case Info</p>

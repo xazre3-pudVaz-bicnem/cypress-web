@@ -378,12 +378,12 @@ export default function BeautyIndustryPage() {
                 { kpi: "Googleマップ口コミ数と平均評価", where: "GBPインサイト", desc: "累計口コミ数と平均星評価。新規顧客が来店を判断する最重要の信頼指標であり、継続的な口コミ獲得活動の成果を反映します。" },
                 { kpi: "LINEブロック率・クリック率", where: "LINE公式アカウント管理画面", desc: "配信メッセージのクリック率とブロック率。コンテンツの質・配信頻度・メッセージ設計の適切さを示す指標で、高いブロック率は設計の見直しサインです。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
-                  <div style={{ minWidth: "200px", flexShrink: 0 }}>
+                <div key={item.kpi} style={{ display: "flex", flexWrap: "wrap", columnGap: "20px", rowGap: "8px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <div style={{ flex: "0 0 200px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
                     <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
-                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                  <p style={{ flex: "1 1 260px", minWidth: 0, fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -397,7 +397,7 @@ export default function BeautyIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "美容サロン業種の集客設計に精通", b: "エステ・脱毛・ネイル・まつエクそれぞれの業種特性・季節需要・競合構造を理解した上で集客戦略を設計します。一般的なWeb制作会社とは異なり、業種に特化した視点でGBP・SNS・ホームページを一気通貫で最適化します。" },
                 { t: "景品表示法・薬機法に配慮した表現設計", b: "エステ・脱毛業界では景品表示法・薬機法に抵触しやすい表現が多く存在します。法令リスクを避けながら最大限の集客訴求力を持つコンテンツ設計を行い、安心してWebマーケティングを運用できる環境を構築します。" },
@@ -420,7 +420,7 @@ export default function BeautyIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               エステ・脱毛サロン向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "Instagram×MEOダブル集客設計", b: "Instagramでビジュアル訴求し、GBP最適化でGoogleマップ上位表示を実現する二軸集客を設計。新規顧客獲得をInstagramとGoogleの両チャネルから同時に行います。" },
                 { t: "施術ビフォーアフターのビジュアル戦略", b: "撮影ディレクション・写真加工・投稿テンプレート設計まで、来店動機を最大化するビジュアルコンテンツを制作。GBP・Instagram・ホームページに一貫したビジュアル設計を行います。" },

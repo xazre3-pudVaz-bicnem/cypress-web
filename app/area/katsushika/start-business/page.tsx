@@ -232,7 +232,7 @@ export default function Page() {
             <p style={S.body}>
               葛飾区で創業した多くの事業者が、開業直後に同じ課題に直面します。事前に認識しておくことで、対策を早期に打てます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { t: "集客方法が決まっていない", b: "「開業すれば来てくれる」という認識のまま開業すると、集客ゼロの状態が続くことがあります。開業前から集客設計を整えることが重要です。" },
                 { t: "ホームページがない・不完全", b: "SNSのみで発信していると、Googleマップに問い合わせボタンがあっても信頼性の証明ができません。ホームページがないと問い合わせ率が下がります。" },
@@ -298,7 +298,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" }}>
               創業初期は、自社の商品やサービスだけで売上を安定させるまでに時間がかかることがあります。株式会社サイプレスでは、ホームページ制作、SEO対策、MEO対策、AIO対策などのWeb集客サービスを地域事業者へ紹介できる販売パートナー制度を用意しています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px", marginBottom: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(250px,100%), 1fr))", gap: "24px", marginBottom: "40px" }}>
               {[
                 { t: "紹介できる商材", b: "ホームページ制作・SEO対策・MEO対策・AIO対策・SNS運用など、地域の中小企業が必要としているWeb集客サービスを紹介できます。" },
                 { t: "活かせるもの", b: "地域のつながり・営業経験・知人の事業者ネットワーク。専門知識がなくても、「Web集客に困っている事業者をサイプレスにつなぐ」ことが役割です。" },
@@ -329,7 +329,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>
               関連ページ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))", gap: "16px" }}>
               {[
                 { href: "/area/katsushika/startup-web-marketing", label: "葛飾区で創業する方向けWeb集客ガイド", desc: "ホームページ・SEO・MEO" },
                 { href: "/area/katsushika/web-design-subsidy", label: "葛飾区ホームページ制作・補助金活用", desc: "補助金情報の確認ポイント" },

@@ -274,7 +274,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区の主要スポット・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "錦糸町", desc: "JR総武線・東京メトロが乗り入れる墨田区最大の繁華街。飲食・娯楽・ショッピングが充実し、昼夜を問わず集客ポテンシャルが高い。MEO競合が多いため差別化戦略が重要。" },
                 { area: "押上・スカイツリー", desc: "東京スカイツリーを中心とした観光エリア。年間数百万人の来訪者があり、飲食・物販・体験型ビジネスへの観光客需要が高い。インバウンド対応の多言語MEOが必須。" },
@@ -298,7 +298,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要", desc: "観光客・地元住民の両方が「近くの〇〇」でGoogleマップ検索する墨田区では最重要チャネル。多言語対応GBPで観光客、日本語GBPで地元客を同時に狙う二重戦略が有効。" },
                 { label: "SNS（Instagram）", tag: "特に有効", desc: "スカイツリー・向島・錦糸町のおしゃれカフェ・スイーツ・伝統工芸はInstagram拡散との相性が特に良い。観光客のシェアを誘発するコンテンツ設計で二次拡散を生む。" },
@@ -327,7 +327,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               墨田区は観光・下町文化・住宅が混在するエリアです。業種ごとに異なる集客ポイントと効果的な施策を解説します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ・居酒屋",
@@ -454,7 +454,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 {
                   n: "01",

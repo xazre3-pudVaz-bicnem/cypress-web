@@ -209,7 +209,7 @@ export default function ProfessionalServiceIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               士業・専門家サービスが抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", background: "rgba(9,111,200,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -475,7 +475,7 @@ export default function ProfessionalServiceIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   t: "士業特有の表現規制に精通した設計",
@@ -510,7 +510,7 @@ export default function ProfessionalServiceIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               士業・専門家サービス向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "AIO対策・コンテンツSEO", b: "ChatGPT・Geminiで引用される事務所サイトの構造を設計します。FAQ整備・著者情報の構造化・専門解説コンテンツの継続制作でAI検索からの指名獲得と自然検索流入の両方を強化します。" },
                 { t: "士業向けホームページ・LP制作", b: "資格・実績・専門分野・費用の目安・無料相談導線を最適配置した信頼重視のホームページを制作します。E-E-A-T対応設計で専門家としての権威性をWebで可視化します。" },

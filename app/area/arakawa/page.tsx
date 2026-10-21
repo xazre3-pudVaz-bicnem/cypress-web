@@ -237,7 +237,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               荒川区の主要エリア・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "南千住", desc: "JR常磐線・東京メトロ日比谷線・つくばエクスプレスが乗り入れる交通の要所。再開発でマンション・商業施設が増加し、新住民向けの生活サービス需要が急増しています。" },
                 { area: "三ノ輪・三ノ輪橋", desc: "東京メトロ日比谷線三ノ輪駅・都電荒川線三ノ輪橋停留所周辺。下町の商店街が残り、地域住民密着型の商業エリアです。MEO競合が少なく穴場エリア。" },
@@ -262,7 +262,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               荒川区における業種別の集客ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 { industry: "飲食店・カフェ・居酒屋", points: "南千住は再開発で競合が増えていますが、三ノ輪・町屋・荒川エリアはMEO競合が少なく基本施策で上位が狙えます。口コミ数・写真品質・投稿頻度で差をつけることが重要です。" },
                 { industry: "美容室・ヘアサロン・ネイルサロン", points: "「南千住 美容室」「町屋 ヘアサロン」「西日暮里 カット」などのキーワードでMEO設計を行います。価格・立地・メニューの差別化をGBPに明確に記載することが集客に直結します。" },
@@ -287,7 +287,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "葛飾区隣接で荒川区への訪問対応が迅速", b: "葛飾区に拠点を置くサイプレスは、隣接する荒川区各エリアへの訪問打ち合わせに迅速に対応します。対面での詳細なヒアリングと戦略立案が可能です。" },
                 { n: "02", t: "「勝てるキーワード」から逆算した戦略", b: "荒川区の各エリアの競合状況を精緻に分析したうえで「今最も費用対効果が高い施策」を優先して実行します。予算の無駄を最小化した提案を心がけます。" },

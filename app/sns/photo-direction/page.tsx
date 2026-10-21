@@ -151,7 +151,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SNS写真の品質が集客に与える4つの影響
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "第一印象でフォローされない", b: "Instagramではユーザーが投稿を見てプロフィールに飛び、0.3秒でフォローするかを判断します。写真の統一感・クオリティがないプロフィールはこの瞬間に離脱されます。" },
                 { t: "エンゲージメント率が上がらない", b: "暗い・ピントが甘い・構図が悪い写真はスクロールで素通りされます。「保存したい」「コメントしたい」と思われる写真だけがアルゴリズムに評価されリーチが広がります。" },
@@ -209,7 +209,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               SNS写真を美しくする6つのポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderLeft: "3px solid var(--v2-accent)" }}>
                   <p style={{ color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px", fontFamily: "var(--font-serif)" }}>POINT {String(i + 1).padStart(2, "0")}</p>
@@ -231,7 +231,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               業種によって「見せるべき写真」「演出すべき世界観」は大きく異なります。自業種の特性に合ったビジュアル設計が集客効果を最大化します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 { industry: "飲食店", point: "料理スタイリングは「色・艶・盛り付けの高さ」の3要素が重要です。窓際の自然光か柔らかいLEDライトを使い、真俯瞰か斜め45度のアングルで撮影します。食材の質感・蒸気・艶を捉えるタイミングが食欲をそそる写真の鍵です。" },
                 { industry: "美容室", point: "施術写真はヘアの艶と仕上がりが伝わる明るいライティングが必須です。モデル（お客様）の許可を得た上で正面・横・後ろの3アングルを撮影。プロフィール写真は自然光の入るサロン内でスタッフの笑顔と作業風景を組み合わせて世界観を統一します。" },
@@ -299,7 +299,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               写真品質の改善効果は「いいね数」より以下の指標で判断します。写真ディレクション改善前後を比較することで定量的な効果測定が可能になります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "20px" }}>
               {[
                 { kpi: "投稿の保存率", where: "Instagram インサイト → 保存数 ÷ リーチ数", note: "「後で見返したい」と思われる写真への評価指標。写真品質改善の最も直接的な指標でアルゴリズム評価にも影響する。" },
                 { kpi: "エンゲージメント率", where: "Instagram インサイト → (いいね+保存+コメント) ÷ リーチ数", note: "写真の「止まる力」を測る指標。品質改善後に上昇する場合、ビジュアルが視覚的に引き付けている証拠。" },

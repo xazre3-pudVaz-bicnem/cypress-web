@@ -124,6 +124,9 @@ export default async function BlogPostPage({
 
   if (!post) notFound();
 
+  // 本文先頭の「# 記事タイトル」は見出し帯のタイトルと重複するため表示しない
+  const body = post.content.replace(/^\s*#[ \t][^\n]*\n+/, "");
+
   const categories = getCategories();
   const recentPosts = getRecentPosts(5, slug);
 
@@ -303,8 +306,12 @@ export default async function BlogPostPage({
             {/* Article body */}
             <article>
               <div className="blog-content">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {post.content}
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  // ページの h1 は見出し帯の記事タイトルだけにする
+                  components={{ h1: ({ children }) => <h2>{children}</h2> }}
+                >
+                  {body}
                 </ReactMarkdown>
               </div>
 
@@ -343,7 +350,7 @@ export default async function BlogPostPage({
                 <div
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))",
                     gap: "12px",
                   }}
                 >
@@ -471,8 +478,8 @@ export default async function BlogPostPage({
               </div>
             </article>
 
-            {/* Sidebar */}
-            <aside style={{ position: "sticky", top: "88px" }}>
+            {/* Sidebar（全体を固定すると画面の低いPCで下の相談枠が切れるので、相談枠だけを追従させる） */}
+            <aside style={{ alignSelf: "stretch" }}>
               {/* Categories */}
               <div style={{ marginBottom: "40px" }}>
                 <p
@@ -544,6 +551,8 @@ export default async function BlogPostPage({
               {/* CTA */}
               <div
                 style={{
+                  position: "sticky",
+                  top: "104px",
                   background: "#f0f1f2",
                   padding: "24px",
                   border: "1px solid #dde0e4",

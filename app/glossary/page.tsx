@@ -78,7 +78,7 @@ export default function GlossaryPage() {
               <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
                 <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "8px" }}>Category</p>
                 <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(16px,2vw,20px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>{cat}</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
                   {pages.map((page) => (
                     <Link
                       key={page.slug}
@@ -112,7 +112,7 @@ export default function GlossaryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "36px" }}>
               この用語集の使い方
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { n: "01", t: "気になる用語を検索", b: "カテゴリ別に整理されているので、MEO・SEO・AIO・SNSなど知りたい分野の用語を見つけやすい設計です。" },
                 { n: "02", t: "各用語ページで詳しく学ぶ", b: "用語ページにはわかりやすい解説・実際の活用方法・関連用語へのリンクが掲載されています。" },

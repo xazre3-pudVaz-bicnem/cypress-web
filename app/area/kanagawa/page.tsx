@@ -284,7 +284,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               神奈川県は横浜・川崎の大都市から湘南・鎌倉の観光エリア、相模原・横須賀の生活圏まで多様な市場特性を持ちます。業種ごとに最適な集客戦略が異なります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ",
@@ -335,7 +335,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               主要エリア別特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   area: "横浜市（中区・西区・都筑区）",
@@ -411,7 +411,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               神奈川県でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要", desc: "横浜・川崎は多言語対応GBPで観光客・地元住民の両方を狙う二軸戦略が有効。藤沢・相模原など郊外エリアはMEO競合が少なく費用対効果が高い。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「横浜市 〇〇」「藤沢 〇〇」「湘南 〇〇」など地域キーワードで継続的な検索流入を構築。コンテンツSEOとの組み合わせで横浜の競合市場でも差別化できる。" },
@@ -438,7 +438,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "40px" }}>
               神奈川県の事業者から相談を受ける中で見えてきた、集客施策が機能しない典型的なパターンをご紹介します。思い当たる点があれば、現状の改善から始めましょう。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "GBPが未整備・放置状態", b: "Googleビジネスプロフィールの写真が少ない・営業時間が古い・カテゴリが不正確なまま放置されているケースは非常に多いです。横浜・川崎の競合が多い市場でGBPを整備するだけで順位が動くケースも珍しくありません。" },
                 { t: "横浜の「全市」狙いで分散してしまう", b: "横浜市全域を対象にした曖昧な施策では成果が出にくいです。「横浜市西区 〇〇」「みなとみらい周辺 〇〇」など具体的なエリアに絞り込んだキーワード設計こそが、中小企業が集客できるポジションへの近道です。" },
@@ -461,7 +461,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "全県オンラインで完全対応", b: "横浜・川崎・藤沢・相模原・横須賀・茅ヶ崎・鎌倉・小田原など神奈川県全域をZoom・Google Meetで完全サポートします。距離を感じさせないオンライン相談・提案・レポーティングで、対面と変わらない品質の支援を提供します。" },
                 { n: "02", t: "横浜の観光×ビジネス二重集客に強い", b: "横浜の観光客向け多言語MEO対応と地元住民向けローカルSEO・MEOを組み合わせた二軸集客設計が得意です。中華街・みなとみらい周辺のビジネスへの集客支援に対応しています。" },
@@ -483,7 +483,7 @@ export default function Page() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Market Data</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 800, marginBottom: "32px" }}>神奈川県の市場概要</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "人口（全国2位）", value: "約920万人", note: "消費規模は東京に次ぐ大市場" },
                 { label: "横浜市人口", value: "約376万人", note: "全国最大の政令指定都市" },

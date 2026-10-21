@@ -199,7 +199,7 @@ export default function AutomationPage() {
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIで自動化できるマーケティング業務
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0 48px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0 48px" }}>
               {[
                 { title: "コンテンツ制作の効率化", body: "SEO記事のキーワード調査・アウトライン生成・ドラフト作成をAIで半自動化。SNS投稿文・メルマガ・広告コピーのバリエーション生成も効率化できます。人間がレビュー・品質向上する工程を必ず設けます。" },
                 { title: "月次レポートの自動作成", body: "Google Analytics 4・Search ConsoleのデータをAPIで取得し、AI（GPT等）が分析コメントを生成、Notionやスプレッドシートに自動出力するワークフローを構築します。毎月の集計・コメント作業を大幅に削減できます。" },
@@ -288,7 +288,7 @@ export default function AutomationPage() {
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 {
                   industry: "EC・小売",

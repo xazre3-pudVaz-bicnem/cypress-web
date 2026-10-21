@@ -251,7 +251,7 @@ export default function SnsPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
               Instagram・GBP投稿・ハッシュタグ戦略・写真ディレクションなど、SNS集客に必要なすべてのサービスを提供します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {services.map((s) => (
                 <Link key={s.href} href={s.href} style={{ display: "block", padding: "28px 32px", border: "1px solid #dde0e4", background: "#f0f1f2", textDecoration: "none", transition: "border-color 0.2s" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>{s.label}</p>
@@ -303,7 +303,7 @@ export default function SnsPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
               業種ごとにSNSの活用方法・効果的なコンテンツ・注意点が異なります。業種特性を踏まえた運用設計が重要です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {industrySnsCases.map((c) => (
                 <div key={c.industry} style={{ padding: "28px", border: "1px solid #dde0e4", background: "#f0f1f2" }}>
                   <p style={{ fontSize: "18px", marginBottom: "8px" }}>{c.icon}</p>
@@ -350,7 +350,7 @@ export default function SnsPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "40px" }}>
               GBP（Googleビジネスプロフィール）への投稿はMEO対策の一環として重要です。週1〜2回の投稿継続がGoogleマップ上の評価向上につながります。InstagramとGBPの両方を運用することで、SNSとMEOの相乗効果が生まれます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {gbpTactics.map((item, i) => (
                 <div key={i} style={{ padding: "24px", border: "1px solid #dde0e4", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -393,7 +393,7 @@ export default function SnsPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 900, marginBottom: "40px" }}>
               サイプレスのSNS支援の特徴
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {cypressStrengths.map((s, i) => (
                 <div key={i} style={{ padding: "32px", border: "1px solid #dde0e4", background: "#ffffff" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "12px" }}>{s.title}</p>

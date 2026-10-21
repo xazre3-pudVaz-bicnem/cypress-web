@@ -206,7 +206,7 @@ export default function KeywordResearchPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               キーワード調査なしのSEO施策が抱える4つのリスク
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "誰も検索しないキーワードで記事を書く", b: "月間検索ボリュームが数件しかないキーワードに対して記事を書いても、そもそもユーザーが検索しないため流入はゼロです。Googleキーワードプランナーやラッコキーワードで需要を確認してから着手することが基本です。" },
                 { t: "購買意図のないユーザーしか来ない", b: "「比較したい」「今すぐ買いたい」という購買意欲の高いキーワードを狙わず、情報収集段階のキーワードばかりに注力すると、アクセスはあっても問い合わせゼロが続きます。Know型とBuy型をバランスよく設計することが重要です。" },

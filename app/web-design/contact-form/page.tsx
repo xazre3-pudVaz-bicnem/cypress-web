@@ -177,7 +177,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               フォームの問題でCVを失っている4つの理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "入力項目が多すぎる", b: "「会社名・部署名・役職・電話・FAX・住所…」と情報を集めようとするほど、ユーザーは途中で諦めて離脱します。必須項目を3〜4つに絞ることが最優先です。" },
                 { t: "エラーメッセージが不明確", b: "「入力エラーです」という表示では、何を直せばよいかわかりません。「@を含む形式で入力してください」のように具体的な修正方法を示すことで離脱を防ぎます。" },
@@ -200,7 +200,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px,100%), 1fr))", gap: "0" }}>
               {[
                 { n: "01", industry: "飲食店", use: "予約フォーム・ケータリング問い合わせ", b: "来店予約フォームは日時・人数・席種の選択式にすることで入力負荷を下げます。ケータリング問い合わせには希望日・会場・人数・予算を収集するフォームが有効です。LINE連携で予約管理を自動化するケースも増えています。" },
                 { n: "02", industry: "美容室", use: "予約・カウンセリング申込", b: "初回来店の予約フォームでは希望メニュー・希望スタイリスト・来店日時を入力項目にします。カウンセリング申込フォームでは髪の状態・お悩みを事前収集することで施術時間の短縮と顧客満足度向上につながります。" },

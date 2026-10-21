@@ -82,7 +82,7 @@ export default async function CostSlugPage({ params }: { params: Promise<{ slug:
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               料金プラン
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(240px,100%), 1fr))", gap: "24px", maxWidth: "960px" }}>
               {page.priceRanges.map((plan, i) => (
                 <div
                   key={i}

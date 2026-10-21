@@ -292,7 +292,7 @@ export default function ConstructionIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               建設・リフォーム業向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "施工事例ページのSEO特化設計", b: "地域+施工種別のキーワードでSEO最適化された施工事例ページを作成。ビフォーアフター写真・費用目安・お客様の声をセットにした信頼性の高いコンテンツで見積もり依頼を増やします。" },
                 { t: "GBP最適化＋施工ビフォーアフター写真投稿", b: "GBPカテゴリ設定・サービスエリア設定・施工写真の定期追加・口コミ管理まで一括対応。「葛飾区 外壁塗装」「亀有 リフォーム」での地域検索上位表示を目指します。" },
@@ -381,12 +381,12 @@ export default function ConstructionIndustryPage() {
                 { name: "Googleクチコミ件数・平均評価点", where: "GBPインサイト", desc: "口コミ獲得フローの効果を測定します。建設業では4.0以上の評価と具体的な口コミ内容が新規顧客の信頼構築に直結します。月次で増加数を確認します。" },
                 { name: "コンバージョン率（訪問→見積もり依頼）", where: "Google Analytics（GA4）", desc: "サイト訪問者のうち見積もり依頼フォームを送信した割合。フォーム改善・CTAの配置変更・ページコンテンツの充実による改善効果を月次で測定します。" },
               ].map((item) => (
-                <div key={item.name} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
-                  <div style={{ minWidth: "220px", flexShrink: 0 }}>
+                <div key={item.name} style={{ display: "flex", flexWrap: "wrap", columnGap: "20px", rowGap: "8px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <div style={{ flex: "0 0 220px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.name}</p>
                     <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
-                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
+                  <p style={{ flex: "1 1 260px", minWidth: 0, fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -400,7 +400,7 @@ export default function ConstructionIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "32px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gap: "32px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "960px" }}>
               {[
                 {
                   n: "01",
@@ -440,7 +440,7 @@ export default function ConstructionIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               施工種別ごとの集客SEO設計
             </h2>
-            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "960px" }}>
               {[
                 {
                   label: "外壁塗装・屋根工事",

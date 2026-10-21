@@ -165,7 +165,7 @@ export default function Page() {
             <p style={S.label}>Common Failures</p>
             <h2 style={S.h2}>創業直後にWeb集客で失敗しやすい理由</h2>
             <p style={S.body}>開業前後でWeb集客の準備が不十分だと、集客が立ち上がらないまま運転資金が減り続けることがあります。よくある失敗パターンを確認してください。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { t: "ホームページがない・開業後に後回し", b: "「まず開業してからホームページ」と考えると、数ヶ月間、新規客がゼロの状態が続きます。SEOには時間がかかるため、開業前から制作を始めることが理想です。" },
                 { t: "Googleビジネスプロフィールが未整備", b: "GBPが未設定だと「葛飾区 〇〇」「近くの〇〇」検索に表示されません。開業直後から露出機会を逃し続けることになります。" },
@@ -220,7 +220,7 @@ export default function Page() {
             <p style={S.body}>
               開業時のホームページに最低限必要なページと、SEO・CV率向上のために追加すべきページを整理します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { label: "必須", t: "トップページ", b: "ビジネスの第一印象。サービス概要・信頼要素・CTA（電話・フォーム）を配置します。" },
                 { label: "必須", t: "サービスページ", b: "提供するサービス・商品ごとのページ。サービス名＋説明＋料金＋問い合わせCTAが基本構成です。" },
@@ -327,7 +327,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px" }}>
               {[
                 { href: "/area/katsushika/start-business", label: "葛飾区で起業・創業する方へ", desc: "起業・創業の総合ガイド" },
                 { href: "/area/katsushika/web-design-subsidy", label: "補助金活用支援", desc: "ホームページ制作・補助金" },

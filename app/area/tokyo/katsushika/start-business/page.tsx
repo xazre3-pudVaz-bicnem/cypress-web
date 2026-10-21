@@ -282,7 +282,7 @@ export default function Page() {
                 葛飾区の創業支援、融資、補助金などの制度内容は、年度や受付状況によって変更される場合があります。申請や利用を検討する際は、必ず葛飾区公式サイトの最新情報をご確認ください。株式会社サイプレスは行政機関ではなく、申請代行は行っていません。
               </p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "860px" }}>
               {[
                 { t: "葛飾区産業経済課（創業相談窓口）", b: "葛飾区内での開業・創業に関する相談を受け付けています。制度内容は公式サイトでご確認ください。" },
                 { t: "創業塾・セミナー", b: "葛飾区や関連機関が主催する創業塾・セミナーが定期的に開催されています。最新情報は公式サイトで要確認です。" },
@@ -304,7 +304,7 @@ export default function Page() {
             <p style={S.label}>Challenges</p>
             <h2 style={S.h2}>創業初期に起きやすい課題</h2>
             <p style={S.body}>葛飾区で創業した方からよく聞く課題を12項目にまとめました。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "960px" }}>
               {challengeItems.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -321,7 +321,7 @@ export default function Page() {
             <p style={S.label}>Why Web</p>
             <h2 style={S.h2}>創業時にホームページ・SEO・MEOを整えるべき理由</h2>
             <p style={S.body}>創業初期こそWeb集客の基盤を整えることが、長期的な集客力に差をつけます。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {reasonCards.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "22px 20px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px" }}>{item.t}</p>
@@ -359,7 +359,7 @@ export default function Page() {
             <p style={S.body}>
               「販売パートナー」と一口に言っても、活動形態はいくつかの種類があります。サイプレスのパートナー制度がどの形態に近いかを把握した上でご検討ください。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "960px", marginBottom: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "960px", marginBottom: "32px" }}>
               {[
                 {
                   label: "取次店（紹介型）",
@@ -404,7 +404,7 @@ export default function Page() {
             <p style={S.label}>Our Support</p>
             <h2 style={S.h2}>サイプレスが提供できる支援</h2>
             <p style={S.body}>葛飾区を拠点とする株式会社サイプレスが提供できる支援の一覧です。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {supportItems.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -420,7 +420,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
                 <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>

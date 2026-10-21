@@ -179,7 +179,7 @@ export default function SchoolPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               学習塾・スクール向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/school/meo",
@@ -277,7 +277,7 @@ export default function SchoolPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの学習塾・スクール向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 学習塾」「○○区 英語塾 子ども」でGoogleマップ上位表示を目指します。GBPの教室写真・講師情報・口コミを整備し、体験申し込みにつながる地域検索からの流入を強化します。" },
                 { label: "ホームページ制作", desc: "合格実績・講師プロフィール・カリキュラム・料金・体験申し込みフォームを備えた入塾率を高めるホームページを制作します。保護者が「この塾なら安心」と感じる情報設計を優先します。" },
@@ -346,12 +346,12 @@ export default function SchoolPage() {
                 { kpi: "在籍生徒数（月次）", where: "自社管理台帳", desc: "Web集客全体の最終的なビジネス成果。MEO・SEO・LP改善の積み重ねが在籍数の安定増加に反映されているかを四半期ごとに検証します。" },
                 { kpi: "継続率・退塾率（月次）", where: "自社管理台帳", desc: "在籍生徒の継続率は口コミや紹介集客にも影響します。Web集客で獲得した生徒が定着しているかを把握し、指導品質とWeb訴求内容の整合性を保ちます。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
-                  <div style={{ minWidth: "200px", flexShrink: 0 }}>
+                <div key={item.kpi} style={{ display: "flex", flexWrap: "wrap", columnGap: "20px", rowGap: "8px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <div style={{ flex: "0 0 200px" }}>
                     <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
                     <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
-                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
+                  <p style={{ flex: "1 1 260px", minWidth: 0, fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -365,7 +365,7 @@ export default function SchoolPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "教育業種特有の季節需要を理解した集客設計", b: "新学期・夏期講習・受験シーズンという学習塾固有の需要サイクルを踏まえた年間集客カレンダーを設計します。シーズン前の準備タイミングから施策を逆算し、ピーク時に最大限の集客効果が出るよう計画的に支援します。" },
                 { t: "MEO・SEO・LP・口コミ管理を一社完結で対応", b: "Googleマップ対策・SEOコンテンツ制作・体験申込みLP・口コミ獲得フロー設計をバラバラに外注する必要がなく、一貫した戦略のもとで全施策を連動させます。戦略の一貫性が集客精度を高めます。" },
@@ -463,7 +463,7 @@ export default function SchoolPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               スクール種別・ターゲット別の訴求ポイント
             </h2>
-            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   label: "学習塾（受験対策）",

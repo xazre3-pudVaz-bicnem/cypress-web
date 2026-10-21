@@ -279,7 +279,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県の主要エリアと地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "草加市・越谷市", desc: "葛飾区から近く訪問相談も可能な東京隣接エリア。東京東部の商圏と重複する部分があり、広域集客戦略が有効。MEO競合は中程度で差別化により上位を狙える。" },
                 { area: "川口市", desc: "東京都北区・荒川区・足立区・葛飾区と隣接する埼玉南部の主要都市。人口約61万人で商業集積が高く、飲食・美容・医療の需要が大きい。MEO競合が増加傾向にあり戦略的な施策が必要。" },
@@ -303,7 +303,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要・今がチャンス", desc: "東京より競合が少ない埼玉ではMEOの費用対効果が高い。今から施策を始めれば早期に上位ポジションを確保できる。特に郊外エリアはほぼ空白状態で即効性が期待できる。" },
                 { label: "ローカルSEO", tag: "中長期で安定", desc: "「〇〇市 〇〇」のキーワードで安定した検索流入を構築。東京×埼玉の広域キーワードで商圏を最大化できる。コンテンツSEOとの組み合わせで長期的な集客基盤を作る。" },
@@ -332,7 +332,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               業種によってMEO・SEOの有効なアプローチが異なります。埼玉県の市場特性に合わせた業種別の集客ポイントをご紹介します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ",
@@ -389,7 +389,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               埼玉県の主要エリアはそれぞれ商圏特性が異なります。各エリアの特性を理解した上で、最適な集客戦略を設計します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(320px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   area: "さいたま市・大宮エリア",
@@ -467,7 +467,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに埼玉県の集客を依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 {
                   n: "01",

@@ -84,7 +84,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このソリューションの特徴
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
               {page.features.map((item) => (
                 <div key={item.num} style={{ background: "#ffffff", padding: "28px" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>

@@ -174,7 +174,7 @@ export default function Page() {
             <p style={S.label}>Products</p>
             <h2 style={S.h2}>紹介できるサービス</h2>
             <p style={S.body}>中小企業・店舗向けに設計された、提案しやすいWeb集客サービスが揃っています。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { t: "ホームページ制作", b: "Next.js・WordPress対応の高速・SEO対応サイト制作。中小企業向けのシンプルなパッケージから、EC・採用サイトまで対応。地域事業者へ提案しやすいサービスです。" },
                 { t: "SEO対策", b: "地域名＋業種キーワードでの上位表示を目指すローカルSEO。コンテンツ設計・技術SEO・構造化データ実装まで対応。継続運用で効果が積み上がります。" },
@@ -225,7 +225,7 @@ export default function Page() {
             <p style={S.label}>Program Types</p>
             <h2 style={S.h2}>販売代理店と取次店（紹介パートナー）の違い</h2>
             <p style={S.body}>関与の深さに応じて、取次店・販売代理店の2種類の関わり方を選択できます。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px", maxWidth: "860px" }}>
               {[
                 {
                   type: "取次店（紹介パートナー）",
@@ -314,7 +314,7 @@ export default function Page() {
             <p style={S.body}>
               全国対応の販売代理店・取次店制度を提供しています。葛飾区での起業者向けには、専用の詳細ページもご用意しています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "14px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))", gap: "14px", maxWidth: "900px" }}>
               {[
                 { href: "/partner/katsushika-startup", label: "葛飾区で起業する方向けパートナー制度", desc: "創業初期の収益柱として検討できる葛飾区特化ページ" },
                 { href: "/area/tokyo/katsushika/startup-revenue-streams", label: "葛飾区創業初期の収益柱づくり", desc: "収益柱の考え方・パートナー制度の活用方法" },

@@ -309,7 +309,7 @@ export default function WordpressPage() {
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
               {[
                 {
                   industry: "飲食店",
@@ -487,7 +487,7 @@ export default function WordpressPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               WordPress制作で失敗する4つのよくあるミス
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "テーマを設定するだけで終わる", b: "既製テーマを購入して設置するだけでは、SEO設定・パフォーマンス最適化・セキュリティ対策が不十分なままです。Webサイトとして機能させるには適切なカスタマイズが必要です。" },
                 { t: "プラグインを入れすぎる", b: "便利だからと多数のプラグインをインストールすると表示速度が低下し、プラグイン同士の競合やセキュリティリスクが増加します。最低限必要なプラグインに絞ることが重要です。" },

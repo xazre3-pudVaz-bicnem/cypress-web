@@ -213,7 +213,7 @@ export default function PetShopPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               ペットショップ・動物病院向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/pet-shop/meo",
@@ -310,7 +310,7 @@ export default function PetShopPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスのペットショップ・動物病院向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 トリミング」「近くの動物病院」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得フロー構築で地域の新規顧客獲得を強化します。" },
                 { label: "Instagram・SNS支援", desc: "ビフォーアフター写真の投稿計画・リール動画企画・ハッシュタグ戦略・プロフィール最適化を一括サポートします。かわいいペットコンテンツで地域フォロワーを集客に転換します。" },
@@ -453,7 +453,7 @@ export default function PetShopPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "32px" }}>
               {[
                 {
                   n: "01",

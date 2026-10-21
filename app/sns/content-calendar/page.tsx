@@ -151,7 +151,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コンテンツカレンダーなし運用の4つのリスク
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "ネタ切れで投稿が止まる", b: "「今日何を投稿しよう」と毎回考えると、やがてアイデアが尽きて投稿が停止します。カテゴリとスケジュールを先に決めておくことで、ネタ切れは根本的に防げます。" },
                 { t: "投稿頻度のムラが大きくなる", b: "計画がないと忙しい時期に投稿がゼロになり、暇な時期に連投するムラが生まれます。アルゴリズムは一定頻度の投稿を好み、ムラがあるアカウントはリーチが下がります。" },
@@ -174,7 +174,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               コンテンツカレンダーの設計ステップ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderTop: "3px solid var(--v2-accent)" }}>
                   <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>STEP {String(i + 1).padStart(2, "0")}</p>
@@ -232,7 +232,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               コンテンツカレンダーの設計は業種ごとに異なる繁忙期・季節イベントを反映させることで、集客効果が最大化されます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(320px,100%), 1fr))", gap: "0" }}>
               {[
                 { industry: "飲食店", point: "季節メニュー・イベント・記念日連動", body: "春のお花見・夏の涼しげメニュー・クリスマスディナーなど季節行事に先行して投稿を計画します。バレンタイン・母の日などの記念日連動コンテンツは2か月前からカレンダーに組み込みます。" },
                 { industry: "美容室・サロン", point: "トレンド・成人式・卒業式など季節連動", body: "1月の成人式・3月の卒業式・春の入学・夏のヘアケアなど美容トレンドと季節行事を結びつけた計画が予約獲得に直結します。秋冬のカラーチェンジシーズンも早めのコンテンツ発信が有効です。" },

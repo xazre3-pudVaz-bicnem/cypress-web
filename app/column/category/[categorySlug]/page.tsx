@@ -364,8 +364,8 @@ export default async function ColumnCategoryPage({
               )}
             </div>
 
-            {/* サイドバー（1カラムに畳まれるlg未満ではstickyを無効化） */}
-            <aside className="w-full min-w-0 lg:sticky lg:top-[88px]">
+            {/* サイドバー（全体を固定すると画面の低いPCで下の相談枠が切れるので、PCでは相談枠だけを追従させる） */}
+            <aside className="w-full min-w-0 lg:self-stretch">
               {/* カテゴリリスト */}
               <div style={{ marginBottom: "40px" }}>
                 <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "16px" }}>
@@ -412,7 +412,7 @@ export default async function ColumnCategoryPage({
               </div>
 
               {/* CTA */}
-              <div data-tone="dark" style={{ background: "#293540", padding: "24px" }}>
+              <div data-tone="dark" className="lg:sticky lg:top-[104px]" style={{ background: "#293540", padding: "24px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#ffffff", fontWeight: 700, marginBottom: "10px" }}>
                   Web集客の無料相談
                 </p>

@@ -202,7 +202,7 @@ export default function RecruitSitePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               採用サイトがないと起きる4つの採用リスク
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "優秀な人材が応募をやめる", b: "求職者の90%が応募前にWebサイトを確認します。会社の文化・働く環境・先輩スタッフの様子が伝わらないと、「どんな会社かわからない」という理由で応募候補から外されます。" },
                 { t: "求人媒体に依存しコストが増え続ける", b: "IndeedやリクナビNEXTへの掲載費は採用1件あたり数十万円かかります。採用サイトで自社への共感度が高い応募者を集めることで、媒体依存から脱却できます。" },

@@ -158,7 +158,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               北区の主要エリア・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "赤羽", desc: "4路線が交わる北部最大のターミナル。居酒屋・飲食の激戦地だが、美容・整体・クリニックは比較的競合が少ない。エリア分析と差別化戦略が鍵。" },
                 { area: "王子", desc: "東京メトロ南北線・JR京浜東北線が通る商業エリア。荒川に面した公園・飛鳥山が近く、地域住民密着の生活サービス需要が安定。競合が少なく施策効果が出やすい。" },
@@ -182,7 +182,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "北区各エリアの競合状況を把握した戦略設計", b: "赤羽の激戦エリアから十条・田端の穴場エリアまで、北区の競合状況を精緻に分析し、最も費用対効果の高い施策を優先して実行します。" },
                 { n: "02", t: "MEO・SEO・Web制作をワンストップで完結", b: "集客に必要な施策をMEO・SEO・ホームページ制作すべて一社で完結します。一貫した集客設計で相乗効果を生み出します。" },

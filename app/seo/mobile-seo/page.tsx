@@ -227,7 +227,7 @@ export default function MobileSeoPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               スマートフォン未最適化がSEOに与える4つのダメージ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "Googleの評価低下", b: "モバイルファーストインデックスではスマートフォン版のコンテンツがSEO評価の基準です。PCで完璧でもスマートフォン版が劣ると検索順位が下がります。PCにしかないコンテンツはインデックスされない恐れがあります。" },
                 { t: "直帰率の急上昇", b: "スマートフォンで見づらいサイトはユーザーが数秒で離脱します。高い直帰率はGoogleに「品質が低いページ」と評価され、さらに順位低下につながります。" },
@@ -361,7 +361,7 @@ export default function MobileSeoPage() {
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
               スマートフォンユーザーの行動パターンは業種によって大きく異なります。「どのような操作を求めているか」を軸に最適化の方向性を整理しました。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "クリニック・歯科・整骨院",

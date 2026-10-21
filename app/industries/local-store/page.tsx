@@ -212,7 +212,7 @@ export default function LocalStoreIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               地域密着型小売・専門店が抱える集客課題
             </h2>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", background: "rgba(9,111,200,0.2)" }}>
               {[
                 {
                   n: "01",
@@ -424,7 +424,7 @@ export default function LocalStoreIndustryPage() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "40px" }}>
               地域密着型小売・専門店のWebマーケティングは「感覚」ではなく数字で改善します。以下のKPIを月次でモニタリングすることで、どの施策が来店に効いているかを把握し、PDCAを回せます。
             </p>
-            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gap: "1px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", background: "#dde0e4" }}>
               {[
                 {
                   name: "GBPルート検索数",
@@ -479,7 +479,7 @@ export default function LocalStoreIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   t: "MEO・SNS・ホームページを一社で完結",
@@ -514,7 +514,7 @@ export default function LocalStoreIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 800, marginBottom: "40px" }}>
               地域密着型小売・専門店向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "MEO対策・GBP最適化", b: "「○○駅 花屋」「○○市 雑貨店」でGoogleマップ上位表示を実現します。写真充実・口コミ獲得フロー設計・GBP投稿の継続運用で地域の来店ニーズを確実に捕捉します。" },
                 { t: "Instagram・SNS運用支援", b: "商品写真・ディスプレイ・入荷情報のコンテンツ企画から投稿代行まで対応します。地域ハッシュタグ戦略とリール活用でフォロワーと来店客を同時に増やします。" },

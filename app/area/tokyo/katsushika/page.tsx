@@ -125,7 +125,7 @@ export default function Page() {
             <p style={S.label}>Contents</p>
             <h2 style={S.h2}>葛飾区起業ガイド — 目次</h2>
             <p style={S.body}>下記の6ページから、必要な情報をご確認ください。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "20px" }}>
               {cards.map((card) => (
                 <Link
                   key={card.href}

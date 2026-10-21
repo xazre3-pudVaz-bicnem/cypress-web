@@ -218,7 +218,7 @@ export default function Page() {
             <p style={S.label}>Failure Patterns</p>
             <h2 style={S.h2}>創業直後のWeb集客でよくある失敗パターン</h2>
             <p style={S.body}>葛飾区で創業した方からよく聞く失敗パターンです。事前に把握することで回避できます。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "960px" }}>
               {failurePatterns.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -279,7 +279,7 @@ export default function Page() {
             <p style={S.body}>
               SEO効果は3〜6ヶ月以上かかります。開業前から制作を開始することで、開業直後から検索流入の基盤が育ち始めます。最低限5ページの制作を推奨しています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "14px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "14px", maxWidth: "860px" }}>
               {hpEssentials.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "18px 16px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -298,7 +298,7 @@ export default function Page() {
             <p style={S.body}>
               GBPの継続的な運用がMEO対策の中心です。定期的な投稿・口コミ管理・写真更新を継続することで、地域名検索でのマップ表示率向上が期待できます。効果は業種・競合状況によって異なります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "14px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "14px", maxWidth: "860px" }}>
               {meoItems.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "18px 16px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -317,7 +317,7 @@ export default function Page() {
             <p style={S.body}>
               業種によってはInstagram・LINE公式アカウントが重要な集客チャネルになります。ホームページとの連動設計と、継続できるコンテンツ素材の準備が鍵です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "14px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "14px", maxWidth: "860px" }}>
               {snsItems.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "18px 16px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -350,7 +350,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
                 <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>

@@ -322,7 +322,7 @@ export default function ServicesSnsPage() {
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
-            <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
+            <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))" }}>
               {[
                 { industry: "飲食店", body: "日替わりメニュー・料理写真・厨房の様子・スタッフの顔が見える投稿がエンゲージメントを高めます。Instagramリールで「仕込みの様子」や「盛り付け動画」を発信し、来店意欲を刺激するコンテンツ設計を行います。" },
                 { industry: "美容室・サロン", body: "施術のビフォーアフター・スタイリスト紹介・ヘアカラー見本がInstagramで高いリーチを生みます。予約導線をプロフィールリンクに設置し、フォロワーを予約へ転換する仕組みを整えます。" },

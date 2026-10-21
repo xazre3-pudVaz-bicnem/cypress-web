@@ -210,7 +210,7 @@ export default function BlogStrategyPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コンテンツ戦略なしのSEOで失う4つの機会
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "ターゲットキーワードが散漫になる", b: "ブログ記事を思いつきで書き続けても、特定のテーマでの専門性がGoogleに評価されません。テーマを絞ったピラーコンテンツ戦略で権威性を積み上げることが重要です。" },
                 { t: "記事を書いても流入がゼロ", b: "検索ボリュームのないキーワードや競合が強すぎるキーワードを狙った記事は、どれだけ質が高くても検索流入がゼロになります。戦略的なキーワード設計が集客の前提です。" },

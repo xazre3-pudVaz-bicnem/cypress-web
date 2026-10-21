@@ -97,7 +97,7 @@ export default function GuidePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               ガイド一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
               {guidePages.map((page) => (
                 <Link
                   key={page.slug}
@@ -132,7 +132,7 @@ export default function GuidePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ガイドと合わせて読みたいコンテンツ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { href: "/knowledge", label: "ナレッジベース", desc: "用語・概念・背景知識の体系的な解説" },
                 { href: "/goals", label: "目的別施策プラン", desc: "達成したい目標から施策を選ぶ" },

@@ -145,7 +145,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               保守を怠ると起きる4つのリスク
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "セキュリティ侵害・情報漏洩", b: "WordPressプラグインの古いバージョンには既知の脆弱性があります。更新を怠ると悪意あるコードが埋め込まれ、顧客情報の流出・サイト改ざんが発生するリスクがあります。" },
                 { t: "データ消失の危機", b: "定期バックアップなしのまま、サーバー障害・ハッキング・誤操作が起きるとサイトのコンテンツをすべて失います。数年分の記事・画像・問い合わせデータが一瞬で消えてしまいます。" },
@@ -228,7 +228,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 { industry: "飲食店", point: "メニュー・営業時間更新の頻度が高い", detail: "季節メニューの切り替え・臨時休業のお知らせ・Googleビジネスプロフィールとの情報統一が保守の中心です。更新を素早く行うためのCMS設定が重要です。" },
                 { industry: "美容室", point: "キャンペーン・スタッフ情報の定期更新", detail: "スタッフの入退職・担当メニューの変更・期間限定キャンペーンは頻繁に発生します。写真付きスタッフページの更新や予約システムとの連携維持が保守の主な内容です。" },

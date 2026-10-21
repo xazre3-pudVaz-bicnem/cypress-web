@@ -145,7 +145,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SEO診断で発見される4つの典型的問題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "インデックスされていない重要ページ", b: "noindex設定の誤り・canonicalの不整合・robots.txtの過剰ブロックなどで、上位表示させたいページがGoogleに認識されていないケースがあります。Search Consoleのカバレッジレポートで即確認できます。" },
                 { t: "Core Web Vitalsの失格スコア", b: "LCP・CLS・INPが基準を満たしていないページは評価上不利になります。特にモバイルでの速度問題は多くのサイトで見落とされており、PageSpeed InsightsとSearch ConsoleのCWVレポートで確認します。" },
@@ -255,7 +255,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "680px" }}>
               SEO監査では単に問題を列挙するのではなく、各問題の原因・影響範囲・改善策をセットで整理します。以下の観点を軸に診断を進めます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "技術的問題（インデックス・クロール）", b: "Search Consoleのカバレッジレポートで除外ページを確認。robots.txt・noindex・canonical・HTTPステータスコードの整合性を確認します。インデックス問題はすべてのSEO施策の土台になるため、最初に解決すべき領域です。" },
                 { t: "コンテンツ品質（薄いページ・意図ズレ）", b: "各ページが検索意図を満たしているか・情報量が競合と比較して充分か・E-E-A-Tの根拠（著者情報・出典・専門性）が示されているかを評価します。Googleのコアアップデートはコンテンツ品質を主な対象としています。" },
@@ -361,7 +361,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               改善優先度の考え方
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "24px", maxWidth: "960px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "24px", maxWidth: "960px" }}>
               {[
                 { rank: "最優先", t: "インデックス問題", b: "表示させたいページがGoogleに認識されていない問題は、他のすべての施策の前提です。noindex解除・canonical修正・sitemap送信で早期解決します。", col: "var(--v2-accent)" },
                 { rank: "優先", t: "速度・Core Web Vitals", b: "ページ速度はユーザー体験とランキングシグナル両方に影響します。LCPのPass判定を目標に、画像最適化とサーバー応答改善から着手します。", col: "#a0c4b8" },

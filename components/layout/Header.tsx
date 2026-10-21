@@ -76,6 +76,11 @@ export default function Header({ variant = "overlay", introFade = false }: Props
     };
   }, []);
 
+  // ページ側の追従バー（data-under-header）がヘッダーの出し入れに合わせて位置を変えられるよう、状態を html に出す
+  useEffect(() => {
+    document.documentElement.dataset.header = mode;
+  }, [mode]);
+
   // メニューを開いている間は Esc で閉じ、モバイルメニュー表示中は背面のスクロールを止める
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

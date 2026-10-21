@@ -366,7 +366,7 @@ export default function HistoryPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(340px,100%), 1fr))",
                 gap: "56px",
                 alignItems: "center",
               }}
@@ -537,7 +537,7 @@ export default function HistoryPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))",
                 gap: "20px",
                 maxWidth: "900px",
               }}

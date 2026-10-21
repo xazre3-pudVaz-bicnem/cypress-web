@@ -284,7 +284,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               東京都は23区と多摩地区で市場特性が大きく異なります。エリアと業種の組み合わせで最適な集客戦略が変わります。葛飾区拠点として東京全域の業種別ノウハウを蓄積しています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ・居酒屋",
@@ -335,7 +335,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               主要エリア別特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   area: "東京東部（葛飾・江戸川・足立・墨田）",
@@ -411,7 +411,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               東京都のエリア別おすすめ集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "来店型に最重要", desc: "「近くの〇〇」検索が多い東京では最重要チャネル。エリアごとの競合レベルに応じた施策設計で、最短での上位表示を目指す。" },
                 { label: "ローカルSEO", tag: "中長期で効く", desc: "東京特化の地域名+業種キーワードで検索上位表示。競合の少ないキーワードを優先し、コンテンツSEOで着実にトラフィックを積み上げる。" },
@@ -438,7 +438,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "40px" }}>
               東京都の事業者から相談を受ける中で見えてきた、集客施策が機能しない典型的なパターンをご紹介します。思い当たる点があれば、現状の改善から始めましょう。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "「東京」という広すぎるターゲット設定", b: "「東京 美容室」など東京全体を狙ったキーワードは、大手サイトが支配しており中小企業には非現実的です。「葛飾区 美容室」「亀有駅 美容室」など区・駅単位に絞り込んだキーワード設計こそが成果への最短経路です。" },
                 { t: "GBPの写真・情報が不足している", b: "Googleビジネスプロフィールの写真枚数が少ない・営業時間が未更新・投稿が途絶えているケースは東京でも非常に多いです。GBPの基本整備だけで順位が改善するケースも多く、まず確認すべきポイントです。" },
@@ -461,7 +461,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "葛飾区拠点で東京東部に訪問対応可", b: "葛飾区亀有3-16-14-201を拠点とするサイプレスは、葛飾区・足立区・江戸川区・墨田区・江東区・荒川区など東京東部エリアへの訪問相談・サポートに対応しています。デジタルとリアルを組み合わせた支援体制が強みです。" },
                 { n: "02", t: "競合分析で「勝てるキーワード」を特定", b: "東京の激戦キーワードを避け、中小企業でも上位を取れるキーワードを特定して施策を実行します。費用対効果を最優先にした戦略設計で、限られた予算で最大の成果を目指します。" },
@@ -483,7 +483,7 @@ export default function Page() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Market Data</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 800, marginBottom: "32px" }}>東京都の市場概要</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "人口（全国1位）", value: "約1,400万人", note: "日本最大・最も競争が激しい市場" },
                 { label: "事業所数（概算）", value: "約70万社", note: "中小企業・個人事業主が全体の99%超" },

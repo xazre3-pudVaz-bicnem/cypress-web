@@ -156,14 +156,15 @@ export default function HomeHero() {
       </motion.div>
 
       {/* ── ステージに重なって流れる中身 ─────────────────────────────── */}
-      <div className="relative md:-mt-[100svh]">
+      {/* PC ではステージに重なるので、余白部分はクリックを下（モーション切替ボタン）へ通す */}
+      <div className="relative md:pointer-events-none md:-mt-[100svh]">
         <div aria-hidden className="hidden h-[75svh] md:block" />
 
         {/* ステートメント（PC: 0.6画面ぶん固定 → 上へ流れる） */}
         <div className="md:h-[170svh]">
           {/* PC ではスクロール連動で1文字ずつ出すので、準備ができるまで隠しておく */}
           <div
-            className={`flex items-center px-[var(--v2-gutter)] py-20 md:sticky md:top-0 md:h-[100svh] md:py-0 ${desktop ? "" : "md:opacity-0"}`}
+            className={`flex items-center px-[var(--v2-gutter)] py-20 md:pointer-events-auto md:sticky md:top-0 md:h-[100svh] md:py-0 ${desktop ? "" : "md:opacity-0"}`}
           >
             <div className="grid w-full gap-8 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-0">
               <motion.h2
@@ -243,7 +244,7 @@ function StatementLines({ desktop }: { desktop: boolean }) {
 
 function Pillars() {
   return (
-    <div className="relative md:h-[100svh]">
+    <div className="relative md:pointer-events-auto md:h-[100svh]">
       {/* 中央を縦に通る細い線（PC）。円はステージ側で、この区画の中央に止まる */}
       <span aria-hidden className="absolute inset-y-0 left-1/2 hidden w-px md:block" style={{ background: "rgba(51,51,51,0.16)" }} />
       <div className="grid gap-16 px-[var(--v2-gutter)] pb-24 md:h-full md:grid-cols-2 md:gap-0 md:pb-0 md:pt-[19svh]">

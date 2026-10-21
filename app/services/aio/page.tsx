@@ -316,7 +316,7 @@ export default function ServicesAioPage() {
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
-            <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
+            <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))" }}>
               {[
                 { industry: "士業・コンサル", body: "法律・税務・経営の専門知識がAI検索で直接引用されるチャンスが多い業種です。弁護士・税理士・中小企業診断士などの資格情報と実績を構造化し、FAQを充実させることで引用獲得を狙います。" },
                 { industry: "医療機関", body: "YMYL領域として最も高い信頼性基準が求められます。医師監修の明示・診療科ごとのFAQ整備・診療実績の掲載がAI引用への近道です。患者が検索する症状・治療法クエリへの対応を優先します。" },

@@ -145,7 +145,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               スマートフォン未対応サイトが失う4つの機会
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "直帰率の急上昇", b: "スマートフォンで横スクロールが発生したり文字が小さすぎたりすると、ユーザーは数秒で離脱します。直帰率の上昇はSEO評価にも間接的に影響します。" },
                 { t: "Googleの評価低下", b: "モバイルファーストインデックスにより、スマートフォン対応していないサイトはSEO評価が下がります。検索順位が落ちることで、毎日の集客機会が失われます。" },
@@ -228,7 +228,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 { industry: "飲食店", point: "スマホで地図・電話タップがすぐできる", detail: "「店舗を見つけてすぐ電話・予約」という行動パターンに合わせ、電話番号のタップtoコール・Googleマップへの誘導ボタンをファーストビューに配置します。営業時間・メニューも1スクロール以内で見えるレイアウトにします。" },
                 { industry: "美容室", point: "Instagram連携・写真重視のモバイルUI", detail: "施術事例写真のスワイプギャラリー・Instagramフィードの埋め込み・スタイリストへの指名予約ボタンをモバイルファーストで設計します。写真の読み込み速度最適化も重要です。" },

@@ -633,7 +633,7 @@ section[data-tone="dark"]:not([data-page-hero]) {
 
 
 /* セクションの小さな英字ラベル（h2 の直前の段落）を、参考サイトの「News」「Seminar」のような英字見出しにする */
-main:not(.v2) p:has(+ h2):not([data-page-hero] *) {
+main:not(.v2) p:is([class*="tracking-"], [style*="letter-spacing"]):has(+ h2):not([data-page-hero] *, .blog-content *, .wp-content *) {
   font-family: var(--font-gsf), sans-serif !important;
   font-size: clamp(26px, 2.5vw, 38px) !important;
   font-weight: 600 !important;
@@ -643,7 +643,7 @@ main:not(.v2) p:has(+ h2):not([data-page-hero] *) {
   color: var(--v2-blue) !important;
   margin-bottom: 10px !important;
 }
-main:not(.v2) [data-tone="dark"] p:has(+ h2) {
+main:not(.v2) [data-tone="dark"] p:is([class*="tracking-"], [style*="letter-spacing"]):has(+ h2) {
   color: var(--v2-accent) !important;
 }
 
@@ -700,6 +700,19 @@ main:not(.v2) > section:not([data-page-hero]) {
   content-visibility: auto;
   contain-intrinsic-size: auto 900px;
 }
+/* ヘッダーの下に追従するバー（コラム一覧の絞り込みなど）。ヘッダーが隠れたら最上部へ、出たらその下（8px + 64px）へ */
+[data-under-header] {
+  top: 0;
+  transition: top 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html[data-header="shown"] [data-under-header] {
+  top: 72px;
+}
+
+/* 「戻る・進む」で位置を戻すあいだは、仮の高さのままだと戻り先がずれるので全部を実際の高さで並べる（SmoothScroll.tsx） */
+html[data-restoring] :is(main:not(.v2) > section, [style*="content-visibility"]) {
+  content-visibility: visible !important;
+}
 
 
 
@@ -714,4 +727,17 @@ main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)
 /* 立体イラスト（モチーフが右寄り）を正方形・縦長の枠で切り抜くときも、モチーフが見えるよう右寄りに合わせる */
 img:is([src*="%2Fimages%2Fv2%2Fb-"], [src*="%2Fimages%2Fv2%2Fi-"], [src*="/images/v2/b-"], [src*="/images/v2/i-"]) {
   object-position: 74% 50%;
+}
+
+/* 記事本文の箇条書き・番号付きリストに印を出す（Tailwind の初期化で消えていたため） */
+.blog-content ul,
+.wp-content ul {
+  list-style: disc;
+}
+.blog-content ol,
+.wp-content ol {
+  list-style: decimal;
+}
+:is(.blog-content, .wp-content) li::marker {
+  color: var(--v2-blue);
 }

@@ -285,7 +285,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               千葉県の主要エリアと地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "松戸市・市川市", desc: "東京葛飾区・江戸川区と隣接する千葉県入口エリア。東京からの流入が多く集客ポテンシャルが高い。訪問相談可能なエリア。MEO競合は増加傾向だが東京より少ない。" },
                 { area: "船橋市", desc: "千葉県最大の人口を誇る都市。ショッピングモール（ららぽーとTOKYO-BAY等）と競合する中小企業は差別化が必須。MEO・SEOで地元客を確実に獲得する戦略が有効。" },
@@ -310,7 +310,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               千葉県でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要・効果大", desc: "東京より競合が少ない千葉県では、MEO対策の費用対効果が特に高い。正しいGBP最適化・口コミ獲得・定期投稿で短期間の上位表示が期待できるエリアが多数ある。" },
                 { label: "ローカルSEO", tag: "中長期で安定", desc: "「〇〇市 〇〇」のローカルキーワードで安定した検索流入を構築。東京×千葉の広域キーワード設計で商圏を最大化できる。競合が少ない今が参入のベストタイミング。" },
@@ -332,7 +332,7 @@ export default function Page() {
         {/* Stats Band */}
         <section data-tone="dark" style={{ background: "#293540", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "32px", textAlign: "center" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(160px,100%), 1fr))", gap: "32px", textAlign: "center" }}>
               {[
                 { val: "約628万人", label: "千葉県の総人口" },
                 { val: "54市町村", label: "千葉県の市町村数" },
@@ -360,7 +360,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               千葉県の各エリアに根付いた業種別の需要特性を理解した上で、最適な集客戦略を設計します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ",
@@ -414,7 +414,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               千葉県内でもエリアによって商圏規模・集客競合・顧客層が大きく異なります。各エリアの特性を踏まえた戦略で確実に成果を目指します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "20px" }}>
               {[
                 {
                   area: "千葉市（中央区・美浜区）",
@@ -495,7 +495,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "東京隣接エリアへの訪問相談対応", b: "葛飾区から近い松戸市・市川市・柏市への訪問相談に対応しています。東京都内と変わらない対面サポートが可能です。船橋・千葉市などはオンラインで完全対応します。" },
                 { n: "02", t: "「競合が少ない今」が参入の最大チャンス", b: "千葉県内の多くのエリアはMEO・SEO競合がまだ少ない状態です。今施策を開始することで、競合が増える前に上位ポジションを確保できます。早期参入のアドバンテージを最大限に活用するためのサポートを提供します。" },

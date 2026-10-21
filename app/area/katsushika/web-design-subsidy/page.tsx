@@ -478,7 +478,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               補助金申請の前に、制作するホームページの内容を整理しておくことで、申請書類の作成がスムーズになります。サイプレスでは制作内容・見積内容の整理をサポートしています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "20px", maxWidth: "900px" }}>
               {[
                 { t: "何のために作るのか（目的）", b: "集客・問い合わせ増加・採用・ブランド認知など、ホームページを作る目的を明確にしておくことで、必要なページ構成・機能の優先順位が決まります。" },
                 { t: "対象サービス・商品", b: "どのサービス・商品を主に訴求するか、何を問い合わせてほしいか。補助金の対象経費として適切かも含めて整理します。" },
@@ -619,7 +619,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               株式会社サイプレスは葛飾区亀有に拠点を置き、葛飾区の中小企業・店舗向けにホームページ制作からWeb集客支援まで一貫して対応しています。補助金活用時に必要となる制作内容・見積内容の整理もサポートします（採択・支給を保証するものではありません）。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "ホームページ制作", b: "Next.js・WordPressによる高速・SEO対応のホームページを制作します。葛飾区への訪問ヒアリングから納品・保守まで一貫対応。補助金申請に必要な見積書・仕様書の発行も可能です。" },
                 { n: "02", t: "SEO内部設計", b: "制作段階からSEOを考慮したURL設計・タイトル・メタ情報・構造化データ・表示速度最適化を実装します。「葛飾区＋業種」キーワードでの上位表示を目指す構造を構築します。" },
@@ -677,7 +677,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>
               関連サービス
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))", gap: "16px" }}>
               {[
                 { href: "/web-design", label: "ホームページ制作", desc: "SEOに強いサイト制作" },
                 { href: "/seo", label: "SEO対策", desc: "検索上位表示支援" },

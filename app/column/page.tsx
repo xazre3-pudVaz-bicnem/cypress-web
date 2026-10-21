@@ -132,9 +132,10 @@ export default function ColumnPage() {
           </div>
         </section>
 
-        {/* Category Filter */}
+        {/* Category Filter（ヘッダーの出し入れに合わせて上下する: globals.css の data-under-header） */}
         <div
-          className="sticky top-16 z-20 py-3"
+          data-under-header
+          className="sticky z-20 py-3"
           style={{
             background: "rgba(255,255,255,0.97)",
             backdropFilter: "blur(8px)",

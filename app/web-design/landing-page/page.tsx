@@ -177,7 +177,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               CVが取れないLPの4つの共通パターン
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "ファーストビューで伝わらない", b: "ページを開いて3秒以内に「何のサービスか」「自分に関係あるか」「信頼できるか」が伝わらないと離脱します。キャッチコピーとビジュアルを最優先で最適化する必要があります。" },
                 { t: "信頼要素が不足している", b: "「怪しい」「大丈夫かな」という不安を解消できていないLPはCVが伸びません。実績・お客様の声・会社情報・資格などの信頼要素を戦略的に配置します。" },

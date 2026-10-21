@@ -323,7 +323,7 @@ export default function RestaurantIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               飲食店向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "GBP完全最適化・MEO運用", b: "Googleビジネスプロフィールの基本情報・写真・メニュー・カテゴリを整備し、週次更新・口コミ管理・投稿代行まで一括対応。ローカルパック（上位3件）への表示を目指して継続運用します。" },
                 { t: "Instagram・SNS運用代行", b: "料理写真の撮影ディレクション・キャプション作成・ハッシュタグ設計・投稿スケジュール管理まで一括代行。毎日投稿のGBP投稿週2回も同時対応します。" },
@@ -490,7 +490,7 @@ export default function RestaurantIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "32px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "32px", maxWidth: "900px" }}>
               {[
                 {
                   n: "01",

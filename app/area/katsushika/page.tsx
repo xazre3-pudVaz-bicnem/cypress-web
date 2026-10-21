@@ -327,7 +327,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               葛飾区の主要スポット・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "亀有", desc: "亀有駅周辺は商業集積が進み、飲食・小売・医療・美容が密集。駅前のショッピングモール（アリオ亀有）の影響で集客競争が激しいエリアです。MEO・SEOでの差別化が集客のカギとなります。" },
                 { area: "柴又", desc: "柴又帝釈天の門前町として知名度の高い観光エリア。観光客と地元住民の両方をターゲットにした集客が有効で、多言語対応・観光関連キーワードのSEOが効果的です。" },
@@ -355,7 +355,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "48px" }}>
               葛飾区の業種・エリア特性に合わせた集客チャネルを選定します。MEO・SEO・Web制作・SNSを組み合わせることで、複数の接点から新規顧客を獲得できます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "特に推奨", desc: "Googleマップで「近くの〇〇」検索をする葛飾区住民へのアプローチ。飲食・美容・医療・整体など来店型ビジネスに最適。競合が少ないエリアが多く費用対効果が高い。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「葛飾区 〇〇」「亀有 〇〇」などの地域名キーワードでの検索上位表示。MEOと相乗効果があり、認知拡大から来店・問い合わせまでをカバーする。" },
@@ -513,7 +513,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに葛飾区の集客を依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "葛飾区に拠点 — 訪問・対面サポート", b: "葛飾区亀有に事務所があるため、亀有・柴又・金町・新小岩・立石・お花茶屋・堀切への訪問相談・定期訪問が可能です。遠方のWeb制作会社では得られない地域密着の伴走支援を提供します。" },
                 { n: "02", t: "足立・江戸川・墨田区も迅速対応", b: "隣接する足立区・江戸川区・墨田区への対応も迅速です。葛飾区を拠点にした東京東部エリア全体の集客支援を、一社でまとめてお任せいただけます。" },
@@ -542,7 +542,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" }}>
               葛飾区にはホームページ作成費補助など、区内事業者向けの支援制度が用意されている場合があります。制度内容は年度によって変わるため、必ず葛飾区公式サイトで最新情報をご確認ください。補助金の対象になるかどうかだけでなく、SEO・MEO・問い合わせ導線まで含めて制作内容を設計することが、集客効果を高める上で重要です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px", marginBottom: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "20px", marginBottom: "40px" }}>
               {[
                 { t: "ホームページ制作 + SEO設計", b: "「葛飾区 〇〇」「亀有 〇〇」などのキーワードで検索上位を狙うSEO設計を、制作段階から組み込みます。" },
                 { t: "MEO対策との連動", b: "ホームページとGoogleビジネスプロフィールの情報を統一し、地域検索での信頼性を高めます。" },

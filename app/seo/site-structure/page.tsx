@@ -205,7 +205,7 @@ export default function SiteStructurePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイト構造が整っていないと起きる4つのSEO問題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "重要ページにPageRankが集まらない", b: "内部リンクが設計されていないサイトでは、SEO的に最も重要なページへの評価が集まりません。トップページから重要サービスページへの内部リンク設計がSEO評価の基盤です。" },
                 { t: "クローラーがページを正しく認識できない", b: "深い階層に埋まったページや孤立したページはGoogleのクローラーに見つけられにくくなります。フラットな構造とXMLサイトマップでクロール効率を最大化します。" },

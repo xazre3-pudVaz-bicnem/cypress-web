@@ -157,7 +157,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               豊島区の主要エリア・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "池袋（東口・西口）", desc: "東口はデパート・エンタメ施設が集中。西口はオフィス・飲食が集まる。エリアを東口/西口/北口に分けた細かい競合分析と、業種を絞り込んだニッチポジション戦略が攻略の鍵。" },
                 { area: "巣鴨", desc: "シニア向け商店街が有名な観光スポット。観光客＋地域高齢者の両方に対応した集客設計が有効。MEO競合は池袋より少なく攻略しやすいエリア。" },
@@ -181,7 +181,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "池袋激戦区の競合分析と「勝てる隙間」の特定", b: "池袋の複雑なMEO競合環境を精緻に分析し、エリア×業種×特徴の組み合わせで競合の少ないニッチポジションを特定します。限られた予算で最大の集客効果を実現する戦略を設計します。" },
                 { n: "02", t: "インバウンド（中国語圏）対応を含めたGBP設計", b: "池袋の中国語圏コミュニティに対応した、中国語GBP説明文・多言語口コミ返信のサポートを提供します。インバウンド集客が重要な業種では差別化ポイントになります。" },

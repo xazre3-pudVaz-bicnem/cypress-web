@@ -112,7 +112,7 @@ export default function AreaPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               エリア別サービス
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#dde0e4" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "1px", background: "#dde0e4" }}>
               {areas.map((area) => (
                 <Link
                   key={area.href}
@@ -169,7 +169,7 @@ export default function AreaPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               オンライン対応だからこそできること
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "初回相談から無料", b: "Zoom・Google Meetでの初回相談は完全無料。資料を画面共有しながら現状と課題を丁寧にヒアリングします。" },
                 { t: "月次レポートをオンラインで共有", b: "Googleドキュメント・スプレッドシートを活用した月次レポートをリアルタイムで共有。進捗が常に見える状態を維持します。" },

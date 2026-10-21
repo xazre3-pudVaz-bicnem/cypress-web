@@ -236,7 +236,7 @@ export default function TechnicalSeoPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               テクニカルSEO未対応が引き起こす4つの問題
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "インデックスされないページが増える", b: "noindex設定のミス・canonicalの設定誤り・robots.txtによるブロックでせっかく作ったページがGoogleにインデックスされないことがあります。定期的な技術的監査が必要です。" },
                 { t: "重複コンテンツでPageRankが分散する", b: "www/非www・http/https・URLパラメーターの違いで同じコンテンツが複数のURLに存在すると、PageRankが分散し評価が下がります。canonical・301リダイレクトで集約します。" },

@@ -92,9 +92,10 @@ export async function generateMetadata({
         publishedTime: topic.publishedAt,
         modifiedTime: topic.publishedAt,
         authors: ["https://www.cypress-all.co.jp/company/about-cypress"],
+        // アイキャッチのない記事は共有用の標準画像を使う（無いとSNSで画像なしのカードになる）
         images: topic.eyecatchImage
           ? [{ url: topic.eyecatchImage, width: 1200, height: 630, alt: topic.eyecatchAlt }]
-          : undefined,
+          : [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
       },
       twitter: { card: "summary_large_image" },
       alternates: { canonical: `https://www.cypress-all.co.jp/column/${slug}` },
@@ -159,7 +160,12 @@ function ColumnTopicPage({ slug }: { slug: string }) {
           width: 1200,
           height: 630,
         }
-      : undefined,
+      : {
+          "@type": "ImageObject",
+          url: "https://www.cypress-all.co.jp/hero.jpg",
+          width: 1774,
+          height: 887,
+        },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.cypress-all.co.jp/column/${slug}`,
@@ -409,7 +415,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
 
             {/* Sidebar */}
             <aside className="hidden lg:block">
-              <div className="sticky top-24 space-y-8">
+              <div className="space-y-8 [@media(min-height:900px)]:sticky [@media(min-height:900px)]:top-24">
                 <div>
                   <h3 className="text-[10px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
                     専門ガイド
@@ -698,7 +704,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
 
             {/* Sidebar */}
             <aside className="hidden lg:block">
-              <div className="sticky top-24 space-y-8">
+              <div className="space-y-8 [@media(min-height:900px)]:sticky [@media(min-height:900px)]:top-24">
                 <div>
                   <h3 className="text-[10px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
                     カテゴリ

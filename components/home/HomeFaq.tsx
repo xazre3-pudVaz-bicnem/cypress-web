@@ -14,14 +14,17 @@ export default function HomeFaq({ items }: { items: { q: string; a: string }[] }
     <section aria-labelledby="home-faq-title" className="bg-white px-[var(--v2-gutter)] pb-28 pt-8 md:pb-40">
       <div className="mx-auto grid max-w-[1180px] gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
         <div>
-          <h2 id="home-faq-title" className="md:sticky md:top-[120px]">
-            <span className="v2-display block text-[clamp(64px,9vw,128px)] text-[var(--v2-blue)]">
-              <RevealLines lines={["FAQ"]} />
-            </span>
-            <span className="mt-3 block text-[15px] font-bold tracking-[0.04em]">よくあるご質問</span>
-          </h2>
-          <div className="mt-8 hidden md:block">
-            <ArrowLink href="/faq">すべての質問を見る</ArrowLink>
+          {/* 見出しとリンクをまとめて固定する（見出しだけ固定すると、リンクが見出しの下に潜り込む） */}
+          <div className="md:sticky md:top-[120px]">
+            <h2 id="home-faq-title">
+              <span className="v2-display block text-[clamp(64px,9vw,128px)] text-[var(--v2-blue)]">
+                <RevealLines lines={["FAQ"]} />
+              </span>
+              <span className="mt-3 block text-[15px] font-bold tracking-[0.04em]">よくあるご質問</span>
+            </h2>
+            <div className="mt-8 hidden md:block">
+              <ArrowLink href="/faq">すべての質問を見る</ArrowLink>
+            </div>
           </div>
         </div>
         <ul className="border-t" style={{ borderColor: "var(--v2-line)" }}>

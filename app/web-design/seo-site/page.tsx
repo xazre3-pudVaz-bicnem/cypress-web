@@ -177,7 +177,7 @@ export default function SeoSitePage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SEO未対応サイトが失い続ける4つのビジネス機会
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "広告費に頼り続ける体質", b: "SEO対策のないサイトは広告を止めたとたん流入がゼロになります。SEOで自然検索から集客できる体制を作ることで、広告費に依存しない集客基盤を築けます。" },
                 { t: "競合に検索流入を奪われ続ける", b: "ターゲットキーワードで競合が上位表示されている間、その検索需要は100%競合のものです。毎日の検索回数×365日×数年分の集客を失い続けています。" },

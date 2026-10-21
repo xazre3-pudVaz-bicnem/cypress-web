@@ -206,7 +206,7 @@ export default function OsteopathicPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               整体院・接骨院向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/osteopathic/meo",
@@ -303,7 +303,7 @@ export default function OsteopathicPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの整体院・接骨院向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「腰痛 整体 ○○区」「肩こり 整骨院 ○○駅」でGoogleマップ上位表示を実現します。GBPの写真・サービス情報の整備・口コミ獲得・定期投稿を継続運用し、地域の新規患者獲得を強化します。" },
                 { label: "症状別SEO対策", desc: "「産後 骨盤矯正 ○○市」「慢性腰痛 整体 費用 ○○区」など症状×地域キーワードに対応したサービスページ・コンテンツを制作します。医療広告ガイドラインを遵守した表現で安全に集客します。" },
@@ -449,7 +449,7 @@ export default function OsteopathicPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   n: "01",

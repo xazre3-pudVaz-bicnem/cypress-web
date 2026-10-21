@@ -336,7 +336,7 @@ export default function Page() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(320px,100%), 1fr))",
                 gap: "0",
               }}
             >
@@ -412,7 +412,7 @@ export default function Page() {
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(min(180px,100%), 1fr))",
                   gap: "8px",
                   marginBottom: "16px",
                 }}
@@ -436,7 +436,7 @@ export default function Page() {
             </div>
 
             {/* Other prefectures */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px,100%), 1fr))", gap: "32px" }}>
               {areaBlocks.slice(1).map((block) => (
                 <div key={block.prefecture} style={{ paddingTop: "20px", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginBottom: "12px" }}>
@@ -562,7 +562,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", maxWidth: "640px", marginBottom: "48px" }}>
               拠点である葛飾区をはじめ、隣接する城東・北東エリアは商圏・競合環境・地域性を肌感覚で把握しています。データだけでなく地域を知るパートナーとして、より深い施策設計が可能です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {localKnowledgeItems.map((item, i) => (
                 <div
                   key={item.area}

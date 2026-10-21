@@ -302,7 +302,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               江戸川区の主要スポット・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "小岩", desc: "総武線の快速停車駅で商業エリアが充実。葛飾区新小岩との商圏重複があり、両区をまたいだ広域集客が可能。飲食・美容の競合が多いため、差別化戦略が重要。" },
                 { area: "葛西", desc: "東京メトロ東西線の葛西駅周辺は住宅密集エリア。ファミリー層が多く、医療・教育・飲食への需要が高い。MEO競合はまだ少なくチャンスが大きいエリア。" },
@@ -327,7 +327,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               江戸川区でおすすめの集客チャネル
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px,100%), 1fr))", gap: "20px" }}>
               {[
                 { label: "MEO対策", tag: "最重要", desc: "「葛西 〇〇」「西葛西 〇〇」など地域検索でのGoogleマップ上位表示。競合が少ないエリアが多く、少ない投資で大きな成果が期待できる。" },
                 { label: "ローカルSEO", tag: "推奨", desc: "「江戸川区 〇〇」「小岩 〇〇」などのキーワードで検索上位表示。千葉県境界エリアの地理的優位性を活かした広域キーワード設計が可能。" },
@@ -356,7 +356,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               江戸川区は人口約68万人の広大なエリアで、業種によって狙うべきキーワードと集客チャネルが異なります。各業種の特性に合わせた最適な戦略をご提案します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ・居酒屋",
@@ -440,7 +440,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに江戸川区の集客を依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { n: "01", t: "葛飾区隣接 — 訪問相談が迅速", b: "葛飾区拠点のため江戸川区（小岩・篠崎・瑞江エリア）への訪問対応が迅速です。葛西・西葛西エリアはオンライン（Zoom）で対応しています。現地でのヒアリング・現状確認で課題を的確に把握します。" },
                 { n: "02", t: "多言語対応のノウハウ", b: "西葛西の多文化コミュニティ向けの多言語GBP設定・英語ウェブサイト制作に対応しています。外国人コミュニティへの集客という江戸川区特有のニーズに対応できることが強みです。" },
@@ -498,7 +498,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               江戸川区の中小企業・個人事業主から多く寄せられる集客のお悩みとその解決策をまとめました。同じお悩みをお持ちの方はお気軽にご相談ください。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   q: "Googleマップに出てこない",

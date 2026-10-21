@@ -146,7 +146,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SEOライティングで失敗する4つのパターン
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "キーワードを詰め込みすぎる", b: "不自然なほどキーワードを繰り返すと、Googleはスパムと判断します。読みにくい文章はユーザーも離脱します。自然な文章の中に適切な頻度で含め、同義語・関連語で補います。" },
                 { t: "検索意図とページ内容がズレている", b: "「安いホテル 東京」で検索したユーザーに高級ホテルの記事を見せても意味がありません。キーワードの背後にある意図を正確に把握してコンテンツを設計します。検索上位ページを見ればGoogleの判断がわかります。" },
@@ -234,7 +234,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "680px" }}>
               業種によって検索されるキーワードの種類・検索意図・コンテンツに求められる深さは大きく異なります。以下に主要業種の記事設計の考え方を示します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "飲食店・カフェ", b: "「エリア名＋ジャンル（渋谷 ランチ イタリアン）」「メニュー名＋地域」の組み合わせが主なキーワードです。メニュー説明ページ・アクセスページ・こだわり・食材ストーリーなどコンテンツを充実させます。写真の質と量がユーザーの来店意欲に直結するため、alt属性で画像SEOも実施します。" },
                 { t: "美容室・ヘアサロン", b: "「スタイル名＋地域（渋谷 外ハネボブ）」「施術メニュー別の解説記事（縮毛矯正とは）」「地域名＋サロン（池袋 美容室 おすすめ）」が主な記事テーマです。施術前後のビジュアル・スタイリストのプロフィールでE-E-A-Tを高めます。" },
@@ -339,7 +339,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               AI生成コンテンツとSEOの考え方
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "AIは「下書き」ツールとして活用する", b: "ChatGPT・ClaudeなどのAIはアウトライン作成・参考文の下書き・リライト補助として有効です。最終的には人間が事実確認・編集・独自の経験・専門的な観点を加えることが品質の鍵になります。" },
                 { t: "大量生成コンテンツはペナルティリスク", b: "Googleのスパムポリシーは「独自性がなくスケールで生成されたコンテンツ」を明確に対象としています。AIで同じ型を大量に量産し、固有の価値なく公開することは評価低下リスクがあります。" },

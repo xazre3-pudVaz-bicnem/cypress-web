@@ -145,7 +145,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               従来ホスティングとVercelの4つの違い
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "配信速度・インフラ", b: "共用サーバー：単一サーバーでの配信のため、アクセス集中時に遅くなる。Vercel：世界100か所以上のEdgeロケーションから最も近いサーバーが応答するため、常に高速配信。" },
                 { t: "デプロイの手間", b: "従来：FTPでファイルをアップロード、または手動でSSH接続してコマンド実行が必要。Vercel：GitHubにpushするだけで自動ビルド・デプロイ完了。変更がリアルタイムで反映。" },
@@ -234,7 +234,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               Vercelの自動デプロイ・プレビュー機能・Edge Networkは業種ごとに異なる価値を生み出します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 { industry: "飲食店", point: "メニュー更新・予約ページのゼロダウンタイムデプロイ", detail: "昼営業中でも深夜に仕込んだメニュー変更をプッシュするだけで公開できます。アトミックデプロイのため更新中の表示崩れが起きません。" },
                 { industry: "美容室・サロン", point: "施術写真更新のCI/CD自動化", detail: "Instagramで撮影した施術写真をCMSに追加するだけでサイトへの反映が自動化されます。スタッフが月次で更新するフローを整備できます。" },

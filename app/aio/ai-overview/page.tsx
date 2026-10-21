@@ -226,7 +226,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               AI Overviewに引用されるための4つの条件
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "E-E-A-T（経験・専門性・権威性・信頼性）の明示", b: "著者情報・会社情報・専門性の根拠を構造化して明示します。Googleが信頼できる情報源かを判断する最重要シグナルです。" },
                 { t: "結論ファーストの文章構造", b: "回答をページの冒頭に明確に記述。Googleが「答え」として引用しやすい文章構造にすることで引用確率が高まります。" },
@@ -310,7 +310,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別のAI Overview活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "0" }}>
               {[
                 { n: "01", industry: "飲食店", point: "地域グルメ情報・メニュー特徴の引用", detail: "「〇〇市のおすすめランチ」「〇〇料理の特徴」などの地域・ジャンル検索でAI Overviewに引用されやすくなります。メニューの食材・調理法・産地情報をRecipeスキーマで構造化し、地域名を含む見出しを設置することが有効です。" },
                 { n: "02", industry: "美容室", point: "トレンド・施術説明コンテンツ", detail: "「〇〇ヘアのやり方」「パーマの種類と違い」など施術に関する情報収集クエリでの引用が見込めます。施術者の技術・資格・経験年数をPersonスキーマで明示し、ビフォーアフター事例を一次情報として活用します。" },
@@ -408,7 +408,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.7)", lineHeight: "1.9", maxWidth: "600px", marginBottom: "40px" }}>
               コンテンツ設計・構造化データ実装・E-E-A-T強化・モニタリングまでをワンストップで対応します。AI検索時代の集客基盤を確実に構築します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 {
                   t: "現状診断・競合分析",

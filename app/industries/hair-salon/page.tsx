@@ -447,7 +447,7 @@ export default function HairSalonIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   t: "MEO・SNS・Web制作をワンストップで対応",
@@ -482,7 +482,7 @@ export default function HairSalonIndustryPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               美容室・ヘアサロン向けにサイプレスができること
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 { t: "Instagram毎日投稿＋リール活用代行", b: "スタイル写真のキャプション作成・ハッシュタグ設計・リール動画の構成提案・投稿スケジュール管理まで一括代行。エンゲージメントを高め、フォロワーを来店顧客に変える運用を行います。" },
                 { t: "MEO（地域×美容室キーワード）対策", b: "「葛飾区 美容室」「亀有 ヘアサロン」など地域+業態キーワードのGoogleマップ上位表示を目指して、GBP最適化・写真充実・口コミ獲得を継続実施します。" },

@@ -162,7 +162,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               台東区の主要エリア・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "浅草", desc: "東京屈指の観光地。国内外から観光客が集まり、MEO競合が非常に激しいエリア。口コミ数・多言語対応が集客の鍵。観光業・飲食・物販で特に重要なエリア。" },
                 { area: "上野", desc: "上野動物園・博物館・アメ横が集まる文化観光エリア。観光客＋地域住民の両方に対応したMEO・SEO設計が必要。上野駅は5路線が乗り入れる交通の要所。" },
@@ -186,7 +186,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "観光地×地域住民の複合集客戦略設計", b: "台東区特有の「観光客向け＋地域住民向け」の複合キーワード戦略を設計します。インバウンド対応のGBP多言語設定も含めた包括的な施策を提供します。" },
                 { n: "02", t: "MEO・SEO・Web制作をワンストップで完結", b: "集客に必要な施策をMEO・SEO・ホームページ制作すべて一社で完結します。台東区の複雑な集客環境にも一貫した設計で対応します。" },

@@ -241,7 +241,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               葛飾区の事業者様から寄せられるホームページの悩み
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "ホームページがまだない", b: "開業したがホームページがなく、名刺やチラシだけで営業している。お客様に「ネットで調べたが出てこなかった」と言われた。" },
                 { t: "作ったのに問い合わせが来ない", b: "数年前に作ったホームページから問い合わせがほとんど来ない。「葛飾区 ○○」で検索しても自社サイトが出てこない。" },
@@ -300,7 +300,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               ページ数・デザイン・機能により変動しますが、目安となる料金帯は以下のとおりです。すべてのプランにSEO内部対策・スマホ対応・SSL設定を含みます。正式なお見積もりは無料でご提示します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px", marginBottom: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "24px", marginBottom: "40px" }}>
               {[
                 {
                   plan: "ランディングページ（LP）",
@@ -388,7 +388,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               葛飾区内はすべて訪問打ち合わせの対象エリアです。各エリアの商圏・お客様層を踏まえた構成・デザイン・キーワード設計を行います。隣接する足立区・江戸川区・墨田区も対応しています。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "亀有", desc: "アリオ亀有を中心に商業が集積する激戦区。競合店との差別化を打ち出すデザインと「亀有 ○○」キーワードのSEO設計で、選ばれる理由が伝わるホームページを制作します。" },
                 { area: "金町", desc: "JR・京成の2路線が使えるファミリー層の多いエリア。学習塾・医療・美容など生活密着業種のホームページでは、安心感・料金の透明性・アクセス情報の充実が成約の鍵になります。" },
@@ -478,7 +478,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
               ホームページは公開してからが本番です。サイプレスは葛飾区の地域検索データを踏まえたSEO対策・MEO対策で、制作したサイトを「集客装置」に育てます。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "32px" }}>
               {[
                 { t: "葛飾区のSEO対策", b: "「葛飾区 ○○」「亀有 ○○」など地域キーワードでの検索上位を狙うコンテンツSEO・内部改善を月次で実施します。", href: "/area/katsushika/seo", cta: "葛飾区のSEO対策を見る" },
                 { t: "葛飾区のMEO対策", b: "Googleマップでの上位表示を狙うGoogleビジネスプロフィール最適化・口コミ獲得支援・投稿代行を提供します。", href: "/area/katsushika/meo", cta: "葛飾区のMEO対策を見る" },

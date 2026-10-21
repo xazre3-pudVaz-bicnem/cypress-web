@@ -244,7 +244,7 @@ export default function Page() {
             <p style={S.label}>Contact Sources</p>
             <h2 style={S.h2}>創業支援・融資の主な確認先</h2>
             <p style={S.body}>以下の機関が主な相談・確認先です。制度内容は公式サイトでご確認ください。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {contactSources.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -261,7 +261,7 @@ export default function Page() {
             <p style={S.label}>Possible Subsidies</p>
             <h2 style={S.h2}>ホームページ制作やWeb集客に使える可能性がある制度</h2>
             <p style={S.body}>以下の制度が確認先として一般的です。いずれも公式サイトで最新情報をご確認ください。採択・支給を保証するものではありません。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {subsidyItems.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -335,7 +335,7 @@ export default function Page() {
             <p style={S.label}>Our Support</p>
             <h2 style={S.h2}>サイプレスが支援できる範囲</h2>
             <p style={S.body}>株式会社サイプレスが対応できる内容の一覧です。補助金申請代行は行っていません。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {cypressCapabilities.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -373,7 +373,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(220px,100%), 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
                 <Link key={item.href} href={item.href} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>

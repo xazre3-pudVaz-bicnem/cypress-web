@@ -220,7 +220,7 @@ export default function LocalSeoPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ローカルSEO未対応が地域ビジネスに与える4つの影響
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "地域名キーワードで表示されない", b: "「○○市 税理士」「渋谷 整骨院」など地域名を含む検索でWebサイトが上位表示されなければ、地元ユーザーからの問い合わせ機会がゼロになります。地域特化のコンテンツ設計が集客の鍵です。" },
                 { t: "地元競合に検索流入を奪われ続ける", b: "地域キーワードでの上位表示は競合との椅子取りゲームです。SEO対策をしている地元競合が上位を占めている間、すべての検索需要が競合へ流れ続けます。" },
@@ -312,7 +312,7 @@ export default function LocalSeoPage() {
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
               ローカルSEOは業種によって設計のポイントが異なります。エリアページで伝えるべき情報・強調すべきコンテンツを業種ごとに整理しました。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店・カフェ",

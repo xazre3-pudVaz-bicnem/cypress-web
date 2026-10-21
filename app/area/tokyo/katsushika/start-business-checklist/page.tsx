@@ -265,7 +265,7 @@ export default function Page() {
             <p style={S.label}>Overview</p>
             <h2 style={S.h2}>創業前に確認することの全体像</h2>
             <p style={S.body}>以下の8カテゴリのチェックリストを順番に確認してください。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px", maxWidth: "800px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "12px", maxWidth: "800px" }}>
               {categories.map((cat, i) => (
                 <div key={cat} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "28px" }}>0{i + 1}</span>
@@ -329,7 +329,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
                 <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>

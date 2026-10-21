@@ -166,7 +166,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               江東区の主要エリア・地域特性
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "24px" }}>
               {[
                 { area: "亀戸", desc: "総武線沿いの商業エリア。亀戸天神・商店街が有名。飲食・美容の競合が多いが、集客ポテンシャルも高い。ロングテールキーワード戦略と高品質GBPで差別化が鍵。" },
                 { area: "錦糸町", desc: "総武線・半蔵門線が通る江東区最大のターミナル。商業施設・飲食・ホテルが密集。競合が多いため口コミ数・評点・写真品質での差別化が必須。" },
@@ -190,7 +190,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "40px" }}>
               {[
                 { n: "01", t: "江東区の多様なエリア特性を把握した戦略設計", b: "亀戸・豊洲・清澄白河それぞれのエリア特性・ターゲット層・競合状況を踏まえた最適な集客戦略を設計します。画一的な施策ではなく、エリアに合わせたカスタム戦略が強みです。" },
                 { n: "02", t: "MEO・SEO・Web制作をワンストップで完結", b: "集客に必要な施策をMEO・SEO・ホームページ制作すべて一社で完結します。一貫した集客設計で相乗効果を生み出します。" },

@@ -214,7 +214,7 @@ export default function PlumbingPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               水道工事・水漏れ修理業者向けサービス
             </h2>
-            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", maxWidth: "900px" }}>
               {[
                 {
                   href: "/industries/plumbing/meo",
@@ -311,7 +311,7 @@ export default function PlumbingPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの水道工事・水漏れ修理業向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO緊急対応設計", desc: "「水漏れ ○○区 24時間」「排水管詰まり ○○市 今すぐ」でGoogleマップ上位表示を実現します。緊急対応・対応エリア・電話番号を最前面に配置したGBP設計で即問い合わせを獲得します。" },
                 { label: "ランディングページ制作", desc: "緊急修理専用LP・給湯器交換LP・定期点検LPなどサービス別の高CV率ランディングページを制作します。スマホ即電話ボタン・料金目安・施工事例・資格情報を最適配置します。" },
@@ -454,7 +454,7 @@ export default function PlumbingPage() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "32px" }}>
               {[
                 {
                   n: "01",

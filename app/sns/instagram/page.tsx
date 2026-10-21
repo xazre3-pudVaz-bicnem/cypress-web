@@ -213,7 +213,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               業種別Instagram活用ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   industry: "飲食店",
@@ -335,7 +335,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               Instagramで集客できないアカウントの4つの共通点
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px" }}>
               {[
                 { t: "プロフィールが最適化されていない", b: "プロフィール文・アイコン・ハイライトが整っていないと、投稿を見てプロフィールページに来たユーザーがフォローせずに離脱します。第一印象が集客の入り口です。" },
                 { t: "投稿頻度が不安定で継続できない", b: "週1回の投稿と週5回の投稿が繰り返されるムラがあるアカウントはアルゴリズムに評価されません。週3〜5回の安定した投稿が成長の基本条件です。" },
@@ -358,7 +358,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               Instagram運用の6つの施策
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px,100%), 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
                 <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderTop: "3px solid var(--v2-accent)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>{String(i + 1).padStart(2, "0")}</p>
@@ -423,7 +423,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.85", marginBottom: "40px", maxWidth: "640px" }}>
               プロフィールページはInstagramにおける「ランディングページ」です。訪問者がフォローするかどうかを数秒で判断するため、以下のポイントを一つひとつ確認して整備します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 {
                   category: "アイコン",

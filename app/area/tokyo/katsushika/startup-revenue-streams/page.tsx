@@ -287,7 +287,7 @@ export default function Page() {
             <p style={S.body}>
               取次とは紹介のみを行うシンプルな形態です。代理店はより主体的に提案・販売を行う形態です。サイプレスの制度では「紹介のみ」のシンプルな参加から始めることができます。地域事業者との接点を活かしやすい商材であることが特徴です。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "16px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "16px", maxWidth: "860px" }}>
               {[
                 { t: "取次（紹介のみ）", b: "知人・地域の事業者にサイプレスのサービスを紹介し、詳細はサイプレスに引き継ぐシンプルな形態。" },
                 { t: "販売代理店（より主体的）", b: "サービスの提案・見積説明まで行い、成約につなげるより主体的な形態。詳細は個別にご案内します。" },
@@ -311,7 +311,7 @@ export default function Page() {
             <p style={S.body}>
               株式会社サイプレスのホームページ制作・SEO・MEO・AIOなどのWeb集客サービスを地域事業者へ紹介できる制度です。取次店（紹介）・販売代理店の2モデルがあります。専門知識は不要で、提案・制作・運用はサイプレスが担当します。成果を保証するものではありません。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "16px", maxWidth: "860px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(240px,100%), 1fr))", gap: "16px", maxWidth: "860px" }}>
               {[
                 { t: "専門知識不要", b: "SEO・MEO・ホームページ制作の専門知識がなくても活動できます。" },
                 { t: "提案・制作・運用はサイプレスが担当", b: "パートナーの役割は「紹介すること」。詳細商談・制作・運用はサイプレスが担当します。" },
@@ -332,7 +332,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Suitable For</p>
             <h2 style={S.h2}>向いている人</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {suitableItems.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -348,7 +348,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Not Suitable For</p>
             <h2 style={S.h2}>向いていない人</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px,100%), 1fr))", gap: "16px", maxWidth: "900px" }}>
               {unsuitableItems.map((item) => (
                 <div key={item.t} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "20px 18px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
@@ -365,7 +365,7 @@ export default function Page() {
             <p style={S.label}>Target Industries</p>
             <h2 style={S.h2}>紹介しやすい業種</h2>
             <p style={S.body}>Web集客課題を持ちやすい業種への紹介活動がしやすい環境です。</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px", maxWidth: "900px" }}>
               {reachableIndustries.map((item) => (
                 <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
@@ -411,7 +411,7 @@ export default function Page() {
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(200px,100%), 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
                 <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>

@@ -145,7 +145,7 @@ export default function Page() {
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               通常WordPressの4つの課題とヘッドレスの解決策
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px,100%), 1fr))", gap: "24px", maxWidth: "900px" }}>
               {[
                 { t: "表示速度の限界", b: "通常WP：PHPがサーバーでHTMLを毎回生成するため、どれだけ最適化してもLighthouseの限界がある。ヘッドレス：Next.jsのSSGでHTMLをビルド時に生成し、静的ファイルとして高速配信。" },
                 { t: "セキュリティリスク", b: "通常WP：プラグインの脆弱性・ブルートフォース攻撃・SQLインジェクションのリスクが常に存在。ヘッドレス：フロントエンドが静的HTMLのためサーバーサイド攻撃の多くを回避できる。" },
@@ -234,7 +234,7 @@ export default function Page() {
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
               ヘッドレスWordPressのメリットは業種によって異なります。各業種の典型的な活用シナリオを紹介します。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px,100%), 1fr))", gap: "24px" }}>
               {[
                 { industry: "飲食店", point: "メニュー・ブログはWP管理、フロントはNext.js", detail: "メニュー情報・スタッフブログ・お知らせをWordPress管理画面で更新しNext.jsで高速表示します。SEO記事もWPエディタで書けるため、担当者の運用負担を増やさずに高速化できます。" },
                 { industry: "美容室・サロン", point: "お知らせ・スタッフ情報をWP管理", detail: "スタッフのプロフィール・施術メニュー・空き状況お知らせをWordPressのカスタム投稿で管理します。ACFで「得意なスタイル」「経験年数」などのカスタムフィールドも柔軟に設定できます。" },
