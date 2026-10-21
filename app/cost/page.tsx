@@ -78,8 +78,8 @@ export default function CostPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 00_32_58.jpg"
-            alt="Web集客・MEO・SEO費用相場ガイド"
+            src="/images/v2/b-pricing.jpg"
+            alt="電卓とコインと値札の立体イラスト（料金・費用のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

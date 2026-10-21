@@ -490,8 +490,8 @@ export default function PageSpeedPage() {
         {/* Hero image */}
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-            alt="ページ速度最適化・Core Web Vitals・Lighthouse改善のイメージ"
+            src="/images/v2/b-web-speed.jpg"
+            alt="速度計とブラウザ画面の立体イラスト（表示速度改善のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -754,8 +754,8 @@ export default function PageSpeedPage() {
         {/* Second image break */}
         <section className="relative" style={{ height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_10_29.jpg"
-            alt="PageSpeed InsightsとLighthouseによるページ速度計測"
+            src="/images/v2/b-analytics.jpg"
+            alt="グラフが並ぶダッシュボードの立体イラスト（分析・効果測定のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

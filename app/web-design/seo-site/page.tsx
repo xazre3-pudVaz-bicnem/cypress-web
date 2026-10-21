@@ -163,7 +163,7 @@ export default function SeoSitePage() {
 
         {/* Image Band */}
         <section className="relative flex items-center justify-center" style={{ height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.jpg" alt="SEO特化サイト制作・コンテンツSEO・検索上位表示のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-web-browser.jpg" alt="ボタンとカーソルのあるブラウザ画面の立体イラスト（ホームページ制作のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.5)" }} />
           <div className="relative text-center px-6">
             <p className="font-black" style={{ fontSize: "clamp(20px,3vw,36px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>検索流入を、長期的な資産へ</p>

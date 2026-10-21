@@ -463,8 +463,8 @@ export default function Page() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "320px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
-            alt="Google Search Console活用・SEOデータ分析"
+            src="/images/v2/b-analytics.jpg"
+            alt="グラフが並ぶダッシュボードの立体イラスト（分析・効果測定のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -661,8 +661,8 @@ export default function Page() {
         {/* Second image break */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="Search Consoleデータ分析によるSEO改善プロセス"
+            src="/images/v2/b-seo-chart.jpg"
+            alt="右肩上がりの棒グラフの立体イラスト（検索順位改善のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

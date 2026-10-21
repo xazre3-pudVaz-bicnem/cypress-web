@@ -196,8 +196,8 @@ export default function Page() {
         {/* =================== Hero Image =================== */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
-            alt="Googleビジネスプロフィール投稿活用イメージ"
+            src="/images/v2/b-meo-phone.jpg"
+            alt="地図アプリと口コミを表示したスマートフォンの立体イラスト（Googleビジネスプロフィールのイメージ）"
             fill
             sizes="100vw"
             className="object-cover"

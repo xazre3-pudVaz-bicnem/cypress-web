@@ -289,8 +289,8 @@ export default function ProfilePage() {
         {/* Visual break */}
         <section className="relative overflow-hidden w-full" style={{ height: "360px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
-            alt="株式会社サイプレス — ビジネスパートナーとの信頼関係"
+            src="/images/v2/b-company.jpg"
+            alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）"
             fill
             sizes="100vw"
             className="object-cover"

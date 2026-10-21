@@ -161,7 +161,7 @@ export default function SiteStructurePage() {
 
         {/* Hero Image */}
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="サイト構造設計・情報設計・IA・サイロ構造のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-seo-structure.jpg" alt="つながったページのカードの立体イラスト（サイト構造設計のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-6xl mx-auto px-6">

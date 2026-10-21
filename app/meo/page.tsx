@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MEO対策とは｜Googleマップ上位表示の完全ガイド｜株式会社サイプレス",
     description: "MEO対策の基礎から実践まで体系的に解説。地域ビジネスの集客に最もROIが高い施策。Googleマップ上位表示の完全ガイド。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_03.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-meo-map.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -245,8 +245,8 @@ export default function MeoIndexPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "400px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-            alt="MEO対策・Googleマップ集客のデジタル戦略"
+            src="/images/v2/b-meo-map.jpg"
+            alt="地図の上に並ぶピンと口コミの星の立体イラスト（MEO対策のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -723,8 +723,8 @@ export default function MeoIndexPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
-                  alt="MEOと口コミの関係・スマートフォンを使う女性たち"
+                  src="/images/v2/b-meo-phone.jpg"
+                  alt="地図アプリと口コミを表示したスマートフォンの立体イラスト（Googleビジネスプロフィールのイメージ）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

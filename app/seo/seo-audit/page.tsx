@@ -102,7 +102,7 @@ export default function Page() {
 
         {/* Hero image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_14_54.jpg" alt="SEO監査・現状診断" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-analytics.jpg" alt="グラフが並ぶダッシュボードの立体イラスト（分析・効果測定のイメージ）" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
@@ -311,7 +311,7 @@ export default function Page() {
 
         {/* Image break */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_03.jpg" alt="SEO分析・データ確認" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-seo-search.jpg" alt="検索結果のカードと虫眼鏡の立体イラスト（SEO対策のイメージ）" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.5)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

@@ -373,8 +373,8 @@ export default function HistoryPage() {
             >
               <div style={{ position: "relative", height: "360px", overflow: "hidden" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_10_29.jpg"
-                  alt="落ち着いたオフィス環境でノートパソコンを使うスタッフ"
+                  src="/images/v2/b-process.jpg"
+                  alt="旗の立つ階段の立体イラスト（ステップ・目標のイメージ）"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}

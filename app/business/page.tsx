@@ -150,8 +150,8 @@ export default function BusinessPage() {
         {/* ===== Hero Image ===== */}
         <div className="relative w-full overflow-hidden" style={{ height: "420px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-            alt="サイプレスのWebマーケティング支援・デジタル会議"
+            src="/images/v2/b-company.jpg"
+            alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -166,7 +166,7 @@ export default function BusinessPage() {
               <ScrollReveal key={s.num} delay={i * 0.05}>
                 {i === 3 && (
                   <div className="relative w-full my-6 overflow-hidden" style={{ height: "240px" }}>
-                    <Image src="/1.jpg" alt="サイプレスのWebマーケティング支援" fill className="object-cover" sizes="100vw" />
+                    <Image src="/images/v2/b-partner.jpg" alt="かみ合う2つのパズルの立体イラスト（パートナーシップのイメージ）" fill className="object-cover" sizes="100vw" />
                     <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.2)" }} />
                   </div>
                 )}

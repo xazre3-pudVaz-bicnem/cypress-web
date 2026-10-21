@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "人材開発支援助成金を活用した研修を検討する前に確認したいこと",
     description:
       "制度の概要と、研修導入・研修会社選び・申請にあたって企業が確認すべきポイントを整理しました。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_57 (3).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-pricing.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
     url: URL,
@@ -214,8 +214,8 @@ export default function HrDevelopmentSubsidyGuidePage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_08_57 (3).jpg"
-              alt="人材開発支援助成金の活用を検討する企業向け研修相談イメージ"
+              src="/images/v2/b-pricing.jpg"
+              alt="電卓とコインと値札の立体イラスト（料金・費用のイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

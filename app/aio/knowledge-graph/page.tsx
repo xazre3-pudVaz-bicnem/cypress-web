@@ -354,8 +354,8 @@ export default function KnowledgeGraphPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="Googleナレッジグラフ対策"
+            src="/images/v2/b-aio-graph.jpg"
+            alt="つながった球体の立体イラスト（ナレッジグラフ・構造化データのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

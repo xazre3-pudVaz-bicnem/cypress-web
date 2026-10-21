@@ -166,7 +166,7 @@ export default function KeywordResearchPage() {
 
         {/* Hero Image */}
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_20_52.jpg" alt="SEOキーワード調査・検索ボリューム分析のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-seo-search.jpg" alt="検索結果のカードと虫眼鏡の立体イラスト（SEO対策のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

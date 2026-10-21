@@ -319,8 +319,8 @@ export default function CategorySettingPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_12_19.jpg"
-            alt="ミーティングとタブレット・GBPカテゴリ設定MEO対策"
+            src="/images/v2/b-checklist.jpg"
+            alt="チェックの付いたクリップボードの立体イラスト（チェックリストのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

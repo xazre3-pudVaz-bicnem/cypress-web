@@ -14,8 +14,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "亀有 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_01_28.jpg",
-    eyecatchAlt: "亀有エリアの店舗集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/b-area-tokyo.jpg",
+    eyecatchAlt: "川と橋のある東京の下町の街並みとピンの立体イラスト（対応エリアのイメージ）",
     metaDescription:
       "亀有エリアの店舗・中小企業向け集客ガイド。アリオ亀有を核とする商圏の特性、競合が激しい亀有でGoogleマップ上位を取るMEO戦略、差別化キーワードの選び方を葛飾区拠点の専門会社が解説します。",
     intro:
@@ -64,8 +64,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "金町 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_02_56.jpg",
-    eyecatchAlt: "金町エリアの店舗集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/b-meo-store.jpg",
+    eyecatchAlt: "店舗の上に地図のピンが浮かぶ立体イラスト（地域集客のイメージ）",
     metaDescription:
       "金町エリアの店舗・中小企業向け集客ガイド。東京理科大学キャンパス進出後の街の変化、ファミリー層・学生層を捉えるMEO戦略、学習塾・医療・美容業種で効くキーワード設計を解説します。",
     intro:
@@ -114,8 +114,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "新小岩 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 20_02_56 (1).jpg",
-    eyecatchAlt: "新小岩エリアの店舗集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-local.jpg",
+    eyecatchAlt: "地域の小さな商店が並ぶ通りの立体イラスト",
     metaDescription:
       "新小岩エリアの店舗・中小企業向け集客ガイド。総武線快速停車駅としての広域商圏の活かし方、江戸川区側からの流入を取り込むキーワード設計、飲食激戦区でのMEO差別化戦略を解説します。",
     intro:
@@ -164,8 +164,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "立石 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_58_25.jpg",
-    eyecatchAlt: "立石エリアの店舗集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/b-area-tokyo.jpg",
+    eyecatchAlt: "川と橋のある東京の下町の街並みとピンの立体イラスト（対応エリアのイメージ）",
     metaDescription:
       "立石エリアの店舗向け集客ガイド。せんべろの聖地として区外から人を集める立石の商圏特性、再開発による変化、SNSと相性の良い立石での発信設計、Googleマップ対策を解説します。",
     intro:
@@ -214,8 +214,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "柴又 観光 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_11_20.jpg",
-    eyecatchAlt: "柴又の観光集客とインバウンド対策を解説するイメージ",
+    eyecatchImage: "/images/v2/og/b-meo-store.jpg",
+    eyecatchAlt: "店舗の上に地図のピンが浮かぶ立体イラスト（地域集客のイメージ）",
     metaDescription:
       "柴又エリアの観光集客・インバウンド対策ガイド。帝釈天参道の店舗が国内観光客と訪日外国人を集客する方法、多言語対応のGoogleビジネスプロフィール設定、観光キーワードのSEOを解説します。",
     intro:
@@ -264,8 +264,8 @@ export const KATSUSHIKA_STATION_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "青砥 集客",
     publishedAt: "2026-07-09",
     readingTime: 8,
-    eyecatchImage: "/ChatGPT Image 2026年6月13日 19_10_29.jpg",
-    eyecatchAlt: "青砥・高砂・お花茶屋・堀切エリアの集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-local.jpg",
+    eyecatchAlt: "地域の小さな商店が並ぶ通りの立体イラスト",
     metaDescription:
       "青砥・高砂・お花茶屋・堀切エリアの店舗向け集客ガイド。葛飾区で最もMEO競合が薄い住宅エリアで、Googleビジネスプロフィールを整えるだけで上位表示を狙う具体的手順を解説します。",
     intro:

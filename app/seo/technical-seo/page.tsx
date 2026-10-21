@@ -163,7 +163,7 @@ export default function TechnicalSeoPage() {
 
         {/* Hero image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_19_44.jpg" alt="テクニカルSEO・ページ速度改善・Core Web Vitals" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-seo-structure.jpg" alt="つながったページのカードの立体イラスト（サイト構造設計のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

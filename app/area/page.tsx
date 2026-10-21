@@ -89,8 +89,8 @@ export default function AreaPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "280px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-            alt="対応エリア・全国Web集客支援"
+            src="/images/v2/b-area-tokyo.jpg"
+            alt="川と橋のある東京の下町の街並みとピンの立体イラスト（対応エリアのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略｜株式会社サイプレス",
     description: "クリニック・医院・歯科のMEO対策。診療科目・診療時間・口コミ管理・院内写真・Web予約連携など医療機関特有のGBP最適化で地域患者の新規来院を増やします。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_21_48.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/i-clinic.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,8 +164,8 @@ export default function Page() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
-            alt="クリニック・医院・歯科のMEO対策"
+            src="/images/v2/i-clinic.jpg"
+            alt="クリニックの建物と聴診器の立体イラスト"
             fill
             sizes="100vw"
             style={{ objectFit: "cover" }}

@@ -104,8 +104,8 @@ export default async function ContactPage({
               {/* Handshake image — trust visual */}
               <div className="relative overflow-hidden" style={{ height: "240px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
-                  alt="信頼のパートナーシップを象徴するビジネス握手"
+                  src="/images/v2/b-support.jpg"
+                  alt="ヘッドセットと吹き出しの立体イラスト（サポートのイメージ）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 320px"

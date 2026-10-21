@@ -108,8 +108,8 @@ export default function EnvironmentPage() {
         {/* Desk visual — work environment */}
         <section className="relative overflow-hidden w-full" style={{ height: "380px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_10_29.jpg"
-            alt="リモートワーク環境 - ノートパソコンと観葉植物のある落ち着いたデスク"
+            src="/images/v2/b-recruit.jpg"
+            alt="ノートパソコンと観葉植物のあるデスクの立体イラスト（働く環境のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

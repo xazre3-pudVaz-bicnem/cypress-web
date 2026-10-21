@@ -312,8 +312,8 @@ export default function PhotoPostingPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
-            alt="スマートフォンで店舗写真を撮影する女性・MEO写真投稿"
+            src="/images/v2/b-sns-phone.jpg"
+            alt="写真が並ぶスマートフォンとカメラの立体イラスト（SNS運用のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

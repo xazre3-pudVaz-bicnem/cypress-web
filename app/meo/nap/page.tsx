@@ -320,8 +320,8 @@ export default function NapPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_14_54.jpg"
-            alt="ビジネス情報の確認・NAP統一MEO対策"
+            src="/images/v2/b-meo-store.jpg"
+            alt="店舗の上に地図のピンが浮かぶ立体イラスト（地域集客のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

@@ -185,8 +185,8 @@ export default function ChatgptAioPage() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="ChatGPT対策・生成AI時代の情報設計"
+            src="/images/v2/b-aio-chat.jpg"
+            alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）"
             fill
             sizes="100vw"
             className="object-cover"
@@ -429,8 +429,8 @@ export default function ChatgptAioPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
-                  alt="ChatGPT引用のポイント・ラップトップアナリティクス"
+                  src="/images/v2/b-aio-graph.jpg"
+                  alt="つながった球体の立体イラスト（ナレッジグラフ・構造化データのイメージ）"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"

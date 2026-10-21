@@ -70,8 +70,8 @@ export default function ChecklistPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "270px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-            alt="Webマーケティングチェックリスト"
+            src="/images/v2/b-checklist.jpg"
+            alt="チェックの付いたクリップボードの立体イラスト（チェックリストのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

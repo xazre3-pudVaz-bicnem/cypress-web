@@ -201,8 +201,8 @@ export default function Page() {
         {/* ── Hero image ───────────────────────────────────── */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_19_44.jpg"
-            alt="ページ速度改善・Core Web Vitals"
+            src="/images/v2/b-web-speed.jpg"
+            alt="速度計とブラウザ画面の立体イラスト（表示速度改善のイメージ）"
             fill
             sizes="100vw"
             className="object-cover"

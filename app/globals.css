@@ -631,7 +631,6 @@ section[data-tone="dark"]:not([data-page-hero]) {
   background-position: center !important;
 }
 
-/* 2026-10 phase2 */
 
 /* セクションの小さな英字ラベル（h2 の直前の段落）を、参考サイトの「News」「Seminar」のような英字見出しにする */
 main:not(.v2) p:has(+ h2):not([data-page-hero] *) {
@@ -700,4 +699,19 @@ main :where(p, li, dd, td, th, h1, h2, h3, h4, a) {
 main:not(.v2) > section:not([data-page-hero]) {
   content-visibility: auto;
   contain-intrinsic-size: auto 900px;
+}
+
+
+
+/* 冒頭直後の立体イラストの帯: 上下が切れすぎない高さにし、黒い暗幕の代わりに左側だけ濃紺をかけて文字を読ませる */
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) {
+  height: clamp(240px, 32vw, 480px) !important;
+}
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) > div:empty {
+  background: linear-gradient(90deg, rgba(6, 36, 78, 0.6) 0%, rgba(6, 36, 78, 0.26) 42%, rgba(6, 36, 78, 0) 68%) !important;
+}
+
+/* 立体イラスト（モチーフが右寄り）を正方形・縦長の枠で切り抜くときも、モチーフが見えるよう右寄りに合わせる */
+img:is([src*="%2Fimages%2Fv2%2Fb-"], [src*="%2Fimages%2Fv2%2Fi-"], [src*="/images/v2/b-"], [src*="/images/v2/i-"]) {
+  object-position: 74% 50%;
 }

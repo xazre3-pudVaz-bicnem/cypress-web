@@ -180,8 +180,8 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
-            alt="神奈川県のコーポレートミーティング"
+            src="/images/v2/b-area-suburb.jpg"
+            alt="住宅と駅のある郊外の街並みとピンの立体イラスト（対応エリアのイメージ）"
             fill
             sizes="100vw"
             priority

@@ -137,8 +137,8 @@ export default function AgentSeoPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
-              alt="SEO対策販売代理店 Web集客の提案商談風景"
+              src="/images/v2/b-partner.jpg"
+              alt="かみ合う2つのパズルの立体イラスト（パートナーシップのイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

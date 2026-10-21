@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI社内ツール開発・構築とは｜ChatGPT API・Claude APIで業務効率化カスタムツール｜株式会社サイプレス",
     description: "ChatGPT API・Claude APIを活用した社内業務効率化カスタムツール開発。RAG・Fine-tuning・既存システム連携まで対応。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-ai-robot.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,8 +164,8 @@ export default function Page() {
         {/* Image Band */}
         <section className="relative" style={{ height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
-            alt="AI社内ツール・業務効率化・DX推進のイメージ"
+            src="/images/v2/b-ai-robot.jpg"
+            alt="ブロックを組み立てるロボットアームの立体イラスト（AI業務自動化のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

@@ -224,8 +224,8 @@ export default function Page() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_12_19.jpg"
-            alt="葛飾区のホームページ制作 — 打ち合わせ風景"
+            src="/images/v2/b-web-browser.jpg"
+            alt="ボタンとカーソルのあるブラウザ画面の立体イラスト（ホームページ制作のイメージ）"
             fill
             sizes="100vw"
             priority

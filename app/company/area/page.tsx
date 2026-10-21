@@ -282,8 +282,8 @@ export default function Page() {
         {/* ── Image Band ── */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
-            alt="株式会社サイプレス 対応エリア 東京都葛飾区"
+            src="/images/v2/b-area-tokyo.jpg"
+            alt="川と橋のある東京の下町の街並みとピンの立体イラスト（対応エリアのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

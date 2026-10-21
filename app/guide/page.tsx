@@ -74,8 +74,8 @@ export default function GuidePage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="Web集客ガイド・SEO・MEO実践ガイド"
+            src="/images/v2/b-guide.jpg"
+            alt="開いた本と電球の立体イラスト（ガイド・ナレッジのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

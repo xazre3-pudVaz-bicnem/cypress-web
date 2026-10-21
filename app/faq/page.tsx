@@ -55,8 +55,8 @@ export default function FaqPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_12_19.jpg"
-            alt="よくある質問・FAQ"
+            src="/images/v2/b-faq.jpg"
+            alt="はてなマークの吹き出しと回答カードの立体イラスト（よくある質問のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

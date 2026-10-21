@@ -163,7 +163,7 @@ export default function AutomationPage() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 00_32_52.jpg" alt="AI業務自動化・Make・Zapier・n8n・ノーコード自動化のイメージ" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/images/v2/b-ai-robot.jpg" alt="ブロックを組み立てるロボットアームの立体イラスト（AI業務自動化のイメージ）" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

@@ -203,7 +203,7 @@ export default function PetShopPage() {
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月19日 09_26_45 (3).jpg" alt="ペットショップ・トリミングサロンのGoogleマップ集客支援イメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/i-pet.jpg" alt="ペット用ベッドと食器とおもちゃの立体イラスト（ペット関連業のイメージ）" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

@@ -361,8 +361,8 @@ export default function GenerativeSearchPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
-            alt="生成AI検索・AI Overview対策"
+            src="/images/v2/b-aio-chat.jpg"
+            alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -579,8 +579,8 @@ export default function GenerativeSearchPage() {
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-                  alt="生成AI検索・デジタルオーバーレイのカンファレンス"
+                  src="/images/v2/b-aio-graph.jpg"
+                  alt="つながった球体の立体イラスト（ナレッジグラフ・構造化データのイメージ）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

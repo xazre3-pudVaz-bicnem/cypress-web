@@ -13,8 +13,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 マンション管理 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 08_59_59 (3).jpg",
-    eyecatchAlt: "葛飾区のマンション管理会社・賃貸管理会社の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-restaurant.jpg",
+    eyecatchAlt: "湯気の立つどんぶりと飲食店の店構えの立体イラスト",
     metaDescription:
       "葛飾区のマンション管理会社・賃貸管理会社向け集客ガイド。オーナーが管理会社を選ぶ判断基準、空室対策の実績の見せ方、管理会社変更を検討するオーナーへの訴求を解説します。",
     intro:
@@ -56,8 +56,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 コワーキングスペース",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_02 (4).jpg",
-    eyecatchAlt: "葛飾区のコワーキングスペース・レンタルスペースの集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-beauty.jpg",
+    eyecatchAlt: "美容室のスタイリングチェアと鏡の立体イラスト",
     metaDescription:
       "葛飾区のコワーキングスペース・レンタルスペース向け集客ガイド。利用シーン（作業・会議・撮影・イベント）別の訴求分け、予約システムの導入、法人契約の獲得方法を解説します。",
     intro:
@@ -99,8 +99,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 造園業 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_02 (5).jpg",
-    eyecatchAlt: "葛飾区の造園業・解体工事業の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-clinic.jpg",
+    eyecatchAlt: "クリニックの建物と聴診器の立体イラスト",
     metaDescription:
       "葛飾区の造園業・解体工事業向け集客ガイド。庭木の手入れから解体工事まで幅広い需要への対応、施工事例による信頼構築、近隣配慮のアピールで選ばれる方法を解説します。",
     intro:
@@ -142,8 +142,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 家事代行 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_02 (6).jpg",
-    eyecatchAlt: "葛飾区の家事代行・ベビーシッター・家庭教師派遣の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-construction.jpg",
+    eyecatchAlt: "建築中の家とクレーンの立体イラスト",
     metaDescription:
       "葛飾区の家事代行・ベビーシッター・家庭教師派遣サービス向け集客ガイド。家に人を入れることへの不安を解消する情報設計、スタッフの質を伝える方法、共働き世帯への訴求を解説します。",
     intro:
@@ -185,8 +185,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 美容クリニック 集客",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_03 (7).jpg",
-    eyecatchAlt: "葛飾区の美容クリニック・美容皮膚科の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-cleaning.jpg",
+    eyecatchAlt: "スプレーとスポンジとバケツの立体イラスト（ハウスクリーニングのイメージ）",
     metaDescription:
       "葛飾区の美容クリニック・美容皮膚科向け集患ガイド。自由診療特有の医療広告規制への対応、施術メニューの料金明示、カウンセリング予約を増やす導線を解説します。",
     intro:
@@ -232,8 +232,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 空手 教室",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_04 (8).jpg",
-    eyecatchAlt: "葛飾区の空手・柔道場・スポーツ教室の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-school.jpg",
+    eyecatchAlt: "机と本と黒板の立体イラスト（学習塾・スクールのイメージ）",
     metaDescription:
       "葛飾区の空手道場・柔道場・スポーツ教室向け集客ガイド。礼儀・精神面の成長を重視する保護者への訴求、体験稽古の申込導線、大会実績の見せ方を解説します。",
     intro:
@@ -275,8 +275,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 料理教室 集客",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_04 (9).jpg",
-    eyecatchAlt: "葛飾区の料理教室・パン教室の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-retail.jpg",
+    eyecatchAlt: "商品棚と買い物袋の立体イラスト（小売店のイメージ）",
     metaDescription:
       "葛飾区の料理教室・パン教室向け集客ガイド。単発レッスンと継続コースの使い分け、Instagramでの作品発信、資格取得コースの訴求方法を解説します。",
     intro:
@@ -318,8 +318,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 ペット霊園",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_00_05 (10).jpg",
-    eyecatchAlt: "葛飾区のペット霊園・ペット葬儀の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-professional.jpg",
+    eyecatchAlt: "書類フォルダと天秤の立体イラスト（士業のイメージ）",
     metaDescription:
       "葛飾区のペット霊園・ペット葬儀業向け集客ガイド。悲しみの中にある飼い主への配慮あるWeb設計、料金の透明性、緊急対応の体制について解説します。",
     intro:
@@ -361,8 +361,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 終活 相談",
     publishedAt: "2026-07-09",
     readingTime: 6,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (1).jpg",
-    eyecatchAlt: "葛飾区の生前整理・終活サポート業の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-restaurant.jpg",
+    eyecatchAlt: "湯気の立つどんぶりと飲食店の店構えの立体イラスト",
     metaDescription:
       "葛飾区の生前整理・終活サポート業向け集客ガイド。将来への漠然とした不安を持つシニア世代への訴求、家族を巻き込む相談の入口づくり、士業との連携方法を解説します。",
     intro:
@@ -404,8 +404,8 @@ export const KATSUSHIKA_INDUSTRY5_COLUMNS: ColumnTopicPage[] = [
     primaryKeyword: "葛飾区 経営コンサルタント",
     publishedAt: "2026-07-09",
     readingTime: 7,
-    eyecatchImage: "/ChatGPT Image 2026年6月19日 09_03_12 (1).jpg",
-    eyecatchAlt: "葛飾区の経営コンサルタント・中小企業診断士の集客を解説するイメージ",
+    eyecatchImage: "/images/v2/og/i-beauty.jpg",
+    eyecatchAlt: "美容室のスタイリングチェアと鏡の立体イラスト",
     metaDescription:
       "葛飾区の経営コンサルタント・中小企業診断士向け集客ガイド。無形サービスの価値を伝えるコンテンツ設計、補助金申請支援との連携、士業との違いを明確にする方法を解説します。",
     intro:

@@ -244,8 +244,8 @@ export default function WebDesignPage() {
         {/* Image Band */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 20_02_56.jpg"
-            alt="Webサイト制作・コーポレートサイト・SEOサイト設計のイメージ"
+            src="/images/v2/b-web-browser.jpg"
+            alt="ボタンとカーソルのあるブラウザ画面の立体イラスト（ホームページ制作のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

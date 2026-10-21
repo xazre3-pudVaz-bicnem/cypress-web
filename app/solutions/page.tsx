@@ -74,8 +74,8 @@ export default function SolutionsPage() {
         {/* Image band */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
-            alt="統合Webマーケティングソリューション"
+            src="/images/v2/b-problem.jpg"
+            alt="絡まった線がまっすぐな道になる立体イラスト（課題解決のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

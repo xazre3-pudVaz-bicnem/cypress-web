@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "リスキリング研修会社の紹介相談｜AI・DX・Webマーケティング研修",
     description:
       "AI・DX・Webマーケティング研修に対応する実績ある提携研修会社をご紹介します。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_11_20.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-training.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
     url: URL,
@@ -172,8 +172,8 @@ export default function ReskillingTrainingCompanyReferralPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
-              alt="提携研修会社への紹介相談イメージ"
+              src="/images/v2/b-training.jpg"
+              alt="ホワイトボードとノートパソコンの立体イラスト（研修のイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

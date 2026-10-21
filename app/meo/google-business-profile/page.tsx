@@ -359,8 +359,8 @@ export default function GoogleBusinessProfilePage() {
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-            alt="Googleビジネスプロフィール最適化・デジタルマーケティング"
+            src="/images/v2/b-meo-phone.jpg"
+            alt="地図アプリと口コミを表示したスマートフォンの立体イラスト（Googleビジネスプロフィールのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -608,8 +608,8 @@ export default function GoogleBusinessProfilePage() {
               </div>
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_14_54.jpg"
-                  alt="GBP最適化の分析・戦略会議"
+                  src="/images/v2/b-meo-map.jpg"
+                  alt="地図の上に並ぶピンと口コミの星の立体イラスト（MEO対策のイメージ）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

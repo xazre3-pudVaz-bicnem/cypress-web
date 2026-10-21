@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Webマーケティング研修の導入相談｜SEO・MEO・SNS・AI活用を学ぶ法人研修",
     description:
       "SEO・MEO・SNS運用を社内で判断できる人材を育てる法人研修の導入相談。実績ある提携研修会社をご紹介します。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-training.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
     url: URL,
@@ -196,8 +196,8 @@ export default function WebMarketingTrainingPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
-              alt="中小企業向けWebマーケティング研修の導入相談イメージ"
+              src="/images/v2/b-training.jpg"
+              alt="ホワイトボードとノートパソコンの立体イラスト（研修のイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

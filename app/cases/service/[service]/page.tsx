@@ -22,12 +22,12 @@ const BASE = "https://www.cypress-all.co.jp";
 
 // サービス別OGP画像（public/ に実在するファイルのみ）
 const SERVICE_OGP_IMAGES: Record<string, string> = {
-  meo: "/ChatGPT Image 2026年6月14日 21_09_09 (6).jpg",
-  seo: "/ChatGPT Image 2026年6月14日 21_08_58 (5).jpg",
-  aio: "/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg",
-  "web-design": "/ChatGPT Image 2026年6月13日 20_02_56.jpg",
-  sns: "/ChatGPT Image 2026年6月13日 20_01_28.jpg",
-  lp: "/ChatGPT Image 2026年6月13日 20_02_56.jpg",
+  meo: "/images/v2/b-meo-map.jpg",
+  seo: "/images/v2/b-seo-search.jpg",
+  aio: "/images/v2/b-aio-chat.jpg",
+  "web-design": "/images/v2/b-web-browser.jpg",
+  sns: "/images/v2/b-sns-phone.jpg",
+  lp: "/images/v2/b-web-devices.jpg",
 };
 
 export async function generateStaticParams() {

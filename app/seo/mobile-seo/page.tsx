@@ -175,8 +175,8 @@ export default function MobileSeoPage() {
         {/* Hero image */}
         <section style={{ position: "relative", height: "320px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-            alt="スマートフォンSEO対策・モバイルファーストインデックス"
+            src="/images/v2/b-web-devices.jpg"
+            alt="パソコン・タブレット・スマートフォンの立体イラスト（レスポンシブ対応のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

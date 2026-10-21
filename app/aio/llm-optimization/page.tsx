@@ -194,8 +194,8 @@ export default function Page() {
         ============================================================ */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="LLM最適化・大規模言語モデルへのAI情報最適化"
+            src="/images/v2/b-aio-chat.jpg"
+            alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）"
             fill
             sizes="100vw"
             className="object-cover"
@@ -343,8 +343,8 @@ export default function Page() {
                 }}
               >
                 <Image
-                  src="/1.jpg"
-                  alt="LLM最適化・チャートを確認するグループ"
+                  src="/images/v2/b-aio-graph.jpg"
+                  alt="つながった球体の立体イラスト（ナレッジグラフ・構造化データのイメージ）"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"

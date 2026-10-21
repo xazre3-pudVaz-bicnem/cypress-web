@@ -278,8 +278,8 @@ export default function PhilosophyPage() {
         <section data-tone="dark" className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#293540" }}>
           <div className="absolute inset-0">
             <Image
-              src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-              alt="サイプレスの理念"
+              src="/images/v2/b-company.jpg"
+              alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）"
               fill
               className="object-cover opacity-25"
               sizes="100vw"
@@ -430,8 +430,8 @@ export default function PhilosophyPage() {
         {/* Cinematic break */}
         <section className="relative overflow-hidden" style={{ height: "280px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
-            alt="サイプレスの理念を象徴するビジュアル"
+            src="/images/v2/b-company.jpg"
+            alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

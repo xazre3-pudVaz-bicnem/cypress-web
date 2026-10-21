@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【地域密着型小売・専門店のMEO・Web集客】チェーンに負けない地域集客戦略｜株式会社サイプレス",
     description: "花屋・文具店・雑貨店など地域密着型小売・専門店のWeb集客。MEO・Instagram・ホームページで近くの人に見つけてもらいます。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_10_25 (10).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/i-retail.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -195,8 +195,8 @@ export default function LocalStoreIndustryPage() {
         {/* Full-width image band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_10_25 (10).jpg"
-            alt="地域店舗のGoogleビジネスプロフィール活用と集客支援イメージ"
+            src="/images/v2/i-retail.jpg"
+            alt="商品棚と買い物袋の立体イラスト（小売店のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

@@ -368,8 +368,8 @@ export default function StoreMarketingPage() {
         {/* Full-width image after hero */}
         <section className="relative" style={{ height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_21_48.jpg"
-            alt="店舗集客マーケティング MEO×SNS×Web"
+            src="/images/v2/b-meo-store.jpg"
+            alt="店舗の上に地図のピンが浮かぶ立体イラスト（地域集客のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"
@@ -533,8 +533,8 @@ export default function StoreMarketingPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
                 <Image
-                  src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-                  alt="来店導線設計・デジタルマーケティング"
+                  src="/images/v2/b-meo-phone.jpg"
+                  alt="地図アプリと口コミを表示したスマートフォンの立体イラスト（Googleビジネスプロフィールのイメージ）"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

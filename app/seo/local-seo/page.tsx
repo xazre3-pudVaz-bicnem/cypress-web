@@ -175,8 +175,8 @@ export default function LocalSeoPage() {
         {/* Hero image */}
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg"
-            alt="ローカルSEO・地域名キーワードでの上位表示イメージ"
+            src="/images/v2/b-area-tokyo.jpg"
+            alt="川と橋のある東京の下町の街並みとピンの立体イラスト（対応エリアのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

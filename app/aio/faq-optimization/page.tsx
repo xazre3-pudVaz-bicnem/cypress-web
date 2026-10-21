@@ -325,8 +325,8 @@ export default function FaqOptimizationPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_22_31.jpg"
-            alt="FAQ最適化・AI検索対策のデジタルイメージ"
+            src="/images/v2/b-faq.jpg"
+            alt="はてなマークの吹き出しと回答カードの立体イラスト（よくある質問のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

@@ -163,7 +163,7 @@ export default function CorporateSitePage() {
 
         {/* Image Band */}
         <section className="relative flex items-center justify-center" style={{ height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="コーポレートサイト制作・企業サイト設計のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-company.jpg" alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.5)" }} />
           <div className="relative text-center px-6">
             <p className="font-black" style={{ fontSize: "clamp(20px,3vw,36px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>企業ブランドと信頼を、Webで伝える</p>

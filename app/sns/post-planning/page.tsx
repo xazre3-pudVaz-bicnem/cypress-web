@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SNS投稿企画・運用設計｜集客につながるコンテンツ制作",
     description: "SNSの投稿企画・コンテンツ制作。ターゲットの関心・季節・イベントを踏まえた投稿ネタ出し・キャプション・ハッシュタグをAI活用で効率的に制作。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_18_57.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-sns-calendar.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -111,7 +111,7 @@ export default function Page() {
 
         {/* Image Band */}
         <div style={{ position: "relative", height: "260px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_18_57.jpg" alt="SNS投稿企画" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/images/v2/b-sns-calendar.jpg" alt="投稿カードを貼ったカレンダーの立体イラスト（SNS投稿計画のイメージ）" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.65)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--font-serif)", color: "#FFFFFF", fontSize: "clamp(18px,3vw,28px)", fontWeight: 700, letterSpacing: "0.05em", textAlign: "center" }}>
               戦略のある投稿が、集客に変わる。

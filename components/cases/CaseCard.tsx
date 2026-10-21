@@ -18,7 +18,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
       }}
     >
       {/* Image */}
-      <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", overflow: "hidden", background: "#F0ECE6" }}>
+      <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", overflow: "hidden", background: "#e4e7eb" }}>
         <Image
           src={c.image}
           alt={c.title}
@@ -37,7 +37,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
               fontFamily: "var(--font-display)",
               letterSpacing: "0.08em",
               color: "#9CA3AF",
-              background: "#F0ECE6",
+              background: "#e4e7eb",
               padding: "3px 10px",
             }}
           >
@@ -106,7 +106,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
       <div
         style={{
           padding: "14px 24px",
-          borderTop: "1px solid #F0ECE6",
+          borderTop: "1px solid #e4e7eb",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",

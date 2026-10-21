@@ -183,7 +183,7 @@ export default function AiSearchPage() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 19_22_31.jpg" alt="AI検索対策・AIO最適化" fill sizes="100vw" style={{ objectFit: "cover" }} />
+          <Image src="/images/v2/b-aio-chat.jpg" alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）" fill sizes="100vw" style={{ objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(15,23,42,0.50)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

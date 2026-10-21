@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "法人研修の導入相談｜AI・DX・Webマーケティング研修",
     description:
       "法人向けAI・DX・Webマーケティング研修の導入相談窓口。実績ある提携研修会社をご紹介します。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_13_52.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-training.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
     url: URL,
@@ -212,8 +212,8 @@ export default function TrainingHubPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
-              alt="法人向けAI・DX・Webマーケティング研修の導入相談イメージ"
+              src="/images/v2/b-training.jpg"
+              alt="ホワイトボードとノートパソコンの立体イラスト（研修のイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

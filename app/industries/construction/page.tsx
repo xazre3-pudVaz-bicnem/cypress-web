@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "【建設・リフォームのSEO・MEO集客】施工事例で見積もり依頼を増やす｜株式会社サイプレス",
     description: "建設業・リフォーム会社・外壁塗装のWeb集客。施工事例・MEO・SEOで見積もり依頼を増やします。",
-    images: [{ url: "/ChatGPT Image 2026年6月19日 09_10_04 (4).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/i-construction.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -185,8 +185,8 @@ export default function ConstructionIndustryPage() {
         {/* Full-width image */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月19日 09_10_04 (4).jpg"
-            alt="建設会社・工務店のホームページ制作とSEO対策支援イメージ"
+            src="/images/v2/i-construction.jpg"
+            alt="建築中の家とクレーンの立体イラスト"
             fill
             style={{ objectFit: "cover" }}
             sizes="100vw"

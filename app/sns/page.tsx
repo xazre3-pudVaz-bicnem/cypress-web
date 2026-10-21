@@ -231,8 +231,8 @@ export default function SnsPage() {
         {/* Image Band */}
         <section style={{ position: "relative", height: "360px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 20_01_28.jpg"
-            alt="Instagram・SNS集客・SNS運用代行のイメージ"
+            src="/images/v2/b-sns-phone.jpg"
+            alt="写真が並ぶスマートフォンとカメラの立体イラスト（SNS運用のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

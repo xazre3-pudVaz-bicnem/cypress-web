@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "研修会社紹介パートナー制度｜リスキリング研修・AI研修・DX研修の相談窓口",
     description:
       "サイプレスは研修会社ではなく紹介窓口です。それぞれの役割と紹介の流れをご説明します。",
-    images: [{ url: "/ChatGPT Image 2026年6月14日 21_08_57 (2).jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-partner.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
     url: URL,
@@ -214,8 +214,8 @@ export default function TrainingCompanyReferralPartnerPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_08_57 (2).jpg"
-              alt="研修会社紹介パートナー制度・提携のイメージ"
+              src="/images/v2/b-partner.jpg"
+              alt="かみ合う2つのパズルの立体イラスト（パートナーシップのイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

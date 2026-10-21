@@ -102,7 +102,7 @@ export default function Page() {
 
         {/* Hero Image */}
         <section style={{ position: "relative", height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月13日 00_32_58.jpg" alt="ヘッドレスWordPress制作" fill sizes="100vw" className="object-cover" />
+          <Image src="/images/v2/b-web-speed.jpg" alt="速度計とブラウザ画面の立体イラスト（表示速度改善のイメージ）" fill sizes="100vw" className="object-cover" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>

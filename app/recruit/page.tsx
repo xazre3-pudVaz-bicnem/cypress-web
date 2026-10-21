@@ -171,8 +171,8 @@ export default function RecruitPage() {
         <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "72px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
-              src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
-              alt="株式会社サイプレス採用 チームミーティング"
+              src="/images/v2/b-recruit.jpg"
+              alt="ノートパソコンと観葉植物のあるデスクの立体イラスト（働く環境のイメージ）"
               fill
               className="object-cover"
               sizes="100vw"

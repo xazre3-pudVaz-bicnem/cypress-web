@@ -194,8 +194,8 @@ export default function Page() {
         ============================================================ */}
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="llms.txtとAIクローラー対策"
+            src="/images/v2/b-guide.jpg"
+            alt="開いた本と電球の立体イラスト（ガイド・ナレッジのイメージ）"
             fill
             sizes="100vw"
             className="object-cover"

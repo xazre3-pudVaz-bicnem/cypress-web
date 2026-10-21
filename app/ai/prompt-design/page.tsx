@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "プロンプトエンジニアリング・プロンプト設計とは｜ChatGPT/Claudeを最大限活用する指示設計｜株式会社サイプレス",
     description: "ChatGPT・Claudeを最大限に活用するプロンプト設計。Few-Shot・Chain of Thought・業務別テンプレート設計からプロンプトライブラリ構築まで解説。",
-    images: [{ url: "/ChatGPT Image 2026年6月13日 19_20_52.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/v2/og/b-aio-chat.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
@@ -164,8 +164,8 @@ export default function Page() {
         {/* Image Band */}
         <section className="relative" style={{ height: "260px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_20_52.jpg"
-            alt="プロンプトエンジニアリング・AI指示設計のイメージ"
+            src="/images/v2/b-aio-chat.jpg"
+            alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

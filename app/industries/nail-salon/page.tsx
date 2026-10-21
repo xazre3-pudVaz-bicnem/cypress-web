@@ -196,7 +196,7 @@ export default function NailSalonPage() {
         </section>
 
         <section style={{ position: "relative", height: "340px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月19日 09_03_13 (4).jpg" alt="ネイルサロンのMEO対策とInstagram集客支援イメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/i-nail.jpg" alt="ネイルサロンのテーブルとネイルボトルの立体イラスト" fill className="object-cover" sizes="100vw" />
           <div style={{ position: "absolute", inset: 0, background: "rgba(13,27,42,0.45)" }} />
         </section>
 

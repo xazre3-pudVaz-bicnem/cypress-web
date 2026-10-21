@@ -37,19 +37,19 @@ const INDUSTRY_PAGE_MAP: Record<string, string> = {
 
 // 業種別OGP画像（public/ に実在するファイルのみ）
 const INDUSTRY_OGP_IMAGES: Record<string, string> = {
-  restaurant: "/ChatGPT Image 2026年6月14日 21_09_20 (1).jpg",
-  "beauty-salon": "/ChatGPT Image 2026年6月19日 08_59_57 (1).jpg",
-  relaxation: "/ChatGPT Image 2026年6月19日 09_03_14 (6).jpg",
-  dental: "/ChatGPT Image 2026年6月19日 09_05_30 (6).jpg",
-  clinic: "/ChatGPT Image 2026年6月19日 09_05_27 (1).jpg",
-  construction: "/ChatGPT Image 2026年6月19日 09_10_04 (4).jpg",
-  "real-estate": "/ChatGPT Image 2026年6月19日 09_10_08 (3).jpg",
-  cleaning: "/ChatGPT Image 2026年6月14日 21_10_24 (6).jpg",
-  logistics: "/ChatGPT Image 2026年6月19日 09_26_23 (1).jpg",
-  pet: "/ChatGPT Image 2026年6月19日 09_26_45 (3).jpg",
-  school: "/ChatGPT Image 2026年6月19日 09_27_09 (1).jpg",
-  retail: "/ChatGPT Image 2026年6月14日 21_10_25 (10).jpg",
-  professional: "/ChatGPT Image 2026年6月14日 21_13_52.jpg",
+  restaurant: "/images/v2/i-restaurant.jpg",
+  "beauty-salon": "/images/v2/i-beauty.jpg",
+  relaxation: "/images/v2/i-relaxation.jpg",
+  dental: "/images/v2/i-dental.jpg",
+  clinic: "/images/v2/i-clinic.jpg",
+  construction: "/images/v2/i-construction.jpg",
+  "real-estate": "/images/v2/i-real-estate.jpg",
+  cleaning: "/images/v2/i-cleaning.jpg",
+  logistics: "/images/v2/i-logistics.jpg",
+  pet: "/images/v2/i-pet.jpg",
+  school: "/images/v2/i-school.jpg",
+  retail: "/images/v2/i-retail.jpg",
+  professional: "/images/v2/i-professional.jpg",
 };
 
 export async function generateStaticParams() {

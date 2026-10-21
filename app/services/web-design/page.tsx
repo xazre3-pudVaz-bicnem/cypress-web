@@ -198,7 +198,7 @@ export default function ServicesWebDesignPage() {
 
         {/* Hero image */}
         <section className="relative" style={{ height: "320px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_13_52.jpg" alt="Web制作サービス・コーポレートサイト・SEOサイト設計のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-web-browser.jpg" alt="ボタンとカーソルのあるブラウザ画面の立体イラスト（ホームページ制作のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 

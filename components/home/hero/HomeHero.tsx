@@ -131,13 +131,13 @@ export default function HomeHero() {
         {/* ヒーローの文字 */}
         <motion.div className="pointer-events-none absolute inset-0 text-white" style={{ opacity: copyOpacity, y: copyY }}>
           <h1 id="home-hero-title" className="absolute inset-x-0 top-[50%] -translate-y-[42%] px-[var(--v2-gutter)]">
-            <span aria-hidden className="v2-display cy-hero-title block text-[21vw] leading-[0.92] md:whitespace-nowrap md:text-[12.6vw] md:leading-[0.95]">
+            <span aria-hidden className="v2-display cy-hero-title block text-[19vw] leading-[0.92] md:whitespace-nowrap md:text-[10.1vw] md:leading-[0.95]">
               <span className="block md:inline">
-                <SplitReveal text="Found by" />
+                <SplitReveal text="Be found," />
               </span>
               <span className="hidden md:inline">{" "}</span>
               <span className="block md:inline">
-                <SplitReveal text="design" offset={8} />
+                <SplitReveal text="be chosen" offset={9} />
               </span>
             </span>
             <span className="sr-only">株式会社サイプレス｜東京・葛飾区のWebマーケティング会社（MEO・SEO・AIO・ホームページ制作）</span>
@@ -145,7 +145,7 @@ export default function HomeHero() {
           <p className="cy-hero-sub absolute bottom-[11svh] left-[var(--v2-gutter)] text-[20px] font-bold leading-[1.5] tracking-[0.02em] md:bottom-[97px] md:text-[32px]">
             検索の先にいるお客さまと、
             <br />
-            地域の会社をつなぐデザイン
+            地域の会社をつなぐWebマーケティング
           </p>
         </motion.div>
         <motion.div className="absolute right-4 top-[84px] md:right-8 md:top-[128px]" style={{ opacity: copyOpacity }}>

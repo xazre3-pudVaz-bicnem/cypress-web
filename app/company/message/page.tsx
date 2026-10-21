@@ -332,8 +332,8 @@ export default function MessagePage() {
               <div className="md:sticky md:top-24">
                 <div className="relative overflow-hidden mb-6" style={{ height: "260px" }}>
                   <Image
-                    src="/ChatGPT Image 2026年6月13日 19_11_20.jpg"
-                    alt="ビジネスパートナーとの握手・信頼関係"
+                    src="/images/v2/b-company.jpg"
+                    alt="小さなオフィスビルの立体イラスト（株式会社サイプレスのイメージ）"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 300px"
@@ -403,8 +403,8 @@ export default function MessagePage() {
         {/* Cinematic break */}
         <section className="relative overflow-hidden" style={{ height: "280px" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_13_37.jpg"
-            alt="ミーティングでドキュメントを確認するビジネスパーソン"
+            src="/images/v2/b-partner.jpg"
+            alt="かみ合う2つのパズルの立体イラスト（パートナーシップのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

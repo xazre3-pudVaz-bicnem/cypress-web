@@ -302,8 +302,8 @@ export default function GooglePostPage() {
         {/* Full-width image */}
         <section className="relative" style={{ height: "340px", overflow: "hidden" }}>
           <Image
-            src="/ChatGPT Image 2026年6月13日 19_18_03.jpg"
-            alt="スマートフォンとデジタルアイコン・Google投稿MEO対策"
+            src="/images/v2/b-meo-phone.jpg"
+            alt="地図アプリと口コミを表示したスマートフォンの立体イラスト（Googleビジネスプロフィールのイメージ）"
             fill
             className="object-cover"
             sizes="100vw"

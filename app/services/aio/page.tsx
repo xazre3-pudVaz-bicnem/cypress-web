@@ -190,7 +190,7 @@ export default function ServicesAioPage() {
 
         {/* Hero image */}
         <section className="relative" style={{ height: "300px", overflow: "hidden" }}>
-          <Image src="/ChatGPT Image 2026年6月14日 21_08_58 (6).jpg" alt="AIO対策・AI検索最適化・ChatGPT引用獲得のイメージ" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/v2/b-aio-chat.jpg" alt="きらめきの入った吹き出しと資料の立体イラスト（AI検索対策のイメージ）" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "rgba(13,27,42,0.45)" }} />
         </section>
 
