@@ -88,7 +88,9 @@ export default function HomeHero() {
   );
   const clip = useTransform(radius, (r) => (r >= cover - 1 ? "none" : `circle(${r}px at 50% 50%)`));
   const innerScale = useTransform(s, [0, H * 0.4, H], [1, 1, 0.52]);
-  const ringSize = useTransform(radius, (r) => `${r * 2}px`);
+  // ガラスの縁は最終的な大きさで一度だけ描き、スクロール中は拡大縮小（transform）だけで大きさを合わせる。
+  // 幅・高さを毎フレーム変えると、ぼかしの影を毎回描き直すことになりスクロールがカクつく
+  const ringScale = useTransform(radius, (r) => r / rEnd);
   const ringOpacity = useTransform(s, [H * 0.1, H * 0.45], [0, 1]);
   const copyOpacity = useTransform(s, [0, H * 0.17], [1, 0]);
   const copyY = useTransform(s, [0, H * 0.17], [0, -48]);
@@ -114,14 +116,17 @@ export default function HomeHero() {
           </motion.div>
         </motion.div>
 
+        {/* 3D を囲むガラスの縁（最終的な大きさで描き、拡大縮小だけで円に合わせる） */}
         {ringOn && (
           <motion.div
             aria-hidden
             className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
             style={{
-              width: ringSize,
-              height: ringSize,
+              width: rEnd * 2,
+              height: rEnd * 2,
+              scale: ringScale,
               opacity: ringOpacity,
+              willChange: "transform",
               boxShadow:
                 "inset 0 0 0 1.5px rgba(255,255,255,0.55), inset 0 0 28px 6px rgba(190,220,255,0.55), 0 0 0 1px rgba(9,111,200,0.12), 0 18px 50px rgba(9,111,200,0.18)",
             }}

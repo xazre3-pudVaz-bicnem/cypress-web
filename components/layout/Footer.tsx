@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import { BUSINESSES, COMPANY, COMPANY_ADDRESS_WITH_POSTAL } from "@/lib/company";
 import { CONTACT_EMAIL, CONTACT_MAILTO } from "@/lib/contact";
@@ -242,8 +243,8 @@ function FooterColumn({ sections }: { sections: FooterSection[] }) {
 export default function Footer() {
   return (
     <footer
-      className="v2 relative text-white"
-      style={{ background: "var(--v2-navy)", contentVisibility: "auto", containIntrinsicSize: "auto 1100px" }}
+      className="v2 cy-deferred relative text-white"
+      style={{ background: "var(--v2-navy)", "--cy-deferred-size": "1100px" } as CSSProperties}
     >
       <div className="mx-auto max-w-[1440px] px-[var(--v2-gutter)] pb-10 pt-16 md:pt-20">
         <div className="flex items-center justify-between gap-6">

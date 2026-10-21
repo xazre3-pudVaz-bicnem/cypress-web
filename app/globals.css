@@ -522,6 +522,12 @@ html.cy-intro-skip {
 html[data-motion="off"] .cy-poster {
   animation-play-state: paused;
 }
+/* PC: 3D が表示されたら下の静止画は描かない。重なったまま残すと、円が縮む・拡大縮小するたびに
+   大きな画像まで描き直してスクロールがカクつく（3D の表示切り替え 0.7 秒が終わってから隠す） */
+[data-ready] > picture > .cy-poster {
+  visibility: hidden;
+  transition: visibility 0s linear 0.8s;
+}
 
 /* =====================================================================
    下層ページ（2026-10 刷新・第2段階）
@@ -698,11 +704,8 @@ main :where(p, li, dd, td, th, h1, h2, h3, h4, a) {
   overflow-x: auto;
 }
 
-/* 下層ページ: 画面外のセクションは近づくまで描画計算を省く（長いページの初回表示を軽くする） */
-main:not(.v2) > section:not([data-page-hero]) {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
-}
+/* 下層ページのセクションには content-visibility（画面外の描画を省く）を使わない。
+   近づいたセクションをまとめて描くときに1コマが重くなり、スムーススクロール中にカクッと止まるため */
 /* ヘッダーの下に追従するバー（コラム一覧の絞り込みなど）。ヘッダーが隠れたら最上部へ、出たらその下（8px + 64px）へ */
 [data-under-header] {
   top: 0;
@@ -712,8 +715,16 @@ html[data-header="shown"] [data-under-header] {
   top: 72px;
 }
 
+/* 画面外の描画を省く（components/ui/Deferred.tsx・フッター）のは、スムーススクロールを使わないタッチ端末だけ。
+   PC で使うと、近づいた区画をまとめて描く1コマが重くなり、スクロールがカクッと止まる */
+@media (pointer: coarse) {
+  .cy-deferred {
+    content-visibility: auto;
+    contain-intrinsic-size: auto var(--cy-deferred-size, 900px);
+  }
+}
 /* 「戻る・進む」で位置を戻すあいだは、仮の高さのままだと戻り先がずれるので全部を実際の高さで並べる（SmoothScroll.tsx） */
-html[data-restoring] :is(main:not(.v2) > section, [style*="content-visibility"]) {
+html[data-restoring] .cy-deferred {
   content-visibility: visible !important;
 }
 
