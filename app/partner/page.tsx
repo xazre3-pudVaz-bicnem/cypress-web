@@ -71,15 +71,15 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>パートナー制度</span>
+              <span style={{ color: "#333333" }}>パートナー制度</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Partner Programs</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
               パートナー制度
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -95,16 +95,16 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Programs</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>パートナー制度の一覧</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>パートナー制度の一覧</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", maxWidth: "800px" }}>
               {programs.map((prog) => (
-                <Link key={prog.href} href={prog.href} style={{ display: "block", background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "32px 28px", textDecoration: "none" }}>
+                <Link key={prog.href} href={prog.href} style={{ display: "block", background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "32px 28px", textDecoration: "none" }}>
                   <p style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "8px" }}>{prog.sub}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "20px", color: "#0d1b2a", marginBottom: "12px" }}>{prog.label}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "20px", color: "#333333", marginBottom: "12px" }}>{prog.label}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "16px" }}>{prog.desc}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {prog.tags.map((tag) => (
-                      <span key={tag} style={{ fontSize: "11px", background: "#0d1b2a", color: "#fff", padding: "3px 10px", borderRadius: "3px", fontWeight: 600 }}>{tag}</span>
+                      <span key={tag} style={{ fontSize: "11px", background: "#293540", color: "#fff", padding: "3px 10px", borderRadius: "3px", fontWeight: 600 }}>{tag}</span>
                     ))}
                   </div>
                 </Link>

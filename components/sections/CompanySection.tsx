@@ -21,19 +21,19 @@ export default function CompanySection() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
-          <span className="text-[11px] font-mono tracking-[0.22em] text-[#3B82F6] uppercase block mb-4">
+          <span className="text-[11px] font-mono tracking-[0.22em] text-[#096fc8] uppercase block mb-4">
             Company
           </span>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-12">
             <h2
-              className="font-black text-[#0F172A] leading-[1.1] tracking-[-0.02em]"
+              className="font-black text-[#333333] leading-[1.1] tracking-[-0.02em]"
               style={{ fontSize: "clamp(32px, 4vw, 52px)" }}
             >
               会社概要
             </h2>
             <Link
               href="/company"
-              className="inline-flex items-center gap-2 text-[#2563EB] text-sm font-medium hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 text-[#096fc8] text-sm font-medium hover:gap-3 transition-all"
             >
               詳しく見る
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -61,7 +61,7 @@ export default function CompanySection() {
                 <dt className="px-6 py-5 text-[#94A3B8] text-sm bg-[#FAFBFF] border-r border-[#F1F5F9]">
                   {row.label}
                 </dt>
-                <dd className="px-6 py-5 text-[#0F172A] text-sm">{row.value}</dd>
+                <dd className="px-6 py-5 text-[#333333] text-sm">{row.value}</dd>
               </div>
             ))}
           </dl>

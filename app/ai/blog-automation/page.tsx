@@ -139,17 +139,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/ai" style={{ color: "#6B7280" }} className="hover:underline">AI活用支援</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>AIブログ・コンテンツ自動化</span>
+              <span style={{ color: "#333333" }}>AIブログ・コンテンツ自動化</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>AI Blog Automation</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIブログ・コンテンツ自動化
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -172,7 +172,7 @@ export default function Page() {
           />
           <div className="absolute inset-0 flex items-center px-8 md:px-20" style={{ background: "rgba(13,27,42,0.5)" }}>
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>AI × Content</p>
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-display)" }}>AI × Content</p>
               <p className="font-black text-[22px] md:text-[28px] leading-snug" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
                 AIで記事制作を効率化し、<br />コンテンツ資産を積み上げる
               </p>
@@ -181,10 +181,10 @@ export default function Page() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Overview</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl">
@@ -196,12 +196,12 @@ export default function Page() {
                 "コンテンツ量産の効果を測るKPIと計測ツールの選び方",
                 "よくある失敗パターンと、継続的に成果を出す運用体制の作り方",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -210,7 +210,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Workflow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIブログ自動化でできること
             </h2>
             <div className="max-w-4xl">
@@ -222,40 +222,40 @@ export default function Page() {
                 { n: "05", t: "メタディスクリプション・alt文の自動生成", b: "本文から適切なメタディスクリプション（120文字以内）・画像のalt文をAIが自動生成します。SEOに必要な付帯情報の入力工数を大幅に削減します。" },
                 { n: "06", t: "内部リンク候補の提案", b: "記事の内容に基づいて、関連する既存記事への内部リンク候補をAIが提案します。内部リンク構造の強化を効率的に行えます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Role Division */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Role Division</p>
-            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIと人間の役割分担
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
               AI活用で重要なのは、AIに何をさせて人間が何をするかの役割分担です。AIが得意なのは「大量の文字を高速に生成すること」ですが、品質保証・事実確認・独自の体験や視点の付与は人間が行う必要があります。
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-              <div style={{ padding: "28px", background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
-                <p className="font-bold text-[14px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>AIが担う作業</p>
+              <div style={{ padding: "28px", background: "#FFFFFF", border: "1px solid #dde0e4" }}>
+                <p className="font-bold text-[14px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>AIが担う作業</p>
                 {["記事タイトル・構成の生成", "本文の下書き作成", "メタ情報の生成", "リライト案の提案", "ハッシュタグ・タグ提案"].map((t, i) => (
-                  <p key={i} className="text-[13px] py-2" style={{ color: "#374151", borderTop: i > 0 ? "1px solid #F0EDE6" : "none" }}>→ {t}</p>
+                  <p key={i} className="text-[13px] py-2" style={{ color: "#374151", borderTop: i > 0 ? "1px solid #dde0e4" : "none" }}>→ {t}</p>
                 ))}
               </div>
-              <div style={{ padding: "28px", background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
-                <p className="font-bold text-[14px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>人間が担う作業</p>
+              <div style={{ padding: "28px", background: "#FFFFFF", border: "1px solid #dde0e4" }}>
+                <p className="font-bold text-[14px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>人間が担う作業</p>
                 {["事実確認・情報の精査", "独自の体験・視点の追加", "SEO戦略・キーワード選定", "最終編集・品質チェック", "公開・運用判断"].map((t, i) => (
-                  <p key={i} className="text-[13px] py-2" style={{ color: "#374151", borderTop: i > 0 ? "1px solid #F0EDE6" : "none" }}>→ {t}</p>
+                  <p key={i} className="text-[13px] py-2" style={{ color: "#374151", borderTop: i > 0 ? "1px solid #dde0e4" : "none" }}>→ {t}</p>
                 ))}
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -285,24 +285,24 @@ export default function Page() {
                 { n: "09", t: "人間とAIの役割分担が不明確", b: "「AIに全部任せる」または「AIを使わずに全部人間が書く」の二極になりがちです。品質管理・事実確認・独自視点の追加は人間が担い、下書きと付帯情報をAIが担う明確な分担表が必要です。" },
                 { n: "10", t: "公開後の効果測定ができていない", b: "記事を公開しても順位変動・流入数・コンバージョン数を追えていないため、何が効果的かが分かりません。GoogleサーチコンソールとGoogleアナリティクスを記事単位で確認する習慣が成果改善につながります。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -319,10 +319,10 @@ export default function Page() {
                 { n: "07", industry: "学習塾・教育", note: "科目別解説・受験情報のAI記事化。「数学 中学 方程式 解き方」「大学受験 英語 勉強法」などの受験生向け検索キーワードに対応した記事をAIで量産できます。入試情報・制度解説は人間が事実確認を行う体制が必要です。" },
                 { n: "08", industry: "旅行・観光", note: "観光地・グルメ情報のAI量産。「○○ 観光スポット おすすめ」「○○市 ランチ 家族向け」などのローカルSEOキーワードに対応した記事をAIで効率的に生成できます。実際の取材情報・写真と組み合わせることで差別化が図れます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-5 p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-5 p-6" style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
@@ -335,7 +335,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               導入・実装フロー
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -354,24 +354,24 @@ export default function Page() {
                 { n: "09", t: "公開・インデックス申請", b: "WordPressやCMSに入稿・公開後、Googleサーチコンソールの「URL検査」ツールからインデックス申請を行います。サイトマップが自動更新される設定を確認し、新記事がGoogleに早期認識されるよう設定します。" },
                 { n: "10", t: "効果測定・リライト計画", b: "公開から1か月後・3か月後にGoogleサーチコンソールで検索順位・クリック数を確認します。上位10〜20位の記事は特にリライト効果が出やすいため、見出し構成の改善・情報の追加更新・内部リンクの強化を行います。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -387,15 +387,15 @@ export default function Page() {
                 { n: "06", t: "AI活用率（AI下書き比率）", b: "全公開記事のうちAIの下書きを利用した記事の比率を管理します。スプレッドシートで記事ごとにAI利用有無を記録することで、AI活用度合いとコスト削減効果の相関を把握できます。" },
                 { n: "07", t: "外注コスト削減額", b: "AI導入前の外注ライター費用とAI導入後のツール費用（月額）を比較します。「削減金額÷月次ツールコスト」でROIを算出し、投資回収期間を明確化することで継続投資の意思決定が容易になります。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

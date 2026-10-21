@@ -69,17 +69,17 @@ export default function IndustriesPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>業種別対応</span>
+              <span style={{ color: "#333333" }}>業種別対応</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)", letterSpacing: "0.25em" }}>
               Industries
             </p>
-            <h1 className="font-black text-[40px] md:text-[56px] leading-tight tracking-tight mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black text-[40px] md:text-[56px] leading-tight tracking-tight mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別Webマーケティング支援
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
@@ -100,7 +100,7 @@ export default function IndustriesPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)", letterSpacing: "0.25em" }}>
               Why Industry-Specific
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種ごとに集客戦略が変わる理由
             </h2>
             <div className="max-w-3xl space-y-6">
@@ -118,12 +118,12 @@ export default function IndustriesPage() {
         </section>
 
         {/* Industries list */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)", letterSpacing: "0.25em" }}>
               Supported Industries
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               対応業種一覧
             </h2>
             <div className="max-w-3xl">
@@ -131,13 +131,13 @@ export default function IndustriesPage() {
                 <Link key={industry.href} href={industry.href}>
                   <div
                     className="flex gap-6 py-6 hover:opacity-80 transition-opacity"
-                    style={{ borderTop: "1px solid #ece8e0", borderBottom: i === INDUSTRIES.length - 1 ? "1px solid #ece8e0" : undefined }}
+                    style={{ borderTop: "1px solid #dde0e4", borderBottom: i === INDUSTRIES.length - 1 ? "1px solid #dde0e4" : undefined }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h3 className="font-bold text-[16px] mb-2 hover:underline" style={{ color: "#0d1b2a" }}>{industry.label}</h3>
+                      <h3 className="font-bold text-[16px] mb-2 hover:underline" style={{ color: "#333333" }}>{industry.label}</h3>
                       <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{industry.desc}</p>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export default function IndustriesPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)", letterSpacing: "0.25em" }}>
               Our Approach
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスの業種別支援アプローチ
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -166,8 +166,8 @@ export default function IndustriesPage() {
               <div className="pt-4">
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                  style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                  className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#293540] hover:text-white"
+                  style={{ border: "1px solid #333333", color: "#333333" }}
                 >
                   サービス一覧を見る
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -179,7 +179,7 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

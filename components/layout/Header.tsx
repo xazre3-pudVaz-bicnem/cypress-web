@@ -8,7 +8,10 @@ import Logo from "@/components/brand/Logo";
 import { CONTACT_LINK, PRIMARY_NAV, SECONDARY_NAV, type NavGroup, type NavLink } from "@/lib/navigation";
 
 interface Props {
-  /** overlay: トップページのヒーローに白文字で重ねる / default: 明るい背景のページ */
+  /**
+   * overlay: 濃い色の冒頭（トップの 3D・下層ページの濃紺の帯）に白文字で重ねる（既定）
+   * default: 明るい背景のページ用（上に余白を取り、濃い文字で表示）
+   */
   variant?: "overlay" | "default";
   /** トップのイントロ演出が終わってから表示する */
   introFade?: boolean;
@@ -26,7 +29,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
  * - 下にスクロール中: 隠す / 上にスクロールしたとき: 白いパネルとして上部に出す
  * - メニューにホバー: 白いパネルが広がり、背景をぼかしてメガメニューを出す
  */
-export default function Header({ variant = "default", introFade = false }: Props) {
+export default function Header({ variant = "overlay", introFade = false }: Props) {
   const [mode, setMode] = useState<Mode>("top");
   const [openKey, setOpenKey] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);

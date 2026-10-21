@@ -215,17 +215,17 @@ export default function MeoIndexPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>MEO対策</span>
+              <span style={{ color: "#333333" }}>MEO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Map Engine Optimization
             </p>
-            <h1 className="font-black text-[40px] md:text-[56px] leading-tight tracking-tight mb-6" style={{ color: "#0F172A" }}>
+            <h1 className="font-black text-[40px] md:text-[56px] leading-tight tracking-tight mb-6" style={{ color: "#333333" }}>
               MEO対策とは
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-4" style={{ color: "#374151" }}>
@@ -268,7 +268,7 @@ export default function MeoIndexPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is MEO
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333" }}>
               MEO対策とは何か
             </h2>
             <div className="max-w-3xl space-y-6">
@@ -295,12 +295,12 @@ export default function MeoIndexPage() {
         </section>
 
         {/* MEO順位を決める3つの評価軸 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Ranking Factors
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333" }}>
               Googleがローカル順位を決める3つの評価軸
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -312,7 +312,7 @@ export default function MeoIndexPage() {
                 {
                   en: "Relevance",
                   ja: "関連性",
-                  color: "#c4b89a",
+                  color: "var(--v2-accent)",
                   desc: "ユーザーの検索意図とビジネス情報がどれだけ一致しているかを評価します。ビジネスカテゴリ・サービス説明・属性情報を正確に設定することで関連性スコアが向上します。「美容室」で検索するユーザーに「ヘアサロン」として登録していれば引っかかりません。キーワードを意識した情報設計が重要です。",
                   checks: ["正確なビジネスカテゴリ設定", "サービス・商品情報の網羅", "ビジネス説明文のキーワード最適化"],
                 },
@@ -326,7 +326,7 @@ export default function MeoIndexPage() {
                 {
                   en: "Prominence",
                   ja: "知名度",
-                  color: "#0d1b2a",
+                  color: "#333333",
                   desc: "オンライン上での存在感・評判・知名度を総合的に評価します。口コミの件数・評価スコア・返信率・写真枚数・投稿頻度・ウェブサイトへの言及・被リンク数などが含まれます。3要素の中で最も施策の影響が大きく、継続的な取り組みが求められます。",
                   checks: ["口コミ件数・評価スコア向上", "定期的な写真・投稿更新", "外部サイトからの言及獲得"],
                 },
@@ -334,22 +334,22 @@ export default function MeoIndexPage() {
                 <div
                   key={factor.en}
                   className="p-6"
-                  style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}
                 >
                   <div className="mb-4">
                     <span
                       className="text-[11px] font-semibold tracking-[0.18em] uppercase"
-                      style={{ color: typeof factor.color === "string" && factor.color === "#c4b89a" ? "#c4b89a" : "#6B7280" }}
+                      style={{ color: typeof factor.color === "string" && factor.color === "var(--v2-accent)" ? "var(--v2-accent)" : "#6B7280" }}
                     >
                       {factor.en}
                     </span>
-                    <h3 className="font-black text-[24px] mt-1" style={{ color: "#0F172A" }}>{factor.ja}</h3>
+                    <h3 className="font-black text-[24px] mt-1" style={{ color: "#333333" }}>{factor.ja}</h3>
                   </div>
                   <p className="text-[14px] leading-[1.8] mb-5" style={{ color: "#374151" }}>{factor.desc}</p>
                   <ul className="space-y-1">
                     {factor.checks.map((c, j) => (
                       <li key={j} className="flex gap-2 text-[13px]" style={{ color: "#374151" }}>
-                        <span style={{ color: "#c4b89a" }}>✓</span>{c}
+                        <span style={{ color: "var(--v2-accent)" }}>✓</span>{c}
                       </li>
                     ))}
                   </ul>
@@ -365,7 +365,7 @@ export default function MeoIndexPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why Now
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333" }}>
               なぜ今MEO対策が重要なのか
             </h2>
             <div className="max-w-3xl space-y-6">
@@ -391,9 +391,9 @@ export default function MeoIndexPage() {
         </section>
 
         {/* MEO対策の具体的施策 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Key Actions
             </p>
             <h2 className="font-black text-[28px] mb-12" style={{ color: "#FFFFFF" }}>
@@ -465,7 +465,7 @@ export default function MeoIndexPage() {
                 <div key={item.num} className="flex gap-5">
                   <span
                     className="text-[20px] font-black shrink-0 leading-none mt-0.5"
-                    style={{ color: "#c4b89a", fontFamily: "var(--font-serif)" }}
+                    style={{ color: "var(--v2-accent)", fontFamily: "var(--font-serif)" }}
                   >
                     {item.num}
                   </span>
@@ -485,7 +485,7 @@ export default function MeoIndexPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Knowledge
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333" }}>
               MEO対策を深く学ぶ
             </h2>
             <div className="max-w-3xl">
@@ -494,15 +494,15 @@ export default function MeoIndexPage() {
                   <div
                     className="flex gap-6 py-6 hover:opacity-80 transition-opacity"
                     style={{
-                      borderTop: "1px solid #E8E4DC",
-                      borderBottom: i === subPages.length - 1 ? "1px solid #E8E4DC" : undefined,
+                      borderTop: "1px solid #dde0e4",
+                      borderBottom: i === subPages.length - 1 ? "1px solid #dde0e4" : undefined,
                     }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h3 className="font-bold text-[16px] mb-2 hover:underline" style={{ color: "#0F172A" }}>{page.label}</h3>
+                      <h3 className="font-bold text-[16px] mb-2 hover:underline" style={{ color: "#333333" }}>{page.label}</h3>
                       <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{page.desc}</p>
                     </div>
                   </div>
@@ -513,12 +513,12 @@ export default function MeoIndexPage() {
         </section>
 
         {/* 業種別MEO活用事例 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Cases
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333" }}>
               業種別MEO対策の活用事例
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -591,14 +591,14 @@ export default function MeoIndexPage() {
                 <div
                   key={c.industry}
                   className="p-6"
-                  style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}
                 >
                   <div className="text-3xl mb-3">{c.icon}</div>
-                  <h3 className="font-bold text-[16px] mb-4" style={{ color: "#0F172A" }}>{c.industry}</h3>
+                  <h3 className="font-bold text-[16px] mb-4" style={{ color: "#333333" }}>{c.industry}</h3>
                   <ul className="space-y-2">
                     {c.points.map((pt, j) => (
                       <li key={j} className="flex gap-2 text-[13px] leading-[1.7]" style={{ color: "#374151" }}>
-                        <span className="shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>▸</span>
+                        <span className="shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>▸</span>
                         {pt}
                       </li>
                     ))}
@@ -615,7 +615,7 @@ export default function MeoIndexPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Our Support
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333" }}>
               サイプレスのMEO支援
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -633,8 +633,8 @@ export default function MeoIndexPage() {
                 <div className="pt-2">
                   <Link
                     href="/services/meo"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                    style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                    className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#293540] hover:text-white"
+                    style={{ border: "1px solid #333333", color: "#333333" }}
                   >
                     MEO対策サービスの詳細
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -655,9 +655,9 @@ export default function MeoIndexPage() {
                   <div
                     key={s.label}
                     className="p-4"
-                    style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+                    style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}
                   >
-                    <div className="font-bold text-[13px] mb-1" style={{ color: "#0F172A" }}>{s.label}</div>
+                    <div className="font-bold text-[13px] mb-1" style={{ color: "#333333" }}>{s.label}</div>
                     <div className="text-[12px]" style={{ color: "#9CA3AF" }}>{s.desc}</div>
                   </div>
                 ))}
@@ -667,12 +667,12 @@ export default function MeoIndexPage() {
         </section>
 
         {/* MEO費用の目安 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Pricing
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333" }}>
               MEO対策費用の目安
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -682,7 +682,7 @@ export default function MeoIndexPage() {
             <div className="max-w-4xl overflow-x-auto">
               <table className="w-full text-[14px]" style={{ borderCollapse: "collapse" }}>
                 <thead>
-                  <tr style={{ background: "#0d1b2a" }}>
+                  <tr style={{ background: "#293540" }}>
                     <th className="text-left py-4 px-5 font-semibold text-white">プラン</th>
                     <th className="text-left py-4 px-5 font-semibold text-white">月額費用</th>
                     <th className="text-left py-4 px-5 font-semibold text-white">主な施策内容</th>
@@ -699,12 +699,12 @@ export default function MeoIndexPage() {
                     <tr
                       key={i}
                       style={{
-                        background: i % 2 === 0 ? "#FFFFFF" : "#F9F8F5",
-                        borderBottom: "1px solid #E8E4DC",
+                        background: i % 2 === 0 ? "#FFFFFF" : "#f0f1f2",
+                        borderBottom: "1px solid #dde0e4",
                       }}
                     >
-                      <td className="py-4 px-5 font-medium" style={{ color: "#0F172A" }}>{row.plan}</td>
-                      <td className="py-4 px-5 font-bold" style={{ color: "#c4b89a" }}>{row.price}</td>
+                      <td className="py-4 px-5 font-medium" style={{ color: "#333333" }}>{row.plan}</td>
+                      <td className="py-4 px-5 font-bold" style={{ color: "var(--v2-accent)" }}>{row.price}</td>
                       <td className="py-4 px-5" style={{ color: "#374151" }}>{row.content}</td>
                     </tr>
                   ))}
@@ -734,7 +734,7 @@ export default function MeoIndexPage() {
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   Reviews &amp; MEO
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333" }}>
                   MEOと口コミの関係
                 </h2>
                 <div className="space-y-4">
@@ -754,12 +754,12 @@ export default function MeoIndexPage() {
         </section>
 
         {/* よくある失敗パターン */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Mistakes
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333" }}>
               MEO対策でよくある失敗パターン
             </h2>
             <div className="max-w-3xl space-y-6">
@@ -785,7 +785,7 @@ export default function MeoIndexPage() {
                   body: "MEO対策は継続が前提です。上位表示を達成しても、競合が対策を強化すれば順位は落ちます。口コミ獲得・投稿継続・写真更新・インサイト分析を継続することで、上位表示を維持し続けることが重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderBottom: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderBottom: "1px solid #dde0e4" }}>
                   <div
                     className="shrink-0 w-8 h-8 flex items-center justify-center text-[13px] font-bold"
                     style={{ background: "#FEE2E2", color: "#DC2626", borderRadius: "50%" }}
@@ -793,7 +793,7 @@ export default function MeoIndexPage() {
                     ✕
                   </div>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
@@ -805,10 +805,10 @@ export default function MeoIndexPage() {
         <FaqSection items={faqItems} heading="MEO対策に関するよくある質問" bgColor="#FFFFFF" />
 
         {/* MEO成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO対策の成功事例
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
@@ -826,7 +826,7 @@ export default function MeoIndexPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

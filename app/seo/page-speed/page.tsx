@@ -465,17 +465,17 @@ export default function PageSpeedPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>ページ速度最適化</span>
+              <span style={{ color: "#333333" }}>ページ速度最適化</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Page Speed Optimization</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               ページ速度最適化
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -509,9 +509,9 @@ export default function PageSpeedPage() {
         </section>
 
         {/* SEO Impact — dark section */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>SEO Impact</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>SEO Impact</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ページ速度が遅いとSEOに起きる4つの問題
             </h2>
@@ -534,7 +534,7 @@ export default function PageSpeedPage() {
                   b: "GoogleのクロールバジェットはURLごとに制限があります。ページの表示が遅いとクローラーの効率が下がり、重要なページのインデックスが遅れる原因になります。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -544,10 +544,10 @@ export default function PageSpeedPage() {
         </section>
 
         {/* Core Web Vitals */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Core Web Vitals</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Core Web Vitalsの3指標と目標値
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -580,8 +580,8 @@ export default function PageSpeedPage() {
                   desc: "ユーザーの操作（クリック・タップ・キー入力）に対するページの視覚的な応答速度。2024年3月にFIDから置き換わった指標。重いJavaScriptの長いタスクが主な原因です。",
                 },
               ].map((item) => (
-                <div key={item.metric} className="p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
-                  <p className="font-black text-[28px] mb-1 font-mono" style={{ color: "#0d1b2a" }}>{item.metric}</p>
+                <div key={item.metric} className="p-6 rounded" style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}>
+                  <p className="font-black text-[28px] mb-1 font-mono" style={{ color: "#333333" }}>{item.metric}</p>
                   <p className="text-[11px] mb-4" style={{ color: "#9CA3AF" }}>{item.name}</p>
                   <div className="space-y-1 text-[12px] mb-4">
                     <div className="flex justify-between"><span style={{ color: "#4ade80" }}>Good</span><span style={{ color: "#374151" }}>{item.good}</span></div>
@@ -599,7 +599,7 @@ export default function PageSpeedPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You&apos;ll Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl">
@@ -611,7 +611,7 @@ export default function PageSpeedPage() {
                 "業種別（飲食・医療・EC・建設など）の速度問題と優先対策",
                 "改善施策の効果を測定するためのKPIと確認ツール",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>0{i + 1}</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
@@ -621,10 +621,10 @@ export default function PageSpeedPage() {
         </section>
 
         {/* B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ページ速度が遅い：よくある課題と原因
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -632,10 +632,10 @@ export default function PageSpeedPage() {
             </p>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
@@ -648,7 +648,7 @@ export default function PageSpeedPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Optimization Checklist</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ページ速度最適化の主要施策
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -657,7 +657,7 @@ export default function PageSpeedPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
               {optimizations.map((cat) => (
                 <div key={cat.category}>
-                  <p className="font-bold text-[14px] mb-3 pb-2" style={{ color: "#0d1b2a", borderBottom: "1px solid #E8E4DC" }}>{cat.category}</p>
+                  <p className="font-bold text-[14px] mb-3 pb-2" style={{ color: "#333333", borderBottom: "1px solid #dde0e4" }}>{cat.category}</p>
                   <ul className="space-y-2">
                     {cat.items.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[13px]" style={{ color: "#374151" }}>
@@ -673,10 +673,10 @@ export default function PageSpeedPage() {
         </section>
 
         {/* C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別のページ速度最適化ポイント
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -684,10 +684,10 @@ export default function PageSpeedPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
               {industryPoints.map((ind) => (
-                <div key={ind.industry} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={ind.industry} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-[11px] font-mono" style={{ color: "#9CA3AF" }}>{ind.icon}</span>
-                    <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{ind.industry}</p>
+                    <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{ind.industry}</p>
                   </div>
                   <ul className="space-y-2">
                     {ind.points.map((pt, i) => (
@@ -707,7 +707,7 @@ export default function PageSpeedPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Step-by-Step</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ページ速度改善の具体的な手順
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -715,10 +715,10 @@ export default function PageSpeedPage() {
             </p>
             <div className="max-w-3xl">
               {improvementSteps.map((s) => (
-                <div key={s.step} className="flex items-start gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={s.step} className="flex items-start gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{s.step}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{s.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{s.title}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{s.detail}</p>
                   </div>
                 </div>
@@ -728,10 +728,10 @@ export default function PageSpeedPage() {
         </section>
 
         {/* E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs to Track</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標（KPI）
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -739,10 +739,10 @@ export default function PageSpeedPage() {
             </p>
             <div className="max-w-3xl">
               {kpiItems.map((kpi) => (
-                <div key={kpi.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={kpi.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{kpi.n}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-1" style={{ color: "#0d1b2a" }}>{kpi.label}</p>
+                    <p className="font-bold text-[14px] mb-1" style={{ color: "#333333" }}>{kpi.label}</p>
                     <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{kpi.desc}</p>
                   </div>
                 </div>

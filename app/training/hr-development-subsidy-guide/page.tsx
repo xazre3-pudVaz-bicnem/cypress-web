@@ -211,7 +211,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
       <Header />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_08_57 (3).jpg"
@@ -243,7 +243,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
             <Link
               href="/contact?type=subsidy-training"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all"
-              style={{ background: "#ffffff", color: "#0d1b2a" }}
+              style={{ background: "#ffffff", color: "#333333" }}
             >
               助成金活用を検討できる研修について相談する
             </Link>
@@ -258,7 +258,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Overview</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
                 人材開発支援助成金とは
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -272,11 +272,11 @@ export default function HrDevelopmentSubsidyGuidePage() {
         </section>
 
         {/* ── 事業展開等リスキリング支援コース ───────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>The Course</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
                 事業展開等リスキリング支援コースとは
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -286,8 +286,8 @@ export default function HrDevelopmentSubsidyGuidePage() {
                 AI活用・DX推進をテーマとした研修は、このコースの趣旨と重なる領域です。ただし、研修テーマが一致していれば自動的に対象になるわけではありません。訓練計画の内容、対象となる労働者、実施形態、申請内容などをもとに、個別に判断されます。
               </p>
 
-              <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", borderLeft: "3px solid #0d1b2a", padding: "24px 26px" }}>
-                <p style={{ fontSize: "13px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>数値情報について</p>
+              <div style={{ background: "#ffffff", border: "1px solid #dde0e4", borderLeft: "3px solid #333333", padding: "24px 26px" }}>
+                <p style={{ fontSize: "13px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>数値情報について</p>
                 <p style={{ fontSize: "13.5px", lineHeight: "1.95", color: "#374151" }}>
                   助成率・上限額・対象経費の範囲などの数値は改定される可能性があるため、本ページには掲載していません。最新の数値は厚生労働省の公式ページ、または管轄労働局・社労士等にご確認ください（本ページの公式情報確認日：{SUBSIDY_CONFIRMED_ON}）。
                 </p>
@@ -300,39 +300,39 @@ export default function HrDevelopmentSubsidyGuidePage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Checklist</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               研修を検討する前に確認すること
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {beforeTraining.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* ── 研修会社を選ぶ前に確認すること ─────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Choosing A Company</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               研修会社を選ぶ前に確認すること
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {beforeChoosingCompany.map((item) => (
-                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.title}</p>
+                <div key={item.title} style={{ padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#333333", marginBottom: "9px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -341,23 +341,23 @@ export default function HrDevelopmentSubsidyGuidePage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Application Notes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "36px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "36px" }}>
               助成金申請に関する注意点
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {applicationNotes.map((note) => (
-                <div key={note} style={{ display: "flex", gap: "14px", padding: "18px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ color: "#c4b89a", flexShrink: 0, fontSize: "13px", paddingTop: "2px" }}>—</span>
+                <div key={note} style={{ display: "flex", gap: "14px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", flexShrink: 0, fontSize: "13px", paddingTop: "2px" }}>—</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.95" }}>{note}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* ── サイプレスが行うこと・行わないこと ─────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Our Scope</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#ffffff", fontWeight: 700, lineHeight: 1.35, marginBottom: "24px" }}>
@@ -394,7 +394,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Referral</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "26px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "26px" }}>
                 提携研修会社の紹介
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -403,7 +403,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151" }}>
                 提携研修会社へ会社名・ご担当者名・連絡先・お問い合わせ内容を共有するのは、お問い合わせフォームの同意欄にチェックをいただいた場合に限ります。
               </p>
-              <Link href="/training/reskilling-training-company-referral" className="inline-block mt-8 text-[13px] underline" style={{ color: "#0d1b2a" }}>
+              <Link href="/training/reskilling-training-company-referral" className="inline-block mt-8 text-[13px] underline" style={{ color: "#333333" }}>
                 研修会社の紹介相談について見る →
               </Link>
             </div>
@@ -411,23 +411,23 @@ export default function HrDevelopmentSubsidyGuidePage() {
         </section>
 
         {/* ── 公式情報リンク ─────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Official Sources</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.6vw,29px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.6vw,29px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>
                 公式情報リンク
               </h2>
               <p style={{ fontSize: "14.5px", lineHeight: "2.0", color: "#374151", marginBottom: "26px" }}>
                 制度の詳細、対象要件、助成率、上限額、申請期限、必要書類、申請様式については、必ず厚生労働省の公式ページをご確認ください。あわせて、管轄の労働局または社会保険労務士等の専門家へのご相談をおすすめします。
               </p>
-              <div style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "24px 26px" }}>
+              <div style={{ background: "#ffffff", border: "1px solid #dde0e4", padding: "24px 26px" }}>
                 <a
                   href={MHLW_SUBSIDY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[14px] font-medium underline"
-                  style={{ color: "#0d1b2a" }}
+                  style={{ color: "#333333" }}
                 >
                   厚生労働省「人材開発支援助成金」公式ページ
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -445,7 +445,7 @@ export default function HrDevelopmentSubsidyGuidePage() {
 
         <SubsidyDisclaimer bgColor="#ffffff" />
 
-        <FaqSection items={faqItems} heading="人材開発支援助成金と研修についてよくある質問" bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} heading="人材開発支援助成金と研修についてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} heading="関連ページ" />
 

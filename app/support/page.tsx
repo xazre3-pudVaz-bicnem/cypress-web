@@ -53,15 +53,15 @@ export default function SupportPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>サポート</span>
+              <span style={{ color: "#333333" }}>サポート</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Support</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               サポート・運用支援
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "12px" }}>
@@ -98,10 +98,10 @@ export default function SupportPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>All Support</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               サポート・運用支援一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {supportPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -111,7 +111,7 @@ export default function SupportPage() {
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                     {page.titleEn}
                   </p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#333333", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
                     {page.title}
                   </p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -130,20 +130,20 @@ export default function SupportPage() {
         </section>
 
         {/* Why継続サポートが重要か */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Continuous</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Why Continuous</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               継続サポートが集客成果に直結する理由
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)", maxWidth: "900px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)", maxWidth: "900px" }}>
               {[
                 { label: "Googleアルゴリズムは変化し続ける", desc: "MEO・SEOの評価基準は定期的にアップデートされます。一度設定して終わりにすると、アップデートで順位が下がるリスクがあります。" },
                 { label: "口コミは継続的に獲得し続ける必要がある", desc: "口コミの最新性はGoogleマップの順位評価に影響します。継続的な口コミ獲得と返信が必要です。" },
                 { label: "競合も継続的に施策を実施している", desc: "競合が継続的にMEO・SEO対策をしている中で、自社が止まれば相対的に評価が下がります。" },
                 { label: "データ蓄積で改善精度が上がる", desc: "月次データを積み上げることで、どの施策がどのくらい効果があるかが明確になり、PDCA精度が上がります。" },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "28px", background: "#0d1b2a" }}>
+                <div key={item.label} style={{ padding: "28px", background: "#293540" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
@@ -152,7 +152,7 @@ export default function SupportPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#f9f8f5" />
+        <FaqSection items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

@@ -158,17 +158,17 @@ export default function ServicesMeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>MEO対策</span>
+              <span style={{ color: "#333333" }}>MEO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>MEO Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO対策サービス
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -178,7 +178,7 @@ export default function ServicesMeoPage() {
               「近くの〇〇」「〇〇区 〇〇」という検索で来店・予約・電話問い合わせを増やしたい地域ビジネスを、データに基づいた施策で継続的にサポートします。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#0F172A", color: "#FFFFFF" }}>
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
               <Link href="/cost/meo" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
@@ -198,7 +198,7 @@ export default function ServicesMeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Overview</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -211,7 +211,7 @@ export default function ServicesMeoPage() {
                 "MEO対策業者の選び方と依頼時に確認すべきポイント",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -220,10 +220,10 @@ export default function ServicesMeoPage() {
         </section>
 
         {/* サービス内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO対策サービスの内容
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -236,15 +236,15 @@ export default function ServicesMeoPage() {
                 { title: "Q&A・サービス欄の整備", body: "Googleビジネスプロフィールの「Q&A」「サービス」「商品」セクションを充実させます。これらの情報はGoogleの検索で表示される場合があり、検索ユーザーの意思決定を助けます。" },
                 { title: "インサイト分析・月次レポート", body: "Googleビジネスプロフィールのインサイトデータ（表示回数・ルート検索数・電話タップ数・Webサイトクリック数）を毎月分析し、施策効果と翌月の方針をレポートします。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -253,7 +253,7 @@ export default function ServicesMeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Google Ranking Factors</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Googleが評価する3つの基準×サイプレスの施策
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl">
@@ -262,8 +262,8 @@ export default function ServicesMeoPage() {
                 { criterion: "距離（Distance）", body: "対象エリア・サービス提供エリアを正確に設定し、地域ごとの検索に対応。住所・エリア情報の整合性を保ちながら、サービス提供範囲を明確にする。" },
                 { criterion: "知名度（Prominence）", body: "口コミ獲得支援・高品質写真投稿・外部リンク構築で知名度スコアを向上。口コミ件数・評価・返信率・投稿更新頻度が知名度評価に影響する。" },
               ].map((item) => (
-                <div key={item.criterion} className="p-7" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC", borderTop: "3px solid #c4b89a" }}>
-                  <p className="font-bold text-[14px] mb-3" style={{ color: "#c4b89a" }}>{item.criterion}</p>
+                <div key={item.criterion} className="p-7" style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderTop: "3px solid var(--v2-accent)" }}>
+                  <p className="font-bold text-[14px] mb-3" style={{ color: "var(--v2-accent)" }}>{item.criterion}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -272,9 +272,9 @@ export default function ServicesMeoPage() {
         </section>
 
         {/* MEO対策をしないと機会損失が続く理由 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why It Matters</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Why It Matters</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               MEO対策をしないと機会損失が続く理由
             </h2>
@@ -285,7 +285,7 @@ export default function ServicesMeoPage() {
                 { title: "競合他社のGBPが充実していれば一方的に負ける", body: "近隣の競合が口コミ・写真・情報を充実させていれば、自社は選ばれない。放置するほど差は広がる。" },
                 { title: "放置したGBPは誤情報が蓄積するリスク", body: "第三者による提案変更・古い情報・未管理の口コミが信頼を損なう。定期的な管理なしにGBPは健全を保てない。" },
               ].map((item) => (
-                <div key={item.title} className="p-6" style={{ border: "1px solid rgba(196,184,154,0.25)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.title} className="p-6" style={{ border: "1px solid rgba(9,111,200,0.25)", background: "rgba(255,255,255,0.04)" }}>
                   <p className="font-bold text-[14px] mb-3" style={{ color: "#FFFFFF" }}>{item.title}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#9CA3AF" }}>{item.body}</p>
                 </div>
@@ -295,10 +295,10 @@ export default function ServicesMeoPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -317,15 +317,15 @@ export default function ServicesMeoPage() {
                 { title: "悪い口コミへの返信に困っている", body: "感情的に返信してしまうとブランドイメージが悪化します。冷静かつ誠実な返信文案の作成支援と、ポリシー違反の口コミへの削除申請サポートを行います。" },
                 { title: "複数店舗の管理が大変", body: "店舗が増えるほどGBPの管理工数は倍増します。各店舗のNAP統一・投稿スケジュール・口コミモニタリングを一括で代行するプランで管理負担を解消します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -334,7 +334,7 @@ export default function ServicesMeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -351,24 +351,24 @@ export default function ServicesMeoPage() {
                 { industry: "学習塾", note: "合格実績・授業風景写真・講師紹介を充実させ、保護者の「ここに預けても大丈夫か」という安心感をGBP上で伝えることが来塾動機を高めます。体験授業・説明会の投稿を定期的に行うことで検索タイミングへの接触を増やします。" },
                 { industry: "小売店", note: "商品写真の定期更新と在庫情報・特売情報の投稿が来店動機を高めます。Google商品リストとの連携も視野に入れた設定を行い、「近くで買える」という利便性を前面に出した情報設計を進めます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: ご支援の流れ */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Process</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ご支援の流れ
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -387,15 +387,15 @@ export default function ServicesMeoPage() {
                 { step: "STEP 09", title: "月次投稿・口コミ返信", body: "毎月の投稿作成・公開と、口コミへの返信文案の作成を継続します。投稿内容はイベント・特典・新商品などビジネスの動きに合わせて設計します。" },
                 { step: "STEP 10", title: "月次レポート・戦略見直し", body: "GBPインサイトデータと競合比較をもとに、毎月の成果をレポートします。表示回数・電話タップ数・ルート案内リクエスト数の推移を確認し、翌月の施策を調整します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1 whitespace-nowrap" style={{ background: "#c4b89a", color: "#FFFFFF", letterSpacing: "0.1em" }}>{item.step}</span>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1 whitespace-nowrap" style={{ background: "var(--v2-accent)", color: "#FFFFFF", letterSpacing: "0.1em" }}>{item.step}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -404,7 +404,7 @@ export default function ServicesMeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -420,25 +420,25 @@ export default function ServicesMeoPage() {
                 { kpi: "口コミ数・評価スコア", where: "Googleビジネスプロフィール（口コミタブ）", note: "累計口コミ件数と平均評価スコアの推移。口コミが継続的に増加しているかを月次で確認し、導線施策の効果を評価します。" },
                 { kpi: "月間問い合わせ数（GBP経由）", where: "自社管理システム／GBP電話タップ数との照合", note: "GBPを経由した実際の問い合わせ・来店・予約数。最終的なビジネス成果として追う指標で、MEO施策の費用対効果を判断します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#c4b89a" }}>確認場所：{item.where}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                    <p className="text-[12px] mb-2 font-medium" style={{ color: "var(--v2-accent)" }}>確認場所：{item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 月次MEO対策レポートの内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Monthly Report</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               月次MEO対策レポートの内容
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10" style={{ color: "#374151", maxWidth: "600px" }}>
@@ -452,15 +452,15 @@ export default function ServicesMeoPage() {
                 { num: "04", title: "翌月の改善計画", desc: "インサイトデータと競合分析をもとに、翌月実施する施策の優先順位と具体的なアクションプランを提示します。" },
                 { num: "05", title: "Q&Aの更新状況", desc: "Googleビジネスプロフィールの「Q&A」セクションへの新規投稿・回答状況を確認し、必要に応じてコンテンツを追加します。" },
               ].map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>{item.num}</span>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>{item.num}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-1.5" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[14px] mb-1.5" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -469,18 +469,18 @@ export default function ServicesMeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Target Industries</p>
-            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO対策が特に効果的な業種
             </h2>
             <div className="flex flex-wrap gap-3">
               {["飲食店・カフェ・居酒屋", "美容室・ヘアサロン", "ネイルサロン", "エステ・マッサージ", "整体院・接骨院", "クリニック・歯医者", "リフォーム・工務店", "不動産会社", "学習塾・スクール", "ペットショップ", "クリーニング店", "弁護士・税理士事務所"].map((ind) => (
-                <span key={ind} className="px-3 py-1.5 text-[13px] rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC", color: "#374151" }}>{ind}</span>
+                <span key={ind} className="px-3 py-1.5 text-[13px] rounded" style={{ background: "#f0f1f2", border: "1px solid #dde0e4", color: "#374151" }}>{ind}</span>
               ))}
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="MEO対策サービスの無料相談"

@@ -314,21 +314,21 @@ export default function ReviewManagementPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>口コミ対策</span>
+              <span style={{ color: "#333333" }}>口コミ対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Review Management
             </p>
             <h1
               className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               口コミ管理・返信戦略
             </h1>
@@ -353,14 +353,14 @@ export default function ReviewManagementPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
             <h2
               className="font-black text-[28px] mb-10"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -374,7 +374,7 @@ export default function ReviewManagementPage() {
                 "口コミ施策の成果を測る7つのKPIと測定方法・目標設定の考え方",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 mt-[2px] font-bold text-[14px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -390,7 +390,7 @@ export default function ReviewManagementPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               口コミがMEOに与える影響
             </h2>
@@ -418,30 +418,30 @@ export default function ReviewManagementPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {issueItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -454,52 +454,52 @@ export default function ReviewManagementPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               口コミ対策の施策
             </h2>
             <div className="max-w-3xl">
               {reviewMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.industry}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.industry}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -512,52 +512,52 @@ export default function ReviewManagementPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {flowItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.label}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.label}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -581,7 +581,7 @@ export default function ReviewManagementPage() {
                 </p>
                 <h2
                   className="font-black text-[26px] mb-6"
-                  style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+                  style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
                 >
                   口コミ返信文の書き方
                 </h2>
@@ -607,7 +607,7 @@ export default function ReviewManagementPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

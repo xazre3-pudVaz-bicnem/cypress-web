@@ -139,17 +139,17 @@ export default function RecruitSitePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }} className="hover:underline">Web制作</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>採用サイト制作</span>
+              <span style={{ color: "#333333" }}>採用サイト制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Recruit Site</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               採用サイト制作
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -171,10 +171,10 @@ export default function RecruitSitePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -187,7 +187,7 @@ export default function RecruitSitePage() {
                 "採用サイトとコーポレートサイトの使い分け・連携方法と判断基準",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[14px] leading-[1.85]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -196,9 +196,9 @@ export default function RecruitSitePage() {
         </section>
 
         {/* 採用サイトなしの課題 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", fontWeight: 600 }}>Recruiting Risks</p>
+            <p style={{ letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", fontWeight: 600 }}>Recruiting Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               採用サイトがないと起きる4つの採用リスク
             </h2>
@@ -209,7 +209,7 @@ export default function RecruitSitePage() {
                 { t: "ミスマッチ採用で早期離職が起きる", b: "採用サイトで企業文化・働き方を正直に伝えることで、「こういう会社だと思わなかった」というミスマッチを防ぎます。入社後のギャップが少ない採用が長期定着につながります。" },
                 { t: "競合企業に優秀な候補者を取られる", b: "同じ採用媒体に掲載していても、採用サイトがある競合が候補者から選ばれます。採用はサービス・商品と同じく「選ばれる理由」を設計することが重要です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -222,7 +222,7 @@ export default function RecruitSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Root Causes</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -238,24 +238,24 @@ export default function RecruitSitePage() {
                 { title: "更新が大変でコンテンツが古い", body: "1〜2年前の求人情報・卒業した社員のインタビューが掲載されたままのサイトは、求職者に「管理が行き届いていない会社」という印象を与えます。更新しやすいCMSの選定と運用フローの設計がコンテンツ鮮度維持の鍵です。" },
                 { title: "採用サイトのデータ分析ができていない", body: "どのページで離脱しているか・どの職種ページからの応募が多いか・どの流入経路で質の高い応募者が来るかを把握していないと、改善施策を打てません。GA4・ヒートマップツールを活用した定量分析が採用サイト改善の起点です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 採用サイトの重要要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Elements</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               求職者の共感を高める採用サイトの要素
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -267,15 +267,15 @@ export default function RecruitSitePage() {
                 { title: "福利厚生・働き方の明示", body: "給与・休暇制度・リモートワーク可否・育児支援・研修制度などを具体的に明示します。求職者が「働きやすい環境か」を判断するために最重要の情報の一つです。" },
                 { title: "キャリアパス・成長機会の表現", body: "入社後どのように成長できるか・どんなキャリアパスがあるかを具体的な事例（先輩社員のキャリア変遷）で伝えます。成長意欲の高い求職者が最も注目するセクションです。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -284,7 +284,7 @@ export default function RecruitSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -298,24 +298,24 @@ export default function RecruitSitePage() {
                 { industry: "保育・福祉", point: "やりがい・働き方の可視化が慢性的な人手不足を解消します。保育士・介護士の「なぜこの仕事を選んだか」というストーリー、残業時間の実態・産休育休の取得状況・チームワークの様子が採用サイトの核心です。" },
                 { industry: "中小企業", point: "社長メッセージ・社員の顔見せが中小企業の最大の武器です。大手にはない「経営者との距離の近さ」「裁量権の大きさ」「一人ひとりの影響力」を社長の言葉と社員の笑顔で伝えることが、候補者の共感を呼びます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.point}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 制作・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Production Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               制作・実装フロー
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -331,15 +331,15 @@ export default function RecruitSitePage() {
                 { step: "公開", body: "本番環境へのデプロイ・DNS設定・SSL設定・GA4・Google Search Consoleの設定を行います。応募フォームの動作確認・クロスブラウザテスト・スマートフォン表示確認を経て公開します。" },
                 { step: "採用媒体からの移行促進", body: "Indeed・Wantedly・リクナビなどの掲載求人に採用サイトのURLを追加し、媒体からの流入を自社サイトに誘導します。採用媒体との相乗効果を最大化し、中長期的に自社サイト経由の応募比率を高めます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.step}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -348,7 +348,7 @@ export default function RecruitSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Use Cases</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               採用サイトの活用例
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -358,8 +358,8 @@ export default function RecruitSitePage() {
                 { title: "Indeed・Wantedlyとの連携", body: "採用サイトに掲載した求人情報をIndeed・Wantedlyからの流入先に設定することで、広告媒体と自社サイトの相乗効果を最大化します。費用対効果の高い採用体制を構築できます。" },
                 { title: "採用ブログ・コンテンツSEOの活用", body: "「業種 転職 体験談」「職種 やりがい」などのキーワードに対応した採用ブログを継続的に発信することで、指名検索以外からのオーガニック流入を獲得します。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -368,10 +368,10 @@ export default function RecruitSitePage() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs to Track</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -384,16 +384,16 @@ export default function RecruitSitePage() {
                 { kpi: "採用広告費削減額", where: "媒体掲載費の前年比較", body: "採用サイト運用開始後に削減できた媒体掲載費の総額を測定します。採用サイトへの投資ROIを算出する際の最重要指標の一つです。" },
                 { kpi: "採用経路比率（自社サイト%）", where: "採用管理システム + GA4 UTMパラメータ分析", body: "全応募者のうち自社採用サイト経由の割合。この比率が高まるほど採用の自律性が高まり、媒体依存から脱却できている状態を示します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[11px] mb-2" style={{ color: "#9CA3AF" }}>確認場所：{item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -402,7 +402,7 @@ export default function RecruitSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Page Structure</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               採用サイトの標準ページ構成例
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -419,15 +419,15 @@ export default function RecruitSitePage() {
                 { page: "募集要項（/recruit/requirements）", desc: "職種別・雇用形態別の募集要項を掲載します。給与・勤務地・勤務時間・選考フローを明記します。更新しやすいCMS設計が重要です。" },
                 { page: "応募フォーム（/recruit/apply）", desc: "スマートフォン最適化・入力項目最小化・reCAPTCHA・自動返信を備えた応募フォームです。応募完了率を高めるUX設計がコンバージョンを左右します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.page}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.page}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -436,7 +436,7 @@ export default function RecruitSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why Cypress</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスの採用サイト制作の強み
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -448,8 +448,8 @@ export default function RecruitSitePage() {
                 { title: "採用媒体との連携設計", body: "Indeed・Wantedly・リクナビなどの媒体から採用サイトへの誘導フローを設計します。UTMパラメータによる流入元分析・媒体別応募数の計測も含めて対応します。" },
                 { title: "公開後の採用データ分析・改善サポート", body: "GA4・ヒートマップを活用し、公開後の採用サイトのページ改善・コンテンツ追加・SEO施策を継続的に提案します。採用活動は一度作って終わりではなく、データを見ながら継続改善するものです。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -458,10 +458,10 @@ export default function RecruitSitePage() {
         </section>
 
         {/* よくあるご要望と対応内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Requests</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくあるご要望と対応内容
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -473,23 +473,23 @@ export default function RecruitSitePage() {
                 { req: "「採用サイトの離脱率が高く応募につながらない」", res: "GA4・ヒートマップによる既存採用サイトの分析から始め、離脱ページ・ボトルネックを特定します。コンテンツ改善・CTA配置変更・フォームUI改善など、データに基づいた改善施策を優先度順に提案します。" },
                 { req: "「複数拠点・複数職種の採用を一元化したい」", res: "職種別・拠点別のページ設計を行い、求職者が自分に関係する情報に最短でたどり着けるナビゲーション設計とURL設計を行います。各ページのSEO設定も職種・拠点ごとに最適化します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.req}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.req}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.res}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* CTA Banner */}
-        <section className="py-16" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-16" style={{ background: "#293540" }}>
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#c4b89a" }}>Free Consultation</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "var(--v2-accent)" }}>Free Consultation</p>
             <h2 className="font-black mb-6" style={{ fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               採用サイト制作のご相談は無料です
             </h2>
@@ -499,14 +499,14 @@ export default function RecruitSitePage() {
             <Link
               href="/contact"
               className="inline-block px-10 py-4 font-bold text-[14px] tracking-wide"
-              style={{ background: "#0F172A", color: "#FFFFFF", border: "1px solid rgba(196,184,154,0.4)" }}
+              style={{ background: "#293540", color: "#FFFFFF", border: "1px solid rgba(9,111,200,0.4)" }}
             >
               無料相談を申し込む
             </Link>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="採用サイト制作についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="採用サイト制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="採用サイト制作のご相談"

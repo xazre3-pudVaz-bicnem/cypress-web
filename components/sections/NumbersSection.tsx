@@ -5,9 +5,9 @@ import { useInView } from "framer-motion";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const NUMBERS = [
-  { value: 200, suffix: "+", label: "累計支援実績", sub: "企業・店舗", color: "#2563EB" },
+  { value: 200, suffix: "+", label: "累計支援実績", sub: "企業・店舗", color: "#096fc8" },
   { value: 94, suffix: "%", label: "MEO上位表示率", sub: "TOP3達成率", color: "#10B981" },
-  { value: 340, suffix: "%", prefix: "+", label: "自然検索流入増加", sub: "SEO対策平均", color: "#2563EB" },
+  { value: 340, suffix: "%", prefix: "+", label: "自然検索流入増加", sub: "SEO対策平均", color: "#096fc8" },
   { value: 65, suffix: "%", prefix: "−", label: "AI工数削減", sub: "AI導入実績", color: "#06B6D4" },
   { value: 98, suffix: "%", label: "継続率", sub: "解約率2%以下", color: "#10B981" },
   { value: 4.8, suffix: "", label: "顧客満足度", sub: "5点満点平均", color: "#F59E0B", decimals: 1 },
@@ -41,8 +41,8 @@ export default function NumbersSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <SectionLabel>Results</SectionLabel>
-          <h2 className="font-black text-[#0F172A] leading-tight tracking-tight" style={{ fontSize: "clamp(28px, 4vw, 48px)" }}>
-            数字が証明する、<span style={{ color: "#2563EB" }}>成果</span>
+          <h2 className="font-black text-[#333333] leading-tight tracking-tight" style={{ fontSize: "clamp(28px, 4vw, 48px)" }}>
+            数字が証明する、<span style={{ color: "#096fc8" }}>成果</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -51,7 +51,7 @@ export default function NumbersSection() {
               <div className="text-3xl md:text-4xl mb-2" style={{ lineHeight: 1 }}>
                 <Counter value={n.value} suffix={n.suffix} prefix={n.prefix} decimals={n.decimals} color={n.color} />
               </div>
-              <div className="font-semibold text-[#0F172A] text-[13px] mb-1">{n.label}</div>
+              <div className="font-semibold text-[#333333] text-[13px] mb-1">{n.label}</div>
               <div className="text-[11px] text-[#94A3B8]">{n.sub}</div>
             </div>
           ))}

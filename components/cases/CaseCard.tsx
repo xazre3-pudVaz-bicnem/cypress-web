@@ -10,7 +10,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
       style={{
         display: "flex",
         flexDirection: "column",
-        border: "1px solid #E8E4DC",
+        border: "1px solid #dde0e4",
         background: "#FFFFFF",
         textDecoration: "none",
         transition: "box-shadow 0.22s, transform 0.22s",
@@ -51,7 +51,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
           style={{
             fontFamily: "var(--font-serif)",
             fontSize: "16px",
-            color: "#0B1628",
+            color: "#333333",
             fontWeight: 700,
             lineHeight: 1.5,
             marginBottom: "10px",
@@ -91,7 +91,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
             style={{
               fontSize: "10px",
               padding: "3px 10px",
-              border: `1px solid ${SERVICE_BADGE_COLORS[s] || "#C4BAB0"}`,
+              border: `1px solid ${SERVICE_BADGE_COLORS[s] || "#c6cbd1"}`,
               color: SERVICE_BADGE_COLORS[s] || "#6B7280",
               letterSpacing: "0.05em",
               fontFamily: "var(--font-display)",
@@ -115,7 +115,7 @@ export default function CaseCard({ c }: { c: CaseStudy }) {
         <span style={{ fontSize: "11px", color: "#9CA3AF", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
           {c.publishedAt.replace(/-/g, ".")}
         </span>
-        <span style={{ fontSize: "12px", color: "#C4A96A", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
+        <span style={{ fontSize: "12px", color: "var(--v2-accent)", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>
           詳細を見る →
         </span>
       </div>

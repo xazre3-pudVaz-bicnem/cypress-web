@@ -193,7 +193,7 @@ export default function WebMarketingTrainingPage() {
       <Header />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
@@ -225,7 +225,7 @@ export default function WebMarketingTrainingPage() {
             <Link
               href="/contact?type=web-marketing-training"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all"
-              style={{ background: "#ffffff", color: "#0d1b2a" }}
+              style={{ background: "#ffffff", color: "#333333" }}
             >
               Webマーケティング研修について相談する
             </Link>
@@ -239,13 +239,13 @@ export default function WebMarketingTrainingPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Who Needs It</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               Webマーケティング研修が必要な企業
             </h2>
             <div className="grid md:grid-cols-2 gap-5" style={{ maxWidth: "880px" }}>
               {targetCompanies.map((item) => (
-                <div key={item.title} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
+                <div key={item.title} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", padding: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
               ))}
@@ -254,10 +254,10 @@ export default function WebMarketingTrainingPage() {
         </section>
 
         {/* ── 研修テーマ例 ───────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Themes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "18px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "18px" }}>
               研修テーマ例
             </h2>
             <p style={{ fontSize: "14.5px", lineHeight: "2.0", color: "#374151", maxWidth: "720px", marginBottom: "44px" }}>
@@ -265,8 +265,8 @@ export default function WebMarketingTrainingPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {themes.map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "22px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #dde0e4", padding: "22px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#333333", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -278,32 +278,32 @@ export default function WebMarketingTrainingPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Details</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "44px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "44px" }}>
               研修内容の詳細
             </h2>
             <div style={{ maxWidth: "780px" }}>
               {detailBlocks.map((block) => (
-                <div key={block.heading} style={{ padding: "28px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>
+                <div key={block.heading} style={{ padding: "28px 0", borderTop: "1px solid #dde0e4" }}>
+                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", fontWeight: 700, color: "#333333", marginBottom: "12px" }}>
                     {block.heading}
                   </h3>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "2.0", marginBottom: "14px" }}>{block.body}</p>
-                  <Link href={block.href} style={{ fontSize: "13px", color: "#0d1b2a", textDecoration: "underline" }}>
+                  <Link href={block.href} style={{ fontSize: "13px", color: "#333333", textDecoration: "underline" }}>
                     {block.linkLabel} →
                   </Link>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* ── 助成金活用の注意点 ─────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Before You Apply</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
                 助成金活用を検討する場合の注意点
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -320,7 +320,7 @@ export default function WebMarketingTrainingPage() {
         </section>
 
         {/* ── 提携研修会社の紹介 ─────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Referral</p>
@@ -342,7 +342,7 @@ export default function WebMarketingTrainingPage() {
 
         <SubsidyDisclaimer bgColor="#ffffff" />
 
-        <FaqSection items={faqItems} heading="Webマーケティング研修についてよくある質問" bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} heading="Webマーケティング研修についてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} heading="関連ページ" />
 

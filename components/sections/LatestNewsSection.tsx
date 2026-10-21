@@ -4,7 +4,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { getLatestNews } from "@/lib/data/news";
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "お知らせ": "#3B82F6",
+  "お知らせ": "#096fc8",
   "プレスリリース": "#8B5CF6",
   "メディア掲載": "#10B981",
   "実績": "#F59E0B",
@@ -22,7 +22,7 @@ export default function LatestNewsSection() {
               <SectionLabel>News</SectionLabel>
               <h2
                 className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#0F172A" }}
+                style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#333333" }}
               >
                 お知らせ
               </h2>
@@ -30,7 +30,7 @@ export default function LatestNewsSection() {
             <Link
               href="/news"
               className="text-sm transition-colors"
-              style={{ color: "#2563EB" }}
+              style={{ color: "#096fc8" }}
             >
               すべて見る →
             </Link>
@@ -39,7 +39,7 @@ export default function LatestNewsSection() {
 
         <div className="space-y-0">
           {news.map((item, i) => {
-            const color = CATEGORY_COLORS[item.category] ?? "#3B82F6";
+            const color = CATEGORY_COLORS[item.category] ?? "#096fc8";
             return (
               <ScrollReveal key={item.slug} delay={i * 0.06}>
                 <Link

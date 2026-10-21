@@ -158,17 +158,17 @@ export default function ServicesAioPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>AIO対策</span>
+              <span style={{ color: "#333333" }}>AIO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AIO Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIO対策サービス
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -178,7 +178,7 @@ export default function ServicesAioPage() {
               サイプレスでは、E-E-A-T強化・構造化データ実装・AIO向けコンテンツ最適化・llms.txt設置を通じて、AI検索からの認知と誘導を高める施策をご支援します。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#0F172A", color: "#FFFFFF" }}>
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
               <Link href="/cost/aio" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
@@ -195,10 +195,10 @@ export default function ServicesAioPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -211,7 +211,7 @@ export default function ServicesAioPage() {
                 "AI検索での引用状況を計測・改善するための指標と確認方法",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -223,7 +223,7 @@ export default function ServicesAioPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIO対策サービスの施策内容
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -235,23 +235,23 @@ export default function ServicesAioPage() {
                 { title: "llms.txtの設置", body: "大規模言語モデル向けのサイト情報ファイル（llms.txt）を設置します。サイトの概要・主要ページ・コンテンツカテゴリをAIクローラーに伝えることで、サイト全体の情報をAIが把握しやすくなります。" },
                 { title: "AIO効果の継続的な確認・改善", body: "対象クエリでAI検索に自社情報が引用されているか定期的に確認し、引用されていない場合はコンテンツの改善・FAQ追加・構造化データの修正を実施します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* AI検索が従来SEOと異なる5つのポイント */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Key Differences</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Key Differences</p>
             <h2 className="font-black text-[26px] mb-12" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               AI検索が従来SEOと異なる5つのポイント
             </h2>
@@ -263,24 +263,24 @@ export default function ServicesAioPage() {
                 { num: "04", title: "構造化されたコンテンツが引用されやすい", body: "見出し・箇条書き・FAQなど、AIが参照しやすい形式で書かれたコンテンツが選ばれる。長文の流し読みより要点の整理が効く。" },
                 { num: "05", title: "llms.txtによるクローラー制御が有効", body: "AI検索エンジン向けのllms.txtを設置することで、どのページを参照させるかを制御できる。重要ページを明示的にAIへ伝える手段として注目されている。" },
               ].map((item) => (
-                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }}>
-                  <span className="text-[28px] font-black shrink-0 leading-none" style={{ color: "#c4b89a", fontFamily: "var(--font-serif)" }}>{item.num}</span>
+                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid rgba(9,111,200,0.2)" }}>
+                  <span className="text-[28px] font-black shrink-0 leading-none" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-serif)" }}>{item.num}</span>
                   <div>
                     <p className="font-bold text-[15px] mb-2" style={{ color: "#FFFFFF" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#9CA3AF" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }} />
+              <div style={{ borderTop: "1px solid rgba(9,111,200,0.2)" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -296,15 +296,15 @@ export default function ServicesAioPage() {
                 { title: "費用対効果が不明", body: "AIO対策の効果はAI検索での引用回数やオーガニック流入で計測できます。初回の現状調査で改善余地を数値化し、投資対効果のイメージを共有した上で支援を開始します。" },
                 { title: "どのAI検索エンジンを優先すべきか分からない", body: "利用者数はChatGPT・Gemini・Perplexityの順に多い傾向がありますが、業種や用途によって使われ方が異なります。まずGoogleのAI Overview対策を軸に据え、その後ChatGPT・Geminiへの引用拡大を図るアプローチが効率的です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -313,7 +313,7 @@ export default function ServicesAioPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Focus</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
             <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -327,8 +327,8 @@ export default function ServicesAioPage() {
                 { industry: "メディア・ブログ", body: "専門性の高いオリジナルコンテンツが最もAI引用されやすい媒体です。著者の専門性・更新頻度・被リンク数を高め、AIが一次情報源として認識するサイト格を築くことが目標です。" },
                 { industry: "地域ビジネス", body: "「〇〇市でおすすめの〇〇」という地域名+業種クエリでのAI引用を狙います。LocalBusiness構造化データ・地域特化FAQ・Googleビジネスプロフィールとの連携が三位一体で機能します。" },
               ].map((item) => (
-                <div key={item.industry} className="p-6" style={{ border: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[13px] mb-3" style={{ color: "#c4b89a" }}>{item.industry}</p>
+                <div key={item.industry} className="p-6" style={{ border: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[13px] mb-3" style={{ color: "var(--v2-accent)" }}>{item.industry}</p>
                   <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -337,10 +337,10 @@ export default function ServicesAioPage() {
         </section>
 
         {/* Section D: ご支援の流れ */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Process</p>
-            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ご支援の流れ
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -356,15 +356,15 @@ export default function ServicesAioPage() {
                 { title: "AI引用モニタリング設定", body: "対象クエリのAI検索引用状況を定期確認するモニタリング体制を整えます。Google Search ConsoleのAI Overview引用確認と合わせて効果を継続追跡します。" },
                 { title: "月次改善サイクル", body: "月次レポートで引用状況・オーガニック流入・リッチリザルト表示数を報告します。数値の変化に応じてコンテンツ追加・構造化データ修正・FAQ拡充を繰り返し改善します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -373,7 +373,7 @@ export default function ServicesAioPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI Metrics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -386,20 +386,20 @@ export default function ServicesAioPage() {
                 { kpi: "AI Overview引用率", where: "Google検索の対象クエリでAI Overviewが表示され自社が引用されているかを確認。Google Search Consoleで一定のデータが取得可能です。" },
                 { kpi: "問い合わせ数", where: "Google Analytics 4のコンバージョン設定、またはフォームツールの送信数で計測。AIO対策→認知向上→問い合わせ増加の最終成果として追跡します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.where}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIO対策サービスの無料相談"

@@ -84,12 +84,12 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
   };
 
   const inputClass =
-    "w-full px-4 py-3 text-[#0F172A] text-sm placeholder-[#9CA3AF] focus:outline-none transition-all bg-white";
+    "w-full px-4 py-3 text-[#333333] text-sm placeholder-[#9CA3AF] focus:outline-none transition-all bg-white";
   const inputStyle = {
-    border: "1px solid #D1C9BE",
+    border: "1px solid #c6cbd1",
   };
   const inputFocusStyle = {
-    border: "1px solid #0F172A",
+    border: "1px solid #333333",
   };
 
   if (state === "success") {
@@ -97,19 +97,19 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       <div className="py-16 text-center">
         <div
           className="w-12 h-12 flex items-center justify-center mx-auto mb-6"
-          style={{ border: "1px solid #0F172A" }}
+          style={{ border: "1px solid #333333" }}
         >
           <svg width="18" height="18" viewBox="0 0 22 22" fill="none">
             <path
               d="M4 11l5 5L18 6"
-              stroke="#0F172A"
+              stroke="#333333"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
           </svg>
         </div>
-        <h3 className="font-bold text-[#0F172A] text-xl mb-3">
+        <h3 className="font-bold text-[#333333] text-xl mb-3">
           送信が完了しました
         </h3>
         <p className="text-[#6B7280] text-sm leading-relaxed">
@@ -148,7 +148,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-[#0F172A] text-sm font-medium mb-2">
+          <label className="block text-[#333333] text-sm font-medium mb-2">
             お名前
             <span className="text-[#EF4444] ml-1">*</span>
           </label>
@@ -167,7 +167,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
           />
         </div>
         <div>
-          <label className="block text-[#0F172A] text-sm font-medium mb-2">
+          <label className="block text-[#333333] text-sm font-medium mb-2">
             会社名
           </label>
           <input
@@ -186,7 +186,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       </div>
 
       <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
+        <label className="block text-[#333333] text-sm font-medium mb-2">
           メールアドレス
           <span className="text-[#EF4444] ml-1">*</span>
         </label>
@@ -206,7 +206,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       </div>
 
       <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
+        <label className="block text-[#333333] text-sm font-medium mb-2">
           お問い合わせ種別
           <span className="text-[#EF4444] ml-1">*</span>
         </label>
@@ -228,7 +228,7 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       </div>
 
       <div>
-        <label className="block text-[#0F172A] text-sm font-medium mb-2">
+        <label className="block text-[#333333] text-sm font-medium mb-2">
           お問い合わせ内容
           <span className="text-[#EF4444] ml-1">*</span>
         </label>
@@ -247,8 +247,8 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
       </div>
 
       {isTrainingInquiry && (
-        <div className="p-5" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
-          <p className="text-[#0F172A] text-sm font-medium mb-3">
+        <div className="p-5" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
+          <p className="text-[#333333] text-sm font-medium mb-3">
             提携研修会社への情報共有について
           </p>
           <label className="flex items-start gap-3 cursor-pointer">
@@ -257,13 +257,13 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
               checked={shareConsent}
               onChange={(e) => setShareConsent(e.target.checked)}
               className="mt-1 shrink-0"
-              style={{ width: "16px", height: "16px", accentColor: "#0F172A" }}
+              style={{ width: "16px", height: "16px", accentColor: "#333333" }}
             />
             <span className="text-[#374151] text-[13px] leading-[1.9]">
               お問い合わせ内容に応じて、提携する研修会社へ会社名、ご担当者名、連絡先、お問い合わせ内容を共有する場合があります。内容を確認し、同意します。
             </span>
           </label>
-          <p className="text-[#9CA3AF] text-xs leading-[1.85] mt-3 pt-3" style={{ borderTop: "1px solid #E8E4DC" }}>
+          <p className="text-[#9CA3AF] text-xs leading-[1.85] mt-3 pt-3" style={{ borderTop: "1px solid #dde0e4" }}>
             同意いただかない場合、提携研修会社へ情報を共有することはありません。その場合も、株式会社サイプレスからのご返信は行います。詳細は
             <Link href="/privacy-policy" className="underline" style={{ color: "#374151" }}>
               プライバシーポリシー
@@ -296,19 +296,19 @@ export default function ContactForm({ initialType }: { initialType?: string }) {
         disabled={state === "sending"}
         className="w-full flex items-center justify-center gap-2 py-4 font-medium text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed group"
         style={{
-          border: "1px solid #0F172A",
-          color: "#0F172A",
+          border: "1px solid #333333",
+          color: "#333333",
           background: "transparent",
         }}
         onMouseEnter={(e) => {
           if (state !== "sending") {
-            e.currentTarget.style.background = "#0F172A";
+            e.currentTarget.style.background = "#333333";
             e.currentTarget.style.color = "#FFFFFF";
           }
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = "transparent";
-          e.currentTarget.style.color = "#0F172A";
+          e.currentTarget.style.color = "#333333";
         }}
       >
         {state === "sending" ? (

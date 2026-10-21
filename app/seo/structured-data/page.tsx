@@ -150,17 +150,17 @@ export default function StructuredDataPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>構造化データ実装</span>
+              <span style={{ color: "#333333" }}>構造化データ実装</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Structured Data</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               構造化データ実装
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -179,10 +179,10 @@ export default function StructuredDataPage() {
         </section>
 
         {/* A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl flex flex-col gap-0">
@@ -194,12 +194,12 @@ export default function StructuredDataPage() {
                 "AI検索（ChatGPT・Gemini・Perplexity）で引用されやすくするためのAIO対策との関係",
                 "Search Consoleの「拡張機能」タブで構造化データのエラーを継続的に監視する方法",
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -208,7 +208,7 @@ export default function StructuredDataPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -227,39 +227,39 @@ export default function StructuredDataPage() {
                 { t: "Search Consoleのエラーを放置している", b: "構造化データのエラーがSearch Consoleに蓄積しているにもかかわらず、「拡張機能」タブを確認していないサイトが多くあります。エラーを放置するとリッチリザルトが失効する場合があります。" },
                 { t: "更新されたコンテンツに構造化データが追従していない", b: "FAQの質問内容・価格・営業時間などを更新したにもかかわらず、JSON-LDが古い情報のまま残っているケースがあります。コンテンツ更新フローに構造化データの更新チェックを含める必要があります。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "900px", marginTop: "0" }} />
+            <div style={{ borderTop: "1px solid #dde0e4", maxWidth: "900px", marginTop: "0" }} />
           </div>
         </section>
 
         {/* Schema.orgタイプ一覧 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Schema Types</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               主要なSchema.orgタイプと実装箇所
             </h2>
             <div className="max-w-5xl overflow-x-auto">
               <table className="w-full text-[13px]">
                 <thead>
-                  <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
-                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>Schema Type</th>
-                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#0d1b2a" }}>効果・概要</th>
-                    <th className="text-left py-3 font-semibold" style={{ color: "#0d1b2a" }}>実装ページ</th>
+                  <tr style={{ borderBottom: "2px solid #dde0e4" }}>
+                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#333333" }}>Schema Type</th>
+                    <th className="text-left py-3 pr-6 font-semibold" style={{ color: "#333333" }}>効果・概要</th>
+                    <th className="text-left py-3 font-semibold" style={{ color: "#333333" }}>実装ページ</th>
                   </tr>
                 </thead>
                 <tbody>
                   {schemaTypes.map((row, i) => (
-                    <tr key={i} style={{ borderBottom: "1px solid #E8E4DC" }}>
-                      <td className="py-4 pr-6 font-mono font-semibold" style={{ color: "#0d1b2a" }}>{row.type}</td>
+                    <tr key={i} style={{ borderBottom: "1px solid #dde0e4" }}>
+                      <td className="py-4 pr-6 font-mono font-semibold" style={{ color: "#333333" }}>{row.type}</td>
                       <td className="py-4 pr-6 leading-[1.7]" style={{ color: "#374151" }}>{row.desc}</td>
                       <td className="py-4 leading-[1.7]" style={{ color: "#6B7280" }}>{row.target}</td>
                     </tr>
@@ -274,7 +274,7 @@ export default function StructuredDataPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Type Reference</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装タイプ別の解説
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -333,33 +333,33 @@ export default function StructuredDataPage() {
                   body: "動画のタイトル（name）・説明（description）・サムネイル（thumbnailUrl）・公開日（uploadDate）・動画URL（contentUrl）を記述します。YouTube埋め込みだけでなく、自社ホスティングの動画にも対応します。Google検索での動画リッチリザルト（サムネイル付きの結果）獲得を狙えます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.type}</p>
+                      <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{item.type}</p>
                       <span className="text-[11px] font-semibold tracking-wide" style={{ color: "#9CA3AF" }}>{item.label}</span>
                     </div>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 実装方法コードブロック */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation</p>
-            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Next.jsでの構造化データ実装例
             </h2>
             <p className="text-[14px] leading-[1.9] mb-8 max-w-2xl" style={{ color: "#374151" }}>
               Next.jsのApp Routerでは、各ページのpage.tsxコンポーネント内にscriptタグを直接記述します。typeをapplication/ld+jsonに指定し、dangerouslySetInnerHTMLプロパティでJSON文字列を渡すのが標準的な方法です。@graphを使って複数のスキーマをひとつのscriptタグにまとめることで、ページ内のscriptタグ数を抑えられます。
             </p>
-            <div className="max-w-3xl rounded overflow-hidden" style={{ background: "#0d1b2a", border: "1px solid #1e2d3d" }}>
+            <div data-tone="dark" className="max-w-3xl rounded overflow-hidden" style={{ background: "#293540", border: "1px solid #1e2d3d" }}>
               <div className="px-4 py-2" style={{ background: "#1a2a3a", borderBottom: "1px solid #1e2d3d" }}>
                 <span className="text-[11px] font-mono" style={{ color: "rgba(255,255,255,0.4)" }}>app/services/seo/page.tsx</span>
               </div>
@@ -393,11 +393,11 @@ export default function StructuredDataPage() {
 };`}</pre>
             </div>
             <div className="mt-10 max-w-3xl">
-              <p className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a" }}>layout.tsxへのOrganization・WebSite実装</p>
+              <p className="font-bold text-[15px] mb-4" style={{ color: "#333333" }}>layout.tsxへのOrganization・WebSite実装</p>
               <p className="text-[14px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
                 サイト全体で共通のOrganizationとWebSiteはルートlayout.tsxに一度実装します。会社名・住所・電話・ロゴURL・SNSのsameAs配列を記述します。一方でBreadcrumbList・FAQPage・Articleはページごとに内容が変わるため、各page.tsxに個別実装します。この役割分担を徹底することで、スキーマの重複や不整合を防ぎます。
               </p>
-              <p className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a" }}>Google Rich Results Testでの検証手順</p>
+              <p className="font-bold text-[15px] mb-4" style={{ color: "#333333" }}>Google Rich Results Testでの検証手順</p>
               <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
                 実装後はsearch.google.com/test/rich-resultsにアクセスし、対象ページのURLを入力して「テスト」を実行します。「有効なアイテム」として認識されたタイプが一覧表示されます。「エラーのあるアイテム」が表示された場合は、詳細メッセージを確認して必須プロパティの追加や値の修正を行います。実装のたびにこのツールで検証することを推奨します。
               </p>
@@ -409,7 +409,7 @@ export default function StructuredDataPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               構造化データ実装フロー
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -428,24 +428,24 @@ export default function StructuredDataPage() {
                 { t: "Search Consoleの「拡張機能」で定期監視を設定する", b: "Search Consoleの「拡張機能」セクションを定期的に確認し、構造化データのエラー・警告が蓄積していないかをチェックします。コンテンツ更新のたびに確認します。" },
                 { t: "コンテンツ更新フローに構造化データの更新チェックを組み込む", b: "FAQの変更・営業時間の変更・記事の更新時に構造化データも連動して更新する運用ルールを設けます。JSON-LDとHTMLコンテンツの整合性を常に保ちます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -460,16 +460,16 @@ export default function StructuredDataPage() {
                 { kpi: "AI検索からの流入数", how: "Google Analytics 4の参照元レポートでChatGPT・Gemini・Perplexityからの流入が計測できる場合は、構造化データ実装前後で変化を追跡します。AIO効果の定量評価につながります。" },
                 { kpi: "対象キーワードでの検索順位", how: "構造化データを実装したページが対象とするキーワードでの平均掲載順位をSearch Consoleで追跡します。構造化データ単体で順位が劇的に変わるわけではありませんが、中長期的なE-E-A-T向上との相乗効果を観測します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.how}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "900px" }} />
+            <div style={{ borderTop: "1px solid #dde0e4", maxWidth: "900px" }} />
           </div>
         </section>
 
@@ -477,7 +477,7 @@ export default function StructuredDataPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスの構造化データ実装支援
             </h2>
             <div className="max-w-4xl">
@@ -488,20 +488,20 @@ export default function StructuredDataPage() {
                 { title: "AIO（AI検索）向け構造化データ設計", body: "ChatGPT・Gemini・Perplexityからの引用を意識したFAQPage・Article・Organizationの設計を行います。著者情報・E-E-A-T要素・引用しやすい文章構造との組み合わせで、AI検索への最適化を図ります。" },
                 { title: "継続的な監視と更新サポート", body: "コンテンツ更新・ページ追加のたびに構造化データを最新の状態に保つ運用サポートを提供します。Search Consoleのエラー通知への対応も含みます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="構造化データについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="構造化データについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="構造化データ実装のご相談"

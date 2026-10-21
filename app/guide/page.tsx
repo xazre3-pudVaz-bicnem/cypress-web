@@ -49,15 +49,15 @@ export default function GuidePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>ガイド</span>
+              <span style={{ color: "#333333" }}>ガイド</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Guide</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               Web集客・SEO・MEOガイド
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "12px" }}>
@@ -94,10 +94,10 @@ export default function GuidePage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>All Guides</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               ガイド一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {guidePages.map((page) => (
                 <Link
                   key={page.slug}
@@ -107,7 +107,7 @@ export default function GuidePage() {
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                     {page.titleEn}
                   </p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#333333", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
                     {page.title}
                   </p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -126,13 +126,13 @@ export default function GuidePage() {
         </section>
 
         {/* Callout: knowledge vs guide */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Other Resources</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Other Resources</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ガイドと合わせて読みたいコンテンツ
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { href: "/knowledge", label: "ナレッジベース", desc: "用語・概念・背景知識の体系的な解説" },
                 { href: "/goals", label: "目的別施策プラン", desc: "達成したい目標から施策を選ぶ" },
@@ -141,17 +141,17 @@ export default function GuidePage() {
                 { href: "/cost", label: "費用・料金ガイド", desc: "MEO・SEO・Web制作の費用相場" },
                 { href: "/faq", label: "よくある質問", desc: "よく寄せられる疑問への回答集" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", background: "#0d1b2a", textDecoration: "none" }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", background: "#293540", textDecoration: "none" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "6px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#9ca3af", lineHeight: "1.8" }}>{item.desc}</p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", marginTop: "10px" }}>読む →</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginTop: "10px" }}>読む →</p>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ガイドについてよくある質問" bgColor="#f9f8f5" />
+        <FaqSection items={faqItems} heading="ガイドについてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

@@ -134,7 +134,7 @@ export default function AgentWebDesignPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_09_09 (4).jpg"
@@ -169,7 +169,7 @@ export default function AgentWebDesignPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>What Is It</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>
               ホームページ制作代理店とは
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -187,15 +187,15 @@ export default function AgentWebDesignPage() {
         </section>
 
         {/* 役割分担 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Role Division</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               代理店様とサイプレスの役割分担
             </h2>
             <div className="grid md:grid-cols-2 gap-8" style={{ maxWidth: "820px" }}>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "20px", padding: "12px 16px", background: "#e8e4dc" }}>代理店様のご担当（販売のみ）</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "20px", padding: "12px 16px", background: "#dde0e4" }}>代理店様のご担当（販売のみ）</p>
                 {[
                   "見込み顧客の開拓・アポイント",
                   "Webサイトの必要性・課題ヒアリング",
@@ -204,15 +204,15 @@ export default function AgentWebDesignPage() {
                   "契約前の情報共有・書類手続き",
                   "必要に応じた顧客フォロー",
                 ].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
-                    <span style={{ color: "#0d1b2a", flexShrink: 0 }}>✓</span>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
+                    <span style={{ color: "#333333", flexShrink: 0 }}>✓</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #dde0e4" }} />
               </div>
               <div>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "20px", padding: "12px 16px", background: "#0d1b2a" }}>サイプレスが担当（制作・保守全般）</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#ffffff", marginBottom: "20px", padding: "12px 16px", background: "#293540" }}>サイプレスが担当（制作・保守全般）</p>
                 {[
                   "Webサイトの企画・構成設計",
                   "デザイン・UI設計",
@@ -223,19 +223,19 @@ export default function AgentWebDesignPage() {
                   "公開後の保守管理・SSL・更新対応",
                   "顧客からの技術的な問い合わせ対応",
                 ].map((item) => (
-                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #e8e4dc" }}>
+                  <div key={item} style={{ display: "flex", gap: "10px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
                     <span style={{ color: "#9ca3af", flexShrink: 0 }}>→</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #e8e4dc" }} />
+                <div style={{ borderTop: "1px solid #dde0e4" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* 売りやすい理由 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Why It Sells</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
@@ -263,7 +263,7 @@ export default function AgentWebDesignPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Ideal Partners</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               相性の良い代理店・パートナー
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", marginBottom: "36px" }}>以下のような方・企業様にホームページ制作代理店として活動いただきやすい環境です。</p>
@@ -276,8 +276,8 @@ export default function AgentWebDesignPage() {
                 { label: "地域企業・コンサル", desc: "地域に密着した中小企業との接点を活かした提案に向いています。" },
                 { label: "フリーランス営業", desc: "個人で中小企業へ提案活動をしている方が副収入として活動しやすいです。" },
               ].map((item) => (
-                <div key={item.label} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
+                <div key={item.label} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", padding: "24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
                 </div>
               ))}
@@ -286,10 +286,10 @@ export default function AgentWebDesignPage() {
         </section>
 
         {/* 提案しやすい顧客例 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Target Customers</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               提案しやすい顧客の特徴
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", marginBottom: "32px" }}>以下のような状況にある中小企業・経営者へのアプローチが成約につながりやすいです。</p>
@@ -302,14 +302,14 @@ export default function AgentWebDesignPage() {
                 { title: "GoogleやSNSで見つからないと感じている", body: "「自分の会社をGoogleで検索しても出てこない」という経営者にはSEO対策・MEO対策とセットでホームページ制作を提案できます。" },
                 { title: "ブログや情報更新が止まっている", body: "「ブログを書こうとしたが続かなかった」という企業はWordPressによる更新しやすいサイト構築とSEOコンテンツ運用の提案が刺さります。" },
               ].map((item) => (
-                <div key={item.title} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
+                <div key={item.title} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -318,7 +318,7 @@ export default function AgentWebDesignPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Sales Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               ホームページ制作代理店の販売フロー
             </h2>
             <div style={{ maxWidth: "680px" }}>
@@ -329,27 +329,27 @@ export default function AgentWebDesignPage() {
                 { step: "Step 4", title: "受注・契約", body: "顧客の合意後、契約手続きを行います。制作開始後の対応はサイプレスが引き継ぎます。" },
                 { step: "Step 5", title: "制作開始・納品・保守", body: "設計・デザイン・制作・公開・保守管理をサイプレスが行います。代理店様は顧客への経過報告のみで対応できます。" },
               ].map((item, i) => (
-                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#0d1b2a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
+                <div key={item.step} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <div data-tone="dark" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "#293540", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "4px" }}>
                     <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: 700 }}>{i + 1}</span>
                   </div>
                   <div>
                     <p style={{ fontSize: "11px", color: "#9ca3af", marginBottom: "4px", fontFamily: "var(--font-display)" }}>{item.step}</p>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "6px" }}>{item.title}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 関連代理店ページ */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Related Pages</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>その他の代理店募集ページ</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>その他の代理店募集ページ</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 { href: "/agent", label: "販売代理店募集トップ", desc: "代理店プログラム全体の概要" },
@@ -359,8 +359,8 @@ export default function AgentWebDesignPage() {
                 { href: "/agent/faq", label: "代理店募集FAQ", desc: "よくある質問をまとめて確認" },
                 { href: "/partner/referral", label: "取次店・紹介パートナー募集", desc: "紹介するだけの軽い参加形式" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "20px 24px", background: "#ffffff", border: "1px solid #e8e4dc", textDecoration: "none" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "4px" }}>{item.label}</p>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "20px 24px", background: "#ffffff", border: "1px solid #dde0e4", textDecoration: "none" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "4px" }}>{item.label}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af" }}>{item.desc}</p>
                 </Link>
               ))}

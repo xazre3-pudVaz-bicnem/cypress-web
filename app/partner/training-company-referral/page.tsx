@@ -211,7 +211,7 @@ export default function TrainingCompanyReferralPartnerPage() {
       <Header />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_08_57 (2).jpg"
@@ -243,7 +243,7 @@ export default function TrainingCompanyReferralPartnerPage() {
             <Link
               href="/contact?type=training-referral"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all"
-              style={{ background: "#ffffff", color: "#0d1b2a" }}
+              style={{ background: "#ffffff", color: "#333333" }}
             >
               研修会社紹介について相談する
             </Link>
@@ -254,7 +254,7 @@ export default function TrainingCompanyReferralPartnerPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Roles</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "18px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "18px" }}>
               それぞれの役割
             </h2>
             <p style={{ fontSize: "14.5px", lineHeight: "2.0", color: "#374151", maxWidth: "720px", marginBottom: "44px" }}>
@@ -262,16 +262,16 @@ export default function TrainingCompanyReferralPartnerPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {roles.map((role) => (
-                <div key={role.actor} style={{ background: "#f8f6f2", border: "1px solid #e8e4dc", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.18em", color: "#c4b89a", marginBottom: "10px", textTransform: "uppercase" }}>
+                <div key={role.actor} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", padding: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.18em", color: "var(--v2-accent)", marginBottom: "10px", textTransform: "uppercase" }}>
                     {role.subtitle}
                   </p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "18px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "18px" }}>
                     {role.actor}
                   </p>
                   {role.items.map((item) => (
-                    <div key={item} style={{ display: "flex", gap: "10px", padding: "9px 0", borderTop: "1px solid #e8e4dc" }}>
-                      <span style={{ color: "#0d1b2a", flexShrink: 0, fontSize: "12px" }}>✓</span>
+                    <div key={item} style={{ display: "flex", gap: "10px", padding: "9px 0", borderTop: "1px solid #dde0e4" }}>
+                      <span style={{ color: "#333333", flexShrink: 0, fontSize: "12px" }}>✓</span>
                       <p style={{ fontSize: "12.5px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                     </div>
                   ))}
@@ -279,7 +279,7 @@ export default function TrainingCompanyReferralPartnerPage() {
                     <>
                       <p style={{ fontSize: "11px", color: "#9ca3af", marginTop: "18px", marginBottom: "6px", fontWeight: 600 }}>行わないこと</p>
                       {role.excludes.map((item) => (
-                        <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #e8e4dc" }}>
+                        <div key={item} style={{ display: "flex", gap: "10px", padding: "8px 0", borderTop: "1px solid #dde0e4" }}>
                           <span style={{ color: "#9ca3af", flexShrink: 0, fontSize: "12px" }}>×</span>
                           <p style={{ fontSize: "12.5px", color: "#9ca3af", lineHeight: "1.8" }}>{item}</p>
                         </div>
@@ -293,16 +293,16 @@ export default function TrainingCompanyReferralPartnerPage() {
         </section>
 
         {/* ── 紹介できる研修テーマ ───────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Themes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               紹介できる研修テーマ
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {referralThemes.map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "22px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #dde0e4", padding: "22px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#333333", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -315,7 +315,7 @@ export default function TrainingCompanyReferralPartnerPage() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Referral Fee</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "28px" }}>
                 紹介手数料モデル
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -332,29 +332,29 @@ export default function TrainingCompanyReferralPartnerPage() {
         </section>
 
         {/* ── 問い合わせから紹介までの流れ ───────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               問い合わせから紹介までの流れ
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {REFERRAL_FLOW.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* ── 禁止している営業表現 ───────────────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Prohibited</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#ffffff", fontWeight: 700, lineHeight: 1.35, marginBottom: "24px" }}>
@@ -382,7 +382,7 @@ export default function TrainingCompanyReferralPartnerPage() {
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "760px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Privacy</p>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.35, marginBottom: "26px" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, lineHeight: 1.35, marginBottom: "26px" }}>
                 個人情報の取り扱い
               </h2>
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151", marginBottom: "18px" }}>
@@ -391,14 +391,14 @@ export default function TrainingCompanyReferralPartnerPage() {
               <p style={{ fontSize: "15px", lineHeight: "2.05", color: "#374151" }}>
                 同意がない場合、提携研修会社へ情報を共有することはありません。共有された情報は、提携研修会社が研修に関するご連絡・ご提案を行う目的にのみ使用します。
               </p>
-              <Link href="/privacy-policy" className="inline-block mt-8 text-[13px] underline" style={{ color: "#0d1b2a" }}>
+              <Link href="/privacy-policy" className="inline-block mt-8 text-[13px] underline" style={{ color: "#333333" }}>
                 プライバシーポリシーを見る →
               </Link>
             </div>
           </div>
         </section>
 
-        <SubsidyDisclaimer bgColor="#f8f6f2" />
+        <SubsidyDisclaimer bgColor="#f0f1f2" />
 
         <FaqSection items={faqItems} heading="研修会社紹介パートナー制度についてよくある質問" bgColor="#ffffff" />
 

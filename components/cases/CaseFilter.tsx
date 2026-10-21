@@ -52,7 +52,7 @@ export default function CaseFilter({ cases, serviceOptions, industryOptions, reg
       {/* Filter bar */}
       <div
         style={{
-          border: "1px solid #E8E4DC",
+          border: "1px solid #dde0e4",
           background: "#FFFFFF",
           padding: "clamp(20px, 3vw, 28px)",
           marginBottom: "clamp(28px, 4vw, 40px)",
@@ -70,7 +70,7 @@ export default function CaseFilter({ cases, serviceOptions, industryOptions, reg
 
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "18px", flexWrap: "wrap", gap: "12px" }}>
           <span style={{ fontSize: "13px", color: "#6B7280", fontFamily: "var(--font-sans)" }}>
-            <strong style={{ color: "#0B1628", fontFamily: "var(--font-serif)", fontSize: "16px" }}>{filtered.length}</strong>{" "}
+            <strong style={{ color: "#333333", fontFamily: "var(--font-serif)", fontSize: "16px" }}>{filtered.length}</strong>{" "}
             件の事例
           </span>
           {hasFilter && (
@@ -81,7 +81,7 @@ export default function CaseFilter({ cases, serviceOptions, industryOptions, reg
                 fontSize: "12px",
                 color: "#6B7280",
                 background: "transparent",
-                border: "1px solid #E8E4DC",
+                border: "1px solid #dde0e4",
                 padding: "6px 14px",
                 cursor: "pointer",
                 fontFamily: "var(--font-sans)",
@@ -118,7 +118,7 @@ export default function CaseFilter({ cases, serviceOptions, industryOptions, reg
           box-shadow: 0 8px 32px rgba(11,22,40,0.09);
           transform: translateY(-2px);
         }
-        .case-filter-chip:hover { border-color: #C4A96A; color: #0B1628; }
+        .case-filter-chip:hover { border-color: var(--v2-accent); color: #333333; }
       `}</style>
     </div>
   );
@@ -170,8 +170,8 @@ function Chip({ label, selected, onClick }: { label: string; selected: boolean; 
       style={{
         fontSize: "12px",
         padding: "5px 13px",
-        border: `1px solid ${selected ? "#0B1628" : "#E8E4DC"}`,
-        background: selected ? "#0B1628" : "#FFFFFF",
+        border: `1px solid ${selected ? "#333333" : "#dde0e4"}`,
+        background: selected ? "#333333" : "#FFFFFF",
         color: selected ? "#FFFFFF" : "#6B7280",
         cursor: "pointer",
         letterSpacing: "0.03em",

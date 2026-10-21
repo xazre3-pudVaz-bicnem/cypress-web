@@ -139,17 +139,17 @@ export default function SeoSitePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }} className="hover:underline">Web制作</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>SEO特化サイト制作</span>
+              <span style={{ color: "#333333" }}>SEO特化サイト制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SEO-Focused Site</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイト制作
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -171,9 +171,9 @@ export default function SeoSitePage() {
         </section>
 
         {/* SEO未対応サイトの課題 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>SEO Risks</p>
+            <p style={{ letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>SEO Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SEO未対応サイトが失い続ける4つのビジネス機会
             </h2>
@@ -184,7 +184,7 @@ export default function SeoSitePage() {
                 { t: "内部SEOの欠如でインデックスされない", b: "title・description・canonical・構造化データが正しく設定されていないと、良いコンテンツを作っても検索エンジンに正しく評価されません。技術的SEOは集客の前提条件です。" },
                 { t: "コンテンツがあっても流入ゼロ", b: "キーワード戦略なしに作られたコンテンツは誰も検索しないキーワードへの答えになっています。検索意図に沿ったコンテンツ設計なしには、記事を量産しても流入は増えません。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -197,7 +197,7 @@ export default function SeoSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-0">
@@ -209,21 +209,21 @@ export default function SeoSitePage() {
                 "制作から検索流入獲得まで10ステップの実装フロー",
                 "成果を測るために見るべき7つのSEO指標とその確認方法",
               ].map((item, i) => (
-                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイトでよくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -269,15 +269,15 @@ export default function SeoSitePage() {
                   body: "どのキーワードで何本の記事を何ヶ月かけて公開するかを決めずに制作を開始すると、制作費を投じたサイトが完成しても集客が始まらない状況になります。コンテンツカレンダーは制作前に必ず策定します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -286,7 +286,7 @@ export default function SeoSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別のSEO特化サイト設計ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-0 max-w-5xl">
@@ -300,25 +300,25 @@ export default function SeoSitePage() {
                 { industry: "学習塾・スクール", point: "科目×学年のSEOコンテンツ設計", body: "「中学受験 算数 対策 武蔵野市」「高校英語 個別指導 港区」など科目・学年・地域を組み合わせたページを設計します。合格実績・指導実績のコンテンツがE-E-A-T強化に有効です。" },
                 { industry: "BtoB企業", point: "ソリューション別のSEOサイト", body: "「勤怠管理システム 中小企業」「人事評価ツール 導入事例」などソリューション別のランディングページとコンテンツページを設計します。ホワイトペーパーDLのCVポイント設計とセットで行います。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: "#c4b89a" }}>{item.industry}</p>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.point}</p>
+                    <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: "var(--v2-accent)" }}>{item.industry}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.point}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div className="md:col-span-2" style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div className="md:col-span-2" style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 制作・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイト制作・実装フロー
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -334,15 +334,15 @@ export default function SeoSitePage() {
                 { step: "Search Console連携・サイトマップ送信", body: "app/sitemap.tsで動的XMLサイトマップを生成し、Google Search Consoleに登録・送信します。インデックス状況・クロールエラー・Core Web Vitalsのモニタリング体制を構築します。Googleアナリティクス4との連携も設定します。" },
                 { step: "コンテンツ追加計画", body: "制作完了後の運用を見据え、月次コンテンツカレンダーを作成します。どのキーワードで・何本の記事を・いつ公開するかを計画し、内部リンク追加のルールも合わせて整備します。コンテンツ運用支援サービスも対応可能です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.step}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -351,7 +351,7 @@ export default function SeoSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための7つのSEO指標
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -364,25 +364,25 @@ export default function SeoSitePage() {
                 { kpi: "内部リンク充足率", where: "Google Search Console → リンク → 内部リンク", body: "全ページに十分な内部リンクが設定されているかを確認します。内部リンクが0または少ないページ（孤立ページ）を発見したら、関連ページからのリンクを追加します。" },
                 { kpi: "構造化データエラー数", where: "Google Search Console → エクスペリエンス → リッチリザルト", body: "実装した構造化データにエラーがないかを確認します。FAQPage・BreadcrumbListのエラーはリッチリザルトの非表示につながるため、実装後に必ずSearch Consoleとリッチリザルトテストで検証します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[12px] mb-2" style={{ color: "#9CA3AF" }}>{item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 設計戦略 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Design Strategy</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイトの設計戦略
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -394,8 +394,8 @@ export default function SeoSitePage() {
                 { title: "コンテンツ設計・内部リンク設計", body: "キーワードグループごとのコンテンツカレンダーと、ページ間の内部リンクマップを設計します。新規ページを追加するたびに既存ページとの相互リンクを設定する運用プロセスも設計します。" },
                 { title: "E-E-A-T・AIO対策の組み込み", body: "著者情報・会社情報の明示、llms.txt設置、FAQの充実、一次情報の掲載など、Google評価とAI引用の両方に貢献するE-E-A-T設計をサイト全体に組み込みます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -407,7 +407,7 @@ export default function SeoSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why It Matters</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイト制作がなぜ重要か
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -417,24 +417,24 @@ export default function SeoSitePage() {
                 { title: "SEO・AIO・CVの三位一体設計が可能", body: "検索流入を獲得しながら、ページ内でコンバージョンも最大化する設計を同時に行います。集客と成約の両輪を1つのサイトで実現できます。" },
                 { title: "制作コストがそのまま長期資産になる", body: "制作に投じたコストはサイトとして資産化されます。運用を継続するほどSEO評価が蓄積し、費用対効果は時間とともに高まります。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* サイプレスのSEO特化サイト制作の強み */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why Cypress</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのSEO特化サイト制作が選ばれる理由
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-0 max-w-5xl">
@@ -446,15 +446,15 @@ export default function SeoSitePage() {
                 { title: "コンテンツカレンダーと運用サポート", body: "SEO特化サイトは公開後の継続的なコンテンツ追加が成果を左右します。制作完了時に月次コンテンツカレンダーを納品し、コンテンツ制作支援・SEO数値モニタリング・改善提案の継続サポートにも対応します。" },
                 { title: "MEO・AIO・SEOの統合設計", body: "Google検索（SEO）・Googleマップ（MEO）・AI検索（AIO）の3チャネルを統合した設計を提案します。地域ビジネスには特にMEO×SEOの組み合わせが強力な集客基盤となります。複数チャネルからの流入を同時に最大化します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div className="md:col-span-2" style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div className="md:col-span-2" style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -463,7 +463,7 @@ export default function SeoSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Pricing Guide</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイト制作の料金目安
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mb-8">
@@ -472,13 +472,13 @@ export default function SeoSitePage() {
                 { plan: "コンテンツSEOサイト", range: "120〜200万円", items: ["本格的なサイロ構造設計", "CMS（WordPress等）構築", "30〜50ページ制作", "コンテンツカレンダー策定", "内部リンク設計・実装"] },
                 { plan: "大規模SEOサイト", range: "200〜400万円", items: ["Next.js高速サイト構築", "SSG/ISR実装", "50ページ以上の大規模制作", "AIO・MEO統合設計", "継続運用サポート付き"] },
               ].map((item, i) => (
-                <div key={i} style={{ border: "1px solid #E8E4DC", padding: "28px" }}>
+                <div key={i} style={{ border: "1px solid #dde0e4", padding: "28px" }}>
                   <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#9CA3AF" }}>{item.plan}</p>
-                  <p className="font-black text-[22px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.range}</p>
+                  <p className="font-black text-[22px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.range}</p>
                   <ul className="space-y-2">
                     {item.items.map((li, j) => (
                       <li key={j} className="flex gap-2 text-[13px]" style={{ color: "#374151" }}>
-                        <span style={{ color: "#c4b89a" }}>→</span>{li}
+                        <span style={{ color: "var(--v2-accent)" }}>→</span>{li}
                       </li>
                     ))}
                   </ul>
@@ -490,10 +490,10 @@ export default function SeoSitePage() {
         </section>
 
         {/* SEO特化サイトのよくある誤解 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Misconceptions</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO特化サイトについてよくある誤解
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -503,20 +503,20 @@ export default function SeoSitePage() {
                 { title: "「キーワードをたくさん詰め込むとSEOに強い」は誤り", body: "キーワードの過剰使用（キーワードスタッフィング）はGoogleのガイドライン違反です。自然な文章の中に適切な頻度でキーワードが含まれ、検索意図を満たすコンテンツ品質こそが評価されます。" },
                 { title: "「SNS・広告でバズれば検索順位が上がる」は誤り", body: "SNSでのシェア数・広告のクリック数は直接的なSEOシグナルではありません。ただし、SNSでバズったコンテンツが外部サイトからリンクされれば被リンクとしてSEOに貢献します。SEOとSNSは補完関係にあります。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO特化サイト制作についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="SEO特化サイト制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SEO特化サイト制作のご相談"

@@ -124,17 +124,18 @@ export default function BusinessPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">
+              <Link href="/" className="hover:text-[#333333] transition-colors">
                 ホーム
               </Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>事業内容</span>
+              <span style={{ color: "#333333" }}>事業内容</span>
             </nav>
+            <p>Business</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               事業内容
@@ -172,7 +173,7 @@ export default function BusinessPage() {
                 <div
                   className="py-12"
                   style={{
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <div className="grid lg:grid-cols-[auto_1fr_1fr] gap-8 lg:gap-12">
@@ -189,7 +190,7 @@ export default function BusinessPage() {
                     {/* Left: Title + Description */}
                     <div>
                       <h2
-                        className="font-black text-[#0F172A] leading-tight mb-5"
+                        className="font-black text-[#333333] leading-tight mb-5"
                         style={{ fontSize: "clamp(20px, 2.5vw, 28px)" }}
                       >
                         {s.title}
@@ -203,7 +204,7 @@ export default function BusinessPage() {
                       <Link
                         href={`/services/${s.slug}`}
                         className="inline-flex items-center gap-2 text-xs font-medium transition-colors"
-                        style={{ color: "#0F172A" }}
+                        style={{ color: "#333333" }}
                       >
                         詳しく見る
                         <svg
@@ -238,7 +239,7 @@ export default function BusinessPage() {
                           >
                             <span
                               className="mt-2 shrink-0 block w-1 h-1 rounded-full"
-                              style={{ background: "#0F172A" }}
+                              style={{ background: "#293540" }}
                             />
                             {pt}
                           </li>
@@ -249,7 +250,7 @@ export default function BusinessPage() {
                 </div>
               </ScrollReveal>
             ))}
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #dde0e4" }} />
           </div>
         </section>
 
@@ -263,7 +264,7 @@ export default function BusinessPage() {
               Other Business
             </p>
             <h2
-              className="font-black text-[#0F172A] leading-tight mb-4"
+              className="font-black text-[#333333] leading-tight mb-4"
               style={{ fontSize: "clamp(22px, 2.8vw, 32px)" }}
             >
               そのほかの事業
@@ -279,8 +280,8 @@ export default function BusinessPage() {
                   href={b.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block h-full transition-colors hover:bg-[#F9F8F5]"
-                  style={{ border: "1px solid #E8E4DC" }}
+                  className="group block h-full transition-colors hover:bg-[#f0f1f2]"
+                  style={{ border: "1px solid #dde0e4" }}
                 >
                   <div className="relative w-full overflow-hidden" style={{ height: "220px" }}>
                     <Image
@@ -297,7 +298,7 @@ export default function BusinessPage() {
                       {String(SERVICES.length + i + 1).padStart(2, "0")}
                     </span>
                     <h3
-                      className="font-black text-[#0F172A] leading-tight mt-3 mb-3"
+                      className="font-black text-[#333333] leading-tight mt-3 mb-3"
                       style={{ fontSize: "clamp(18px, 2vw, 22px)" }}
                     >
                       {b.name}
@@ -308,13 +309,13 @@ export default function BusinessPage() {
                         <li
                           key={t}
                           className="text-[11px] px-2.5 py-1"
-                          style={{ background: "#F9F8F5", border: "1px solid #E8E4DC", color: "#374151" }}
+                          style={{ background: "#f0f1f2", border: "1px solid #dde0e4", color: "#374151" }}
                         >
                           {t}
                         </li>
                       ))}
                     </ul>
-                    <span className="inline-flex items-center gap-2 text-xs font-medium" style={{ color: "#0F172A" }}>
+                    <span className="inline-flex items-center gap-2 text-xs font-medium" style={{ color: "#333333" }}>
                       {b.siteLabel} ↗
                     </span>
                   </div>
@@ -327,12 +328,12 @@ export default function BusinessPage() {
         {/* Support Overview */}
         <section
           className="py-20"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <ScrollReveal>
               <h2
-                className="font-bold text-[#0F172A] text-xl mb-6"
+                className="font-bold text-[#333333] text-xl mb-6"
               >
                 総合的な支援体制
               </h2>
@@ -351,7 +352,7 @@ export default function BusinessPage() {
                   <li key={item} className="flex items-start gap-3 text-sm text-[#374151]">
                     <span
                       className="mt-2 shrink-0 block w-1 h-1 rounded-full"
-                      style={{ background: "#0F172A" }}
+                      style={{ background: "#293540" }}
                     />
                     {item}
                   </li>
@@ -359,10 +360,10 @@ export default function BusinessPage() {
               </ul>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#0F172A] hover:text-white"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#293540] hover:text-white"
                 style={{
-                  border: "1px solid #0F172A",
-                  color: "#0F172A",
+                  border: "1px solid #333333",
+                  color: "#333333",
                 }}
               >
                 お問い合わせ・ご相談

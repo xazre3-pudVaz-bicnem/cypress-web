@@ -62,9 +62,9 @@ export default async function BlogCategoryPage({
       <Header />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section
+        <section data-page-hero
           style={{
-            background: "#f8f6f2",
+            background: "#f0f1f2",
             paddingTop: "128px",
             paddingBottom: "48px",
           }}
@@ -110,7 +110,7 @@ export default async function BlogCategoryPage({
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(26px,4vw,40px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
               }}
@@ -145,14 +145,7 @@ export default async function BlogCategoryPage({
         <div
           style={{ maxWidth: "72rem", margin: "0 auto", padding: "64px 24px" }}
         >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 240px",
-              gap: "64px",
-              alignItems: "start",
-            }}
-          >
+          <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-16 lg:grid-cols-[minmax(0,1fr)_240px]">
             {/* Main */}
             <div>
               {posts.length === 0 ? (
@@ -170,7 +163,7 @@ export default async function BlogCategoryPage({
                   <article
                     key={post.slug}
                     style={{
-                      borderBottom: "1px solid #ece8e0",
+                      borderBottom: "1px solid #dde0e4",
                       paddingBottom: "40px",
                       marginBottom: "40px",
                     }}
@@ -208,7 +201,7 @@ export default async function BlogCategoryPage({
                       style={{
                         fontFamily: "var(--font-serif)",
                         fontSize: "clamp(16px,2vw,20px)",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         fontWeight: 700,
                         lineHeight: 1.4,
                         marginBottom: "12px",
@@ -239,7 +232,7 @@ export default async function BlogCategoryPage({
                         gap: "6px",
                         marginTop: "16px",
                         fontSize: "13px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         textDecoration: "none",
                       }}
                     >
@@ -282,7 +275,7 @@ export default async function BlogCategoryPage({
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "13px",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                     marginBottom: "12px",
                   }}
@@ -299,9 +292,9 @@ export default async function BlogCategoryPage({
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #ece8e0",
+                        borderBottom: "1px solid #dde0e4",
                         fontSize: "13px",
-                        color: slug === category ? "#0d1b2a" : "#374151",
+                        color: slug === category ? "#333333" : "#374151",
                         textDecoration: "none",
                         fontWeight: slug === category ? 600 : 400,
                       }}
@@ -316,16 +309,16 @@ export default async function BlogCategoryPage({
               </div>
               <div
                 style={{
-                  background: "#f8f6f2",
+                  background: "#f0f1f2",
                   padding: "24px",
-                  border: "1px solid #ece8e0",
+                  border: "1px solid #dde0e4",
                 }}
               >
                 <p
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "14px",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                     marginBottom: "10px",
                   }}
@@ -349,7 +342,7 @@ export default async function BlogCategoryPage({
                     textAlign: "center",
                     padding: "10px",
                     fontSize: "13px",
-                    background: "#0d1b2a",
+                    background: "#293540",
                     color: "#ffffff",
                     textDecoration: "none",
                   }}

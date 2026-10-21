@@ -31,7 +31,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -41,7 +41,7 @@ export default function Page() {
               リモートワーク制度
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Remote Work</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               リモートワーク制度
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -53,7 +53,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Work Style</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの働き方
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -65,10 +65,10 @@ export default function Page() {
                 { n: "05", t: "週1回のオンライン朝礼", b: "週1回・30分のZoom朝礼で進捗共有・相談・情報交換を行います。それ以外のコミュニケーションはSlackで非同期で行います。" },
                 { n: "06", t: "成果ベースの評価・昇給", b: "稼働時間ではなく成果を評価します。クライアントの集客成果・顧客満足度・新しいスキル習得を評価基準とした明確な昇給制度があります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #ece8e0" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#f8f6f2" />
+        <FaqSection items={faqItems} bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="一緒に働きませんか" body="フルリモート・フルフレックスでWeb集客の専門家として働きたい方、ぜひお話しましょう。採用エントリーはお問い合わせフォームからどうぞ。" />
       </main>

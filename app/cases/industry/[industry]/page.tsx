@@ -113,19 +113,19 @@ export default async function IndustryCasesPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       <Header />
       <main>
-        <section style={{ background: "#F8F6F2", padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)", borderBottom: "1px solid #E8E4DC" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)", borderBottom: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <nav aria-label="パンくず" style={{ marginBottom: "28px" }}>
               <ol style={{ display: "flex", gap: "8px", listStyle: "none", padding: 0, margin: 0, flexWrap: "wrap" }}>
                 <li><Link href="/" style={crumbLink}>ホーム</Link></li>
-                <li style={{ fontSize: "11px", color: "#C4BAB0" }}>›</li>
+                <li style={{ fontSize: "11px", color: "#c6cbd1" }}>›</li>
                 <li><Link href="/cases" style={crumbLink}>成功事例</Link></li>
-                <li style={{ fontSize: "11px", color: "#C4BAB0" }}>›</li>
+                <li style={{ fontSize: "11px", color: "#c6cbd1" }}>›</li>
                 <li style={{ ...crumbLink, color: "#6B7280" }}>{label}</li>
               </ol>
             </nav>
             <p style={eyebrow}>Cases by Industry</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 3.6vw, 40px)", color: "#0B1628", fontWeight: 700, lineHeight: 1.3, marginBottom: "18px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px, 3.6vw, 40px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "18px" }}>
               {label}のWeb集客成功事例
             </h1>
             <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.9", maxWidth: "620px" }}>
@@ -137,7 +137,7 @@ export default async function IndustryCasesPage({ params }: Props) {
         <section style={{ background: "#FFFFFF", padding: "clamp(40px, 7vh, 80px) 0" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ fontSize: "13px", color: "#6B7280", marginBottom: "28px" }}>
-              <strong style={{ color: "#0B1628", fontFamily: "var(--font-serif)", fontSize: "16px" }}>{cases.length}</strong> 件の事例
+              <strong style={{ color: "#333333", fontFamily: "var(--font-serif)", fontSize: "16px" }}>{cases.length}</strong> 件の事例
             </p>
             {cases.length > 0 ? (
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "clamp(20px, 3vw, 32px)" }}>
@@ -151,7 +151,7 @@ export default async function IndustryCasesPage({ params }: Props) {
           </div>
         </section>
 
-        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ ...eyebrow, marginBottom: "20px" }}>Other Industries</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "32px" }}>
@@ -169,27 +169,27 @@ export default async function IndustryCasesPage({ params }: Props) {
         </section>
 
         {/* 関連ページへの誘導 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.22em", color: "#9CA3AF", fontSize: "10px", marginBottom: "20px", textTransform: "uppercase" }}>
               Related
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "24px" }}>
               {industryHref && (
-                <Link href={industryHref} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+                <Link href={industryHref} style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
                   {label}のWeb集客支援について →
                 </Link>
               )}
-              <Link href="/cases/service/meo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+              <Link href="/cases/service/meo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
                 MEO対策の成功事例 →
               </Link>
-              <Link href="/cases/service/seo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+              <Link href="/cases/service/seo" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
                 SEO対策の成功事例 →
               </Link>
-              <Link href="/cases/service/web-design" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+              <Link href="/cases/service/web-design" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
                 ホームページ制作の成功事例 →
               </Link>
-              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
+              <Link href="/cases" style={{ fontSize: "13px", color: "#374151", textDecoration: "none", padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
                 成功事例一覧に戻る →
               </Link>
             </div>
@@ -205,5 +205,5 @@ export default async function IndustryCasesPage({ params }: Props) {
 }
 
 const crumbLink: React.CSSProperties = { fontSize: "11px", color: "#9CA3AF", textDecoration: "none", fontFamily: "var(--font-display)", letterSpacing: "0.05em" };
-const eyebrow: React.CSSProperties = { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(196,169,106,0.7)", fontSize: "10px", marginBottom: "16px", textTransform: "uppercase" };
-const linkChip: React.CSSProperties = { fontSize: "12px", color: "#6B7280", textDecoration: "none", padding: "6px 14px", border: "1px solid #E8E4DC", background: "#ffffff", letterSpacing: "0.03em" };
+const eyebrow: React.CSSProperties = { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(9,111,200,0.7)", fontSize: "10px", marginBottom: "16px", textTransform: "uppercase" };
+const linkChip: React.CSSProperties = { fontSize: "12px", color: "#6B7280", textDecoration: "none", padding: "6px 14px", border: "1px solid #dde0e4", background: "#ffffff", letterSpacing: "0.03em" };

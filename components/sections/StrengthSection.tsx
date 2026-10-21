@@ -33,11 +33,11 @@ export default function StrengthSection() {
     <section id="strength" className="py-28 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
-          <span className="text-[11px] font-mono tracking-[0.22em] text-[#3B82F6] uppercase block mb-4">
+          <span className="text-[11px] font-mono tracking-[0.22em] text-[#096fc8] uppercase block mb-4">
             Strength
           </span>
           <h2
-            className="font-black text-[#0F172A] leading-[1.1] tracking-[-0.02em] mb-14"
+            className="font-black text-[#333333] leading-[1.1] tracking-[-0.02em] mb-14"
             style={{ fontSize: "clamp(32px, 4vw, 52px)" }}
           >
             サイプレスの強み
@@ -51,7 +51,7 @@ export default function StrengthSection() {
                 <span className="text-[11px] font-mono text-[#CBD5E1]">
                   {s.num}
                 </span>
-                <h3 className="font-bold text-[#0F172A] text-base">{s.title}</h3>
+                <h3 className="font-bold text-[#333333] text-base">{s.title}</h3>
                 <p className="text-[#475569] text-sm leading-[1.9]">{s.desc}</p>
               </div>
             </AnimatedSection>

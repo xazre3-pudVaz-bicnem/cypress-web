@@ -225,19 +225,19 @@ export default function InternalSeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>内部SEO</span>
+              <span style={{ color: "#333333" }}>内部SEO</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>
               On-Page SEO
             </p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEO対策
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -256,10 +256,10 @@ export default function InternalSeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <ul className="max-w-3xl space-y-0">
@@ -272,12 +272,12 @@ export default function InternalSeoPage() {
                 "業種別の内部SEO改善で特に効果的なポイント",
                 "Search Consoleを使った内部SEO状況の確認方法と改善フロー",
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[13px] font-semibold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                <li key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="text-[13px] font-semibold shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <span className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item}</span>
                 </li>
               ))}
-              <li style={{ borderTop: "1px solid #E8E4DC" }} />
+              <li style={{ borderTop: "1px solid #dde0e4" }} />
             </ul>
           </div>
         </section>
@@ -286,7 +286,7 @@ export default function InternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why It Matters</p>
-            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEOが重要な理由
             </h2>
             <div className="grid md:grid-cols-2 gap-10 max-w-5xl">
@@ -311,10 +311,10 @@ export default function InternalSeoPage() {
         </section>
 
         {/* 内部SEOの主要要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Elements</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEOの主要要素と最適化方法
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -322,12 +322,12 @@ export default function InternalSeoPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
               {elements.map((el, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[11px] font-semibold px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #E8E4DC" }}>
+                    <span className="text-[11px] font-semibold px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #dde0e4" }}>
                       {el.importance}
                     </span>
-                    <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{el.title}</p>
+                    <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{el.title}</p>
                   </div>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{el.body}</p>
                 </div>
@@ -340,7 +340,7 @@ export default function InternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -389,24 +389,24 @@ export default function InternalSeoPage() {
                   body: "LCP・INP・CLSなどのCore Web Vitalsの改善を内部SEOと切り離して考えているケースが多く、表示速度の問題がランキングに影響しているにもかかわらず対策が後回しになっています。Google Search ConsoleのCore Web Vitalsレポートで問題ページを特定し、優先的に改善することが必要です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* よくある失敗 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEOでよくある失敗
             </h2>
             <div className="max-w-4xl">
@@ -432,15 +432,15 @@ export default function InternalSeoPage() {
                   body: "Reactベースのサイトで構造化データが実装されていないケースが多いです。特にFAQPage・BreadcrumbList・Organizationは基本的な施策として、またAI検索（AIO）対策として必須になっています。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -449,7 +449,7 @@ export default function InternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の内部SEO活用ポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -490,21 +490,21 @@ export default function InternalSeoPage() {
                   body: "コース別・年齢別・地域別の個別ページを作成し、それぞれのページに対応するCourse SchemaまたはEducationalOrganization Schemaを実装します。「体験レッスン」「無料体験」ページへの内部リンクをサイト全体から配置し、CVへの最短導線を確保します。「〇〇教室 + 地域名」「子供 + 〇〇 + 地域名」のtitleタグが特に重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEO 実装・改善フロー
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -563,15 +563,15 @@ export default function InternalSeoPage() {
                   body: "改善実施から4〜6週間後にSearch Consoleでクリック数・表示回数・順位の変化を確認します。改善が見られないページは追加で内部リンク・コンテンツ充実を実施します。3ヶ月ごとに内部SEO全体の再診断を行い、新規ページ追加に合わせた継続的な管理を続けます。",
                 },
               ].map((step, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{step.num}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{step.title}</p>
+                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#333333" }}>{step.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{step.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -580,7 +580,7 @@ export default function InternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標（KPI）
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -629,22 +629,22 @@ export default function InternalSeoPage() {
                   detail: "新規に追加した内部リンクが実際にクリックされているかをGA4のイベント計測（link_click）で確認します。クリックされていない内部リンクは表示位置・アンカーテキストの見直しを検討します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                  <p className="text-[11px] font-semibold mb-2" style={{ color: "#c4b89a" }}>確認場所: {item.where}</p>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                  <p className="text-[11px] font-semibold mb-2" style={{ color: "var(--v2-accent)" }}>確認場所: {item.where}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* チェックリスト */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Checklist</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               内部SEO チェックリスト（15項目）
             </h2>
             <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
@@ -665,7 +665,7 @@ export default function InternalSeoPage() {
                 "Organization・LocalBusiness構造化データが設定されているか",
                 "Open Graph（OGP）が全ページに設定されているか",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 py-3" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex items-start gap-3 py-3" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>□</span>
                   <span className="text-[14px]" style={{ color: "#374151" }}>{item}</span>
                 </div>
@@ -678,7 +678,7 @@ export default function InternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスの内部SEO支援内容
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -690,8 +690,8 @@ export default function InternalSeoPage() {
                 { title: "構造化データ実装", body: "JSON-LD形式でBreadcrumbList・FAQPage・Article・Organization・LocalBusinessなどの構造化データを実装します。Next.js・WordPress・その他CMSに対応します。" },
                 { title: "canonical・インデックス管理", body: "重複URLのcanonical設定・フィルタリングページのnoindex設定・サイトマップの整備を行い、クロールバジェットを重要なページに集中させます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -699,7 +699,7 @@ export default function InternalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="内部SEOについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="内部SEOについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="内部SEO対策のご相談・無料診断"

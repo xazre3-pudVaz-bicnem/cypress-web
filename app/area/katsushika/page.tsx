@@ -185,17 +185,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/area" style={{ color: "#6B7280" }}>対応エリア</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>葛飾区</span>
+              <span style={{ color: "#333333" }}>葛飾区</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Katsushika — Base Area</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#333333", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
               葛飾区のSEO・MEO対策<br />ホームページ制作
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -212,8 +212,8 @@ export default function Page() {
                 { label: "HP制作の補助金活用", href: "/area/katsushika/web-design-subsidy" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
-                  fontSize: "13px", color: "#0d1b2a", textDecoration: "none", fontWeight: 600,
-                  padding: "9px 18px", border: "1px solid #0d1b2a", background: "#FFFFFF",
+                  fontSize: "13px", color: "#333333", textDecoration: "none", fontWeight: 600,
+                  padding: "9px 18px", border: "1px solid #333333", background: "#FFFFFF",
                   borderRadius: "4px", letterSpacing: "0.02em",
                 }}>
                   {l.label} →
@@ -240,7 +240,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Market</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               葛飾区のビジネス環境と集客課題
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -252,10 +252,10 @@ export default function Page() {
                 { n: "05", t: "近隣区（足立・江戸川・墨田）への商圏拡大", b: "葛飾区は足立区・江戸川区・墨田区と接しており、これら隣接エリアへの商圏拡大も現実的です。エリアをまたいだSEO・MEO戦略で複数区の顧客を取り込む施策を提案しています。" },
                 { n: "06", t: "観光資源を活かした集客（柴又・亀有）", b: "柴又帝釈天や亀有公園（両さん像）などの観光スポットがある葛飾区は、観光客を取り込める業種（飲食・土産・体験）にとって大きなチャンスがあります。インバウンド・観光客向けのSEO・GBP対応も支援します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -265,10 +265,10 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               葛飾区でのSEO対策・MEO対策の特徴
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -281,10 +281,10 @@ export default function Page() {
                 { n: "03", t: "SEO対策の方向性", b: "「葛飾区 〇〇」「亀有 〇〇」「金町 〇〇」などの地域名+業種・サービス名の複合キーワードで地元ユーザーへのアプローチを強化します。競合分析のうえ、上位表示を狙いやすいキーワードから順に施策を実施します。" },
                 { n: "04", t: "ローカルSEOとMEOの相乗効果", b: "Googleビジネスプロフィールの最適化（MEO）と、ウェブサイト上のローカルSERコンテンツ強化（SEO）を並行して実施することで、Googleの地域検索での露出を最大化します。葛飾区ではこの相乗効果が特に出やすい傾向があります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -297,7 +297,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Our Services</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               葛飾区でサイプレスが提供するサービス
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -308,10 +308,10 @@ export default function Page() {
                 { n: "04", t: "SNS運用・Instagram集客支援", b: "Instagram・X（旧Twitter）・Facebookの運用代行・コンサルティングを提供します。葛飾区の地域性を活かしたコンテンツ設計で、地元フォロワー・来店客増加を目指します。" },
                 { n: "05", t: "地域密着の訪問コンサルティング", b: "葛飾区内・近隣区（足立・江戸川・墨田）への訪問相談に対応しています。現地でのヒアリング・現状分析・Web集客改善提案を対面で実施します。中小企業・個人事業主の方も気軽にご相談ください。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -321,10 +321,10 @@ export default function Page() {
         </section>
 
         {/* Section 4: 主要スポット・地域特性 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Area</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               葛飾区の主要スポット・地域特性
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
@@ -336,8 +336,8 @@ export default function Page() {
                 { area: "立石", desc: "下町情緒あふれる商店街が有名で、昔ながらの飲み屋街「立石仲見世」が人気。SNS映えスポットとしても注目され、インスタグラム集客との相性が良いエリアです。" },
                 { area: "お花茶屋・堀切", desc: "比較的静かな住宅エリアですが、地域住民の生活密着型店舗には根強い需要があります。競合が少ないため、MEO対策の効果が特に出やすい穴場エリアです。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#333333", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -349,7 +349,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Channel Mix</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               エリア別おすすめの集客チャネル
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "640px", marginBottom: "48px" }}>
@@ -362,10 +362,10 @@ export default function Page() {
                 { label: "ホームページ制作", tag: "基盤", desc: "信頼感の醸成・サービス詳細の説明・予約フォーム設置など、集客の「核」となるWebサイトの整備。SEO・MEOと組み合わせて効果を最大化する。" },
                 { label: "SNS（Instagram）", tag: "補完", desc: "立石・柴又などの人気エリアでは、インスタグラムでの拡散が集客に直結するケースがある。写真映えする業種（飲食・美容）では特に有効。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.label} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>{item.label}</p>
+                    <span style={{ fontSize: "11px", background: "#f0f1f2", color: "var(--v2-accent)", border: "1px solid #dde0e4", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -378,7 +378,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Industry Focus</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               業種別の集客ポイント（葛飾区）
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -427,10 +427,10 @@ export default function Page() {
                   b: "「葛飾区 税理士」「亀有 行政書士」「金町 相続相談」などの地域名＋業種・相談種別キーワードでのSEOが集客の主軸となります。専門性を示すコラム・FAQ・Q&Aコンテンツを蓄積することでE-E-A-T（経験・専門性・権威性・信頼性）を高め、AIによる検索引用（AIO対策）にも対応した質の高い情報提供が差別化につながります。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -440,10 +440,10 @@ export default function Page() {
         </section>
 
         {/* Section 7: 実装フロー */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               葛飾区での集客支援 — 実装フロー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "56px" }}>
@@ -492,12 +492,12 @@ export default function Page() {
                   b: "葛飾区内での集客基盤が固まった後は、隣接する足立区・江戸川区・墨田区への商圏拡大施策を提案します。エリアをまたいだキーワード戦略とGBP管理で、さらに広い顧客獲得を支援します。",
                 },
               ].map((item, idx) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: idx === 0 ? "none" : "1px solid #dde0e4" }}>
                   <div style={{ minWidth: "80px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.1em", display: "block" }}>{item.step}</span>
+                    <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.1em", display: "block" }}>{item.step}</span>
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -507,9 +507,9 @@ export default function Page() {
         </section>
 
         {/* Section 8: サイプレスに依頼するメリット（ダーク背景） */}
-        <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに葛飾区の集客を依頼するメリット
             </h2>
@@ -523,7 +523,7 @@ export default function Page() {
                 { n: "06", t: "中小企業・個人事業主に寄り添う価格設計", b: "大企業向けの高額パッケージではなく、葛飾区の中小企業・個人事業主が無理なく継続できる料金設計を心がけています。まずは単発の診断・改善提案からスタートすることも可能です。" },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -533,10 +533,10 @@ export default function Page() {
         </section>
 
         {/* Section: ホームページ制作・補助金活用 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Web Design & Subsidy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               葛飾区でホームページ制作や補助金活用を検討する場合
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" }}>
@@ -549,8 +549,8 @@ export default function Page() {
                 { t: "問い合わせ導線設計", b: "電話・フォーム・LINE・予約システムなど、業種に最適な問い合わせ導線を設計します。" },
                 { t: "補助金時の見積内容整理", b: "申請に必要な制作内容・見積書の整理をサポートします（採択・支給の保証はできません）。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "22px 20px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "22px 20px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
               ))}
@@ -560,7 +560,7 @@ export default function Page() {
                 href="/area/katsushika/web-design"
                 style={{
                   display: "inline-block",
-                  background: "#0d1b2a",
+                  background: "#293540",
                   color: "#fff",
                   padding: "13px 24px",
                   fontSize: "14px",
@@ -577,8 +577,8 @@ export default function Page() {
                 style={{
                   display: "inline-block",
                   background: "#FFFFFF",
-                  color: "#0d1b2a",
-                  border: "1px solid #0d1b2a",
+                  color: "#333333",
+                  border: "1px solid #333333",
                   padding: "13px 24px",
                   fontSize: "14px",
                   fontWeight: 600,
@@ -593,13 +593,13 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="葛飾区に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="葛飾区に関するよくある質問" bgColor="#f0f1f2" />
 
         {/* 葛飾区の専門コラム（トピッククラスター） */}
-        <section style={{ background: "#f8f6f2", padding: "clamp(56px, 8vh, 96px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(56px, 8vh, 96px) 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Katsushika Columns</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               葛飾区のWeb集客 — 専門コラム
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "40px" }}>
@@ -773,14 +773,14 @@ export default function Page() {
               },
             ].map((block) => (
               <div key={block.group} style={{ marginBottom: "36px" }}>
-                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "14px", paddingBottom: "10px", borderBottom: "1px solid #E8E4DC" }}>
+                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "14px", paddingBottom: "10px", borderBottom: "1px solid #dde0e4" }}>
                   {block.group}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                   {block.items.map((l) => (
                     <Link key={l.href} href={l.href} style={{
                       fontSize: "13px", color: "#374151", textDecoration: "none",
-                      padding: "8px 14px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                      padding: "8px 14px", border: "1px solid #dde0e4", background: "#FFFFFF",
                       borderRadius: "4px", letterSpacing: "0.02em",
                     }}>
                       {l.label} →
@@ -793,10 +793,10 @@ export default function Page() {
         </section>
 
         {/* 成功事例への誘導 */}
-        <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#FFFFFF", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "16px", textTransform: "uppercase" }}>Success Cases</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "26px", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "26px", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               業種別・施策別のWeb集客成功事例
             </h2>
             <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.9", maxWidth: "620px", marginBottom: "24px" }}>
@@ -814,7 +814,7 @@ export default function Page() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

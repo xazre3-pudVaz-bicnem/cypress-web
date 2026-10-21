@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const FAQS = [
   {
@@ -53,7 +52,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       <div className="flex items-center justify-between py-5 gap-4">
         <div className="flex items-start gap-3">
           <span className="font-mono text-xs mt-0.5 shrink-0" style={{ color: "#8B5CF6" }}>Q</span>
-          <span className="text-[#0F172A] text-sm font-medium leading-relaxed">{q}</span>
+          <span className="text-[#333333] text-sm font-medium leading-relaxed">{q}</span>
         </div>
         <div
           className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 transition-transform"
@@ -96,7 +95,7 @@ export default function RecruitFaqPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-20 relative overflow-hidden">
+        <section data-page-hero className="pt-32 pb-20 relative overflow-hidden">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -107,15 +106,15 @@ export default function RecruitFaqPage() {
           />
           <div className="relative z-10 max-w-4xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#475569] mb-8">
-              <Link href="/" className="hover:text-[#2563EB] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/recruit" className="hover:text-[#2563EB] transition-colors">採用情報</Link>
+              <Link href="/recruit" className="hover:text-[#096fc8] transition-colors">採用情報</Link>
               <span>/</span>
-              <span className="text-[#2563EB]">採用FAQ</span>
+              <span className="text-[#096fc8]">採用FAQ</span>
             </nav>
-            <SectionLabel color="#8B5CF6">Recruit FAQ</SectionLabel>
+            <p>Recruit FAQ</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-6"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-6"
               style={{ fontSize: "clamp(28px, 4vw, 56px)" }}
             >
               採用よくある質問
@@ -141,7 +140,7 @@ export default function RecruitFaqPage() {
         {/* CTA */}
         <section
           className="py-20"
-          style={{ background: "#2563EB", borderTop: "1px solid rgba(255,255,255,0.15)" }}
+          style={{ background: "#096fc8", borderTop: "1px solid rgba(255,255,255,0.15)" }}
         >
           <div className="max-w-4xl mx-auto px-6 text-center">
             <ScrollReveal>
@@ -151,7 +150,7 @@ export default function RecruitFaqPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-[#2563EB] bg-white text-sm transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-[#096fc8] bg-white text-sm transition-all hover:scale-105"
               >
                 カジュアル面談を申し込む →
               </Link>

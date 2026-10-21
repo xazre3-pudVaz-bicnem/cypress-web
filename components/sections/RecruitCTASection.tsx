@@ -25,7 +25,7 @@ export default function RecruitCTASection() {
             <SectionLabel>Recruit</SectionLabel>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#333333" }}
             >
               一緒に未来を創りませんか
             </h2>
@@ -37,7 +37,7 @@ export default function RecruitCTASection() {
               href="/recruit"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white text-sm transition-all hover:opacity-90 hover:scale-105"
               style={{
-                background: "#2563EB",
+                background: "#096fc8",
                 boxShadow: "0 4px 14px rgba(37,99,235,0.3)",
               }}
             >
@@ -73,7 +73,7 @@ export default function RecruitCTASection() {
                     }}
                   >
                     <div>
-                      <div className="font-semibold text-sm mb-1" style={{ color: "#0F172A" }}>
+                      <div className="font-semibold text-sm mb-1" style={{ color: "#333333" }}>
                         {p.title}
                       </div>
                       <div className="text-xs" style={{ color: "#64748B" }}>{p.desc}</div>
@@ -82,7 +82,7 @@ export default function RecruitCTASection() {
                       className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-200 group-hover:translate-x-1"
                       style={{
                         background: "rgba(37,99,235,0.08)",
-                        color: "#2563EB",
+                        color: "#096fc8",
                       }}
                     >
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -106,7 +106,7 @@ export default function RecruitCTASection() {
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
                     style={{
                       background: "rgba(37,99,235,0.08)",
-                      color: "#2563EB",
+                      color: "#096fc8",
                     }}
                   >
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -114,7 +114,7 @@ export default function RecruitCTASection() {
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-sm" style={{ color: "#0F172A" }}>
+                    <div className="font-semibold text-sm" style={{ color: "#333333" }}>
                       フルリモート・東京勤務選択可
                     </div>
                     <div className="text-xs mt-0.5" style={{ color: "#64748B" }}>

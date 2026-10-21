@@ -138,7 +138,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -148,7 +148,7 @@ export default function Page() {
               <span style={{ color: "#374151" }}>美容室・サロンのMEO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Beauty Salon MEO</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               美容室・美容サロンのMEO対策｜<br />新規集客と再来店促進
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -174,7 +174,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "36px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "36px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "680px", display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -187,7 +187,7 @@ export default function Page() {
                 "美容室特有のFAQ20問——実際の現場で出る疑問に全て答えます",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.7", flexShrink: 0 }}>→</span>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.7", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -196,9 +196,9 @@ export default function Page() {
         </section>
 
         {/* Dark challenges block */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Salon MEO Challenges</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Salon MEO Challenges</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               美容室・サロンのMEO対策で解決できる集客課題
             </h2>
@@ -209,7 +209,7 @@ export default function Page() {
                 { t: "施術写真が少なく魅力が伝わらない", b: "施術写真・内装・スタッフの写真が不足していると、ユーザーが安心して来店を決断できません。美容室のGBPは写真数と品質が他業種より特に重要で、ビフォーアフターが最も訴求力を持ちます。" },
                 { t: "ホットペッパー依存で集客コストが高い", b: "掲載費が高騰するプラットフォームに頼り続けるリスクがあります。GBP経由の直接予約が増えるほど集客コストを大幅に圧縮でき、利益率の改善につながります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -219,10 +219,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               よくある課題と原因
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -271,10 +271,10 @@ export default function Page() {
                   b: "スタッフ休暇・研修・祝日の時間変更をGBPに反映し忘れると、来店したのに閉まっていたというトラブルが発生します。変更確定後すぐにGBPの「特別営業時間」を更新するフローを確立します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -287,13 +287,13 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Service Type</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               施術ジャンル別の活用ポイント
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
               美容サロンのMEO対策は取り扱うサービスによって重要なポイントが異なります。自店舗の主力施術に合わせた最適化を行うことで集客の精度が上がります。
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#E8E4DC", border: "1px solid #E8E4DC" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4", border: "1px solid #dde0e4" }}>
               {[
                 {
                   type: "カラー専門サロン",
@@ -329,7 +329,7 @@ export default function Page() {
                 },
               ].map((item, i) => (
                 <div key={i} style={{ background: "#FFFFFF", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.type}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px" }}>{item.type}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.points}</p>
                 </div>
               ))}
@@ -338,10 +338,10 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               実装・改善フロー
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -390,10 +390,10 @@ export default function Page() {
                   b: "GBPインサイトで検索クエリ・クリック数・ルート案内・電話タップ数を月次で計測します。前月比の変化と競合GBPの変化を比較し、次月の施策優先度を決定します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -406,7 +406,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI & Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               成果を見るための指標
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -422,11 +422,11 @@ export default function Page() {
                 { n: "06", t: "電話タップ数", where: "計測場所：GBPインサイト「電話」", b: "GBPの電話番号へのタップ数は当日予約・急ぎの問い合わせの指標です。電話タップが増えていればGBPの露出が上がっているサインです。" },
                 { n: "07", t: "競合比較（施術写真数・口コミ数）", where: "計測場所：Googleマップで競合GBPを手動確認", b: "近隣競合サロンと施術写真数・口コミ数・更新頻度を比較します。差が大きい項目を特定し、優先的に改善することで競合優位性を高めます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.t}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "8px", fontStyle: "italic" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.t}</p>
+                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginBottom: "8px", fontStyle: "italic" }}>{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -436,10 +436,10 @@ export default function Page() {
         </section>
 
         {/* Why MEO Matters */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why MEO Matters</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               美容室にMEO対策が必要な理由
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -450,10 +450,10 @@ export default function Page() {
                 { n: "04", t: "口コミが長期的な資産になる", b: "積み上げた口コミ・高評価は競合が簡単には真似できない強みです。誠実な返信と高品質な施術を続けることで自然と口コミが増え、集客の好循環が生まれます。" },
                 { n: "05", t: "地域のブランド認知度が高まる", b: "Googleマップ上位に継続表示されることで、エリア内での認知度が自然に高まります。「あの地域で有名なサロン」としての地位を築けます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -463,7 +463,7 @@ export default function Page() {
         </section>
 
         {/* CTA inline */}
-        <section style={{ background: "#0d1b2a", padding: "60px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "60px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "20px" }}>
             <p style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#FFFFFF", fontWeight: 700 }}>
               美容室・サロンのMEO対策、まずは現状診断から
@@ -471,7 +471,7 @@ export default function Page() {
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9", maxWidth: "520px" }}>
               GBPの現状・競合との差・改善優先度を無料でお伝えします。美容業界専門のMEOコンサルタントがご対応します。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", padding: "14px 40px", background: "#0F172A", color: "#FFFFFF", fontSize: "14px", fontWeight: 600, letterSpacing: "0.08em", border: "1px solid rgba(196,184,154,0.4)", textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", padding: "14px 40px", background: "#293540", color: "#FFFFFF", fontSize: "14px", fontWeight: 600, letterSpacing: "0.08em", border: "1px solid rgba(9,111,200,0.4)", textDecoration: "none" }}>
               無料診断を依頼する
             </Link>
           </div>

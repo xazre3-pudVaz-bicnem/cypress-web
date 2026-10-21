@@ -139,17 +139,17 @@ export default function AutomationPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/ai" style={{ color: "#6B7280" }}>AI活用</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>業務自動化</span>
+              <span style={{ color: "#333333" }}>業務自動化</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI Automation</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI業務自動化<br />Make・Zapier×ChatGPT APIで繰り返し業務を自動化
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -168,10 +168,10 @@ export default function AutomationPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "680px", display: "flex", flexDirection: "column" }}>
@@ -183,8 +183,8 @@ export default function AutomationPage() {
                 "個人情報・機密情報を含む業務を自動化する際のセキュリティ上の注意点",
                 "自動化効果を定量的に把握するKPI設定と計測場所の一覧",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
               ))}
@@ -196,7 +196,7 @@ export default function AutomationPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Automation Areas</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIで自動化できるマーケティング業務
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0 48px" }}>
@@ -208,8 +208,8 @@ export default function AutomationPage() {
                 { title: "リードナーチャリングの自動化", body: "問い合わせ者へのステップメール・フォロー連絡をCRM（HubSpot・Salesforce等）と連携してAI支援で自動化します。担当者への通知・メモの自動生成も含みます。" },
                 { title: "社内文書・議事録の効率化", body: "会議録音→文字起こし→要約・アクションアイテム抽出→Notionへの自動保存というワークフローをAIで構築します。議事録作成の時間を大幅に削減できます。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC", paddingTop: "24px", paddingBottom: "24px" }}>
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4", paddingTop: "24px", paddingBottom: "24px" }}>
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -218,10 +218,10 @@ export default function AutomationPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -267,12 +267,12 @@ export default function AutomationPage() {
                   b: "ROI計算は「削減できる時間×時給換算」と「ツール・API費用」の比較で算出できます。月20時間削減できれば時給3,000円換算で月6万円分の価値があり、ツール費用が月1〜2万円程度であれば3〜4ヶ月以内に投資回収できます。導入前にROI試算を行い、経営判断の材料とすることが重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p className="font-bold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default function AutomationPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
@@ -331,12 +331,12 @@ export default function AutomationPage() {
                   detail: "見積依頼フォームの送信から、案件情報のスプレッドシート登録・担当者への自動割り振り・進捗ステータスの更新・顧客へのフォローメールまで一連のフローを自動化します。対応漏れ防止と顧客体験向上を同時に実現できます。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px 24px 28px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ padding: "28px 24px 28px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "#c4b89a" }}>{item.industry}</span>
+                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "var(--v2-accent)" }}>{item.industry}</span>
                   </div>
-                  <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.point}</p>
+                  <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.detail}</p>
                 </div>
               ))}
@@ -345,10 +345,10 @@ export default function AutomationPage() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               導入・実装フロー
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -404,10 +404,10 @@ export default function AutomationPage() {
                   b: "月次でワークフローの動作確認・エラーログの確認・API仕様変更への対応・プロンプトの改善を実施します。削減時間・処理件数・コストのKPIをレポートし、次の自動化候補の検討も継続的に行います。",
                 },
               ].map((item) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
-                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -420,7 +420,7 @@ export default function AutomationPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -454,10 +454,10 @@ export default function AutomationPage() {
                   how: "自動化対象業務を担当していたメンバーの月間残業時間の推移を確認。給与明細・勤怠管理システムで計測。自動化による生産性向上の最終指標として活用。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold mb-1" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
+                    <p className="font-semibold mb-1" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.how}</p>
                   </div>
                 </div>
@@ -466,7 +466,7 @@ export default function AutomationPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI業務自動化のご相談"

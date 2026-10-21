@@ -148,17 +148,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/area" style={{ color: "#6B7280" }}>対応エリア</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>墨田区</span>
+              <span style={{ color: "#333333" }}>墨田区</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Sumida Ward</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#333333", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
               墨田区のSEO・MEO対策<br />ホームページ制作
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -187,7 +187,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Market</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区のビジネス環境と集客課題
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -199,10 +199,10 @@ export default function Page() {
                 { n: "05", t: "職人技術・クラフト系ビジネスの集客課題", b: "墨田区は伝統的な職人技術（革細工・金属・染色・和菓子など）のビジネスが多く残っています。これらのビジネスはウェブ発信が遅れているケースが多く、正しくSEO・SNS対応することで大きな集客改善が見込まれます。" },
                 { n: "06", t: "葛飾区からの商圏重複", b: "墨田区北部（向島・曳舟）は葛飾区と商圏が重複しており、葛飾区のSEO・MEO施策と連動した広域集客が可能です。亀戸（江東区）も含めた東部エリア全体の集客戦略を一元的に管理できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -212,10 +212,10 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               墨田区でのSEO対策・MEO対策の特徴
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -228,10 +228,10 @@ export default function Page() {
                 { n: "03", t: "インバウンド向けGBP最適化", b: "スカイツリー観光客の多い押上・錦糸町エリアでは、Googleビジネスプロフィールへの英語・中国語・韓国語の写真キャプション・サービス説明追加が効果的です。外国語でのクチコミへの返信対応も重要です。" },
                 { n: "04", t: "SNS×MEO×SEOの組み合わせ戦略", b: "おしゃれカフェ・スイーツ・和菓子・伝統工芸など墨田区のSNS映えコンテンツをInstagramで発信しながら、MEO・SEOでの検索流入と組み合わせることで、観光客と地元客の両方へのリーチを最大化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Our Services</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区でサイプレスが提供するサービス
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -255,10 +255,10 @@ export default function Page() {
                 { n: "04", t: "ホームページ・ブランディングサイト制作", b: "おしゃれカフェ・和菓子・職人技術・伝統工芸など墨田区の個性的なビジネスに合ったブランドサイト・LP制作を行います。世界観を伝えるデザインで観光客・SNSからの流入を集客に変換します。" },
                 { n: "05", t: "SNS運用（Instagram・X）", b: "墨田区の飲食店・スイーツ・カフェ・伝統工芸のInstagramを中心としたSNS運用を支援します。観光客のSNSシェアを誘発するコンテンツ設計で二次拡散を生み出す戦略を実施します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -268,10 +268,10 @@ export default function Page() {
         </section>
 
         {/* Section 4: 主要スポット・地域特性 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Area</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区の主要スポット・地域特性
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
@@ -282,8 +282,8 @@ export default function Page() {
                 { area: "向島・東向島", desc: "向島百花園・料亭街など伝統文化が残る下町エリア。職人・料亭・和菓子など独自性の高いビジネスが多く、ブランディングサイトとSNS集客との相性が良い。" },
                 { area: "曳舟・東曳舟", desc: "曳舟駅周辺の住宅エリアで、地域住民の日常消費が主な需要。MEO競合が少ない穴場で、基本的なGBP最適化だけで上位表示を狙えるエリア。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#333333", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -295,7 +295,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Channel Mix</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               墨田区でおすすめの集客チャネル
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
@@ -305,10 +305,10 @@ export default function Page() {
                 { label: "ローカルSEO", tag: "推奨", desc: "「墨田区 〇〇」「錦糸町 〇〇」などの検索上位表示で継続的な集客基盤を構築。観光客・地元客の両方にリーチするキーワード設計が可能。" },
                 { label: "Web制作", tag: "基盤", desc: "世界観を伝えるブランドサイトが集客の核になる。観光客には英語対応・地元客にはローカル感のある設計で、両ターゲットへの訴求を最大化する。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.label} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>{item.label}</p>
+                    <span style={{ fontSize: "11px", background: "#f0f1f2", color: "var(--v2-accent)", border: "1px solid #dde0e4", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -321,7 +321,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>By Industry</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               業種別の集客ポイント（墨田区）
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -370,9 +370,9 @@ export default function Page() {
                   note: "「墨田区 賃貸」「錦糸町 不動産」「向島 リノベーション」など地域特化キーワードのSEOと、エリア情報・物件紹介コンテンツの充実が集客の核になります。下町エリアへの移住需要・リノベーション需要を掘り起こすコンテンツ設計が有効です。",
                 },
               ].map((item) => (
-                <div key={item.industry} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "#c4b89a", textTransform: "uppercase", marginBottom: "8px" }}>{item.point}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>{item.industry}</p>
+                <div key={item.industry} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "var(--v2-accent)", textTransform: "uppercase", marginBottom: "8px" }}>{item.point}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "12px" }}>{item.industry}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                 </div>
               ))}
@@ -381,10 +381,10 @@ export default function Page() {
         </section>
 
         {/* Section B: 実装フロー */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               墨田区の地域ビジネス 集客施策の実装フロー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "56px" }}>
@@ -433,12 +433,12 @@ export default function Page() {
                   desc: "毎月の検索順位・GBPのインサイト・ウェブサイトのアクセス分析をレポートします。データをもとに施策を継続改善し、墨田区での集客を長期的に最大化します。",
                 },
               ].map((item) => (
-                <div key={item.step} style={{ display: "flex", gap: "28px", padding: "28px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "28px", padding: "28px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ minWidth: "48px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "20px", fontWeight: 700 }}>{item.step}</span>
+                    <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "20px", fontWeight: 700 }}>{item.step}</span>
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>
@@ -448,9 +448,9 @@ export default function Page() {
         </section>
 
         {/* Section C: サイプレスに依頼するメリット（ダーク背景） */}
-        <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -478,7 +478,7 @@ export default function Page() {
                 },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -487,7 +487,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="墨田区に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="墨田区に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="墨田区のWeb集客、まずは無料相談から"

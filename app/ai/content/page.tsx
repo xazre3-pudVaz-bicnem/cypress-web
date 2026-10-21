@@ -139,17 +139,17 @@ export default function AiContentPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/ai" style={{ color: "#6B7280" }} className="hover:underline">AI活用</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>AIコンテンツ制作</span>
+              <span style={{ color: "#333333" }}>AIコンテンツ制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI Content</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIコンテンツ制作支援
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -168,10 +168,10 @@ export default function AiContentPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>On This Page</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -184,7 +184,7 @@ export default function AiContentPage() {
                 "コンテンツ制作時間削減率・外注コスト削減額など成果を可視化する7つのKPI指標",
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{point}</p>
                 </div>
               ))}
@@ -196,7 +196,7 @@ export default function AiContentPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Workflow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI×人間協働のコンテンツ制作フロー
             </h2>
             <div className="max-w-4xl">
@@ -207,27 +207,27 @@ export default function AiContentPage() {
                 { who: "人間", step: "STEP 04", title: "品質レビュー・ファクトチェック", body: "数値・人物名・法律情報などをオリジナルソースで確認します。AIのハルシネーションを排除し、ブランドトーンとの一致を確認します。" },
                 { who: "人間/AI", step: "STEP 05", title: "内部SEO最適化・公開", body: "タイトル・メタディスクリプション・見出し・内部リンク・alt属性を最適化して公開します。構造化データ（FAQPage等）も実装します。" },
               ].map((s, i) => (
-                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="shrink-0 w-20">
-                    <p className="text-[10px] font-semibold tracking-widest uppercase" style={{ color: s.who === "AI" ? "#6B7280" : "#0d1b2a" }}>{s.who}</p>
+                    <p className="text-[10px] font-semibold tracking-widest uppercase" style={{ color: s.who === "AI" ? "#6B7280" : "#333333" }}>{s.who}</p>
                     <p className="text-[11px]" style={{ color: "#9CA3AF" }}>{s.step}</p>
                   </div>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{s.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{s.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{s.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl">
@@ -273,15 +273,15 @@ export default function AiContentPage() {
                   body: "「どこまでAIに任せるか」が曖昧だと、担当者によって品質がバラつきます。制作フローを標準化し、「AIが担う工程」と「人間が必ず確認する工程」をチェックリスト化することで、チーム全体で均質な品質を保てます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -290,7 +290,7 @@ export default function AiContentPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-0">
@@ -328,11 +328,11 @@ export default function AiContentPage() {
                   points: "提案書のドラフト・ホワイトペーパーの構成案と本文・サービス説明文・営業メールテンプレートにAIを活用。専門性の高い内容は担当者が一次情報を提供してAIに文章化させる役割分担が有効です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6 pr-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="py-6 pr-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="flex gap-4">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                     <div>
-                      <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                      <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</p>
                       <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.points}</p>
                     </div>
                   </div>
@@ -343,10 +343,10 @@ export default function AiContentPage() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               導入・実装フロー
             </h2>
             <div className="max-w-4xl">
@@ -402,17 +402,17 @@ export default function AiContentPage() {
                   body: "成果が良かったコンテンツの特徴を分析し、プロンプトに反映します。「このプロンプトで生成した記事はCV率が高い」「この指示だとSEO流入が伸びた」という学習を組織の資産として蓄積し、精度を継続的に向上させます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="shrink-0 w-20">
-                    <p className="text-[11px] font-semibold" style={{ color: "#c4b89a" }}>{item.step}</p>
+                    <p className="text-[11px] font-semibold" style={{ color: "var(--v2-accent)" }}>{item.step}</p>
                   </div>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -421,7 +421,7 @@ export default function AiContentPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI Metrics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl">
@@ -462,21 +462,21 @@ export default function AiContentPage() {
                   desc: "コンテンツを読んだユーザーが問い合わせ・購買・資料請求などのCVアクションをとった割合です。コンテンツの質と訴求力を測る最終指標です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#c4b89a" }}>計測場所: {item.where}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                    <p className="text-[12px] font-semibold mb-2" style={{ color: "var(--v2-accent)" }}>計測場所: {item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIコンテンツ制作についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="AIコンテンツ制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIコンテンツ制作体制構築のご相談"

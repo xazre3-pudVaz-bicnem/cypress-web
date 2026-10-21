@@ -1,27 +1,14 @@
 ﻿import type { Metadata } from "next";
-import { Noto_Serif_JP, Noto_Sans_JP, Cormorant_Garamond, Google_Sans_Flex } from "next/font/google";
+import { Noto_Sans_JP, Google_Sans_Flex } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/chatbot/ChatWidget";
+import SmoothScroll from "@/components/motion/SmoothScroll";
 import { BUSINESSES, COMPANY } from "@/lib/company";
-
-const notoSerifJP = Noto_Serif_JP({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
-  display: "swap",
-});
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  display: "swap",
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -252,7 +239,7 @@ export default function RootLayout({
       lang="ja"
       // トップのイントロ判定スクリプトが描画前に class / data-motion を付けるため
       suppressHydrationWarning
-      className={`${notoSerifJP.variable} ${notoSansJP.variable} ${cormorant.variable} ${googleSansFlex.variable} h-full`}
+      className={`${notoSansJP.variable} ${googleSansFlex.variable} h-full`}
     >
       <head>
         <script
@@ -265,7 +252,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col antialiased">
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
         {/* AI相談チャット。APIキー未設定の環境で壊れたUIを出さないよう、明示的に有効化したときだけ表示する。 */}
         {process.env.CHATBOT_ENABLED === "true" && <ChatWidget />}
       </body>

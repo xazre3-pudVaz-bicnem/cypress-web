@@ -182,15 +182,15 @@ export default function AiPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>AI活用</span>
+              <span style={{ color: "#333333" }}>AI活用</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>AI Marketing</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI活用マーケティング
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -216,10 +216,10 @@ export default function AiPage() {
         </section>
 
         {/* AI活用の主要領域 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Areas</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI活用マーケティングの主要領域
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -227,17 +227,17 @@ export default function AiPage() {
             </p>
             <div className="max-w-4xl space-y-0">
               {aiAreas.map((area, i) => (
-                <Link key={i} href={area.href} className="block group py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <Link key={i} href={area.href} className="block group py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="flex justify-between items-start">
                     <div>
-                      <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#0d1b2a" }}>{area.title}</p>
+                      <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#333333" }}>{area.title}</p>
                       <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{area.desc}</p>
                     </div>
                     <span className="shrink-0 ml-6 text-[13px] mt-1" style={{ color: "#9CA3AF" }}>→</span>
                   </div>
                 </Link>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -246,7 +246,7 @@ export default function AiPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Business Impact</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AIマーケティングが変えるビジネスの5領域
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -254,24 +254,24 @@ export default function AiPage() {
             </p>
             <div className="max-w-4xl">
               {aiBusinessImpacts.map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Split: AI×SEO×AIO */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI × SEO × AIO</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI時代のSEO・AIO統合戦略
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -279,8 +279,8 @@ export default function AiPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl">
               {aiSeoAio.map((item, i) => (
-                <div key={i} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#ffffff" }}>
-                  <p className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
+                <div key={i} style={{ padding: "28px", border: "1px solid #dde0e4", background: "#ffffff" }}>
+                  <p className="font-bold text-[15px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -292,7 +292,7 @@ export default function AiPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別AI活用事例
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -300,8 +300,8 @@ export default function AiPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {aiIndustryCases.map((c, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#F9F8F5" }}>
-                  <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{c.industry}</p>
+                <div key={i} style={{ padding: "24px", border: "1px solid #dde0e4", background: "#f0f1f2" }}>
+                  <p className="font-bold text-[14px] mb-3" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{c.industry}</p>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{c.use}</p>
                 </div>
               ))}
@@ -310,9 +310,9 @@ export default function AiPage() {
         </section>
 
         {/* Dark section: サイプレスのAI支援 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Our Capabilities</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-display)" }}>Our Capabilities</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               サイプレスのAI活用支援でできること
             </h2>
@@ -336,23 +336,23 @@ export default function AiPage() {
         </section>
 
         {/* AI活用でよくある失敗 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
-            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               AI活用でよくある失敗パターン
             </h2>
             <div className="max-w-4xl">
               {aiMistakes.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

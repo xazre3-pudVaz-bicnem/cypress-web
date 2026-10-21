@@ -23,7 +23,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -33,7 +33,7 @@ export default function Page() {
               募集要項
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Job Description</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               募集要項
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -70,13 +70,13 @@ export default function Page() {
                 },
               ].map((job, ji) => (
                 <div key={ji} style={{ marginBottom: "64px" }}>
-                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px", paddingBottom: "12px", borderBottom: "2px solid #0d1b2a" }}>
+                  <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", color: "#333333", fontWeight: 700, marginBottom: "24px", paddingBottom: "12px", borderBottom: "2px solid #333333" }}>
                     {job.role}
                   </h2>
                   <table style={{ width: "100%", fontSize: "14px", borderCollapse: "collapse" }}>
                     <tbody>
                       {job.items.map((item, ii) => (
-                        <tr key={ii} style={{ borderTop: "1px solid #ece8e0" }}>
+                        <tr key={ii} style={{ borderTop: "1px solid #dde0e4" }}>
                           <td style={{ color: "#9ca3af", paddingTop: "12px", paddingBottom: "12px", paddingRight: "24px", whiteSpace: "nowrap", verticalAlign: "top", width: "120px" }}>{item.label}</td>
                           <td style={{ color: "#374151", paddingTop: "12px", paddingBottom: "12px", lineHeight: "1.8" }}>{item.val}</td>
                         </tr>
@@ -87,7 +87,7 @@ export default function Page() {
               ))}
 
               <div>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px", paddingBottom: "12px", borderBottom: "2px solid #0d1b2a" }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "18px", color: "#333333", fontWeight: 700, marginBottom: "24px", paddingBottom: "12px", borderBottom: "2px solid #333333" }}>
                   共通福利厚生・環境
                 </h2>
                 <table style={{ width: "100%", fontSize: "14px", borderCollapse: "collapse" }}>
@@ -99,7 +99,7 @@ export default function Page() {
                       { label: "書籍・学習費", val: "業務関連の書籍・オンライン講座費用を会社負担" },
                       { label: "AIツール費用", val: "ChatGPT Plus・Claude Pro等のAIツール利用費を支給" },
                     ].map((item, ii) => (
-                      <tr key={ii} style={{ borderTop: "1px solid #ece8e0" }}>
+                      <tr key={ii} style={{ borderTop: "1px solid #dde0e4" }}>
                         <td style={{ color: "#9ca3af", paddingTop: "12px", paddingBottom: "12px", paddingRight: "24px", whiteSpace: "nowrap", verticalAlign: "top", width: "120px" }}>{item.label}</td>
                         <td style={{ color: "#374151", paddingTop: "12px", paddingBottom: "12px", lineHeight: "1.8" }}>{item.val}</td>
                       </tr>

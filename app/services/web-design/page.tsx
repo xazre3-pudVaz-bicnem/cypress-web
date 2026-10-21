@@ -166,17 +166,17 @@ export default function ServicesWebDesignPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>Web制作</span>
+              <span style={{ color: "#333333" }}>Web制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Web Design Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               Web制作サービス
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -186,10 +186,10 @@ export default function ServicesWebDesignPage() {
               単なるデザイン制作ではなく、ビジネス目標から逆算したコンテンツ設計・集客設計・SEO設計を含む「成果を出すWebサイト」を制作します。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ background: "#0F172A", color: "#FFFFFF" }}>
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/homepage" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #E8E4DC", color: "#374151" }}>
+              <Link href="/cost/homepage" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #dde0e4", color: "#374151" }}>
                 料金・プランを見る
               </Link>
             </div>
@@ -206,7 +206,7 @@ export default function ServicesWebDesignPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-0">
@@ -218,29 +218,29 @@ export default function ServicesWebDesignPage() {
                 "初回相談から公開・保守までの10ステップの制作フロー",
                 "成果を測るための具体的なKPI（7指標）と計測方法",
               ].map((item, i) => (
-                <div key={i} className="flex gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex gap-4 py-4" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* サイトタイプ */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Site Types</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               対応サイトタイプ
             </h2>
             <div className="max-w-4xl space-y-0">
               {siteTypes.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6 group" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6 group" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div className="flex-1">
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.type}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.type}</p>
                     <p className="text-[14px] leading-[1.9] mb-3" style={{ color: "#374151" }}>{item.desc}</p>
                     <Link href={item.link} className="text-[12px] font-medium" style={{ color: "#6B7280" }}>
                       詳細を見る →
@@ -248,15 +248,15 @@ export default function ServicesWebDesignPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Webサイトが集客を変える理由 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why Your Website Matters</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Why Your Website Matters</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               優れたWebサイトが集客・採用・信頼を変える理由
             </h2>
@@ -267,8 +267,8 @@ export default function ServicesWebDesignPage() {
                 { n: "03", t: "採用候補者の応募意欲を大きく左右する", b: "求職者は応募前に必ず企業サイトを確認します。魅力的な採用ページ・代表メッセージ・チーム紹介が整っていると、応募率と採用品質が向上します。" },
                 { n: "04", t: "古いサイトが与える信頼毀損", b: "デザインが古い・モバイル対応していない・表示が遅いサイトは、ユーザーに不安を与えます。第一印象で離脱されれば、どれほど良いサービスでも選ばれません。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.2)" }}>
-                  <span style={{ color: "#c4b89a", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px", fontFamily: "var(--font-serif)" }}>{item.n}</span>
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.2)" }}>
+                  <span style={{ color: "var(--v2-accent)", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px", fontFamily: "var(--font-serif)" }}>{item.n}</span>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#ffffff" }}>{item.t}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
                 </div>
@@ -278,10 +278,10 @@ export default function ServicesWebDesignPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -327,15 +327,15 @@ export default function ServicesWebDesignPage() {
                   body: "要件定義が不十分なまま制作を進めると、完成物がイメージと乖離します。ワイヤーフレーム・デザインカンプの段階での確認・フィードバックを丁寧に行う制作プロセスが品質を担保します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -344,7 +344,7 @@ export default function ServicesWebDesignPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-0 max-w-5xl">
@@ -382,8 +382,8 @@ export default function ServicesWebDesignPage() {
                   body: "製品仕様・導入事例・ホワイトペーパー・資料DLの導線が商談創出の起点になります。サービスサイト全体のCV設計・問い合わせフォームの入力負荷軽減・SEOコンテンツ戦略を一体で設計します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[14px] mb-2" style={{ color: "#c4b89a" }}>{item.industry}</p>
+                <div key={i} className="py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[14px] mb-2" style={{ color: "var(--v2-accent)" }}>{item.industry}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -392,10 +392,10 @@ export default function ServicesWebDesignPage() {
         </section>
 
         {/* Section D: ご支援の流れ */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Production Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ご支援の流れ
             </h2>
             <div className="max-w-4xl">
@@ -411,15 +411,15 @@ export default function ServicesWebDesignPage() {
                 { step: "STEP 09", t: "公開・ドメイン設定", b: "本番環境への公開・ドメイン設定・SSL証明書の確認・Google Search ConsoleへのサイトマップXML送信・GA4の目標設定を行います。" },
                 { step: "STEP 10", t: "保守・運用サポート", b: "公開後の月次保守（セキュリティ更新・バックアップ・軽微な修正）・アクセス解析レポート・SEO改善提案・コンテンツ更新代行で継続的にご支援します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1" style={{ background: "#c4b89a", color: "#ffffff", letterSpacing: "0.1em" }}>{item.step}</span>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1" style={{ background: "var(--v2-accent)", color: "#ffffff", letterSpacing: "0.1em" }}>{item.step}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -428,7 +428,7 @@ export default function ServicesWebDesignPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -469,25 +469,25 @@ export default function ServicesWebDesignPage() {
                   desc: "サイト訪問者のうち問い合わせ・申し込みなどのコンバージョンに至った割合です。CTA・フォーム・ページ構成の改善効果を直接評価できる最重要指標の一つです。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div className="flex-1">
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                    <p className="text-[12px] font-medium mb-2" style={{ color: "#c4b89a" }}>計測場所: {item.how}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                    <p className="text-[12px] font-medium mb-2" style={{ color: "var(--v2-accent)" }}>計測場所: {item.how}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* こだわり */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Approach</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのWeb制作の特徴
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -497,8 +497,8 @@ export default function ServicesWebDesignPage() {
                 { title: "コンバージョン設計（CV改善）", body: "美しいだけのサイトは作りません。問い合わせ・電話・LINE・申し込みへの導線設計・CTAの配置・フォーム最適化・FAQ（不安解消）を含むCV設計を標準で行います。" },
                 { title: "構造化データの標準実装", body: "BreadcrumbList・FAQPage・Organization・LocalBusinessなどのJSON-LD構造化データを全案件で実装します。リッチリザルト獲得・AI検索（AIO）対策にも貢献します。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}

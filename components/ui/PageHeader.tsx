@@ -21,12 +21,12 @@ export default function PageHeader({
         }}
       />
       <div className="relative max-w-6xl mx-auto px-6">
-        <span className="text-[11px] font-mono tracking-[0.22em] text-[#2563EB] uppercase block mb-4">
+        <span className="text-[11px] font-mono tracking-[0.22em] text-[#096fc8] uppercase block mb-4">
           {label}
         </span>
         <h1
           className="font-black leading-[1.1] tracking-[-0.02em]"
-          style={{ fontSize: "clamp(36px, 5vw, 64px)", color: "#0F172A" }}
+          style={{ fontSize: "clamp(36px, 5vw, 64px)", color: "#333333" }}
         >
           {title}
         </h1>

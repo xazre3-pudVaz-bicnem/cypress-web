@@ -79,15 +79,16 @@ export default function ServicesIndexPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>サービス一覧</span>
+              <span style={{ color: "#333333" }}>サービス一覧</span>
             </nav>
+            <p>Services</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               サービス一覧
@@ -106,7 +107,7 @@ export default function ServicesIndexPage() {
               <ScrollReveal key={s.slug} delay={i * 0.05}>
                 <div
                   className="py-10"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <div className="grid lg:grid-cols-[1fr_1fr] gap-8">
                     {/* Left */}
@@ -118,7 +119,7 @@ export default function ServicesIndexPage() {
                         {s.tagline}
                       </p>
                       <h2
-                        className="font-black text-[#0F172A] leading-tight mb-4"
+                        className="font-black text-[#333333] leading-tight mb-4"
                         style={{ fontSize: "clamp(18px, 2.5vw, 26px)" }}
                       >
                         {s.name}
@@ -130,7 +131,7 @@ export default function ServicesIndexPage() {
                         <Link
                           href={`/services/${s.slug}`}
                           className="inline-flex items-center gap-2 text-xs font-medium transition-colors"
-                          style={{ color: "#0F172A" }}
+                          style={{ color: "#333333" }}
                         >
                           サービス詳細を見る
                           <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -150,7 +151,7 @@ export default function ServicesIndexPage() {
                           >
                             <span
                               className="mt-2 shrink-0 block w-1 h-1 rounded-full"
-                              style={{ background: "#0F172A" }}
+                              style={{ background: "#293540" }}
                             />
                             {f.title}
                           </li>
@@ -161,18 +162,18 @@ export default function ServicesIndexPage() {
                 </div>
               </ScrollReveal>
             ))}
-            <div style={{ borderTop: "1px solid #E8E4DC" }} />
+            <div style={{ borderTop: "1px solid #dde0e4" }} />
           </div>
         </section>
 
         {/* Service Guidance */}
         <section
           className="py-20"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <ScrollReveal>
-              <h2 className="font-bold text-[#0F172A] text-xl mb-3">
+              <h2 className="font-bold text-[#333333] text-xl mb-3">
                 どのサービスから始めればよいか
               </h2>
               <p className="text-[#374151] text-sm leading-relaxed mb-10 max-w-2xl">
@@ -184,7 +185,7 @@ export default function ServicesIndexPage() {
                     key={item.num}
                     className="py-6"
                     style={{
-                      borderBottom: i < SERVICE_GUIDANCE.length - 1 ? "1px solid #E8E4DC" : "none",
+                      borderBottom: i < SERVICE_GUIDANCE.length - 1 ? "1px solid #dde0e4" : "none",
                     }}
                   >
                     <div className="flex gap-5">
@@ -195,7 +196,7 @@ export default function ServicesIndexPage() {
                         0{item.num}
                       </span>
                       <div>
-                        <p className="font-medium text-[#0F172A] text-sm mb-2">{item.label}</p>
+                        <p className="font-medium text-[#333333] text-sm mb-2">{item.label}</p>
                         <p className="text-[#374151] text-sm leading-relaxed">{item.text}</p>
                       </div>
                     </div>
@@ -207,7 +208,7 @@ export default function ServicesIndexPage() {
             <ScrollReveal delay={0.1}>
               <div
                 className="mt-10 pt-10"
-                style={{ borderTop: "1px solid #E8E4DC" }}
+                style={{ borderTop: "1px solid #dde0e4" }}
               >
                 <p className="text-[#374151] text-sm leading-relaxed mb-6">
                   「自社に合うサービスがわからない」という方こそ、まずはご相談ください。現状の課題をお聞きし、最適なサービスの組み合わせをご提案します。
@@ -216,8 +217,8 @@ export default function ServicesIndexPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all"
                   style={{
-                    border: "1px solid #0F172A",
-                    color: "#0F172A",
+                    border: "1px solid #333333",
+                    color: "#333333",
                     background: "transparent",
                   }}
                 >

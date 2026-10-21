@@ -141,7 +141,7 @@ export default function Page() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────── */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -157,7 +157,7 @@ export default function Page() {
               <span>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }}>ホームページ制作</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>Next.js制作</span>
+              <span style={{ color: "#333333" }}>Next.js制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Next.js Development
@@ -166,7 +166,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px,4vw,44px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
               }}
@@ -235,7 +235,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "36px",
               }}
@@ -258,10 +258,10 @@ export default function Page() {
                     alignItems: "flex-start",
                     gap: "12px",
                     padding: "14px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", lineHeight: "1.6", flexShrink: 0 }}>
                     →
                   </span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
@@ -272,9 +272,9 @@ export default function Page() {
         </section>
 
         {/* ── WordPress comparison ─────────────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Next.js vs WordPress
             </p>
             <h2
@@ -314,7 +314,7 @@ export default function Page() {
                   b: "WordPress：プラグインの相性問題・更新による破壊的変更・テーマの依存関係管理が複雑。Next.js：依存関係がシンプルで、npm管理による一元的なバージョン管理が可能。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p
                     style={{
                       fontFamily: "var(--font-serif)",
@@ -343,7 +343,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -385,7 +385,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -396,7 +396,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -411,7 +411,7 @@ export default function Page() {
         </section>
 
         {/* ── Section B: よくある課題と原因 ───────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Challenges
@@ -420,7 +420,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -482,7 +482,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -493,7 +493,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -517,7 +517,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -529,7 +529,7 @@ export default function Page() {
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
                 gap: "1px",
-                background: "#E8E4DC",
+                background: "#dde0e4",
               }}
             >
               {[
@@ -591,7 +591,7 @@ export default function Page() {
                       fontFamily: "var(--font-serif)",
                       fontWeight: 700,
                       fontSize: "14px",
-                      color: "#0d1b2a",
+                      color: "#333333",
                       marginBottom: "10px",
                     }}
                   >
@@ -605,7 +605,7 @@ export default function Page() {
         </section>
 
         {/* ── Section D: 技術選定・実装フロー ─────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
@@ -614,7 +614,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -676,7 +676,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -687,7 +687,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -711,7 +711,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -758,7 +758,7 @@ export default function Page() {
               ].map((item) => (
                 <div
                   key={item.n}
-                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}
+                  style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.n}
@@ -769,7 +769,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -784,7 +784,7 @@ export default function Page() {
         </section>
 
         {/* ── Inline CTA ───────────────────────────────────── */}
-        <section style={{ background: "#F9F8F5", padding: "64px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "64px 0" }}>
           <div
             style={{
               maxWidth: "72rem",
@@ -803,7 +803,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,28px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "16px",
               }}
@@ -826,7 +826,7 @@ export default function Page() {
               style={{
                 display: "inline-block",
                 padding: "14px 40px",
-                background: "#0F172A",
+                background: "#293540",
                 color: "#ffffff",
                 fontWeight: 600,
                 fontSize: "14px",

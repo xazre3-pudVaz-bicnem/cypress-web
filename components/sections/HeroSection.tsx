@@ -47,9 +47,9 @@ export default function HeroSection() {
             >
               <span
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-8"
-                style={{ background: "#EFF6FF", color: "#2563EB", border: "1px solid #BFDBFE" }}
+                style={{ background: "#EFF6FF", color: "#096fc8", border: "1px solid #BFDBFE" }}
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#096fc8] animate-pulse" />
                 AI × Webマーケティング｜累計200社以上の支援実績
               </span>
             </motion.div>
@@ -59,13 +59,13 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, ease: EASE, delay: 0.08 }}
-              className="font-black text-[#0F172A] leading-[1.05] tracking-[-0.04em] mb-6"
+              className="font-black text-[#333333] leading-[1.05] tracking-[-0.04em] mb-6"
               style={{ fontSize: "clamp(44px, 6vw, 76px)" }}
             >
               集客の<br />
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2563EB 0%, #06B6D4 100%)",
+                  background: "linear-gradient(135deg, #096fc8 0%, #06B6D4 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -96,7 +96,7 @@ export default function HeroSection() {
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold text-white text-[15px] transition-all hover:scale-105 hover:shadow-[0_8px_24px_rgba(37,99,235,0.35)]"
-                style={{ background: "#2563EB" }}
+                style={{ background: "#096fc8" }}
               >
                 無料相談を予約する
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -121,7 +121,7 @@ export default function HeroSection() {
             >
               {STATS.map((s, i) => (
                 <div key={s.label} className={i > 0 ? "pl-8 border-l border-[#E2E8F0]" : ""}>
-                  <div className="font-black text-2xl text-[#0F172A] leading-none mb-1">{s.value}</div>
+                  <div className="font-black text-2xl text-[#333333] leading-none mb-1">{s.value}</div>
                   <div className="text-[11px] text-[#94A3B8]">{s.label}</div>
                 </div>
               ))}
@@ -175,7 +175,7 @@ export default function HeroSection() {
                 <div className="w-2 h-2 rounded-full bg-[#10B981]" />
                 <span className="text-[10px] text-[#64748B] font-medium">MEO順位</span>
               </div>
-              <div className="font-black text-xl text-[#0F172A]">TOP 3</div>
+              <div className="font-black text-xl text-[#333333]">TOP 3</div>
               <div className="text-[10px] text-[#10B981] font-medium mt-0.5">達成率 94%</div>
             </motion.div>
 
@@ -192,11 +192,11 @@ export default function HeroSection() {
               }}
             >
               <div className="flex items-center gap-2 mb-1.5">
-                <div className="w-2 h-2 rounded-full bg-[#2563EB]" />
+                <div className="w-2 h-2 rounded-full bg-[#096fc8]" />
                 <span className="text-[10px] text-[#64748B] font-medium">検索流入</span>
               </div>
-              <div className="font-black text-xl text-[#0F172A]">+340%</div>
-              <div className="text-[10px] text-[#2563EB] font-medium mt-0.5">SEO実績</div>
+              <div className="font-black text-xl text-[#333333]">+340%</div>
+              <div className="text-[10px] text-[#096fc8] font-medium mt-0.5">SEO実績</div>
             </motion.div>
           </motion.div>
         </div>

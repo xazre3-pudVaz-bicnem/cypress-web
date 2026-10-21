@@ -387,21 +387,21 @@ export default function StructuredDataPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/aio" className="hover:underline" style={{ color: "#6B7280" }}>AIO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>構造化データ</span>
+              <span style={{ color: "#333333" }}>構造化データ</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               AIO Knowledge
             </p>
             <h1
               className="font-black leading-tight mb-6"
-              style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px, 4vw, 52px)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px, 4vw, 52px)", color: "#333333" }}
             >
               構造化データ（Schema.org）実装<br />AI検索・リッチリザルト対応ガイド
             </h1>
@@ -412,7 +412,7 @@ export default function StructuredDataPage() {
             <Link
               href="/contact"
               className="inline-block px-8 py-4 text-[14px] font-semibold tracking-wide"
-              style={{ background: "#0F172A", color: "#FFFFFF" }}
+              style={{ background: "#293540", color: "#FFFFFF" }}
             >
               無料診断を依頼する →
             </Link>
@@ -432,7 +432,7 @@ export default function StructuredDataPage() {
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 Overview
               </p>
-              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 構造化データとは何か
               </h2>
               <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
@@ -446,13 +446,13 @@ export default function StructuredDataPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 What You Will Learn
               </p>
-              <h2 className="font-black text-[28px] mb-10" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] mb-10" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 このページでわかること
               </h2>
               <ul className="space-y-5">
@@ -465,7 +465,7 @@ export default function StructuredDataPage() {
                   "AI引用状況の確認方法と改善サイクルの回し方",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px]" style={{ color: "#374151" }}>
-                    <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                    <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                     {item}
                   </li>
                 ))}
@@ -481,7 +481,7 @@ export default function StructuredDataPage() {
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 AIO Relevance
               </p>
-              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 AIOと構造化データの関係
               </h2>
               <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>
@@ -495,12 +495,12 @@ export default function StructuredDataPage() {
         </section>
 
         {/* Schema types */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Schema Types
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               主要な構造化データの種類
             </h2>
             <p className="text-[14px] mb-12" style={{ color: "#6B7280" }}>
@@ -508,14 +508,14 @@ export default function StructuredDataPage() {
             </p>
             <div className="max-w-4xl">
               {SCHEMAS.map((s, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1 w-6" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-2 flex-wrap">
-                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{s.name}</h3>
-                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #E8E4DC" }}>
+                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{s.name}</h3>
+                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #dde0e4" }}>
                         {s.use}
                       </span>
                     </div>
@@ -523,7 +523,7 @@ export default function StructuredDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -534,31 +534,31 @@ export default function StructuredDataPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {ISSUES.map((issue) => (
-                <div key={issue.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={issue.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{issue.num}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{issue.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{issue.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{issue.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Guide
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               業種別の活用ポイント
             </h2>
             <p className="text-[14px] mb-12" style={{ color: "#6B7280" }}>
@@ -566,12 +566,12 @@ export default function StructuredDataPage() {
             </p>
             <div className="max-w-4xl">
               {INDUSTRIES.map((ind) => (
-                <div key={ind.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={ind.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{ind.num}</span>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-2 flex-wrap">
-                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{ind.industry}</h3>
-                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #E8E4DC" }}>
+                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{ind.industry}</h3>
+                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#FFFFFF", color: "#6B7280", border: "1px solid #dde0e4" }}>
                         {ind.schemas}
                       </span>
                     </div>
@@ -579,7 +579,7 @@ export default function StructuredDataPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -590,26 +590,26 @@ export default function StructuredDataPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {FLOW_STEPS.map((step) => (
-                <div key={step.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={step.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{step.num}</span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{step.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{step.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{step.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 2-col: 構造化データの実装手順 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-lg overflow-hidden" style={{ height: "360px" }}>
@@ -619,7 +619,7 @@ export default function StructuredDataPage() {
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   Cypress Support
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                   サイプレスの構造化データ支援
                 </h2>
                 <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
@@ -635,7 +635,7 @@ export default function StructuredDataPage() {
                     "実装後の効果測定・月次レポート",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-[14px]" style={{ color: "#374151" }}>
-                      <span className="mt-1 shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                      <span className="mt-1 shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                       {item}
                     </li>
                   ))}
@@ -651,7 +651,7 @@ export default function StructuredDataPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               成果を見るための指標
             </h2>
             <p className="text-[14px] mb-12" style={{ color: "#6B7280" }}>
@@ -659,27 +659,27 @@ export default function StructuredDataPage() {
             </p>
             <div className="max-w-3xl">
               {KPIS.map((kpi) => (
-                <div key={kpi.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={kpi.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{kpi.num}</span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{kpi.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{kpi.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{kpi.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* SEO effect */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 SEO Effect
               </p>
-              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 SEOへの効果
               </h2>
               <p className="text-[15px] leading-[1.9] mb-4" style={{ color: "#374151" }}>

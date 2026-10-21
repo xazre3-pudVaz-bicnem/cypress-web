@@ -298,21 +298,21 @@ export default function MapRankingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>Googleマップ上位表示</span>
+              <span style={{ color: "#333333" }}>Googleマップ上位表示</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Map Ranking
             </p>
             <h1
               className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               Googleマップ上位表示<br />ローカルパック対策
             </h1>
@@ -351,12 +351,12 @@ export default function MapRankingPage() {
         </section>
 
         {/* このページでわかること — Section A */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <ul className="max-w-3xl space-y-4">
@@ -369,7 +369,7 @@ export default function MapRankingPage() {
                 "MEO成果を測るKPIと月次モニタリングのサイクル設計",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <span className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</span>
                 </li>
               ))}
@@ -378,9 +378,9 @@ export default function MapRankingPage() {
         </section>
 
         {/* ローカルパック上位を逃すと失う機会 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Map Ranking Risks
             </p>
             <h2
@@ -396,7 +396,7 @@ export default function MapRankingPage() {
                 { t: "広告費に頼りすぎる集客体質になる", b: "Googleマップからの無料集客が機能していないと、リスティング広告費が毎月発生し続けます。MEO対策で無料の集客チャンネルを確立することが長期的なコスト削減につながります。" },
                 { t: "口コミ・評価の蓄積が遅れ続ける", b: "露出が少ない店舗は新規来店者が増えず口コミも増えません。口コミが少ないと順位が上がらない悪循環に陥ります。早期に対策を開始するほど競合との差が縮まります。" },
               ].map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} className="p-6" style={{ border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p className="font-bold text-[14px] mb-2" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
                 </div>
@@ -411,7 +411,7 @@ export default function MapRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               3 Key Factors
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ローカルパック表示を決める3要素
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -420,9 +420,9 @@ export default function MapRankingPage() {
                 { label: "Distance", title: "距離", body: "検索者の現在地または検索地域からビジネスまでの距離。物理的に近い店舗が優遇されますが、関連性と知名度で補える場合もあります。" },
                 { label: "Prominence", title: "知名度", body: "口コミ数・評価・ウェブ上の言及数・GBPの情報充実度などから判断される知名度。高品質な口コミが多いビジネスは距離のハンデを越えることもあります。" },
               ].map((item) => (
-                <div key={item.label} className="p-7" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                <div key={item.label} className="p-7" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
                   <p className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: "#9CA3AF" }}>{item.label}</p>
-                  <h3 className="font-bold text-[18px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[18px] mb-3" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.title}</h3>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -431,7 +431,7 @@ export default function MapRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Actions
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               上位表示のための具体的施策
             </h2>
             <div className="max-w-3xl">
@@ -443,41 +443,41 @@ export default function MapRankingPage() {
                 { n: "05", t: "ウェブサイトとの連携を強化する", b: "GBPのURLを正しく設定し、ウェブサイト側にLocalBusinessスキーマ・GoogleマップのURL・NAP情報を実装します。" },
                 { n: "06", t: "競合分析に基づいて差別化ポイントを強化する", b: "同業種・同エリアの上位表示ビジネスのGBPを分析し、自社が劣っている項目（写真数・口コミ数・カテゴリ設定等）を重点改善します。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1.5" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-1.5" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* よくある課題と原因 — Section B */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -488,7 +488,7 @@ export default function MapRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
@@ -497,8 +497,8 @@ export default function MapRankingPage() {
                   key={i}
                   className="py-6 px-4"
                   style={{
-                    borderTop: "1px solid #E8E4DC",
-                    borderLeft: i % 2 !== 0 ? "1px solid #E8E4DC" : "none",
+                    borderTop: "1px solid #dde0e4",
+                    borderLeft: i % 2 !== 0 ? "1px solid #dde0e4" : "none",
                   }}
                 >
                   <div className="flex items-start gap-4">
@@ -506,7 +506,7 @@ export default function MapRankingPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</h3>
+                      <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</h3>
                       <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                     </div>
                   </div>
@@ -517,12 +517,12 @@ export default function MapRankingPage() {
         </section>
 
         {/* ローカルパック掲載がビジネスに与える影響 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why It Matters
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ローカルパック掲載がビジネスに与える影響
             </h2>
             <div className="max-w-3xl">
@@ -533,15 +533,15 @@ export default function MapRankingPage() {
                 { n: "04", t: "長期的な集客基盤を構築できる", b: "GBP最適化・口コミ蓄積・定期投稿を続けることで、広告に依存しない安定した集客基盤を築けます。競合が対策を怠る中、継続することで差は広がります。" },
                 { n: "05", t: "業種問わず地域ビジネス全般に有効", b: "飲食店・美容院・医療機関・リフォーム業・士業など、地域に顧客を持つあらゆるビジネスでローカルパック掲載が集客に貢献します。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1.5" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-1.5" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -552,49 +552,49 @@ export default function MapRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.step}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 成果を見るための指標 — Section E */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs &amp; Metrics
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.name}</h3>
-                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#c4b89a" }}>確認場所: {item.where}</p>
+                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.name}</h3>
+                    <p className="text-[12px] mb-2 font-medium" style={{ color: "var(--v2-accent)" }}>確認場所: {item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 const CATEGORY_COLORS: Record<NewsArticle["category"], string> = {
-  お知らせ: "#1D4ED8",
+  お知らせ: "#096fc8",
 };
 
 const CATEGORY_BG: Record<NewsArticle["category"], string> = {
@@ -73,14 +73,14 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero="article" className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-3xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8 flex-wrap">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <Link href="/news" className="hover:text-[#0F172A] transition-colors">お知らせ</Link>
+              <Link href="/news" className="hover:text-[#333333] transition-colors">お知らせ</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>{article.title}</span>
+              <span style={{ color: "#333333" }}>{article.title}</span>
             </nav>
 
             <div className="flex items-center gap-3 mb-5">
@@ -97,7 +97,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
             </div>
 
             <h1
-              className="font-black text-[#0F172A] leading-tight"
+              className="font-black text-[#333333] leading-tight"
               style={{ fontSize: "clamp(20px, 3vw, 34px)" }}
             >
               {article.title}
@@ -109,7 +109,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <section className="pb-24 max-w-3xl mx-auto px-6">
           <div
             className="p-8 md:p-10 mb-10"
-            style={{ border: "1px solid #E8E4DC" }}
+            style={{ border: "1px solid #dde0e4" }}
           >
             <p className="text-[#374151] text-[15px] leading-[1.95]">
               {article.body || article.excerpt}
@@ -120,7 +120,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
           <div className="flex items-center justify-between flex-wrap gap-4">
             <Link
               href="/news"
-              className="flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#0F172A] transition-colors"
+              className="flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#333333] transition-colors"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
@@ -131,8 +131,8 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
               href="/contact"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-all"
               style={{
-                border: "1px solid #0F172A",
-                color: "#0F172A",
+                border: "1px solid #333333",
+                color: "#333333",
               }}
             >
               お問い合わせ
@@ -144,20 +144,20 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         {related.length > 0 && (
           <section
             className="py-16"
-            style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+            style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
           >
             <div className="max-w-3xl mx-auto px-6">
               <h2
-                className="font-bold text-[#0F172A] text-lg mb-8 pb-6"
-                style={{ borderBottom: "1px solid #E8E4DC" }}
+                className="font-bold text-[#333333] text-lg mb-8 pb-6"
+                style={{ borderBottom: "1px solid #dde0e4" }}
               >
                 関連ニュース
               </h2>
-              <div style={{ borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ borderTop: "1px solid #dde0e4" }}>
                 {related.map((rel) => (
                   <div
                     key={rel.slug}
-                    style={{ borderBottom: "1px solid #E8E4DC" }}
+                    style={{ borderBottom: "1px solid #dde0e4" }}
                   >
                     <Link
                       href={`/news/${rel.slug}`}
@@ -166,7 +166,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
                       <span className="text-[#9CA3AF] text-xs font-mono shrink-0">
                         {rel.publishedAt.replace(/-/g, ".")}
                       </span>
-                      <span className="text-[#0F172A] text-sm group-hover:underline underline-offset-4 flex-1">
+                      <span className="text-[#333333] text-sm group-hover:underline underline-offset-4 flex-1">
                         {rel.title}
                       </span>
                     </Link>

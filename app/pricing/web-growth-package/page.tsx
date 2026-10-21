@@ -345,11 +345,11 @@ export default function WebGrowthPackagePage() {
       <Header />
       <main>
         {/* ── Hero ── */}
-        <section
+        <section data-page-hero
           style={{
-            background: "#F8F6F2",
+            background: "#f0f1f2",
             padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #dde0e4",
           }}
         >
           <div
@@ -376,7 +376,7 @@ export default function WebGrowthPackagePage() {
                     ホーム
                   </Link>
                 </li>
-                <li style={{ fontSize: "11px", color: "#C4BAB0" }}>›</li>
+                <li style={{ fontSize: "11px", color: "#c6cbd1" }}>›</li>
                 <li style={{ ...crumbStyle, color: "#6B7280" }}>
                   Web集客パッケージ料金
                 </li>
@@ -387,7 +387,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-display)",
                 letterSpacing: "0.28em",
-                color: "rgba(196,169,106,0.7)",
+                color: "rgba(9,111,200,0.7)",
                 fontSize: "10px",
                 marginBottom: "20px",
                 textTransform: "uppercase",
@@ -399,7 +399,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(26px, 4vw, 44px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
                 marginBottom: "20px",
@@ -438,7 +438,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 8vh, 80px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <style>{`
@@ -479,7 +479,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 2.8vw, 30px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "clamp(28px, 5vh, 40px)",
               }}
@@ -492,7 +492,7 @@ export default function WebGrowthPackagePage() {
                 <div
                   key={plan.label}
                   style={{
-                    border: plan.featured ? "1px solid #C4A96A" : "1px solid #E8E4DC",
+                    border: plan.featured ? "1px solid var(--v2-accent)" : "1px solid #dde0e4",
                     background: "#FFFFFF",
                     padding: "clamp(24px, 3vw, 36px)",
                     position: "relative",
@@ -506,7 +506,7 @@ export default function WebGrowthPackagePage() {
                         left: 0,
                         right: 0,
                         height: "2px",
-                        background: "linear-gradient(90deg, #C4A96A, #E8C970)",
+                        background: "linear-gradient(90deg, var(--v2-accent), var(--v2-accent))",
                       }}
                     />
                   )}
@@ -526,7 +526,7 @@ export default function WebGrowthPackagePage() {
                     style={{
                       fontFamily: "var(--font-serif)",
                       fontSize: "clamp(16px, 1.8vw, 20px)",
-                      color: "#0B1628",
+                      color: "#333333",
                       fontWeight: 700,
                       marginBottom: "20px",
                       lineHeight: 1.4,
@@ -538,14 +538,14 @@ export default function WebGrowthPackagePage() {
                     style={{
                       marginBottom: "20px",
                       paddingBottom: "20px",
-                      borderBottom: "1px solid #E8E4DC",
+                      borderBottom: "1px solid #dde0e4",
                     }}
                   >
                     <span
                       style={{
                         fontFamily: "var(--font-display)",
                         fontSize: "clamp(28px, 3.5vw, 40px)",
-                        color: "#0B1628",
+                        color: "#333333",
                         fontWeight: 300,
                         letterSpacing: "-0.02em",
                       }}
@@ -595,7 +595,7 @@ export default function WebGrowthPackagePage() {
                       >
                         <span
                           style={{
-                            color: "#C4A96A",
+                            color: "var(--v2-accent)",
                             flexShrink: 0,
                             marginTop: "1px",
                           }}
@@ -626,9 +626,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 各プラン詳細 ── */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#f0f1f2",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <style>{`
@@ -667,7 +667,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 2.8vw, 30px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "clamp(32px, 5vh, 48px)",
               }}
@@ -680,7 +680,7 @@ export default function WebGrowthPackagePage() {
                   key={plan.label}
                   style={{
                     padding: "clamp(28px, 4vh, 40px) 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <div className="plan-detail-grid">
@@ -690,7 +690,7 @@ export default function WebGrowthPackagePage() {
                           fontFamily: "var(--font-display)",
                           fontSize: "10px",
                           letterSpacing: "0.2em",
-                          color: "#C4A96A",
+                          color: "var(--v2-accent)",
                           marginBottom: "10px",
                           textTransform: "uppercase",
                         }}
@@ -701,7 +701,7 @@ export default function WebGrowthPackagePage() {
                         style={{
                           fontFamily: "var(--font-serif)",
                           fontSize: "clamp(16px, 1.8vw, 20px)",
-                          color: "#0B1628",
+                          color: "#333333",
                           fontWeight: 700,
                           marginBottom: "16px",
                           lineHeight: 1.45,
@@ -756,7 +756,7 @@ export default function WebGrowthPackagePage() {
                                 width: "4px",
                                 height: "4px",
                                 borderRadius: "50%",
-                                background: "#C4A96A",
+                                background: "var(--v2-accent)",
                                 flexShrink: 0,
                                 marginTop: "7px",
                               }}
@@ -778,7 +778,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <style>{`
@@ -816,7 +816,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 2.8vw, 30px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "clamp(28px, 5vh, 40px)",
               }}
@@ -829,15 +829,15 @@ export default function WebGrowthPackagePage() {
                   key={item.title}
                   style={{
                     padding: "clamp(20px, 2.5vw, 28px)",
-                    border: "1px solid #E8E4DC",
-                    background: "#F8F6F2",
+                    border: "1px solid #dde0e4",
+                    background: "#f0f1f2",
                   }}
                 >
                   <h3
                     style={{
                       fontFamily: "var(--font-serif)",
                       fontSize: "15px",
-                      color: "#0B1628",
+                      color: "#333333",
                       fontWeight: 700,
                       marginBottom: "10px",
                     }}
@@ -863,9 +863,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 制作の流れ ── */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#f0f1f2",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <div
@@ -891,7 +891,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 2.8vw, 30px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "clamp(28px, 5vh, 40px)",
               }}
@@ -911,7 +911,7 @@ export default function WebGrowthPackagePage() {
                     display: "flex",
                     gap: "clamp(20px, 4vw, 48px)",
                     padding: "clamp(20px, 3vh, 28px) 0",
-                    borderTop: i === 0 ? "none" : "1px solid #E8E4DC",
+                    borderTop: i === 0 ? "none" : "1px solid #dde0e4",
                     alignItems: "flex-start",
                   }}
                 >
@@ -919,7 +919,7 @@ export default function WebGrowthPackagePage() {
                     style={{
                       fontFamily: "var(--font-display)",
                       fontSize: "clamp(20px, 2.5vw, 28px)",
-                      color: "#E8E4DC",
+                      color: "#dde0e4",
                       fontWeight: 300,
                       flexShrink: 0,
                       letterSpacing: "0.05em",
@@ -934,7 +934,7 @@ export default function WebGrowthPackagePage() {
                       style={{
                         fontFamily: "var(--font-serif)",
                         fontSize: "15px",
-                        color: "#0B1628",
+                        color: "#333333",
                         fontWeight: 700,
                         marginBottom: "6px",
                       }}
@@ -963,7 +963,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(48px, 7vh, 80px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <div
@@ -989,7 +989,7 @@ export default function WebGrowthPackagePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px, 2.8vw, 30px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "clamp(28px, 5vh, 40px)",
               }}
@@ -1002,13 +1002,13 @@ export default function WebGrowthPackagePage() {
                   key={i}
                   style={{
                     padding: "clamp(20px, 3vh, 28px) 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <p
                     style={{
                       fontSize: "14px",
-                      color: "#0B1628",
+                      color: "#333333",
                       fontWeight: 600,
                       marginBottom: "10px",
                       lineHeight: "1.7",
@@ -1036,9 +1036,9 @@ export default function WebGrowthPackagePage() {
         {/* ── 注意事項 ── */}
         <section
           style={{
-            background: "#F8F6F2",
+            background: "#f0f1f2",
             padding: "clamp(28px, 4vh, 40px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <div
@@ -1075,7 +1075,7 @@ export default function WebGrowthPackagePage() {
           style={{
             background: "#FFFFFF",
             padding: "clamp(36px, 5vh, 52px) 0",
-            borderTop: "1px solid #E8E4DC",
+            borderTop: "1px solid #dde0e4",
           }}
         >
           <div
@@ -1112,8 +1112,8 @@ export default function WebGrowthPackagePage() {
                     color: "#374151",
                     textDecoration: "none",
                     padding: "8px 16px",
-                    border: "1px solid #E8E4DC",
-                    background: "#F8F6F2",
+                    border: "1px solid #dde0e4",
+                    background: "#f0f1f2",
                   }}
                 >
                   {l.label} →

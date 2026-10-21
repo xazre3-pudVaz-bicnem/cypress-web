@@ -156,7 +156,7 @@ export default function AiSearchPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -166,7 +166,7 @@ export default function AiSearchPage() {
               <span style={{ color: "#9CA3AF" }}>AI検索対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI Search Optimization</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -198,7 +198,7 @@ export default function AiSearchPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               このページでわかること
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -214,7 +214,7 @@ export default function AiSearchPage() {
                 "成果をモニタリングするためのKPIと計測ツールの活用方法",
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                 </div>
               ))}
@@ -223,9 +223,9 @@ export default function AiSearchPage() {
         </section>
 
         {/* Overview dark section */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>AIO Overview</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>AIO Overview</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "12px" }}>
               AI検索対策の4つの柱
             </h2>
@@ -239,7 +239,7 @@ export default function AiSearchPage() {
                 { t: "構造化データとllms.txtの実装", b: "Schema.orgでコンテンツをAIが読みやすい形式に整備します。llms.txtでAIクローラーへサイト案内も設置します。" },
                 { t: "一次情報・独自データの蓄積", b: "他サイトが参照できないオリジナルの調査・事例・統計を持つコンテンツはAI検索での引用価値が高くなります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -249,10 +249,10 @@ export default function AiSearchPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               よくある課題と原因
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -271,10 +271,10 @@ export default function AiSearchPage() {
                 { n: "09", t: "AIに嫌われるコンテンツ（薄い・重複）", b: "情報量が少ない薄いコンテンツや他サイトと酷似した重複コンテンツはAI検索での引用を避けられます。独自価値のある情報を提供する「コンテンツの厚み」が不可欠です。" },
                 { n: "10", t: "複数のAI検索エンジン対策の優先順位不明", b: "ChatGPT・Gemini・Perplexity・Claudeへの個別対策を同時に進めようとして施策が分散しています。ターゲットユーザーが主に使うAI検索エンジンを特定し、優先順位をつけた対策が必要です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ export default function AiSearchPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               業種別のAI検索活用ポイント
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -304,12 +304,12 @@ export default function AiSearchPage() {
                 { n: "07", industry: "ファッション・美容", point: "トレンド・ハウツーコンテンツ", detail: "「〇〇スタイルの作り方」「スキンケアの順番」などのハウツー系クエリで有効です。スタイリストや美容師の資格・経験年数をPersonスキーマで明示し、季節トレンドを定期更新して最新性を保ちます。" },
                 { n: "08", industry: "旅行・地域", point: "観光・グルメ情報の引用対象", detail: "「〇〇の観光スポット」「〇〇のおすすめグルメ」などの地域情報クエリで引用されやすいです。地域の一次情報・訪問レポート・地元情報をTouristAttractionスキーマとLocalBusinessスキーマで構造化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "24px", borderTop: "1px solid #E8E4DC", borderLeft: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ padding: "24px", borderTop: "1px solid #dde0e4", borderLeft: "1px solid #dde0e4" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{item.n}</span>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>{item.industry}</p>
                   </div>
-                  <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px" }}>{item.point}</p>
+                  <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{item.detail}</p>
                 </div>
               ))}
@@ -318,10 +318,10 @@ export default function AiSearchPage() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               実装・改善フロー
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -340,10 +340,10 @@ export default function AiSearchPage() {
                 { n: "09", t: "モニタリングツールの設定", b: "Google Analytics 4でAI検索エンジンからのリファラー流入を計測する設定を行います。対象キーワードでの各AI検索エンジンの回答に自社が登場するか定期確認する体制を整えます。" },
                 { n: "10", t: "月次PDCAサイクルの確立", b: "月次でAI検索経由の流入数・ブランド言及率・引用コンテンツ数を評価します。パフォーマンスの低いコンテンツの改善と新規コンテンツの企画を繰り返すPDCAを継続します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -356,7 +356,7 @@ export default function AiSearchPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               成果を見るための指標
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -372,12 +372,12 @@ export default function AiSearchPage() {
                 { n: "06", t: "オーガニック流入数推移", where: "Google Analytics 4 / Search Console", b: "AIO対策の基盤強化はオーガニック検索流入にも影響します。AI検索経由と合算した全オーガニック流入数の推移を確認し、総合的な集客効果を評価します。" },
                 { n: "07", t: "問い合わせ数（AI検索経由）", where: "Google Analytics 4（コンバージョン計測）", b: "AI検索エンジンからの流入が問い合わせ・資料請求・購入などのコンバージョンにつながっているかを計測します。AIO施策のビジネスROIを把握するための最終的な成果指標です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "4px", flexWrap: "wrap" }}>
-                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a" }}>{item.t}</p>
-                      <span style={{ fontSize: "11px", color: "#c4b89a", fontWeight: 600, letterSpacing: "0.05em" }}>{item.where}</span>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333" }}>{item.t}</p>
+                      <span style={{ fontSize: "11px", color: "var(--v2-accent)", fontWeight: 600, letterSpacing: "0.05em" }}>{item.where}</span>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -388,9 +388,9 @@ export default function AiSearchPage() {
         </section>
 
         {/* AI Search Engines Comparison */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>AI Engines</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>AI Engines</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "12px" }}>
               主要AI検索エンジンの特徴と対策の違い
             </h2>
@@ -424,7 +424,7 @@ export default function AiSearchPage() {
                   b: "BingのインデックスとOpenAIのモデルを組み合わせたAI。Bing Webmaster Toolsへの登録・Bing Search Engine Optimization・構造化データが対策の基盤となります。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.72)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -437,7 +437,7 @@ export default function AiSearchPage() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Before / After</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               AIO対策前・対策後の変化
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
@@ -454,14 +454,14 @@ export default function AiSearchPage() {
                   "コンテンツが回答型になっていない",
                   "llms.txtが設置されていない",
                 ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
                     <span style={{ color: "#9CA3AF", fontSize: "14px", flexShrink: 0, marginTop: "2px" }}>—</span>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                   </div>
                 ))}
               </div>
               <div>
-                <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", color: "#c4b89a", marginBottom: "16px" }}>AFTER — 対策後</p>
+                <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--v2-accent)", marginBottom: "16px" }}>AFTER — 対策後</p>
                 {[
                   "複数のAI検索エンジンから安定的に流入",
                   "業界関連クエリでブランドが定期言及",
@@ -470,8 +470,8 @@ export default function AiSearchPage() {
                   "結論ファーストの回答型コンテンツを整備",
                   "llms.txtとrobots.txtが最適化済み",
                 ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
-                    <span style={{ color: "#c4b89a", fontSize: "14px", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>✓</span>
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
+                    <span style={{ color: "var(--v2-accent)", fontSize: "14px", flexShrink: 0, marginTop: "2px", fontWeight: 700 }}>✓</span>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{item}</p>
                   </div>
                 ))}
@@ -481,7 +481,7 @@ export default function AiSearchPage() {
         </section>
 
         {/* FAQ intro callout */}
-        <section style={{ background: "#F9F8F5", padding: "48px 0 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "48px 0 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontSize: "14px", lineHeight: "1.9", color: "#374151", maxWidth: "640px" }}>
               以下のFAQでは、AI検索対策（AIO）についてお客様からよくいただくご質問にお答えします。仕組みの基本から費用・期間・業種別の注意点まで網羅していますので、ご検討の参考にしてください。
@@ -489,7 +489,7 @@ export default function AiSearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI検索対策（AIO）のご相談"

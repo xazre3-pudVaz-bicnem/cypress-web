@@ -273,21 +273,21 @@ export default function GooglePostPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>Google投稿</span>
+              <span style={{ color: "#333333" }}>Google投稿</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Knowledge
             </p>
             <h1
               className="text-[40px] md:text-[52px] font-black leading-tight tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               Googleビジネスプロフィール<br />最新情報投稿（Googleポスト）戦略
             </h1>
@@ -319,7 +319,7 @@ export default function GooglePostPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-10"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               このページでわかること
             </h2>
@@ -333,7 +333,7 @@ export default function GooglePostPage() {
                 "GBPインサイトで追うべきKPIと投稿効果の測定・改善サイクルの回し方",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -342,14 +342,14 @@ export default function GooglePostPage() {
         </section>
 
         {/* Google投稿とは */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is Google Post
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               Google投稿とは
             </h2>
@@ -382,18 +382,18 @@ export default function GooglePostPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {issueItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-2"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -401,33 +401,33 @@ export default function GooglePostPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 投稿の種類と使い方 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Post Types
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               投稿の種類と使い方
             </h2>
             <div className="max-w-3xl">
               {postTypes.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-2"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -435,7 +435,7 @@ export default function GooglePostPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -448,20 +448,20 @@ export default function GooglePostPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {industryItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-2"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.industry}
                     </h3>
@@ -469,20 +469,20 @@ export default function GooglePostPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 投稿がMEO順位に影響する理由 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why Posts Affect Ranking
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               投稿がMEO順位に影響する理由
             </h2>
@@ -509,18 +509,18 @@ export default function GooglePostPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {flowItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-2"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -528,31 +528,31 @@ export default function GooglePostPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-2"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -560,7 +560,7 @@ export default function GooglePostPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -573,7 +573,7 @@ export default function GooglePostPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               投稿文の書き方と効率化
             </h2>
@@ -594,7 +594,7 @@ export default function GooglePostPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Google投稿（Googleポスト）に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="Google投稿（Googleポスト）に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

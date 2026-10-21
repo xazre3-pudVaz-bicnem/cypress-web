@@ -149,7 +149,7 @@ export default function Page() {
       <main>
 
         {/* =================== Hero =================== */}
-        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
+        <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px" }} aria-label="パンくず">
               <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
@@ -170,7 +170,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px,4vw,44px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
               }}
@@ -219,7 +219,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -228,28 +228,28 @@ export default function Page() {
             </h2>
 
             <div style={{ maxWidth: "680px" }}>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>GBPの投稿機能がSNSチャネルとして果たす役割と他SNSとの違い</p>
               </div>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>InstagramコンテンツをGBPに転用するための仕様・フォーマットの違い</p>
               </div>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>最新情報投稿・オファー投稿・イベント投稿の特性と使い分け方</p>
               </div>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>週次投稿カレンダーへGBP投稿枠を組み込む具体的なワークフロー</p>
               </div>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>CTAボタン設定・リンク設計で予約・問い合わせを増やす方法</p>
               </div>
-              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+              <div style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                 <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", margin: 0 }}>GBPインサイトで投稿効果を測定し改善するPDCAの回し方</p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function Page() {
         </section>
 
         {/* =================== GBP投稿の種類 =================== */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p
               className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5"
@@ -270,7 +270,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -279,38 +279,38 @@ export default function Page() {
             </h2>
 
             <div style={{ maxWidth: "720px" }}>
-              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>01</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>最新情報投稿（7日間有効）</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>最新情報投稿（7日間有効）</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>お知らせ・新メニュー・スタッフ情報・日常の業務風景など幅広い内容を投稿できます。7日間で自動で非表示になるため、週1〜2回の更新が重要です。写真付きが効果的です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>02</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>イベント投稿（期間設定可能）</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>イベント投稿（期間設定可能）</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>セール・新商品発売・特別企画など期間限定のイベント情報を投稿できます。開始日・終了日を設定できるため、キャンペーン期間中はマップ上で目立たせることができます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>03</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>オファー投稿（クーポン機能）</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>オファー投稿（クーポン機能）</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>割引・特典・初回限定価格などのオファーを投稿できます。ボタンテキスト（「今すぐ注文」「詳細を表示」等）を設定でき、来店・予約・問い合わせへの直接誘導が可能です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>04</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>商品・サービス投稿</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>商品・サービス投稿</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>提供する商品・サービスを写真・説明・価格と一緒に掲載できます。検索結果のGBPパネルに表示されるため、来店前の情報収集段階のユーザーに商品を知ってもらう機会になります。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>05</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>Q&amp;A（よくある質問）の管理</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>Q&amp;A（よくある質問）の管理</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBPのQ&A機能でよく聞かれる質問と回答をあらかじめ設定します。「営業時間は？」「駐車場は？」「予約は必要？」などの質問に回答することでユーザーの疑問を解消し来店を促します。</p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -353,73 +353,73 @@ export default function Page() {
             </p>
 
             <div style={{ maxWidth: "720px" }}>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>01</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBPの投稿機能をそもそも使っていない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBPの投稿機能をそもそも使っていない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBPをプロフィール登録のみで終わらせ、投稿機能の存在を知らないケースが多くあります。Google検索・マップ上の掲載情報が静的なままで、ユーザーへの情報更新がされていない状態です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>02</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>MEOとSNSを別々のチームが管理している</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>MEOとSNSを別々のチームが管理している</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>MEOはWeb担当、SNSはマーケ担当と分業しているため、コンテンツの重複管理や情報の不一致が起きやすくなります。投稿素材の共有がされず、制作工数が無駄に増えている状態です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>03</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>InstagramのコンテンツをGBPに転用していない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>InstagramのコンテンツをGBPに転用していない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>Instagramで投稿した写真・キャプションが使い回せることを知らず、GBP用にゼロから素材を作ろうとするため更新が止まります。仕様の違いを理解すれば転用ルールが設計できます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>04</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBP写真とInstagram写真のフォーマットが統一されていない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBP写真とInstagram写真のフォーマットが統一されていない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>Instagramは正方形・縦長が多いのに対し、GBPは横長（4:3）が推奨です。撮影時点でフォーマットを意識していないため、GBP用に切り抜くと被写体が欠けるトラブルが発生します。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>05</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBP投稿の文字数・画像仕様を把握していない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBP投稿の文字数・画像仕様を把握していない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>最新情報投稿の文字数上限（1,500文字）や画像サイズ推奨（720×540px以上）を知らないまま投稿しているため、表示崩れや重要情報の切れが生じます。仕様理解が投稿品質の基礎です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>06</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>CTAボタンの設定・活用ができていない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>CTAボタンの設定・活用ができていない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBP投稿にはCTAボタンを設定できますが、未設定のまま投稿しているケースが大半です。「今すぐ予約」「今すぐ注文」などのCTAがないと、投稿を見たユーザーが次の行動に移りにくくなります。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>07</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBP投稿の効果測定をしていない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBP投稿の効果測定をしていない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBPインサイトで投稿の表示回数・CTAクリック数を確認できますが、ほとんどの店舗が見ていません。効果測定なしでは改善のPDCAが回らず、投稿の質・頻度が最適化されません。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>08</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>キャンペーン・特典投稿の活用が不足している</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>キャンペーン・特典投稿の活用が不足している</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>オファー投稿・イベント投稿の使い方を知らず、すべて最新情報投稿で代用してしまっています。種類を使い分けることでクーポンコード設定・有効期限表示など集客効果の高い機能が使えます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>09</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBP投稿とWebサイトの連動設計がない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBP投稿とWebサイトの連動設計がない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBP投稿のCTAリンクをトップページのみに設定しているため、投稿で宣伝したサービスのランディングページへ誘導できていません。投稿内容に対応したページへのリンク設計が必要です。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>10</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>競合のGBP投稿を研究していない</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>競合のGBP投稿を研究していない</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>同業・同エリアの競合がどんな投稿をしているかを把握していないため、差別化のヒントを得られていません。競合のGBP投稿を定期的に観察することで、自社の投稿戦略を磨けます。</p>
                 </div>
               </div>
@@ -428,7 +428,7 @@ export default function Page() {
         </section>
 
         {/* =================== Section C: 業種別の活用ポイント =================== */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p
               className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5"
@@ -441,7 +441,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -468,68 +468,68 @@ export default function Page() {
                 gap: "0",
               }}
             >
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>01</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>飲食店</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>飲食店</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>日替わりメニュー・イベント・季節限定投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>日替わりメニュー・イベント・季節限定投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>「今日のランチ」「週末限定メニュー」「○月の新メニュー」など鮮度の高い情報を週3回以上投稿。Instagramのフード写真をGBPにも転用し、来店を促すCTAで「今すぐ注文」や「予約する」を設定します。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>02</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>美容室・ヘアサロン</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>美容室・ヘアサロン</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>新メニュー・スタッフ・キャンペーン投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>新メニュー・スタッフ・キャンペーン投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>新しいカラーメニュー・トレンドスタイルの施術写真をInstagramとGBPで同時展開。スタッフ紹介投稿で親しみやすさを演出し、初回割引クーポンはオファー投稿で設定します。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>03</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>歯科医院</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>歯科医院</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>お知らせ・予防情報・特典投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>お知らせ・予防情報・特典投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>休診日変更・診療時間のお知らせはすぐに投稿する習慣が重要です。「歯周病予防のポイント」などの予防歯科コンテンツは専門性を示しAIO対策にもなります。初診特典はオファー投稿で展開します。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>04</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>整骨院・接骨院</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>整骨院・接骨院</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>健康情報・季節の体調ケア情報</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>健康情報・季節の体調ケア情報</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>「梅雨時の肩こりケア」「冬の腰痛対策」など季節に合った健康情報を投稿することで、悩みを持つ潜在層にアプローチできます。施術の様子や院内写真でリラックスできる雰囲気を伝えます。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>05</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>リフォーム・工務店</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>リフォーム・工務店</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>施工事例・季節提案投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>施工事例・季節提案投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>「ビフォーアフター」投稿はInstagramで好まれるだけでなく、GBP上でも強力な実績訴求になります。「夏前の断熱リフォーム」「冬支度のサッシ交換」など季節に先行した提案投稿が有効です。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>06</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>小売・雑貨店</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>小売・雑貨店</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>新商品・セール・使用シーン投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>新商品・セール・使用シーン投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>入荷情報・セール開始日をGBP投稿で告知し、Webショップや来店への誘導リンクを設定します。商品の使用シーンや生活提案型の写真はInstagramとGBPの両方で活用できます。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>07</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>学習塾・教室</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>学習塾・教室</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>合格速報・体験授業・説明会投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>合格速報・体験授業・説明会投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>合格発表の季節の「合格速報」投稿は保護者の目に触れやすく、信頼性を高めます。体験授業・説明会の告知はイベント投稿で開催日を設定し、申し込みリンクをCTAに設定します。</p>
               </div>
-              <div style={{ padding: "28px 24px", borderTop: "1px solid #E8E4DC", borderRight: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "28px 24px", borderTop: "1px solid #dde0e4", borderRight: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
                   <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>08</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>不動産会社</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>不動産会社</p>
                 </div>
-                <p style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", marginBottom: "8px", letterSpacing: "0.05em" }}>新着物件・地域情報投稿</p>
+                <p style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", marginBottom: "8px", letterSpacing: "0.05em" }}>新着物件・地域情報投稿</p>
                 <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>「新着物件：○○駅徒歩5分 2LDK」などの物件情報を写真付きで投稿し、詳細ページへのリンクを設定します。地域の生活情報（新店舗オープン・公園整備など）を投稿することで地域密着感を演出します。</p>
               </div>
             </div>
@@ -550,7 +550,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -571,73 +571,73 @@ export default function Page() {
             </p>
 
             <div style={{ maxWidth: "720px" }}>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>01</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBP投稿機能の仕様確認</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBP投稿機能の仕様確認</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>投稿の種類（最新情報・イベント・オファー）と文字数制限（1,500文字）・画像サイズ推奨（720×540px以上）・CTAボタンの7種類を確認します。仕様理解が投稿品質の基礎となります。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>02</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>SNS投稿とGBP投稿の連携設計</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>SNS投稿とGBP投稿の連携設計</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>InstagramとGBPを別々に運用するのではなく、同一テーマのコンテンツを両チャネルに展開するワークフローを設計します。担当者・承認フロー・投稿ツールを確定させます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>03</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>Instagramコンテンツの転用ルール策定</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>Instagramコンテンツの転用ルール策定</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>Instagramの正方形（1080×1080px）投稿からGBP用横長（1200×900px）にトリミングできるよう、撮影時の構図ガイドラインを作成します。キャプションの転用方法も明文化します。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>04</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>週次投稿カレンダーへのGBP投稿枠追加</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>週次投稿カレンダーへのGBP投稿枠追加</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>既存のSNS投稿カレンダーにGBP投稿の枠を追加します。週1〜2回のGBP投稿日を決め、投稿テーマ（お知らせ/特典/イベント/商品）をあらかじめ割り当てます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>05</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>写真・動画素材の共通化</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>写真・動画素材の共通化</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>Instagram・GBP・LINE共通で使える素材ライブラリを構築します。撮影時にGBP横長・Instagram正方形・LINE縦長の各フォーマットを押さえることで、素材の使い回しが可能になります。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>06</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>投稿テンプレートの作成</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>投稿テンプレートの作成</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>お知らせ・特典・イベント・商品紹介の4カテゴリーごとに投稿テンプレートを作成します。冒頭に重要情報・キーワード、末尾にCTA誘導文とリンクを含めた構成を定型化します。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>07</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>CTAボタンとリンク先の設定</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>CTAボタンとリンク先の設定</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>各投稿の目的に応じたCTAボタン（予約・注文・申し込み・詳細）を設定し、リンク先を投稿内容に対応したWebページやLP・予約システムに紐付けます。トップページへの一律リンクは避けます。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>08</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>GBPインサイトの確認ルーティン設定</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>GBPインサイトの確認ルーティン設定</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>毎週末にGBPインサイトで「投稿の表示回数」「CTAクリック数」「Webサイトクリック数」「電話タップ数」を確認するルーティンを設定します。週次データを記録するスプレッドシートを用意します。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>09</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>SNSとの効果比較分析</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>SNSとの効果比較分析</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>同テーマの投稿をInstagramとGBPで展開し、エンゲージメント・クリック数・来店・予約への貢献をチャネル別に比較します。チャネルごとの強みを把握して配分を最適化します。</p>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>10</span>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>月次効果測定とプラン改善</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>月次効果測定とプラン改善</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>月次でGBP投稿の累計閲覧数・CTA合計クリック数・月間投稿数・Instagram流用率を集計します。目標値との差異を分析し、翌月の投稿テーマ・頻度・フォーマットを改善します。</p>
                 </div>
               </div>
@@ -646,7 +646,7 @@ export default function Page() {
         </section>
 
         {/* =================== Section E: 成果を見るための指標 =================== */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p
               className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5"
@@ -659,7 +659,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -680,73 +680,73 @@ export default function Page() {
             </p>
 
             <div style={{ maxWidth: "720px" }}>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>01</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>GBP投稿閲覧数</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>GBP投稿閲覧数</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 投稿タブ</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 投稿タブ</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>投稿ごとの表示回数を確認し、どのテーマ・フォーマットが多く閲覧されているかを把握します。閲覧数の高い投稿の傾向を次回以降に反映します。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>02</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>投稿CTAタップ数</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>投稿CTAタップ数</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 投稿タブ ＞ アクション</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 投稿タブ ＞ アクション</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>投稿に設定したCTAボタン（予約・注文・詳細）がタップされた回数を計測します。CTAのテキスト変更や投稿内の誘導文改善によって改善できる指標です。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>03</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>月間投稿数</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>月間投稿数</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBP管理画面 ＞ 投稿履歴</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBP管理画面 ＞ 投稿履歴</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>月に何回GBP投稿を行えたかを記録します。目標週2回（月8回）を維持できているかの継続性指標であり、運用体制の健全性を示します。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>04</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>Instagram流用率</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>Instagram流用率</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：自社投稿カレンダー</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：自社投稿カレンダー</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBP投稿のうち、Instagramコンテンツから転用したものの割合を追います。流用率が高いほど投稿コストが低く、運用効率が良好な状態です。目標は50%以上を推奨します。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>05</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>GBP経由Webサイトクリック数</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>GBP経由Webサイトクリック数</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ パフォーマンス ＞ Webサイト</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ パフォーマンス ＞ Webサイト</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBPからWebサイトへ移動したユーザー数です。投稿CTAのリンク先改善やLP最適化によって増やせます。Googleアナリティクスの参照元「google / organic」とも照合します。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>06</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>投稿後の電話タップ数変化</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>投稿後の電話タップ数変化</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 通話</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 通話</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>特定の投稿後1週間の電話タップ数の増減を記録します。特典・キャンペーン投稿の直後に増加する傾向があり、投稿の実集客への寄与を測る補助指標になります。</p>
                 </div>
               </div>
-              <div style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                 <div style={{ display: "flex", gap: "20px", marginBottom: "6px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>07</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>写真閲覧数推移</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>写真閲覧数推移</p>
                 </div>
                 <div style={{ paddingLeft: "44px" }}>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 写真</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "4px", letterSpacing: "0.04em" }}>確認場所：GBPインサイト ＞ 写真</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>GBPに登録した写真の累計閲覧数を月次で記録します。新しい高品質写真を追加するたびに閲覧数が増える傾向があり、写真更新頻度の目安になります。</p>
                 </div>
               </div>

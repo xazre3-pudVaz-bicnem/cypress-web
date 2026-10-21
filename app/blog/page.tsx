@@ -28,9 +28,9 @@ export default function BlogPage() {
       <Header />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section
+        <section data-page-hero
           style={{
-            background: "#f8f6f2",
+            background: "#f0f1f2",
             paddingTop: "128px",
             paddingBottom: "48px",
           }}
@@ -70,7 +70,7 @@ export default function BlogPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px,4vw,44px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
               }}
@@ -94,14 +94,7 @@ export default function BlogPage() {
         <div
           style={{ maxWidth: "72rem", margin: "0 auto", padding: "64px 24px" }}
         >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 240px",
-              gap: "64px",
-              alignItems: "start",
-            }}
-          >
+          <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-16 lg:grid-cols-[minmax(0,1fr)_240px]">
             {/* Main content */}
             <div>
               {posts.length === 0 ? (
@@ -120,7 +113,7 @@ export default function BlogPage() {
                     <article
                       key={post.slug}
                       style={{
-                        borderBottom: "1px solid #ece8e0",
+                        borderBottom: "1px solid #dde0e4",
                         paddingBottom: "40px",
                         marginBottom: "40px",
                       }}
@@ -156,7 +149,7 @@ export default function BlogPage() {
                         style={{
                           fontFamily: "var(--font-serif)",
                           fontSize: "clamp(16px,2vw,20px)",
-                          color: "#0d1b2a",
+                          color: "#333333",
                           fontWeight: 700,
                           lineHeight: 1.4,
                           marginBottom: "12px",
@@ -190,7 +183,7 @@ export default function BlogPage() {
                               style={{
                                 fontSize: "11px",
                                 padding: "2px 8px",
-                                border: "1px solid #ece8e0",
+                                border: "1px solid #dde0e4",
                                 color: "#6b7280",
                               }}
                             >
@@ -207,7 +200,7 @@ export default function BlogPage() {
                           gap: "6px",
                           marginTop: "16px",
                           fontSize: "13px",
-                          color: "#0d1b2a",
+                          color: "#333333",
                           textDecoration: "none",
                         }}
                       >
@@ -252,7 +245,7 @@ export default function BlogPage() {
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "13px",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                     marginBottom: "12px",
                   }}
@@ -268,7 +261,7 @@ export default function BlogPage() {
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #ece8e0",
+                        borderBottom: "1px solid #dde0e4",
                         fontSize: "13px",
                         color: "#374151",
                         textDecoration: "none",
@@ -287,7 +280,7 @@ export default function BlogPage() {
                         display: "flex",
                         justifyContent: "space-between",
                         padding: "10px 0",
-                        borderBottom: "1px solid #ece8e0",
+                        borderBottom: "1px solid #dde0e4",
                         fontSize: "13px",
                         color: "#374151",
                         textDecoration: "none",
@@ -302,16 +295,16 @@ export default function BlogPage() {
               {/* CTA box */}
               <div
                 style={{
-                  background: "#f8f6f2",
+                  background: "#f0f1f2",
                   padding: "24px",
-                  border: "1px solid #ece8e0",
+                  border: "1px solid #dde0e4",
                 }}
               >
                 <p
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "14px",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                     marginBottom: "10px",
                   }}
@@ -335,7 +328,7 @@ export default function BlogPage() {
                     textAlign: "center",
                     padding: "10px",
                     fontSize: "13px",
-                    background: "#0d1b2a",
+                    background: "#293540",
                     color: "#ffffff",
                     textDecoration: "none",
                   }}

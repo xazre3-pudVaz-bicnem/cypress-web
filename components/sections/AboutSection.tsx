@@ -5,7 +5,7 @@ export default function AboutSection() {
     <section id="about" className="py-28 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
-          <span className="text-[11px] font-mono tracking-[0.22em] text-[#3B82F6] uppercase block mb-4">
+          <span className="text-[11px] font-mono tracking-[0.22em] text-[#096fc8] uppercase block mb-4">
             About
           </span>
         </AnimatedSection>
@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start mt-2">
           <AnimatedSection delay={0.05}>
             <h2
-              className="font-black text-[#0F172A] leading-[1.1] tracking-[-0.02em]"
+              className="font-black text-[#333333] leading-[1.1] tracking-[-0.02em]"
               style={{ fontSize: "clamp(32px, 4vw, 52px)" }}
             >
               Webマーケティングと
@@ -51,7 +51,7 @@ export default function AboutSection() {
                   className="border border-[#E2E8F0] rounded-xl p-5"
                 >
                   <p
-                    className="font-black text-[#0F172A] leading-none mb-1.5 tracking-tight"
+                    className="font-black text-[#333333] leading-none mb-1.5 tracking-tight"
                     style={{ fontSize: "clamp(24px, 2.5vw, 32px)" }}
                   >
                     {item.num}

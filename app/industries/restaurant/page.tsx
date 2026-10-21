@@ -173,19 +173,19 @@ export default function RestaurantIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>飲食店</span>
+              <span style={{ color: "#333333" }}>飲食店</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "16px" }}>
               Restaurant Marketing
             </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#0d1b2a", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#333333", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
               飲食店のMEO対策・<br />Web集客戦略
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -202,7 +202,7 @@ export default function RestaurantIndustryPage() {
               高めたい店舗など、あらゆるご状況に合わせてご提案します。
             </p>
             <div style={{ marginTop: "32px" }}>
-              <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#ffffff", padding: "12px 32px", fontSize: "13px", fontWeight: 600, textDecoration: "none", fontFamily: "var(--font-serif)" }}>
+              <Link href="/contact" style={{ display: "inline-block", background: "#293540", color: "#ffffff", padding: "12px 32px", fontSize: "13px", fontWeight: 600, textDecoration: "none", fontFamily: "var(--font-serif)" }}>
                 無料診断を依頼する →
               </Link>
             </div>
@@ -226,7 +226,7 @@ export default function RestaurantIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               飲食店が抱える集客課題
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -238,10 +238,10 @@ export default function RestaurantIndustryPage() {
                 { n: "05", t: "Instagramの更新が止まり、ブランドイメージが劣化している", b: "1〜2ヶ月更新が止まっているInstagramは「閉店したのでは」「やる気がない」という印象を与え、新規フォロワーを獲得できません。飲食店のInstagramは料理写真・季節メニュー・限定企画の告知として機能し、フォロワーの来店動機を継続的に高める役割があります。" },
                 { n: "06", t: "ランチ・ディナーの使い分けができておらずキーワードを取りこぼしている", b: "「○○駅 ランチ」と「○○駅 居酒屋 ディナー」では検索する時間帯・目的・ユーザーがまったく異なります。GBPのランチ・ディナー別メニュー登録と、ホームページでのランチ・ディナー別ページ設計により、異なる時間帯の需要を両方取り込むことができます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -251,10 +251,10 @@ export default function RestaurantIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               飲食店のSEO・MEO戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -278,7 +278,7 @@ export default function RestaurantIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>MEO Tips</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               飲食店のGoogleマップ活用術（MEO）
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -296,10 +296,10 @@ export default function RestaurantIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SNS Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               飲食店のSNS・コンテンツ戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -317,9 +317,9 @@ export default function RestaurantIndustryPage() {
         </section>
 
         {/* サイプレスができること */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               飲食店向けにサイプレスができること
             </h2>
@@ -330,9 +330,9 @@ export default function RestaurantIndustryPage() {
                 { t: "口コミ獲得フロー設計", b: "QRコードPOP・レシートへの印字・LINE送信テンプレートなど、自然に口コミを集める仕組みを設計。ネガティブ口コミへの返信テンプレートも提供します。" },
                 { t: "飲食店向けホームページ制作", b: "ランチ・ディナー別ページ・予約システム連動・スマートフォン最適化・LocalBusiness Schema実装まで完備。検索とGBPの両方から来客を受け止めるサイトを構築します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "var(--v2-accent)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -343,7 +343,7 @@ export default function RestaurantIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Web Design</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               飲食店の選ばれるWebサイトの作り方
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -361,10 +361,10 @@ export default function RestaurantIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               集客フロー・実装ステップ
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -413,10 +413,10 @@ export default function RestaurantIndustryPage() {
                   b: "GBPインサイト（検索表示回数・ルート検索数・電話タップ数）とホームページのアクセス解析を月次でレポートします。数値を見ながら投稿内容・写真テーマ・キーワード戦略を見直し、PDCAを回すことで集客施策を継続的に改善します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -429,7 +429,7 @@ export default function RestaurantIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>KPI</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               成果を測るKPI
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -468,13 +468,13 @@ export default function RestaurantIndustryPage() {
                   desc: "Webマーケティング施策開始前後の来客数・売上の変化を追うことで、MEO・SNS・SEO施策が実際の営業成果にどう貢献しているかを評価できます。客単価の推移もあわせて確認します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
+                <div key={i} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
                   <div style={{ minWidth: "8px", paddingTop: "8px" }}>
-                    <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#c4b89a" }} />
+                    <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--v2-accent)" }} />
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
+                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>
@@ -484,9 +484,9 @@ export default function RestaurantIndustryPage() {
         </section>
 
         {/* サイプレスに依頼するメリット */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Choose Us</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Choose Us</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -513,22 +513,22 @@ export default function RestaurantIndustryPage() {
                   b: "集客施策が複数の会社に分散すると戦略の一貫性が失われます。サイプレスではMEO対策・Instagram運用・ホームページ制作・口コミ管理をワンストップで担い、施策間の連携を最大化した効率的な来店増加体制を構築します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ borderTop: "1px solid rgba(196,184,154,0.3)", paddingTop: "24px" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
+                <div key={item.n} style={{ borderTop: "1px solid rgba(9,111,200,0.3)", paddingTop: "24px" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#FFFFFF", marginBottom: "10px", lineHeight: "1.5" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
             <div style={{ marginTop: "48px" }}>
-              <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#ffffff", padding: "14px 36px", fontSize: "14px", fontWeight: 600, textDecoration: "none", fontFamily: "var(--font-serif)" }}>
+              <Link href="/contact" style={{ display: "inline-block", background: "#293540", color: "#ffffff", padding: "14px 36px", fontSize: "14px", fontWeight: 600, textDecoration: "none", fontFamily: "var(--font-serif)" }}>
                 無料相談はこちら →
               </Link>
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="飲食店のWebマーケティングに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="飲食店のWebマーケティングに関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="飲食店の集客改善をサポートします"

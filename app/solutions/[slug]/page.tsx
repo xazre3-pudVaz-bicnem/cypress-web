@@ -57,18 +57,18 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/solutions" style={{ color: "#6B7280" }}>ソリューション</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
+              <span style={{ color: "#333333" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
             <p style={{ fontSize: "12px", color: "#9ca3af", fontStyle: "italic", marginBottom: "12px" }}>{page.tagline}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.25 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#333333", fontWeight: 700, lineHeight: 1.25 }}>
               {page.title}
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "24px", maxWidth: "680px" }}>
@@ -81,14 +81,14 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Features</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このソリューションの特徴
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {page.features.map((item) => (
                 <div key={item.num} style={{ background: "#ffffff", padding: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px", lineHeight: 1.4 }}>{item.title}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>{item.num}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px", lineHeight: 1.4 }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                 </div>
               ))}
@@ -97,16 +97,16 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
         </section>
 
         {/* Target Customer */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>For Whom</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "32px" }}>
               こんな企業に最適です
             </h2>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, maxWidth: "640px" }}>
               {page.targetCustomer.map((item, i) => (
-                <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderTop: "1px solid #ece8e0" }}>
-                  <svg style={{ flexShrink: 0, marginTop: "3px" }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d1b2a" strokeWidth={2.5}>
+                <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", padding: "14px 0", borderTop: "1px solid #dde0e4" }}>
+                  <svg style={{ flexShrink: 0, marginTop: "3px" }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#333333" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                   <span style={{ fontSize: "15px", color: "#374151", lineHeight: "1.7" }}>{item}</span>
@@ -117,7 +117,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
         </section>
 
         {/* Process */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.4)", fontSize: "11px", marginBottom: "12px" }}>Process</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
@@ -137,7 +137,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#f0f1f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading="このソリューションについて相談する"

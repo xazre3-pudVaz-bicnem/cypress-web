@@ -164,18 +164,18 @@ export default function PrivacyPolicyPage() {
       <Header />
       <main style={{ background: "#FFFFFF" }}>
         {/* Hero */}
-        <section className="pt-32 pb-14" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-14" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>プライバシーポリシー</span>
+              <span style={{ color: "#333333" }}>プライバシーポリシー</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#9CA3AF" }}>
               Privacy Policy
             </p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(26px, 3.6vw, 44px)" }}
             >
               プライバシーポリシー
@@ -192,8 +192,8 @@ export default function PrivacyPolicyPage() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               {SECTIONS.map((sec) => (
-                <div key={sec.heading} className="py-9" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <h2 className="font-bold text-[17px] mb-5 leading-snug" style={{ color: "#0F172A" }}>
+                <div key={sec.heading} className="py-9" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <h2 className="font-bold text-[17px] mb-5 leading-snug" style={{ color: "#333333" }}>
                     {sec.heading}
                   </h2>
                   {sec.paragraphs?.map((p) => (
@@ -205,7 +205,7 @@ export default function PrivacyPolicyPage() {
                     <ul className="mt-2 mb-2">
                       {sec.list.map((item) => (
                         <li key={item} className="flex gap-3 py-2">
-                          <span className="shrink-0 text-[13px]" style={{ color: "#C4B89A" }}>—</span>
+                          <span className="shrink-0 text-[13px]" style={{ color: "var(--v2-accent)" }}>—</span>
                           <span className="text-[13.5px] leading-[1.9]" style={{ color: "#374151" }}>{item}</span>
                         </li>
                       ))}
@@ -214,7 +214,7 @@ export default function PrivacyPolicyPage() {
                   {sec.note && (
                     <p
                       className="text-[13px] leading-[1.95] mt-5 p-4"
-                      style={{ color: "#374151", background: "#F9F8F5", borderLeft: "3px solid #0F172A" }}
+                      style={{ color: "#374151", background: "#f0f1f2", borderLeft: "3px solid #333333" }}
                     >
                       {sec.note}
                     </p>
@@ -223,26 +223,26 @@ export default function PrivacyPolicyPage() {
               ))}
 
               {/* 事業者情報 */}
-              <div className="py-9" style={{ borderTop: "1px solid #E8E4DC" }}>
-                <h2 className="font-bold text-[17px] mb-6 leading-snug" style={{ color: "#0F172A" }}>
+              <div className="py-9" style={{ borderTop: "1px solid #dde0e4" }}>
+                <h2 className="font-bold text-[17px] mb-6 leading-snug" style={{ color: "#333333" }}>
                   12. 事業者情報・お問い合わせ窓口
                 </h2>
                 <div>
                   {CONTACT_ROWS.map((row) => (
-                    <div key={row.label} className="flex flex-col sm:flex-row gap-1 sm:gap-8 py-3.5" style={{ borderTop: "1px solid #E8E4DC" }}>
-                      <span className="sm:w-44 shrink-0 text-[13px] font-semibold" style={{ color: "#0F172A" }}>{row.label}</span>
+                    <div key={row.label} className="flex flex-col sm:flex-row gap-1 sm:gap-8 py-3.5" style={{ borderTop: "1px solid #dde0e4" }}>
+                      <span className="sm:w-44 shrink-0 text-[13px] font-semibold" style={{ color: "#333333" }}>{row.label}</span>
                       <span className="text-[13px] leading-[1.85]" style={{ color: "#374151" }}>{row.value}</span>
                     </div>
                   ))}
-                  <div style={{ borderTop: "1px solid #E8E4DC" }} />
+                  <div style={{ borderTop: "1px solid #dde0e4" }} />
                 </div>
                 <p className="text-[13px] leading-[1.95] mt-6" style={{ color: "#374151" }}>
                   本方針に関するご質問、個人情報の開示・訂正・利用停止等のご請求は、上記のお問い合わせ窓口までご連絡ください。
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 mt-7 px-7 py-3 text-[13px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                  style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                  className="inline-flex items-center gap-2 mt-7 px-7 py-3 text-[13px] font-medium transition-all hover:bg-[#293540] hover:text-white"
+                  style={{ border: "1px solid #333333", color: "#333333" }}
                 >
                   お問い合わせフォームへ
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

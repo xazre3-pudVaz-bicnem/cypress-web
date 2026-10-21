@@ -138,19 +138,19 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>MEO診断・監査</span>
+              <span style={{ color: "#333333" }}>MEO診断・監査</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Audit
             </p>
-            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO診断・監査
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
@@ -176,12 +176,12 @@ export default function Page() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -194,7 +194,7 @@ export default function Page() {
                 "監査から改善ロードマップ作成までの10ステップとKPI一覧",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -203,9 +203,9 @@ export default function Page() {
         </section>
 
         {/* 診断なし施策のリスク */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Without Audit
             </p>
             <h2 className="font-black text-[28px] mb-10" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
@@ -218,7 +218,7 @@ export default function Page() {
                 { t: "改善の優先順位がわからない", b: "MEO対策には多くの施策がありますが、すべてを同時に対応することはできません。インパクトが大きく取り組みやすい施策から優先して実施するための優先順位付けに診断が必要です。" },
                 { t: "成果が測れず改善サイクルが回らない", b: "現状数値（インプレッション・クリック・経路案内リクエスト数）を把握していないと施策の効果も測れません。診断で現在値を計測することがPDCAの出発点です。" },
               ].map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid rgba(196,184,154,0.25)" }}>
+                <div key={i} className="p-6" style={{ border: "1px solid rgba(9,111,200,0.25)" }}>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
                 </div>
@@ -233,7 +233,7 @@ export default function Page() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Audit Items
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO診断の対象項目
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -252,26 +252,26 @@ export default function Page() {
                 { n: "08", t: "ウェブサイトとの連携状況", b: "GBPのウェブサイトURLが正しく設定されているか、ウェブサイト側にLocalBusinessスキーマが実装されているかを確認します。" },
                 { n: "09", t: "Q&A・サービス・商品情報の充実度", b: "GBPのQ&A機能・サービス一覧・商品情報が設定されているかを確認します。これらを充実させることで検索結果でのリッチな表示が可能になります。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.t}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -321,17 +321,17 @@ export default function Page() {
                   body: "Googleのアルゴリズムは定期的に更新され、競合の動向も変化します。一度最適化しても放置し続けると、いつの間にか競合に追い越されます。半年に一度の定期監査が継続的な順位維持に有効です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -342,7 +342,7 @@ export default function Page() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -384,28 +384,28 @@ export default function Page() {
                   point: "サービス内容のGBPへの詳細記載・出張・訪問対応の有無とエリア設定・ウェブサイトとの予約・見積もり導線の連携を確認します。業種によって有効な属性が異なるため、設定可能な属性の網羅的チェックが重要です。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.industry}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.point}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Audit Flow
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装・改善フロー
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -455,17 +455,17 @@ export default function Page() {
                   detail: "優先課題を時系列に並べた改善ロードマップを作成します。即日対応・1ヶ月以内・3ヶ月以内・6ヶ月以内の4フェーズに分類し、担当者・期限・期待効果を明示した実行計画として仕上げます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.step}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -476,7 +476,7 @@ export default function Page() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPI Metrics
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -514,30 +514,30 @@ export default function Page() {
                   detail: "監査で洗い出した改善タスクのうち、実際に対応完了したタスクの割合です。ロードマップのタスク管理表で追跡します。定期監査（半年後）までの改善実施率を目標設定します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.kpi}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 診断から始めることが重要な理由 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   Why It Matters
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
                   診断から始めることが重要な理由
                 </h2>
                 <div className="space-y-4">
@@ -549,7 +549,7 @@ export default function Page() {
                     <div key={item.n} className="flex gap-4">
                       <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                       <div>
-                        <p className="font-bold text-[14px] mb-1" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                        <p className="font-bold text-[14px] mb-1" style={{ color: "#333333" }}>{item.t}</p>
                         <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                       </div>
                     </div>
@@ -559,7 +559,7 @@ export default function Page() {
                   <Link
                     href="/contact"
                     className="inline-block px-8 py-4 text-[14px] font-semibold tracking-wide"
-                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                    style={{ background: "#293540", color: "#FFFFFF" }}
                   >
                     MEO診断を依頼する
                   </Link>

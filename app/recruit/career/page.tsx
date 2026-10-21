@@ -21,7 +21,7 @@ const CAREER_PATHS = [
     title: "基礎習得期",
     description: "MEO・SEO・AIOの基礎を学びながら、担当クライアントを持ちます。先輩のサポートを受けながらOJTで成長します。",
     goals: ["MEO対策の基礎を習得", "初回クライアント担当（3〜5社）", "Google Analytics・サーチコンソールの習熟", "AIツールの業務活用"],
-    color: "#3B82F6",
+    color: "#096fc8",
   },
   {
     phase: "Phase 2",
@@ -65,7 +65,7 @@ export default function CareerPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-20 relative overflow-hidden">
+        <section data-page-hero className="pt-32 pb-20 relative overflow-hidden">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -76,15 +76,15 @@ export default function CareerPage() {
           />
           <div className="relative z-10 max-w-5xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#475569] mb-8">
-              <Link href="/" className="hover:text-[#2563EB] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/recruit" className="hover:text-[#2563EB] transition-colors">採用情報</Link>
+              <Link href="/recruit" className="hover:text-[#096fc8] transition-colors">採用情報</Link>
               <span>/</span>
-              <span className="text-[#2563EB]">キャリアパス</span>
+              <span className="text-[#096fc8]">キャリアパス</span>
             </nav>
-            <SectionLabel color="#8B5CF6">Career Path</SectionLabel>
+            <p>Career Path</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-6"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-6"
               style={{ fontSize: "clamp(28px, 4vw, 56px)" }}
             >
               キャリアパス
@@ -100,7 +100,7 @@ export default function CareerPage() {
         <section className="pb-24 max-w-5xl mx-auto px-6">
           <ScrollReveal>
             <SectionLabel color="#8B5CF6">Growth Roadmap</SectionLabel>
-            <h2 className="font-black text-[#0F172A] text-xl md:text-2xl mb-10">成長ロードマップ</h2>
+            <h2 className="font-black text-[#333333] text-xl md:text-2xl mb-10">成長ロードマップ</h2>
           </ScrollReveal>
           <div className="space-y-5">
             {CAREER_PATHS.map((phase, i) => (
@@ -118,7 +118,7 @@ export default function CareerPage() {
                       <div className="text-[#475569] text-sm">{phase.period}</div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-black text-[#0F172A] text-lg mb-3">{phase.title}</h3>
+                      <h3 className="font-black text-[#333333] text-lg mb-3">{phase.title}</h3>
                       <p className="text-[#64748B] text-sm leading-relaxed mb-5">{phase.description}</p>
                       <div className="grid sm:grid-cols-2 gap-2">
                         {phase.goals.map((goal) => (
@@ -141,7 +141,7 @@ export default function CareerPage() {
           <div className="max-w-5xl mx-auto px-6">
             <ScrollReveal>
               <SectionLabel color="#8B5CF6">Employee Voices</SectionLabel>
-              <h2 className="font-black text-[#0F172A] text-xl md:text-2xl mb-10">先輩社員の声</h2>
+              <h2 className="font-black text-[#333333] text-xl md:text-2xl mb-10">先輩社員の声</h2>
             </ScrollReveal>
             <div className="grid md:grid-cols-3 gap-5">
               {VOICES.map((v, i) => (
@@ -149,7 +149,7 @@ export default function CareerPage() {
                   <GlassCard className="p-6">
                     <p className="text-[#64748B] text-sm leading-relaxed mb-5 italic">&quot;{v.quote}&quot;</p>
                     <div>
-                      <p className="text-[#0F172A] text-sm font-bold">{v.name}</p>
+                      <p className="text-[#333333] text-sm font-bold">{v.name}</p>
                       <p className="text-[#475569] text-xs mt-0.5">{v.role}</p>
                     </div>
                   </GlassCard>
@@ -162,13 +162,13 @@ export default function CareerPage() {
         {/* CTA */}
         <section className="py-20 max-w-5xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <h2 className="font-black text-[#0F172A] text-2xl mb-4">あなたのキャリアを、ここから</h2>
+            <h2 className="font-black text-[#333333] text-2xl mb-4">あなたのキャリアを、ここから</h2>
             <p className="text-[#64748B] mb-8">まずはカジュアル面談でお話しましょう。</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-white text-sm transition-all hover:scale-105"
-                style={{ background: "#2563EB" }}
+                style={{ background: "#096fc8" }}
               >
                 応募・お問い合わせ →
               </Link>

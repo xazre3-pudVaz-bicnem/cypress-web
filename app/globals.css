@@ -4,10 +4,21 @@
 
 @theme inline {
   --color-background: #ffffff;
-  --color-foreground: #1a2332;
+  --color-foreground: #333333;
   --font-sans: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  --font-serif: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
-  --font-display: var(--font-display), Georgia, serif;
+  --font-serif: var(--font-serif), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-display: var(--font-display), sans-serif;
+}
+
+/*
+ * 2026-10 デザイン刷新: 明朝体（Noto Serif JP）と Cormorant の読み込みをやめ、
+ * 旧ページが参照している --font-serif / --font-display をゴシックと英字の書体に付け替える。
+ * （各ページのインライン指定 var(--font-serif) もこれで新しい書体になる）
+ */
+:root {
+  --font-stack: var(--font-gsf), var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-serif: var(--font-stack);
+  --font-display: var(--font-gsf), var(--font-sans), sans-serif;
 }
 
 html {
@@ -16,8 +27,9 @@ html {
 
 body {
   background: #ffffff;
-  color: #1a2332;
-  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: #333333;
+  font-family: var(--font-stack);
+  font-feature-settings: "palt";
   font-size: 15px;
   line-height: 1.9;
   -webkit-font-smoothing: antialiased;
@@ -25,35 +37,36 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
-  line-height: 1.3;
-  color: #0d1b2a;
+  font-family: var(--font-stack);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333333;
   letter-spacing: 0.02em;
 }
 
 h4, h5, h6 {
-  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: var(--font-stack);
   line-height: 1.5;
-  color: #1a2332;
+  color: #333333;
 }
 
 p, li, td, th, span, a {
-  font-family: var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: var(--font-stack);
 }
 
 .font-serif {
-  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif !important;
+  font-family: var(--font-stack) !important;
 }
 
 .font-display {
-  font-family: var(--font-display), Georgia, serif !important;
+  font-family: var(--font-display) !important;
 }
 
 .label-en {
-  font-family: var(--font-display), Georgia, serif;
-  letter-spacing: 0.25em;
-  font-size: 11px;
-  font-weight: 400;
+  font-family: var(--font-display);
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -91,20 +104,20 @@ p, li, td, th, span, a {
 
 /* WordPress content styles */
 .wp-content h2 {
-  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-family: var(--font-stack);
   font-size: clamp(18px, 2.2vw, 24px);
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 700;
   margin-top: 48px;
   margin-bottom: 20px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #ece8e0;
+  border-bottom: 1px solid #dde0e4;
 }
 
 .wp-content h3 {
-  font-family: var(--font-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-family: var(--font-stack);
   font-size: clamp(16px, 1.8vw, 20px);
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 600;
   margin-top: 36px;
   margin-bottom: 16px;
@@ -128,21 +141,21 @@ p, li, td, th, span, a {
 }
 
 .wp-content a {
-  color: #0d1b2a;
+  color: #333333;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .wp-content strong {
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 600;
 }
 
 .wp-content blockquote {
-  border-left: 3px solid #0d1b2a;
+  border-left: 3px solid #333333;
   margin: 32px 0;
   padding: 16px 24px;
-  background: #f8f6f2;
+  background: #f0f1f2;
   font-style: normal;
 }
 
@@ -161,13 +174,13 @@ p, li, td, th, span, a {
 
 .wp-content th, .wp-content td {
   padding: 10px 14px;
-  border: 1px solid #ece8e0;
+  border: 1px solid #dde0e4;
   text-align: left;
 }
 
 .wp-content th {
-  background: #f8f6f2;
-  color: #0d1b2a;
+  background: #f0f1f2;
+  color: #333333;
   font-weight: 600;
 }
 
@@ -179,20 +192,20 @@ p, li, td, th, span, a {
 }
 
 .blog-content h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-stack);
   font-size: clamp(18px, 2vw, 24px);
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 700;
   margin: 48px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ece8e0;
+  border-bottom: 1px solid #dde0e4;
   line-height: 1.4;
 }
 
 .blog-content h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-stack);
   font-size: clamp(16px, 1.6vw, 20px);
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 700;
   margin: 32px 0 14px;
   line-height: 1.45;
@@ -200,7 +213,7 @@ p, li, td, th, span, a {
 
 .blog-content h4 {
   font-size: 15px;
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 700;
   margin: 24px 0 10px;
 }
@@ -221,15 +234,15 @@ p, li, td, th, span, a {
 }
 
 .blog-content strong {
-  color: #0d1b2a;
+  color: #333333;
   font-weight: 700;
 }
 
 .blog-content blockquote {
   margin: 28px 0;
   padding: 16px 20px;
-  border-left: 3px solid #c4a96a;
-  background: #f8f6f2;
+  border-left: 3px solid var(--v2-accent);
+  background: #f0f1f2;
   color: #374151;
   font-size: 14px;
   line-height: 1.85;
@@ -242,11 +255,11 @@ p, li, td, th, span, a {
 .blog-content hr {
   margin: 40px 0;
   border: none;
-  border-top: 1px solid #ece8e0;
+  border-top: 1px solid #dde0e4;
 }
 
 .blog-content a {
-  color: #0d1b2a;
+  color: #333333;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -261,7 +274,7 @@ p, li, td, th, span, a {
 
 .blog-content pre {
   background: #1a2332;
-  color: #e8e4dc;
+  color: #dde0e4;
   padding: 20px;
   overflow-x: auto;
   margin: 28px 0;
@@ -285,13 +298,13 @@ p, li, td, th, span, a {
 .blog-content th,
 .blog-content td {
   padding: 10px 14px;
-  border: 1px solid #ece8e0;
+  border: 1px solid #dde0e4;
   text-align: left;
 }
 
 .blog-content th {
-  background: #f8f6f2;
-  color: #0d1b2a;
+  background: #f0f1f2;
+  color: #333333;
   font-weight: 600;
 }
 
@@ -508,4 +521,183 @@ html.cy-intro-skip {
 }
 html[data-motion="off"] .cy-poster {
   animation-play-state: paused;
+}
+
+/* =====================================================================
+   下層ページ（2026-10 刷新・第2段階）
+   既存ページのマークアップはそのまま、一括変換で付けた目印に CSS を当てて新デザインにそろえる。
+   ===================================================================== */
+:root {
+  /* 旧デザインの金色を置き換えた差し色。濃い背景の中では明るい青に切り替える */
+  --v2-accent: #096fc8;
+}
+[data-tone="dark"],
+[data-page-hero] {
+  --v2-accent: #8ec5f5;
+}
+
+/* ページ冒頭: 濃紺の帯に等高線、巨大な英字見出し＋日本語のページ名（参考サイトの下層ページの型） */
+[data-page-hero] {
+  position: relative;
+  overflow: hidden;
+  background: var(--v2-navy) !important;
+  color: #ffffff;
+  padding-top: clamp(140px, 21vh, 220px) !important;
+  padding-bottom: clamp(64px, 10vh, 112px) !important;
+  border: 0 !important;
+}
+[data-page-hero]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/v2/contour.svg") center / cover no-repeat;
+  pointer-events: none;
+}
+[data-page-hero] > * {
+  position: relative;
+}
+/* 旧デザインの背景写真や暗幕は使わない */
+[data-page-hero] img[data-nimg="fill"],
+[data-page-hero] > div[aria-hidden],
+[data-page-hero] > div:has(> img[data-nimg="fill"]) {
+  display: none !important;
+}
+[data-page-hero] :where(h1, h2, h3, p, li, span, a, strong, dt, dd, small, time) {
+  color: #ffffff !important;
+}
+[data-page-hero] :where(p, li) {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+/* 背景色の付いたタグ・ボタン・小さな枠は、濃紺に馴染む半透明の白地＋白文字にそろえる */
+[data-page-hero] :is(a, span, button, div, li)[style*="background:" i]:not([style*="background:transparent" i]):not([style*="background:none" i]),
+[data-page-hero] :is(a, span, button, div, li):is(.bg-white, [class*="bg-[#"]) {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  color: #ffffff !important;
+}
+[data-page-hero] :is(a, span, button, div, li)[style*="background:" i] * {
+  color: #ffffff !important;
+}
+/* 枠線だけのボタンは白い線に */
+[data-page-hero] a[style*="border"]:not([style*="background:#" i]) {
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+/* 英字の小見出し（h1 の直前の段落）を巨大な英字見出しにする */
+[data-page-hero] p:has(+ h1) {
+  font-family: var(--font-gsf), sans-serif !important;
+  font-size: clamp(48px, 8.6vw, 136px) !important;
+  font-weight: 600 !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.03em !important;
+  text-transform: none !important;
+  color: #ffffff !important;
+  margin: 0 0 22px !important;
+  max-width: 100% !important;
+}
+[data-page-hero] h1 {
+  font-size: clamp(30px, 4.4vw, 60px) !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.02em !important;
+}
+[data-page-hero] p:has(+ h1) + h1 {
+  font-size: clamp(18px, 1.8vw, 26px) !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.04em !important;
+  margin-bottom: 22px !important;
+}
+/* パンくずは PC では帯の右下に小さく置く */
+[data-page-hero] nav {
+  font-size: 12px !important;
+  font-weight: 600;
+}
+[data-page-hero] nav,
+[data-page-hero] nav * {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+@media (min-width: 768px) {
+  [data-page-hero] nav {
+    position: absolute;
+    right: 0;
+    bottom: calc(-1 * clamp(40px, 7vh, 80px));
+    margin: 0 !important;
+  }
+}
+
+/* 旧ページの濃い帯（data-tone="dark"）にも等高線の質感を足す */
+section[data-tone="dark"]:not([data-page-hero]) {
+  position: relative;
+  background-image: url("/images/v2/contour.svg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* 2026-10 phase2 */
+
+/* セクションの小さな英字ラベル（h2 の直前の段落）を、参考サイトの「News」「Seminar」のような英字見出しにする */
+main:not(.v2) p:has(+ h2):not([data-page-hero] *) {
+  font-family: var(--font-gsf), sans-serif !important;
+  font-size: clamp(26px, 2.5vw, 38px) !important;
+  font-weight: 600 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  color: var(--v2-blue) !important;
+  margin-bottom: 10px !important;
+}
+main:not(.v2) [data-tone="dark"] p:has(+ h2) {
+  color: var(--v2-accent) !important;
+}
+
+/* 冒頭のすぐ後ろの写真の帯は、角丸のパネルにして濃紺の帯に少し重ねる */
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) {
+  position: relative;
+  z-index: 1;
+  margin: calc(-1 * clamp(24px, 4vh, 48px)) var(--v2-gutter) 0;
+  width: auto !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* 長い URL や英数字の連なりでスマホの横幅を押し広げないよう、本文は必要なら途中で折り返す */
+main :where(p, li, dd, td, th, h1, h2, h3, h4, a) {
+  overflow-wrap: anywhere;
+}
+
+/* 記事ページの冒頭は、英字の大見出しを使わず記事タイトルを読みやすい大きさで見せる */
+[data-page-hero="article"] h1 {
+  font-size: clamp(24px, 2.8vw, 40px) !important;
+  line-height: 1.55 !important;
+  max-width: 34em;
+}
+
+/* 下層ページ: スクロールに合わせて本文が下からふわっと出る（対応ブラウザのみ・JS なし）。
+   translate と opacity だけを動かし、終わると元の指定（インラインの transform・opacity）に戻る */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    html:not([data-motion="off"]) main:not(.v2) section:not([data-page-hero]) > div > :is(h2, h3, p, ul, ol, table, dl, div, a) {
+      animation: v2-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+  }
+}
+@keyframes v2-reveal {
+  from {
+    opacity: 0;
+    translate: 0 32px;
+  }
+}
+
+/* 記事本文の表・コードは、はみ出す分だけ横スクロールにする */
+.blog-content :is(table, pre),
+.wp-content :is(table, pre) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 下層ページ: 画面外のセクションは近づくまで描画計算を省く（長いページの初回表示を軽くする） */
+main:not(.v2) > section:not([data-page-hero]) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }

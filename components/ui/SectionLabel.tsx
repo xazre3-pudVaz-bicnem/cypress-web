@@ -3,7 +3,7 @@ interface Props {
   color?: string;
 }
 
-export function SectionLabel({ children, color = "#2563EB" }: Props) {
+export function SectionLabel({ children, color = "#096fc8" }: Props) {
   return (
     <div className="inline-flex items-center gap-2.5 mb-4">
       <span className="w-6 h-px" style={{ background: color }} />

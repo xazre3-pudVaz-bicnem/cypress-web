@@ -6,7 +6,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { getLatestColumns } from "@/lib/data/columns";
 
 const CATEGORY_COLORS: Record<string, { text: string; bg: string }> = {
-  SEO:           { text: "#2563EB", bg: "rgba(37,99,235,0.08)" },
+  SEO:           { text: "#096fc8", bg: "rgba(37,99,235,0.08)" },
   MEO:           { text: "#10B981", bg: "rgba(16,185,129,0.08)" },
   AIO:           { text: "#8B5CF6", bg: "rgba(139,92,246,0.08)" },
   AI:            { text: "#06B6D4", bg: "rgba(6,182,212,0.08)" },
@@ -36,7 +36,7 @@ export default function LatestColumnsSection() {
               <SectionLabel>Column</SectionLabel>
               <h2
                 className="font-black leading-tight tracking-tight"
-                style={{ fontSize: "clamp(26px, 3.5vw, 40px)", color: "#0F172A" }}
+                style={{ fontSize: "clamp(26px, 3.5vw, 40px)", color: "#333333" }}
               >
                 最新コラム
               </h2>
@@ -44,7 +44,7 @@ export default function LatestColumnsSection() {
             <Link
               href="/column"
               className="hidden sm:inline-flex items-center gap-2 text-sm font-medium transition-colors"
-              style={{ color: "#2563EB" }}
+              style={{ color: "#096fc8" }}
             >
               すべて見る
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -98,7 +98,7 @@ export default function LatestColumnsSection() {
                     {/* Title */}
                     <h3
                       className="font-bold text-sm leading-snug line-clamp-3 transition-colors"
-                      style={{ color: "#0F172A" }}
+                      style={{ color: "#333333" }}
                     >
                       {col.title}
                     </h3>
@@ -136,7 +136,7 @@ export default function LatestColumnsSection() {
             <Link
               href="/column"
               className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
-              style={{ color: "#2563EB" }}
+              style={{ color: "#096fc8" }}
             >
               すべてのコラムを見る
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

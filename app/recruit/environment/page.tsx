@@ -20,7 +20,7 @@ const BENEFITS = [
     icon: "🏠",
     title: "フルリモートワーク",
     desc: "全業務をリモートで完結可能。オンラインMTGとSlackで円滑なコミュニケーションを実現しています。",
-    color: "#3B82F6",
+    color: "#096fc8",
   },
   {
     icon: "📅",
@@ -63,7 +63,7 @@ const CULTURE = [
 
 const STATS = [
   { value: "98%", label: "定着率（設立来）", color: "#10B981" },
-  { value: "100%", label: "フルリモート対応", color: "#3B82F6" },
+  { value: "100%", label: "フルリモート対応", color: "#096fc8" },
   { value: "130日", label: "年間休日", color: "#8B5CF6" },
   { value: "20万円", label: "基本給（＋インセンティブ）", color: "#F59E0B" },
 ];
@@ -74,7 +74,7 @@ export default function EnvironmentPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-20 relative overflow-hidden">
+        <section data-page-hero className="pt-32 pb-20 relative overflow-hidden">
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
@@ -85,15 +85,15 @@ export default function EnvironmentPage() {
           />
           <div className="relative z-10 max-w-5xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#475569] mb-8">
-              <Link href="/" className="hover:text-[#2563EB] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/recruit" className="hover:text-[#2563EB] transition-colors">採用情報</Link>
+              <Link href="/recruit" className="hover:text-[#096fc8] transition-colors">採用情報</Link>
               <span>/</span>
-              <span className="text-[#2563EB]">職場環境・福利厚生</span>
+              <span className="text-[#096fc8]">職場環境・福利厚生</span>
             </nav>
-            <SectionLabel color="#10B981">Work Environment</SectionLabel>
+            <p>Work Environment</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-6"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-6"
               style={{ fontSize: "clamp(28px, 4vw, 56px)" }}
             >
               職場環境・福利厚生
@@ -134,14 +134,14 @@ export default function EnvironmentPage() {
         <section className="pb-24 max-w-5xl mx-auto px-6">
           <ScrollReveal>
             <SectionLabel color="#10B981">Benefits</SectionLabel>
-            <h2 className="font-black text-[#0F172A] text-xl md:text-2xl mb-10">福利厚生</h2>
+            <h2 className="font-black text-[#333333] text-xl md:text-2xl mb-10">福利厚生</h2>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {BENEFITS.map((b, i) => (
               <ScrollReveal key={b.title} delay={i * 0.07}>
                 <GlassCard className="p-6">
                   <div className="text-2xl mb-4">{b.icon}</div>
-                  <h3 className="font-bold text-[#0F172A] text-sm mb-2">{b.title}</h3>
+                  <h3 className="font-bold text-[#333333] text-sm mb-2">{b.title}</h3>
                   <p className="text-[#64748B] text-xs leading-relaxed">{b.desc}</p>
                 </GlassCard>
               </ScrollReveal>
@@ -154,7 +154,7 @@ export default function EnvironmentPage() {
           <div className="max-w-5xl mx-auto px-6">
             <ScrollReveal>
               <SectionLabel color="#10B981">Culture</SectionLabel>
-              <h2 className="font-black text-[#0F172A] text-xl md:text-2xl mb-10">カルチャー</h2>
+              <h2 className="font-black text-[#333333] text-xl md:text-2xl mb-10">カルチャー</h2>
             </ScrollReveal>
             <div className="grid md:grid-cols-2 gap-5">
               {CULTURE.map((c, i) => (
@@ -162,7 +162,7 @@ export default function EnvironmentPage() {
                   <GlassCard className="p-7">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
-                      <h3 className="font-bold text-[#0F172A] text-sm">{c.title}</h3>
+                      <h3 className="font-bold text-[#333333] text-sm">{c.title}</h3>
                     </div>
                     <p className="text-[#64748B] text-sm leading-relaxed">{c.body}</p>
                   </GlassCard>
@@ -175,13 +175,13 @@ export default function EnvironmentPage() {
         {/* CTA */}
         <section className="py-20 max-w-5xl mx-auto px-6 text-center">
           <ScrollReveal>
-            <h2 className="font-black text-[#0F172A] text-2xl mb-4">この環境で、一緒に働きませんか</h2>
+            <h2 className="font-black text-[#333333] text-2xl mb-4">この環境で、一緒に働きませんか</h2>
             <p className="text-[#64748B] mb-8">まずはカジュアル面談でお話しましょう。</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-white text-sm transition-all hover:scale-105"
-                style={{ background: "#2563EB" }}
+                style={{ background: "#096fc8" }}
               >
                 応募・お問い合わせ →
               </Link>

@@ -38,7 +38,7 @@ const BADGE_BG: Record<string, string> = {
 };
 
 const BADGE_COLOR: Record<string, string> = {
-  SEO: "#1D4ED8",
+  SEO: "#096fc8",
   MEO: "#047857",
   AIO: "#6D28D9",
   AI: "#0E7490",
@@ -99,17 +99,17 @@ export default function ColumnPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav
               className="flex items-center gap-2 text-[12px] mb-8"
               style={{ color: "#6B7280" }}
             >
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">
+              <Link href="/" className="hover:text-[#333333] transition-colors">
                 ホーム
               </Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>専門コラム</span>
+              <span style={{ color: "#333333" }}>専門コラム</span>
             </nav>
             <p
               className="text-[11px] uppercase tracking-[0.18em] mb-3"
@@ -118,7 +118,7 @@ export default function ColumnPage() {
               Expert Column
             </p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               専門コラム
@@ -138,7 +138,7 @@ export default function ColumnPage() {
           style={{
             background: "rgba(255,255,255,0.97)",
             backdropFilter: "blur(8px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #dde0e4",
           }}
         >
           <div className="max-w-6xl mx-auto px-6">
@@ -150,9 +150,9 @@ export default function ColumnPage() {
                 onClick={() => setActiveCategory("all")}
                 className="shrink-0 px-4 py-1.5 text-xs font-medium transition-all"
                 style={{
-                  background: activeCategory === "all" ? "#0F172A" : "transparent",
+                  background: activeCategory === "all" ? "#333333" : "transparent",
                   color: activeCategory === "all" ? "#FFFFFF" : "#6B7280",
-                  border: `1px solid ${activeCategory === "all" ? "#0F172A" : "#E8E4DC"}`,
+                  border: `1px solid ${activeCategory === "all" ? "#333333" : "#dde0e4"}`,
                 }}
               >
                 すべて ({allItems.length})
@@ -169,9 +169,9 @@ export default function ColumnPage() {
                     onClick={() => setActiveCategory(cat)}
                     className="shrink-0 px-4 py-1.5 text-xs font-medium transition-all"
                     style={{
-                      background: isActive ? "#0F172A" : "transparent",
+                      background: isActive ? "#333333" : "transparent",
                       color: isActive ? "#FFFFFF" : "#6B7280",
-                      border: `1px solid ${isActive ? "#0F172A" : "#E8E4DC"}`,
+                      border: `1px solid ${isActive ? "#333333" : "#dde0e4"}`,
                     }}
                   >
                     {cat} ({count})
@@ -193,11 +193,11 @@ export default function ColumnPage() {
               {filtered.map((item) => (
                 <div
                   key={item.slug}
-                  style={{ borderBottom: "1px solid #E8E4DC" }}
+                  style={{ borderBottom: "1px solid #dde0e4" }}
                 >
                   <Link
                     href={`/column/${item.slug}`}
-                    className="group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6 py-5 transition-colors hover:bg-[#F9F8F5] -mx-3 px-3"
+                    className="group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6 py-5 transition-colors hover:bg-[#f0f1f2] -mx-3 px-3"
                   >
                     <span
                       className="font-mono text-xs shrink-0 pt-0.5"
@@ -208,7 +208,7 @@ export default function ColumnPage() {
                     <span
                       className="shrink-0 self-start text-[10px] px-2 py-0.5 font-medium"
                       style={{
-                        background: BADGE_BG[item.category] ?? "#F9F8F5",
+                        background: BADGE_BG[item.category] ?? "#f0f1f2",
                         color: BADGE_COLOR[item.category] ?? "#374151",
                         minWidth: "72px",
                         textAlign: "center",
@@ -219,7 +219,7 @@ export default function ColumnPage() {
                     <div className="flex-1 min-w-0">
                       <p
                         className="text-sm font-medium leading-snug group-hover:underline underline-offset-4"
-                        style={{ color: "#0F172A" }}
+                        style={{ color: "#333333" }}
                       >
                         {item.title}
                       </p>
@@ -256,10 +256,10 @@ export default function ColumnPage() {
         {/* CTA */}
         <section
           className="py-20"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
         >
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="font-bold text-[#0F172A] text-xl mb-4">
+            <h2 className="font-bold text-[#333333] text-xl mb-4">
               専門家に直接ご相談ください
             </h2>
             <p className="text-[#374151] text-sm leading-relaxed mb-8 max-w-md">
@@ -267,8 +267,8 @@ export default function ColumnPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-              style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#293540] hover:text-white"
+              style={{ border: "1px solid #333333", color: "#333333" }}
             >
               お問い合わせ・ご相談
               <svg

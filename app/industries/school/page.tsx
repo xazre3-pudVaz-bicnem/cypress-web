@@ -144,17 +144,17 @@ export default function SchoolPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>学習塾・スクール</span>
+              <span style={{ color: "#333333" }}>学習塾・スクール</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>School &amp; Cram School</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               学習塾・スクールのWeb集客
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -176,7 +176,7 @@ export default function SchoolPage() {
         <section style={{ background: "#ffffff", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Key Services</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               学習塾・スクール向けサービス
             </h2>
             <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", maxWidth: "900px" }}>
@@ -192,8 +192,8 @@ export default function SchoolPage() {
                   desc: "合格実績・講師紹介・料金表・体験申し込みフォームを備えた入塾率を高めるサイトを制作します。",
                 },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #E8E4DC", textDecoration: "none", background: "#f9f8f5" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{item.label}</p>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", border: "1px solid #dde0e4", textDecoration: "none", background: "#f0f1f2" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "8px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#6b7280", lineHeight: "1.8" }}>{item.desc}</p>
                   <p style={{ fontSize: "12px", color: "#9CA3AF", marginTop: "12px" }}>詳細を見る →</p>
                 </Link>
@@ -203,10 +203,10 @@ export default function SchoolPage() {
         </section>
 
         {/* Why It Works */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Why It Works</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               学習塾集客でMEO＋SEOが効果的な理由
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -232,10 +232,10 @@ export default function SchoolPage() {
                   b: "「まず無料体験から」という低ハードルの入口設計と、LINE・フォームなど複数の問い合わせ手段を提供することで、検索から来た保護者が体験申し込みに進む転換率が改善します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -245,10 +245,10 @@ export default function SchoolPage() {
         </section>
 
         {/* 集客課題 */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Common Issues</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               学習塾・スクールが抱えるよくある集客課題
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -258,10 +258,10 @@ export default function SchoolPage() {
                 { n: "03", t: "合格実績・口コミが少なく信頼性の証明ができていない", b: "新しい塾・規模の小さい塾では口コミや合格実績が蓄積されておらず、保護者の検討段階で不安を感じさせてしまうことがあります。体験授業後・合格報告のタイミングを活用した口コミ依頼フローの整備と、合格実績のホームページ掲載が信頼構築の基盤になります。" },
                 { n: "04", t: "体験授業の申込み率が低く問い合わせが来ても入塾につながらない", b: "ホームページやGBPに体験授業の案内はあっても、「申し込みフォームが見つからない」「何を持参するか不明」「当日の流れがわからない」という情報不足が申込みのハードルを高めています。体験授業CTAのファーストビュー配置・当日の流れの明示・LINE申込みの選択肢追加で申込み率を向上させます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -271,20 +271,20 @@ export default function SchoolPage() {
         </section>
 
         {/* サイプレスの支援 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Our Support</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスの学習塾・スクール向け支援
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(196,184,154,0.2)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1px", background: "rgba(9,111,200,0.2)" }}>
               {[
                 { label: "MEO対策", desc: "「○○駅 学習塾」「○○区 英語塾 子ども」でGoogleマップ上位表示を目指します。GBPの教室写真・講師情報・口コミを整備し、体験申し込みにつながる地域検索からの流入を強化します。" },
                 { label: "ホームページ制作", desc: "合格実績・講師プロフィール・カリキュラム・料金・体験申し込みフォームを備えた入塾率を高めるホームページを制作します。保護者が「この塾なら安心」と感じる情報設計を優先します。" },
                 { label: "合格実績LP・季節LP", desc: "「夏期講習受付中」「○○受験対策コース」など季節・目的別のランディングページを制作します。入塾検討が高まる時期に向けた計画的なLP展開で体験申込み数を最大化します。" },
                 { label: "口コミ管理支援", desc: "体験授業後・合格報告タイミングでのGoogleマップ口コミ依頼フローを設計します。口コミ返信文面の作成代行も対応し、保護者の検討段階での信頼構築を継続的に支援します。" },
               ].map((s) => (
-                <div key={s.label} style={{ background: "#0d1b2a", padding: "28px" }}>
+                <div key={s.label} style={{ background: "#293540", padding: "28px" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>{s.label}</p>
                   <p style={{ fontSize: "13px", color: "#9CA3AF", lineHeight: "1.8" }}>{s.desc}</p>
                 </div>
@@ -294,10 +294,10 @@ export default function SchoolPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Implementation Steps</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               集客フロー・実装ステップ
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -314,10 +314,10 @@ export default function SchoolPage() {
                 { n: "07", t: "季節ごとの特設LPを入塾ピーク2ヶ月前に公開する", b: "春期講習・夏期講習・受験直前対策コースなど時期に応じた特設ランディングページを作成し、GBP投稿・SNS・LINEで告知します。シーズン別LPは検索意図に直結するキーワードで上位を狙えるため、SEO効果も期待できます。" },
                 { n: "08", t: "GBP投稿を週2回以上継続してMEO評価を維持する", b: "合格速報・講師コラム・季節キャンペーン・Q&Aなどを週2回以上GBP投稿として公開します。投稿の更新頻度はGoogleマップのアルゴリズムにプラスに影響するため、継続的な運用が順位維持に直結します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -330,7 +330,7 @@ export default function SchoolPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>KPI</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               成果を測るKPI
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -346,10 +346,10 @@ export default function SchoolPage() {
                 { kpi: "在籍生徒数（月次）", where: "自社管理台帳", desc: "Web集客全体の最終的なビジネス成果。MEO・SEO・LP改善の積み重ねが在籍数の安定増加に反映されているかを四半期ごとに検証します。" },
                 { kpi: "継続率・退塾率（月次）", where: "自社管理台帳", desc: "在籍生徒の継続率は口コミや紹介集客にも影響します。Web集客で獲得した生徒が定着しているかを把握し、指導品質とWeb訴求内容の整合性を保ちます。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ minWidth: "200px", flexShrink: 0 }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
@@ -359,9 +359,9 @@ export default function SchoolPage() {
         </section>
 
         {/* サイプレスに依頼するメリット */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -372,9 +372,9 @@ export default function SchoolPage() {
                 { t: "個人塾・地域密着塾が大手チェーンに対抗できる差別化設計", b: "個人塾の強みである「少人数指導」「地元密着」「講師との距離感」をGBP・ホームページ・口コミで最大限に表現し、大手チェーンとは異なる軸で保護者に選ばれる設計を行います。" },
                 { t: "景品表示法・口コミ規制に対応した安全なマーケティング支援", b: "塾業界に関わる景品表示法（ステルスマーケティング規制）や合格保証に類する表現への注意を踏まえ、法令リスクを避けながら最大限の訴求力を持つコンテンツ・口コミ運用設計を提供します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "var(--v2-accent)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -385,7 +385,7 @@ export default function SchoolPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Customer Journey</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>
               保護者の検討プロセスと接点設計
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -400,10 +400,10 @@ export default function SchoolPage() {
                   { n: "④", t: "体験申込み（ホームページで詳細を確認して申込み）", b: "GBPからホームページへ遷移し、講師・カリキュラム・料金・合格実績を確認した上で体験申込みに進みます。フォームのわかりやすさとLINE窓口の有無が申込み率を左右します。" },
                   { n: "⑤", t: "入塾決定（体験授業の質と担当者の対応で判断）", b: "Web集客の役割はここで終わりではありません。体験授業後のフォローアップ（自動返信メール・担当者からの丁寧な連絡）が入塾率をさらに高めます。口コミ依頼のタイミングもここが最適です。" },
                 ].map((item) => (
-                  <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                  <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
+                    <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                     <div>
-                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                       <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                     </div>
                   </div>
@@ -414,10 +414,10 @@ export default function SchoolPage() {
         </section>
 
         {/* SEOキーワード戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>SEO Keywords</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>
               学習塾・スクールのSEOキーワード戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -425,8 +425,8 @@ export default function SchoolPage() {
                 学習塾・スクールのSEO対策は「地域名×業種×目的」の組み合わせを軸に設計します。保護者が検索するキーワードは「比較・選択段階」と「情報収集段階」の2種類に分かれ、両方に対応するコンテンツを揃えることが集客の幅を広げます。
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: "32px" }}>
-                <div style={{ padding: "24px", background: "#ffffff", border: "1px solid #E8E4DC" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "12px" }}>比較・選択段階のキーワード例</p>
+                <div style={{ padding: "24px", background: "#ffffff", border: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "12px" }}>比較・選択段階のキーワード例</p>
                   <ul style={{ fontSize: "13px", color: "#374151", lineHeight: "2.2", listStyle: "none", padding: 0, margin: 0 }}>
                     <li>「○○駅 学習塾」</li>
                     <li>「○○区 個別指導 高校受験」</li>
@@ -435,8 +435,8 @@ export default function SchoolPage() {
                     <li>「○○駅 ピアノ教室 大人」</li>
                   </ul>
                 </div>
-                <div style={{ padding: "24px", background: "#ffffff", border: "1px solid #E8E4DC" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "12px" }}>情報収集段階のキーワード例</p>
+                <div style={{ padding: "24px", background: "#ffffff", border: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "12px" }}>情報収集段階のキーワード例</p>
                   <ul style={{ fontSize: "13px", color: "#374151", lineHeight: "2.2", listStyle: "none", padding: 0, margin: 0 }}>
                     <li>「中学受験 塾 いつから」</li>
                     <li>「高校受験 塾 選び方」</li>
@@ -460,7 +460,7 @@ export default function SchoolPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Target Segments</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               スクール種別・ターゲット別の訴求ポイント
             </h2>
             <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
@@ -482,11 +482,11 @@ export default function SchoolPage() {
                   points: ["使用ツール・習得スキルを具体的に説明", "完成作品・発表会の写真や動画を掲載", "保護者向けと子ども向けの訴求を分ける", "無料体験授業の楽しさをビジュアルで伝える"],
                 },
               ].map((item) => (
-                <div key={item.label} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#f9f8f5" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "12px" }}>{item.label}</p>
+                <div key={item.label} style={{ padding: "24px", border: "1px solid #dde0e4", background: "#f0f1f2" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "12px" }}>{item.label}</p>
                   <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
                     {item.points.map((pt) => (
-                      <li key={pt} style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9", paddingBottom: "4px", borderBottom: "1px solid #E8E4DC", marginBottom: "4px" }}>— {pt}</li>
+                      <li key={pt} style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9", paddingBottom: "4px", borderBottom: "1px solid #dde0e4", marginBottom: "4px" }}>— {pt}</li>
                     ))}
                   </ul>
                 </div>
@@ -497,16 +497,16 @@ export default function SchoolPage() {
 
         <FaqSection items={faqItems} heading="学習塾・スクールのWeb集客についてよくある質問" bgColor="#ffffff" />
         {/* 対応エリア */}
-        <section style={{ background: "#f8f6f2", padding: "56px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "56px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Service Area</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,26px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>主な対応エリア</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,26px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>主な対応エリア</h2>
             <p style={{ fontSize: "14px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "24px" }}>
               東京都・千葉県・埼玉県・神奈川県を中心に全国対応しています。オンラインでのご相談も承りますので、まずはお気軽にご連絡ください。葛飾区・足立区・江戸川区・墨田区・荒川区など東京東部エリアは特に対応実績が豊富です。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {["葛飾区", "足立区", "江戸川区", "墨田区", "荒川区", "北区", "板橋区", "練馬区", "新宿区", "渋谷区", "千葉市", "船橋市", "松戸市", "さいたま市", "川口市"].map((area) => (
-                <span key={area} style={{ padding: "6px 14px", border: "1px solid #E8E4DC", fontSize: "13px", color: "#374151", background: "#ffffff" }}>{area}</span>
+                <span key={area} style={{ padding: "6px 14px", border: "1px solid #dde0e4", fontSize: "13px", color: "#374151", background: "#ffffff" }}>{area}</span>
               ))}
             </div>
           </div>

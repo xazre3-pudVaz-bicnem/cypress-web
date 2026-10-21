@@ -153,17 +153,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/area" style={{ color: "#6B7280" }}>対応エリア</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>埼玉県</span>
+              <span style={{ color: "#333333" }}>埼玉県</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Saitama Prefecture</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,48px)", color: "#333333", fontWeight: 700, lineHeight: 1.25, marginBottom: "24px" }}>
               埼玉県のSEO・MEO対策<br />ホームページ制作
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -192,7 +192,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Local Market</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県のビジネス環境と集客課題
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -204,10 +204,10 @@ export default function Page() {
                 { n: "05", t: "Webマーケティングへの着手が遅れている事業者が多い", b: "埼玉県の中小企業・個人事業主はWebマーケティングに着手していないケースが多く、MEO・SEO・ホームページの整備が不十分なビジネスが多く存在します。今から始めれば競合が少ないうちに優位なポジションを確保できます。" },
                 { n: "06", t: "大宮・浦和のビジネス集積と競合増加", b: "さいたま市の大宮・浦和エリアは埼玉県内でも特に商業集積が進んでいます。飲食・美容・医療の競合が多いため、専門特化・差別化戦略が必要ですが、消費者人口も多く集客ポテンシャルは高いです。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -217,10 +217,10 @@ export default function Page() {
         </section>
 
         {/* Section 2: SEO・MEO対策の特徴 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>SEO / MEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               埼玉県でのSEO対策・MEO対策の特徴
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -233,10 +233,10 @@ export default function Page() {
                 { n: "03", t: "東京×埼玉の広域キーワード設計", b: "「葛飾区・草加市で〇〇をお探しの方」「東京東部・埼玉南部の〇〇」など東京と埼玉をまたいだ広域キーワードのSEO設計が可能です。サイプレスの葛飾区拠点の強みを活かした戦略です。" },
                 { n: "04", t: "移転・出店企業向けの立ち上げ支援SEO", b: "東京から埼玉県に移転・出店した企業向けに、新拠点でのGBP設定・ローカルSEO立ち上げ支援を提供します。移転直後から集客を始められるよう、開業前からの準備支援にも対応しています。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Our Services</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県でサイプレスが提供するサービス
             </h2>
             <div style={{ maxWidth: "800px" }}>
@@ -260,10 +260,10 @@ export default function Page() {
                 { n: "04", t: "移転・出店時の集客立ち上げ支援", b: "東京から埼玉県に移転・出店する事業者向けに、新拠点のGBP設定・SEO立ち上げ・ホームページ制作・SNS開設まで一貫した集客立ち上げ支援を提供します。開業前から準備することで初日から集客を最大化します。" },
                 { n: "05", t: "AIO対策（AI検索対策）", b: "ChatGPT・Geminiなどで「埼玉の〇〇おすすめ」と検索した際に引用されるための情報設計を行います。E-E-A-T強化・FAQ設計・構造化データ実装でAI検索でのプレゼンスを高めます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -273,10 +273,10 @@ export default function Page() {
         </section>
 
         {/* Section 4: 主要エリア・地域特性 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Area Breakdown</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県の主要エリアと地域特性
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
@@ -287,8 +287,8 @@ export default function Page() {
                 { area: "春日部市・越谷市周辺", desc: "東武スカイツリーライン沿線の住宅エリア。MEO競合が少なく、基本的なGBP最適化で上位を取れる可能性が高い穴場エリア。" },
                 { area: "川越市", desc: "「小江戸」として有名な観光都市。観光客×地元住民の二重集客が可能で、観光関連コンテンツのSEO・インバウンド対応MEOが効果的。" },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.area}</p>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "10px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -300,7 +300,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Channel Mix</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               埼玉県でおすすめの集客チャネル
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
@@ -310,10 +310,10 @@ export default function Page() {
                 { label: "Web制作", tag: "基盤", desc: "MEO・SEOからの流入を来店・問い合わせに変換する高品質なホームページ。埼玉の移住層・ファミリー層への信頼感あるデザインとCV設計が成果を最大化する。" },
                 { label: "SNS（Instagram・LINE）", tag: "補完", desc: "草加・越谷・川越など住宅エリアの生活密着コミュニティへの浸透に有効。LINE公式アカウントでリピーター育成、Instagramで新規認知拡大を並行して実施。" },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
+                <div key={item.label} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a" }}>{item.label}</p>
-                    <span style={{ fontSize: "11px", background: "#f8f6f2", color: "#c4b89a", border: "1px solid #E8E4DC", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333" }}>{item.label}</p>
+                    <span style={{ fontSize: "11px", background: "#f0f1f2", color: "var(--v2-accent)", border: "1px solid #dde0e4", borderRadius: "4px", padding: "2px 8px", fontFamily: "var(--font-display)", letterSpacing: "0.05em" }}>{item.tag}</span>
                   </div>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
@@ -326,7 +326,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Industry Guide</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               埼玉県・業種別の集客ポイント
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -367,9 +367,9 @@ export default function Page() {
                   point: "埼玉は郊外ロードサイド型ビジネスが多く、「〇〇市 〇〇 駐車場あり」などのキーワードが有効。車でのアクセス情報・駐車場情報のGBP記載が来店促進に効く。カーナビ連動のGoogleマップ表示でロードサイド集客を強化。",
                 },
               ].map((item) => (
-                <div key={item.industry} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>
-                    <span style={{ display: "inline-block", width: "6px", height: "6px", borderRadius: "50%", background: "#c4b89a", marginRight: "10px", verticalAlign: "middle" }} />
+                <div key={item.industry} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px" }}>
+                    <span style={{ display: "inline-block", width: "6px", height: "6px", borderRadius: "50%", background: "var(--v2-accent)", marginRight: "10px", verticalAlign: "middle" }} />
                     {item.industry}
                   </p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.point}</p>
@@ -380,10 +380,10 @@ export default function Page() {
         </section>
 
         {/* NEW Section B: 主要エリア別特性 */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Sub-Area Analysis</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               主要エリア別特性
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
@@ -416,8 +416,8 @@ export default function Page() {
                   desc: "それぞれ個性ある地方都市で、MEO競合は低〜中程度と施策の効果が出やすいエリア。熊谷は北埼玉の商業拠点、所沢は西武線沿線の住宅都市、春日部は東武線沿線のファミリーエリアで、各エリアの住民特性に合わせた訴求が重要。",
                 },
               ].map((item) => (
-                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "12px" }}>{item.area}</p>
+                <div key={item.area} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "12px" }}>{item.area}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
               ))}
@@ -429,7 +429,7 @@ export default function Page() {
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               埼玉県の集客支援・実装フロー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "56px" }}>
@@ -446,12 +446,12 @@ export default function Page() {
                 { step: "07", title: "口コミ獲得・GBP定期投稿", body: "口コミ獲得フローの設計（QRコード・依頼タイミング・スタッフトーク）と、GBPへの定期投稿代行を実施します。口コミ数と評価は順位に直接影響します。" },
                 { step: "08", title: "月次レポート・改善サイクル", body: "毎月GBPのインサイト・検索順位・問い合わせ数・アクセス解析を報告します。データをもとに施策を継続的に改善し、埼玉での集客力を着実に積み上げます。" },
               ].map((item, index) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: index === 0 ? "1px solid #E8E4DC" : "1px solid #E8E4DC", borderBottom: index === 7 ? "1px solid #E8E4DC" : "none" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "28px 0", borderTop: index === 0 ? "1px solid #dde0e4" : "1px solid #dde0e4", borderBottom: index === 7 ? "1px solid #dde0e4" : "none" }}>
                   <div style={{ minWidth: "48px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "20px", fontWeight: 700, lineHeight: 1 }}>{item.step}</span>
+                    <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "20px", fontWeight: 700, lineHeight: 1 }}>{item.step}</span>
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.body}</p>
                   </div>
                 </div>
@@ -461,9 +461,9 @@ export default function Page() {
         </section>
 
         {/* NEW Section D: サイプレスに依頼するメリット（ダーク）*/}
-        <section style={{ background: "#0d1b2a", padding: "96px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress — Saitama</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Why Cypress — Saitama</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "48px" }}>
               サイプレスに埼玉県の集客を依頼するメリット
             </h2>
@@ -491,7 +491,7 @@ export default function Page() {
                 },
               ].map((item) => (
                 <div key={item.n}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "17px", color: "#FFFFFF", marginBottom: "12px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -500,7 +500,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="埼玉県に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="埼玉県に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="埼玉県のWeb集客、まずは無料相談から"

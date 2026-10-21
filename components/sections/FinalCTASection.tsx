@@ -7,7 +7,7 @@ export default function FinalCTASection() {
   return (
     <section
       className="py-28 relative overflow-hidden"
-      style={{ background: "#2563EB" }}
+      style={{ background: "#096fc8" }}
     >
       {/* Subtle dot/grid pattern overlay */}
       <div
@@ -66,7 +66,7 @@ export default function FinalCTASection() {
               className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full font-semibold text-base transition-all hover:scale-105 hover:shadow-lg"
               style={{
                 background: "#ffffff",
-                color: "#2563EB",
+                color: "#096fc8",
                 boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
               }}
             >

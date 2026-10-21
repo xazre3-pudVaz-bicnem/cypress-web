@@ -36,7 +36,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link><span style={{ margin: "0 8px" }}>/</span>
@@ -45,7 +45,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
               {page.title}
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>{page.title}</h1>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>{page.title}</h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "680px" }}>{page.intro}</p>
           </div>
         </section>
@@ -53,10 +53,10 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "720px" }}>
               {page.points.map((pt) => (
-                <div key={pt.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
+                <div key={pt.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "#9ca3af", fontSize: "12px", minWidth: "28px" }}>{pt.num}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{pt.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{pt.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{pt.body}</p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
             </div>
           </div>
         </section>
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#f0f1f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA />
       </main>

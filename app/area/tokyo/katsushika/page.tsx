@@ -54,7 +54,7 @@ const jsonLd = {
 
 const S = {
   label: { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" as const },
-  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
+  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
 };
@@ -100,17 +100,17 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/area" style={{ color: "#6B7280" }}>エリア</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>東京都葛飾区</span>
+              <span style={{ color: "#333333" }}>東京都葛飾区</span>
             </nav>
             <p style={S.label}>Katsushika — Startup Guide</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
               葛飾区で起業・創業する方向けガイド
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "36px" }}>
@@ -130,11 +130,11 @@ export default function Page() {
                 <Link
                   key={card.href}
                   href={card.href}
-                  style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 22px", textDecoration: "none", display: "block" }}
+                  style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "24px 22px", textDecoration: "none", display: "block" }}
                 >
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px", lineHeight: 1.5 }}>{card.title}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px", lineHeight: 1.5 }}>{card.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{card.desc}</p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", marginTop: "12px", fontWeight: 600 }}>詳細を見る →</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginTop: "12px", fontWeight: 600 }}>詳細を見る →</p>
                 </Link>
               ))}
             </div>

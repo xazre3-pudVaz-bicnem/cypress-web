@@ -45,7 +45,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -54,10 +54,10 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href={INDUSTRY_HREF} style={{ color: "#6B7280" }}>{INDUSTRY_LABEL}</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
+              <span style={{ color: "#333333" }}>{page.title}</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               {page.title}
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "680px" }}>
@@ -70,14 +70,14 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Our Approach</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               {INDUSTRY_LABEL}に特化した対策ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {page.points.map((pt) => (
                 <div key={pt.num} style={{ background: "#ffffff", padding: "32px" }}>
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "12px" }}>{pt.num}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#0d1b2a", fontWeight: 700, marginBottom: "10px", lineHeight: 1.5 }}>{pt.title}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#333333", fontWeight: 700, marginBottom: "10px", lineHeight: 1.5 }}>{pt.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{pt.body}</p>
                 </div>
               ))}
@@ -85,7 +85,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f8f6f2" />
+        <FaqSection items={page.faqs} bgColor="#f0f1f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA
           heading={`${page.title}のご相談はサイプレスへ`}

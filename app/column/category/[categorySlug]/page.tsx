@@ -254,7 +254,7 @@ export default async function ColumnCategoryPage({
       />
       <main style={{ background: "#ffffff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "56px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "56px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#9ca3af", textDecoration: "none" }}>ホーム</Link>
@@ -263,10 +263,10 @@ export default async function ColumnCategoryPage({
               <span style={{ margin: "0 8px" }}>/</span>
               {cat.name}
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4a96a", fontSize: "11px", marginBottom: "12px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>
               {cat.nameEn}
             </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,40px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,40px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               {cat.name}の専門コラム
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px" }}>
@@ -279,7 +279,7 @@ export default async function ColumnCategoryPage({
         </section>
 
         {/* カテゴリナビ */}
-        <section style={{ borderBottom: "1px solid #ece8e0", background: "#ffffff" }}>
+        <section style={{ borderBottom: "1px solid #dde0e4", background: "#ffffff" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ display: "flex", gap: "0", overflowX: "auto" }}>
               {COLUMN_CATEGORY_DEFS.map((c) => (
@@ -291,8 +291,8 @@ export default async function ColumnCategoryPage({
                     padding: "14px 20px",
                     fontSize: "13px",
                     whiteSpace: "nowrap",
-                    color: c.slug === categorySlug ? "#0d1b2a" : "#6b7280",
-                    borderBottom: c.slug === categorySlug ? "2px solid #c4a96a" : "2px solid transparent",
+                    color: c.slug === categorySlug ? "#333333" : "#6b7280",
+                    borderBottom: c.slug === categorySlug ? "2px solid var(--v2-accent)" : "2px solid transparent",
                     textDecoration: "none",
                     fontWeight: c.slug === categorySlug ? 600 : 400,
                   }}
@@ -319,7 +319,7 @@ export default async function ColumnCategoryPage({
                 articles.map((article) => (
                   <article
                     key={article.slug}
-                    style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "40px", marginBottom: "40px" }}
+                    style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "40px", marginBottom: "40px" }}
                   >
                     <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                       {article.publishedAt && (
@@ -336,7 +336,7 @@ export default async function ColumnCategoryPage({
                         </span>
                       )}
                     </div>
-                    <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(16px,2vw,20px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.4, marginBottom: "12px" }}>
+                    <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(16px,2vw,20px)", color: "#333333", fontWeight: 700, lineHeight: 1.4, marginBottom: "12px" }}>
                       <Link href={`/column/${article.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
                         {article.title}
                       </Link>
@@ -348,7 +348,7 @@ export default async function ColumnCategoryPage({
                     <div style={{ display: "flex", alignItems: "center", gap: "20px", marginTop: "16px" }}>
                       <Link
                         href={`/column/${article.slug}`}
-                        style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", color: "#0d1b2a", textDecoration: "none" }}
+                        style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", color: "#333333", textDecoration: "none" }}
                       >
                         続きを読む
                         <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -379,9 +379,9 @@ export default async function ColumnCategoryPage({
                       display: "flex",
                       justifyContent: "space-between",
                       padding: "10px 0",
-                      borderBottom: "1px solid #ece8e0",
+                      borderBottom: "1px solid #dde0e4",
                       fontSize: "13px",
-                      color: c.slug === categorySlug ? "#0d1b2a" : "#374151",
+                      color: c.slug === categorySlug ? "#333333" : "#374151",
                       textDecoration: "none",
                       fontWeight: c.slug === categorySlug ? 600 : 400,
                     }}
@@ -393,8 +393,8 @@ export default async function ColumnCategoryPage({
               </div>
 
               {/* 関連サービス */}
-              <div style={{ background: "#f8f6f2", padding: "24px", border: "1px solid #ece8e0", marginBottom: "24px" }}>
-                <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+              <div style={{ background: "#f0f1f2", padding: "24px", border: "1px solid #dde0e4", marginBottom: "24px" }}>
+                <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
                   関連サービス
                 </p>
                 <Link
@@ -412,16 +412,16 @@ export default async function ColumnCategoryPage({
               </div>
 
               {/* CTA */}
-              <div style={{ background: "#0d1b2a", padding: "24px" }}>
+              <div data-tone="dark" style={{ background: "#293540", padding: "24px" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "14px", color: "#ffffff", fontWeight: 700, marginBottom: "10px" }}>
                   Web集客の無料相談
                 </p>
-                <p style={{ fontSize: "12px", color: "#c4a96a", lineHeight: "1.8", marginBottom: "16px" }}>
+                <p style={{ fontSize: "12px", color: "var(--v2-accent)", lineHeight: "1.8", marginBottom: "16px" }}>
                   {cat.name}についてご不明な点はお気軽にご相談ください。
                 </p>
                 <Link
                   href="/contact"
-                  style={{ display: "block", textAlign: "center", padding: "10px", fontSize: "13px", background: "#c4a96a", color: "#0d1b2a", textDecoration: "none", fontWeight: 600 }}
+                  style={{ display: "block", textAlign: "center", padding: "10px", fontSize: "13px", background: "var(--v2-accent)", color: "#333333", textDecoration: "none", fontWeight: 600 }}
                 >
                   無料相談はこちら
                 </Link>
@@ -430,15 +430,15 @@ export default async function ColumnCategoryPage({
           </div>
 
           {/* FAQ */}
-          <section style={{ marginTop: "80px", paddingTop: "64px", borderTop: "1px solid #ece8e0" }}>
+          <section style={{ marginTop: "80px", paddingTop: "64px", borderTop: "1px solid #dde0e4" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", fontSize: "11px", color: "#9ca3af", marginBottom: "8px" }}>FAQ</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               よくある質問
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {cat.faq.map((f, i) => (
-                <div key={i} style={{ borderBottom: "1px solid #ece8e0", paddingBottom: "28px", marginBottom: "28px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px", lineHeight: 1.5 }}>
+                <div key={i} style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "28px", marginBottom: "28px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#333333", fontWeight: 700, marginBottom: "12px", lineHeight: 1.5 }}>
                     Q. {f.q}
                   </p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>

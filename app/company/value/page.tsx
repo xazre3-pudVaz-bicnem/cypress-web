@@ -287,12 +287,12 @@ export default function ValuePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <Link href="/company" className="hover:text-[#333333] transition-colors">会社情報</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>私たちが大切にしていること</span>
             </nav>
@@ -301,7 +301,7 @@ export default function ValuePage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               私たちが大切にしていること
             </h1>
@@ -312,14 +312,14 @@ export default function ValuePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               On This Page
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -335,13 +335,13 @@ export default function ValuePage() {
                 <div
                   key={item.num}
                   className="flex items-start gap-5 py-5"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item.text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -354,7 +354,7 @@ export default function ValuePage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               選ばれる理由 — 私たちの5つの価値
             </h2>
@@ -367,18 +367,18 @@ export default function ValuePage() {
                 <div
                   key={v.num}
                   className="py-10"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <div className="grid md:grid-cols-[200px_1fr] gap-6 md:gap-12">
                     <div>
                       <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{v.num}</span>
                       <p
                         className="font-black text-[18px] leading-snug mt-2"
-                        style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                        style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
                       >
                         {v.title.split(" — ")[0]}
                       </p>
-                      <p className="text-[13px] mt-2 leading-snug" style={{ color: "#c4b89a" }}>
+                      <p className="text-[13px] mt-2 leading-snug" style={{ color: "var(--v2-accent)" }}>
                         {v.title.split(" — ")[1]}
                       </p>
                     </div>
@@ -395,20 +395,20 @@ export default function ValuePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: お客様へのコミットメント */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Our Commitment
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               お客様への10の約束
             </h2>
@@ -421,15 +421,15 @@ export default function ValuePage() {
                   key={item.num}
                   className="p-6"
                   style={{
-                    borderTop: "1px solid #E8E4DC",
-                    borderLeft: i % 2 === 1 ? "1px solid #E8E4DC" : "none",
+                    borderTop: "1px solid #dde0e4",
+                    borderLeft: i % 2 === 1 ? "1px solid #dde0e4" : "none",
                     background: "#FFFFFF",
                   }}
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{item.num}</span>
                     <div>
-                      <p className="font-semibold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                      <p className="font-semibold text-[14px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                       <p className="text-[13px] leading-[1.85]" style={{ color: "#374151" }}>{item.body}</p>
                     </div>
                   </div>
@@ -447,7 +447,7 @@ export default function ValuePage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               私たちが支援したい方
             </h2>
@@ -459,29 +459,29 @@ export default function ValuePage() {
                 <div
                   key={item.num}
                   className="flex items-start gap-6 py-7"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <p className="font-black text-[15px] mb-3" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-black text-[15px] mb-3" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.85]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
 
             <div className="mt-12 max-w-3xl">
-              <div className="p-8" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
-                <p className="text-[14px] font-semibold mb-3" style={{ color: "#0d1b2a" }}>まずは無料相談から</p>
+              <div className="p-8" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
+                <p className="text-[14px] font-semibold mb-3" style={{ color: "#333333" }}>まずは無料相談から</p>
                 <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
                   「自分のケースはどうだろう？」と思った方は、まずはお気軽にご相談ください。現状の課題をお聞きして、私たちが支援できるかどうかを正直にお伝えします。
                 </p>
-                <div className="mt-6" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                <div className="mt-6" style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 px-7 py-3.5 text-[13px] font-semibold"
-                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                    style={{ background: "#293540", color: "#FFFFFF" }}
                   >
                     無料相談する
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -495,9 +495,9 @@ export default function ValuePage() {
         </section>
 
         {/* Section E: お断りしているケース */}
-        <section className="py-20 md:py-24" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20 md:py-24" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Cases We Decline
             </p>
             <h2
@@ -514,16 +514,16 @@ export default function ValuePage() {
                 <div
                   key={item.num}
                   className="flex items-start gap-6 py-7"
-                  style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }}
+                  style={{ borderTop: "1px solid rgba(9,111,200,0.2)" }}
                 >
-                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#c4b89a" }}>{item.num}</span>
+                  <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "var(--v2-accent)" }}>{item.num}</span>
                   <div>
                     <p className="font-black text-[15px] mb-3" style={{ color: "#FFFFFF" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.85]" style={{ color: "rgba(255,255,255,0.7)" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid rgba(196,184,154,0.2)" }} />
+              <div style={{ borderTop: "1px solid rgba(9,111,200,0.2)" }} />
             </div>
           </div>
         </section>
@@ -531,7 +531,7 @@ export default function ValuePage() {
         <FaqSection
           items={faqItems}
           heading="価値観・選ばれる理由についてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#f0f1f2"
         />
 
         <RelatedPages links={relatedLinks} heading="関連ページ" />

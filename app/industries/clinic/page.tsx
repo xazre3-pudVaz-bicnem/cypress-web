@@ -153,19 +153,19 @@ export default function ClinicIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>クリニック・整骨院</span>
+              <span style={{ color: "#333333" }}>クリニック・整骨院</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "16px" }}>
               Medical Clinic
             </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#0d1b2a", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#333333", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
               クリニック・整骨院の<br />MEO対策・Web集客
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -200,7 +200,7 @@ export default function ClinicIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               クリニック・整骨院が抱える集客課題
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -212,10 +212,10 @@ export default function ClinicIndustryPage() {
                 { n: "05", t: "院内写真・設備紹介が不足し患者の不安が解消されていない", b: "特に歯科・整骨院では「どんな雰囲気の院か」「どんな設備があるか」が受診決定に影響します。院内写真・設備紹介・スタッフ写真が不足しているホームページは、来院前の不安を解消できず離脱につながります。" },
                 { n: "06", t: "患者教育コンテンツが不足し専門性の訴求ができていない", b: "「正しい歯の磨き方」「腰痛を予防するストレッチ」「生活習慣病の予防法」など、患者に有益な情報を発信するコンテンツが不足していると、SEO評価も下がり専門性の証明ができません。E-E-A-T（経験・専門性・権威性・信頼性）の観点で重要な要素です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -225,10 +225,10 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               クリニック・整骨院のSEO・MEO戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -252,7 +252,7 @@ export default function ClinicIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>MEO Tips</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               クリニック・整骨院のGoogleマップ活用術（MEO）
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -270,10 +270,10 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Content Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               クリニック・整骨院のSNS・コンテンツ戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -291,9 +291,9 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* サイプレスができること */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               クリニック・整骨院向けにサイプレスができること
             </h2>
@@ -307,9 +307,9 @@ export default function ClinicIndustryPage() {
                 { t: "医師紹介ページのE-E-A-T強化", b: "院長・医師の顔写真・プロフィール・卒業大学・専門医資格・学会所属・研究実績・診療方針を構造化して掲載。Schema.orgのPhysician構造化データを実装し、AI検索・Google検索での引用可能性を高めます。" },
                 { t: "開業前からのWeb集客準備支援", b: "開業3〜6か月前からGBP設定・ドメイン取得・ホームページ制作・地域SEO対策を開始します。開業初月から新患獲得を開始できる状態を整え、開業前の認知活動が初月の集患に大きく影響します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "var(--v2-accent)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -320,7 +320,7 @@ export default function ClinicIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Web Design</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               クリニック・整骨院の選ばれるWebサイトの作り方
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -338,10 +338,10 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               クリニック・整骨院の集客フロー・実装ステップ
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -360,10 +360,10 @@ export default function ClinicIndustryPage() {
                 { n: "09", t: "GBP投稿の継続運用と写真の定期更新", b: "週2回のGBP投稿（健康情報・院内のお知らせ・スタッフ紹介）を継続し、診療写真・院内写真を定期的に追加します。情報の鮮度がGoogleからの評価に直結するため、継続的な更新が重要です。" },
                 { n: "10", t: "月次レポート分析とコンテンツ改善サイクル", b: "Google Search Console・GBPインサイト・予約システムのデータを月次で分析し、検索流入・予約率・新患数の推移を把握します。データに基づいてコンテンツの追加・改善を継続的に行い、集患の仕組みを育てます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -376,7 +376,7 @@ export default function ClinicIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>KPI Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               成果を測るKPI
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -388,7 +388,7 @@ export default function ClinicIndustryPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
               KPIは施策別に分けて評価することが重要です。GBPインサイトはMEO施策の効果を、Google Search ConsoleはSEO施策の効果を、GA4はサイト全体のCV改善を把握するツールとして使い分けます。月次レポートでこれらのデータを一元化し、次月の優先施策を決定するPDCAサイクルを回します。
             </p>
-            <div style={{ display: "grid", gap: "1px", background: "#E8E4DC", maxWidth: "760px" }}>
+            <div style={{ display: "grid", gap: "1px", background: "#dde0e4", maxWidth: "760px" }}>
               {[
                 { name: "GBPからの問い合わせ数・電話タップ数", where: "GBPインサイト", desc: "Googleマップから実際に問い合わせ・電話した患者数を測定します。電話タップ数は即時の来院意向を示す最重要指標で、MEO施策の直接的な成果を表します。" },
                 { name: "WEB予約完了数・予約率", where: "予約システム管理画面", desc: "ホームページ・GBP経由のオンライン予約数と予約率を計測します。予約ボタンの配置・予約フローの設計改善によるCV率向上を月次で確認します。" },
@@ -400,9 +400,9 @@ export default function ClinicIndustryPage() {
                 { name: "患者教育ブログの検索流入・上位キーワード数", where: "Google Search Console", desc: "コンテンツSEOの成果を測ります。症状・治療法解説記事が検索上位に表示されることで、治療前段階の患者を自院サイトに引き込む経路を拡大できます。" },
               ].map((item) => (
                 <div key={item.name} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0", background: "#ffffff" }}>
-                  <div style={{ padding: "20px 24px", borderRight: "1px solid #E8E4DC" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "6px" }}>{item.name}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
+                  <div style={{ padding: "20px 24px", borderRight: "1px solid #dde0e4" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "6px" }}>{item.name}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <div style={{ padding: "20px 24px" }}>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{item.desc}</p>
@@ -414,10 +414,10 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* 診療科別・業態別の集客特性 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>By Specialty</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "16px" }}>
               診療科別・業態別の集客特性
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -450,8 +450,8 @@ export default function ClinicIndustryPage() {
                   points: "「不妊治療 鍼灸」「自律神経 鍼」「頭痛 整体」など症状特化の専門性アピールが差別化につながります。保険適用外のため費用と効果の説明コンテンツが重要で、施術方針・院長の経歴・資格をE-E-A-Tを意識して詳しく掲載します。",
                 },
               ].map((item) => (
-                <div key={item.label} style={{ border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "12px" }}>{item.label}</p>
+                <div key={item.label} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px", background: "#FFFFFF" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "12px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.points}</p>
                 </div>
               ))}
@@ -460,9 +460,9 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* サイプレスに依頼するメリット */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "48px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -489,8 +489,8 @@ export default function ClinicIndustryPage() {
                   b: "GBPインサイト・Google Search Console・GA4のデータを月次でレポートし、施策の効果を可視化します。数値に基づいた改善提案を継続的に行うことで、集患の仕組みを育て続けるパートナーとして機能します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", border: "1px solid rgba(196,184,154,0.25)", background: "rgba(255,255,255,0.03)" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", marginBottom: "12px" }}>{item.n}</p>
+                <div key={item.n} style={{ padding: "32px", border: "1px solid rgba(9,111,200,0.25)", background: "rgba(255,255,255,0.03)" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", marginBottom: "12px" }}>{item.n}</p>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#FFFFFF", marginBottom: "14px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#9CA3AF", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -500,10 +500,10 @@ export default function ClinicIndustryPage() {
         </section>
 
         {/* 医療機関のWeb集客チェックリスト */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Checklist</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "16px" }}>
               クリニック・整骨院のWeb集客チェックリスト
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -520,10 +520,10 @@ export default function ClinicIndustryPage() {
                 { cat: "SNS・LINE", items: ["Instagram・LINE公式アカウントを開設している", "医療広告ガイドラインに沿ったSNS投稿を継続している", "LINE公式で既存患者への健康情報・リマインドを配信している"] },
               ].map((group) => (
                 <div key={group.cat} style={{ marginBottom: "32px" }}>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>{group.cat}</p>
+                  <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>{group.cat}</p>
                   {group.items.map((it) => (
-                    <div key={it} style={{ display: "flex", gap: "12px", alignItems: "flex-start", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
-                      <span style={{ width: "18px", height: "18px", border: "1.5px solid #c4b89a", borderRadius: "3px", flexShrink: 0, marginTop: "2px", display: "inline-block" }} />
+                    <div key={it} style={{ display: "flex", gap: "12px", alignItems: "flex-start", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
+                      <span style={{ width: "18px", height: "18px", border: "1.5px solid var(--v2-accent)", borderRadius: "3px", flexShrink: 0, marginTop: "2px", display: "inline-block" }} />
                       <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.7" }}>{it}</p>
                     </div>
                   ))}
@@ -533,7 +533,7 @@ export default function ClinicIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="クリニック・整骨院のWeb集客に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="クリニック・整骨院のWeb集客に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="クリニック・医療機関のWeb集客ご相談"

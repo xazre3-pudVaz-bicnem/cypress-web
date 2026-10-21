@@ -138,19 +138,19 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/aio" style={{ color: "#6B7280" }}>AIO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>AEO（回答エンジン最適化）</span>
+              <span style={{ color: "#333333" }}>AEO（回答エンジン最適化）</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Answer Engine Optimization
             </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               AEO｜AI検索で選ばれる<br />コンテンツへ
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px" }}>
@@ -177,22 +177,22 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SEO vs AEO</p>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "20px" }}>
                   従来のSEOとAEOの違い
                 </h2>
-                <div style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ flex: 1 }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "13px", color: "#0d1b2a", fontWeight: 600, marginBottom: "8px" }}>SEO（従来型）</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "13px", color: "#333333", fontWeight: 600, marginBottom: "8px" }}>SEO（従来型）</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>検索結果ページ（SERP）でのランキング向上が目標。ユーザーがリンクをクリックしてサイトを訪問する。</p>
                   </div>
                 </div>
-                <div style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div style={{ display: "flex", gap: "20px", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ flex: 1 }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "13px", color: "#0d1b2a", fontWeight: 600, marginBottom: "8px" }}>AEO（AI時代）</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "13px", color: "#333333", fontWeight: 600, marginBottom: "8px" }}>AEO（AI時代）</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>AIが生成する回答への引用・参照が目標。クリックなしでもブランドが引用される「ゼロクリック露出」の最大化を図る。</p>
                   </div>
                 </div>
-                <div style={{ padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div style={{ padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>
                     両者は対立しません。AEOに最適化されたコンテンツはSEOにも有効です。結論ファースト・FAQ形式・E-E-A-T整備はすべての検索エンジンとAIが評価します。
                   </p>
@@ -200,7 +200,7 @@ export default function Page() {
               </div>
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why Now</p>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "20px" }}>
                   なぜ今AEOが重要なのか
                 </h2>
                 <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "16px" }}>
@@ -215,12 +215,12 @@ export default function Page() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               On This Page
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "32px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -232,12 +232,12 @@ export default function Page() {
                 "AEO対策の実装フロー（対象キーワード選定から引用モニタリングまでの10ステップ）",
                 "AEO対策の成果を測定するKPI一覧と確認方法",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -246,7 +246,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AEO Tactics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               AEO実践の6つのポイント
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -282,26 +282,26 @@ export default function Page() {
                   b: "関連する疑問・トピックをカバーしたページを内部リンクで結びつけます。トピックの権威として認識されることで、AIが特定分野の信頼できる情報源と判断しやすくなります。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -357,15 +357,15 @@ export default function Page() {
                   b: "個々のページが孤立しており、関連コンテンツへのリンクがないサイトはトピック全体の権威性が低く評価されます。関連するFAQ・HowTo・サービスページを相互にリンクし、AIが「この領域に詳しいサイト」と認識できる構造を構築することが重要です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -376,7 +376,7 @@ export default function Page() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-0" style={{ maxWidth: "900px" }}>
@@ -434,15 +434,15 @@ export default function Page() {
                   key={item.n}
                   style={{
                     padding: "24px",
-                    borderTop: "1px solid #E8E4DC",
-                    borderLeft: i % 2 === 1 ? "1px solid #E8E4DC" : "none",
+                    borderTop: "1px solid #dde0e4",
+                    borderLeft: i % 2 === 1 ? "1px solid #dde0e4" : "none",
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginBottom: "6px" }}>
                     <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{item.n}</span>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>{item.industry}</p>
                   </div>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "10px" }}>{item.note}</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "10px" }}>{item.note}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.detail}</p>
                 </div>
               ))}
@@ -451,12 +451,12 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               実装・改善フロー
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -512,15 +512,15 @@ export default function Page() {
                   b: "月次でChatGPT・Perplexity・Google AI Overviewに業界クエリを投げ、自社コンテンツの引用状況を記録します。引用されたQ&A・引用されなかったQ&Aを分析し、次サイクルの改善に反映させます。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -531,7 +531,7 @@ export default function Page() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs
             </p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               成果を見るための指標
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -579,21 +579,21 @@ export default function Page() {
                   note: "AEO対策コンテンツ経由の問い合わせ数を追跡します。AI検索からのセッションは直接計測困難なため、コンテンツページ経由の問い合わせ数を代替指標として使用します。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "6px", fontWeight: 600 }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.kpi}</p>
+                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginBottom: "6px", fontWeight: 600 }}>{item.where}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AEO対策のご相談"

@@ -77,11 +77,11 @@ export default function CasesPage() {
       <Header />
       <main>
         {/* Page header */}
-        <section
+        <section data-page-hero
           style={{
-            background: "#F8F6F2",
+            background: "#f0f1f2",
             padding: "clamp(80px, 12vh, 120px) 0 clamp(40px, 6vh, 64px)",
-            borderBottom: "1px solid #E8E4DC",
+            borderBottom: "1px solid #dde0e4",
           }}
         >
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
@@ -90,7 +90,7 @@ export default function CasesPage() {
                 <li>
                   <Link href="/" style={crumbLink}>ホーム</Link>
                 </li>
-                <li style={{ fontSize: "11px", color: "#C4BAB0" }}>›</li>
+                <li style={{ fontSize: "11px", color: "#c6cbd1" }}>›</li>
                 <li style={{ ...crumbLink, color: "#6B7280" }}>成功事例</li>
               </ol>
             </nav>
@@ -100,7 +100,7 @@ export default function CasesPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(26px, 4vw, 44px)",
-                color: "#0B1628",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
                 marginBottom: "16px",
@@ -140,7 +140,7 @@ export default function CasesPage() {
         </section>
 
         {/* Browse by category */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(40px, 6vh, 64px) 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 clamp(24px, 5vw, 60px)" }}>
             <p style={{ ...eyebrow, marginBottom: "20px" }}>Browse by Service</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "32px" }}>
@@ -175,12 +175,12 @@ function Stat({ value, label }: { value: string; label: string }) {
         display: "inline-flex",
         alignItems: "baseline",
         gap: "6px",
-        border: "1px solid #E8E4DC",
+        border: "1px solid #dde0e4",
         background: "#FFFFFF",
         padding: "8px 16px",
       }}
     >
-      <strong style={{ fontFamily: "var(--font-serif)", fontSize: "20px", color: "#C4A96A", fontWeight: 700 }}>{value}</strong>
+      <strong style={{ fontFamily: "var(--font-serif)", fontSize: "20px", color: "var(--v2-accent)", fontWeight: 700 }}>{value}</strong>
       <span style={{ fontSize: "12px", color: "#6B7280", fontFamily: "var(--font-sans)" }}>{label}</span>
     </span>
   );
@@ -197,7 +197,7 @@ const crumbLink: React.CSSProperties = {
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--font-display)",
   letterSpacing: "0.25em",
-  color: "rgba(196,169,106,0.7)",
+  color: "rgba(9,111,200,0.7)",
   fontSize: "10px",
   marginBottom: "16px",
   textTransform: "uppercase",
@@ -208,7 +208,7 @@ const linkChip: React.CSSProperties = {
   color: "#6B7280",
   textDecoration: "none",
   padding: "6px 14px",
-  border: "1px solid #E8E4DC",
+  border: "1px solid #dde0e4",
   background: "#ffffff",
   letterSpacing: "0.03em",
 };

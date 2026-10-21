@@ -45,15 +45,15 @@ export default function ChecklistPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>チェックリスト</span>
+              <span style={{ color: "#333333" }}>チェックリスト</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Checklist</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               Webマーケティング<br />チェックリスト
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "12px" }}>
@@ -90,10 +90,10 @@ export default function ChecklistPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>All Checklists</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               チェックリスト一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {checklistPages.map((page) => {
                 const totalItems = page.sections.reduce((acc, s) => acc + s.items.length, 0);
                 return (
@@ -105,10 +105,10 @@ export default function ChecklistPage() {
                     <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                       {page.titleEn}
                     </p>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px", lineHeight: 1.4 }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#333333", fontWeight: 700, marginBottom: "8px", lineHeight: 1.4 }}>
                       {page.title}
                     </p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600, marginBottom: "8px" }}>
+                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "8px" }}>
                       {totalItems}項目のチェック
                     </p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -127,7 +127,7 @@ export default function ChecklistPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="チェックリストについてよくある質問" bgColor="#f9f8f5" />
+        <FaqSection items={faqItems} heading="チェックリストについてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

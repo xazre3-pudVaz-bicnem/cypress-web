@@ -262,12 +262,12 @@ export default function ProfilePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <Link href="/company" className="hover:text-[#333333] transition-colors">会社情報</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>会社概要</span>
             </nav>
@@ -276,7 +276,7 @@ export default function ProfilePage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               株式会社サイプレス 会社概要
             </h1>
@@ -298,14 +298,14 @@ export default function ProfilePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               On This Page
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -321,13 +321,13 @@ export default function ProfilePage() {
                 <div
                   key={item.num}
                   className="flex items-start gap-5 py-5"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item.text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -340,7 +340,7 @@ export default function ProfilePage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               基本情報
             </h2>
@@ -351,13 +351,13 @@ export default function ProfilePage() {
                     key={row.label}
                     className="grid grid-cols-[140px_1fr] sm:grid-cols-[200px_1fr]"
                     style={{
-                      borderTop: "1px solid #E8E4DC",
-                      borderBottom: i === PROFILE_ROWS.length - 1 ? "1px solid #E8E4DC" : "none",
+                      borderTop: "1px solid #dde0e4",
+                      borderBottom: i === PROFILE_ROWS.length - 1 ? "1px solid #dde0e4" : "none",
                     }}
                   >
                     <dt
                       className="py-5 pr-6 text-[14px] font-medium"
-                      style={{ color: "#6B7280", background: "#F9F8F5", borderRight: "1px solid #E8E4DC" }}
+                      style={{ color: "#6B7280", background: "#f0f1f2", borderRight: "1px solid #dde0e4" }}
                     >
                       {row.label}
                     </dt>
@@ -369,7 +369,7 @@ export default function ProfilePage() {
                         <a
                           href={row.href}
                           className="underline underline-offset-4 transition-opacity hover:opacity-60"
-                          style={{ color: "#0F172A", fontWeight: 500 }}
+                          style={{ color: "#333333", fontWeight: 500 }}
                         >
                           {row.value}
                         </a>
@@ -385,17 +385,17 @@ export default function ProfilePage() {
             <div className="mt-12 max-w-3xl">
               <div
                 className="p-8"
-                style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+                style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}
               >
-                <p className="text-[13px] font-semibold mb-3" style={{ color: "#0d1b2a" }}>会社への連絡について</p>
+                <p className="text-[13px] font-semibold mb-3" style={{ color: "#333333" }}>会社への連絡について</p>
                 <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
                   お問い合わせはメール（info@cypress-all.co.jp）またはお問い合わせフォームから受け付けています。通常1〜2営業日以内にご返信します。
                 </p>
-                <div className="mt-5" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                <div className="mt-5" style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 px-6 py-3 text-[13px] font-semibold"
-                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                    style={{ background: "#293540", color: "#FFFFFF" }}
                   >
                     お問い合わせフォームへ
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -409,14 +409,14 @@ export default function ProfilePage() {
         </section>
 
         {/* Section C: 事業内容の詳細 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Business Areas
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               事業内容
             </h2>
@@ -428,16 +428,16 @@ export default function ProfilePage() {
                 <div
                   key={item.num}
                   className="py-7"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <div className="flex items-start gap-6">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <p className="font-black text-[16px]" style={{ color: "#0d1b2a" }}>{item.label}</p>
+                        <p className="font-black text-[16px]" style={{ color: "#333333" }}>{item.label}</p>
                         <span
                           className="text-[11px] font-medium px-2 py-0.5"
-                          style={{ background: "#E8E4DC", color: "#374151" }}
+                          style={{ background: "#dde0e4", color: "#374151" }}
                         >
                           {item.tag}
                         </span>
@@ -447,14 +447,14 @@ export default function ProfilePage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
 
             <div className="mt-12">
               <Link
                 href="/services"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-[13px] font-semibold"
-                style={{ background: "#0F172A", color: "#FFFFFF" }}
+                style={{ background: "#293540", color: "#FFFFFF" }}
               >
                 サービス一覧を見る
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -473,7 +473,7 @@ export default function ProfilePage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               対応エリア
             </h2>
@@ -484,7 +484,7 @@ export default function ProfilePage() {
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl">
               {/* 東京都内 */}
               <div>
-                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#0d1b2a", borderBottom: "1px solid #E8E4DC" }}>
+                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#333333", borderBottom: "1px solid #dde0e4" }}>
                   東京都内（23区）
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -492,7 +492,7 @@ export default function ProfilePage() {
                     <span
                       key={area}
                       className="text-[12px] px-2.5 py-1"
-                      style={{ background: "#F9F8F5", color: "#374151", border: "1px solid #E8E4DC" }}
+                      style={{ background: "#f0f1f2", color: "#374151", border: "1px solid #dde0e4" }}
                     >
                       {area}
                     </span>
@@ -502,7 +502,7 @@ export default function ProfilePage() {
 
               {/* 近隣県・全国 */}
               <div>
-                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#0d1b2a", borderBottom: "1px solid #E8E4DC" }}>
+                <p className="text-[13px] font-semibold mb-5 pb-3" style={{ color: "#333333", borderBottom: "1px solid #dde0e4" }}>
                   首都圏・全国対応
                 </p>
                 <div className="space-y-0">
@@ -511,16 +511,16 @@ export default function ProfilePage() {
                       key={item.pref}
                       className="py-4"
                       style={{
-                        borderTop: i === 0 ? "1px solid #E8E4DC" : "none",
-                        borderBottom: "1px solid #E8E4DC",
+                        borderTop: i === 0 ? "1px solid #dde0e4" : "none",
+                        borderBottom: "1px solid #dde0e4",
                       }}
                     >
-                      <p className="text-[13px] font-semibold mb-1" style={{ color: "#0d1b2a" }}>{item.pref}</p>
+                      <p className="text-[13px] font-semibold mb-1" style={{ color: "#333333" }}>{item.pref}</p>
                       <p className="text-[13px]" style={{ color: "#374151" }}>{item.cities}</p>
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 p-5" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                <div className="mt-6 p-5" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>
                     上記以外の地域も、オンラインにて対応可能です。まずはお気軽にご相談ください。
                   </p>
@@ -531,33 +531,33 @@ export default function ProfilePage() {
         </section>
 
         {/* Section E: アクセス情報 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Access
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               所在地・アクセス
             </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl items-start">
               <div>
                 <address className="not-italic">
-                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                  <div className="mb-6" style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "20px" }}>
                     <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>郵便番号</p>
                     <p className="text-[15px]" style={{ color: "#374151" }}>〒125-0061</p>
                   </div>
-                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                  <div className="mb-6" style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "20px" }}>
                     <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>所在地</p>
                     <p className="text-[15px]" style={{ color: "#374151" }}>東京都葛飾区亀有3-16-14-201</p>
                   </div>
-                  <div className="mb-6" style={{ borderBottom: "1px solid #E8E4DC", paddingBottom: "20px" }}>
+                  <div className="mb-6" style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "20px" }}>
                     <p className="text-[12px] font-semibold tracking-wider uppercase mb-2" style={{ color: "#9CA3AF" }}>メール</p>
                     <a
                       href="mailto:info@cypress-all.co.jp"
-                      className="text-[15px] transition-colors hover:text-[#0F172A]"
+                      className="text-[15px] transition-colors hover:text-[#333333]"
                       style={{ color: "#374151" }}
                     >
                       info@cypress-all.co.jp
@@ -573,8 +573,8 @@ export default function ProfilePage() {
                     href="https://maps.google.com/?q=東京都葛飾区亀有3-16-14-201"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[13px] font-medium transition-colors hover:text-[#0F172A]"
-                    style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                    className="inline-flex items-center gap-2 text-[13px] font-medium transition-colors hover:text-[#333333]"
+                    style={{ color: "#374151", borderBottom: "1px solid #c6cbd1", paddingBottom: "2px" }}
                   >
                     Googleマップで確認する →
                   </a>
@@ -583,20 +583,20 @@ export default function ProfilePage() {
 
               <div
                 className="p-8"
-                style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}
+                style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}
               >
-                <p className="text-[14px] font-semibold mb-4" style={{ color: "#0d1b2a" }}>ご来社について</p>
+                <p className="text-[14px] font-semibold mb-4" style={{ color: "#333333" }}>ご来社について</p>
                 <p className="text-[14px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
                   通常、商談・ご相談はオンライン（Zoom・Google Meet）にて対応しています。場所を選ばず、全国どこからでもご相談いただけます。
                 </p>
                 <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>
                   ご来社をご希望の場合は、事前にお問い合わせフォームよりご連絡ください。日程を調整したうえでご案内します。
                 </p>
-                <div className="mt-6" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                <div className="mt-6" style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 px-6 py-3 text-[13px] font-semibold"
-                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                    style={{ background: "#293540", color: "#FFFFFF" }}
                   >
                     お問い合わせ
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

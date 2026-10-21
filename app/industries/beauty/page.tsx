@@ -165,19 +165,19 @@ export default function BeautyIndustryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/industries" style={{ color: "#6B7280" }}>業種別Web集客</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>エステ・脱毛サロン</span>
+              <span style={{ color: "#333333" }}>エステ・脱毛サロン</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "16px" }}>
               Beauty Salon Marketing
             </p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#0d1b2a", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,5vw,56px)", color: "#333333", fontWeight: 900, lineHeight: 1.2, marginBottom: "24px" }}>
               エステ・脱毛サロンの<br />Instagram×MEO集客
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "16px" }}>
@@ -192,7 +192,7 @@ export default function BeautyIndustryPage() {
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "32px" }}>
               葛飾区・亀有・金町・綾瀬・青砥・柴又エリアの個人サロン・自宅サロン・小規模サロンへの集客支援に対応しています。地域の競合サロン状況・検索需要・ターゲット客層を踏まえた施策設計で、あなたのサロンの魅力を地域の顧客に届けます。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#FFFFFF", padding: "14px 32px", fontSize: "14px", fontFamily: "var(--font-display)", letterSpacing: "0.1em", textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", background: "#293540", color: "#FFFFFF", padding: "14px 32px", fontSize: "14px", fontFamily: "var(--font-display)", letterSpacing: "0.1em", textDecoration: "none" }}>
               無料相談はこちら
             </Link>
           </div>
@@ -215,7 +215,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Challenges</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               エステ・脱毛サロンが抱える集客課題
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -227,10 +227,10 @@ export default function BeautyIndustryPage() {
                 { n: "05", t: "リピート率が上がらず常に新規集客に追われている", b: "一度来店した顧客が次回予約をしないまま離脱する場合、常に新規顧客獲得コストをかけ続けることになります。LINEを活用したアフターフォロー・次回予約リマインド・限定クーポン配信でリピート率を高めることが安定経営の鍵です。" },
                 { n: "06", t: "施術メニューの見せ方が弱く来店前に興味を持たせられていない", b: "メニュー名と価格だけを並べた情報では、来店前の「この施術を試してみたい」という期待感を高められません。ビフォーアフター写真・施術の効果説明・「どんな悩みに向いているか」の明示が来店動機を形成し、お試し来店を促します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -240,10 +240,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* SEO・MEO戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SEO Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンのSEO・MEO戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -264,7 +264,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>MEO Tips</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンのGoogleマップ活用術（MEO）
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -282,10 +282,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* SNS・コンテンツ戦略 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>SNS Strategy</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンのSNS・コンテンツ戦略
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -306,7 +306,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Web Design</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンの選ばれるWebサイトの作り方
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -324,10 +324,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* 集客フロー・実装ステップ */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Implementation Steps</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               集客フロー・実装ステップ
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -346,10 +346,10 @@ export default function BeautyIndustryPage() {
                 { n: "09", t: "月次で数値を確認しPDCAを回す", b: "GBPのインサイト（検索表示回数・電話タップ数・経路検索数）・Instagramのリーチ数とプロフィールアクセス数・ホームページのアクセス数を月次で確認します。数値に基づいて施策の優先順位を調整することで、集客の精度を継続的に高めます。" },
                 { n: "10", t: "ホットペッパー依存を段階的に軽減する", b: "自社予約チャネルの整備が完了した段階で、ホットペッパーのプランを段階的にダウングレードします。LINEで既存顧客に自社予約への移行を案内し、徐々に手数料コストを削減することで収益性を改善します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "12px", minWidth: "28px", flexShrink: 0 }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -362,7 +362,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>KPI</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               成果を測るKPI
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -378,10 +378,10 @@ export default function BeautyIndustryPage() {
                 { kpi: "Googleマップ口コミ数と平均評価", where: "GBPインサイト", desc: "累計口コミ数と平均星評価。新規顧客が来店を判断する最重要の信頼指標であり、継続的な口コミ獲得活動の成果を反映します。" },
                 { kpi: "LINEブロック率・クリック率", where: "LINE公式アカウント管理画面", desc: "配信メッセージのクリック率とブロック率。コンテンツの質・配信頻度・メッセージ設計の適切さを示す指標で、高いブロック率は設計の見直しサインです。" },
               ].map((item) => (
-                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.kpi} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ minWidth: "200px", flexShrink: 0 }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "#c4b89a", letterSpacing: "0.05em" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "11px", color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.where}</p>
                   </div>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                 </div>
@@ -391,9 +391,9 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* サイプレスに依頼するメリット */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Why Cypress</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#FFFFFF", fontWeight: 800, marginBottom: "40px" }}>
               サイプレスに依頼するメリット
             </h2>
@@ -404,9 +404,9 @@ export default function BeautyIndustryPage() {
                 { t: "Instagram×MEOのダブル集客を一社完結で実施", b: "Instagram運用代行・GBP最適化・ホームページ制作・LINE設計を一社で完結して対応します。制作会社・SNS代行会社・MEO会社をバラバラに契約する必要がなく、戦略の一貫性を保ちながら効率的に集客施策を進められます。" },
                 { t: "小規模サロン・個人サロンに合わせた現実的な予算設計", b: "大規模予算を前提とした提案ではなく、個人サロン・一人サロンが無理なく継続できる予算規模でのプランをご用意しています。必要な施策を優先順位とともにご提案し、段階的に集客力を高める設計で支援します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.3)", background: "rgba(255,255,255,0.04)" }}>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.3)", background: "rgba(255,255,255,0.04)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
-                  <p style={{ fontSize: "14px", color: "#c4b89a", lineHeight: "1.9" }}>{item.b}</p>
+                  <p style={{ fontSize: "14px", color: "var(--v2-accent)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
             </div>
@@ -414,10 +414,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* サイプレスができること */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "40px" }}>
               エステ・脱毛サロン向けにサイプレスができること
             </h2>
             <div style={{ display: "grid", gap: "24px", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", maxWidth: "900px" }}>
@@ -427,8 +427,8 @@ export default function BeautyIndustryPage() {
                 { t: "LINEでのリピーターCRM自動化", b: "LINE公式アカウントを活用した次回予約リマインド・お誕生日クーポン・季節メニュー告知の自動配信設定。リピート率を高める顧客フォローの仕組みを構築します。" },
                 { t: "独自予約システムでホットペッパー依存軽減", b: "自社ホームページへの独自予約フォーム設置とGBP予約リンクの整備で、ホットペッパー手数料なしの予約チャネルを構築。段階的にポータル依存を軽減します。" },
               ].map((item) => (
-                <div key={item.t} style={{ padding: "28px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
+                <div key={item.t} style={{ padding: "28px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
@@ -440,7 +440,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Common Mistakes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               エステ・脱毛サロンのWebマーケティングでよくある失敗と改善策
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -453,10 +453,10 @@ export default function BeautyIndustryPage() {
                 { n: "失敗03", t: "薬機法・景品表示法に抵触する表現をそのまま使っている", b: "「痩身効果あり」「肌が確実に改善する」「○回で永久脱毛完了」などの表現は薬機法・景品表示法上のリスクがあります。改善策：施術の効果表現は「個人差があります」の明示と事実に基づく表現に統一し、誇大広告と判断されない適切な言葉選びをすることが安全なWebマーケティング運用の前提です。" },
                 { n: "失敗04", t: "LINEを開設しただけで活用できておらず顧客との関係が切れている", b: "LINE公式アカウントを開設して友だち追加を促しても、その後の配信設計・自動返信・リマインドメッセージが整備されていない状態では、LINEは単なる「問い合わせ窓口」に留まります。改善策：施術後フォローメッセージ・次回予約リマインド・月1回のクーポン配信を最低限の運用として設定し、既存顧客との継続的な接点を維持します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -466,10 +466,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* コンバージョン設計 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Conversion Design</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンのコンバージョン設計
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -490,7 +490,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>By Salon Type</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "12px" }}>
               業種別・メニュー別の集客ポイント
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -503,10 +503,10 @@ export default function BeautyIndustryPage() {
                 { n: "ネイルサロン", t: "季節トレンドとデザインギャラリーがSNS・SEO双方に効果", b: "春ネイル・夏ネイル・クリスマスネイルなど季節コンテンツはInstagramとSEOの双方で集客力が高く、定期的なコンテンツ更新の素材になります。Instagramのフィードをデザインカタログとして活用し、「気になるデザイン→予約」という導線設計がCVRを高めます。" },
                 { n: "まつエクサロン", t: "目元のビフォーアフターが新規集客の最強コンテンツ", b: "まつエクはビフォーアフターの変化が最も視覚的に伝わりやすい業種です。Instagram・GBP・ホームページのすべてで「施術前→施術後の目元」写真を中心に据えたビジュアル設計が来店動機に直結します。マツ毛の種類・本数・カールの違いを解説したコンテンツは検索需要も高くSEOにも貢献します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "60px", flexShrink: 0, paddingTop: "2px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -516,10 +516,10 @@ export default function BeautyIndustryPage() {
         </section>
 
         {/* E-E-A-T・信頼構築 */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>E-E-A-T / Trust</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 800, marginBottom: "24px" }}>
               エステ・脱毛サロンのE-E-A-T強化と信頼構築設計
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -540,7 +540,7 @@ export default function BeautyIndustryPage() {
         <section style={{ background: "#ffffff", padding: "48px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", textTransform: "uppercase", marginBottom: "12px" }}>Service Area</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#0d1b2a", fontWeight: 800, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#333333", fontWeight: 800, marginBottom: "16px" }}>
               対応エリア
             </h2>
             <p style={{ fontSize: "14px", lineHeight: "1.9", color: "#374151", maxWidth: "640px" }}>
@@ -549,7 +549,7 @@ export default function BeautyIndustryPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="エステ・脱毛サロンの集客に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="エステ・脱毛サロンの集客に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="エステ・脱毛サロンの集客ご相談"

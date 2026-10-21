@@ -14,7 +14,7 @@ const MVV = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
       </svg>
     ),
-    accentColor: "#2563EB",
+    accentColor: "#096fc8",
     bgColor: "rgba(37,99,235,0.06)",
   },
   {
@@ -53,7 +53,7 @@ export default function MissionSection() {
           <SectionLabel>Philosophy</SectionLabel>
           <h2
             className="font-black leading-tight tracking-tight mb-3"
-            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#333333" }}
           >
             Mission / Vision / Value
           </h2>
@@ -108,7 +108,7 @@ export default function MissionSection() {
                 </div>
 
                 {/* Headline */}
-                <h3 className="font-black text-lg leading-snug mb-4" style={{ color: "#0F172A" }}>
+                <h3 className="font-black text-lg leading-snug mb-4" style={{ color: "#333333" }}>
                   {item.headline}
                 </h3>
 

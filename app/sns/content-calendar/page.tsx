@@ -87,17 +87,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/sns" style={{ color: "#6B7280" }}>SNS集客</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>コンテンツカレンダー</span>
+              <span style={{ color: "#333333" }}>コンテンツカレンダー</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Content Calendar</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               コンテンツカレンダー｜SNS投稿を継続する仕組み
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -123,7 +123,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>WHAT YOU WILL LEARN</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このページでわかること
             </h2>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0" }}>
@@ -135,8 +135,8 @@ export default function Page() {
                 "Notion・Googleスプレッドシート・Metricoolなどのツール活用法",
                 "投稿計画の達成率や改善サイクルを測るためのKPI設定方法",
               ].map((item, i) => (
-                <li key={i} style={{ display: "flex", gap: "14px", alignItems: "flex-start", padding: "18px 0", borderTop: i === 0 ? "1px solid #E8E4DC" : undefined, borderBottom: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
+                <li key={i} style={{ display: "flex", gap: "14px", alignItems: "flex-start", padding: "18px 0", borderTop: i === 0 ? "1px solid #dde0e4" : undefined, borderBottom: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
                   <span style={{ fontSize: "15px", color: "#374151", lineHeight: "1.75" }}>{item}</span>
                 </li>
               ))}
@@ -145,9 +145,9 @@ export default function Page() {
         </section>
 
         {/* カレンダーなし運用のリスク */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Risks Without Planning</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Risks Without Planning</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               コンテンツカレンダーなし運用の4つのリスク
             </h2>
@@ -158,7 +158,7 @@ export default function Page() {
                 { t: "重要な季節・イベントを見逃す", b: "バレンタイン・お盆・年末年始などの商機になる時期をカレンダーなしだと直前まで気づかず、素材が間に合わないまま機会を逃します。事前計画が集客の機会を最大化します。" },
                 { t: "複数担当者間での連携不足", b: "「誰がいつ何を投稿するか」が不明確なまま運用すると、投稿漏れ・重複・クオリティのばらつきが起きます。カレンダーによる一元管理が複数人運用の基本です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -170,15 +170,15 @@ export default function Page() {
         {/* Content Grid */}
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textAlign: "center" }}>HOW IT WORKS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textAlign: "center" }}>HOW IT WORKS</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               コンテンツカレンダーの設計ステップ
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
-                <div key={i} style={{ padding: "32px", background: "#F9F8F5", borderRadius: "4px", borderTop: "3px solid #c4b89a" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>STEP {String(i + 1).padStart(2, "0")}</p>
-                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>{item.title}</h3>
+                <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderTop: "3px solid var(--v2-accent)" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "10px" }}>STEP {String(i + 1).padStart(2, "0")}</p>
+                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>{item.title}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.85", color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -187,10 +187,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>COMMON CHALLENGES</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               よくある課題と原因
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -209,15 +209,15 @@ export default function Page() {
                 { title: "競合イベントとの重複を防げていない", body: "同業他社が大規模キャンペーンを展開している時期に通常投稿を続けても埋もれます。競合の動向を事前に把握し、タイミングをずらして投稿する、または差別化コンテンツで対抗する戦略が必要です。" },
                 { title: "長期戦略視点の投稿計画がない", body: "月次だけで考えると「今月の目標」が揺れます。半年・1年のSNS成長目標（フォロワー数・問い合わせ数）を設定し、それを逆算して月次・週次の投稿計画に落とし込む長期視点の設計が継続的な成果につながります。" },
               ].map((item, i) => (
-                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "6px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 </li>
               ))}
-              <li style={{ borderTop: "1px solid #E8E4DC" }} />
+              <li style={{ borderTop: "1px solid #dde0e4" }} />
             </ul>
           </div>
         </section>
@@ -226,7 +226,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>INDUSTRY INSIGHTS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               業種別の活用ポイント
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -243,27 +243,27 @@ export default function Page() {
                 { industry: "不動産", point: "引越しシーズン・年度替わり連動", body: "2〜4月の引越しシーズンが最大の商機です。新生活・物件探しのヒント・エリア情報を11月から計画的に発信します。年度末の転勤需要に向けた「法人向け物件」コンテンツも有効です。" },
                 { industry: "BtoB企業", point: "展示会・業界イベント連動", body: "参加する展示会・セミナー・アワードの前後に告知・当日レポート・後日まとめの3段構成で投稿計画します。業界の注目イベントのタイミングに合わせた専門コンテンツが新規リード獲得につながります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px 0", borderTop: "1px solid #E8E4DC", display: "flex", gap: "20px" }}>
+                <div key={i} style={{ padding: "28px 0", borderTop: "1px solid #dde0e4", display: "flex", gap: "20px" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "6px" }}>
-                      <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a" }}>{item.industry}</p>
-                      <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600 }}>{item.point}</p>
+                      <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333" }}>{item.industry}</p>
+                      <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600 }}>{item.point}</p>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 実装・運用フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>IMPLEMENTATION FLOW</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               実装・運用フロー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -282,15 +282,15 @@ export default function Page() {
                 { title: "週次振り返り", body: "毎週月曜日に先週の投稿パフォーマンス（エンゲージメント・リーチ）を5分で確認します。気になった数値は月次分析でじっくり深掘りするためのメモをカレンダーに残します。" },
                 { title: "月次改善反映", body: "月末のインサイト分析で「エンゲージメント率が高い投稿タイプ」を特定し、翌月のカレンダーに反映します。このPDCAサイクルを毎月繰り返すことで、6か月後・1年後に大きな成果の差が生まれます。" },
               ].map((item, i) => (
-                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "6px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 </li>
               ))}
-              <li style={{ borderTop: "1px solid #E8E4DC" }} />
+              <li style={{ borderTop: "1px solid #dde0e4" }} />
             </ul>
           </div>
         </section>
@@ -299,7 +299,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI & METRICS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               成果を見るための指標
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "600px" }}>
@@ -315,15 +315,15 @@ export default function Page() {
                 { kpi: "計画外投稿の削減率", desc: "急な思いつき・場当たり的な投稿が全体に占める割合を記録します。カレンダー計画外投稿が月間20%以下になることが運用の安定化の目安です。計画外投稿が減るほどブランドの一貫性が高まります。" },
                 { kpi: "SNS経由問い合わせ数", desc: "プロフィールリンク・DM・コメントからの問い合わせ・予約数を月次で集計します。Googleアナリティクスのトラフィックソース分析・予約システムの流入元データで確認します。" },
               ].map((item, i) => (
-                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <li key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "6px" }}>{item.kpi}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "6px" }}>{item.kpi}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                   </div>
                 </li>
               ))}
-              <li style={{ borderTop: "1px solid #E8E4DC" }} />
+              <li style={{ borderTop: "1px solid #dde0e4" }} />
             </ul>
           </div>
         </section>

@@ -168,7 +168,7 @@ export default function RecruitPage() {
       <Header />
       <main>
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "72px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "72px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
@@ -201,7 +201,7 @@ export default function RecruitPage() {
                 href="/recruit/sales"
                 style={{
                   background: "#ffffff",
-                  color: "#0d1b2a",
+                  color: "#333333",
                   padding: "14px 32px",
                   fontSize: "14px",
                   fontWeight: 700,
@@ -229,10 +229,10 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 1. 現在の募集職種 ──────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Open Positions</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               現在の募集職種
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", marginBottom: "40px" }}>
@@ -240,11 +240,11 @@ export default function RecruitPage() {
             </p>
             <Link
               href="/recruit/sales"
-              style={{ display: "block", borderTop: "1px solid #e8e4dc", borderBottom: "1px solid #e8e4dc", padding: "32px 0", textDecoration: "none" }}
+              style={{ display: "block", borderTop: "1px solid #dde0e4", borderBottom: "1px solid #dde0e4", padding: "32px 0", textDecoration: "none" }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                 <div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#333333", marginBottom: "8px" }}>
                     Webマーケティング営業（正社員）
                   </p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", maxWidth: "560px", marginBottom: "16px" }}>
@@ -252,7 +252,7 @@ export default function RecruitPage() {
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {["基本給20万円＋インセンティブ", "年間休日130日", "正社員", "未経験歓迎", "提案型営業"].map((tag) => (
-                      <span key={tag} style={{ fontSize: "11px", padding: "4px 12px", background: "#e8e4dc", color: "#374151", borderRadius: "100px" }}>{tag}</span>
+                      <span key={tag} style={{ fontSize: "11px", padding: "4px 12px", background: "#dde0e4", color: "#374151", borderRadius: "100px" }}>{tag}</span>
                     ))}
                   </div>
                 </div>
@@ -269,7 +269,7 @@ export default function RecruitPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Why We Recruit</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               サイプレスで営業職を募集する理由
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "48px" }}>
@@ -300,9 +300,9 @@ export default function RecruitPage() {
                   body: "設立まもない会社だからこそ、自分の行動が会社の成長に直結します。チームリーダー・マネジメントなど、早期にキャリアアップできる環境です。",
                 },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "32px", background: "#f8f6f2", border: "1px solid #e8e4dc" }}>
-                  <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>{item.n}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "17px", fontWeight: 700, color: "#0d1b2a", marginBottom: "12px" }}>{item.title}</p>
+                <div key={item.n} style={{ padding: "32px", background: "#f0f1f2", border: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>{item.n}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "17px", fontWeight: 700, color: "#333333", marginBottom: "12px" }}>{item.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                 </div>
               ))}
@@ -311,7 +311,7 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 3. 基本給＋インセンティブ・年間休日130日の考え方 ──────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Compensation</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#ffffff", fontWeight: 700, marginBottom: "48px" }}>
@@ -319,7 +319,7 @@ export default function RecruitPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div style={{ padding: "36px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>COMPENSATION</p>
+                <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>COMPENSATION</p>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>
                   {/* 「イ／ンセンティブ」のような語中改行を防ぐため、語単位で折り返す。 */}
                   <span style={{ whiteSpace: "nowrap" }}>基本給20万円</span>
@@ -335,14 +335,14 @@ export default function RecruitPage() {
                     "「必ず○万円稼げる」という保証ではありません",
                   ].map((txt) => (
                     <p key={txt} style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7", marginBottom: "10px", paddingLeft: "16px", position: "relative" }}>
-                      <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>–</span>
+                      <span style={{ position: "absolute", left: 0, color: "var(--v2-accent)" }}>–</span>
                       {txt}
                     </p>
                   ))}
                 </div>
               </div>
               <div style={{ padding: "36px", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <p style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>HOLIDAYS</p>
+                <p style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", letterSpacing: "0.2em", marginBottom: "16px" }}>HOLIDAYS</p>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: "28px", fontWeight: 700, color: "#ffffff", marginBottom: "8px" }}>年間休日130日</p>
                 <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>週休2日 ＋ 祝日 ＋ 年末年始</p>
                 <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px" }}>
@@ -353,7 +353,7 @@ export default function RecruitPage() {
                     "有給休暇（法定通り付与）",
                   ].map((txt) => (
                     <p key={txt} style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7", marginBottom: "10px", paddingLeft: "16px", position: "relative" }}>
-                      <span style={{ position: "absolute", left: 0, color: "#c4b89a" }}>–</span>
+                      <span style={{ position: "absolute", left: 0, color: "var(--v2-accent)" }}>–</span>
                       {txt}
                     </p>
                   ))}
@@ -364,10 +364,10 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 4. 未経験からWebマーケティング営業になる流れ ────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Career Path</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               未経験からWebマーケティング営業になる流れ
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -409,16 +409,16 @@ export default function RecruitPage() {
                     display: "flex",
                     gap: "24px",
                     padding: "28px 0",
-                    borderTop: i === 0 ? "1px solid #e8e4dc" : "none",
-                    borderBottom: "1px solid #e8e4dc",
+                    borderTop: i === 0 ? "1px solid #dde0e4" : "none",
+                    borderBottom: "1px solid #dde0e4",
                   }}
                 >
                   <div style={{ minWidth: "120px", flexShrink: 0 }}>
-                    <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "#c4b89a", marginBottom: "4px" }}>{s.step}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "10px", letterSpacing: "0.15em", color: "var(--v2-accent)", marginBottom: "4px" }}>{s.step}</p>
                     <p style={{ fontSize: "11px", color: "#9ca3af" }}>{s.period}</p>
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "8px" }}>{s.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "8px" }}>{s.title}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{s.body}</p>
                   </div>
                 </div>
@@ -431,7 +431,7 @@ export default function RecruitPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Products</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               扱う商材
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "600px", marginBottom: "48px" }}>
@@ -464,9 +464,9 @@ export default function RecruitPage() {
                   detail: "提案しやすい業種：専門性の高い業種・情報発信をしたい企業全般",
                 },
               ].map((item) => (
-                <div key={item.tag} style={{ padding: "28px", border: "1px solid #e8e4dc" }}>
-                  <span style={{ display: "inline-block", fontSize: "11px", padding: "3px 10px", background: "#0d1b2a", color: "#ffffff", marginBottom: "14px" }}>{item.tag}</span>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
+                <div key={item.tag} style={{ padding: "28px", border: "1px solid #dde0e4" }}>
+                  <span style={{ display: "inline-block", fontSize: "11px", padding: "3px 10px", background: "#293540", color: "#ffffff", marginBottom: "14px" }}>{item.tag}</span>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>{item.title}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", marginBottom: "14px" }}>{item.body}</p>
                   <p style={{ fontSize: "12px", color: "#9ca3af" }}>{item.detail}</p>
                 </div>
@@ -476,10 +476,10 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 6. 働き方 ────────────────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Work Style</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               働き方
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -497,8 +497,8 @@ export default function RecruitPage() {
                       { label: "社会保険", value: "健康保険・厚生年金・雇用保険・労災保険" },
                       { label: "交通費", value: "全額支給" },
                     ].map((row) => (
-                      <tr key={row.label} style={{ borderBottom: "1px solid #e8e4dc" }}>
-                        <td style={{ padding: "14px 0", width: "120px", fontSize: "12px", fontWeight: 600, color: "#0d1b2a", verticalAlign: "top" }}>{row.label}</td>
+                      <tr key={row.label} style={{ borderBottom: "1px solid #dde0e4" }}>
+                        <td style={{ padding: "14px 0", width: "120px", fontSize: "12px", fontWeight: 600, color: "#333333", verticalAlign: "top" }}>{row.label}</td>
                         <td style={{ padding: "14px 0 14px 16px", fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{row.value}</td>
                       </tr>
                     ))}
@@ -520,8 +520,8 @@ export default function RecruitPage() {
                     body: "成果次第で高収入を狙えます。チームリーダー・マネジメントなど、複数のキャリアパスを用意しています。",
                   },
                 ].map((item) => (
-                  <div key={item.title} style={{ padding: "24px", background: "#ffffff", border: "1px solid #e8e4dc" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{item.title}</p>
+                  <div key={item.title} style={{ padding: "24px", background: "#ffffff", border: "1px solid #dde0e4" }}>
+                    <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>{item.title}</p>
                     <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 ))}
@@ -534,7 +534,7 @@ export default function RecruitPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>More Details</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               営業職の詳細を確認する
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.8", maxWidth: "540px", marginBottom: "32px" }}>
@@ -546,7 +546,7 @@ export default function RecruitPage() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "10px",
-                background: "#0d1b2a",
+                background: "#293540",
                 color: "#ffffff",
                 padding: "16px 36px",
                 fontSize: "14px",
@@ -562,10 +562,10 @@ export default function RecruitPage() {
         </section>
 
         {/* ── 会社情報 ─────────────────────────────────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Company Info</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "32px" }}>会社基本情報</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "32px" }}>会社基本情報</h2>
             <div style={{ maxWidth: "680px" }}>
               {[
                 { label: "会社名", value: "株式会社サイプレス" },
@@ -575,12 +575,12 @@ export default function RecruitPage() {
                 { label: "事業内容", value: "Webマーケティング支援（MEO・SEO・AIO対策）・ホームページ制作・AI活用支援・SNS運用" },
                 { label: "お問い合わせ", value: "info@cypress-all.co.jp" },
               ].map((row) => (
-                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#0d1b2a" }}>{row.label}</span>
+                <div key={row.label} style={{ display: "flex", gap: "32px", padding: "14px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ width: "120px", flexShrink: 0, fontSize: "13px", fontWeight: 600, color: "#333333" }}>{row.label}</span>
                   <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>{row.value}</span>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

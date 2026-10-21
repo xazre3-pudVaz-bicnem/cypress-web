@@ -87,17 +87,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
               <Link href="/sns" style={{ color: "#6B7280" }}>SNS集客</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>ハッシュタグ戦略</span>
+              <span style={{ color: "#333333" }}>ハッシュタグ戦略</span>
             </nav>
             <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px" }}>Hashtag Strategy</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               ハッシュタグ戦略｜InstagramとXで新規リーチを拡大する
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -123,7 +123,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>WHAT YOU WILL LEARN</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このページでわかること
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -135,8 +135,8 @@ export default function Page() {
                 "業種別（飲食・美容室・歯科・不動産など）の具体的なタグ活用事例",
                 "タグ効果をインサイトで計測・改善するPDCAサイクルの回し方",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.75" }}>{item}</p>
                 </div>
               ))}
@@ -145,10 +145,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>COMMON PROBLEMS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               ハッシュタグ運用でよくある課題と原因
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -194,10 +194,10 @@ export default function Page() {
                   body: "「#バレンタイン」「#ゴールデンウィーク」「#クリスマスギフト」など時期限定で検索が急増するタグを使わないことで、最大の露出機会を逃しています。イベントカレンダーと連動したタグ計画が必要です。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>BY INDUSTRY</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               業種別ハッシュタグ活用ポイント
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
@@ -256,9 +256,9 @@ export default function Page() {
                   note: "「#筋トレ」「#ダイエット」は競合が多いため地域タグとの組み合わせが必須です。「#トレーニング記録」「#フィットネスライフ」など継続・記録系のコミュニティタグで熱量の高いユーザーに届きます。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px", border: "1px solid #E8E4DC" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" }}>{item.industry}</p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "12px", fontFamily: "var(--font-serif)", letterSpacing: "0.03em" }}>{item.tags}</p>
+                <div key={i} style={{ padding: "28px", border: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "8px" }}>{item.industry}</p>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginBottom: "12px", fontFamily: "var(--font-serif)", letterSpacing: "0.03em" }}>{item.tags}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                 </div>
               ))}
@@ -267,10 +267,10 @@ export default function Page() {
         </section>
 
         {/* Section D: 実装・運用フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>IMPLEMENTATION FLOW</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               ハッシュタグ戦略の実装・運用フロー
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -286,10 +286,10 @@ export default function Page() {
                 { title: "季節タグのカレンダー作成", body: "年間の主要イベント・季節イベントに合わせたタグカレンダーを作成します。「#クリスマスギフト」「#ゴールデンウィーク」「#夏の美容」など需要増加タイミングの2週間前から使い始めます。" },
                 { title: "月次タグ見直し", body: "月に1回、全タグセットのパフォーマンスを振り返ります。新たに注目度が上がっているタグや競合が活用しているタグを取り込み、常に最新状態を維持することで継続的な効果を保ちます。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.body}</p>
                   </div>
                 </div>
@@ -302,7 +302,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI METRICS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               ハッシュタグ施策の成果を見るための指標
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -315,11 +315,11 @@ export default function Page() {
                 { kpi: "ブランドタグ使用投稿数", where: "ハッシュタグ検索ページ > 投稿数", note: "自社ブランドタグを使った投稿の総数（スタッフ＋UGC）。月次で増加しているかどうかを確認し、ファンコミュニティの形成を測ります。" },
                 { kpi: "タグ最適化後のエンゲージメント率変化", where: "Instagramインサイト > エンゲージメント / リーチ", note: "タグ変更前後でエンゲージメント率（いいね＋コメント＋保存 ÷ リーチ）を比較します。精度の高いタグはターゲット適合度が高まりエンゲージメント率も上昇します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div style={{ flex: 1 }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.kpi}</p>
-                    <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "8px", fontFamily: "var(--font-serif)" }}>{item.where}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.kpi}</p>
+                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginBottom: "8px", fontFamily: "var(--font-serif)" }}>{item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85" }}>{item.note}</p>
                   </div>
                 </div>
@@ -329,9 +329,9 @@ export default function Page() {
         </section>
 
         {/* ハッシュタグ選定ミスの問題 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 24px" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
-            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Hashtag Mistakes</p>
+            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Hashtag Mistakes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ハッシュタグ選定を間違えると起きる4つの問題
             </h2>
@@ -342,7 +342,7 @@ export default function Page() {
                 { t: "地域ユーザーにリーチできない", b: "来店型ビジネスで地域ハッシュタグを使わないことは、最大の集客機会を捨てることと同じです。「#○○市カフェ」など地域名入りタグは最も費用対効果が高い手法のひとつです。" },
                 { t: "スパム判定でリーチが下がる", b: "まったく同じタグセットを毎回コピー貼り付けするとアルゴリズムにスパムと判定され、リーチが意図的に下げられます。投稿ごとに一部変えることが重要です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -355,13 +355,13 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>TAG STRUCTURE</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, textAlign: "center", marginBottom: "48px" }}>
               効果的なハッシュタグの6つのカテゴリ
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
               {contentItems.map((item, i) => (
-                <div key={i} style={{ padding: "32px", background: "#F9F8F5", borderRadius: "4px", borderLeft: "3px solid #c4b89a" }}>
-                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>{item.label}</h3>
+                <div key={i} style={{ padding: "32px", background: "#f0f1f2", borderRadius: "4px", borderLeft: "3px solid var(--v2-accent)" }}>
+                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "17px", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>{item.label}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.85", color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -370,10 +370,10 @@ export default function Page() {
         </section>
 
         {/* Hashtag Tier Comparison */}
-        <section style={{ background: "#F9F8F5", padding: "80px 24px" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>TAG TIERS</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               ハッシュタグ3層の特性比較
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.85", marginBottom: "40px", maxWidth: "640px" }}>
@@ -382,12 +382,12 @@ export default function Page() {
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
                 <thead>
-                  <tr style={{ borderBottom: "2px solid #E8E4DC" }}>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>タグ種別</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>投稿件数の目安</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>表示滞在時間</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>ターゲット精度</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 700 }}>推奨使用数</th>
+                  <tr style={{ borderBottom: "2px solid #dde0e4" }}>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 700 }}>タグ種別</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 700 }}>投稿件数の目安</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 700 }}>表示滞在時間</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 700 }}>ターゲット精度</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 700 }}>推奨使用数</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -398,12 +398,12 @@ export default function Page() {
                     { tier: "地域タグ", count: "数百〜数万件", duration: "長期間", precision: "最高（来店意欲あり）", recommended: "2〜3個" },
                     { tier: "ブランドタグ", count: "自社管理", duration: "永続", precision: "最高（既存ファン）", recommended: "1個（固定）" },
                   ].map((row, i) => (
-                    <tr key={i} style={{ borderBottom: "1px solid #E8E4DC", background: i % 2 === 0 ? "#FFFFFF" : "#F9F8F5" }}>
-                      <td style={{ padding: "14px 16px", color: "#0d1b2a", fontWeight: 600 }}>{row.tier}</td>
+                    <tr key={i} style={{ borderBottom: "1px solid #dde0e4", background: i % 2 === 0 ? "#FFFFFF" : "#f0f1f2" }}>
+                      <td style={{ padding: "14px 16px", color: "#333333", fontWeight: 600 }}>{row.tier}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.count}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.duration}</td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.precision}</td>
-                      <td style={{ padding: "14px 16px", color: "#c4b89a", fontWeight: 600 }}>{row.recommended}</td>
+                      <td style={{ padding: "14px 16px", color: "var(--v2-accent)", fontWeight: 600 }}>{row.recommended}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -416,14 +416,14 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 24px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>PLATFORM DIFFERENCES</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "12px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,32px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
               InstagramとXのハッシュタグ活用の違い
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.85", marginBottom: "40px", maxWidth: "640px" }}>
               プラットフォームによってハッシュタグの機能・使い方・最適な個数は大きく異なります。同じタグ戦略を両方に適用するのではなく、各プラットフォームの特性に合わせて設計することが集客効率を高めます。
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
-              <div style={{ padding: "32px", border: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "32px", border: "1px solid #dde0e4" }}>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>INSTAGRAM</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                   {[
@@ -434,14 +434,14 @@ export default function Page() {
                     { label: "効果測定", value: "インサイトのタグ経由リーチで確認" },
                     { label: "注意点", value: "同じタグセットの毎回コピーはスパム判定リスク" },
                   ].map((row, j) => (
-                    <div key={j} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
+                    <div key={j} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
                       <span style={{ fontSize: "12px", color: "#9CA3AF", flexShrink: 0, width: "80px" }}>{row.label}</span>
                       <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{row.value}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div style={{ padding: "32px", border: "1px solid #E8E4DC" }}>
+              <div style={{ padding: "32px", border: "1px solid #dde0e4" }}>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>X (旧Twitter)</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                   {[
@@ -452,7 +452,7 @@ export default function Page() {
                     { label: "効果測定", value: "インプレッション・エンゲージメント数" },
                     { label: "注意点", value: "タグが多いと読みにくくスパム印象を与える" },
                   ].map((row, j) => (
-                    <div key={j} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #E8E4DC" }}>
+                    <div key={j} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: "1px solid #dde0e4" }}>
                       <span style={{ fontSize: "12px", color: "#9CA3AF", flexShrink: 0, width: "80px" }}>{row.label}</span>
                       <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.7" }}>{row.value}</span>
                     </div>
@@ -464,9 +464,9 @@ export default function Page() {
         </section>
 
         {/* CTA Banner */}
-        <section style={{ background: "#0d1b2a", padding: "64px 24px" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "64px 24px" }}>
           <div style={{ maxWidth: "56rem", margin: "0 auto", textAlign: "center" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>FREE CONSULTATION</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>FREE CONSULTATION</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,3vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               ハッシュタグ戦略の無料相談を受け付けています
             </h2>
@@ -477,8 +477,8 @@ export default function Page() {
               href="/contact"
               style={{
                 display: "inline-block",
-                background: "#0F172A",
-                border: "1px solid rgba(196,184,154,0.4)",
+                background: "#293540",
+                border: "1px solid rgba(9,111,200,0.4)",
                 color: "#FFFFFF",
                 fontSize: "14px",
                 fontWeight: 600,

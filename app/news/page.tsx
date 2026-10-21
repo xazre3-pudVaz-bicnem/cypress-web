@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const CATEGORY_COLORS: Record<NewsArticle["category"], string> = {
-  お知らせ: "#1D4ED8",
+  お知らせ: "#096fc8",
 };
 
 const CATEGORY_BG: Record<NewsArticle["category"], string> = {
@@ -33,15 +33,16 @@ export default function NewsPage() {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-5xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>お知らせ</span>
+              <span style={{ color: "#333333" }}>お知らせ</span>
             </nav>
+            <p>News</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               お知らせ
@@ -55,16 +56,16 @@ export default function NewsPage() {
         {/* News List */}
         <section className="pb-24 max-w-5xl mx-auto px-6">
           <div
-            style={{ borderTop: "1px solid #E8E4DC" }}
+            style={{ borderTop: "1px solid #dde0e4" }}
           >
             {sorted.map((article) => (
               <div
                 key={article.slug}
-                style={{ borderBottom: "1px solid #E8E4DC" }}
+                style={{ borderBottom: "1px solid #dde0e4" }}
               >
                 <Link
                   href={`/news/${article.slug}`}
-                  className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-5 -mx-3 px-3 transition-colors hover:bg-[#F9F8F5]"
+                  className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-5 -mx-3 px-3 transition-colors hover:bg-[#f0f1f2]"
                 >
                   <span
                     className="font-mono text-xs shrink-0"
@@ -83,7 +84,7 @@ export default function NewsPage() {
                   >
                     {article.category}
                   </span>
-                  <span className="text-[#0F172A] text-sm font-medium leading-relaxed flex-1 group-hover:underline underline-offset-4">
+                  <span className="text-[#333333] text-sm font-medium leading-relaxed flex-1 group-hover:underline underline-offset-4">
                     {article.title}
                   </span>
                   <svg

@@ -58,17 +58,18 @@ export default async function ContactPage({
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">
+              <Link href="/" className="hover:text-[#333333] transition-colors">
                 ホーム
               </Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>お問い合わせ</span>
+              <span style={{ color: "#333333" }}>お問い合わせ</span>
             </nav>
+            <p>Contact</p>
             <h1
-              className="font-black text-[#0F172A] leading-tight tracking-tight mb-5"
+              className="font-black text-[#333333] leading-tight tracking-tight mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               お問い合わせ
@@ -88,10 +89,10 @@ export default async function ContactPage({
                 className="p-8"
                 style={{
                   background: "#FFFFFF",
-                  border: "1px solid #E8E4DC",
+                  border: "1px solid #dde0e4",
                 }}
               >
-                <h2 className="font-bold text-[#0F172A] text-lg mb-8">
+                <h2 className="font-bold text-[#333333] text-lg mb-8">
                   お問い合わせフォーム
                 </h2>
                 <ContactForm initialType={typeParam} />
@@ -116,13 +117,13 @@ export default async function ContactPage({
                 <div
                   className="p-6"
                   style={{
-                    background: "#F9F8F5",
-                    border: "1px solid #E8E4DC",
+                    background: "#f0f1f2",
+                    border: "1px solid #dde0e4",
                   }}
                 >
                   <h3
-                    className="font-bold text-[#0F172A] text-sm mb-5 pb-4"
-                    style={{ borderBottom: "1px solid #E8E4DC" }}
+                    className="font-bold text-[#333333] text-sm mb-5 pb-4"
+                    style={{ borderBottom: "1px solid #dde0e4" }}
                   >
                     連絡先情報
                   </h3>
@@ -135,8 +136,8 @@ export default async function ContactPage({
                         {item.href ? (
                           <a
                             href={item.href}
-                            className="text-sm underline underline-offset-4 transition-colors hover:text-[#0F172A]"
-                            style={{ color: "#0F172A", fontWeight: 500 }}
+                            className="text-sm underline underline-offset-4 transition-colors hover:text-[#333333]"
+                            style={{ color: "#333333", fontWeight: 500 }}
                           >
                             {item.value}
                           </a>
@@ -148,8 +149,8 @@ export default async function ContactPage({
                   </div>
                   <a
                     href={CONTACT_MAILTO}
-                    className="mt-5 flex items-center justify-center gap-2 w-full py-3 text-[13px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                    style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                    className="mt-5 flex items-center justify-center gap-2 w-full py-3 text-[13px] font-medium transition-all hover:bg-[#293540] hover:text-white"
+                    style={{ border: "1px solid #333333", color: "#333333" }}
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -164,13 +165,13 @@ export default async function ContactPage({
                 <div
                   className="p-6"
                   style={{
-                    background: "#F9F8F5",
-                    border: "1px solid #E8E4DC",
+                    background: "#f0f1f2",
+                    border: "1px solid #dde0e4",
                   }}
                 >
                   <h3
-                    className="font-bold text-[#0F172A] text-sm mb-4 pb-4"
-                    style={{ borderBottom: "1px solid #E8E4DC" }}
+                    className="font-bold text-[#333333] text-sm mb-4 pb-4"
+                    style={{ borderBottom: "1px solid #dde0e4" }}
                   >
                     お問い合わせ種別
                   </h3>
@@ -208,7 +209,7 @@ export default async function ContactPage({
                       </p>
                     </li>
                   </ul>
-                  <p className="text-[#9CA3AF] text-[11px] leading-[1.85] mt-4 pt-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <p className="text-[#9CA3AF] text-[11px] leading-[1.85] mt-4 pt-4" style={{ borderTop: "1px solid #dde0e4" }}>
                     株式会社サイプレスは研修会社への紹介窓口です。助成金の申請代行は行っておらず、採択・支給を保証するものではありません。
                   </p>
                 </div>
@@ -220,12 +221,12 @@ export default async function ContactPage({
         {/* FAQ */}
         <section
           className="py-20"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <h2
-              className="font-bold text-[#0F172A] text-lg mb-10 pb-6"
-              style={{ borderBottom: "1px solid #E8E4DC" }}
+              className="font-bold text-[#333333] text-lg mb-10 pb-6"
+              style={{ borderBottom: "1px solid #dde0e4" }}
             >
               よくある質問
             </h2>
@@ -235,10 +236,10 @@ export default async function ContactPage({
                   key={faq.q}
                   className="py-6"
                   style={{
-                    borderBottom: i < FAQS.length - 1 ? "1px solid #E8E4DC" : "none",
+                    borderBottom: i < FAQS.length - 1 ? "1px solid #dde0e4" : "none",
                   }}
                 >
-                  <p className="font-medium text-[#0F172A] text-sm mb-3">
+                  <p className="font-medium text-[#333333] text-sm mb-3">
                     Q. {faq.q}
                   </p>
                   <p className="text-[#374151] text-sm leading-relaxed">

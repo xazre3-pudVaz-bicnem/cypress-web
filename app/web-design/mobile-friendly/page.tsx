@@ -78,17 +78,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }}>ホームページ制作</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>スマートフォン対応</span>
+              <span style={{ color: "#333333" }}>スマートフォン対応</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Mobile First Design</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               スマートフォン対応・モバイルフレンドリー化
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -117,7 +117,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "680px", display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -130,7 +130,7 @@ export default function Page() {
                 "効果測定に使うKPIと計測ツールの活用方法",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "2px" }}>→</span>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "2px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -139,9 +139,9 @@ export default function Page() {
         </section>
 
         {/* Risks dark section */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Risks of Non-Responsive</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Risks of Non-Responsive</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               スマートフォン未対応サイトが失う4つの機会
             </h2>
@@ -152,7 +152,7 @@ export default function Page() {
                 { t: "集客機会の喪失", b: "検索流入の6割以上がスマートフォンからです。スマートフォン非対応サイトは、この大多数の潜在顧客に「見づらい」「使いにくい」という印象を与えています。" },
                 { t: "ブランド信頼の低下", b: "スマートフォンで見づらいサイトは「古い会社」「テクノロジーに疎い会社」という印象を与えます。高品質なサービスを提供していても、Webの見た目で信頼を損なうことがあります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -162,10 +162,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems & Causes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -181,10 +181,10 @@ export default function Page() {
                 { t: "Google Search ConsoleにモバイルUsabilityエラーが出ている", b: "「クリック可能な要素が近すぎます」「テキストが小さすぎて読めません」などのエラーは放置するとモバイルインデックスでの評価に影響します。定期的なSearch Consoleの確認と対応が必要です。" },
                 { t: "PCデザインをそのままスマホに押し込んでいる", b: "PCで4カラムのグリッドをスマートフォンでそのまま表示したり、横幅いっぱいの表をそのまま表示したりするケースです。スマートフォン用のレイアウト変更を加えることで大幅にUXが改善します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               スマートフォン対応の実装方針
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -209,10 +209,10 @@ export default function Page() {
                 { n: "05", t: "画像サイズの最適化（next/image）", b: "next/imageコンポーネントによりスマートフォンの画面解像度・サイズに応じた最適な画像を自動配信します。不必要に大きな画像を読み込まないため表示速度が大幅に改善します。" },
                 { n: "06", t: "モバイルフォームの操作性向上", b: "入力フォームのフィールドサイズ・キーボードタイプの最適化・エラーメッセージの表示位置など、スマートフォンでのフォーム操作を細部まで最適化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -222,10 +222,10 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
@@ -239,9 +239,9 @@ export default function Page() {
                 { industry: "学習塾", point: "資料請求・体験申込の簡便化", detail: "スマートフォンで資料請求・体験授業申込ができるよう、フォームの入力項目を最小化します。保護者が子どものそばでスマートフォン操作している状況を想定し、素早く完了できる設計にします。" },
                 { industry: "EC・通販", point: "商品選択・決済のモバイル最適化", detail: "商品一覧のグリッド表示・カートへの追加ボタンサイズ・決済フォームのモバイル入力最適化が売上に直結します。Apple Pay・Google Payなどのモバイル決済への対応も検討します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", borderTop: "1px solid #E8E4DC", borderRight: i % 2 === 0 ? "1px solid #E8E4DC" : "none" }}>
+                <div key={i} style={{ padding: "24px", borderTop: "1px solid #dde0e4", borderRight: i % 2 === 0 ? "1px solid #dde0e4" : "none" }}>
                   <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", color: "#9CA3AF", marginBottom: "6px", textTransform: "uppercase" }}>{item.industry}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "10px" }}>{item.point}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "10px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.detail}</p>
                 </div>
               ))}
@@ -253,7 +253,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               対応・実装フロー
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -269,10 +269,10 @@ export default function Page() {
                 { t: "フォームのモバイルUX改善", b: "入力フィールドのサイズ拡大・適切なinputtype設定（tel・email・number等）・エラーメッセージの視認性改善・送信ボタンのサイズ拡大を実施します。" },
                 { t: "公開後のCore Web Vitals確認", b: "公開後にPageSpeed InsightsでモバイルのCore Web Vitals（LCP・INP・CLS）を測定します。Google Search ConsoleのCore Web Vitalsレポートで実際のユーザーデータも確認します。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -282,10 +282,10 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               成果を見るための指標
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -298,12 +298,12 @@ export default function Page() {
                 { kpi: "Google Search ConsoleのモバイルUXエラー数", target: "0件目標", where: "Google Search Console（ページエクスペリエンス）", desc: "「クリック可能な要素が近すぎます」「テキストが小さすぎて読めません」などのモバイルエラー件数をゼロにすることを目標とします。月次で確認します。" },
                 { kpi: "モバイルトラフィック比率", target: "推移のモニタリング", where: "Google Analytics（デバイスカテゴリ）", desc: "全アクセスに占めるスマートフォンからのアクセスの割合を把握します。モバイル比率が高いサイトほどモバイル最適化の優先度が高く、改善効果も大きくなります。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "8px", marginBottom: "4px" }}>
-                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a" }}>{item.kpi}</p>
-                      <span style={{ fontSize: "12px", fontWeight: 600, color: "#c4b89a", letterSpacing: "0.05em" }}>{item.target}</span>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333" }}>{item.kpi}</p>
+                      <span style={{ fontSize: "12px", fontWeight: 600, color: "var(--v2-accent)", letterSpacing: "0.05em" }}>{item.target}</span>
                     </div>
                     <p style={{ fontSize: "11px", color: "#9CA3AF", marginBottom: "6px" }}>計測場所: {item.where}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>

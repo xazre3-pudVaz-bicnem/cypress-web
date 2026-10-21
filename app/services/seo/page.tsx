@@ -158,17 +158,17 @@ export default function ServicesSeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>SEO対策</span>
+              <span style={{ color: "#333333" }}>SEO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SEO Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策サービス
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -178,7 +178,7 @@ export default function ServicesSeoPage() {
               東京都葛飾区を拠点に、東京・千葉・埼玉・神奈川を中心に全国のビジネスをリモートでご支援しています。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#0F172A", color: "#FFFFFF" }}>
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
               <Link href="/cost/seo" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
@@ -198,7 +198,7 @@ export default function ServicesSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Overview</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -211,7 +211,7 @@ export default function ServicesSeoPage() {
                 "他社に頼んで効果が出なかった場合の切り替え相談の流れ",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -220,10 +220,10 @@ export default function ServicesSeoPage() {
         </section>
 
         {/* サービス内容 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策サービスの内容
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -236,23 +236,23 @@ export default function ServicesSeoPage() {
                 { title: "ローカルSEO（エリアページ制作）", body: "対応エリアごとのランディングページ（エリアページ）を制作し、地域名キーワードでの上位表示を目指します。LocalBusiness構造化データの実装・Googleマップ埋め込みも含みます。" },
                 { title: "効果計測・月次レポート", body: "Google Search ConsoleとAnalyticsのデータで毎月の成果を計測します。対策キーワードの順位変動・セッション数・コンバージョン数をレポートし、次月の施策方針をご提案します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* SEOをやらないリスク */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why SEO Matters</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Why SEO Matters</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               SEO対策をしないと続く4つの機会損失
             </h2>
@@ -263,8 +263,8 @@ export default function ServicesSeoPage() {
                 { n: "03", t: "ブランドの信頼性・権威性が築けない", b: "Googleに「専門性が高い・信頼できる」と評価されるサイトは、AI検索（AIO）でも引用されやすくなります。SEO対策はAIO対策にも直結します。" },
                 { n: "04", t: "サイトへの流入が伸びず成長が止まる", b: "WebサイトはSEO対策なしでは「誰にも見られない名刺」です。適切な対策で検索流入が増えれば、問い合わせ数・売上・採用応募数のすべてが向上します。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(196,184,154,0.2)" }}>
-                  <span style={{ color: "#c4b89a", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px" }}>{item.n}</span>
+                <div key={item.n} style={{ padding: "28px", border: "1px solid rgba(9,111,200,0.2)" }}>
+                  <span style={{ color: "var(--v2-accent)", fontSize: "22px", fontWeight: 700, display: "block", marginBottom: "12px" }}>{item.n}</span>
                   <p className="font-bold text-[15px] mb-3" style={{ color: "#ffffff" }}>{item.t}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "rgba(255,255,255,0.75)" }}>{item.b}</p>
                 </div>
@@ -274,10 +274,10 @@ export default function ServicesSeoPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -296,15 +296,15 @@ export default function ServicesSeoPage() {
                 { title: "内部リンクがバラバラ", body: "重要なページへの内部リンクが少なく、Googleが評価を集中させられていない状態。サイト構造の見直しと内部リンク設計によって、重要ページへの評価集中を図ります。" },
                 { title: "テクニカルSEOの知識がない", body: "Core Web Vitals・XMLサイトマップ・canonical・robots.txt・構造化データなどの技術的な要素への対処が手つかずのケース。技術的な問題がある限り、コンテンツ施策の効果も出にくい状態が続きます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -313,7 +313,7 @@ export default function ServicesSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -330,24 +330,24 @@ export default function ServicesSeoPage() {
                 { industry: "学習塾", note: "「エリア名＋塾」「中学受験 塾 エリア名」などのローカルキーワードに加え、学習法コラム・受験情報ページで広域流入を狙います。合格実績・カリキュラム情報の詳細な記載がE-E-A-T向上につながります。" },
                 { industry: "BtoB・SaaS", note: "「課題解決型」の情報コンテンツで商品認知前の潜在顧客を獲得する戦略が効果的。ホワイトペーパー・事例紹介ページへの内部リンク設計と、問い合わせ・資料請求CVへのパス設計が重要です。ドメイン評価の構築に時間がかかるため早期着手が優位です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: ご支援の流れ */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Process</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ご支援の流れ
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -366,15 +366,15 @@ export default function ServicesSeoPage() {
                 { step: "STEP 09", title: "月次レポート・改善提案", body: "毎月のキーワード順位・流入数・コンバージョン数を計測し、翌月の施策方針をレポートします。必要に応じてMTGで内容を共有します。" },
                 { step: "STEP 10", title: "継続的な効果測定", body: "検索トレンド・Googleアルゴリズムの変動・競合の動向を継続的にモニタリングし、施策を柔軟に調整しながら長期的な流入増加を目指します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1 whitespace-nowrap" style={{ background: "#c4b89a", color: "#FFFFFF", letterSpacing: "0.1em" }}>{item.step}</span>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="text-[11px] font-semibold shrink-0 mt-1 px-2 py-1 whitespace-nowrap" style={{ background: "var(--v2-accent)", color: "#FFFFFF", letterSpacing: "0.1em" }}>{item.step}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -383,7 +383,7 @@ export default function ServicesSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -399,41 +399,41 @@ export default function ServicesSeoPage() {
                 { kpi: "ページ速度スコア", where: "Google PageSpeed Insights／Chrome UX Report", note: "Core Web Vitals（LCP・CLS・INP）のスコアを計測します。特にLCP 2.5秒以内・CLS 0.1以下を目標に改善します。" },
                 { kpi: "被リンク数", where: "Google Search Console（リンク）／Ahrefs等", note: "外部サイトからの被リンク数とドメイン評価の推移を追います。質の高い被リンクはドメイン評価の向上に直結します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#c4b89a" }}>確認場所：{item.where}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                    <p className="text-[12px] mb-2 font-medium" style={{ color: "var(--v2-accent)" }}>確認場所：{item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 業種・エリア */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industries & Areas</p>
-            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               対応業種・エリア
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-4xl">
               <div>
-                <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a" }}>対応業種</p>
+                <p className="font-bold text-[14px] mb-3" style={{ color: "#333333" }}>対応業種</p>
                 <div className="flex flex-wrap gap-2">
                   {["飲食店", "美容室・サロン", "整体・治療院", "クリニック・医院", "リフォーム", "建設・工務店", "不動産", "法律・会計事務所", "学習塾・スクール", "ペットショップ", "EC・ネットショップ", "BtoBサービス"].map((ind) => (
-                    <span key={ind} className="px-3 py-1.5 text-[12px] rounded" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", color: "#374151" }}>{ind}</span>
+                    <span key={ind} className="px-3 py-1.5 text-[12px] rounded" style={{ background: "#FFFFFF", border: "1px solid #dde0e4", color: "#374151" }}>{ind}</span>
                   ))}
                 </div>
               </div>
               <div>
-                <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a" }}>対応エリア</p>
+                <p className="font-bold text-[14px] mb-3" style={{ color: "#333333" }}>対応エリア</p>
                 <div className="flex flex-wrap gap-2">
                   {["東京都（全域）", "葛飾区", "足立区", "江戸川区", "墨田区", "千葉県", "埼玉県", "神奈川県", "全国（リモート対応）"].map((area) => (
-                    <span key={area} className="px-3 py-1.5 text-[12px] rounded" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", color: "#374151" }}>{area}</span>
+                    <span key={area} className="px-3 py-1.5 text-[12px] rounded" style={{ background: "#FFFFFF", border: "1px solid #dde0e4", color: "#374151" }}>{area}</span>
                   ))}
                 </div>
               </div>

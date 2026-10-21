@@ -33,7 +33,7 @@ export default function KnowledgePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f9f8f5", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -55,7 +55,7 @@ export default function KnowledgePage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px, 4vw, 48px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.3,
                 marginBottom: "20px",
@@ -88,7 +88,7 @@ export default function KnowledgePage() {
                 >
                   <article
                     style={{
-                      border: "1px solid #e8e4dc",
+                      border: "1px solid #dde0e4",
                       padding: "28px 28px 24px",
                       height: "100%",
                       background: "#ffffff",
@@ -98,7 +98,7 @@ export default function KnowledgePage() {
                     <span
                       style={{
                         display: "inline-block",
-                        background: "#f0ede6",
+                        background: "#dde0e4",
                         color: "#6b7280",
                         fontSize: "10px",
                         fontWeight: 700,
@@ -114,7 +114,7 @@ export default function KnowledgePage() {
                         fontFamily: "var(--font-serif)",
                         fontSize: "15px",
                         fontWeight: 700,
-                        color: "#0d1b2a",
+                        color: "#333333",
                         lineHeight: "1.55",
                         marginBottom: "10px",
                       }}

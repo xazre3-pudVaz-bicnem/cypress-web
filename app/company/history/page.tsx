@@ -139,7 +139,7 @@ export default function HistoryPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -158,7 +158,7 @@ export default function HistoryPage() {
                 会社情報
               </Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>会社の歩み</span>
+              <span style={{ color: "#333333" }}>会社の歩み</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               History &amp; Vision
@@ -167,7 +167,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px,4vw,48px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.25,
                 marginBottom: "24px",
@@ -211,7 +211,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -257,7 +257,7 @@ export default function HistoryPage() {
                     display: "flex",
                     gap: "20px",
                     padding: "20px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -269,7 +269,7 @@ export default function HistoryPage() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -279,13 +279,13 @@ export default function HistoryPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 設立の沿革 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Timeline
@@ -294,7 +294,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "16px",
               }}
@@ -333,7 +333,7 @@ export default function HistoryPage() {
                     gridTemplateColumns: "180px 1fr",
                     gap: "32px",
                     padding: "28px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <div>
@@ -345,7 +345,7 @@ export default function HistoryPage() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 700,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "10px",
                       }}
                     >
@@ -355,7 +355,7 @@ export default function HistoryPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -388,7 +388,7 @@ export default function HistoryPage() {
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "clamp(20px,2.8vw,32px)",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                     marginBottom: "24px",
                     lineHeight: 1.3,
@@ -415,7 +415,7 @@ export default function HistoryPage() {
         </section>
 
         {/* 解決したかった課題 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Problem We&apos;re Solving
@@ -424,7 +424,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "16px",
               }}
@@ -477,7 +477,7 @@ export default function HistoryPage() {
                     display: "flex",
                     gap: "20px",
                     padding: "24px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -489,7 +489,7 @@ export default function HistoryPage() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 700,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "10px",
                       }}
                     >
@@ -499,15 +499,15 @@ export default function HistoryPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 私たちが目指す未来 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>
               Our Vision
             </p>
             <h2
@@ -568,7 +568,7 @@ export default function HistoryPage() {
                   key={i}
                   style={{
                     padding: "24px",
-                    border: "1px solid rgba(196,184,154,0.2)",
+                    border: "1px solid rgba(9,111,200,0.2)",
                   }}
                 >
                   <p
@@ -602,7 +602,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "16px",
               }}
@@ -655,7 +655,7 @@ export default function HistoryPage() {
                     display: "flex",
                     gap: "20px",
                     padding: "24px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -667,7 +667,7 @@ export default function HistoryPage() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 700,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "10px",
                       }}
                     >
@@ -677,13 +677,13 @@ export default function HistoryPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 会社概要へのリンク */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "800px" }}>
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -693,7 +693,7 @@ export default function HistoryPage() {
                 style={{
                   fontFamily: "var(--font-serif)",
                   fontSize: "clamp(20px,2.8vw,30px)",
-                  color: "#0d1b2a",
+                  color: "#333333",
                   fontWeight: 700,
                   marginBottom: "24px",
                   lineHeight: 1.3,
@@ -726,8 +726,8 @@ export default function HistoryPage() {
                     alignItems: "center",
                     gap: "8px",
                     fontSize: "13px",
-                    color: "#0d1b2a",
-                    border: "1px solid #E8E4DC",
+                    color: "#333333",
+                    border: "1px solid #dde0e4",
                     padding: "10px 20px",
                     textDecoration: "none",
                     background: "#FFFFFF",
@@ -742,8 +742,8 @@ export default function HistoryPage() {
                     alignItems: "center",
                     gap: "8px",
                     fontSize: "13px",
-                    color: "#0d1b2a",
-                    border: "1px solid #E8E4DC",
+                    color: "#333333",
+                    border: "1px solid #dde0e4",
                     padding: "10px 20px",
                     textDecoration: "none",
                     background: "#FFFFFF",
@@ -766,7 +766,7 @@ export default function HistoryPage() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,30px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "16px",
               }}

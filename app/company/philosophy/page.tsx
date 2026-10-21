@@ -215,12 +215,12 @@ export default function PhilosophyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <Link href="/company" className="hover:text-[#333333] transition-colors">会社情報</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>経営理念</span>
             </nav>
@@ -229,7 +229,7 @@ export default function PhilosophyPage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               経営理念
             </h1>
@@ -240,14 +240,14 @@ export default function PhilosophyPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What you&apos;ll learn
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -263,19 +263,19 @@ export default function PhilosophyPage() {
                 <div
                   key={i}
                   className="flex items-start gap-4 py-4"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
-                  <span className="text-[14px] font-bold shrink-0" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="text-[14px] font-bold shrink-0" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Mission — dark section */}
-        <section className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-28 md:py-40 relative overflow-hidden" style={{ background: "#293540" }}>
           <div className="absolute inset-0">
             <Image
               src="/ChatGPT Image 2026年6月13日 19_18_57.jpg"
@@ -312,7 +312,7 @@ export default function PhilosophyPage() {
               </p>
               <h2
                 className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
               >
                 地域企業が、正しく選ばれる仕組みをつくる。
               </h2>
@@ -332,7 +332,7 @@ export default function PhilosophyPage() {
         </section>
 
         {/* Vision */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
@@ -340,7 +340,7 @@ export default function PhilosophyPage() {
               </p>
               <h2
                 className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
               >
                 AIとWebの力で、地域経済を再生する。
               </h2>
@@ -367,7 +367,7 @@ export default function PhilosophyPage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               7つのバリュー
             </h2>
@@ -379,29 +379,29 @@ export default function PhilosophyPage() {
                 <div
                   key={v.num}
                   className="grid grid-cols-[48px_1fr] gap-6 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{v.num}</span>
                   <div>
-                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#0d1b2a" }}>{v.title}</h3>
+                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#333333" }}>{v.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{v.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 行動指針10条 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Principles — 行動指針
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               行動指針10条
             </h2>
@@ -413,16 +413,16 @@ export default function PhilosophyPage() {
                 <div
                   key={p.num}
                   className="grid grid-cols-[48px_1fr] gap-6 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
                   <div>
-                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#0d1b2a" }}>{p.title}</h3>
+                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#333333" }}>{p.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{p.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -461,7 +461,7 @@ export default function PhilosophyPage() {
               </p>
               <h2
                 className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
               >
                 なぜ、この理念が生まれたか
               </h2>
@@ -487,14 +487,14 @@ export default function PhilosophyPage() {
         </section>
 
         {/* Section E: 理念を体現するサービス設計 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Philosophy in Action
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               理念を体現するサービス設計
             </h2>
@@ -534,22 +534,22 @@ export default function PhilosophyPage() {
                 <div
                   key={item.num}
                   className="grid grid-cols-[40px_1fr] gap-4 py-6 pr-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <h3 className="font-black text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.service}</h3>
+                    <h3 className="font-black text-[15px] mb-2" style={{ color: "#333333" }}>{item.service}</h3>
                     <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{item.philosophy}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "56rem", marginTop: "0" }} />
+            <div style={{ borderTop: "1px solid #dde0e4", maxWidth: "56rem", marginTop: "0" }} />
             <div className="mt-10">
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-semibold transition-opacity hover:opacity-80"
-                style={{ background: "#0F172A", color: "#FFFFFF" }}
+                style={{ background: "#293540", color: "#FFFFFF" }}
               >
                 サービス一覧を見る
               </Link>

@@ -29,12 +29,12 @@ export default function PhilosophySection() {
 
       <div className="relative max-w-6xl mx-auto px-6">
         <AnimatedSection>
-          <span className="text-[11px] font-mono tracking-[0.22em] text-[#2563EB] uppercase block mb-4">
+          <span className="text-[11px] font-mono tracking-[0.22em] text-[#096fc8] uppercase block mb-4">
             Philosophy
           </span>
           <h2
             className="font-black leading-[1.1] tracking-[-0.02em] mb-16"
-            style={{ fontSize: "clamp(28px, 3.5vw, 48px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 3.5vw, 48px)", color: "#333333" }}
           >
             企業理念
           </h2>
@@ -49,7 +49,7 @@ export default function PhilosophySection() {
               >
                 <p
                   className="font-black leading-[1.2] tracking-[-0.01em] mb-3"
-                  style={{ fontSize: "clamp(22px, 3vw, 40px)", color: "#0F172A" }}
+                  style={{ fontSize: "clamp(22px, 3vw, 40px)", color: "#333333" }}
                 >
                   {s.jp}
                 </p>

@@ -139,17 +139,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/ai" style={{ color: "#6B7280" }} className="hover:underline">AI活用支援</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>プロンプトエンジニアリング・設計</span>
+              <span style={{ color: "#333333" }}>プロンプトエンジニアリング・設計</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Prompt Engineering</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               プロンプトエンジニアリング・設計
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -172,7 +172,7 @@ export default function Page() {
           />
           <div className="absolute inset-0 flex items-center px-8 md:px-20" style={{ background: "rgba(13,27,42,0.5)" }}>
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "#c4b89a" }}>Prompt Design</p>
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-3" style={{ color: "var(--v2-accent)" }}>Prompt Design</p>
               <p className="font-black text-[22px] md:text-[28px] leading-snug" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
                 正しい指示があれば、AIは<br />期待通りの成果を出せる
               </p>
@@ -181,10 +181,10 @@ export default function Page() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -197,7 +197,7 @@ export default function Page() {
                 "GPT-4o・Claude 3.5など最新モデルの特性を活かしたモデル別プロンプト最適化",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -209,7 +209,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Core Principles</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               プロンプト設計の6つの基本原則
             </h2>
             <div className="max-w-4xl">
@@ -221,24 +221,24 @@ export default function Page() {
                 { n: "05", t: "段階的に指示する（Chain of Thought）", b: "複雑なタスクは一度に全部指示するのではなく、「まず構成を作って」→「次に各セクションを書いて」のように段階的に進めます。一度に処理させすぎると品質が下がります。" },
                 { n: "06", t: "テンプレート化して再利用する", b: "うまくいったプロンプトはドキュメントに保存してテンプレート化します。変数（顧客名・商品名・キーワード等）を差し替えるだけで再利用できる形にすることで業務効率が大幅に上がります。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl">
@@ -294,15 +294,15 @@ export default function Page() {
                   b: "各モデルには得意・不得意があります。旧モデル向けに設計したプロンプトが新モデルでは最適でない場合もあります。新モデルリリース時に主要プロンプトのテストを実施し、モデル特性に合わせた最適化を行うことで出力品質を最大化できます。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -311,7 +311,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -357,10 +357,10 @@ export default function Page() {
                   body: "画像生成AIのプロンプトはテキスト生成AIとは異なる設計が必要です。スタイル・構図・照明・カラーパレット・雰囲気を具体的に指定する画像生成プロンプトのテンプレートを整備することで、ブランドに一貫したビジュアルを効率的に生成できます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="pt-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="pt-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="flex items-center gap-3 mb-2">
-                    <p className="font-black text-[15px]" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
-                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#F9F8F5", color: "#c4b89a", border: "1px solid #E8E4DC" }}>{item.note}</span>
+                    <p className="font-black text-[15px]" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
+                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#f0f1f2", color: "var(--v2-accent)", border: "1px solid #dde0e4" }}>{item.note}</span>
                   </div>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
@@ -370,10 +370,10 @@ export default function Page() {
         </section>
 
         {/* Section D: 導入・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               導入・実装フロー
             </h2>
             <div className="max-w-4xl">
@@ -429,15 +429,15 @@ export default function Page() {
                   b: "GPT-4o・Claude 3.5など新モデルがリリースされた際に、主要プロンプトの品質テストを実施します。新モデルの特性（長文処理・推論精度・コスト）を評価し、プロンプトの最適化とモデル移行の判断を行います。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -446,7 +446,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Business Value</p>
-            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ビジネスでプロンプト設計が重要な理由
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -459,8 +459,8 @@ export default function Page() {
                 { title: "AIの出力品質の向上", body: "曖昧な指示はAIから曖昧な回答しか引き出せません。適切な役割・制約・出力形式を設計することで、AIが持つ能力の上限に近い出力を安定して得られます。" },
                 { title: "業務への安全な組み込み", body: "品質基準を満たしたプロンプトを標準化することで、AIの活用を業務フローに安全に組み込めます。出力のバラつきリスクを最小化し、ブランドトーンの一貫性を保ちます。" },
               ].map((item, i) => (
-                <div key={i} className="pt-6" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} className="pt-6" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -469,10 +469,10 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI & Metrics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl">
@@ -513,15 +513,15 @@ export default function Page() {
                   detail: "AIで補助した業務における修正・差し戻し・エラーの発生件数を、AI導入前後で比較します。品質管理ログ・レビューフィードバックで計測し、プロンプト改善とミス削減の相関を確認します。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

@@ -209,7 +209,7 @@ export default function TrainingHubPage() {
       <Header />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section style={{ background: "#0d1b2a", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", position: "relative", paddingTop: "128px", paddingBottom: "80px", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <Image
               src="/ChatGPT Image 2026年6月14日 21_13_52.jpg"
@@ -240,13 +240,13 @@ export default function TrainingHubPage() {
               <Link
                 href="/contact?type=reskilling"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all"
-                style={{ background: "#ffffff", color: "#0d1b2a" }}
+                style={{ background: "#ffffff", color: "#333333" }}
               >
                 研修導入について相談する
               </Link>
               <Link
                 href="/training/reskilling-subsidy"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all hover:bg-white hover:text-[#0d1b2a]"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[14px] font-medium transition-all hover:bg-white hover:text-[#333333]"
                 style={{ border: "1px solid rgba(255,255,255,0.5)", color: "#ffffff" }}
               >
                 リスキリング研修相談を見る
@@ -262,7 +262,7 @@ export default function TrainingHubPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Pages</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "44px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "44px" }}>
               目的から選ぶ
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -272,17 +272,17 @@ export default function TrainingHubPage() {
                   href={p.href}
                   style={{
                     display: "block",
-                    background: "#f8f6f2",
-                    border: "1px solid #e8e4dc",
+                    background: "#f0f1f2",
+                    border: "1px solid #dde0e4",
                     padding: "26px",
                     textDecoration: "none",
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
-                    <span style={{ fontFamily: "var(--font-display)", fontSize: "10px", color: "#c4b89a", letterSpacing: "0.18em" }}>{p.num}</span>
+                    <span style={{ fontFamily: "var(--font-display)", fontSize: "10px", color: "var(--v2-accent)", letterSpacing: "0.18em" }}>{p.num}</span>
                     <span style={{ fontFamily: "var(--font-display)", fontSize: "9px", color: "#9ca3af", letterSpacing: "0.18em", textTransform: "uppercase" }}>{p.en}</span>
                   </div>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "10px" }}>{p.label}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15.5px", fontWeight: 700, color: "#333333", marginBottom: "10px" }}>{p.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{p.desc}</p>
                 </Link>
               ))}
@@ -291,10 +291,10 @@ export default function TrainingHubPage() {
         </section>
 
         {/* ── 相談できる研修テーマ ───────────────────────────── */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Themes</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "18px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "18px" }}>
               相談できる研修テーマ
             </h2>
             <p style={{ fontSize: "14.5px", lineHeight: "2.0", color: "#374151", maxWidth: "720px", marginBottom: "44px" }}>
@@ -302,8 +302,8 @@ export default function TrainingHubPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {TRAINING_THEMES.map((item) => (
-                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #e8e4dc", padding: "22px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#0d1b2a", marginBottom: "9px" }}>{item.label}</p>
+                <div key={item.label} style={{ background: "#ffffff", border: "1px solid #dde0e4", padding: "22px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "14.5px", fontWeight: 700, color: "#333333", marginBottom: "9px" }}>{item.label}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.desc}</p>
                 </div>
               ))}
@@ -312,7 +312,7 @@ export default function TrainingHubPage() {
         </section>
 
         {/* ── サイプレスの立ち位置 ───────────────────────────── */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "rgba(255,255,255,0.3)", fontSize: "11px", marginBottom: "14px" }}>Our Position</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#ffffff", fontWeight: 700, lineHeight: 1.35, marginBottom: "24px" }}>
@@ -348,25 +348,25 @@ export default function TrainingHubPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "14px" }}>Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(21px,3vw,33px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               相談から紹介までの流れ
             </h2>
             <div style={{ maxWidth: "760px" }}>
               {REFERRAL_FLOW.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #e8e4dc" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "28px", paddingTop: "3px" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#0d1b2a", marginBottom: "8px" }}>{item.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15.5px", color: "#333333", marginBottom: "8px" }}>{item.title}</p>
                     <p style={{ fontSize: "13.5px", color: "#374151", lineHeight: "1.95" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <SubsidyDisclaimer bgColor="#f8f6f2" />
+        <SubsidyDisclaimer bgColor="#f0f1f2" />
 
         <FaqSection items={faqItems} heading="法人研修の導入相談についてよくある質問" bgColor="#ffffff" />
 

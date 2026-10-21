@@ -51,11 +51,11 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
           <div className="flex items-start gap-3">
             <span
               className="shrink-0 font-black text-sm mt-0.5"
-              style={{ color: "#2563EB" }}
+              style={{ color: "#096fc8" }}
             >
               Q
             </span>
-            <span className="font-medium text-sm leading-relaxed" style={{ color: "#0F172A" }}>
+            <span className="font-medium text-sm leading-relaxed" style={{ color: "#333333" }}>
               {q}
             </span>
           </div>
@@ -64,8 +64,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
             style={{
-              background: open ? "#2563EB" : "rgba(37,99,235,0.08)",
-              color: open ? "#ffffff" : "#2563EB",
+              background: open ? "#096fc8" : "rgba(37,99,235,0.08)",
+              color: open ? "#ffffff" : "#096fc8",
               border: "1px solid rgba(37,99,235,0.2)",
             }}
           >
@@ -111,7 +111,7 @@ export default function HomeFAQSection() {
           <SectionLabel>FAQ</SectionLabel>
           <h2
             className="font-black leading-tight tracking-tight mb-3"
-            style={{ fontSize: "clamp(28px, 4vw, 44px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 4vw, 44px)", color: "#333333" }}
           >
             よくある質問
           </h2>

@@ -156,12 +156,12 @@ export default function MessagePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <Link href="/company" className="hover:text-[#333333] transition-colors">会社情報</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>代表メッセージ</span>
             </nav>
@@ -170,7 +170,7 @@ export default function MessagePage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               私たちが目指す、<br />デジタルの未来。
             </h1>
@@ -181,14 +181,14 @@ export default function MessagePage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What you&apos;ll learn
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -204,13 +204,13 @@ export default function MessagePage() {
                 <div
                   key={i}
                   className="flex items-start gap-4 py-4"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
-                  <span className="text-[14px] font-bold shrink-0" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="text-[14px] font-bold shrink-0" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -226,14 +226,14 @@ export default function MessagePage() {
                 </p>
                 <h2
                   className="font-black leading-tight tracking-tight mb-10"
-                  style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                  style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
                 >
                   正しい会社が、<br />正しく選ばれる世界をつくりたい。
                 </h2>
 
                 <div className="space-y-0 text-[15px] leading-[1.9]" style={{ color: "#374151" }}>
                   {/* 創業への想い */}
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px", paddingBottom: "28px" }}>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px", paddingBottom: "28px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
                       なぜサイプレスを立ち上げたのか
                     </p>
@@ -252,7 +252,7 @@ export default function MessagePage() {
                   </div>
 
                   {/* Web・SEO・MEO・AIOを組み合わせた支援 */}
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px", paddingBottom: "28px" }}>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px", paddingBottom: "28px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
                       MEO・SEO・AIOを一体で設計する理由
                     </p>
@@ -271,7 +271,7 @@ export default function MessagePage() {
                   </div>
 
                   {/* お客様の成長こそが会社の成長 */}
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px", paddingBottom: "28px" }}>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px", paddingBottom: "28px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
                       お客様の成長こそが、会社の成長
                     </p>
@@ -287,7 +287,7 @@ export default function MessagePage() {
                   </div>
 
                   {/* 葛飾区への想いと全国対応 */}
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px", paddingBottom: "28px" }}>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px", paddingBottom: "28px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
                       葛飾区という地域への想い
                     </p>
@@ -303,7 +303,7 @@ export default function MessagePage() {
                   </div>
 
                   {/* 今後のビジョン */}
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px", paddingBottom: "28px" }}>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px", paddingBottom: "28px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#6B7280" }}>
                       AI時代と、私たちが描く未来
                     </p>
@@ -321,8 +321,8 @@ export default function MessagePage() {
                     </p>
                   </div>
 
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "28px" }}>
-                    <p className="font-black text-[17px] mb-1" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>織田 春樹</p>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "28px" }}>
+                    <p className="font-black text-[17px] mb-1" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>織田 春樹</p>
                     <p className="text-[13px]" style={{ color: "#6B7280" }}>代表取締役　株式会社サイプレス</p>
                   </div>
                 </div>
@@ -339,12 +339,12 @@ export default function MessagePage() {
                     sizes="(max-width: 768px) 100vw, 300px"
                   />
                 </div>
-                <div className="p-8" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                <div className="p-8" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
                   <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-6" style={{ color: "#9CA3AF" }}>
                     Profile
                   </p>
-                  <div style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
-                    <p className="font-black text-[20px] mb-1" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>織田 春樹</p>
+                  <div style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
+                    <p className="font-black text-[20px] mb-1" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>織田 春樹</p>
                     <p className="text-[13px] mb-6" style={{ color: "#6B7280" }}>代表取締役</p>
                     <div className="space-y-4">
                       {[
@@ -362,7 +362,7 @@ export default function MessagePage() {
                       ))}
                     </div>
                   </div>
-                  <div className="mt-8" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                  <div className="mt-8" style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
                     <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-4" style={{ color: "#9CA3AF" }}>
                       Expertise
                     </p>
@@ -371,24 +371,24 @@ export default function MessagePage() {
                         <span
                           key={tag}
                           className="text-[11px] px-2.5 py-1"
-                          style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", color: "#6B7280" }}
+                          style={{ background: "#FFFFFF", border: "1px solid #dde0e4", color: "#6B7280" }}
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
                   </div>
-                  <div className="mt-8" style={{ borderTop: "1px solid #E8E4DC", paddingTop: "20px" }}>
+                  <div className="mt-8" style={{ borderTop: "1px solid #dde0e4", paddingTop: "20px" }}>
                     <Link
                       href="/contact"
                       className="block w-full text-center text-[13px] font-semibold py-3 transition-opacity hover:opacity-80"
-                      style={{ background: "#0F172A", color: "#FFFFFF" }}
+                      style={{ background: "#293540", color: "#FFFFFF" }}
                     >
                       無料で相談する
                     </Link>
                     <Link
                       href="/company"
-                      className="block text-center text-[12px] mt-4 transition-colors hover:text-[#0F172A]"
+                      className="block text-center text-[12px] mt-4 transition-colors hover:text-[#333333]"
                       style={{ color: "#6B7280" }}
                     >
                       ← 会社情報へ戻る
@@ -426,14 +426,14 @@ export default function MessagePage() {
         </section>
 
         {/* Section C: 代表プロフィールと姿勢 */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               About the CEO
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               代表プロフィールと、仕事への姿勢
             </h2>
@@ -465,12 +465,12 @@ export default function MessagePage() {
                     value: "東京・神奈川・埼玉・千葉（全国対応可）",
                   },
                 ].map((item, i) => (
-                  <div key={i} className="py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} className="py-4" style={{ borderTop: "1px solid #dde0e4" }}>
                     <span className="block text-[11px] font-medium mb-1" style={{ color: "#9CA3AF" }}>{item.label}</span>
                     <span className="text-[14px]" style={{ color: "#374151" }}>{item.value}</span>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E8E4DC" }} />
+                <div style={{ borderTop: "1px solid #dde0e4" }} />
               </div>
               <div>
                 <p className="text-[14px] leading-[1.9] mb-5" style={{ color: "#374151" }}>
@@ -495,7 +495,7 @@ export default function MessagePage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               5つのお約束
             </h2>
@@ -504,22 +504,22 @@ export default function MessagePage() {
                 <div
                   key={p.num}
                   className="grid grid-cols-[48px_1fr] gap-6 py-8"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
                   <div>
-                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#0d1b2a" }}>{p.title}</h3>
+                    <h3 className="font-black text-[17px] mb-3" style={{ color: "#333333" }}>{p.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{p.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: お客様へのメッセージ */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
@@ -527,7 +527,7 @@ export default function MessagePage() {
               </p>
               <h2
                 className="font-black leading-tight tracking-tight mb-8"
-                style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+                style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "#333333", fontFamily: "var(--font-serif)" }}
               >
                 お客様へのメッセージ
               </h2>
@@ -549,14 +549,14 @@ export default function MessagePage() {
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-semibold transition-opacity hover:opacity-80"
-                  style={{ background: "#0F172A", color: "#FFFFFF" }}
+                  style={{ background: "#293540", color: "#FFFFFF" }}
                 >
                   無料相談を申し込む
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-semibold transition-colors hover:text-[#0F172A]"
-                  style={{ border: "1px solid #E8E4DC", color: "#374151" }}
+                  className="inline-flex items-center justify-center px-8 py-4 text-[14px] font-semibold transition-colors hover:text-[#333333]"
+                  style={{ border: "1px solid #dde0e4", color: "#374151" }}
                 >
                   サービス一覧を見る
                 </Link>

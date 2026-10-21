@@ -225,12 +225,12 @@ export default function AboutCypressPage() {
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
 
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-4xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10 flex-wrap" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
-              <Link href="/company" className="hover:text-[#0F172A] transition-colors">会社情報</Link>
+              <Link href="/company" className="hover:text-[#333333] transition-colors">会社情報</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>株式会社サイプレスとは</span>
             </nav>
@@ -239,7 +239,7 @@ export default function AboutCypressPage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               株式会社サイプレスとは
             </h1>
@@ -251,14 +251,14 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Company Info */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Overview
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               会社の基本情報
             </h2>
@@ -279,10 +279,10 @@ export default function AboutCypressPage() {
                     gridTemplateColumns: "140px 1fr",
                     gap: "16px",
                     padding: "16px 0",
-                    borderBottom: "1px solid #E8E4DC",
+                    borderBottom: "1px solid #dde0e4",
                   }}
                 >
-                  <dt className="text-[13px] font-semibold" style={{ color: "#0F172A" }}>{row.label}</dt>
+                  <dt className="text-[13px] font-semibold" style={{ color: "#333333" }}>{row.label}</dt>
                   <dd className="text-[14px]" style={{ color: "#374151", lineHeight: "1.7" }}>{row.value}</dd>
                 </div>
               ))}
@@ -298,7 +298,7 @@ export default function AboutCypressPage() {
                   fontSize: "13px",
                   color: "#6B7280",
                   textDecoration: "none",
-                  borderBottom: "1px solid #D1C9BE",
+                  borderBottom: "1px solid #c6cbd1",
                   paddingBottom: "2px",
                 }}
               >
@@ -309,14 +309,14 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Name Origin */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Company Name
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               「サイプレス（Cypress）」という名前について
             </h2>
@@ -339,14 +339,14 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Services */}
-        <section className="py-20" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Services
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               株式会社サイプレスが提供する6つのサービス
             </h2>
@@ -362,7 +362,7 @@ export default function AboutCypressPage() {
                   key={svc.num}
                   style={{
                     background: "#FFFFFF",
-                    border: "1px solid #E8E4DC",
+                    border: "1px solid #dde0e4",
                     padding: "24px",
                   }}
                 >
@@ -371,7 +371,7 @@ export default function AboutCypressPage() {
                       display: "block",
                       fontSize: "10px",
                       letterSpacing: "0.2em",
-                      color: "#C4A96A",
+                      color: "var(--v2-accent)",
                       marginBottom: "8px",
                       fontFamily: "var(--font-display)",
                     }}
@@ -382,7 +382,7 @@ export default function AboutCypressPage() {
                     style={{
                       fontSize: "16px",
                       fontWeight: 700,
-                      color: "#0F172A",
+                      color: "#333333",
                       marginBottom: "10px",
                       fontFamily: "var(--font-serif)",
                     }}
@@ -396,9 +396,9 @@ export default function AboutCypressPage() {
                     href={svc.href}
                     style={{
                       fontSize: "12px",
-                      color: "#0F172A",
+                      color: "#333333",
                       textDecoration: "none",
-                      borderBottom: "1px solid #E8E4DC",
+                      borderBottom: "1px solid #dde0e4",
                       paddingBottom: "2px",
                     }}
                   >
@@ -415,9 +415,9 @@ export default function AboutCypressPage() {
                   alignItems: "center",
                   gap: "6px",
                   fontSize: "13px",
-                  color: "#0F172A",
+                  color: "#333333",
                   padding: "12px 28px",
-                  border: "1px solid #0F172A",
+                  border: "1px solid #333333",
                   textDecoration: "none",
                 }}
               >
@@ -428,14 +428,14 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Why Cypress */}
-        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-20" style={{ background: "#FFFFFF", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Why Cypress
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}
+              style={{ fontSize: "clamp(22px, 2.8vw, 36px)", color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               株式会社サイプレスが選ばれる理由
             </h2>
@@ -449,14 +449,14 @@ export default function AboutCypressPage() {
                     gap: "20px",
                     alignItems: "start",
                     paddingBottom: "32px",
-                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #E8E4DC" : "none",
+                    borderBottom: i < DIFFERENTIATORS.length - 1 ? "1px solid #dde0e4" : "none",
                   }}
                 >
                   <span
                     style={{
                       fontFamily: "var(--font-display)",
                       fontSize: "24px",
-                      color: "#E8E4DC",
+                      color: "#dde0e4",
                       letterSpacing: "0.05em",
                       lineHeight: 1,
                       paddingTop: "4px",
@@ -469,7 +469,7 @@ export default function AboutCypressPage() {
                       style={{
                         fontSize: "16px",
                         fontWeight: 700,
-                        color: "#0F172A",
+                        color: "#333333",
                         marginBottom: "10px",
                         fontFamily: "var(--font-serif)",
                       }}
@@ -487,10 +487,10 @@ export default function AboutCypressPage() {
         </section>
 
         {/* Related Links */}
-        <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+        <section className="py-16" style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-4xl mx-auto px-6">
             <h2
-              className="font-bold text-[#0d1b2a] mb-8"
+              className="font-bold text-[#333333] mb-8"
               style={{ fontSize: "16px", fontFamily: "var(--font-serif)" }}
             >
               関連ページ
@@ -518,7 +518,7 @@ export default function AboutCypressPage() {
                     display: "block",
                     padding: "12px 16px",
                     background: "#FFFFFF",
-                    border: "1px solid #E8E4DC",
+                    border: "1px solid #dde0e4",
                     fontSize: "13px",
                     color: "#374151",
                     textDecoration: "none",

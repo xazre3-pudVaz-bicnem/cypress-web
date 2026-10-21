@@ -9,9 +9,9 @@ interface Props {
  * 助成金に触れるすべてのページに設置する注意書き。
  * 内容は lib/data/trainingPages.ts に集約し、全ページで文言を一致させる。
  */
-export default function SubsidyDisclaimer({ bgColor = "#F9F8F5" }: Props) {
+export default function SubsidyDisclaimer({ bgColor = "#f0f1f2" }: Props) {
   return (
-    <section className="py-16" style={{ background: bgColor, borderTop: "1px solid #E8E4DC" }}>
+    <section className="py-16" style={{ background: bgColor, borderTop: "1px solid #dde0e4" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-3xl">
           <p
@@ -20,16 +20,16 @@ export default function SubsidyDisclaimer({ bgColor = "#F9F8F5" }: Props) {
           >
             Important Notice
           </p>
-          <h2 className="font-bold text-[20px] mb-6 leading-snug" style={{ color: "#0F172A" }}>
+          <h2 className="font-bold text-[20px] mb-6 leading-snug" style={{ color: "#333333" }}>
             助成金に関するご注意
           </h2>
 
-          <div style={{ borderTop: "1px solid #E8E4DC" }}>
+          <div style={{ borderTop: "1px solid #dde0e4" }}>
             {SUBSIDY_DISCLAIMERS.map((text) => (
               <p
                 key={text}
                 className="text-[13px] leading-[1.95] py-4"
-                style={{ color: "#374151", borderBottom: "1px solid #E8E4DC" }}
+                style={{ color: "#374151", borderBottom: "1px solid #dde0e4" }}
               >
                 {text}
               </p>
@@ -45,7 +45,7 @@ export default function SubsidyDisclaimer({ bgColor = "#F9F8F5" }: Props) {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[13px] font-medium underline"
-              style={{ color: "#0F172A" }}
+              style={{ color: "#333333" }}
             >
               厚生労働省「人材開発支援助成金」公式ページ
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

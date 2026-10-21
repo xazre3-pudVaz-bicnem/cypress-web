@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import SmoothScroll from "@/components/motion/SmoothScroll";
 import IntroOverlay from "@/components/home/hero/IntroOverlay";
 import HomeHero from "@/components/home/hero/HomeHero";
 import HomeCases, { type CaseCard } from "@/components/home/HomeCases";
@@ -161,7 +160,6 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageJsonLd) }} />
       <IntroOverlay />
       <Header variant="overlay" introFade />
-      <SmoothScroll>
         <main className="v2" style={{ background: "var(--v2-bg)" }}>
           {/* 1. ヒーロー → 円に縮む 3D → ステートメント → 2つの柱 */}
           <HomeHero />
@@ -209,7 +207,6 @@ export default function Home() {
             <HomeContact />
           </Deferred>
         </main>
-      </SmoothScroll>
       <Footer />
     </>
   );

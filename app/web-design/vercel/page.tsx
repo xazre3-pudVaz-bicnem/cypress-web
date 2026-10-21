@@ -78,17 +78,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
+        <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }}>ホームページ制作</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>Vercelホスティング</span>
+              <span style={{ color: "#333333" }}>Vercelホスティング</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Vercel Hosting</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               Vercelホスティング｜Next.jsの最速デプロイとEdge Network活用
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -117,7 +117,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column", gap: "0" }}>
@@ -129,8 +129,8 @@ export default function Page() {
                 "飲食・美容・医療・BtoBなど業種別のVercel活用ポイント",
                 "Vercel導入から本番公開までの10ステップの実装フロー",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", padding: "14px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "16px", lineHeight: "1.6", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -139,9 +139,9 @@ export default function Page() {
         </section>
 
         {/* Vercel vs Traditional Hosting */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.15em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Vercel vs Traditional Hosting</p>
+            <p style={{ fontFamily: "var(--font-serif)", letterSpacing: "0.15em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Vercel vs Traditional Hosting</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               従来ホスティングとVercelの4つの違い
             </h2>
@@ -152,7 +152,7 @@ export default function Page() {
                 { t: "SSL証明書の管理", b: "従来：SSL証明書を年次で取得・更新し、サーバーに設定する手間が発生。証明書切れのリスクも。Vercel：SSL証明書の発行・更新が自動化。設定不要で常時HTTPS。" },
                 { t: "スケーリング", b: "共用サーバー：アクセス急増時にサーバーが落ちるリスクがあり、プランアップグレードが必要。Vercel：サーバーレスアーキテクチャにより自動スケーリング。突発的なアクセス増加にも対応。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -165,7 +165,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Benefits</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               Vercelを使うメリット
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -177,10 +177,10 @@ export default function Page() {
                 { n: "05", t: "自動SSL・HTTP/2対応", b: "HTTPS証明書の取得・更新が自動化されています。HTTP/2によりリクエストの多重化が可能になり、表示速度が改善します。" },
                 { n: "06", t: "無料プランから始められる", b: "個人・スモールビジネスは無料プランで十分な機能を利用できます。トラフィックが増えた段階でProプランにアップグレードする柔軟な運用が可能です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -190,10 +190,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               よくある課題と原因
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
@@ -212,10 +212,10 @@ export default function Page() {
                 { n: "09", t: "チームでの開発・デプロイフローが確立していない", b: "複数人が異なるブランチで作業するとデプロイのコンフリクトや意図しない本番反映が起きやすくなります。Vercelはブランチごとのプレビュー環境とマージ時の本番デプロイフローを自動で提供します。" },
                 { n: "10", t: "エッジ関数の使い方が分からない", b: "Edge FunctionsはサーバーレスよりもさらにCDNのエッジで動くため、レイテンシを最小化できます。認証処理・リダイレクト・A/Bテストなど「ユーザーに最も近い場所で動かしたい処理」に最適です。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -228,7 +228,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               業種別の活用ポイント
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
@@ -245,9 +245,9 @@ export default function Page() {
                 { industry: "メディア・ブログ", point: "記事公開の自動化とプレビュー確認", detail: "CMS（Contentful・Notion等）での記事作成→Vercelへの自動デプロイ→プレビューURLで確認という効率的なパブリッシュフローを構築できます。" },
                 { industry: "学習塾・教育", point: "授業資料・動画の安定配信", detail: "資料PDF・授業動画リンクなどを定期更新するサイトでも、Vercelの高稼働率と高速配信により生徒・保護者への安定したコンテンツ提供が可能です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>{item.industry}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.point}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.detail}</p>
                 </div>
               ))}
@@ -256,10 +256,10 @@ export default function Page() {
         </section>
 
         {/* Section D: 技術選定・実装フロー */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               技術選定・実装フロー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
@@ -278,10 +278,10 @@ export default function Page() {
                 { n: "09", t: "デプロイ通知設定（Slack連携等）", b: "Settings > IntegrationsからSlack・Discord・Webhookを設定します。デプロイ成功・失敗・プレビュー生成のタイミングでチームへ通知が届くよう設定します。" },
                 { n: "10", t: "Analytics・Web Vitals監視設定", b: "Analytics・Speed Insightsタブを有効化します。リアルユーザーのLCP・CLS・INP・TTFBデータが収集され始め、パフォーマンス改善のベースラインとして活用できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "8px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "8px" }}>
               成果を見るための指標
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8", marginBottom: "40px", maxWidth: "640px" }}>
@@ -310,10 +310,10 @@ export default function Page() {
                 { n: "06", t: "プレビューデプロイ活用率", b: "プルリクエストに対してプレビューURLをレビューに活用している割合をGitHubのPR履歴から確認します。活用率が高いほどレビュー品質とデプロイの安全性が向上します。" },
                 { n: "07", t: "TTFB（Time to First Byte）", b: "Vercel Speed Insightsまたは Chrome DevTools の「Network」タブで計測します。Edge Networkからの配信ではTTFB 100ms以下が目安で、サーバーサイドの処理速度改善の指標になります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -323,22 +323,22 @@ export default function Page() {
         </section>
 
         {/* CTA Banner */}
-        <section style={{ background: "#0d1b2a", padding: "72px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "72px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Get Started</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Get Started</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "16px" }}>
               Next.js + Vercelでの高速サイト制作を相談する
             </h2>
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9", marginBottom: "32px", maxWidth: "520px", margin: "0 auto 32px" }}>
               Vercel構成のWebサイト制作・既存サイトのVercel移行をサポートします。まずはお気軽にご相談ください。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#0F172A", color: "#FFFFFF", padding: "14px 40px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em", border: "1px solid rgba(196,184,154,0.4)", textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", background: "#293540", color: "#FFFFFF", padding: "14px 40px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em", border: "1px solid rgba(9,111,200,0.4)", textDecoration: "none" }}>
               無料相談を申し込む
             </Link>
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#F9F8F5" heading="Vercelホスティングについてよくある質問" />
+        <FaqSection items={faqItems} bgColor="#f0f1f2" heading="Vercelホスティングについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="Vercel構成のWebサイト制作ご相談" body="Next.js+Vercel構成でのWebサイト制作・既存サイトのVercel移行をご支援します。高速・SEO対応・自動デプロイの開発環境をご相談ください。" />
       </main>

@@ -100,7 +100,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
       />
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -109,13 +109,13 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href={AREA_HREF} style={{ color: "#6B7280" }}>{AREA_LABEL}</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
+              <span style={{ color: "#333333" }}>{page.title}</span>
             </nav>
-            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
+            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#dde0e4", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {AREA_LABEL}
             </span>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>{page.titleEn}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               {page.title}
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "680px" }}>
@@ -127,14 +127,14 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Our Approach</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "48px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "48px" }}>
               {AREA_LABEL}ならではの対策ポイント
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {page.points.map((pt) => (
                 <div key={pt.num} style={{ background: "#ffffff", padding: "32px" }}>
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "11px", color: "#9ca3af", marginBottom: "12px" }}>{pt.num}</p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#0d1b2a", fontWeight: 700, marginBottom: "10px", lineHeight: 1.5 }}>{pt.title}</p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "16px", color: "#333333", fontWeight: 700, marginBottom: "10px", lineHeight: 1.5 }}>{pt.title}</p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{pt.body}</p>
                 </div>
               ))}
@@ -143,10 +143,10 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
         </section>
 
         {/* 葛飾区の関連専門ページへの導線 */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Katsushika Services</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,24px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "24px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.4vw,24px)", color: "#333333", fontWeight: 700, marginBottom: "24px" }}>
               葛飾区のWeb集客 — 専門ページ
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -159,7 +159,7 @@ export default async function AreaSubPage({ params }: { params: Promise<{ slug: 
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

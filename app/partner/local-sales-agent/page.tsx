@@ -87,12 +87,12 @@ const faqItems = [
 
 const S = {
   label: { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" as const },
-  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
+  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
-  num: { fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
-  itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "8px" },
+  divider: { display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" } as React.CSSProperties,
+  num: { fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" },
+  itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "8px" },
   itemBody: { fontSize: "14px", color: "#374151", lineHeight: "1.9" },
 };
 
@@ -138,7 +138,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#0d1b2a", paddingTop: "128px", paddingBottom: "80px" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", paddingTop: "128px", paddingBottom: "80px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#6B7280", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -147,7 +147,7 @@ export default function Page() {
               <span style={{ margin: "0 8px" }}>/</span>
               <span style={{ color: "#9CA3AF" }}>販売代理店・取次店募集</span>
             </nav>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Sales Partner</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Sales Partner</p>
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#FFFFFF", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
               Web集客サービスの<br />販売代理店・取次店募集
             </h1>
@@ -158,10 +158,10 @@ export default function Page() {
               成約には商談内容や提案先の状況が影響します。成果・収入を保証するものではありません。誇大表現・虚偽表現による営業は禁止しています。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
-              <Link href="/contact" style={{ display: "inline-block", background: "#c4b89a", color: "#0d1b2a", padding: "14px 28px", fontSize: "14px", fontWeight: 700, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
+              <Link href="/contact" style={{ display: "inline-block", background: "var(--v2-accent)", color: "#333333", padding: "14px 28px", fontSize: "14px", fontWeight: 700, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
                 代理店・取次店について相談する
               </Link>
-              <Link href="/partner/katsushika-startup" style={{ display: "inline-block", background: "transparent", color: "#c4b89a", padding: "14px 28px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px", border: "1px solid #c4b89a" }}>
+              <Link href="/partner/katsushika-startup" style={{ display: "inline-block", background: "transparent", color: "var(--v2-accent)", padding: "14px 28px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px", border: "1px solid var(--v2-accent)" }}>
                 葛飾区起業者向けパートナー制度を見る
               </Link>
             </div>
@@ -169,7 +169,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 2: SERVICES TO SELL */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Products</p>
             <h2 style={S.h2}>紹介できるサービス</h2>
@@ -183,8 +183,8 @@ export default function Page() {
                 { t: "SNS運用支援", b: "Instagram・X（旧Twitter）等のコンテンツ作成・投稿代行・ハッシュタグ設計。ホームページやGBPとの連動設計で集客効果を高めます。" },
                 { t: "Web集客パッケージ", b: "ホームページ制作・SEO・MEO・問い合わせ導線設計をセットで提供するパッケージプラン。予算が決まっている事業者へ提案しやすい商材です。" },
               ].map((item) => (
-                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "24px 20px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
+                <div key={item.t} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "24px 20px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "16px", color: "#333333", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>{item.b}</p>
                 </div>
               ))}
@@ -220,7 +220,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 4: PROGRAM TYPES */}
-        <section style={{ background: "#f8f6f2", padding: "96px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "96px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Program Types</p>
             <h2 style={S.h2}>販売代理店と取次店（紹介パートナー）の違い</h2>
@@ -238,9 +238,9 @@ export default function Page() {
                   items: ["見込み客への提案・見積を担当", "サイプレスと連携して受注を進める", "Webマーケティングの基礎知識があると活動しやすい", "より積極的な関与で収益を目指す方向け", "詳細はご相談ください"],
                 },
               ].map((prog) => (
-                <div key={prog.type} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "28px 24px" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "18px", color: "#0d1b2a", marginBottom: "4px" }}>{prog.type}</p>
-                  <p style={{ fontSize: "13px", color: "#c4b89a", fontWeight: 600, marginBottom: "16px" }}>{prog.sub}</p>
+                <div key={prog.type} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "28px 24px" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "18px", color: "#333333", marginBottom: "4px" }}>{prog.type}</p>
+                  <p style={{ fontSize: "13px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "16px" }}>{prog.sub}</p>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                     {prog.items.map((item) => (
                       <li key={item} style={{ fontSize: "14px", color: "#374151", lineHeight: "1.85", paddingBottom: "8px", borderBottom: "1px solid #F1F5F9", marginBottom: "8px" }}>
@@ -280,7 +280,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 6: NOTICE */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Important Notice</p>
             <h2 style={S.h2}>活動にあたっての注意事項</h2>
@@ -329,8 +329,8 @@ export default function Page() {
                 { href: "/column/sales-agent-ng-expression", label: "代理店で避けるべき誇大表現", desc: "正しい説明方法ガイド" },
                 { href: "/contact", label: "お問い合わせ・制度相談", desc: "まずはご相談ください" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
+                <Link key={item.href} href={item.href} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
               ))}
@@ -341,7 +341,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="販売代理店・取次店制度についてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#f0f1f2"
         />
 
         <PageContactCTA

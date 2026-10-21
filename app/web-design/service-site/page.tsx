@@ -139,17 +139,17 @@ export default function ServiceSitePage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }} className="hover:underline">Web制作</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>サービスサイト・LP制作</span>
+              <span style={{ color: "#333333" }}>サービスサイト・LP制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Site / LP</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               サービスサイト・LP制作
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -171,9 +171,9 @@ export default function ServiceSitePage() {
         </section>
 
         {/* CVが取れないLPの問題 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>CV Blockers</p>
+            <p style={{ letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>CV Blockers</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               CVが取れないサービスサイト・LPの4つの共通問題
             </h2>
@@ -184,7 +184,7 @@ export default function ServiceSitePage() {
                 { t: "信頼要素が不足している", b: "初めて訪れるユーザーが「この会社に頼んで大丈夫か」と感じる不安を解消する要素（実績・事例・保証・口コミ）がないサービスサイトはCVRが著しく低くなります。" },
                 { t: "スマートフォンでの最適化不足", b: "サービスサイトへのアクセスの60%以上がスマートフォンです。PCで見栄えが良くてもスマートフォンで操作しにくいフォーム・小さすぎるボタンではCV機会を大きく失います。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -197,7 +197,7 @@ export default function ServiceSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-0">
@@ -209,21 +209,21 @@ export default function ServiceSitePage() {
                 "CV率・広告ROAS・問い合わせ数など成果を測る7つのKPI",
                 "コピーライティング・フォーム最適化・ヒートマップ改善の具体的な手法",
               ].map((item, i) => (
-                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サービスサイト・LPでよくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -269,15 +269,15 @@ export default function ServiceSitePage() {
                   body: "サービスサイトは公開して終わりではなく、データに基づく継続改善がCVR向上の鍵です。GA4のイベント計測・ヒートマップ・A/Bテストツールが設定されていないと、どの改善が効果的かを判断できず、感覚だけに頼った修正を繰り返すことになります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -286,7 +286,7 @@ export default function ServiceSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別のサービスサイト・LP設計ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-0 max-w-5xl">
@@ -300,25 +300,25 @@ export default function ServiceSitePage() {
                 { industry: "士業（弁護士・税理士）", point: "無料相談への誘導・費用目安の明示", body: "「まず相談してみよう」と感じさせる無料相談CTAを複数設置します。費用目安・相談から解決までの流れ・担当弁護士・税理士のプロフィールで安心感を醸成し、相談を決断しやすい設計にします。" },
                 { industry: "フィットネス・ジム", point: "プログラム・体験申込・会員の声", body: "コース・料金・トレーナー紹介をシンプルに整理し、体験申込ボタンをファーストビューに配置します。入会後の変化（ビフォーアフター・会員の声）のビジュアルが申込を後押しする最大の要素です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: "#c4b89a" }}>{item.industry}</p>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.point}</p>
+                    <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-1" style={{ color: "var(--v2-accent)" }}>{item.industry}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.point}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div className="md:col-span-2" style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div className="md:col-span-2" style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 制作・実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サービスサイト・LP制作・実装フロー
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -334,15 +334,15 @@ export default function ServiceSitePage() {
                 { step: "公開", body: "最終的なテスト（モバイル・PC・各ブラウザでの表示確認・フォーム送信テスト・計測タグの発火確認）を実施してから本番公開します。DNSの切り替え・SSL証明書の確認・リダイレクト設定も含めて対応します。" },
                 { step: "ヒートマップ・A/Bテスト改善", body: "公開後1〜2週間でヒートマップ（クリック・スクロール深度・離脱箇所）を分析し、CVRの課題箇所を特定します。GA4のファネル分析と組み合わせて改善仮説を立て、CTAボタン・キャッチコピー・セクション順序のA/Bテストを実施します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.step}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -351,7 +351,7 @@ export default function ServiceSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための7つのKPI
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -364,25 +364,25 @@ export default function ServiceSitePage() {
                 { kpi: "月間問い合わせ数", where: "GA4 コンバージョン + CRMツール（HubSpot等）の月次集計", body: "月間の実際の問い合わせ件数をCRMまたはフォームの送信数で集計します。セッション数の増減・CV率の変化と合わせて分析することで、集客改善とCVR改善のどちらを優先すべきかを判断できます。" },
                 { kpi: "問い合わせの商談転換率", where: "CRM（HubSpot / Salesforce等）→ パイプライン管理", body: "問い合わせから実際の商談・見積もり対応に進んだ割合です。CVR向上だけでなく問い合わせ品質（適切なターゲットからの問い合わせ）も重要です。この指標が低い場合はターゲット設定・訴求内容の見直しが必要です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[12px] mb-2" style={{ color: "#9CA3AF" }}>{item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* CV重視の設計要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Conversion Design</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               コンバージョンを高めるサービスサイト設計
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -394,8 +394,8 @@ export default function ServiceSitePage() {
                 { title: "フォームの最適化", body: "入力項目の最小化（名前・メール・内容の3項目が理想）・確認画面の廃止・エラーメッセージの改善・完了ページへのGAイベント設定でフォームの離脱率を下げます。" },
                 { title: "ヒートマップ・計測の設計", body: "Microsoftの無料ヒートマップ（Clarity）やGA4のイベント計測を設置し、ユーザーの行動データをもとに継続的なCV改善を行えるデータ計測体制を構築します。" },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -404,10 +404,10 @@ export default function ServiceSitePage() {
         </section>
 
         {/* サイプレスのサービスサイト制作の強み */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Why Cypress</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのサービスサイト・LP制作が選ばれる理由
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-0 max-w-5xl">
@@ -419,15 +419,15 @@ export default function ServiceSitePage() {
                 { title: "公開後のA/Bテスト・継続改善", body: "サービスサイトは公開が終点ではなくスタートです。ヒートマップ・GA4データを毎月分析し、CTAボタン文言・ファーストビュー・FAQ内容の改善を継続して行う月次改善サポートに対応します。CVRは継続的な改善によって積み上がります。" },
                 { title: "モバイルファーストの完全最適化", body: "スマートフォンでの表示・操作性を最優先した設計を採用します。タップしやすいCTAボタンサイズ・入力しやすいフォーム・高速なページ表示・モバイルでの視線誘導設計により、スマートフォンユーザーのCV機会を最大化します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div className="md:col-span-2" style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div className="md:col-span-2" style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -436,7 +436,7 @@ export default function ServiceSitePage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Pricing Guide</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サービスサイト・LP制作の料金目安
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mb-8">
@@ -445,13 +445,13 @@ export default function ServiceSitePage() {
                 { plan: "サービスサイト", range: "80〜150万円", items: ["5〜10ページ構成", "競合分析・CVシナリオ設計", "デザイン・実装一式", "GTMコンバージョン設定", "公開後改善1ヶ月サポート"] },
                 { plan: "本格CVサイト", range: "150〜300万円", items: ["SEO統合サービスサイト", "CMS構築・運用設計", "A/Bテスト体制構築", "広告LP複数制作", "継続改善サポート付き"] },
               ].map((item, i) => (
-                <div key={i} style={{ border: "1px solid #E8E4DC", padding: "28px" }}>
+                <div key={i} style={{ border: "1px solid #dde0e4", padding: "28px" }}>
                   <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#9CA3AF" }}>{item.plan}</p>
-                  <p className="font-black text-[22px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.range}</p>
+                  <p className="font-black text-[22px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.range}</p>
                   <ul className="space-y-2">
                     {item.items.map((li, j) => (
                       <li key={j} className="flex gap-2 text-[13px]" style={{ color: "#374151" }}>
-                        <span style={{ color: "#c4b89a" }}>→</span>{li}
+                        <span style={{ color: "var(--v2-accent)" }}>→</span>{li}
                       </li>
                     ))}
                   </ul>
@@ -463,10 +463,10 @@ export default function ServiceSitePage() {
         </section>
 
         {/* サービスサイトのCV設計チェックポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>CV Design Checklist</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サービスサイトのCV設計チェックポイント
             </h2>
             <div className="max-w-3xl space-y-0">
@@ -482,12 +482,12 @@ export default function ServiceSitePage() {
                 "GA4のコンバージョンイベントとヒートマップが設置済みである",
                 "スマートフォンでのCTAボタンがタップしやすいサイズ・位置に配置されている",
               ].map((item, i) => (
-                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                <div key={i} className="flex gap-4 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

@@ -339,21 +339,21 @@ export default function StoreMarketingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>店舗集客マーケティング</span>
+              <span style={{ color: "#333333" }}>店舗集客マーケティング</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Store Marketing
             </p>
             <h1
               className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               店舗集客マーケティング
             </h1>
@@ -377,14 +377,14 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
             <h2
               className="font-black text-[28px] mb-10"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               このページでわかること
             </h2>
@@ -398,7 +398,7 @@ export default function StoreMarketingPage() {
                 "よくある失敗パターンと、各施策が成果につながるための設計の考え方",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[16px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -414,7 +414,7 @@ export default function StoreMarketingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               来店につながるMEO設計
             </h2>
@@ -441,30 +441,30 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* 来店導線の最適化 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Visit Optimization
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               来店導線の最適化
             </h2>
             <div className="max-w-3xl">
               {visitMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -477,52 +477,52 @@ export default function StoreMarketingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {challenges.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Insights
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {industries.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.name}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.name}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.point}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -546,7 +546,7 @@ export default function StoreMarketingPage() {
                 </p>
                 <h2
                   className="font-black text-[26px] mb-6"
-                  style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+                  style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
                 >
                   チャネルを統合した集客設計
                 </h2>
@@ -567,30 +567,30 @@ export default function StoreMarketingPage() {
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -603,31 +603,31 @@ export default function StoreMarketingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-1" style={{ color: "#0F172A" }}>{item.label}</h3>
-                    <p className="text-[12px] font-semibold mb-2" style={{ color: "#c4b89a" }}>
+                    <h3 className="font-bold text-[16px] mb-1" style={{ color: "#333333" }}>{item.label}</h3>
+                    <p className="text-[12px] font-semibold mb-2" style={{ color: "var(--v2-accent)" }}>
                       計測場所：{item.where}
                     </p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

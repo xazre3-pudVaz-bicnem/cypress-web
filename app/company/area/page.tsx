@@ -222,7 +222,7 @@ export default function Page() {
       <Header />
       <main>
         {/* ── Hero ── */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav
               style={{
@@ -238,7 +238,7 @@ export default function Page() {
               <span>/</span>
               <Link href="/company" style={{ color: "#6B7280" }}>会社情報</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>対応エリア</span>
+              <span style={{ color: "#333333" }}>対応エリア</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               SERVICE AREA
@@ -247,7 +247,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(28px,4vw,48px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.25,
                 marginBottom: "24px",
@@ -323,7 +323,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -345,7 +345,7 @@ export default function Page() {
                   key={item.n}
                   style={{
                     padding: "24px 0",
-                    borderTop: i === 0 || i === 1 ? "1px solid #E8E4DC" : "1px solid #E8E4DC",
+                    borderTop: i === 0 || i === 1 ? "1px solid #dde0e4" : "1px solid #dde0e4",
                     display: "flex",
                     gap: "16px",
                   }}
@@ -359,7 +359,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 600,
                         fontSize: "14px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "6px",
                       }}
                     >
@@ -374,7 +374,7 @@ export default function Page() {
         </section>
 
         {/* ── Section B: 主な対応エリア ── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               SERVICE COVERAGE
@@ -383,7 +383,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -396,12 +396,12 @@ export default function Page() {
 
             {/* Tokyo sub-grid */}
             <div style={{ marginBottom: "56px" }}>
-              <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "16px", borderBottom: "1px solid #E8E4DC", paddingBottom: "12px" }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "16px", borderBottom: "1px solid #dde0e4", paddingBottom: "12px" }}>
                 <h3
                   style={{
                     fontFamily: "var(--font-serif)",
                     fontSize: "18px",
-                    color: "#0d1b2a",
+                    color: "#333333",
                     fontWeight: 700,
                   }}
                 >
@@ -423,10 +423,10 @@ export default function Page() {
                     style={{
                       padding: "10px 14px",
                       background: "#FFFFFF",
-                      border: "1px solid #E8E4DC",
+                      border: "1px solid #dde0e4",
                     }}
                   >
-                    <p style={{ fontSize: "13px", color: "#0d1b2a", fontWeight: 600, marginBottom: "2px" }}>
+                    <p style={{ fontSize: "13px", color: "#333333", fontWeight: 600, marginBottom: "2px" }}>
                       {area.name}
                     </p>
                     <p style={{ fontSize: "11px", color: "#9CA3AF" }}>{area.note}</p>
@@ -438,13 +438,13 @@ export default function Page() {
             {/* Other prefectures */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "32px" }}>
               {areaBlocks.slice(1).map((block) => (
-                <div key={block.prefecture} style={{ paddingTop: "20px", borderTop: "1px solid #E8E4DC" }}>
+                <div key={block.prefecture} style={{ paddingTop: "20px", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px", marginBottom: "12px" }}>
                     <h3
                       style={{
                         fontFamily: "var(--font-serif)",
                         fontSize: "16px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         fontWeight: 700,
                       }}
                     >
@@ -469,7 +469,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -482,7 +482,7 @@ export default function Page() {
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "13px" }}>
                 <thead>
-                  <tr style={{ borderBottom: "1px solid #E8E4DC" }}>
+                  <tr style={{ borderBottom: "1px solid #dde0e4" }}>
                     <th
                       style={{
                         textAlign: "left",
@@ -522,13 +522,13 @@ export default function Page() {
                   {serviceAreaTable.map((row, i) => (
                     <tr
                       key={i}
-                      style={{ borderTop: "1px solid #E8E4DC" }}
+                      style={{ borderTop: "1px solid #dde0e4" }}
                     >
-                      <td style={{ padding: "14px 16px 14px 0", color: "#0d1b2a", fontWeight: 600, whiteSpace: "nowrap" }}>
+                      <td style={{ padding: "14px 16px 14px 0", color: "#333333", fontWeight: 600, whiteSpace: "nowrap" }}>
                         {row.service}
                       </td>
                       <td style={{ padding: "14px 16px", color: "#374151" }}>{row.inPerson}</td>
-                      <td style={{ padding: "14px 0 14px 16px", color: row.online === "全国対応" ? "#c4b89a" : "#9CA3AF", fontWeight: row.online === "全国対応" ? 600 : 400 }}>
+                      <td style={{ padding: "14px 0 14px 16px", color: row.online === "全国対応" ? "var(--v2-accent)" : "#9CA3AF", fontWeight: row.online === "全国対応" ? 600 : 400 }}>
                         {row.online}
                       </td>
                     </tr>
@@ -543,7 +543,7 @@ export default function Page() {
         </section>
 
         {/* ── Section D: 地元・葛飾区周辺 ── */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               LOCAL EXPERTISE
@@ -552,7 +552,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -568,7 +568,7 @@ export default function Page() {
                   key={item.area}
                   style={{
                     padding: "24px 0",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                     display: "flex",
                     gap: "16px",
                   }}
@@ -582,7 +582,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 700,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "8px",
                       }}
                     >
@@ -606,7 +606,7 @@ export default function Page() {
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(20px,2.8vw,32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "12px",
               }}
@@ -625,7 +625,7 @@ export default function Page() {
                     gap: "20px",
                     paddingTop: "24px",
                     paddingBottom: "24px",
-                    borderTop: "1px solid #E8E4DC",
+                    borderTop: "1px solid #dde0e4",
                   }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
@@ -637,7 +637,7 @@ export default function Page() {
                         fontFamily: "var(--font-serif)",
                         fontWeight: 700,
                         fontSize: "15px",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         marginBottom: "8px",
                       }}
                     >
@@ -656,7 +656,7 @@ export default function Page() {
                 style={{
                   display: "inline-block",
                   padding: "14px 36px",
-                  background: "#0F172A",
+                  background: "#293540",
                   color: "#FFFFFF",
                   fontSize: "14px",
                   fontWeight: 600,
@@ -676,7 +676,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="対応エリアについてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#f0f1f2"
         />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

@@ -90,11 +90,11 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
               <span key={b.href} className="flex items-center gap-2">
                 {i > 0 && <span style={{ color: "#CBD5E1" }}>/</span>}
                 {i < data.breadcrumb.length - 1 ? (
-                  <Link href={b.href} className="hover:text-[#2563EB] transition-colors">
+                  <Link href={b.href} className="hover:text-[#096fc8] transition-colors">
                     {b.label}
                   </Link>
                 ) : (
-                  <span style={{ color: "#0F172A" }}>{b.label}</span>
+                  <span style={{ color: "#333333" }}>{b.label}</span>
                 )}
               </span>
             ))}
@@ -110,7 +110,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE }}
             className="font-black leading-tight tracking-tight mb-5"
-            style={{ fontSize: "clamp(28px, 4.5vw, 56px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 4.5vw, 56px)", color: "#333333" }}
           >
             {data.subtitle}
           </motion.h1>
@@ -143,7 +143,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:border-[#2563EB] hover:text-[#2563EB]"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:border-[#096fc8] hover:text-[#096fc8]"
               style={{ border: "1px solid #E2E8F0", color: "#334155" }}
             >
               サービス一覧
@@ -185,7 +185,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
                       <Icon name={kp.icon} className="w-5 h-5" />
                     </span>
                   </div>
-                  <h3 className="font-bold text-sm mb-2" style={{ color: "#0F172A" }}>{kp.title}</h3>
+                  <h3 className="font-bold text-sm mb-2" style={{ color: "#333333" }}>{kp.title}</h3>
                   <p className="text-xs leading-relaxed" style={{ color: "#64748B" }}>{kp.body}</p>
                 </div>
               </ScrollReveal>
@@ -205,7 +205,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
               >
                 <h2
                   className="font-bold text-xl mb-5"
-                  style={{ color: "#0F172A" }}
+                  style={{ color: "#333333" }}
                 >
                   {sec.heading}
                 </h2>
@@ -239,7 +239,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
           <div className="max-w-5xl mx-auto px-6">
             <ScrollReveal>
               <SectionLabel color={data.accentColor}>Results</SectionLabel>
-              <h2 className="font-black text-2xl mb-10" style={{ color: "#0F172A" }}>
+              <h2 className="font-black text-2xl mb-10" style={{ color: "#333333" }}>
                 数字で見る成果
               </h2>
             </ScrollReveal>
@@ -275,7 +275,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
                         decimals={b.stat.includes(".") ? 1 : 0}
                       />
                     </div>
-                    <div className="text-sm font-semibold mb-1" style={{ color: "#0F172A" }}>{b.label}</div>
+                    <div className="text-sm font-semibold mb-1" style={{ color: "#333333" }}>{b.label}</div>
                     <div className="text-xs" style={{ color: "#64748B" }}>{b.description}</div>
                   </div>
                 </ScrollReveal>
@@ -290,7 +290,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
         <div className="max-w-4xl mx-auto px-6">
           <ScrollReveal>
             <SectionLabel color={data.accentColor}>FAQ</SectionLabel>
-            <h2 className="font-black text-2xl mb-10" style={{ color: "#0F172A" }}>
+            <h2 className="font-black text-2xl mb-10" style={{ color: "#333333" }}>
               よくある質問
             </h2>
           </ScrollReveal>
@@ -318,7 +318,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
                         >
                           Q.
                         </span>
-                        <span className="font-semibold text-sm leading-relaxed" style={{ color: "#0F172A" }}>
+                        <span className="font-semibold text-sm leading-relaxed" style={{ color: "#333333" }}>
                           {item.q}
                         </span>
                       </span>
@@ -359,7 +359,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
       <section className="py-16" style={{ background: "#FFFFFF", borderTop: "1px solid #F1F5F9" }}>
         <div className="max-w-5xl mx-auto px-6">
           <ScrollReveal>
-            <h2 className="font-bold text-lg mb-8" style={{ color: "#0F172A" }}>
+            <h2 className="font-bold text-lg mb-8" style={{ color: "#333333" }}>
               関連ページ
             </h2>
           </ScrollReveal>
@@ -387,14 +387,14 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
                     }}
                   >
                     <div
-                      className="font-semibold text-sm mb-1.5 transition-colors group-hover:text-[#2563EB]"
-                      style={{ color: "#0F172A" }}
+                      className="font-semibold text-sm mb-1.5 transition-colors group-hover:text-[#096fc8]"
+                      style={{ color: "#333333" }}
                     >
                       {rp.title}
                     </div>
                     <div className="text-xs" style={{ color: "#64748B" }}>{rp.description}</div>
                     <div
-                      className="mt-3 text-xs font-medium flex items-center gap-1 transition-colors group-hover:text-[#2563EB]"
+                      className="mt-3 text-xs font-medium flex items-center gap-1 transition-colors group-hover:text-[#096fc8]"
                       style={{ color: "#94A3B8" }}
                     >
                       詳細を見る
@@ -411,7 +411,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
       </section>
 
       {/* ── Bottom CTA ── */}
-      <section className="py-24" style={{ background: "#2563EB" }}>
+      <section className="py-24" style={{ background: "#096fc8" }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <ScrollReveal>
             <h2 className="font-black text-white text-2xl md:text-3xl mb-4 leading-tight">
@@ -423,7 +423,7 @@ export default function SubCategoryTemplate({ data }: { data: SubCategoryData })
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 hover:shadow-lg"
-              style={{ background: "#FFFFFF", color: "#2563EB" }}
+              style={{ background: "#FFFFFF", color: "#096fc8" }}
             >
               無料相談・お問い合わせ
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

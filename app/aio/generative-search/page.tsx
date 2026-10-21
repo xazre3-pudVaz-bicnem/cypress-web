@@ -332,21 +332,21 @@ export default function GenerativeSearchPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/aio" className="hover:underline" style={{ color: "#6B7280" }}>AIO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>生成AI検索対策</span>
+              <span style={{ color: "#333333" }}>生成AI検索対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Generative AI Search / SGE
             </p>
             <h1
               className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               生成AI検索・<br />SGE対策
             </h1>
@@ -371,12 +371,12 @@ export default function GenerativeSearchPage() {
         </section>
 
         {/* 生成AI検索とは */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is Generative Search
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               生成AI検索とは
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -408,7 +408,7 @@ export default function GenerativeSearchPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               On This Page
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -421,7 +421,7 @@ export default function GenerativeSearchPage() {
                 "AI引用効果を測定するための7つのKPIと確認場所",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -430,27 +430,27 @@ export default function GenerativeSearchPage() {
         </section>
 
         {/* 引用されやすいページの特徴 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Content Features
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               引用されやすいページの特徴
             </h2>
             <div className="max-w-3xl">
               {contentFeatures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -461,41 +461,41 @@ export default function GenerativeSearchPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {problemItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Industry Applications
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
               {industryItems.map((item, i) => (
-                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={i} className="p-6" style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <h3 className="font-bold text-[15px]" style={{ color: "#0F172A" }}>{item.industry}</h3>
+                    <h3 className="font-bold text-[15px]" style={{ color: "#333333" }}>{item.industry}</h3>
                   </div>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.note}</p>
                 </div>
@@ -510,46 +510,46 @@ export default function GenerativeSearchPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {flowSteps.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0F172A" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPI &amp; Metrics
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpiItems.map((item, i) => (
-                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p className="font-bold text-[15px] mb-1" style={{ color: "#0F172A" }}>{item.label}</p>
+                    <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.label}</p>
                     <p className="text-[13px] leading-[1.7]" style={{ color: "#6B7280" }}>確認場所：{item.where}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -562,7 +562,7 @@ export default function GenerativeSearchPage() {
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   Generative Search
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
                   生成AI検索で引用されるために
                 </h2>
                 <div className="space-y-4">
@@ -590,7 +590,7 @@ export default function GenerativeSearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

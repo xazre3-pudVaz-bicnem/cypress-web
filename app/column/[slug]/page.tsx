@@ -19,7 +19,7 @@ const CATEGORY_BADGE_BG: Record<ColumnCategory, string> = {
 };
 
 const CATEGORY_BADGE_COLOR: Record<ColumnCategory, string> = {
-  SEO: "#1D4ED8",
+  SEO: "#096fc8",
   MEO: "#047857",
   AIO: "#6D28D9",
   AI: "#0E7490",
@@ -44,7 +44,7 @@ const TOPIC_CATEGORY_BG: Record<string, string> = {
 };
 
 const TOPIC_CATEGORY_COLOR: Record<string, string> = {
-  SEO: "#1D4ED8",
+  SEO: "#096fc8",
   MEO: "#047857",
   AIO: "#6D28D9",
   AI: "#0E7490",
@@ -201,7 +201,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
     ],
   };
 
-  const badgeBg = TOPIC_CATEGORY_BG[topic.category] ?? "#F9F8F5";
+  const badgeBg = TOPIC_CATEGORY_BG[topic.category] ?? "#f0f1f2";
   const badgeColor = TOPIC_CATEGORY_COLOR[topic.category] ?? "#374151";
 
   const relatedArticles = COLUMNS.filter(
@@ -217,14 +217,14 @@ function ColumnTopicPage({ slug }: { slug: string }) {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero="article" className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8 flex-wrap" style={{ color: "#6B7280" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <Link href="/column" className="hover:text-[#0F172A] transition-colors">専門コラム</Link>
+              <Link href="/column" className="hover:text-[#333333] transition-colors">専門コラム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }}>{topic.titleEn}</span>
+              <span style={{ color: "#333333" }}>{topic.titleEn}</span>
             </nav>
 
             <div className="flex items-center gap-3 mb-6">
@@ -241,7 +241,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
 
             <h1
               className="font-black leading-tight tracking-tight mb-6"
-              style={{ fontSize: "clamp(22px, 3.5vw, 42px)", color: "#0F172A", maxWidth: "780px" }}
+              style={{ fontSize: "clamp(22px, 3.5vw, 42px)", color: "#333333", maxWidth: "780px" }}
             >
               {topic.title}
             </h1>
@@ -265,7 +265,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
               {/* Table of contents */}
               <div
                 className="p-6 mb-10"
-                style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}
+                style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}
               >
                 <p className="text-[11px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
                   目次
@@ -295,9 +295,9 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                 {topic.sections.map((sec, i) => (
                   <div key={i}>
                     <h2
-                      className="font-bold text-[#0F172A] mb-5 pb-3"
+                      className="font-bold text-[#333333] mb-5 pb-3"
                       style={{
-                        borderBottom: "1px solid #E8E4DC",
+                        borderBottom: "1px solid #dde0e4",
                         fontSize: "clamp(16px, 2vw, 20px)",
                       }}
                     >
@@ -310,8 +310,8 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                 {/* FAQ */}
                 <div>
                   <h2
-                    className="font-bold text-[#0F172A] mb-8 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)" }}
+                    className="font-bold text-[#333333] mb-8 pb-3"
+                    style={{ borderBottom: "1px solid #dde0e4", fontSize: "clamp(16px, 2vw, 20px)" }}
                   >
                     よくある質問（FAQ）
                   </h2>
@@ -320,9 +320,9 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                       <div
                         key={i}
                         className="py-6"
-                        style={{ borderBottom: "1px solid #E8E4DC" }}
+                        style={{ borderBottom: "1px solid #dde0e4" }}
                       >
-                        <dt className="font-bold text-[15px] mb-3 flex items-start gap-3" style={{ color: "#0F172A" }}>
+                        <dt className="font-bold text-[15px] mb-3 flex items-start gap-3" style={{ color: "#333333" }}>
                           <span
                             className="text-[11px] font-mono shrink-0 mt-0.5 px-1.5 py-0.5"
                             style={{ background: badgeBg, color: badgeColor }}
@@ -337,7 +337,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                         <dd className="text-[14px] leading-[1.9] flex items-start gap-3" style={{ color: "#374151" }}>
                           <span
                             className="text-[11px] font-mono shrink-0 mt-0.5 px-1.5 py-0.5"
-                            style={{ background: "#F9F8F5", color: "#6B7280", border: "1px solid #E8E4DC" }}
+                            style={{ background: "#f0f1f2", color: "#6B7280", border: "1px solid #dde0e4" }}
                           >
                             A
                           </span>
@@ -360,10 +360,10 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                       <Link
                         key={rel.href}
                         href={rel.href}
-                        className="group block p-4 transition-colors hover:bg-[#F9F8F5]"
-                        style={{ border: "1px solid #E8E4DC" }}
+                        className="group block p-4 transition-colors hover:bg-[#f0f1f2]"
+                        style={{ border: "1px solid #dde0e4" }}
                       >
-                        <p className="text-[14px] font-medium group-hover:underline underline-offset-2 mb-1" style={{ color: "#0F172A" }}>
+                        <p className="text-[14px] font-medium group-hover:underline underline-offset-2 mb-1" style={{ color: "#333333" }}>
                           {rel.label}
                         </p>
                         <p className="text-[12px]" style={{ color: "#6B7280" }}>{rel.desc}</p>
@@ -376,16 +376,16 @@ function ColumnTopicPage({ slug }: { slug: string }) {
               {/* Author box */}
               <div
                 className="mt-12 p-6 flex items-center gap-4"
-                style={{ border: "1px solid #E8E4DC" }}
+                style={{ border: "1px solid #dde0e4" }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center shrink-0 font-black text-base"
-                  style={{ background: "#F9F8F5", color: "#0F172A", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#f0f1f2", color: "#333333", border: "1px solid #dde0e4" }}
                 >
                   C
                 </div>
                 <div>
-                  <p className="text-[#0F172A] text-sm font-bold">株式会社サイプレス 編集部</p>
+                  <p className="text-[#333333] text-sm font-bold">株式会社サイプレス 編集部</p>
                   <p className="text-[#6B7280] text-xs mt-1 leading-relaxed">
                     MEO・SEO・AIO・AI活用支援の専門家チームが、実績に基づいた情報を発信しています。
                   </p>
@@ -396,7 +396,7 @@ function ColumnTopicPage({ slug }: { slug: string }) {
               <div className="mt-8">
                 <Link
                   href="/column"
-                  className="flex items-center gap-2 text-sm transition-colors hover:text-[#0F172A]"
+                  className="flex items-center gap-2 text-sm transition-colors hover:text-[#333333]"
                   style={{ color: "#6B7280" }}
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -416,11 +416,11 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                   </h3>
                   <ul className="space-y-0">
                     {COLUMN_TOPICS.map((t) => (
-                      <li key={t.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                      <li key={t.slug} style={{ borderBottom: "1px solid #dde0e4" }}>
                         <Link
                           href={`/column/${t.slug}`}
-                          className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#0F172A]"
-                          style={{ color: t.slug === slug ? "#0F172A" : "#374151", fontWeight: t.slug === slug ? 700 : 400 }}
+                          className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#333333]"
+                          style={{ color: t.slug === slug ? "#333333" : "#374151", fontWeight: t.slug === slug ? 700 : 400 }}
                         >
                           <span>{t.category}</span>
                         </Link>
@@ -436,10 +436,10 @@ function ColumnTopicPage({ slug }: { slug: string }) {
                     </h3>
                     <ul className="space-y-0">
                       {relatedArticles.map((rel) => (
-                        <li key={rel.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                        <li key={rel.slug} style={{ borderBottom: "1px solid #dde0e4" }}>
                           <Link
                             href={`/column/${rel.slug}`}
-                            className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#0F172A] hover:underline underline-offset-2"
+                            className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#333333] hover:underline underline-offset-2"
                             style={{ color: "#374151" }}
                           >
                             {rel.title}
@@ -457,13 +457,13 @@ function ColumnTopicPage({ slug }: { slug: string }) {
         {/* CTA */}
         <section
           className="py-16"
-          style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}
+          style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}
         >
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-mono tracking-widest uppercase mb-4" style={{ color: "#9CA3AF" }}>
               Consultation
             </p>
-            <h2 className="font-bold text-[#0F172A] mb-4" style={{ fontSize: "clamp(18px, 2.5vw, 26px)" }}>
+            <h2 className="font-bold text-[#333333] mb-4" style={{ fontSize: "clamp(18px, 2.5vw, 26px)" }}>
               {topic.category}について、専門家にご相談ください
             </h2>
             <p className="text-sm leading-relaxed max-w-md mb-8" style={{ color: "#374151" }}>
@@ -471,8 +471,8 @@ function ColumnTopicPage({ slug }: { slug: string }) {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-              style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#293540] hover:text-white"
+              style={{ border: "1px solid #333333", color: "#333333" }}
             >
               無料でご相談する
               <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -534,14 +534,14 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}
-        <section className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero="article" className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8 flex-wrap" style={{ color: "#6B7280" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <Link href="/column" className="hover:text-[#0F172A] transition-colors">専門コラム</Link>
+              <Link href="/column" className="hover:text-[#333333] transition-colors">専門コラム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0F172A" }} className="line-clamp-1">
+              <span style={{ color: "#333333" }} className="line-clamp-1">
                 {article.title.slice(0, 30)}{article.title.length > 30 ? "..." : ""}
               </span>
             </nav>
@@ -561,7 +561,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
             </div>
 
             <h1
-              className="font-black text-[#0F172A] leading-tight mb-5"
+              className="font-black text-[#333333] leading-tight mb-5"
               style={{ fontSize: "clamp(20px, 3vw, 36px)", maxWidth: "720px" }}
             >
               {article.title}
@@ -572,7 +572,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <span
                   key={tag}
                   className="text-[11px] px-2 py-0.5"
-                  style={{ background: "#F9F8F5", color: "#6B7280", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#f0f1f2", color: "#6B7280", border: "1px solid #dde0e4" }}
                 >
                   #{tag}
                 </span>
@@ -587,7 +587,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
             {/* Article Body */}
             <div>
               {/* Lead */}
-              <div className="p-6 mb-10" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+              <div className="p-6 mb-10" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
                 <p className="text-sm leading-[1.9]" style={{ color: "#374151" }}>{article.excerpt}</p>
               </div>
 
@@ -596,7 +596,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #dde0e4", fontSize: "clamp(16px, 2vw, 20px)", color: "#333333" }}
                   >
                     はじめに
                   </h2>
@@ -609,7 +609,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #dde0e4", fontSize: "clamp(16px, 2vw, 20px)", color: "#333333" }}
                   >
                     なぜ今、{article.category}が重要なのか
                   </h2>
@@ -628,14 +628,14 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #dde0e4", fontSize: "clamp(16px, 2vw, 20px)", color: "#333333" }}
                   >
                     実践のポイント
                   </h2>
                   <div className="space-y-5">
                     {["現状分析と課題の明確化", "競合調査と差別化戦略の策定", "優先順位の高い施策から実行", "定期的な測定と改善のサイクル"].map((point, i) => (
                       <div key={point}>
-                        <p className="text-sm font-semibold mb-2" style={{ color: "#0F172A" }}>
+                        <p className="text-sm font-semibold mb-2" style={{ color: "#333333" }}>
                           {i + 1}. {point}
                         </p>
                         <p className="text-[15px] leading-[1.9]">
@@ -650,7 +650,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                 <div>
                   <h2
                     className="font-bold text-lg mb-5 pb-3"
-                    style={{ borderBottom: "1px solid #E8E4DC", fontSize: "clamp(16px, 2vw, 20px)", color: "#0F172A" }}
+                    style={{ borderBottom: "1px solid #dde0e4", fontSize: "clamp(16px, 2vw, 20px)", color: "#333333" }}
                   >
                     まとめ
                   </h2>
@@ -666,15 +666,15 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
               </div>
 
               {/* Author */}
-              <div className="mt-12 p-6 flex items-center gap-4" style={{ border: "1px solid #E8E4DC" }}>
+              <div className="mt-12 p-6 flex items-center gap-4" style={{ border: "1px solid #dde0e4" }}>
                 <div
                   className="w-12 h-12 flex items-center justify-center shrink-0 font-black text-base"
-                  style={{ background: "#F9F8F5", color: "#0F172A", border: "1px solid #E8E4DC" }}
+                  style={{ background: "#f0f1f2", color: "#333333", border: "1px solid #dde0e4" }}
                 >
                   C
                 </div>
                 <div>
-                  <p className="text-sm font-bold" style={{ color: "#0F172A" }}>株式会社サイプレス 編集部</p>
+                  <p className="text-sm font-bold" style={{ color: "#333333" }}>株式会社サイプレス 編集部</p>
                   <p className="text-xs mt-1 leading-relaxed" style={{ color: "#6B7280" }}>
                     MEO・SEO・AIO・AI活用支援の専門家チームが、実績に基づいた情報を発信しています。
                   </p>
@@ -685,7 +685,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
               <div className="mt-8">
                 <Link
                   href="/column"
-                  className="flex items-center gap-2 text-sm transition-colors hover:text-[#0F172A]"
+                  className="flex items-center gap-2 text-sm transition-colors hover:text-[#333333]"
                   style={{ color: "#6B7280" }}
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -705,10 +705,10 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                   </h3>
                   <ul className="space-y-0">
                     {allCategories.map((cat) => (
-                      <li key={cat} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                      <li key={cat} style={{ borderBottom: "1px solid #dde0e4" }}>
                         <Link
                           href={`/column?category=${cat}`}
-                          className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#0F172A]"
+                          className="flex items-center justify-between py-2.5 text-xs transition-colors hover:text-[#333333]"
                           style={{ color: "#374151" }}
                         >
                           <span>{cat}</span>
@@ -728,10 +728,10 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                     </h3>
                     <ul className="space-y-0">
                       {related.map((rel) => (
-                        <li key={rel.slug} style={{ borderBottom: "1px solid #F0EDE6" }}>
+                        <li key={rel.slug} style={{ borderBottom: "1px solid #dde0e4" }}>
                           <Link
                             href={`/column/${rel.slug}`}
-                            className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#0F172A] hover:underline underline-offset-2"
+                            className="block py-3 text-xs leading-relaxed transition-colors hover:text-[#333333] hover:underline underline-offset-2"
                             style={{ color: "#374151" }}
                           >
                             {rel.title}
@@ -748,17 +748,17 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
 
         {/* Related bottom */}
         {related.length > 0 && (
-          <section className="py-16" style={{ background: "#F9F8F5", borderTop: "1px solid #E8E4DC" }}>
+          <section className="py-16" style={{ background: "#f0f1f2", borderTop: "1px solid #dde0e4" }}>
             <div className="max-w-6xl mx-auto px-6">
               <h2
                 className="font-bold text-lg mb-8 pb-6"
-                style={{ borderBottom: "1px solid #E8E4DC", color: "#0F172A" }}
+                style={{ borderBottom: "1px solid #dde0e4", color: "#333333" }}
               >
                 関連コラム
               </h2>
               <div className="space-y-0">
                 {related.map((rel) => (
-                  <div key={rel.slug} style={{ borderBottom: "1px solid #E8E4DC" }}>
+                  <div key={rel.slug} style={{ borderBottom: "1px solid #dde0e4" }}>
                     <Link
                       href={`/column/${rel.slug}`}
                       className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 py-4 -mx-3 px-3 transition-colors hover:bg-white"
@@ -775,7 +775,7 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
                       >
                         {rel.category}
                       </span>
-                      <span className="text-sm flex-1 group-hover:underline underline-offset-4" style={{ color: "#0F172A" }}>
+                      <span className="text-sm flex-1 group-hover:underline underline-offset-4" style={{ color: "#333333" }}>
                         {rel.title}
                       </span>
                     </Link>
@@ -788,14 +788,14 @@ function ColumnArticlePageContent({ slug }: { slug: string }) {
 
         {/* CTA */}
         <section className="py-16 max-w-6xl mx-auto px-6">
-          <h2 className="font-bold text-xl mb-4" style={{ color: "#0F172A" }}>専門家にご相談ください</h2>
+          <h2 className="font-bold text-xl mb-4" style={{ color: "#333333" }}>専門家にご相談ください</h2>
           <p className="mb-8 text-sm leading-relaxed max-w-md" style={{ color: "#374151" }}>
             記事を読んで自社に当てはめた戦略を知りたい方は、お問い合わせください。
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-            style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium transition-all hover:bg-[#293540] hover:text-white"
+            style={{ border: "1px solid #333333", color: "#333333" }}
           >
             お問い合わせ・ご相談
             <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -29,15 +29,15 @@ export default function FaqPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>よくある質問</span>
+              <span style={{ color: "#333333" }}>よくある質問</span>
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>FAQ</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "20px" }}>
               よくある質問
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "12px" }}>
@@ -75,10 +75,10 @@ export default function FaqPage() {
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Categories</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               質問カテゴリ一覧
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#ece8e0" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1px", background: "#dde0e4" }}>
               {faqPages.map((page) => (
                 <Link
                   key={page.slug}
@@ -88,10 +88,10 @@ export default function FaqPage() {
                   <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", fontSize: "10px", color: "#9ca3af", marginBottom: "8px" }}>
                     {page.titleEn}
                   </p>
-                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#333333", fontWeight: 700, marginBottom: "10px", lineHeight: 1.4 }}>
                     {page.title}
                   </p>
-                  <p style={{ fontSize: "12px", color: "#c4b89a", marginBottom: "8px", fontWeight: 600 }}>
+                  <p style={{ fontSize: "12px", color: "var(--v2-accent)", marginBottom: "8px", fontWeight: 600 }}>
                     {page.faqs.length}件の質問
                   </p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.8" }}>
@@ -110,10 +110,10 @@ export default function FaqPage() {
         </section>
 
         {/* 費用・よく聞かれる3つの質問 */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Top Questions</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               特によく聞かれる質問
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -131,9 +131,9 @@ export default function FaqPage() {
                   a: "はい、月次レポートを確認しながら必要に応じて施策の調整・追加が可能です。ご状況やご予算の変化に合わせて柔軟に対応します。大きな変更が必要な場合は、改めてプラン設計をご提案します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px 0", borderBottom: "1px solid #e8e4dc" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#0d1b2a", marginBottom: "10px", display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span style={{ color: "#c4b89a", fontWeight: 700, flexShrink: 0 }}>Q.</span>
+                <div key={i} style={{ padding: "24px 0", borderBottom: "1px solid #dde0e4" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "16px", color: "#333333", marginBottom: "10px", display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--v2-accent)", fontWeight: 700, flexShrink: 0 }}>Q.</span>
                     {item.q}
                   </p>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", paddingLeft: "24px" }}>{item.a}</p>

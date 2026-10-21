@@ -291,21 +291,21 @@ export default function NapPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>NAP統一</span>
+              <span style={{ color: "#333333" }}>NAP統一</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Knowledge
             </p>
             <h1
               className="text-[40px] md:text-[52px] font-black leading-tight tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               NAP情報の統一
             </h1>
@@ -337,7 +337,7 @@ export default function NapPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-10"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               このページでわかること
             </h2>
@@ -353,7 +353,7 @@ export default function NapPage() {
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                   <span
                     className="shrink-0 font-bold text-[15px]"
-                    style={{ color: "#c4b89a", marginTop: "2px" }}
+                    style={{ color: "var(--v2-accent)", marginTop: "2px" }}
                   >
                     →
                   </span>
@@ -365,14 +365,14 @@ export default function NapPage() {
         </section>
 
         {/* NAPとは */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What is NAP
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               NAPとは
             </h2>
@@ -407,20 +407,20 @@ export default function NapPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               NAP統一の対象
             </h2>
             <div className="max-w-3xl">
               {napTargets.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -428,33 +428,33 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -462,7 +462,7 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -475,20 +475,20 @@ export default function NapPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {industryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.industry}
                     </h3>
@@ -496,33 +496,33 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.step}
                     </h3>
@@ -530,7 +530,7 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -543,20 +543,20 @@ export default function NapPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.kpi}
                     </h3>
@@ -564,12 +564,12 @@ export default function NapPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

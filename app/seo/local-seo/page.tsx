@@ -150,17 +150,17 @@ export default function LocalSeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>ローカルSEO</span>
+              <span style={{ color: "#333333" }}>ローカルSEO</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Local SEO</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               ローカルSEO
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -185,10 +185,10 @@ export default function LocalSeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -200,23 +200,23 @@ export default function LocalSeoPage() {
                 { n: "05", t: "業種別ローカルSEO活用ポイント", b: "飲食店・クリニック・美容室・建設業など、業種によって異なるエリアページ戦略と地域コンテンツの作り方を紹介します。" },
                 { n: "06", t: "施策の実装フローと成果指標", b: "ローカルSEOを始める順序・調査方法・効果測定に使うKPIを実務的な視点でまとめます。" },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* ローカルSEO未対応の影響 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Local SEO Risks</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Local SEO Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               ローカルSEO未対応が地域ビジネスに与える4つの影響
             </h2>
@@ -227,7 +227,7 @@ export default function LocalSeoPage() {
                 { t: "広告なしでの地域集客がゼロになる", b: "ローカルSEOが機能していないと、地元からの無料集客チャンネルがなくなります。リスティング広告費が永遠にかかり続け、広告を止めたとたん集客がゼロになります。" },
                 { t: "MEOとSEOの相乗効果が得られない", b: "Googleマップ（MEO）と検索（SEO）の両方で上位表示されると集客力が倍増します。ローカルSEO未対応のままではこの相乗効果が得られず、競合との差が広がります。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -240,7 +240,7 @@ export default function LocalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -289,24 +289,24 @@ export default function LocalSeoPage() {
                   body: "地域ページにその地域での実績・お客様の声がなく、信頼性シグナルが弱い状態です。地域のユーザーが「この会社は自分の地域で実績があるか」を確認しやすくする情報設計が欠けています。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -387,8 +387,8 @@ export default function LocalSeoPage() {
                   ],
                 },
               ].map((item, i) => (
-                <div key={i} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", padding: "28px" }}>
-                  <p className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
+                <div key={i} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", padding: "28px" }}>
+                  <p className="font-bold text-[15px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
                   <ul className="space-y-2">
                     {item.points.map((pt, j) => (
                       <li key={j} className="flex gap-3 text-[13px] leading-[1.8]" style={{ color: "#374151" }}>
@@ -407,7 +407,7 @@ export default function LocalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Tactics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ローカルSEOの主要施策
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -421,24 +421,24 @@ export default function LocalSeoPage() {
                 { title: "MEO対策との連携", body: "WebサイトのローカルページへのリンクをGoogleビジネスプロフィールの「Webサイト」欄に設定。エリアページの情報とビジネスプロフィールの情報を一致させることで、Googleへの信頼性が高まります。GBPへの投稿・写真更新・口コミ返信を継続することで、マップとWebの両方での評価が向上します。" },
                 { title: "地域内部リンクのサイロ構造設計", body: "トップページ→都道府県エリアページ→区・市エリアページという階層でリンクを設計します。同レベルのエリアページ同士を横断リンクで繋ぎ、サービスページからエリアページへのリンクも設置します。このサイロ構造がエリアページへのSEO評価の集中を促します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装フロー
             </h2>
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -497,15 +497,15 @@ export default function LocalSeoPage() {
                   b: "月次でサーチコンソールの地域キーワード順位・クリック数・コンバージョン数を確認します。順位が伸びていないキーワードはコンテンツの充実・内部リンクの追加・構造化データの見直しを行います。GBPのインサイト（経路・電話・ウェブサイトクリック数）もあわせて分析します。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -514,7 +514,7 @@ export default function LocalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[15px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -558,24 +558,24 @@ export default function LocalSeoPage() {
                   b: "サーチコンソールのページ別レポートでエリアページのインプレッション数推移を追います。インプレッションが増加しているにもかかわらずクリック率（CTR）が低い場合は、タイトルタグやメタディスクリプションの改善で流入を増やせます。",
                 },
               ].map((item) => (
-                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 対応エリア */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Areas</p>
-            <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのSEO対応エリア
             </h2>
             <p className="text-[15px] leading-[1.9] mb-8 max-w-2xl" style={{ color: "#374151" }}>
@@ -599,7 +599,7 @@ export default function LocalSeoPage() {
                   key={a.href}
                   href={a.href}
                   className="px-4 py-2 text-[13px] font-medium rounded transition-colors"
-                  style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", color: "#374151" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #dde0e4", color: "#374151" }}
                 >
                   {a.label}
                 </Link>

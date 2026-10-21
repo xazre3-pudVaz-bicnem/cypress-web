@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+/** 404（参考サイトと同じく、青い全面に大きな数字。中央にはサイプレスの立体マーク） */
 export default function NotFound() {
   const links = [
     { href: "/", label: "ホーム" },
@@ -16,50 +18,39 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <main style={{ background: "#FFFFFF", minHeight: "80vh" }}>
-        <section className="pt-40 pb-32">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <p
-              className="font-mono font-black mb-6"
-              style={{ fontSize: "clamp(72px, 12vw, 140px)", color: "#E8E4DC", lineHeight: 1 }}
-            >
-              404
-            </p>
-            <h1
-              className="font-black tracking-tight mb-6"
-              style={{ fontSize: "clamp(22px, 3vw, 36px)", color: "#0F172A" }}
-            >
-              ページが見つかりませんでした
-            </h1>
-            <p className="text-[15px] leading-[1.9] max-w-md mx-auto mb-12" style={{ color: "#374151" }}>
-              お探しのページは移動・削除されたか、URLが間違っている可能性があります。
-              下記のリンクからページをお探しください。
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-3 mb-14">
-              {links.map((link) => (
+      <main className="v2">
+        <section
+          className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-[var(--v2-gutter)] pb-20 pt-32 text-center text-white"
+          style={{ background: "var(--v2-blue)" }}
+          data-tone="dark"
+        >
+          <div aria-hidden className="pointer-events-none absolute inset-0 bg-[url('/images/v2/contour.svg')] bg-cover bg-center" />
+          <p className="v2-display relative flex items-center text-[clamp(120px,22vw,300px)] leading-none" aria-hidden>
+            <span>4</span>
+            <span className="relative mx-[0.04em] inline-block h-[0.78em] w-[0.78em]">
+              <Image src="/images/v2/mark-3d.png" alt="" fill sizes="240px" className="object-contain drop-shadow-[0_18px_30px_rgba(3,40,92,0.35)]" />
+            </span>
+            <span>4</span>
+          </p>
+          <h1 className="v2-display relative mt-2 text-[clamp(28px,3.4vw,48px)] text-white">
+            Page not found
+            <span className="mt-3 block font-[family-name:var(--font-sans)] text-[16px] font-bold tracking-[0.04em]">ページが見つかりませんでした</span>
+          </h1>
+          <p className="relative mx-auto mt-6 max-w-md text-[14px] font-semibold leading-[2]">
+            お探しのページは移動・削除されたか、URLが間違っている可能性があります。下記のリンクからページをお探しください。
+          </p>
+          <ul className="relative mt-10 flex flex-wrap justify-center gap-3">
+            {links.map((link) => (
+              <li key={link.href}>
                 <Link
-                  key={link.href}
                   href={link.href}
-                  className="px-5 py-2.5 text-[13px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-                  style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+                  className="inline-flex rounded-full border border-white/50 px-5 py-2.5 text-[13px] font-bold transition-colors duration-300 hover:bg-white hover:text-[var(--v2-blue)]"
                 >
                   {link.label}
                 </Link>
-              ))}
-            </div>
-
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#0F172A]"
-              style={{ color: "#6B7280" }}
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-              </svg>
-              トップページへ戻る
-            </Link>
-          </div>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
       <Footer />

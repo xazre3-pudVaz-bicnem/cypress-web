@@ -83,11 +83,11 @@ export default function ServicePageTemplate({ data }: Props) {
             <div>
               {/* Breadcrumb */}
               <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#64748B" }}>
-                <Link href="/" className="hover:text-[#2563EB] transition-colors">ホーム</Link>
+                <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
                 <span style={{ color: "#CBD5E1" }}>/</span>
-                <Link href="/services" className="hover:text-[#2563EB] transition-colors">サービス</Link>
+                <Link href="/services" className="hover:text-[#096fc8] transition-colors">サービス</Link>
                 <span style={{ color: "#CBD5E1" }}>/</span>
-                <span style={{ color: "#0F172A" }}>{data.name}</span>
+                <span style={{ color: "#333333" }}>{data.name}</span>
               </nav>
 
               {/* Accent badge */}
@@ -100,7 +100,7 @@ export default function ServicePageTemplate({ data }: Props) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: EASE }}
                 className="font-black leading-[1.1] tracking-[-0.02em] mb-6"
-                style={{ fontSize: "clamp(32px, 5vw, 60px)", color: "#0F172A" }}
+                style={{ fontSize: "clamp(32px, 5vw, 60px)", color: "#333333" }}
               >
                 {data.name}
               </motion.h1>
@@ -133,7 +133,7 @@ export default function ServicePageTemplate({ data }: Props) {
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:border-[#2563EB] hover:text-[#2563EB]"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:border-[#096fc8] hover:text-[#096fc8]"
                   style={{ border: "1px solid #E2E8F0", color: "#334155" }}
                 >
                   サービス一覧
@@ -167,7 +167,7 @@ export default function ServicePageTemplate({ data }: Props) {
                       decimals={data.benefits[0].stat.includes(".") ? 1 : 0}
                     />
                   </div>
-                  <div className="text-base font-semibold mb-1" style={{ color: "#0F172A" }}>
+                  <div className="text-base font-semibold mb-1" style={{ color: "#333333" }}>
                     {data.benefits[0].label}
                   </div>
                   <div className="text-sm" style={{ color: "#64748B" }}>
@@ -215,7 +215,7 @@ export default function ServicePageTemplate({ data }: Props) {
                       decimals={b.stat.includes(".") ? 1 : 0}
                     />
                   </div>
-                  <div className="text-sm font-semibold mb-2" style={{ color: "#0F172A" }}>{b.label}</div>
+                  <div className="text-sm font-semibold mb-2" style={{ color: "#333333" }}>{b.label}</div>
                   <div className="text-xs leading-relaxed" style={{ color: "#64748B" }}>{b.description}</div>
                 </div>
               </ScrollReveal>
@@ -231,7 +231,7 @@ export default function ServicePageTemplate({ data }: Props) {
             <SectionLabel color={data.accentColor}>Features</SectionLabel>
             <h2
               className="font-black leading-tight tracking-tight mb-4"
-              style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(26px, 3.5vw, 42px)", color: "#333333" }}
             >
               サービスの特徴
             </h2>
@@ -269,7 +269,7 @@ export default function ServicePageTemplate({ data }: Props) {
                       <Icon name={f.icon} className="w-5 h-5" />
                     </span>
                   </div>
-                  <h3 className="font-bold text-base mb-2" style={{ color: "#0F172A" }}>{f.title}</h3>
+                  <h3 className="font-bold text-base mb-2" style={{ color: "#333333" }}>{f.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: "#64748B" }}>{f.description}</p>
                 </div>
               </ScrollReveal>
@@ -285,7 +285,7 @@ export default function ServicePageTemplate({ data }: Props) {
             <SectionLabel color={data.accentColor}>Industries</SectionLabel>
             <h2
               className="font-black leading-tight tracking-tight mb-10"
-              style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#333333" }}
             >
               対応業種
             </h2>
@@ -324,7 +324,7 @@ export default function ServicePageTemplate({ data }: Props) {
             <SectionLabel color={data.accentColor}>FAQ</SectionLabel>
             <h2
               className="font-black leading-tight tracking-tight mb-14"
-              style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "#333333" }}
             >
               よくある質問
             </h2>
@@ -345,7 +345,7 @@ export default function ServicePageTemplate({ data }: Props) {
                       >
                         Q.
                       </span>
-                      <span className="font-semibold text-sm leading-relaxed" style={{ color: "#0F172A" }}>
+                      <span className="font-semibold text-sm leading-relaxed" style={{ color: "#333333" }}>
                         {item.q}
                       </span>
                     </span>
@@ -385,7 +385,7 @@ export default function ServicePageTemplate({ data }: Props) {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24" style={{ background: "#2563EB" }}>
+      <section className="py-24" style={{ background: "#096fc8" }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <ScrollReveal>
             <h2 className="font-black text-white text-2xl md:text-4xl mb-4 leading-tight">
@@ -397,7 +397,7 @@ export default function ServicePageTemplate({ data }: Props) {
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 hover:shadow-lg"
-              style={{ background: "#FFFFFF", color: "#2563EB" }}
+              style={{ background: "#FFFFFF", color: "#096fc8" }}
             >
               無料相談・お問い合わせ
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

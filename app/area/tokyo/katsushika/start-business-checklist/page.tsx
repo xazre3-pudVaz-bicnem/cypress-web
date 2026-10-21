@@ -73,12 +73,12 @@ const faqItems = [
 
 const S = {
   label: { fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" as const },
-  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" },
+  h2: { fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" },
   body: { fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "36px" },
   container: { maxWidth: "72rem", margin: "0 auto", padding: "0 24px" },
-  checkItem: { display: "flex", gap: "16px", padding: "20px 0", borderTop: "1px solid #E8E4DC" } as React.CSSProperties,
-  checkMark: { color: "#c4b89a", fontSize: "18px", minWidth: "24px", paddingTop: "1px" },
-  itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" },
+  checkItem: { display: "flex", gap: "16px", padding: "20px 0", borderTop: "1px solid #dde0e4" } as React.CSSProperties,
+  checkMark: { color: "var(--v2-accent)", fontSize: "18px", minWidth: "24px", paddingTop: "1px" },
+  itemTitle: { fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" },
   itemBody: { fontSize: "13px", color: "#374151", lineHeight: "1.85" },
 };
 
@@ -235,7 +235,7 @@ export default function Page() {
       <main>
 
         {/* HERO */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "72px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "72px" }}>
           <div style={S.container}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -244,16 +244,16 @@ export default function Page() {
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/area/tokyo/katsushika" style={{ color: "#6B7280" }}>東京都葛飾区</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>開業準備チェックリスト</span>
+              <span style={{ color: "#333333" }}>開業準備チェックリスト</span>
             </nav>
             <p style={S.label}>Katsushika — Startup Checklist</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
               葛飾区で起業する前に確認したい開業準備チェックリスト
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", maxWidth: "640px", marginBottom: "36px" }}>
               事業設計・資金計画・集客導線・ホームページ・GBP・SNS・営業先・収益柱の8カテゴリにわたる開業準備チェックリストです。葛飾区で起業する前に確認しておくことで、創業後のスタートがスムーズになります。
             </p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#0d1b2a", color: "#fff", padding: "14px 28px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
+            <Link href="/contact" style={{ display: "inline-block", background: "#293540", color: "#fff", padding: "14px 28px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
               創業時のWeb集客準備を相談する
             </Link>
           </div>
@@ -267,16 +267,16 @@ export default function Page() {
             <p style={S.body}>以下の8カテゴリのチェックリストを順番に確認してください。</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px", maxWidth: "800px" }}>
               {categories.map((cat, i) => (
-                <div key={cat} style={{ background: "#f8f6f2", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "13px", minWidth: "28px" }}>0{i + 1}</span>
-                  <span style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#0d1b2a" }}>{cat}</span>
+                <div key={cat} style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "28px" }}>0{i + 1}</span>
+                  <span style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "14px", color: "#333333" }}>{cat}</span>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <CheckSection title="事業設計チェック" items={businessDesignItems} bg="#f8f6f2" />
+        <CheckSection title="事業設計チェック" items={businessDesignItems} bg="#f0f1f2" />
 
         {/* SECTION 4: 資金計画 */}
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
@@ -301,17 +301,17 @@ export default function Page() {
           </div>
         </section>
 
-        <CheckSection title="集客導線チェック" items={marketingItems} bg="#f8f6f2" />
+        <CheckSection title="集客導線チェック" items={marketingItems} bg="#f0f1f2" />
         <CheckSection title="ホームページ制作チェック" items={hpItems} bg="#ffffff" />
-        <CheckSection title="Googleビジネスプロフィール（GBP）チェック" items={gbpItems} bg="#f8f6f2" />
+        <CheckSection title="Googleビジネスプロフィール（GBP）チェック" items={gbpItems} bg="#f0f1f2" />
         <CheckSection title="SNS・口コミ導線チェック" items={snsItems} bg="#ffffff" />
-        <CheckSection title="営業先・販路チェック" items={salesItems} bg="#f8f6f2" />
+        <CheckSection title="営業先・販路チェック" items={salesItems} bg="#f0f1f2" />
         <CheckSection title="収益柱チェック" items={revenueItems} bg="#ffffff" />
 
         {/* SECTION 11: 販売パートナー制度 */}
-        <section style={{ background: "#0d1b2a", padding: "72px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "72px 0" }}>
           <div style={S.container}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Revenue Stream</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "20px" }}>
               販売パートナー制度を検討するタイミング
             </h2>
@@ -325,14 +325,14 @@ export default function Page() {
         </section>
 
         {/* SECTION 12: 関連ページ */}
-        <section style={{ background: "#f8f6f2", padding: "72px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "72px 0" }}>
           <div style={S.container}>
             <p style={S.label}>Related Pages</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "28px" }}>関連ページ</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "14px" }}>
               {relatedLinks.map((item) => (
-                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #E8E4DC", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#0d1b2a", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
+                <Link key={item.href} href={item.href} style={{ background: "#FFFFFF", border: "1px solid #dde0e4", borderRadius: "8px", padding: "16px 14px", textDecoration: "none", display: "block" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "13px", color: "#333333", marginBottom: "4px", lineHeight: 1.5 }}>{item.label}</p>
                   <p style={{ fontSize: "11px", color: "#6B7280" }}>{item.desc}</p>
                 </Link>
               ))}
@@ -343,7 +343,7 @@ export default function Page() {
         <FaqSection
           items={faqItems}
           heading="葛飾区での開業準備についてよくある質問"
-          bgColor="#F9F8F5"
+          bgColor="#f0f1f2"
         />
 
         <PageContactCTA

@@ -300,19 +300,19 @@ export default function FaqOptimizationPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/aio" className="hover:underline" style={{ color: "#6B7280" }}>AIO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>FAQ最適化</span>
+              <span style={{ color: "#333333" }}>FAQ最適化</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               FAQ Optimization
             </p>
-            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               FAQ最適化｜AI検索に<br />引用されるコンテンツへ
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
@@ -335,13 +335,13 @@ export default function FaqOptimizationPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 On This Page
               </p>
-              <h2 className="font-black text-[28px] leading-tight mb-10" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] leading-tight mb-10" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 このページでわかること
               </h2>
               <ul className="space-y-4">
@@ -354,7 +354,7 @@ export default function FaqOptimizationPage() {
                   "FAQ最適化の効果を測定するための8つのKPIと確認場所",
                 ].map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px] leading-[1.8]" style={{ color: "#374151" }}>
-                    <span className="shrink-0 font-bold" style={{ color: "#c4b89a" }}>→</span>
+                    <span className="shrink-0 font-bold" style={{ color: "var(--v2-accent)" }}>→</span>
                     {point}
                   </li>
                 ))}
@@ -370,7 +370,7 @@ export default function FaqOptimizationPage() {
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 FAQ × AIO
               </p>
-              <h2 className="font-black text-[28px] leading-tight mb-8" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] leading-tight mb-8" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 FAQコンテンツとAIO対策の関係
               </h2>
               <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
@@ -392,25 +392,25 @@ export default function FaqOptimizationPage() {
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Challenges
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {CHALLENGES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -421,47 +421,47 @@ export default function FaqOptimizationPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Key Points
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               AIO対策で効果的なFAQ設計のポイント
             </h2>
             <div className="max-w-3xl">
               {POINTS.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {INDUSTRIES.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
-                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.industry}</h3>
-                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#FFFFFF", color: "#c4b89a", border: "1px solid #E8E4DC" }}>{item.point}</span>
+                      <h3 className="font-bold text-[16px]" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.industry}</h3>
+                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded" style={{ background: "#FFFFFF", color: "var(--v2-accent)", border: "1px solid #dde0e4" }}>{item.point}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -472,47 +472,47 @@ export default function FaqOptimizationPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {FLOW.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.step}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.step}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 成果を見るための指標 */}
-        <section className="py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs to Track
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {KPIS.map((item) => (
-                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex items-start gap-3 mb-2 flex-wrap">
-                      <h3 className="font-bold text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>{item.kpi}</h3>
-                      <span className="text-[11px] shrink-0" style={{ color: "#c4b89a" }}>確認場所：{item.where}</span>
+                      <h3 className="font-bold text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.kpi}</h3>
+                      <span className="text-[11px] shrink-0" style={{ color: "var(--v2-accent)" }}>確認場所：{item.where}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -524,7 +524,7 @@ export default function FaqOptimizationPage() {
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                 Placement Strategy
               </p>
-              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}>
+              <h2 className="font-black text-[28px] mb-8" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>
                 どのページにFAQを設置すべきか
               </h2>
               <p className="text-[15px] leading-[1.9] mb-6" style={{ color: "#374151" }}>
@@ -546,7 +546,7 @@ export default function FaqOptimizationPage() {
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="FAQ最適化に関するよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={FAQ_ITEMS} heading="FAQ最適化に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={RELATED_LINKS} />
 

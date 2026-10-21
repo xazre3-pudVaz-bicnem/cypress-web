@@ -290,21 +290,21 @@ export default function CategorySettingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>カテゴリ設定</span>
+              <span style={{ color: "#333333" }}>カテゴリ設定</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Knowledge
             </p>
             <h1
               className="text-[40px] md:text-[52px] font-black leading-tight tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               Googleビジネスプロフィール<br />カテゴリ設定
             </h1>
@@ -336,7 +336,7 @@ export default function CategorySettingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-10"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               このページでわかること
             </h2>
@@ -352,7 +352,7 @@ export default function CategorySettingPage() {
                 <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                   <span
                     className="shrink-0 font-bold text-[15px]"
-                    style={{ color: "#c4b89a", marginTop: "2px" }}
+                    style={{ color: "var(--v2-accent)", marginTop: "2px" }}
                   >
                     →
                   </span>
@@ -364,14 +364,14 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ設定がMEOに与える影響 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Impact on MEO
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               カテゴリ設定がMEOに与える影響
             </h2>
@@ -404,7 +404,7 @@ export default function CategorySettingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-8"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               プライマリカテゴリとセカンダリカテゴリ
             </h2>
@@ -425,27 +425,27 @@ export default function CategorySettingPage() {
         </section>
 
         {/* カテゴリ選定のポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Selection Guide
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               カテゴリ選定のポイント
             </h2>
             <div className="max-w-3xl">
               {categoryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -453,7 +453,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -466,20 +466,20 @@ export default function CategorySettingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.title}
                     </h3>
@@ -487,33 +487,33 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               業種別の活用ポイント
             </h2>
             <div className="max-w-3xl">
               {industryPoints.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.industry}
                     </h3>
@@ -521,7 +521,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -534,20 +534,20 @@ export default function CategorySettingPage() {
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.step}
                     </h3>
@@ -555,33 +555,33 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 成果を見るための指標 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs to Track
             </p>
             <h2
               className="font-black text-[28px] mb-12"
-              style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+              style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
             >
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item) => (
-                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {item.num}
                   </span>
                   <div>
                     <h3
                       className="font-semibold text-[15px] mb-1.5"
-                      style={{ fontFamily: "var(--font-serif)", color: "#0d1b2a" }}
+                      style={{ fontFamily: "var(--font-serif)", color: "#333333" }}
                     >
                       {item.kpi}
                     </h3>
@@ -589,7 +589,7 @@ export default function CategorySettingPage() {
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

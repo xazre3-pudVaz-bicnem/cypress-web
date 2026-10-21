@@ -321,21 +321,21 @@ export default function LocalKeywordPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>地域キーワード設計</span>
+              <span style={{ color: "#333333" }}>地域キーワード設計</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Local Keyword Strategy
             </p>
             <h1
               className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6"
-              style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}
+              style={{ color: "#333333", fontFamily: "var(--font-serif)" }}
             >
               地域キーワード調査・設計
             </h1>
@@ -354,12 +354,12 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* このページでわかること — Section A */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <ul className="max-w-3xl space-y-4">
@@ -372,7 +372,7 @@ export default function LocalKeywordPage() {
                 "キーワード戦略の効果を測るKPIと、3ヶ月ごとの見直しサイクルの作り方",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <span className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</span>
                 </li>
               ))}
@@ -386,7 +386,7 @@ export default function LocalKeywordPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               About Local Keywords
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               地域キーワードとは
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -415,27 +415,27 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* よくある課題と原因 — Section B */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Issues
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-3xl">
               {commonIssues.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -446,44 +446,44 @@ export default function LocalKeywordPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Design Method
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               地域キーワードの設計方法
             </h2>
             <div className="max-w-3xl">
               {keywordMethods.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 業種別の活用ポイント — Section C */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
               {industryPoints.map((item, i) => (
-                <div key={i} className="py-6 px-4" style={{ borderTop: "1px solid #E8E4DC", borderLeft: i % 2 !== 0 ? "1px solid #E8E4DC" : "none" }}>
+                <div key={i} className="py-6 px-4" style={{ borderTop: "1px solid #dde0e4", borderLeft: i % 2 !== 0 ? "1px solid #dde0e4" : "none" }}>
                   <div className="flex items-start gap-4">
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</h3>
+                      <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.industry}</h3>
                       <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                     </div>
                   </div>
@@ -499,7 +499,7 @@ export default function LocalKeywordPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Optimization
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEOでの地域キーワード最適化
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -515,44 +515,44 @@ export default function LocalKeywordPage() {
                   { label: "投稿コンテンツ", content: "週1回以上の投稿に地域情報を組み込みます。「新宿エリアのお客様へのお知らせ」「渋谷・代官山近くにお住まいの方へ」などの地域を明示したタイトル・内容が効果的です。" },
                   { label: "Q&A欄", content: "「渋谷区内での出張対応は可能ですか？」「新宿駅から徒歩何分ですか？」などの地域に関連した質問と回答を設定することで、地域キーワードとの関連性を高めます。" },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                  <div key={i} className="flex gap-6 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h3 className="font-bold text-[14px] mb-1.5" style={{ color: "#0d1b2a" }}>{item.label}</h3>
+                      <h3 className="font-bold text-[14px] mb-1.5" style={{ color: "#333333" }}>{item.label}</h3>
                       <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.content}</p>
                     </div>
                   </div>
                 ))}
-                <div style={{ borderTop: "1px solid #E8E4DC" }} />
+                <div style={{ borderTop: "1px solid #dde0e4" }} />
               </div>
             </div>
           </div>
         </section>
 
         {/* 実装・改善フロー — Section D */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装・改善フロー
             </h2>
             <div className="max-w-3xl">
               {implementationFlow.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</h3>
+                    <h3 className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.step}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -565,7 +565,7 @@ export default function LocalKeywordPage() {
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   Keyword Design Process
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
                   キーワード設計手順
                 </h2>
                 <div className="space-y-4">
@@ -594,28 +594,28 @@ export default function LocalKeywordPage() {
         </section>
 
         {/* 成果を見るための指標 — Section E */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPIs &amp; Metrics
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-3xl">
               {kpis.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.name}</h3>
-                    <p className="text-[12px] mb-2 font-medium" style={{ color: "#c4b89a" }}>確認場所: {item.where}</p>
+                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.name}</h3>
+                    <p className="text-[12px] mb-2 font-medium" style={{ color: "var(--v2-accent)" }}>確認場所: {item.where}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

@@ -139,17 +139,17 @@ export default function TechnicalSeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>テクニカルSEO</span>
+              <span style={{ color: "#333333" }}>テクニカルSEO</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Technical SEO</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               テクニカルSEO
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -168,10 +168,10 @@ export default function TechnicalSeoPage() {
         </section>
 
         {/* A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl flex flex-col gap-0">
@@ -183,12 +183,12 @@ export default function TechnicalSeoPage() {
                 "canonicalタグ・hreflang・重複URL問題を解決するための正規化戦略",
                 "Core Web Vitals（LCP・CLS・INP）の各指標の目標値と改善施策の優先順位の付け方",
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -197,7 +197,7 @@ export default function TechnicalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある技術的課題と原因
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -216,23 +216,23 @@ export default function TechnicalSeoPage() {
                 { t: "Core Web Vitalsが目標値を下回っている", b: "PageSpeed Insightsのフィールドデータ（実際のユーザー計測値）でLCP・CLS・INPのいずれかが「改善が必要」または「不良」になっているにもかかわらず、対策が後回しになっているサイトがあります。" },
                 { t: "モバイルとPCでコンテンツが異なる", b: "モバイル版でPCより少ないコンテンツしか表示されていないサイトは、モバイルファーストインデックスにより評価が低くなります。レスポンシブデザインを採用しているサイトでは、CSSでhidden処理された重要なコンテンツがないかを確認します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "900px", marginTop: "0" }} />
+            <div style={{ borderTop: "1px solid #dde0e4", maxWidth: "900px", marginTop: "0" }} />
           </div>
         </section>
 
         {/* テクニカルSEO未対応の問題 */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Technical SEO Risks</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Technical SEO Risks</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               テクニカルSEO未対応が引き起こす4つの問題
             </h2>
@@ -243,7 +243,7 @@ export default function TechnicalSeoPage() {
                 { t: "ページ速度の問題でCore Web Vitals不良", b: "LCP・CLS・INPの目標値を達成できていないページはランキングで不利になります。Next.js・Vercelの活用や画像最適化などの技術的施策でスコアを改善します。" },
                 { t: "構造化データ未実装でリッチリザルトを取れない", b: "FAQ・パンくずリスト・組織情報などのSchema.orgマークアップがないと、検索結果での視認性が低くなります。構造化データはCTR向上とE-E-A-T向上の両方に貢献します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -253,10 +253,10 @@ export default function TechnicalSeoPage() {
         </section>
 
         {/* C: 技術的な問題タイプ別解説 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Technical Reference</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               技術的な問題タイプ別解説
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -301,15 +301,15 @@ export default function TechnicalSeoPage() {
                   body: "重要なページへの内部リンクを増やすことで、クロールバジェットを効率よく配分できます。孤立したページ（どこからもリンクされていないページ）はScreaming Frogの「Orphan Pages」機能で発見できます。深すぎる階層（クリック数4回以上）のページはクロールされにくいため、サイトマップやフッターリンクで補完します。また、リンク切れ（404）の内部リンクを修正することでクロールの効率が上がります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -318,7 +318,7 @@ export default function TechnicalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Areas</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               テクニカルSEOの主要領域
             </h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
@@ -356,8 +356,8 @@ export default function TechnicalSeoPage() {
                   body: "複数言語・地域に対応するサイトでは、hreflang属性を正しく設定することで、各言語・地域の検索ユーザーに適切なページが表示されるようになります。設定ミスは重複コンテンツ問題を引き起こすこともあります。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -366,10 +366,10 @@ export default function TechnicalSeoPage() {
         </section>
 
         {/* D: 実装フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Diagnostic Flow</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               テクニカルSEO診断・改善フロー
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -388,15 +388,15 @@ export default function TechnicalSeoPage() {
                 { t: "構造化データの実装状況をRich Results Testで確認する", b: "主要ページをRich Results Testで検証し、FAQPage・BreadcrumbList・Organizationが正常に検出されているかを確認します。エラーがあれば修正します。" },
                 { t: "改善施策を実施してSearch ConsoleでURL再インデックスを依頼する", b: "修正後はSearch ConsoleのURL検査ツールでインデックス登録をリクエストします。数日〜2週間後にSearch Consoleのデータで改善状況を確認し、残課題を特定して次のサイクルに進みます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -405,7 +405,7 @@ export default function TechnicalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[14px] leading-[1.9] mb-10 max-w-2xl" style={{ color: "#374151" }}>
@@ -421,24 +421,24 @@ export default function TechnicalSeoPage() {
                 { kpi: "リダイレクトエラー・チェーン件数", how: "Screaming Frogで月次クロールを実施し、新たに発生したリダイレクトチェーン・4xxエラー・5xxエラーの件数を確認します。コンテンツ更新やページ追加のたびに新しい問題が発生していないかをチェックします。" },
                 { kpi: "検索結果の表示回数・CTR", how: "Search Consoleの「検索パフォーマンス」レポートで表示回数・クリック数・CTRの推移を確認します。テクニカルSEO改善後にインデックスが回復したページの表示回数が増加していれば、直接的な効果の証拠です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[14px] mb-2" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.how}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div style={{ borderTop: "1px solid #E8E4DC", maxWidth: "900px" }} />
+            <div style={{ borderTop: "1px solid #dde0e4", maxWidth: "900px" }} />
           </div>
         </section>
 
         {/* サイプレスの支援 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Support</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのテクニカルSEO支援
             </h2>
             <div className="max-w-4xl">
@@ -450,15 +450,15 @@ export default function TechnicalSeoPage() {
                 { title: "構造化データ実装", body: "JSON-LD形式でFAQPage・BreadcrumbList・Article・Organization等の構造化データを実装します。Next.js・WordPress・その他CMSに対応。Google Rich Results Testで検証します。" },
                 { title: "継続的なテクニカルSEO監視", body: "月次のScreaming FrogクロールとSearch Consoleレポートの確認を通じて、新たに発生したテクニカルSEO問題を早期発見します。コンテンツ更新・ページ追加時の技術的なチェックもサポートします。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>

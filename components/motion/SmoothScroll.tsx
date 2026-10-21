@@ -25,6 +25,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     const lenis = new Lenis({
       duration: 1.15,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      anchors: { offset: -96 },
     });
     window.__cyLenis = lenis;
     let frame = requestAnimationFrame(function loop(time) {

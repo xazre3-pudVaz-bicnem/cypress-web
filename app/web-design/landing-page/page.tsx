@@ -78,17 +78,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F9F8F5" }} className="pt-32 pb-20">
+        <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
               <Link href="/web-design" style={{ color: "#6B7280" }}>ホームページ制作</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>ランディングページ制作</span>
+              <span style={{ color: "#333333" }}>ランディングページ制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Landing Page</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               ランディングページ制作｜CV最大化設計
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -117,7 +117,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "720px", display: "flex", flexDirection: "column" }}>
@@ -129,8 +129,8 @@ export default function Page() {
                 "スマートフォン対応・ページ速度最適化でLPのパフォーマンスを維持する方法",
                 "ヒートマップ・A/Bテスト・GA4を使ったLP改善の継続サイクルの回し方",
               ].map((text, i) => (
-                <div key={i} style={{ display: "flex", gap: "14px", padding: "16px 0", borderTop: "1px solid #E8E4DC", alignItems: "flex-start" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "14px", padding: "16px 0", borderTop: "1px solid #dde0e4", alignItems: "flex-start" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0 }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{text}</p>
                 </div>
               ))}
@@ -139,10 +139,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -158,10 +158,10 @@ export default function Page() {
                 { n: "09", t: "A/Bテストをしたことがない", b: "公開後に「このデザインで合っているか」「このコピーが最善か」を勘に頼って判断している場合、改善の根拠がありません。A/Bテストを定常的に回すことで、データに基づいた継続的な改善が可能になります。" },
                 { n: "10", t: "LPと広告文の整合性がない", b: "Google広告で「初回無料相談」と訴求しているのに、LPにその情報がない・目立たない場合、ユーザーは期待を裏切られた感覚になり離脱します。広告文とLPのファーストビューのメッセージを一致させることで品質スコアも改善します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -171,9 +171,9 @@ export default function Page() {
         </section>
 
         {/* CVが取れないLPの共通パターン — existing dark section */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Common Mistakes</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Common Mistakes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#FFFFFF", fontWeight: 700, marginBottom: "40px" }}>
               CVが取れないLPの4つの共通パターン
             </h2>
@@ -184,7 +184,7 @@ export default function Page() {
                 { t: "CTAのタイミングが悪い", b: "申し込みボタンがページ最下部にしかないケースは損失が大きいです。ファーストビュー・中間・最下部の3か所にCTAを設置することでCV機会を最大化します。" },
                 { t: "フォームが長すぎる", b: "必要な情報を収集しようとするあまり、フォームが10項目以上になっているケースは離脱率が急上昇します。後で電話確認できる情報はフォームから削除するのが原則です。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -197,7 +197,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Use Cases</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               業種別の活用ポイント
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -211,12 +211,12 @@ export default function Page() {
                 { n: "07", industry: "学習塾", use: "春期・夏期講習LP", b: "季節講習LPは「申込締切日」のカウントダウン・「残席〇〇名」の希少性訴求でCVを促進します。講習内容・対象学年・費用・日程を明確に記載し、体験授業予約フォームへの誘導を複数箇所に設置します。保護者向けの安心感訴求も重要です。" },
                 { n: "08", industry: "EC・商品販売", use: "商品販売LP", b: "EC・D2C商品のLPは商品の世界観・使用シーン・素材・製造背景をビジュアルで伝えることが購買決定に直結します。お客様の声・使用前後の変化・保証内容・FAQ・限定オファーを組み合わせ、購入ボタンまでの障壁を最小化します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline", marginBottom: "6px" }}>
-                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a" }}>{item.industry}</p>
-                      <p style={{ fontSize: "12px", color: "#c4b89a", fontWeight: 600 }}>{item.use}</p>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333" }}>{item.industry}</p>
+                      <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontWeight: 600 }}>{item.use}</p>
                     </div>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
@@ -227,10 +227,10 @@ export default function Page() {
         </section>
 
         {/* CV率を高めるLPの必須要素 — existing section */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>LP Elements</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               CV率を高めるLPの必須要素
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -242,10 +242,10 @@ export default function Page() {
                 { n: "05", t: "FAQ（よくある質問）で不安を解消", b: "申し込み前に生じる典型的な疑問・不安を事前に解消するFAQを設置します。「これって〇〇は対象外？」「料金はいくら？」などの質問に答えることでCTAへの障壁を下げます。" },
                 { n: "06", t: "入力最小化のフォーム設計", b: "問い合わせフォームの入力項目は最小限にします。名前・メール・内容の3項目から始め、必要に応じて追加する方針で設計します。フォームが長いほど離脱率が上がります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Production Flow</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               LP制作・実装フロー
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -274,10 +274,10 @@ export default function Page() {
                 { n: "09", t: "公開・動作確認", b: "本番環境への公開前に、PC・スマートフォン・タブレットでのデザイン確認・フォーム送信テスト・自動返信メール確認・ページ速度計測・SEOメタデータの確認を行います。広告のリンク先として問題がないことを確認してから公開します。" },
                 { n: "10", t: "改善サイクル（ヒートマップ・A/Bテスト）", b: "公開後はGA4でCV率・離脱率・スクロール深度をモニタリングし、ヒートマップでユーザー行動を分析します。仮説を立ててA/Bテストを実施し、CV率が高い方を採用する改善サイクルを継続的に回します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -287,10 +287,10 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs &amp; Measurement</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               成果を見るための指標（KPI）
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -303,12 +303,12 @@ export default function Page() {
                 { n: "06", t: "広告ROAS（費用対効果）", measure: "Google広告 / Meta広告管理画面 → ROAS", b: "LP経由の広告費に対して何倍の売上が発生したかを示す指標です。LPのCV率が上がることで同じ広告費でのROASが改善します。LPの改善と広告の最適化をセットで行います。" },
                 { n: "07", t: "月間CV数", measure: "GA4 → コンバージョン数の月次推移", b: "月次の問い合わせ・申し込み・購入件数の絶対数です。CV率が同じでも、広告のクリック数・オーガニックトラフィックが増えればCV数は増加します。CV率と合わせてトラフィック量も並行してモニタリングします。" },
               ].map((item) => (
-                <div key={item.n} style={{ padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <div style={{ display: "flex", gap: "20px" }}>
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#0d1b2a", marginBottom: "4px" }}>{item.t}</p>
-                      <p style={{ fontSize: "11px", color: "#c4b89a", fontWeight: 600, marginBottom: "8px", fontFamily: "var(--font-mono, monospace)" }}>{item.measure}</p>
+                      <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.t}</p>
+                      <p style={{ fontSize: "11px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "8px", fontFamily: "var(--font-mono, monospace)" }}>{item.measure}</p>
                       <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                     </div>
                   </div>

@@ -139,17 +139,17 @@ export default function ServicesSnsPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/services" style={{ color: "#6B7280" }} className="hover:underline">サービス</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>SNS運用</span>
+              <span style={{ color: "#333333" }}>SNS運用</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SNS Marketing Service</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               SNS運用サービス
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -159,7 +159,7 @@ export default function ServicesSnsPage() {
               フォロワー数を増やすことよりも、実際の来店・問い合わせ・売上につながるSNS活用を重視した運用設計を行います。SEO・MEOと組み合わせた統合的なWebマーケティング支援も可能です。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#0F172A", color: "#FFFFFF" }}>
+              <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
               <Link href="/cost/sns" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
@@ -176,10 +176,10 @@ export default function ServicesSnsPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -192,7 +192,7 @@ export default function ServicesSnsPage() {
                 "SNS運用の成果を測るための7つの指標と確認方法",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="shrink-0 font-bold text-[15px]" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
@@ -204,7 +204,7 @@ export default function ServicesSnsPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Service Details</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SNS運用サービスの内容
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -216,23 +216,23 @@ export default function ServicesSnsPage() {
                 { title: "SNS広告（Meta広告・LINE広告）", body: "ターゲット設定・クリエイティブ制作・予算管理・効果計測・改善を行うSNS広告の運用代行です。" },
                 { title: "インサイト分析・月次レポート", body: "フォロワー数・リーチ・インプレッション・エンゲージメント率・プロフィールアクセス数などのインサイトデータを毎月分析してレポートします。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* SNS集客が重要な理由 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Why SNS Matters</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Why SNS Matters</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               SNS集客が重要な理由｜今の検索行動の変化
             </h2>
@@ -253,10 +253,10 @@ export default function ServicesSnsPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -272,15 +272,15 @@ export default function ServicesSnsPage() {
                 { title: "SNS運用の費用対効果が見えない", body: "フォロワー数や投稿数だけを追いかけていると、ビジネス貢献度が測りにくいです。SNS経由の問い合わせ数・ウェブサイトタップ数・エンゲージメント率など具体的なKPIを設定し、月次レポートで可視化します。" },
                 { title: "複数SNSの管理が大変", body: "Instagram・X・LINE・TikTokをそれぞれ個別に運用すると工数が膨大になります。各プラットフォームの特性に合わせてコンテンツを最適化しながら効率よく管理するマルチプラットフォーム運用設計でリソースを最適化します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -289,7 +289,7 @@ export default function ServicesSnsPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Platform Guide</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               プラットフォーム別 活用ガイド
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -299,27 +299,27 @@ export default function ServicesSnsPage() {
                 { num: "03", platform: "LINE公式アカウント", target: "既存顧客へのリテンション", body: "クーポン・予約・お知らせ配信に強く、友だち登録した既存顧客への継続的なコミュニケーションに最適。開封率がメールより高く、来店・再購入促進の導線として機能する。" },
                 { num: "04", platform: "TikTok", target: "若年層・エンタメ・飲食", body: "縦型短尺動画でバズりやすいアルゴリズム。フォロワーゼロでも良質なコンテンツで拡散される可能性があり、若年層へのリーチや飲食店・エンタメ系のブランド認知拡大に有効。" },
               ].map((item) => (
-                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.num} className="flex gap-6 py-7" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
                     <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{item.platform}</p>
-                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#E8E4DC", color: "#374151" }}>{item.target}</span>
+                      <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{item.platform}</p>
+                      <span className="text-[11px] px-2 py-0.5" style={{ background: "#dde0e4", color: "#374151" }}>{item.target}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section C: 業種別の支援ポイント */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industry Focus</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の支援ポイント
             </h2>
             <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
@@ -333,8 +333,8 @@ export default function ServicesSnsPage() {
                 { industry: "不動産", body: "物件紹介動画・街歩き動画・引っ越し事例のインタビューがSNSで反応を得やすいコンテンツです。地域密着の情報発信でエリア専門家としてのブランドを構築し、問い合わせ前の信頼形成を図ります。" },
                 { industry: "フィットネス・スポーツ", body: "トレーニング動画・食事アドバイス・会員の変化ビフォーアフターがInstagram・TikTokで高エンゲージメントを生みます。コーチの専門性を前面に出したコンテンツで入会検討層へのアプローチを強化します。" },
               ].map((item) => (
-                <div key={item.industry} className="p-6" style={{ border: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[13px] mb-3" style={{ color: "#c4b89a" }}>{item.industry}</p>
+                <div key={item.industry} className="p-6" style={{ border: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[13px] mb-3" style={{ color: "var(--v2-accent)" }}>{item.industry}</p>
                   <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -346,7 +346,7 @@ export default function ServicesSnsPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Process</p>
-            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ご支援の流れ
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -362,24 +362,24 @@ export default function ServicesSnsPage() {
                 { title: "エンゲージメント管理", body: "コメントへの返信・フォロワーとの交流・DM一次対応を管理します。アルゴリズムはエンゲージメントの高いアカウントを優先的に表示するため、丁寧なコミュニティ管理が重要です。" },
                 { title: "月次レポート・改善提案", body: "フォロワー増減・エンゲージメント率・リーチ・ウェブサイトタップ・問い合わせ数を集計した月次レポートを提供します。前月比と改善提案をセットでお伝えし、翌月の運用に反映します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* SNS運用で避けるべき失敗 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SNS運用で避けるべき5つの失敗
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -390,7 +390,7 @@ export default function ServicesSnsPage() {
                 "業種・ターゲットに合わないプラットフォームを選んでいる",
                 "インサイトデータを見ずに改善できていない",
               ].map((text, i) => (
-                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span
                     className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-bold"
                     style={{ background: "#FEE2E2", color: "#DC2626", minWidth: "24px", minHeight: "24px" }}
@@ -400,7 +400,7 @@ export default function ServicesSnsPage() {
                   <p className="text-[14px] leading-[1.8] pt-0.5" style={{ color: "#374151" }}>{text}</p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -409,7 +409,7 @@ export default function ServicesSnsPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPI Metrics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -422,20 +422,20 @@ export default function ServicesSnsPage() {
                 { kpi: "SNS経由問い合わせ数", where: "Google Analytics 4でSNSチャネルからのコンバージョン数を計測します。問い合わせフォームのUTMパラメータ設定でSNS別の貢献度を可視化します。" },
                 { kpi: "月次投稿数", where: "計画通りの投稿頻度が維持されているかを確認します。投稿数の安定はアルゴリズム評価と継続的なリーチ獲得の基盤であり、代行の運用品質指標として月次レポートに含めます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.kpi}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.where}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SNS運用サービスの無料相談"

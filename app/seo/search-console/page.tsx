@@ -438,17 +438,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>Google Search Console活用</span>
+              <span style={{ color: "#333333" }}>Google Search Console活用</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SEO Tool</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontWeight: 700, lineHeight: 1.3, marginBottom: "24px" }}>
               Google Search Console活用
             </h1>
             <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#374151", marginBottom: "16px", maxWidth: "640px" }}>
@@ -482,9 +482,9 @@ export default function Page() {
         </section>
 
         {/* Search Consoleなしのリスク — dark section */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#c4b89a", fontSize: "11px", marginBottom: "12px" }}>Risks Without Data</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "var(--v2-accent)", fontSize: "11px", marginBottom: "12px" }}>Risks Without Data</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               Search Consoleを活用しないと気づけない4つのSEO盲点
             </h2>
@@ -507,7 +507,7 @@ export default function Page() {
                   b: "Googleのアルゴリズム更新後に特定ページの順位が下がっても、Search Consoleなしでは気づくのが遅くなります。週次・月次でのモニタリングが順位低下を最小化します。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -520,7 +520,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               Search Consoleで確認できる主要データ
             </h2>
             <p style={{ fontSize: "14px", lineHeight: "1.8", color: "#374151", marginBottom: "40px", maxWidth: "640px" }}>
@@ -528,10 +528,10 @@ export default function Page() {
             </p>
             <div style={{ maxWidth: "720px" }}>
               {keyMetrics.map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -541,10 +541,10 @@ export default function Page() {
         </section>
 
         {/* A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You&apos;ll Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl">
@@ -556,7 +556,7 @@ export default function Page() {
                 "業種別（飲食・医療・EC・不動産など）に注目すべきSearch Consoleのデータ",
                 "Search Consoleを使った月次SEO改善PDCAサイクルの回し方",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex items-start gap-4 py-4" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>0{i + 1}</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
@@ -569,7 +569,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Issues</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因：データを活かせないパターン
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -577,10 +577,10 @@ export default function Page() {
             </p>
             <div className="max-w-3xl">
               {commonIssues.map((item) => (
-                <div key={item.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.t}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
@@ -590,12 +590,12 @@ export default function Page() {
         </section>
 
         {/* PDCA & 月次チェック */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div className="grid md:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>PDCA Cycle</p>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "20px" }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "20px" }}>
                   Search ConsoleによるSEO改善サイクル
                 </h2>
                 <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "16px" }}>
@@ -605,8 +605,8 @@ export default function Page() {
                   特に重要なのは「表示回数は多いがクリック率が低い」キーワードの発見です。これらはタイトル・メタ説明文の改善だけで流入を大きく増やせる可能性があります。
                 </p>
               </div>
-              <div style={{ background: "#FFFFFF", padding: "32px", border: "1px solid #E8E4DC" }}>
-                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "20px" }}>月次チェック項目</p>
+              <div style={{ background: "#FFFFFF", padding: "32px", border: "1px solid #dde0e4" }}>
+                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "20px" }}>月次チェック項目</p>
                 {[
                   "検索パフォーマンスの前月比・前年比確認",
                   "CTRが低い（5%未満）キーワードのタイトル改善",
@@ -617,7 +617,7 @@ export default function Page() {
                   "構造化データ（拡張機能）のエラー確認",
                   "被リンク・内部リンク状況の確認",
                 ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: i > 0 ? "1px solid #E8E4DC" : "none", alignItems: "flex-start" }}>
+                  <div key={i} style={{ display: "flex", gap: "12px", padding: "10px 0", borderTop: i > 0 ? "1px solid #dde0e4" : "none", alignItems: "flex-start" }}>
                     <span style={{ color: "#9ca3af", fontSize: "12px", minWidth: "20px", marginTop: "2px" }}>✓</span>
                     <p style={{ fontSize: "14px", color: "#374151" }}>{item}</p>
                   </div>
@@ -631,7 +631,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別のSearch Console活用ポイント
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -639,10 +639,10 @@ export default function Page() {
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl">
               {industryPoints.map((ind) => (
-                <div key={ind.industry} className="p-6" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
+                <div key={ind.industry} className="p-6" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-[11px] font-mono" style={{ color: "#9CA3AF" }}>{ind.icon}</span>
-                    <p className="font-bold text-[15px]" style={{ color: "#0d1b2a" }}>{ind.industry}</p>
+                    <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{ind.industry}</p>
                   </div>
                   <ul className="space-y-2">
                     {ind.points.map((pt, i) => (
@@ -679,10 +679,10 @@ export default function Page() {
         </section>
 
         {/* D: 具体的な改善手順 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Step-by-Step</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Search Console活用の具体的な手順
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -690,10 +690,10 @@ export default function Page() {
             </p>
             <div className="max-w-3xl">
               {setupSteps.map((s) => (
-                <div key={s.step} className="flex items-start gap-5 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={s.step} className="flex items-start gap-5 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{s.step}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{s.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{s.title}</p>
                     <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{s.detail}</p>
                   </div>
                 </div>
@@ -706,7 +706,7 @@ export default function Page() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs to Track</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標（KPI）
             </h2>
             <p className="text-[14px] leading-[1.8] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -714,10 +714,10 @@ export default function Page() {
             </p>
             <div className="max-w-3xl">
               {kpiItems.map((kpi) => (
-                <div key={kpi.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={kpi.n} className="flex items-start gap-5 py-5" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{kpi.n}</span>
                   <div>
-                    <p className="font-bold text-[14px] mb-1" style={{ color: "#0d1b2a" }}>{kpi.label}</p>
+                    <p className="font-bold text-[14px] mb-1" style={{ color: "#333333" }}>{kpi.label}</p>
                     <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{kpi.desc}</p>
                   </div>
                 </div>
@@ -726,7 +726,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Google Search Console活用についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="Google Search Console活用についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Search Console活用のサポート"

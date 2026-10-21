@@ -12,6 +12,7 @@ interface Props {
   note?: string;
 }
 
+/** 下層ページ共通のお問い合わせ帯（トップの Get In Touch と同じ青い帯） */
 export default function PageContactCTA({
   heading = "Web集客に関するご相談",
   body = "MEO、SEO、AIO、ホームページ制作、SNS運用など、Web集客に関するご相談を承っています。現在の状況を確認したうえで、必要な施策をご提案します。",
@@ -20,51 +21,43 @@ export default function PageContactCTA({
   note,
 }: Props) {
   return (
-    <section className="py-20 md:py-24" style={{ background: "#FFFFFF", borderTop: "1px solid #F0EDE6" }}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-2xl">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-            Contact
+    <section
+      className="relative overflow-hidden px-[var(--v2-gutter)] py-20 text-white md:py-28"
+      style={{ background: "var(--v2-blue)" }}
+      data-tone="dark"
+    >
+      <div className="mx-auto grid max-w-[1180px] gap-10 md:grid-cols-[1.1fr_1fr] md:items-end">
+        <div>
+          <p className="v2-display text-[clamp(52px,8vw,120px)] leading-[0.92]" aria-hidden>
+            Get In Touch
           </p>
-          <h2 className="font-black text-[26px] mb-5 leading-tight" style={{ color: "#0F172A" }}>
-            {heading}
-          </h2>
-          <p className="text-[15px] leading-[1.9] mb-8" style={{ color: "#374151" }}>
-            {body}
-          </p>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+          <h2 className="mt-6 text-[20px] font-bold tracking-[0.03em] text-white md:text-[26px]">{heading}</h2>
+        </div>
+        <div>
+          <p className="text-[14px] font-semibold leading-[2]">{body}</p>
+          <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-5">
             <Link
               href={href}
-              className="inline-flex items-center gap-2 px-8 py-3.5 text-[14px] font-medium transition-all hover:bg-[#0F172A] hover:text-white"
-              style={{ border: "1px solid #0F172A", color: "#0F172A" }}
+              className="group inline-flex items-center gap-3 rounded-full bg-white py-3 pl-7 pr-3 text-[15px] font-bold text-[var(--v2-blue)] transition-transform duration-500 hover:scale-[1.03]"
+              style={{ transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
             >
               {ctaLabel}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
+              <span aria-hidden className="grid h-8 w-8 place-items-center rounded-full bg-[var(--v2-blue)] text-white transition-transform duration-500 group-hover:translate-x-1">
+                <svg width="11" height="11" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M1.5 5h7M5.5 2l3 3-3 3" />
+                </svg>
+              </span>
             </Link>
             {/* フォームを使いたくない層の離脱を防ぐため、直接のメール窓口も併記する。 */}
             <div>
-              <p className="text-[11px] tracking-[0.14em] uppercase mb-1" style={{ color: "#9CA3AF" }}>
-                メールでのご相談
-              </p>
-              <a
-                href={CONTACT_MAILTO}
-                className="text-[15px] font-medium underline underline-offset-4 transition-opacity hover:opacity-60"
-                style={{ color: "#0F172A" }}
-              >
+              <p className="text-[12px] font-bold">メールでのご相談</p>
+              <a href={CONTACT_MAILTO} className="text-[15px] font-bold underline underline-offset-4 transition-opacity hover:opacity-70">
                 {CONTACT_EMAIL}
               </a>
-              <p className="text-[12px] mt-1" style={{ color: "#9CA3AF" }}>
-                受付時間 {CONTACT_HOURS}
-              </p>
+              <p className="mt-1 text-[12px] font-semibold">受付時間 {CONTACT_HOURS}</p>
             </div>
           </div>
-          {note && (
-            <p className="text-[12px] leading-[1.9] mt-6 max-w-xl" style={{ color: "#9CA3AF" }}>
-              {note}
-            </p>
-          )}
+          {note && <p className="mt-6 max-w-xl text-[12px] font-medium leading-[1.9]">{note}</p>}
         </div>
       </div>
     </section>

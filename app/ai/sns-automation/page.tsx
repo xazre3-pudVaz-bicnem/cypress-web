@@ -138,17 +138,17 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#F9F8F5" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/ai" style={{ color: "#6B7280" }}>AI活用支援</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>SNS投稿自動化</span>
+              <span style={{ color: "#333333" }}>SNS投稿自動化</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>AI — SNS Automation</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(28px,4vw,48px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(28px,4vw,48px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               SNS投稿AI自動化<br />Instagram・X・TikTokの投稿文を自動生成
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -177,7 +177,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "680px", display: "flex", flexDirection: "column", gap: "0" }}>
@@ -189,8 +189,8 @@ export default function Page() {
                 "業種別（飲食・美容・歯科・不動産など）の具体的な活用ポイントと事例",
                 "SNS自動化の効果を測定するためのKPIと計測場所の一覧",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
-                  <span style={{ color: "#c4b89a", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
+                <div key={i} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ color: "var(--v2-accent)", fontWeight: 700, fontSize: "15px", flexShrink: 0, marginTop: "1px" }}>→</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
               ))}
@@ -199,9 +199,9 @@ export default function Page() {
         </section>
 
         {/* Hidden Costs */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Hidden Costs</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Hidden Costs</p>
             <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               SNS自動化なしで起きる4つのコスト
             </h2>
@@ -212,7 +212,7 @@ export default function Page() {
                 { t: "投稿内容がバラつきブランドが伝わらない", b: "疲れた日・忙しい日に「とりあえず」投稿した内容はブランドトーンがずれます。一貫性のない発信は信頼性を低下させます。" },
                 { t: "GBP投稿が止まりMEO評価が下がる", b: "Googleビジネスプロフィールへの投稿停止は「活動していないビジネス」と評価され、Googleマップでの表示順位に影響します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -222,10 +222,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -271,12 +271,12 @@ export default function Page() {
                   b: "各SNSのインサイトAPIからフォロワーのアクティブ時間帯データを取得し、エンゲージメントが高い時間帯を自動分析して投稿スケジュールに反映させることができます。これをMake/n8nで自動化すれば、人手なしで最適投稿時間を継続的に更新できます。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p className="font-bold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Automatable Tasks</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               自動化できるSNS業務
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -301,10 +301,10 @@ export default function Page() {
                 { n: "05", t: "投稿スケジュールの管理（Buffer等連携）", b: "Buffer・Later・Hootsuite等のスケジューリングツールと連携し、最適な投稿時間に自動で発信します。曜日・時間帯別のエンゲージメントデータに基づいた最適投稿時間を設定できます。" },
                 { n: "06", t: "投稿実績のレポート自動集計", b: "各SNSのインサイト（リーチ数・エンゲージメント率・フォロワー増減）を週次・月次で自動集計し、レポート化します。効果的な投稿パターンの分析と改善に活用できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -314,10 +314,10 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の活用ポイント */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "0" }}>
@@ -363,12 +363,12 @@ export default function Page() {
                   detail: "LinkedIn・X向けに業界トレンド・専門知識・事例紹介などの教育系コンテンツをAIが補助生成します。専門家としての権威性を継続的に発信することで、問い合わせ獲得につながるSNS戦略を構築できます。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "28px 0 28px 0", borderTop: "1px solid #E8E4DC", paddingRight: "24px" }}>
+                <div key={i} style={{ padding: "28px 0 28px 0", borderTop: "1px solid #dde0e4", paddingRight: "24px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
                     <span className="text-[12px] font-mono shrink-0" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "#c4b89a" }}>{item.industry}</span>
+                    <span className="font-bold text-[12px] tracking-widest uppercase" style={{ color: "var(--v2-accent)" }}>{item.industry}</span>
                   </div>
-                  <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.point}</p>
+                  <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.point}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.detail}</p>
                 </div>
               ))}
@@ -380,7 +380,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Implementation Flow</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               導入・実装フロー
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -436,10 +436,10 @@ export default function Page() {
                   b: "投稿作成時間の削減率・投稿数の変化・エンゲージメント率・フォロワー推移を月次で計測・レポートします。データをもとにプロンプト改善・投稿戦略の見直しを継続的に行います。",
                 },
               ].map((item) => (
-                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.step} style={{ display: "flex", gap: "24px", padding: "22px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.step}</span>
                   <div>
-                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-semibold mb-2" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -449,10 +449,10 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black mb-10" style={{ fontSize: "clamp(20px,2.8vw,32px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -486,10 +486,10 @@ export default function Page() {
                   how: "ChatGPT/Claude APIの月間使用量と費用。OpenAI/AnthropicのUsageダッシュボードで確認。投稿数あたりのコスト効率を算出。",
                 },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold mb-1" style={{ fontSize: "15px", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
+                    <p className="font-semibold mb-1" style={{ fontSize: "15px", color: "#333333", fontFamily: "var(--font-serif)" }}>{item.kpi}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.how}</p>
                   </div>
                 </div>

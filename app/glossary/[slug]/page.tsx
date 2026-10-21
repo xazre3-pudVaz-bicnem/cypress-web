@@ -57,20 +57,20 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
               <Link href="/glossary" style={{ color: "#6B7280" }}>用語集</Link>
               <span style={{ margin: "0 8px" }}>/</span>
-              <span style={{ color: "#0d1b2a" }}>{page.term}</span>
+              <span style={{ color: "#333333" }}>{page.term}</span>
             </nav>
-            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#ece8e0", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
+            <span style={{ display: "inline-block", fontSize: "11px", color: "#9ca3af", background: "#dde0e4", padding: "3px 10px", marginBottom: "16px", fontFamily: "var(--font-display)", letterSpacing: "0.1em" }}>
               {page.category}
             </span>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.2em", color: "#9ca3af", fontSize: "11px", marginBottom: "8px" }}>{page.termEn}</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(24px,3.5vw,42px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               {page.term}とは
             </h1>
           </div>
@@ -81,8 +81,8 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div style={{ maxWidth: "800px" }}>
               <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>Definition</p>
-              <div style={{ padding: "28px 32px", background: "#f8f6f2", borderLeft: "3px solid #0d1b2a", marginBottom: "32px" }}>
-                <p style={{ fontSize: "15px", lineHeight: "2", color: "#0d1b2a", fontWeight: 500 }}>
+              <div style={{ padding: "28px 32px", background: "#f0f1f2", borderLeft: "3px solid #333333", marginBottom: "32px" }}>
+                <p style={{ fontSize: "15px", lineHeight: "2", color: "#333333", fontWeight: 500 }}>
                   {page.definition}
                 </p>
               </div>
@@ -94,20 +94,20 @@ export default async function GlossarySlugPage({ params }: { params: Promise<{ s
         </section>
 
         {/* Points */}
-        <section style={{ background: "#f8f6f2", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Key Points</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               知っておくべきポイント
             </h2>
             <div style={{ maxWidth: "720px" }}>
               {page.points.map((point, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #ece8e0" }}>
-                  <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "20px 0", borderTop: "1px solid #dde0e4" }}>
+                  <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "24px", paddingTop: "2px" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "8px" }}>{point.title}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{point.title}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{point.body}</p>
                   </div>
                 </div>

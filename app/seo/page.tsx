@@ -348,17 +348,17 @@ export default function SeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>SEO対策</span>
+              <span style={{ color: "#333333" }}>SEO対策</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>
               Search Engine Optimization
             </p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策とは
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#374151" }}>
@@ -377,10 +377,10 @@ export default function SeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-16" style={{ background: "#F9F8F5" }}>
+        <section className="py-16" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Contents</p>
-            <h2 className="font-black text-[24px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[24px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="grid md:grid-cols-3 gap-4 max-w-4xl">
@@ -391,7 +391,7 @@ export default function SeoPage() {
                 "業種別のSEO活用ポイント",
                 "SEO対策に関するよくある質問（FAQ）",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4" style={{ background: "#FFFFFF", border: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex items-start gap-3 p-4" style={{ background: "#FFFFFF", border: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 pt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-[14px]" style={{ color: "#374151" }}>{item}</span>
                 </div>
@@ -404,7 +404,7 @@ export default function SeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>The 5 Pillars</p>
-            <h2 className="font-black text-[28px] md:text-[34px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] md:text-[34px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策の5つの領域
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -415,11 +415,11 @@ export default function SeoPage() {
                 <Link key={p.num} href={p.href}>
                   <div
                     className="flex gap-6 py-7 hover:opacity-80 transition-opacity"
-                    style={{ borderTop: "1px solid #E8E4DC", borderBottom: i === pillars.length - 1 ? "1px solid #E8E4DC" : undefined }}
+                    style={{ borderTop: "1px solid #dde0e4", borderBottom: i === pillars.length - 1 ? "1px solid #dde0e4" : undefined }}
                   >
                     <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{p.num}</span>
                     <div>
-                      <h3 className="font-bold text-[17px] mb-2 hover:underline" style={{ color: "#0d1b2a" }}>{p.title}</h3>
+                      <h3 className="font-bold text-[17px] mb-2 hover:underline" style={{ color: "#333333" }}>{p.title}</h3>
                       <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{p.body}</p>
                     </div>
                   </div>
@@ -430,10 +430,10 @@ export default function SeoPage() {
         </section>
 
         {/* SEO専門ページ一覧 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Sub Pages</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO専門ページ一覧
             </h2>
             <div className="grid md:grid-cols-2 gap-0 max-w-4xl">
@@ -441,10 +441,10 @@ export default function SeoPage() {
                 <Link key={p.href} href={p.href}>
                   <div
                     className="py-5 pr-4 hover:opacity-80 transition-opacity flex items-start justify-between gap-4"
-                    style={{ borderTop: "1px solid #E8E4DC" }}
+                    style={{ borderTop: "1px solid #dde0e4" }}
                   >
                     <div>
-                      <p className="font-semibold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{p.label}</p>
+                      <p className="font-semibold text-[15px] mb-1" style={{ color: "#333333" }}>{p.label}</p>
                       <p className="text-[13px]" style={{ color: "#6B7280" }}>{p.desc}</p>
                     </div>
                     <svg className="w-4 h-4 shrink-0 mt-1" style={{ color: "#9CA3AF" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -461,7 +461,7 @@ export default function SeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Challenges</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               こんな課題を抱えていませんか？
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -469,21 +469,21 @@ export default function SeoPage() {
             </p>
             <div className="max-w-4xl">
               {challenges.map((c) => (
-                <div key={c.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={c.num} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{c.num}</span>
                   <div>
-                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{c.title}</p>
+                    <p className="font-semibold text-[15px] mb-2" style={{ color: "#333333" }}>{c.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{c.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* SEO対策の重要性 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#475569" }}>Why SEO Matters</p>
             <h2 className="font-black text-white text-[26px] md:text-[32px] mb-8" style={{ fontFamily: "var(--font-serif)" }}>
@@ -514,7 +514,7 @@ export default function SeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Services</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのSEO支援内容
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -522,8 +522,8 @@ export default function SeoPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl">
               {supportItems.map((item, i) => (
-                <div key={i} style={{ borderTop: "1px solid #E8E4DC" }} className="pt-6">
-                  <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                <div key={i} style={{ borderTop: "1px solid #dde0e4" }} className="pt-6">
+                  <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                   <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                 </div>
               ))}
@@ -532,10 +532,10 @@ export default function SeoPage() {
         </section>
 
         {/* 対応業種 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Industries</p>
-            <h2 className="font-black text-[26px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別SEO対策のポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -546,11 +546,11 @@ export default function SeoPage() {
                 <div
                   key={ind.name}
                   className="flex gap-4 py-4"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <span className="text-[12px] font-mono shrink-0 mt-0.5" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-semibold text-[14px] mb-0.5" style={{ color: "#0d1b2a" }}>{ind.name}</p>
+                    <p className="font-semibold text-[14px] mb-0.5" style={{ color: "#333333" }}>{ind.name}</p>
                     <p className="text-[13px]" style={{ color: "#6B7280" }}>{ind.point}</p>
                   </div>
                 </div>
@@ -563,7 +563,7 @@ export default function SeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Flow</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策の進め方（サイプレスの実施フロー）
             </h2>
             <div className="max-w-3xl">
@@ -574,28 +574,28 @@ export default function SeoPage() {
                 { step: "STEP 04", title: "コンテンツ制作・拡充", body: "検索意図に合ったコンテンツを月次で制作・公開。既存ページのリライト・情報拡充も並行して実施します。" },
                 { step: "STEP 05", title: "計測・月次改善", body: "Google Search Console・順位計測ツールでKPIを追跡。毎月の成果レポートをもとにPDCAを回し、継続的に成果を改善します。" },
               ].map((s, i) => (
-                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-8 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="shrink-0">
                     <p className="text-[11px] font-semibold" style={{ color: "#9CA3AF" }}>{s.step}</p>
                   </div>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{s.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{s.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{s.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#f0f1f2" />
 
         {/* SEO成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               SEO対策の成功事例
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
@@ -614,7 +614,7 @@ export default function SeoPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

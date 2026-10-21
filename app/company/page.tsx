@@ -56,10 +56,10 @@ export default function CompanyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
-              <Link href="/" className="hover:text-[#0F172A] transition-colors">ホーム</Link>
+              <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>
               <span style={{ color: "#374151" }}>会社情報</span>
             </nav>
@@ -68,7 +68,7 @@ export default function CompanyPage() {
             </p>
             <h1
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(32px, 4.5vw, 56px)", color: "#333333" }}
             >
               会社情報
             </h1>
@@ -79,14 +79,14 @@ export default function CompanyPage() {
         </section>
 
         {/* Sub-pages navigation */}
-        <section className="py-20 md:py-24" style={{ background: "#F9F8F5" }}>
+        <section className="py-20 md:py-24" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Contents
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333" }}
             >
               会社情報メニュー
             </h2>
@@ -96,14 +96,14 @@ export default function CompanyPage() {
                   key={page.href}
                   href={page.href}
                   className="group flex items-start justify-between gap-8 py-7 transition-colors hover:bg-white -mx-6 px-6"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <div>
                     <div className="flex items-baseline gap-4 mb-2">
                       <span className="text-[12px] font-mono" style={{ color: "#9CA3AF" }}>
                         0{i + 1}
                       </span>
-                      <span className="font-black text-[18px]" style={{ color: "#0F172A" }}>
+                      <span className="font-black text-[18px]" style={{ color: "#333333" }}>
                         {page.label}
                       </span>
                     </div>
@@ -123,7 +123,7 @@ export default function CompanyPage() {
                   </svg>
                 </Link>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -136,7 +136,7 @@ export default function CompanyPage() {
             </p>
             <h2
               className="font-black leading-tight tracking-tight mb-12"
-              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(24px, 3vw, 40px)", color: "#333333" }}
             >
               会社基本情報
             </h2>
@@ -145,11 +145,11 @@ export default function CompanyPage() {
                 <div
                   key={row.label}
                   className="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr]"
-                  style={{ borderTop: "1px solid #E8E4DC" }}
+                  style={{ borderTop: "1px solid #dde0e4" }}
                 >
                   <dt
                     className="py-4 pr-6 text-[14px] font-medium"
-                    style={{ color: "#6B7280", background: "#F9F8F5", paddingLeft: "0" }}
+                    style={{ color: "#6B7280", background: "#f0f1f2", paddingLeft: "0" }}
                   >
                     {row.label}
                   </dt>
@@ -158,12 +158,12 @@ export default function CompanyPage() {
                   </dd>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
               <div className="mt-6">
                 <Link
                   href="/company/profile"
-                  className="text-[13px] font-medium transition-colors hover:text-[#0F172A]"
-                  style={{ color: "#374151", borderBottom: "1px solid #D1C9BE", paddingBottom: "2px" }}
+                  className="text-[13px] font-medium transition-colors hover:text-[#333333]"
+                  style={{ color: "#374151", borderBottom: "1px solid #c6cbd1", paddingBottom: "2px" }}
                 >
                   会社概要の詳細を見る →
                 </Link>
@@ -173,7 +173,7 @@ export default function CompanyPage() {
         </section>
 
         {/* Mission — dark section */}
-        <section className="py-24 md:py-32" style={{ background: "#0F172A" }}>
+        <section data-tone="dark" className="py-24 md:py-32" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-8" style={{ color: "#475569" }}>

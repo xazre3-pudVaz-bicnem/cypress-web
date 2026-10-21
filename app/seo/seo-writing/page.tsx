@@ -79,7 +79,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#F9F8F5", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
@@ -89,7 +89,7 @@ export default function Page() {
               SEOライティング
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>SEO Writing</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               SEOライティング｜検索意図に応えるコンテンツ
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -118,7 +118,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "36px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "36px" }}>
               このページでわかること
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -130,7 +130,7 @@ export default function Page() {
                 "AI生成コンテンツの活用と、Googleに評価されるために必要な人間の付加価値",
                 "業種別（飲食・美容・医療・建設・士業）のコンテンツ設計ポイントと更新管理",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "16px", padding: "16px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>0{i + 1}</span>
                   <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.8" }}>{item}</p>
                 </div>
@@ -140,9 +140,9 @@ export default function Page() {
         </section>
 
         {/* Common Mistakes (dark) */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>Common Mistakes</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>Common Mistakes</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               SEOライティングで失敗する4つのパターン
             </h2>
@@ -153,7 +153,7 @@ export default function Page() {
                 { t: "結論を最後まで引っ張る構成", b: "前置きが長く答えが後半に書かれている記事は直帰率が高くなります。Googleはユーザーが満足して戻らないことを重視するため、結論ファーストが基本です。リード文で必ず答えの要約を示します。" },
                 { t: "E-E-A-Tの根拠がない記事", b: "誰が書いたかわからない・専門性の根拠がない・出典不明の記事はGoogleの評価が低くなります。著者情報・実績・参照元の明示・実体験の記述が品質評価を高めます。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
@@ -163,10 +163,10 @@ export default function Page() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Challenges</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               よくある課題と原因
             </h2>
             <div style={{ maxWidth: "760px" }}>
@@ -182,10 +182,10 @@ export default function Page() {
                 { t: "YMYLジャンルで記事が評価されない", b: "医療・法律・金融ジャンルはGoogleの品質基準が特に厳格です。著者の資格明示・専門家監修・出典の明示・運営会社情報の充実・最終更新日の表示が必須です。無資格者による断定的な医療情報・法的判断は避けます。" },
                 { t: "更新を止めると順位が下がった", b: "Googleは定期的に更新されるサイトを「活発なサイト」として評価します。特に鮮度が重要なトピック（法改正・統計データ・技術情報）は定期的な見直しと更新が必要です。更新が難しい場合は常緑コンテンツ（Evergreen Content）を中心に据えた戦略が有効です。" },
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Principles</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               SEOライティングの基本原則
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -212,10 +212,10 @@ export default function Page() {
                 { n: "07", t: "内部リンクで関連コンテンツへ誘導", b: "関連記事・サービスページへの内部リンクを自然な文脈で設置します。アンカーテキストにはリンク先の内容がわかるキーワードを含めます。ユーザーが次のアクションに進みやすくなり、Googleもサイト構造を理解しやすくなります。1記事3〜5本の内部リンクが目安です。" },
                 { n: "08", t: "FAQ形式で疑問を解消する", b: "ページ末尾のFAQはユーザーの残った疑問を解消し、FAQPageスキーマで構造化データを実装することでリッチリザルト表示につながります。「People Also Ask」や関連検索ワードをFAQの質問として活用すると、追加キーワードでの流入増加も期待できます。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -225,10 +225,10 @@ export default function Page() {
         </section>
 
         {/* Section C: 業種別の記事設計ポイント */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               業種別の記事設計ポイント
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "680px" }}>
@@ -247,8 +247,8 @@ export default function Page() {
                 { t: "BtoB・SaaS・IT", b: "「課題解決型の記事（プロジェクト管理ツール 比較）」「用語解説・ノウハウ記事（KPIとは）」「導入事例ページ」が効果的です。専門用語の正確な解説・ホワイトペーパー・詳細な機能比較でE-E-A-Tと検索意図充足を両立します。" },
                 { t: "観光・旅行・宿泊", b: "「エリア名＋観光スポット・グルメ」「〇〇旅行の計画・モデルコース」「宿泊施設の詳細紹介（室内写真・プラン・アクセス）」が主テーマです。写真の質・詳細な地図情報・口コミへの返信でローカルSEOと連動した集客を強化します。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#FFFFFF" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#0d1b2a", marginBottom: "10px" }}>{item.t}</p>
+                <div key={i} style={{ padding: "24px", border: "1px solid #dde0e4", background: "#FFFFFF" }}>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#333333", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                 </div>
               ))}
@@ -273,7 +273,7 @@ export default function Page() {
         <section style={{ background: "#FFFFFF", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Writing Process</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "40px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "40px" }}>
               SEO記事制作の実施フロー
             </h2>
             <div style={{ maxWidth: "720px" }}>
@@ -288,10 +288,10 @@ export default function Page() {
                 { n: "08", t: "掲載順位のモニタリング", b: "公開後2〜4週間でSearch Consoleに掲載順位が現れ始めます。月次でクリック数・表示回数・平均掲載順位を記録します。目標順位（上位10位）に届いていない場合は競合との差分を分析します。" },
                 { n: "09", t: "リライト・更新", b: "公開3〜6ヶ月後を目安に掲載順位が停滞している記事をリライトします。競合上位ページと比較して不足トピックの追加・情報の最新化・E-E-A-T要素の強化・内部リンクの見直しを行います。更新後はSearch Consoleで再インデックスリクエストを送ります。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -301,10 +301,10 @@ export default function Page() {
         </section>
 
         {/* Section E: 成果を見るための指標 */}
-        <section style={{ background: "#F9F8F5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Metrics</p>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
               成果を見るための指標
             </h2>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginBottom: "40px", maxWidth: "680px" }}>
@@ -320,10 +320,10 @@ export default function Page() {
                 { n: "06", t: "被リンク獲得数・参照ドメイン数", b: "Ahrefsなどで各記事への被リンク数と参照ドメイン数を追跡します。被リンクが自然に集まる記事はSEO上の資産になります。被リンクが集まらない場合は、引用価値（独自データ・具体的な解説・ツール）の追加を検討します。" },
                 { n: "07", t: "インデックス状況・正常インデックス率", b: "Search Consoleのカバレッジレポートで記事が正常にインデックスされているか定期的に確認します。「Crawled – currently not indexed」の記事はコンテンツ品質の改善またはnoindexの付与（統合）を検討します。" },
               ].map((item) => (
-                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #E8E4DC" }}>
+                <div key={item.n} style={{ display: "flex", gap: "20px", padding: "18px 0", borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.n}</span>
                   <div>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#0d1b2a", marginBottom: "6px" }}>{item.t}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "6px" }}>{item.t}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.b}</p>
                   </div>
                 </div>
@@ -333,9 +333,9 @@ export default function Page() {
         </section>
 
         {/* AI content handling */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0" }}>
+        <section data-tone="dark" style={{ background: "#293540", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a" }}>AI Content Strategy</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)" }}>AI Content Strategy</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#ffffff", fontWeight: 700, marginBottom: "40px" }}>
               AI生成コンテンツとSEOの考え方
             </h2>
@@ -346,7 +346,7 @@ export default function Page() {
                 { t: "AIが書けない価値を追加する", b: "実体験・インタビュー・独自調査・最新データ・業界の内側の視点はAIには生成できません。この「AIが書けない部分」をどれだけ盛り込めるかが、競合との差別化になります。" },
                 { t: "E-E-A-Tの「経験（E）」はAIで証明できない", b: "「実際に使ってみた」「現場で見てきた」「お客様の声」など、リアルな経験に基づく記述はAIには書けません。Googleが最重視するE-E-A-Tの経験要素を積極的にコンテンツに組み込みます。" },
               ].map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid rgba(196,184,154,0.2)" }}>
+                <div key={i} style={{ padding: "24px", border: "1px solid rgba(9,111,200,0.2)" }}>
                   <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "14px", color: "#ffffff", marginBottom: "10px" }}>{item.t}</p>
                   <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.9" }}>{item.b}</p>
                 </div>

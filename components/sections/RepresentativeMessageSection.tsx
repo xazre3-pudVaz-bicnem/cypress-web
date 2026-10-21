@@ -42,7 +42,7 @@ export default function RepresentativeMessageSection() {
                   boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
                 }}
               >
-                <div className="font-black text-sm" style={{ color: "#0F172A" }}>
+                <div className="font-black text-sm" style={{ color: "#333333" }}>
                   代表取締役 &nbsp;織田 春樹
                 </div>
                 <div className="text-xs mt-0.5" style={{ color: "#64748B" }}>
@@ -58,7 +58,7 @@ export default function RepresentativeMessageSection() {
                   border: "1px solid rgba(37,99,235,0.15)",
                 }}
               >
-                <svg className="w-9 h-9" style={{ color: "#2563EB" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <svg className="w-9 h-9" style={{ color: "#096fc8" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                 </svg>
               </div>
@@ -70,7 +70,7 @@ export default function RepresentativeMessageSection() {
             <SectionLabel>Message</SectionLabel>
             <h2
               className="font-black leading-tight tracking-tight mb-8"
-              style={{ fontSize: "clamp(24px, 3vw, 38px)", color: "#0F172A" }}
+              style={{ fontSize: "clamp(24px, 3vw, 38px)", color: "#333333" }}
             >
               代表メッセージ
             </h2>
@@ -94,7 +94,7 @@ export default function RepresentativeMessageSection() {
               className="mt-10 pt-8"
               style={{ borderTop: "1px solid #E2E8F0" }}
             >
-              <div className="font-black text-xl mb-0.5" style={{ color: "#0F172A" }}>
+              <div className="font-black text-xl mb-0.5" style={{ color: "#333333" }}>
                 代表取締役&ensp;織田 春樹
               </div>
               <div className="text-sm" style={{ color: "#64748B" }}>株式会社サイプレス</div>

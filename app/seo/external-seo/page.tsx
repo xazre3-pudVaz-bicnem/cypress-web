@@ -139,17 +139,17 @@ export default function ExternalSeoPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
               <Link href="/seo" style={{ color: "#6B7280" }} className="hover:underline">SEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>外部SEO</span>
+              <span style={{ color: "#333333" }}>外部SEO</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>External SEO</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               外部SEO（被リンク対策）
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -171,10 +171,10 @@ export default function ExternalSeoPage() {
         </section>
 
         {/* このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>What You Will Learn</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -186,15 +186,15 @@ export default function ExternalSeoPage() {
                 { title: "スパムリンクの特定とDisavow処理", body: "有害なリンクがサイト評価を下げるメカニズム、Google Search Consoleでの確認方法、Disavowファイルの作成と提出手順を学べます。" },
                 { title: "外部SEOの効果測定と改善サイクル", body: "参照ドメイン数・ドメイン評価・オーガニック流入の変化を追うためのKPI設計と、Ahrefs・Search Consoleを使った測定方法を習得できます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -203,7 +203,7 @@ export default function ExternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Key Tactics</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               外部SEOの主要施策
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -217,24 +217,24 @@ export default function ExternalSeoPage() {
                 { title: "スパムリンクの否認（Disavow）", body: "低品質なスパムリンクが多数向けられている場合、Google Search ConsoleのDisavowツールを使って否認します。否認ファイルにはdomain:example.comの形式でドメイン単位の否認を指定できます。不自然なリンクプロファイルはGoogleのアルゴリズムにより評価が下がる可能性があるため、Ahrefsなどのツールを使った定期的なリンクプロファイルの確認が重要です。" },
                 { title: "リンク切れ修復（ブロークンリンクビルディング）", body: "競合サイトや関連サイトのリンク切れページを見つけ、そのページの代替コンテンツを自社サイトで提供したうえで、リンク元サイトに差し替えを提案する手法です。相手にとってもリンク切れ修復のメリットがあるため、アウトリーチが受け入れられやすい特徴があります。Ahrefsの「Broken Links」機能で効率的に候補を見つけられます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Problems</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               外部SEOでよくある課題と原因
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -250,21 +250,21 @@ export default function ExternalSeoPage() {
                 { title: "リンクの多様性が低い（特定ドメインからのみ）", body: "一つのドメインから大量のリンクが来ていても、評価は一つのドメインからの被リンクとしてカウントされます。参照ドメイン数（Referring Domains）の増加が被リンク数の増加より重要で、多様なドメインから自然に被リンクされているプロファイルが健全です。" },
                 { title: "アンカーテキストが最適化されすぎている", body: "「葛飾区 SEO対策 格安」など特定のキーワードを含むアンカーテキストのリンクが集中すると、人工的なリンク操作とみなされるリスクがあります。ブランド名・URL・「詳しくはこちら」など自然なアンカーテキストが多様に混在している状態が理想的です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 注意事項 */}
-        <section className="py-16" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-16" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="font-black text-[22px] mb-6" style={{ color: "#FFFFFF", fontFamily: "var(--font-serif)" }}>
               外部SEOで絶対にやってはいけないこと
@@ -291,7 +291,7 @@ export default function ExternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の外部SEO活用ポイント
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -332,8 +332,8 @@ export default function ExternalSeoPage() {
                   points: "不動産業者登録サイト・住宅情報ポータルへのNAP登録、不動産関連協会への加盟が基本的な被リンク源。地域の住まいメディア・マンション管理組合の情報への貢献記事、住まい系メディアへの専門家コメント提供が有効。物件情報の詳細コンテンツが住まい系キュレーションサイトに引用されます。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6 rounded" style={{ background: "#F9F8F5", border: "1px solid #E8E4DC" }}>
-                  <p className="font-bold text-[15px] mb-3" style={{ color: "#0d1b2a" }}>{item.industry}</p>
+                <div key={i} className="p-6 rounded" style={{ background: "#f0f1f2", border: "1px solid #dde0e4" }}>
+                  <p className="font-bold text-[15px] mb-3" style={{ color: "#333333" }}>{item.industry}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.points}</p>
                 </div>
               ))}
@@ -342,10 +342,10 @@ export default function ExternalSeoPage() {
         </section>
 
         {/* 具体的な作業手順 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Step by Step</p>
-            <h2 className="font-black text-[26px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               外部SEOの具体的な作業手順
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -361,15 +361,15 @@ export default function ExternalSeoPage() {
                 { title: "Step 9：月次で被リンク増加をモニタリングする", body: "毎月、Search ConsoleとAhrefsで参照ドメイン数・新規被リンク数・失われた被リンク数を確認します。急激な被リンクの増減は原因を調査します。競合との被リンク差が縮まっているかを確認し、次の施策の優先度を決定します。" },
                 { title: "Step 10：内部リンクと連動して評価を流通させる", body: "獲得した被リンクが向いているページ（LP・ブログ記事など）から、SEO上強化したいサービスページ・対策キーワードページに向けて内部リンクを設置します。外部から流入した評価をサイト内で分散・効果最大化させることが重要です。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -378,7 +378,7 @@ export default function ExternalSeoPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>KPIs & Metrics</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標（KPI）
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -427,9 +427,9 @@ export default function ExternalSeoPage() {
                   detail: "どのコンテンツが最も多くの被リンクを獲得しているかを把握します。成功しているコンテンツの共通点を分析し、次のリンクベイトコンテンツの企画に活かします。"
                 },
               ].map((item, i) => (
-                <div key={i} className="p-6" style={{ border: "1px solid #E8E4DC", borderRadius: "6px" }}>
-                  <p className="font-bold text-[15px] mb-1" style={{ color: "#0d1b2a" }}>{item.kpi}</p>
-                  <p className="text-[11px] font-semibold mb-3" style={{ color: "#c4b89a" }}>{item.where}</p>
+                <div key={i} className="p-6" style={{ border: "1px solid #dde0e4", borderRadius: "6px" }}>
+                  <p className="font-bold text-[15px] mb-1" style={{ color: "#333333" }}>{item.kpi}</p>
+                  <p className="text-[11px] font-semibold mb-3" style={{ color: "var(--v2-accent)" }}>{item.where}</p>
                   <p className="text-[13px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                 </div>
               ))}
@@ -437,7 +437,7 @@ export default function ExternalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="外部SEOについてよくある質問" bgColor="#F9F8F5" />
+        <FaqSection items={faqItems} heading="外部SEOについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="外部SEO・被リンク戦略のご相談"

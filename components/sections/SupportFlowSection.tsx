@@ -49,7 +49,7 @@ export default function SupportFlowSection() {
           <SectionLabel>Flow</SectionLabel>
           <h2
             className="font-black leading-tight tracking-tight mb-3"
-            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#333333" }}
           >
             支援の流れ
           </h2>
@@ -88,14 +88,14 @@ export default function SupportFlowSection() {
                   <div
                     className="w-14 h-14 rounded-full flex items-center justify-center font-black text-white text-base mb-5 shrink-0"
                     style={{
-                      background: "#2563EB",
+                      background: "#096fc8",
                       boxShadow: "0 4px 14px rgba(37,99,235,0.3)",
                     }}
                   >
                     {s.stepLabel}
                   </div>
 
-                  <h3 className="font-bold text-sm mb-2 leading-snug" style={{ color: "#0F172A" }}>
+                  <h3 className="font-bold text-sm mb-2 leading-snug" style={{ color: "#333333" }}>
                     {s.title}
                   </h3>
                   <p className="text-xs leading-relaxed mb-3" style={{ color: "#64748B" }}>
@@ -105,7 +105,7 @@ export default function SupportFlowSection() {
                     className="text-[10px] font-semibold px-3 py-1 rounded-full"
                     style={{
                       background: "rgba(37,99,235,0.08)",
-                      color: "#2563EB",
+                      color: "#096fc8",
                     }}
                   >
                     {s.duration}
@@ -143,7 +143,7 @@ export default function SupportFlowSection() {
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center font-black text-white text-sm shrink-0"
                     style={{
-                      background: "#2563EB",
+                      background: "#096fc8",
                       boxShadow: "0 4px 12px rgba(37,99,235,0.25)",
                     }}
                   >
@@ -151,10 +151,10 @@ export default function SupportFlowSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1.5 flex-wrap">
-                      <h3 className="font-bold text-sm" style={{ color: "#0F172A" }}>{s.title}</h3>
+                      <h3 className="font-bold text-sm" style={{ color: "#333333" }}>{s.title}</h3>
                       <span
                         className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
-                        style={{ background: "rgba(37,99,235,0.08)", color: "#2563EB" }}
+                        style={{ background: "rgba(37,99,235,0.08)", color: "#096fc8" }}
                       >
                         {s.duration}
                       </span>

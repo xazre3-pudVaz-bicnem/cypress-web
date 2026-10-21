@@ -37,7 +37,7 @@ export function MouseFollower() {
           width: 8,
           height: 8,
           borderRadius: "50%",
-          background: "#3B82F6",
+          background: "#096fc8",
         }}
       />
       <motion.div

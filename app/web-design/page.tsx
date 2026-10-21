@@ -221,15 +221,15 @@ export default function WebDesignPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>Web制作</span>
+              <span style={{ color: "#333333" }}>Web制作</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280", fontFamily: "var(--font-display)" }}>Web Design</p>
-            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black leading-tight mb-6" style={{ fontSize: "clamp(32px,4.5vw,56px)", color: "#333333", fontFamily: "var(--font-serif)" }}>
               Webサイト制作
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl mb-5" style={{ color: "#374151" }}>
@@ -255,10 +255,10 @@ export default function WebDesignPage() {
         </section>
 
         {/* サイト種類 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Site Types</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               目的に合わせたWebサイト制作
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -266,17 +266,17 @@ export default function WebDesignPage() {
             </p>
             <div className="max-w-4xl space-y-0">
               {subPages.map((page, i) => (
-                <Link key={i} href={page.href} className="block group py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <Link key={i} href={page.href} className="block group py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="flex justify-between items-start">
                     <div>
-                      <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#0d1b2a" }}>{page.title}</p>
+                      <p className="font-bold text-[15px] mb-2 group-hover:underline" style={{ color: "#333333" }}>{page.title}</p>
                       <p className="text-[14px] leading-[1.8]" style={{ color: "#374151" }}>{page.desc}</p>
                     </div>
                     <span className="shrink-0 ml-6 text-[13px] mt-1" style={{ color: "#9CA3AF" }}>→</span>
                   </div>
                 </Link>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -285,7 +285,7 @@ export default function WebDesignPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Process</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Webサイト制作の全プロセス
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -293,26 +293,26 @@ export default function WebDesignPage() {
             </p>
             <div className="max-w-4xl">
               {processSteps.map((step) => (
-                <div key={step.step} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={step.step} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <div className="shrink-0">
                     <span className="text-[12px] font-mono block" style={{ color: "#9CA3AF" }}>{step.step}</span>
-                    <span className="text-[11px] mt-1 block" style={{ color: "#c4b89a" }}>{step.period}</span>
+                    <span className="text-[11px] mt-1 block" style={{ color: "var(--v2-accent)" }}>{step.period}</span>
                   </div>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{step.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{step.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{step.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 費用目安 */}
-        <section className="py-20" style={{ background: "#0d1b2a" }}>
+        <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#c4b89a", fontFamily: "var(--font-display)" }}>Cost Guide</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-display)" }}>Cost Guide</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
               種類別 制作費用の目安
             </h2>
@@ -324,8 +324,8 @@ export default function WebDesignPage() {
                 <div key={i} style={{ padding: "24px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
                   <div className="flex flex-wrap gap-4 mb-3 items-baseline">
                     <span className="font-bold text-[15px]" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>{c.type}</span>
-                    <span className="text-[13px]" style={{ color: "#c4b89a" }}>{c.pages}</span>
-                    <span className="text-[15px] font-bold ml-auto" style={{ color: "#c4b89a" }}>{c.cost}</span>
+                    <span className="text-[13px]" style={{ color: "var(--v2-accent)" }}>{c.pages}</span>
+                    <span className="text-[15px] font-bold ml-auto" style={{ color: "var(--v2-accent)" }}>{c.cost}</span>
                   </div>
                   <p className="text-[13px]" style={{ color: "rgba(255,255,255,0.6)" }}>{c.features}</p>
                 </div>
@@ -335,10 +335,10 @@ export default function WebDesignPage() {
         </section>
 
         {/* 制作のこだわり */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Our Approach</p>
-            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               サイプレスのWeb制作の5つのこだわり
             </h2>
             <div className="max-w-4xl space-y-0">
@@ -349,15 +349,15 @@ export default function WebDesignPage() {
                 { title: "構造化データ・AIO対策の標準実装", body: "BreadcrumbList・FAQPage・Organizationなどの構造化データを全案件で実装。リッチリザルトとAI検索（AIO）からの認知・引用に同時対応します。" },
                 { title: "公開後の集客・改善まで一貫サポート", body: "制作で終わりではなく、公開後のSEO対策・MEO対策・コンテンツ追加・リライト・CV改善まで継続的にサポートします。長期的なWebマーケティングのパートナーとして伴走します。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.title}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.title}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -366,7 +366,7 @@ export default function WebDesignPage() {
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>By Industry</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別Web制作のポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "#374151" }}>
@@ -374,8 +374,8 @@ export default function WebDesignPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {industryPoints.map((item, i) => (
-                <div key={i} style={{ padding: "24px", border: "1px solid #E8E4DC", background: "#F9F8F5" }}>
-                  <p className="font-bold text-[14px] mb-3" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
+                <div key={i} style={{ padding: "24px", border: "1px solid #dde0e4", background: "#f0f1f2" }}>
+                  <p className="font-bold text-[14px] mb-3" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.industry}</p>
                   <p className="text-[13px] leading-[1.8]" style={{ color: "#374151" }}>{item.points}</p>
                 </div>
               ))}
@@ -384,23 +384,23 @@ export default function WebDesignPage() {
         </section>
 
         {/* よくある失敗パターン */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Common Mistakes</p>
-            <h2 className="font-black text-[26px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               Web制作でよくある失敗パターン
             </h2>
             <div className="max-w-4xl">
               {failurePatterns.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="font-bold text-[15px] mb-2" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>{item.t}</p>
+                    <p className="font-bold text-[15px] mb-2" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.t}</p>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.b}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -408,10 +408,10 @@ export default function WebDesignPage() {
         <FaqSection items={faqItems} heading="Webサイト制作についてよくある質問" bgColor="#FFFFFF" />
 
         {/* ホームページ制作の成功事例 */}
-        <section style={{ background: "#F8F6F2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #E8E4DC" }}>
+        <section style={{ background: "#f0f1f2", padding: "clamp(48px, 7vh, 80px) 0", borderTop: "1px solid #dde0e4" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Success Cases</p>
-            <h2 className="font-black text-[26px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[26px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               ホームページ制作の成功事例
             </h2>
             <p className="text-[14px] leading-[1.9] max-w-2xl mb-8" style={{ color: "#6B7280" }}>
@@ -429,7 +429,7 @@ export default function WebDesignPage() {
               ].map((l) => (
                 <Link key={l.href} href={l.href} style={{
                   fontSize: "13px", color: "#374151", textDecoration: "none",
-                  padding: "8px 16px", border: "1px solid #E8E4DC", background: "#FFFFFF",
+                  padding: "8px 16px", border: "1px solid #dde0e4", background: "#FFFFFF",
                   letterSpacing: "0.02em",
                 }}>
                   {l.label} →

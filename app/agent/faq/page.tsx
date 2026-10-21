@@ -279,7 +279,7 @@ export default function AgentFaqPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#0d1b2a", padding: "80px 0 60px" }}>
+        <section data-page-hero data-tone="dark" style={{ background: "#293540", padding: "80px 0 60px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <nav style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)", marginBottom: "32px" }}>
               <Link href="/" style={{ color: "rgba(255,255,255,0.4)" }}>ホーム</Link>
@@ -299,11 +299,11 @@ export default function AgentFaqPage() {
         </section>
 
         {/* Category jump */}
-        <section style={{ background: "#f8f6f2", padding: "32px 0", borderBottom: "1px solid #e8e4dc" }}>
+        <section style={{ background: "#f0f1f2", padding: "32px 0", borderBottom: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {faqCategories.map((cat) => (
-                <a key={cat.id} href={`#${cat.id}`} style={{ fontSize: "12px", color: "#374151", background: "#ffffff", border: "1px solid #e8e4dc", padding: "6px 14px", textDecoration: "none", whiteSpace: "nowrap" }}>
+                <a key={cat.id} href={`#${cat.id}`} style={{ fontSize: "12px", color: "#374151", background: "#ffffff", border: "1px solid #dde0e4", padding: "6px 14px", textDecoration: "none", whiteSpace: "nowrap" }}>
                   {cat.label}
                 </a>
               ))}
@@ -313,17 +313,17 @@ export default function AgentFaqPage() {
 
         {/* FAQ Sections */}
         {faqCategories.map((cat, ci) => (
-          <section key={cat.id} id={cat.id} style={{ background: ci % 2 === 0 ? "#ffffff" : "#f8f6f2", padding: "64px 0" }}>
+          <section key={cat.id} id={cat.id} style={{ background: ci % 2 === 0 ? "#ffffff" : "#f0f1f2", padding: "64px 0" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
-              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#0d1b2a", fontWeight: 700, marginBottom: "36px", paddingBottom: "14px", borderBottom: "2px solid #e8e4dc" }}>
+              <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#333333", fontWeight: 700, marginBottom: "36px", paddingBottom: "14px", borderBottom: "2px solid #dde0e4" }}>
                 {cat.label}
               </h2>
               <div style={{ maxWidth: "760px" }}>
                 {cat.items.map((item, i) => (
-                  <details key={i} style={{ borderBottom: "1px solid #e8e4dc", paddingBottom: "0" }}>
+                  <details key={i} style={{ borderBottom: "1px solid #dde0e4", paddingBottom: "0" }}>
                     <summary style={{ padding: "22px 0 22px", cursor: "pointer", listStyle: "none", display: "flex", gap: "16px", alignItems: "flex-start" }}>
-                      <span style={{ fontFamily: "var(--font-display)", color: "#c4b89a", fontSize: "11px", minWidth: "16px", paddingTop: "3px", flexShrink: 0 }}>Q</span>
-                      <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#0d1b2a", fontWeight: 600, lineHeight: "1.6" }}>{item.q}</p>
+                      <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "11px", minWidth: "16px", paddingTop: "3px", flexShrink: 0 }}>Q</span>
+                      <p style={{ fontFamily: "var(--font-serif)", fontSize: "15px", color: "#333333", fontWeight: 600, lineHeight: "1.6" }}>{item.q}</p>
                     </summary>
                     <div style={{ paddingLeft: "32px", paddingBottom: "22px" }}>
                       <p style={{ fontSize: "14px", color: "#374151", lineHeight: "2.0" }}>{item.a}</p>
@@ -336,9 +336,9 @@ export default function AgentFaqPage() {
         ))}
 
         {/* Related links */}
-        <section style={{ background: "#f8f6f2", padding: "64px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "64px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 32px" }}>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#0d1b2a", marginBottom: "24px" }}>商材別 代理店募集ページ</h2>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, color: "#333333", marginBottom: "24px" }}>商材別 代理店募集ページ</h2>
             <div className="grid md:grid-cols-2 gap-4" style={{ maxWidth: "680px" }}>
               {[
                 { href: "/agent", label: "販売代理店募集トップ" },
@@ -348,7 +348,7 @@ export default function AgentFaqPage() {
                 { href: "/agent/aio", label: "AIO対策代理店募集" },
                 { href: "/partner/referral", label: "取次店・紹介パートナー募集" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #e8e4dc", textDecoration: "none", fontSize: "14px", color: "#0d1b2a", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
+                <Link key={item.href} href={item.href} style={{ display: "block", padding: "16px 20px", background: "#ffffff", border: "1px solid #dde0e4", textDecoration: "none", fontSize: "14px", color: "#333333", fontFamily: "var(--font-serif)", fontWeight: 600 }}>
                   {item.label} →
                 </Link>
               ))}

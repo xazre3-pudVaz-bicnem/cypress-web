@@ -24,7 +24,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <section style={{ background: "#f8f6f2", paddingTop: "128px", paddingBottom: "48px" }}>
+        <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
@@ -34,7 +34,7 @@ export default function Page() {
               代表メッセージ
             </nav>
             <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Message from CEO</p>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.3 }}>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(28px,4vw,44px)", color: "#333333", fontWeight: 700, lineHeight: 1.3 }}>
               代表メッセージ
             </h1>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", marginTop: "20px", maxWidth: "640px" }}>
@@ -45,17 +45,17 @@ export default function Page() {
 
         <section style={{ background: "#ffffff", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "240px 1fr", gap: "64px", alignItems: "start", maxWidth: "900px" }}>
+            <div className="grid items-start gap-10 md:grid-cols-[240px_minmax(0,1fr)] md:gap-16" style={{ maxWidth: "900px" }}>
               <div>
                 <div style={{ position: "relative", width: "200px", height: "200px", overflow: "hidden", borderRadius: "50%" }}>
                   <Image src="/logo.jpg" alt="代表 織田 春樹" fill className="object-cover" sizes="200px" />
                 </div>
-                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, color: "#0d1b2a", marginTop: "16px", fontSize: "16px" }}>織田 春樹</p>
+                <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, color: "#333333", marginTop: "16px", fontSize: "16px" }}>織田 春樹</p>
                 <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "4px" }}>代表取締役</p>
               </div>
               <div>
                 <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "16px" }}>Dear Candidates</p>
-                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#0d1b2a", fontWeight: 700, lineHeight: 1.4, marginBottom: "28px" }}>
+                <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(18px,2.5vw,26px)", color: "#333333", fontWeight: 700, lineHeight: 1.4, marginBottom: "28px" }}>
                   良い仕事をしている人が、正当に選ばれる社会を作りたい
                 </h2>
                 <div style={{ fontSize: "15px", lineHeight: "2", color: "#374151" }}>

@@ -89,14 +89,14 @@ export default async function KnowledgePage({
       <Header />
       <main>
         {/* Hero */}
-        <section style={{ background: "#f9f8f5", paddingTop: "128px", paddingBottom: "64px" }}>
+        <section data-page-hero="article" style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", alignItems: "center", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/knowledge" style={{ color: "#6B7280" }}>ナレッジ</Link>
               <span>/</span>
-              <span style={{ color: "#0d1b2a" }}>{page.title}</span>
+              <span style={{ color: "#333333" }}>{page.title}</span>
             </nav>
             <p
               style={{
@@ -112,7 +112,7 @@ export default async function KnowledgePage({
             <div
               style={{
                 display: "inline-block",
-                background: "#f0ede6",
+                background: "#dde0e4",
                 color: "#6b7280",
                 fontSize: "11px",
                 fontWeight: 600,
@@ -127,7 +127,7 @@ export default async function KnowledgePage({
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(22px, 3.2vw, 40px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 lineHeight: 1.35,
                 marginBottom: "20px",
@@ -154,8 +154,8 @@ export default async function KnowledgePage({
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <div
               style={{
-                background: "#f9f8f5",
-                border: "1px solid #e8e4dc",
+                background: "#f0f1f2",
+                border: "1px solid #dde0e4",
                 padding: "28px 32px",
                 maxWidth: "600px",
               }}
@@ -200,7 +200,7 @@ export default async function KnowledgePage({
                 <div
                   key={i}
                   style={{
-                    borderTop: "1px solid #e8e4dc",
+                    borderTop: "1px solid #dde0e4",
                     paddingTop: "40px",
                     marginTop: "40px",
                   }}
@@ -221,7 +221,7 @@ export default async function KnowledgePage({
                       style={{
                         fontFamily: "var(--font-serif)",
                         fontSize: "clamp(17px, 1.8vw, 22px)",
-                        color: "#0d1b2a",
+                        color: "#333333",
                         fontWeight: 700,
                         lineHeight: 1.4,
                         margin: 0,
@@ -247,7 +247,7 @@ export default async function KnowledgePage({
         </section>
 
         {/* FAQ */}
-        <section style={{ background: "#f9f8f5", padding: "80px 0" }}>
+        <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
             <p
               style={{
@@ -265,7 +265,7 @@ export default async function KnowledgePage({
               style={{
                 fontFamily: "var(--font-serif)",
                 fontSize: "clamp(22px, 2.5vw, 32px)",
-                color: "#0d1b2a",
+                color: "#333333",
                 fontWeight: 700,
                 marginBottom: "40px",
               }}
@@ -277,7 +277,7 @@ export default async function KnowledgePage({
                 <div
                   key={i}
                   style={{
-                    borderTop: "1px solid #e8e4dc",
+                    borderTop: "1px solid #dde0e4",
                     padding: "28px 0",
                   }}
                 >
@@ -285,7 +285,7 @@ export default async function KnowledgePage({
                     style={{
                       fontSize: "15px",
                       fontWeight: 700,
-                      color: "#0d1b2a",
+                      color: "#333333",
                       marginBottom: "12px",
                       display: "flex",
                       gap: "12px",
@@ -307,7 +307,7 @@ export default async function KnowledgePage({
                   </p>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #e8e4dc" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -343,12 +343,12 @@ export default async function KnowledgePage({
                     style={{
                       display: "block",
                       padding: "20px 24px",
-                      border: "1px solid #e8e4dc",
-                      background: "#f9f8f5",
+                      border: "1px solid #dde0e4",
+                      background: "#f0f1f2",
                       textDecoration: "none",
                     }}
                   >
-                    <p style={{ fontSize: "13px", fontWeight: 700, color: "#0d1b2a", marginBottom: "4px" }}>
+                    <p style={{ fontSize: "13px", fontWeight: 700, color: "#333333", marginBottom: "4px" }}>
                       {rel.label}
                     </p>
                     <p style={{ fontSize: "12px", color: "#9ca3af" }}>{rel.desc}</p>

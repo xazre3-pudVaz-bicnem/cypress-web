@@ -26,8 +26,8 @@ const SERVICES = [
     name: "SEO対策",
     tagline: "検索上位で継続集客",
     description: "テクニカル・コンテンツ・外部対策を一気通貫で実施。自然検索流入を平均340%改善。",
-    borderColor: "#2563EB",
-    iconColor: "#2563EB",
+    borderColor: "#096fc8",
+    iconColor: "#096fc8",
     iconBg: "rgba(37,99,235,0.08)",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -111,7 +111,7 @@ export default function ServicesGridSection() {
           <SectionLabel>Services</SectionLabel>
           <h2
             className="font-black leading-tight tracking-tight mb-4"
-            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#0F172A" }}
+            style={{ fontSize: "clamp(28px, 4vw, 48px)", color: "#333333" }}
           >
             6つの専門サービスで
             <br />
@@ -124,7 +124,7 @@ export default function ServicesGridSection() {
             <Link
               href="/services"
               className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
-              style={{ color: "#2563EB" }}
+              style={{ color: "#096fc8" }}
             >
               すべてのサービスを見る
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -182,7 +182,7 @@ export default function ServicesGridSection() {
                     <div className="text-[11px] font-semibold tracking-[0.14em] uppercase mb-1.5" style={{ color: "#94A3B8" }}>
                       {s.tagline}
                     </div>
-                    <h3 className="font-bold text-base mb-2" style={{ color: "#0F172A" }}>{s.name}</h3>
+                    <h3 className="font-bold text-base mb-2" style={{ color: "#333333" }}>{s.name}</h3>
                     <p className="text-sm leading-relaxed" style={{ color: "#64748B" }}>{s.description}</p>
                   </div>
 

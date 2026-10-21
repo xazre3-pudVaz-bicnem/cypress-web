@@ -166,19 +166,19 @@ export default function MeoRankingPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
+        <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>
               <Link href="/meo" className="hover:underline" style={{ color: "#6B7280" }}>MEO対策</Link>
               <span>/</span>
-              <span style={{ color: "#0F172A" }}>MEO順位改善</span>
+              <span style={{ color: "#333333" }}>MEO順位改善</span>
             </nav>
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               MEO Ranking
             </p>
-            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ color: "#0F172A", fontFamily: "var(--font-serif)" }}>
+            <h1 className="font-black text-[40px] md:text-[52px] leading-tight tracking-tight mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEO順位改善
             </h1>
             <p className="text-[16px] leading-[1.9] max-w-2xl" style={{ color: "#374151" }}>
@@ -197,12 +197,12 @@ export default function MeoRankingPage() {
         </section>
 
         {/* Section A: このページでわかること */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               What You Will Learn
             </p>
-            <h2 className="font-black text-[28px] mb-10" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               このページでわかること
             </h2>
             <div className="max-w-3xl space-y-4">
@@ -215,7 +215,7 @@ export default function MeoRankingPage() {
                 "施策実施から効果確認までのステップと成果測定に使うべきKPI一覧",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "#c4b89a" }}>→</span>
+                  <span className="font-bold text-[15px] shrink-0 mt-0.5" style={{ color: "var(--v2-accent)" }}>→</span>
                   <p className="text-[15px] leading-[1.8]" style={{ color: "#374151" }}>{item}</p>
                 </div>
               ))}
@@ -229,7 +229,7 @@ export default function MeoRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Google&apos;s 3 Factors
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               MEOの順位を決める3要素
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -244,41 +244,41 @@ export default function MeoRankingPage() {
                 { num: "02", title: "関連性（Relevance）", body: "ビジネスがユーザーの検索クエリにどれだけマッチしているかです。GBPのカテゴリ設定・説明文・サービス情報・投稿コンテンツに含まれるキーワードが評価されます。「美容室」で検索したユーザーに対して「美容室」カテゴリに設定されたGBPが高く評価されるように、カテゴリとキーワードの最適化が関連性を高めます。" },
                 { num: "03", title: "知名度（Prominence）", body: "ビジネスがオンライン上でどれだけ認知されているかです。口コミの件数・評価スコア・外部サイトからの被リンク・サイテーション（NAP情報の掲載）・SEO評価などが影響します。リアルな知名度（チェーン店・老舗など）もGoogleは考慮しますが、中小企業でも口コミ獲得・外部サイト掲載・SEO改善で知名度を高めることができます。" },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>{item.num}</span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 順位改善の施策 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Improvement Measures
             </p>
-            <h2 className="font-black text-[28px] mb-12" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-12" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               順位改善の施策
             </h2>
             <div className="max-w-3xl">
               {rankingMeasures.map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -289,12 +289,12 @@ export default function MeoRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Timeline Expectations
             </p>
-            <h2 className="font-black text-[28px] mb-8" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-8" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               短期で改善できること vs 長期で必要なこと
             </h2>
             <div className="max-w-3xl grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a" }}>1〜2ヶ月で効果が出やすい施策</h3>
+                <h3 className="font-bold text-[15px] mb-4" style={{ color: "#333333" }}>1〜2ヶ月で効果が出やすい施策</h3>
                 <ul className="space-y-3">
                   {[
                     "GBP情報の完全入力（カテゴリ・説明文・属性）",
@@ -312,7 +312,7 @@ export default function MeoRankingPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[15px] mb-4" style={{ color: "#0d1b2a" }}>3〜6ヶ月以上必要な施策</h3>
+                <h3 className="font-bold text-[15px] mb-4" style={{ color: "#333333" }}>3〜6ヶ月以上必要な施策</h3>
                 <ul className="space-y-3">
                   {[
                     "口コミの継続的な獲得（月5件以上）",
@@ -334,12 +334,12 @@ export default function MeoRankingPage() {
         </section>
 
         {/* Section B: よくある課題と原因 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Common Problems
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               よくある課題と原因
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -389,17 +389,17 @@ export default function MeoRankingPage() {
                   body: "「バリアフリー対応」「子ども連れ歓迎」「駐車場あり」「Wi-Fi完備」などの属性が未設定だと、該当する絞り込み検索で表示されません。業種に合わせた属性をすべて設定することで表示機会が広がります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.title}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.body}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -410,7 +410,7 @@ export default function MeoRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               By Industry
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               業種別の活用ポイント
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -452,28 +452,28 @@ export default function MeoRankingPage() {
                   point: "診療科目ごとのカテゴリ・属性設定を正確に行います。オンライン診療・予約システムとの連携で「今すぐ予約」ボタンを活用します。医療広告ガイドラインに沿った表現で口コミ返信・投稿を行い、信頼性を高めます。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.industry}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.industry}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.point}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* Section D: 実装・改善フロー */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               Implementation Flow
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               実装・改善フロー
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -523,17 +523,17 @@ export default function MeoRankingPage() {
                   detail: "月次で順位・インプレッション・クリック数・電話タップ数・ルートタップ数・口コミ数を記録し、施策の効果を定量的に評価します。順位変動があった場合は原因を分析し、次月の施策に反映するPDCAを回します。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.step}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.step}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
@@ -544,7 +544,7 @@ export default function MeoRankingPage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
               KPI Metrics
             </p>
-            <h2 className="font-black text-[28px] mb-4" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+            <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
               成果を見るための指標
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
@@ -582,30 +582,30 @@ export default function MeoRankingPage() {
                   detail: "GBPのウェブサイトリンクからの流入数です。Googleアナリティクス（参照元：google / medium：organic）またはGBPインサイトで確認します。MEOの改善がウェブサイトへの送客にどう貢献しているかを測ります。",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #E8E4DC" }}>
+                <div key={i} className="flex gap-6 py-6" style={{ borderTop: "1px solid #dde0e4" }}>
                   <span className="text-[12px] font-mono shrink-0 mt-1" style={{ color: "#9CA3AF" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#0d1b2a" }}>{item.kpi}</h3>
+                    <h3 className="font-bold text-[16px] mb-2" style={{ color: "#333333" }}>{item.kpi}</h3>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ borderTop: "1px solid #E8E4DC" }} />
+              <div style={{ borderTop: "1px solid #dde0e4" }} />
             </div>
           </div>
         </section>
 
         {/* 2-col: 順位を決める3要素 */}
-        <section className="py-20" style={{ background: "#F9F8F5" }}>
+        <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
                   3 Ranking Factors
                 </p>
-                <h2 className="font-black text-[26px] mb-6" style={{ color: "#0d1b2a", fontFamily: "var(--font-serif)" }}>
+                <h2 className="font-black text-[26px] mb-6" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
                   順位を決める3要素
                 </h2>
                 <div className="space-y-4">
@@ -623,7 +623,7 @@ export default function MeoRankingPage() {
                   <Link
                     href="/contact"
                     className="inline-block px-8 py-4 text-[14px] font-semibold tracking-wide"
-                    style={{ background: "#0F172A", color: "#FFFFFF" }}
+                    style={{ background: "#293540", color: "#FFFFFF" }}
                   >
                     無料相談はこちら
                   </Link>
