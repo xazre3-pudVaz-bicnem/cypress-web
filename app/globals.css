@@ -617,8 +617,11 @@ html[data-motion="off"] .cy-poster {
 @media (min-width: 768px) {
   [data-page-hero] nav {
     position: absolute;
-    right: 0;
-    bottom: calc(-1 * clamp(40px, 7vh, 80px));
+    /* 本文の右端（左右 24px の余白の内側）にそろえる。0 だと画面幅が狭いとき画面の端に付く */
+    right: 24px;
+    /* 冒頭の下余白（clamp(64px,10vh,112px)）のうち、下から食い込むイラスト帯（clamp(24px,4vh,48px)）より 16px 上に置く。
+       帯に重なると文字の下半分が隠れる */
+    bottom: calc(-1 * (clamp(64px, 10vh, 112px) - clamp(24px, 4vh, 48px) - 16px));
     margin: 0 !important;
   }
 }
@@ -722,6 +725,43 @@ main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)
 }
 main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) > div:empty {
   background: linear-gradient(90deg, rgba(6, 36, 78, 0.6) 0%, rgba(6, 36, 78, 0.26) 42%, rgba(6, 36, 78, 0) 68%) !important;
+}
+/* 帯のキャッチコピーは、本文と同じ左端（濃紺のかかった側）に寄せ、右のイラストに重ならない幅で折り返す
+   （中央寄せのままだと、イラストの白い部分に白文字が重なって読めない） */
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)),
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) > div:not(:empty) {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+/* 帯の上は暗いので、差し色（英字の小ラベルなど）は濃い背景用の明るい青にする */
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) {
+  --v2-accent: #8ec5f5;
+}
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) > div:not(:empty) {
+  padding-inline: max(24px, calc((100% - 72rem) / 2 + 24px)) !important;
+}
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) > div:not(:empty) > div {
+  width: 100%;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) :is(p, h3) {
+  max-width: 30vw !important;
+  text-align: left !important;
+  text-shadow: 0 2px 18px rgba(6, 36, 78, 0.45);
+  /* 1文字だけ次の行に残ったり、単語の途中で切れたりしないよう、行の長さをそろえて文節で折り返す */
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+/* スマホは帯の幅が足りずイラストに重なるので、文字の下を少し濃くして読ませる */
+@media (max-width: 767px) {
+  main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)):has(p) > div:empty {
+    background: linear-gradient(90deg, rgba(6, 36, 78, 0.78) 0%, rgba(6, 36, 78, 0.55) 55%, rgba(6, 36, 78, 0.15) 100%) !important;
+  }
+  main:not(.v2) [data-page-hero] + section:has(img[data-nimg="fill"]):not(:has(h2)) :is(p, h3) {
+    max-width: 64vw !important;
+  }
 }
 
 /* 立体イラスト（モチーフが右寄り）を正方形・縦長の枠で切り抜くときも、モチーフが見えるよう右寄りに合わせる */

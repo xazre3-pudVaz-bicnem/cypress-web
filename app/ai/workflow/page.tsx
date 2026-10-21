@@ -491,7 +491,7 @@ export default function WorkflowPage() {
                   <div className="flex-1">
                     <div className="flex items-start justify-between gap-4 flex-wrap mb-2">
                       <p className="font-bold text-[15px]" style={{ color: "#333333" }}>{item.kpi}</p>
-                      <p className="text-[12px] shrink-0" style={{ color: "var(--v2-accent)" }}>計測場所：{item.where}</p>
+                      <p className="text-[12px]" style={{ color: "var(--v2-accent)" }}>計測場所：{item.where}</p>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>

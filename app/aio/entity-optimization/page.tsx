@@ -527,7 +527,7 @@ export default function EntityOptimizationPage() {
                   <div>
                     <div className="flex items-start gap-3 mb-2 flex-wrap">
                       <h3 className="font-bold text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "#333333" }}>{item.kpi}</h3>
-                      <span className="text-[11px] shrink-0" style={{ color: "var(--v2-accent)" }}>確認場所：{item.where}</span>
+                      <span className="text-[11px]" style={{ color: "var(--v2-accent)" }}>確認場所：{item.where}</span>
                     </div>
                     <p className="text-[14px] leading-[1.9]" style={{ color: "#374151" }}>{item.detail}</p>
                   </div>

@@ -188,7 +188,7 @@ export default function Page() {
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
             <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
               <p style={{ color: "#ffffff", fontWeight: 700, fontSize: "clamp(16px,2vw,24px)", lineHeight: 1.6, maxWidth: "640px" }}>
-                AI Overviewに引用されるサイトは、E-E-A-Tと構造化データで「AIが信頼できる情報源」として認識されたページです。
+                AI Overviewに引用されるサイトは、<span className="whitespace-nowrap">E-E-A-T</span>と構造化データで「AIが信頼できる情報源」として認識されたページです。
               </p>
             </div>
           </div>
