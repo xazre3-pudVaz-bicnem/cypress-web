@@ -164,7 +164,6 @@ export default function ProcessPage() {
             { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ集客のサービス詳細" },
             { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示のサービス詳細" },
             { href: "/services/web-design", label: "ホームページ制作", desc: "サイト制作サービスの詳細" },
-            { href: "/cost", label: "費用・料金ガイド", desc: "各サービスの費用相場" },
             { href: "/support", label: "サポート・運用支援", desc: "継続的なサポートの詳細" },
             { href: "/guide", label: "Web集客ガイド", desc: "実践ガイド集" },
             { href: "/contact", label: "無料相談", desc: "まずはご相談ください" },

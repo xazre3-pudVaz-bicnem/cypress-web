@@ -279,7 +279,7 @@ const RELATED_LINKS = [
   { href: "/aio/entity-optimization", label: "トピカルオーソリティ", desc: "専門性の確立と維持" },
   { href: "/aio/knowledge-graph", label: "ナレッジグラフ対策", desc: "Googleへの認識登録" },
   { href: "/aio/organization-data", label: "Organization構造化データ", desc: "企業情報の構造化" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索流入を増やすコンテンツ戦略" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "サイト構造・速度の最適化" },

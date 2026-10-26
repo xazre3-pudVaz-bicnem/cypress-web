@@ -305,7 +305,7 @@ const relatedLinks = [
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツによる集客強化" },
   { href: "/meo", label: "MEO対策", desc: "Googleマップ・地域集客対策" },
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "Googleビジネスプロフィール管理" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO支援サービス詳細" },
   { href: "/services/web-design", label: "Webデザイン制作", desc: "高品質サイト制作" },
   { href: "/industries/clinic", label: "医療・クリニック向け", desc: "医療業界のAIO・SEO対策" },

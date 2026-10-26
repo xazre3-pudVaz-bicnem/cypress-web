@@ -8,7 +8,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const BUBBLES = [
   { label: "Contact", title: "お問い合わせ", text: ["まずはお気軽に", "ご相談ください。"], href: "/contact", tone: "glass" },
-  { label: "Pricing", title: "料金の目安", text: ["MEO・SEO・制作費の", "目安をご覧いただけます。"], href: "/cost", tone: "glass" },
+  { label: "Process", title: "ご支援の流れ", text: ["ご相談から運用までの", "進め方をご覧いただけます。"], href: "/process", tone: "glass" },
   { label: "Career", title: "採用情報", text: [], href: "/recruit", tone: "white" },
 ] as const;
 

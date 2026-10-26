@@ -279,7 +279,7 @@ const RELATED_LINKS = [
   { href: "/knowledge/eeat", label: "E-E-A-T対策", desc: "経験・専門性・権威性・信頼性" },
   { href: "/aio/entity-optimization", label: "トピカルオーソリティ", desc: "専門性の確立と維持" },
   { href: "/seo/local-seo", label: "ローカルSEO連携", desc: "地域エンティティの構築" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/seo", label: "SEO対策", desc: "検索エンジン最適化の全体戦略" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "サイト構造・速度の最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索流入を増やすコンテンツ戦略" },

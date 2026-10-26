@@ -58,7 +58,6 @@ export const WEB_OPERATION_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo", label: "SEO対策サービスを見る", desc: "専門技術が必要な領域の支援" },
       { href: "/meo", label: "MEO対策サービスを見る", desc: "内製と外注を組み合わせた運用" },
       { href: "/training", label: "研修・人材育成を見る", desc: "社内担当者を育てて内製化を進める" },
-      { href: "/cost", label: "費用の考え方を見る", desc: "内製と外注のコスト比較" },
       { href: "/contact", label: "体制づくりの無料相談をする", desc: "内製と外注の分担を一緒に設計" },
     ],
   },
@@ -113,7 +112,6 @@ export const WEB_OPERATION_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/seo", label: "SEO対策サービスを見る", desc: "根拠のある提案と施策" },
       { href: "/services", label: "サービス一覧を見る", desc: "Web集客支援の全体像" },
-      { href: "/cost", label: "費用の考え方を見る", desc: "料金の内訳と考え方" },
       { href: "/meo", label: "MEO対策サービスを見る", desc: "地域集客とあわせた施策" },
       { href: "/contact", label: "SEOの無料相談をする", desc: "現状分析から丁寧にご説明" },
     ],

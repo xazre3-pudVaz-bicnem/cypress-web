@@ -127,7 +127,6 @@ const relatedLinks = [
   { href: "/column/seo", label: "SEOコラム", desc: "SEOの最新情報・基礎解説" },
   { href: "/column/content-marketing", label: "コンテンツマーケティングコラム", desc: "記事設計の実践知識" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "ブログ運用込みの料金目安" },
   { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "記事公開前の確認項目" },
   { href: "/cases/service/seo", label: "SEO改善事例", desc: "ブログ運用による流入増加の事例" },
   { href: "/services/seo", label: "無料SEO診断", desc: "記事の課題を無料で確認" },

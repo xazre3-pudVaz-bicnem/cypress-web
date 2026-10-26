@@ -57,8 +57,8 @@ const faqItems = [
     a: "店舗アカウントはサロン全体のブランドイメージ・メニュー情報・キャンペーン告知に、スタイリスト個人アカウントは担当者の得意スタイル・センス・人柄の発信に活用します。個人アカウントで指名を育て、店舗アカウントで新規顧客への信頼を構築する二層構造が指名予約の増加に最も効果的です。",
   },
   {
-    q: "美容室のWeb集客にどのくらいの費用がかかりますか？",
-    a: "MEO対策は月額2〜4万円、Instagram運用代行は月額3〜8万円、ホームページ制作は30〜80万円が目安です。現状のGoogleマップ順位・競合状況・SNSフォロワー数に応じて最適なプランをご提案します。まずは無料相談をご利用ください。",
+    q: "美容室のWeb集客の費用はどのように決まりますか？",
+    a: "MEO対策・Instagram運用代行・ホームページ制作のどれを組み合わせるかで変わります。現状のGoogleマップ順位・競合状況・SNSフォロワー数も踏まえて、最適なプランを個別にお見積りします。ご相談・お見積りは無料です。",
   },
   {
     q: "縮毛矯正・白髪染めなど特定メニューへの集客はできますか？",
@@ -103,10 +103,9 @@ const relatedLinks = [
   { href: "/meo/beauty-salon-meo", label: "美容室のMEO対策", desc: "美容室専門のGoogleマップ対策" },
   { href: "/sns/instagram", label: "Instagram運用代行", desc: "美容室向けInstagram戦略" },
   { href: "/sns/photo-direction", label: "写真ディレクション", desc: "サロン向け撮影・写真戦略" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金プラン" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/sns", label: "SNS運用サービス", desc: "SNS運用代行の詳細" },
   { href: "/web-design/corporate-site", label: "ホームページ制作", desc: "美容室向けサイト制作" },
-  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリア対応" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/industries/nail-salon", label: "ネイルサロンのWeb集客", desc: "ネイル専門の集客支援" },

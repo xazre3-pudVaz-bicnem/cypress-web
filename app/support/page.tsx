@@ -162,7 +162,6 @@ export default function SupportPage() {
             { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示の継続支援" },
             { href: "/services/sns", label: "SNS運用サービス", desc: "SNSの継続的な運用代行" },
             { href: "/process", label: "ご利用の流れ", desc: "相談から運用開始までのステップ" },
-            { href: "/cost", label: "費用・料金ガイド", desc: "各サポートの費用相場" },
             { href: "/guide", label: "Web集客ガイド", desc: "実践的なガイド集" },
             { href: "/contact", label: "無料相談", desc: "サポート内容のご相談" },
           ]}

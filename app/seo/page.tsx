@@ -77,7 +77,7 @@ const jsonLd = {
         { "@type": "Question", name: "Googleのアルゴリズム変更が怖いです。安全な対策方法はありますか？", acceptedAnswer: { "@type": "Answer", text: "Googleが一貫して重視しているのは「ユーザーにとって価値あるコンテンツと体験」です。小手先のテクニックより、検索意図に合った質の高いコンテンツ制作・E-E-A-Tの構築・技術的な最適化を地道に積み重ねることが、アルゴリズム変更に強いサイト作りにつながります。" } },
         { "@type": "Question", name: "現在のサイトでSEO対策を始められますか？", acceptedAnswer: { "@type": "Answer", text: "はい、既存サイトへのSEO施策が最初のステップになります。まず現状診断を行い、改善優先度の高い施策（タイトルタグ修正・ページ速度改善・コンテンツ拡充など）から着手します。WordPress・Next.jsサイト・その他CMSに対応しています。" } },
         { "@type": "Question", name: "内部SEOと外部SEOはどちらを先にやるべきですか？", acceptedAnswer: { "@type": "Answer", text: "内部SEO（タイトル・構造・速度・コンテンツ）を先に整えることを推奨します。内部が最適化されていない状態で被リンクを集めても、評価が散漫になります。サイトの土台を固めてから、外部被リンク獲得に移行するのが効率的です。" } },
-        { "@type": "Question", name: "SEO対策の費用はどのくらいかかりますか？", acceptedAnswer: { "@type": "Answer", text: "施策内容・対象キーワード数・競合状況によって大きく異なります。コンサルティング型では月5〜15万円程度、コンテンツ制作込みの包括支援では月10〜30万円程度が目安です。まずは現状診断・目標ヒアリングのうえで、費用対効果を踏まえたご提案をいたします。" } },
+        { "@type": "Question", name: "SEO対策の費用はどのように決まりますか？", acceptedAnswer: { "@type": "Answer", text: "施策内容・対象キーワード数・競合状況によって大きく異なります。コンサルティング型か、コンテンツ制作込みの包括支援かによっても変わります。まずは現状診断と目標のヒアリングを行い、費用対効果を踏まえて個別にお見積りします。ご相談・お見積りは無料です。" } },
         { "@type": "Question", name: "SEO対策でサイトがペナルティを受けることはありますか？", acceptedAnswer: { "@type": "Answer", text: "ホワイトハットSEO（Googleのガイドラインに沿った対策）を実施する限りペナルティリスクはほぼありません。大量スパムリンク・隠しテキスト・コンテンツのコピー・誘導ページの作成などのブラックハット施策は重大なペナルティにつながります。当社はガイドラインを遵守した施策のみ実施します。" } },
         { "@type": "Question", name: "SEO対策の成果はどのように計測しますか？", acceptedAnswer: { "@type": "Answer", text: "Google Search Console・Google Analytics・順位計測ツールを使い、毎月の自然検索流入数・対策キーワード順位・セッション数・CV数・直帰率を計測します。月次レポートでデータを共有し、改善施策に反映させます。" } },
         { "@type": "Question", name: "中小企業でもSEO対策の効果はありますか？", acceptedAnswer: { "@type": "Answer", text: "はい、むしろ中小企業こそSEOの恩恵を大きく受けられます。大企業が狙わないロングテールキーワードや地域特化キーワードで上位表示を狙うことで、少ない予算でも効果的な集客が可能です。地域ビジネスであればMEO対策と組み合わせることでさらに高い効果が期待できます。" } },
@@ -257,8 +257,8 @@ const faqItems = [
     a: "内部SEO（タイトル・構造・速度・コンテンツ）を先に整えることを推奨します。内部が最適化されていない状態で被リンクを集めても、評価が散漫になります。サイトの土台を固めてから、外部被リンク獲得に移行するのが効率的です。",
   },
   {
-    q: "SEO対策の費用はどのくらいかかりますか？",
-    a: "施策内容・対象キーワード数・競合状況によって大きく異なります。コンサルティング型では月5〜15万円程度、コンテンツ制作込みの包括支援では月10〜30万円程度が目安です。まずは現状診断・目標ヒアリングのうえで、費用対効果を踏まえたご提案をいたします。",
+    q: "SEO対策の費用はどのように決まりますか？",
+    a: "施策内容・対象キーワード数・競合状況によって大きく異なります。コンサルティング型か、コンテンツ制作込みの包括支援かによっても変わります。まずは現状診断と目標のヒアリングを行い、費用対効果を踏まえて個別にお見積りします。ご相談・お見積りは無料です。",
   },
   {
     q: "SEO対策でサイトがペナルティを受けることはありますか？",
@@ -315,7 +315,7 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "SEO対策を含む制作パッケージのご案内" },
+  { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
   { href: "/seo/internal-seo", label: "内部SEO", desc: "タイトル・見出し・URL最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "検索意図に合ったコンテンツ制作" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "表示速度・Core Web Vitals改善" },
@@ -330,7 +330,6 @@ const relatedLinks = [
   { href: "/knowledge/seo-basics", label: "SEO基礎知識", desc: "初めてのSEO完全ガイド" },
   { href: "/knowledge/keyword-research", label: "キーワード調査の方法", desc: "実践的なキーワード選定法" },
   { href: "/guide/how-to-choose-seo-company", label: "SEO会社の選び方", desc: "外注先を選ぶポイント" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "料金相場と費用対効果" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援内容" },
   { href: "/cases/service/seo", label: "SEO対策の成功事例", desc: "業種別のSEO成功事例一覧" },
   { href: "/training/web-marketing-training", label: "Webマーケティング研修", desc: "SEOを社内で判断できる人材を育てる" },

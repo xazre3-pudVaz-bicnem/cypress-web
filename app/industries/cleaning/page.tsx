@@ -115,7 +115,6 @@ const relatedLinks = [
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示で集客" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "清掃業向けサイト制作" },
   { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "高CV率LPの制作" },
-  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
   { href: "/sns", label: "LINE公式アカウント活用", desc: "リピーター育成の仕組み化" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
@@ -126,7 +125,7 @@ const relatedLinks = [
   { href: "/knowledge/review-strategy", label: "口コミ獲得戦略", desc: "口コミを増やす方法" },
   { href: "/meo/photo-posting", label: "GBP写真の撮り方ガイド", desc: "Googleビジネスプロフィール写真の最適化" },
   { href: "/seo/content-seo", label: "コンテンツSEO対策", desc: "コンテンツで検索上位を目指す" },
-  { href: "/cost/seo", label: "SEO対策の料金", desc: "SEO対策の費用相場" },
+  { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },
   { href: "/industries", label: "業種別Web集客一覧", desc: "全業種の集客支援" },
   { href: "/contact", label: "無料相談", desc: "清掃業のWeb集客相談" },
 ];

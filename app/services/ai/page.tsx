@@ -46,8 +46,8 @@ const faqItems = [
     a: "主にマーケティング・広報・カスタマーサポート・社内文書作成などの知識業務の自動化を支援しています。Zapier・Make（旧Integromat）・n8nなどのノーコード自動化ツールとAIの組み合わせによるワークフロー自動化が得意です。",
   },
   {
-    q: "AI活用にはどのくらいのコストがかかりますか？",
-    a: "ChatGPT APIやClaude API自体の費用は使用量に応じた従量課金（月数千円〜）です。サイプレスの支援費用は、導入コンサルティング・プロンプト設計・ワークフロー構築の内容によって異なります。まずは無料相談でご相談ください。",
+    q: "AI活用の費用はどのように決まりますか？",
+    a: "ChatGPT APIやClaude API自体の費用は、使用量に応じた従量課金（月数千円〜）です。サイプレスの支援費用は、導入コンサルティング・プロンプト設計・ワークフロー構築の内容によって決まります。ご相談内容をお聞きしたうえで個別にお見積りしますので、まずは無料相談をご利用ください。",
   },
   {
     q: "社員がAIを活用できるように研修してもらえますか？",
@@ -128,7 +128,6 @@ const relatedLinks = [
   { href: "/industries/clinic", label: "医療・クリニックのAI活用", desc: "医療現場でのAI支援" },
   { href: "/industries/local-store", label: "ECサイトのAI活用", desc: "EC業界でのAI自動化" },
   { href: "/industries/professional-service", label: "士業のAI活用", desc: "弁護士・税理士事務所のAI導入" },
-  { href: "/cost/ai-cost-reduction", label: "AI活用支援の費用", desc: "料金プランと相場" },
   { href: "/column/seo", label: "SEOコラム", desc: "AI×マーケティングの最新情報" },
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "AI活用支援のご相談はこちら" },
@@ -184,8 +183,8 @@ export default function ServicesAiPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/ai-cost-reduction" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #dde0e4", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #dde0e4", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

@@ -38,7 +38,6 @@ const LINKABLE_PAGES: { path: string; label: string }[] = [
   { path: "/contact", label: "無料相談・お問い合わせフォーム" },
   ...SERVICES.map((s) => ({ path: `/services/${s.slug}`, label: s.name })),
   { path: "/services", label: "サービス一覧" },
-  { path: "/pricing/web-growth-package", label: "Web集客パッケージの料金" },
   { path: "/cases", label: "支援事例" },
   { path: "/process", label: "ご支援の流れ" },
   { path: "/faq", label: "よくある質問" },

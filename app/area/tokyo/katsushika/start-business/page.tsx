@@ -52,8 +52,8 @@ const faqItems = [
     a: "SNSだけで集客を続けることは可能ですが、投稿を止めると集客も止まります。ホームページとGBPを整えることで、検索で継続的に見つけてもらえる「資産型集客」の基盤ができます。SNSとホームページ・SEOを組み合わせることを推奨しています。",
   },
   {
-    q: "葛飾区で起業する際のホームページ制作費の相場は？",
-    a: "制作範囲・機能・ページ数によって異なります。シンプルなSEO対応ホームページであれば数十万円〜、本格的なSEO設計込みのサイトは数十万円〜が一般的です。葛飾区のホームページ作成費補助を活用できる場合があります（制度内容は公式サイトで要確認）。",
+    q: "葛飾区で起業する際のホームページ制作費はどのように決まりますか？",
+    a: "制作範囲・機能・ページ数と、SEO設計をどこまで組み込むかによって変わります。ご予算や開業時期をお聞きしたうえで、必要な範囲に絞ってお見積りします。お見積りは無料です。葛飾区のホームページ作成費補助を活用できる場合があります（制度内容は公式サイトで要確認）。",
   },
   {
     q: "Googleビジネスプロフィール（GBP）はいつ登録すべきですか？",
@@ -202,7 +202,7 @@ const relatedLinks = [
   { href: "/area/tokyo/katsushika/web-design-subsidy", label: "葛飾区でホームページ制作と補助金を確認する", desc: "制作と補助金の確認ポイント" },
   { href: "/area/tokyo/katsushika/startup-revenue-streams", label: "創業初期の収益柱として販売パートナー制度を確認する", desc: "創業初期の収益柱づくり" },
   { href: "/partner/katsushika-startup", label: "葛飾区で起業する方向け販売パートナー制度を見る", desc: "取次・紹介でできる制度" },
-  { href: "/pricing/web-growth-package", label: "Web集客パッケージの料金を確認する", desc: "制作+SEO+MEOセットの料金" },
+  { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
   { href: "/column/katsushika-startup-checklist", label: "葛飾区で開業する前に確認したいチェックリスト完全版", desc: "コラム：開業前の確認事項" },
   { href: "/column/katsushika-startup-homepage-seo", label: "葛飾区で創業する事業者がSEOに強いホームページを作るべき理由", desc: "コラム：創業期のHP設計" },
   { href: "/column/startup-first-client-acquisition", label: "創業初期に最初の顧客を獲得するための営業導線", desc: "コラム：初期顧客獲得" },

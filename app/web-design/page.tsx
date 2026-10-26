@@ -10,7 +10,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 export const metadata: Metadata = {
   title: "ホームページ制作とは｜SEO・CVに強いサイト設計の基本｜株式会社サイプレス",
   description:
-    "Webサイト制作の基礎から実践まで解説。コーポレートサイト・採用サイト・SEO特化サイト・サービスサイト・WordPressの種類と選び方、制作費用の目安、制作会社の選び方、よくある失敗パターンまで網羅。東京葛飾区のWeb制作会社。",
+    "Webサイト制作の基礎から実践まで解説。コーポレートサイト・採用サイト・SEO特化サイト・サービスサイト・WordPressの種類と選び方、制作費用の決まり方、制作会社の選び方、よくある失敗パターンまで網羅。東京葛飾区のWeb制作会社。",
   keywords: ["Webサイト制作", "ホームページ制作", "Web制作会社", "サイト制作費用", "Next.js制作", "WordPress制作", "SEO対応サイト制作"],
   openGraph: {
     title: "ホームページ制作とは｜SEO・CVに強いサイト設計の基本｜株式会社サイプレス",
@@ -69,7 +69,7 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "Webサイト制作の費用相場はどのくらいですか？", acceptedAnswer: { "@type": "Answer", text: "シンプルなコーポレートサイト（5〜10ページ）で50〜150万円、SEO特化サイト・採用サイトで100〜300万円、EC機能付きサイトで200万円〜が一般的な相場です。フリーランスへの依頼は30〜80万円と安価ですが、品質・保守体制に差があります。まずは要件を整理した上でお見積もりを取ることをお勧めします。" } },
+        { "@type": "Question", name: "Webサイト制作の費用はどのように決まりますか？", acceptedAnswer: { "@type": "Answer", text: "サイトの種類・ページ数・機能・コンテンツ量・デザインの複雑さによって変わります。EC機能や予約機能が必要な場合は、その分の設計・開発が加わります。サイプレスでは要件を整理したうえで個別にお見積りします。ご相談・お見積りは無料です。" } },
         { "@type": "Question", name: "Next.jsとWordPressのどちらがいいですか？", acceptedAnswer: { "@type": "Answer", text: "Next.jsは表示速度・セキュリティ・SEOパフォーマンスに優れますが、更新にエンジニアが必要です。WordPressは管理画面から誰でも更新できますが、プラグインの脆弱性リスクがあります。更新頻度・社内体制・予算によって最適な選択が異なります。ご要件をお聞かせいただければ最適な技術をご提案します。" } },
         { "@type": "Question", name: "Webサイト制作でよくある失敗は？", acceptedAnswer: { "@type": "Answer", text: "①デザインにこだわりすぎてSEO・CV設計が抜け落ちる、②制作後に更新・保守体制を考えていない、③モバイルでの表示速度が遅い、④問い合わせ導線（CTA・フォーム）が不明確、⑤SEOを後付けで考える（URL・コンテンツ設計は最初から重要）、などが多いです。" } },
         { "@type": "Question", name: "SEOを意識したサイト制作はどこに依頼すればいいですか？", acceptedAnswer: { "@type": "Answer", text: "SEOとWeb制作を一体で対応できる会社への依頼が最も効果的です。デザインのみ得意な会社にSEOを後から依頼すると、URL設計・コンテンツ構造・技術設計が最初からSEOを考慮していないため効果が出にくいことがあります。制作前の提案段階でSEO設計が含まれているかを確認することが重要です。" } },
@@ -106,12 +106,12 @@ const processSteps = [
   { step: "06", title: "公開・引き継ぎ", period: "1週間", body: "ドメイン設定・SSL証明書設置・本番サーバーへのデプロイを行います。更新・保守の操作マニュアルを提供し、担当者への引き継ぎを実施します。公開後のSEO効果の計測開始と初月のパフォーマンスレポートを提供します。" },
 ];
 
-const costGuide = [
-  { type: "シンプルなコーポレートサイト", pages: "5〜10ページ", cost: "50〜150万円", features: "デザイン・コーディング・レスポンシブ・お問い合わせフォーム・基本SEO設定" },
-  { type: "SEO特化サイト・コンテンツサイト", pages: "20〜50ページ+", cost: "100〜300万円", features: "キーワード設計・サイト設計・コンテンツ制作・構造化データ・内部リンク設計" },
-  { type: "採用サイト", pages: "10〜20ページ", cost: "100〜250万円", features: "採用ブランディング・EFOフォーム・求職者体験設計・応募データ管理" },
-  { type: "サービスサイト・LP", pages: "1〜5ページ", cost: "30〜100万円", features: "コンバージョン最適化・A/Bテスト設計・広告ランディングページ最適化" },
-  { type: "EC・機能要件あり", pages: "30〜100ページ+", cost: "200万円〜", features: "カート・決済・会員機能・在庫管理・受注管理システム" },
+const siteTypes = [
+  { type: "シンプルなコーポレートサイト", pages: "5〜10ページ", features: "デザイン・コーディング・レスポンシブ・お問い合わせフォーム・基本SEO設定" },
+  { type: "SEO特化サイト・コンテンツサイト", pages: "20〜50ページ+", features: "キーワード設計・サイト設計・コンテンツ制作・構造化データ・内部リンク設計" },
+  { type: "採用サイト", pages: "10〜20ページ", features: "採用ブランディング・EFOフォーム・求職者体験設計・応募データ管理" },
+  { type: "サービスサイト・LP", pages: "1〜5ページ", features: "コンバージョン最適化・A/Bテスト設計・広告ランディングページ最適化" },
+  { type: "EC・機能要件あり", pages: "30〜100ページ+", features: "カート・決済・会員機能・在庫管理・受注管理システム" },
 ];
 
 const industryPoints = [
@@ -133,8 +133,8 @@ const failurePatterns = [
 
 const faqItems = [
   {
-    q: "Webサイト制作の費用相場はどのくらいですか？",
-    a: "シンプルなコーポレートサイト（5〜10ページ）で50〜150万円、SEO特化サイト・採用サイトで100〜300万円、EC機能付きサイトで200万円〜が一般的な相場です。フリーランスへの依頼は30〜80万円と安価ですが、品質・保守体制に差があります。まずは要件を整理した上でお見積もりを取ることをお勧めします。",
+    q: "Webサイト制作の費用はどのように決まりますか？",
+    a: "サイトの種類・ページ数・機能・コンテンツ量・デザインの複雑さによって変わります。EC機能や予約機能が必要な場合は、その分の設計・開発が加わります。サイプレスでは要件を整理したうえで個別にお見積りします。ご相談・お見積りは無料です。",
   },
   {
     q: "Next.jsとWordPressのどちらがいいですか？",
@@ -191,15 +191,14 @@ const faqItems = [
 ];
 
 const relatedLinks = [
-  { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "制作・SEO・LP制作を組み合わせたパッケージ" },
-  { href: "/services/web-design", label: "Web制作サービス詳細", desc: "サービス内容と料金プラン" },
+  { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
+  { href: "/services/web-design", label: "Web制作サービス詳細", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "制作後の検索集客強化" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ集客" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "企業の信頼を伝えるサイト" },
   { href: "/web-design/recruit-site", label: "採用サイト制作", desc: "求職者の応募を増やすサイト" },
   { href: "/web-design/seo-site", label: "SEO特化サイト制作", desc: "検索流入最大化の設計" },
   { href: "/web-design/wordpress", label: "WordPress制作", desc: "担当者が更新できるCMS" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "料金プランと相場" },
   { href: "/web-design", label: "Web制作会社の選び方", desc: "失敗しない選定ガイド" },
   { href: "/checklist/website-redesign", label: "Web制作チェックリスト", desc: "制作前の確認項目一覧" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "制作段階のSEO設計" },
@@ -309,23 +308,22 @@ export default function WebDesignPage() {
           </div>
         </section>
 
-        {/* 費用目安 */}
+        {/* サイトの種類と制作内容 */}
         <section data-tone="dark" className="py-20" style={{ background: "#293540" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-display)" }}>Cost Guide</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "var(--v2-accent)", fontFamily: "var(--font-display)" }}>Site Types</p>
             <h2 className="font-black text-[26px] mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>
-              種類別 制作費用の目安
+              種類別 制作内容の目安
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-12" style={{ color: "rgba(255,255,255,0.7)" }}>
-              制作費用はサイト規模・機能・コンテンツ量・デザインの複雑さによって異なります。詳細はお見積もりにてご案内します。
+              制作費用はサイト規模・機能・コンテンツ量・デザインの複雑さによって変わります。ご要件をお聞きしたうえで、無料で個別にお見積りします。
             </p>
             <div className="space-y-4 max-w-4xl">
-              {costGuide.map((c, i) => (
+              {siteTypes.map((c, i) => (
                 <div key={i} style={{ padding: "24px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
                   <div className="flex flex-wrap gap-4 mb-3 items-baseline">
                     <span className="font-bold text-[15px]" style={{ color: "#ffffff", fontFamily: "var(--font-serif)" }}>{c.type}</span>
                     <span className="text-[13px]" style={{ color: "var(--v2-accent)" }}>{c.pages}</span>
-                    <span className="text-[15px] font-bold ml-auto" style={{ color: "var(--v2-accent)" }}>{c.cost}</span>
                   </div>
                   <p className="text-[13px]" style={{ color: "rgba(255,255,255,0.6)" }}>{c.features}</p>
                 </div>

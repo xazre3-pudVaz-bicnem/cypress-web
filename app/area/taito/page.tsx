@@ -52,8 +52,8 @@ const faqItems = [
     a: "はい。サイプレスではホームページ制作の段階からSEOを組み込んで設計します。台東区の観光×地域住民の複合的なキーワード戦略・多言語対応も含めた設計が可能です。",
   },
   {
-    q: "月額いくらから始められますか？",
-    a: "MEO対策は月額2〜3万円台から、SEO対策は月額3〜5万円台からのプランをご用意しています。台東区の中小企業・個人事業主の予算感に合わせた提案を心がけています。",
+    q: "費用はどのように決まりますか？",
+    a: "MEO・SEOとも、施策の範囲と台東区での競合状況によって費用が変わります。台東区の中小企業・個人事業主の予算感に合わせて、無理のない内容をご提案します。無料相談で現状をお聞きし、個別にお見積りします。",
   },
 ];
 
@@ -65,10 +65,9 @@ const relatedLinks = [
   { href: "/area/adachi", label: "足立区", desc: "足立区の集客支援" },
   { href: "/area/tokyo", label: "東京都", desc: "東京都全域の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容・進め方" },
   { href: "/column/taito-meo-seo-guide", label: "台東区MEO・SEOガイド", desc: "詳細コラム記事" },
   { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金・費用の目安" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずはご相談ください" },
 ];
 

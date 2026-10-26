@@ -103,7 +103,7 @@ const faqItems = [
   },
   {
     q: "MEO対策の費用はどのくらいかかりますか？",
-    a: "店舗数・施策範囲・現在のGBP状況によって費用は異なります。まずは無料相談でご状況をお聞きし、最適なプランをご提案します。料金の目安は料金ページをご覧ください。初回の現状診断は無料で対応しています。",
+    a: "店舗数・施策範囲・現在のGBP状況によって費用は異なります。まずは無料相談でご状況をお聞きし、最適なプランと個別のお見積りをご提案します。初回の現状診断は無料で対応しています。",
   },
 ];
 
@@ -112,7 +112,6 @@ const relatedLinks = [
   { href: "/services/seo", label: "SEO対策サービス", desc: "Webサイトの検索流入増加" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "地域ビジネス向けサイト制作" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金プランと相場" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール最適化", desc: "プロフィール設定の詳細" },
   { href: "/meo/review-management", label: "口コミ獲得戦略", desc: "自然な口コミの増やし方" },
   { href: "/meo/photo-posting", label: "MEOに効く写真戦略", desc: "写真設定のポイント" },
@@ -183,8 +182,8 @@ export default function ServicesMeoPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/meo" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

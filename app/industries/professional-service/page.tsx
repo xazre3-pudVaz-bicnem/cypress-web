@@ -115,7 +115,6 @@ const relatedLinks = [
   { href: "/web-design/landing-page", label: "ランディングページ制作", desc: "相談申込みを最大化するLP" },
   { href: "/aio/organization-data", label: "Organization構造化データ", desc: "AIO対策の組織情報設計" },
   { href: "/seo/content-seo", label: "コンテンツSEOとは", desc: "専門記事で長期集客を構築" },
-  { href: "/cost/seo", label: "SEO対策の料金", desc: "SEO費用相場と選び方" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/industries/real-estate", label: "不動産会社のWeb集客", desc: "不動産業の集客支援" },

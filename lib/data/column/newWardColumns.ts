@@ -217,7 +217,7 @@ export const NEW_WARD_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/column/kita-ku-meo-seo-guide", label: "北区のMEO・SEOガイド", desc: "隣接エリアの戦略" },
       { href: "/meo/map-ranking", label: "Googleマップ順位を上げる方法", desc: "MEO上位表示の詳細" },
-      { href: "/column/meo-cost-guide-small-business", label: "MEO対策費用相場", desc: "MEO投資の目安" },
+      { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
       { href: "/contact", label: "豊島区の無料相談", desc: "訪問対応でのご相談" },
     ],
   },

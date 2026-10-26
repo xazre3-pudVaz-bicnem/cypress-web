@@ -303,7 +303,7 @@ const relatedLinks = [
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツ制作と最適化" },
   { href: "/seo/internal-seo", label: "ページ内SEO", desc: "オンページ最適化" },
   { href: "/aio", label: "AIO対策", desc: "AI検索最適化" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEOコンサルティング" },
   { href: "/services/web-design", label: "Webサイト制作", desc: "地域ビジネス向けサイト" },
   { href: "/industries/restaurant", label: "飲食店MEO", desc: "飲食業界向け対策" },

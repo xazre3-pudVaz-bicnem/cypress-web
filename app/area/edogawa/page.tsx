@@ -84,8 +84,8 @@ const faqItems = [
     a: "はい。「葛西 学習塾」「西葛西 英会話」「小岩 個別指導」など、ファミリー層が多い江戸川区は教育サービスへの需要が高いエリアです。検索意図に沿ったLP・ウェブサイト制作とMEO対策で新規生徒の獲得を支援します。",
   },
   {
-    q: "月額費用の目安を教えてください。",
-    a: "MEO対策は月額2〜5万円程度（エリア・競合状況・対応範囲による）、ローカルSEOは月額3〜8万円程度、ホームページ制作は要件により異なります。まずは無料相談で現状をお聞きし、最適なプランをご提案しますのでお気軽にご連絡ください。",
+    q: "月々の費用はどのように決まりますか？",
+    a: "MEO対策・ローカルSEOは、エリア・競合状況・対応範囲によって費用が変わります。ホームページ制作は要件に合わせてお見積りします。まずは無料相談で現状をお聞きし、最適なプランをご提案します。お見積りも無料ですので、お気軽にご連絡ください。",
   },
   {
     q: "契約期間の縛りはありますか？",
@@ -126,13 +126,12 @@ const relatedLinks = [
   { href: "/area/chiba", label: "千葉県", desc: "千葉県の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
   { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容・進め方" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス内容・進め方" },
   { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
   { href: "/industries/hair-salon", label: "美容室・ヘアサロンの集客", desc: "美容業向け支援" },
   { href: "/industries/clinic", label: "クリニックの集客", desc: "医療・治療院向け支援" },
   { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
-  { href: "/cost/meo", label: "MEO対策の費用・料金", desc: "料金目安と相場" },
   { href: "/company", label: "会社情報", desc: "サイプレス会社概要" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずはお気軽に" },
   { href: "/web-design/corporate-site", label: "ホームページ制作", desc: "コーポレートサイト制作" },
@@ -140,7 +139,6 @@ const relatedLinks = [
   { href: "/aio", label: "AIO対策とは", desc: "AI検索対策の基礎知識" },
   { href: "/area/nationwide", label: "全国対応", desc: "全国リモート対応" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索対策サービス" },
-  { href: "/cost/seo", label: "SEO対策の費用・料金", desc: "SEO料金目安と相場" },
   { href: "/services", label: "サービス一覧", desc: "全サービスを見る" },
 ];
 

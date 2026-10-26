@@ -109,7 +109,7 @@ const faqItems = [
 const relatedLinks = [
   { href: "/industries/clinic", label: "医療のWeb集客", desc: "医療機関向け総合支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・進め方" },
   { href: "/meo/review-management", label: "口コミ対策", desc: "口コミ管理・返信支援" },
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "GBP設定・管理" },
   { href: "/meo/map-ranking", label: "マップ上位表示", desc: "ローカルパック対策" },

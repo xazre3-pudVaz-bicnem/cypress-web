@@ -118,8 +118,8 @@ const faqItems = [
     a: "必須ツールはGoogle Search Console（順位・クリック計測）・Google Analytics 4（セッション・CV計測）・Googleキーワードプランナー（検索ボリューム調査）の3つです。有料ツールとしてはAhrefs・Semrush・Moz（競合分析・被リンク調査）、Rank Tracker（順位追跡）、ミエルカ・SEMrush（コンテンツギャップ分析）などが広く使われています。",
   },
   {
-    q: "コンテンツSEOの外注費用の目安は？",
-    a: "記事1本の制作費用は、キーワード調査・構成案・ライティング・内部SEO設定を含む場合、2,000〜5,000文字の記事で2〜5万円程度が目安です。月次コンテンツSEO支援（戦略立案・記事制作・計測・改善）を一括で依頼する場合は月10〜30万円程度のプランが一般的です。業種・専門性・記事の深さによって費用は変動します。",
+    q: "コンテンツSEOの外注費用はどのように決まりますか？",
+    a: "記事単位の依頼では、キーワード調査・構成案・ライティング・内部SEO設定のどこまでを含むかと、記事の文字数で変わります。戦略立案から記事制作・計測・改善までを月次で任せる場合は、支援範囲によって費用が変わります。業種・専門性・記事の深さも費用を左右します。現状と目標をお聞きしたうえで個別にお見積りします。お見積りは無料です。",
   },
   {
     q: "コンテンツSEOとAIO（AI検索対策）はどう連携させますか？",
@@ -160,7 +160,6 @@ const relatedLinks = [
   { href: "/guide/keyword-research-basics", label: "キーワード調査の基本", desc: "検索意図別のキーワード選定法" },
   { href: "/guide/content-seo-basics", label: "コンテンツ構成案の作り方", desc: "SEO記事の設計手順" },
   { href: "/column/seo", label: "SEOコラム", desc: "SEOの最新情報・基礎解説" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "コンテンツSEOの料金目安" },
   { href: "/checklist/seo-basics", label: "SEO基本チェックリスト", desc: "コンテンツSEO確認項目" },
   { href: "/faq/seo-basics", label: "SEOよくある質問", desc: "コンテンツSEOの疑問集" },
   { href: "/glossary/e-e-a-t", label: "E-E-A-T用語解説", desc: "経験・専門性・権威性・信頼性の定義" },

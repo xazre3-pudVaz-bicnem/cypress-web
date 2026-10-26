@@ -85,8 +85,8 @@ const faqItems = [
     a: "はい、WooCommerceを使った商品管理・カート・決済機能の実装が可能です。決済方法（クレジットカード・銀行振込・コンビニ支払い）の設定・配送設定・商品登録サポートまで対応します。",
   },
   {
-    q: "WordPress制作の費用感を教えてください。",
-    a: "既製テーマを活用したシンプルなコーポレートサイトで30〜60万円程度、カスタムテーマ制作を含む本格的なサイトで60〜150万円程度が目安です。ページ数・機能要件・カスタマイズ内容によって変わりますので、ご要件をお聞きした上でお見積りします。",
+    q: "WordPress制作の費用はどのように決まりますか？",
+    a: "既製テーマを活用したシンプルなコーポレートサイトか、カスタムテーマ制作を含む本格的なサイトかで大きく変わります。ページ数・機能要件・カスタマイズ内容も費用を左右します。ご要件をお聞きした上で個別にお見積りします。お見積りは無料ですので、お気軽にご相談ください。",
   },
   {
     q: "WordPress制作の期間はどのくらいかかりますか？",
@@ -133,7 +133,6 @@ const relatedLinks = [
   { href: "/services/web-design", label: "Web制作サービス", desc: "サイプレスの制作サービス一覧" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "WordPress SEO対策" },
   { href: "/web-design/maintenance", label: "セキュリティ対策", desc: "WordPressセキュリティ強化" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "WordPress制作の料金目安" },
   { href: "/web-design", label: "Web制作会社の選び方", desc: "WordPress対応会社の選定" },
   { href: "/checklist/website-redesign", label: "Web制作チェックリスト", desc: "WordPress制作の確認項目" },
   { href: "/industries/restaurant", label: "飲食業のWeb制作", desc: "WordPressによるメニュー更新" },

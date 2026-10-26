@@ -43,7 +43,7 @@ const faqItems = [
   },
   {
     q: "SEO対策の費用はどのくらいかかりますか？",
-    a: "診断・現状分析のみの場合は単発プランから、継続的なSEO支援の場合は月額プランをご用意しています。サイトの規模・対策範囲・現状の課題によって費用は異なりますので、まずは無料相談でご状況をお聞かせください。詳細は料金ページをご覧ください。",
+    a: "診断・現状分析のみの場合は単発プランから、継続的なSEO支援の場合は月額プランをご用意しています。サイトの規模・対策範囲・現状の課題によって費用は異なりますので、まずは無料相談でご状況をお聞かせください。内容に合わせて個別にお見積りします。",
   },
   {
     q: "他社でSEO対策を受けているが効果が出ていない。切り替えを相談できますか？",
@@ -112,7 +112,6 @@ const relatedLinks = [
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleマップ上位表示" },
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "SEOに強いサイト制作" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "料金プランと相場" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "記事制作と検索流入" },
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "Core Web Vitals改善" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域名キーワード対策" },
@@ -183,8 +182,8 @@ export default function ServicesSeoPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/seo" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

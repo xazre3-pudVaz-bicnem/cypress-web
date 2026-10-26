@@ -54,8 +54,8 @@ const faqItems = [
     a: "非常に効果的です。クリスマス・バレンタイン・桜・夏など季節のトレンドデザインはユーザーの検索意欲と一致しており、拡散・保存されやすくなります。GBPへの定期投稿とInstagram投稿を連携することで集客効果が最大化します。",
   },
   {
-    q: "ネイルサロンのWeb集客にどのくらいの費用がかかりますか？",
-    a: "MEO対策は月額2〜4万円、Instagram運用代行は月額3〜8万円、ホームページ制作は30〜80万円（機能・デザインによる）が目安です。現状のSNSフォロワー数・口コミ数・競合状況に応じて最適なプランをご提案します。まずは無料相談をご活用ください。",
+    q: "ネイルサロンのWeb集客の費用はどのように決まりますか？",
+    a: "MEO対策・Instagram運用・ホームページ制作など、取り組む施策の組み合わせと範囲によって変わります。現状のSNSフォロワー数・口コミ数・競合状況をお聞きしたうえで、必要な施策に絞って個別にお見積りします。まずは無料相談をご活用ください。",
   },
   {
     q: "施術中に写真を撮ってInstagramに投稿するタイミングはいつが良いですか？",
@@ -141,7 +141,6 @@ const relatedLinks = [
   { href: "/services/sns", label: "SNS運用サービス", desc: "Instagram運用代行の詳細" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "サロン向けホームページ事例" },
   { href: "/seo/local-seo", label: "地域SEO対策", desc: "地域名キーワードで上位表示を狙う" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金プランと相場の解説" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリアのWeb集客" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/industries/hair-salon", label: "ヘアサロン向けサービス", desc: "美容院・ヘアサロンの集客" },
@@ -480,12 +479,12 @@ export default function NailSalonPage() {
           </div>
         </section>
 
-        {/* 料金の目安・相談の流れ */}
+        {/* 支援メニュー・相談の流れ */}
         <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Pricing & Flow</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Menu & Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
-              料金の目安と相談の流れ
+              支援メニューと相談の流れ
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "40px", maxWidth: "640px" }}>
               サイプレスのネイルサロン向け支援は、現状の集客課題・予算・優先順位に合わせてプランをカスタマイズしています。まずは無料相談で現状をお聞かせください。
@@ -494,34 +493,28 @@ export default function NailSalonPage() {
               {[
                 {
                   label: "MEO対策（GBP運用）",
-                  price: "月額 2〜4万円〜",
                   desc: "Googleビジネスプロフィールの初期整備・定期投稿・インサイト分析・競合モニタリングを含むMEO継続支援プランです。",
                 },
                 {
                   label: "Instagram・SNS運用代行",
-                  price: "月額 3〜8万円〜",
                   desc: "投稿コンテンツの企画・制作・投稿・ハッシュタグ選定・エンゲージメント分析を含むSNS運用代行プランです。",
                 },
                 {
                   label: "ホームページ制作",
-                  price: "30〜80万円〜（プランによる）",
                   desc: "デザインギャラリー・料金表・予約フォーム・SEO対策を含むネイルサロン専用ホームページ制作プランです。",
                 },
                 {
                   label: "LINE公式アカウント構築・運用",
-                  price: "初期設定 5万円〜 / 月額運用 1〜3万円〜",
                   desc: "LINE公式アカウントの開設・自動返信設定・リマインド配信設計・セグメント配信設定を含む構築・運用支援プランです。",
                 },
                 {
                   label: "MEO＋SNS＋LINE 統合プラン",
-                  price: "月額 6〜12万円〜（要相談）",
                   desc: "MEO対策・Instagram運用・LINE管理を一括で対応する統合プランです。施策間の連携を最大化した上で、効率的な集客体制を構築します。",
                 },
               ].map((item) => (
                 <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #dde0e4", display: "flex", gap: "20px", flexWrap: "wrap" }}>
                   <div style={{ flex: 1, minWidth: "200px" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.label}</p>
-                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.label}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>

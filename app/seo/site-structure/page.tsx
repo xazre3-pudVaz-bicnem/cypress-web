@@ -122,7 +122,6 @@ const relatedLinks = [
   { href: "/seo/site-structure", label: "サイト構造設計ガイド", desc: "情報設計の基礎" },
   { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "構造設計の確認項目" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "構造設計込みの料金目安" },
   { href: "/seo/site-structure", label: "サイト構造コラム", desc: "情報設計の最新知識" },
   { href: "/knowledge/internal-linking", label: "内部リンク設計ガイド", desc: "PageRank伝播の仕組み" },
   { href: "/seo/site-structure", label: "URL設計ガイド", desc: "SEOに強いURL命名規則" },

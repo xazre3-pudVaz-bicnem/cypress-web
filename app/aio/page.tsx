@@ -790,7 +790,7 @@ export default function AioIndexPage() {
 
         <RelatedPages
           links={[
-            { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+            { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
             { href: "/cases/service/aio", label: "AIO対策の成功事例", desc: "業種別のAIO成功事例一覧" },
             { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
             { href: "/aio/chatgpt", label: "ChatGPT対策", desc: "ChatGPTへの引用戦略" },
@@ -803,7 +803,7 @@ export default function AioIndexPage() {
             { href: "/aio/entity-optimization", label: "エンティティ最適化", desc: "企業エンティティとしての認識" },
             { href: "/aio/knowledge-graph", label: "ナレッジグラフ対策", desc: "Googleナレッジグラフへの登録" },
             { href: "/seo", label: "SEO対策", desc: "SEOとAIOの連動施策" },
-            { href: "/services/seo", label: "SEO対策サービス", desc: "SEOサービス内容と料金" },
+            { href: "/services/seo", label: "SEO対策サービス", desc: "SEOサービスの内容と進め方" },
             { href: "/meo", label: "MEO対策", desc: "地域ビジネスの集客施策" },
             { href: "/sns", label: "SNS運用", desc: "SNSとAIOの連動戦略" },
             { href: "/knowledge", label: "マーケティング知識", desc: "デジタルマーケティング全般" },

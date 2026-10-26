@@ -26,7 +26,6 @@ const RELATED_PAGES: Record<
     { href: "/services/meo", label: "MEO対策サービス", desc: "サイプレスのMEO支援" },
     { href: "/meo/google-business-profile", label: "GBP最適化", desc: "Googleビジネスプロフィール活用" },
     { href: "/meo/review-management", label: "口コミ対策", desc: "口コミ増加・返信管理" },
-    { href: "/cost/meo", label: "MEO料金相場", desc: "費用の目安と比較" },
     { href: "/knowledge/meo-vs-seo", label: "MEO vs SEO", desc: "違いと使い分け方" },
   ],
   seo: [
@@ -34,7 +33,6 @@ const RELATED_PAGES: Record<
     { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
     { href: "/seo/content-seo", label: "コンテンツSEO", desc: "コンテンツで上位表示" },
     { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスのSEO対策" },
-    { href: "/cost/seo", label: "SEO料金相場", desc: "費用の目安と比較" },
     { href: "/knowledge/seo-basics", label: "SEO基礎知識", desc: "初心者向け解説" },
   ],
   aio: [
@@ -50,7 +48,6 @@ const RELATED_PAGES: Record<
     { href: "/services/web-design", label: "Web制作サービス", desc: "サイプレスの制作実績" },
     { href: "/web-design/corporate-site", label: "コーポレートサイト", desc: "企業サイト制作" },
     { href: "/web-design/seo-site", label: "SEO対応サイト", desc: "集客できるサイト設計" },
-    { href: "/cost/homepage", label: "HP制作費用相場", desc: "費用の目安と比較" },
     { href: "/knowledge/web-design-guide", label: "Web制作ガイド", desc: "制作の流れと要点" },
   ],
   sns: [
@@ -75,7 +72,7 @@ const DEFAULT_RELATED = [
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索対応" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "ホームページ制作" },
   { href: "/contact", label: "無料相談", desc: "お気軽にご相談ください" },
-  { href: "/cost/meo", label: "料金・費用", desc: "サービスの費用目安" },
+  { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
 ];
 
 // ─── Static params ────────────────────────────────────────────────────────────

@@ -136,7 +136,6 @@ const relatedLinks = [
   { href: "/area/tokyo", label: "東京のSEO対策", desc: "東京エリア特化のSEO支援" },
   { href: "/area/katsushika", label: "葛飾区のSEO対策", desc: "葛飾区エリアのSEO支援" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "モバイルSEO改善の料金目安" },
   { href: "/web-design", label: "Webデザイン制作", desc: "モバイルファースト設計の制作" },
   { href: "/guide/core-web-vitals-guide", label: "Core Web Vitals入門", desc: "LCP・CLS・INPの基礎知識" },
   { href: "/seo/keyword-research", label: "キーワード調査", desc: "モバイル検索キーワードの選定" },

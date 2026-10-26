@@ -123,7 +123,6 @@ const relatedLinks = [
   { href: "/knowledge/keyword-research", label: "検索意図の分類と分析", desc: "Know・Do・Go・Buyの理解" },
   { href: "/knowledge/content-seo", label: "トピッククラスター戦略", desc: "テーマ別サイロ構造の作り方" },
   { href: "/guide/keyword-research-basics", label: "キーワードマップの作り方", desc: "ページとキーワードの対応表設計" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "キーワード調査込みの料金" },
   { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "キーワード設計の確認項目" },
   { href: "/faq/seo-basics", label: "SEO FAQ", desc: "キーワード調査のよくある質問集" },
   { href: "/knowledge/keyword-research", label: "キーワード用語集", desc: "KD・サジェスト・共起語などを解説" },

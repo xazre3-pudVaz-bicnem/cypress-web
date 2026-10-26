@@ -116,7 +116,6 @@ const relatedLinks = [
   { href: "/seo/content-seo", label: "コンテンツ制作サービス", desc: "AI引用に強いコンテンツ" },
   { href: "/seo/structured-data", label: "構造化データ実装", desc: "JSON-LD・Schema.org設定" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "AI引用に強いコンテンツ制作" },
-  { href: "/cost/aio", label: "AIO対策の費用", desc: "料金プランと相場" },
   { href: "/checklist/aio-readiness", label: "AIOチェックリスト", desc: "AI検索対策の確認項目" },
   { href: "/knowledge/eeat", label: "E-E-A-T強化ガイド", desc: "専門性・権威性の高め方" },
   { href: "/guide/aio-basics", label: "SEOとAIOの違い", desc: "両対策の関係と戦略" },
@@ -183,8 +182,8 @@ export default function ServicesAioPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/aio" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

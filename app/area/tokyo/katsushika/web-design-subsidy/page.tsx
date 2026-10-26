@@ -170,7 +170,7 @@ const serviceItems = [
 
 const relatedLinks = [
   { href: "/area/tokyo/katsushika/startup-funding", label: "葛飾区の創業資金・補助金を確認する前に知っておきたいこと", desc: "補助金・融資の確認ポイント" },
-  { href: "/pricing/web-growth-package", label: "Web集客パッケージの料金を確認する", desc: "制作+SEO+MEOのセット料金" },
+  { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
   { href: "/partner/katsushika-startup", label: "葛飾区で起業する方向け販売パートナー制度を見る", desc: "収益柱の一つとして検討できます" },
   { href: "/contact", label: "ホームページ制作・補助金活用について相談する", desc: "まずはご相談ください" },
   { href: "/area/tokyo/katsushika/start-business", label: "葛飾区で起業する方向け総合ガイドを見る", desc: "創業者向けハブページ" },

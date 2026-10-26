@@ -140,7 +140,6 @@ const relatedLinks = [
   { href: "/industries/construction", label: "建設・リフォームのSEO", desc: "建設業の地域集客SEO" },
   { href: "/knowledge/local-seo-guide", label: "ローカルSEO基礎", desc: "地域SEOの入門ガイド" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サイプレスのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "ローカルSEOの料金目安" },
   { href: "/seo/mobile-seo", label: "モバイルSEO", desc: "スマホ対応とCore Web Vitals" },
   { href: "/seo/seo-audit", label: "SEO監査・診断", desc: "現状の課題発見と改善計画" },
 ];

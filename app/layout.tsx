@@ -109,7 +109,6 @@ const organizationSchema = {
       addressCountry: "JP",
     },
   },
-  priceRange: "¥¥",
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

@@ -248,17 +248,6 @@ const sections: SitemapSection[] = [
     ],
   },
   {
-    heading: "費用・料金",
-    headingEn: "Cost",
-    links: [
-      { href: "/cost", label: "費用・料金一覧" },
-      { href: "/cost/meo", label: "MEO料金相場" },
-      { href: "/cost/seo", label: "SEO料金相場" },
-      { href: "/cost/homepage", label: "HP制作費用" },
-      { href: "/cost/comparison", label: "費用比較" },
-    ],
-  },
-  {
     heading: "ご利用の流れ",
     headingEn: "Process",
     links: [
@@ -286,7 +275,7 @@ const sections: SitemapSection[] = [
       { href: "/faq", label: "FAQ一覧" },
       { href: "/faq/meo-basics", label: "MEO FAQ" },
       { href: "/faq/seo-basics", label: "SEO FAQ" },
-      { href: "/faq/cost-payment", label: "料金 FAQ" },
+      { href: "/faq/cost-payment", label: "費用・お支払い FAQ" },
       { href: "/faq/results", label: "成果・効果 FAQ" },
       { href: "/faq/contract-flow", label: "契約の流れ FAQ" },
     ],

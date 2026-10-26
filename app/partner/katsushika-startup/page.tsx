@@ -257,8 +257,8 @@ export default function Page() {
               ))}
             </div>
             <div style={{ marginTop: "32px" }}>
-              <Link href="/pricing/web-growth-package" style={{ display: "inline-block", background: "#293540", color: "#fff", padding: "13px 24px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
-                Web集客パッケージ料金を確認する →
+              <Link href="/services" style={{ display: "inline-block", background: "#293540", color: "#fff", padding: "13px 24px", fontSize: "14px", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", borderRadius: "4px" }}>
+                サービスの内容を詳しく見る →
               </Link>
             </div>
           </div>
@@ -403,7 +403,7 @@ export default function Page() {
                 { n: "02", t: "紹介しやすい資料を提供", b: "「どう説明すればいいか分からない」という方のために、事業者向けの簡易説明資料・よくある質問への回答集を提供します。専門知識がなくても紹介活動を始めやすい環境を整えています。" },
                 { n: "03", t: "誇大表現を避けた提案方針", b: "「必ず1位になれる」「必ず問い合わせが増える」などの成果・順位保証の表現は社内でも禁止しています。正確な情報をもとにした提案を方針としており、紹介パートナーの皆様にも同様の対応をお願いしています。" },
                 { n: "04", t: "地域事業者に必要なWeb集客サービス", b: "葛飾区を拠点とするサイプレスは、地域店舗・中小企業向けのWeb集客支援を専門としています。地域事業者との接点を活かしやすい商材です。成果は提案先や商談内容によって変わります。" },
-                { n: "05", t: "高単価商材も扱える", b: "ホームページ制作・SEO・MEOは単品でも数十万円〜の商材です。成約した場合の報酬も相応に設定できます。詳細は個別にご案内します。" },
+                { n: "05", t: "高単価商材も扱える", b: "ホームページ制作・SEO・MEOは、単品でも単価の高い商材です。成約した場合の報酬も相応に設定できます。詳細は個別にご案内します。" },
               ].map((item) => (
                 <div key={item.n} style={S.divider}>
                   <span style={S.num}>{item.n}</span>
@@ -484,7 +484,7 @@ export default function Page() {
                 { href: "/area/tokyo/katsushika/start-business", label: "葛飾区で起業・創業する方へ", desc: "創業準備の総合ガイド" },
                 { href: "/area/tokyo/katsushika/startup-revenue-streams", label: "創業初期の収益柱を増やす方法", desc: "収益柱づくりの考え方" },
                 { href: "/area/tokyo/katsushika/startup-web-marketing", label: "葛飾区Web集客ガイド", desc: "ホームページ・SEO・MEO" },
-                { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "紹介可能な商材の料金" },
+                { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
                 { href: "/web-design", label: "ホームページ制作", desc: "制作サービス詳細" },
                 { href: "/seo", label: "SEO対策", desc: "検索上位表示支援" },
                 { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },

@@ -61,7 +61,6 @@ export const PRIMARY_NAV: NavGroup[] = [
     },
   },
   { key: "cases", label: "Cases", ja: "支援事例", href: "/cases" },
-  { key: "pricing", label: "Pricing", ja: "料金・費用", href: "/cost" },
   {
     key: "knowledge",
     label: "Knowledge",

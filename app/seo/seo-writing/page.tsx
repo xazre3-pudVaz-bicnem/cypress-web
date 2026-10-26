@@ -64,7 +64,7 @@ const relatedLinks = [
   { href: "/ai/blog-automation", label: "AIブログ自動化", desc: "AI活用のコンテンツ制作" },
   { href: "/aio/ai-overview", label: "AI Overview対策", desc: "生成AI検索への引用対策" },
   { href: "/knowledge/eeat", label: "E-E-A-T戦略", desc: "専門性・権威性の構築" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・進め方" },
   { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "コンテンツ制作サービス" },
   { href: "/services/web-design", label: "Webコンサルティング", desc: "包括的なサイト改善" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "SEOライティングのご依頼" },

@@ -181,7 +181,7 @@ export const NEW_STARTUP2_COLUMNS: ColumnTopicPage[] = [
       },
       {
         heading: "Web集客費用の現実的な見積もりと優先順位",
-        body: "Web集客への投資を計画する際の現実的な費用感と優先順位を整理します。まず、GBPの登録・整備は無料でできます。次に、シンプルなSEO対応ホームページの制作費は数十万円〜が一般的です（制作範囲・ページ数・SEO設計の有無によって異なります）。MEO対策（月次運用）は月次費用が発生します。SEO対策（継続的なコンテンツ制作・内部最適化）も継続費用が発生します。すべてを一度に予算化することが難しい場合は、「まずGBP整備（無料）→ ホームページ制作（初期投資）→ MEO継続運用（月次）」の順番で段階的に着手することが現実的です。補助金の有無にかかわらず投資できる金額感を確認しておくことが重要です。",
+        body: "Web集客への投資を計画する際の費用の考え方と優先順位を整理します。まず、GBPの登録・整備は無料でできます。次に、SEO対応ホームページの制作費は、制作範囲・ページ数・SEO設計の有無によって異なります。早めに見積りを取っておくと、資金計画に組み込みやすくなります。MEO対策（月次運用）は月次費用が発生します。SEO対策（継続的なコンテンツ制作・内部最適化）も継続費用が発生します。すべてを一度に予算化することが難しい場合は、「まずGBP整備（無料）→ ホームページ制作（初期投資）→ MEO継続運用（月次）」の順番で段階的に着手することが現実的です。補助金の有無にかかわらず投資できる金額感を確認しておくことが重要です。",
       },
       {
         heading: "創業資金計画でよくある失敗パターン",
@@ -283,7 +283,7 @@ export const NEW_STARTUP2_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/tokyo/katsushika/startup-funding", label: "葛飾区で創業資金・融資・補助金を確認する前に知っておきたいこと", desc: "融資・補助金の確認ポイント" },
       { href: "/area/tokyo/katsushika/startup-web-marketing", label: "葛飾区で創業する方向けWeb集客ガイド", desc: "GBP・SEO・MEOの優先順位" },
       { href: "/area/tokyo/katsushika/start-business", label: "葛飾区で起業・創業する方向け総合ガイド", desc: "創業者向けハブページ" },
-      { href: "/pricing/web-growth-package", label: "Web集客パッケージの料金を確認する", desc: "制作+SEO+MEOセットの料金" },
+      { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
       { href: "/column/katsushika-start-business-web-marketing", label: "起業時に整えるWeb集客", desc: "開業・創業期の参考に" },
       { href: "/column/katsushika-sales-agent-business", label: "販売代理店ビジネスの検討", desc: "開業・創業期の参考に" },
       { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },

@@ -82,7 +82,7 @@ const jsonLd = {
         { "@type": "Question", "name": "Googleマップの「ローカルパック」とは何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "「渋谷 美容室」のように地域名＋業種で検索した際に、通常の検索結果より上部に地図と3件の店舗情報が表示されるエリアのことです。このローカルパックはクリック率が非常に高く、上位3件に入ることで来店数が大きく増加します。MEO対策の主要な目標はこのローカルパック上位表示です。" } },
         { "@type": "Question", "name": "MEO対策でどのくらい集客が増えますか？", "acceptedAnswer": { "@type": "Answer", "text": "効果は競合状況・エリア・業種・現状の最適化度によって大きく異なります。ローカルパック上位3件に入ると、現在より大幅にインプレッション数と来店数が増えるケースがあります。成果保証はできませんが、当社では現状診断を元に具体的な改善見込みをご説明します。" } },
         { "@type": "Question", "name": "Googleビジネスプロフィールは無料ですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、Googleビジネスプロフィールの登録・管理は基本的に無料です。ただし、適切に最適化するためには専門知識と継続的な運用工数が必要であり、多くの企業が支援サービスを活用しています。" } },
-        { "@type": "Question", "name": "MEO対策費用の相場はいくらですか？", "acceptedAnswer": { "@type": "Answer", "text": "一般的なMEO対策の月次費用は、基本管理プランで月2〜5万円程度、競合が激しいエリア・業種での本格的な施策では月5〜15万円程度が相場です。初期設定費用が別途かかる場合もあります。サイプレスでは現状診断後に最適なプランをご提案します。" } },
+        { "@type": "Question", "name": "MEO対策の費用はどのように決まりますか？", "acceptedAnswer": { "@type": "Answer", "text": "競合の激しさ・エリアと業種・施策の範囲・店舗数によって変わります。GBPの新規作成や情報整備などの初期設定が必要かどうかでも変わります。サイプレスでは現状を診断したうえで、最適なプランと個別のお見積りをご提案します。ご相談は無料です。" } },
         { "@type": "Question", "name": "MEO対策とSNSを同時に進めるべきですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、MEO対策とInstagram・X（Twitter）などのSNS運用を連動させることで集客効果が倍増します。InstagramでUGC（ユーザー投稿）を増やすことでGoogleでの口コミ・評判情報も充実し、MEO順位にも好影響を与えます。SNS投稿のコンテンツをGBP投稿にも流用する効率化も有効です。" } },
         { "@type": "Question", "name": "競合他社がすでにMEO対策をしている場合、勝てますか？", "acceptedAnswer": { "@type": "Answer", "text": "競合が既に実施している場合でも、徹底した最適化・口コミ獲得の加速・地域キーワード設計の差別化によって逆転は可能です。競合分析を詳細に行い、競合の弱点を突く施策を組み立てることが重要です。当社では競合分析レポートを元にした差別化戦略をご提案します。" } },
         { "@type": "Question", "name": "Googleビジネスプロフィールの「投稿」機能はMEOに効果がありますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、GBP投稿は情報鮮度のシグナルとしてMEO順位に貢献します。週1〜2回のペースでキャンペーン・最新情報・お知らせを投稿することで、Googleにビジネスの活発さを伝えられます。写真付き・CTA（ボタン）付きの投稿は来店・問い合わせへの直接的な導線にもなります。" } },
@@ -164,8 +164,8 @@ const faqItems = [
     a: "はい、Googleビジネスプロフィールの登録・管理は基本的に無料です。ただし、適切に最適化するためには専門知識と継続的な運用工数が必要であり、多くの企業が支援サービスを活用しています。",
   },
   {
-    q: "MEO対策費用の相場はいくらですか？",
-    a: "一般的なMEO対策の月次費用は、基本管理プランで月2〜5万円程度、競合が激しいエリア・業種での本格的な施策では月5〜15万円程度が相場です。初期設定費用が別途かかる場合もあります。サイプレスでは現状診断後に最適なプランをご提案します。",
+    q: "MEO対策の費用はどのように決まりますか？",
+    a: "競合の激しさ・エリアと業種・施策の範囲・店舗数によって変わります。GBPの新規作成や情報整備などの初期設定が必要かどうかでも変わります。サイプレスでは現状を診断したうえで、最適なプランと個別のお見積りをご提案します。ご相談は無料です。",
   },
   {
     q: "MEO対策とSNSを同時に進めるべきですか？",
@@ -666,35 +666,34 @@ export default function MeoIndexPage() {
           </div>
         </section>
 
-        {/* MEO費用の目安 */}
+        {/* MEO対策の支援メニュー */}
         <section className="py-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>
-              Pricing
+              Support Menu
             </p>
             <h2 className="font-black text-[28px] mb-4" style={{ color: "#333333" }}>
-              MEO対策費用の目安
+              MEO対策の支援メニュー
             </h2>
             <p className="text-[15px] leading-[1.9] max-w-2xl mb-10" style={{ color: "#374151" }}>
-              MEO対策の費用は、競合の激しさ・対応施策の範囲・店舗数によって異なります。
-              以下は一般的な相場の目安です。詳細はご相談ください。
+              MEO対策の費用は、競合の激しさ・対応施策の範囲・店舗数によって変わります。
+              現状を無料で診断し、必要な施策を組み合わせて個別にお見積りします。
             </p>
             <div className="max-w-4xl overflow-x-auto">
               <table className="w-full text-[14px]" style={{ borderCollapse: "collapse" }}>
                 <thead>
                   <tr style={{ background: "#293540" }}>
                     <th className="text-left py-4 px-5 font-semibold text-white">プラン</th>
-                    <th className="text-left py-4 px-5 font-semibold text-white">月額費用</th>
                     <th className="text-left py-4 px-5 font-semibold text-white">主な施策内容</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { plan: "スタータープラン", price: "月2〜3万円", content: "GBP基本最適化・投稿代行・月次レポート" },
-                    { plan: "スタンダードプラン", price: "月3〜5万円", content: "スタータープラン＋口コミ獲得支援・写真管理" },
-                    { plan: "プレミアムプラン", price: "月5〜10万円", content: "スタンダード＋競合分析・ローカルSEO連動・詳細インサイト分析" },
-                    { plan: "多店舗プラン", price: "要相談", content: "複数店舗の一括管理・店舗別最適化・集中支援" },
-                    { plan: "初期設定（一時費用）", price: "3〜10万円", content: "GBP新規作成・競合分析・キーワード設計・情報完全整備" },
+                    { plan: "スタータープラン", content: "GBP基本最適化・投稿代行・月次レポート" },
+                    { plan: "スタンダードプラン", content: "スタータープラン＋口コミ獲得支援・写真管理" },
+                    { plan: "プレミアムプラン", content: "スタンダード＋競合分析・ローカルSEO連動・詳細インサイト分析" },
+                    { plan: "多店舗プラン", content: "複数店舗の一括管理・店舗別最適化・集中支援" },
+                    { plan: "初期設定", content: "GBP新規作成・競合分析・キーワード設計・情報完全整備" },
                   ].map((row, i) => (
                     <tr
                       key={i}
@@ -704,7 +703,6 @@ export default function MeoIndexPage() {
                       }}
                     >
                       <td className="py-4 px-5 font-medium" style={{ color: "#333333" }}>{row.plan}</td>
-                      <td className="py-4 px-5 font-bold" style={{ color: "var(--v2-accent)" }}>{row.price}</td>
                       <td className="py-4 px-5" style={{ color: "#374151" }}>{row.content}</td>
                     </tr>
                   ))}
@@ -712,7 +710,7 @@ export default function MeoIndexPage() {
               </table>
             </div>
             <p className="mt-4 text-[13px]" style={{ color: "#9CA3AF" }}>
-              ※上記は参考価格です。詳細は無料相談の上でご提案します。成果保証はございません。
+              ※施策の組み合わせは現状診断の結果をもとにご提案します。お見積りは無料です。成果保証はございません。
             </p>
           </div>
         </section>
@@ -838,7 +836,7 @@ export default function MeoIndexPage() {
 
         <RelatedPages
           links={[
-            { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+            { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
             { href: "/cases/service/meo", label: "MEO対策の成功事例", desc: "業種別のMEO成功事例一覧" },
             { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
             { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化の完全ガイド" },

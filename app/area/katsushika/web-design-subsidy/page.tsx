@@ -252,7 +252,7 @@ export default function Page() {
                 ホームページ制作について相談する
               </Link>
               <Link
-                href="/pricing/web-growth-package"
+                href="/process"
                 style={{
                   display: "inline-block",
                   background: "transparent",
@@ -266,7 +266,7 @@ export default function Page() {
                   border: "1px solid #333333",
                 }}
               >
-                Web集客パッケージ料金を見る
+                ご支援の流れを見る
               </Link>
             </div>
           </div>
@@ -641,18 +641,18 @@ export default function Page() {
           </div>
         </section>
 
-        {/* ===== SECTION 9: PRICING LINK ===== */}
+        {/* ===== SECTION 9: ESTIMATE ===== */}
         <section style={{ background: "#ffffff", padding: "72px 0", borderTop: "1px solid #dde0e4" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Pricing</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Estimate</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.5vw,28px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
-              Web集客パッケージの料金を確認する
+              補助金の申請に使えるお見積りを無料で作成します
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "600px", marginBottom: "28px" }}>
-              ホームページ制作・SEO対策・MEO対策をまとめてご依頼いただけるパッケージプランをご用意しています。補助金を活用する際の見積書としてもご活用いただけます。
+              ホームページ制作・SEO対策・MEO対策をまとめてご依頼いただく場合も、目的と内容に合わせて個別にお見積りします。補助金の申請に必要な見積書の作成にも対応します。
             </p>
             <Link
-              href="/pricing/web-growth-package"
+              href="/contact"
               style={{
                 display: "inline-block",
                 background: "#293540",
@@ -665,7 +665,7 @@ export default function Page() {
                 borderRadius: "4px",
               }}
             >
-              ホームページ制作・SEOを含むWeb集客パッケージ料金を見る →
+              無料でお見積りを依頼する →
             </Link>
           </div>
         </section>
@@ -744,11 +744,10 @@ export default function Page() {
                 { href: "/column/category/web-design", label: "ホームページ制作コラム一覧" },
                 { href: "/column/category/local-seo", label: "ローカルSEOコラム一覧" },
                 { href: "/column/category/seo", label: "SEO対策コラム一覧" },
-                { href: "/guide/homepage-cost-guide", label: "ホームページ制作費用ガイド" },
+                { href: "/web-design", label: "ホームページ制作" },
                 { href: "/guide/local-seo-basics", label: "ローカルSEO基礎ガイド" },
                 { href: "/knowledge/web-design-guide", label: "Web制作の基礎知識" },
                 { href: "/knowledge/local-seo-guide", label: "ローカルSEOの基礎知識" },
-                { href: "/cost/homepage", label: "ホームページ制作の費用目安" },
               ].map((item) => (
                 <Link
                   key={item.href}

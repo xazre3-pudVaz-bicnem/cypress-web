@@ -126,7 +126,6 @@ const relatedLinks = [
   { href: "/sns/local-sns", label: "地域密着SNS戦略", desc: "地元ユーザーへのSNSリーチ" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "ブランドを伝えるサイト制作" },
   { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },
-  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO費用の相場と内容" },
   { href: "/area/adachi", label: "足立区の集客支援", desc: "足立区エリアの対応" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/meo/store-marketing", label: "店舗マーケティング戦略", desc: "実店舗の集客設計" },

@@ -102,8 +102,8 @@ const faqItems = [
     a: "はい。既存サイトのファーストビュー（キャッチコピー・CTAボタン・ビジュアル）の改善のみのスポット対応も可能です。ヒートマップと直帰率データを確認したうえで、ファーストビューの課題を特定して改善案を提案します。",
   },
   {
-    q: "サービスサイトの制作費用の目安を教えてください。",
-    a: "シンプルなLP（1ページ）で30〜60万円、複数ページのサービスサイト（5〜10ページ）で80〜150万円、SEO・CMS機能込みの本格サービスサイトで150〜300万円が目安です。ヒアリング後にお見積りをご案内します。",
+    q: "サービスサイトの制作費用はどのように決まりますか？",
+    a: "LPか複数ページのサービスサイトか、SEO・CMS機能を含めるかなど、構成と機能の範囲によって変わります。ヒアリングで目的と必要な機能を整理したうえで、個別にお見積りします。ご相談・お見積りは無料です。",
   },
 ];
 
@@ -117,7 +117,6 @@ const relatedLinks = [
   { href: "/web-design/wordpress", label: "ブログ・メディアサイト制作", desc: "コンテンツSEOサイト" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "サイプレスの制作サービス" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "サービスサイトのSEO対策" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "LP・サービスサイトの料金" },
   { href: "/web-design", label: "Web制作会社の選び方", desc: "CV改善対応会社の選定" },
   { href: "/checklist/website-redesign", label: "Web制作チェックリスト", desc: "サービスサイト制作の確認項目" },
   { href: "/industries/professional-service", label: "コンサルティングのWeb制作", desc: "コンサル向けサービスサイト" },
@@ -434,22 +433,21 @@ export default function ServiceSitePage() {
           </div>
         </section>
 
-        {/* サービスサイト制作の料金目安 */}
+        {/* サービスサイト制作のプラン */}
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Pricing Guide</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Plans</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
-              サービスサイト・LP制作の料金目安
+              サービスサイト・LP制作の3つのプラン
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mb-8">
               {[
-                { plan: "シンプルLP", range: "30〜60万円", items: ["1ページLP制作", "コピーライティング", "GA4・ヒートマップ設置", "CTAフォーム設計", "スマートフォン最適化"] },
-                { plan: "サービスサイト", range: "80〜150万円", items: ["5〜10ページ構成", "競合分析・CVシナリオ設計", "デザイン・実装一式", "GTMコンバージョン設定", "公開後改善1ヶ月サポート"] },
-                { plan: "本格CVサイト", range: "150〜300万円", items: ["SEO統合サービスサイト", "CMS構築・運用設計", "A/Bテスト体制構築", "広告LP複数制作", "継続改善サポート付き"] },
+                { plan: "シンプルLP", items: ["1ページLP制作", "コピーライティング", "GA4・ヒートマップ設置", "CTAフォーム設計", "スマートフォン最適化"] },
+                { plan: "サービスサイト", items: ["5〜10ページ構成", "競合分析・CVシナリオ設計", "デザイン・実装一式", "GTMコンバージョン設定", "公開後改善1ヶ月サポート"] },
+                { plan: "本格CVサイト", items: ["SEO統合サービスサイト", "CMS構築・運用設計", "A/Bテスト体制構築", "広告LP複数制作", "継続改善サポート付き"] },
               ].map((item, i) => (
                 <div key={i} style={{ border: "1px solid #dde0e4", padding: "28px" }}>
-                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#9CA3AF" }}>{item.plan}</p>
-                  <p className="font-black text-[22px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.range}</p>
+                  <p className="font-black text-[20px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.plan}</p>
                   <ul className="space-y-2">
                     {item.items.map((li, j) => (
                       <li key={j} className="flex gap-2 text-[13px]" style={{ color: "#374151" }}>
@@ -460,7 +458,7 @@ export default function ServiceSitePage() {
                 </div>
               ))}
             </div>
-            <p className="text-[13px]" style={{ color: "#9CA3AF" }}>※ページ数・機能・対応範囲によって変動します。詳細はお見積りにてご案内します。</p>
+            <p className="text-[13px]" style={{ color: "#9CA3AF" }}>※ページ数・機能・対応範囲はご要件に合わせて調整します。お見積りは無料です。</p>
           </div>
         </section>
 

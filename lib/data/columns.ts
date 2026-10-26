@@ -106,7 +106,7 @@ export const COLUMNS: ColumnArticle[] = [
   },
   {
     slug: "web-marketing-small-business",
-    title: "予算50万円から始めるWebマーケティング戦略｜優先順位の正解",
+    title: "限られた予算から始めるWebマーケティング戦略｜優先順位の正解",
     excerpt: "限られた予算でWebマーケティングを最大化するための優先順位と実践手順。MEO・SEO・SNSの効果的な組み合わせ方を解説。",
     category: "Webマーケティング",
     publishedAt: "2026-04-08",
@@ -278,8 +278,8 @@ export const COLUMNS: ColumnArticle[] = [
   },
   {
     slug: "small-business-web-marketing",
-    title: "中小企業のWeb集客完全戦略｜予算30万円以内でできること",
-    excerpt: "月30万円以内の予算でMEO・SEO・SNSを組み合わせ最大の集客効果を生み出す戦略ロードマップ。費用対効果の高い施策を優先順位付きで解説します。",
+    title: "中小企業のWeb集客完全戦略｜低予算でできること",
+    excerpt: "低予算でMEO・SEO・SNSを組み合わせ、最大の集客効果を生み出す戦略ロードマップ。費用対効果の高い施策を優先順位付きで解説します。",
     category: "Webマーケティング",
     publishedAt: "2026-05-25",
     readTime: 13,

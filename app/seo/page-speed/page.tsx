@@ -116,8 +116,8 @@ const faqItems = [
     a: "クリティカルCSSとは、ファーストビュー（スクロールなしで見える領域）の表示に必要な最小限のCSSのことです。このCSSをHTMLの`<head>`内にインラインで記述することで、外部CSSファイルの読み込みを待たずに初期表示が始まります。Lighthouseの「Eliminate render-blocking resources」の警告が出る場合は、クリティカルCSSの分離が有効です。Next.jsではApp RouterのServer Componentsが自動的にCSS読み込みを最適化します。",
   },
   {
-    q: "ページ速度改善の費用はどのくらいかかりますか？",
-    a: "改善範囲・サイトの現状・技術スタックによって大きく異なります。部分的な最適化（画像・フォント中心）であれば数万〜10万円台から対応できる場合があります。JavaScriptアーキテクチャの見直しやCDN設定・サーバー改善を含む総合的な改善では30〜100万円程度になる場合もあります。まず無料の診断からはじめ、優先度の高い改善項目を特定することをおすすめします。",
+    q: "ページ速度改善の費用はどのように決まりますか？",
+    a: "改善範囲・サイトの現状・技術スタックによって大きく異なります。画像・フォント中心の部分的な最適化か、JavaScriptアーキテクチャの見直しやCDN設定・サーバー改善を含む総合的な改善かで、作業量が変わります。まず無料の診断で優先度の高い改善項目を特定し、その範囲で個別にお見積りします。",
   },
 ];
 
@@ -143,7 +143,6 @@ const relatedLinks = [
   { href: "/seo/technical-seo", label: "テクニカルSEOチェックリスト", desc: "ページ速度の確認項目" },
   { href: "/column/seo", label: "SEOコラム", desc: "ページ速度・Core Web Vitals最新情報" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "ページ速度改善込みのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "テクニカルSEO改善の料金" },
 ];
 
 const optimizations = [

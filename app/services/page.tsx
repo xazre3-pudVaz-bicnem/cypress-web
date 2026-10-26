@@ -242,7 +242,7 @@ export default function ServicesIndexPage() {
             { href: "/web-design", label: "ホームページ制作", desc: "集客できるサイト設計" },
             { href: "/training", label: "法人研修の導入相談", desc: "AI・DX・Web研修の紹介窓口" },
             { href: "/training/reskilling-subsidy", label: "リスキリング研修相談", desc: "助成金活用を検討する企業向け" },
-            { href: "/cost", label: "料金・費用ガイド", desc: "各サービスの費用相場" },
+            { href: "/contact", label: "無料相談・お見積り", desc: "ご予算と目的に合わせてご提案" },
           ]}
         />
       </main>

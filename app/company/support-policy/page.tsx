@@ -113,8 +113,8 @@ const relatedLinks = [
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索への対応" },
   { href: "/services/web-design", label: "ホームページ制作", desc: "集客設計のサイト制作" },
   { href: "/services/sns", label: "SNS運用代行", desc: "SNSの継続運用支援" },
-  { href: "/cost/meo", label: "MEO費用", desc: "月額料金の目安" },
-  { href: "/cost/seo", label: "SEO費用", desc: "SEO対策の費用感" },
+  { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
+  { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },
   { href: "/faq", label: "よくある質問", desc: "サービス全般のQ&A" },
   { href: "/contact", label: "お問い合わせ", desc: "ご相談はこちら" },
 ];

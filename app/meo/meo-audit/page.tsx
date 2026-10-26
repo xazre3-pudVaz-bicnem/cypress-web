@@ -108,7 +108,7 @@ const faqItems = [
 
 const relatedLinks = [
   { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎と全体戦略" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金詳細" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "GBP設定の最適化手順" },
   { href: "/meo/ranking", label: "MEO順位改善", desc: "ローカルパック上位表示の方法" },
   { href: "/meo/map-ranking", label: "マップ上位表示", desc: "ローカルパック対策の詳細" },

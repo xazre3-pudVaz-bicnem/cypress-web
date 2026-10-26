@@ -326,8 +326,8 @@ const FAQ_ITEMS = [
     a: "JSON-LDの@graphプロパティを使って複数のスキーマオブジェクトを配列で記述する方法、またはScriptタグを複数配置する方法があります。@graphを使う場合は@id参照でスキーマ間の関連を明示できるためより効果的です。",
   },
   {
-    q: "構造化データの実装に費用はどのくらいかかりますか？",
-    a: "実装規模によって異なります。新規サイト制作時に組み込む場合は追加コストがほぼかからないケースが多いです。既存サイトへの後付け実装は診断・設計・実装・検証を含めて数万円〜十数万円が一般的な相場です。サイプレスでは現状診断を無料で実施しています。",
+    q: "構造化データの実装費用はどのように決まりますか？",
+    a: "実装規模によって異なります。新規サイト制作時に組み込む場合は追加コストがほぼかからないケースが多いです。既存サイトへの後付けは、診断・設計・実装・検証の範囲と対象ページ数で費用が変わります。サイプレスでは現状診断を無料で実施し、その結果をもとに個別にお見積りします。",
   },
   {
     q: "sameAsとisPartOfの違いは何ですか？",
@@ -370,7 +370,7 @@ const RELATED_LINKS = [
   { href: "/seo/structured-data", label: "FAQPage Schema", desc: "FAQリッチリザルトの実装方法" },
   { href: "/meo", label: "MEO対策", desc: "Googleビジネスプロフィール最適化" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP登録・運用ガイド" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEOと構造化データの連動" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "構造化データ対応のサイト制作" },
   { href: "/industries/clinic", label: "医療機関向けAIO", desc: "MedicalOrganization Schema対応" },

@@ -39,7 +39,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { q: "リスティング広告をやめたら流入はゼロになりますか？", a: "はい、広告費の投入を止めた瞬間に、その経路からの流入は止まります。この特性を理解した上で、SEO・MEOという広告費に依存しない集客基盤も並行して育ててください。" },
     ],
     related: [
-      { href: "/column/katsushika-web-shukyaku-hiyo", label: "葛飾区のWeb集客の費用相場", desc: "予算配分の考え方" },
+      { href: "/area/katsushika", label: "葛飾区のWeb集客", desc: "地域密着の集客支援" },
       { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "予算配分のご相談も可" },
       { href: "/column/katsushika-ooteagency-vs-chiiki", label: "大手代理店 vs 地域密着会社", desc: "比較検討の参考に" },
@@ -86,7 +86,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       { q: "どのタイミングで依頼を検討すべきですか？", a: "「検索から問い合わせを増やしたい」という具体的な目的が生まれた段階が目安です。存在を示すだけの段階であれば、自作でも十分に役割を果たせます。" },
     ],
     related: [
-      { href: "/column/katsushika-web-design-cost", label: "葛飾区のHP制作費用・相場", desc: "料金の内訳と予算の決め方" },
+      { href: "/area/katsushika/web-design", label: "葛飾区のホームページ制作", desc: "地元・亀有の制作会社" },
       { href: "/column/katsushika-hp-seo-checklist", label: "ホームページSEOチェックリスト", desc: "公開前の確認20項目" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "現状のサイト診断も無料" },
       { href: "/column/katsushika-seo-vs-listing-ad", label: "SEO vs リスティング広告", desc: "比較検討の参考に" },
@@ -198,7 +198,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
     sections: [
       {
         heading: "大手代理店の強みと注意点",
-        body: "大手代理店は、豊富な事例と体系化されたノウハウ、大規模な広告運用のスケールメリットが強みです。一方、費用は高めで、担当者が頻繁に変わる、小規模案件の優先度が下がりやすいといった課題もあります。全国展開や大規模な広告予算がある事業者には適していますが、月数万円規模の予算で細やかな対応を求める中小事業者には、費用対効果が見合わないケースもあります。",
+        body: "大手代理店は、豊富な事例と体系化されたノウハウ、大規模な広告運用のスケールメリットが強みです。一方、費用は高めで、担当者が頻繁に変わる、小規模案件の優先度が下がりやすいといった課題もあります。全国展開や大規模な広告予算がある事業者には適していますが、限られた予算で細やかな対応を求める中小事業者には、費用対効果が見合わないケースもあります。",
       },
       {
         heading: "地域密着会社の強みと注意点",
@@ -210,7 +210,7 @@ export const KATSUSHIKA_COMPARE_PROBLEM_COLUMNS: ColumnTopicPage[] = [
       },
     ],
     faqs: [
-      { q: "予算が限られている場合はどちらを選ぶべきですか？", a: "月数万円〜数十万円規模の予算であれば、地域密着の会社の方が費用対効果に見合った柔軟な対応を受けやすい傾向があります。大手代理店は大規模予算向けのサービス設計であることが多いです。" },
+      { q: "予算が限られている場合はどちらを選ぶべきですか？", a: "地域密着の会社の方が、予算に合わせた柔軟な対応を受けやすい傾向があります。大手代理店は大規模予算向けのサービス設計であることが多いです。" },
       { q: "地域密着会社は技術力が劣りますか？", a: "会社によります。規模と技術力は必ずしも比例しないため、実績や制作事例を確認して判断してください。" },
       { q: "相見積もりは両方のタイプに依頼すべきですか？", a: "有効です。同じ要件を伝えて提案内容と金額を比較することで、自社に合った依頼先が見えてきます。" },
     ],

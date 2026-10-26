@@ -307,7 +307,7 @@ const relatedLinks = [
   { href: "/meo/map-ranking", label: "Googleマップ検索対策", desc: "マップ表示の最適化" },
   { href: "/meo/nap", label: "サイテーション対策", desc: "NAP情報の統一と拡散" },
   { href: "/meo/photo-posting", label: "写真投稿戦略", desc: "GBP写真で集客を高める" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示の専門支援" },
   { href: "/services/sns", label: "SNS運用", desc: "MEOと連動したSNS集客" },
   { href: "/services/web-design", label: "ウェブサイト制作", desc: "GBPと連動するサイト構築" },

@@ -41,7 +41,7 @@ export const NEW_HOWTO_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/column/web-marketing-strategy-7-rules", label: "Webマーケティング成功の7鉄則", desc: "全体戦略の解説" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "SEO改善の支援" },
-      { href: "/column/seo-cost-guide-small-business", label: "SEO対策費用相場", desc: "SEO投資の目安" },
+      { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },
       { href: "/contact", label: "GA4設定・分析の相談", desc: "無料相談はこちら" },
     ],
   },
@@ -216,7 +216,6 @@ export const NEW_HOWTO_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/web-design", label: "ホームページ制作サービス", desc: "CVRを意識した制作" },
-      { href: "/column/homepage-cost-guide-tokyo", label: "ホームページ制作費用ガイド", desc: "制作コストの目安" },
       { href: "/column/web-marketing-strategy-7-rules", label: "Webマーケティング7鉄則", desc: "総合的な戦略" },
       { href: "/contact", label: "CVR改善の無料相談", desc: "現状診断・改善提案" },
     ],

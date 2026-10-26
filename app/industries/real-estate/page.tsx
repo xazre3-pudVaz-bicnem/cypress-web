@@ -111,7 +111,6 @@ const relatedLinks = [
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "不動産会社向けブランドサイト" },
   { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域検索での集客強化" },
   { href: "/seo/content-seo", label: "コンテンツSEO対策", desc: "地域情報ブログで継続集客" },
-  { href: "/cost/seo", label: "SEO対策の料金", desc: "SEO対策の費用相場" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリア全域対応" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリア対応" },
   { href: "/industries/professional-service", label: "士業・専門サービスの集客", desc: "士業・専門職のWebマーケティング" },
@@ -124,7 +123,6 @@ const relatedLinks = [
   { href: "/sns/instagram", label: "Instagram運用代行", desc: "物件・地域情報のSNS発信" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "不動産会社向けサイト制作の詳細" },
   { href: "/knowledge/google-business-profile-setup", label: "GBP最適化ガイド", desc: "Googleビジネスプロフィールの設定と運用" },
-  { href: "/cost/meo", label: "MEO対策の料金", desc: "MEO対策の費用相場" },
   { href: "/industries/real-estate", label: "不動産会社のMEO対策", desc: "不動産特化のGoogleマップ対策" },
 ];
 

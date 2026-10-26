@@ -267,9 +267,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/guide/review-collection",
       "/guide/keyword-research-basics",
       "/guide/local-seo-basics",
-      "/guide/homepage-cost-guide",
-      "/guide/meo-cost-guide",
-      "/guide/seo-cost-guide",
       "/guide/blog-seo-setup",
       "/guide/google-analytics-basics",
       "/guide/sns-for-local-business",
@@ -310,22 +307,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/checklist/local-seo", "/checklist/reputation",
       "/checklist/website-redesign", "/checklist/analytics-confirmation",
     ], { changeFrequency: "monthly", priority: 0.6 }),
-
-    // 料金パッケージ
-    ...urls([
-      "/pricing/web-growth-package",
-    ], { changeFrequency: "monthly", priority: 0.8 }),
-
-    // 費用・料金
-    ...urls([
-      "/cost",
-      "/cost/meo", "/cost/seo", "/cost/homepage", "/cost/lp",
-      "/cost/corporate-site", "/cost/sns", "/cost/aio",
-      "/cost/content-writing", "/cost/web-maintenance",
-      "/cost/comparison", "/cost/small-business",
-      "/cost/monthly-breakdown", "/cost/free-consultation",
-      "/cost/ai-cost-reduction", "/cost/total-package",
-    ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // ご利用の流れ
     ...urls([

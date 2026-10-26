@@ -261,7 +261,6 @@ export const ANALYTICS_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo", label: "SEO対策サービスを見る", desc: "解析にもとづく検索改善" },
       { href: "/meo", label: "MEO対策を見る", desc: "地域集客の解析と改善" },
       { href: "/services", label: "サービス一覧を見る", desc: "Web集客支援の全体像" },
-      { href: "/cost", label: "料金の考え方を見る", desc: "支援内容と費用の考え方" },
       { href: "/contact", label: "アクセス解析・改善運用を相談する", desc: "現状診断・改善提案" },
     ],
   },

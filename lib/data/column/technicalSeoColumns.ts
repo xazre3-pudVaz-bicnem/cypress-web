@@ -237,7 +237,6 @@ export const TECHNICAL_SEO_COLUMNS: ColumnTopicPage[] = [
       { href: "/seo", label: "SEO対策サービスを見る", desc: "サイト移行時のSEO支援" },
       { href: "/web-design", label: "ホームページ制作サービスを見る", desc: "リニューアル時のリダイレクト設計" },
       { href: "/services", label: "サービス一覧を見る", desc: "Webマーケティング全体の支援" },
-      { href: "/cost", label: "料金・費用の目安を見る", desc: "支援内容と進め方の確認" },
       { href: "/contact", label: "SEOの無料相談をする", desc: "リニューアル前のリダイレクト設計" },
     ],
   },

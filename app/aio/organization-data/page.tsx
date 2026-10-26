@@ -360,7 +360,7 @@ const RELATED_LINKS = [
   { href: "/seo/structured-data", label: "FAQPage Schema", desc: "FAQリッチリザルトの実装方法" },
   { href: "/meo", label: "MEO対策", desc: "Googleビジネスプロフィール最適化" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP登録・運用ガイド" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO施策の全体支援" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "構造化データ対応のサイト制作" },
   { href: "/industries/clinic", label: "医療機関向けAIO", desc: "MedicalOrganization Schema対応" },

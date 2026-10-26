@@ -141,7 +141,6 @@ const relatedLinks = [
   { href: "/seo/technical-seo", label: "テクニカルSEOチェックリスト", desc: "Search Console確認項目" },
   { href: "/column/seo", label: "SEOコラム", desc: "Search Console活用の最新情報" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "データ分析込みのSEO支援" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "Search Console運用の料金" },
   { href: "/web-design/nextjs", label: "Next.jsでのサイト制作", desc: "Search Console対応のサイト構築" },
 ];
 

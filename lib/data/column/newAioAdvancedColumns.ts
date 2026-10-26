@@ -21,7 +21,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
       },
       {
         heading: "ChatGPTに引用されるコンテンツの特徴：E-E-A-Tと文章構造",
-        body: "AIが引用・参照するコンテンツには共通の特徴があります。①E-E-A-T（経験・専門性・権威性・信頼性）が高い：著者情報（名前・資格・経験年数）が明示されている・一次情報・実体験に基づく内容。②「質問→直接回答」の文章構造：「〇〇とは何ですか？」という質問に対して冒頭で直接・簡潔・正確に答える文章形式。AIはこの構造を好む。③具体的・数値的な情報：「MEO対策の費用は月2〜5万円が相場」「効果が出るまで2〜4ヶ月程度」など具体的で引用しやすい情報。④FAQPage形式のコンテンツ：「よくある質問と回答」のQ&A形式はAIが引用しやすい構造です。FAQPageスキーマ（構造化データ）の実装でAI認識が高まります。⑤定期的な更新：最新の情報を提供しているサイトはAIから信頼されやすい傾向があります。",
+        body: "AIが引用・参照するコンテンツには共通の特徴があります。①E-E-A-T（経験・専門性・権威性・信頼性）が高い：著者情報（名前・資格・経験年数）が明示されている・一次情報・実体験に基づく内容。②「質問→直接回答」の文章構造：「〇〇とは何ですか？」という質問に対して冒頭で直接・簡潔・正確に答える文章形式。AIはこの構造を好む。③具体的・数値的な情報：「MEO対策の効果が出るまで2〜4ヶ月程度」など、具体的で引用しやすい情報。④FAQPage形式のコンテンツ：「よくある質問と回答」のQ&A形式はAIが引用しやすい構造です。FAQPageスキーマ（構造化データ）の実装でAI認識が高まります。⑤定期的な更新：最新の情報を提供しているサイトはAIから信頼されやすい傾向があります。",
       },
       {
         heading: "llms.txtの設置：AIクローラーへの情報提供",
@@ -109,7 +109,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
       },
       {
         heading: "AI Overviewに引用されるためのコンテンツ設計",
-        body: "AI Overviewに引用されやすいコンテンツの特徴：①「質問→答え」の直接回答形式：「MEO対策の費用はいくらですか？」という質問に対して最初の段落で直接・簡潔に答える文章構造。AIは長い前置きなしに直接回答しているコンテンツを好む。②具体的・数値的な情報：「月2〜5万円が相場」「2〜4ヶ月で効果が出る」など具体的で引用しやすい情報。③権威性のあるコンテンツ：著者情報・資格・会社情報が明示されたE-E-A-T高いページ。④FAQ形式のコンテンツ：FAQPageスキーマを実装したQ&Aセクションはとても引用されやすい。⑤更新頻度の高い情報：最新の情報を提供しているページがAIに信頼されやすい。⑥モバイルフレンドリーかつ高速なページ：Core Web Vitalsが良好なページが引用されやすい傾向。",
+        body: "AI Overviewに引用されやすいコンテンツの特徴：①「質問→答え」の直接回答形式：「MEO対策の費用はいくらですか？」という質問に対して最初の段落で直接・簡潔に答える文章構造。AIは長い前置きなしに直接回答しているコンテンツを好む。②具体的・数値的な情報：「2〜4ヶ月で効果が出る」など、具体的で引用しやすい情報。③権威性のあるコンテンツ：著者情報・資格・会社情報が明示されたE-E-A-T高いページ。④FAQ形式のコンテンツ：FAQPageスキーマを実装したQ&Aセクションはとても引用されやすい。⑤更新頻度の高い情報：最新の情報を提供しているページがAIに信頼されやすい。⑥モバイルフレンドリーかつ高速なページ：Core Web Vitalsが良好なページが引用されやすい傾向。",
       },
       {
         heading: "AI Overview対策：従来SEOとの違いと追加施策",
@@ -153,7 +153,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
       },
       {
         heading: "FAQPageスキーマのJSON-LD実装方法",
-        body: "FAQPageスキーマのJSON-LD実装例を解説します。<script type='application/ld+json'>に以下のJSON形式で記述します：{ \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [ { \"@type\": \"Question\", \"name\": \"MEO対策の費用はいくらですか？\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"中小企業向けMEO対策の月額費用は2〜5万円が相場です。初期設定費用として1〜3万円がかかる場合があります。\" } }, { \"@type\": \"Question\", \"name\": \"MEO対策の効果が出るまでどのくらいかかりますか？\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Googleビジネスプロフィールの最適化・口コミ獲得・定期投稿を継続することで、2〜4ヶ月で順位の変化が見られることが多いです。\" } } ] }。実装後はGoogleのリッチリザルトテスト（search.google.com/test/rich-results）でエラーがないか確認します。",
+        body: "FAQPageスキーマのJSON-LD実装例を解説します。<script type='application/ld+json'>に以下のJSON形式で記述します：{ \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [ { \"@type\": \"Question\", \"name\": \"MEO対策の費用はどのように決まりますか？\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"施策の範囲や店舗数、競合状況によって変わります。現状をお聞きしたうえで個別にお見積りします。\" } }, { \"@type\": \"Question\", \"name\": \"MEO対策の効果が出るまでどのくらいかかりますか？\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Googleビジネスプロフィールの最適化・口コミ獲得・定期投稿を継続することで、2〜4ヶ月で順位の変化が見られることが多いです。\" } } ] }。実装後はGoogleのリッチリザルトテスト（search.google.com/test/rich-results）でエラーがないか確認します。",
       },
       {
         heading: "HowToスキーマのJSON-LD実装方法",
@@ -197,7 +197,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
       },
       {
         heading: "Perplexityに引用されるサイトの条件",
-        body: "Perplexityに引用されやすいウェブサイトの条件：①Google検索で上位表示されている：Perplexityはリアルタイム検索でGoogleのインデックスを活用するため、Google SEOが基盤になります。②信頼性が高いと判断されるサイト：https化（SSL）・明確な会社情報・著者情報・更新日の明示が信頼性の判断材料になります。③引用しやすい簡潔な文章：「〇〇の費用相場は月2〜5万円です」など引用しやすい具体的・簡潔な情報を含む文章。④Perplexityのクローラーへの対応：Perplexityのクローラー（PerplexityBot）をrobots.txtでブロックしていないこと。⑤最新情報の掲載：PerplexityはリアルタイムWeb検索を行うため、古い情報より新しい情報が優先されやすい。",
+        body: "Perplexityに引用されやすいウェブサイトの条件：①Google検索で上位表示されている：Perplexityはリアルタイム検索でGoogleのインデックスを活用するため、Google SEOが基盤になります。②信頼性が高いと判断されるサイト：https化（SSL）・明確な会社情報・著者情報・更新日の明示が信頼性の判断材料になります。③引用しやすい簡潔な文章：「〇〇とは□□です」のように、一文で要点が伝わる具体的・簡潔な文章。④Perplexityのクローラーへの対応：Perplexityのクローラー（PerplexityBot）をrobots.txtでブロックしていないこと。⑤最新情報の掲載：PerplexityはリアルタイムWeb検索を行うため、古い情報より新しい情報が優先されやすい。",
       },
       {
         heading: "Perplexity対策の具体的な実施方法",

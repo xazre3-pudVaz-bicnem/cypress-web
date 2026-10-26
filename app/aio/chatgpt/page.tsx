@@ -146,7 +146,7 @@ const relatedLinks = [
   { href: "/knowledge/eeat", label: "SEO E-E-A-T対策", desc: "SEOの信頼性強化" },
   { href: "/meo", label: "MEO対策とは", desc: "Googleマップ検索対策" },
   { href: "/meo/google-business-profile", label: "Googleビジネスプロフィール", desc: "GBP最適化ガイド" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO支援サービス" },
   { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用" },
   { href: "/industries/professional-service", label: "士業・法律事務所向け", desc: "士業のAIO・SEO戦略" },

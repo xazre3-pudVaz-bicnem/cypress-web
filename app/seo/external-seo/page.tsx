@@ -122,7 +122,6 @@ const relatedLinks = [
   { href: "/meo/nap", label: "サイテーション管理", desc: "NAP情報統一の実践" },
   { href: "/seo/external-seo", label: "スパムリンク否認ガイド", desc: "Disavowツールの使い方" },
   { href: "/seo/external-seo", label: "リンクビルディング入門", desc: "被リンク戦略の全体像" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "外部SEO込みの料金目安" },
   { href: "/checklist/seo-basics", label: "SEOチェックリスト", desc: "被リンク状況の確認項目" },
   { href: "/faq/seo-basics", label: "SEO FAQ", desc: "外部SEOのよくある質問集" },
   { href: "/seo/external-seo", label: "被リンク用語集", desc: "DA・DR・Disavowなどを解説" },

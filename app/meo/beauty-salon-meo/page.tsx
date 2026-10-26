@@ -110,7 +110,7 @@ const relatedLinks = [
   { href: "/industries/hair-salon", label: "ヘアサロンの集客支援", desc: "ヘアサロン向け総合支援" },
   { href: "/industries/beauty", label: "美容室のWeb集客", desc: "美容業向け総合支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・進め方" },
   { href: "/meo/photo-posting", label: "写真投稿対策", desc: "GBP写真の最適化" },
   { href: "/meo/review-management", label: "口コミ対策", desc: "口コミ獲得・返信管理" },
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "GBP設定の完全ガイド" },

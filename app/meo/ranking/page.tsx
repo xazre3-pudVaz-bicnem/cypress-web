@@ -145,7 +145,7 @@ const relatedLinks = [
   { href: "/meo/nap", label: "NAP統一対策", desc: "名称・住所・電話番号の整合性" },
   { href: "/meo/google-post", label: "GBP投稿運用", desc: "効果的な投稿戦略と頻度" },
   { href: "/meo/meo-audit", label: "競合MEO分析", desc: "競合と差をつける分析手法" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "MEOと連動するSEO施策" },
   { href: "/seo", label: "SEO対策とは", desc: "検索エンジン最適化の基礎" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域ビジネスのSEO戦略" },

@@ -10,7 +10,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 export const metadata: Metadata = {
   title: "葛飾区のホームページ制作会社｜SEOとスマホ対応｜株式会社サイプレス",
   description:
-    "葛飾区のホームページ制作は地元・亀有拠点のサイプレスへ。亀有・金町・新小岩・柴又・立石など区内全域に訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から制作。補助金活用の相談も可能です。",
+    "葛飾区のホームページ制作は地元・亀有拠点のサイプレスへ。亀有・金町・新小岩・柴又・立石など区内全域に訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを、目的に合わせて制作します。補助金活用の相談も可能です。",
   keywords: [
     "葛飾区 ホームページ制作",
     "葛飾区 ホームページ制作会社",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "葛飾区のホームページ制作会社｜SEOに強い集客サイトを地域密着で",
     description:
-      "葛飾区拠点のホームページ制作会社。対面打ち合わせ・訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から。補助金活用の相談も可能。",
+      "葛飾区拠点のホームページ制作会社。対面打ち合わせ・訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを制作。補助金活用の相談も可能。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    q: "葛飾区のホームページ制作の費用はどのくらいですか？",
-    a: "個人事業主・店舗向けの小規模サイト（5ページ前後）は10〜50万円、中小企業のコーポレートサイトは50〜150万円が目安です。ランディングページ（LP）1枚の制作にも対応しています。ページ数・デザイン・機能（予約・EC等）により変動するため、まずは無料相談で概算見積もりをご提示します。",
+    q: "葛飾区のホームページ制作の費用はどのように決まりますか？",
+    a: "ページ数・デザイン・機能（予約・EC等）によって変わります。個人事業主・店舗向けの小規模サイトから、中小企業のコーポレートサイト、LP1枚の制作まで対応しています。ご要望をお聞きしたうえで個別にお見積りします。ご相談・お見積りは無料です。",
   },
   {
     q: "制作期間はどのくらいかかりますか？",
@@ -64,7 +64,7 @@ const faqItems = [
   },
   {
     q: "制作後の更新・保守もお願いできますか？",
-    a: "はい。月額1〜3万円の保守プランで、テキスト・画像の更新代行、サーバー・ドメイン管理、セキュリティ対応、軽微な改修に対応します。自分で更新したい方にはCMS（WordPressなど）を組み込み、更新方法のレクチャーも行います。",
+    a: "はい。公開後の保守では、テキスト・画像の更新代行、サーバー・ドメイン管理、セキュリティ対応、軽微な改修に対応します。自分で更新したい方にはCMS（WordPressなど）を組み込み、更新方法のレクチャーも行います。",
   },
   {
     q: "WordPressでの制作は可能ですか？",
@@ -114,7 +114,7 @@ const relatedLinks = [
   { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップで上位表示" },
   { href: "/area/katsushika/web-design-subsidy", label: "葛飾区のHP制作・補助金活用", desc: "補助金活用時の進め方" },
   { href: "/services/web-design", label: "ホームページ制作サービス", desc: "サービス全体の詳細" },
-  { href: "/cost/homepage", label: "ホームページ制作の費用相場", desc: "料金の内訳と目安" },
+  { href: "/web-design", label: "ホームページ制作", desc: "成果につながるサイト制作" },
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "会社サイトの作り方" },
   { href: "/web-design/landing-page", label: "LP制作", desc: "1枚完結の集客ページ" },
   { href: "/web-design/seo-site", label: "SEOに強いサイト制作", desc: "検索される構造設計" },
@@ -175,7 +175,7 @@ export default function Page() {
         provider: { "@id": "https://www.cypress-all.co.jp/area/katsushika/web-design#localbusiness" },
         areaServed: { "@type": "AdministrativeArea", name: "東京都葛飾区" },
         description:
-          "葛飾区の中小企業・店舗・個人事業主向けのホームページ制作サービス。SEO標準設計・スマホ最適化・高速表示。小規模サイト10〜50万円、コーポレートサイト50〜150万円が目安。",
+          "葛飾区の中小企業・店舗・個人事業主向けのホームページ制作サービス。SEO標準設計・スマホ最適化・高速表示。小規模な店舗サイトからコーポレートサイトまで、目的に合わせて個別にお見積りします。",
       },
       {
         "@type": "FAQPage",
@@ -216,7 +216,7 @@ export default function Page() {
               株式会社サイプレスは、葛飾区亀有に拠点を置くホームページ制作会社です。亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域への訪問打ち合わせに対応し、SEO内部対策・スマホ最適化・高速表示を標準搭載した「集客できるホームページ」を制作します。
             </p>
             <p style={{ fontSize: "15px", lineHeight: "1.9", color: "#374151", maxWidth: "660px" }}>
-              小規模サイトは10万円台から。葛飾区のホームページ作成関連の補助金活用のご相談、制作後のSEO対策・MEO対策・保守運用まで、地元の会社としてワンストップで伴走します。
+              小規模な店舗サイトから本格的なコーポレートサイトまで対応します。葛飾区のホームページ作成関連の補助金活用のご相談、制作後のSEO対策・MEO対策・保守運用まで、地元の会社としてワンストップで伴走します。
             </p>
           </div>
         </section>
@@ -275,8 +275,8 @@ export default function Page() {
                 { n: "02", t: "SEO内部対策を標準搭載", b: "「葛飾区 ○○」「亀有 ○○」など地域キーワードで検索されるための内部SEO（タイトル設計・見出し構造・構造化データ・サイトマップ）を制作段階から組み込みます。後付けのSEOより費用対効果が高い方法です。" },
                 { n: "03", t: "高速表示・スマホ最適化", b: "Next.js等のモダン技術による高速なサイトを構築します。表示速度は検索順位と離脱率に直結する要素です。地域検索の7〜8割を占めるスマホユーザーを最優先した設計（モバイルファースト）を徹底します。" },
                 { n: "04", t: "集客まで見据えたワンストップ支援", b: "制作後のSEO対策・MEO対策（Googleマップ）・SNS運用まで一社で対応します。ホームページとGoogleビジネスプロフィールの情報を統一し、「検索でもマップでも見つかる」状態を作ります。" },
-                { n: "05", t: "中小企業・個人事業主に合わせた適正価格", b: "小規模サイトは10万円台から。創業期はまず最小構成で公開し、売上に応じて拡張していく段階的なプランも提案します。葛飾区のホームページ関連補助金を活用する場合の見積整理もサポートします。" },
-                { n: "06", t: "公開後の保守・更新も地元で安心", b: "月額1〜3万円の保守プランで更新代行・サーバー管理・セキュリティ対応まで任せられます。「業者と連絡が取れない」という他社制作サイトの引き継ぎ・リニューアル相談にも対応しています。" },
+                { n: "05", t: "中小企業・個人事業主に合わせた段階的な提案", b: "創業期はまず最小構成で公開し、売上に応じて拡張していく段階的なプランを提案します。葛飾区のホームページ関連補助金を活用する場合の見積整理もサポートします。" },
+                { n: "06", t: "公開後の保守・更新も地元で安心", b: "保守プランで更新代行・サーバー管理・セキュリティ対応まで任せられます。「業者と連絡が取れない」という他社制作サイトの引き継ぎ・リニューアル相談にも対応しています。" },
               ].map((item) => (
                 <div key={item.n} style={{ display: "flex", gap: "24px", padding: "24px 0", borderTop: "1px solid #dde0e4" }}>
                   <span style={{ fontFamily: "var(--font-display)", color: "var(--v2-accent)", fontSize: "13px", minWidth: "32px", paddingTop: "2px" }}>{item.n}</span>
@@ -290,40 +290,36 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Section 3: 料金プラン */}
+        {/* Section 3: 制作メニュー */}
         <section style={{ background: "#ffffff", padding: "96px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Price</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9CA3AF", fontSize: "11px", marginBottom: "12px", textTransform: "uppercase" }}>Menu</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px,3vw,34px)", color: "#333333", fontWeight: 700, marginBottom: "16px" }}>
-              葛飾区のホームページ制作 — 料金の目安
+              葛飾区のホームページ制作 — 3つの制作メニュー
             </h2>
             <p style={{ fontSize: "15px", color: "#374151", lineHeight: "1.9", maxWidth: "680px", marginBottom: "48px" }}>
-              ページ数・デザイン・機能により変動しますが、目安となる料金帯は以下のとおりです。すべてのプランにSEO内部対策・スマホ対応・SSL設定を含みます。正式なお見積もりは無料でご提示します。
+              ページ数・デザイン・機能は、目的とご予算に合わせて決めます。どの制作にもSEO内部対策・スマホ対応・SSL設定を含みます。ご要望をお聞きしたうえで、無料でお見積りをご提示します。
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%), 1fr))", gap: "24px", marginBottom: "40px" }}>
               {[
                 {
                   plan: "ランディングページ（LP）",
-                  price: "20〜40万円",
                   desc: "1ページ完結の集客特化ページ。キャンペーン・採用・単一サービスの訴求に。広告出稿との相性も抜群です。",
                   items: ["構成・コピーライティング", "レスポンシブデザイン", "問い合わせフォーム", "効果測定タグ設定"],
                 },
                 {
                   plan: "小規模サイト・店舗サイト",
-                  price: "10〜50万円",
                   desc: "個人事業主・店舗向けの5ページ前後の構成。開業時の情報発信基盤として最適。段階的な拡張も可能です。",
                   items: ["トップ＋下層4ページ前後", "SEO内部対策", "スマホ最適化", "Googleマップ・SNS連携"],
                 },
                 {
                   plan: "コーポレートサイト",
-                  price: "50〜150万円",
                   desc: "中小企業の信頼構築・採用・集客を担う本格サイト。ブランド設計から構造化データまで実装します。",
                   items: ["ブランド・構成設計", "10ページ以上の本格構成", "CMS（更新システム）", "構造化データ・AIO対応"],
                 },
               ].map((item) => (
                 <div key={item.plan} style={{ border: "1px solid #dde0e4", borderRadius: "8px", padding: "32px 28px", background: "#FFFFFF" }}>
-                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#333333", marginBottom: "8px" }}>{item.plan}</p>
-                  <p style={{ fontFamily: "var(--font-display)", fontSize: "24px", color: "var(--v2-accent)", fontWeight: 600, marginBottom: "14px" }}>{item.price}<span style={{ fontSize: "12px", color: "#9CA3AF", marginLeft: "6px" }}>（税別・目安）</span></p>
+                  <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "17px", color: "#333333", marginBottom: "14px" }}>{item.plan}</p>
                   <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85", marginBottom: "16px" }}>{item.desc}</p>
                   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                     {item.items.map((li) => (
@@ -336,9 +332,9 @@ export default function Page() {
               ))}
             </div>
             <div style={{ background: "#f0f1f2", border: "1px solid #dde0e4", borderRadius: "8px", padding: "24px 28px", maxWidth: "800px" }}>
-              <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>保守・運用サポート：月額1〜3万円</p>
+              <p style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>公開後の保守・運用サポート</p>
               <p style={{ fontSize: "13px", color: "#374151", lineHeight: "1.85" }}>
-                テキスト・画像の更新代行、サーバー・ドメイン管理、セキュリティ対応、アクセスレポートを含みます。SEO対策（月額3万円〜）・MEO対策（月額2万円〜）とのセットプランもご用意しています。
+                テキスト・画像の更新代行、サーバー・ドメイン管理、セキュリティ対応、アクセスレポートを含みます。SEO対策・MEO対策と組み合わせたご提案も可能です。
               </p>
             </div>
           </div>

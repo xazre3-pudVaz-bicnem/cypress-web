@@ -193,7 +193,6 @@ const relatedLinks = [
   { href: "/area/katsushika", label: "葛飾区のSNS集客", desc: "葛飾区エリアの集客支援" },
   { href: "/area/tokyo", label: "東京のSNS集客", desc: "東京都内のSNS運用支援" },
   { href: "/knowledge/instagram-tips", label: "Instagram活用ガイド", desc: "ビジネスInstagram基礎知識" },
-  { href: "/cost/sns", label: "SNS運用の費用", desc: "SNS運用代行の料金目安" },
   { href: "/cases/service/sns", label: "SNS運用の成功事例", desc: "業種別のSNS運用成功事例一覧" },
   { href: "/cases", label: "成功事例一覧", desc: "Web集客の成功事例" },
 ];

@@ -141,7 +141,6 @@ const relatedLinks = [
   { href: "/web-design/corporate-site", label: "コーポレートサイト制作", desc: "整体院向けホームページ事例" },
   { href: "/seo/local-seo", label: "地域SEO対策", desc: "地域名キーワードで検索上位を狙う" },
   { href: "/seo/content-seo", label: "コンテンツSEO", desc: "症状別コンテンツで長期集客" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金プランと相場の解説" },
   { href: "/area/tokyo", label: "東京都の集客支援", desc: "東京エリアのWeb集客" },
   { href: "/area/katsushika", label: "葛飾区の集客支援", desc: "葛飾区エリアの対応" },
   { href: "/industries/clinic", label: "クリニック・医療機関", desc: "医療施設のWeb集客" },
@@ -485,12 +484,12 @@ export default function OsteopathicPage() {
           </div>
         </section>
 
-        {/* 料金の目安・相談の流れ */}
+        {/* 支援メニュー・相談の流れ */}
         <section style={{ background: "#f0f1f2", padding: "80px 0" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
-            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Pricing & Flow</p>
+            <p style={{ fontFamily: "var(--font-display)", letterSpacing: "0.25em", color: "#9ca3af", fontSize: "11px", marginBottom: "12px" }}>Menu & Flow</p>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(20px,2.8vw,30px)", color: "#333333", fontWeight: 700, marginBottom: "12px" }}>
-              料金の目安と相談の流れ
+              支援メニューと相談の流れ
             </h2>
             <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9", marginBottom: "40px", maxWidth: "640px" }}>
               サイプレスの整体院・接骨院向け支援は、集客課題・院の規模・予算に合わせてプランをカスタマイズしています。医療広告ガイドラインへの配慮も含めてご提案します。まずは無料相談からお気軽にご連絡ください。
@@ -499,34 +498,28 @@ export default function OsteopathicPage() {
               {[
                 {
                   label: "MEO対策（GBP運用）",
-                  price: "月額 2〜4万円〜",
                   desc: "Googleビジネスプロフィールの初期整備・定期投稿・口コミ管理・インサイト分析・競合モニタリングを含むMEO継続支援プランです。",
                 },
                 {
                   label: "症状別SEO対策・コンテンツ制作",
-                  price: "月額 3〜8万円〜",
                   desc: "症状×地域キーワードに対応したサービスページ・コラムコンテンツの企画・制作・改善を継続的に行うSEOプランです。医療広告ガイドライン対応を含みます。",
                 },
                 {
                   label: "ホームページ制作",
-                  price: "30〜80万円〜（プランによる）",
                   desc: "施術内容・料金・施術者プロフィール・予約フォームを備えた整体院・接骨院向けホームページ制作プランです。SEO対策・症状別ページ制作を含みます。",
                 },
                 {
                   label: "LINE公式アカウント構築・運用",
-                  price: "初期設定 5万円〜 / 月額運用 1〜3万円〜",
                   desc: "LINE公式アカウントの開設・自動返信・予約リマインド・健康情報配信の設計と運用代行プランです。患者のリピート率向上を目的とした設計を行います。",
                 },
                 {
                   label: "MEO＋SEO＋LINE 統合プラン",
-                  price: "月額 6〜12万円〜（要相談）",
                   desc: "MEO対策・症状別SEO・LINE運用を一括で対応する統合プランです。施策間の連携を最大化し、新患獲得からリピーター定着までを一貫して支援します。",
                 },
               ].map((item) => (
                 <div key={item.label} style={{ padding: "20px 0", borderTop: "1px solid #dde0e4", display: "flex", gap: "20px", flexWrap: "wrap" }}>
                   <div style={{ flex: 1, minWidth: "200px" }}>
-                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "4px" }}>{item.label}</p>
-                    <p style={{ fontSize: "12px", color: "var(--v2-accent)", fontFamily: "var(--font-display)", letterSpacing: "0.05em", marginBottom: "8px" }}>{item.price}</p>
+                    <p style={{ fontFamily: "var(--font-serif)", fontWeight: 600, fontSize: "15px", color: "#333333", marginBottom: "8px" }}>{item.label}</p>
                     <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.9" }}>{item.desc}</p>
                   </div>
                 </div>

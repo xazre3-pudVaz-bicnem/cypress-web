@@ -114,7 +114,6 @@ const relatedLinks = [
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索での引用獲得" },
   { href: "/services/web-design", label: "Web制作サービス", desc: "SNSからの流入先ページ設計" },
   { href: "/seo/content-seo", label: "コンテンツ制作サービス", desc: "SNS投稿・記事制作" },
-  { href: "/cost/sns", label: "SNS運用の費用", desc: "料金プランと相場" },
   { href: "/industries/restaurant", label: "飲食店のSNS活用", desc: "飲食店向けInstagram運用" },
   { href: "/industries/beauty", label: "美容室・サロンのSNS活用", desc: "サロン向けSNS集客" },
   { href: "/industries/clinic", label: "歯科・クリニックのSNS活用", desc: "医療機関のSNS運用" },
@@ -184,8 +183,8 @@ export default function ServicesSnsPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/sns" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold transition-colors" style={{ border: "1.5px solid #D1D5DB", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

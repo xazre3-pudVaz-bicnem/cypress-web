@@ -144,7 +144,6 @@ const RELATED_LINKS = [
   { href: "/blog", label: "ブログ", desc: "SEO・MEO・AIO情報" },
   { href: "/cases", label: "事例・実績", desc: "支援事例の紹介" },
   { href: "/faq", label: "よくある質問", desc: "ご利用前の疑問を解決" },
-  { href: "/pricing/web-growth-package", label: "料金プラン", desc: "費用・プラン案内" },
   { href: "/area/tokyo", label: "東京都の対応エリア", desc: "都内全域対応" },
   { href: "/area/kanagawa", label: "神奈川の対応エリア", desc: "横浜・川崎など" },
   { href: "/area/saitama", label: "埼玉の対応エリア", desc: "さいたま市ほか" },

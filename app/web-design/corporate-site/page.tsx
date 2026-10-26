@@ -124,8 +124,6 @@ const relatedLinks = [
   { href: "/seo/local-seo", label: "ローカルSEO・MEO", desc: "地域ビジネスの検索対策" },
   { href: "/services/web-design", label: "ブランディング支援", desc: "企業ブランドの設計・構築" },
   { href: "/web-design/maintenance", label: "保守・運用サポート", desc: "公開後の継続サポート" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "料金プランと相場" },
-  { href: "/cost/corporate-site", label: "コーポレートサイトの費用", desc: "具体的な料金目安" },
   { href: "/industries", label: "IT・SaaS企業のWeb制作", desc: "テック企業向け制作実績" },
   { href: "/industries", label: "製造業のWeb制作", desc: "工場・メーカー向け設計" },
   { href: "/industries/construction", label: "建設・ゼネコンのWeb制作", desc: "工事実績・会社信頼性の表現" },

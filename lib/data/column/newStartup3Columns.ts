@@ -147,7 +147,7 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
       { href: "/partner/local-sales-agent", label: "Web集客サービスの販売代理店・取次店募集", desc: "全国向け代理店・取次店制度の詳細" },
       { href: "/partner/katsushika-startup", label: "葛飾区起業者向け販売パートナー制度", desc: "葛飾区に特化した制度ページ" },
       { href: "/web-design", label: "ホームページ制作サービス", desc: "紹介できる商材の詳細" },
-      { href: "/pricing/web-growth-package", label: "Web集客パッケージ料金", desc: "紹介可能な商材の料金目安" },
+      { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
       { href: "/area/tokyo/katsushika/startup-revenue-streams", label: "創業初期の収益柱づくり", desc: "パートナー制度の活用方法" },
     ],
   },
@@ -808,8 +808,8 @@ export const NEW_STARTUP3_COLUMNS: ColumnTopicPage[] = [
         a: "一般的に3〜6ヶ月以上かかります。競合状況・サイトの現状・施策内容によって異なります。開業前から制作を開始することで、SEO効果が出るタイミングを早めることができます。効果を保証するものではありません。",
       },
       {
-        q: "ホームページ制作費の目安はいくらですか？",
-        a: "シンプルなSEO対応ホームページは数十万円〜、本格的なSEO設計込みのサイトはさらに上の費用感になります。具体的な見積もりはお問い合わせください。",
+        q: "ホームページ制作費はどのように決まりますか？",
+        a: "ページ数や機能、SEO設計をどこまで作り込むかによって変わります。シンプルな構成より、本格的なSEO設計を含むサイトの方が費用は上がります。ご要望をうかがったうえで個別にお見積りします。ご相談・お見積りは無料です。",
       },
       {
         q: "補助金を使ってホームページを作れますか？",

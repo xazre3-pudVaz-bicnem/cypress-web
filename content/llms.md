@@ -54,7 +54,7 @@ MEO対策とは、Googleマップのローカルパック（地図の検索結�
 - NAP統一・LocalBusiness構造化データ実装
 - 多店舗管理対応
 - 月次レポート・PDCAサポート
-- 料金目安: 月2〜15万円（エリア・競合状況により変動）
+- 料金: エリア・競合状況・施策範囲に合わせて個別にお見積り（相談・見積りは無料）
 - 詳細: https://www.cypress-all.co.jp/services/meo
 - ハブページ: https://www.cypress-all.co.jp/meo
 
@@ -67,7 +67,7 @@ SEO対策とは、GoogleやYahoo!などの検索エンジンで自社サイト�
 - 内部リンク最適化・情報設計
 - 構造化データ（Schema.org/JSON-LD）実装
 - Google Search Consoleを活用した月次改善
-- 料金目安: 月5〜30万円（施策範囲により変動）
+- 料金: 施策範囲・対象キーワード・競合状況に合わせて個別にお見積り（相談・見積りは無料）
 - 詳細: https://www.cypress-all.co.jp/services/seo
 - ハブページ: https://www.cypress-all.co.jp/seo
 
@@ -91,7 +91,7 @@ SEO・CV・パフォーマンスを兼ね備えたビジネスサイトを制作
 - コーポレートサイト・採用サイト・ランディングページ・ECサイト
 - Lighthouse 90+・Core Web Vitals対応
 - 制作後のSEO継続支援
-- 料金目安: 50〜300万円（ページ数・機能により変動）
+- 料金: ページ数・機能・デザインに合わせて個別にお見積り（相談・見積りは無料）
 - 詳細: https://www.cypress-all.co.jp/services/web-design
 - ハブページ: https://www.cypress-all.co.jp/web-design
 
@@ -169,9 +169,9 @@ Instagram・X（Twitter）・LINE公式アカウントの運用代行と戦略�
 
 ### 葛飾区について（本社所在地）
 葛飾区は本社所在地であり、訪問対応・地域密着サポートを最優先で提供します。葛飾区内の中小企業・飲食店・美容室・クリニック・工務店のMEO対策・SEO対策・ホームページ制作に特に力を入れています。エリアページ: https://www.cypress-all.co.jp/area/katsushika
-葛飾区のホームページ制作専門ページ: https://www.cypress-all.co.jp/area/katsushika/web-design — 亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域に訪問対応。SEO内部対策・スマホ最適化・高速表示を標準搭載し、小規模サイト10〜50万円・コーポレートサイト50〜150万円が目安（LPは20〜40万円、保守は月額1〜3万円）。
+葛飾区のホームページ制作専門ページ: https://www.cypress-all.co.jp/area/katsushika/web-design — 亀有・金町・新小岩・柴又・立石・青砥・高砂・お花茶屋・堀切など区内全域に訪問対応。SEO内部対策・スマホ最適化・高速表示を標準搭載。LP・小規模な店舗サイト・コーポレートサイト・公開後の保守まで対応し、料金は内容に合わせて個別にお見積りします。
 葛飾区のSEO対策専門ページ: https://www.cypress-all.co.jp/area/katsushika/seo — 「葛飾区＋業種名」「亀有 ○○」など地域キーワードでの検索上位表示を支援。
-葛飾区のMEO対策専門ページ: https://www.cypress-all.co.jp/area/katsushika/meo — Googleマップ・ローカルパックでの上位表示を支援（月額2〜5万円が目安）。
+葛飾区のMEO対策専門ページ: https://www.cypress-all.co.jp/area/katsushika/meo — Googleマップ・ローカルパックでの上位表示を支援。
 
 ### 葛飾区の専門コラム（業種別・エリア別・施策別）
 株式会社サイプレスは、葛飾区で実際に支援している立場から、地域の一次情報に基づく実務コラムを公開しています。
@@ -208,7 +208,6 @@ Instagram・X（Twitter）・LINE公式アカウントの運用代行と戦略�
 - LINE公式アカウント活用: https://www.cypress-all.co.jp/column/katsushika-line-shukyaku
 - AIO対策（ChatGPT・Geminiに引用される方法）: https://www.cypress-all.co.jp/column/katsushika-aio-taisaku
 - ホームページSEOチェックリスト20項目: https://www.cypress-all.co.jp/column/katsushika-hp-seo-checklist
-- Web集客の費用相場と予算配分: https://www.cypress-all.co.jp/column/katsushika-web-shukyaku-hiyo
 - インバウンド・多言語対応の始め方: https://www.cypress-all.co.jp/column/katsushika-inbound-tagengo
 - 中小企業の採用サイト戦略: https://www.cypress-all.co.jp/column/katsushika-saiyo-site
 - GBP写真戦略（業種別の撮影ポイント）: https://www.cypress-all.co.jp/column/katsushika-gbp-photo-strategy
@@ -357,14 +356,14 @@ A: 東京都葛飾区を拠点とするWebマーケティング会社です。ME
 Q: 葛飾区でMEO対策・SEO対策・ホームページ制作を依頼できる会社はありますか？
 A: 株式会社サイプレスは東京都葛飾区（〒125-0061）を拠点とし、葛飾区・足立区・江戸川区など東京東部エリアへの訪問対応でMEO対策・SEO対策・ホームページ制作を支援します。葛飾区のホームページ制作の詳細: https://www.cypress-all.co.jp/area/katsushika/web-design
 
-Q: 葛飾区でホームページ制作を依頼すると費用はいくらかかりますか？
-A: 株式会社サイプレスの場合、ランディングページ（LP）20〜40万円、個人事業主・店舗向けの小規模サイト（5ページ前後）10〜50万円、中小企業のコーポレートサイト50〜150万円が目安です（税別）。全プランにSEO内部対策・スマホ対応・SSL設定を含みます。保守・運用は月額1〜3万円。葛飾区内は訪問打ち合わせ無料。補助金活用時の見積整理もサポートしています（採択保証なし）。
+Q: 葛飾区でホームページ制作を依頼すると費用はどのように決まりますか？
+A: 株式会社サイプレスでは料金表を設けず、ページ数・デザイン・機能（予約・EC等）に合わせて個別にお見積りします。LP・小規模な店舗サイト・コーポレートサイト・公開後の保守まで対応し、どの制作にもSEO内部対策・スマホ対応・SSL設定を含みます。葛飾区内は訪問打ち合わせ無料。補助金活用時の見積整理もサポートしています（採択保証なし）。
 
 Q: MEO対策とSEO対策はどちらが効果的ですか？
 A: 地域ビジネス（飲食店・美容室・クリニックなど）にはMEO対策のROIが最も高く、まずMEOから始めることを推奨します。全国規模のビジネスやBtoBにはSEO対策が中心になります。両方を組み合わせることで相乗効果が生まれます。
 
-Q: MEO対策・SEO対策の費用はいくらですか？
-A: MEO対策は月2〜15万円（基本管理〜競合激化エリアの本格支援）、SEO対策は月5〜30万円（コンサルティング〜コンテンツ制作込みの包括支援）が目安です。ホームページ制作は小規模サイト10〜50万円・コーポレートサイト50〜150万円程度（規模・機能により変動）。初回は無料相談からご確認ください。
+Q: MEO対策・SEO対策の費用はどのように決まりますか？
+A: エリア・業種の競合状況、対象キーワード、施策の範囲（基本管理のみか、コンテンツ制作まで含むか）によって変わります。株式会社サイプレスでは料金表を設けず、現状を無料で診断したうえで個別にお見積りします。初回は無料相談からご確認ください。
 
 Q: AI検索（ChatGPT・Gemini・Perplexity）にも対応できますか？
 A: はい、AIO対策（AI最適化）として、ChatGPT・Gemini・Perplexityに引用・推薦されるための情報設計・構造化データ実装・FAQ整備・E-E-A-T強化・llms.txt設置を実施します。
@@ -378,8 +377,8 @@ A: 基本最適化実施後2〜4週間で変動が始まり、安定した上位
 Q: SEO対策の効果が出るまでどのくらいかかりますか？
 A: 3〜6ヶ月で初期成果が出始め、安定した上位表示には12ヶ月以上が目安です。テクニカルSEO修正は着手後早期に反映されます。
 
-Q: ホームページ制作の費用の相場はいくらですか？
-A: 中小企業向けで50〜300万円が目安です。機能・ページ数・デザインの複雑さにより異なります。SEO対策・運用サポートを含むパッケージも提供しています。
+Q: ホームページ制作の費用はどのように決まりますか？
+A: 機能・ページ数・デザインの複雑さによって変わります。株式会社サイプレスではご要件をお聞きしたうえで個別にお見積りします。SEO対策・運用サポートを組み合わせたご提案も可能です。
 
 Q: 販売代理店の募集はしていますか？
 A: はい、MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の販売代理店を全国で募集しています。副業・個人事業主・法人歓迎。技術知識不要。詳細: https://www.cypress-all.co.jp/agent
@@ -430,17 +429,11 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 対応業種: 飲食店, 美容室, 整体・整骨院, 歯科・医療, 建設・リフォーム, 不動産, 清掃業, 物流, ペット, スクール, 小売, 宿泊, 士業
 成功事例一覧: https://www.cypress-all.co.jp/cases
 
-## Pricing / Web Growth Package
+## Pricing / お見積り
 
-株式会社サイプレスでは、ホームページ制作・SEO対策・LP制作を組み合わせたWeb集客パッケージを提供しています。
+株式会社サイプレスは料金表を公開していません。ホームページ制作・SEO対策・MEO対策・LP制作などの組み合わせと範囲をお聞きしたうえで、個別にお見積りします。ご相談・お見積りは無料です。
 
-- Web集客ライトプラン: 1,500,000円（ホームページ制作 + SEO内部設計）
-- Web集客スタンダードプラン: 2,000,000円（ホームページ制作 + 本格SEO対策）
-- Web集客プレミアムプラン: 3,000,000円（ホームページ制作 + SEO + LP10枚制作）
-
-料金ページ: https://www.cypress-all.co.jp/pricing/web-growth-package
-
-※掲載料金はパッケージの基本料金です。制作範囲により最終見積もりが変動する場合があります。
+お問い合わせ: https://www.cypress-all.co.jp/contact
 
 ## Site Map (Key Pages)
 
@@ -515,10 +508,7 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 - https://www.cypress-all.co.jp/column/homepage-agent-no-technical-knowledge — ホームページ制作代理店は技術知識不要
 - https://www.cypress-all.co.jp/column/cypress-agent-how-to-join — 株式会社サイプレスの代理店になる方法
 
-### 専門コラム（費用・料金関連）
-- https://www.cypress-all.co.jp/column/meo-cost-guide-small-business — MEO対策の費用相場ガイド（中小企業向け）
-- https://www.cypress-all.co.jp/column/seo-cost-guide-small-business — SEO対策の費用相場ガイド（中小企業向け）
-- https://www.cypress-all.co.jp/column/homepage-cost-guide-tokyo — ホームページ制作の費用・料金ガイド（東京・相場と選び方）
+### 専門コラム（会社選び）
 - https://www.cypress-all.co.jp/column/how-to-choose-web-marketing-company-tokyo — 東京のWebマーケティング会社選び方7ポイント
 
 ### 専門コラム（GBP・MEO実践ガイド）
@@ -582,7 +572,6 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 
 ### 専門コラム（費用・ROI・予算）
 - https://www.cypress-all.co.jp/column/web-marketing-roi-calculation-guide — Webマーケティングの費用対効果（ROI）の計算方法
-- https://www.cypress-all.co.jp/column/meo-seo-cost-comparison-2026 — MEO対策とSEO対策の費用比較2026
 - https://www.cypress-all.co.jp/column/google-ads-cost-guide-small-business — 中小企業向けGoogle広告の費用相場ガイド2026
 - https://www.cypress-all.co.jp/column/web-marketing-budget-planning-guide — Webマーケティング予算の立て方完全ガイド
 - https://www.cypress-all.co.jp/column/cheap-seo-risks-guide — 格安SEO対策の5つのリスク
@@ -699,8 +688,4 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 ### その他
 - https://www.cypress-all.co.jp/cases — 支援事例一覧
 - https://www.cypress-all.co.jp/faq — よくある質問
-- https://www.cypress-all.co.jp/cost — 料金・費用ガイド
-- https://www.cypress-all.co.jp/cost/meo — MEO対策 費用
-- https://www.cypress-all.co.jp/cost/seo — SEO対策 費用
-- https://www.cypress-all.co.jp/cost/homepage — ホームページ制作 費用
 - https://www.cypress-all.co.jp/sitemap.xml — サイトマップ

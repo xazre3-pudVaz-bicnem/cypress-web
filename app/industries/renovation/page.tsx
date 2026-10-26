@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: "リフォームのWeb集客に投資した場合、どのくらいで費用回収できますか？",
-    a: "リフォーム1件の単価は数十万〜数百万円のため、Web集客への投資回収が早い業種です。MEO対策（月額2〜4万円）で月1件の見積もり依頼が増え、成約すれば投資額を大幅に上回る収益になります。具体的な収益試算を含めてご相談ください。",
+    a: "リフォーム1件の単価は数十万〜数百万円のため、Web集客への投資回収が早い業種です。MEO対策で月1件の見積もり依頼が増え、成約すれば投資額を大幅に上回る収益になります。具体的な収益試算を含めてご相談ください。",
   },
   {
     q: "施工事例ページはSEOにどう効果がありますか？",
@@ -134,7 +134,6 @@ const relatedLinks = [
   { href: "/web-design/corporate-site", label: "企業サイト制作", desc: "リフォーム会社向け企業サイト" },
   { href: "/seo/content-seo", label: "コンテンツSEO対策", desc: "施工事例・ガイド記事で長期集客" },
   { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域密着SEOの手法" },
-  { href: "/cost/seo", label: "SEO費用・料金", desc: "SEO対策の費用目安" },
   { href: "/area/tokyo", label: "東京都のWeb集客支援", desc: "東京エリア対応" },
   { href: "/area/katsushika", label: "葛飾区のWeb集客支援", desc: "葛飾区エリア対応" },
   { href: "/industries/construction", label: "建設業・工務店のWeb集客", desc: "建設業の集客支援" },

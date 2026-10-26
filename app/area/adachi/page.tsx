@@ -88,8 +88,8 @@ const faqItems = [
     a: "はい。サイプレスではホームページ制作の段階からSEOを組み込んで設計します。キーワード選定・サイト構造・メタ情報・内部リンク・スピード最適化をすべて初期から対応するため、公開直後から検索エンジンに評価されやすいサイトが完成します。",
   },
   {
-    q: "月額いくらから始められますか？",
-    a: "MEO対策は月額2〜3万円台から、SEO対策は月額3〜5万円台からのプランをご用意しています。ホームページ制作は内容によって異なりますが、詳細はお問い合わせ後に個別でご案内します。足立区の中小企業・個人事業主の予算感に合わせた提案を心がけています。",
+    q: "費用はどのように決まりますか？",
+    a: "MEO・SEOは施策の範囲や競合状況、ホームページ制作は内容によって費用が変わります。現状をお聞きしたうえで、個別にお見積りします。足立区の中小企業・個人事業主の予算感に合わせた提案を心がけています。ご相談・お見積りは無料です。",
   },
   {
     q: "綾瀬エリアで整骨院・整体院を開業したいのですが、どう集客すればよいですか？",
@@ -113,13 +113,12 @@ const relatedLinks = [
   { href: "/area/saitama", label: "埼玉県", desc: "埼玉県の集客支援" },
   { href: "/area/tokyo", label: "東京都", desc: "東京都全域の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
-  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容・進め方" },
+  { href: "/services/seo", label: "SEO対策サービス", desc: "サービス内容・進め方" },
   { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
   { href: "/industries/hair-salon", label: "美容室の集客", desc: "美容業向け支援" },
   { href: "/industries/clinic", label: "クリニックの集客", desc: "医療・治療院向け支援" },
   { href: "/seo/local-seo", label: "ローカルSEOとは", desc: "地域SEOの基礎知識" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金・費用の目安" },
   { href: "/web-design", label: "ホームページ制作", desc: "Web制作サービス" },
   { href: "/area/taito", label: "台東区", desc: "台東区の集客支援" },
   { href: "/area/arakawa", label: "荒川区", desc: "荒川区の集客支援" },
@@ -128,7 +127,6 @@ const relatedLinks = [
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずはご相談ください" },
   { href: "/blog", label: "コラム・お役立ち情報", desc: "MEO・SEO解説記事" },
   { href: "/seo", label: "SEO対策とは", desc: "SEO基礎知識" },
-  { href: "/cost/seo", label: "SEO対策の費用", desc: "料金・費用の目安" },
 ];
 
 export default function Page() {

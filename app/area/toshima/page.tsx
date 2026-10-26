@@ -48,8 +48,8 @@ const faqItems = [
     a: "池袋はリトルチャイナと呼ばれるほど中国語圏のコミュニティが集まるエリアです。飲食・物販・エンターテインメントでは中国語対応のGBP設定が集客に直結します。サイプレスでは多言語対応のGBP設定もサポートしています。",
   },
   {
-    q: "月額いくらから始められますか？",
-    a: "MEO対策は月額2〜3万円台から、SEO対策は月額3〜5万円台からのプランをご用意しています。豊島区の中小企業・個人事業主の予算感に合わせた提案を心がけています。",
+    q: "MEO・SEO対策の費用はどのように決まりますか？",
+    a: "対策する範囲や、池袋周辺など対象エリアの競合状況によって決まります。豊島区の中小企業・個人事業主の予算感に合わせた提案を心がけています。現状をお聞きしたうえで、個別に無料でお見積りします。",
   },
 ];
 
@@ -60,10 +60,9 @@ const relatedLinks = [
   { href: "/area/arakawa", label: "荒川区", desc: "荒川区の集客支援" },
   { href: "/area/tokyo", label: "東京都", desc: "東京都全域の集客支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容・進め方" },
   { href: "/column/toshima-meo-seo-guide", label: "豊島区MEO・SEOガイド", desc: "詳細コラム記事" },
   { href: "/industries/restaurant", label: "飲食店の集客", desc: "飲食業向け支援" },
-  { href: "/cost/meo", label: "MEO対策の費用", desc: "料金・費用の目安" },
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "まずはご相談ください" },
 ];
 

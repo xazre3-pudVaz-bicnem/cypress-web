@@ -50,7 +50,7 @@ const faqItems = [
     a: "求人媒体は「認知獲得」の役割、採用サイトは「共感・応募意欲の醸成」の役割です。媒体から採用サイトへ誘導する動線を設計することで、媒体での掲載コスト削減と自社ブランドの強化を同時に実現できます。採用サイトのURLを求人媒体に掲載するだけで流入が生まれます。",
   },
   {
-    q: "採用サイトの制作費用の目安は？",
+    q: "採用サイトの制作費用はどのように決まりますか？",
     a: "採用サイトの制作費用は、ページ数・コンテンツ量（社員インタビュー数・写真撮影の有無）・CMS機能によって変わります。まずは無料相談でご要件をお聞かせいただき、お見積もりをご提示します。コーポレートサイトと同時制作の場合は費用を抑えられることが多いです。",
   },
   {
@@ -124,8 +124,6 @@ const relatedLinks = [
   { href: "/seo/local-seo", label: "ローカルSEO・MEO", desc: "地域ビジネスの採用対策" },
   { href: "/services/web-design", label: "ブランディング支援", desc: "採用ブランドの設計・構築" },
   { href: "/web-design/maintenance", label: "保守・運用サポート", desc: "公開後の継続サポート" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "採用サイトの料金目安" },
-  { href: "/cost/corporate-site", label: "採用サイトの費用", desc: "具体的な料金目安" },
   { href: "/industries", label: "IT・SaaS企業のWeb制作", desc: "エンジニア採用に強いサイト" },
   { href: "/industries", label: "製造業のWeb制作", desc: "工場・現場環境の可視化" },
   { href: "/industries/clinic", label: "医療・介護のWeb制作", desc: "看護師・コメディカル採用" },

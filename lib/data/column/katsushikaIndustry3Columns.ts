@@ -359,7 +359,7 @@ export const KATSUSHIKA_INDUSTRY3_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/area/katsushika/meo", label: "葛飾区のMEO対策", desc: "Googleマップ上位表示" },
-      { href: "/column/katsushika-web-shukyaku-hiyo", label: "葛飾区のWeb集客の費用相場", desc: "予算配分の考え方" },
+      { href: "/area/katsushika", label: "葛飾区のWeb集客", desc: "地域密着の集客支援" },
       { href: "/contact", label: "無料相談・お問い合わせ", desc: "葛飾区は訪問対応可" },
       { href: "/column/katsushika-kagiya-shukyaku", label: "鍵屋・鍵交換業者の集客", desc: "緊急対応サービスの集客" },
       { href: "/column/katsushika-cleaning-service", label: "ハウスクリーニング・便利屋", desc: "緊急対応サービスの集客" },

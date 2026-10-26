@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: "Web制作の費用はどのくらいかかりますか？",
-    a: "サイトの規模・ページ数・機能・デザインの複雑さによって異なります。シンプルなコーポレートサイト（5〜10ページ）から複雑なサービスサイト・採用サイトまで幅広く対応しています。まずは無料相談でご要件をお聞かせいただき、お見積もりをご提示します。詳細は料金ページをご覧ください。",
+    a: "サイトの規模・ページ数・機能・デザインの複雑さによって異なります。シンプルなコーポレートサイト（5〜10ページ）から複雑なサービスサイト・採用サイトまで幅広く対応しています。まずは無料相談でご要件をお聞かせいただき、お見積もりをご提示します。",
   },
   {
     q: "Next.jsとWordPressのどちらで作るのがいいですか？",
@@ -120,7 +120,6 @@ const relatedLinks = [
   { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
   { href: "/services/meo", label: "MEO対策サービス", desc: "Googleビジネスプロフィール最適化" },
   { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "SEO記事・ブログ運用" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "料金プランと相場" },
   { href: "/area/tokyo", label: "東京のWeb制作", desc: "東京エリアの制作実績" },
   { href: "/area/katsushika", label: "葛飾区のWeb制作", desc: "葛飾区・東部エリア対応" },
   { href: "/area/chiba", label: "千葉のWeb制作", desc: "千葉エリアの制作実績" },
@@ -191,8 +190,8 @@ export default function ServicesWebDesignPage() {
               <Link href="/contact" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ background: "#293540", color: "#FFFFFF" }}>
                 無料相談・お問い合わせ
               </Link>
-              <Link href="/cost/homepage" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #dde0e4", color: "#374151" }}>
-                料金・プランを見る
+              <Link href="/process" className="inline-block px-6 py-3 text-[13px] font-semibold" style={{ border: "1.5px solid #dde0e4", color: "#374151" }}>
+                ご支援の流れを見る
               </Link>
             </div>
           </div>

@@ -140,7 +140,7 @@ export default function GuidePage() {
                 { href: "/goals", label: "目的別施策プラン", desc: "達成したい目標から施策を選ぶ" },
                 { href: "/problems", label: "お悩み別ページ", desc: "症状から原因・解決策を見つける" },
                 { href: "/checklist", label: "チェックリスト", desc: "自社の集客状況をセルフチェック" },
-                { href: "/cost", label: "費用・料金ガイド", desc: "MEO・SEO・Web制作の費用相場" },
+                { href: "/contact", label: "無料相談・お見積り", desc: "ご予算と目的に合わせてご提案" },
                 { href: "/faq", label: "よくある質問", desc: "よく寄せられる疑問への回答集" },
               ].map((item) => (
                 <Link key={item.href} href={item.href} style={{ display: "block", padding: "28px", background: "#293540", textDecoration: "none" }}>
@@ -161,7 +161,6 @@ export default function GuidePage() {
             { href: "/goals", label: "目的別施策プラン", desc: "達成目標から施策を選ぶ" },
             { href: "/problems", label: "お悩み別ページ", desc: "症状から解決策を見つける" },
             { href: "/checklist", label: "チェックリスト", desc: "集客状況のセルフチェック" },
-            { href: "/cost", label: "費用・料金ガイド", desc: "MEO・SEO・Web制作の費用相場" },
             { href: "/meo", label: "MEO対策とは", desc: "Googleマップ集客の基礎" },
             { href: "/seo", label: "SEO対策とは", desc: "検索上位表示の基礎知識" },
             { href: "/aio", label: "AIO対策とは", desc: "AI検索最適化の基礎" },

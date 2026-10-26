@@ -102,8 +102,8 @@ const faqItems = [
     a: "はい。制作前にターゲットキーワードで上位表示している競合サイトのコンテンツ構成・ページ数・内部リンク設計・構造化データ実装状況を分析します。競合の強みと弱みを把握したうえで、上位表示を狙うための差別化コンテンツ戦略を設計します。",
   },
   {
-    q: "SEO特化サイトの制作費用の目安を教えてください。",
-    a: "シンプルなSEO特化サイト（10〜20ページ）で60〜120万円、本格的なコンテンツSEOサイト（50ページ以上・CMS付き）で150〜300万円が目安です。キーワード調査・サイト設計・構造化データ実装・Search Console設定を含みます。詳細はお見積りにてご案内します。",
+    q: "SEO特化サイトの制作費用はどのように決まりますか？",
+    a: "ページ数・CMSの有無・コンテンツ制作の量・実装する機能の範囲によって変わります。キーワード調査・サイト設計・構造化データ実装・Search Console設定は標準で含みます。ご要件をお聞きしたうえで個別にお見積りします。",
   },
 ];
 
@@ -117,7 +117,6 @@ const relatedLinks = [
   { href: "/web-design", label: "ECサイト制作", desc: "SEOを活かした通販サイト" },
   { href: "/web-design/wordpress", label: "ブログ・メディアサイト制作", desc: "コンテンツSEOのメディア構築" },
   { href: "/checklist/website-redesign", label: "サイトリニューアル", desc: "SEO評価を引き継いだ刷新" },
-  { href: "/cost/homepage", label: "Web制作の費用", desc: "SEO特化サイトの料金目安" },
   { href: "/web-design", label: "Web制作会社の選び方", desc: "SEO対応会社の選定ポイント" },
   { href: "/checklist/website-redesign", label: "Web制作チェックリスト", desc: "SEOサイト制作の確認項目" },
   { href: "/area/tokyo", label: "東京のWeb制作", desc: "東京エリアのSEOサイト制作" },
@@ -461,22 +460,21 @@ export default function SeoSitePage() {
           </div>
         </section>
 
-        {/* SEO特化サイト制作の料金目安 */}
+        {/* SEO特化サイト制作のプラン */}
         <section className="py-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Pricing Guide</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase mb-5" style={{ color: "#6B7280" }}>Plans</p>
             <h2 className="font-black text-[26px] mb-10" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>
-              SEO特化サイト制作の料金目安
+              SEO特化サイト制作の3つのプラン
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mb-8">
               {[
-                { plan: "スタンダードSEOサイト", range: "60〜120万円", items: ["キーワード調査・サイト設計", "10〜20ページ制作", "metadata全ページ設定", "構造化データ実装", "Search Console設定"] },
-                { plan: "コンテンツSEOサイト", range: "120〜200万円", items: ["本格的なサイロ構造設計", "CMS（WordPress等）構築", "30〜50ページ制作", "コンテンツカレンダー策定", "内部リンク設計・実装"] },
-                { plan: "大規模SEOサイト", range: "200〜400万円", items: ["Next.js高速サイト構築", "SSG/ISR実装", "50ページ以上の大規模制作", "AIO・MEO統合設計", "継続運用サポート付き"] },
+                { plan: "スタンダードSEOサイト", items: ["キーワード調査・サイト設計", "10〜20ページ制作", "metadata全ページ設定", "構造化データ実装", "Search Console設定"] },
+                { plan: "コンテンツSEOサイト", items: ["本格的なサイロ構造設計", "CMS（WordPress等）構築", "30〜50ページ制作", "コンテンツカレンダー策定", "内部リンク設計・実装"] },
+                { plan: "大規模SEOサイト", items: ["Next.js高速サイト構築", "SSG/ISR実装", "50ページ以上の大規模制作", "AIO・MEO統合設計", "継続運用サポート付き"] },
               ].map((item, i) => (
                 <div key={i} style={{ border: "1px solid #dde0e4", padding: "28px" }}>
-                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase mb-2" style={{ color: "#9CA3AF" }}>{item.plan}</p>
-                  <p className="font-black text-[22px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.range}</p>
+                  <p className="font-black text-[20px] mb-4" style={{ color: "#333333", fontFamily: "var(--font-serif)" }}>{item.plan}</p>
                   <ul className="space-y-2">
                     {item.items.map((li, j) => (
                       <li key={j} className="flex gap-2 text-[13px]" style={{ color: "#374151" }}>
@@ -487,7 +485,7 @@ export default function SeoSitePage() {
                 </div>
               ))}
             </div>
-            <p className="text-[13px]" style={{ color: "#9CA3AF" }}>※ページ数・機能・対応範囲によって変動します。詳細はお見積りにてご案内します。</p>
+            <p className="text-[13px]" style={{ color: "#9CA3AF" }}>※ページ数・機能・対応範囲はご要件に合わせて調整します。お見積りは無料です。</p>
           </div>
         </section>
 

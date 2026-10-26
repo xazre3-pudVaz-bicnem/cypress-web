@@ -99,7 +99,6 @@ export const processPages: ProcessPage[] = [
     related: [
       { href: "/process/proposal", label: "ご提案・見積もりの流れ", desc: "相談後のステップ" },
       { href: "/process/contract", label: "ご契約手続きの流れ", desc: "契約の進め方" },
-      { href: "/cost/free-consultation", label: "無料相談で費用見積もり", desc: "費用の目安を確認" },
       { href: "/contact", label: "お問い合わせ", desc: "今すぐ相談する" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "MEOについて知る" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "SEOについて知る" },
@@ -174,7 +173,7 @@ export const processPages: ProcessPage[] = [
       },
       {
         q: "予算が限られている場合でも提案してもらえますか？",
-        a: "はい、月額3万円から対応できるプランもあります。予算に合わせて優先度の高い施策だけに絞った提案を行いますので、まずはお気軽にご相談ください。",
+        a: "はい、限られたご予算でも対応できます。予算に合わせて優先度の高い施策だけに絞った提案を行いますので、まずはお気軽にご相談ください。",
       },
       {
         q: "提案を受けた後、断ることはできますか？",
@@ -185,18 +184,18 @@ export const processPages: ProcessPage[] = [
         a: "提案書はPDFで納品しますので、社内共有に活用いただけます。上司・役員向けの補足説明資料の作成や、オンラインでの追加説明も対応可能です。",
       },
       {
-        q: "複数の施策を組み合わせた場合の費用感を教えてください。",
+        q: "複数の施策を組み合わせた場合、費用はどうなりますか？",
         a: "MEO+SEOのセット、MEO+ホームページ制作のセット等、組み合わせることで単体より割安になるケースがあります。詳細は提案書にまとめてお伝えします。",
       },
     ],
     related: [
       { href: "/process/consultation", label: "無料相談の流れ", desc: "まず相談から" },
       { href: "/process/contract", label: "ご契約手続きの流れ", desc: "提案後のステップ" },
-      { href: "/cost/comparison", label: "Web集客サービス費用比較", desc: "費用の相場を確認" },
+      { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
       { href: "/contact", label: "お問い合わせ", desc: "提案を依頼する" },
-      { href: "/cost/meo", label: "MEO対策費用", desc: "MEOの費用感" },
-      { href: "/cost/seo", label: "SEO対策費用", desc: "SEOの費用感" },
-      { href: "/cost/homepage", label: "ホームページ制作費用", desc: "Web制作の費用感" },
+      { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
+      { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },
+      { href: "/web-design", label: "ホームページ制作", desc: "成果につながるサイト制作" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "サービス詳細" },
     ],
   },
@@ -221,8 +220,8 @@ export const processPages: ProcessPage[] = [
       },
       {
         num: "03",
-        title: "初期費用のお支払い",
-        body: "初期費用（設定費用・制作費用）がある場合は、銀行振込にて先払いでお支払いいただきます。月額費用は翌月初めに請求書を発行します。",
+        title: "お支払い手続き",
+        body: "お支払いいただくのは、お見積りでご確認・ご納得いただいた内容のみです。初期費用（設定費用・制作費用）がある場合は、銀行振込にて先払いでお支払いいただきます。月額費用は翌月初めに請求書を発行します。",
         duration: "契約後3営業日以内",
       },
       {
@@ -287,8 +286,8 @@ export const processPages: ProcessPage[] = [
       { href: "/process/onboarding", label: "業務開始・オンボーディング", desc: "契約後のステップ" },
       { href: "/faq/contract-flow", label: "契約に関するFAQ", desc: "よくある質問" },
       { href: "/contact", label: "お問い合わせ", desc: "まず相談する" },
-      { href: "/cost/meo", label: "MEO対策費用", desc: "費用の詳細" },
-      { href: "/cost/seo", label: "SEO対策費用", desc: "費用の詳細" },
+      { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
+      { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },
       { href: "/process/consultation", label: "無料相談の流れ", desc: "最初のステップ" },
       { href: "/support/operation", label: "運用サポートサービス", desc: "契約後の支援内容" },
     ],
@@ -466,8 +465,8 @@ export const processPages: ProcessPage[] = [
         a: "はい、Googleのアップデートで順位変動が起きることがあります。変動を検知した場合は速やかにお知らせし、対応策を実施します。日頃からの継続的な最適化が変動の影響を最小化します。",
       },
       {
-        q: "MEO対策の月額費用はどのくらいですか？",
-        a: "月額2〜8万円が一般的な範囲です。対応内容（投稿頻度・口コミ返信・競合モニタリング等）によって変わります。詳細は無料相談でお見積もりします。",
+        q: "MEO対策の費用はどのように決まりますか？",
+        a: "対応内容（投稿頻度・口コミ返信・競合モニタリング等）によって決まります。店舗の状況とご要望をお聞きしたうえで、無料相談でお見積もりします。",
       },
       {
         q: "複数店舗がある場合、まとめて依頼できますか？",
@@ -478,7 +477,6 @@ export const processPages: ProcessPage[] = [
       { href: "/process/seo-launch", label: "SEO対策開始の流れ", desc: "SEOの場合" },
       { href: "/process/reporting", label: "月次レポートの内容", desc: "報告の仕組み" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "MEO対策の基礎知識" },
-      { href: "/cost/meo", label: "MEO対策費用", desc: "費用の相場" },
       { href: "/faq/meo-basics", label: "MEO対策FAQ", desc: "よくある疑問" },
       { href: "/meo", label: "MEO対策ガイド", desc: "MEO対策を学ぶ" },
       { href: "/goals/meo-top", label: "Googleマップ上位を取りたい", desc: "MEO上位の戦略" },
@@ -559,8 +557,8 @@ export const processPages: ProcessPage[] = [
         a: "はい、既存記事をSEO観点で評価しリライトの優先度を決めます。良質な既存コンテンツは資産として活用できます。",
       },
       {
-        q: "SEO対策の月額費用の目安を教えてください。",
-        a: "内部SEO改善のみなら月3〜5万円、コンテンツ制作込みのプランは月5〜20万円が一般的な範囲です。記事制作本数・競合強度・対応範囲によって変わります。",
+        q: "SEO対策の費用はどのように決まりますか？",
+        a: "内部SEO改善のみか、コンテンツ制作まで含めるかで変わります。記事制作本数・競合強度・対応範囲によっても異なります。サイトの現状を確認したうえで、お見積りを無料でご提示します。",
       },
       {
         q: "Googleのコアアップデートが来た場合はどう対応しますか？",
@@ -571,7 +569,6 @@ export const processPages: ProcessPage[] = [
       { href: "/process/meo-launch", label: "MEO対策開始の流れ", desc: "MEOの場合" },
       { href: "/process/reporting", label: "月次レポートの内容", desc: "報告の仕組み" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "SEO対策の基礎知識" },
-      { href: "/cost/seo", label: "SEO対策費用", desc: "費用の相場" },
       { href: "/faq/seo-basics", label: "SEO対策FAQ", desc: "よくある疑問" },
       { href: "/seo", label: "SEO戦略ガイド", desc: "SEO戦略を学ぶ" },
       { href: "/goals/google-top", label: "Google上位表示させたい", desc: "上位表示の戦略" },
@@ -662,15 +659,15 @@ export const processPages: ProcessPage[] = [
         a: "はい、すべての制作案件でスマートフォン・タブレット対応（レスポンシブデザイン）を標準で実施します。",
       },
       {
-        q: "ホームページ制作の費用の目安を教えてください。",
-        a: "5ページ程度のシンプルなサイトで30〜60万円、中規模サイトで50〜150万円が目安です。ページ数・機能・デザイン要件によって変わります。詳細はお見積もりにてご確認ください。",
+        q: "ホームページ制作の費用はどのように決まりますか？",
+        a: "ページ数・機能・デザイン要件によって決まります。シンプルなサイトか中規模サイトかでも変わります。ご要望をお聞きしたうえで個別にお見積りしますので、詳細はお見積もりにてご確認ください（無料）。",
       },
     ],
     related: [
-      { href: "/cost/homepage", label: "ホームページ制作費用", desc: "費用の相場" },
+      { href: "/web-design", label: "ホームページ制作", desc: "成果につながるサイト制作" },
       { href: "/process/onboarding", label: "業務開始の流れ", desc: "開始後のステップ" },
       { href: "/process/reporting", label: "月次レポートの内容", desc: "公開後の管理" },
-      { href: "/cost/web-maintenance", label: "保守・運用費用", desc: "公開後のコスト" },
+      { href: "/web-design/maintenance", label: "保守・運用サポート", desc: "公開後の更新と管理" },
       { href: "/services/web-design", label: "ホームページ制作サービス", desc: "サービス詳細" },
       { href: "/goals/homepage-redesign", label: "ホームページをリニューアルしたい", desc: "リニューアルの戦略" },
       { href: "/solutions/web-design-seo", label: "ホームページ制作×SEO", desc: "制作と集客を統合" },
@@ -1028,7 +1025,7 @@ export const processPages: ProcessPage[] = [
     ],
     related: [
       { href: "/process/improvement", label: "施策改善のプロセス", desc: "改善の進め方" },
-      { href: "/cost/total-package", label: "トータルパッケージ費用", desc: "全施策まとめて依頼" },
+      { href: "/services", label: "サービス一覧", desc: "支援メニューを一覧で見る" },
       { href: "/support/consulting", label: "年間サポートプラン", desc: "長期的な支援" },
       { href: "/process/handover", label: "内製化支援の流れ", desc: "将来の内製化に向けて" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "拡大施策の候補" },
@@ -1071,7 +1068,7 @@ export const processPages: ProcessPage[] = [
       {
         num: "05",
         title: "完全内製化・アドバイザリー契約へ移行",
-        body: "社内での安定運用が確認できたら、完全内製化へ移行します。月1〜2回のアドバイザリー契約（月額1〜3万円）で、疑問点の相談・品質チェックを継続する形も選択できます。",
+        body: "社内での安定運用が確認できたら、完全内製化へ移行します。月1〜2回のアドバイザリー契約で、疑問点の相談・品質チェックを継続する形も選択できます。",
         duration: "内製化から1ヶ月後〜",
       },
       {
@@ -1088,7 +1085,7 @@ export const processPages: ProcessPage[] = [
       },
       {
         q: "内製化後、困ったときに相談できますか？",
-        a: "はい、アドバイザリー契約（月額1〜3万円）で月次の相談・フィードバックを継続して受けることができます。",
+        a: "はい、アドバイザリー契約で、月次の相談・フィードバックを継続して受けることができます。費用はご相談の頻度や内容に合わせて、個別にお見積りします。",
       },
       {
         q: "内製化に必要なツール費用はどのくらいですか？",
@@ -1107,8 +1104,8 @@ export const processPages: ProcessPage[] = [
         a: "アドバイザリー契約があればいつでもご相談いただけます。必要に応じて一部業務を再外注する形でのサポートも対応しています。",
       },
       {
-        q: "内製化にかかる費用の目安を教えてください。",
-        a: "研修・マニュアル整備・並走期間のサポートを含め、3〜6ヶ月の内製化支援プランは月額3〜8万円が目安です。通常の運用代行と比較して費用を抑えながらノウハウを獲得できます。",
+        q: "内製化支援の費用はどのように決まりますか？",
+        a: "研修・マニュアル整備・並走期間のサポートをどこまで含めるかと、支援期間（3〜6ヶ月など）によって決まります。通常の運用代行と比較して、費用を抑えながらノウハウを獲得できます。内製化の範囲をお聞きしたうえで、無料でお見積りします。",
       },
       {
         q: "外注と内製のどちらが長期的にコスパが良いですか？",
@@ -1122,7 +1119,7 @@ export const processPages: ProcessPage[] = [
     related: [
       { href: "/support/handover", label: "内製化支援サービス", desc: "サポートの詳細" },
       { href: "/support/training", label: "社内向けSEO・MEOトレーニング", desc: "研修サービス" },
-      { href: "/cost/ai-cost-reduction", label: "AI活用でコスト削減", desc: "AIを活用した方法" },
+      { href: "/ai", label: "AI活用支援", desc: "AIで業務を効率化する" },
       { href: "/process/expansion", label: "施策拡大の流れ", desc: "拡大から内製化へ" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "内製化する施策" },
       { href: "/services/meo", label: "MEO対策サービス", desc: "内製化する施策" },

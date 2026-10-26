@@ -316,7 +316,7 @@ const relatedLinks = [
   { href: "/seo/technical-seo", label: "テクニカルSEO", desc: "技術的SEO対策" },
   { href: "/seo/local-seo", label: "ローカルSEO", desc: "地域検索への最適化" },
   { href: "/meo", label: "MEO対策", desc: "Googleマップ・地域集客対策" },
-  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/aio", label: "AIO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "SEO支援サービス詳細" },
   { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "コンテンツ制作・運用支援" },
   { href: "/services/web-design", label: "Webデザイン制作", desc: "高品質サイト制作" },

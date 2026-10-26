@@ -250,7 +250,7 @@ const relatedLinks = [
   { href: "/meo/local-keyword", label: "地域キーワード設計", desc: "地域集客のキーワード戦略" },
   { href: "/meo/map-ranking", label: "Googleマップ集客", desc: "マップからの集客最大化" },
   { href: "/meo/google-business-profile", label: "プロフィール最適化", desc: "GBP基本情報の最適化" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/seo", label: "SEO対策サービス", desc: "検索エンジン最適化" },
   { href: "/seo", label: "SEO対策", desc: "SEO全体の戦略解説" },
   { href: "/seo/content-seo", label: "コンテンツマーケティング", desc: "集客コンテンツの作り方" },

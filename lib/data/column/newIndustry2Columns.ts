@@ -128,8 +128,8 @@ export const NEW_INDUSTRY2_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/industries/renovation", label: "リフォーム業のWeb集客", desc: "業種別サービス詳細" },
-      { href: "/column/homepage-cost-guide-tokyo", label: "ホームページ制作費用ガイド", desc: "制作コストの目安" },
-      { href: "/column/meo-cost-guide-small-business", label: "MEO対策費用相場", desc: "MEO投資の目安" },
+      { href: "/web-design", label: "ホームページ制作", desc: "成果につながるサイト制作" },
+      { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
       { href: "/contact", label: "リフォーム会社のWeb相談", desc: "無料相談はこちら" },
     ],
   },
@@ -217,7 +217,7 @@ export const NEW_INDUSTRY2_COLUMNS: ColumnTopicPage[] = [
     related: [
       { href: "/industries/real-estate", label: "不動産会社のWeb集客", desc: "業種別サービス詳細" },
       { href: "/seo/local-seo", label: "ローカルSEO対策", desc: "地域SEOの詳細" },
-      { href: "/column/meo-cost-guide-small-business", label: "MEO対策費用相場", desc: "MEO投資の目安" },
+      { href: "/meo", label: "MEO対策", desc: "Googleマップ集客の支援内容" },
       { href: "/contact", label: "不動産会社のWeb相談", desc: "無料相談はこちら" },
     ],
   },

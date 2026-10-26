@@ -109,7 +109,7 @@ const faqItems = [
 const relatedLinks = [
   { href: "/industries/construction", label: "建設業のWeb集客", desc: "建設業向け総合支援" },
   { href: "/meo", label: "MEO対策とは", desc: "MEO対策の基礎知識" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・料金" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス詳細・進め方" },
   { href: "/meo/local-keyword", label: "ローカルキーワード", desc: "地域キーワード対策" },
   { href: "/meo/google-business-profile", label: "GBP最適化", desc: "GBP設定・管理" },
   { href: "/meo/photo-posting", label: "写真投稿対策", desc: "施工写真の最適化" },

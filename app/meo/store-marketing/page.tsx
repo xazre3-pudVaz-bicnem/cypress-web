@@ -316,7 +316,7 @@ const relatedLinks = [
   { href: "/meo/meo-audit", label: "競合分析", desc: "競合店のGBP・口コミを分析する" },
   { href: "/meo/photo-posting", label: "写真戦略", desc: "来店意欲を高める写真掲載" },
   { href: "/meo/google-post", label: "投稿管理", desc: "GBP最新情報投稿の運用術" },
-  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と料金プラン" },
+  { href: "/services/meo", label: "MEO対策サービス", desc: "サービス内容と進め方" },
   { href: "/services/sns", label: "SNS運用代行", desc: "MEOと連動したSNS集客" },
   { href: "/sns", label: "LINE公式アカウント運用", desc: "リピーター獲得の仕組み化" },
   { href: "/services/web-design", label: "ウェブサイト制作", desc: "集客につながるサイト設計" },

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { NextConfig } from "next";
-import { CONSOLIDATED_PAGES } from "./lib/data/consolidatedPages";
+import { CONSOLIDATED_PAGES, REMOVED_PRICING_PAGES } from "./lib/data/consolidatedPages";
 
 /**
  * 同じテーマで繰り返し生成されていたブログ記事（content/blog-archive/ に退避）を、
@@ -26,6 +26,8 @@ const nextConfig: NextConfig = {
       ...blogArchiveRedirects(),
       // 検索意図が同じで評価を食い合っていたページは、残した側へ恒久的に転送する
       ...Object.entries(CONSOLIDATED_PAGES).map(([source, destination]) => ({ source, destination, permanent: true })),
+      // 料金を載せていたページは削除したので、内容の近いページへ恒久的に転送する
+      ...Object.entries(REMOVED_PRICING_PAGES).map(([source, destination]) => ({ source, destination, permanent: true })),
     ];
   },
   images: {
