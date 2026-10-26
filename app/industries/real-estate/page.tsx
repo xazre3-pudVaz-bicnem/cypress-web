@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【不動産会社のSEO・MEO集客】ポータルサイト依存から脱却する自社集客｜株式会社サイプレス",
+  title: "不動産会社のSEO・MEO対策｜自社サイト集客｜株式会社サイプレス",
   description: "不動産会社・賃貸管理・売買仲介のWeb集客。Googleマップ上位表示・地域SEO・ホームページ制作・物件情報のコンテンツ設計でSUUMO・HOME'S依存を脱却します。",
   keywords: ["不動産 SEO", "不動産 ホームページ", "賃貸 集客", "不動産会社 MEO", "不動産 Web集客", "不動産 ポータルサイト 脱却"],
   openGraph: {
-    title: "【不動産会社のSEO・MEO集客】ポータルサイト依存から脱却する自社集客｜株式会社サイプレス",
+    title: "不動産会社のSEO・MEO対策｜自社サイト集客｜株式会社サイプレス",
     description: "不動産会社のWeb集客。MEO・SEO・ホームページ制作でSUUMO・HOME'S依存から脱却します。",
     images: [{ url: "/images/v2/og/i-real-estate.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

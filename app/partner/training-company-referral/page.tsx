@@ -13,7 +13,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/partner/training-company-referral`;
 
 export const metadata: Metadata = {
-  title: "研修会社紹介パートナー制度｜リスキリング研修・AI研修・DX研修の相談窓口｜株式会社サイプレス",
+  title: "研修会社紹介パートナー制度｜役割と紹介の流れ｜株式会社サイプレス",
   description:
     "株式会社サイプレスは研修会社ではなく、実績ある提携研修会社への紹介窓口です。サイプレス・提携研修会社・申請企業と社労士それぞれの役割、紹介の流れ、禁止している営業表現をご説明します。",
   keywords: [

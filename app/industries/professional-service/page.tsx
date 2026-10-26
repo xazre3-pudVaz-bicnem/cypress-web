@@ -9,7 +9,7 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【士業・専門家サービスのSEO・MEO対策】弁護士・税理士・司法書士のWeb集客｜株式会社サイプレス",
+  title: "士業のSEO・MEO対策｜相談につながるWeb集客｜株式会社サイプレス",
   description: "弁護士・税理士・司法書士・行政書士・社労士など士業・専門家サービスのWeb集客。SEO・MEO・AIO対策・ホームページ制作で顧問先・相談案件を継続的に獲得します。",
   keywords: [
     "税理士 MEO対策",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "専門家 コンテンツSEO",
   ],
   openGraph: {
-    title: "【士業・専門家サービスのSEO・MEO対策】弁護士・税理士・司法書士のWeb集客｜株式会社サイプレス",
+    title: "士業のSEO・MEO対策｜相談につながるWeb集客｜株式会社サイプレス",
     description: "弁護士・税理士・社労士など士業・専門家のWeb集客。SEO・MEO・ホームページで顧問先・相談案件を継続獲得。",
     images: [{ url: "/images/v2/og/i-professional.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

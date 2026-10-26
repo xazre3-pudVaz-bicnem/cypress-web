@@ -9,7 +9,7 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【ハウスクリーニング・清掃業のMEO・SEO対策】地域検索で選ばれる集客戦略｜株式会社サイプレス",
+  title: "ハウスクリーニング・清掃業のMEO・SEO対策｜株式会社サイプレス",
   description: "ハウスクリーニング・エアコンクリーニング・清掃業のWeb集客。Googleマップ上位表示・地域SEO・料金透明化・口コミ獲得で定期受注を増やします。東京・葛飾区対応。",
   keywords: [
     "ハウスクリーニング MEO対策",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "清掃業 口コミ 獲得",
   ],
   openGraph: {
-    title: "【ハウスクリーニング・清掃業のMEO・SEO対策】地域検索で選ばれる集客戦略｜株式会社サイプレス",
+    title: "ハウスクリーニング・清掃業のMEO・SEO対策｜株式会社サイプレス",
     description: "ハウスクリーニング・清掃業のWeb集客。MEO・SEO・ホームページで定期受注を増やします。",
     images: [{ url: "/images/v2/og/i-cleaning.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

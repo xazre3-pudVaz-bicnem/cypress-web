@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ペットショップ・動物病院のWeb集客｜MEO対策・Instagram運用｜株式会社サイプレス",
+  title: "ペットショップ・動物病院のWeb集客とMEO対策｜株式会社サイプレス",
   description: "ペットショップ・動物病院・トリミングサロン向けWeb集客支援。Googleマップ上位表示（MEO）・Instagram運用・犬種猫種別SEOで新規顧客来店と定期利用を増やします。",
   keywords: ["ペットショップ MEO対策", "動物病院 集客", "トリミングサロン 集客", "ペットショップ Googleマップ", "ドッグサロン Instagram", "ペットショップ ホームページ"],
   openGraph: {
-    title: "ペットショップ・動物病院のWeb集客｜MEO対策・Instagram運用｜株式会社サイプレス",
+    title: "ペットショップ・動物病院のWeb集客とMEO対策｜株式会社サイプレス",
     description: "ペットショップ・動物病院向けWeb集客。MEO・Instagram・ホームページで新規顧客と定期利用を増やします。",
     locale: "ja_JP",
     type: "website",

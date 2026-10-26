@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "プロンプトエンジニアリング・プロンプト設計とは｜ChatGPT/Claudeを最大限活用する指示設計｜株式会社サイプレス",
+  title: "プロンプトエンジニアリングとは｜指示設計の基本｜株式会社サイプレス",
   description:
     "ChatGPT・Claudeを最大限に活用するプロンプト設計の基本原則と実践技術。Few-Shot・Chain of Thought・ロールプレイなど業務別プロンプトテンプレート設計からプロンプトライブラリ構築まで体系的に解説。",
   keywords: ["プロンプトエンジニアリング", "プロンプト設計", "プロンプトデザイン", "ChatGPT プロンプト", "Claude プロンプト", "AI指示文", "プロンプトテンプレート"],
   openGraph: {
-    title: "プロンプトエンジニアリング・プロンプト設計とは｜ChatGPT/Claudeを最大限活用する指示設計｜株式会社サイプレス",
+    title: "プロンプトエンジニアリングとは｜指示設計の基本｜株式会社サイプレス",
     description: "ChatGPT・Claudeを最大限に活用するプロンプト設計。Few-Shot・Chain of Thought・業務別テンプレート設計からプロンプトライブラリ構築まで解説。",
     images: [{ url: "/images/v2/og/b-aio-chat.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

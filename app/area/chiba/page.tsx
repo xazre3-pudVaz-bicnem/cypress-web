@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "千葉県のSEO対策・MEO対策・Web制作｜松戸・市川・船橋・柏・千葉市の集客支援",
+  title: "千葉県のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "千葉県のSEO対策・MEO対策・ホームページ制作。松戸市・市川市・船橋市・柏市・千葉市・流山市・浦安市の中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援。東京より競合少なく効果が出やすい。",
   keywords: ["千葉県 SEO", "千葉県 MEO", "松戸 集客", "市川 MEO", "船橋 ホームページ制作", "千葉市 SEO", "柏 Web制作", "流山 MEO"],
   openGraph: {

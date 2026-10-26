@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "WordPress制作・カスタマイズ｜管理しやすく高速なWordPressサイト制作｜株式会社サイプレス",
+  title: "WordPress制作・カスタマイズの基本｜株式会社サイプレス",
   description:
     "WordPress制作・カスタマイズの専門ガイド。テーマ選定・セキュリティ対策・高速化・SEO設定・既存サイトリニューアルまで解説。飲食・美容室・歯科・建設・士業・不動産など業種別対応。東京都葛飾区を拠点に全国対応。",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "ホームページ制作",
   ],
   openGraph: {
-    title: "WordPress制作・カスタマイズ｜管理しやすく高速なWordPressサイト制作｜株式会社サイプレス",
+    title: "WordPress制作・カスタマイズの基本｜株式会社サイプレス",
     description:
       "WordPress制作・カスタマイズの専門ガイド。テーマ選定・セキュリティ・高速化・SEO設定まで解説。業種別の活用ポイントと制作フローも紹介。",
     locale: "ja_JP",

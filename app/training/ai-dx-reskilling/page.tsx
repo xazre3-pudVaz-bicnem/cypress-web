@@ -13,7 +13,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/training/ai-dx-reskilling`;
 
 export const metadata: Metadata = {
-  title: "AI・DXリスキリング研修の導入相談｜人材開発支援助成金の活用検討にも対応｜株式会社サイプレス",
+  title: "AI・DXリスキリング研修の導入相談・提携先紹介｜株式会社サイプレス",
   description:
     "中小企業向けAI・DXリスキリング研修の導入相談。生成AIの業務活用、社内DXの進め方を学ぶ法人研修を、実績ある提携研修会社へおつなぎします。助成金の活用を検討する企業にも対応。",
   keywords: [

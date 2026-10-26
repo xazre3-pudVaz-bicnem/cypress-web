@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Googleビジネスプロフィール写真投稿・管理戦略｜MEO対策で集客｜株式会社サイプレス",
+  title: "Googleビジネスプロフィール写真投稿・管理の基本｜株式会社サイプレス",
   description:
     "GoogleビジネスプロフィールへのMEO写真投稿戦略を解説。外観・内装・メニュー・スタッフ写真の使い分けと投稿頻度、スマートフォンでのプロ品質撮影テクニックまで。月2枚以上の定期投稿でGoogleマップ上位表示を実現。",
   keywords: ["GBP写真投稿", "Googleビジネスプロフィール写真", "MEO写真", "Googleマップ写真", "MEO対策写真投稿"],
   openGraph: {
-    title: "Googleビジネスプロフィール写真投稿・管理戦略｜MEO対策で集客｜株式会社サイプレス",
+    title: "Googleビジネスプロフィール写真投稿・管理の基本｜株式会社サイプレス",
     description: "MEO対策の要・写真投稿の戦略を解説。種類・品質・更新頻度のすべて。",
     locale: "ja_JP",
     type: "website",

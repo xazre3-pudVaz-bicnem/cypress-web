@@ -19,7 +19,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/training/reskilling-subsidy`;
 
 export const metadata: Metadata = {
-  title: "人材開発支援助成金の活用を検討できるリスキリング研修相談｜AI・DX・Web研修｜株式会社サイプレス",
+  title: "人材開発支援助成金の活用に向けた研修導入相談｜株式会社サイプレス",
   description:
     "人材開発支援助成金の活用を検討している企業向けに、AI研修・DX研修・Webマーケティング研修などのリスキリング研修導入を相談できます。実績ある提携研修会社をご紹介します。",
   keywords: [

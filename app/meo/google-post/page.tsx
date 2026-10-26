@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Googleビジネスプロフィール最新情報投稿（Googleポスト）戦略｜MEO対策｜株式会社サイプレス",
+  title: "Googleビジネスプロフィール最新情報投稿の書き方｜株式会社サイプレス",
   description:
     "Google投稿（GBP投稿）の活用でMEO順位と集客を改善。最新情報・イベント・キャンペーン投稿の使い分けと、地域名・キーワードを活かした投稿文の書き方を解説。週1回以上の投稿でGoogleに評価されるアクティブなビジネスへ。",
   keywords: ["Google投稿", "GBP投稿", "Googleビジネスプロフィール投稿", "MEO投稿", "Googleマップ投稿", "最新情報投稿"],
   openGraph: {
-    title: "Googleビジネスプロフィール最新情報投稿（Googleポスト）戦略｜MEO対策｜株式会社サイプレス",
+    title: "Googleビジネスプロフィール最新情報投稿の書き方｜株式会社サイプレス",
     description: "Google投稿の種類・使い方・MEOへの影響を徹底解説。週1回の投稿が上位表示の鍵。",
     locale: "ja_JP",
     type: "website",

@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ページ速度改善｜Core Web Vitals最適化・Lighthouse 90+｜株式会社サイプレス",
+  title: "ページ速度改善｜画像とスクリプトの最適化｜株式会社サイプレス",
   description:
     "Web制作でのページ表示速度改善。画像最適化・JavaScript削減・CDN活用・Next.js+Vercel構成でLighthouse 90+を目指すCore Web Vitals対策。",
   keywords: ["ページ速度改善", "Core Web Vitals", "Lighthouse", "表示速度最適化", "Web高速化"],

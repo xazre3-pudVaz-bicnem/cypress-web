@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ホームページ保守・メンテナンス｜セキュリティ・更新・バックアップ｜株式会社サイプレス",
+  title: "ホームページ保守・メンテナンス｜更新と安全対策｜株式会社サイプレス",
   description: "Webサイトの保守・管理サービス。WordPressセキュリティ対策・定期バックアップ・プラグイン更新・コンテンツ更新・月次レポートで安心して使えるサイトを維持します。",
   keywords: ["ホームページ保守", "Web保守", "WordPress保守", "メンテナンス", "セキュリティ対策", "バックアップ", "サイト管理"],
   openGraph: {

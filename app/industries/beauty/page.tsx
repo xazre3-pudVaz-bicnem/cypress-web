@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【エステ・脱毛サロンの集客】Instagram×MEOで個人サロンの予約を増やす｜株式会社サイプレス",
+  title: "エステ・脱毛サロンの集客｜SNS・MEO対策｜株式会社サイプレス",
   description: "エステ・脱毛サロン・ネイル・まつエクのWeb集客。Instagram×MEO（Googleマップ対策）・ホームページ・LINE活用で新規顧客獲得とリピーター育成を支援します。",
   keywords: ["エステ 集客", "脱毛サロン MEO", "まつエク Instagram", "美容サロン ホームページ", "個人サロン 集客", "ネイル Googleマップ"],
   openGraph: {
-    title: "【エステ・脱毛サロンの集客】Instagram×MEOで個人サロンの予約を増やす｜株式会社サイプレス",
+    title: "エステ・脱毛サロンの集客｜SNS・MEO対策｜株式会社サイプレス",
     description: "エステ・脱毛サロン・ネイル・まつエクのWeb集客。Instagram×MEO・ホームページで新規顧客を増やします。",
     images: [{ url: "/images/v2/og/i-beauty.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

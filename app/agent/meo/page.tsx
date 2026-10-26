@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "MEO対策の販売代理店募集｜Googleマップ集客商材を副業・本業で販売｜株式会社サイプレス",
+  title: "MEO対策の販売代理店募集｜副業・法人も歓迎｜株式会社サイプレス",
   description:
     "株式会社サイプレスのMEO対策販売代理店募集。Googleビジネスプロフィール運用・Googleマップ上位表示支援を飲食店・美容室・整体・歯科などへ提案・販売。MEO運用の実務はサイプレスが全対応。副業・個人事業主・法人歓迎。",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "店舗集客 代理店",
   ],
   openGraph: {
-    title: "MEO対策の販売代理店募集｜Googleマップ集客商材を副業・本業で販売｜株式会社サイプレス",
+    title: "MEO対策の販売代理店募集｜副業・法人も歓迎｜株式会社サイプレス",
     description: "MEO運用はサイプレスが全対応。代理店は販売に専念するだけ。飲食店・美容室・整体・歯科に提案しやすい店舗集客商材。副業・個人事業主歓迎。",
     locale: "ja_JP",
     type: "website",

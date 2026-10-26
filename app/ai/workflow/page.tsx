@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIワークフロー設計・AI導入ロードマップとは｜組織全体のAI活用戦略と段階的導入計画｜株式会社サイプレス",
+  title: "AIワークフロー設計とは｜導入計画と効果測定｜株式会社サイプレス",
   description:
     "AIワークフロー設計・AI導入ロードマップの基礎から実践まで解説。組織全体のAI活用戦略の立て方、部門別ロードマップ策定、効果測定KPI設計まで体系的に紹介します。",
   keywords: ["AIワークフロー設計", "AI導入ロードマップ", "AI活用戦略", "業務自動化設計", "AI導入計画", "組織AI活用"],
   openGraph: {
-    title: "AIワークフロー設計・AI導入ロードマップとは｜組織全体のAI活用戦略と段階的導入計画｜株式会社サイプレス",
+    title: "AIワークフロー設計とは｜導入計画と効果測定｜株式会社サイプレス",
     description: "組織全体のAI活用戦略と段階的な導入計画の設計方法を解説。AIワークフロー設計から効果測定まで体系的にご支援します。",
     locale: "ja_JP",
     type: "website",

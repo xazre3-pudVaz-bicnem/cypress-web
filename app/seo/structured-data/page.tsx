@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "構造化データ（Schema.org）実装とは｜リッチリザルト・AI検索対策｜株式会社サイプレス",
+  title: "構造化データ実装とは｜リッチリザルト対応の基本｜株式会社サイプレス",
   description:
     "構造化データ（JSON-LD・Schema.org）の基礎から実装まで解説。FAQPage・BreadcrumbList・Article・Organization・LocalBusiness・WebSiteのマークアップ方法とリッチリザルト獲得・AIO対策を網羅。",
   keywords: ["構造化データ", "Schema.org", "JSON-LD", "リッチリザルト", "FAQPage", "BreadcrumbList", "AIO対策", "構造化データ実装", "リッチスニペット"],
   openGraph: {
-    title: "構造化データ（Schema.org）実装とは｜リッチリザルト・AI検索対策｜株式会社サイプレス",
+    title: "構造化データ実装とは｜リッチリザルト対応の基本｜株式会社サイプレス",
     description: "構造化データ実装の実践ガイド。JSON-LD・Schema.orgのマークアップからリッチリザルト獲得・AI検索対策まで解説。",
     locale: "ja_JP",
     type: "website",

@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "水道工事・水漏れ修理のWeb集客｜MEO対策で緊急依頼の問い合わせを増やす｜株式会社サイプレス",
+  title: "水道工事・水漏れ修理のWeb集客とMEO対策｜株式会社サイプレス",
   description: "水道工事・水漏れ修理・排水管詰まり対応業者向けWeb集客支援。Googleマップ上位表示（MEO）・地域SEO・ホームページ制作で緊急依頼の問い合わせを増やします。",
   keywords: ["水道工事 MEO対策", "水漏れ修理 集客", "水道業者 Googleマップ", "配管工事 集客", "水道 緊急 MEO"],
   openGraph: {
-    title: "水道工事・水漏れ修理のWeb集客｜MEO対策で緊急依頼の問い合わせを増やす｜株式会社サイプレス",
+    title: "水道工事・水漏れ修理のWeb集客とMEO対策｜株式会社サイプレス",
     description: "水道工事・水漏れ修理業者のWeb集客。MEO・ホームページ制作で緊急依頼と通常工事の問い合わせを増やします。",
     locale: "ja_JP",
     type: "website",

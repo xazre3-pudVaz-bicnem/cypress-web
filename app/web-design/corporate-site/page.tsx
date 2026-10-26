@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "コーポレートサイト制作｜企業ブランドと信頼を伝えるWebサイト設計｜株式会社サイプレス",
+  title: "コーポレートサイト制作｜企業の信頼を伝える設計｜株式会社サイプレス",
   description:
     "コーポレートサイト（会社サイト）制作の専門ガイド。企業ブランドと信頼を伝えるデザイン設計・SEO・CV改善まで解説。Next.js・WordPress対応。東京都葛飾区を拠点に全国対応。",
   keywords: ["コーポレートサイト制作", "会社サイト制作", "企業サイト", "Webサイト制作", "Next.js制作", "WordPress制作"],
   openGraph: {
-    title: "コーポレートサイト制作｜企業ブランドと信頼を伝えるWebサイト設計｜株式会社サイプレス",
+    title: "コーポレートサイト制作｜企業の信頼を伝える設計｜株式会社サイプレス",
     description: "コーポレートサイト制作のガイド。企業ブランドと信頼を伝えるデザイン設計・SEO・CV改善まで解説。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

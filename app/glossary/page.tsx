@@ -11,12 +11,12 @@ import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 const categories = Array.from(new Set(glossaryPages.map((p) => p.category)));
 
 export const metadata: Metadata = {
-  title: "Webマーケティング用語集｜MEO・SEO・AIO・Web集客の専門用語解説｜株式会社サイプレス",
+  title: "Webマーケティング用語集｜初心者向け解説｜株式会社サイプレス",
   description:
     "MEO・SEO・AIO・Web集客・Webマーケティングの専門用語を網羅した用語集。GBP・E-E-A-T・Core Web Vitals・llms.txt等の用語を初心者にもわかりやすく解説します。",
   keywords: ["MEO 用語", "SEO 用語集", "AIO 用語", "Webマーケティング 用語", "GBP とは", "E-E-A-T とは"],
   openGraph: {
-    title: "Webマーケティング用語集｜MEO・SEO・AIO・Web集客の専門用語解説｜株式会社サイプレス",
+    title: "Webマーケティング用語集｜初心者向け解説｜株式会社サイプレス",
     description: "MEO・SEO・AIO・Web集客の専門用語をわかりやすく解説する用語集。",
     locale: "ja_JP",
     type: "website",

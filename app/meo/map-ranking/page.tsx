@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Googleマップ上位表示｜ローカルパック3位以内の戦略と実装｜株式会社サイプレス",
+  title: "Googleマップ上位表示｜地域検索の改善手順｜株式会社サイプレス",
   description:
     "Googleマップのローカルパック（上位3枠）に表示されるためのMEO対策。関連性・距離・知名度の3要素を最適化し、競合分析から実装フローまで地域検索での上位表示を実現します。",
   keywords: ["Googleマップ 上位表示", "ローカルパック 対策", "MEO 順位向上", "マップ 3パック", "ローカルパック 3位以内"],
   openGraph: {
-    title: "Googleマップ上位表示｜ローカルパック3位以内の戦略と実装｜株式会社サイプレス",
+    title: "Googleマップ上位表示｜地域検索の改善手順｜株式会社サイプレス",
     description: "Googleマップのローカルパック（上位3枠）に表示されるためのMEO対策。関連性・距離・知名度の3要素を最適化し、地域検索での上位表示を実現します。",
     images: [{ url: "/images/v2/og/b-meo-map.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

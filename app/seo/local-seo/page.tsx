@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ローカルSEOとは｜地域名での検索上位表示・エリアページ設計・NAP統一｜株式会社サイプレス",
+  title: "ローカルSEOとは｜地域検索対策とページ設計｜株式会社サイプレス",
   description:
     "ローカルSEOの基礎から実践まで解説。地域名キーワードでの上位表示方法、エリアページ設計、NAP情報の統一、Googleビジネスプロフィールとの連動、LocalBusiness構造化データの実装まで体系的に解説。葛飾区・足立区・江戸川区・東京都・千葉・埼玉・神奈川対応。",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "葛飾区SEO",
   ],
   openGraph: {
-    title: "ローカルSEOとは｜地域名での検索上位表示・エリアページ設計・NAP統一｜株式会社サイプレス",
+    title: "ローカルSEOとは｜地域検索対策とページ設計｜株式会社サイプレス",
     description: "ローカルSEOの実践ガイド。地域名キーワードでの上位表示からMEO対策との連携、NAP統一、エリアページ設計まで解説。",
     locale: "ja_JP",
     type: "website",

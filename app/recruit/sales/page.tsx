@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
+  title: "Webマーケティング営業の正社員募集｜未経験歓迎｜株式会社サイプレス",
   description:
     "株式会社サイプレスの営業職（正社員）募集。東京都葛飾区拠点。MEO対策・SEO対策・ホームページ制作・AIO対策を中小企業経営者へ提案する法人営業。基本給20万円＋インセンティブ・年間休日130日・学歴不問・未経験歓迎。",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "IT 営業 未経験 東京",
   ],
   openGraph: {
-    title: "営業職 正社員募集｜Webマーケティング・MEO・SEO営業｜株式会社サイプレス【東京・未経験歓迎】",
+    title: "Webマーケティング営業の正社員募集｜未経験歓迎｜株式会社サイプレス",
     description: "基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。MEO・SEO・ホームページを東京の中小企業経営者に提案する提案型法人営業。東京都葛飾区拠点の株式会社サイプレス。",
     locale: "ja_JP",
     type: "website",

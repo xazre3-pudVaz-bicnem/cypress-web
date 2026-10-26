@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIカスタマーサポートとは｜チャットボット・自動応答で顧客対応を効率化｜株式会社サイプレス",
+  title: "AIカスタマーサポートとは｜自動応答の活用法｜株式会社サイプレス",
   description:
     "AIチャットボットによるカスタマーサポートの自動化。FAQへの自動応答・24時間対応・問い合わせ振り分けで顧客満足度と業務効率を同時に向上させる方法を解説。",
   keywords: ["AIカスタマーサポート", "チャットボット 自動応答", "FAQ自動化", "24時間対応 AI", "顧客対応 自動化"],
   openGraph: {
-    title: "AIカスタマーサポートとは｜チャットボット・自動応答で顧客対応を効率化｜株式会社サイプレス",
+    title: "AIカスタマーサポートとは｜自動応答の活用法｜株式会社サイプレス",
     description: "AIチャットボットで24時間FAQ自動対応・問い合わせ振り分けを実現。顧客満足度と業務効率を同時に高める方法を解説。",
     images: [{ url: "/images/v2/og/b-support.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

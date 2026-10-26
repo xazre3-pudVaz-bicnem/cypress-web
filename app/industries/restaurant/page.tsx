@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【飲食店のMEO・Web集客】Googleマップ上位表示で来店数を増やす｜株式会社サイプレス",
+  title: "飲食店のMEO・Web集客｜口コミとSNS活用｜株式会社サイプレス",
   description: "飲食店のGoogleマップ上位表示・Instagram運用・口コミ獲得・ランチ・ディナー別集客設計など、飲食業に特化したWebマーケティング。来店数増加の仕組みをトータルで構築します。",
   keywords: ["飲食店 MEO対策", "飲食店 集客", "飲食店 ホームページ", "飲食店 Instagram", "飲食店 口コミ", "飲食店 Googleマップ"],
   openGraph: {
-    title: "【飲食店のMEO・Web集客】Googleマップ上位表示で来店数を増やす｜株式会社サイプレス",
+    title: "飲食店のMEO・Web集客｜口コミとSNS活用｜株式会社サイプレス",
     description: "飲食店専門のWebマーケティング。MEO・Instagram・口コミ対策で来店数を最大化します。",
     images: [{ url: "/images/v2/og/i-restaurant.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

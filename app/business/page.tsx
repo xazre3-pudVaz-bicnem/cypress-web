@@ -8,12 +8,12 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "事業内容｜MEO・SEO・AIO・ホームページ制作・SNS・AI支援｜株式会社サイプレス",
+  title: "事業内容｜中小企業のWeb集客・AI活用支援｜株式会社サイプレス",
   description:
     "株式会社サイプレスの事業内容。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の6事業で中小企業の集客を総合支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
   keywords: ["事業内容", "MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援"],
   openGraph: {
-    title: "事業内容｜MEO・SEO・AIO・ホームページ制作・SNS・AI支援｜株式会社サイプレス",
+    title: "事業内容｜中小企業のWeb集客・AI活用支援｜株式会社サイプレス",
     description: "MEO・SEO・AIO・Web制作・SNS・AIの6事業で中小企業の集客を総合支援する株式会社サイプレスの事業内容。軽貨物事業・太陽光事業も運営。",
     locale: "ja_JP",
     type: "website",

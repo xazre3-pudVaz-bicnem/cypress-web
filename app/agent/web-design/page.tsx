@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "ホームページ制作の販売代理店募集｜制作・保守はサイプレスが対応｜株式会社サイプレス",
+  title: "ホームページ制作の販売代理店募集｜制作・保守支援｜株式会社サイプレス",
   description:
     "株式会社サイプレスでは、ホームページ制作を販売いただける代理店様を募集しています。制作・保守管理・運用はサイプレスが対応するため、代理店様は販売活動に集中できます。Web制作リソース不要。",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "ホームページ制作 パートナー募集",
   ],
   openGraph: {
-    title: "ホームページ制作の販売代理店募集｜制作・保守はサイプレスが対応｜株式会社サイプレス",
+    title: "ホームページ制作の販売代理店募集｜制作・保守支援｜株式会社サイプレス",
     description: "ホームページ制作の販売代理店募集。制作・保守はサイプレスが全対応。Web制作リソース不要で販売に集中できます。",
     locale: "ja_JP",
     type: "website",

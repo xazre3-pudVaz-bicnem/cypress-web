@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "AIO対策の販売代理店募集｜AI検索時代のWeb集客商材を扱いたい企業様へ｜株式会社サイプレス",
+  title: "AIO対策の販売代理店募集｜制作・運用体制不要｜株式会社サイプレス",
   description:
     "株式会社サイプレスでは、AIO対策・AI検索対策を販売いただける代理店様を募集しています。ChatGPTやAI Overview時代に向けたWeb集客支援を、制作・運用体制なしで提案できます。",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "AI Overview 代理店",
   ],
   openGraph: {
-    title: "AIO対策の販売代理店募集｜AI検索時代のWeb集客商材を扱いたい企業様へ｜株式会社サイプレス",
+    title: "AIO対策の販売代理店募集｜制作・運用体制不要｜株式会社サイプレス",
     description: "AIO対策・AI検索対策の販売代理店募集。ChatGPT・Gemini時代のWeb集客支援を制作リソースなしで提案できます。",
     locale: "ja_JP",
     type: "website",

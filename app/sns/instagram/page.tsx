@@ -9,11 +9,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Instagram運用代行｜ビジュアル戦略・リール活用で集客するインスタ運用法｜株式会社サイプレス",
+  title: "Instagram運用代行｜投稿設計とリール活用｜株式会社サイプレス",
   description: "中小企業・店舗のInstagram運用代行。フィード設計・リール活用・ストーリーズ・ハッシュタグ戦略・インサイト分析でInstagramを集客エンジンに変えます。",
   keywords: ["Instagram運用代行", "インスタ集客", "SNS運用", "リール活用", "Instagram マーケティング", "フィード設計"],
   openGraph: {
-    title: "Instagram運用代行｜ビジュアル戦略・リール活用で集客するインスタ運用法｜株式会社サイプレス",
+    title: "Instagram運用代行｜投稿設計とリール活用｜株式会社サイプレス",
     description: "中小企業・店舗のInstagram運用代行。フィード設計・リール活用・ストーリーズ・ハッシュタグ戦略・インサイト分析でInstagramを集客エンジンに変えます。",
     images: [{ url: "/images/v2/og/b-sns-phone.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

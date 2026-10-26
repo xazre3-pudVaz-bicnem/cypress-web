@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "SNS投稿AI自動化｜Instagram・X・TikTok投稿文を自動生成｜株式会社サイプレス",
+  title: "SNS投稿AI自動化｜投稿文の生成と運用の効率化｜株式会社サイプレス",
   description: "AIを使ったSNS投稿の自動化・効率化。Instagram・X・TikTokの投稿文・キャプション・ハッシュタグをChatGPT/Claude APIで自動生成し、Buffer/Zapier/Makeと連携して継続的な情報発信体制を構築する方法を解説。",
   keywords: ["SNS投稿自動化", "AI SNS運用", "Instagram自動化", "TikTok投稿自動化", "X投稿自動化", "ハッシュタグ自動生成", "SNS効率化", "ChatGPT SNS"],
   openGraph: {

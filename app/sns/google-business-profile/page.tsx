@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Googleビジネスプロフィール投稿活用｜SNS×GBP連携で集客を強化｜株式会社サイプレス",
+  title: "Googleビジネスプロフィール投稿とSNS連携｜株式会社サイプレス",
   description:
     "GoogleビジネスプロフィールをSNSチャネルとして活用する投稿・写真戦略。InstagramとGBPの連携設計・投稿テンプレート・効果測定まで一貫してサポート。",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "GBP写真戦略",
   ],
   openGraph: {
-    title: "Googleビジネスプロフィール投稿活用｜SNS×GBP連携で集客を強化｜株式会社サイプレス",
+    title: "Googleビジネスプロフィール投稿とSNS連携｜株式会社サイプレス",
     description:
       "GoogleビジネスプロフィールをSNSチャネルとして活用する投稿・写真戦略。InstagramとGBPの連携設計から効果測定まで。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],

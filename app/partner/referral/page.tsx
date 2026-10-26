@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "取次店募集｜ホームページ制作・MEO対策・SEO対策の紹介パートナー｜株式会社サイプレス",
+  title: "取次店募集｜Web制作・SEO・MEOの紹介｜株式会社サイプレス",
   description:
     "株式会社サイプレスの取次店・紹介パートナー募集。知人・顧客をサイプレスに紹介するだけ。MEO対策・SEO対策・ホームページ制作の取次店として活動。制作・保守・運用はサイプレスが全対応。",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "副業 紹介 集客支援",
   ],
   openGraph: {
-    title: "取次店募集｜ホームページ制作・MEO対策・SEO対策の紹介パートナー｜株式会社サイプレス",
+    title: "取次店募集｜Web制作・SEO・MEOの紹介｜株式会社サイプレス",
     description: "知人・顧客をサイプレスへ紹介するだけ。制作・保守・運用はサイプレスが全対応。取次店パートナー募集中。",
     locale: "ja_JP",
     type: "website",

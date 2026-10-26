@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ブログSEO戦略とは｜コンテンツマーケティングで成果を出す方法｜株式会社サイプレス",
+  title: "ブログSEO戦略とは｜記事設計とリライト改善｜株式会社サイプレス",
   description:
     "SEOに強いブログ・コンテンツ戦略の基礎から実践まで解説。記事テーマ設計・コンテンツカレンダー・SEO記事の書き方・更新頻度・リライト改善・AIライティング活用まで体系的に網羅。",
   keywords: ["ブログ戦略", "コンテンツ戦略", "SEO記事", "コンテンツカレンダー", "ブログSEO", "記事設計", "コンテンツマーケティング", "リライト", "トピッククラスター", "投稿頻度"],
   openGraph: {
-    title: "ブログSEO戦略とは｜コンテンツマーケティングで成果を出す方法｜株式会社サイプレス",
+    title: "ブログSEO戦略とは｜記事設計とリライト改善｜株式会社サイプレス",
     description: "SEOに強いブログ戦略の実践ガイド。記事テーマ設計からリライト改善・AIライティング活用まで解説。",
     locale: "ja_JP",
     type: "website",

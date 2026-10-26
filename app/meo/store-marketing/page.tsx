@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "店舗集客マーケティング｜MEO×SNS×Web連携で来店数を増やす｜株式会社サイプレス",
+  title: "店舗集客マーケティング｜MEOとSNSの連携｜株式会社サイプレス",
   description:
     "店舗集客マーケティングの全体戦略を解説。MEO・SNS・ウェブサイトを組み合わせた実店舗集客設計、業種別の活用ポイント、効果測定KPIまで詳しく紹介。",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "LINE公式アカウント集客",
   ],
   openGraph: {
-    title: "店舗集客マーケティング｜MEO×SNS×Web連携で来店数を増やす｜株式会社サイプレス",
+    title: "店舗集客マーケティング｜MEOとSNSの連携｜株式会社サイプレス",
     description:
       "MEO・SNS・ウェブサイトを組み合わせた実店舗集客マーケティングの全体設計をわかりやすく解説します。",
     locale: "ja_JP",

@@ -9,11 +9,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
+  title: "飲食店のMEO対策｜写真・口コミ・予約の整備｜株式会社サイプレス",
   description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿・業態別ポイントなど飲食店特有のMEO対策を徹底解説します。",
   keywords: ["飲食店 MEO対策", "レストラン Googleマップ", "カフェ 集客", "居酒屋 GBP最適化", "飲食店 口コミ対策", "Googleマップ 飲食店 予約"],
   openGraph: {
-    title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
+    title: "飲食店のMEO対策｜写真・口コミ・予約の整備｜株式会社サイプレス",
     description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿など飲食店特有のMEO対策を徹底解説します。",
     images: [{ url: "/images/v2/og/i-restaurant.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

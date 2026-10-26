@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIコンテンツ制作とは｜SEO記事・LP文章・メール・プレゼン資料のAI生成支援｜株式会社サイプレス",
+  title: "AIコンテンツ制作とは｜記事生成と品質管理｜株式会社サイプレス",
   description:
     "AIコンテンツ制作の基礎から実践まで解説。ChatGPT・ClaudeでのSEO記事生成・LP文章・メルマガ・プレゼン資料のAI支援ワークフローと、E-E-A-Tを守った品質管理方法を体系的に解説。",
   keywords: ["AIコンテンツ制作", "ChatGPT 記事生成", "AI SEO記事", "AI ライティング", "コンテンツ自動化", "生成AI コンテンツ", "AIコピーライティング"],
   openGraph: {
-    title: "AIコンテンツ制作とは｜SEO記事・LP文章・メール・プレゼン資料のAI生成支援｜株式会社サイプレス",
+    title: "AIコンテンツ制作とは｜記事生成と品質管理｜株式会社サイプレス",
     description: "AIコンテンツ制作の実践ガイド。AI活用のコンテンツ制作ワークフロー、プロンプト設計、E-E-A-T品質管理を解説。",
     locale: "ja_JP",
     type: "website",

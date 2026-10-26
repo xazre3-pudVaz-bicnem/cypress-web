@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIO対策サービス｜ChatGPT・AI検索で引用される会社へ｜株式会社サイプレス",
+  title: "AIO対策サービス｜ChatGPT・AI検索での引用を支援｜株式会社サイプレス",
   description:
     "株式会社サイプレスのAIO対策サービス。ChatGPT・Gemini・Perplexityなどの回答に引用されるためのE-E-A-T強化・構造化データ実装・コンテンツ最適化を一貫してご支援。",
   keywords: ["AIO対策", "AI検索最適化", "ChatGPT SEO", "Gemini対策", "Perplexity対策", "E-E-A-T強化"],
   openGraph: {
-    title: "AIO対策サービス｜ChatGPT・AI検索で引用される会社へ｜株式会社サイプレス",
+    title: "AIO対策サービス｜ChatGPT・AI検索での引用を支援｜株式会社サイプレス",
     description: "サイプレスのAIO対策サービス。AI検索に引用されるコンテンツ最適化・構造化データ実装まで一貫支援。",
     locale: "ja_JP",
     type: "website",

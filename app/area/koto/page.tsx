@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "江東区のSEO対策・MEO対策・ホームページ制作｜亀戸・錦糸町・豊洲・木場・清澄白河の集客支援｜株式会社サイプレス",
+  title: "江東区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "江東区のSEO対策・MEO対策・ホームページ制作。亀戸・錦糸町・豊洲・木場・深川・清澄白河エリアの中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援。",
   keywords: ["江東区 SEO", "江東区 MEO", "亀戸 集客", "錦糸町 MEO", "豊洲 ホームページ制作", "清澄白河 SEO", "木場 Web制作", "江東区 Web集客"],
   openGraph: {

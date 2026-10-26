@@ -10,12 +10,12 @@ import { checklistPages } from "@/lib/data/checklistPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Webマーケティング チェックリスト一覧｜MEO・SEO・SNS・ホームページ｜株式会社サイプレス",
+  title: "Webマーケティングチェックリスト｜施策の点検｜株式会社サイプレス",
   description:
     "MEO初期設定・SEO対策・SNS運用・ホームページ公開前・AIO対策など、Webマーケティングのチェックリストを多数公開しています。施策の漏れを防ぐセルフチェックにご利用ください。",
   keywords: ["MEO チェックリスト", "SEO チェックリスト", "ホームページ 公開前チェック", "Web集客 セルフチェック"],
   openGraph: {
-    title: "Webマーケティング チェックリスト一覧｜MEO・SEO・SNS・ホームページ｜株式会社サイプレス",
+    title: "Webマーケティングチェックリスト｜施策の点検｜株式会社サイプレス",
     description: "MEO・SEO・SNS・ホームページのチェックリスト集。施策の漏れを防ぐセルフチェックにご利用ください。",
     locale: "ja_JP",
     type: "website",

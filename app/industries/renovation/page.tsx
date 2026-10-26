@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "リフォーム会社・工務店のWeb集客｜MEO・SEO・施工事例サイト制作｜株式会社サイプレス",
+  title: "リフォーム会社・工務店のWeb集客｜施工事例サイト｜株式会社サイプレス",
   description: "リフォーム会社・工務店向けWeb集客支援。Googleマップ上位表示（MEO）・SEO対策・施工事例サイト制作で無料見積もり依頼を増やします。東京都内・全国対応。",
   keywords: ["リフォーム MEO対策", "工務店 集客", "リフォーム会社 SEO", "リフォーム Googleマップ", "工務店 ホームページ"],
   openGraph: {
-    title: "リフォーム会社・工務店のWeb集客｜MEO・SEO・施工事例サイト制作｜株式会社サイプレス",
+    title: "リフォーム会社・工務店のWeb集客｜施工事例サイト｜株式会社サイプレス",
     description: "リフォーム会社・工務店のWeb集客。MEO・SEO・ホームページで見積もり依頼と受注を増やします。",
     locale: "ja_JP",
     type: "website",

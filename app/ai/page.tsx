@@ -8,12 +8,12 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "AI活用マーケティングとは｜生成AIで集客・業務効率を強化する方法｜株式会社サイプレス",
+  title: "AI活用マーケティングとは｜集客と業務効率化｜株式会社サイプレス",
   description:
     "AI活用マーケティングの基礎から実践まで解説。ChatGPT・Claude等の生成AIを活用したコンテンツ制作・チャットボット・業務自動化・AIO対策まで体系的に網羅。東京葛飾区のAIマーケティング支援会社。",
   keywords: ["AI活用マーケティング", "生成AI マーケティング", "ChatGPT活用", "AIマーケティング", "AI業務効率化", "AIO対策", "AI検索対策"],
   openGraph: {
-    title: "AI活用マーケティングとは｜生成AIで集客・業務効率を強化する方法｜株式会社サイプレス",
+    title: "AI活用マーケティングとは｜集客と業務効率化｜株式会社サイプレス",
     description: "生成AIを活用したマーケティング実践ガイド。ChatGPT活用から業務自動化・AIO（AI検索）対策まで一貫解説。",
     locale: "ja_JP",
     type: "website",

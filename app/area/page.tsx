@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "対応エリア｜東京・葛飾・千葉・埼玉・神奈川・全国のMEO・SEO対策｜株式会社サイプレス",
+  title: "対応エリア｜全国のSEO・MEO対策・Web制作｜株式会社サイプレス",
   description:
     "株式会社サイプレスの対応エリア一覧。東京都（葛飾区・足立区・江戸川区・墨田区等）・千葉・埼玉・神奈川・全国のSEO対策・MEO対策・Web制作に対応。オンライン完結で全国どこからでもご相談可能。",
   keywords: ["MEO対策 東京", "SEO対策 葛飾区", "MEO 千葉", "SEO 埼玉", "Web集客 神奈川", "全国対応 MEO"],
   openGraph: {
-    title: "対応エリア｜東京・葛飾・千葉・埼玉・神奈川・全国のMEO・SEO対策｜株式会社サイプレス",
+    title: "対応エリア｜全国のSEO・MEO対策・Web制作｜株式会社サイプレス",
     description: "東京都葛飾区拠点。首都圏のMEO・SEO対策はもちろん、Web制作・AIO対策は全国対応。",
     locale: "ja_JP",
     type: "website",

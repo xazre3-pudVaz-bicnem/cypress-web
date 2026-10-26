@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "豊島区のSEO対策・MEO対策・ホームページ制作｜池袋・巣鴨・大塚・目白の集客支援｜株式会社サイプレス",
+  title: "豊島区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "豊島区のSEO対策・MEO対策・ホームページ制作。池袋・巣鴨・大塚・目白・椎名町エリアの中小企業・店舗のWeb集客。池袋の激戦エリアも競合分析で攻略。",
   keywords: ["豊島区 SEO", "豊島区 MEO", "池袋 MEO", "池袋 SEO対策", "巣鴨 集客", "大塚 ホームページ制作", "豊島区 Web集客", "池袋 Web制作"],
   openGraph: {
-    title: "豊島区のSEO対策・MEO対策・ホームページ制作｜池袋・巣鴨・大塚・目白の集客支援｜株式会社サイプレス",
+    title: "豊島区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
     description: "豊島区の中小企業・店舗のSEO・MEO対策をサイプレスが支援。池袋の激戦エリアも競合分析で攻略。巣鴨・大塚エリアの穴場集客戦略も提供。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

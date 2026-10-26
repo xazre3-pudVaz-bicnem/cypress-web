@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "販売代理店募集｜MEO・SEO・ホームページ制作を副業・本業で販売｜株式会社サイプレス",
+  title: "販売代理店募集｜MEO・SEO対策・Web制作｜株式会社サイプレス",
   description:
     "株式会社サイプレスの販売代理店募集。MEO対策・SEO対策・ホームページ制作・AIO対策・AI活用支援を中小企業へ販売。技術・制作リソース不要。制作・保守・運用はサイプレスが全対応。副業・法人・個人事業主歓迎。東京葛飾区。",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "東京 Webマーケティング 代理店",
   ],
   openGraph: {
-    title: "販売代理店募集｜MEO・SEO・ホームページ制作を副業・本業で販売｜株式会社サイプレス",
+    title: "販売代理店募集｜MEO・SEO対策・Web制作｜株式会社サイプレス",
     description: "技術・制作リソース不要。副業・法人・個人事業主歓迎。MEO対策・SEO対策・ホームページ制作・AIO対策の販売代理店を全国で募集。制作・保守・運用はサイプレスが全対応。",
     locale: "ja_JP",
     type: "website",

@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "テクニカルSEOとは｜クロール・インデックス・HTTPS・リダイレクト・hreflang対策｜株式会社サイプレス",
+  title: "テクニカルSEOとは｜サイト診断と改善の基本｜株式会社サイプレス",
   description:
     "テクニカルSEOの基礎から実践まで解説。HTTPS移行・301リダイレクト・canonicalタグ・robots.txt・hreflang・Core Web Vitals・クロール最適化・インデックス管理の問題発見から修正まで体系的に網羅。",
   keywords: ["テクニカルSEO", "クロール最適化", "インデックス管理", "HTTPS移行", "301リダイレクト", "robots.txt", "hreflang", "canonicalタグ", "Core Web Vitals"],
   openGraph: {
-    title: "テクニカルSEOとは｜クロール・インデックス・HTTPS・リダイレクト・hreflang対策｜株式会社サイプレス",
+    title: "テクニカルSEOとは｜サイト診断と改善の基本｜株式会社サイプレス",
     description: "テクニカルSEOの実践ガイド。HTTPS移行・リダイレクト・robots.txt・クロール最適化・インデックス管理の問題発見と修正まで解説。",
     locale: "ja_JP",
     type: "website",

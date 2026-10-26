@@ -6,7 +6,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "葛飾区で創業資金・融資・補助金を確認する前に知っておきたいこと｜株式会社サイプレス",
+  title: "葛飾区の創業資金・融資・補助金｜申請前の確認点｜株式会社サイプレス",
   description:
     "葛飾区で創業を考えている方向けに、創業融資・補助金・ホームページ作成費補助の確認ポイントを整理。申請前の注意点とWeb集客費用の考え方を解説します。",
   keywords: [

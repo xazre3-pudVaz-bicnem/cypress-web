@@ -9,11 +9,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
+  title: "SNS写真ディレクション｜構図と撮影のコツ｜株式会社サイプレス",
   description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
   keywords: ["SNS写真ディレクション", "Instagram写真", "フィード統一感", "スマートフォン撮影", "写真構図", "ビジュアルブランディング"],
   openGraph: {
-    title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
+    title: "SNS写真ディレクション｜構図と撮影のコツ｜株式会社サイプレス",
     description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
     images: [{ url: "/images/v2/og/b-sns-phone.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

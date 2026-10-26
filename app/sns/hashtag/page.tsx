@@ -9,11 +9,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ハッシュタグ戦略｜InstagramとXで新規リーチを拡大するタグ設計｜株式会社サイプレス",
+  title: "ハッシュタグ戦略｜地域・業種に合うタグの設計｜株式会社サイプレス",
   description: "InstagramとXのハッシュタグ戦略。ビッグ・ミドル・ニッチの3層設計・地域タグ・業種タグ・ブランドタグを組み合わせて新規フォロワーを効率的に獲得する方法を解説します。",
   keywords: ["ハッシュタグ戦略", "Instagram ハッシュタグ", "SNS集客", "タグ選定", "地域ハッシュタグ", "ニッチタグ", "ブランドタグ"],
   openGraph: {
-    title: "ハッシュタグ戦略｜InstagramとXで新規リーチを拡大するタグ設計｜株式会社サイプレス",
+    title: "ハッシュタグ戦略｜地域・業種に合うタグの設計｜株式会社サイプレス",
     description: "InstagramとXのハッシュタグ戦略。ビッグ・ミドル・ニッチの3層設計・地域タグ・業種タグ・ブランドタグを組み合わせて新規フォロワーを効率的に獲得する方法を解説します。",
     images: [{ url: "/images/v2/og/b-sns-phone.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

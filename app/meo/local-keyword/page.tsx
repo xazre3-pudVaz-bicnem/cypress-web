@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "地域キーワード調査・設計｜MEO・ローカルSEOのキーワード戦略｜株式会社サイプレス",
+  title: "地域キーワード調査・設計｜MEOの競合分析｜株式会社サイプレス",
   description:
     "ローカルキーワード調査でMEO・ローカルSEOの集客力を最大化。市区町村名・駅名×業種のキーワード戦略から近接キーワード・複数エリア対応・競合分析まで詳しく解説します。",
   keywords: ["地域キーワード", "ローカルキーワード", "MEO キーワード", "地域SEO", "ローカル検索対策", "地域名 業種", "キーワード調査"],
   openGraph: {
-    title: "地域キーワード調査・設計｜MEO・ローカルSEOのキーワード戦略｜株式会社サイプレス",
+    title: "地域キーワード調査・設計｜MEOの競合分析｜株式会社サイプレス",
     description: "ローカルキーワード調査でMEOとローカルSEOの集客力を最大化する実践ガイド。",
     locale: "ja_JP",
     type: "website",

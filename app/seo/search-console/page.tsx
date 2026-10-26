@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Google Search Console活用｜SEOデータ分析・順位改善・インデックス管理｜株式会社サイプレス",
+  title: "サーチコンソール活用｜SEO分析と順位改善｜株式会社サイプレス",
   description:
     "Google Search Consoleを使ったSEOデータの見方・活用方法を徹底解説。検索パフォーマンス・インデックスカバレッジ・Core Web Vitals・サイトマップ管理・クエリ分析・CTR改善まで、具体的なメニュー操作と改善アクションを網羅。",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "順位改善",
   ],
   openGraph: {
-    title: "Google Search Console活用｜SEOデータ分析・順位改善・インデックス管理｜株式会社サイプレス",
+    title: "サーチコンソール活用｜SEO分析と順位改善｜株式会社サイプレス",
     description:
       "Search Consoleで検索パフォーマンス・インデックス・Core Web Vitalsを確認しSEO改善サイクルを回す実践ガイド。具体的なメニュー操作と改善アクションを解説。",
     locale: "ja_JP",

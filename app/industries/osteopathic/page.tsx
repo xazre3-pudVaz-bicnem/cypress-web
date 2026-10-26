@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "整体院・接骨院・整骨院のWeb集客｜MEO対策・SNS運用で新規患者を増やす｜株式会社サイプレス",
+  title: "整体院・接骨院・整骨院のWeb集客とMEO対策｜株式会社サイプレス",
   description: "整体院・接骨院・整骨院向けのWeb集客支援。Googleマップ上位表示（MEO）・SNS運用・ホームページ制作で新規患者来院とリピーター定着を実現します。医療広告ガイドライン対応。",
   keywords: ["整体院 MEO対策", "接骨院 集客", "整骨院 Googleマップ", "整体院 ホームページ", "接骨院 SNS"],
   openGraph: {
-    title: "整体院・接骨院・整骨院のWeb集客｜MEO対策・SNS運用で新規患者を増やす｜株式会社サイプレス",
+    title: "整体院・接骨院・整骨院のWeb集客とMEO対策｜株式会社サイプレス",
     description: "整体院・接骨院・整骨院向けWeb集客。MEO・SNS・ホームページで新規患者獲得とリピーター定着を支援。",
     locale: "ja_JP",
     type: "website",

@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "台東区のSEO対策・MEO対策・ホームページ制作｜浅草・上野・秋葉原・蔵前の集客支援｜株式会社サイプレス",
+  title: "台東区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "台東区のSEO対策・MEO対策・ホームページ制作。浅草・上野・秋葉原・蔵前・御徒町・入谷エリアの中小企業・店舗のWeb集客。インバウンド対応のMEO・多言語SEOも対応。",
   keywords: ["台東区 SEO", "台東区 MEO", "浅草 集客", "上野 MEO", "秋葉原 SEO", "蔵前 ホームページ制作", "台東区 インバウンド", "台東区 Web集客"],
   openGraph: {
-    title: "台東区のSEO対策・MEO対策・ホームページ制作｜浅草・上野・秋葉原・蔵前の集客支援｜株式会社サイプレス",
+    title: "台東区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
     description: "台東区の中小企業・店舗のSEO・MEO対策をサイプレスが支援。浅草・上野・秋葉原・蔵前のインバウンド対応も含めた集客戦略を提供。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

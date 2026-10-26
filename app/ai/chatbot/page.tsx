@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIチャットボット構築とは｜自社データ学習・ChatGPT API活用で問い合わせ自動化｜株式会社サイプレス",
+  title: "AIチャットボット構築とは｜設計と導入の流れ｜株式会社サイプレス",
   description:
     "AIチャットボット構築の基礎から実践まで解説。自社Q&A学習・RAG構成・LINE連携・社内ナレッジボットの設計と導入フローを体系的に解説。回答精度・セキュリティ・有人切り替えまで網羅。",
   keywords: ["AIチャットボット", "ChatGPT チャットボット", "チャットボット構築", "LINE チャットボット", "問い合わせ自動化", "RAG チャットボット", "カスタムAI"],
   openGraph: {
-    title: "AIチャットボット構築とは｜自社データ学習・ChatGPT API活用で問い合わせ自動化｜株式会社サイプレス",
+    title: "AIチャットボット構築とは｜設計と導入の流れ｜株式会社サイプレス",
     description: "AIチャットボット構築の実践ガイド。ChatGPT API・RAG・LINE連携から設計・導入・精度改善まで解説。",
     locale: "ja_JP",
     type: "website",

@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "スマートフォン対応・モバイルフレンドリー化｜レスポンシブデザインとモバイルUX改善｜株式会社サイプレス",
+  title: "スマートフォン対応｜レスポンシブ設計と操作性改善｜株式会社サイプレス",
   description: "スマートフォン対応・モバイルフレンドリー化のWeb制作。レスポンシブデザイン・Core Web Vitals最適化・タップ操作設計・モバイルUX改善で離脱率を下げCVRを向上します。",
   keywords: ["スマートフォン対応", "モバイルフレンドリー", "レスポンシブデザイン", "モバイルファースト", "モバイルUX改善", "Core Web Vitals"],
   openGraph: {

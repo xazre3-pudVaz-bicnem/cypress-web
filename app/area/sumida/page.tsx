@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "墨田区のSEO対策・MEO対策・ホームページ制作｜錦糸町・押上・両国・向島の集客支援｜株式会社サイプレス",
+  title: "墨田区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "墨田区のSEO対策・MEO対策・ホームページ制作。錦糸町・押上・両国・向島エリアのスカイツリー観光客と地元住民への二重集客を葛飾区拠点のサイプレスが支援。",
   keywords: ["墨田区 SEO", "墨田区 MEO", "錦糸町 集客", "押上 MEO", "両国 ホームページ制作", "墨田区 Web制作", "向島 SEO"],
   openGraph: {

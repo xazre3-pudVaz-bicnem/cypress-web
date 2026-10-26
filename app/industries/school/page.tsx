@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "学習塾・スクールのWeb集客｜MEO対策・SEOで体験授業の申込みを増やす｜株式会社サイプレス",
+  title: "学習塾・スクールのWeb集客｜体験授業の申込促進｜株式会社サイプレス",
   description: "学習塾・英会話・音楽教室・プログラミングスクール向けWeb集客支援。Googleマップ上位表示（MEO）・SEO・ホームページ制作で体験授業申込みと入塾数を増やします。",
   keywords: ["学習塾 MEO対策", "学習塾 集客", "塾 Googleマップ", "英会話スクール 集客", "学習塾 ホームページ"],
   openGraph: {
-    title: "学習塾・スクールのWeb集客｜MEO対策・SEOで体験授業の申込みを増やす｜株式会社サイプレス",
+    title: "学習塾・スクールのWeb集客｜体験授業の申込促進｜株式会社サイプレス",
     description: "学習塾・英会話・音楽教室・スクール向けWeb集客。MEO・SEO・ホームページで体験申込みと入塾数を増やします。",
     locale: "ja_JP",
     type: "website",

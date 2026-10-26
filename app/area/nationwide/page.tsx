@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "全国対応｜SEO対策・AIO対策・Web制作はリモートで日本全国対応｜株式会社サイプレス",
+  title: "全国対応のSEO・AIO対策・Web制作｜株式会社サイプレス",
   description: "株式会社サイプレスはSEO対策・AIO対策・AI活用支援・Web制作を全国リモートで対応。Zoom・Google Meetでの初回相談から提案・施策実行・月次レポートまで完全オンライン対応。北海道から沖縄まで。",
   keywords: ["全国対応 SEO", "全国 MEO対策", "リモート Web制作", "オンライン SEO相談", "全国 ホームページ制作", "全国 AIO対策", "Zoom Web制作"],
   openGraph: {

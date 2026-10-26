@@ -6,7 +6,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "葛飾区で起業する方向け販売パートナー制度｜Web集客サービスの取次・紹介｜株式会社サイプレス",
+  title: "葛飾区の起業者向け販売パートナー制度｜Web集客｜株式会社サイプレス",
   description:
     "葛飾区で起業・創業する方に向けて、ホームページ制作・SEO・MEO・AIOなどのWeb集客サービスを地域事業者へ紹介できる販売パートナー制度（取次店・代理店）を案内します。成果を保証するものではありません。",
   keywords: [

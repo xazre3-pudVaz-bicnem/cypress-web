@@ -10,11 +10,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ネイルサロンのWeb集客｜MEO対策・Instagram運用で新規客と定期予約を増やす｜株式会社サイプレス",
+  title: "ネイルサロンのWeb集客｜MEO・SNS運用｜株式会社サイプレス",
   description: "ネイルサロン向けWeb集客支援。Googleマップ上位表示（MEO）・Instagram運用・ホームページ制作で新規顧客来店と定期予約を増やします。東京都内・全国対応。",
   keywords: ["ネイルサロン MEO対策", "ネイルサロン Instagram", "ネイルサロン 集客", "ネイルサロン Googleマップ", "ネイルサロン ホームページ"],
   openGraph: {
-    title: "ネイルサロンのWeb集客｜MEO対策・Instagram運用で新規客と定期予約を増やす｜株式会社サイプレス",
+    title: "ネイルサロンのWeb集客｜MEO・SNS運用｜株式会社サイプレス",
     description: "ネイルサロン向けWeb集客。MEO・Instagram・ホームページで新規顧客来店と定期予約を増やします。",
     locale: "ja_JP",
     type: "website",

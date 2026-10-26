@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "LLM最適化｜GPT・Gemini・ClaudeへのAI情報最適化｜株式会社サイプレス",
+  title: "LLM最適化｜AIに伝わる企業情報の構築｜株式会社サイプレス",
   description: "LLM最適化でGPT・Gemini・Claudeが正確に認識する企業情報を構築。AIO対策の専門会社サイプレスが大規模言語モデルへの情報浸透を実施します。",
   keywords: ["LLM最適化", "大規模言語モデル最適化", "AIO対策", "AI情報最適化", "エンティティ最適化", "ナレッジグラフ"],
   openGraph: {

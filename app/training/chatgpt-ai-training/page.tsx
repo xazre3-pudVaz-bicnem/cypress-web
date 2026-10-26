@@ -12,7 +12,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/training/chatgpt-ai-training`;
 
 export const metadata: Metadata = {
-  title: "ChatGPT・生成AI研修の導入相談｜社員向けAI活用・リスキリング研修｜株式会社サイプレス",
+  title: "ChatGPT・生成AI研修の導入相談と会社紹介｜株式会社サイプレス",
   description:
     "社員向けChatGPT・生成AI研修の導入相談。営業・事務・管理職など職種別のAI活用を学ぶ法人研修を、実績ある提携研修会社へおつなぎします。助成金の活用を検討する企業にも対応。",
   keywords: [

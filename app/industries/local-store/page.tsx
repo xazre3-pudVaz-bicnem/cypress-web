@@ -9,7 +9,7 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【地域密着型小売・専門店のMEO・Web集客】チェーンに負けない地域集客戦略｜株式会社サイプレス",
+  title: "地域の小売・専門店のMEO対策・Web集客支援｜株式会社サイプレス",
   description: "花屋・文具店・雑貨店・書店など地域密着型小売・専門店のWeb集客。MEO・Instagram・ホームページ制作で近くにいる人に見つけてもらい、来店・リピートを増やします。",
   keywords: [
     "地域密着 小売店 MEO対策",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "地域 商店 集客",
   ],
   openGraph: {
-    title: "【地域密着型小売・専門店のMEO・Web集客】チェーンに負けない地域集客戦略｜株式会社サイプレス",
+    title: "地域の小売・専門店のMEO対策・Web集客支援｜株式会社サイプレス",
     description: "花屋・文具店・雑貨店など地域密着型小売・専門店のWeb集客。MEO・Instagram・ホームページで近くの人に見つけてもらいます。",
     images: [{ url: "/images/v2/og/i-retail.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

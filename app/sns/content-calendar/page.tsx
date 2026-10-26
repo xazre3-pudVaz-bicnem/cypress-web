@@ -9,11 +9,11 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
+  title: "コンテンツカレンダー作成｜SNS投稿の計画管理｜株式会社サイプレス",
   description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
   keywords: ["コンテンツカレンダー", "SNS投稿計画", "SNS運用", "投稿スケジュール", "SNS継続"],
   openGraph: {
-    title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
+    title: "コンテンツカレンダー作成｜SNS投稿の計画管理｜株式会社サイプレス",
     description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
     images: [{ url: "/images/v2/og/b-sns-calendar.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

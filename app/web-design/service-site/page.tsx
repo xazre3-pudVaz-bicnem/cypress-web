@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "サービスサイト・LP制作｜コンバージョンを高める設計のWebサイト｜株式会社サイプレス",
+  title: "サービスサイト・LP制作｜問い合わせ導線の設計｜株式会社サイプレス",
   description:
     "サービスサイト・ランディングページ（LP）制作の専門ガイド。問い合わせ・申し込み・資料請求を増やすCV重視の設計・コピーライティング・SEO・A/Bテストまで解説。",
   keywords: ["サービスサイト制作", "LP制作", "ランディングページ", "コンバージョン最適化", "CV改善", "リード獲得サイト"],
   openGraph: {
-    title: "サービスサイト・LP制作｜コンバージョンを高める設計のWebサイト｜株式会社サイプレス",
+    title: "サービスサイト・LP制作｜問い合わせ導線の設計｜株式会社サイプレス",
     description: "サービスサイト・LP制作のガイド。問い合わせ・申し込みを増やすCV重視の設計を解説。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

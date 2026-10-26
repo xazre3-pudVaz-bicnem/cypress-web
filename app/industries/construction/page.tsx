@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【建設・リフォームのSEO・MEO集客】施工事例で見積もり依頼を増やす｜株式会社サイプレス",
+  title: "建設・リフォームのSEO・MEO集客｜施工事例活用｜株式会社サイプレス",
   description: "建設業・リフォーム会社・外壁塗装業者のWeb集客。施工事例ページ・Googleマップ上位表示・SEO対策・問い合わせ導線最適化で見積もり依頼を継続的に獲得します。",
   keywords: ["リフォーム 集客", "建設業 ホームページ", "外壁塗装 SEO", "工務店 MEO", "建設業 Web集客", "リフォーム Googleマップ"],
   openGraph: {
-    title: "【建設・リフォームのSEO・MEO集客】施工事例で見積もり依頼を増やす｜株式会社サイプレス",
+    title: "建設・リフォームのSEO・MEO集客｜施工事例活用｜株式会社サイプレス",
     description: "建設業・リフォーム会社・外壁塗装のWeb集客。施工事例・MEO・SEOで見積もり依頼を増やします。",
     images: [{ url: "/images/v2/og/i-construction.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

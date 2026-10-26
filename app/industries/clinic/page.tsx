@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【クリニック・整骨院のMEO・Web集客】医療広告ガイドライン対応の新患獲得｜株式会社サイプレス",
+  title: "クリニック・整骨院のMEO対策・Web集客支援｜株式会社サイプレス",
   description: "クリニック・歯科・整骨院のWeb集客。Googleマップ上位表示・患者向けホームページ・予約導線・医療SEO・口コミ管理で新患獲得を支援。医療広告ガイドライン対応。",
   keywords: ["クリニック MEO対策", "整骨院 集客", "歯科 ホームページ", "医療 SEO", "クリニック 新患獲得", "医療広告 ガイドライン"],
   openGraph: {
-    title: "【クリニック・整骨院のMEO・Web集客】医療広告ガイドライン対応の新患獲得｜株式会社サイプレス",
+    title: "クリニック・整骨院のMEO対策・Web集客支援｜株式会社サイプレス",
     description: "クリニック・歯科・整骨院のWeb集客。MEO・ホームページ・医療SEOで新患獲得を支援します。",
     images: [{ url: "/images/v2/og/i-clinic.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

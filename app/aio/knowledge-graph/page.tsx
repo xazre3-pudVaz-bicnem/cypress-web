@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
+  title: "Googleナレッジグラフ対策｜企業情報の整備｜株式会社サイプレス",
   description:
     "GoogleナレッジグラフへのエンティティとしてのGoogle認識を高めるAIO対策。Organization構造化データ・sameAs整備・Wikidata登録・GBP連携でナレッジパネルを獲得する完全ガイド。",
   keywords: ["ナレッジグラフ対策", "Googleナレッジグラフ", "エンティティSEO", "ナレッジパネル", "Organization構造化データ", "AIO対策", "sameAs"],
   openGraph: {
-    title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
+    title: "Googleナレッジグラフ対策｜企業情報の整備｜株式会社サイプレス",
     description: "GoogleナレッジグラフへのエンティティとしてのGoogle認識を高めるAIO対策。Organization構造化データ・GBP連携・権威サイト掲載で企業の知名度を向上。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

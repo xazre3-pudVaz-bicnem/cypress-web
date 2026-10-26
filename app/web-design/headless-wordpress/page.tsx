@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ヘッドレスWordPress制作｜Next.js+WordPress連携で高速サイト構築｜株式会社サイプレス",
+  title: "ヘッドレスWordPress制作｜高速サイト構築｜株式会社サイプレス",
   description: "WordPressをCMSとして使い、フロントエンドをNext.jsで構築するヘッドレス構成。使い慣れたWP管理画面を保ちながら、Lighthouse90+・高速配信・セキュリティ強化を実現。REST API・WPGraphQL対応。",
   keywords: ["ヘッドレスWordPress", "Headless WordPress", "Next.js WordPress", "WP REST API", "ヘッドレスCMS", "WPGraphQL", "ISR", "WordPress高速化"],
   openGraph: {

@@ -9,11 +9,11 @@ import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "【美容室・ヘアサロンのMEO・Instagram集客】ホットペッパー依存脱却で指名予約を増やす｜株式会社サイプレス",
+  title: "美容室のMEO・Instagram集客支援｜株式会社サイプレス",
   description: "美容室・ヘアサロンのGoogleマップ上位表示・Instagram運用・ホームページ制作で新規顧客と指名予約を増やします。ホットペッパービューティー依存からの脱却も支援。",
   keywords: ["美容室 MEO対策", "美容室 Instagram", "ヘアサロン 集客", "美容室 ホームページ", "美容室 ホットペッパー 脱却", "ヘアサロン 新規集客"],
   openGraph: {
-    title: "【美容室・ヘアサロンのMEO・Instagram集客】ホットペッパー依存脱却で指名予約を増やす｜株式会社サイプレス",
+    title: "美容室のMEO・Instagram集客支援｜株式会社サイプレス",
     description: "美容室・ヘアサロンのWeb集客。MEO・Instagram・ホームページで新規来店と指名予約を増やします。",
     images: [{ url: "/images/v2/og/i-beauty.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

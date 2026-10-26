@@ -6,7 +6,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "葛飾区の起業・創業ガイド【総合版】｜資金・Web集客・収益づくりを一気通貫で解説｜株式会社サイプレス",
+  title: "葛飾区の起業・創業ガイド｜資金とWeb集客の準備｜株式会社サイプレス",
   description:
     "葛飾区で起業・創業する方向けの総合ガイド。開業準備チェックリスト・創業資金の確認ポイント・ホームページ制作とGBP整備・Web集客の優先順位・収益柱づくりまで、創業ステップごとに詳しく解説します。",
   keywords: [

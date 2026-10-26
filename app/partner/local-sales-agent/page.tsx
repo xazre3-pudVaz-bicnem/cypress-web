@@ -6,7 +6,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Web集客サービスの販売代理店・取次店募集｜ホームページ制作・SEO・MEO｜株式会社サイプレス",
+  title: "Web集客サービスの販売代理店・取次店募集｜株式会社サイプレス",
   description:
     "株式会社サイプレスでは、ホームページ制作、SEO対策、MEO対策、AIO対策などのWeb集客サービスを紹介できる販売代理店・取次店を募集しています。",
   keywords: [

@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "葛飾区のホームページ制作会社｜SEOに強い集客サイトを地域密着で｜株式会社サイプレス",
+  title: "葛飾区のホームページ制作会社｜SEOとスマホ対応｜株式会社サイプレス",
   description:
     "葛飾区のホームページ制作は地元・亀有拠点のサイプレスへ。亀有・金町・新小岩・柴又・立石など区内全域に訪問対応。SEO標準設計・スマホ最適化・高速表示の集客サイトを10万円台から制作。補助金活用の相談も可能です。",
   keywords: [

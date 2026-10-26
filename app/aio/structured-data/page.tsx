@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "構造化データ実装（AIO向け）｜Schema.org完全ガイド｜株式会社サイプレス",
+  title: "構造化データ実装｜AI検索に対応する設計ガイド｜株式会社サイプレス",
   description:
     "AI検索・リッチリザルト対応のSchema.org完全実装ガイド。Organization・FAQPage・LocalBusiness・Article・BreadcrumbListのJSON-LD実装でAIO引用率とSEO効果を同時に高める方法を解説。",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Next.js 構造化データ",
   ],
   openGraph: {
-    title: "構造化データ実装（AIO向け）｜Schema.org完全ガイド｜株式会社サイプレス",
+    title: "構造化データ実装｜AI検索に対応する設計ガイド｜株式会社サイプレス",
     description:
       "AI検索・Google検索で引用されやすくなる構造化データの実装。Schema.org対応でリッチリザルトとAIO引用率を同時に改善。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],

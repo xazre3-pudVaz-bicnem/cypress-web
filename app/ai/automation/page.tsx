@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AI業務自動化｜Make・Zapier×ChatGPT APIで繰り返し業務を自動化｜株式会社サイプレス",
+  title: "AI業務自動化｜繰り返し作業の効率化と導入手順｜株式会社サイプレス",
   description:
     "AI業務自動化の基礎から実践まで解説。Make・Zapier・n8nとChatGPT/Claude APIを組み合わせ、繰り返し業務・ワークフローを自動化する方法。業種別の活用ポイントと導入フローを詳しく解説します。",
   keywords: ["AI業務自動化", "Make 自動化", "Zapier AI", "n8n", "ワークフロー自動化", "ノーコード自動化", "ChatGPT API 連携", "業務効率化"],
   openGraph: {
-    title: "AI業務自動化｜Make・Zapier×ChatGPT APIで繰り返し業務を自動化｜株式会社サイプレス",
+    title: "AI業務自動化｜繰り返し作業の効率化と導入手順｜株式会社サイプレス",
     description: "AI業務自動化の実践ガイド。Make・Zapier・n8nとChatGPT/Claude APIを組み合わせた繰り返し業務の自動化方法を業種別に解説。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

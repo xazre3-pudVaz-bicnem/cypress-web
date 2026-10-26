@@ -12,7 +12,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/training/web-marketing-training`;
 
 export const metadata: Metadata = {
-  title: "Webマーケティング研修の導入相談｜SEO・MEO・SNS・AI活用を学ぶ法人研修｜株式会社サイプレス",
+  title: "Webマーケティング研修の導入相談・提携先紹介｜株式会社サイプレス",
   description:
     "法人向けWebマーケティング研修の導入相談。SEO・MEO・SNS運用・Googleビジネスプロフィール・AIO活用を社内で学ぶ研修を、実績ある提携研修会社へおつなぎします。",
   keywords: [

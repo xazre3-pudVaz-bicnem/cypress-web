@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "荒川区のSEO対策・MEO対策・ホームページ制作｜南千住・三ノ輪・町屋・西日暮里の集客支援｜株式会社サイプレス",
+  title: "荒川区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "荒川区のSEO対策・MEO対策・ホームページ制作。南千住・三ノ輪・町屋・荒川・西日暮里・日暮里エリアの中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援。訪問相談対応。",
   keywords: ["荒川区 SEO", "荒川区 MEO", "荒川区 ホームページ制作", "南千住 MEO", "町屋 集客", "西日暮里 SEO", "日暮里 Web制作", "荒川区 Web集客"],
   openGraph: {

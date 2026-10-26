@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AIブログ・コンテンツ自動化｜SEO記事を効率的に量産する方法｜株式会社サイプレス",
+  title: "AIブログ・コンテンツ自動化｜SEO記事制作支援｜株式会社サイプレス",
   description:
     "AIを活用したブログ記事制作の効率化。キーワードから記事構成・下書き生成・リライト支援まで、SEOコンテンツの量産体制をAIで構築する方法を解説。",
   keywords: ["AIブログ自動化", "AI記事生成", "SEOコンテンツ自動化", "ChatGPT ブログ", "コンテンツ量産"],
   openGraph: {
-    title: "AIブログ・コンテンツ自動化｜SEO記事を効率的に量産する方法｜株式会社サイプレス",
+    title: "AIブログ・コンテンツ自動化｜SEO記事制作支援｜株式会社サイプレス",
     description: "AIを活用したブログ記事制作の効率化。キーワードから構成・下書き・リライトまでAIで効率化する方法を解説。",
     images: [{ url: "/images/v2/og/b-aio-chat.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

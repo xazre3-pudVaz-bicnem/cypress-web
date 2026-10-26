@@ -8,11 +8,11 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "北区のSEO対策・MEO対策・ホームページ制作｜赤羽・王子・十条・田端の集客支援｜株式会社サイプレス",
+  title: "北区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
   description: "北区のSEO対策・MEO対策・ホームページ制作。赤羽・王子・十条・田端・上十条・滝野川の中小企業・店舗のWeb集客を葛飾区拠点のサイプレスが支援します。",
   keywords: ["北区 SEO", "北区 MEO", "赤羽 MEO", "赤羽 集客", "王子 SEO", "十条 ホームページ制作", "北区 Web集客", "田端 MEO対策"],
   openGraph: {
-    title: "北区のSEO対策・MEO対策・ホームページ制作｜赤羽・王子・十条・田端の集客支援｜株式会社サイプレス",
+    title: "北区のSEO・MEO対策・ホームページ制作｜株式会社サイプレス",
     description: "北区の中小企業・店舗のSEO・MEO対策をサイプレスが支援。赤羽・王子・十条・田端エリアの地域特性に合わせた集客戦略を提供。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

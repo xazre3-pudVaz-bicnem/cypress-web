@@ -6,7 +6,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "葛飾区のホームページ制作・補助金活用支援｜SEOに強いWeb制作｜株式会社サイプレス",
+  title: "葛飾区のホームページ制作・補助金活用の注意点｜株式会社サイプレス",
   description:
     "葛飾区のホームページ制作と補助金・助成金の確認ポイントを解説。SEO・MEO対応のホームページ制作と、ホームページ作成費補助の注意点をまとめています。",
   keywords: [

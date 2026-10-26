@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Vercelホスティング｜Next.jsサイトの最速デプロイとEdge Network活用｜株式会社サイプレス",
+  title: "Vercelホスティング｜特徴と導入メリット｜株式会社サイプレス",
   description: "Next.jsと組み合わせて使うVercelホスティングの特徴・メリット。世界規模CDN・自動デプロイ・CI/CDパイプライン・プレビューデプロイ・Core Web Vitals分析・無料プランから使えるサーバーレスホスティング。",
   keywords: ["Vercel", "Vercelホスティング", "Next.js公開", "サーバーレスホスティング", "Edge Network", "CI/CD", "プレビューデプロイ", "Vercelデプロイ"],
   openGraph: {

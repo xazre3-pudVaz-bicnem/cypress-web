@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AI社内ツール開発・構築とは｜ChatGPT API・Claude APIで業務効率化カスタムツール｜株式会社サイプレス",
+  title: "AI社内ツール開発とは｜業務効率化の設計と構築｜株式会社サイプレス",
   description:
     "ChatGPT API・Claude APIを活用した社内業務効率化カスタムツール開発。RAG・Fine-tuning・既存システム連携まで対応。製造・建設・士業・医療など業種別の活用ポイントを体系的に解説。",
   keywords: ["AI社内ツール", "ChatGPT API 業務効率化", "Claude API 社内システム", "RAG 社内データ", "AI開発 中小企業", "社内DX", "カスタムAI開発"],
   openGraph: {
-    title: "AI社内ツール開発・構築とは｜ChatGPT API・Claude APIで業務効率化カスタムツール｜株式会社サイプレス",
+    title: "AI社内ツール開発とは｜業務効率化の設計と構築｜株式会社サイプレス",
     description: "ChatGPT API・Claude APIを活用した社内業務効率化カスタムツール開発。RAG・Fine-tuning・既存システム連携まで対応。",
     images: [{ url: "/images/v2/og/b-ai-robot.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",

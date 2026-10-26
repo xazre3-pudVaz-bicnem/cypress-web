@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Google AI Overview対策｜生成AI検索で引用されるサイトへ｜株式会社サイプレス",
+  title: "Google AI Overview対策の基本｜株式会社サイプレス",
   description: "Googleの生成AI検索「AI Overview」に引用されるためのAIO対策。E-E-A-T・構造化データ・FAQ最適化で、AIが選ぶ情報源になる方法を解説。",
   keywords: ["AI Overview対策", "AIO対策", "生成AI検索", "Google AI Overview", "E-E-A-T", "構造化データ", "AI検索対策"],
   openGraph: {

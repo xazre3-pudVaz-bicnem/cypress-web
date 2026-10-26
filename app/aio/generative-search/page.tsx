@@ -9,12 +9,12 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "生成AI検索・SGE対策｜AI Overviewに引用されるページ設計｜株式会社サイプレス",
+  title: "生成AI検索・SGE対策｜引用を促すページ設計｜株式会社サイプレス",
   description:
     "Google AI Overview・Perplexity・Bing Copilotに引用される生成AI検索対策。SGEとは何か・E-E-A-T強化・構造化データ実装・一次情報コンテンツ設計まで完全解説。",
   keywords: ["生成AI検索対策", "AI Overview最適化", "SGE対策", "Perplexity対策", "AI検索最適化", "AIO対策", "SGEとは"],
   openGraph: {
-    title: "生成AI検索・SGE対策｜AI Overviewに引用されるページ設計｜株式会社サイプレス",
+    title: "生成AI検索・SGE対策｜引用を促すページ設計｜株式会社サイプレス",
     description: "Google AI Overview等の生成AI検索に引用されやすいコンテンツ設計の完全ガイド。SGE・E-E-A-T・構造化データから運用フローまで解説。",
     locale: "ja_JP",
     type: "website",

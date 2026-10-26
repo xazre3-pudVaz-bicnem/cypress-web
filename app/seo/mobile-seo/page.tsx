@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "モバイルSEO・スマートフォン対応｜Core Web Vitals・モバイルファーストインデックス｜株式会社サイプレス",
+  title: "モバイルSEO｜スマートフォン対応と表示速度改善｜株式会社サイプレス",
   description:
     "Googleのモバイルファーストインデックスに対応したスマートフォンSEOの実践ガイド。LCP・CLS・INPの意味と改善方法、レスポンシブデザイン対応、スマホUX設計、業種別モバイル最適化のポイントを体系的に解説。",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "スマホ表示速度",
   ],
   openGraph: {
-    title: "モバイルSEO・スマートフォン対応｜Core Web Vitals・モバイルファーストインデックス｜株式会社サイプレス",
+    title: "モバイルSEO｜スマートフォン対応と表示速度改善｜株式会社サイプレス",
     description: "モバイルファーストインデックス対応のSEO実践ガイド。LCP・CLS・INP改善、スマホUX設計、業種別対応ポイントまで解説。",
     locale: "ja_JP",
     type: "website",

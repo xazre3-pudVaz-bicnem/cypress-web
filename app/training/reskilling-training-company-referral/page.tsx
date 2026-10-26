@@ -13,7 +13,7 @@ const BASE = "https://www.cypress-all.co.jp";
 const URL = `${BASE}/training/reskilling-training-company-referral`;
 
 export const metadata: Metadata = {
-  title: "リスキリング研修会社の紹介相談｜AI・DX・Webマーケティング研修｜株式会社サイプレス",
+  title: "リスキリング研修会社の紹介相談｜選び方と流れ｜株式会社サイプレス",
   description:
     "AI研修・DX研修・Webマーケティング研修に対応する実績ある提携研修会社をご紹介します。研修会社選びで確認すべきこと、紹介までの流れ、情報共有の同意についてご説明します。",
   keywords: [

@@ -7,7 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 
 export const metadata: Metadata = {
-  title: "SEO対策の販売代理店募集｜Web集客商材を販売したい企業様へ｜株式会社サイプレス",
+  title: "SEO対策の販売代理店募集｜記事制作・運用支援｜株式会社サイプレス",
   description:
     "株式会社サイプレスでは、SEO対策を販売いただける代理店様を募集しています。内部SEO・コンテンツSEO・ブログ運用までサイプレスが対応するため、代理店様は販売活動に集中できます。",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "SEO 取次店",
   ],
   openGraph: {
-    title: "SEO対策の販売代理店募集｜Web集客商材を販売したい企業様へ｜株式会社サイプレス",
+    title: "SEO対策の販売代理店募集｜記事制作・運用支援｜株式会社サイプレス",
     description: "SEO対策の販売代理店募集。内部SEO・コンテンツSEO・ブログ運用はサイプレスが対応。代理店は販売に集中できます。",
     locale: "ja_JP",
     type: "website",

@@ -9,7 +9,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "ページ速度最適化とは｜Core Web Vitals改善・LCP・CLS・INP対策｜株式会社サイプレス",
+  title: "ページ速度最適化とは｜表示指標と改善の手順｜株式会社サイプレス",
   description:
     "ページ速度最適化（Core Web Vitals・Lighthouse）の基礎から実践まで解説。LCP・CLS・INPの改善方法、画像最適化・JavaScript最適化・CDN活用・Next.js最適化・フォント最適化まで体系的に網羅。PageSpeed Insightsで90点以上を目指す具体的な手順。",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "WebP",
   ],
   openGraph: {
-    title: "ページ速度最適化とは｜Core Web Vitals改善・LCP・CLS・INP対策｜株式会社サイプレス",
+    title: "ページ速度最適化とは｜表示指標と改善の手順｜株式会社サイプレス",
     description:
       "ページ速度最適化の実践ガイド。Core Web Vitals（LCP・CLS・INP）の改善からLighthouse 90点達成まで解説。画像・JS・CSS・フォント・CDN最適化の具体的な手順。",
     locale: "ja_JP",

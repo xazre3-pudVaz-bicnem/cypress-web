@@ -8,7 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
+  title: "採用情報｜Webマーケティング営業の正社員募集｜株式会社サイプレス",
   description:
     "株式会社サイプレスの採用情報。東京都葛飾区拠点のWebマーケティング会社でMEO対策・SEO対策・ホームページ制作を提案するWebマーケティング営業（正社員）を募集中。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎。",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Webマーケティング会社 求人 東京",
   ],
   openGraph: {
-    title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
+    title: "採用情報｜Webマーケティング営業の正社員募集｜株式会社サイプレス",
     description: "東京都葛飾区拠点のWebマーケティング会社。Webマーケティング営業（正社員）募集。基本給20万円＋インセンティブ・年間休日130日・未経験歓迎・学歴不問。",
     locale: "ja_JP",
     type: "website",
