@@ -284,8 +284,20 @@ const DESCRIPTION_SCHEMA = {
   additionalProperties: false,
 };
 
-/** 検索結果に出る説明文（meta description）。本文の要点を 80〜120 文字で書かせる */
+/**
+ * 検索結果に出る説明文（meta description）。本文の要点を 80〜120 文字で書かせる。
+ * 説明文の生成に失敗しても記事の投稿は止めない（最初の段落を文の区切りで切ったものを使う）
+ */
 async function generateDescription(client: Anthropic, topic: Topic, body: string): Promise<string> {
+  try {
+    return await requestDescription(client, topic, body);
+  } catch (err) {
+    console.warn("説明文の生成に失敗したため、本文の最初の段落を使います:", err);
+    return fallbackDescription(body);
+  }
+}
+
+async function requestDescription(client: Anthropic, topic: Topic, body: string): Promise<string> {
   const message = await client.messages.create({
     model: MODEL,
     max_tokens: 512,
