@@ -11,17 +11,38 @@ interface Props {
   items: FaqItem[];
   heading?: string;
   bgColor?: string;
+  /**
+   * 同じ質問と回答から FAQPage の構造化データも出す。
+   * ページ側で既に FAQPage を出している場合は重複するので付けないこと。
+   */
+  structuredData?: boolean;
 }
 
 /**
  * 下層ページ共通の「よくある質問」（トップの FAQ と同じ見た目）。
  * 回答は閉じていても HTML に残し（検索エンジン・AI が読めるように）、高さのアニメーションだけで開閉する。
  */
-export default function FaqSection({ items, heading = "よくある質問", bgColor = "#FFFFFF" }: Props) {
+export default function FaqSection({ items, heading = "よくある質問", bgColor = "#FFFFFF", structuredData = false }: Props) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section className="px-[var(--v2-gutter)] py-20 md:py-28" style={{ background: bgColor }}>
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: items.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            }),
+          }}
+        />
+      )}
       <div className="mx-auto grid max-w-[1180px] gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
         <div>
           <p className="v2-display text-[clamp(56px,7vw,104px)] leading-[0.95] text-[var(--v2-blue)]" aria-hidden>

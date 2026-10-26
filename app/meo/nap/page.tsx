@@ -571,7 +571,7 @@ export default function NapPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="NAP統一に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

@@ -340,7 +340,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#f0f1f2" heading="ヘッドレスWordPressについてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#f0f1f2" heading="ヘッドレスWordPressについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="ヘッドレスWordPress制作のご相談" body="既存WordPressサイトのヘッドレス移行・新規ヘッドレスWP+Next.js制作をご相談ください。WordPressの使いやすさを保ちながら、速度とSEOを最大化します。" />
       </main>

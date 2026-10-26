@@ -528,7 +528,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="プロンプトエンジニアリングについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="プロンプトエンジニアリングについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="プロンプト設計のご相談"

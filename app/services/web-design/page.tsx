@@ -508,7 +508,7 @@ export default function ServicesWebDesignPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Web制作サービスについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="Web制作サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Web制作サービスの無料相談"

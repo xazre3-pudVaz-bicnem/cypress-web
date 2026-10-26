@@ -495,7 +495,6 @@ A: お問い合わせフォームの同意欄にチェックをいただいた�
 - https://www.cypress-all.co.jp/column/local-business-sales-partner — 地域事業者向けWeb集客サービスを紹介する販売パートナー制度とは
 - https://www.cypress-all.co.jp/column/startup-side-revenue-web-services — 創業初期に収益の柱を増やす方法とWeb集客サービスの取次モデル
 - https://www.cypress-all.co.jp/column/katsushika-start-business-guide — 葛飾区で起業する人が最初に確認すべき創業準備
-- https://www.cypress-all.co.jp/column/katsushika-startup-web-marketing — 葛飾区で起業する人が最初に整えるべきWeb集客の優先順位
 - https://www.cypress-all.co.jp/column/katsushika-startup-funding-web — 葛飾区で創業資金を確認するときにWeb集客費用も考えるべき理由
 - https://www.cypress-all.co.jp/column/katsushika-homepage-subsidy-startup — 葛飾区のホームページ制作と補助金確認で注意したいこと
 - https://www.cypress-all.co.jp/column/local-sales-agent-web-marketing — 地域事業者向けWeb集客サービスを紹介する販売パートナー制度とは

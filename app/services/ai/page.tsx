@@ -134,9 +134,29 @@ const relatedLinks = [
   { href: "/contact", label: "無料相談・お問い合わせ", desc: "AI活用支援のご相談はこちら" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI活用支援サービス",
+  description: "ChatGPTやClaudeを使った業務自動化・チャットボット構築・AI導入の計画づくりまで、中小企業のAI活用を一貫して支援します。",
+  provider: {
+    "@type": "Organization",
+    "@id": "https://www.cypress-all.co.jp/#organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/ai",
+  serviceType: "AI導入支援・業務自動化",
+};
+
 export default function ServicesAiPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}
@@ -525,7 +545,7 @@ export default function ServicesAiPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AI活用支援サービスについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="AI活用支援サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI活用支援の無料相談"

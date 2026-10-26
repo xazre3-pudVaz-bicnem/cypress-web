@@ -623,7 +623,7 @@ export default function MobileSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="モバイルSEOについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="モバイルSEOについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="モバイルSEOのご相談"

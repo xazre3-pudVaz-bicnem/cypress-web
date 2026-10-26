@@ -528,7 +528,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AI社内ツール開発についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="AI社内ツール開発についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI社内ツール開発のご相談"

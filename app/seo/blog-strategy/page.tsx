@@ -454,7 +454,7 @@ export default function BlogStrategyPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ブログ・コンテンツ戦略についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="ブログ・コンテンツ戦略についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ブログ・コンテンツ戦略のご相談"

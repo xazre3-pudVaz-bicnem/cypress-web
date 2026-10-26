@@ -518,7 +518,7 @@ export default function SeoSitePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO特化サイト制作についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="SEO特化サイト制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SEO特化サイト制作のご相談"

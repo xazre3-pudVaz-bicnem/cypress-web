@@ -503,7 +503,7 @@ export default function WorkflowPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIワークフロー設計・AI導入ロードマップについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="AIワークフロー設計・AI導入ロードマップについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIワークフロー設計・AI導入ロードマップのご相談"

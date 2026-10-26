@@ -357,7 +357,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#ffffff" />
+        <FaqSection structuredData items={faqItems} bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SEOコンテンツ制作のご相談"

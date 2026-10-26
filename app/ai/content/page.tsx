@@ -478,7 +478,7 @@ export default function AiContentPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIコンテンツ制作についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="AIコンテンツ制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIコンテンツ制作体制構築のご相談"

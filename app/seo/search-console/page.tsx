@@ -728,7 +728,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Google Search Console活用についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="Google Search Console活用についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Search Console活用のサポート"

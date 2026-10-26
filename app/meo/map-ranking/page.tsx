@@ -601,7 +601,7 @@ export default function MapRankingPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Googleマップ上位表示のご相談"

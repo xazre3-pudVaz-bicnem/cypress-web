@@ -609,7 +609,7 @@ export default function ReviewManagementPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="口コミ管理・返信戦略に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

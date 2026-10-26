@@ -340,7 +340,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#f0f1f2" heading="Vercelホスティングについてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#f0f1f2" heading="Vercelホスティングについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="Vercel構成のWebサイト制作ご相談" body="Next.js+Vercel構成でのWebサイト制作・既存サイトのVercel移行をご支援します。高速・SEO対応・自動デプロイの開発環境をご相談ください。" />
       </main>

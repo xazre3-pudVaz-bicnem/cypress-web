@@ -181,7 +181,7 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="業種別Webマーケティングに関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

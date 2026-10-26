@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { NextConfig } from "next";
+import { CONSOLIDATED_PAGES } from "./lib/data/consolidatedPages";
 
 /**
  * 同じテーマで繰り返し生成されていたブログ記事（content/blog-archive/ に退避）を、
@@ -21,7 +22,11 @@ function blogArchiveRedirects() {
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return blogArchiveRedirects();
+    return [
+      ...blogArchiveRedirects(),
+      // 検索意図が同じで評価を食い合っていたページは、残した側へ恒久的に転送する
+      ...Object.entries(CONSOLIDATED_PAGES).map(([source, destination]) => ({ source, destination, permanent: true })),
+    ];
   },
   images: {
     remotePatterns: [

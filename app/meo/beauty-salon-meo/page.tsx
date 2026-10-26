@@ -479,7 +479,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="美容室・サロンのMEO対策ご相談"

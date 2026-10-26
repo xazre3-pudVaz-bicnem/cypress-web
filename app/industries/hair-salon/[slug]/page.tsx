@@ -75,7 +75,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <FaqSection items={page.faqs} bgColor="#f0f1f2" />
+        <FaqSection structuredData items={page.faqs} bgColor="#f0f1f2" />
         <RelatedPages links={page.related} />
         <PageContactCTA />
       </main>

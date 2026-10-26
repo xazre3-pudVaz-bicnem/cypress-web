@@ -559,7 +559,7 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        <FaqSection
+        <FaqSection structuredData
           items={FAQ_ITEMS}
           heading="経営理念に関するよくある質問"
           bgColor="#FFFFFF"

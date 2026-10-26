@@ -482,7 +482,7 @@ export default function ServicesMeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="MEO対策サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="MEO対策サービスの無料相談"

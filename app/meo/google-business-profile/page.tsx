@@ -621,7 +621,7 @@ export default function GoogleBusinessProfilePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="GBP最適化に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="GBP最適化に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

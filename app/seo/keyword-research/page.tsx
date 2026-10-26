@@ -464,7 +464,7 @@ export default function KeywordResearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="キーワード調査についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="キーワード調査・SEO戦略のご相談"

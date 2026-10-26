@@ -549,7 +549,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="建設業のMEO対策ご相談"

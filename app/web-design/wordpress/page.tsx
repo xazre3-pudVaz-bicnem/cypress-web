@@ -505,7 +505,7 @@ export default function WordpressPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="WordPress制作についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="WordPress制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="WordPress制作のご相談"

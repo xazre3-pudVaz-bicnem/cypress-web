@@ -525,7 +525,7 @@ export default function KnowledgeGraphPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ナレッジグラフ対策のご相談はサイプレスへ"

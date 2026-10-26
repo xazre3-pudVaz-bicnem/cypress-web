@@ -153,7 +153,7 @@ export default function GuidePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ガイドについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="ガイドについてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

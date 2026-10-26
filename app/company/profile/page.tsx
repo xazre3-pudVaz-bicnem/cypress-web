@@ -611,7 +611,7 @@ export default function ProfilePage() {
           </div>
         </section>
 
-        <FaqSection
+        <FaqSection structuredData
           items={faqItems}
           heading="会社概要・お問い合わせについてよくある質問"
           bgColor="#FFFFFF"

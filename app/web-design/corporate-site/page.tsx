@@ -508,7 +508,7 @@ export default function CorporateSitePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="コーポレートサイト制作についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="コーポレートサイト制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="コーポレートサイト制作のご相談"

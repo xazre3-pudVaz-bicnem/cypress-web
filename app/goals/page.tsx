@@ -158,7 +158,7 @@ export default function GoalsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="目的別Web集客についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="目的別Web集客についてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

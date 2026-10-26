@@ -540,7 +540,7 @@ export default function EntityOptimizationPage() {
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={FAQ_ITEMS} heading="エンティティ最適化に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={RELATED_LINKS} />
 

@@ -443,7 +443,7 @@ export default function ServicesSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SEO対策サービスについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="SEO対策サービスについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SEO対策サービスの無料相談"

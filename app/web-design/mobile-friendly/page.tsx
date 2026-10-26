@@ -316,7 +316,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" heading="スマートフォン対応についてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" heading="スマートフォン対応についてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="スマートフォン対応制作のご相談" body="新規のスマートフォン対応サイト制作・既存サイトのモバイルフレンドリー化改修をご相談ください。現状のモバイル表示を無料で診断し、改善提案を行います。" />
       </main>

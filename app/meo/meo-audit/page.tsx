@@ -574,7 +574,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="MEO診断・監査に関するよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="MEO診断・監査に関するよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="MEO診断のご依頼はサイプレスへ"

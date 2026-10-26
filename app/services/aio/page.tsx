@@ -401,7 +401,7 @@ export default function ServicesAioPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="AIO対策サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIO対策サービスの無料相談"

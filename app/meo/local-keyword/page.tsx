@@ -622,7 +622,7 @@ export default function LocalKeywordPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="地域キーワードに関するよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="地域キーワードに関するよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages links={relatedLinks} />
 

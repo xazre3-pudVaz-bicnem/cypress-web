@@ -521,7 +521,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} />
+        <FaqSection structuredData items={faqItems} />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA />
       </main>

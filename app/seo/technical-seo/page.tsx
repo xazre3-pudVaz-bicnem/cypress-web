@@ -465,7 +465,7 @@ export default function TechnicalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="テクニカルSEOについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="テクニカルSEOについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="テクニカルSEOのご相談・無料診断"

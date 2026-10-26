@@ -73,7 +73,7 @@ export const NEW_STARTUP2_COLUMNS: ColumnTopicPage[] = [
       { href: "/area/tokyo/katsushika/startup-funding", label: "葛飾区で創業資金・補助金を確認する前に知っておきたいこと", desc: "融資・補助金の確認ポイント" },
       { href: "/area/tokyo/katsushika/startup-web-marketing", label: "葛飾区で創業する方向けWeb集客ガイド", desc: "GBP・SEO・MEOの優先順位" },
       { href: "/column/katsushika-startup-web-design", label: "開業・創業時のHP準備", desc: "開業・創業期の参考に" },
-      { href: "/column/katsushika-startup-web-marketing", label: "起業時のWeb集客の優先順位", desc: "開業・創業期の参考に" },
+      { href: "/column/katsushika-start-business-web-marketing", label: "起業時に最初に整えるWeb集客", desc: "開業・創業期の参考に" },
       { href: "/column/katsushika-gbp-setup", label: "GBP設定完全ガイド", desc: "Googleマップ集客の基礎" },
     ],
   },

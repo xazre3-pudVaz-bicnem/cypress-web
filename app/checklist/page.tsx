@@ -129,7 +129,7 @@ export default function ChecklistPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="チェックリストについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="チェックリストについてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

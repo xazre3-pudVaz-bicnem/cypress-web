@@ -176,7 +176,7 @@ export default function CostPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="費用・料金についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="費用・料金についてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

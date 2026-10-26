@@ -851,7 +851,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" heading="ページ速度改善についてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" heading="ページ速度改善についてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ページ速度改善のご相談"

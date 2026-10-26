@@ -694,7 +694,7 @@ export default function StructuredDataPage() {
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="構造化データ実装に関するよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={FAQ_ITEMS} heading="構造化データ実装に関するよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages links={RELATED_LINKS} />
 

@@ -567,7 +567,7 @@ export default function MessagePage() {
           </div>
         </section>
 
-        <FaqSection
+        <FaqSection structuredData
           items={FAQ_ITEMS}
           heading="代表メッセージに関するよくある質問"
           bgColor="#FFFFFF"

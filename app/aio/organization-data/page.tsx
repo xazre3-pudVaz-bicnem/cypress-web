@@ -632,7 +632,7 @@ export default function OrganizationDataPage() {
           </div>
         </section>
 
-        <FaqSection items={FAQ_ITEMS} heading="Organization構造化データに関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={FAQ_ITEMS} heading="Organization構造化データに関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={RELATED_LINKS} />
 

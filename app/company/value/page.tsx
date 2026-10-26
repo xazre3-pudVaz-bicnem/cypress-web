@@ -530,7 +530,7 @@ export default function ValuePage() {
           </div>
         </section>
 
-        <FaqSection
+        <FaqSection structuredData
           items={faqItems}
           heading="価値観・選ばれる理由についてよくある質問"
           bgColor="#f0f1f2"

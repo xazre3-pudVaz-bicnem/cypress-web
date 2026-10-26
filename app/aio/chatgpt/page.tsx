@@ -602,7 +602,7 @@ export default function ChatgptAioPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ChatGPT対策に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="ChatGPT対策に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

@@ -596,7 +596,7 @@ export default function CategorySettingPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="カテゴリ設定に関するよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="カテゴリ設定に関するよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages links={relatedLinks} />
 

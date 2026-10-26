@@ -610,7 +610,7 @@ export default function LocalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ローカルSEOについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="ローカルSEOについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ローカルSEO・地域集客のご相談"

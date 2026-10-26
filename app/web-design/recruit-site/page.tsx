@@ -508,7 +508,7 @@ export default function RecruitSitePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="採用サイト制作についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="採用サイト制作についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="採用サイト制作のご相談"

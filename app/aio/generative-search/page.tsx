@@ -592,7 +592,7 @@ export default function GenerativeSearchPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="生成AI検索対策に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

@@ -773,7 +773,7 @@ export default function PageSpeedPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ページ速度最適化についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="ページ速度最適化についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ページ速度改善・Core Web Vitalsのご相談"

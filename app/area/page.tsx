@@ -187,7 +187,7 @@ export default function AreaPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="対応エリアについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="対応エリアについてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

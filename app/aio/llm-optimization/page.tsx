@@ -890,7 +890,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="LLM最適化のご相談"

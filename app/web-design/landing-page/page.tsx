@@ -320,7 +320,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" heading="ランディングページについてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" heading="ランディングページについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="ランディングページ制作のご相談"

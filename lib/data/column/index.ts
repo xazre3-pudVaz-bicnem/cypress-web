@@ -66,6 +66,7 @@ import { CONVERSION_COLUMNS } from "./conversionColumns";
 import { ADS_COLUMNS } from "./adsColumns";
 import { TECHNICAL_SEO_COLUMNS } from "./technicalSeoColumns";
 import { WEB_OPERATION_COLUMNS } from "./webOperationColumns";
+import { CONSOLIDATED_COLUMN_SLUGS } from "../consolidatedPages";
 
 export type { ColumnTopicPage };
 
@@ -145,7 +146,10 @@ const ALL_COLUMN_TOPICS_RAW: ColumnTopicPage[] = [
  * 同一URLが二重に出力され、SEO上の重複URL問題を招く。
  */
 export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = ALL_COLUMN_TOPICS_RAW.filter(
-  (topic, index, all) => all.findIndex((t) => t.slug === topic.slug) === index
+  (topic, index, all) =>
+    all.findIndex((t) => t.slug === topic.slug) === index &&
+    // 同じ検索意図の別記事へまとめたもの（lib/data/consolidatedPages.ts）はページを作らない
+    !CONSOLIDATED_COLUMN_SLUGS.has(topic.slug)
 );
 
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {

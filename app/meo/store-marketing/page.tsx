@@ -629,7 +629,7 @@ export default function StoreMarketingPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="店舗集客マーケティングに関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

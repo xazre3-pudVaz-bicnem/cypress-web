@@ -474,7 +474,7 @@ export default function ChatbotPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIチャットボット構築についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="AIチャットボット構築についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIチャットボット構築のご相談"

@@ -79,7 +79,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="一緒に働きませんか" body="フルリモート・フルフレックスでWeb集客の専門家として働きたい方、ぜひお話しましょう。採用エントリーはお問い合わせフォームからどうぞ。" />
       </main>

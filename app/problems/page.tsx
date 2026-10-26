@@ -174,7 +174,7 @@ export default function ProblemsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Web集客のお悩みについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="Web集客のお悩みについてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

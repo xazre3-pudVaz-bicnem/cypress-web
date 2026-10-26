@@ -494,7 +494,7 @@ export default function ServiceSitePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サービスサイト・LP制作についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="サービスサイト・LP制作についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="サービスサイト・LP制作のご相談"

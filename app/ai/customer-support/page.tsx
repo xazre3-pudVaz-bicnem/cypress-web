@@ -374,7 +374,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIカスタマーサポートについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="AIカスタマーサポートについてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIカスタマーサポート導入のご相談"

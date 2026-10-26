@@ -638,7 +638,7 @@ export default function MeoRankingPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="MEO順位改善に関するよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="MEO順位改善に関するよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages links={relatedLinks} />
 

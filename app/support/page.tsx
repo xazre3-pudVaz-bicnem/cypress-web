@@ -154,7 +154,7 @@ export default function SupportPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="サポート・運用支援についてよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages
           links={[

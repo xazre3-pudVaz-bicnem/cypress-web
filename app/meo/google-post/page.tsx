@@ -596,7 +596,7 @@ export default function GooglePostPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="Google投稿（Googleポスト）に関するよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="Google投稿（Googleポスト）に関するよくある質問" bgColor="#f0f1f2" />
 
         <RelatedPages links={relatedLinks} />
 

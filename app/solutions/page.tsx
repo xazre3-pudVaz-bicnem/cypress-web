@@ -156,7 +156,7 @@ export default function SolutionsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="統合ソリューションについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="統合ソリューションについてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

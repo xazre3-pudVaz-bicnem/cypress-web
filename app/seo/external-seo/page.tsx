@@ -439,7 +439,7 @@ export default function ExternalSeoPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="外部SEOについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="外部SEOについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="外部SEO・被リンク戦略のご相談"

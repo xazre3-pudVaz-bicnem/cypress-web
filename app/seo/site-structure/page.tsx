@@ -450,7 +450,7 @@ export default function SiteStructurePage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="サイト構造設計についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="サイト構造設計についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="サイト構造設計・SEO設計のご相談"

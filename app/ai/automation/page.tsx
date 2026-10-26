@@ -468,7 +468,7 @@ export default function AutomationPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="AI業務自動化についてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AI業務自動化のご相談"

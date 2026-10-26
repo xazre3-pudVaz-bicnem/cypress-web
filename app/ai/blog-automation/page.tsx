@@ -402,7 +402,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="AIブログ自動化についてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="AIブログ自動化についてよくある質問" bgColor="#FFFFFF" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="AIブログ自動化のご相談"

@@ -316,7 +316,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" heading="保守・メンテナンスについてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" heading="保守・メンテナンスについてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA heading="保守・メンテナンスのご相談" body="現在のサイトの保守状況を確認し、最適な保守プランをご提案します。制作後の保守から既存サイトの引き継ぎ保守まで対応しています。" />
       </main>

@@ -841,7 +841,7 @@ export default function Page() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} bgColor="#FFFFFF" heading="Next.js制作についてよくある質問" />
+        <FaqSection structuredData items={faqItems} bgColor="#FFFFFF" heading="Next.js制作についてよくある質問" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="Next.jsサイト制作のご相談"

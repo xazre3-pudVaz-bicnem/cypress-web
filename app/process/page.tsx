@@ -157,7 +157,7 @@ export default function ProcessPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="ご利用の流れについてよくある質問" bgColor="#FFFFFF" />
+        <FaqSection structuredData items={faqItems} heading="ご利用の流れについてよくある質問" bgColor="#FFFFFF" />
 
         <RelatedPages
           links={[

@@ -134,9 +134,29 @@ const relatedLinks = [
   { href: "/company", label: "サイプレスについて", desc: "会社概要・代表者情報" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "SNS運用代行サービス",
+  description: "Instagram・LINE公式アカウントなどの運用代行と投稿企画・分析で、地域ビジネスのSNS集客を支援します。",
+  provider: {
+    "@type": "Organization",
+    "@id": "https://www.cypress-all.co.jp/#organization",
+    name: "株式会社サイプレス",
+    url: "https://www.cypress-all.co.jp",
+  },
+  areaServed: { "@type": "Country", name: "Japan" },
+  url: "https://www.cypress-all.co.jp/services/sns",
+  serviceType: "SNS運用代行・SNSマーケティング",
+};
+
 export default function ServicesSnsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Header />
       <main>
         {/* Hero */}
@@ -437,7 +457,7 @@ export default function ServicesSnsPage() {
           </div>
         </section>
 
-        <FaqSection items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#f0f1f2" />
+        <FaqSection structuredData items={faqItems} heading="SNS運用サービスについてよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA
           heading="SNS運用サービスの無料相談"
