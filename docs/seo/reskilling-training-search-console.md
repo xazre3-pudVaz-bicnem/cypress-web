@@ -297,7 +297,7 @@ Search Console の「検索パフォーマンス」で、日付を「公開日�
 2. 同ファイルの `SUBSIDY_DISCLAIMERS` の文言を確認
 3. `/training/hr-development-subsidy-guide` の制度概要の記述を確認
 4. 各コラム本文中の確認日（現在「2026年7月10日」と直書き）を更新
-5. `public/llms.txt` の研修セクション内の確認日を更新
+5. `content/llms.md`（/llms.txt の手書き部分）の研修セクション内の確認日を更新
 
 ---
 

@@ -12,13 +12,14 @@ import {
 } from "@/lib/blog";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
+
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
-  seo: "検索エンジン最適化（SEO）に関する実践的なノウハウ・解説記事を掲載しています。",
-  meo: "Googleマップ集客（MEO対策）に関する実践的なノウハウ・解説記事を掲載しています。",
-  aio: "AI検索最適化（AIO対策）に関する解説記事・最新動向を掲載しています。",
-  "web-design": "ホームページ制作・Webデザインに関する実践的な記事を掲載しています。",
-  sns: "SNS運用・Instagram活用に関する実践的なノウハウを掲載しています。",
-  ai: "AI活用・業務自動化に関する解説記事・事例を掲載しています。",
+  seo: "SEO対策の記事一覧。キーワード選定・記事の設計・内部リンク・構造化データ・表示速度の改善など、中小企業が検索で上位を狙うための実践的なノウハウを解説しています。",
+  meo: "MEO対策の記事一覧。Googleビジネスプロフィールの最適化、口コミの集め方と返信、写真や投稿の活用、競合分析など、Googleマップから集客するための実践的なノウハウを解説しています。",
+  aio: "AIO対策（AI検索最適化）の記事一覧。ChatGPT・Gemini・PerplexityなどのAIに自社の情報を引用してもらうためのコンテンツ設計、FAQ、llms.txt、エンティティ最適化を解説しています。",
+  "web-design": "ホームページ制作の記事一覧。中小企業のサイト制作で失敗しないポイント、LPや採用サイトの設計、問い合わせフォームの改善、スマホ対応、Next.jsとWordPressの比較を解説しています。",
+  sns: "SNS運用の記事一覧。Instagramでの地域集客、LINE公式アカウントでの関係づくり、MEOとSNSの連動など、地域ビジネスがSNSを集客につなげるための実践的なノウハウを解説しています。",
+  ai: "AI活用の記事一覧。中小企業がAIで業務を効率化する始め方、n8n・Makeを使った自動化の事例、AIを使ったブログ運用の注意点など、実務に役立つ情報を解説しています。",
 };
 
 export async function generateStaticParams() {

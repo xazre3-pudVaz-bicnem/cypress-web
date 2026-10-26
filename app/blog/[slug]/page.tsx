@@ -98,6 +98,7 @@ export async function generateMetadata({
   return {
     title: `${post.title}｜株式会社サイプレス ブログ`,
     description: post.description || post.title,
+    authors: [{ name: "株式会社サイプレス 編集部", url: "https://www.cypress-all.co.jp/company/about-cypress" }],
     openGraph: {
       title: post.title,
       description: post.description || post.title,
@@ -320,6 +321,45 @@ export default async function BlogPostPage({
                 >
                   {body}
                 </ReactMarkdown>
+              </div>
+
+              {/* 記事の発信元（コラムと同じ表記。誰が責任を持って書いているかを示す） */}
+              <div
+                style={{
+                  marginTop: "48px",
+                  padding: "24px",
+                  border: "1px solid #dde0e4",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "16px",
+                }}
+              >
+                <div
+                  aria-hidden
+                  style={{
+                    width: "48px",
+                    height: "48px",
+                    flexShrink: 0,
+                    display: "grid",
+                    placeItems: "center",
+                    background: "#f0f1f2",
+                    border: "1px solid #dde0e4",
+                    fontWeight: 900,
+                    color: "#333333",
+                  }}
+                >
+                  C
+                </div>
+                <div>
+                  <p style={{ fontSize: "14px", fontWeight: 700, color: "#333333" }}>
+                    <Link href="/company/about-cypress" style={{ color: "#333333" }}>
+                      株式会社サイプレス 編集部
+                    </Link>
+                  </p>
+                  <p style={{ fontSize: "12px", color: "#6B7280", marginTop: "4px", lineHeight: 1.7 }}>
+                    東京都葛飾区のWebマーケティング会社。MEO・SEO・AIO・ホームページ制作の支援をもとに、中小企業のWeb集客に役立つ情報を発信しています。
+                  </p>
+                </div>
               </div>
 
               {/* 関連する固定ページへの内部リンク */}
