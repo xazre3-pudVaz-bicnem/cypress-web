@@ -8,6 +8,7 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 import { guidePages } from "@/lib/data/guidePages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Web集客・SEO・MEOガイド｜選び方・費用・基礎知識｜株式会社サイプレス",
   description:
@@ -51,6 +52,7 @@ export default function GuidePage() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ガイド" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px", display: "flex", gap: "6px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "外部SEO（被リンク対策）とは｜ドメイン評価を高める方法｜株式会社サイプレス",
   description:
@@ -141,6 +142,7 @@ export default function ExternalSeoPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SEO対策", href: "/seo" }, { name: "外部SEO" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

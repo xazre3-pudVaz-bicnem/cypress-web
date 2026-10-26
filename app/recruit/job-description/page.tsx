@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "募集要項｜株式会社サイプレス採用情報",
   alternates: { canonical: "https://www.cypress-all.co.jp/recruit/job-description" },
@@ -25,6 +26,7 @@ export default function Page() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "採用情報", href: "/recruit" }, { name: "募集要項" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

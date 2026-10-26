@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ネイルサロンのWeb集客｜MEO対策・Instagram運用で新規客と定期予約を増やす｜株式会社サイプレス",
   description: "ネイルサロン向けWeb集客支援。Googleマップ上位表示（MEO）・Instagram運用・ホームページ制作で新規顧客来店と定期予約を増やします。東京都内・全国対応。",
@@ -175,6 +177,7 @@ export default function NailSalonPage() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "ネイルサロン" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -532,6 +535,7 @@ export default function NailSalonPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="nail-salon" />
         <FaqSection items={faqItems} heading="ネイルサロンのWeb集客についてよくある質問" bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

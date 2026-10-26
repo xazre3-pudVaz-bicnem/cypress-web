@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Googleビジネスプロフィール写真投稿・管理戦略｜MEO対策で集客｜株式会社サイプレス",
   description:
@@ -285,6 +286,7 @@ export default function PhotoPostingPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "MEO対策", href: "/meo" }, { name: "写真投稿" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

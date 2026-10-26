@@ -7,13 +7,14 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "SNS運用・SNSマーケティングサービス｜Instagram・X・LINE活用で集客｜株式会社サイプレス",
+  title: "SNS運用代行サービス｜Instagram・LINEで集客｜株式会社サイプレス",
   description:
     "株式会社サイプレスのSNS運用サービス。Instagram・X（Twitter）・LINE・TikTokの運用代行・コンテンツ制作・広告支援で集客とブランディングを強化。東京都葛飾区を拠点に全国対応。",
   keywords: ["SNS運用", "SNSマーケティング", "Instagram運用", "SNS代行", "LINE公式アカウント", "TikTok運用"],
   openGraph: {
-    title: "SNS運用・SNSマーケティングサービス｜Instagram・X・LINE活用で集客｜株式会社サイプレス",
+    title: "SNS運用代行サービス｜Instagram・LINEで集客｜株式会社サイプレス",
     description: "サイプレスのSNS運用サービス。Instagram・X・LINE・TikTokの運用代行と広告支援。",
     locale: "ja_JP",
     type: "website",
@@ -141,6 +142,7 @@ export default function ServicesSnsPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サービス", href: "/services" }, { name: "SNS運用" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

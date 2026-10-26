@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = getAreaSubPage(AREA, slug);
   if (!page) return {};
   return {
-    title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
+    title: `${page.title}｜地域密着の集客支援｜株式会社サイプレス`,
     description: page.metaDescription,
     openGraph: {
-      title: `${page.title}｜${AREA_LABEL}の集客支援｜株式会社サイプレス`,
+      title: `${page.title}｜地域密着の集客支援｜株式会社サイプレス`,
       description: page.metaDescription,
       images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
       locale: "ja_JP",

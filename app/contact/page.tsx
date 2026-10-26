@@ -12,6 +12,7 @@ import {
 } from "@/lib/contact";
 import ContactForm from "./ContactForm";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "お問い合わせ｜株式会社サイプレス",
   description:
@@ -60,6 +61,7 @@ export default async function ContactPage({
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-16" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "お問い合わせ" }]} />
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
               <Link href="/" className="hover:text-[#333333] transition-colors">
                 ホーム

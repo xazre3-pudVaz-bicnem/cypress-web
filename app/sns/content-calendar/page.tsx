@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "コンテンツカレンダー作成｜SNS投稿を継続するためのスケジュール管理｜株式会社サイプレス",
   description: "SNS投稿を継続するためのコンテンツカレンダーの作り方。季節イベント・投稿カテゴリ・頻度・担当を事前に設計してSNS運用のネタ切れと投稿ムラを防ぎます。",
@@ -89,6 +90,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "コンテンツカレンダー" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

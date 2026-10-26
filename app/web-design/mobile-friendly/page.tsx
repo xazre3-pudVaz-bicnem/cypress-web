@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "スマートフォン対応・モバイルフレンドリー化｜レスポンシブデザインとモバイルUX改善｜株式会社サイプレス",
   description: "スマートフォン対応・モバイルフレンドリー化のWeb制作。レスポンシブデザイン・Core Web Vitals最適化・タップ操作設計・モバイルUX改善で離脱率を下げCVRを向上します。",
@@ -80,6 +81,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ホームページ制作", href: "/web-design" }, { name: "スマートフォン対応" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

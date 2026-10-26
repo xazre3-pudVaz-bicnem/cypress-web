@@ -7,9 +7,11 @@ import {
   getPostsByCategory,
   getCategories,
   formatDate,
+  lastUpdated,
   CATEGORY_NAMES,
 } from "@/lib/blog";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   seo: "検索エンジン最適化（SEO）に関する実践的なノウハウ・解説記事を掲載しています。",
   meo: "Googleマップ集客（MEO対策）に関する実践的なノウハウ・解説記事を掲載しています。",
@@ -72,6 +74,7 @@ export default async function BlogCategoryPage({
           <div
             style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}
           >
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ブログ", href: "/blog" }, { name: name }]} />
             <nav
               style={{
                 fontSize: "12px",
@@ -177,14 +180,14 @@ export default async function BlogCategoryPage({
                       }}
                     >
                       <time
-                        dateTime={post.date}
+                        dateTime={lastUpdated(post)}
                         style={{
                           fontSize: "12px",
                           color: "#9ca3af",
                           fontFamily: "var(--font-display)",
                         }}
                       >
-                        {formatDate(post.date)}
+                        {formatDate(lastUpdated(post))}
                       </time>
                       <span
                         style={{

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ヘッドレスWordPress制作｜Next.js+WordPress連携で高速サイト構築｜株式会社サイプレス",
   description: "WordPressをCMSとして使い、フロントエンドをNext.jsで構築するヘッドレス構成。使い慣れたWP管理画面を保ちながら、Lighthouse90+・高速配信・セキュリティ強化を実現。REST API・WPGraphQL対応。",
@@ -80,6 +81,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ホームページ制作", href: "/web-design" }, { name: "ヘッドレスWordPress" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

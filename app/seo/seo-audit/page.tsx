@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "SEO監査（SEO Audit）｜現状診断から改善へ｜サイプレス",
   description: "サイト全体のSEO課題を体系的に診断するSEO監査。インデックス状況・速度・コンテンツ・内部リンク・構造化データなど10項目以上を網羅的に調査し、優先度の高い改善計画を立てます。",
@@ -80,6 +81,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SEO対策", href: "/seo" }, { name: "SEO監査" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "AI業務自動化｜Make・Zapier×ChatGPT APIで繰り返し業務を自動化｜株式会社サイプレス",
   description:
@@ -141,6 +142,7 @@ export default function AutomationPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AI活用", href: "/ai" }, { name: "業務自動化" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "飲食店のMEO対策｜Googleマップで予約・来店を増やす方法｜株式会社サイプレス",
   description: "飲食店・カフェ・居酒屋のGoogleマップ集客。GBP写真・メニュー・口コミ対応・定期投稿・業態別ポイントなど飲食店特有のMEO対策を徹底解説します。",
@@ -140,6 +141,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "MEO対策", href: "/meo" }, { name: "飲食店のMEO対策" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>

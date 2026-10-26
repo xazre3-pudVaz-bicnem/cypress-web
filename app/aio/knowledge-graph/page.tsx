@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Googleナレッジグラフ対策｜ナレッジパネル獲得と構造化情報の最適化｜株式会社サイプレス",
   description:
@@ -322,6 +323,7 @@ export default function KnowledgeGraphPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AIO対策", href: "/aio" }, { name: "ナレッジグラフ対策" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:underline" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

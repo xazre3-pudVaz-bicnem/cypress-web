@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { NEWS, getNewsArticle, type NewsArticle } from "@/lib/data/news";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export async function generateStaticParams() {
   return NEWS.map((n) => ({ slug: n.slug }));
 }
@@ -75,6 +76,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         {/* Hero */}
         <section data-page-hero="article" className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-3xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "お知らせ", href: "/news" }, { name: article.title }]} />
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8 flex-wrap">
               <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

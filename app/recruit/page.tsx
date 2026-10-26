@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
   title: "採用情報｜Webマーケティング営業 正社員募集｜株式会社サイプレス【東京・葛飾区】",
@@ -587,6 +588,20 @@ export default function RecruitPage() {
 
         {/* ── 8. 採用FAQ ────────────────────────────────────────────────────── */}
         <FaqSection items={faqItems} heading="採用についてよくある質問" bgColor="#ffffff" />
+
+        {/* ── 採用情報の各ページ（下層ページへの入口。どこからもリンクのないページを作らない） ── */}
+        <RelatedPages
+          heading="採用についてもっと知る"
+          links={[
+            { href: "/recruit/message", label: "代表メッセージ", desc: "代表から応募を考えている方へ" },
+            { href: "/recruit/job-description", label: "募集要項", desc: "仕事内容・条件・選考の流れ" },
+            { href: "/recruit/career", label: "キャリアパス", desc: "入社後の成長ロードマップ" },
+            { href: "/recruit/environment", label: "職場環境・福利厚生", desc: "フルリモート・年間休日130日" },
+            { href: "/recruit/remote-work", label: "リモートワーク制度", desc: "働く場所と時間の考え方" },
+            { href: "/recruit/faq", label: "採用FAQ", desc: "応募前によくある質問" },
+            { href: "/recruit/entry", label: "応募エントリー", desc: "エントリーはこちらから" },
+          ]}
+        />
 
         {/* ── 9. エントリー導線 ────────────────────────────────────────────── */}
         <PageContactCTA

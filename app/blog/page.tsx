@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { getAllPosts, getCategories, formatDate, CATEGORY_NAMES } from "@/lib/blog";
+import { getAllPosts, getCategories, formatDate, lastUpdated, CATEGORY_NAMES } from "@/lib/blog";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ブログ｜MEO・SEO・Web集客の最新情報｜株式会社サイプレス",
   description:
@@ -42,6 +43,7 @@ export default function BlogPage() {
               padding: "0 24px",
             }}
           >
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ブログ" }]} />
             <nav
               style={{
                 fontSize: "12px",
@@ -120,7 +122,7 @@ export default function BlogPage() {
                     >
                       <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                         <time
-                          dateTime={post.date}
+                          dateTime={lastUpdated(post)}
                           style={{
                             fontSize: "12px",
                             color: "#9ca3af",
@@ -128,7 +130,7 @@ export default function BlogPage() {
                             letterSpacing: "0.05em",
                           }}
                         >
-                          {formatDate(post.date)}
+                          {formatDate(lastUpdated(post))}
                         </time>
                         {post.category && (
                           <Link

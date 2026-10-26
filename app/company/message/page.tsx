@@ -7,8 +7,9 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "代表メッセージ | 株式会社サイプレス",
+  title: "代表挨拶｜代表取締役 織田 春樹｜株式会社サイプレス",
   description: "株式会社サイプレス代表取締役・織田春樹からのメッセージ。創業の経緯、デジタルマーケティングへの想い、中小企業支援へのコミットメント、今後のビジョンについて。",
   keywords: [
     "代表メッセージ",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     "葛飾区",
   ],
   openGraph: {
-    title: "代表メッセージ | 株式会社サイプレス",
+    title: "代表挨拶｜代表取締役 織田 春樹｜株式会社サイプレス",
     description: "株式会社サイプレス代表取締役・織田春樹からのメッセージ。創業の背景とWebマーケティングへの想い。",
     images: [{ url: "/hero.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
@@ -158,6 +159,7 @@ export default function MessagePage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "会社情報", href: "/company" }, { name: "代表メッセージ" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>

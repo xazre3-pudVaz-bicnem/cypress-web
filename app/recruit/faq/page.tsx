@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 const FAQS = [
   {
     q: "業界・職種未経験でも応募できますか？",
@@ -105,6 +106,7 @@ export default function RecruitFaqPage() {
             }}
           />
           <div className="relative z-10 max-w-4xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "採用情報", href: "/recruit" }, { name: "採用FAQ" }]} />
             <nav className="flex items-center gap-2 text-[12px] text-[#475569] mb-8">
               <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
               <span>/</span>

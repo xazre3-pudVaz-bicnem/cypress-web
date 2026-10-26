@@ -1,6 +1,28 @@
+import fs from "fs";
+import path from "path";
 import type { NextConfig } from "next";
 
+/**
+ * 同じテーマで繰り返し生成されていたブログ記事（content/blog-archive/ に退避）を、
+ * まとめ先の元の記事（日付なしの URL）へ恒久的に転送する。評価を1本に集め、重複ページを無くすため。
+ * ファイル名は「YYYY-MM-DD-<元のslug>-YYYYMMDD.md」。
+ */
+function blogArchiveRedirects() {
+  const dir = path.join(process.cwd(), "content/blog-archive");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => {
+      const slug = f.replace(/\.md$/, "").replace(/^\d{4}-\d{2}-\d{2}-/, "");
+      return { source: `/blog/${slug}`, destination: `/blog/${slug.replace(/-20\d{6}$/, "")}`, permanent: true };
+    });
+}
+
 const nextConfig: NextConfig = {
+  async redirects() {
+    return blogArchiveRedirects();
+  },
   images: {
     remotePatterns: [
       {

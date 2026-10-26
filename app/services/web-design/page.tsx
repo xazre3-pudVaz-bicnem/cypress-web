@@ -7,13 +7,14 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "Web制作サービス｜SEO・CV・ブランドを同時に実現するNext.js高品質Web制作｜株式会社サイプレス",
+  title: "ホームページ制作サービス｜SEOに強いNext.js制作｜株式会社サイプレス",
   description:
     "株式会社サイプレスのWeb制作サービス。Next.js・TypeScript・Tailwind CSS対応。コーポレートサイト・採用サイト・SEO特化サイトをSEO・パフォーマンス・コンバージョン設計込みで制作。東京都葛飾区を拠点に全国対応。",
   keywords: ["Web制作", "ホームページ制作", "Next.js制作", "コーポレートサイト", "SEOサイト", "Web制作東京", "高品質Web制作"],
   openGraph: {
-    title: "Web制作サービス｜SEO・CV・ブランドを同時に実現するNext.js高品質Web制作｜株式会社サイプレス",
+    title: "ホームページ制作サービス｜SEOに強いNext.js制作｜株式会社サイプレス",
     description: "サイプレスのWeb制作サービス。Next.js対応のSEO・パフォーマンス・コンバージョン設計込みの高品質Web制作。",
     locale: "ja_JP",
     type: "website",
@@ -168,6 +169,7 @@ export default function ServicesWebDesignPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サービス", href: "/services" }, { name: "Web制作" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

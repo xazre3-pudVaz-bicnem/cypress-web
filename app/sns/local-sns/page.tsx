@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "地域密着SNS運用｜地元顧客に刺さる地域SNS戦略｜株式会社サイプレス",
   description: "地域名・地元感を活かして近隣ユーザーに届くSNS戦略。地域ハッシュタグ・位置情報タグ・MEO連携・地域インフルエンサー活用で来店を増やす地域密着SNS運用の全手法を解説。",
@@ -90,6 +91,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "地域密着SNS運用" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

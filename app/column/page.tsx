@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { COLUMNS } from "@/lib/data/columns";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 interface ColumnItem {
   slug: string;
   title: string;
@@ -101,6 +102,7 @@ export default function ColumnPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "専門コラム" }]} />
             <nav
               className="flex items-center gap-2 text-[12px] mb-8"
               style={{ color: "#6B7280" }}

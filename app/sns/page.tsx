@@ -8,12 +8,12 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "SNS集客・SNS運用代行｜Instagram・Googleビジネスプロフィールで集客を強化｜株式会社サイプレス",
+  title: "SNS集客の始め方｜Instagram・GBPで地域集客｜株式会社サイプレス",
   description:
     "中小企業・店舗向けのSNS集客・運用代行サービス。Instagram投稿企画・ハッシュタグ戦略・Googleビジネスプロフィール投稿・コンテンツカレンダー・写真ディレクション・SNS広告まで一貫支援。SEO・MEOと連動した集客戦略を設計します。",
   keywords: ["SNS集客", "SNS運用代行", "Instagram運用", "Googleビジネスプロフィール投稿", "SNSマーケティング", "Instagram集客"],
   openGraph: {
-    title: "SNS集客・SNS運用代行｜株式会社サイプレス",
+    title: "SNS集客の始め方｜Instagram・GBPで地域集客｜株式会社サイプレス",
     description: "Instagram・Googleビジネスプロフィールを活用した中小企業・店舗のSNS集客を一貫支援。SEO・MEOとの統合戦略で最大の集客効果を実現。",
     locale: "ja_JP",
     type: "website",

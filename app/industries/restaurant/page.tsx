@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
@@ -528,6 +529,7 @@ export default function RestaurantIndustryPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="restaurant" />
         <FaqSection items={faqItems} heading="飲食店のWebマーケティングに関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import { getIndustrySubPagesByIndustry, getIndustrySubPage } from "@/lib/data/industrySubPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 const INDUSTRY = "nail-salon";
 const INDUSTRY_LABEL = "ネイルサロン";
 const INDUSTRY_HREF = "/industries/nail-salon";
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = getIndustrySubPage(INDUSTRY, slug);
   if (!page) return {};
   return {
-    title: `${page.title}｜${INDUSTRY_LABEL}向けサービス｜株式会社サイプレス`,
+    title: `${page.title}｜業種別のWeb集客支援｜株式会社サイプレス`,
     description: page.metaDescription,
     alternates: { canonical: `https://www.cypress-all.co.jp/industries/${INDUSTRY}/${slug}` },
   };
@@ -38,6 +39,7 @@ export default async function IndustrySubPage({ params }: { params: Promise<{ sl
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別サービス", href: "/industries" }, { name: page.title }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

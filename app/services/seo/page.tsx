@@ -7,13 +7,14 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "SEO対策サービス｜検索流入を増やしてCV・売上につなげるSEO支援｜株式会社サイプレス",
+  title: "SEO対策サービス｜検索流入を問い合わせにつなげる｜株式会社サイプレス",
   description:
     "株式会社サイプレスのSEO対策サービス。キーワード調査・コンテンツSEO・テクニカルSEO・内部SEO・ローカルSEOを一貫してご支援。検索流入を増やし問い合わせ・売上につなげます。東京都葛飾区を拠点に全国対応。",
   keywords: ["SEO対策サービス", "SEO会社", "検索上位表示", "SEOコンサルティング", "コンテンツSEO", "東京 SEO", "SEO支援"],
   openGraph: {
-    title: "SEO対策サービス｜検索流入を増やしてCV・売上につなげるSEO支援｜株式会社サイプレス",
+    title: "SEO対策サービス｜検索流入を問い合わせにつなげる｜株式会社サイプレス",
     description: "サイプレスのSEO対策サービス。キーワード調査からコンテンツ制作・テクニカル対応まで一貫支援。検索流入を集客・売上に転換します。",
     locale: "ja_JP",
     type: "website",
@@ -160,6 +161,7 @@ export default function ServicesSeoPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サービス", href: "/services" }, { name: "SEO対策" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

@@ -7,13 +7,14 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "AI活用支援サービス｜ChatGPT・Claude APIを使った業務自動化・AI導入支援｜株式会社サイプレス",
+  title: "AI活用支援サービス｜ChatGPTで業務自動化・AI導入｜株式会社サイプレス",
   description:
     "株式会社サイプレスのAI活用支援サービス。ChatGPT・Claude APIを活用した業務自動化・チャットボット構築・AIコンテンツ制作支援をご支援。東京都葛飾区を拠点に全国対応。",
   keywords: ["AI活用支援", "ChatGPT活用", "Claude API", "業務自動化", "チャットボット構築", "AI導入支援", "AI業務効率化"],
   openGraph: {
-    title: "AI活用支援サービス｜ChatGPT・Claude APIを使った業務自動化・AI導入支援｜株式会社サイプレス",
+    title: "AI活用支援サービス｜ChatGPTで業務自動化・AI導入｜株式会社サイプレス",
     description: "サイプレスのAI活用支援サービス。ChatGPT・Claude API活用から業務自動化・AI導入まで一貫支援。",
     locale: "ja_JP",
     type: "website",
@@ -141,6 +142,7 @@ export default function ServicesAiPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サービス", href: "/services" }, { name: "AI活用支援" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

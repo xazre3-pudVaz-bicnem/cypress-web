@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "llms.txt設置・設定方法｜AIクローラー向けサイト最適化｜サイプレス",
   description: "llms.txtの役割・書き方・Next.jsでの設置手順を解説。ChatGPT・Claude・GeminiなどAIクローラーにサイト情報を正確に提供するAIO対策の新しい実装方法です。",
@@ -143,6 +144,7 @@ export default function Page() {
         ============================================================ */}
         <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AIO対策", href: "/aio" }, { name: "llms.txt" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

@@ -4,12 +4,13 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "会社情報 | 株式会社サイプレス",
+  title: "会社情報｜東京・葛飾区のWebマーケティング会社｜株式会社サイプレス",
   description: "株式会社サイプレスの会社情報。代表挨拶・企業理念・会社概要・沿革。東京都葛飾区のWebマーケティング会社。MEO対策・SEO対策・AIO対策・ホームページ制作。",
   keywords: ["会社情報", "株式会社サイプレス", "代表挨拶", "企業理念", "会社概要", "Webマーケティング"],
   openGraph: {
-    title: "会社情報 | 株式会社サイプレス",
+    title: "会社情報｜東京・葛飾区のWebマーケティング会社｜株式会社サイプレス",
     description: "株式会社サイプレスの会社情報。代表挨拶・企業理念・会社概要・沿革。MEO・SEO・AIO対策のWebマーケティング会社。",
     locale: "ja_JP",
     type: "website",
@@ -58,6 +59,7 @@ export default function CompanyPage() {
         {/* Hero */}
         <section data-page-hero className="py-20 md:py-24" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "会社情報" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>

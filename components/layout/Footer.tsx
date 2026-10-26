@@ -31,6 +31,7 @@ const COL_COMPANY: FooterSection[] = [
       { href: "/company/message", label: "代表挨拶" },
       { href: "/company/philosophy", label: "企業理念" },
       { href: "/company/history", label: "沿革" },
+      { href: "/business", label: "事業内容" },
       { href: "/cases", label: "成功事例" },
       { href: "/recruit", label: "採用情報" },
     ],

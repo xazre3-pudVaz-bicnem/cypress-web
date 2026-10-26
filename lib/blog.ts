@@ -18,8 +18,15 @@ export interface BlogPostMeta {
   title: string;
   description: string;
   date: string;
+  /** 本文を書き直した日（同じテーマの記事を1本にまとめたときなど）。無ければ公開日のまま */
+  updated?: string;
   category: string;
   tags: string[];
+}
+
+/** 一覧の並び・サイトマップ・構造化データで使う「最終更新日」 */
+export function lastUpdated(post: BlogPostMeta): string {
+  return post.updated || post.date;
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -57,6 +64,7 @@ export function getAllPosts(): BlogPostMeta[] {
         title,
         description: (data.description as string) || "",
         date: (data.date as string) || "",
+        updated: (data.updated as string) || undefined,
         category: (data.category as string) || "",
         tags: (data.tags as string[]) || [],
       });
@@ -66,7 +74,7 @@ export function getAllPosts(): BlogPostMeta[] {
   }
 
   return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(lastUpdated(b)).getTime() - new Date(lastUpdated(a)).getTime()
   );
 }
 
@@ -100,6 +108,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
         title: (data.title as string) || "",
         description: (data.description as string) || "",
         date: (data.date as string) || "",
+        updated: (data.updated as string) || undefined,
         category: (data.category as string) || "",
         tags: (data.tags as string[]) || [],
         content,

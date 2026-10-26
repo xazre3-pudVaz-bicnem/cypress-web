@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "リフォーム会社・工務店のWeb集客｜MEO・SEO・施工事例サイト制作｜株式会社サイプレス",
   description: "リフォーム会社・工務店向けWeb集客支援。Googleマップ上位表示（MEO）・SEO対策・施工事例サイト制作で無料見積もり依頼を増やします。東京都内・全国対応。",
@@ -165,6 +167,7 @@ export default function RenovationPage() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "リフォーム・工務店" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -519,6 +522,7 @@ export default function RenovationPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="renovation" />
         <FaqSection items={faqItems} heading="リフォーム会社・工務店のWeb集客についてよくある質問" bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

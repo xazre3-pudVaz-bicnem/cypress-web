@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "SNS投稿企画・運用設計｜集客につながるコンテンツ制作",
   description: "SNSの投稿企画・コンテンツ制作。ターゲットの関心・季節・イベントを踏まえた投稿ネタ出し・キャプション・ハッシュタグをAI活用で効率的に制作。",
@@ -89,6 +90,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "投稿企画・運用設計" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { NEWS, type NewsArticle } from "@/lib/data/news";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "お知らせ｜株式会社サイプレス",
   alternates: { canonical: "https://www.cypress-all.co.jp/news" },
@@ -35,6 +36,7 @@ export default function NewsPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-12" style={{ background: "#FFFFFF" }}>
           <div className="max-w-5xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "お知らせ" }]} />
             <nav className="flex items-center gap-2 text-[12px] text-[#6B7280] mb-8">
               <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

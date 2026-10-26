@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import { solutionPages } from "@/lib/data/solutionPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export async function generateStaticParams() {
   return solutionPages.map((p) => ({ slug: p.slug }));
 }
@@ -59,6 +60,7 @@ export default async function SolutionSlugPage({ params }: { params: Promise<{ s
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ソリューション", href: "/solutions" }, { name: page.title }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

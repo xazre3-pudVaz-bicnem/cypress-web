@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "クリニック・医院・歯科のMEO対策｜地域患者を増やすGoogleマップ戦略｜株式会社サイプレス",
   description: "クリニック・医院・歯科のMEO対策。診療科目・診療時間・口コミ管理・院内写真・Web予約連携など医療機関特有のGBP最適化で地域患者の新規来院を増やします。",
@@ -140,6 +141,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "MEO対策", href: "/meo" }, { name: "クリニック・医院・歯科のMEO対策" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>

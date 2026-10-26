@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Next.js制作｜高速・SEOに強いWebサイト制作｜株式会社サイプレス",
   description:
@@ -143,6 +144,7 @@ export default function Page() {
         {/* ── Hero ─────────────────────────────────────────── */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ホームページ制作", href: "/web-design" }, { name: "Next.js制作" }]} />
             <nav
               style={{
                 fontSize: "12px",

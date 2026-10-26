@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ペットショップ・動物病院のWeb集客｜MEO対策・Instagram運用｜株式会社サイプレス",
   description: "ペットショップ・動物病院・トリミングサロン向けWeb集客支援。Googleマップ上位表示（MEO）・Instagram運用・犬種猫種別SEOで新規顧客来店と定期利用を増やします。",
@@ -185,6 +187,7 @@ export default function PetShopPage() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "ペットショップ・動物病院" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -497,6 +500,7 @@ export default function PetShopPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="pet-shop" />
         <FaqSection items={faqItems} heading="ペットショップ・動物病院のWeb集客についてよくある質問" bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

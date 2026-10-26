@@ -6,6 +6,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { GlassCard } from "@/components/ui/GlassCard";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "キャリアパス｜成長ロードマップ｜株式会社サイプレス採用",
   description:
@@ -75,6 +76,7 @@ export default function CareerPage() {
             }}
           />
           <div className="relative z-10 max-w-5xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "採用情報", href: "/recruit" }, { name: "キャリアパス" }]} />
             <nav className="flex items-center gap-2 text-[12px] text-[#475569] mb-8">
               <Link href="/" className="hover:text-[#096fc8] transition-colors">ホーム</Link>
               <span>/</span>

@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import { processPages } from "@/lib/data/processPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export async function generateStaticParams() {
   return processPages.map((p) => ({ slug: p.slug }));
 }
@@ -58,6 +59,7 @@ export default async function ProcessSlugPage({ params }: { params: Promise<{ sl
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ご利用の流れ", href: "/process" }, { name: page.title }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

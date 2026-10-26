@@ -11,6 +11,7 @@ import {
   getCategories,
   getRecentPosts,
   formatDate,
+  lastUpdated,
   CATEGORY_NAMES,
 } from "@/lib/blog";
 
@@ -102,6 +103,7 @@ export async function generateMetadata({
       description: post.description || post.title,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: lastUpdated(post),
       locale: "ja_JP",
       images: [{ url: "/hero.jpg", width: 1774, height: 887, alt: "株式会社サイプレス" }],
     },
@@ -145,15 +147,15 @@ export default async function BlogPostPage({
     description: post.description || post.title,
     url: `https://www.cypress-all.co.jp/blog/${slug}`,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: lastUpdated(post),
     inLanguage: "ja",
     keywords: (post.tags && post.tags.length > 0 ? post.tags.join(", ") : categoryLabel),
     articleSection: categoryLabel,
     image: {
       "@type": "ImageObject",
       url: "https://www.cypress-all.co.jp/hero.jpg",
-      width: 1200,
-      height: 630,
+      width: 1774,
+      height: 887,
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -267,6 +269,11 @@ export default async function BlogPostPage({
               >
                 {formatDate(post.date)}
               </time>
+              {post.updated && post.updated !== post.date && (
+                <span style={{ fontSize: "12px", color: "#9ca3af", letterSpacing: "0.05em" }}>
+                  更新 <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+                </span>
+              )}
               {post.category && (
                 <Link
                   href={`/blog/category/${post.category}`}

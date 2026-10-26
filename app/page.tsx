@@ -18,7 +18,7 @@ import { CASES } from "@/lib/data/cases";
 import { getLatestColumns } from "@/lib/data/columns";
 import { getLatestNews } from "@/lib/data/news";
 import { HOME_FAQ } from "@/lib/data/homeFaq";
-import { getRecentPosts, CATEGORY_NAMES as BLOG_CATEGORIES } from "@/lib/blog";
+import { getRecentPosts, lastUpdated, CATEGORY_NAMES as BLOG_CATEGORIES } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "株式会社サイプレス｜MEO・SEO・AIO・ホームページ制作｜東京葛飾区のWebマーケティング会社",
@@ -150,7 +150,7 @@ export default function Home() {
   const posts: UpdateItem[] = getRecentPosts(3).map((p) => ({
     href: `/blog/${p.slug}`,
     title: p.title,
-    date: p.date,
+    date: lastUpdated(p),
     label: BLOG_CATEGORIES[p.category] ?? "ブログ",
     image: BLOG_IMAGES[p.category],
   }));

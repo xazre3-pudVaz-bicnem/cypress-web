@@ -7,13 +7,14 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
-  title: "MEO対策サービス｜Googleマップ上位表示で地域集客を最大化｜株式会社サイプレス",
+  title: "MEO対策サービス｜Googleマップ上位表示で集客｜株式会社サイプレス",
   description:
     "株式会社サイプレスのMEO対策サービス。Googleビジネスプロフィールの最適化・口コミ管理・写真戦略・投稿活用でGoogleマップ上位表示と地域集客を強化。東京都葛飾区を拠点に全国対応。",
   keywords: ["MEO対策サービス", "Googleマップ上位表示", "Googleビジネスプロフィール", "地域集客", "MEO会社", "東京 MEO", "GBP最適化"],
   openGraph: {
-    title: "MEO対策サービス｜Googleマップ上位表示で地域集客を最大化｜株式会社サイプレス",
+    title: "MEO対策サービス｜Googleマップ上位表示で集客｜株式会社サイプレス",
     description: "サイプレスのMEO対策サービス。Googleビジネスプロフィール最適化から口コミ管理・月次レポートまで一貫支援。地域の集客基盤を整えます。",
     locale: "ja_JP",
     type: "website",
@@ -160,6 +161,7 @@ export default function ServicesMeoPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サービス", href: "/services" }, { name: "MEO対策" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }} className="hover:underline">ホーム</Link>
               <span>/</span>

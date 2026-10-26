@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "経営理念・ミッション・ビジョン・バリュー | 株式会社サイプレス",
   description: "株式会社サイプレスの経営理念。ミッション「地域企業が、正しく選ばれる仕組みをつくる」、ビジョン、バリュー、行動指針10条を詳しくご紹介します。",
@@ -217,6 +218,7 @@ export default function PhilosophyPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "会社情報", href: "/company" }, { name: "経営理念" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-10" style={{ color: "#9CA3AF" }}>
               <Link href="/" className="hover:text-[#333333] transition-colors">ホーム</Link>
               <span>/</span>

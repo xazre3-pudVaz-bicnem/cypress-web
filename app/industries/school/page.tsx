@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "学習塾・スクールのWeb集客｜MEO対策・SEOで体験授業の申込みを増やす｜株式会社サイプレス",
   description: "学習塾・英会話・音楽教室・プログラミングスクール向けWeb集客支援。Googleマップ上位表示（MEO）・SEO・ホームページ制作で体験授業申込みと入塾数を増やします。",
@@ -146,6 +148,7 @@ export default function SchoolPage() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "学習塾・スクール" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -495,6 +498,7 @@ export default function SchoolPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="school" />
         <FaqSection items={faqItems} heading="学習塾・スクールのWeb集客についてよくある質問" bgColor="#ffffff" />
         {/* 対応エリア */}
         <section style={{ background: "#f0f1f2", padding: "56px 0" }}>

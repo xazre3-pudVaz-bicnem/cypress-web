@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "SEOライティング｜検索意図に沿ったコンテンツ作成｜サイプレス",
   description: "SEOライティングの基本原則と実践方法。検索意図の4分類・見出し設計・E-E-A-T対応・AI生成コンテンツへの対応・定期更新の重要性まで、検索上位を狙うコンテンツ作成の全体像を解説します。",
@@ -81,6 +82,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SEO対策", href: "/seo" }, { name: "SEOライティング" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

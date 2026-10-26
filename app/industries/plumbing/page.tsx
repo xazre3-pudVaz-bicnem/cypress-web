@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "水道工事・水漏れ修理のWeb集客｜MEO対策で緊急依頼の問い合わせを増やす｜株式会社サイプレス",
   description: "水道工事・水漏れ修理・排水管詰まり対応業者向けWeb集客支援。Googleマップ上位表示（MEO）・地域SEO・ホームページ制作で緊急依頼の問い合わせを増やします。",
@@ -183,6 +185,7 @@ export default function PlumbingPage() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "水道工事・水漏れ修理" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -498,6 +501,7 @@ export default function PlumbingPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="plumbing" />
         <FaqSection items={faqItems} heading="水道工事・水漏れ修理のWeb集客についてよくある質問" bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

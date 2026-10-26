@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "サイトマップ｜株式会社サイプレス",
   alternates: { canonical: "https://www.cypress-all.co.jp/sitemap" },
@@ -25,6 +26,7 @@ const sections: SitemapSection[] = [
       { href: "/company/philosophy", label: "企業理念" },
       { href: "/company/profile", label: "会社情報" },
       { href: "/company/history", label: "沿革" },
+      { href: "/business", label: "事業内容" },
       { href: "/company/value", label: "サービスの価値" },
       { href: "/company/support-policy", label: "サポートポリシー" },
       { href: "/company/area", label: "アクセス" },
@@ -313,7 +315,10 @@ const sections: SitemapSection[] = [
       { href: "/recruit", label: "採用情報トップ" },
       { href: "/recruit/job-description", label: "募集要項" },
       { href: "/recruit/message", label: "代表メッセージ" },
+      { href: "/recruit/career", label: "キャリアパス" },
+      { href: "/recruit/environment", label: "職場環境・福利厚生" },
       { href: "/recruit/remote-work", label: "リモートワーク制度" },
+      { href: "/recruit/faq", label: "採用FAQ" },
       { href: "/recruit/entry", label: "応募エントリー" },
     ],
   },
@@ -336,6 +341,7 @@ export default function SitemapPage() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サイトマップ" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/">ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

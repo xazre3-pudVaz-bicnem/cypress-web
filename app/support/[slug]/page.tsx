@@ -8,6 +8,7 @@ import RelatedPages from "@/components/shared/RelatedPages";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import { supportPages } from "@/lib/data/supportPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export async function generateStaticParams() {
   return supportPages.map((p) => ({ slug: p.slug }));
 }
@@ -59,6 +60,7 @@ export default async function SupportSlugPage({ params }: { params: Promise<{ sl
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "64px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "サポート", href: "/support" }, { name: page.title }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

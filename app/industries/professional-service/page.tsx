@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
@@ -526,6 +527,7 @@ export default function ProfessionalServiceIndustryPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="professional-service" />
         <FaqSection items={faqItems} heading="士業・専門家サービスのWeb集客に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

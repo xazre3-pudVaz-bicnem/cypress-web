@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ホームページ保守・メンテナンス｜セキュリティ・更新・バックアップ｜株式会社サイプレス",
   description: "Webサイトの保守・管理サービス。WordPressセキュリティ対策・定期バックアップ・プラグイン更新・コンテンツ更新・月次レポートで安心して使えるサイトを維持します。",
@@ -80,6 +81,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "ホームページ制作", href: "/web-design" }, { name: "保守・メンテナンス" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

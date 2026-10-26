@@ -8,12 +8,12 @@ import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Webサイト制作とは｜SEO・CV・パフォーマンスを兼ね備えたサイト設計｜株式会社サイプレス",
+  title: "ホームページ制作とは｜SEO・CVに強いサイト設計の基本｜株式会社サイプレス",
   description:
     "Webサイト制作の基礎から実践まで解説。コーポレートサイト・採用サイト・SEO特化サイト・サービスサイト・WordPressの種類と選び方、制作費用の目安、制作会社の選び方、よくある失敗パターンまで網羅。東京葛飾区のWeb制作会社。",
   keywords: ["Webサイト制作", "ホームページ制作", "Web制作会社", "サイト制作費用", "Next.js制作", "WordPress制作", "SEO対応サイト制作"],
   openGraph: {
-    title: "Webサイト制作とは｜SEO・CV・パフォーマンスを兼ね備えたサイト設計｜株式会社サイプレス",
+    title: "ホームページ制作とは｜SEO・CVに強いサイト設計の基本｜株式会社サイプレス",
     description: "Webサイト制作の総合ガイド。種類・費用・選び方・SEO・CV改善まで解説。東京葛飾区のWeb制作会社。",
     locale: "ja_JP",
     type: "website",

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "対応エリア｜東京・神奈川・埼玉・千葉＋全国オンライン対応｜株式会社サイプレス",
   description:
@@ -224,6 +225,7 @@ export default function Page() {
         {/* ── Hero ── */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "会社情報", href: "/company" }, { name: "対応エリア" }]} />
             <nav
               style={{
                 fontSize: "12px",

@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "AEO（回答エンジン最適化）｜AI検索で選ばれるコンテンツへ｜株式会社サイプレス",
   description: "AEO（Answer Engine Optimization）とは、AIが生成する回答に最適化する戦略。FAQ・結論ファースト・構造化データでAI検索からの引用を増やす方法を解説。ChatGPT・Google AI Overview・Perplexity対応。",
@@ -140,6 +141,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AIO対策", href: "/aio" }, { name: "AEO（回答エンジン最適化）" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

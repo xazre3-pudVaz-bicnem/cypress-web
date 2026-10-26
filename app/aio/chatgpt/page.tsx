@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "ChatGPT対策・生成AI時代の情報設計｜AIO対策｜株式会社サイプレス",
   description: "ChatGPTに引用・推薦される企業になるための情報設計。会社情報の明確化・FAQ充実・E-E-A-T整備・著者情報の構造化まで、ChatGPT対策の具体的な施策を解説。llms.txt・構造化データ対応。",
@@ -163,6 +164,7 @@ export default function ChatgptAioPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#FFFFFF" }}>
           <div className="max-w-6xl mx-auto px-6">
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AIO対策", href: "/aio" }, { name: "ChatGPT対策" }]} />
             <nav className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "#9CA3AF" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span>/</span>

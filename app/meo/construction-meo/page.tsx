@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "建設・リフォーム・工務店のMEO対策｜地域工事依頼を増やすGoogleマップ戦略｜株式会社サイプレス",
   description: "建設業・工務店・リフォーム会社のMEO対策。施工事例写真・対応エリア設定・口コミ獲得・資格情報掲載など建設業特有のGBP最適化で地域からの問い合わせを増やします。",
@@ -140,6 +141,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "MEO対策", href: "/meo" }, { name: "建設・リフォーム・工務店のMEO対策" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>

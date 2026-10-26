@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "SNS写真ディレクション｜クリックされる・保存される写真の撮り方設計｜株式会社サイプレス",
   description: "SNS集客に効果的な写真ディレクション。料理・商品・店内・施術のスマートフォン撮影のコツ・構図・ライティング・フィードのトンマナ統一で保存されるInstagramビジュアルを設計する方法。",
@@ -89,6 +90,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "写真ディレクション" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

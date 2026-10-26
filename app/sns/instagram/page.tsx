@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Instagram運用代行｜ビジュアル戦略・リール活用で集客するインスタ運用法｜株式会社サイプレス",
   description: "中小企業・店舗のInstagram運用代行。フィード設計・リール活用・ストーリーズ・ハッシュタグ戦略・インサイト分析でInstagramを集客エンジンに変えます。",
@@ -89,6 +90,7 @@ export default function Page() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "Instagram運用" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px", display: "flex", gap: "6px", alignItems: "center" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ color: "#9CA3AF" }}>/</span>

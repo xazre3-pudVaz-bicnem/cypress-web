@@ -2,14 +2,16 @@ import type { MetadataRoute } from "next";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
 import { COLUMNS } from "@/lib/data/columns";
 import { getAllCaseSlugs, getAllServiceSlugs, getAllIndustrySlugs } from "@/lib/data/caseStudies";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, lastUpdated } from "@/lib/blog";
+import { NEWS } from "@/lib/data/news";
 
 const BASE = "https://www.cypress-all.co.jp";
 
 // ビルド時刻を毎回lastModifiedにすると、更新していないページまで
 // 「今日更新した」とGoogleに伝えてしまい、鮮度シグナルの信頼性を損なう。
 // サイト全体の基準日（このファイルを最後に手動更新した日）のみ固定値で使う。
-const SITE_BASE_DATE = new Date("2026-07-10");
+// 2026-10-26: 全ページの構造化データ（パンくず）と内部リンクを更新したため基準日を更新。
+const SITE_BASE_DATE = new Date("2026-10-26");
 
 function urls(paths: string[], opts: Partial<MetadataRoute.Sitemap[0]> = {}): MetadataRoute.Sitemap {
   return paths.map((p) => ({ url: `${BASE}${p}`, lastModified: SITE_BASE_DATE, ...opts }));
@@ -410,14 +412,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ブログ個別記事（日次cronで自動追加される記事を含む。実際の公開日を反映）
     ...getAllPosts().map((p) => ({
       url: `${BASE}/blog/${p.slug}`,
-      lastModified: new Date(p.date || SITE_BASE_DATE),
+      lastModified: new Date(lastUpdated(p) || SITE_BASE_DATE),
       changeFrequency: "monthly" as const,
       priority: 0.65,
     })),
 
     // 採用
     ...urls([
-      "/recruit", "/recruit/sales",
+      "/recruit", "/recruit/sales", "/recruit/message", "/recruit/job-description",
+      "/recruit/career", "/recruit/environment", "/recruit/remote-work", "/recruit/faq", "/recruit/entry",
     ], { changeFrequency: "monthly", priority: 0.8 }),
 
     // パートナー・代理店
@@ -437,9 +440,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/training/reskilling-training-company-referral",
     ], { changeFrequency: "monthly", priority: 0.85 }),
 
-    // その他
+    // お知らせ（実際の公開日を反映）
+    ...NEWS.map((n) => ({
+      url: `${BASE}/news/${n.slug}`,
+      lastModified: new Date(n.publishedAt),
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    })),
+
+    // その他（お問い合わせは noindex のため載せない）
     ...urls([
-      "/contact", "/news", "/sitemap", "/privacy-policy",
+      "/business", "/news", "/sitemap", "/privacy-policy",
     ], { changeFrequency: "monthly", priority: 0.5 }),
   ];
 }

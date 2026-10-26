@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "AI検索対策（AIO）｜ChatGPT・Gemini・Perplexityに引用されるサイトへ｜株式会社サイプレス",
   description: "AI検索エンジン（ChatGPT・Gemini・Perplexity・Claude）に引用されるためのAIO対策。E-E-A-T・構造化データ・llms.txt設置など実践的な最適化手法を解説。",
@@ -158,6 +159,7 @@ export default function AiSearchPage() {
         {/* Hero */}
         <section data-page-hero className="pt-32 pb-20" style={{ background: "#f0f1f2" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "AIO対策", href: "/aio" }, { name: "AI検索対策" }]} />
             <nav style={{ fontSize: "12px", color: "#9CA3AF", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>

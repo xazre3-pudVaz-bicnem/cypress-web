@@ -5,8 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
+import IndustryServiceLinks from "@/components/shared/IndustryServiceLinks";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "整体院・接骨院・整骨院のWeb集客｜MEO対策・SNS運用で新規患者を増やす｜株式会社サイプレス",
   description: "整体院・接骨院・整骨院向けのWeb集客支援。Googleマップ上位表示（MEO）・SNS運用・ホームページ制作で新規患者来院とリピーター定着を実現します。医療広告ガイドライン対応。",
@@ -175,6 +177,7 @@ export default function OsteopathicPage() {
       <main>
         <section data-page-hero style={{ background: "#f0f1f2", paddingTop: "128px", paddingBottom: "48px" }}>
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "業種別Web集客", href: "/industries" }, { name: "整体院・接骨院" }]} />
             <nav style={{ fontSize: "12px", color: "#9ca3af", marginBottom: "24px" }}>
               <Link href="/" style={{ color: "#6B7280" }}>ホーム</Link>
               <span style={{ margin: "0 8px" }}>/</span>
@@ -537,6 +540,7 @@ export default function OsteopathicPage() {
           </div>
         </section>
 
+        <IndustryServiceLinks industry="osteopathic" />
         <FaqSection items={faqItems} heading="整体院・接骨院のWeb集客についてよくある質問" bgColor="#ffffff" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

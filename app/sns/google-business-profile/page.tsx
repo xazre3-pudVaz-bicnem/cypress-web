@@ -7,6 +7,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
 
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Googleビジネスプロフィール投稿活用｜SNS×GBP連携で集客を強化｜株式会社サイプレス",
   description:
@@ -151,6 +152,7 @@ export default function Page() {
         {/* =================== Hero =================== */}
         <section data-page-hero style={{ background: "#f0f1f2" }} className="pt-32 pb-20">
           <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 24px" }}>
+            <BreadcrumbJsonLd items={[{ name: "ホーム", href: "/" }, { name: "SNS集客", href: "/sns" }, { name: "Googleビジネスプロフィール投稿活用" }]} />
             <nav style={{ fontSize: "12px", marginBottom: "24px" }} aria-label="パンくず">
               <Link href="/" style={{ color: "#9CA3AF" }}>ホーム</Link>
               <span style={{ margin: "0 8px", color: "#9CA3AF" }}>/</span>
