@@ -26,7 +26,7 @@ export const INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/industries/restaurant", label: "飲食店向けサービス", desc: "飲食店の集客支援" },
-      { href: "/industries/restaurant/meo", label: "飲食店MEO", desc: "Googleマップ集客" },
+      { href: "/meo/restaurant-meo", label: "飲食店MEO", desc: "Googleマップ集客" },
       { href: "/industries/restaurant/sns", label: "飲食店SNS", desc: "Instagram運用" },
       { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
       { href: "/sns/instagram", label: "Instagram運用", desc: "SNS集客支援" },
@@ -59,7 +59,7 @@ export const INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/industries/beauty", label: "美容サロン向けサービス", desc: "美容室・サロンの集客支援" },
-      { href: "/industries/beauty/meo", label: "美容室MEO", desc: "Googleマップ集客" },
+      { href: "/meo/beauty-salon-meo", label: "美容室MEO", desc: "Googleマップ集客" },
       { href: "/industries/beauty/sns", label: "美容室SNS", desc: "Instagram運用支援" },
       { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
       { href: "/sns/instagram", label: "Instagram運用", desc: "SNS集客支援" },
@@ -125,7 +125,7 @@ export const INDUSTRY_COLUMNS: ColumnTopicPage[] = [
     ],
     related: [
       { href: "/industries/clinic", label: "クリニック向けサービス", desc: "医療クリニックの集客支援" },
-      { href: "/industries/clinic/meo", label: "クリニックMEO", desc: "医療機関のGoogleマップ集客" },
+      { href: "/meo/clinic-meo", label: "クリニックMEO", desc: "医療機関のGoogleマップ集客" },
       { href: "/meo", label: "MEO対策", desc: "Googleマップ最適化" },
       { href: "/seo", label: "SEO対策", desc: "検索流入増加" },
       { href: "/column/osteopathic-web-marketing-guide", label: "整体院の集客", desc: "医療系業種のWeb集客" },

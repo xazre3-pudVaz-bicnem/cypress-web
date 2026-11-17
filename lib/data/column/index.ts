@@ -152,6 +152,22 @@ export const ALL_COLUMN_TOPICS: ColumnTopicPage[] = ALL_COLUMN_TOPICS_RAW.filter
     !CONSOLIDATED_COLUMN_SLUGS.has(topic.slug)
 );
 
+/** 新しい順に、カテゴリが重ならないように選ぶ（トップページの「Insights」で使う） */
+export function getLatestColumnTopics(limit: number): ColumnTopicPage[] {
+  const dated = ALL_COLUMN_TOPICS.filter((t) => t.publishedAt).sort((a, b) =>
+    (b.updatedAt || b.publishedAt || "").localeCompare(a.updatedAt || a.publishedAt || "")
+  );
+  const picked: ColumnTopicPage[] = [];
+  const categories = new Set<string>();
+  for (const topic of dated) {
+    if (categories.has(topic.category)) continue;
+    categories.add(topic.category);
+    picked.push(topic);
+    if (picked.length === limit) break;
+  }
+  return picked;
+}
+
 export function getColumnTopicBySlugAll(slug: string): ColumnTopicPage | undefined {
   return ALL_COLUMN_TOPICS.find((t) => t.slug === slug);
 }

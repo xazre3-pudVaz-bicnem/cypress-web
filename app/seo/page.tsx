@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import ServiceIndustryLinks from "@/components/shared/ServiceIndustryLinks";
 
 export const metadata: Metadata = {
   title: "SEO対策とは｜検索上位表示の基礎から実践まで｜株式会社サイプレス",
@@ -588,6 +589,7 @@ export default function SeoPage() {
           </div>
         </section>
 
+        <ServiceIndustryLinks service="seo" serviceName="SEO対策" />
         <FaqSection items={faqItems} heading="SEO対策についてよくある質問" bgColor="#f0f1f2" />
 
         {/* SEO成功事例 */}

@@ -91,7 +91,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "ai-overview-optimization-2026",
-    title: "Googleのai overview（AI概要）対策ガイド2026｜AI検索結果に表示される方法",
+    title: "Google AI Overview対策ガイド2026｜AI検索結果に表示される方法",
     titleEn: "Google AI Overview Optimization Guide 2026: How to Appear in AI Search Results",
     category: "AIO・AI検索対策",
     categorySlug: "aio",
@@ -135,7 +135,7 @@ export const NEW_AIO_ADVANCED_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "schema-faq-howto-implementation-guide",
-    title: "FAQPage・HowToスキーマ（構造化データ）の設定方法｜検索結果を豊かにする実装ガイド",
+    title: "FAQPage・HowToスキーマの設定方法｜構造化データの実装ガイド",
     titleEn: "How to Implement FAQPage and HowTo Schema Markup: Rich Results Implementation Guide",
     category: "AIO・AI検索対策",
     categorySlug: "aio",

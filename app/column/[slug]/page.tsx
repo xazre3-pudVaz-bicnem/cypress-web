@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { COLUMNS, COLUMN_CATEGORIES, type ColumnCategory } from "@/lib/data/columns";
 import { COLUMN_TOPICS } from "@/lib/data/columnTopicPages";
 import { ALL_COLUMN_TOPICS, getColumnTopicBySlugAll, getAllColumnTopicSlugsAll } from "@/lib/data/column";
+import { withSiteName } from "@/lib/pageTitle";
 
 const CATEGORY_BADGE_BG: Record<ColumnCategory, string> = {
   SEO: "#EFF6FF",
@@ -73,7 +74,7 @@ export async function generateMetadata({
   const topic = getColumnTopicBySlugAll(slug);
   if (topic) {
     return {
-      title: `${topic.title}｜株式会社サイプレス`,
+      title: withSiteName(topic.title),
       description: topic.metaDescription,
       keywords: [
         ...(topic.primaryKeyword ? [topic.primaryKeyword] : []),
@@ -105,7 +106,7 @@ export async function generateMetadata({
   const article = COLUMNS.find((c) => c.slug === slug);
   if (!article) return {};
   return {
-    title: `${article.title}｜株式会社サイプレス`,
+    title: withSiteName(article.title),
     description: article.excerpt,
     keywords: article.tags,
     openGraph: {

@@ -1,3 +1,5 @@
+import { CONSOLIDATED_COLUMN_SLUGS } from "./consolidatedPages";
+
 export type ColumnCategory =
   | "SEO"
   | "MEO"
@@ -19,7 +21,7 @@ export interface ColumnArticle {
   featured?: boolean;
 }
 
-export const COLUMNS: ColumnArticle[] = [
+const ALL_COLUMNS: ColumnArticle[] = [
   {
     slug: "meo-ranking-2024",
     title: "MEO対策でGoogleマップ上位表示を実現する完全ガイド",
@@ -286,6 +288,9 @@ export const COLUMNS: ColumnArticle[] = [
     tags: ["中小企業集客", "Webマーケティング", "低予算"],
   },
 ];
+
+/** 公開中の記事。同じテーマのより詳しいコラムへまとめた記事は除く（consolidatedPages.ts で転送している） */
+export const COLUMNS: ColumnArticle[] = ALL_COLUMNS.filter((c) => !CONSOLIDATED_COLUMN_SLUGS.has(c.slug));
 
 export const COLUMN_CATEGORIES: ColumnCategory[] = [
   "SEO", "MEO", "AIO", "AI", "ホームページ制作", "SNS運用", "採用", "Webマーケティング",

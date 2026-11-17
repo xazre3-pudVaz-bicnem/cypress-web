@@ -1,4 +1,6 @@
-﻿export interface IndustrySubPage {
+﻿import { CONSOLIDATED_PAGES } from "./consolidatedPages";
+
+export interface IndustrySubPage {
   industry: string;
   slug: string;
   title: string;
@@ -991,6 +993,26 @@ export function getIndustrySubPage(industry: string, slug: string): IndustrySubP
   return industrySubPages.find((p) => p.industry === industry && p.slug === slug);
 }
 
+/** ページを作る業種別サービスページ。より詳しいページへまとめたもの（consolidatedPages.ts）は除く */
 export function getIndustrySubPagesByIndustry(industry: string): IndustrySubPage[] {
-  return industrySubPages.filter((p) => p.industry === industry);
+  return industrySubPages.filter((p) => p.industry === industry && !CONSOLIDATED_PAGES[`/industries/${industry}/${p.slug}`]);
+}
+
+/** まとめたページ（consolidatedPages.ts）は、まとめ先のページへ直接つなぐ */
+function linkTo(page: IndustrySubPage): { href: string; page: IndustrySubPage } {
+  const href = `/industries/${page.industry}/${page.slug}`;
+  return { href: CONSOLIDATED_PAGES[href] ?? href, page };
+}
+
+/** 業種ページから張るサービス別ページへのリンク */
+export function getIndustryServiceLinks(industry: string): { href: string; page: IndustrySubPage }[] {
+  return industrySubPages.filter((p) => p.industry === industry).map(linkTo);
+}
+
+/** サービスのページ（/meo など）から張る業種別ページへのリンク（同じ行き先は1つにまとめる） */
+export function getServiceIndustryLinks(service: string): { href: string; page: IndustrySubPage }[] {
+  return industrySubPages
+    .filter((p) => p.slug === service)
+    .map(linkTo)
+    .filter((l, i, all) => all.findIndex((m) => m.href === l.href) === i);
 }

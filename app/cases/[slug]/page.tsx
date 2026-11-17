@@ -48,6 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: { card: "summary_large_image" },
     alternates: { canonical: `${BASE}/cases/${slug}` },
+    // 事例ページは共通の型から作っていて、地域名・業種名以外の本文がほぼ同じ（近いもので9割以上一致）。
+    // 似たページが大量にあるとサイト全体の評価を下げかねないため、検索結果には出さない（閲覧・リンクはそのまま）。
+    // 実際の成果や取り組みを個別に書き足した事例から、この指定を外して検索に出していく
+    robots: { index: false, follow: true },
   };
 }
 

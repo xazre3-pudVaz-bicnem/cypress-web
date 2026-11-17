@@ -285,9 +285,9 @@ const sections: SitemapSection[] = [
     headingEn: "Column",
     links: [
       { href: "/column", label: "専門コラム一覧" },
-      { href: "/column/meo-ranking-2024", label: "MEO対策完全ガイド" },
-      { href: "/column/aio-chatgpt-strategy", label: "AIO対策実践戦略" },
-      { href: "/column/seo-content-strategy", label: "コンテンツSEO" },
+      { href: "/column/meo", label: "MEO対策とは" },
+      { href: "/column/chatgpt-citation-optimization-guide", label: "ChatGPTに引用されるには" },
+      { href: "/column/seo-blog-writing-complete-guide", label: "SEOに強い記事の書き方" },
     ],
   },
   {

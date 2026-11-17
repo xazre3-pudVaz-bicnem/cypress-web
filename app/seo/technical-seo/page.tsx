@@ -127,7 +127,7 @@ const relatedLinks = [
   { href: "/knowledge/technical-seo", label: "robots.txt解説", desc: "正しいrobots.txtの書き方" },
   { href: "/knowledge/technical-seo", label: "canonicalタグ解説", desc: "重複URLの正規化方法" },
   { href: "/glossary/sitemap-xml", label: "XMLサイトマップ解説", desc: "サイトマップの作成と登録" },
-  { href: "/column/core-web-vitals-2024", label: "Core Web Vitalsコラム", desc: "指標の意味と改善事例" },
+  { href: "/column/page-speed-improvement-guide", label: "Core Web Vitalsコラム", desc: "表示速度の改善方法" },
   { href: "/knowledge/eeat", label: "E-E-A-T対策", desc: "専門性・権威性の技術的実装" },
   { href: "/checklist/website-launch", label: "サイト公開前チェックリスト", desc: "テクニカルSEO確認項目" },
   { href: "/seo/technical-seo", label: "リダイレクト設定コラム", desc: "301/302の使い分けと注意点" },

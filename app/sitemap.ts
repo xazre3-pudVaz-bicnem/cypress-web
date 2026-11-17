@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
 import { COLUMNS } from "@/lib/data/columns";
-import { getAllCaseSlugs, getAllServiceSlugs, getAllIndustrySlugs } from "@/lib/data/caseStudies";
+import { getAllServiceSlugs, getAllIndustrySlugs } from "@/lib/data/caseStudies";
 import { getAllPosts, lastUpdated } from "@/lib/blog";
 import { NEWS } from "@/lib/data/news";
 
@@ -107,16 +107,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // 業種 × サービス sub-pages
     ...urls([
-      "/industries/restaurant/meo", "/industries/restaurant/sns", "/industries/restaurant/web-design",
+      "/industries/restaurant/sns", "/industries/restaurant/web-design",
       "/industries/restaurant/aio",
-      "/industries/beauty/meo", "/industries/beauty/sns", "/industries/beauty/web-design",
-      "/industries/clinic/meo", "/industries/clinic/web-design", "/industries/clinic/seo",
-      "/industries/construction/meo", "/industries/construction/seo",
+      "/industries/beauty/sns", "/industries/beauty/web-design",
+      "/industries/clinic/web-design", "/industries/clinic/seo",
+      "/industries/construction/seo",
       "/industries/real-estate/meo", "/industries/real-estate/seo",
       "/industries/professional-service/meo", "/industries/professional-service/seo",
       "/industries/cleaning/meo", "/industries/cleaning/seo",
       "/industries/local-store/meo",
-      "/industries/hair-salon/meo", "/industries/hair-salon/sns",
+      "/industries/hair-salon/sns",
       "/industries/nail-salon/meo", "/industries/nail-salon/sns",
       "/industries/pet-shop/meo",
       "/industries/renovation/meo", "/industries/renovation/seo",
@@ -348,10 +348,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       getAllIndustrySlugs().map((s) => `/cases/industry/${s}`),
       { changeFrequency: "monthly", priority: 0.8 }
     ),
-    ...urls(
-      getAllCaseSlugs().map((slug) => `/cases/${slug}`),
-      { changeFrequency: "monthly", priority: 0.75 }
-    ),
+    // 個別の事例ページは共通の型でほぼ同じ本文のため noindex にしている（app/cases/[slug]/page.tsx）。サイトマップにも載せない
 
     // コラムカテゴリページ
     ...urls([

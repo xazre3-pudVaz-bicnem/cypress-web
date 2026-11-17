@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import { getKnowledgeBySlug, getAllKnowledgeSlugs } from "@/lib/data/knowledgePages";
+import { withSiteName } from "@/lib/pageTitle";
 
 export async function generateStaticParams() {
   return getAllKnowledgeSlugs();
@@ -19,7 +20,7 @@ export async function generateMetadata({
   const page = getKnowledgeBySlug(slug);
   if (!page) return {};
   return {
-    title: `${page.title}｜ナレッジ｜株式会社サイプレス`,
+    title: withSiteName(`${page.title}｜ナレッジ`),
     description: page.metaDescription,
     alternates: { canonical: `https://www.cypress-all.co.jp/knowledge/${slug}` },
     openGraph: {

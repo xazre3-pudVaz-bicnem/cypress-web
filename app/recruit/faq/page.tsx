@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -68,31 +68,39 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           </svg>
         </div>
       </div>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden"
-          >
-            <div className="pb-5 pl-6 pr-4">
-              <div className="flex gap-3">
-                <span className="font-mono text-xs mt-0.5 shrink-0" style={{ color: "#10B981" }}>A</span>
-                <p className="text-[#64748B] text-sm leading-relaxed">{a}</p>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* 回答は閉じていても HTML に入れておく（検索エンジンが回答を読めるように）。高さ 0 で隠して開閉だけ動かす */}
+      <motion.div
+        initial={false}
+        animate={open ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+        className="overflow-hidden"
+        aria-hidden={!open}
+      >
+        <div className="pb-5 pl-6 pr-4">
+          <div className="flex gap-3">
+            <span className="font-mono text-xs mt-0.5 shrink-0" style={{ color: "#10B981" }}>A</span>
+            <p className="text-[#64748B] text-sm leading-relaxed">{a}</p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
 
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
 export default function RecruitFaqPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
       <Header />
       <main style={{ background: "#FFFFFF", minHeight: "100vh" }}>
         {/* Hero */}

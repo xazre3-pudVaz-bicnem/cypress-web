@@ -9,6 +9,7 @@ import PageContactCTA from "@/components/shared/PageContactCTA";
 import { glossaryPages } from "@/lib/data/glossaryPages";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
+import { withSiteName } from "@/lib/pageTitle";
 export async function generateStaticParams() {
   return glossaryPages.map((p) => ({ slug: p.slug }));
 }
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = glossaryPages.find((p) => p.slug === slug);
   if (!page) return {};
   return {
-    title: `${page.term}とは｜Web集客用語集｜株式会社サイプレス`,
+    title: withSiteName(`${page.term}とは｜Web集客用語集`),
     description: page.metaDescription,
     openGraph: {
       title: `${page.term}とは｜Web集客用語集`,

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { NEWS, getNewsArticle, type NewsArticle } from "@/lib/data/news";
 
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
+import { withSiteName } from "@/lib/pageTitle";
 export async function generateStaticParams() {
   return NEWS.map((n) => ({ slug: n.slug }));
 }
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = getNewsArticle(slug);
   if (!article) return {};
   return {
-    title: `${article.title}｜お知らせ｜株式会社サイプレス`,
+    title: withSiteName(`${article.title}｜お知らせ`),
     description: article.excerpt,
     alternates: { canonical: `https://www.cypress-all.co.jp/news/${slug}` },
   };

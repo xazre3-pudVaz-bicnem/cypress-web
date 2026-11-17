@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ALL_COLUMN_TOPICS } from "@/lib/data/column";
+import { withSiteName } from "@/lib/pageTitle";
 
 export const COLUMN_CATEGORY_DEFS: {
   slug: string;
@@ -176,7 +177,7 @@ export async function generateMetadata({
   if (!cat) return { title: "カテゴリが見つかりません" };
 
   return {
-    title: `${cat.name}の専門コラム｜SEO・MEO・Web集客ノウハウ｜株式会社サイプレス`,
+    title: withSiteName(`${cat.name}の専門コラム｜SEO・MEO・Web集客ノウハウ`),
     description: cat.description.slice(0, 120),
     keywords: [
       cat.name,

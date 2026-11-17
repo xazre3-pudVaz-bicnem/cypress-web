@@ -15,7 +15,7 @@ import HomeCareers from "@/components/home/HomeCareers";
 import HomeContact from "@/components/home/HomeContact";
 import Deferred from "@/components/ui/Deferred";
 import { CASES } from "@/lib/data/cases";
-import { getLatestColumns } from "@/lib/data/columns";
+import { getLatestColumnTopics } from "@/lib/data/column";
 import { getLatestNews } from "@/lib/data/news";
 import { HOME_FAQ } from "@/lib/data/homeFaq";
 import { getRecentPosts, lastUpdated, CATEGORY_NAMES as BLOG_CATEGORIES } from "@/lib/blog";
@@ -134,12 +134,12 @@ export default function Home() {
       services: c.services,
       image: CASE_IMAGES[c.slug] ?? "/images/v2/case-interior.jpg",
     }));
-  const insights: InsightCard[] = getLatestColumns(3).map((c) => ({
+  const insights: InsightCard[] = getLatestColumnTopics(3).map((c) => ({
     href: `/column/${c.slug}`,
     title: c.title,
-    date: c.publishedAt,
-    tags: c.tags,
-    image: COLUMN_IMAGES[c.category] ?? "/images/v2/life-desk.jpg",
+    date: c.updatedAt || c.publishedAt || "",
+    tags: [c.category, c.primaryKeyword].filter((t): t is string => Boolean(t)),
+    image: c.eyecatchImage ?? COLUMN_IMAGES[c.category] ?? "/images/v2/life-desk.jpg",
   }));
   const news: UpdateItem[] = getLatestNews(3).map((n) => ({
     href: `/news/${n.slug}`,

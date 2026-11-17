@@ -132,7 +132,7 @@ export const NEW_COMPARISON_COLUMNS: ColumnTopicPage[] = [
   },
   {
     slug: "wordpress-vs-nextjs-comparison",
-    title: "WordPressとNext.js（React）の違い・使い分け｜中小企業のホームページ制作どちらを選ぶ？",
+    title: "WordPressとNext.jsの違い・使い分け｜中小企業はどちらを選ぶ？",
     titleEn: "WordPress vs Next.js: Which CMS Platform Is Better for Small Business Websites?",
     category: "ホームページ制作",
     categorySlug: "web-design",

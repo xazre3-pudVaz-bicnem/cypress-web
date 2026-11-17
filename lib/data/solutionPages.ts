@@ -121,7 +121,7 @@ export const solutionPages: SolutionPage[] = [
       { href: "/services/seo", label: "SEO対策サービス", desc: "検索順位改善" },
       { href: "/seo/content-seo", label: "コンテンツSEO", desc: "記事SEO戦略" },
       { href: "/guide/content-seo-basics", label: "コンテンツSEO入門", desc: "基礎ガイド" },
-      { href: "/column/seo-content-strategy", label: "コンテンツSEOコラム", desc: "E-E-A-T時代の戦略" },
+      { href: "/column/seo-blog-writing-complete-guide", label: "コンテンツSEOコラム", desc: "評価される記事の書き方" },
     ],
   },
   {
@@ -619,7 +619,7 @@ export const solutionPages: SolutionPage[] = [
     related: [
       { href: "/services/ai", label: "AI活用支援", desc: "AI業務活用" },
       { href: "/solutions/seo-content", label: "SEO×コンテンツ", desc: "コンテンツで集客" },
-      { href: "/column/content-creation-ai", label: "AIコンテンツコラム", desc: "正しい活用法" },
+      { href: "/column/ai-blog-content-strategy", label: "AIコンテンツコラム", desc: "品質を保つ活用法" },
       { href: "/services/seo", label: "SEO対策サービス", desc: "検索上位表示" },
       { href: "/services/aio", label: "AIO対策サービス", desc: "AI検索最適化" },
       { href: "/seo", label: "SEO対策", desc: "検索からの集客の支援内容" },

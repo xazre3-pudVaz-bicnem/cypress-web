@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { withSiteName } from "@/lib/pageTitle";
 import {
   getAllSlugs,
   getPostBySlug,
@@ -93,7 +94,7 @@ export async function generateMetadata({
   if (!post) return { title: "記事が見つかりません" };
 
   return {
-    title: `${post.title}｜株式会社サイプレス ブログ`,
+    title: withSiteName(post.title, "株式会社サイプレス ブログ"),
     description: post.description || post.title,
     authors: [{ name: "株式会社サイプレス 編集部", url: "https://www.cypress-all.co.jp/company/about-cypress" }],
     openGraph: {

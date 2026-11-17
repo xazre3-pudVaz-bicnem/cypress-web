@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import ServiceIndustryLinks from "@/components/shared/ServiceIndustryLinks";
 
 export const metadata: Metadata = {
   title: "SNS集客の始め方｜Instagram・GBPで地域集客｜株式会社サイプレス",
@@ -420,6 +421,7 @@ export default function SnsPage() {
           </div>
         </section>
 
+        <ServiceIndustryLinks service="sns" serviceName="SNS運用" />
         <FaqSection items={faqItems} heading="SNS集客・運用代行についてよくある質問" bgColor="#f0f1f2" />
 
         {/* SNS運用の成功事例 */}

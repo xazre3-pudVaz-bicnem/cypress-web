@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import AreaServiceLinks from "@/components/shared/AreaServiceLinks";
 
 export const metadata: Metadata = {
   title: "東京都のSEO対策・MEO対策・Web制作｜葛飾区拠点の集客支援会社",
@@ -498,6 +499,7 @@ export default function Page() {
           </div>
         </section>
 
+        <AreaServiceLinks area="tokyo" areaName="東京都" />
         <FaqSection items={faqItems} heading="東京都のSEO・MEO対策に関するよくある質問" bgColor="#f0f1f2" />
         <RelatedPages links={relatedLinks} />
         <PageContactCTA

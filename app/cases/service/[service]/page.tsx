@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import CaseCard from "@/components/cases/CaseCard";
+import { withSiteName } from "@/lib/pageTitle";
 import {
   getCasesByService,
   getAllServiceSlugs,
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const label = SERVICE_LABELS[service];
   if (!label) return {};
   const cases = getCasesByService(service);
-  const title = `${label}の成功事例${cases.length}件｜業種別の施策内容｜株式会社サイプレス`;
+  const title = withSiteName(`${label}の成功事例${cases.length}件｜業種別の施策内容`);
   const description = `株式会社サイプレスの${label}成功事例${cases.length}件。飲食店・美容室・整体院・建設業など業種別に、${label}の課題から施策・改善までの進め方を公開しています。`;
   const ogpImage = SERVICE_OGP_IMAGES[service] ?? "/hero.jpg";
   return {

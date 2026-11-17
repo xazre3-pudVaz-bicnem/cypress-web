@@ -1,5 +1,5 @@
 import RelatedPages from "@/components/shared/RelatedPages";
-import { getIndustrySubPagesByIndustry } from "@/lib/data/industrySubPages";
+import { getIndustryServiceLinks } from "@/lib/data/industrySubPages";
 
 /** 説明文の最初の一文（長ければ切る）を、リンクの補足に使う */
 function firstSentence(text: string): string {
@@ -13,14 +13,12 @@ function firstSentence(text: string): string {
  * これが無いとサービス別ページはどこからもリンクされず、検索エンジンに見つけてもらえない。
  */
 export default function IndustryServiceLinks({ industry }: { industry: string }) {
-  const pages = getIndustrySubPagesByIndustry(industry).filter(
-    (p, i, all) => all.findIndex((q) => q.slug === p.slug) === i,
-  );
-  if (pages.length === 0) return null;
+  const links = getIndustryServiceLinks(industry).filter((l, i, all) => all.findIndex((m) => m.href === l.href) === i);
+  if (links.length === 0) return null;
   return (
     <RelatedPages
       heading="サービス別の詳しい解説"
-      links={pages.map((p) => ({ href: `/industries/${industry}/${p.slug}`, label: p.title, desc: firstSentence(p.metaDescription) }))}
+      links={links.map(({ href, page }) => ({ href, label: page.title, desc: firstSentence(page.metaDescription) }))}
     />
   );
 }

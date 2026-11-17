@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import CaseCard from "@/components/cases/CaseCard";
+import { withSiteName } from "@/lib/pageTitle";
 import {
   getCasesByIndustry,
   getAllIndustrySlugs,
@@ -61,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const label = INDUSTRY_LABELS[industry];
   if (!label) return {};
   const cases = getCasesByIndustry(industry);
-  const title = `${label}のWeb集客成功事例${cases.length}件｜MEO・SEO・ホームページ制作｜株式会社サイプレス`;
+  const title = withSiteName(`${label}のWeb集客成功事例${cases.length}件｜MEO・SEO・ホームページ制作`);
   const description = `${label}のWebマーケティング成功事例${cases.length}件。MEO対策・SEO対策・ホームページ制作など、${label}の集客課題から施策・改善までの進め方を公開しています。`;
   return {
     title,

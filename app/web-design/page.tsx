@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import ServiceIndustryLinks from "@/components/shared/ServiceIndustryLinks";
 
 export const metadata: Metadata = {
   title: "ホームページ制作とは｜SEO・CVに強いサイト設計の基本｜株式会社サイプレス",
@@ -403,6 +404,7 @@ export default function WebDesignPage() {
           </div>
         </section>
 
+        <ServiceIndustryLinks service="web-design" serviceName="ホームページ制作" />
         <FaqSection items={faqItems} heading="Webサイト制作についてよくある質問" bgColor="#FFFFFF" />
 
         {/* ホームページ制作の成功事例 */}

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import PageContactCTA from "@/components/shared/PageContactCTA";
 import FaqSection from "@/components/shared/FaqSection";
 import RelatedPages from "@/components/shared/RelatedPages";
+import ServiceIndustryLinks from "@/components/shared/ServiceIndustryLinks";
 
 export const metadata: Metadata = {
   title: "MEO対策とは｜Googleマップ上位表示の完全ガイド｜株式会社サイプレス",
@@ -800,6 +801,7 @@ export default function MeoIndexPage() {
           </div>
         </section>
 
+        <ServiceIndustryLinks service="meo" serviceName="MEO対策" />
         <FaqSection items={faqItems} heading="MEO対策に関するよくある質問" bgColor="#FFFFFF" />
 
         {/* MEO成功事例 */}
