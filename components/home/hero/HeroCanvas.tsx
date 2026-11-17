@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { getImageProps } from "next/image";
 import { useMotionEnabled } from "@/components/motion/motionPreference";
+import { isSoftwareRendering } from "@/components/motion/softwareRendering";
 import type { HeroWorkerMessage } from "./heroWorker";
 
 interface Props {
@@ -47,9 +48,8 @@ export default function HeroCanvas({ playIntro, introAt }: Props) {
     if (!box) return;
     // スマホは表示の速さと電池を優先し、リアルタイムの 3D は使わず静止画をゆっくり動かすだけにする
     if (window.matchMedia("(max-width: 767px)").matches) return;
-    // WebGL が使えない端末では静止画のままにする
-    const probe = document.createElement("canvas");
-    if (!(probe.getContext("webgl2") || probe.getContext("webgl"))) return;
+    // WebGL が使えない端末や、GPU を使わずソフトウェアで描画している環境（1 コマに数秒かかる）では静止画のままにする
+    if (isSoftwareRendering()) return;
 
     let disposed = false;
     let cleanup = () => {};

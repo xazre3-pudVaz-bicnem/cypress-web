@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 import { MotionConfig } from "framer-motion";
 import { useMotionEnabled } from "./motionPreference";
+import { isSoftwareRendering } from "./softwareRendering";
 
 declare global {
   interface Window {
@@ -24,13 +25,24 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
   const popAt = useRef(-Infinity);
   const prevPath = useRef(pathname);
 
+  // GPU が使えない環境では、ぼかしなど毎コマ描き直しになる効果を CSS で外す（globals.css の html.cy-lowgpu）
+  useEffect(() => {
+    if (isSoftwareRendering()) document.documentElement.classList.add("cy-lowgpu");
+  }, []);
+
   useEffect(() => {
     if (!enabled) return;
     if (window.matchMedia("(pointer: coarse)").matches) return;
+    // GPU が使えない環境では、慣性スクロールのコマごとにメインスレッドで描き直すことになり、
+    // スクロールが数秒止まったように見える。別スレッドで動くブラウザ標準のスクロールに任せる
+    if (isSoftwareRendering()) return;
     const lenis = new Lenis({
       duration: 1.15,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       anchors: { offset: -96 },
+      // ページの高さの変化は body で見る。既定の <html> は h-full（画面の高さ）で固定されていて大きさが変わらず、
+      // 短いページから長いページへ移動したときに前のページの高さのままになり、途中でスクロールが止まってしまう
+      content: document.body,
     });
     window.__cyLenis = lenis;
     let frame = requestAnimationFrame(function loop(time) {
@@ -71,6 +83,8 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     if (prevPath.current === pathname) return;
     prevPath.current = pathname;
     const lenis = window.__cyLenis;
+    // 新しいページを描いた直後に、スクロールできる範囲を測り直す（大きさの監視は少し遅れて届くため）
+    requestAnimationFrame(() => lenis?.resize());
     const isPop = performance.now() - popAt.current < 1000;
     popAt.current = -Infinity;
     if (isPop) {

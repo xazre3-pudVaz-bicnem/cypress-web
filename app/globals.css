@@ -331,6 +331,13 @@ html.lenis {
   scroll-behavior: auto;
 }
 
+/* GPU が使えずソフトウェアで描画している環境（SmoothScroll が付ける）では、
+   スクロールのたびに背面をぼかし直す効果を外す。1 コマに時間がかかりスクロールが止まって見えるため */
+html.cy-lowgpu * {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
 .v2 {
   font-family: var(--font-gsf), var(--font-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   font-feature-settings: "palt";
