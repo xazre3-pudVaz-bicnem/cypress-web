@@ -26,7 +26,7 @@ export const COMPANY_ADDRESS_WITH_POSTAL = `〒${COMPANY.postalCode} ${COMPANY.a
 export const COMPANY_MAP_QUERY = encodeURIComponent(COMPANY.address);
 
 export type Business = {
-  key: "web" | "cargo" | "solar";
+  key: "web" | "cargo" | "solar" | "kyuto";
   name: string;
   nameEn: string;
   /** カードの見出し。事業ごとに「何を届けるか」で揃えている。 */
@@ -42,8 +42,8 @@ export type Business = {
 };
 
 /**
- * 3つの事業。Webマーケティングが本業で、軽貨物・太陽光はそれぞれ専用サイトで運営している。
- * 内容は各サイト（2026年10月時点）の記載に合わせている。条件や数値はここに書かず、各サイトに任せる。
+ * 4つの事業。Webマーケティングが本業で、軽貨物・太陽光・給湯器交換はそれぞれ専用サイトで運営している。
+ * 内容は各サイト（軽貨物・太陽光は2026年10月時点、給湯器交換は2026年11月時点）の記載に合わせている。条件や数値はここに書かず、各サイトに任せる。
  */
 export const BUSINESSES: Business[] = [
   {
@@ -86,5 +86,19 @@ export const BUSINESSES: Business[] = [
     image: "/images/brand/biz-solar.jpg",
     imageAlt: "住宅の屋根に設置された太陽光パネル",
     tags: ["太陽光発電", "家庭用蓄電池", "補助金サポート"],
+  },
+  {
+    key: "kyuto",
+    name: "給湯器交換事業",
+    nameEn: "Water Heater — 葛飾給湯サービス",
+    catch: "お湯を、毎日の暮らしへ。",
+    description:
+      "葛飾区の給湯器交換の専門サイト「葛飾給湯サービス」。ガス給湯器・エコジョーズ・エコキュート・ハイブリッド給湯器の機種を型番で比べ、補助金を確かめたうえで、お見積もりをご依頼いただけます。",
+    href: "https://www.katsushika-kyuto.com/",
+    external: true,
+    siteLabel: "katsushika-kyuto.com",
+    image: "/images/brand/biz-kyuto.jpg",
+    imageAlt: "湯気の立つ浴槽のある、明るい浴室",
+    tags: ["給湯器交換", "エコキュート", "補助金の確認"],
   },
 ];

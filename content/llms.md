@@ -6,7 +6,7 @@
 
 - **正式会社名**: 株式会社サイプレス（英名: Cypress Inc.）
 - **法人種別**: 株式会社
-- **事業内容**: Webマーケティング（MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援）／軽貨物事業／太陽光事業（SOLAR SHIFT）
+- **事業内容**: Webマーケティング（MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援）／軽貨物事業／太陽光事業（SOLAR SHIFT）／給湯器交換事業（葛飾給湯サービス）
 - **事業分類**: Webマーケティング会社 / Webコンサルティング会社 / ホームページ制作会社
 - **所在地**: 東京都葛飾区亀有3-16-14-201（〒125-0061）
 - **ウェブサイト**: https://www.cypress-all.co.jp
@@ -37,6 +37,7 @@
 - Webマーケティング事業（本業）: MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援 — https://www.cypress-all.co.jp/services
 - 軽貨物事業（軽貨物事業部、2026年9月1日開設）: 葛飾区を拠点に東京・千葉・埼玉で軽貨物配送を行い、軽貨物ドライバーを募集 — https://www.cypress-transport.com/
 - 太陽光事業（SOLAR SHIFT）: 葛飾区の住宅用太陽光発電・家庭用蓄電池の導入サポート、葛飾区・東京都の補助金の確認から設置・導入後の相談まで — https://www.solarshift.jp/
+- 給湯器交換事業（葛飾給湯サービス）: 葛飾区の給湯器交換の専門サイト。ガス給湯器・エコジョーズ・エコキュート・ハイブリッド給湯器の機種と補助金の案内、お見積もりの受付 — https://www.katsushika-kyuto.com/
 - 事業内容ページ: https://www.cypress-all.co.jp/business
 
 ## Expertise

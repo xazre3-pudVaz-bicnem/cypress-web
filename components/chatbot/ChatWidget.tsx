@@ -69,7 +69,7 @@ function trackLink(href: string) {
 }
 
 // 外部URLは自社の事業サイト（lib/company.ts の BUSINESSES）だけを許可する。それ以外はリンクにしない。
-const EXTERNAL_LINK = "https:\\/\\/www\\.(?:cypress-transport\\.com|solarshift\\.jp)(?:\\/[^)\\s]*)?";
+const EXTERNAL_LINK = "https:\\/\\/www\\.(?:cypress-transport\\.com|solarshift\\.jp|katsushika-kyuto\\.com)(?:\\/[^)\\s]*)?";
 const LINK_PATTERN = new RegExp(
   `\\[([^\\]\\n]+)\\]\\((\\/[^)\\s]*|tel:[0-9+-]+|mailto:[^)\\s]+|${EXTERNAL_LINK})\\)`,
   "g"

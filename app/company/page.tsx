@@ -48,7 +48,7 @@ const PROFILE_ROWS = [
   { label: "代表取締役", value: "織田 春樹" },
   { label: "設立", value: "2026年5月13日" },
   { label: "所在地", value: "東京都葛飾区亀有3-16-14-201" },
-  { label: "事業内容", value: "Webマーケティング支援（MEO対策、SEO対策、AIO対策、ホームページ制作、SNS運用、AI活用支援）、軽貨物事業、太陽光事業（SOLAR SHIFT）" },
+  { label: "事業内容", value: "Webマーケティング支援（MEO対策、SEO対策、AIO対策、ホームページ制作、SNS運用、AI活用支援）、軽貨物事業、太陽光事業（SOLAR SHIFT）、給湯器交換事業（葛飾給湯サービス）" },
 ];
 
 export default function CompanyPage() {

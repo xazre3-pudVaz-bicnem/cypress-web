@@ -10,7 +10,7 @@ import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "事業内容｜中小企業のWeb集客・AI活用支援｜株式会社サイプレス",
   description:
-    "株式会社サイプレスの事業内容。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の6事業で中小企業の集客を総合支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
+    "株式会社サイプレスの事業内容。MEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援の6事業で中小企業の集客を総合支援します。あわせて軽貨物事業・太陽光事業（SOLAR SHIFT）・給湯器交換事業（葛飾給湯サービス）を運営しています。",
   keywords: ["事業内容", "MEO対策", "SEO対策", "AIO対策", "ホームページ制作", "SNS運用", "AI活用支援"],
   openGraph: {
     title: "事業内容｜中小企業のWeb集客・AI活用支援｜株式会社サイプレス",
@@ -144,7 +144,7 @@ export default function BusinessPage() {
             </h1>
             <p className="text-[#374151] text-base leading-relaxed max-w-2xl">
               MEO・SEO・AIO・ホームページ制作・SNS運用・AI活用支援の6事業で、
-              中小企業の集客を根本から変えます。あわせて、軽貨物事業と太陽光事業も運営しています。
+              中小企業の集客を根本から変えます。あわせて、軽貨物事業・太陽光事業・給湯器交換事業も運営しています。
             </p>
           </div>
         </section>
@@ -272,10 +272,10 @@ export default function BusinessPage() {
               そのほかの事業
             </h2>
             <p className="text-[#374151] text-sm leading-relaxed max-w-2xl mb-10">
-              Webマーケティングに加えて、軽貨物配送と住宅用太陽光発電の導入サポートを、それぞれ専用サイトで運営しています。
+              Webマーケティングに加えて、軽貨物配送、住宅用太陽光発電の導入サポート、葛飾区の給湯器交換を、それぞれ専用サイトで運営しています。
             </p>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {OTHER_BUSINESSES.map((b, i) => (
               <ScrollReveal key={b.key} delay={i * 0.05}>
                 <a
@@ -291,7 +291,7 @@ export default function BusinessPage() {
                       alt={b.imageAlt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0" style={{ background: "rgba(15,23,42,0.15)" }} />
                   </div>
