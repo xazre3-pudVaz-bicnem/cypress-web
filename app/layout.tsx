@@ -37,7 +37,7 @@ const organizationSchema = {
   },
   image: `${SITE_URL}/hero.jpg`,
   description:
-    "株式会社サイプレスは、東京都葛飾区を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業と太陽光事業（SOLAR SHIFT）を運営しています。",
+    "株式会社サイプレスは、東京都葛飾区を拠点にMEO対策・SEO対策・AIO対策・ホームページ制作・SNS運用・AI活用支援を行うWebマーケティング会社です。東京23区・全国の中小企業・地域店舗のWeb集客を、設計から運用まで一気通貫で支援します。あわせて軽貨物事業、太陽光事業（SOLAR SHIFT）、給湯器交換事業（葛飾給湯サービス）を運営しています。",
   email: "info@cypress-all.co.jp",
   address: {
     "@type": "PostalAddress",
@@ -134,11 +134,17 @@ const organizationSchema = {
     "軽貨物運送",
     "住宅用太陽光発電",
     "家庭用蓄電池",
+    "給湯器の交換",
   ],
-  // 軽貨物・太陽光はそれぞれ専用サイトで運営している事業部門
+  // 軽貨物・太陽光・給湯器交換は、それぞれ専用サイトで運営している事業部門
   department: BUSINESSES.filter((b) => b.external).map((b) => ({
     "@type": "Organization",
-    name: b.key === "cargo" ? `${COMPANY.name} 軽貨物事業部` : "SOLAR SHIFT（株式会社サイプレス 太陽光事業）",
+    name:
+      b.key === "cargo"
+        ? `${COMPANY.name} 軽貨物事業部`
+        : b.key === "solar"
+          ? "SOLAR SHIFT（株式会社サイプレス 太陽光事業）"
+          : "葛飾給湯サービス（株式会社サイプレス 給湯器交換事業）",
     url: b.href,
     description: b.description,
     parentOrganization: { "@id": `${SITE_URL}/#organization` },

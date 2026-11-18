@@ -100,7 +100,7 @@ const PROFILE_ROWS: { label: string; value: string; href?: string }[] = [
   {
     label: "事業内容",
     value:
-      "SEO対策・MEO対策・AIO（AI検索最適化）・Web制作・SNS運用・AI活用支援／軽貨物事業／太陽光事業（SOLAR SHIFT）",
+      "SEO対策・MEO対策・AIO（AI検索最適化）・Web制作・SNS運用・AI活用支援／軽貨物事業／太陽光事業（SOLAR SHIFT）／給湯器交換事業（葛飾給湯サービス）",
   },
   {
     label: "対応エリア",
